@@ -1,0 +1,1 @@
+# Short-Term-Reversal-Strategy
