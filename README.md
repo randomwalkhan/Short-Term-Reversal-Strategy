@@ -244,12 +244,25 @@ The following files are included in this repository:
 | `Reversal.ipynb`  | Interactive Jupyter Notebook containing all analysis code across Parts 1–4. |
 | `Reversal.xlsx`   | Input data file containing historical OHLC prices for selected tickers.     |
 
+### Data Coverage
+
+As of July 23, 2025, the `Reversal.xlsx` file includes the following tickers:
+
+- `SMCI`
+- `TQQQ`
+- `HOOD`
+- `MSTR`
+- `TSLA`
+- `SOXL`
+
+Each ticker is saved as a separate worksheet (tab) within the Excel file. Users may manually append additional tickers to this file using the same format (with columns like `Date`, `Open`, `High`, `Low`, `Close`, `Adj Close`, `Volume`).
+
 ###  Data Currency Note
 
 - The `Reversal.xlsx` file includes stock data **up to July 23, 2025**.
 - Users can **manually update or append new data** to this file using [Yahoo Finance](https://finance.yahoo.com/) or `yfinance`, as long as they **maintain the same column structure and sheet naming convention** (e.g., one ticker per sheet with columns like `Date`, `Open`, `High`, `Low`, `Close`, `Adj Close`, `Volume`).
 
-### ⚙️ To run this project
+### To run this project
 
 Make sure Python 3.9+ is installed, and install dependencies:
 
