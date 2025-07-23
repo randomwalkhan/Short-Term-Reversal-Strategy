@@ -248,12 +248,13 @@ The following files are included in this repository:
 
 As of July 23, 2025, the `Reversal.xlsx` file includes the following tickers:
 
-- `SMCI`
 - `TQQQ`
-- `HOOD`
-- `MSTR`
-- `TSLA`
+- `SMCI`
 - `SOXL`
+- `COIN`
+- `MSTR`
+- `HOOD`
+- `PLTR`
 
 Each ticker is saved as a separate worksheet (tab) within the Excel file. Users may manually append additional tickers to this file using the same format (with columns like `Date`, `Open`, `High`, `Low`, `Close`, `Adj Close`, `Volume`).
 
