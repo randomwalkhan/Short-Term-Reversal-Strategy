@@ -1,10 +1,23 @@
-#  Intraday Reversal Strategy Backtester
+# Intraday Reversal Strategy Backtester (v2.0)
 
 This project is a Python-based quantitative tool designed for traders who seek to **buy the dip** and profit from **short-term reversals**. It systematically identifies significant intraday drawdowns, evaluates recovery potential across future trading days, and quantifies the odds of success. It serves as a **signal generator and validation framework** for short-term reversal strategies, including equity or options trading.
 
 ---
 
-##  Part 1: Success Odds Analysis
+## What's New in v2.0
+
+- Added `Reversal2.0.ipynb` with a refreshed Chinese/English introduction and clearer workflow ordering.
+- Added an **Auto Data Update** module that downloads daily OHLC data with `yfinance`, rebuilds `Max Drop`, merges with existing sheets, de-duplicates dates, and writes back to `Reversal.xlsx`.
+- Reduced the manual maintenance burden of the Excel database before each backtest run.
+
+Recommended run order:
+1. Run **Auto Data Update** to refresh `Reversal.xlsx`.
+2. Run Success Odds / Option CI / GBM CI / Rolling Sigma.
+3. Run screener for latest candidates.
+
+---
+
+## Part 1: Success Odds Analysis
 
 This module identifies potential **buy-the-dip signals** based on large intraday drops and tracks the recovery performance over a user-defined forward window.
 
@@ -241,7 +254,8 @@ The following files are included in this repository:
 | File Name         | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
 | `README.md`       | Full documentation and usage guide for the reversal strategy toolkit.       |
-| `Reversal.ipynb`  | Interactive Jupyter Notebook containing all analysis code across Parts 1–4. |
+| `Reversal1.1.ipynb` | Original notebook version. |
+| `Reversal2.0.ipynb` | Upgraded notebook with auto-update pipeline + revised intro. |
 | `Reversal.xlsx`   | Input data file containing historical OHLC prices for selected tickers.     |
 
 ### Data Coverage
@@ -261,7 +275,7 @@ Each ticker is saved as a separate worksheet (tab) within the Excel file. Users 
 ###  Data Currency Note
 
 - The `Reversal.xlsx` file includes stock data **up to July 23, 2025**.
-- Users can **manually update or append new data** to this file using [Yahoo Finance](https://finance.yahoo.com/) or `yfinance`, as long as they **maintain the same column structure and sheet naming convention** (e.g., one ticker per sheet with columns like `Date`, `Open`, `High`, `Low`, `Close`, `Adj Close`, `Volume`).
+- Users can still manually append data, but v2.0 now provides an automated update cell in `Reversal2.0.ipynb` to pull fresh data and recalculate `Max Drop` with a single function call.
 
 ### To run this project
 
