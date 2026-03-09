@@ -14,6 +14,17 @@ The notebook works from CSV files stored under `reversal_data/` and uses configu
 
 Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行，并允许用户自定义信号筛选阈值、反弹判定标准、波动率估计方式和期权定价参数。
 
+Before running the main analysis notebook, you can use `update_reversal_csv.ipynb` to download and refresh the input CSV files.
+
+在运行主分析 notebook 之前，可以先使用 `update_reversal_csv.ipynb` 下载并更新输入用的 CSV 数据。
+
+## Workflow | 推荐流程
+
+1. Run `update_reversal_csv.ipynb` to download or refresh market data into `reversal_data/`.  
+   先运行 `update_reversal_csv.ipynb`，把市场数据下载或更新到 `reversal_data/`。
+2. Run `Reversal2.0.ipynb` for reversal success analysis, option confidence intervals, GBM simulation, and rolling sigma plots.  
+   再运行 `Reversal2.0.ipynb`，完成反转成功率分析、期权置信区间、GBM 模拟和滚动波动率可视化。
+
 ## Notebook Contents | Notebook 内容
 
 1. `Probability of Success Reversal`  
@@ -49,6 +60,10 @@ The notebook expects columns such as `Date`, `Open`, `High`, `Low`, `Adj Close`,
 
 Notebook 默认读取的主要字段包括 `Date`、`Open`、`High`、`Low`、`Adj Close` 和 `Max Drop`。
 
+`update_reversal_csv.ipynb` is designed to generate these CSV files automatically from Yahoo Finance data.
+
+`update_reversal_csv.ipynb` 的用途就是从 Yahoo Finance 自动生成这些 CSV 文件。
+
 ## Dependencies | 依赖环境
 
 Install the Python packages used in the notebook:
@@ -69,6 +84,14 @@ Open the notebook from the repository root so `Path.cwd()` resolves correctly:
 jupyter notebook Reversal2.0.ipynb
 ```
 
+To refresh the CSV data first, open:
+
+如果你想先更新 CSV 数据，可以打开：
+
+```bash
+jupyter notebook update_reversal_csv.ipynb
+```
+
 Update the user-config sections inside each code cell to change:
 
 你可以在各代码单元的用户配置区修改以下参数：
@@ -78,6 +101,20 @@ Update the user-config sections inside each code cell to change:
 - Strike, call cost, expiry date | 行权价、期权成本、到期日
 - Confidence level, risk-free rate, bootstrap count | 置信水平、无风险利率、bootstrap 次数
 - GBM path count and volatility method | GBM 路径数与波动率设定方式
+
+For `update_reversal_csv.ipynb`, the main configurable inputs are:
+
+对于 `update_reversal_csv.ipynb`，主要可调参数包括：
+
+- Tickers | 股票列表
+- Start date and end date | 数据起止日期
+- Output directory | 输出目录
+
+## Repository Files | 仓库文件
+
+- `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
+- `Reversal2.0.ipynb` | Main notebook for reversal and option analysis. | 反转与期权分析主 notebook。
+- `README.md` | Project documentation. | 项目说明文件。
 
 ## Outputs | 输出结果
 
