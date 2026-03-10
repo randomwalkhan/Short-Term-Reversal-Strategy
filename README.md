@@ -1,128 +1,193 @@
-# Reversal 2.0
+# Coinbase Mean-Reversion Bot
 
-`Reversal2.0.ipynb` is a research notebook for short-term reversal analysis and option profitability confidence estimation.
+This repository now contains two parts:
 
-`Reversal2.0.ipynb` 是一个用于短期反转研究和期权盈利概率评估的研究型 notebook。
+1. Research notebooks for reversal analysis.
+2. A Coinbase Advanced Trade spot bot with backtesting, dry-run mode, and live execution support.
 
-## Overview | 项目简介
+No strategy can honestly be described as "high win rate and stable" across all market regimes. The bot here is intentionally conservative: long-only spot trading, no leverage, no futures, no options, and no martingale.
 
-This project focuses on identifying large intraday drawdowns, evaluating whether prices reverse over the next few trading days, and estimating the return distribution of related call-option trades.
+## Important Security Step
 
-本项目主要研究三件事：识别日内大幅下跌、评估未来几个交易日内的价格反转概率，以及估计相关看涨期权交易的收益分布。
+Your Coinbase private key was pasted into chat. Treat it as compromised.
 
-The notebook works from CSV files stored under `reversal_data/` and uses configurable thresholds for signal detection, recovery measurement, volatility estimation, and option pricing.
+1. Revoke that API key in Coinbase immediately.
+2. Create a new key with the minimum permissions needed for spot trading.
+3. Put the replacement key in `.env`.
+4. Never commit `.env` or private keys.
 
-Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行，并允许用户自定义信号筛选阈值、反弹判定标准、波动率估计方式和期权定价参数。
+The official Coinbase SDK also warns against saving secrets directly in code.
 
-Before running the main analysis notebook, you can use `update_reversal_csv.ipynb` to download and refresh the input CSV files.
+## Strategy Choice
 
-在运行主分析 notebook 之前，可以先使用 `update_reversal_csv.ipynb` 下载并更新输入用的 CSV 数据。
+After reviewing public GitHub Coinbase bots and strategy repositories, this project does not blindly copy any "guaranteed profit" bot.
 
-## Workflow | 推荐流程
+The selected approach is a moderate-risk spot mean-reversion strategy:
 
-1. Run `update_reversal_csv.ipynb` to download or refresh market data into `reversal_data/`.  
-   先运行 `update_reversal_csv.ipynb`，把市场数据下载或更新到 `reversal_data/`。
-2. Run `Reversal2.0.ipynb` for reversal success analysis, option confidence intervals, GBM simulation, and rolling sigma plots.  
-   再运行 `Reversal2.0.ipynb`，完成反转成功率分析、期权置信区间、GBM 模拟和滚动波动率可视化。
+- Timeframe: `ONE_HOUR`
+- Market: Coinbase spot pairs such as `BTC-USD`, `ETH-USD`, `SOL-USD`
+- Direction: long only
+- Entry filters:
+  - close below the lower Bollinger Band
+  - RSI oversold
+  - `EMA50 > EMA200`
+  - rising slow trend
+  - ATR and volume filters
+- Exit:
+  - take profit near the Bollinger midline
+  - stop loss at `1 x ATR`
+  - maximum holding window
+- Risk controls:
+  - fixed fraction position sizing
+  - minimum cash reserve
+  - max one open position
+  - cooldown after trades
+  - daily realized loss cap
 
-## Notebook Contents | Notebook 内容
+This design matches the reversal logic already present in the notebooks better than momentum-chasing Coinbase bots.
 
-1. `Probability of Success Reversal`  
-   Measures how often a ticker recovers after a large intraday drop using CSV data under `reversal_data/`.  
-   使用 `reversal_data/` 中的 CSV 数据，统计个股在出现较大日内跌幅后，未来若干交易日内发生反弹的成功率。
+## GitHub References Reviewed
 
-2. `Black Scholes Methods for Profitability Confidence Interval`  
-   Estimates option profitability confidence with a Black-Scholes pricing framework and bootstrap simulations.  
-   结合 Black-Scholes 定价框架和 bootstrap 模拟，估计期权策略收益区间及其置信水平。
+- Official Coinbase SDK: [coinbase/coinbase-advanced-py](https://github.com/coinbase/coinbase-advanced-py)
+- Strategy library reference: [freqtrade/freqtrade-strategies](https://github.com/freqtrade/freqtrade-strategies)
+- Example Coinbase automation bot reviewed but not adopted as-is:
+  [albegonzalezp/coinbase_trader_bot](https://github.com/albegonzalezp/coinbase_trader_bot)
 
-3. `Geometric Brownian Motion Methods for Profitability Confidence Interval`  
-   Simulates option outcomes with GBM paths under configurable drift and volatility assumptions.  
-   在可调的漂移率和波动率假设下，使用几何布朗运动模拟期权收益结果。
+Why not copy the daily momentum bot directly:
 
-4. `Rolling Sigma`  
-   Plots rolling annualized volatility for selected tickers.  
-   绘制所选股票的滚动年化波动率曲线。
+- It chases recent winners instead of buying controlled pullbacks.
+- It is less suitable for "moderate risk" spot trading.
+- It has weaker risk controls than the bot implemented here.
 
-## Data Layout | 数据结构
-
-Place per-ticker CSV files in:
-
-请将每个股票对应的 CSV 文件放在以下目录中：
+## Project Layout
 
 ```text
-reversal_data/
-  TQQQ.csv
-  SOXL.csv
-  ...
+coinbase_bot/
+  backtest.py
+  bot.py
+  config.py
+  exchange.py
+  indicators.py
+  state.py
+  strategy.py
+tests/
+  test_strategy.py
+Reversal2.0.ipynb
+update_reversal_csv.ipynb
 ```
 
-The notebook expects columns such as `Date`, `Open`, `High`, `Low`, `Adj Close`, and `Max Drop`.
-
-Notebook 默认读取的主要字段包括 `Date`、`Open`、`High`、`Low`、`Adj Close` 和 `Max Drop`。
-
-`update_reversal_csv.ipynb` is designed to generate these CSV files automatically from Yahoo Finance data.
-
-`update_reversal_csv.ipynb` 的用途就是从 Yahoo Finance 自动生成这些 CSV 文件。
-
-## Dependencies | 依赖环境
-
-Install the Python packages used in the notebook:
-
-安装 notebook 所需的 Python 包：
+## Install
 
 ```bash
-pip install numpy pandas matplotlib scipy yfinance notebook
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-## Usage | 使用方法
+## Configure
 
-Open the notebook from the repository root so `Path.cwd()` resolves correctly:
-
-请在仓库根目录打开 notebook，这样 `Path.cwd()` 才会正确指向项目目录：
+Create a local `.env` from the example:
 
 ```bash
-jupyter notebook Reversal2.0.ipynb
+cp .env.example .env
 ```
 
-To refresh the CSV data first, open:
+Set:
 
-如果你想先更新 CSV 数据，可以打开：
+- `COINBASE_API_KEY`
+- `COINBASE_API_SECRET`
+- `BOT_PRODUCTS`
+- risk values if you want to tune them
+
+Live trading is disabled until you explicitly set:
 
 ```bash
-jupyter notebook update_reversal_csv.ipynb
+COINBASE_ALLOW_LIVE_TRADING="true"
 ```
 
-Update the user-config sections inside each code cell to change:
+## Backtest First
 
-你可以在各代码单元的用户配置区修改以下参数：
+Use Coinbase public candles:
 
-- Tickers | 股票列表
-- Drop threshold and recovery target | 下跌触发阈值与反弹目标
-- Strike, call cost, expiry date | 行权价、期权成本、到期日
-- Confidence level, risk-free rate, bootstrap count | 置信水平、无风险利率、bootstrap 次数
-- GBM path count and volatility method | GBM 路径数与波动率设定方式
+```bash
+python3 -m coinbase_bot.backtest --product BTC-USD --candles 500
+```
 
-For `update_reversal_csv.ipynb`, the main configurable inputs are:
+Or use your own CSV:
 
-对于 `update_reversal_csv.ipynb`，主要可调参数包括：
+```bash
+python3 -m coinbase_bot.backtest --product BTC-USD --csv /path/to/candles.csv
+```
 
-- Tickers | 股票列表
-- Start date and end date | 数据起止日期
-- Output directory | 输出目录
+The backtest is deliberately simple and should be used as a sanity check, not as proof that live performance will match.
 
-## Repository Files | 仓库文件
+## Dry Run
 
-- `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
-- `Reversal2.0.ipynb` | Main notebook for reversal and option analysis. | 反转与期权分析主 notebook。
-- `README.md` | Project documentation. | 项目说明文件。
+Dry-run does everything except place real orders:
 
-## Outputs | 输出结果
+```bash
+python3 -m coinbase_bot.bot --mode dry-run
+```
 
-Depending on the cell settings, the notebook can generate:
+Continuous dry-run loop:
 
-根据不同单元格设置，notebook 可以输出：
+```bash
+python3 -m coinbase_bot.bot --mode dry-run --loop --sleep-seconds 900
+```
 
-- Reversal success-rate comparisons | 反转成功率对比结果
-- Option profitability confidence intervals | 期权盈利置信区间
-- Rolling sigma charts | 滚动波动率图表
-- `success_rate_comparison.png`
+Dry-run state is written to:
+
+```text
+state/dry_run_state.json
+```
+
+## Live Trading
+
+Only switch to live mode after:
+
+1. Rotating the leaked API key.
+2. Installing dependencies.
+3. Running backtests.
+4. Watching dry-run behavior for multiple days.
+5. Reducing `BOT_PER_TRADE_QUOTE_FRACTION` if needed.
+
+Then:
+
+```bash
+python3 -m coinbase_bot.bot --mode live
+```
+
+Continuous live loop:
+
+```bash
+python3 -m coinbase_bot.bot --mode live --loop --sleep-seconds 900
+```
+
+Live state is written to:
+
+```text
+state/live_state.json
+```
+
+The bot sends a market buy order with an attached bracket order using Coinbase Advanced Trade order APIs.
+
+## Tests
+
+```bash
+python3 -m unittest discover -s tests
+```
+
+## Notebook Research
+
+The original research notebooks are still here:
+
+- `update_reversal_csv.ipynb`
+- `Reversal2.0.ipynb`
+
+They remain useful for signal research, but they are not execution code.
+
+## Notes
+
+- This bot assumes a dedicated quote balance and works best when you do not manually trade the same assets in the same account at the same time.
+- If you want stronger execution guarantees, the next upgrade should be WebSocket-based order and fill reconciliation instead of REST polling only.
+- If you want a safer rollout, start with only one product such as `BTC-USD`.
