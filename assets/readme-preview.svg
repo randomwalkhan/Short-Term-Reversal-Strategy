@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" fill="none">
+  <rect width="1200" height="720" fill="#07131A"/>
+  <defs>
+    <linearGradient id="hero" x1="96" y1="88" x2="1095" y2="646" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#0B4F6C"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="1104" height="624" rx="28" fill="url(#hero)"/>
+  <rect x="96" y="100" width="1008" height="520" rx="22" fill="#081018" stroke="#2A4A57"/>
+  <circle cx="138" cy="136" r="9" fill="#F97316"/>
+  <circle cx="168" cy="136" r="9" fill="#FBBF24"/>
+  <circle cx="198" cy="136" r="9" fill="#22C55E"/>
+  <text x="236" y="143" fill="#9FB3C8" font-family="Menlo, Monaco, Consolas, monospace" font-size="20">coinbase_bot live loop</text>
+
+  <text x="126" y="206" fill="#D7E3F1" font-family="Menlo, Monaco, Consolas, monospace" font-size="22">$ python3 -m coinbase_bot.bot --mode live --loop --sleep-seconds 900</text>
+  <text x="126" y="262" fill="#8FD3D8" font-family="Menlo, Monaco, Consolas, monospace" font-size="20">2026-03-09 19:59:37 INFO  BTC-USD: trend filter failed</text>
+  <text x="126" y="300" fill="#8FD3D8" font-family="Menlo, Monaco, Consolas, monospace" font-size="20">2026-03-09 19:59:38 INFO  ETH-USD: trend filter failed</text>
+  <text x="126" y="338" fill="#8FD3D8" font-family="Menlo, Monaco, Consolas, monospace" font-size="20">2026-03-09 19:59:39 INFO  SOL-USD: trend filter failed</text>
+  <text x="126" y="376" fill="#A7F3D0" font-family="Menlo, Monaco, Consolas, monospace" font-size="20">2026-03-09 19:59:39 INFO  Sleeping for 900 seconds before the next cycle</text>
+
+  <rect x="126" y="432" width="438" height="120" rx="16" fill="#0B1B24" stroke="#214352"/>
+  <text x="154" y="470" fill="#E7EEF8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">Risk Controls</text>
+  <text x="154" y="504" fill="#ADC3D9" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">ATR stop, cash reserve, cooldown, daily loss cap</text>
+  <text x="154" y="534" fill="#ADC3D9" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">single open position by default</text>
+
+  <rect x="590" y="432" width="486" height="120" rx="16" fill="#0B1B24" stroke="#214352"/>
+  <text x="618" y="470" fill="#E7EEF8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">Artifacts</text>
+  <text x="618" y="504" fill="#ADC3D9" font-family="Menlo, Monaco, Consolas, monospace" font-size="20">logs/live.log</text>
+  <text x="618" y="534" fill="#ADC3D9" font-family="Menlo, Monaco, Consolas, monospace" font-size="20">state/live_state.json</text>
+
+  <text x="96" y="646" fill="#86A5BA" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Coinbase Advanced Trade mean-reversion bot with backtest, dry-run, live loop, and rolling log files.</text>
+</svg>

@@ -3,5 +3,7 @@
 __pycache__/
 .pytest_cache/
 *.pyc
+*.log
 .DS_Store
+logs/*.log
 state/*.json

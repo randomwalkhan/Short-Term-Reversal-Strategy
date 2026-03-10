@@ -5,6 +5,8 @@ import logging
 import time
 import uuid
 from datetime import datetime, timedelta
+from logging.handlers import RotatingFileHandler
+from pathlib import Path
 
 from coinbase_bot.config import BotConfig, load_config
 from coinbase_bot.exchange import CoinbaseAdvancedClient, floor_to_increment
@@ -31,6 +33,32 @@ def _extract_order_id(payload: dict) -> str | None:
         except (KeyError, TypeError):
             continue
     return None
+
+
+def _setup_logging(mode: str) -> Path:
+    log_dir = Path("logs")
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_path = log_dir / f"{mode}.log"
+
+    formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
+    root_logger = logging.getLogger()
+    root_logger.setLevel(logging.INFO)
+    root_logger.handlers.clear()
+
+    stream_handler = logging.StreamHandler()
+    stream_handler.setFormatter(formatter)
+
+    file_handler = RotatingFileHandler(
+        log_path,
+        maxBytes=1_000_000,
+        backupCount=5,
+        encoding="utf-8",
+    )
+    file_handler.setFormatter(formatter)
+
+    root_logger.addHandler(stream_handler)
+    root_logger.addHandler(file_handler)
+    return log_path
 
 
 def _state_path_for_mode(base_path: Path, live: bool) -> Path:
@@ -239,10 +267,8 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s %(levelname)s %(message)s",
-    )
+    log_path = _setup_logging(args.mode)
+    LOGGER.info("Logging to %s", log_path)
 
     config = load_config()
     try:
