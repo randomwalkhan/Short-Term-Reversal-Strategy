@@ -1,8 +1,12 @@
-# Reversal 2.0
+# Reversal 2.1
 
-`Reversal2.0.ipynb` is a research notebook for short-term reversal analysis and option profitability confidence estimation.
+`Reversal2.1.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
 
-`Reversal2.0.ipynb` 是一个用于短期反转研究和期权盈利概率评估的研究型 notebook。
+`Reversal2.1.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
+
+`Reversal2.0.ipynb` is preserved as the previous version snapshot.
+
+`Reversal2.0.ipynb` 作为上一版本快照保留。
 
 ## Overview | 项目简介
 
@@ -22,8 +26,8 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
 
 1. Run `update_reversal_csv.ipynb` to download or refresh market data into `reversal_data/`.  
    先运行 `update_reversal_csv.ipynb`，把市场数据下载或更新到 `reversal_data/`。
-2. Run `Reversal2.0.ipynb` for reversal success analysis, option confidence intervals, GBM simulation, and rolling sigma plots.  
-   再运行 `Reversal2.0.ipynb`，完成反转成功率分析、期权置信区间、GBM 模拟和滚动波动率可视化。
+2. Run `Reversal2.1.ipynb` for reversal success analysis, live setup screening, option confidence intervals, GBM simulation, and rolling sigma plots.  
+   再运行 `Reversal2.1.ipynb`，完成反转成功率分析、实时 setup 筛选、期权置信区间、GBM 模拟和滚动波动率可视化。
 
 ## Notebook Contents | Notebook 内容
 
@@ -31,15 +35,19 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
    Measures how often a ticker recovers after a large intraday drop using CSV data under `reversal_data/`.  
    使用 `reversal_data/` 中的 CSV 数据，统计个股在出现较大日内跌幅后，未来若干交易日内发生反弹的成功率。
 
-2. `Black Scholes Methods for Profitability Confidence Interval`  
+2. `Live Reversal Setup Screener`  
+   Uses today's near-real-time price to infer the current intraday drawdown for each ticker, then measures how often similar or worse historical drops rebounded by a user-defined percentage within the next N trading days.  
+   使用当日近实时价格推断每个 ticker 当前的日内跌幅，再回看过去一段观察窗口内“至少同等严重”的历史下跌日，统计未来 N 个交易日内反弹到指定百分比的成功率。
+
+3. `Black Scholes Methods for Profitability Confidence Interval`  
    Estimates option profitability confidence with a Black-Scholes pricing framework and bootstrap simulations.  
    结合 Black-Scholes 定价框架和 bootstrap 模拟，估计期权策略收益区间及其置信水平。
 
-3. `Geometric Brownian Motion Methods for Profitability Confidence Interval`  
+4. `Geometric Brownian Motion Methods for Profitability Confidence Interval`  
    Simulates option outcomes with GBM paths under configurable drift and volatility assumptions.  
    在可调的漂移率和波动率假设下，使用几何布朗运动模拟期权收益结果。
 
-4. `Rolling Sigma`  
+5. `Rolling Sigma`  
    Plots rolling annualized volatility for selected tickers.  
    绘制所选股票的滚动年化波动率曲线。
 
@@ -81,7 +89,7 @@ Open the notebook from the repository root so `Path.cwd()` resolves correctly:
 请在仓库根目录打开 notebook，这样 `Path.cwd()` 才会正确指向项目目录：
 
 ```bash
-jupyter notebook Reversal2.0.ipynb
+jupyter notebook Reversal2.1.ipynb
 ```
 
 To refresh the CSV data first, open:
@@ -113,7 +121,8 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 ## Repository Files | 仓库文件
 
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
-- `Reversal2.0.ipynb` | Main notebook for reversal and option analysis. | 反转与期权分析主 notebook。
+- `Reversal2.1.ipynb` | Current main notebook for reversal, live setup screening, and option analysis. | 当前主 notebook，包含反转、实时 setup 筛选和期权分析。
+- `Reversal2.0.ipynb` | Previous notebook snapshot. | 上一版本 notebook 快照。
 - `README.md` | Project documentation. | 项目说明文件。
 
 ## Outputs | 输出结果
