@@ -1,8 +1,8 @@
-# Reversal 2.2
+# Reversal 2.2.1
 
-`Reversal2.2.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
+`Reversal2.2.1.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
 
-`Reversal2.2.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
+`Reversal2.2.1.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
 
 `Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
 
@@ -26,8 +26,8 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
 
 1. Run `update_reversal_csv.ipynb` to download or refresh market data into `reversal_data/`.  
    先运行 `update_reversal_csv.ipynb`，把市场数据下载或更新到 `reversal_data/`。
-2. Run `Reversal2.2.ipynb` for reversal success analysis, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
-   再运行 `Reversal2.2.ipynb`，完成反转成功率分析、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
+2. Run `Reversal2.2.1.ipynb` for reversal success analysis, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
+   再运行 `Reversal2.2.1.ipynb`，完成反转成功率分析、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
 
 ## Notebook Contents | Notebook 内容
 
@@ -36,8 +36,8 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
    使用 `reversal_data/` 中的 CSV 数据，统计个股在出现较大日内跌幅后，未来若干交易日内发生反弹的成功率。
 
 2. `Live Reversal Setup Screener`  
-   Uses today's near-real-time price to infer the current intraday drawdown for each ticker, then measures how often similar or worse historical drops rebounded by a user-defined percentage within the next N trading days.  
-   使用当日近实时价格推断每个 ticker 当前的日内跌幅，再回看过去一段观察窗口内“至少同等严重”的历史下跌日，统计未来 N 个交易日内反弹到指定百分比的成功率。
+   Uses today's near-real-time price to infer the current intraday drawdown for each ticker, then measures how often similar or worse historical drops recovered a user-defined fraction of the signal-day drawdown within the next N trading days.  
+   使用当日近实时价格推断每个 ticker 当前的日内跌幅，再回看过去一段观察窗口内“至少同等严重”的历史下跌日，统计未来 N 个交易日内回补 signal-day 跌幅指定比例的成功率。
 
 3. `Option Execution Planner for Call Entries`  
    Pulls option chains for the chosen ticker, filters toward near-ATM calls in the 21-40 trading-day range, and translates the strategy into reference entry, take-profit, and stop-loss levels.  
@@ -93,7 +93,7 @@ Open the notebook from the repository root so `Path.cwd()` resolves correctly:
 请在仓库根目录打开 notebook，这样 `Path.cwd()` 才会正确指向项目目录：
 
 ```bash
-jupyter notebook Reversal2.2.ipynb
+jupyter notebook Reversal2.2.1.ipynb
 ```
 
 To refresh the CSV data first, open:
@@ -125,7 +125,7 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 ## Repository Files | 仓库文件
 
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
-- `Reversal2.2.ipynb` | Current main notebook for reversal, live setup screening, call planning, and option analysis. | 当前主 notebook，包含反转、实时 setup 筛选、call 规划和期权分析。
+- `Reversal2.2.1.ipynb` | Current main notebook for reversal, live setup screening, call planning, and option analysis. | 当前主 notebook，包含反转、实时 setup 筛选、call 规划和期权分析。
 - `Reversal2.1.ipynb` | Earlier notebook snapshot. | 更早版本 notebook 快照。
 - `Reversal2.0.ipynb` | Previous notebook snapshot. | 上一版本 notebook 快照。
 - `README.md` | Project documentation. | 项目说明文件。
