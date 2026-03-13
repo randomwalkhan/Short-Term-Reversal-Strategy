@@ -1,8 +1,8 @@
-# Reversal 2.3.1
+# Reversal 2.3.2
 
-`Reversal2.3.1.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
+`Reversal2.3.2.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
 
-`Reversal2.3.1.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
+`Reversal2.3.2.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
 
 `Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
 
@@ -12,9 +12,9 @@
 
 ## Featured Result | 重点结果
 
-The staged-entry Reversal 2.3.1 backtest currently selects `qqq_only_filtered` as the best universe among the tested lists, with the highest win rate and a materially lower drawdown than the broad Nasdaq + SPY universe.
+The staged-entry Reversal 2.3.2 workflow currently defaults to `qqq_only_filtered`, and the tested backtest results still select it as the best universe among the compared lists, with the highest win rate and a materially lower drawdown than the broad Nasdaq + SPY universe.
 
-分批建仓版 Reversal 2.3.1 回测当前把 `qqq_only_filtered` 选为最优 universe：它在已测试股票池中胜率最高，而且回撤显著低于大而全的 Nasdaq + SPY universe。
+分批建仓版 Reversal 2.3.2 工作流当前默认使用 `qqq_only_filtered`，而且已测试回测结果仍然把它选为最优 universe：它在已测试股票池中胜率最高，而且回撤显著低于大而全的 Nasdaq + SPY universe。
 
 Full comparison summary:
 
@@ -45,9 +45,9 @@ This project focuses on identifying large intraday drawdowns, evaluating whether
 
 本项目主要研究三件事：识别日内大幅下跌、评估未来几个交易日内的价格反转概率，以及估计相关看涨期权交易的收益分布。
 
-The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic Nasdaq + SPY universe builder, and Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts.
+The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, and Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step.
 
-Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了基于 Nasdaq 官方 screener 数据和本地 SPY 成分股文件的动态股票池构建器，Reversal 2.3.1 则新增了分批建仓的回测和股票池横向比较脚本。
+Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，而 Reversal 2.3.2 则把默认研究流程切到 `qqq_only_filtered`，并在 notebook 内加入了数据刷新步骤。
 
 Before running the main analysis notebook, you can use `update_reversal_csv.ipynb` to download and refresh the input CSV files.
 
@@ -57,8 +57,8 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
 
 1. Run `update_reversal_csv.ipynb` to download or refresh market data into `reversal_data/`.  
    先运行 `update_reversal_csv.ipynb`，把市场数据下载或更新到 `reversal_data/`。
-2. Run `Reversal2.3.1.ipynb` for reversal success analysis, Nasdaq + SPY universe construction, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
-   再运行 `Reversal2.3.1.ipynb`，完成反转成功率分析、Nasdaq + SPY 股票池构建、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
+2. Run `Reversal2.3.2.ipynb` for QQQ-only universe construction, reversal success analysis, in-notebook CSV refresh, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
+   再运行 `Reversal2.3.2.ipynb`，完成 QQQ-only 股票池构建、反转成功率分析、notebook 内 CSV 刷新、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
 3. Run `compare_reversal_2_3_1_universes.py` if you want to compare backtest performance across different ticker lists under the staggered 50% position rule.  
    如果你想比较不同股票池在“单日最多新开一仓、每仓目标 50% 仓位”的新规则下的表现，再运行 `compare_reversal_2_3_1_universes.py`。
 
@@ -130,7 +130,7 @@ Open the notebook from the repository root so `Path.cwd()` resolves correctly:
 请在仓库根目录打开 notebook，这样 `Path.cwd()` 才会正确指向项目目录：
 
 ```bash
-jupyter notebook Reversal2.3.1.ipynb
+jupyter notebook Reversal2.3.2.ipynb
 ```
 
 To refresh the CSV data first, open:
@@ -162,7 +162,7 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 ## Repository Files | 仓库文件
 
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
-- `Reversal2.3.1.ipynb` | Current main notebook. | 当前主 notebook。
+- `Reversal2.3.2.ipynb` | Current main notebook. | 当前主 notebook。
 - `Reversal2.3.ipynb` | Previous notebook snapshot with the Nasdaq + SPY universe builder. | 上一版本 notebook 快照，包含 Nasdaq + SPY 股票池构建器。
 - `Reversal2.2.1.ipynb` | Previous notebook snapshot. | 上一版本 notebook 快照。
 - `Reversal2.1.ipynb` | Earlier notebook snapshot. | 更早版本 notebook 快照。
