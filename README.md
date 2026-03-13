@@ -12,27 +12,27 @@ Update note: Reversal 2.3.3 filters out names with fewer than 10 historical samp
 
 `Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` 和 `Reversal2.0.ipynb` 作为更早版本快照保留。
 
-![Reversal 2.3.1 Universe Comparison](assets/reversal_2_3_1_universe_comparison.png)
+![Reversal 2.3.3 Universe Comparison](assets/reversal_2_3_3_universe_comparison.png)
 
 ## Featured Result | 重点结果
 
-The staged-entry Reversal 2.3.3 workflow currently defaults to `qqq_only_filtered`, and the tested backtest results still select it as the best universe among the compared lists, with the highest win rate and a materially lower drawdown than the broad Nasdaq + SPY universe.
+The staged-entry Reversal 2.3.3 workflow currently defaults to `qqq_only_filtered`, and the latest five-universe comparison with a `signal_days > 10` filter still selects it as the best universe, with the highest win rate, strongest return, and a materially lower drawdown than the broader filtered universes.
 
-分批建仓版 Reversal 2.3.3 工作流当前默认使用 `qqq_only_filtered`，而且已测试回测结果仍然把它选为最优 universe：它在已测试股票池中胜率最高，而且回撤显著低于大而全的 Nasdaq + SPY universe。
+分批建仓版 Reversal 2.3.3 工作流当前默认使用 `qqq_only_filtered`，而且在最新一轮加入 `signal_days > 10` 过滤的五组 universe 对比里，它依然是最优选择：胜率最高、收益最强，而且回撤显著低于更宽的 filtered universe。
 
 Full comparison summary:
 
 完整对比汇总：
 
-- [reversal_2_3_1_universe_comparison.csv](results/reversal_2_3_1_universe_comparison/reversal_2_3_1_universe_comparison.csv)
+- [reversal_2_3_3_universe_comparison.csv](results/reversal_2_3_3_universe_comparison/reversal_2_3_3_universe_comparison.csv)
 
-| Universe | Win Rate | Return | Max DD | Equity Output | Trade Output |
-|---|---:|---:|---:|---|---|
-| `qqq_only_filtered` | `60.66%` | `+824.16%` | `-37.61%` | [equity](results/reversal_2_3_1_universe_comparison/qqq_only_filtered_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/qqq_only_filtered_trades.csv) |
-| `qqq_spy_filtered` | `58.02%` | `+388.40%` | `-37.59%` | [equity](results/reversal_2_3_1_universe_comparison/qqq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/qqq_spy_filtered_trades.csv) |
-| `spy_only_filtered` | `57.61%` | `+346.38%` | `-37.48%` | [equity](results/reversal_2_3_1_universe_comparison/spy_only_filtered_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/spy_only_filtered_trades.csv) |
-| `legacy_watchlist_11` | `55.45%` | `+137.51%` | `-30.87%` | [equity](results/reversal_2_3_1_universe_comparison/legacy_watchlist_11_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/legacy_watchlist_11_trades.csv) |
-| `nasdaq_spy_filtered` | `53.66%` | `+93.47%` | `-50.96%` | [equity](results/reversal_2_3_1_universe_comparison/nasdaq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/nasdaq_spy_filtered_trades.csv) |
+| Universe | Signal-Filtered Size | Win Rate | Return | Max DD | Equity Output | Trade Output |
+|---|---:|---:|---:|---:|---|---|
+| `qqq_only_filtered` | `63` | `61.43%` | `+610.38%` | `-31.55%` | [equity](results/reversal_2_3_3_universe_comparison/qqq_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/qqq_only_filtered_trades.csv) |
+| `nasdaq_only_filtered` | `650` | `55.19%` | `+147.30%` | `-65.59%` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_trades.csv) |
+| `qqq_spy_filtered` | `249` | `55.07%` | `+125.54%` | `-42.87%` | [equity](results/reversal_2_3_3_universe_comparison/qqq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/qqq_spy_filtered_trades.csv) |
+| `nasdaq_spy_filtered` | `796` | `54.92%` | `+128.43%` | `-60.48%` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_trades.csv) |
+| `spy_only_filtered` | `239` | `53.81%` | `+62.64%` | `-51.67%` | [equity](results/reversal_2_3_3_universe_comparison/spy_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/spy_only_filtered_trades.csv) |
 
 ## License | 版权
 
@@ -49,9 +49,9 @@ This project focuses on identifying large intraday drawdowns, evaluating whether
 
 本项目主要研究三件事：识别日内大幅下跌、评估未来几个交易日内的价格反转概率，以及估计相关看涨期权交易的收益分布。
 
-The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, and Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output.
+The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, and Reversal 2.3.3 adds minimum-sample filtering, top-15 ranked output, and an updated five-universe comparison under `signal_days > 10`.
 
-Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，而 Reversal 2.3.3 则进一步加入了最小样本过滤和前 15 名输出。
+Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，而 Reversal 2.3.3 则进一步加入了最小样本过滤、前 15 名输出，以及基于 `signal_days > 10` 的五组 universe 新对比。
 
 Before running the main analysis notebook, you can use `update_reversal_csv.ipynb` to download and refresh the input CSV files.
 
@@ -63,8 +63,8 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
    先运行 `update_reversal_csv.ipynb`，把市场数据下载或更新到 `reversal_data/`。
 2. Run `Reversal2.3.3.ipynb` for QQQ-only universe construction, reversal success analysis, in-notebook CSV refresh, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
    再运行 `Reversal2.3.3.ipynb`，完成 QQQ-only 股票池构建、反转成功率分析、notebook 内 CSV 刷新、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
-3. Run `compare_reversal_2_3_1_universes.py` if you want to compare backtest performance across different ticker lists under the staggered 50% position rule.  
-   如果你想比较不同股票池在“单日最多新开一仓、每仓目标 50% 仓位”的新规则下的表现，再运行 `compare_reversal_2_3_1_universes.py`。
+3. Run `compare_reversal_2_3_3_universes.py` if you want to compare backtest performance across the five filtered universes after applying the `signal_days > 10` gate.  
+   如果你想在加上 `signal_days > 10` 过滤之后，比较五组 filtered universe 在当前分批 50% 建仓规则下的表现，再运行 `compare_reversal_2_3_3_universes.py`。
 
 ## Notebook Contents | Notebook 内容
 
@@ -72,9 +72,9 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
    Measures how often a ticker recovers after a large intraday drop using CSV data under `reversal_data/`.  
    使用 `reversal_data/` 中的 CSV 数据，统计个股在出现较大日内跌幅后，未来若干交易日内发生反弹的成功率。
 
-2. `Nasdaq + SPY Universe Builder`  
-   Builds a broader candidate pool from current Nasdaq listings plus SPY constituents, filtered by minimum market cap and price.  
-   从当前 Nasdaq 上市股票和 SPY 成分股中构建更大的候选池，并按最小市值和股价进行过滤。
+2. `QQQ-Only Universe Builder`  
+   Builds the default `qqq_only_filtered` candidate pool from local QQQ constituents, filtered by minimum market cap and price.  
+   基于本地 QQQ 成分股构建默认的 `qqq_only_filtered` 候选池，并按最小市值和股价进行过滤。
 
 3. `Live Reversal Setup Screener`  
    Uses today's near-real-time price to infer the current intraday drawdown for each ticker, then measures how often similar or worse historical drops recovered a user-defined fraction of the signal-day drawdown within the next N trading days.  
@@ -166,6 +166,7 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 ## Repository Files | 仓库文件
 
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
+- `update_reversal_data.py` | Refresh `qqq_only_filtered` CSV datasets from Yahoo Finance. | 从 Yahoo Finance 刷新 `qqq_only_filtered` 所需的 CSV 数据。
 - `Reversal2.3.3.ipynb` | Current main notebook. | 当前主 notebook。
 - `Reversal2.3.ipynb` | Previous notebook snapshot with the Nasdaq + SPY universe builder. | 上一版本 notebook 快照，包含 Nasdaq + SPY 股票池构建器。
 - `Reversal2.2.1.ipynb` | Previous notebook snapshot. | 上一版本 notebook 快照。
@@ -175,6 +176,7 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 - `backtest_reversal_2_3_1_calls.py` | Reversal 2.3.1 call backtest with staggered 50% entries and up to two concurrent positions. | Reversal 2.3.1 的 call 回测脚本，采用分批 50% 建仓和最多两个同时持仓。
 - `backtest_reversal_2_3_3_calls.py` | Reversal 2.3.3 call backtest with `qqq_only_filtered` and a minimum 10-match signal gate. | Reversal 2.3.3 的 call 回测脚本，默认使用 `qqq_only_filtered`，并要求至少 10 个历史匹配样本。
 - `compare_reversal_2_3_1_universes.py` | Compare Reversal 2.3.1 across multiple ticker-list universes. | 比较 Reversal 2.3.1 在多个股票池下的表现。
+- `compare_reversal_2_3_3_universes.py` | Compare five filtered universes under Reversal 2.3.3 after applying `signal_days > 10`. | 在 `signal_days > 10` 过滤后，比较 Reversal 2.3.3 下五组 filtered universe 的表现。
 - `reversal_universe.py` | Shared Nasdaq + SPY universe builder used by the notebook and backtest. | notebook 和回测脚本共用的 Nasdaq + SPY 股票池构建模块。
 - `spy_tickers.txt` | Local SPY constituents source used when building the broad universe. | 构建广义股票池时使用的本地 SPY 成分股文件。
 - `qqq_tickers.txt` | Local QQQ constituents source used for universe comparison. | 股票池比较时使用的本地 QQQ 成分股文件。
