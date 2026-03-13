@@ -49,10 +49,10 @@ def _parse_number(value: object) -> float | None:
         return None
 
 
-def load_spy_tickers(spy_tickers_path: str | Path) -> set[str]:
-    path = Path(spy_tickers_path)
+def load_local_tickers(ticker_path: str | Path) -> set[str]:
+    path = Path(ticker_path)
     if not path.exists():
-        raise FileNotFoundError(f"SPY ticker file not found: {path}")
+        raise FileNotFoundError(f"Ticker file not found: {path}")
 
     tickers: set[str] = set()
     for line in path.read_text(encoding="utf-8").splitlines():
@@ -60,6 +60,10 @@ def load_spy_tickers(spy_tickers_path: str | Path) -> set[str]:
         if ticker and ticker != "-" and TICKER_RE.match(ticker):
             tickers.add(ticker)
     return tickers
+
+
+def load_spy_tickers(spy_tickers_path: str | Path) -> set[str]:
+    return load_local_tickers(spy_tickers_path)
 
 
 def fetch_exchange_rows(exchange: str) -> pd.DataFrame:
@@ -75,16 +79,10 @@ def fetch_exchange_rows(exchange: str) -> pd.DataFrame:
     return df
 
 
-def build_nasdaq_spy_universe(
+def build_filtered_listing_table(
     min_market_cap: float = 1e9,
     min_price: float = 10.0,
-    spy_tickers_path: str | Path | None = None,
-    save_path: str | Path | None = None,
 ) -> pd.DataFrame:
-    if spy_tickers_path is None:
-        spy_tickers_path = Path.cwd() / "spy_tickers.txt"
-
-    spy_tickers = load_spy_tickers(spy_tickers_path)
     frames = [fetch_exchange_rows(exchange) for exchange in EXCHANGES]
     listings = pd.concat(frames, ignore_index=True)
 
@@ -102,9 +100,27 @@ def build_nasdaq_spy_universe(
     for pattern in NAME_EXCLUDE_PATTERNS:
         eligible &= ~listings["name_lower"].str.contains(pattern, na=False)
 
+    return listings.loc[eligible].copy()
+
+
+def build_nasdaq_spy_universe(
+    min_market_cap: float = 1e9,
+    min_price: float = 10.0,
+    spy_tickers_path: str | Path | None = None,
+    save_path: str | Path | None = None,
+) -> pd.DataFrame:
+    if spy_tickers_path is None:
+        spy_tickers_path = Path.cwd() / "spy_tickers.txt"
+
+    spy_tickers = load_spy_tickers(spy_tickers_path)
+    listings = build_filtered_listing_table(
+        min_market_cap=min_market_cap,
+        min_price=min_price,
+    )
+
     in_spy = listings["ticker"].isin(spy_tickers)
     in_nasdaq = listings["exchange"].eq("NASDAQ")
-    selected = listings.loc[eligible & (in_nasdaq | in_spy)].copy()
+    selected = listings.loc[in_nasdaq | in_spy].copy()
 
     selected["source"] = selected.apply(
         lambda row: "NASDAQ+SPY" if row["exchange"] == "NASDAQ" and row["ticker"] in spy_tickers
@@ -124,3 +140,35 @@ def build_nasdaq_spy_universe(
         universe.to_csv(save_path, index=False)
 
     return universe
+
+
+def build_named_universe_map(
+    min_market_cap: float = 1e9,
+    min_price: float = 10.0,
+    spy_tickers_path: str | Path | None = None,
+    qqq_tickers_path: str | Path | None = None,
+) -> dict[str, list[str]]:
+    if spy_tickers_path is None:
+        spy_tickers_path = Path.cwd() / "spy_tickers.txt"
+    if qqq_tickers_path is None:
+        qqq_tickers_path = Path.cwd() / "qqq_tickers.txt"
+
+    filtered = build_filtered_listing_table(
+        min_market_cap=min_market_cap,
+        min_price=min_price,
+    )
+    filtered["ticker"] = filtered["ticker"].astype(str)
+
+    spy_tickers = load_local_tickers(spy_tickers_path)
+    qqq_tickers = load_local_tickers(qqq_tickers_path)
+    nasdaq_tickers = set(filtered.loc[filtered["exchange"].eq("NASDAQ"), "ticker"])
+    spy_filtered = set(filtered.loc[filtered["ticker"].isin(spy_tickers), "ticker"])
+    qqq_filtered = set(filtered.loc[filtered["ticker"].isin(qqq_tickers), "ticker"])
+
+    return {
+        "nasdaq_spy_filtered": sorted(nasdaq_tickers | spy_filtered),
+        "nasdaq_only_filtered": sorted(nasdaq_tickers),
+        "spy_only_filtered": sorted(spy_filtered),
+        "qqq_spy_filtered": sorted(qqq_filtered | spy_filtered),
+        "qqq_only_filtered": sorted(qqq_filtered),
+    }
