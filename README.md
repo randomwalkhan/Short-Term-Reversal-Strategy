@@ -16,6 +16,20 @@ The staged-entry Reversal 2.3.1 backtest currently selects `qqq_only_filtered` a
 
 分批建仓版 Reversal 2.3.1 回测当前把 `qqq_only_filtered` 选为最优 universe：它在已测试股票池中胜率最高，而且回撤显著低于大而全的 Nasdaq + SPY universe。
 
+Full comparison summary:
+
+完整对比汇总：
+
+- [reversal_2_3_1_universe_comparison.csv](results/reversal_2_3_1_universe_comparison/reversal_2_3_1_universe_comparison.csv)
+
+| Universe | Win Rate | Return | Max DD | Equity Output | Trade Output |
+|---|---:|---:|---:|---|---|
+| `qqq_only_filtered` | `60.66%` | `+824.16%` | `-37.61%` | [equity](results/reversal_2_3_1_universe_comparison/qqq_only_filtered_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/qqq_only_filtered_trades.csv) |
+| `qqq_spy_filtered` | `58.02%` | `+388.40%` | `-37.59%` | [equity](results/reversal_2_3_1_universe_comparison/qqq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/qqq_spy_filtered_trades.csv) |
+| `spy_only_filtered` | `57.61%` | `+346.38%` | `-37.48%` | [equity](results/reversal_2_3_1_universe_comparison/spy_only_filtered_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/spy_only_filtered_trades.csv) |
+| `legacy_watchlist_11` | `55.45%` | `+137.51%` | `-30.87%` | [equity](results/reversal_2_3_1_universe_comparison/legacy_watchlist_11_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/legacy_watchlist_11_trades.csv) |
+| `nasdaq_spy_filtered` | `53.66%` | `+93.47%` | `-50.96%` | [equity](results/reversal_2_3_1_universe_comparison/nasdaq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/nasdaq_spy_filtered_trades.csv) |
+
 ## Overview | 项目简介
 
 This project focuses on identifying large intraday drawdowns, evaluating whether prices reverse over the next few trading days, and estimating the return distribution of related call-option trades.
