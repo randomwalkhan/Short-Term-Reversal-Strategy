@@ -30,6 +30,15 @@ Full comparison summary:
 | `legacy_watchlist_11` | `55.45%` | `+137.51%` | `-30.87%` | [equity](results/reversal_2_3_1_universe_comparison/legacy_watchlist_11_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/legacy_watchlist_11_trades.csv) |
 | `nasdaq_spy_filtered` | `53.66%` | `+93.47%` | `-50.96%` | [equity](results/reversal_2_3_1_universe_comparison/nasdaq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_1_universe_comparison/nasdaq_spy_filtered_trades.csv) |
 
+## License | 版权
+
+This repository is released under an explicit `All Rights Reserved` copyright
+notice. It is not an open-source project, and reuse, copying, modification,
+distribution, or derivative work creation requires prior written permission.
+
+本仓库采用明确的 `All Rights Reserved` 版权声明，并非开源项目；复制、修改、分发、
+再发布或基于本仓库创建衍生作品，均需事先获得书面许可。
+
 ## Overview | 项目简介
 
 This project focuses on identifying large intraday drawdowns, evaluating whether prices reverse over the next few trading days, and estimating the return distribution of related call-option trades.
