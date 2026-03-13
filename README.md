@@ -8,6 +8,14 @@
 
 `Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` 和 `Reversal2.0.ipynb` 作为更早版本快照保留。
 
+![Reversal 2.3.1 Universe Comparison](assets/reversal_2_3_1_universe_comparison.png)
+
+## Featured Result | 重点结果
+
+The staged-entry Reversal 2.3.1 backtest currently selects `qqq_only_filtered` as the best universe among the tested lists, with the highest win rate and a materially lower drawdown than the broad Nasdaq + SPY universe.
+
+分批建仓版 Reversal 2.3.1 回测当前把 `qqq_only_filtered` 选为最优 universe：它在已测试股票池中胜率最高，而且回撤显著低于大而全的 Nasdaq + SPY universe。
+
 ## Overview | 项目简介
 
 This project focuses on identifying large intraday drawdowns, evaluating whether prices reverse over the next few trading days, and estimating the return distribution of related call-option trades.
