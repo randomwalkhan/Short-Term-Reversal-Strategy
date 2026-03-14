@@ -1,28 +1,51 @@
-# Reversal 2.3.3
+# Reversal 2.4
 
-`Reversal2.3.3.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
+`Reversal2.4.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
 
-`Reversal2.3.3.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
+`Reversal2.4.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
 
-Update note: Reversal 2.3.3 filters out names with fewer than 10 historical samples and trims the notebook ranking outputs to the top 15 tickers.
+Update note: Reversal 2.4 keeps `qqq_only_filtered` as the chosen universe and upgrades the default observation window factor from `252d` to `60d`.
 
-更新说明：Reversal 2.3.3 过滤掉历史样本数少于 10 的 ticker，并把 notebook 的排名输出收敛到前 15 名。
+更新说明：Reversal 2.4 保留 `qqq_only_filtered` 作为最终 universe，并把默认观察窗口因子从 `252d` 升级为 `60d`。
 
-`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
+`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
 
-`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` 和 `Reversal2.0.ipynb` 作为更早版本快照保留。
+`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` 和 `Reversal2.0.ipynb` 作为更早版本快照保留。
 
 ![Reversal 2.3.3 Universe Comparison](assets/reversal_2_3_3_universe_comparison.png)
 
 ## Featured Result | 重点结果
 
-The official Reversal 2.3.3 backtest definition uses the original dynamic trade-level filter: each entry must satisfy the rolling `matched_signals >= 10` gate. Under that official definition, the latest five-universe comparison still selects `qqq_only_filtered` as the best universe, with `+789.12%` total return, `-35.60%` max drawdown, and `60.41%` win rate.
+The official Reversal 2.4 backtest definition keeps the original dynamic trade-level filter, `matched_signals >= 10`, and upgrades the historical lookback window to `60` trading days. Under that official definition, the current `qqq_only_filtered` backtest result is `+1006.23%` total return, `-29.88%` max drawdown, and `61.32%` win rate.
 
-Reversal 2.3.3 的官方回测定义沿用最初的动态交易级过滤：每一笔入场都必须满足滚动的 `matched_signals >= 10` 门槛。在这个官方定义下，最新五组 universe 对比依然把 `qqq_only_filtered` 选为最优：总收益 `+789.12%`、最大回撤 `-35.60%`、胜率 `60.41%`。
+Reversal 2.4 的官方回测定义保留最初的动态交易级过滤 `matched_signals >= 10`，并把历史观察窗口升级为 `60` 个交易日。在这个官方定义下，当前 `qqq_only_filtered` 主回测结果为：总收益 `+1006.23%`、最大回撤 `-29.88%`、胜率 `61.32%`。
 
-Full comparison summary:
+- [Reversal 2.4 equity](backtest_outputs/reversal_2_4_call_backtest_equity.csv)
+- [Reversal 2.4 trades](backtest_outputs/reversal_2_4_call_backtest_trades.csv)
+- [Reversal 2.4 plot](backtest_outputs/reversal_2_4_call_backtest_equity.png)
 
-完整对比汇总：
+![Reversal 2.4 Call Backtest](assets/reversal_2_4_call_backtest_equity.png)
+
+## Optimization Path | 优化路径
+
+The current strategy structure is intentionally sequential:
+
+当前策略优化逻辑是明确分阶段推进的：
+
+1. Select the best universe first.  
+   先确定最优 universe。
+2. Hold that universe fixed.  
+   固定 universe，不再混入新的 universe 变化。
+3. Compare factor / signal refinements on top of the chosen universe.  
+   在选定 universe 之上比较新的因子或信号改造。
+4. Promote the best-performing factor into the next official version.  
+   把表现最好的因子升级为下一个正式版本。
+
+### Stage 1: Universe Selection | 第一阶段：选 Universe
+
+Reversal 2.3.3 compared five universes under the original dynamic `matched_signals >= 10` rule. The conclusion was clear: `qqq_only_filtered` remained the best universe and is therefore preserved in Reversal 2.4.
+
+Reversal 2.3.3 在原始动态 `matched_signals >= 10` 规则下比较了五组 universe，结论非常明确：`qqq_only_filtered` 仍然最优，因此在 Reversal 2.4 中被保留。
 
 - [reversal_2_3_3_universe_comparison.csv](results/reversal_2_3_3_universe_comparison/reversal_2_3_3_universe_comparison.csv)
 
@@ -33,6 +56,32 @@ Full comparison summary:
 | `spy_only_filtered` | `491` | `54.36%` | `+101.82%` | `-42.73%` | [equity](results/reversal_2_3_3_universe_comparison/spy_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/spy_only_filtered_trades.csv) |
 | `nasdaq_spy_filtered` | `1159` | `52.03%` | `+21.99%` | `-50.35%` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_trades.csv) |
 | `nasdaq_only_filtered` | `826` | `50.81%` | `-9.15%` | `-47.31%` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_trades.csv) |
+
+### Stage 2: Factor Selection | 第二阶段：选 Factor
+
+After fixing the universe as `qqq_only_filtered`, the article-inspired comparison script tested volume rescaling, PCA de-factoring, kappa / s-score filtering, and shorter rolling windows. The `60d` window was the strongest factor upgrade and is therefore promoted into Reversal 2.4.
+
+在把 universe 固定为 `qqq_only_filtered` 之后，论文启发的对比脚本继续测试了成交量 rescaling、PCA 去市场因素、kappa / s-score 过滤以及更短滚动窗口。最终 `60d` 窗口是最强的因子升级，因此被提升为 Reversal 2.4 的正式默认设置。
+
+Note: the universe-selection table above is preserved from the earlier published 2.3.3 report, while the factor-comparison table below is a fresh rerun on `2026-03-13`; that is why the `Original 2.3.3` baseline in the factor table is `+597.21%` instead of the older `+789.12%` record.
+
+说明：上面的 universe 选择表保留的是之前发布的 2.3.3 历史结果，而下面的 factor 对比表是我在 `2026-03-13` 重新跑出的最新结果，所以因子表里的 `Original 2.3.3` 基线是 `+597.21%`，而不是更早记录中的 `+789.12%`。
+
+- [article variants summary](backtest_outputs/reversal_article_variants/reversal_article_variants_summary.csv)
+- [article variants equity](backtest_outputs/reversal_article_variants/reversal_article_variants_equity.csv)
+- [article variants trades](backtest_outputs/reversal_article_variants/reversal_article_variants_trades.csv)
+
+| Variant | Return | Max DD | Win Rate | Trades |
+|---|---:|---:|---:|---:|
+| `Window 60d` | `+1006.23%` | `-29.88%` | `61.32%` | `243` |
+| `Original 2.3.3` | `+597.21%` | `-36.51%` | `59.35%` | `246` |
+| `Add Volume` | `+339.00%` | `-37.47%` | `57.26%` | `241` |
+| `Window 126d` | `+314.68%` | `-35.56%` | `57.21%` | `229` |
+| `Kappa / s-score` | `+213.04%` | `-30.07%` | `56.68%` | `217` |
+| `Window 252d + Recent Weight` | `+206.37%` | `-30.94%` | `57.00%` | `207` |
+| `PCA Defactored` | `+19.71%` | `-42.89%` | `52.29%` | `218` |
+
+![Reversal 2.4 Article Variants](assets/reversal_2_4_article_variants.png)
 
 ## License | 版权
 
@@ -49,9 +98,9 @@ This project focuses on identifying large intraday drawdowns, evaluating whether
 
 本项目主要研究三件事：识别日内大幅下跌、评估未来几个交易日内的价格反转概率，以及估计相关看涨期权交易的收益分布。
 
-The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, and Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output while keeping the official backtest and universe comparison on the original dynamic `matched_signals` gate.
+The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output, and Reversal 2.4 promotes the `60d` observation window into the default research and official backtest setup.
 
-Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，而 Reversal 2.3.3 则进一步加入了最小样本过滤、前 15 名输出，同时保留最初的动态 `matched_signals` 过滤作为官方回测与五组 universe 对比口径。
+Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，Reversal 2.3.3 进一步加入了最小样本过滤和前 15 名输出，而 Reversal 2.4 则把 `60d` 观察窗口正式提升为默认研究与官方回测设定。
 
 Before running the main analysis notebook, you can use `update_reversal_csv.ipynb` to download and refresh the input CSV files.
 
@@ -61,10 +110,14 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
 
 1. Run `update_reversal_csv.ipynb` to download or refresh market data into `reversal_data/`.  
    先运行 `update_reversal_csv.ipynb`，把市场数据下载或更新到 `reversal_data/`。
-2. Run `Reversal2.3.3.ipynb` for QQQ-only universe construction, reversal success analysis, in-notebook CSV refresh, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
-   再运行 `Reversal2.3.3.ipynb`，完成 QQQ-only 股票池构建、反转成功率分析、notebook 内 CSV 刷新、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
-3. Run `compare_reversal_2_3_3_universes.py` if you want the official five-universe comparison under the dynamic `matched_signals >= 10` filter.  
-   如果你想看官方五组 universe 对比，再运行 `compare_reversal_2_3_3_universes.py`；这部分使用的是动态 `matched_signals >= 10` 过滤。
+2. Run `Reversal2.4.ipynb` for QQQ-only universe construction, reversal success analysis, in-notebook CSV refresh, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
+   再运行 `Reversal2.4.ipynb`，完成 QQQ-only 股票池构建、反转成功率分析、notebook 内 CSV 刷新、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
+3. Run `backtest_reversal_2_4_calls.py` for the official Reversal 2.4 call backtest under `qqq_only_filtered + matched_signals >= 10 + 60d`.  
+   如果你想跑官方 Reversal 2.4 主回测，再运行 `backtest_reversal_2_4_calls.py`；这部分使用 `qqq_only_filtered + matched_signals >= 10 + 60d`。
+4. Run `compare_reversal_2_3_3_universes.py` if you want to revisit the universe-selection stage under the original dynamic `matched_signals >= 10` filter.  
+   如果你想回看 universe 选择阶段，再运行 `compare_reversal_2_3_3_universes.py`；这部分使用原始动态 `matched_signals >= 10` 过滤。
+5. Run `backtest_reversal_article_variants.py` if you want to reproduce the article-inspired factor comparison that selected the `60d` window.  
+   如果你想复现论文启发的因子对比并验证为什么最终选择 `60d` 窗口，再运行 `backtest_reversal_article_variants.py`。
 
 ## Notebook Contents | Notebook 内容
 
@@ -134,7 +187,7 @@ Open the notebook from the repository root so `Path.cwd()` resolves correctly:
 请在仓库根目录打开 notebook，这样 `Path.cwd()` 才会正确指向项目目录：
 
 ```bash
-jupyter notebook Reversal2.3.3.ipynb
+jupyter notebook Reversal2.4.ipynb
 ```
 
 To refresh the CSV data first, open:
@@ -167,7 +220,8 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
 - `update_reversal_data.py` | Refresh `qqq_only_filtered` CSV datasets from Yahoo Finance. | 从 Yahoo Finance 刷新 `qqq_only_filtered` 所需的 CSV 数据。
-- `Reversal2.3.3.ipynb` | Current main notebook. | 当前主 notebook。
+- `Reversal2.4.ipynb` | Current main notebook with the default `60d` observation window. | 当前主 notebook，默认使用 `60d` 观察窗口。
+- `Reversal2.3.3.ipynb` | Previous main notebook snapshot before the `60d` window promotion. | 升级到 `60d` 窗口之前的上一版主 notebook 快照。
 - `Reversal2.3.ipynb` | Previous notebook snapshot with the Nasdaq + SPY universe builder. | 上一版本 notebook 快照，包含 Nasdaq + SPY 股票池构建器。
 - `Reversal2.2.1.ipynb` | Previous notebook snapshot. | 上一版本 notebook 快照。
 - `Reversal2.1.ipynb` | Earlier notebook snapshot. | 更早版本 notebook 快照。
@@ -175,6 +229,8 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 - `backtest_reversal_2_3_calls.py` | Reversal 2.3 call backtest with top-2 daily ranking, weighted sizing, and broad universe selection. | Reversal 2.3 的 call 回测脚本，包含每日前二打分、加权仓位和广义股票池。
 - `backtest_reversal_2_3_1_calls.py` | Reversal 2.3.1 call backtest with staggered 50% entries and up to two concurrent positions. | Reversal 2.3.1 的 call 回测脚本，采用分批 50% 建仓和最多两个同时持仓。
 - `backtest_reversal_2_3_3_calls.py` | Official Reversal 2.3.3 call backtest with `qqq_only_filtered` and the original dynamic `matched_signals >= 10` trade gate. | Reversal 2.3.3 的官方 call 回测脚本，默认使用 `qqq_only_filtered`，并沿用最初的动态 `matched_signals >= 10` 交易门槛。
+- `backtest_reversal_2_4_calls.py` | Official Reversal 2.4 call backtest with the promoted `60d` observation window. | Reversal 2.4 的官方 call 回测脚本，使用提升后的 `60d` 观察窗口。
+- `backtest_reversal_article_variants.py` | Article-inspired factor comparison across volume, PCA, kappa / s-score, and rolling-window variants. | 论文启发的因子比较脚本，横向测试成交量、PCA、kappa / s-score 和不同滚动窗口。
 - `compare_reversal_2_3_1_universes.py` | Compare Reversal 2.3.1 across multiple ticker-list universes. | 比较 Reversal 2.3.1 在多个股票池下的表现。
 - `compare_reversal_2_3_3_universes.py` | Official five-universe comparison under Reversal 2.3.3 using the dynamic `matched_signals >= 10` filter. | Reversal 2.3.3 下的官方五组 universe 对比脚本，使用动态 `matched_signals >= 10` 过滤。
 - `reversal_universe.py` | Shared Nasdaq + SPY universe builder used by the notebook and backtest. | notebook 和回测脚本共用的 Nasdaq + SPY 股票池构建模块。
