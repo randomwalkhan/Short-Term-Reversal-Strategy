@@ -35,8 +35,8 @@ MIN_MARKET_CAP = 1e9
 MIN_PRICE = 10.0
 DOWNLOAD_BATCH_SIZE = 100
 
-OUTPUT_DIR = Path.cwd() / "backtest_outputs"
-PLOT_PATH = OUTPUT_DIR / "reversal_2_4_call_backtest_equity.png"
+OUTPUT_DIR = Path.cwd() / "results" / "reversal_2_4"
+PLOT_PATH = Path.cwd() / "assets" / "reversal_2_4_call_backtest_equity.png"
 TRADES_PATH = OUTPUT_DIR / "reversal_2_4_call_backtest_trades.csv"
 EQUITY_PATH = OUTPUT_DIR / "reversal_2_4_call_backtest_equity.csv"
 
@@ -426,6 +426,7 @@ def summarize_backtest(label: str, tickers: list[str], history_cache: dict[str, 
 
 def plot_equity_curve(equity_df: pd.DataFrame, trades_df: pd.DataFrame, label: str) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
     plt.figure(figsize=(12, 7))
     plt.plot(equity_df["date"], equity_df["equity"], linewidth=2, label=label)
     plt.axhline(INITIAL_CAPITAL, color="gray", linestyle="--", alpha=0.5, label="Initial Capital")
@@ -449,6 +450,7 @@ def main() -> None:
     equity_df, trades_df, summary = summarize_backtest("qqq_only_filtered", tickers, history_cache)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
     equity_df.to_csv(EQUITY_PATH, index=False)
     trades_df.to_csv(TRADES_PATH, index=False)
     plot_equity_curve(equity_df, trades_df, "Reversal 2.4 Call Backtest")

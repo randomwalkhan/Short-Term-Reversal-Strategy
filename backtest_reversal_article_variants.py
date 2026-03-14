@@ -41,8 +41,8 @@ VOLUME_TRAILING_WINDOW = 60
 RECENT_WEIGHT_HALF_LIFE = 60.0
 QQQ_PROXY = "QQQ"
 
-OUTPUT_DIR = Path.cwd() / "backtest_outputs" / "reversal_article_variants"
-PLOT_PATH = OUTPUT_DIR / "reversal_article_variants_equity.png"
+OUTPUT_DIR = Path.cwd() / "results" / "reversal_2_4_article_variants"
+PLOT_PATH = Path.cwd() / "assets" / "reversal_2_4_article_variants.png"
 SUMMARY_PATH = OUTPUT_DIR / "reversal_article_variants_summary.csv"
 CURVES_PATH = OUTPUT_DIR / "reversal_article_variants_equity.csv"
 
@@ -793,6 +793,7 @@ def build_variants() -> list[VariantConfig]:
 
 def plot_variant_curves(curves_df: pd.DataFrame, variants: list[VariantConfig]) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
     plt.figure(figsize=(14, 8))
     for variant in variants:
         subset = curves_df.loc[curves_df["variant"].eq(variant.key)].copy()

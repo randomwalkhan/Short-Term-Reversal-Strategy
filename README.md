@@ -20,9 +20,9 @@ The official Reversal 2.4 backtest definition keeps the original dynamic trade-l
 
 Reversal 2.4 的官方回测定义保留最初的动态交易级过滤 `matched_signals >= 10`，并把历史观察窗口升级为 `60` 个交易日。在这个官方定义下，当前 `qqq_only_filtered` 主回测结果为：总收益 `+1006.23%`、最大回撤 `-29.88%`、胜率 `61.32%`。
 
-- [Reversal 2.4 equity](backtest_outputs/reversal_2_4_call_backtest_equity.csv)
-- [Reversal 2.4 trades](backtest_outputs/reversal_2_4_call_backtest_trades.csv)
-- [Reversal 2.4 plot](backtest_outputs/reversal_2_4_call_backtest_equity.png)
+- [Reversal 2.4 equity](results/reversal_2_4/reversal_2_4_call_backtest_equity.csv)
+- [Reversal 2.4 trades](results/reversal_2_4/reversal_2_4_call_backtest_trades.csv)
+- [Reversal 2.4 plot](assets/reversal_2_4_call_backtest_equity.png)
 
 ![Reversal 2.4 Call Backtest](assets/reversal_2_4_call_backtest_equity.png)
 
@@ -67,9 +67,9 @@ Note: the universe-selection table above is preserved from the earlier published
 
 说明：上面的 universe 选择表保留的是之前发布的 2.3.3 历史结果，而下面的 factor 对比表是我在 `2026-03-13` 重新跑出的最新结果，所以因子表里的 `Original 2.3.3` 基线是 `+597.21%`，而不是更早记录中的 `+789.12%`。
 
-- [article variants summary](backtest_outputs/reversal_article_variants/reversal_article_variants_summary.csv)
-- [article variants equity](backtest_outputs/reversal_article_variants/reversal_article_variants_equity.csv)
-- [article variants trades](backtest_outputs/reversal_article_variants/reversal_article_variants_trades.csv)
+- [article variants summary](results/reversal_2_4_article_variants/reversal_article_variants_summary.csv)
+- [article variants equity](results/reversal_2_4_article_variants/reversal_article_variants_equity.csv)
+- [article variants trades](results/reversal_2_4_article_variants/reversal_article_variants_trades.csv)
 
 | Variant | Return | Max DD | Win Rate | Trades |
 |---|---:|---:|---:|---:|
