@@ -47,6 +47,7 @@ def main() -> None:
     presets = build_universe_presets()
     selected_labels = [
         "qqq_only_filtered",
+        "legacy_watchlist_11",
         "spy_only_filtered",
         "qqq_spy_filtered",
         "nasdaq_only_filtered",

@@ -10,6 +10,7 @@ import pandas as pd
 import yfinance as yf
 from scipy.stats import norm
 
+from backtest_metrics import TEN_YEAR_TBILL_DATE, TEN_YEAR_TBILL_RATE, compute_annualized_sharpe
 from reversal_universe import build_named_universe_map
 
 
@@ -361,6 +362,9 @@ def build_equity_curve(history_map: dict[str, PreparedHistory]) -> tuple[pd.Data
                     candidates.append(candidate)
 
             if candidates:
+                # Match the prior official logic: open at most one new ticker per day,
+                # target roughly 50% of current equity for a new entry, and allow a
+                # second 50% slot to be filled on a later day.
                 candidate = max(candidates, key=lambda item: (item["success_rate"], item["matched_signals"]))
                 entry_cost = candidate["entry_option_price"] * 100
                 current_equity = cash + marked_position_value
@@ -410,6 +414,9 @@ def summarize_backtest(label: str, tickers: list[str], history_cache: dict[str, 
     total_return = (final_equity / INITIAL_CAPITAL - 1) * 100
     max_drawdown = ((equity_df["equity"] / equity_df["equity"].cummax()) - 1).min() * 100
     win_rate = float((trades_df["pnl"] > 0).mean() * 100) if not trades_df.empty else 0.0
+    max_open_count = int(equity_df["open_count"].max()) if not equity_df.empty else 0
+    max_contracts = int(trades_df["contracts"].max()) if not trades_df.empty else 0
+    sharpe_rf_10y_tbill = compute_annualized_sharpe(equity_df)
 
     summary = {
         "label": label,
@@ -420,6 +427,11 @@ def summarize_backtest(label: str, tickers: list[str], history_cache: dict[str, 
         "max_drawdown_pct": max_drawdown,
         "trade_count": len(trades_df),
         "win_rate_pct": win_rate,
+        "sharpe_rf_10y_tbill": sharpe_rf_10y_tbill,
+        "risk_free_rate_annual": TEN_YEAR_TBILL_RATE,
+        "risk_free_rate_source_date": TEN_YEAR_TBILL_DATE,
+        "max_open_count": max_open_count,
+        "max_contracts": max_contracts,
     }
     return equity_df, trades_df, summary
 
@@ -459,6 +471,13 @@ def main() -> None:
     print(f"Max drawdown: {summary['max_drawdown_pct']:.2f}%")
     print(f"Trades: {summary['trade_count']}")
     print(f"Win rate: {summary['win_rate_pct']:.1f}%")
+    print(
+        "Sharpe ratio "
+        f"(10Y Treasury {TEN_YEAR_TBILL_DATE} @ {TEN_YEAR_TBILL_RATE * 100:.2f}%): "
+        f"{summary['sharpe_rf_10y_tbill']:.2f}"
+    )
+    print(f"Max concurrent positions: {summary['max_open_count']}")
+    print(f"Max contracts in a trade: {summary['max_contracts']}")
     print(f"Saved plot -> {PLOT_PATH}")
     print(f"Saved trades -> {TRADES_PATH}")
 

@@ -10,6 +10,7 @@ import pandas as pd
 import yfinance as yf
 from scipy.stats import norm
 
+from backtest_metrics import TEN_YEAR_TBILL_DATE, TEN_YEAR_TBILL_RATE, compute_annualized_sharpe
 from reversal_universe import build_named_universe_map
 
 
@@ -717,6 +718,7 @@ def summarize_backtest(
     total_return = (final_equity / INITIAL_CAPITAL - 1) * 100
     max_drawdown = ((equity_df["equity"] / equity_df["equity"].cummax()) - 1).min() * 100
     win_rate = float((trades_df["pnl"] > 0).mean() * 100) if not trades_df.empty else 0.0
+    sharpe_rf_10y_tbill = compute_annualized_sharpe(equity_df)
 
     summary = {
         "variant": variant.key,
@@ -726,6 +728,9 @@ def summarize_backtest(
         "max_drawdown_pct": max_drawdown,
         "trade_count": len(trades_df),
         "win_rate_pct": win_rate,
+        "sharpe_rf_10y_tbill": sharpe_rf_10y_tbill,
+        "risk_free_rate_annual": TEN_YEAR_TBILL_RATE,
+        "risk_free_rate_source_date": TEN_YEAR_TBILL_DATE,
     }
     return equity_df, trades_df, summary
 
@@ -847,7 +852,8 @@ def main() -> None:
             f"{variant.key}: return={summary['total_return_pct']:.2f}% "
             f"max_dd={summary['max_drawdown_pct']:.2f}% "
             f"win_rate={summary['win_rate_pct']:.2f}% "
-            f"trades={summary['trade_count']}"
+            f"trades={summary['trade_count']} "
+            f"sharpe={summary['sharpe_rf_10y_tbill']:.2f}"
         )
 
     summary_df = pd.DataFrame(summaries).sort_values("total_return_pct", ascending=False).reset_index(drop=True)
