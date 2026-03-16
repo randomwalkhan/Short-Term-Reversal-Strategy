@@ -16,9 +16,9 @@ Update note: Reversal 2.4 keeps `qqq_only_filtered` as the chosen universe and u
 
 ## Featured Result | 重点结果
 
-The official Reversal 2.4 backtest definition keeps the original dynamic trade-level filter, `matched_signals >= 10`, and upgrades the historical lookback window to `60` trading days. Under that official definition, the current `qqq_only_filtered` backtest result is `+1006.23%` total return, `-29.88%` max drawdown, and `61.32%` win rate.
+The official Reversal 2.4 backtest definition keeps the original dynamic trade-level filter, `matched_signals >= 10`, and upgrades the historical lookback window to `60` trading days. Under that official definition, the current `qqq_only_filtered` backtest result is `+806.11%` total return, `-30.56%` max drawdown, `61.00%` win rate, and `3.41` Sharpe.
 
-Reversal 2.4 的官方回测定义保留最初的动态交易级过滤 `matched_signals >= 10`，并把历史观察窗口升级为 `60` 个交易日。在这个官方定义下，当前 `qqq_only_filtered` 主回测结果为：总收益 `+1006.23%`、最大回撤 `-29.88%`、胜率 `61.32%`。
+Reversal 2.4 的官方回测定义保留最初的动态交易级过滤 `matched_signals >= 10`，并把历史观察窗口升级为 `60` 个交易日。在这个官方定义下，当前 `qqq_only_filtered` 主回测结果为：总收益 `+806.11%`、最大回撤 `-30.56%`、胜率 `61.00%`、Sharpe `3.41`。
 
 - [Reversal 2.4 equity](results/reversal_2_4/reversal_2_4_call_backtest_equity.csv)
 - [Reversal 2.4 trades](results/reversal_2_4/reversal_2_4_call_backtest_trades.csv)
