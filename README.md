@@ -48,14 +48,16 @@ Reversal 2.3.3 compared five universes under the original dynamic `matched_signa
 Reversal 2.3.3 在原始动态 `matched_signals >= 10` 规则下比较了五组 universe，结论非常明确：`qqq_only_filtered` 仍然最优，因此在 Reversal 2.4 中被保留。
 
 - [reversal_2_3_3_universe_comparison.csv](results/reversal_2_3_3_universe_comparison/reversal_2_3_3_universe_comparison.csv)
+- Sharpe uses the U.S. 10Y Treasury yield on `2026-03-16` (`4.23%`) as the annual risk-free rate.
 
-| Universe | Usable Tickers | Win Rate | Return | Max DD | Equity Output | Trade Output |
-|---|---:|---:|---:|---:|---|---|
-| `qqq_only_filtered` | `97` | `60.41%` | `+789.12%` | `-35.60%` | [equity](results/reversal_2_3_3_universe_comparison/qqq_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/qqq_only_filtered_trades.csv) |
-| `qqq_spy_filtered` | `501` | `54.77%` | `+121.01%` | `-42.54%` | [equity](results/reversal_2_3_3_universe_comparison/qqq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/qqq_spy_filtered_trades.csv) |
-| `spy_only_filtered` | `491` | `54.36%` | `+101.82%` | `-42.73%` | [equity](results/reversal_2_3_3_universe_comparison/spy_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/spy_only_filtered_trades.csv) |
-| `nasdaq_spy_filtered` | `1159` | `52.03%` | `+21.99%` | `-50.35%` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_trades.csv) |
-| `nasdaq_only_filtered` | `826` | `50.81%` | `-9.15%` | `-47.31%` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_trades.csv) |
+| Universe | Usable Tickers | Win Rate | Return | Max DD | Sharpe | Equity Output | Trade Output |
+|---|---:|---:|---:|---:|---:|---|---|
+| `qqq_only_filtered` | `97` | `59.02%` | `+552.91%` | `-32.46%` | `2.93` | [equity](results/reversal_2_3_3_universe_comparison/qqq_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/qqq_only_filtered_trades.csv) |
+| `legacy_watchlist_11` | `10` | `54.15%` | `+81.27%` | `-31.57%` | `1.18` | [equity](results/reversal_2_3_3_universe_comparison/legacy_watchlist_11_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/legacy_watchlist_11_trades.csv) |
+| `qqq_spy_filtered` | `501` | `53.53%` | `+54.38%` | `-43.24%` | `0.91` | [equity](results/reversal_2_3_3_universe_comparison/qqq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/qqq_spy_filtered_trades.csv) |
+| `spy_only_filtered` | `491` | `52.92%` | `+36.28%` | `-43.26%` | `0.73` | [equity](results/reversal_2_3_3_universe_comparison/spy_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/spy_only_filtered_trades.csv) |
+| `nasdaq_spy_filtered` | `1163` | `50.81%` | `-7.10%` | `-50.29%` | `0.23` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_trades.csv) |
+| `nasdaq_only_filtered` | `830` | `49.59%` | `-30.21%` | `-50.51%` | `-0.15` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_trades.csv) |
 
 ### Stage 2: Factor Selection | 第二阶段：选 Factor
 
@@ -63,23 +65,23 @@ After fixing the universe as `qqq_only_filtered`, the article-inspired compariso
 
 在把 universe 固定为 `qqq_only_filtered` 之后，论文启发的对比脚本继续测试了成交量 rescaling、PCA 去市场因素、kappa / s-score 过滤以及更短滚动窗口。最终 `60d` 窗口是最强的因子升级，因此被提升为 Reversal 2.4 的正式默认设置。
 
-Note: the universe-selection table above is preserved from the earlier published 2.3.3 report, while the factor-comparison table below is a fresh rerun on `2026-03-13`; that is why the `Original 2.3.3` baseline in the factor table is `+597.21%` instead of the older `+789.12%` record.
+Note: both tables below now use the refreshed rerun results and include Sharpe ratios computed with the U.S. 10Y Treasury yield on `2026-03-16` (`4.23%`) as the annual risk-free rate.
 
-说明：上面的 universe 选择表保留的是之前发布的 2.3.3 历史结果，而下面的 factor 对比表是我在 `2026-03-13` 重新跑出的最新结果，所以因子表里的 `Original 2.3.3` 基线是 `+597.21%`，而不是更早记录中的 `+789.12%`。
+说明：下面两张表现在都已经切换成最新重跑结果，并加入了 Sharpe ratio；Sharpe 统一使用 `2026-03-16` 的美国 10 年期国债收益率 `4.23%` 作为年化无风险利率。
 
 - [article variants summary](results/reversal_2_4_article_variants/reversal_article_variants_summary.csv)
 - [article variants equity](results/reversal_2_4_article_variants/reversal_article_variants_equity.csv)
 - [article variants trades](results/reversal_2_4_article_variants/reversal_article_variants_trades.csv)
 
-| Variant | Return | Max DD | Win Rate | Trades |
-|---|---:|---:|---:|---:|
-| `Window 60d` | `+1006.23%` | `-29.88%` | `61.32%` | `243` |
-| `Original 2.3.3` | `+597.21%` | `-36.51%` | `59.35%` | `246` |
-| `Add Volume` | `+339.00%` | `-37.47%` | `57.26%` | `241` |
-| `Window 126d` | `+314.68%` | `-35.56%` | `57.21%` | `229` |
-| `Kappa / s-score` | `+213.04%` | `-30.07%` | `56.68%` | `217` |
-| `Window 252d + Recent Weight` | `+206.37%` | `-30.94%` | `57.00%` | `207` |
-| `PCA Defactored` | `+19.71%` | `-42.89%` | `52.29%` | `218` |
+| Variant | Return | Max DD | Win Rate | Trades | Sharpe |
+|---|---:|---:|---:|---:|---:|
+| `Window 60d` | `+806.11%` | `-30.56%` | `61.00%` | `241` | `3.41` |
+| `Original 2.3.3` | `+552.91%` | `-32.46%` | `59.02%` | `244` | `2.93` |
+| `Add Volume` | `+364.25%` | `-37.58%` | `57.32%` | `239` | `2.44` |
+| `Window 126d` | `+276.80%` | `-38.62%` | `56.83%` | `227` | `2.18` |
+| `Window 252d + Recent Weight` | `+181.17%` | `-30.21%` | `56.31%` | `206` | `1.82` |
+| `Kappa / s-score` | `+145.58%` | `-29.95%` | `55.61%` | `214` | `1.61` |
+| `PCA Defactored` | `+23.89%` | `-42.39%` | `52.31%` | `216` | `0.60` |
 
 ![Reversal 2.4 Article Variants](assets/reversal_2_4_article_variants.png)
 
