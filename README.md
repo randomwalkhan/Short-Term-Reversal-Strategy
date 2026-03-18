@@ -1,24 +1,24 @@
-# Reversal 2.5
+# Reversal 2.5.1
 
-`Reversal2.5.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
+`Reversal2.5.1.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
 
-`Reversal2.5.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
+`Reversal2.5.1.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
 
-Update note: Reversal 2.5 keeps `qqq_only_filtered` as the chosen universe, preserves the promoted `60d` observation window, and adds a `minimum current drop > 0.5%` filter as the latest execution-layer upgrade.
+Update note: Reversal 2.5.1 keeps the official Reversal 2.5 backtest definition unchanged, but improves notebook spot-price handling by preferring pre-market / post-market prices over the regular-session close whenever extended-hours data is available.
 
-更新说明：Reversal 2.5 保留 `qqq_only_filtered` 作为最终 universe，沿用升级后的 `60d` 观察窗口，并把 `minimum current drop > 0.5%` 过滤作为最新一层执行优化。
+更新说明：Reversal 2.5.1 不改动官方 Reversal 2.5 的回测定义，但修正了 notebook 中的 spot 取价逻辑；只要 Yahoo 能返回扩展时段数据，就优先使用盘前 / 盘后价格，而不是 regular session close。
 
-`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
+`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
 
-`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` 和 `Reversal2.0.ipynb` 作为更早版本快照保留。
+`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` 和 `Reversal2.0.ipynb` 作为更早版本快照保留。
 
 ![Reversal 2.3.3 Universe Comparison](assets/reversal_2_3_3_universe_comparison.png)
 
 ## Featured Result | 重点结果
 
-The official Reversal 2.5 backtest definition keeps the original dynamic trade-level filter, `matched_signals >= 10`, preserves the `60d` historical lookback window, and adds a `minimum current drop > 0.5%` entry filter. Under that official definition, the current `qqq_only_filtered` backtest result is `+1305.60%` total return, `-30.84%` max drawdown, `62.08%` win rate, and `3.96` Sharpe.
+The official Reversal 2.5 backtest definition keeps the original dynamic trade-level filter, `matched_signals >= 10`, preserves the `60d` historical lookback window, and adds a `minimum current drop > 0.5%` entry filter. Reversal 2.5.1 only upgrades notebook spot-price handling, so the official backtest result is unchanged at `+1305.60%` total return, `-30.84%` max drawdown, `62.08%` win rate, and `3.96` Sharpe.
 
-Reversal 2.5 的官方回测定义保留最初的动态交易级过滤 `matched_signals >= 10`，沿用 `60` 个交易日历史观察窗口，并额外加入 `minimum current drop > 0.5%` 入场过滤。在这个官方定义下，当前 `qqq_only_filtered` 主回测结果为：总收益 `+1305.60%`、最大回撤 `-30.84%`、胜率 `62.08%`、Sharpe `3.96`。
+Reversal 2.5 的官方回测定义保留最初的动态交易级过滤 `matched_signals >= 10`，沿用 `60` 个交易日历史观察窗口，并额外加入 `minimum current drop > 0.5%` 入场过滤。Reversal 2.5.1 只升级 notebook 的 spot 取价逻辑，因此官方回测结果保持不变：总收益 `+1305.60%`、最大回撤 `-30.84%`、胜率 `62.08%`、Sharpe `3.96`。
 
 - [Reversal 2.5 equity](results/reversal_2_5/reversal_2_5_call_backtest_equity.csv)
 - [Reversal 2.5 trades](results/reversal_2_5/reversal_2_5_call_backtest_trades.csv)
@@ -43,9 +43,9 @@ The current strategy structure is intentionally sequential:
 
 ### Stage 1: Universe Selection | 第一阶段：选 Universe
 
-Reversal 2.3.3 compared five universes under the original dynamic `matched_signals >= 10` rule. The conclusion was clear: `qqq_only_filtered` remained the best universe and is therefore preserved in Reversal 2.5.
+Reversal 2.3.3 compared five universes under the original dynamic `matched_signals >= 10` rule. The conclusion was clear: `qqq_only_filtered` remained the best universe and is therefore preserved in Reversal 2.5.1.
 
-Reversal 2.3.3 在原始动态 `matched_signals >= 10` 规则下比较了五组 universe，结论非常明确：`qqq_only_filtered` 仍然最优，因此在 Reversal 2.5 中被保留。
+Reversal 2.3.3 在原始动态 `matched_signals >= 10` 规则下比较了五组 universe，结论非常明确：`qqq_only_filtered` 仍然最优，因此在 Reversal 2.5.1 中被保留。
 
 - [reversal_2_3_3_universe_comparison.csv](results/reversal_2_3_3_universe_comparison/reversal_2_3_3_universe_comparison.csv)
 - Sharpe uses the U.S. 10Y Treasury yield on `2026-03-16` (`4.23%`) as the annual risk-free rate.
@@ -121,9 +121,9 @@ This project focuses on identifying large intraday drawdowns, evaluating whether
 
 本项目主要研究三件事：识别日内大幅下跌、评估未来几个交易日内的价格反转概率，以及估计相关看涨期权交易的收益分布。
 
-The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output, Reversal 2.4 promotes the `60d` observation window into the default research and official backtest setup, and Reversal 2.5 adds the `minimum current drop > 0.5%` entry filter.
+The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output, Reversal 2.4 promotes the `60d` observation window into the default research and official backtest setup, Reversal 2.5 adds the `minimum current drop > 0.5%` entry filter, and Reversal 2.5.1 improves spot-price handling by preferring extended-hours prices when available.
 
-Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，Reversal 2.3.3 进一步加入了最小样本过滤和前 15 名输出，Reversal 2.4 把 `60d` 观察窗口正式提升为默认研究与官方回测设定，而 Reversal 2.5 则加入了 `minimum current drop > 0.5%` 入场过滤。
+Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，Reversal 2.3.3 进一步加入了最小样本过滤和前 15 名输出，Reversal 2.4 把 `60d` 观察窗口正式提升为默认研究与官方回测设定，Reversal 2.5 加入了 `minimum current drop > 0.5%` 入场过滤，而 Reversal 2.5.1 则把 spot 取价改成优先使用扩展时段价格。
 
 Before running the main analysis notebook, you can use `update_reversal_csv.ipynb` to download and refresh the input CSV files.
 
@@ -133,8 +133,8 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
 
 1. Run `update_reversal_csv.ipynb` to download or refresh market data into `reversal_data/`.  
    先运行 `update_reversal_csv.ipynb`，把市场数据下载或更新到 `reversal_data/`。
-2. Run `Reversal2.5.ipynb` for QQQ-only universe construction, reversal success analysis, in-notebook CSV refresh, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
-   再运行 `Reversal2.5.ipynb`，完成 QQQ-only 股票池构建、反转成功率分析、notebook 内 CSV 刷新、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
+2. Run `Reversal2.5.1.ipynb` for QQQ-only universe construction, reversal success analysis, in-notebook CSV refresh, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
+   再运行 `Reversal2.5.1.ipynb`，完成 QQQ-only 股票池构建、反转成功率分析、notebook 内 CSV 刷新、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
 3. Run `backtest_reversal_2_5_calls.py` for the official Reversal 2.5 call backtest under `qqq_only_filtered + matched_signals >= 10 + 60d + minimum current drop > 0.5%`.  
    如果你想跑官方 Reversal 2.5 主回测，再运行 `backtest_reversal_2_5_calls.py`；这部分使用 `qqq_only_filtered + matched_signals >= 10 + 60d + minimum current drop > 0.5%`。
 4. Run `compare_reversal_2_3_3_universes.py` if you want to revisit the universe-selection stage under the original dynamic `matched_signals >= 10` filter.  
@@ -212,7 +212,7 @@ Open the notebook from the repository root so `Path.cwd()` resolves correctly:
 请在仓库根目录打开 notebook，这样 `Path.cwd()` 才会正确指向项目目录：
 
 ```bash
-jupyter notebook Reversal2.5.ipynb
+jupyter notebook Reversal2.5.1.ipynb
 ```
 
 To refresh the CSV data first, open:
@@ -245,7 +245,8 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
 - `update_reversal_data.py` | Refresh `qqq_only_filtered` CSV datasets from Yahoo Finance. | 从 Yahoo Finance 刷新 `qqq_only_filtered` 所需的 CSV 数据。
-- `Reversal2.5.ipynb` | Current main notebook with the default `60d` observation window and `minimum current drop > 0.5%` live-screen filter. | 当前主 notebook，默认使用 `60d` 观察窗口，并加入 `minimum current drop > 0.5%` 的 live-screen 过滤。
+- `Reversal2.5.1.ipynb` | Current main notebook with the default `60d` observation window, `minimum current drop > 0.5%` live-screen filter, and improved extended-hours spot pricing. | 当前主 notebook，默认使用 `60d` 观察窗口，加入 `minimum current drop > 0.5%` 的 live-screen 过滤，并修正为优先使用扩展时段 spot 价格。
+- `Reversal2.5.ipynb` | Previous main notebook snapshot before the extended-hours spot-pricing fix. | 修正扩展时段 spot 取价逻辑之前的上一版主 notebook 快照。
 - `Reversal2.4.ipynb` | Previous main notebook snapshot before the `minimum current drop > 0.5%` promotion. | 升级到 `minimum current drop > 0.5%` 过滤之前的上一版主 notebook 快照。
 - `Reversal2.3.3.ipynb` | Previous main notebook snapshot before the `60d` window promotion. | 升级到 `60d` 窗口之前的上一版主 notebook 快照。
 - `Reversal2.3.ipynb` | Previous notebook snapshot with the Nasdaq + SPY universe builder. | 上一版本 notebook 快照，包含 Nasdaq + SPY 股票池构建器。
