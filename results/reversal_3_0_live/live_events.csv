@@ -1,0 +1,2 @@
+timestamp_et,trade_date_et,slot,event_type,detail
+2026-03-23T20:59:15.901018-04:00,2026-03-23,manual,pre_start,"{""start_date"": ""2026-03-24""}"

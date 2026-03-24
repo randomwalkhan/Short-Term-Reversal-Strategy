@@ -3,14 +3,18 @@
 <!-- reversal-3.0-live:start -->
 ## Reversal 3.0 Live Paper Test
 
-The live paper-test pipeline is being prepared. The dashboard below will be
-filled automatically by the scheduled `Reversal 3.0` runtime after market
-hours and hourly scan updates begin.
+- Last updated (ET): `2026-03-23 20:59:15 EDT`
+- Equity: `$10,000.00` | Realized: `$0.00` | Unrealized: `$0.00` | Open positions: `0`
+- Today closed trades: `0`
+- Current slot: `manual_refresh`
 
-实时 paper test 管线正在部署中。下面这个区块会在 `Reversal 3.0` 定时任务开始运行后，
-由脚本自动更新成当日持仓、交易明细、权益曲线和关键状态摘要。
+_None_
+
+![Reversal 3.0 Live Equity](assets/reversal_3_0_live_equity.png)
 
 - [Full live dashboard](results/reversal_3_0_live/README.md)
+- [Live trades csv](results/reversal_3_0_live/live_trades.csv)
+- [Live equity csv](results/reversal_3_0_live/live_equity.csv)
 <!-- reversal-3.0-live:end -->
 
 `Reversal2.5.3.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.

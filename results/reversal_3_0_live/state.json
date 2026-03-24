@@ -1,0 +1,8 @@
+{
+  "version": "3.0",
+  "initial_capital": 10000.0,
+  "cash": 10000.0,
+  "positions": [],
+  "processed_slots": {},
+  "start_date": "2026-03-24"
+}
