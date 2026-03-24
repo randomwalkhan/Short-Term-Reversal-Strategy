@@ -1079,13 +1079,14 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
         return
 
     tracked_paths = [
-        str(ROOT_README_PATH),
-        str(DASHBOARD_PATH),
-        str(TRADES_PATH),
-        str(EVENTS_PATH),
-        str(POSITIONS_PATH),
-        str(EQUITY_PATH),
-        str(PLOT_PATH),
+        "README.md",
+        "results/reversal_3_0_live/README.md",
+        "results/reversal_3_0_live/live_trades.csv",
+        "results/reversal_3_0_live/live_events.csv",
+        "results/reversal_3_0_live/live_positions.csv",
+        "results/reversal_3_0_live/live_equity.csv",
+        "results/reversal_3_0_live/state.json",
+        "assets/reversal_3_0_live_equity.png",
     ]
     subprocess.run(["git", "add", *tracked_paths], cwd=BASE_DIR, check=False)
     status = subprocess.run(["git", "status", "--short", "--", *tracked_paths], cwd=BASE_DIR, capture_output=True, text=True, check=False)
