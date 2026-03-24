@@ -165,7 +165,10 @@ def save_state(state: dict[str, Any]) -> None:
 def load_csv_log(path: Path) -> pd.DataFrame:
     if not path.exists():
         return pd.DataFrame()
-    return pd.read_csv(path)
+    try:
+        return pd.read_csv(path)
+    except pd.errors.EmptyDataError:
+        return pd.DataFrame()
 
 
 def save_csv_log(path: Path, df: pd.DataFrame) -> None:
