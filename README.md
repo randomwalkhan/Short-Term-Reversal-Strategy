@@ -20,6 +20,11 @@ The official Reversal 2.5 backtest definition keeps the original dynamic trade-l
 
 Reversal 2.5 的官方回测定义保留最初的动态交易级过滤 `matched_signals >= 10`，沿用 `60` 个交易日历史观察窗口，并额外加入 `minimum current drop > 0.5%` 入场过滤。Reversal 2.5.3 只升级 notebook 的 live screener 输出，因此官方回测结果保持不变：总收益 `+1305.60%`、最大回撤 `-30.84%`、胜率 `62.08%`、Sharpe `3.96`。
 
+Research discipline is documented in `RESEARCH_GUARDRAILS.md`; future upgrades
+should be judged against those standards instead of curve quality alone.
+
+研究纪律已写入 `RESEARCH_GUARDRAILS.md`；以后版本升级应按这些标准判断，而不是只看曲线是否更好看。
+
 - [Reversal 2.5 equity](results/reversal_2_5/reversal_2_5_call_backtest_equity.csv)
 - [Reversal 2.5 trades](results/reversal_2_5/reversal_2_5_call_backtest_trades.csv)
 - [Reversal 2.5 plot](assets/reversal_2_5_call_backtest_equity.png)
@@ -143,6 +148,8 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
    如果你想复现论文启发的因子对比并验证为什么最终选择 `60d` 窗口，再运行 `backtest_reversal_article_variants.py`。
 6. Run `backtest_reversal_2_5_min_drop_experiment.py` if you want to reproduce the minimum-drop threshold sweep that selected the `0.5%` filter.  
    如果你想复现 minimum-drop 阈值比较，并验证为什么最终选择 `0.5%` 过滤，再运行 `backtest_reversal_2_5_min_drop_experiment.py`。
+7. Read `RESEARCH_GUARDRAILS.md` before promoting any new factor, threshold, or story into an official version.  
+   如果你想把新的因子、阈值或叙事升级成正式版本，先读 `RESEARCH_GUARDRAILS.md`。
 
 ## Notebook Contents | Notebook 内容
 
@@ -245,6 +252,7 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
 - `update_reversal_data.py` | Refresh `qqq_only_filtered` CSV datasets from Yahoo Finance. | 从 Yahoo Finance 刷新 `qqq_only_filtered` 所需的 CSV 数据。
+- `RESEARCH_GUARDRAILS.md` | Default research discipline for avoiding curve sculpting, weak narratives, and LLM-assisted overfitting. | 默认研究守则，用于避免曲线雕刻、伪机制叙事和 LLM 放大的过拟合。
 - `Reversal2.5.3.ipynb` | Current main notebook with the default `60d` observation window, `minimum current drop > 0.5%` live-screen filter, improved extended-hours spot pricing, ATM-IV versus rolling-sigma context, and a cleaner single-table live screener output. | 当前主 notebook，默认使用 `60d` 观察窗口，加入 `minimum current drop > 0.5%` 的 live-screen 过滤，优先使用扩展时段 spot 价格，并在 screener 输出中补充 ATM IV 与 rolling sigma 对照，同时把 live screener 压缩成更清晰的单表输出。
 - `Reversal2.5.2.ipynb` | Previous main notebook snapshot before the live screener layout cleanup. | 调整 live screener 展示布局之前的上一版主 notebook 快照。
 - `Reversal2.5.ipynb` | Previous main notebook snapshot before the extended-hours spot-pricing fix. | 修正扩展时段 spot 取价逻辑之前的上一版主 notebook 快照。
