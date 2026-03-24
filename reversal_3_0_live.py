@@ -1110,13 +1110,18 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
     equity_df = load_csv_log(EQUITY_PATH)
 
     universe = build_universe()
-    if REFRESH_DATA_IF_STALE and not args.skip_data_refresh:
+    trade_date = now_et.date().isoformat()
+    pre_start = pd.Timestamp(trade_date) < pd.Timestamp(state["start_date"])
+
+    if not pre_start and REFRESH_DATA_IF_STALE and not args.skip_data_refresh:
         events_df = maybe_refresh_daily_data(universe, now_et, events_df)
 
-    summary_df, _ = screen_live_candidates(universe)
-    trade_date = now_et.date().isoformat()
+    if pre_start:
+        summary_df = pd.DataFrame()
+    else:
+        summary_df, _ = screen_live_candidates(universe)
 
-    if pd.Timestamp(trade_date) < pd.Timestamp(state["start_date"]):
+    if pre_start:
         events_df = append_event(
             events_df,
             now_et=now_et,
