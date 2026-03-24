@@ -132,7 +132,6 @@ def slot_key_for_timestamp(now_et: pd.Timestamp, force_slot: str | None = None) 
 
     for slot, (hour, minute) in SLOT_TO_ET.items():
         scheduled = now_et.normalize() + pd.Timedelta(hours=hour, minutes=minute)
-        scheduled = scheduled.tz_localize(now_et.tzinfo)
         if abs((now_et - scheduled).total_seconds()) <= 12 * 60:
             return slot
     return None
@@ -1092,8 +1091,13 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
 
     commit_message = f"Update Reversal 3.0 live paper test {now_et.strftime('%Y-%m-%d %H:%M ET')}"
     subprocess.run(["git", "commit", "-m", commit_message], cwd=BASE_DIR, check=False)
-    remote_url = f"https://x-access-token:{token}@github.com/randomwalkhan/Short-Term-Reversal-Strategy.git"
-    subprocess.run(["git", "push", remote_url, "HEAD:main"], cwd=BASE_DIR, check=False)
+    if token:
+        remote_url = f"https://x-access-token:{token}@github.com/randomwalkhan/Short-Term-Reversal-Strategy.git"
+        subprocess.run(["git", "pull", "--rebase", remote_url, "main"], cwd=BASE_DIR, check=False)
+        subprocess.run(["git", "push", remote_url, "HEAD:main"], cwd=BASE_DIR, check=False)
+    else:
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=BASE_DIR, check=False)
+        subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=BASE_DIR, check=False)
 
 
 def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
