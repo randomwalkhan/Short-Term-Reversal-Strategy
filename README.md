@@ -1,5 +1,18 @@
 # Reversal 2.5.3
 
+<!-- reversal-3.0-live:start -->
+## Reversal 3.0 Live Paper Test
+
+The live paper-test pipeline is being prepared. The dashboard below will be
+filled automatically by the scheduled `Reversal 3.0` runtime after market
+hours and hourly scan updates begin.
+
+实时 paper test 管线正在部署中。下面这个区块会在 `Reversal 3.0` 定时任务开始运行后，
+由脚本自动更新成当日持仓、交易明细、权益曲线和关键状态摘要。
+
+- [Full live dashboard](results/reversal_3_0_live/README.md)
+<!-- reversal-3.0-live:end -->
+
 `Reversal2.5.3.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
 
 `Reversal2.5.3.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
@@ -150,6 +163,8 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
    如果你想复现 minimum-drop 阈值比较，并验证为什么最终选择 `0.5%` 过滤，再运行 `backtest_reversal_2_5_min_drop_experiment.py`。
 7. Read `RESEARCH_GUARDRAILS.md` before promoting any new factor, threshold, or story into an official version.  
    如果你想把新的因子、阈值或叙事升级成正式版本，先读 `RESEARCH_GUARDRAILS.md`。
+8. Run `reversal_3_0_live.py` if you want the no-lookahead live paper-test pipeline with scheduled entry / exit scans and auto-generated GitHub dashboard files.  
+   如果你想启用无未来函数的 live paper-test，并定时更新 GitHub dashboard，就运行 `reversal_3_0_live.py`。
 
 ## Notebook Contents | Notebook 内容
 
@@ -253,6 +268,7 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
 - `update_reversal_data.py` | Refresh `qqq_only_filtered` CSV datasets from Yahoo Finance. | 从 Yahoo Finance 刷新 `qqq_only_filtered` 所需的 CSV 数据。
 - `RESEARCH_GUARDRAILS.md` | Default research discipline for avoiding curve sculpting, weak narratives, and LLM-assisted overfitting. | 默认研究守则，用于避免曲线雕刻、伪机制叙事和 LLM 放大的过拟合。
+- `reversal_3_0_live.py` | Reversal 3.0 live paper-test runner with scheduled entry/exit logic, state persistence, dashboard generation, and optional GitHub publishing. | Reversal 3.0 的 live paper-test 主脚本，包含定时入场/离场逻辑、状态持久化、dashboard 生成和可选的 GitHub 发布。
 - `Reversal2.5.3.ipynb` | Current main notebook with the default `60d` observation window, `minimum current drop > 0.5%` live-screen filter, improved extended-hours spot pricing, ATM-IV versus rolling-sigma context, and a cleaner single-table live screener output. | 当前主 notebook，默认使用 `60d` 观察窗口，加入 `minimum current drop > 0.5%` 的 live-screen 过滤，优先使用扩展时段 spot 价格，并在 screener 输出中补充 ATM IV 与 rolling sigma 对照，同时把 live screener 压缩成更清晰的单表输出。
 - `Reversal2.5.2.ipynb` | Previous main notebook snapshot before the live screener layout cleanup. | 调整 live screener 展示布局之前的上一版主 notebook 快照。
 - `Reversal2.5.ipynb` | Previous main notebook snapshot before the extended-hours spot-pricing fix. | 修正扩展时段 spot 取价逻辑之前的上一版主 notebook 快照。
