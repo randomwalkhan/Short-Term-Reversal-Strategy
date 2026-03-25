@@ -1112,10 +1112,10 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
 
     if token:
         remote_url = f"https://x-access-token:{token}@github.com/randomwalkhan/Short-Term-Reversal-Strategy.git"
-        run_git(["git", "pull", "--rebase", remote_url, "main"])
+        run_git(["git", "pull", "--rebase", "--autostash", remote_url, "main"])
         run_git(["git", "push", remote_url, "HEAD:main"])
     else:
-        run_git(["git", "pull", "--rebase", "origin", "main"])
+        run_git(["git", "pull", "--rebase", "--autostash", "origin", "main"])
         run_git(["git", "push", "origin", "HEAD:main"])
 
 
