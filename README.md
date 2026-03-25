@@ -3,14 +3,14 @@
 <!-- reversal-3.0-live:start -->
 ## Reversal 3.0 Live Paper Test
 
-- Last updated (ET): `2026-03-24 15:30:03 EDT`
-- Equity: `$9,885.00` | Realized: `$0.00` | Unrealized: `$-115.00` | Open positions: `1`
+- Last updated (ET): `2026-03-25 12:30:01 EDT`
+- Equity: `$10,010.00` | Realized: `$0.00` | Unrealized: `$10.00` | Open positions: `1`
 - Today closed trades: `0`
-- Current slot: `manage_1530`
+- Current slot: `manage_1230`
 
 ```text
 ticker     contract_symbol  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  AVGO AVGO260515C00320000                 22.15          -115.0                  -2.53                   0
+  AVGO AVGO260515C00320000                 22.78            10.0                   0.22                   1
 ```
 
 ![Reversal 3.0 Live Equity](assets/reversal_3_0_live_equity.png)

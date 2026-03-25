@@ -3,3 +3,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-03-24T13:25:36.643365-04:00,2026-03-24,data_refresh,data_refresh,{'saved': 97}
 2026-03-24T13:30:05.751589-04:00,2026-03-24,manage_1330,slot_skipped,"{""reason"": ""already_processed""}"
 2026-03-24T15:00:05.740108-04:00,2026-03-24,entry_1500,entry,"{""allocated_cash"": 4545.0, ""contract_symbol"": ""AVGO260515C00320000"", ""contracts"": 2, ""entry_option_price"": 22.725, ""matched_signals"": 30, ""success_rate"": 93.33, ""ticker"": ""AVGO""}"
+2026-03-25T09:30:01.175501-04:00,2026-03-25,data_refresh,data_refresh,{'saved': 97}
