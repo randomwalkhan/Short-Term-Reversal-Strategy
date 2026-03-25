@@ -893,8 +893,13 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
         return
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
     ts = pd.to_datetime(equity_df["timestamp_et"], errors="coerce")
+    plot_df = equity_df.copy()
+    plot_df["timestamp_et"] = ts
+    plot_df = plot_df[plot_df["timestamp_et"].notna()].copy()
+    if plot_df.empty:
+        return
     plt.figure(figsize=(12, 6))
-    plt.plot(ts, equity_df["equity"], linewidth=2, label="Reversal 3.0 Live Paper")
+    plt.plot(plot_df["timestamp_et"], plot_df["equity"], linewidth=2, label="Reversal 3.0 Live Paper")
     plt.axhline(INITIAL_CAPITAL, color="gray", linestyle="--", alpha=0.5, label="Initial Capital")
     plt.title("Reversal 3.0 Live Paper-Test Equity")
     plt.xlabel("Timestamp (ET)")
