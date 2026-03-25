@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "initial_capital": 10000.0,
-  "cash": 5455.0,
+  "cash": 575.0,
   "positions": [
     {
       "position_id": "AVGO_20260324T150005",
@@ -26,6 +26,30 @@
       "planned_tp_day1": 24.997500000000002,
       "planned_tp_day2": 26.13375,
       "planned_stop": 20.4525
+    },
+    {
+      "position_id": "FANG_20260325T150003",
+      "ticker": "FANG",
+      "contract_symbol": "FANG260515C00195000",
+      "expiry": "2026-05-15",
+      "strike": 195.0,
+      "entry_timestamp": "2026-03-25T15:00:03.353246-04:00",
+      "entry_trade_date": "2026-03-25",
+      "entry_slot": "entry_1500",
+      "entry_spot": 195.52999877929688,
+      "entry_option_price": 12.2,
+      "entry_bid": 11.8,
+      "entry_ask": 12.6,
+      "entry_iv_pct": 41.94393994140625,
+      "contracts": 4,
+      "allocated_cash": 4880.0,
+      "success_rate": 100.0,
+      "matched_signals": 25,
+      "current_drop_pct": 0.78,
+      "rolling_sigma_20d_pct": 29.12,
+      "planned_tp_day1": 13.42,
+      "planned_tp_day2": 14.029999999999998,
+      "planned_stop": 10.98
     }
   ],
   "processed_slots": {
@@ -41,7 +65,8 @@
       "manage_1130",
       "manage_1230",
       "manage_1330",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"
