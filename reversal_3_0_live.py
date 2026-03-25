@@ -12,6 +12,7 @@ from typing import Any
 from zoneinfo import ZoneInfo
 
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 import numpy as np
 import pandas as pd
 import yfinance as yf
@@ -60,6 +61,7 @@ POSITIONS_PATH = LIVE_DIR / "live_positions.csv"
 EQUITY_PATH = LIVE_DIR / "live_equity.csv"
 DASHBOARD_PATH = LIVE_DIR / "README.md"
 PLOT_PATH = ASSETS_DIR / "reversal_3_0_live_equity.png"
+PLOT_WINDOW_DAYS = 7
 
 SLOT_TO_ET = {
     "manage_0930": (9, 30),
@@ -893,17 +895,40 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     if equity_df.empty:
         return
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    ts = pd.to_datetime(equity_df["timestamp_et"], errors="coerce")
     plot_df = equity_df.copy()
-    plot_df["timestamp_et"] = ts
+    plot_df["timestamp_et"] = pd.to_datetime(plot_df["timestamp_et"], errors="coerce", utc=True)
     plot_df = plot_df[plot_df["timestamp_et"].notna()].copy()
     if plot_df.empty:
         return
+    plot_df["timestamp_plot"] = plot_df["timestamp_et"].dt.tz_convert(ET).dt.tz_localize(None)
+    plot_df = plot_df.sort_values("timestamp_plot").drop_duplicates(subset=["timestamp_plot"], keep="last")
+    latest_ts = plot_df["timestamp_plot"].max()
+    window_start = latest_ts - pd.Timedelta(days=PLOT_WINDOW_DAYS)
+    plot_df = plot_df[plot_df["timestamp_plot"] >= window_start].copy()
+
     plt.figure(figsize=(12, 6))
-    plt.plot(plot_df["timestamp_et"], plot_df["equity"], linewidth=2, label="Reversal 3.0 Live Paper")
+    plt.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color="#0F766E", label="Equity")
     plt.axhline(INITIAL_CAPITAL, color="gray", linestyle="--", alpha=0.5, label="Initial Capital")
-    plt.title("Reversal 3.0 Live Paper-Test Equity")
-    plt.xlabel("Timestamp (ET)")
+    axis = plt.gca()
+    locator = mdates.AutoDateLocator(minticks=3, maxticks=6)
+    formatter = mdates.DateFormatter("%m-%d")
+    axis.xaxis.set_major_locator(locator)
+    axis.xaxis.set_major_formatter(formatter)
+
+    last_row = plot_df.iloc[-1]
+    last_label = last_row["timestamp_plot"].strftime("%m-%d %I:%M %p ET")
+    axis.annotate(
+        last_label,
+        xy=(last_row["timestamp_plot"], last_row["equity"]),
+        xytext=(-12, 14),
+        textcoords="offset points",
+        ha="right",
+        fontsize=9,
+        color="#0F172A",
+        bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": "#CBD5E1", "alpha": 0.95},
+    )
+    plt.title("Reversal 3.0 Live Paper Equity (1W)")
+    plt.xlabel("Date (ET, trailing 1W)")
     plt.ylabel("Portfolio Value ($)")
     plt.grid(alpha=0.25)
     plt.legend()
@@ -965,6 +990,7 @@ def render_dashboard(
             "- Entry scan: `3:00 PM ET`",
             "- Exit scans: `9:30 AM ET` and every hour through `3:30 PM ET`",
             "- Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed",
+            "- Chart view: default display is trailing `1W`, with explicit ET timestamps",
             "",
             "## Portfolio Snapshot",
             "",
@@ -1013,9 +1039,11 @@ def render_dashboard(
             "",
             format_table(recent_events, columns=["timestamp_et", "slot", "event_type", "detail"], max_rows=10),
             "",
-            "## Equity Curve",
+            "## Equity Curve (1W)",
             "",
-            "![Reversal 3.0 Live Equity](../../assets/reversal_3_0_live_equity.png)",
+            "Trailing `1W` window. The latest point is annotated with its exact ET checkpoint time.",
+            "",
+            "![Reversal 3.0 Live Equity 1W](../../assets/reversal_3_0_live_equity.png)",
             "",
         ]
     )
@@ -1029,6 +1057,7 @@ def render_dashboard(
             f"- Equity: `${last_equity:,.2f}` | Realized: `${realized_pnl:,.2f}` | Unrealized: `${unrealized_pnl:,.2f}` | Open positions: `{len(state['positions'])}`",
             f"- Today closed trades: `{len(today_trades)}`",
             f"- Current slot: `{slot_key or 'manual_refresh'}`",
+            "- Chart: trailing `1W` with ET timestamps",
             "",
             format_table(
                 positions_view,
@@ -1036,7 +1065,7 @@ def render_dashboard(
                 max_rows=8,
             ),
             "",
-            "![Reversal 3.0 Live Equity](assets/reversal_3_0_live_equity.png)",
+            "![Reversal 3.0 Live Equity 1W](assets/reversal_3_0_live_equity.png)",
             "",
             "- [Full live dashboard](results/reversal_3_0_live/README.md)",
             "- [Live trades csv](results/reversal_3_0_live/live_trades.csv)",
