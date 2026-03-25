@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-25 12:30:01 EDT`
-Last processed slot: `manage_1230`
+Last updated (ET): `2026-03-25 13:06:33 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -19,16 +19,16 @@ Last processed slot: `manage_1230`
 ## Portfolio Snapshot
 
 - Cash: `$5,455.00`
-- Equity: `$10,010.00`
+- Equity: `$9,920.00`
 - Realized PnL: `$0.00`
-- Unrealized PnL: `$10.00`
+- Unrealized PnL: `$-80.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  AVGO AVGO260515C00320000       2026-03-24                   1               22.72                 22.78      318.55        319.64            10.0                   0.22         93.33               30              1.23         48.32           48.19                   39.5
+  AVGO AVGO260515C00320000       2026-03-24                   1               22.72                 22.32      318.55        319.28           -80.0                  -1.76         93.33               30              1.23         48.32           47.55                   39.5
 ```
 
 ## Today's Closed Trades (2026-03-25)
@@ -39,18 +39,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               22            0.85              1.17        196.56                29.12            True
-   WDC           97.06               34            1.25              2.63        299.92                74.01            True
-   STX           96.30               27            2.17              6.45        421.45                70.55            True
-  CDNS           90.00               40            0.83              1.66        283.61                27.43            True
-  ROST           90.00               20            0.76              1.16        215.30                32.83            True
-  AMAT           88.89               27            1.44              3.77        372.37                51.46            True
-  KLAC           87.88               33            0.98             10.79       1561.57                48.83            True
-  SNPS           87.50               24            1.83              5.33        413.33                37.59            True
-   BKR           86.67               30            0.66              0.29         63.36                40.11            True
-    MU           86.67               15            3.82             10.56        391.00                67.96            True
-  CRWD           86.05               43            0.62              1.71        392.26                45.29            True
- CMCSA           84.21               19            1.54              0.31         29.09                27.42            True
+  FANG          100.00               29            0.54              0.75        196.74                29.12            True
+   WDC           96.88               32            1.94              4.09        299.30                74.01            True
+   STX           95.83               24            2.73              8.12        420.74                70.55            True
+  KLAC           90.00               30            1.29             14.09       1560.15                48.83            True
+  CDNS           89.74               39            0.93              1.84        283.53                27.43            True
+  AMAT           88.46               26            1.50              3.93        372.30                51.46            True
+   BKR           86.67               30            0.68              0.30         63.36                40.11            True
+  CRWD           85.71               42            0.78              2.15        392.07                45.29            True
+  SNPS           85.71               28            1.60              4.65        413.63                37.59            True
+  CTAS           85.00               20            1.09              1.37        177.54                29.68            True
+  CTSH           83.87               31            0.68              0.29         60.12                32.06            True
+  BKNG           83.78               37            0.61             18.24       4282.83                41.15            True
 ```
 
 ## Recent Events
