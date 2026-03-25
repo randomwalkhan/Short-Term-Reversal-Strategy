@@ -1075,9 +1075,6 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
     if dry_run or skip_git_publish:
         return
     token = extract_github_token()
-    if not token:
-        return
-
     tracked_paths = [
         "README.md",
         "results/reversal_3_0_live/README.md",
@@ -1088,20 +1085,32 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
         "results/reversal_3_0_live/state.json",
         "assets/reversal_3_0_live_equity.png",
     ]
-    subprocess.run(["git", "add", *tracked_paths], cwd=BASE_DIR, check=False)
-    status = subprocess.run(["git", "status", "--short", "--", *tracked_paths], cwd=BASE_DIR, capture_output=True, text=True, check=False)
+
+    def run_git(cmd: list[str]) -> subprocess.CompletedProcess[str]:
+        result = subprocess.run(cmd, cwd=BASE_DIR, capture_output=True, text=True, check=False)
+        if result.stdout.strip():
+            print(result.stdout.strip())
+        if result.returncode != 0 and result.stderr.strip():
+            print(result.stderr.strip(), file=sys.stderr)
+        return result
+
+    run_git(["git", "add", *tracked_paths])
+    status = run_git(["git", "status", "--short", "--", *tracked_paths])
     if not status.stdout.strip():
         return
 
     commit_message = f"Update Reversal 3.0 live paper test {now_et.strftime('%Y-%m-%d %H:%M ET')}"
-    subprocess.run(["git", "commit", "-m", commit_message], cwd=BASE_DIR, check=False)
+    commit_result = run_git(["git", "commit", "-m", commit_message])
+    if commit_result.returncode != 0:
+        return
+
     if token:
         remote_url = f"https://x-access-token:{token}@github.com/randomwalkhan/Short-Term-Reversal-Strategy.git"
-        subprocess.run(["git", "pull", "--rebase", remote_url, "main"], cwd=BASE_DIR, check=False)
-        subprocess.run(["git", "push", remote_url, "HEAD:main"], cwd=BASE_DIR, check=False)
+        run_git(["git", "pull", "--rebase", remote_url, "main"])
+        run_git(["git", "push", remote_url, "HEAD:main"])
     else:
-        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=BASE_DIR, check=False)
-        subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=BASE_DIR, check=False)
+        run_git(["git", "pull", "--rebase", "origin", "main"])
+        run_git(["git", "push", "origin", "HEAD:main"])
 
 
 def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
