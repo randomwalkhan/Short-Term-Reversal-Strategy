@@ -1,8 +1,40 @@
 {
   "version": "3.0",
   "initial_capital": 10000.0,
-  "cash": 10000.0,
-  "positions": [],
-  "processed_slots": {},
+  "cash": 5455.0,
+  "positions": [
+    {
+      "position_id": "AVGO_20260324T150005",
+      "ticker": "AVGO",
+      "contract_symbol": "AVGO260515C00320000",
+      "expiry": "2026-05-15",
+      "strike": 320.0,
+      "entry_timestamp": "2026-03-24T15:00:05.740108-04:00",
+      "entry_trade_date": "2026-03-24",
+      "entry_slot": "entry_1500",
+      "entry_spot": 318.54998779296875,
+      "entry_option_price": 22.725,
+      "entry_bid": 22.55,
+      "entry_ask": 22.9,
+      "entry_iv_pct": 48.32204998779297,
+      "contracts": 2,
+      "allocated_cash": 4545.0,
+      "success_rate": 93.33,
+      "matched_signals": 30,
+      "current_drop_pct": 1.23,
+      "rolling_sigma_20d_pct": 39.5,
+      "planned_tp_day1": 24.997500000000002,
+      "planned_tp_day2": 26.13375,
+      "planned_stop": 20.4525
+    }
+  ],
+  "processed_slots": {
+    "2026-03-24": [
+      "manage_1330",
+      "manage_1430",
+      "entry_1500",
+      "manage_1530"
+    ]
+  },
   "start_date": "2026-03-24"
 }
