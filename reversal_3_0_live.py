@@ -905,9 +905,13 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     latest_ts = plot_df["timestamp_plot"].max()
     window_start = latest_ts - pd.Timedelta(days=PLOT_WINDOW_DAYS)
     plot_df = plot_df[plot_df["timestamp_plot"] >= window_start].copy()
+    period_start_equity = float(plot_df["equity"].iloc[0])
+    period_end_equity = float(plot_df["equity"].iloc[-1])
+    line_color = "#34C759" if period_end_equity >= period_start_equity else "#FF3B30"
 
     plt.figure(figsize=(12, 6))
-    plt.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color="#0F766E", label="Equity")
+    plt.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Equity")
+    plt.fill_between(plot_df["timestamp_plot"], plot_df["equity"], period_start_equity, color=line_color, alpha=0.12)
     plt.axhline(INITIAL_CAPITAL, color="gray", linestyle="--", alpha=0.5, label="Initial Capital")
     axis = plt.gca()
     locator = mdates.AutoDateLocator(minticks=3, maxticks=6)
@@ -925,7 +929,7 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
         ha="right",
         fontsize=9,
         color="#0F172A",
-        bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": "#CBD5E1", "alpha": 0.95},
+        bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": line_color, "alpha": 0.95},
     )
     plt.title("Reversal 3.0 Live Paper Equity (1W)")
     plt.xlabel("Date (ET, trailing 1W)")
