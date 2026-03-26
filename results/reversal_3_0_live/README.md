@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-26 10:30:00 EDT`
-Last processed slot: `manage_1030`
+Last updated (ET): `2026-03-26 11:30:00 EDT`
+Last processed slot: `manage_1130`
 
 ## Active Configuration
 
@@ -41,18 +41,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC           95.00               20            3.37              1.11         46.70                59.50            True
-   WDC           94.44               18            4.04              8.38        292.55                73.45            True
-   STX           94.12               17            3.82             11.06        408.48                69.64            True
-  NVDA           93.75               16            2.10              2.63        177.55                32.16            True
-  AVGO           92.86               28            1.43              3.18        317.45                37.11            True
-  ASML           90.91               11            3.05             29.74       1381.15                45.25            True
-  PLTR           86.96               23            2.52              2.73        153.79                44.81            True
-  MPWR           85.71               28            1.83             14.31       1112.53                43.00            True
-  TSLA           85.29               34            1.13              3.04        384.65                32.52            True
-  CTAS           83.33               12            1.65              2.04        175.98                23.67            True
- GOOGL           81.82               22            1.49              3.03        289.63                23.48            True
-   ADI           81.25               32            0.63              1.41        321.43                31.26            True
+  SBUX           96.30               27            0.86              0.56         92.46                29.63            True
+   WDC           92.31               13            5.15             10.69        291.56                73.45            True
+  NVDA           92.31               13            2.62              3.28        177.28                32.16            True
+   STX           91.67               12            5.02             14.51        407.00                69.64            True
+  AVGO           90.91               22            1.94              4.33        316.95                37.11            True
+  PCAR           89.74               39            0.57              0.47        116.14                24.57            True
+  TSLA           84.62               26            1.56              4.21        384.15                32.52            True
+   TXN           82.14               28            0.97              1.33        196.20                29.17            True
+  AXON           81.40               43            0.72              2.33        459.15                52.47            True
+  MPWR           80.95               21            2.52             19.70       1110.22                43.00            True
+  MNST           80.00               30            0.69              0.35         73.06                27.38            True
+   ADI           80.00               25            1.04              2.35        321.02                31.26            True
 ```
 
 ## Recent Events
