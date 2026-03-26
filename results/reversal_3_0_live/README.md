@@ -1,6 +1,6 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-26 19:04:50 EDT`
+Last updated (ET): `2026-03-26 19:11:30 EDT`
 Last processed slot: `manual_refresh`
 
 ## Active Configuration
@@ -29,7 +29,7 @@ Last processed slot: `manual_refresh`
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  ABNB ABNB260515C00130000       2026-03-26                   0                9.85                  9.85      130.79        131.09             0.0                    0.0         94.29               35              0.77         51.93           49.44                  28.73
+  ABNB ABNB260515C00130000       2026-03-26                   0                9.85                  9.85      130.79        131.13             0.0                    0.0         94.29               35              0.77         51.93           49.44                  28.73
 ```
 
 ## Today's Closed Trades (2026-03-26)
@@ -45,17 +45,17 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
   SBUX           93.75               16            1.38              0.90         92.32                29.63            True
-  ABNB           92.68               41            0.55              0.50        131.59                28.73            True
+  ABNB           93.18               44            0.52              0.48        131.61                28.73            True
+  CDNS           90.91               44            0.64              1.25        280.85                23.40            True
+   WMT           90.32               31            0.68              0.58        122.81                23.35            True
+  SNPS           88.89               36            1.15              3.31        408.71                32.59            True
   PCAR           88.57               35            0.79              0.64        116.06                24.57            True
-  SNPS           88.00               25            1.74              5.00        407.99                32.59            True
-  AVGO           86.67               15            2.56              5.71        316.36                37.11            True
-  GILD           85.71               14            1.31              1.27        137.72                23.55            True
+  AVGO           86.67               15            2.56              5.72        316.36                37.11            True
   INSM           85.00               40            0.92              0.95        147.90                48.80            True
   SHOP           84.85               33            1.66              1.38        117.83                51.12            True
   MCHP           83.87               31            1.01              0.46         64.96                34.70            True
   TMUS           83.87               31            0.62              0.92        210.96                21.31            True
-  TSLA           82.35               17            3.00              8.11        382.47                32.52            True
-   TXN           80.77               26            1.16              1.60        196.08                29.17            True
+  TSLA           82.35               17            3.07              8.28        382.40                32.52            True
 ```
 
 ## Recent Events
