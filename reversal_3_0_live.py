@@ -926,12 +926,18 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     period_end_equity = float(plot_df["equity"].iloc[-1])
     period_return_pct = (period_end_equity / INITIAL_CAPITAL - 1.0) * 100
     line_color = "#34C759" if period_end_equity >= period_start_equity else "#FF3B30"
+    y_band = INITIAL_CAPITAL * 0.10
+    data_min = float(plot_df["equity"].min())
+    data_max = float(plot_df["equity"].max())
+    lower_bound = min(INITIAL_CAPITAL - y_band, data_min - INITIAL_CAPITAL * 0.01)
+    upper_bound = max(INITIAL_CAPITAL + y_band, data_max + INITIAL_CAPITAL * 0.01)
 
     plt.figure(figsize=(12, 6))
     plt.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Equity")
     plt.fill_between(plot_df["timestamp_plot"], plot_df["equity"], period_start_equity, color=line_color, alpha=0.12)
     plt.axhline(INITIAL_CAPITAL, color="gray", linestyle="--", alpha=0.5, label="Initial Capital")
     axis = plt.gca()
+    axis.set_ylim(lower_bound, upper_bound)
     locator = mdates.AutoDateLocator(minticks=3, maxticks=6)
     formatter = mdates.DateFormatter("%m-%d")
     axis.xaxis.set_major_locator(locator)
@@ -946,12 +952,17 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
         f"{last_row['timestamp_plot'].strftime('%m-%d %I:%M %p ET')}\n"
         f"{((float(last_row['equity']) / INITIAL_CAPITAL) - 1.0) * 100:+.2f}%"
     )
+    y_span = upper_bound - lower_bound
+    near_top = float(last_row["equity"]) >= lower_bound + 0.82 * y_span
+    label_offset = (-12, -18) if near_top else (-12, 14)
+    label_va = "top" if near_top else "bottom"
     axis.annotate(
         last_label,
         xy=(last_row["timestamp_plot"], last_row["equity"]),
-        xytext=(-12, 14),
+        xytext=label_offset,
         textcoords="offset points",
         ha="right",
+        va=label_va,
         fontsize=9,
         color="#0F172A",
         bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": line_color, "alpha": 0.95},
