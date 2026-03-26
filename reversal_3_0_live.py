@@ -13,6 +13,7 @@ from zoneinfo import ZoneInfo
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+from matplotlib.ticker import FuncFormatter
 import numpy as np
 import pandas as pd
 import yfinance as yf
@@ -65,13 +66,19 @@ PLOT_WINDOW_DAYS = 7
 
 SLOT_TO_ET = {
     "manage_0930": (9, 30),
+    "manage_1000": (10, 0),
     "manage_1030": (10, 30),
+    "manage_1100": (11, 0),
     "manage_1130": (11, 30),
+    "manage_1200": (12, 0),
     "manage_1230": (12, 30),
+    "manage_1300": (13, 0),
     "manage_1330": (13, 30),
+    "manage_1400": (14, 0),
     "manage_1430": (14, 30),
     "entry_1500": (15, 0),
     "manage_1530": (15, 30),
+    "manage_1600": (16, 0),
 }
 
 
@@ -681,11 +688,11 @@ def maybe_exit_positions(
         exit_reason = None
 
         if current_price <= raw["planned_stop"]:
-            exit_reason = "stop_scan"
+            exit_reason = "stop_loss_hit_at_scan"
         elif current_price >= target:
-            exit_reason = "tp_day1_scan" if business_days_held <= 1 else "tp_day2_scan"
-        elif business_days_held >= 2 and slot_key == "manage_1530":
-            exit_reason = "time_exit_scan"
+            exit_reason = "take_profit_day1_hit_at_scan" if business_days_held <= 1 else "take_profit_day2_hit_at_scan"
+        elif business_days_held >= 2 and slot_key == "manage_1600":
+            exit_reason = "time_exit_at_4pm_scan"
 
         if exit_reason is None:
             remaining_positions.append(raw)
@@ -891,6 +898,16 @@ def format_table(df: pd.DataFrame, columns: list[str] | None = None, max_rows: i
     return "```text\n" + df.head(max_rows).to_string(index=False) + "\n```"
 
 
+def humanize_exit_reason(reason: str) -> str:
+    mapping = {
+        "stop_scan": "stop_loss_hit_at_scan",
+        "tp_day1_scan": "take_profit_day1_hit_at_scan",
+        "tp_day2_scan": "take_profit_day2_hit_at_scan",
+        "time_exit_scan": "time_exit_at_4pm_scan",
+    }
+    return mapping.get(reason, reason)
+
+
 def plot_live_equity(equity_df: pd.DataFrame) -> None:
     if equity_df.empty:
         return
@@ -907,6 +924,7 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     plot_df = plot_df[plot_df["timestamp_plot"] >= window_start].copy()
     period_start_equity = float(plot_df["equity"].iloc[0])
     period_end_equity = float(plot_df["equity"].iloc[-1])
+    period_return_pct = (period_end_equity / INITIAL_CAPITAL - 1.0) * 100
     line_color = "#34C759" if period_end_equity >= period_start_equity else "#FF3B30"
 
     plt.figure(figsize=(12, 6))
@@ -918,9 +936,16 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     formatter = mdates.DateFormatter("%m-%d")
     axis.xaxis.set_major_locator(locator)
     axis.xaxis.set_major_formatter(formatter)
+    return_axis = axis.twinx()
+    return_axis.set_ylim(axis.get_ylim())
+    return_axis.yaxis.set_major_formatter(FuncFormatter(lambda value, _: f"{((value / INITIAL_CAPITAL) - 1.0) * 100:+.1f}%"))
+    return_axis.set_ylabel("Return (%)")
 
     last_row = plot_df.iloc[-1]
-    last_label = last_row["timestamp_plot"].strftime("%m-%d %I:%M %p ET")
+    last_label = (
+        f"{last_row['timestamp_plot'].strftime('%m-%d %I:%M %p ET')}\n"
+        f"{((float(last_row['equity']) / INITIAL_CAPITAL) - 1.0) * 100:+.2f}%"
+    )
     axis.annotate(
         last_label,
         xy=(last_row["timestamp_plot"], last_row["equity"]),
@@ -931,7 +956,7 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
         color="#0F172A",
         bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": line_color, "alpha": 0.95},
     )
-    plt.title("Reversal 3.0 Live Paper Equity (1W)")
+    plt.title(f"Reversal 3.0 Live Paper Equity (1W)  |  Return {period_return_pct:+.2f}%")
     plt.xlabel("Date (ET, trailing 1W)")
     plt.ylabel("Portfolio Value ($)")
     plt.grid(alpha=0.25)
@@ -957,6 +982,8 @@ def render_dashboard(
     today = now_et.date().isoformat()
     today_trades = trades_df[trades_df.get("exit_trade_date_et", pd.Series(dtype=str)).astype(str) == today].copy() if not trades_df.empty and "exit_trade_date_et" in trades_df.columns else pd.DataFrame()
     recent_events = events_df.sort_values("timestamp_et", ascending=False).head(10) if not events_df.empty else pd.DataFrame()
+    if not today_trades.empty and "exit_reason" in today_trades.columns:
+        today_trades["exit_reason"] = today_trades["exit_reason"].astype(str).map(humanize_exit_reason)
 
     positions_view = positions_df.copy()
     if not positions_view.empty:
@@ -992,9 +1019,9 @@ def render_dashboard(
             "- Matched-signal gate: `>= 10`",
             "- Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers",
             "- Entry scan: `3:00 PM ET`",
-            "- Exit scans: `9:30 AM ET` and every hour through `3:30 PM ET`",
+            "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`",
             "- Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed",
-            "- Chart view: default display is trailing `1W`, with explicit ET timestamps",
+            "- Chart view: default display is trailing `1W`, with latest ET checkpoint annotation and return % axis",
             "",
             "## Portfolio Snapshot",
             "",
@@ -1045,7 +1072,7 @@ def render_dashboard(
             "",
             "## Equity Curve (1W)",
             "",
-            "Trailing `1W` window. The latest point is annotated with its exact ET checkpoint time.",
+            "Trailing `1W` window. The latest point is annotated with its exact ET checkpoint time and return %. The right axis shows total return versus the $10,000 start.",
             "",
             "![Reversal 3.0 Live Equity 1W](../../assets/reversal_3_0_live_equity.png)",
             "",
