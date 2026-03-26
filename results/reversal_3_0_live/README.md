@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-26 15:30:00 EDT`
-Last processed slot: `manage_1530`
+Last updated (ET): `2026-03-26 19:04:50 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -13,49 +13,49 @@ Last processed slot: `manage_1530`
 - Matched-signal gate: `>= 10`
 - Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers
 - Entry scan: `3:00 PM ET`
-- Exit scans: `9:30 AM ET` and every hour through `3:30 PM ET`
+- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`
 - Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed
-- Chart view: default display is trailing `1W`, with explicit ET timestamps
+- Chart view: default display is trailing `1W`, with latest ET checkpoint annotation and return % axis
 
 ## Portfolio Snapshot
 
 - Cash: `$5,215.00`
-- Equity: `$10,127.50`
+- Equity: `$10,140.00`
 - Realized PnL: `$140.00`
-- Unrealized PnL: `$-12.50`
+- Unrealized PnL: `$0.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  ABNB ABNB260515C00130000       2026-03-26                   0                9.85                  9.82      130.79        131.06           -12.5                  -0.25         94.29               35              0.77         51.93           49.95                  28.73
+  ABNB ABNB260515C00130000       2026-03-26                   0                9.85                  9.85      130.79        131.09             0.0                    0.0         94.29               35              0.77         51.93           49.44                  28.73
 ```
 
 ## Today's Closed Trades (2026-03-26)
 
 ```text
-ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price    pnl  return_pct  exit_reason
-  AVGO AVGO260515C00320000          2026-03-24         2026-03-26              22.725             20.025 -540.0  -11.881188    stop_scan
-  FANG FANG260515C00195000          2026-03-25         2026-03-26              12.200             13.900  680.0   13.934426 tp_day1_scan
+ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price    pnl  return_pct                  exit_reason
+  AVGO AVGO260515C00320000          2026-03-24         2026-03-26              22.725             20.025 -540.0  -11.881188        stop_loss_hit_at_scan
+  FANG FANG260515C00195000          2026-03-25         2026-03-26              12.200             13.900  680.0   13.934426 take_profit_day1_hit_at_scan
 ```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  TSLA          100.00               12            3.35              9.05        382.07                32.52            True
-  DXCM           93.02               43            0.60              0.28         66.72                26.85            True
-  ABNB           92.68               41            0.57              0.53        131.58                28.73            True
-  SBUX           91.67               12            1.89              1.23         92.17                29.63            True
-   WMT           90.62               32            0.56              0.48        122.85                23.35            True
-  FAST           89.66               29            0.74              0.23         45.27                20.51            True
-   MAR           88.24               34            0.78              1.79        326.02                28.20            True
-  AVGO           88.24               17            2.44              5.45        316.47                37.11            True
-  GILD           87.50               24            0.86              0.84        137.90                23.55            True
-  PCAR           86.67               30            0.98              0.80        116.00                24.57            True
-  SNPS           85.71               28            1.47              4.21        408.33                32.59            True
-   KDP           85.29               34            0.51              0.09         26.33                20.08            True
+  SBUX           93.75               16            1.38              0.90         92.32                29.63            True
+  ABNB           92.68               41            0.55              0.50        131.59                28.73            True
+  PCAR           88.57               35            0.79              0.64        116.06                24.57            True
+  SNPS           88.00               25            1.74              5.00        407.99                32.59            True
+  AVGO           86.67               15            2.56              5.71        316.36                37.11            True
+  GILD           85.71               14            1.31              1.27        137.72                23.55            True
+  INSM           85.00               40            0.92              0.95        147.90                48.80            True
+  SHOP           84.85               33            1.66              1.38        117.83                51.12            True
+  MCHP           83.87               31            1.01              0.46         64.96                34.70            True
+  TMUS           83.87               31            0.62              0.92        210.96                21.31            True
+  TSLA           82.35               17            3.00              8.11        382.47                32.52            True
+   TXN           80.77               26            1.16              1.60        196.08                29.17            True
 ```
 
 ## Recent Events
@@ -76,6 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 
 ## Equity Curve (1W)
 
-Trailing `1W` window. The latest point is annotated with its exact ET checkpoint time.
+Trailing `1W` window. The latest point is annotated with its exact ET checkpoint time and return %. The right axis shows total return versus the $10,000 start.
 
 ![Reversal 3.0 Live Equity 1W](../../assets/reversal_3_0_live_equity.png)
