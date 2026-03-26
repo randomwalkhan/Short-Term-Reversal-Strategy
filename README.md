@@ -3,17 +3,13 @@
 <!-- reversal-3.0-live:start -->
 ## Reversal 3.0 Live Paper Test
 
-- Last updated (ET): `2026-03-26 09:30:05 EDT`
-- Equity: `$9,951.00` | Realized: `$0.00` | Unrealized: `$-49.00` | Open positions: `2`
-- Today closed trades: `0`
-- Current slot: `manage_0930`
+- Last updated (ET): `2026-03-26 10:30:00 EDT`
+- Equity: `$10,140.00` | Realized: `$140.00` | Unrealized: `$0.00` | Open positions: `0`
+- Today closed trades: `2`
+- Current slot: `manage_1030`
 - Chart: trailing `1W` with ET timestamps
 
-```text
-ticker     contract_symbol  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  FANG FANG260515C00195000                 12.44            96.0                   1.97                   1
-  AVGO AVGO260515C00320000                 22.00          -145.0                  -3.19                   2
-```
+_None_
 
 ![Reversal 3.0 Live Equity 1W](assets/reversal_3_0_live_equity.png)
 

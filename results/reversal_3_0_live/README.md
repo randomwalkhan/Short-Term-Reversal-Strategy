@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-26 09:30:05 EDT`
-Last processed slot: `manage_0930`
+Last updated (ET): `2026-03-26 10:30:00 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -19,46 +19,48 @@ Last processed slot: `manage_0930`
 
 ## Portfolio Snapshot
 
-- Cash: `$575.00`
-- Equity: `$9,951.00`
-- Realized PnL: `$0.00`
-- Unrealized PnL: `$-49.00`
-- Open positions: `2`
+- Cash: `$10,140.00`
+- Equity: `$10,140.00`
+- Realized PnL: `$140.00`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  FANG FANG260515C00195000       2026-03-25                   1               12.20                 12.44      195.53         198.8            96.0                   1.97        100.00               25              0.78         41.94            0.00                  29.12
-  AVGO AVGO260515C00320000       2026-03-24                   2               22.72                 22.00      318.55         312.9          -145.0                  -3.19         93.33               30              1.23         48.32            1.56                  39.50
-```
+_None_
 
 ## Today's Closed Trades (2026-03-26)
 
-_None_
+```text
+ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price    pnl  return_pct  exit_reason
+  AVGO AVGO260515C00320000          2026-03-24         2026-03-26              22.725             20.025 -540.0  -11.881188    stop_scan
+  FANG FANG260515C00195000          2026-03-25         2026-03-26              12.200             13.900  680.0   13.934426 tp_day1_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               21            0.52              0.82        225.44                24.88            True
-   WDC           95.83               24            3.11              6.44        293.38                73.45            True
-  SBUX           95.83               24            0.98              0.64         92.43                29.63            True
-  NVDA           95.00               20            1.75              2.18        177.74                32.16            True
-   STX           94.44               18            3.62             10.47        408.73                69.64            True
-  INTC           93.75               32            1.40              0.46         46.98                59.50            True
-  AVGO           92.00               25            1.72              3.84        317.16                37.11            True
-  CDNS           90.91               44            0.63              1.23        280.86                23.40            True
-  NFLX           89.29               28            1.02              0.66         92.00                51.34            True
-  SNPS           89.19               37            1.05              3.01        408.84                32.59            True
-  MPWR           88.24               34            1.00              7.82       1115.31                43.00            True
-    MU           86.96               23            3.03              8.11        378.61                68.24            True
+  INTC           95.00               20            3.37              1.11         46.70                59.50            True
+   WDC           94.44               18            4.04              8.38        292.55                73.45            True
+   STX           94.12               17            3.82             11.06        408.48                69.64            True
+  NVDA           93.75               16            2.10              2.63        177.55                32.16            True
+  AVGO           92.86               28            1.43              3.18        317.45                37.11            True
+  ASML           90.91               11            3.05             29.74       1381.15                45.25            True
+  PLTR           86.96               23            2.52              2.73        153.79                44.81            True
+  MPWR           85.71               28            1.83             14.31       1112.53                43.00            True
+  TSLA           85.29               34            1.13              3.04        384.65                32.52            True
+  CTAS           83.33               12            1.65              2.04        175.98                23.67            True
+ GOOGL           81.82               22            1.49              3.03        289.63                23.48            True
+   ADI           81.25               32            0.63              1.41        321.43                31.26            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et         slot   event_type                                                                                                                                                                             detail
+2026-03-26T10:30:00.722036-04:00  manage_1030         exit                                                           {"contract_symbol": "AVGO260515C00320000", "pnl": -540.0, "reason": "stop_scan", "return_pct": -11.88, "ticker": "AVGO"}
+2026-03-26T10:30:00.722036-04:00  manage_1030         exit                                                          {"contract_symbol": "FANG260515C00195000", "pnl": 680.0, "reason": "tp_day1_scan", "return_pct": 13.93, "ticker": "FANG"}
 2026-03-26T09:30:05.730919-04:00 data_refresh data_refresh                                                                                                                                                                      {'saved': 97}
 2026-03-25T15:00:03.353246-04:00   entry_1500        entry   {"allocated_cash": 4880.0, "contract_symbol": "FANG260515C00195000", "contracts": 4, "entry_option_price": 12.2, "matched_signals": 25, "success_rate": 100.0, "ticker": "FANG"}
 2026-03-25T14:34:20.011472-04:00  manage_1430 slot_skipped                                                                                                                                                    {"reason": "already_processed"}

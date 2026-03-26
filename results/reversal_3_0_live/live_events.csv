@@ -7,3 +7,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-03-25T14:34:20.011472-04:00,2026-03-25,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-03-25T15:00:03.353246-04:00,2026-03-25,entry_1500,entry,"{""allocated_cash"": 4880.0, ""contract_symbol"": ""FANG260515C00195000"", ""contracts"": 4, ""entry_option_price"": 12.2, ""matched_signals"": 25, ""success_rate"": 100.0, ""ticker"": ""FANG""}"
 2026-03-26T09:30:05.730919-04:00,2026-03-26,data_refresh,data_refresh,{'saved': 97}
+2026-03-26T10:30:00.722036-04:00,2026-03-26,manage_1030,exit,"{""contract_symbol"": ""AVGO260515C00320000"", ""pnl"": -540.0, ""reason"": ""stop_scan"", ""return_pct"": -11.88, ""ticker"": ""AVGO""}"
+2026-03-26T10:30:00.722036-04:00,2026-03-26,manage_1030,exit,"{""contract_symbol"": ""FANG260515C00195000"", ""pnl"": 680.0, ""reason"": ""tp_day1_scan"", ""return_pct"": 13.93, ""ticker"": ""FANG""}"
