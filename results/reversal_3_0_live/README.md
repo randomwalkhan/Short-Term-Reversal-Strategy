@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-27 15:00:04 EDT`
-Last processed slot: `entry_1500`
+Last updated (ET): `2026-03-27 15:30:01 EDT`
+Last processed slot: `manage_1530`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$4,977.50`
-- Equity: `$9,577.50`
+- Equity: `$9,527.50`
 - Realized PnL: `$-422.50`
-- Unrealized PnL: `$0.00`
+- Unrealized PnL: `$-50.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260501C00225000       2026-03-27                   0                 9.2                   9.2      223.64         223.4             0.0                    0.0         100.0               20              0.68         39.47           39.47                  24.88
+   HON HON260501C00225000       2026-03-27                   0                 9.2                   9.1      223.64        223.58           -50.0                  -1.09         100.0               20              0.68         39.47           38.43                  24.88
 ```
 
 ## Today's Closed Trades (2026-03-27)
@@ -43,18 +43,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               20            0.68              1.07        224.71                24.88            True
-  INTC           96.43               28            2.23              0.69         43.80                64.25            True
-  REGN           94.12               17            1.93             10.21        752.35                28.18            True
-  NVDA           93.75               16            2.17              2.60        170.13                31.98            True
-  AMAT           91.18               34            0.79              1.88        337.75                54.88            True
-  AVGO           89.47               19            2.17              4.70        307.40                38.20            True
-  KLAC           89.19               37            0.52              5.24       1448.89                53.70            True
-  MPWR           88.89               36            0.78              5.80       1055.80                45.70            True
+   HON          100.00               19            0.71              1.11        224.69                24.88            True
+  INTC           96.15               26            2.35              0.72         43.79                64.25            True
+  REGN           94.44               18            1.87              9.93        752.48                28.18            True
+  NVDA           93.75               16            2.18              2.61        170.12                31.98            True
+  GILD           92.31               13            1.39              1.33        136.31                19.20            True
+  AMAT           90.32               31            1.08              2.57        337.45                54.88            True
+  AVGO           88.89               18            2.45              5.30        307.14                38.20            True
  CMCSA           88.46               26            1.06              0.21         28.63                27.69            True
-   LIN           86.96               23            0.62              2.15        494.57                19.13            True
-   TRI           85.71               35            1.14              0.72         90.07                48.84            True
-  CTAS           85.71               21            1.14              1.34        168.27                26.37            True
+  KLAC           88.24               34            0.83              8.44       1447.51                53.70            True
+  MPWR           87.88               33            1.31              9.67       1054.13                45.70            True
+   AMD           85.71               35            1.11              1.58        203.09                56.22            True
+   TRI           85.29               34            1.28              0.81         90.03                48.84            True
 ```
 
 ## Recent Events
