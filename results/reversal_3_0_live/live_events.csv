@@ -10,3 +10,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-03-26T10:30:00.722036-04:00,2026-03-26,manage_1030,exit,"{""contract_symbol"": ""AVGO260515C00320000"", ""pnl"": -540.0, ""reason"": ""stop_scan"", ""return_pct"": -11.88, ""ticker"": ""AVGO""}"
 2026-03-26T10:30:00.722036-04:00,2026-03-26,manage_1030,exit,"{""contract_symbol"": ""FANG260515C00195000"", ""pnl"": 680.0, ""reason"": ""tp_day1_scan"", ""return_pct"": 13.93, ""ticker"": ""FANG""}"
 2026-03-26T15:00:01.983935-04:00,2026-03-26,entry_1500,entry,"{""allocated_cash"": 4925.0, ""contract_symbol"": ""ABNB260515C00130000"", ""contracts"": 5, ""entry_option_price"": 9.85, ""matched_signals"": 35, ""success_rate"": 94.29, ""ticker"": ""ABNB""}"
+2026-03-27T09:30:06.387888-04:00,2026-03-27,data_refresh,data_refresh,{'saved': 97}

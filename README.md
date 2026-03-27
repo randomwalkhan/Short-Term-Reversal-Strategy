@@ -3,15 +3,15 @@
 <!-- reversal-3.0-live:start -->
 ## Reversal 3.0 Live Paper Test
 
-- Last updated (ET): `2026-03-26 19:11:30 EDT`
-- Equity: `$10,140.00` | Realized: `$140.00` | Unrealized: `$0.00` | Open positions: `1`
-- Today closed trades: `2`
-- Current slot: `manual_refresh`
+- Last updated (ET): `2026-03-27 09:30:06 EDT`
+- Equity: `$10,215.00` | Realized: `$140.00` | Unrealized: `$75.00` | Open positions: `1`
+- Today closed trades: `0`
+- Current slot: `manage_0930`
 - Chart: trailing `1W` with ET timestamps
 
 ```text
 ticker     contract_symbol  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  ABNB ABNB260515C00130000                  9.85             0.0                    0.0                   0
+  ABNB ABNB260515C00130000                  10.0            75.0                   1.52                   1
 ```
 
 ![Reversal 3.0 Live Equity 1W](assets/reversal_3_0_live_equity.png)
