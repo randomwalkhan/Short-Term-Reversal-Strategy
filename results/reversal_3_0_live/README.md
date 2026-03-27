@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-27 15:30:01 EDT`
-Last processed slot: `manage_1530`
+Last updated (ET): `2026-03-27 16:00:06 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$4,977.50`
-- Equity: `$9,527.50`
+- Equity: `$9,477.50`
 - Realized PnL: `$-422.50`
-- Unrealized PnL: `$-50.00`
+- Unrealized PnL: `$-100.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260501C00225000       2026-03-27                   0                 9.2                   9.1      223.64        223.58           -50.0                  -1.09         100.0               20              0.68         39.47           38.43                  24.88
+   HON HON260501C00225000       2026-03-27                   0                 9.2                   9.0      223.64        223.12          -100.0                  -2.17         100.0               20              0.68         39.47            38.9                  24.88
 ```
 
 ## Today's Closed Trades (2026-03-27)
@@ -43,18 +43,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               19            0.71              1.11        224.69                24.88            True
-  INTC           96.15               26            2.35              0.72         43.79                64.25            True
-  REGN           94.44               18            1.87              9.93        752.48                28.18            True
-  NVDA           93.75               16            2.18              2.61        170.12                31.98            True
-  GILD           92.31               13            1.39              1.33        136.31                19.20            True
-  AMAT           90.32               31            1.08              2.57        337.45                54.88            True
-  AVGO           88.89               18            2.45              5.30        307.14                38.20            True
- CMCSA           88.46               26            1.06              0.21         28.63                27.69            True
-  KLAC           88.24               34            0.83              8.44       1447.51                53.70            True
-  MPWR           87.88               33            1.31              9.67       1054.13                45.70            True
-   AMD           85.71               35            1.11              1.58        203.09                56.22            True
-   TRI           85.29               34            1.28              0.81         90.03                48.84            True
+   HON          100.00               17            0.91              1.43        224.56                24.88            True
+   STX           94.74               38            0.74              1.95        377.95                75.37            True
+  NVDA           93.75               16            2.24              2.69        170.09                31.98            True
+  INTC           93.10               29            2.13              0.66         43.82                64.25            True
+  CDNS           90.00               10            3.15              6.20        277.96                23.06            True
+  REGN           90.00               10            2.51             13.31        751.02                28.18            True
+  GILD           90.00               10            1.92              1.84        136.09                19.20            True
+  AVGO           87.50               16            2.82              6.11        306.79                38.20            True
+ CMCSA           85.71               21            1.36              0.27         28.60                27.69            True
+   LIN           85.71               14            0.88              3.06        494.18                19.13            True
+  PLTR           85.00               20            3.05              3.15        146.21                48.38            True
+  MRVL           85.00               20            2.87              1.96         96.84                74.63            True
 ```
 
 ## Recent Events
