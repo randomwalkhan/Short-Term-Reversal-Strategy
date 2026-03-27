@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-27 14:00:06 EDT`
-Last processed slot: `manage_1400`
+Last updated (ET): `2026-03-27 14:30:06 EDT`
+Last processed slot: `manage_1430`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC           96.43               28            2.21              0.68         43.81                64.25            True
-  NVDA           94.44               18            1.92              2.30        170.25                31.98            True
-  REGN           94.12               17            1.96             10.39        752.28                28.18            True
-  AMAT           91.18               34            0.72              1.70        337.82                54.88            True
-  MPWR           88.89               36            0.80              5.96       1055.73                45.70            True
-  ORLY           88.57               35            0.75              0.49         92.06                20.62            True
-  CTAS           88.46               26            0.91              1.07        168.39                26.37            True
-  GILD           88.46               26            0.78              0.75        136.56                19.20            True
- CMCSA           88.00               25            1.15              0.23         28.62                27.69            True
-  TSLA           87.50               16            3.27              8.51        368.46                34.39            True
-  AVGO           87.50               16            2.73              5.91        306.88                38.20            True
-   LIN           86.96               23            0.62              2.13        494.58                19.13            True
+   HON          100.00               20            0.69              1.09        224.70                24.88            True
+  INTC           96.15               26            2.40              0.74         43.78                64.25            True
+  NVDA           94.44               18            1.87              2.25        170.28                31.98            True
+  REGN           93.75               16            2.01             10.66        752.16                28.18            True
+  AVGO           91.30               23            1.99              4.31        307.57                38.20            True
+  AMAT           91.18               34            0.80              1.91        337.73                54.88            True
+  KLAC           89.47               38            0.51              5.16       1448.92                53.70            True
+  MPWR           88.89               36            0.86              6.38       1055.54                45.70            True
+  GILD           86.96               23            0.94              0.90        136.49                19.20            True
+  ORLY           86.21               29            1.07              0.69         91.97                20.62            True
+  CHTR           86.11               36            0.73              1.11        218.03                37.58            True
+   AMD           85.71               35            1.16              1.65        203.06                56.22            True
 ```
 
 ## Recent Events
