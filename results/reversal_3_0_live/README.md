@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-27 09:30:06 EDT`
-Last processed slot: `manage_0930`
+Last updated (ET): `2026-03-27 10:00:06 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -19,45 +19,46 @@ Last processed slot: `manage_0930`
 
 ## Portfolio Snapshot
 
-- Cash: `$5,215.00`
-- Equity: `$10,215.00`
-- Realized PnL: `$140.00`
-- Unrealized PnL: `$75.00`
-- Open positions: `1`
+- Cash: `$9,577.50`
+- Equity: `$9,577.50`
+- Realized PnL: `$-422.50`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  ABNB ABNB260515C00130000       2026-03-26                   1                9.85                  10.0      130.79         129.7            75.0                   1.52         94.29               35              0.77         51.93             0.2                  28.73
-```
+_None_
 
 ## Today's Closed Trades (2026-03-27)
 
-_None_
+```text
+ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price    pnl  return_pct           exit_reason
+  ABNB ABNB260515C00130000          2026-03-26         2026-03-27                9.85              8.725 -562.5   -11.42132 stop_loss_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC           93.94               33            1.56              0.48         43.89                64.25            True
-  ABNB           93.55               31            1.23              1.13        130.58                28.75            True
-  SBUX           93.33               15            1.55              0.99         90.80                29.92            True
-  AVGO           92.31               39            0.95              2.05        308.54                38.20            True
-  DXCM           91.67               36            1.18              0.55         65.86                25.75            True
-  NVDA           91.67               36            0.57              0.69        170.95                31.98            True
-  ROST           91.67               24            0.59              0.88        213.92                32.94            True
-  FTNT           91.67               12            2.78              1.58         80.35                27.82            True
-  CTAS           90.91               33            0.52              0.61        168.59                26.37            True
-  ASML           90.62               32            0.56              5.25       1327.25                47.14            True
-  FAST           90.00               30            0.71              0.22         45.01                20.37            True
-  SNPS           89.74               39            0.69              1.94        401.12                31.55            True
+  NVDA           95.24               21            1.58              1.89        170.43                31.98            True
+  INTC           93.94               33            1.29              0.40         43.93                64.25            True
+  ROST           91.67               24            0.65              0.98        213.88                32.94            True
+  CTAS           90.91               33            0.55              0.65        168.57                26.37            True
+  MRVL           90.62               32            1.38              0.94         97.28                74.63            True
+  AVGO           89.47               19            2.24              4.86        307.33                38.20            True
+  ASML           89.29               28            0.87              8.14       1326.01                47.14            True
+  MPWR           88.89               36            0.54              3.97       1056.58                45.70            True
+   MAR           88.46               26            1.09              2.48        324.68                28.20            True
+   LIN           88.00               25            0.60              2.06        494.61                19.13            True
+  CDNS           87.10               31            1.50              2.95        279.36                23.06            True
+  CHTR           85.71               35            0.80              1.23        217.98                37.58            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et         slot   event_type                                                                                                                                                                             detail
+2026-03-27T10:00:06.175720-04:00  manage_1000         exit                                               {"contract_symbol": "ABNB260515C00130000", "pnl": -562.5, "reason": "stop_loss_hit_at_scan", "return_pct": -11.42, "ticker": "ABNB"}
 2026-03-27T09:30:06.387888-04:00 data_refresh data_refresh                                                                                                                                                                      {'saved': 97}
 2026-03-26T15:00:01.983935-04:00   entry_1500        entry   {"allocated_cash": 4925.0, "contract_symbol": "ABNB260515C00130000", "contracts": 5, "entry_option_price": 9.85, "matched_signals": 35, "success_rate": 94.29, "ticker": "ABNB"}
 2026-03-26T10:30:00.722036-04:00  manage_1030         exit                                                           {"contract_symbol": "AVGO260515C00320000", "pnl": -540.0, "reason": "stop_scan", "return_pct": -11.88, "ticker": "AVGO"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-03-25T14:34:20.011472-04:00  manage_1430 slot_skipped                                                                                                                                                    {"reason": "already_processed"}
 2026-03-25T09:30:01.175501-04:00 data_refresh data_refresh                                                                                                                                                                      {'saved': 97}
 2026-03-24T15:00:05.740108-04:00   entry_1500        entry {"allocated_cash": 4545.0, "contract_symbol": "AVGO260515C00320000", "contracts": 2, "entry_option_price": 22.725, "matched_signals": 30, "success_rate": 93.33, "ticker": "AVGO"}
-2026-03-24T13:30:05.751589-04:00  manage_1330 slot_skipped                                                                                                                                                    {"reason": "already_processed"}
 ```
 
 ## Equity Curve (1W)

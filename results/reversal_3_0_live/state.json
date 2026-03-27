@@ -1,33 +1,8 @@
 {
   "version": "3.0",
   "initial_capital": 10000.0,
-  "cash": 5215.0,
-  "positions": [
-    {
-      "position_id": "ABNB_20260326T150001",
-      "ticker": "ABNB",
-      "contract_symbol": "ABNB260515C00130000",
-      "expiry": "2026-05-15",
-      "strike": 130.0,
-      "entry_timestamp": "2026-03-26T15:00:01.983935-04:00",
-      "entry_trade_date": "2026-03-26",
-      "entry_slot": "entry_1500",
-      "entry_spot": 130.7899932861328,
-      "entry_option_price": 9.85,
-      "entry_bid": 9.2,
-      "entry_ask": 10.5,
-      "entry_iv_pct": 51.92919165039063,
-      "contracts": 5,
-      "allocated_cash": 4925.0,
-      "success_rate": 94.29,
-      "matched_signals": 35,
-      "current_drop_pct": 0.77,
-      "rolling_sigma_20d_pct": 28.73,
-      "planned_tp_day1": 10.835,
-      "planned_tp_day2": 11.327499999999999,
-      "planned_stop": 8.865
-    }
-  ],
+  "cash": 9577.5,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -56,7 +31,8 @@
       "manage_1530"
     ],
     "2026-03-27": [
-      "manage_0930"
+      "manage_0930",
+      "manage_1000"
     ]
   },
   "start_date": "2026-03-24"
