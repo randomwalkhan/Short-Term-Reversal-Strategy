@@ -1,8 +1,33 @@
 {
   "version": "3.0",
   "initial_capital": 10000.0,
-  "cash": 9577.5,
-  "positions": [],
+  "cash": 4977.500000000001,
+  "positions": [
+    {
+      "position_id": "HON_20260327T150004",
+      "ticker": "HON",
+      "contract_symbol": "HON260501C00225000",
+      "expiry": "2026-05-01",
+      "strike": 225.0,
+      "entry_timestamp": "2026-03-27T15:00:04.241996-04:00",
+      "entry_trade_date": "2026-03-27",
+      "entry_slot": "entry_1500",
+      "entry_spot": 223.63999938964844,
+      "entry_option_price": 9.2,
+      "entry_bid": 8.1,
+      "entry_ask": 10.3,
+      "entry_iv_pct": 39.46593737792969,
+      "contracts": 5,
+      "allocated_cash": 4599.999999999999,
+      "success_rate": 100.0,
+      "matched_signals": 20,
+      "current_drop_pct": 0.68,
+      "rolling_sigma_20d_pct": 24.88,
+      "planned_tp_day1": 10.12,
+      "planned_tp_day2": 10.579999999999998,
+      "planned_stop": 8.28
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -41,7 +66,8 @@
       "manage_1300",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"
