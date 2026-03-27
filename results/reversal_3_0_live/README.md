@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-27 10:30:06 EDT`
-Last processed slot: `manage_1030`
+Last updated (ET): `2026-03-27 11:00:06 EDT`
+Last processed slot: `manage_1100`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN           97.06               34            0.77              4.07        754.98                28.18            True
-  NVDA           94.44               18            1.88              2.25        170.28                31.98            True
-  INTC           93.75               32            1.90              0.59         43.85                64.25            True
-  ROST           91.67               24            0.61              0.91        213.91                32.94            True
-  AVGO           91.30               23            1.91              4.15        307.64                38.20            True
-  MRVL           89.29               28            1.95              1.33         97.11                74.63            True
-  ASML           88.89               27            0.90              8.34       1325.93                47.14            True
-  PCAR           87.50               32            0.97              0.78        114.99                23.50            True
-  ALNY           86.36               44            0.88              2.01        327.30                32.30            True
-   TRI           85.71               35            1.16              0.73         90.07                48.84            True
-  PLTR           85.71               21            2.76              2.85        146.34                48.38            True
-  TSLA           85.71               21            2.28              5.95        369.56                34.39            True
+  REGN           97.44               39            0.62              3.29        755.32                28.18            True
+  INTC           93.94               33            1.71              0.53         43.87                64.25            True
+  ROST           92.31               26            0.55              0.82        213.95                32.94            True
+  AVGO           91.67               24            1.84              3.98        307.71                38.20            True
+  NVDA           90.91               22            1.52              1.82        170.46                31.98            True
+  CTAS           89.29               28            0.83              0.98        168.43                26.37            True
+  ASML           88.89               27            1.11             10.32       1325.08                47.14            True
+  PLTR           87.50               24            2.60              2.68        146.41                48.38            True
+ GOOGL           87.18               39            0.70              1.37        280.38                25.08            True
+  PCAR           86.67               30            1.01              0.82        114.98                23.50            True
+  TSLA           86.36               22            1.80              4.68        370.10                34.39            True
+  MRVL           85.71               21            2.82              1.93         96.85                74.63            True
 ```
 
 ## Recent Events
