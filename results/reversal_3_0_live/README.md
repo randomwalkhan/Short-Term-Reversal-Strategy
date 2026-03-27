@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-27 12:30:06 EDT`
-Last processed slot: `manage_1230`
+Last updated (ET): `2026-03-27 13:00:06 EDT`
+Last processed slot: `manage_1300`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN           95.83               24            1.31              6.95        753.75                28.18            True
-  INTC           93.94               33            1.22              0.38         43.94                64.25            True
-  ROST           92.86               28            0.51              0.76        213.97                32.94            True
-  NVDA           90.91               22            1.44              1.72        170.50                31.98            True
-  ASML           90.62               32            0.57              5.32       1327.22                47.14            True
-  CTAS           90.32               31            0.66              0.78        168.51                26.37            True
-  CDNS           88.89               36            1.38              2.72        279.45                23.06            True
-  AVGO           88.89               18            2.34              5.06        307.25                38.20            True
-  PLTR           87.50               24            2.60              2.68        146.41                48.38            True
- CMCSA           87.10               31            0.52              0.11         28.67                27.69            True
-  CHTR           86.11               36            0.72              1.11        218.04                37.58            True
-  TSLA           85.71               21            2.05              5.34        369.82                34.39            True
+   HON          100.00               21            0.51              0.80        224.83                24.88            True
+  REGN           94.12               17            1.96             10.39        752.28                28.18            True
+  INTC           93.94               33            1.76              0.54         43.87                64.25            True
+  NVDA           90.91               22            1.44              1.73        170.50                31.98            True
+  CTAS           90.32               31            0.65              0.77        168.52                26.37            True
+  ORLY           90.00               40            0.62              0.40         92.10                20.62            True
+  AVGO           90.00               20            2.15              4.65        307.42                38.20            True
+  ASML           88.89               27            0.92              8.53       1325.85                47.14            True
+ CMCSA           88.46               26            1.03              0.21         28.63                27.69            True
+  GILD           87.50               24            0.85              0.82        136.53                19.20            True
+  CDNS           86.67               30            1.59              3.13        279.28                23.06            True
+  TSLA           85.71               21            2.37              6.17        369.46                34.39            True
 ```
 
 ## Recent Events
