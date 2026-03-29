@@ -198,7 +198,7 @@ def build_universe() -> list[str]:
 
 def latest_required_history_date(now_et: pd.Timestamp) -> pd.Timestamp:
     current = now_et.normalize().tz_localize(None)
-    return pd.bdate_range(end=current - pd.Timedelta(days=1), periods=1)[0]
+    return (current - pd.offsets.BDay(1)).normalize()
 
 
 def csv_history_is_stale(tickers: list[str], now_et: pd.Timestamp) -> bool:
