@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-30 12:00:01 EDT`
-Last processed slot: `manage_1200`
+Last updated (ET): `2026-03-30 12:30:00 EDT`
+Last processed slot: `manage_1230`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_1200`
 ## Portfolio Snapshot
 
 - Cash: `$4,977.50`
-- Equity: `$9,402.50`
+- Equity: `$9,502.50`
 - Realized PnL: `$-422.50`
-- Unrealized PnL: `$-175.00`
+- Unrealized PnL: `$-75.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260501C00225000       2026-03-27                   1                 9.2                  8.85      223.64        224.88          -175.0                   -3.8         100.0               20              0.68         39.47           35.43                  24.88
+   HON HON260501C00225000       2026-03-27                   1                 9.2                  9.05      223.64         224.4           -75.0                  -1.63         100.0               20              0.68         39.47           36.35                  24.88
 ```
 
 ## Today's Closed Trades (2026-03-30)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC           95.00               20            3.50              1.06         42.68                64.48            True
-  AVGO           93.55               31            1.39              2.92        299.43                39.28            True
-  PLTR           90.00               40            0.80              0.80        142.72                49.53            True
-   AMD           83.87               31            1.41              1.99        201.14                56.13            True
-  ASML           83.33               18            2.41             22.01       1293.04                47.46            True
-   STX           83.33               12            5.63             14.98        373.65                75.41            True
-   BKR           81.82               22            1.25              0.55         62.98                40.65            True
-  MCHP           80.00               25            1.87              0.81         61.65                36.06            True
-   ADI           80.00               25            1.08              2.32        306.45                32.30            True
-  AMAT           80.00               10            3.70              8.73        333.43                54.89            True
-   WDC          100.00                7            6.97             13.43        269.58                77.70           False
-  ROST           94.74               38            0.27              0.40        211.52                33.28           False
+  ROST           91.67               24            0.70              1.04        211.24                33.28            True
+  NVDA           91.43               35            0.71              0.84        167.16                32.71            True
+  INTC           90.00               10            4.67              1.41         42.53                64.48            True
+  ASML           90.00               10            3.35             30.50       1289.40                47.46            True
+  AVGO           88.89               18            2.35              4.95        298.56                39.28            True
+  PLTR           86.21               29            1.63              1.63        142.36                49.53            True
+   AMD           84.62               26            2.11              2.99        200.71                56.13            True
+   APP           83.33               42            0.76              2.02        380.34                72.26            True
+  KLAC           80.00               10            3.86             39.01       1426.49                53.64            True
+  FANG          100.00               29            0.42              0.59        201.59                24.78           False
+   WDC          100.00                7            7.83             15.10        268.87                77.70           False
+  MRVL          100.00                1            6.76              4.49         92.96                75.87           False
 ```
 
 ## Recent Events
