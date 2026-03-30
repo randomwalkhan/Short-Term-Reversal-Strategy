@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-30 09:30:00 EDT`
-Last processed slot: `manage_0930`
+Last updated (ET): `2026-03-30 10:00:03 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_0930`
 ## Portfolio Snapshot
 
 - Cash: `$4,977.50`
-- Equity: `$9,327.50`
+- Equity: `$9,727.50`
 - Realized PnL: `$-422.50`
-- Unrealized PnL: `$-250.00`
+- Unrealized PnL: `$150.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260501C00225000       2026-03-27                   1                 9.2                   8.7      223.64        225.17          -250.0                  -5.43         100.0               20              0.68         39.47             0.0                  24.88
+   HON HON260501C00225000       2026-03-27                   1                 9.2                   9.5      223.64        224.48           150.0                   3.26         100.0               20              0.68         39.47           42.16                  24.88
 ```
 
 ## Today's Closed Trades (2026-03-30)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NFLX           91.67               36            0.79              0.52         93.21                21.54            True
-    MU           91.43               35            0.79              1.98        356.22                71.54            True
-  MPWR           88.89               36            0.90              6.64       1050.17                45.59            True
-  DXCM           94.23               52            0.16              0.07         62.22                32.07           False
-  PLTR           90.91               44            0.19              0.19        142.98                49.53           False
-  VRTX           87.50               48            0.13              0.41        432.90                41.30           False
-  SHOP           87.50               48            0.07              0.05        111.83                50.38           False
-   APP           84.44               45            0.21              0.57        380.96                72.26           False
-  BKNG           72.73               11            3.28             96.78       4172.28                42.16           False
-   ADI           63.64               11            1.91              4.19        311.63                32.30           False
-  ALNY           62.50                8            3.29              7.56        324.92                34.26           False
-  ADSK           60.00               10            4.17              6.99        236.83                29.12           False
+   WDC           96.00               25            3.03              5.85        272.83                77.70            True
+  INTC           93.94               33            1.52              0.46         42.93                64.48            True
+   STX           92.31               26            2.65              7.05        377.05                75.41            True
+  NVDA           91.67               36            0.61              0.72        167.21                32.71            True
+  AVGO           91.30               23            1.95              4.11        298.92                39.28            True
+  AMAT           86.67               15            2.55              6.03        334.59                54.89            True
+  PLTR           86.21               29            1.59              1.60        142.38                49.53            True
+  MRVL           85.71               14            3.86              2.56         93.78                75.87            True
+  MCHP           84.85               33            0.90              0.39         61.83                36.06            True
+  KLAC           84.21               19            2.52             25.50       1432.28                53.64            True
+    MU           83.33               18            3.59              8.97        353.22                71.54            True
+  ASML           83.33               18            2.47             22.56       1292.80                47.46            True
 ```
 
 ## Recent Events
