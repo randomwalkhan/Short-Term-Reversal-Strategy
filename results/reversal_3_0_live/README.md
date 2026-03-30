@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-30 10:30:00 EDT`
-Last processed slot: `manage_1030`
+Last updated (ET): `2026-03-30 11:00:01 EDT`
+Last processed slot: `manage_1100`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_1030`
 ## Portfolio Snapshot
 
 - Cash: `$4,977.50`
-- Equity: `$9,402.50`
+- Equity: `$9,377.50`
 - Realized PnL: `$-422.50`
-- Unrealized PnL: `$-175.00`
+- Unrealized PnL: `$-200.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260501C00225000       2026-03-27                   1                 9.2                  8.85      223.64         224.4          -175.0                   -3.8         100.0               20              0.68         39.47           37.46                  24.88
+   HON HON260501C00225000       2026-03-27                   1                 9.2                   8.8      223.64        224.71          -200.0                  -4.35         100.0               20              0.68         39.47           35.76                  24.88
 ```
 
 ## Today's Closed Trades (2026-03-30)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           95.24               21            3.83              7.38        272.18                77.70            True
-  INTC           93.94               33            1.74              0.52         42.91                64.48            True
-  AVGO           92.31               26            1.69              3.56        299.16                39.28            True
-   STX           91.67               24            2.99              7.96        376.66                75.41            True
-  PLTR           88.24               34            1.30              1.30        142.50                49.53            True
-  ASML           84.21               19            2.08             18.92       1294.36                47.46            True
-  MCHP           83.87               31            1.05              0.46         61.80                36.06            True
-  AMAT           83.33               18            2.37              5.59        334.78                54.89            True
-   ADI           82.35               34            0.55              1.19        306.93                32.30            True
-  MRVL           81.25               16            3.55              2.36         93.87                75.87            True
-  LRCX           81.25               16            3.29              4.87        209.32                65.88            True
-  KLAC           80.00               15            2.95             29.78       1430.45                53.64            True
+  INTC           96.30               27            2.31              0.70         42.83                64.48            True
+   WDC           93.33               15            4.77              9.19        271.40                77.70            True
+  AVGO           93.10               29            1.42              3.00        299.40                39.28            True
+  PLTR           90.24               41            0.51              0.51        142.84                49.53            True
+   STX           84.62               13            4.58             12.19        374.85                75.41            True
+   BKR           83.33               24            0.95              0.42         63.04                40.65            True
+  AMAT           83.33               12            2.97              7.00        334.17                54.89            True
+   TXN           81.48               27            1.09              1.45        189.71                29.79            True
+   ADI           81.48               27            0.88              1.90        306.62                32.30            True
+  ASML           81.25               16            2.67             24.33       1292.04                47.46            True
+   APP           81.08               37            1.28              3.42        379.73                72.26            True
+  MCHP           80.77               26            1.63              0.71         61.70                36.06            True
 ```
 
 ## Recent Events
