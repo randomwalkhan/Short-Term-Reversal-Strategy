@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-30 15:00:04 EDT`
-Last processed slot: `entry_1500`
+Last updated (ET): `2026-03-30 15:30:02 EDT`
+Last processed slot: `manage_1530`
 
 ## Active Configuration
 
@@ -20,17 +20,17 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$1,527.50`
-- Equity: `$9,152.50`
+- Equity: `$9,237.50`
 - Realized PnL: `$-422.50`
-- Unrealized PnL: `$-425.00`
+- Unrealized PnL: `$-340.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  FANG FANG260515C00200000       2026-03-30                   0                11.5                 11.50      198.70        198.68             0.0                   0.00         100.0               15              1.56         43.31           43.31                  24.78
-   HON  HON260501C00225000       2026-03-27                   1                 9.2                  8.35      223.64        223.74          -425.0                  -9.24         100.0               20              0.68         39.47           35.38                  24.88
+  FANG FANG260515C00200000       2026-03-30                   0                11.5                  11.7      198.70        197.83            60.0                   1.74         100.0               15              1.56         43.31           45.54                  24.78
+   HON  HON260501C00225000       2026-03-27                   1                 9.2                   8.4      223.64        222.86          -400.0                  -8.70         100.0               20              0.68         39.47           36.99                  24.88
 ```
 
 ## Today's Closed Trades (2026-03-30)
@@ -41,18 +41,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               15            1.56              2.20        200.90                24.78            True
-  DXCM           93.02               43            0.59              0.26         62.14                32.07            True
-  NFLX           92.11               38            0.68              0.44         93.24                21.54            True
-  NVDA           91.67               24            1.37              1.61        166.83                32.71            True
-  CDNS           90.91               44            0.64              1.22        271.25                24.46            True
-   STX           90.00               10            5.67             15.09        373.60                75.41            True
-  INTC           90.00               10            5.21              1.57         42.46                64.48            True
- GOOGL           87.50               40            0.58              1.11        273.87                25.79            True
-  DDOG           87.18               39            0.81              0.65        114.20                54.61            True
-  ALNY           86.96               46            0.59              1.31        316.80                34.26            True
-  SHOP           86.67               45            0.70              0.55        111.61                50.38            True
-  PLTR           86.67               15            3.78              3.79        141.44                49.53            True
+  FANG          100.00               14            1.85              2.61        200.72                24.78            True
+  NVDA           95.24               21            1.68              1.97        166.68                32.71            True
+  DXCM           93.33               45            0.51              0.22         62.15                32.07            True
+  CDNS           90.70               43            0.87              1.65        271.06                24.46            True
+  NFLX           90.32               31            0.93              0.61         93.17                21.54            True
+   STX           90.00               10            5.77             15.34        373.49                75.41            True
+ GOOGL           87.18               39            0.67              1.28        273.79                25.79            True
+  SHOP           86.67               45            0.63              0.49        111.64                50.38            True
+  TSLA           85.71               21            2.48              6.28        359.14                35.33            True
+  GOOG           84.21               38            0.68              1.30        273.20                24.24            True
+  AVGO           83.33               12            3.42              7.19        297.60                39.28            True
+  KLAC           80.00               10            4.16             42.01       1425.21                53.64            True
 ```
 
 ## Recent Events
