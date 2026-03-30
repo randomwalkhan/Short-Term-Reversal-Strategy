@@ -3,15 +3,15 @@
 <!-- reversal-3.0-live:start -->
 ## Reversal 3.0 Live Paper Test
 
-- Last updated (ET): `2026-03-30 10:00:03 EDT`
-- Equity: `$9,727.50` | Realized: `$-422.50` | Unrealized: `$150.00` | Open positions: `1`
+- Last updated (ET): `2026-03-30 10:30:00 EDT`
+- Equity: `$9,402.50` | Realized: `$-422.50` | Unrealized: `$-175.00` | Open positions: `1`
 - Today closed trades: `0`
-- Current slot: `manage_1000`
+- Current slot: `manage_1030`
 - Chart: trailing `1W` with ET timestamps
 
 ```text
 ticker    contract_symbol  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   HON HON260501C00225000                   9.5           150.0                   3.26                   1
+   HON HON260501C00225000                  8.85          -175.0                   -3.8                   1
 ```
 
 ![Reversal 3.0 Live Equity 1W](assets/reversal_3_0_live_equity.png)
