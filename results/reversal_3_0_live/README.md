@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-30 13:00:04 EDT`
-Last processed slot: `manage_1300`
+Last updated (ET): `2026-03-30 13:30:05 EDT`
+Last processed slot: `manage_1330`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_1300`
 ## Portfolio Snapshot
 
 - Cash: `$4,977.50`
-- Equity: `$9,352.50`
+- Equity: `$9,227.50`
 - Realized PnL: `$-422.50`
-- Unrealized PnL: `$-225.00`
+- Unrealized PnL: `$-350.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260501C00225000       2026-03-27                   1                 9.2                  8.75      223.64        224.26          -225.0                  -4.89         100.0               20              0.68         39.47           36.63                  24.88
+   HON HON260501C00225000       2026-03-27                   1                 9.2                   8.5      223.64        223.64          -350.0                  -7.61         100.0               20              0.68         39.47           35.93                  24.88
 ```
 
 ## Today's Closed Trades (2026-03-30)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               22            0.99              1.40        201.24                24.78            True
-  INTC           91.67               12            4.50              1.36         42.55                64.48            True
-  ASML           91.67               12            3.06             27.88       1290.52                47.46            True
-  ROST           90.91               22            0.77              1.15        211.20                33.28            True
-  AVGO           89.47               19            2.23              4.69        298.67                39.28            True
-  PLTR           89.29               28            1.80              1.80        142.29                49.53            True
-   AMD           84.62               26            2.27              3.21        200.62                56.13            True
-   APP           83.33               42            0.81              2.16        380.27                72.26            True
-  AXON           81.82               44            0.63              1.89        429.13                53.89            True
-   TXN           80.00               25            1.29              1.71        189.60                29.79            True
-  AMAT           80.00               10            3.87              9.14        333.25                54.89            True
-   WDC          100.00                7            7.54             14.54        269.11                77.70           False
+  FANG          100.00               20            1.38              1.95        201.00                24.78            True
+  NVDA           93.10               29            0.98              1.15        167.03                32.71            True
+  DXCM           93.02               43            0.62              0.27         62.14                32.07            True
+  INTC           90.00               10            4.83              1.46         42.50                64.48            True
+  PLTR           87.50               24            2.62              2.63        141.93                49.53            True
+  AVGO           87.50               16            2.57              5.40        298.36                39.28            True
+  TSLA           82.86               35            1.10              2.78        360.64                35.33            True
+   AMD           81.82               22            2.90              4.10        200.23                56.13            True
+   APP           80.56               36            1.86              4.96        379.08                72.26            True
+   TXN           80.00               15            2.02              2.69        189.18                29.79            True
+  KLAC           80.00               10            3.83             38.72       1426.61                53.64            True
+   WDC          100.00                6            8.60             16.58        268.24                77.70           False
 ```
 
 ## Recent Events
