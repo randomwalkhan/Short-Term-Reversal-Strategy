@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-31 09:30:05 EDT`
-Last processed slot: `manage_0930`
+Last updated (ET): `2026-03-31 10:00:05 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_0930`
 ## Portfolio Snapshot
 
 - Cash: `$5,527.50`
-- Equity: `$9,022.50`
+- Equity: `$9,097.50`
 - Realized PnL: `$-1,022.50`
-- Unrealized PnL: `$45.00`
+- Unrealized PnL: `$120.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  FANG FANG260515C00200000       2026-03-30                   1                11.5                 11.65       198.7         199.6            45.0                    1.3         100.0               15              1.56         43.31             0.2                  24.78
+  FANG FANG260515C00200000       2026-03-30                   1                11.5                  11.9       198.7        201.62           120.0                   3.48         100.0               15              1.56         43.31           42.13                  24.78
 ```
 
 ## Today's Closed Trades (2026-03-31)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  ORLY           90.00               50            0.03              0.02         92.10                22.95           False
-   EXC           89.29               28            0.10              0.03         49.10                21.45           False
-   LIN           88.89               36            0.26              0.92        498.87                19.51           False
-  DDOG           88.64               44            0.12              0.09        115.77                54.67           False
-  TMUS           86.84               38            0.22              0.34        213.80                19.67           False
-   PEP           84.38               32            0.01              0.01        156.82                18.39           False
-  INTU           67.39               46            0.40              1.21        428.51                45.64           False
-   CEG           66.67                3            7.90             16.51        291.51                62.02           False
-  AAPL             NaN                0            0.00              0.00        248.56                16.49           False
-  ABNB             NaN                0            0.00              0.00        125.14                36.06           False
-  ADBE             NaN                0            0.00              0.00        241.81                42.52           False
-   ADI             NaN                0            0.00              0.00        308.98                32.39           False
+   AEP           93.75               16            0.68              0.62        130.85                18.09            True
+   XEL           92.00               25            0.51              0.28         79.04                18.55            True
+ CMCSA           88.46               26            1.11              0.22         28.80                29.21            True
+  CHTR           87.80               41            0.52              0.80        220.60                36.22            True
+   KDP           85.00               20            0.53              0.10         26.41                21.21            True
+   EXC           84.62               13            0.89              0.30         48.98                21.45            True
+   PEP           82.35               17            0.79              0.87        156.45                18.39            True
+  TMUS           81.25               16            1.30              1.95        213.11                19.67            True
+  MDLZ           93.02               43            0.47              0.19         57.67                24.85           False
+   LIN           90.00               40            0.15              0.51        499.04                19.51           False
+  CTAS           89.47               38            0.33              0.38        168.50                28.24           False
+   ADP           84.38               32            0.12              0.17        205.40                25.45           False
 ```
 
 ## Recent Events
