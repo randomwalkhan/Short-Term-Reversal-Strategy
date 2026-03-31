@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-31 10:00:05 EDT`
-Last processed slot: `manage_1000`
+Last updated (ET): `2026-03-31 10:30:05 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -19,45 +19,46 @@ Last processed slot: `manage_1000`
 
 ## Portfolio Snapshot
 
-- Cash: `$5,527.50`
-- Equity: `$9,097.50`
-- Realized PnL: `$-1,022.50`
-- Unrealized PnL: `$120.00`
-- Open positions: `1`
+- Cash: `$9,367.50`
+- Equity: `$9,367.50`
+- Realized PnL: `$-632.50`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  FANG FANG260515C00200000       2026-03-30                   1                11.5                  11.9       198.7        201.62           120.0                   3.48         100.0               15              1.56         43.31           42.13                  24.78
-```
+_None_
 
 ## Today's Closed Trades (2026-03-31)
 
-_None_
+```text
+ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price   pnl  return_pct                  exit_reason
+  FANG FANG260515C00200000          2026-03-30         2026-03-31                11.5               12.8 390.0   11.304348 take_profit_day1_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   AEP           93.75               16            0.68              0.62        130.85                18.09            True
-   XEL           92.00               25            0.51              0.28         79.04                18.55            True
- CMCSA           88.46               26            1.11              0.22         28.80                29.21            True
-  CHTR           87.80               41            0.52              0.80        220.60                36.22            True
-   KDP           85.00               20            0.53              0.10         26.41                21.21            True
-   EXC           84.62               13            0.89              0.30         48.98                21.45            True
-   PEP           82.35               17            0.79              0.87        156.45                18.39            True
-  TMUS           81.25               16            1.30              1.95        213.11                19.67            True
-  MDLZ           93.02               43            0.47              0.19         57.67                24.85           False
-   LIN           90.00               40            0.15              0.51        499.04                19.51           False
-  CTAS           89.47               38            0.33              0.38        168.50                28.24           False
-   ADP           84.38               32            0.12              0.17        205.40                25.45           False
+   XEL           95.24               21            0.56              0.31         79.03                18.55            True
+  CTAS           89.66               29            0.70              0.83        168.31                28.24            True
+ CMCSA           88.46               26            1.10              0.22         28.80                29.21            True
+   KDP           88.24               17            0.81              0.15         26.39                21.21            True
+  MDLZ           86.96               23            1.06              0.43         57.57                24.85            True
+  TMUS           84.21               19            1.16              1.74        213.20                19.67            True
+   EXC           83.33               12            1.00              0.34         48.96                21.45            True
+   TRI           81.58               38            1.03              0.66         90.81                42.01            True
+   ADP           80.00               20            0.85              1.22        204.95                25.45            True
+   AEP           92.00               25            0.50              0.45        130.93                18.09           False
+  COST           91.30               46            0.24              1.70        995.85                15.57           False
+  ORLY           89.80               49            0.25              0.16         92.04                22.95           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et         slot   event_type                                                                                                                                                                           detail
+2026-03-31T10:30:05.893788-04:00  manage_1030         exit                                         {"contract_symbol": "FANG260515C00200000", "pnl": 390.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 11.3, "ticker": "FANG"}
 2026-03-31T09:30:05.890178-04:00 data_refresh data_refresh                                                                                                                                                                    {'saved': 97}
 2026-03-30T16:00:01.901878-04:00  manage_1600         exit                                               {"contract_symbol": "HON260501C00225000", "pnl": -600.0, "reason": "stop_loss_hit_at_scan", "return_pct": -13.04, "ticker": "HON"}
 2026-03-30T15:00:04.861501-04:00   entry_1500        entry {"allocated_cash": 3450.0, "contract_symbol": "FANG260515C00200000", "contracts": 3, "entry_option_price": 11.5, "matched_signals": 15, "success_rate": 100.0, "ticker": "FANG"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-03-26T15:00:01.983935-04:00   entry_1500        entry {"allocated_cash": 4925.0, "contract_symbol": "ABNB260515C00130000", "contracts": 5, "entry_option_price": 9.85, "matched_signals": 35, "success_rate": 94.29, "ticker": "ABNB"}
 2026-03-26T10:30:00.722036-04:00  manage_1030         exit                                                        {"contract_symbol": "FANG260515C00195000", "pnl": 680.0, "reason": "tp_day1_scan", "return_pct": 13.93, "ticker": "FANG"}
 2026-03-26T10:30:00.722036-04:00  manage_1030         exit                                                         {"contract_symbol": "AVGO260515C00320000", "pnl": -540.0, "reason": "stop_scan", "return_pct": -11.88, "ticker": "AVGO"}
-2026-03-26T09:30:05.730919-04:00 data_refresh data_refresh                                                                                                                                                                    {'saved': 97}
 ```
 
 ## Equity Curve (1W)
