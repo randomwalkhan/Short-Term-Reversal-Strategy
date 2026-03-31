@@ -1,8 +1,33 @@
 {
   "version": "3.0",
   "initial_capital": 10000.0,
-  "cash": 9367.5,
-  "positions": [],
+  "cash": 5722.5,
+  "positions": [
+    {
+      "position_id": "FANG_20260331T150005",
+      "ticker": "FANG",
+      "contract_symbol": "FANG260515C00195000",
+      "expiry": "2026-05-15",
+      "strike": 195.0,
+      "entry_timestamp": "2026-03-31T15:00:05.885528-04:00",
+      "entry_trade_date": "2026-03-31",
+      "entry_slot": "entry_1500",
+      "entry_spot": 197.36500549316406,
+      "entry_option_price": 12.15,
+      "entry_bid": 11.8,
+      "entry_ask": 12.5,
+      "entry_iv_pct": 40.692731750488285,
+      "contracts": 3,
+      "allocated_cash": 3645.0,
+      "success_rate": 100.0,
+      "matched_signals": 26,
+      "current_drop_pct": 0.65,
+      "rolling_sigma_20d_pct": 24.45,
+      "planned_tp_day1": 13.365000000000002,
+      "planned_tp_day2": 13.9725,
+      "planned_stop": 10.935
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -73,7 +98,8 @@
       "manage_1300",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"

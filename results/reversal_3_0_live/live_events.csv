@@ -17,3 +17,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-03-30T16:00:01.901878-04:00,2026-03-30,manage_1600,exit,"{""contract_symbol"": ""HON260501C00225000"", ""pnl"": -600.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -13.04, ""ticker"": ""HON""}"
 2026-03-31T09:30:05.890178-04:00,2026-03-31,data_refresh,data_refresh,{'saved': 97}
 2026-03-31T10:30:05.893788-04:00,2026-03-31,manage_1030,exit,"{""contract_symbol"": ""FANG260515C00200000"", ""pnl"": 390.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 11.3, ""ticker"": ""FANG""}"
+2026-03-31T15:00:05.885528-04:00,2026-03-31,entry_1500,entry,"{""allocated_cash"": 3645.0, ""contract_symbol"": ""FANG260515C00195000"", ""contracts"": 3, ""entry_option_price"": 12.15, ""matched_signals"": 26, ""success_rate"": 100.0, ""ticker"": ""FANG""}"
