@@ -8,6 +8,10 @@ import yfinance as yf
 from reversal_universe import build_named_universe_map
 
 
+DEFAULT_UNIVERSE_PRESET = "qqq_plus_leverage_etfs"
+DEFAULT_TICKERS_CSV = f"{DEFAULT_UNIVERSE_PRESET}_tickers.csv"
+
+
 def load_tickers_from_csv(csv_path: str | Path) -> list[str]:
     path = Path(csv_path)
     if not path.exists():
@@ -26,8 +30,9 @@ def load_tickers_from_csv(csv_path: str | Path) -> list[str]:
     return [ticker for ticker in tickers if ticker]
 
 
-def ensure_qqq_only_filtered_csv(
+def ensure_named_universe_csv(
     csv_path: str | Path,
+    preset_name: str = DEFAULT_UNIVERSE_PRESET,
     min_market_cap: float = 1e9,
     min_price: float = 10.0,
 ) -> list[str]:
@@ -39,9 +44,11 @@ def ensure_qqq_only_filtered_csv(
         min_market_cap=min_market_cap,
         min_price=min_price,
     )
-    qqq_only_filtered = universe_map["qqq_only_filtered"]
-    pd.DataFrame({"ticker": qqq_only_filtered}).to_csv(path, index=False)
-    return qqq_only_filtered
+    if preset_name not in universe_map:
+        raise KeyError(f"Unknown universe preset: {preset_name}")
+    tickers = universe_map[preset_name]
+    pd.DataFrame({"ticker": tickers}).to_csv(path, index=False)
+    return tickers
 
 
 def download_reversal_data(ticker: str, start_date: str, end_date: str | None = None) -> pd.DataFrame:
@@ -138,8 +145,13 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Download or refresh reversal CSV datasets.")
     parser.add_argument(
         "--tickers-csv",
-        default="qqq_only_filtered_tickers.csv",
+        default=DEFAULT_TICKERS_CSV,
         help="CSV file with a ticker column.",
+    )
+    parser.add_argument(
+        "--preset-name",
+        default=DEFAULT_UNIVERSE_PRESET,
+        help="Universe preset used when the tickers CSV does not already exist.",
     )
     parser.add_argument(
         "--start-date",
@@ -166,7 +178,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    tickers = ensure_qqq_only_filtered_csv(args.tickers_csv)
+    tickers = ensure_named_universe_csv(args.tickers_csv, preset_name=args.preset_name)
     summary = refresh_reversal_data(
         tickers=tickers,
         start_date=args.start_date,

@@ -1,4 +1,4 @@
-# Reversal 2.5.3
+# Reversal 2.6
 
 <!-- reversal-3.0-live:start -->
 ## Reversal 3.0 Live Paper Test
@@ -18,36 +18,36 @@ _None_
 - [Live equity csv](results/reversal_3_0_live/live_equity.csv)
 <!-- reversal-3.0-live:end -->
 
-`Reversal2.5.3.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
+`Reversal2.6.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
 
-`Reversal2.5.3.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
+`Reversal2.6.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
 
-Update note: Reversal 2.5.3 keeps the official Reversal 2.5 backtest definition unchanged, preserves current ATM call implied volatility plus latest 20d rolling sigma in the live screener, and cleans the notebook output into one compact table instead of two overlapping text blocks.
+Update note: Reversal 2.6 keeps the Reversal 2.5 execution rules unchanged, but upgrades the official universe from `qqq_only_filtered` to `qqq_plus_leverage_etfs` by adding a curated `SOXL + UPRO` overlay after a controlled leveraged-ETF comparison. The live paper runner now uses the same upgraded ticker list.
 
-更新说明：Reversal 2.5.3 不改动官方 Reversal 2.5 的回测定义，保留 live screener 里的当前 ATM call implied volatility 和最近 20d rolling sigma，并把输出整理成一个更紧凑的主表，不再重复打印两段重叠内容。
+更新说明：Reversal 2.6 保留 Reversal 2.5 的执行规则不变，但在受控的 leveraged ETF 对比实验之后，把官方 universe 从 `qqq_only_filtered` 升级为 `qqq_plus_leverage_etfs`，即在原有 QQQ 核心上加入精选的 `SOXL + UPRO` overlay；live paper runner 也同步切到了这份新 ticker list。
 
-`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
+`Reversal2.5.3.ipynb`、`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
 
-`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` 和 `Reversal2.0.ipynb` 作为更早版本快照保留。
+`Reversal2.5.3.ipynb`、`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` 和 `Reversal2.0.ipynb` 作为更早版本快照保留。
 
 ![Reversal 2.3.3 Universe Comparison](assets/reversal_2_3_3_universe_comparison.png)
 
 ## Featured Result | 重点结果
 
-The official Reversal 2.5 backtest definition keeps the original dynamic trade-level filter, `matched_signals >= 10`, preserves the `60d` historical lookback window, and adds a `minimum current drop > 0.5%` entry filter. Reversal 2.5.3 only upgrades notebook screening output, so the official backtest result is unchanged at `+1305.60%` total return, `-30.84%` max drawdown, `62.08%` win rate, and `3.96` Sharpe.
+The official Reversal 2.6 backtest definition keeps the Reversal 2.5 execution logic intact, including the dynamic trade-level filter `matched_signals >= 10`, the promoted `60d` historical lookback window, and the `minimum current drop > 0.5%` entry filter. The only promoted change is the curated universe overlay: `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`. On the current data snapshot, the official Reversal 2.6 result is `+1709.09%` total return, `-44.30%` max drawdown, `63.33%` win rate, and `4.28` Sharpe.
 
-Reversal 2.5 的官方回测定义保留最初的动态交易级过滤 `matched_signals >= 10`，沿用 `60` 个交易日历史观察窗口，并额外加入 `minimum current drop > 0.5%` 入场过滤。Reversal 2.5.3 只升级 notebook 的 live screener 输出，因此官方回测结果保持不变：总收益 `+1305.60%`、最大回撤 `-30.84%`、胜率 `62.08%`、Sharpe `3.96`。
+Reversal 2.6 的官方回测定义保留了 Reversal 2.5 的执行逻辑不变，包括动态交易级过滤 `matched_signals >= 10`、提升后的 `60d` 历史观察窗口，以及 `minimum current drop > 0.5%` 入场过滤。唯一被正式提升的变化，是精选的 universe overlay：`qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`。在当前数据快照下，官方 Reversal 2.6 结果为：总收益 `+1709.09%`、最大回撤 `-44.30%`、胜率 `63.33%`、Sharpe `4.28`。
 
 Research discipline is documented in `RESEARCH_GUARDRAILS.md`; future upgrades
 should be judged against those standards instead of curve quality alone.
 
 研究纪律已写入 `RESEARCH_GUARDRAILS.md`；以后版本升级应按这些标准判断，而不是只看曲线是否更好看。
 
-- [Reversal 2.5 equity](results/reversal_2_5/reversal_2_5_call_backtest_equity.csv)
-- [Reversal 2.5 trades](results/reversal_2_5/reversal_2_5_call_backtest_trades.csv)
-- [Reversal 2.5 plot](assets/reversal_2_5_call_backtest_equity.png)
+- [Reversal 2.6 equity](results/reversal_2_6/reversal_2_6_call_backtest_equity.csv)
+- [Reversal 2.6 trades](results/reversal_2_6/reversal_2_6_call_backtest_trades.csv)
+- [Reversal 2.6 plot](assets/reversal_2_6_call_backtest_equity.png)
 
-![Reversal 2.5 Call Backtest](assets/reversal_2_5_call_backtest_equity.png)
+![Reversal 2.6 Call Backtest](assets/reversal_2_6_call_backtest_equity.png)
 
 ## Optimization Path | 优化路径
 
@@ -63,6 +63,8 @@ The current strategy structure is intentionally sequential:
    在选定 universe 之上比较新的因子或信号改造。
 4. Promote the best-performing factor into the next official version.  
    把表现最好的因子升级为下一个正式版本。
+5. Re-open the universe only when a controlled overlay experiment beats the official setup across more than one horizon.  
+   只有当受控 overlay 实验在多个观察周期上都优于官方设定时，才重新打开 universe 层做升级。
 
 ### Stage 1: Universe Selection | 第一阶段：选 Universe
 
@@ -129,6 +131,28 @@ After fixing both the universe and the `60d` factor, the next test was whether t
 
 ![Reversal 2.5 Minimum Drop Experiment](assets/reversal_2_5_min_drop_experiment.png)
 
+### Stage 4: Leveraged ETF Overlay | 第四阶段：精选 Leveraged ETF Overlay
+
+After fixing the `60d` factor and the `minimum current drop > 0.5%` filter, the next question was whether a very small number of leveraged ETFs should be allowed into the official universe. The research result was narrower than the original intuition: adding `SOXL` and `UPRO` consistently improved `1Y`, `2Y`, and `3Y` results, while `TQQQ` did not add stable incremental benefit once those two were already present. Reversal 2.6 therefore promotes a curated overlay, not a broad leveraged-ETF bucket.
+
+在把 `60d` 因子和 `minimum current drop > 0.5%` 过滤都固定下来之后，下一步研究的问题是：是否应该允许极少数 leveraged ETF 进入官方 universe。结果比最初的直觉更窄：`SOXL` 和 `UPRO` 在 `1Y`、`2Y`、`3Y` 上都稳定改善了结果，而 `TQQQ` 在加入这两只之后并没有继续带来稳定增益。因此 Reversal 2.6 提升的是一个精选 overlay，而不是泛化的 leveraged ETF 大篮子。
+
+- [leveraged ETF summary](results/reversal_2_6_leveraged_etf_experiment/reversal_2_6_leveraged_etf_summary.csv)
+- [leveraged ETF robustness](results/reversal_2_6_leveraged_etf_experiment/reversal_2_6_leveraged_etf_robustness.csv)
+- [leveraged ETF equity comparison](results/reversal_2_6_leveraged_etf_experiment/reversal_2_6_leveraged_etf_equity.csv)
+- [leveraged ETF plot](assets/reversal_2_6_leveraged_etf_experiment.png)
+
+| Variant | 1Y Return | 1Y Max DD | 1Y Win Rate | 1Y Sharpe |
+|---|---:|---:|---:|---:|
+| `baseline_qqq_only_filtered` | `+1136.44%` | `-44.17%` | `61.67%` | `3.76` |
+| `plus_tqqq` | `+1148.88%` | `-44.13%` | `61.67%` | `3.78` |
+| `plus_soxl` | `+1552.12%` | `-44.20%` | `62.92%` | `4.16` |
+| `plus_upro` | `+1271.12%` | `-44.07%` | `62.08%` | `3.90` |
+| `plus_soxl_upro` | `+1709.09%` | `-44.30%` | `63.33%` | `4.28` |
+| `plus_tqqq_soxl_upro` | `+1707.90%` | `-44.30%` | `63.33%` | `4.28` |
+
+![Reversal 2.6 Leveraged ETF Overlay Experiment](assets/reversal_2_6_leveraged_etf_experiment.png)
+
 ## License | 版权
 
 This repository is released under an explicit `All Rights Reserved` copyright
@@ -144,9 +168,9 @@ This project focuses on identifying large intraday drawdowns, evaluating whether
 
 本项目主要研究三件事：识别日内大幅下跌、评估未来几个交易日内的价格反转概率，以及估计相关看涨期权交易的收益分布。
 
-The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output, Reversal 2.4 promotes the `60d` observation window into the default research and official backtest setup, Reversal 2.5 adds the `minimum current drop > 0.5%` entry filter, Reversal 2.5.1 improves spot-price handling by preferring extended-hours prices when available, Reversal 2.5.2 adds current ATM call IV plus 20d rolling sigma to the live screener output, and Reversal 2.5.3 consolidates that live screener into a cleaner single-table layout.
+The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output, Reversal 2.4 promotes the `60d` observation window into the default research and official backtest setup, Reversal 2.5 adds the `minimum current drop > 0.5%` entry filter, Reversal 2.5.1 improves spot-price handling by preferring extended-hours prices when available, Reversal 2.5.2 adds current ATM call IV plus 20d rolling sigma to the live screener output, Reversal 2.5.3 consolidates that live screener into a cleaner single-table layout, and Reversal 2.6 upgrades the official universe to `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`.
 
-Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，Reversal 2.3.3 进一步加入了最小样本过滤和前 15 名输出，Reversal 2.4 把 `60d` 观察窗口正式提升为默认研究与官方回测设定，Reversal 2.5 加入了 `minimum current drop > 0.5%` 入场过滤，Reversal 2.5.1 把 spot 取价改成优先使用扩展时段价格，Reversal 2.5.2 把当前 ATM call IV 和 20d rolling sigma 接进了 live screener 输出，而 Reversal 2.5.3 则把 live screener 的展示压缩成一个更清晰的单表布局。
+Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，Reversal 2.3.3 进一步加入了最小样本过滤和前 15 名输出，Reversal 2.4 把 `60d` 观察窗口正式提升为默认研究与官方回测设定，Reversal 2.5 加入了 `minimum current drop > 0.5%` 入场过滤，Reversal 2.5.1 把 spot 取价改成优先使用扩展时段价格，Reversal 2.5.2 把当前 ATM call IV 和 20d rolling sigma 接进了 live screener 输出，Reversal 2.5.3 把 live screener 的展示压缩成更清晰的单表布局，而 Reversal 2.6 则把官方 universe 升级为 `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`。
 
 Before running the main analysis notebook, you can use `update_reversal_csv.ipynb` to download and refresh the input CSV files.
 
@@ -156,10 +180,10 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
 
 1. Run `update_reversal_csv.ipynb` to download or refresh market data into `reversal_data/`.  
    先运行 `update_reversal_csv.ipynb`，把市场数据下载或更新到 `reversal_data/`。
-2. Run `Reversal2.5.3.ipynb` for QQQ-only universe construction, reversal success analysis, in-notebook CSV refresh, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
-   再运行 `Reversal2.5.3.ipynb`，完成 QQQ-only 股票池构建、反转成功率分析、notebook 内 CSV 刷新、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
-3. Run `backtest_reversal_2_5_calls.py` for the official Reversal 2.5 call backtest under `qqq_only_filtered + matched_signals >= 10 + 60d + minimum current drop > 0.5%`.  
-   如果你想跑官方 Reversal 2.5 主回测，再运行 `backtest_reversal_2_5_calls.py`；这部分使用 `qqq_only_filtered + matched_signals >= 10 + 60d + minimum current drop > 0.5%`。
+2. Run `Reversal2.6.ipynb` for QQQ-plus-overlay universe construction, reversal success analysis, in-notebook CSV refresh, live setup screening, call-entry planning, option confidence intervals, GBM simulation, and rolling sigma plots.  
+   再运行 `Reversal2.6.ipynb`，完成带精选 leveraged ETF overlay 的股票池构建、反转成功率分析、notebook 内 CSV 刷新、实时 setup 筛选、call 入场规划、期权置信区间、GBM 模拟和滚动波动率可视化。
+3. Run `backtest_reversal_2_6_calls.py` for the official Reversal 2.6 call backtest under `qqq_plus_leverage_etfs + matched_signals >= 10 + 60d + minimum current drop > 0.5%`.  
+   如果你想跑官方 Reversal 2.6 主回测，再运行 `backtest_reversal_2_6_calls.py`；这部分使用 `qqq_plus_leverage_etfs + matched_signals >= 10 + 60d + minimum current drop > 0.5%`。
 4. Run `compare_reversal_2_3_3_universes.py` if you want to revisit the universe-selection stage under the original dynamic `matched_signals >= 10` filter.  
    如果你想回看 universe 选择阶段，再运行 `compare_reversal_2_3_3_universes.py`；这部分使用原始动态 `matched_signals >= 10` 过滤。
 5. Run `backtest_reversal_article_variants.py` if you want to reproduce the article-inspired factor comparison that selected the `60d` window.  
@@ -177,9 +201,9 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
    Measures how often a ticker recovers after a large intraday drop using CSV data under `reversal_data/`.  
    使用 `reversal_data/` 中的 CSV 数据，统计个股在出现较大日内跌幅后，未来若干交易日内发生反弹的成功率。
 
-2. `QQQ-Only Universe Builder`  
-   Builds the default `qqq_only_filtered` candidate pool from local QQQ constituents, filtered by minimum market cap and price.  
-   基于本地 QQQ 成分股构建默认的 `qqq_only_filtered` 候选池，并按最小市值和股价进行过滤。
+2. `QQQ Plus Leveraged ETF Universe Builder`  
+   Builds the default `qqq_plus_leverage_etfs` candidate pool from local QQQ constituents, filtered by minimum market cap and price, then adds the curated `SOXL + UPRO` overlay.  
+   基于本地 QQQ 成分股构建默认的 `qqq_plus_leverage_etfs` 候选池，并在最小市值和股价过滤之后，加入精选的 `SOXL + UPRO` overlay。
 
 3. `Live Reversal Setup Screener`  
    Uses today's near-real-time price to infer the current intraday drawdown for each ticker, applies an optional minimum current-drop filter, then measures how often similar or worse historical drops recovered a user-defined fraction of the signal-day drawdown within the next N trading days.  
@@ -209,8 +233,8 @@ Place per-ticker CSV files in:
 
 ```text
 reversal_data/
-  TQQQ.csv
   SOXL.csv
+  UPRO.csv
   ...
 ```
 
@@ -239,7 +263,7 @@ Open the notebook from the repository root so `Path.cwd()` resolves correctly:
 请在仓库根目录打开 notebook，这样 `Path.cwd()` 才会正确指向项目目录：
 
 ```bash
-jupyter notebook Reversal2.5.3.ipynb
+jupyter notebook Reversal2.6.ipynb
 ```
 
 To refresh the CSV data first, open:
@@ -271,10 +295,11 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 ## Repository Files | 仓库文件
 
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
-- `update_reversal_data.py` | Refresh `qqq_only_filtered` CSV datasets from Yahoo Finance. | 从 Yahoo Finance 刷新 `qqq_only_filtered` 所需的 CSV 数据。
+- `update_reversal_data.py` | Refresh the default `qqq_plus_leverage_etfs` CSV datasets from Yahoo Finance. | 从 Yahoo Finance 刷新默认的 `qqq_plus_leverage_etfs` 所需 CSV 数据。
 - `RESEARCH_GUARDRAILS.md` | Default research discipline for avoiding curve sculpting, weak narratives, and LLM-assisted overfitting. | 默认研究守则，用于避免曲线雕刻、伪机制叙事和 LLM 放大的过拟合。
-- `reversal_3_0_live.py` | Reversal 3.0 live paper-test runner with scheduled entry/exit logic, state persistence, dashboard generation, and optional GitHub publishing. | Reversal 3.0 的 live paper-test 主脚本，包含定时入场/离场逻辑、状态持久化、dashboard 生成和可选的 GitHub 发布。
-- `Reversal2.5.3.ipynb` | Current main notebook with the default `60d` observation window, `minimum current drop > 0.5%` live-screen filter, improved extended-hours spot pricing, ATM-IV versus rolling-sigma context, and a cleaner single-table live screener output. | 当前主 notebook，默认使用 `60d` 观察窗口，加入 `minimum current drop > 0.5%` 的 live-screen 过滤，优先使用扩展时段 spot 价格，并在 screener 输出中补充 ATM IV 与 rolling sigma 对照，同时把 live screener 压缩成更清晰的单表输出。
+- `reversal_3_0_live.py` | Reversal 3.0 live paper-test runner with scheduled entry/exit logic, state persistence, dashboard generation, optional GitHub publishing, and the promoted `qqq_plus_leverage_etfs` live universe. | Reversal 3.0 的 live paper-test 主脚本，包含定时入场/离场逻辑、状态持久化、dashboard 生成、可选的 GitHub 发布，以及升级后的 `qqq_plus_leverage_etfs` live universe。
+- `Reversal2.6.ipynb` | Current main notebook with the official `qqq_plus_leverage_etfs` universe, the default `60d` observation window, `minimum current drop > 0.5%` live-screen filter, improved extended-hours spot pricing, ATM-IV versus rolling-sigma context, and a cleaner single-table live screener output. | 当前主 notebook，使用官方 `qqq_plus_leverage_etfs` universe，默认 `60d` 观察窗口，加入 `minimum current drop > 0.5%` 的 live-screen 过滤，优先使用扩展时段 spot 价格，并在 screener 输出中补充 ATM IV 与 rolling sigma 对照，同时把 live screener 压缩成更清晰的单表输出。
+- `Reversal2.5.3.ipynb` | Previous main notebook snapshot before the leveraged-ETF overlay promotion. | 提升 leveraged ETF overlay 之前的上一版主 notebook 快照。
 - `Reversal2.5.2.ipynb` | Previous main notebook snapshot before the live screener layout cleanup. | 调整 live screener 展示布局之前的上一版主 notebook 快照。
 - `Reversal2.5.ipynb` | Previous main notebook snapshot before the extended-hours spot-pricing fix. | 修正扩展时段 spot 取价逻辑之前的上一版主 notebook 快照。
 - `Reversal2.4.ipynb` | Previous main notebook snapshot before the `minimum current drop > 0.5%` promotion. | 升级到 `minimum current drop > 0.5%` 过滤之前的上一版主 notebook 快照。
@@ -288,11 +313,14 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 - `backtest_reversal_2_3_3_calls.py` | Official Reversal 2.3.3 call backtest with `qqq_only_filtered` and the original dynamic `matched_signals >= 10` trade gate. | Reversal 2.3.3 的官方 call 回测脚本，默认使用 `qqq_only_filtered`，并沿用最初的动态 `matched_signals >= 10` 交易门槛。
 - `backtest_reversal_2_4_calls.py` | Official Reversal 2.4 call backtest with the promoted `60d` observation window. | Reversal 2.4 的官方 call 回测脚本，使用提升后的 `60d` 观察窗口。
 - `backtest_reversal_2_5_calls.py` | Official Reversal 2.5 call backtest with the promoted `60d` observation window and `minimum current drop > 0.5%` filter. | Reversal 2.5 的官方 call 回测脚本，使用提升后的 `60d` 观察窗口和 `minimum current drop > 0.5%` 过滤。
+- `backtest_reversal_2_6_calls.py` | Official Reversal 2.6 call backtest with the curated `qqq_plus_leverage_etfs` overlay, the promoted `60d` observation window, and the `minimum current drop > 0.5%` filter. | Reversal 2.6 的官方 call 回测脚本，使用精选的 `qqq_plus_leverage_etfs` overlay、提升后的 `60d` 观察窗口和 `minimum current drop > 0.5%` 过滤。
+- `backtest_reversal_2_6_leveraged_etf_experiment.py` | Controlled leveraged-ETF overlay comparison across `TQQQ`, `SOXL`, `UPRO`, and their combinations on top of the official 2.5 setup. | 受控的 leveraged ETF overlay 比较脚本，在官方 2.5 设定之上测试 `TQQQ`、`SOXL`、`UPRO` 及其组合。
 - `backtest_reversal_article_variants.py` | Article-inspired factor comparison across volume, PCA, kappa / s-score, and rolling-window variants. | 论文启发的因子比较脚本，横向测试成交量、PCA、kappa / s-score 和不同滚动窗口。
 - `backtest_reversal_2_5_min_drop_experiment.py` | Minimum-drop threshold comparison that tests `0.0%` through `4.0%` filters on top of the `60d + qqq_only_filtered` setup. | minimum-drop 阈值比较脚本，在 `60d + qqq_only_filtered` 设定上测试 `0.0%` 到 `4.0%` 的过滤门槛。
 - `compare_reversal_2_3_1_universes.py` | Compare Reversal 2.3.1 across multiple ticker-list universes. | 比较 Reversal 2.3.1 在多个股票池下的表现。
 - `compare_reversal_2_3_3_universes.py` | Official five-universe comparison under Reversal 2.3.3 using the dynamic `matched_signals >= 10` filter. | Reversal 2.3.3 下的官方五组 universe 对比脚本，使用动态 `matched_signals >= 10` 过滤。
-- `reversal_universe.py` | Shared Nasdaq + SPY universe builder used by the notebook and backtest. | notebook 和回测脚本共用的 Nasdaq + SPY 股票池构建模块。
+- `reversal_universe.py` | Shared universe builder used by notebook, backtest, and live paper trading, including the curated `qqq_plus_leverage_etfs` preset. | notebook、回测和 live paper trading 共用的 universe 构建模块，包含精选的 `qqq_plus_leverage_etfs` preset。
+- `qqq_plus_leverage_etfs_tickers.csv` | Saved ticker list for the promoted Reversal 2.6 universe overlay. | Reversal 2.6 官方 overlay universe 的保存版 ticker 列表。
 - `spy_tickers.txt` | Local SPY constituents source used when building the broad universe. | 构建广义股票池时使用的本地 SPY 成分股文件。
 - `qqq_tickers.txt` | Local QQQ constituents source used for universe comparison. | 股票池比较时使用的本地 QQQ 成分股文件。
 - `README.md` | Project documentation. | 项目说明文件。

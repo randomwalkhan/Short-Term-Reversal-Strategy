@@ -31,6 +31,7 @@ NAME_EXCLUDE_PATTERNS = (
     " debenture",
 )
 TICKER_RE = re.compile(r"^[A-Z]{1,5}(-[A-Z])?$")
+LEVERAGED_ETF_OVERLAYS = ("SOXL", "UPRO")
 
 
 def normalize_symbol(symbol: str) -> str:
@@ -161,6 +162,7 @@ def build_named_universe_map(
 
     spy_tickers = load_local_tickers(spy_tickers_path)
     qqq_tickers = load_local_tickers(qqq_tickers_path)
+    leveraged_etfs = {normalize_symbol(ticker) for ticker in LEVERAGED_ETF_OVERLAYS}
     nasdaq_tickers = set(filtered.loc[filtered["exchange"].eq("NASDAQ"), "ticker"])
     spy_filtered = set(filtered.loc[filtered["ticker"].isin(spy_tickers), "ticker"])
     qqq_filtered = set(filtered.loc[filtered["ticker"].isin(qqq_tickers), "ticker"])
@@ -171,4 +173,5 @@ def build_named_universe_map(
         "spy_only_filtered": sorted(spy_filtered),
         "qqq_spy_filtered": sorted(qqq_filtered | spy_filtered),
         "qqq_only_filtered": sorted(qqq_filtered),
+        "qqq_plus_leverage_etfs": sorted(qqq_filtered | leveraged_etfs),
     }

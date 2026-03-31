@@ -23,7 +23,7 @@ from update_reversal_data import refresh_reversal_data
 
 
 VERSION = "3.0"
-UNIVERSE_NAME = "qqq_only_filtered"
+UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
 FORWARD_DAYS = 5
@@ -1022,7 +1022,7 @@ def render_dashboard(
             "",
             "## Active Configuration",
             "",
-            "- Universe: `qqq_only_filtered`",
+            "- Universe: `qqq_plus_leverage_etfs` (`qqq_only_filtered + SOXL + UPRO`)",
             "- Lookback window: `60d`",
             "- Minimum current drop: `> 0.5%`",
             "- Recovery target: `70% of the signal-day drop`",
@@ -1099,6 +1099,7 @@ def render_dashboard(
             f"- Equity: `${last_equity:,.2f}` | Realized: `${realized_pnl:,.2f}` | Unrealized: `${unrealized_pnl:,.2f}` | Open positions: `{len(state['positions'])}`",
             f"- Today closed trades: `{len(today_trades)}`",
             f"- Current slot: `{slot_key or 'manual_refresh'}`",
+            "- Universe: `qqq_plus_leverage_etfs`",
             "- Chart: trailing `1W` with ET timestamps",
             "",
             format_table(
