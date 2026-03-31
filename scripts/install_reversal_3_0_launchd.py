@@ -19,24 +19,16 @@ def parse_args() -> argparse.Namespace:
 
 def build_schedule() -> list[dict[str, int]]:
     weekday_entries = []
-    half_hour_slots = [
-        (6, 30),
-        (7, 0),
-        (7, 30),
-        (8, 0),
-        (8, 30),
-        (9, 0),
-        (9, 30),
-        (10, 0),
-        (10, 30),
-        (11, 0),
-        (11, 30),
-        (12, 0),
-        (12, 30),
-        (13, 0),
-    ]
+    five_minute_slots = []
+    for hour in range(6, 14):
+        for minute in range(0, 60, 5):
+            if hour == 6 and minute < 30:
+                continue
+            if hour == 13 and minute > 0:
+                continue
+            five_minute_slots.append((hour, minute))
     for weekday in [1, 2, 3, 4, 5]:
-        for hour, minute in half_hour_slots:
+        for hour, minute in five_minute_slots:
             weekday_entries.append({"Weekday": weekday, "Hour": hour, "Minute": minute})
     return weekday_entries
 
@@ -78,7 +70,7 @@ def main() -> None:
 
     print(f"Installed launchd service -> {plist_path}")
     print("Scheduled PT run times:")
-    print("06:30, 07:00, 07:30, 08:00, 08:30, 09:00, 09:30, 10:00, 10:30, 11:00, 11:30, 12:00, 12:30, 13:00 on weekdays")
+    print("Every 5 minutes from 06:30 through 13:00 on weekdays")
 
 
 if __name__ == "__main__":
