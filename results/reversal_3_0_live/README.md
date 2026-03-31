@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-31 12:30:05 EDT`
-Last processed slot: `manage_1230`
+Last updated (ET): `2026-03-31 13:00:05 EDT`
+Last processed slot: `manage_1300`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   EXC           88.89               18            0.73              0.25         49.00                21.45            True
-  CTAS           88.00               25            0.92              1.08        168.20                28.24            True
- CMCSA           85.19               27            0.87              0.18         28.82                29.21            True
-  MDLZ           83.33               18            1.40              0.57         57.51                24.85            True
-  MNST           81.82               33            0.62              0.31         71.19                21.53            True
-   TRI           81.25               32            1.65              1.05         90.64                42.01            True
-  IDXX           80.95               42            0.54              2.11        556.19                30.23            True
-  CHTR           80.77               26            1.65              2.56        219.84                36.22            True
-   KDP          100.00                2            2.22              0.41         26.27                21.21           False
-   AEP           92.86               28            0.29              0.27        131.00                18.09           False
-   XEL           92.86               28            0.28              0.16         79.10                18.55           False
-  COST           91.30               46            0.22              1.51        995.93                15.57           False
+  MDLZ           88.46               26            0.99              0.40         57.58                24.85            True
+  CHTR           84.85               33            1.07              1.66        220.23                36.22            True
+   EXC           84.21               19            0.66              0.23         49.01                21.45            True
+   PEP           83.33               12            0.98              1.08        156.36                18.39            True
+  TMUS           82.35               17            1.26              1.88        213.13                19.67            True
+   TRI           81.58               38            1.09              0.69         90.79                42.01            True
+   ADP           80.77               26            0.55              0.80        205.13                25.45            True
+   KDP           80.00               10            1.53              0.28         26.33                21.21            True
+   AEP           93.75               32            0.10              0.09        131.08                18.09           False
+   XEL           93.55               31            0.06              0.03         79.15                18.55           False
+  CTAS           91.43               35            0.39              0.45        168.47                28.24           False
+  ORLY           90.00               50            0.18              0.12         92.06                22.95           False
 ```
 
 ## Recent Events
