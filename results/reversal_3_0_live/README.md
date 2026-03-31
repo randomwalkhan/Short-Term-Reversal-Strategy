@@ -1,7 +1,7 @@
 # Reversal 3.0 Live Paper Test
 
-Last updated (ET): `2026-03-31 15:00:05 EDT`
-Last processed slot: `entry_1500`
+Last updated (ET): `2026-03-31 15:30:05 EDT`
+Last processed slot: `manage_1530`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$5,722.50`
-- Equity: `$9,367.50`
+- Equity: `$9,637.50`
 - Realized PnL: `$-632.50`
-- Unrealized PnL: `$0.00`
+- Unrealized PnL: `$270.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  FANG FANG260515C00195000       2026-03-31                   0               12.15                 12.15      197.37        197.33             0.0                    0.0         100.0               26              0.65         40.69           40.69                  24.45
+  FANG FANG260515C00195000       2026-03-31                   0               12.15                 13.05      197.37        198.62           270.0                   7.41         100.0               26              0.65         40.69           41.29                  24.45
 ```
 
 ## Today's Closed Trades (2026-03-31)
@@ -43,18 +43,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               26            0.65              0.90        198.26                24.45            True
-  COST           95.00               20            0.93              6.50        993.79                15.57            True
-   KDP           88.24               17            0.87              0.16         26.38                21.21            True
-  MDLZ           86.96               23            1.07              0.43         57.56                24.85            True
-   PEP           83.33               12            1.08              1.19        156.31                18.39            True
-   EXC           83.33               12            0.94              0.32         48.97                21.45            True
-   TRI           81.25               32            1.67              1.06         90.63                42.01            True
-   LIN           80.00               10            1.25              4.37        497.39                19.51            True
-   AEP           92.00               25            0.47              0.43        130.94                18.09           False
-   XEL           92.00               25            0.41              0.23         79.07                18.55           False
-  CTAS           90.24               41            0.17              0.20        168.58                28.24           False
- CMCSA           89.19               37            0.42              0.08         28.86                29.21           False
+  COST           96.30               27            0.80              5.58        994.19                15.57            True
+  MDLZ           91.18               34            0.66              0.27         57.64                24.85            True
+   LIN           87.50               16            0.88              3.09        497.94                19.51            True
+   TRI           83.33               36            1.16              0.74         90.77                42.01            True
+   PEP           83.33               18            0.70              0.76        156.49                18.39            True
+  FANG          100.00               33            0.03              0.04        198.63                24.45           False
+   XEL           93.75               32            0.03              0.02         79.16                18.55           False
+   AEP           93.55               31            0.17              0.15        131.05                18.09           False
+ CMCSA           91.30               46            0.17              0.03         28.89                29.21           False
+   KDP           88.46               26            0.23              0.04         26.43                21.21           False
+  CHTR           88.37               43            0.33              0.50        220.72                36.22           False
+   EXC           87.50               24            0.44              0.15         49.05                21.45           False
 ```
 
 ## Recent Events
