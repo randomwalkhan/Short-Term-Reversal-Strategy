@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 09:40:04 EDT`
-Last processed slot: `manage_0930`
+Last updated (ET): `2026-04-01 09:45:02 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -37,18 +37,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               15            1.87              2.58        196.68                24.73            True
-   WMT           92.86               28            0.80              0.69        123.97                21.00            True
-  COST           90.62               32            0.59              4.09        994.68                15.56            True
-  ORLY           90.24               41            0.53              0.34         92.16                22.81            True
-  CTAS           90.00               30            0.64              0.76        168.81                28.13            True
-  MDLZ           86.67               15            0.85              0.34         57.49                24.77            True
- CMCSA           85.71               21            1.36              0.27         28.26                29.02            True
-   KDP           85.71               14            1.10              0.20         26.24                19.96            True
-   APP           85.37               41            0.86              2.39        396.97                76.97            True
-  CHTR           84.85               33            1.16              1.76        215.13                36.72            True
-  TMUS           81.82               11            1.79              2.64        208.90                20.61            True
-   LIN           81.82               11            1.12              3.89        494.09                19.67            True
+  FANG          100.00               15            1.69              2.34        196.79                24.73            True
+  NFLX           95.24               21            1.71              1.15         95.63                24.42            True
+  ABNB           93.94               33            1.10              0.97        125.86                37.55            True
+  FTNT           93.18               44            0.61              0.35         81.57                30.40            True
+  CTAS           90.00               30            0.61              0.72        168.83                28.13            True
+  PLTR           89.74               39            0.68              0.69        145.98                50.01            True
+  MDLZ           88.89               18            0.57              0.23         57.54                24.77            True
+  CDNS           88.64               44            0.55              1.07        277.41                26.44            True
+ CMCSA           88.46               26            1.09              0.22         28.29                29.02            True
+  CHTR           85.71               35            0.93              1.41        215.28                36.72            True
+   LIN           85.71               21            0.76              2.64        494.63                19.67            True
+   APP           83.78               37            1.16              3.23        396.62                76.97            True
 ```
 
 ## Recent Events
