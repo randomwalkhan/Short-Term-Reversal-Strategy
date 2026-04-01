@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 11:15:05 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-01 11:20:05 EDT`
+Last processed slot: `manage_1130`
 
 ## Active Configuration
 
@@ -37,18 +37,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NFLX           93.75               32            0.91              0.61         95.86                24.42            True
-   LIN           88.46               26            0.59              2.06        494.88                19.67            True
+  NFLX           93.33               30            0.98              0.66         95.84                24.42            True
   MDLZ           88.24               17            0.78              0.32         57.50                24.77            True
  CMCSA           85.71               21            1.34              0.27         28.27                29.02            True
-   APP           84.21               38            1.05              2.91        396.75                76.97            True
-   EXC           81.82               11            0.92              0.32         48.88                21.40            True
-  WDAY           81.40               43            0.80              0.73        129.61                39.93            True
-   TRI           81.40               43            0.76              0.48         89.78                41.71            True
-   ADP           80.77               26            0.52              0.73        202.87                25.48            True
-  MELI           80.49               41            0.79              9.52       1724.94                41.66            True
-  CSGP           80.00               30            1.83              0.52         40.12                34.54            True
-  CHTR           80.00               25            1.88              2.85        214.66                36.72            True
+   LIN           85.71               21            0.77              2.68        494.61                19.67            True
+   APP           85.00               40            1.01              2.80        396.80                76.97            True
+   EXC           81.82               11            0.99              0.34         48.87                21.40            True
+   TRI           81.40               43            0.67              0.42         89.80                41.71            True
+  CSGP           81.25               32            1.69              0.48         40.14                34.54            True
+  MELI           80.49               41            0.73              8.81       1725.24                41.66            True
+  WDAY           80.00               45            0.65              0.59        129.67                39.93            True
+  CHTR           80.00               25            1.90              2.88        214.65                36.72            True
+  FANG          100.00                3            3.64              5.04        195.63                24.73           False
 ```
 
 ## Recent Events
