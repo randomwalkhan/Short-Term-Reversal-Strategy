@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 09:50:05 EDT`
+Last updated (ET): `2026-04-01 09:55:03 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -37,24 +37,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               11            2.39              3.30        196.37                24.73            True
-  NFLX           95.45               22            1.47              0.99         95.70                24.42            True
-  FTNT           94.12               34            1.28              0.74         81.40                30.40            True
-  CTAS           90.62               32            0.52              0.62        168.88                28.13            True
-  CDNS           90.48               42            0.76              1.48        277.24                26.44            True
-  PLTR           90.00               40            0.61              0.62        146.01                50.01            True
-  MDLZ           88.89               18            0.56              0.22         57.54                24.77            True
-   LIN           86.36               22            0.68              2.37        494.75                19.67            True
- CMCSA           85.71               21            1.27              0.25         28.27                29.02            True
-  ABNB           85.71               14            2.32              2.05        125.40                37.55            True
-  SHOP           85.29               34            1.56              1.30        118.06                49.70            True
-   TRI           83.33               36            1.28              0.80         89.64                41.71            True
+  NFLX           95.45               22            1.30              0.87         95.75                24.42            True
+  FTNT           94.12               34            1.22              0.70         81.42                30.40            True
+  PLTR           90.00               40            0.55              0.56        146.04                50.01            True
+  MDLZ           89.47               19            0.51              0.21         57.55                24.77            True
+  ABNB           88.24               17            1.99              1.76        125.53                37.55            True
+   LIN           85.71               28            0.52              1.80        494.99                19.67            True
+ CMCSA           85.00               20            1.45              0.29         28.26                29.02            True
+  SHOP           84.85               33            1.59              1.32        118.05                49.70            True
+   TRI           83.78               37            1.21              0.76         89.65                41.71            True
+   BKR           83.33               24            0.93              0.40         60.88                41.31            True
+  FANG          100.00                7            3.07              4.25        195.97                24.73           False
+  CTAS           89.47               38            0.36              0.42        168.96                28.13           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et         slot   event_type                                                                                                                                                                            detail
+2026-04-01T09:55:03.975227-04:00  manage_1000 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
 2026-04-01T09:40:04.884111-04:00  manage_0930 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
 2026-04-01T09:35:00.954357-04:00  manage_0930 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
 2026-04-01T09:30:00.773757-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 99}
@@ -64,7 +65,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-03-31T15:00:05.885528-04:00   entry_1500        entry {"allocated_cash": 3645.0, "contract_symbol": "FANG260515C00195000", "contracts": 3, "entry_option_price": 12.15, "matched_signals": 26, "success_rate": 100.0, "ticker": "FANG"}
 2026-03-31T10:30:05.893788-04:00  manage_1030         exit                                          {"contract_symbol": "FANG260515C00200000", "pnl": 390.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 11.3, "ticker": "FANG"}
 2026-03-31T09:30:05.890178-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 97}
-2026-03-30T16:00:01.901878-04:00  manage_1600         exit                                                {"contract_symbol": "HON260501C00225000", "pnl": -600.0, "reason": "stop_loss_hit_at_scan", "return_pct": -13.04, "ticker": "HON"}
 ```
 
 ## Equity Curve (1W)
