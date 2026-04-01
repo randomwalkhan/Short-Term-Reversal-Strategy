@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 15:40:05 EDT`
-Last processed slot: `manage_1530`
+Last updated (ET): `2026-04-01 15:45:00 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$5,355.00`
-- Equity: `$9,787.50`
+- Equity: `$9,810.00`
 - Realized PnL: `$-257.50`
-- Unrealized PnL: `$45.00`
+- Unrealized PnL: `$67.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  NFLX NFLX260508C00096000       2026-04-01                   0                4.88                  4.93       95.56         95.96            45.0                   1.03         94.87               39              0.58         41.74           40.21                  24.42
+  NFLX NFLX260508C00096000       2026-04-01                   0                4.88                  4.95       95.56         95.81            67.5                   1.54         94.87               39              0.58         41.74           41.27                  24.42
 ```
 
 ## Today's Closed Trades (2026-04-01)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  ABNB           94.12               34            0.80              0.71        125.98                37.55            True
-  FTNT           93.33               45            0.53              0.30         81.59                30.40            True
-   LIN           88.46               26            0.56              1.93        494.93                19.67            True
- CMCSA           85.71               21            1.25              0.25         28.27                29.02            True
-  BKNG           84.21               38            0.71             20.99       4201.33                42.14            True
-   BKR           83.33               24            0.93              0.40         60.88                41.31            True
-   APP           82.86               35            2.05              5.72        395.55                76.97            True
-  WDAY           81.40               43            0.79              0.72        129.61                39.93            True
-  CSGP           81.25               32            1.74              0.49         40.13                34.54            True
-  ADSK           81.08               37            0.62              1.04        238.96                29.70            True
-  FANG          100.00                3            3.60              4.98        195.66                24.73           False
-   KDP          100.00                2            2.26              0.42         26.15                19.96           False
+  DXCM           93.33               45            0.56              0.24         62.70                32.83            True
+  ABNB           92.31               39            0.72              0.64        126.01                37.55            True
+  ORLY           89.74               39            0.64              0.41         92.13                22.81            True
+  MDLZ           88.24               17            0.78              0.31         57.51                24.77            True
+ CMCSA           85.00               20            1.48              0.29         28.25                29.02            True
+  BKNG           84.21               38            0.69             20.30       4201.62                42.14            True
+   APP           82.35               34            2.12              5.91        395.47                76.97            True
+   BKR           81.82               22            1.11              0.47         60.85                41.31            True
+  WDAY           81.40               43            0.85              0.77        129.59                39.93            True
+  CSGP           81.25               32            1.69              0.48         40.14                34.54            True
+  ADSK           81.08               37            0.67              1.12        238.92                29.70            True
+  FANG          100.00                2            3.85              5.33        195.50                24.73           False
 ```
 
 ## Recent Events
