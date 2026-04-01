@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 10:05:05 EDT`
+Last updated (ET): `2026-04-01 10:10:05 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -37,34 +37,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NFLX           95.45               22            1.32              0.89         95.74                24.42            True
-  ABNB           92.68               41            0.60              0.53        126.05                37.55            True
-   LIN           86.36               22            0.69              2.41        494.73                19.67            True
- CMCSA           85.71               21            1.36              0.27         28.26                29.02            True
-   PEP           84.62               13            0.95              1.03        154.85                18.57            True
-  CTSH           83.87               31            0.93              0.40         61.18                25.11            True
-   APP           83.33               36            1.26              3.50        396.50                76.97            True
-  BKNG           82.35               34            1.24             36.41       4194.72                42.14            True
-  MDLZ           81.82               11            1.09              0.44         57.45                24.77            True
-   TRI           81.58               38            1.10              0.69         89.68                41.71            True
-  ADSK           80.00               35            0.82              1.37        238.81                29.70            True
-  FANG          100.00                9            2.77              3.83        196.15                24.73           False
+  NFLX           95.83               24            1.20              0.81         95.77                24.42            True
+  MDLZ           90.00               10            1.41              0.57         57.40                24.77            True
+  ALNY           87.50               48            0.65              1.51        330.24                36.48            True
+ CMCSA           85.00               20            1.43              0.28         28.26                29.02            True
+   LIN           84.21               19            0.82              2.86        494.53                19.67            True
+   APP           83.33               36            1.51              4.21        396.20                76.97            True
+   EXC           83.33               18            0.67              0.23         48.92                21.40            True
+  CTSH           82.35               34            0.71              0.30         61.22                25.11            True
+   TRI           82.05               39            1.09              0.69         89.69                41.71            True
+  BKNG           81.82               33            1.31             38.57       4193.79                42.14            True
+  MNST           81.82               33            0.63              0.32         72.32                22.42            True
+   PEP           81.82               11            1.06              1.16        154.79                18.57            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                                                                                                                                                                            detail
-2026-04-01T10:05:05.886756-04:00  manage_1000 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
-2026-04-01T10:00:03.885645-04:00  manage_1000 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
-2026-04-01T09:55:03.975227-04:00  manage_1000 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
-2026-04-01T09:40:04.884111-04:00  manage_0930 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
-2026-04-01T09:35:00.954357-04:00  manage_0930 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
-2026-04-01T09:30:00.773757-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 99}
-2026-03-31T23:23:03.138021-04:00  manage_1600 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
-2026-03-31T23:23:03.138021-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 99}
-2026-03-31T16:00:05.906472-04:00  manage_1600         exit                                         {"contract_symbol": "FANG260515C00195000", "pnl": 375.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 10.29, "ticker": "FANG"}
-2026-03-31T15:00:05.885528-04:00   entry_1500        entry {"allocated_cash": 3645.0, "contract_symbol": "FANG260515C00195000", "contracts": 3, "entry_option_price": 12.15, "matched_signals": 26, "success_rate": 100.0, "ticker": "FANG"}
+                    timestamp_et         slot   event_type                                                                                                                                    detail
+2026-04-01T10:10:05.895127-04:00  manage_1000 slot_skipped                                                                                                           {"reason": "already_processed"}
+2026-04-01T10:05:05.886756-04:00  manage_1000 slot_skipped                                                                                                           {"reason": "already_processed"}
+2026-04-01T10:00:03.885645-04:00  manage_1000 slot_skipped                                                                                                           {"reason": "already_processed"}
+2026-04-01T09:55:03.975227-04:00  manage_1000 slot_skipped                                                                                                           {"reason": "already_processed"}
+2026-04-01T09:40:04.884111-04:00  manage_0930 slot_skipped                                                                                                           {"reason": "already_processed"}
+2026-04-01T09:35:00.954357-04:00  manage_0930 slot_skipped                                                                                                           {"reason": "already_processed"}
+2026-04-01T09:30:00.773757-04:00 data_refresh data_refresh                                                                                                                             {'saved': 99}
+2026-03-31T23:23:03.138021-04:00  manage_1600 slot_skipped                                                                                                           {"reason": "already_processed"}
+2026-03-31T23:23:03.138021-04:00 data_refresh data_refresh                                                                                                                             {'saved': 99}
+2026-03-31T16:00:05.906472-04:00  manage_1600         exit {"contract_symbol": "FANG260515C00195000", "pnl": 375.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 10.29, "ticker": "FANG"}
 ```
 
 ## Equity Curve (1W)
