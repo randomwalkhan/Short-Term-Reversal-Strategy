@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 10:40:05 EDT`
-Last processed slot: `manage_1030`
+Last updated (ET): `2026-04-01 10:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -38,17 +38,17 @@ _None_
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
   NFLX           93.10               29            1.05              0.71         95.82                24.42            True
-   LIN           86.36               22            0.71              2.45        494.71                19.67            True
-   EXC           83.33               18            0.71              0.25         48.91                21.40            True
-   APP           82.86               35            1.86              5.19        395.78                76.97            True
-  MDLZ           81.82               11            1.15              0.46         57.44                24.77            True
-   TRI           81.40               43            0.73              0.46         89.78                41.71            True
-  MELI           80.95               42            0.54              6.57       1726.21                41.66            True
-  WDAY           80.49               41            1.27              1.15        129.43                39.93            True
-  FANG          100.00                6            3.33              4.61        195.82                24.73           False
-   AEP           93.75               32            0.19              0.17        131.01                17.74           False
-   WMT           93.02               43            0.14              0.13        124.22                21.00           False
-    EA           92.59               27            0.10              0.14        203.81                 7.29           False
+   LIN           88.46               26            0.60              2.09        494.86                19.67            True
+  MDLZ           88.24               17            0.68              0.27         57.52                24.77            True
+   EXC           84.21               19            0.62              0.21         48.93                21.40            True
+   APP           82.35               34            2.10              5.85        395.49                76.97            True
+  WDAY           81.40               43            0.98              0.89        129.54                39.93            True
+  MELI           80.95               42            0.52              6.32       1726.31                41.66            True
+   ADP           80.00               20            0.87              1.23        202.65                25.48            True
+  FANG          100.00                6            3.20              4.43        195.89                24.73           False
+   AEP           94.29               35            0.05              0.05        131.06                17.74           False
+    EA           93.55               31            0.07              0.10        203.83                 7.29           False
+  PLTR           90.48               42            0.31              0.31        146.15                50.01           False
 ```
 
 ## Recent Events
