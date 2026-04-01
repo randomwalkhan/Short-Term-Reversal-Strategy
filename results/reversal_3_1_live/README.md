@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 10:10:05 EDT`
-Last processed slot: `manage_1000`
+Last updated (ET): `2026-04-01 10:15:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -37,18 +37,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NFLX           95.83               24            1.20              0.81         95.77                24.42            True
-  MDLZ           90.00               10            1.41              0.57         57.40                24.77            True
-  ALNY           87.50               48            0.65              1.51        330.24                36.48            True
- CMCSA           85.00               20            1.43              0.28         28.26                29.02            True
-   LIN           84.21               19            0.82              2.86        494.53                19.67            True
-   APP           83.33               36            1.51              4.21        396.20                76.97            True
-   EXC           83.33               18            0.67              0.23         48.92                21.40            True
-  CTSH           82.35               34            0.71              0.30         61.22                25.11            True
-   TRI           82.05               39            1.09              0.69         89.69                41.71            True
-  BKNG           81.82               33            1.31             38.57       4193.79                42.14            True
-  MNST           81.82               33            0.63              0.32         72.32                22.42            True
-   PEP           81.82               11            1.06              1.16        154.79                18.57            True
+  NFLX           95.83               24            1.17              0.78         95.78                24.42            True
+   LIN           87.50               16            0.86              2.97        494.49                19.67            True
+  ALNY           86.96               46            0.74              1.70        330.16                36.48            True
+   EXC           86.67               15            0.84              0.29         48.90                21.40            True
+   TRI           83.78               37            1.18              0.74         89.66                41.71            True
+   APP           83.33               36            1.37              3.83        396.36                76.97            True
+  BKNG           82.86               35            0.97             28.69       4198.02                42.14            True
+  CTSH           82.35               34            0.68              0.29         61.22                25.11            True
+   PEP           81.82               11            1.19              1.29        154.74                18.57            True
+  VRSK           80.00               15            2.15              2.86        188.51                31.84            True
+  FANG          100.00                2            3.70              5.12        195.60                24.73           False
+   KDP          100.00                1            2.96              0.55         26.10                19.96           False
 ```
 
 ## Recent Events
