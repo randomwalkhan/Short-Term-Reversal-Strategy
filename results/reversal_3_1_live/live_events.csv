@@ -21,3 +21,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-03-31T16:00:05.906472-04:00,2026-03-31,manage_1600,exit,"{""contract_symbol"": ""FANG260515C00195000"", ""pnl"": 375.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 10.29, ""ticker"": ""FANG""}"
 2026-03-31T23:23:03.138021-04:00,2026-03-31,data_refresh,data_refresh,{'saved': 99}
 2026-03-31T23:23:03.138021-04:00,2026-03-31,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-01T09:30:00.773757-04:00,2026-04-01,data_refresh,data_refresh,{'saved': 99}
