@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 12:40:05 EDT`
-Last processed slot: `manage_1230`
+Last updated (ET): `2026-04-01 12:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -37,18 +37,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   BKR           87.88               33            0.56              0.24         60.95                41.31            True
-   LIN           85.71               21            0.79              2.73        494.59                19.67            True
-  CHTR           83.33               30            1.31              1.98        215.03                36.72            True
-   PEP           83.33               18            0.73              0.80        154.95                18.57            True
-   EXC           83.33               18            0.69              0.24         48.92                21.40            True
-  MDLZ           81.82               11            1.21              0.49         57.43                24.77            True
-   TRI           81.40               43            0.78              0.49         89.77                41.71            True
- CMCSA           81.25               16            1.78              0.35         28.23                29.02            True
-  FANG          100.00                1            4.18              5.79        195.31                24.73           False
-  NFLX           95.24               42            0.42              0.28         96.00                24.42           False
-  COST           91.49               47            0.19              1.31        995.87                15.56           False
-  ORLY           89.80               49            0.11              0.07         92.28                22.81           False
+   BKR           87.88               33            0.54              0.23         60.95                41.31            True
+   LIN           85.71               21            0.77              2.69        494.61                19.67            True
+  CHTR           84.38               32            1.24              1.87        215.08                36.72            True
+   EXC           84.21               19            0.62              0.21         48.93                21.40            True
+   PEP           83.33               18            0.76              0.83        154.94                18.57            True
+  MDLZ           83.33               12            1.05              0.42         57.46                24.77            True
+   TRI           82.05               39            1.09              0.69         89.69                41.71            True
+ CMCSA           80.00               15            1.83              0.36         28.22                29.02            True
+   KDP          100.00                2            2.11              0.39         26.16                19.96           False
+  FANG          100.00                1            4.18              5.78        195.31                24.73           False
+  NFLX           95.24               42            0.40              0.27         96.01                24.42           False
+  COST           91.49               47            0.18              1.24        995.90                15.56           False
 ```
 
 ## Recent Events
