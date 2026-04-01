@@ -64,3 +64,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-01T14:30:00.899928-04:00,2026-04-01,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-01T14:35:05.888067-04:00,2026-04-01,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-01T14:40:05.889929-04:00,2026-04-01,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-01T14:50:05.934010-04:00,2026-04-01,entry_1500,entry,"{""allocated_cash"": 4387.5, ""contract_symbol"": ""NFLX260508C00096000"", ""contracts"": 9, ""entry_option_price"": 4.875, ""matched_signals"": 39, ""success_rate"": 94.87, ""ticker"": ""NFLX""}"

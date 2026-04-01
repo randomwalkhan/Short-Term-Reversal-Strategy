@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 14:45:05 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-01 14:50:05 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -19,15 +19,18 @@ Last processed slot: `manual_refresh`
 
 ## Portfolio Snapshot
 
-- Cash: `$9,742.50`
+- Cash: `$5,355.00`
 - Equity: `$9,742.50`
 - Realized PnL: `$-257.50`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
+  NFLX NFLX260508C00096000       2026-04-01                   0                4.88                  4.88       95.56         95.51             0.0                    0.0         94.87               39              0.58         41.74           41.74                  24.42
+```
 
 ## Today's Closed Trades (2026-04-01)
 
@@ -37,34 +40,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NFLX           95.00               40            0.51              0.34         95.97                24.42            True
-  ABNB           94.12               34            0.86              0.76        125.96                37.55            True
-  FTNT           93.33               45            0.50              0.29         81.60                30.40            True
-  ORLY           90.24               41            0.52              0.34         92.17                22.81            True
-  MDLZ           88.24               17            0.78              0.32         57.50                24.77            True
-   LIN           86.36               22            0.71              2.47        494.70                19.67            True
-  BKNG           85.00               40            0.51             15.06       4203.86                42.14            True
- CMCSA           84.21               19            1.52              0.30         28.25                29.02            True
+  NFLX           94.87               39            0.58              0.39         95.95                24.42            True
+  ABNB           93.94               33            0.91              0.81        125.93                37.55            True
+  FTNT           93.18               44            0.59              0.34         81.58                30.40            True
+  MDLZ           88.24               17            0.75              0.30         57.51                24.77            True
+  SHOP           86.36               44            0.64              0.53        118.39                49.70            True
+   LIN           86.36               22            0.69              2.41        494.73                19.67            True
+ CMCSA           85.71               21            1.36              0.27         28.26                29.02            True
+  BKNG           85.00               40            0.61             18.00       4202.60                42.14            True
    BKR           83.33               24            0.95              0.41         60.88                41.31            True
-   APP           82.35               34            2.14              5.97        395.44                76.97            True
-   TRI           82.35               34            1.48              0.93         89.58                41.71            True
-  WDAY           80.49               41            1.02              0.93        129.52                39.93            True
+   TRI           81.82               33            1.60              1.01         89.55                41.71            True
+  MELI           80.95               42            0.56              6.78       1726.11                41.66            True
+   APP           80.65               31            2.47              6.87        395.06                76.97            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-01T14:40:05.889929-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-01T14:35:05.888067-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-01T14:30:00.899928-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-01T14:25:05.884307-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-01T14:10:03.897935-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-01T14:05:05.912655-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-01T14:00:05.891489-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-01T13:55:00.878927-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-01T13:40:05.881728-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-04-01T13:35:05.876418-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
+                    timestamp_et        slot   event_type                                                                                                                                                                            detail
+2026-04-01T14:50:05.934010-04:00  entry_1500        entry {"allocated_cash": 4387.5, "contract_symbol": "NFLX260508C00096000", "contracts": 9, "entry_option_price": 4.875, "matched_signals": 39, "success_rate": 94.87, "ticker": "NFLX"}
+2026-04-01T14:40:05.889929-04:00 manage_1430 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
+2026-04-01T14:35:05.888067-04:00 manage_1430 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
+2026-04-01T14:30:00.899928-04:00 manage_1430 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
+2026-04-01T14:25:05.884307-04:00 manage_1430 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
+2026-04-01T14:10:03.897935-04:00 manage_1400 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
+2026-04-01T14:05:05.912655-04:00 manage_1400 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
+2026-04-01T14:00:05.891489-04:00 manage_1400 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
+2026-04-01T13:55:00.878927-04:00 manage_1400 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
+2026-04-01T13:40:05.881728-04:00 manage_1330 slot_skipped                                                                                                                                                   {"reason": "already_processed"}
 ```
 
 ## Equity Curve (1W)
