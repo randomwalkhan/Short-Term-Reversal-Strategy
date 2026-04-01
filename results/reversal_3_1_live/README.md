@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 11:00:05 EDT`
+Last updated (ET): `2026-04-01 11:05:00 EDT`
 Last processed slot: `manage_1100`
 
 ## Active Configuration
@@ -37,24 +37,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NFLX           94.12               34            0.85              0.57         95.87                24.42            True
-  MDLZ           86.67               15            0.82              0.33         57.50                24.77            True
- CMCSA           85.71               21            1.36              0.27         28.26                29.02            True
-   LIN           84.21               19            0.83              2.87        494.53                19.67            True
-   APP           83.78               37            1.18              3.29        396.59                76.97            True
-   EXC           81.82               11            1.06              0.36         48.86                21.40            True
-   TRI           81.40               43            0.57              0.36         89.83                41.71            True
-  CSGP           81.25               32            1.76              0.50         40.13                34.54            True
-   PEP           80.95               21            0.51              0.55        155.05                18.57            True
-   ADP           80.77               26            0.55              0.78        202.85                25.48            True
-   BKR           80.00               20            1.44              0.62         60.79                41.31            True
-  FANG          100.00                3            3.49              4.83        195.72                24.73           False
+  NFLX           93.75               32            0.89              0.60         95.86                24.42            True
+  MDLZ           88.24               17            0.66              0.27         57.53                24.77            True
+   LIN           86.36               22            0.71              2.47        494.70                19.67            True
+   EXC           85.71               14            0.86              0.29         48.89                21.40            True
+ CMCSA           84.21               19            1.52              0.30         28.25                29.02            True
+   APP           83.78               37            1.18              3.30        396.59                76.97            True
+   BKR           81.82               22            1.08              0.46         60.85                41.31            True
+  WDAY           81.40               43            0.84              0.76        129.59                39.93            True
+   TRI           81.40               43            0.82              0.52         89.76                41.71            True
+  VRSK           80.00               20            1.89              2.51        188.65                31.84            True
+   ADP           80.00               20            0.78              1.11        202.70                25.48            True
+  FANG          100.00                6            3.26              4.52        195.85                24.73           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-01T11:05:00.900882-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-04-01T11:00:05.880342-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-04-01T10:55:05.892151-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-04-01T10:40:05.895881-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
@@ -64,7 +65,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-01T10:10:05.895127-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-01T10:05:05.886756-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-01T10:00:03.885645-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-01T09:55:03.975227-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curve (1W)
