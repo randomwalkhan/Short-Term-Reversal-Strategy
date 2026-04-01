@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 13:10:05 EDT`
-Last processed slot: `manage_1300`
+Last updated (ET): `2026-04-01 13:15:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -37,18 +37,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   LIN           88.46               26            0.61              2.11        494.86                19.67            True
-   EXC           87.50               16            0.81              0.28         48.90                21.40            True
-   BKR           86.21               29            0.80              0.34         60.90                41.31            True
-  CHTR           85.71               35            1.00              1.51        215.23                36.72            True
-  MDLZ           85.71               14            0.97              0.39         57.47                24.77            True
-   APP           85.37               41            0.73              2.03        397.13                76.97            True
+   LIN           87.50               24            0.62              2.16        494.83                19.67            True
+   EXC           87.50               16            0.80              0.27         48.90                21.40            True
+  CHTR           86.11               36            0.69              1.04        215.44                36.72            True
+   APP           85.71               42            0.66              1.85        397.21                76.97            True
+  MDLZ           84.62               13            1.00              0.40         57.47                24.77            True
+   BKR           83.33               24            0.97              0.41         60.87                41.31            True
  CMCSA           81.25               16            1.71              0.34         28.23                29.02            True
-   PEP           80.95               21            0.55              0.60        155.03                18.57            True
-   ADP           80.77               26            0.54              0.77        202.85                25.48            True
-  FANG          100.00                1            4.79              6.64        194.95                24.73           False
-  NFLX           95.35               43            0.33              0.22         96.02                24.42           False
-  COST           90.00               40            0.42              2.92        995.18                15.56           False
+  PYPL           81.08               37            0.57              0.18         45.15                33.21            True
+   PEP           80.95               21            0.53              0.57        155.04                18.57            True
+   ADP           80.77               26            0.56              0.79        202.84                25.48            True
+  FANG          100.00                1            4.77              6.60        194.96                24.73           False
+  NFLX           95.35               43            0.36              0.24         96.02                24.42           False
 ```
 
 ## Recent Events
