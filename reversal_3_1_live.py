@@ -22,7 +22,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.0"
+VERSION = "3.1"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -50,10 +50,10 @@ ET = ZoneInfo("America/New_York")
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "reversal_data"
 ASSETS_DIR = BASE_DIR / "assets"
-LIVE_DIR = BASE_DIR / "results" / "reversal_3_0_live"
+LIVE_DIR = BASE_DIR / "results" / "reversal_3_1_live"
 ROOT_README_PATH = BASE_DIR / "README.md"
-ROOT_SECTION_START = "<!-- reversal-3.0-live:start -->"
-ROOT_SECTION_END = "<!-- reversal-3.0-live:end -->"
+ROOT_SECTION_START = "<!-- reversal-3.1-live:start -->"
+ROOT_SECTION_END = "<!-- reversal-3.1-live:end -->"
 
 STATE_PATH = LIVE_DIR / "state.json"
 TRADES_PATH = LIVE_DIR / "live_trades.csv"
@@ -61,7 +61,7 @@ EVENTS_PATH = LIVE_DIR / "live_events.csv"
 POSITIONS_PATH = LIVE_DIR / "live_positions.csv"
 EQUITY_PATH = LIVE_DIR / "live_equity.csv"
 DASHBOARD_PATH = LIVE_DIR / "README.md"
-PLOT_PATH = ASSETS_DIR / "reversal_3_0_live_equity.png"
+PLOT_PATH = ASSETS_DIR / "reversal_3_1_live_equity.png"
 PLOT_WINDOW_DAYS = 7
 
 SLOT_TO_ET = {
@@ -109,7 +109,7 @@ class Position:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run the Reversal 3.0 live paper-trading cycle.")
+    parser = argparse.ArgumentParser(description="Run the Reversal 3.1 live paper-trading cycle.")
     parser.add_argument("--force-slot", choices=sorted(SLOT_TO_ET), default=None)
     parser.add_argument("--now", default=None, help="Optional override timestamp, e.g. 2026-03-24T15:00:00-04:00")
     parser.add_argument("--start-date", default=LIVE_START_DATE, help="Do not trade before this ET date.")
@@ -967,7 +967,7 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
         color="#0F172A",
         bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": line_color, "alpha": 0.95},
     )
-    plt.title(f"Reversal 3.0 Live Paper Equity (1W)  |  Return {period_return_pct:+.2f}%")
+    plt.title(f"Reversal 3.1 Live Paper Equity (1W)  |  Return {period_return_pct:+.2f}%")
     plt.xlabel("Date (ET, trailing 1W)")
     plt.ylabel("Portfolio Value ($)")
     plt.grid(alpha=0.25)
@@ -1015,7 +1015,7 @@ def render_dashboard(
 
     dashboard_md = "\n".join(
         [
-            "# Reversal 3.0 Live Paper Test",
+            "# Reversal 3.1 Live Paper Test",
             "",
             f"Last updated (ET): `{now_et.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
             f"Last processed slot: `{slot_key or 'manual_refresh'}`",
@@ -1085,7 +1085,7 @@ def render_dashboard(
             "",
             "Trailing `1W` window. The latest point is annotated with its exact ET checkpoint time and return %. The right axis shows total return versus the $10,000 start.",
             "",
-            "![Reversal 3.0 Live Equity 1W](../../assets/reversal_3_0_live_equity.png)",
+            "![Reversal 3.1 Live Equity 1W](../../assets/reversal_3_1_live_equity.png)",
             "",
         ]
     )
@@ -1093,7 +1093,7 @@ def render_dashboard(
     root_section = "\n".join(
         [
             ROOT_SECTION_START,
-            "## Reversal 3.0 Live Paper Test",
+            "## Reversal 3.1 Live Paper Test",
             "",
             f"- Last updated (ET): `{now_et.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
             f"- Equity: `${last_equity:,.2f}` | Realized: `${realized_pnl:,.2f}` | Unrealized: `${unrealized_pnl:,.2f}` | Open positions: `{len(state['positions'])}`",
@@ -1108,11 +1108,11 @@ def render_dashboard(
                 max_rows=8,
             ),
             "",
-            "![Reversal 3.0 Live Equity 1W](assets/reversal_3_0_live_equity.png)",
+            "![Reversal 3.1 Live Equity 1W](assets/reversal_3_1_live_equity.png)",
             "",
-            "- [Full live dashboard](results/reversal_3_0_live/README.md)",
-            "- [Live trades csv](results/reversal_3_0_live/live_trades.csv)",
-            "- [Live equity csv](results/reversal_3_0_live/live_equity.csv)",
+            "- [Full live dashboard](results/reversal_3_1_live/README.md)",
+            "- [Live trades csv](results/reversal_3_1_live/live_trades.csv)",
+            "- [Live equity csv](results/reversal_3_1_live/live_equity.csv)",
             ROOT_SECTION_END,
         ]
     )
@@ -1155,13 +1155,13 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
     token = extract_github_token()
     tracked_paths = [
         "README.md",
-        "results/reversal_3_0_live/README.md",
-        "results/reversal_3_0_live/live_trades.csv",
-        "results/reversal_3_0_live/live_events.csv",
-        "results/reversal_3_0_live/live_positions.csv",
-        "results/reversal_3_0_live/live_equity.csv",
-        "results/reversal_3_0_live/state.json",
-        "assets/reversal_3_0_live_equity.png",
+        "results/reversal_3_1_live/README.md",
+        "results/reversal_3_1_live/live_trades.csv",
+        "results/reversal_3_1_live/live_events.csv",
+        "results/reversal_3_1_live/live_positions.csv",
+        "results/reversal_3_1_live/live_equity.csv",
+        "results/reversal_3_1_live/state.json",
+        "assets/reversal_3_1_live_equity.png",
     ]
 
     def run_git(cmd: list[str]) -> subprocess.CompletedProcess[str]:
@@ -1177,7 +1177,7 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
     if not status.stdout.strip():
         return
 
-    commit_message = f"Update Reversal 3.0 live paper test {now_et.strftime('%Y-%m-%d %H:%M ET')}"
+    commit_message = f"Update Reversal 3.1 live paper test {now_et.strftime('%Y-%m-%d %H:%M ET')}"
     commit_result = run_git(["git", "commit", "-m", commit_message])
     if commit_result.returncode != 0:
         return

@@ -39,10 +39,10 @@ DOWNLOAD_BATCH_SIZE = 100
 
 OFFICIAL_UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 
-OUTPUT_DIR = Path.cwd() / "results" / "reversal_2_6"
-PLOT_PATH = Path.cwd() / "assets" / "reversal_2_6_call_backtest_equity.png"
-TRADES_PATH = OUTPUT_DIR / "reversal_2_6_call_backtest_trades.csv"
-EQUITY_PATH = OUTPUT_DIR / "reversal_2_6_call_backtest_equity.csv"
+OUTPUT_DIR = Path.cwd() / "results" / "reversal_3_1"
+PLOT_PATH = Path.cwd() / "assets" / "reversal_3_1_call_backtest_equity.png"
+TRADES_PATH = OUTPUT_DIR / "reversal_3_1_call_backtest_trades.csv"
+EQUITY_PATH = OUTPUT_DIR / "reversal_3_1_call_backtest_equity.csv"
 
 
 @dataclass
@@ -466,7 +466,7 @@ def main() -> None:
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
     equity_df.to_csv(EQUITY_PATH, index=False)
     trades_df.to_csv(TRADES_PATH, index=False)
-    plot_equity_curve(equity_df, trades_df, "Reversal 2.6 Call Backtest")
+    plot_equity_curve(equity_df, trades_df, "Reversal 3.1 Call Backtest")
 
     print(f"Universe size: {summary['usable_tickers']}")
     print(f"Final equity: ${summary['final_equity']:,.2f}")

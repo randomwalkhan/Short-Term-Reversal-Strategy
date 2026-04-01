@@ -18,11 +18,11 @@ VARIANTS: dict[str, list[str]] = {
 }
 ROBUSTNESS_YEARS = [1, 2, 3]
 
-RESULTS_DIR = Path.cwd() / "results" / "reversal_2_6_leveraged_etf_experiment"
-SUMMARY_PATH = RESULTS_DIR / "reversal_2_6_leveraged_etf_summary.csv"
-ROBUSTNESS_PATH = RESULTS_DIR / "reversal_2_6_leveraged_etf_robustness.csv"
-EQUITY_PATH = RESULTS_DIR / "reversal_2_6_leveraged_etf_equity.csv"
-PLOT_PATH = Path.cwd() / "assets" / "reversal_2_6_leveraged_etf_experiment.png"
+RESULTS_DIR = Path.cwd() / "results" / "reversal_3_1_leveraged_etf_experiment"
+SUMMARY_PATH = RESULTS_DIR / "reversal_3_1_leveraged_etf_summary.csv"
+ROBUSTNESS_PATH = RESULTS_DIR / "reversal_3_1_leveraged_etf_robustness.csv"
+EQUITY_PATH = RESULTS_DIR / "reversal_3_1_leveraged_etf_equity.csv"
+PLOT_PATH = Path.cwd() / "assets" / "reversal_3_1_leveraged_etf_experiment.png"
 
 
 def build_variant_tickers(baseline: list[str], extras: list[str]) -> list[str]:
@@ -66,7 +66,7 @@ def plot_one_year_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
         plt.plot(equity_df["date"], equity_df["equity"] / base.INITIAL_CAPITAL, linewidth=2, label=label)
 
     plt.axhline(1.0, color="gray", linestyle="--", alpha=0.45)
-    plt.title("Reversal 2.6 Leveraged ETF Overlay Experiment (1Y)")
+    plt.title("Reversal 3.1 Leveraged ETF Overlay Experiment (1Y)")
     plt.xlabel("Date")
     plt.ylabel("Equity / Initial Capital")
     plt.grid(alpha=0.25)
