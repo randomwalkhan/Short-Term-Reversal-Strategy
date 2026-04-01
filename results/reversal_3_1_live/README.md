@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-01 13:40:05 EDT`
-Last processed slot: `manage_1330`
+Last updated (ET): `2026-04-01 13:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -37,18 +37,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   LIN           87.50               24            0.62              2.16        494.84                19.67            True
-   EXC           87.50               16            0.79              0.27         48.90                21.40            True
- CMCSA           85.71               21            1.25              0.25         28.27                29.02            True
-   APP           85.37               41            0.94              2.62        396.88                76.97            True
-  MDLZ           83.33               12            1.05              0.42         57.46                24.77            True
-   BKR           81.82               22            1.13              0.48         60.84                41.31            True
-  PYPL           81.58               38            0.56              0.18         45.15                33.21            True
-   ADP           80.00               25            0.60              0.85        202.82                25.48            True
-  VRSK           80.00               15            2.12              2.81        188.53                31.84            True
-  FANG          100.00                1            5.12              7.09        194.75                24.73           False
+   LIN           87.50               24            0.63              2.17        494.83                19.67            True
+ CMCSA           86.96               23            1.22              0.24         28.28                29.02            True
+  MDLZ           85.71               14            0.94              0.38         57.48                24.77            True
+   APP           83.78               37            1.21              3.36        396.56                76.97            True
+   EXC           83.33               18            0.71              0.25         48.91                21.40            True
+   BKR           81.82               22            1.11              0.48         60.85                41.31            True
+  VRSK           81.25               16            2.10              2.79        188.53                31.84            True
+   ADP           80.00               25            0.67              0.95        202.77                25.48            True
+   KDP          100.00                2            2.11              0.39         26.16                19.96           False
+  FANG          100.00                1            5.13              7.10        194.75                24.73           False
   NFLX           95.35               43            0.35              0.23         96.02                24.42           False
-  FTNT           94.23               52            0.06              0.04         81.70                30.40           False
+  FTNT           93.48               46            0.30              0.17         81.65                30.40           False
 ```
 
 ## Recent Events
