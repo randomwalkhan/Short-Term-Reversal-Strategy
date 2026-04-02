@@ -34,9 +34,16 @@ def style_dark_axis(ax: Axes) -> None:
     ax.title.set_color(TEXT)
 
 
-def style_date_axis(ax: Axes) -> None:
-    locator = mdates.AutoDateLocator(minticks=4, maxticks=7)
-    formatter = mdates.ConciseDateFormatter(locator)
+def style_date_axis(ax: Axes, span_days: int | None = None) -> None:
+    if span_days is not None and span_days >= 150:
+        locator = mdates.MonthLocator(interval=2)
+        formatter = mdates.DateFormatter("%b")
+    elif span_days is not None and span_days >= 60:
+        locator = mdates.MonthLocator(interval=1)
+        formatter = mdates.DateFormatter("%b")
+    else:
+        locator = mdates.AutoDateLocator(minticks=4, maxticks=7)
+        formatter = mdates.ConciseDateFormatter(locator)
     ax.xaxis.set_major_locator(locator)
     ax.xaxis.set_major_formatter(formatter)
     ax.tick_params(axis="x", rotation=0)

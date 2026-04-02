@@ -827,7 +827,8 @@ def plot_variant_curves(curves_df: pd.DataFrame, variants: list[VariantConfig]) 
     )
     ax.set_xlabel("Date")
     ax.set_ylabel("Portfolio Value ($)")
-    style_date_axis(ax)
+    span_days = int((valid_dates.max() - valid_dates.min()).days) if not valid_dates.empty else None
+    style_date_axis(ax, span_days=span_days)
     legend = ax.legend(frameon=False)
     for text in legend.get_texts():
         text.set_color(TEXT)

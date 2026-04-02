@@ -455,7 +455,8 @@ def plot_equity_curve(equity_df: pd.DataFrame, trades_df: pd.DataFrame, label: s
     ax.set_title(f"{label} Equity Curve\nBacktest window: {date_label}")
     ax.set_xlabel("Date")
     ax.set_ylabel("Portfolio Value ($)")
-    style_date_axis(ax)
+    span_days = int((valid_dates.max() - valid_dates.min()).days) if not valid_dates.empty else None
+    style_date_axis(ax, span_days=span_days)
     legend = ax.legend(frameon=False, loc="upper left")
     for text in legend.get_texts():
         text.set_color(TEXT)

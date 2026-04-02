@@ -72,7 +72,8 @@ def plot_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
     ax.set_title(f"Reversal 2.5 Minimum Drop Experiment\nBacktest window: {date_label}")
     ax.set_xlabel("Date")
     ax.set_ylabel("Equity / Initial Capital")
-    style_date_axis(ax)
+    span_days = int((date_end - date_start).days) if date_start is not None and date_end is not None else None
+    style_date_axis(ax, span_days=span_days)
     legend = ax.legend(frameon=False)
     for text in legend.get_texts():
         text.set_color(TEXT)
