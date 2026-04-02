@@ -72,7 +72,7 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 
 ## Equity Curves
 
-Each chart is generated from the same live equity series with no-lookahead marks. The latest point is annotated with its exact ET checkpoint time and return %. GitHub does not support true app-style toggles, so the dashboard uses collapsible `1D / 1W / 1M` sections instead.
+Each chart is generated from the same live equity series with no-lookahead marks. The latest point is annotated with its exact ET checkpoint time and return %.
 
 <details>
 <summary><strong>1D</strong></summary>

@@ -10,9 +10,9 @@
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `1D / 1W / 1M` (default open panel: `1W`)
 
-_None_
+### Current Open Positions
 
-GitHub README does not support true app-style interactive tabs, so the chart windows below use GitHub-native collapsible sections.
+_None_
 
 <details>
 <summary><strong>1D</strong></summary>
@@ -44,7 +44,7 @@ GitHub README does not support true app-style interactive tabs, so the chart win
 
 `Reversal3.1.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
 
-## Strategy Snapshot | 一页看懂
+## Strategy Summary | 策略总结
 
 This repository studies a short-term reversal call-buying setup built around large intraday drawdowns, historical recovery probability, and staged optimization. The current official version is `Reversal 3.1`.
 
