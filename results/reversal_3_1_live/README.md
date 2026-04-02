@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 13:00:05 EDT`
+Last updated (ET): `2026-04-02 13:05:05 EDT`
 Last processed slot: `manage_1300`
 
 ## Active Configuration
@@ -40,24 +40,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           97.44               39            0.65              1.35        297.15                91.06            True
-  MRVL           95.00               40            0.76              0.57        106.47                92.70            True
-  MPWR           91.67               36            0.84              6.55       1116.70                56.57            True
-  DXCM           91.11               45            0.81              0.35         62.22                31.67            True
-  UPRO           90.62               32            1.00              0.69         98.87                57.18            True
-  GILD           88.46               26            0.81              0.79        139.96                21.47            True
-   BKR           88.24               34            0.64              0.27         60.22                40.20            True
-  SNPS           87.80               41            0.79              2.18        395.81                35.88            True
-   MAR           87.50               24            1.17              2.73        332.29                28.45            True
-  KLAC           87.10               31            1.20             12.82       1514.35                56.48            True
-  ORLY           87.10               31            0.91              0.58         91.85                22.81            True
-  MCHP           85.71               35            0.89              0.41         65.20                45.66            True
+  MRVL           95.12               41            0.65              0.48        106.50                92.70            True
+  UPRO           92.31               39            0.73              0.50         98.95                57.18            True
+  MPWR           91.89               37            0.59              4.60       1117.54                56.57            True
+  DXCM           91.11               45            0.72              0.32         62.23                31.67            True
+   MAR           88.89               27            1.00              2.34        332.46                28.45            True
+  ORLY           88.57               35            0.69              0.45         91.91                22.81            True
+  GILD           88.46               26            0.75              0.74        139.99                21.47            True
+   BKR           88.24               34            0.51              0.22         60.25                40.20            True
+  SNPS           87.80               41            0.69              1.92        395.92                35.88            True
+  KLAC           87.10               31            1.16             12.31       1514.56                56.48            True
+  CDNS           85.71               28            1.81              3.54        278.67                26.25            True
+  SOXL           85.29               34            1.23              0.45         52.07               138.72            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-02T13:05:05.894561-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 2026-04-02T13:00:05.924062-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 2026-04-02T12:55:05.890571-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 2026-04-02T12:40:05.891955-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T12:10:05.892027-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 2026-04-02T12:05:05.882439-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 2026-04-02T12:00:03.471000-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
-2026-04-02T11:55:05.888116-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curve (1W)
