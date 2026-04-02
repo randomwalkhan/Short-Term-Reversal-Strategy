@@ -62,8 +62,9 @@ EVENTS_PATH = LIVE_DIR / "live_events.csv"
 POSITIONS_PATH = LIVE_DIR / "live_positions.csv"
 EQUITY_PATH = LIVE_DIR / "live_equity.csv"
 DASHBOARD_PATH = LIVE_DIR / "README.md"
-PLOT_PATH = ASSETS_DIR / "reversal_3_1_live_equity.png"
-PLOT_WINDOW_DAYS = 7
+PLOT_1D_PATH = ASSETS_DIR / "reversal_3_1_live_equity_1d.png"
+PLOT_1W_PATH = ASSETS_DIR / "reversal_3_1_live_equity.png"
+PLOT_1M_PATH = ASSETS_DIR / "reversal_3_1_live_equity_1m.png"
 
 SLOT_TO_ET = {
     "manage_0930": (9, 30),
@@ -909,10 +910,10 @@ def humanize_exit_reason(reason: str) -> str:
     return mapping.get(reason, reason)
 
 
-def plot_live_equity(equity_df: pd.DataFrame) -> None:
+def plot_live_equity_window(equity_df: pd.DataFrame, window_label: str, window_days: int, output_path: Path) -> None:
     if equity_df.empty:
         return
-    PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     plot_df = equity_df.copy()
     plot_df["timestamp_et"] = pd.to_datetime(plot_df["timestamp_et"], errors="coerce", utc=True)
     plot_df = plot_df[plot_df["timestamp_et"].notna()].copy()
@@ -921,8 +922,10 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     plot_df["timestamp_plot"] = plot_df["timestamp_et"].dt.tz_convert(ET).dt.tz_localize(None)
     plot_df = plot_df.sort_values("timestamp_plot").drop_duplicates(subset=["timestamp_plot"], keep="last")
     latest_ts = plot_df["timestamp_plot"].max()
-    window_start = latest_ts - pd.Timedelta(days=PLOT_WINDOW_DAYS)
+    window_start = latest_ts - pd.Timedelta(days=window_days)
     plot_df = plot_df[plot_df["timestamp_plot"] >= window_start].copy()
+    if plot_df.empty:
+        return
     period_start_equity = float(plot_df["equity"].iloc[0])
     period_end_equity = float(plot_df["equity"].iloc[-1])
     period_return_pct = (period_end_equity / INITIAL_CAPITAL - 1.0) * 100
@@ -939,7 +942,7 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     axis.axhline(INITIAL_CAPITAL, color=BASELINE, linestyle="--", alpha=0.5, label="Initial Capital", zorder=2)
     axis.set_ylim(lower_bound, upper_bound)
     locator = mdates.AutoDateLocator(minticks=3, maxticks=6)
-    formatter = mdates.DateFormatter("%m-%d")
+    formatter = mdates.DateFormatter("%m-%d %H:%M" if window_days <= 1 else "%m-%d")
     axis.xaxis.set_major_locator(locator)
     axis.xaxis.set_major_formatter(formatter)
     return_axis = axis.twinx()
@@ -970,15 +973,47 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
         color=TEXT,
         bbox={"boxstyle": "round,pad=0.25", "facecolor": AX_BG, "edgecolor": line_color, "alpha": 0.95},
     )
-    axis.set_title(f"Reversal 3.1 Live Paper Equity (1W)  |  Return {period_return_pct:+.2f}%")
-    axis.set_xlabel("Date (ET, trailing 1W)")
+    axis.set_title(f"Reversal 3.1 Live Paper Equity ({window_label})  |  Return {period_return_pct:+.2f}%")
+    axis.set_xlabel(f"Date (ET, trailing {window_label})")
     axis.set_ylabel("Portfolio Value ($)")
     legend = axis.legend(frameon=False, loc="upper left")
     for text in legend.get_texts():
         text.set_color(TEXT)
     fig.tight_layout()
-    fig.savefig(PLOT_PATH, dpi=160, bbox_inches="tight", facecolor=FIG_BG)
+    fig.savefig(output_path, dpi=160, bbox_inches="tight", facecolor=FIG_BG)
     plt.close(fig)
+
+
+def plot_live_equity(equity_df: pd.DataFrame) -> None:
+    plot_live_equity_window(equity_df, "1D", 1, PLOT_1D_PATH)
+    plot_live_equity_window(equity_df, "1W", 7, PLOT_1W_PATH)
+    plot_live_equity_window(equity_df, "1M", 30, PLOT_1M_PATH)
+
+
+def build_chart_sections(image_prefix: str) -> list[str]:
+    return [
+        "<details>",
+        "<summary><strong>1D</strong></summary>",
+        "",
+        f"![Reversal 3.1 Live Equity 1D]({image_prefix}assets/reversal_3_1_live_equity_1d.png)",
+        "",
+        "</details>",
+        "",
+        "<details open>",
+        "<summary><strong>1W</strong></summary>",
+        "",
+        f"![Reversal 3.1 Live Equity 1W]({image_prefix}assets/reversal_3_1_live_equity.png)",
+        "",
+        "</details>",
+        "",
+        "<details>",
+        "<summary><strong>1M</strong></summary>",
+        "",
+        f"![Reversal 3.1 Live Equity 1M]({image_prefix}assets/reversal_3_1_live_equity_1m.png)",
+        "",
+        "</details>",
+        "",
+    ]
 
 
 def render_dashboard(
@@ -1036,7 +1071,7 @@ def render_dashboard(
             "- Entry scan: `3:00 PM ET`",
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`",
             "- Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed",
-            "- Chart view: default display is trailing `1W`, with latest ET checkpoint annotation and return % axis",
+            "- Chart views: GitHub-native `1D / 1W / 1M`, default open panel is `1W`",
             "",
             "## Portfolio Snapshot",
             "",
@@ -1085,12 +1120,11 @@ def render_dashboard(
             "",
             format_table(recent_events, columns=["timestamp_et", "slot", "event_type", "detail"], max_rows=10),
             "",
-            "## Equity Curve (1W)",
+            "## Equity Curves",
             "",
-            "Trailing `1W` window. The latest point is annotated with its exact ET checkpoint time and return %. The right axis shows total return versus the $10,000 start.",
+            "Each chart is generated from the same live equity series with no-lookahead marks. The latest point is annotated with its exact ET checkpoint time and return %. GitHub does not support true app-style toggles, so the dashboard uses collapsible `1D / 1W / 1M` sections instead.",
             "",
-            "![Reversal 3.1 Live Equity 1W](../../assets/reversal_3_1_live_equity.png)",
-            "",
+            *build_chart_sections("../../"),
         ]
     )
 
@@ -1104,7 +1138,7 @@ def render_dashboard(
             f"- Today closed trades: `{len(today_trades)}`",
             f"- Current slot: `{slot_key or 'manual_refresh'}`",
             "- Universe: `qqq_plus_leverage_etfs`",
-            "- Chart: trailing `1W` with ET timestamps",
+            "- Chart windows: `1D / 1W / 1M` (default open panel: `1W`)",
             "",
             format_table(
                 positions_view,
@@ -1112,8 +1146,9 @@ def render_dashboard(
                 max_rows=8,
             ),
             "",
-            "![Reversal 3.1 Live Equity 1W](assets/reversal_3_1_live_equity.png)",
+            "GitHub README does not support true app-style interactive tabs, so the chart windows below use GitHub-native collapsible sections.",
             "",
+            *build_chart_sections(""),
             "- [Full live dashboard](results/reversal_3_1_live/README.md)",
             "- [Live trades csv](results/reversal_3_1_live/live_trades.csv)",
             "- [Live equity csv](results/reversal_3_1_live/live_equity.csv)",
@@ -1132,7 +1167,7 @@ def update_root_readme(root_section: str) -> None:
         end = text.index(ROOT_SECTION_END) + len(ROOT_SECTION_END)
         text = text[:start] + root_section + text[end:]
     else:
-        text = text.replace("# Reversal 2.5.3\n", "# Reversal 2.5.3\n\n" + root_section + "\n\n", 1)
+        text = text.replace("# Reversal 3.1\n", "# Reversal 3.1\n\n" + root_section + "\n\n", 1)
     ROOT_README_PATH.write_text(text)
 
 
@@ -1166,6 +1201,8 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
         "results/reversal_3_1_live/live_equity.csv",
         "results/reversal_3_1_live/state.json",
         "assets/reversal_3_1_live_equity.png",
+        "assets/reversal_3_1_live_equity_1d.png",
+        "assets/reversal_3_1_live_equity_1m.png",
     ]
 
     def run_git(cmd: list[str]) -> subprocess.CompletedProcess[str]:

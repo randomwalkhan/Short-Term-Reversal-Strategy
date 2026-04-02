@@ -15,7 +15,7 @@ Last processed slot: `manage_1430`
 - Entry scan: `3:00 PM ET`
 - Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`
 - Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed
-- Chart view: default display is trailing `1W`, with latest ET checkpoint annotation and return % axis
+- Chart views: GitHub-native `1D / 1W / 1M`, default open panel is `1W`
 
 ## Portfolio Snapshot
 
@@ -70,8 +70,27 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T13:10:05.901781-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 ```
 
-## Equity Curve (1W)
+## Equity Curves
 
-Trailing `1W` window. The latest point is annotated with its exact ET checkpoint time and return %. The right axis shows total return versus the $10,000 start.
+Each chart is generated from the same live equity series with no-lookahead marks. The latest point is annotated with its exact ET checkpoint time and return %. GitHub does not support true app-style toggles, so the dashboard uses collapsible `1D / 1W / 1M` sections instead.
+
+<details>
+<summary><strong>1D</strong></summary>
+
+![Reversal 3.1 Live Equity 1D](../../assets/reversal_3_1_live_equity_1d.png)
+
+</details>
+
+<details open>
+<summary><strong>1W</strong></summary>
 
 ![Reversal 3.1 Live Equity 1W](../../assets/reversal_3_1_live_equity.png)
+
+</details>
+
+<details>
+<summary><strong>1M</strong></summary>
+
+![Reversal 3.1 Live Equity 1M](../../assets/reversal_3_1_live_equity_1m.png)
+
+</details>

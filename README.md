@@ -8,11 +8,32 @@
 - Today closed trades: `1`
 - Current slot: `manage_1430`
 - Universe: `qqq_plus_leverage_etfs`
-- Chart: trailing `1W` with ET timestamps
+- Chart windows: `1D / 1W / 1M` (default open panel: `1W`)
 
 _None_
 
+GitHub README does not support true app-style interactive tabs, so the chart windows below use GitHub-native collapsible sections.
+
+<details>
+<summary><strong>1D</strong></summary>
+
+![Reversal 3.1 Live Equity 1D](assets/reversal_3_1_live_equity_1d.png)
+
+</details>
+
+<details open>
+<summary><strong>1W</strong></summary>
+
 ![Reversal 3.1 Live Equity 1W](assets/reversal_3_1_live_equity.png)
+
+</details>
+
+<details>
+<summary><strong>1M</strong></summary>
+
+![Reversal 3.1 Live Equity 1M](assets/reversal_3_1_live_equity_1m.png)
+
+</details>
 
 - [Full live dashboard](results/reversal_3_1_live/README.md)
 - [Live trades csv](results/reversal_3_1_live/live_trades.csv)
@@ -23,6 +44,20 @@ _None_
 
 `Reversal3.1.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
 
+## Strategy Snapshot | 一页看懂
+
+This repository studies a short-term reversal call-buying setup built around large intraday drawdowns, historical recovery probability, and staged optimization. The current official version is `Reversal 3.1`.
+
+本仓库研究的是一套基于“日内大跌后短期反转”的 call 策略，通过历史反弹成功率和逐阶段优化来推进。目前官方版本是 `Reversal 3.1`。
+
+- Official universe: `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`
+- Official filters: `60d` lookback, `matched_signals >= 10`, `minimum current drop > 0.5%`
+- Trade framing: near-ATM calls, ~`30` DTE in backtests, `+10% / +15% / -10%` exit ladder
+- Live paper test: no-lookahead scheduled scans with GitHub-published dashboard output
+- Research discipline: `RESEARCH_GUARDRAILS.md`
+
+## Current Version | 当前官方版本
+
 Update note: Reversal 3.1 keeps the Reversal 2.5 execution rules unchanged, but upgrades the official universe from `qqq_only_filtered` to `qqq_plus_leverage_etfs` by adding a curated `SOXL + UPRO` overlay after a controlled leveraged-ETF comparison. The live paper runner now uses the same upgraded ticker list.
 
 Display update: GitHub feature charts now use the shared dark Apple-style plotting theme, and the Featured Result image has been refreshed to the Reversal 3.1 label.
@@ -30,12 +65,6 @@ Display update: GitHub feature charts now use the shared dark Apple-style plotti
 更新说明：Reversal 3.1 保留 Reversal 2.5 的执行规则不变，但在受控的 leveraged ETF 对比实验之后，把官方 universe 从 `qqq_only_filtered` 升级为 `qqq_plus_leverage_etfs`，即在原有 QQQ 核心上加入精选的 `SOXL + UPRO` overlay；live paper runner 也同步切到了这份新 ticker list。
 
 展示更新：GitHub 上的主要曲线图现在统一使用共享的深色 Apple Stocks 风格配色，Featured Result 图片也已经刷新为 Reversal 3.1 标题。
-
-`Reversal2.5.3.ipynb`、`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
-
-`Reversal2.5.3.ipynb`、`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` 和 `Reversal2.0.ipynb` 作为更早版本快照保留。
-
-![Reversal 2.3.3 Universe Comparison](assets/reversal_2_3_3_universe_comparison.png)
 
 ## Featured Result | 重点结果
 
@@ -88,6 +117,8 @@ Reversal 2.3.3 在原始动态 `matched_signals >= 10` 规则下比较了五组 
 | `spy_only_filtered` | `491` | `52.92%` | `+36.28%` | `-43.26%` | `0.73` | [equity](results/reversal_2_3_3_universe_comparison/spy_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/spy_only_filtered_trades.csv) |
 | `nasdaq_spy_filtered` | `1163` | `50.81%` | `-7.10%` | `-50.29%` | `0.23` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_spy_filtered_trades.csv) |
 | `nasdaq_only_filtered` | `830` | `49.59%` | `-30.21%` | `-50.51%` | `-0.15` | [equity](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_equity.csv) | [trades](results/reversal_2_3_3_universe_comparison/nasdaq_only_filtered_trades.csv) |
+
+![Reversal 2.3.3 Universe Comparison](assets/reversal_2_3_3_universe_comparison.png)
 
 ### Stage 2: Factor Selection | 第二阶段：选 Factor
 
@@ -157,6 +188,21 @@ After fixing the `60d` factor and the `minimum current drop > 0.5%` filter, the 
 | `plus_tqqq_soxl_upro` | `+1707.90%` | `-44.30%` | `63.33%` | `4.28` |
 
 ![Reversal 3.1 Leveraged ETF Overlay Experiment](assets/reversal_3_1_leveraged_etf_experiment.png)
+
+## Version History | 历代更新
+
+The project keeps its optimization trail explicit rather than hiding earlier versions. The current path is:
+
+本项目保留完整的优化路径，而不是把旧版本直接抹掉。当前主线是：
+
+- `2.3.3`: lock the best universe as `qqq_only_filtered`
+- `2.4`: promote the `60d` observation window
+- `2.5`: promote `minimum current drop > 0.5%`
+- `3.1`: keep the `2.5` execution logic and upgrade the official universe to `qqq_plus_leverage_etfs`
+
+Earlier notebook snapshots such as `Reversal2.5.3.ipynb`, `Reversal2.5.ipynb`, `Reversal2.4.ipynb`, `Reversal2.3.3.ipynb`, `Reversal2.3.2.ipynb`, and `Reversal2.3.1.ipynb` are retained for version-by-version review.
+
+诸如 `Reversal2.5.3.ipynb`、`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb` 等旧版 notebook 都保留在仓库里，便于逐版本回看。
 
 ## License | 版权
 
