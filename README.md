@@ -3,8 +3,8 @@
 <!-- reversal-3.1-live:start -->
 ## Reversal 3.1 Live Paper Test
 
-- Last updated (ET): `2026-04-02 10:55:05 EDT`
-- Equity: `$10,260.00` | Realized: `$-257.50` | Unrealized: `$517.50` | Open positions: `1`
+- Last updated (ET): `2026-04-02 11:00:05 EDT`
+- Equity: `$10,282.50` | Realized: `$-257.50` | Unrealized: `$540.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1100`
 - Universe: `qqq_plus_leverage_etfs`
@@ -12,7 +12,7 @@
 
 ```text
 ticker     contract_symbol  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  NFLX NFLX260508C00096000                  5.45           517.5                  11.79                   1
+  NFLX NFLX260508C00096000                  5.48           540.0                  12.31                   1
 ```
 
 ![Reversal 3.1 Live Equity 1W](assets/reversal_3_1_live_equity.png)

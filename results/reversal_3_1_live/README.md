@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 10:55:05 EDT`
+Last updated (ET): `2026-04-02 11:00:05 EDT`
 Last processed slot: `manage_1100`
 
 ## Active Configuration
@@ -20,16 +20,16 @@ Last processed slot: `manage_1100`
 ## Portfolio Snapshot
 
 - Cash: `$5,355.00`
-- Equity: `$10,260.00`
+- Equity: `$10,282.50`
 - Realized PnL: `$-257.50`
-- Unrealized PnL: `$517.50`
+- Unrealized PnL: `$540.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  NFLX NFLX260508C00096000       2026-04-01                   1                4.88                  5.45       95.56         97.56           517.5                  11.79         94.87               39              0.58         41.74           38.09                  24.42
+  NFLX NFLX260508C00096000       2026-04-01                   1                4.88                  5.48       95.56         97.33           540.0                  12.31         94.87               39              0.58         41.74           39.58                  24.42
 ```
 
 ## Today's Closed Trades (2026-04-02)
@@ -40,24 +40,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           97.06               34            1.86              3.87        296.07                91.06            True
-  MPWR           91.67               36            0.82              6.46       1116.74                56.57            True
-  REGN           91.67               12            2.26             12.32        771.97                26.81            True
-  CDNS           90.48               42            0.93              1.82        279.41                26.25            True
-   MAR           89.74               39            0.50              1.18        332.96                28.45            True
-  AMAT           86.11               36            0.79              1.97        352.96                59.65            True
-  SOXL           86.11               36            0.54              0.20         52.18               138.72            True
-  ASML           85.19               27            1.39             13.25       1354.08                52.01            True
-  TMUS           84.00               25            0.90              1.28        203.70                22.53            True
-   TXN           83.87               31            0.80              1.10        195.83                33.08            True
-    MU           83.78               37            0.90              2.32        366.85                84.85            True
-  ALNY           83.33               24            2.09              4.80        326.67                35.36            True
+   WDC           96.88               32            2.36              4.92        295.62                91.06            True
+  MRVL           95.35               43            0.56              0.42        106.53                92.70            True
+  MPWR           91.89               37            0.62              4.84       1117.43                56.57            True
+  CDNS           90.48               42            0.91              1.79        279.42                26.25            True
+  PCAR           90.24               41            0.55              0.45        117.46                23.75            True
+   MAR           88.89               36            0.65              1.53        332.81                28.45            True
+  KLAC           86.84               38            0.63              6.72       1516.96                56.48            True
+  MCHP           86.49               37            0.70              0.32         65.24                45.66            True
+  AMAT           86.11               36            0.91              2.25        352.83                59.65            True
+  SOXL           85.29               34            1.59              0.58         52.01               138.72            True
+  ASML           85.19               27            1.49             14.14       1353.70                52.01            True
+  VRTX           85.00               40            0.62              1.95        446.42                39.75            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-02T11:00:05.878856-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-04-02T10:55:05.929146-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-04-02T10:40:05.872686-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
 2026-04-02T10:35:05.890056-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T10:05:05.400756-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-02T10:00:03.566981-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-02T09:55:03.086371-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-02T09:40:05.889923-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curve (1W)
