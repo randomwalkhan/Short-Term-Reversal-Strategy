@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from matplotlib import dates as mdates
 from matplotlib.axes import Axes
 
 
@@ -31,3 +32,12 @@ def style_dark_axis(ax: Axes) -> None:
     ax.yaxis.label.set_color(TEXT)
     ax.xaxis.label.set_color(TEXT)
     ax.title.set_color(TEXT)
+
+
+def style_date_axis(ax: Axes) -> None:
+    locator = mdates.AutoDateLocator(minticks=4, maxticks=7)
+    formatter = mdates.ConciseDateFormatter(locator)
+    ax.xaxis.set_major_locator(locator)
+    ax.xaxis.set_major_formatter(formatter)
+    ax.tick_params(axis="x", rotation=0)
+    ax.xaxis.get_offset_text().set_color(SUBTEXT)

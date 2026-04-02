@@ -11,7 +11,7 @@ import yfinance as yf
 from scipy.stats import norm
 
 from backtest_metrics import TEN_YEAR_TBILL_DATE, TEN_YEAR_TBILL_RATE, compute_annualized_sharpe
-from plot_theme import BASELINE, FIG_BG, TEXT, style_dark_axis
+from plot_theme import BASELINE, FIG_BG, TEXT, style_dark_axis, style_date_axis
 from reversal_universe import build_named_universe_map
 
 
@@ -827,6 +827,7 @@ def plot_variant_curves(curves_df: pd.DataFrame, variants: list[VariantConfig]) 
     )
     ax.set_xlabel("Date")
     ax.set_ylabel("Portfolio Value ($)")
+    style_date_axis(ax)
     legend = ax.legend(frameon=False)
     for text in legend.get_texts():
         text.set_color(TEXT)

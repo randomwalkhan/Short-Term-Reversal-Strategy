@@ -11,7 +11,7 @@ import yfinance as yf
 from scipy.stats import norm
 
 from backtest_metrics import TEN_YEAR_TBILL_DATE, TEN_YEAR_TBILL_RATE, compute_annualized_sharpe
-from plot_theme import AX_BG, BASELINE, FIG_BG, GREEN_LINE, SUBTEXT, TEXT, style_dark_axis
+from plot_theme import AX_BG, BASELINE, FIG_BG, GREEN_LINE, SUBTEXT, TEXT, style_dark_axis, style_date_axis
 from reversal_universe import build_named_universe_map
 
 
@@ -455,6 +455,7 @@ def plot_equity_curve(equity_df: pd.DataFrame, trades_df: pd.DataFrame, label: s
     ax.set_title(f"{label} Equity Curve\nBacktest window: {date_label}")
     ax.set_xlabel("Date")
     ax.set_ylabel("Portfolio Value ($)")
+    style_date_axis(ax)
     legend = ax.legend(frameon=False, loc="upper left")
     for text in legend.get_texts():
         text.set_color(TEXT)

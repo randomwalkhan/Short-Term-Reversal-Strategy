@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 import backtest_reversal_2_4_calls as base
-from plot_theme import BASELINE, FIG_BG, TEXT, style_dark_axis
+from plot_theme import BASELINE, FIG_BG, TEXT, style_dark_axis, style_date_axis
 
 
 MINIMUM_DROP_PCTS = [0.00, 0.005, 0.01, 0.02, 0.03, 0.04]
@@ -72,6 +72,7 @@ def plot_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
     ax.set_title(f"Reversal 2.5 Minimum Drop Experiment\nBacktest window: {date_label}")
     ax.set_xlabel("Date")
     ax.set_ylabel("Equity / Initial Capital")
+    style_date_axis(ax)
     legend = ax.legend(frameon=False)
     for text in legend.get_texts():
         text.set_color(TEXT)

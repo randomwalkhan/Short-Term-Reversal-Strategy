@@ -13,7 +13,7 @@ from backtest_reversal_2_3_3_calls import (
     load_history_cache,
     summarize_backtest,
 )
-from plot_theme import BASELINE, FIG_BG, TEXT, style_dark_axis
+from plot_theme import BASELINE, FIG_BG, TEXT, style_dark_axis, style_date_axis
 
 
 RESULTS_DIR = Path.cwd() / "results" / "reversal_2_3_3_universe_comparison"
@@ -50,6 +50,7 @@ def plot_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
     )
     ax.set_xlabel("Date")
     ax.set_ylabel("Equity / Initial Capital")
+    style_date_axis(ax)
     legend = ax.legend(frameon=False)
     for text in legend.get_texts():
         text.set_color(TEXT)
