@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 15:00:05 EDT`
+Last updated (ET): `2026-04-02 15:05:00 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -20,16 +20,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$8,102.50`
-- Equity: `$10,887.50`
+- Equity: `$10,885.00`
 - Realized PnL: `$845.00`
-- Unrealized PnL: `$42.50`
+- Unrealized PnL: `$40.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   0               27.42                 27.85      294.77        294.77            42.5                   1.55         97.22               36              0.99         81.84           83.11                  91.06
+   WDC WDC260501C00295000       2026-04-02                   0               27.42                 27.82      294.77        295.41            40.0                   1.46         97.22               36              0.99         81.84           81.99                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-02)
@@ -43,24 +43,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           97.22               36            0.99              2.07        296.84                91.06            True
-  MPWR           91.89               37            0.55              4.32       1117.66                56.57            True
-  ASML           91.67               12            3.18             30.30       1346.78                52.01            True
-  DXCM           90.70               43            0.88              0.39         62.20                31.67            True
-  CDNS           90.48               42            0.93              1.83        279.41                26.25            True
-  ORLY           90.24               41            0.52              0.34         91.96                22.81            True
-  FAST           89.66               29            0.88              0.29         46.51                21.97            True
-   MAR           88.89               36            0.72              1.68        332.74                28.45            True
-  GILD           88.46               26            0.73              0.71        139.99                21.47            True
-  KLAC           87.50               32            1.09             11.58       1514.88                56.48            True
+   WDC           97.44               39            0.78              1.62        297.03                91.06            True
+  ASML           92.86               14            2.91             27.68       1347.90                52.01            True
+  DXCM           91.11               45            0.77              0.34         62.23                31.67            True
+  FAST           90.32               31            0.78              0.26         46.52                21.97            True
+  ORLY           90.24               41            0.58              0.37         91.94                22.81            True
+  CDNS           88.89               45            0.59              1.16        279.69                26.25            True
+   MAR           88.89               36            0.64              1.50        332.82                28.45            True
+  GILD           88.46               26            0.73              0.72        139.99                21.47            True
+  KLAC           86.49               37            0.82              8.68       1516.12                56.48            True
    WBD           85.71               35            0.53              0.10         27.45                11.93            True
-   CSX           85.71               21            0.74              0.21         41.35                27.84            True
+   CSX           85.71               21            0.71              0.21         41.35                27.84            True
+ GOOGL           84.62               39            0.61              1.27        296.85                35.66            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                           detail
+2026-04-02T15:05:00.892731-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T15:00:05.892985-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T14:55:05.878211-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T14:50:05.884978-04:00  entry_1500        entry {"allocated_cash": 2742.5, "contract_symbol": "WDC260501C00295000", "contracts": 1, "entry_option_price": 27.425, "matched_signals": 36, "success_rate": 97.22, "ticker": "WDC"}
@@ -70,7 +71,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T14:25:06.347985-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T14:10:05.893357-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T14:05:05.889867-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-02T14:00:05.896681-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
