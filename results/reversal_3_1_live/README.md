@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 10:40:05 EDT`
-Last processed slot: `manage_1030`
+Last updated (ET): `2026-04-02 10:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_1030`
 ## Portfolio Snapshot
 
 - Cash: `$5,355.00`
-- Equity: `$9,900.00`
+- Equity: `$10,035.00`
 - Realized PnL: `$-257.50`
-- Unrealized PnL: `$157.50`
+- Unrealized PnL: `$292.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  NFLX NFLX260508C00096000       2026-04-01                   1                4.88                  5.05       95.56         97.04           157.5                   3.59         94.87               39              0.58         41.74           37.22                  24.42
+  NFLX NFLX260508C00096000       2026-04-01                   1                4.88                   5.2       95.56         97.68           292.5                   6.67         94.87               39              0.58         41.74           35.45                  24.42
 ```
 
 ## Today's Closed Trades (2026-04-02)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           96.88               32            2.38              4.95        295.61                91.06            True
-  MRVL           95.12               41            0.63              0.47        106.51                92.70            True
-  REGN           93.75               16            1.92             10.43        772.78                26.81            True
-  CDNS           90.70               43            0.89              1.75        279.44                26.25            True
-  PCAR           90.24               41            0.53              0.43        117.46                23.75            True
-   MAR           88.89               36            0.66              1.53        332.80                28.45            True
-  ASML           87.50               32            0.85              8.05       1356.31                52.01            True
-  SHOP           86.36               44            0.57              0.48        118.32                47.54            True
-  INSM           85.71               42            0.79              0.92        164.47                56.47            True
-  SOXL           85.29               34            1.22              0.45         52.07               138.72            True
-  MCHP           85.29               34            0.93              0.43         65.20                45.66            True
-  BKNG           85.00               40            0.61             17.79       4176.93                42.15            True
+  TSLA          100.00               13            3.52              9.40        377.23                40.57            True
+   WDC           97.06               34            1.93              4.02        296.01                91.06            True
+  REGN           94.12               17            1.84             10.02        772.96                26.81            True
+  CDNS           90.48               42            0.90              1.77        279.43                26.25            True
+   MAR           88.89               36            0.63              1.48        332.83                28.45            True
+  ASML           88.57               35            0.71              6.74       1356.87                52.01            True
+  MCHP           86.49               37            0.72              0.33         65.24                45.66            True
+  TMUS           85.71               21            1.06              1.51        203.60                22.53            True
+  BKNG           84.21               38            0.71             20.83       4175.63                42.15            True
+   TXN           83.87               31            0.80              1.11        195.83                33.08            True
+  INSM           83.33               36            1.15              1.33        164.29                56.47            True
+    MU           82.86               35            1.34              3.44        366.37                84.85            True
 ```
 
 ## Recent Events
