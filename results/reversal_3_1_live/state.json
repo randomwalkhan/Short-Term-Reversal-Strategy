@@ -1,8 +1,33 @@
 {
   "version": "3.0",
   "initial_capital": 10000.0,
-  "cash": 10845.0,
-  "positions": [],
+  "cash": 8102.5,
+  "positions": [
+    {
+      "position_id": "WDC_20260402T145005",
+      "ticker": "WDC",
+      "contract_symbol": "WDC260501C00295000",
+      "expiry": "2026-05-01",
+      "strike": 295.0,
+      "entry_timestamp": "2026-04-02T14:50:05.884978-04:00",
+      "entry_trade_date": "2026-04-02",
+      "entry_slot": "entry_1500",
+      "entry_spot": 294.7699890136719,
+      "entry_option_price": 27.425,
+      "entry_bid": 26.05,
+      "entry_ask": 28.8,
+      "entry_iv_pct": 81.84222259521484,
+      "contracts": 1,
+      "allocated_cash": 2742.5,
+      "success_rate": 97.22,
+      "matched_signals": 36,
+      "current_drop_pct": 0.99,
+      "rolling_sigma_20d_pct": 91.06,
+      "planned_tp_day1": 30.167500000000004,
+      "planned_tp_day2": 31.538749999999997,
+      "planned_stop": 24.6825
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -105,7 +130,8 @@
       "manage_1300",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"

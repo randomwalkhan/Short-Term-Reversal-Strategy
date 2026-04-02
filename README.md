@@ -3,16 +3,19 @@
 <!-- reversal-3.1-live:start -->
 ## Reversal 3.1 Live Paper Test
 
-- Last updated (ET): `2026-04-02 14:45:05 EDT`
-- Equity: `$10,845.00` | Realized: `$845.00` | Unrealized: `$0.00` | Open positions: `0`
+- Last updated (ET): `2026-04-02 14:50:05 EDT`
+- Equity: `$10,845.00` | Realized: `$845.00` | Unrealized: `$0.00` | Open positions: `1`
 - Today closed trades: `1`
-- Current slot: `manual_refresh`
+- Current slot: `entry_1500`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `1D / 1W / 1M` (default open panel: `1W`)
 
 ### Current Open Positions
 
-_None_
+```text
+ticker    contract_symbol  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
+   WDC WDC260501C00295000                 27.42             0.0                    0.0                   0
+```
 
 <details>
 <summary><strong>1D</strong></summary>
