@@ -928,7 +928,10 @@ def plot_live_equity_window(equity_df: pd.DataFrame, window_label: str, window_d
         return
     period_start_equity = float(plot_df["equity"].iloc[0])
     period_end_equity = float(plot_df["equity"].iloc[-1])
-    period_return_pct = (period_end_equity / INITIAL_CAPITAL - 1.0) * 100
+    if period_start_equity <= 0:
+        period_return_pct = 0.0
+    else:
+        period_return_pct = (period_end_equity / period_start_equity - 1.0) * 100
     line_color = GREEN_LINE if period_end_equity >= period_start_equity else RED_LINE
     y_band = INITIAL_CAPITAL * 0.10
     data_min = float(plot_df["equity"].min())
@@ -947,7 +950,12 @@ def plot_live_equity_window(equity_df: pd.DataFrame, window_label: str, window_d
     axis.xaxis.set_major_formatter(formatter)
     return_axis = axis.twinx()
     return_axis.set_ylim(axis.get_ylim())
-    return_axis.yaxis.set_major_formatter(FuncFormatter(lambda value, _: f"{((value / INITIAL_CAPITAL) - 1.0) * 100:+.1f}%"))
+    if period_start_equity > 0:
+        return_axis.yaxis.set_major_formatter(
+            FuncFormatter(lambda value, _: f"{((value / period_start_equity) - 1.0) * 100:+.1f}%")
+        )
+    else:
+        return_axis.yaxis.set_major_formatter(FuncFormatter(lambda value, _: "+0.0%"))
     return_axis.set_ylabel("Return (%)")
     style_dark_axis(axis)
     style_dark_axis(return_axis)
@@ -956,7 +964,7 @@ def plot_live_equity_window(equity_df: pd.DataFrame, window_label: str, window_d
     last_row = plot_df.iloc[-1]
     last_label = (
         f"{last_row['timestamp_plot'].strftime('%m-%d %I:%M %p ET')}\n"
-        f"{((float(last_row['equity']) / INITIAL_CAPITAL) - 1.0) * 100:+.2f}%"
+        f"{period_return_pct:+.2f}%"
     )
     y_span = upper_bound - lower_bound
     near_top = float(last_row["equity"]) >= lower_bound + 0.82 * y_span
