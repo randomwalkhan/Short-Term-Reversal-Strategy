@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 15:30:05 EDT`
+Last updated (ET): `2026-04-02 15:35:05 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -20,16 +20,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$8,102.50`
-- Equity: `$10,965.00`
+- Equity: `$10,905.00`
 - Realized PnL: `$845.00`
-- Unrealized PnL: `$120.00`
+- Unrealized PnL: `$60.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   0               27.42                 28.62      294.77        293.96           120.0                   4.38         97.22               36              0.99         81.84           86.74                  91.06
+   WDC WDC260501C00295000       2026-04-02                   0               27.42                 28.02      294.77        293.86            60.0                   2.19         97.22               36              0.99         81.84           84.88                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-02)
@@ -43,24 +43,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           97.22               36            1.27              2.64        296.60                91.06            True
-  FAST           90.00               30            0.85              0.28         46.51                21.97            True
-  ASML           90.00               10            3.49             33.19       1345.54                52.01            True
-  CDNS           88.89               45            0.51              1.00        279.76                26.25            True
-   MAR           88.89               36            0.65              1.53        332.81                28.45            True
-  GILD           88.46               26            0.72              0.70        140.00                21.47            True
-  ORLY           88.24               34            0.77              0.50         91.89                22.81            True
-   CSX           88.00               25            0.59              0.17         41.37                27.84            True
-  KLAC           85.71               35            0.88              9.32       1515.84                56.48            True
-  AMAT           84.38               32            1.39              3.44        352.32                59.65            True
-   TXN           83.87               31            0.81              1.11        195.82                33.08            True
-    MU           83.78               37            0.90              2.31        366.86                84.85            True
+   WDC           97.22               36            1.30              2.71        296.57                91.06            True
+ CMCSA           93.75               16            0.55              0.11         28.00                25.23            True
+  ASML           90.00               10            3.53             33.58       1345.37                52.01            True
+  FAST           89.29               28            0.89              0.29         46.51                21.97            True
+   MAR           88.89               36            0.67              1.56        332.79                28.45            True
+   CSX           88.89               27            0.56              0.16         41.37                27.84            True
+  GILD           88.46               26            0.79              0.78        139.97                21.47            True
+  ORLY           87.50               32            0.82              0.53         91.87                22.81            True
+  KLAC           85.71               35            0.89              9.47       1515.78                56.48            True
+  BKNG           84.21               38            0.72             21.02       4175.55                42.15            True
+  AMAT           83.87               31            1.45              3.58        352.26                59.65            True
+   TXN           83.87               31            0.77              1.06        195.85                33.08            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                           detail
+2026-04-02T15:35:05.886679-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T15:30:05.889337-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T15:25:05.929228-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T15:10:05.887758-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
@@ -70,7 +71,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T14:50:05.884978-04:00  entry_1500        entry {"allocated_cash": 2742.5, "contract_symbol": "WDC260501C00295000", "contracts": 1, "entry_option_price": 27.425, "matched_signals": 36, "success_rate": 97.22, "ticker": "WDC"}
 2026-04-02T14:40:05.911687-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T14:35:05.892322-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-02T14:30:05.929668-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
