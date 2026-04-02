@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 11:10:05 EDT`
-Last processed slot: `manage_1100`
+Last updated (ET): `2026-04-02 11:15:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_1100`
 ## Portfolio Snapshot
 
 - Cash: `$5,355.00`
-- Equity: `$10,507.50`
+- Equity: `$10,687.50`
 - Realized PnL: `$-257.50`
-- Unrealized PnL: `$765.00`
+- Unrealized PnL: `$945.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  NFLX NFLX260508C00096000       2026-04-01                   1                4.88                  5.72       95.56         97.61           765.0                  17.44         94.87               39              0.58         41.74           41.59                  24.42
+  NFLX NFLX260508C00096000       2026-04-01                   1                4.88                  5.92       95.56         97.85           945.0                  21.54         94.87               39              0.58         41.74           42.85                  24.42
 ```
 
 ## Today's Closed Trades (2026-04-02)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  TSLA          100.00               10            3.68              9.81        377.05                40.57            True
-   WDC           97.14               35            1.75              3.65        296.16                91.06            True
-  MPWR           91.18               34            1.12              8.80       1115.74                56.57            True
-  CDNS           90.48               42            0.92              1.81        279.42                26.25            True
-   MAR           89.74               39            0.50              1.18        332.96                28.45            True
-  AMAT           84.85               33            1.00              2.48        352.74                59.65            True
-   TXN           84.85               33            0.63              0.86        195.93                33.08            True
-  VRTX           84.62               39            0.80              2.51        446.19                39.75            True
-    MU           82.86               35            1.55              3.99        366.14                84.85            True
-   CSX           82.35               17            1.28              0.37         41.28                27.84            True
-  ASML           81.82               22            1.73             16.46       1352.71                52.01            True
-  TMUS           81.48               27            0.74              1.05        203.80                22.53            True
+  TSLA          100.00               11            3.65              9.73        377.09                40.57            True
+   WDC           97.22               36            1.03              2.14        296.81                91.06            True
+  MPWR           91.89               37            0.51              4.00       1117.80                56.57            True
+  CDNS           90.70               43            0.87              1.70        279.46                26.25            True
+  MCHP           87.18               39            0.54              0.25         65.27                45.66            True
+  AMAT           84.85               33            1.01              2.50        352.73                59.65            True
+   TXN           84.85               33            0.59              0.81        195.95                33.08            True
+  TMUS           84.38               32            0.53              0.76        203.93                22.53            True
+  VRTX           83.78               37            0.87              2.72        446.09                39.75            True
+   CSX           83.33               18            1.10              0.32         41.30                27.84            True
+    MU           82.86               35            1.50              3.86        366.20                84.85            True
+   ADI           81.82               33            0.51              1.15        320.09                36.19            True
 ```
 
 ## Recent Events
