@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 14:40:05 EDT`
-Last processed slot: `manage_1430`
+Last updated (ET): `2026-04-02 14:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           97.30               37            0.85              1.77        296.97                91.06            True
-  ASML           92.86               14            2.84             26.99       1348.19                52.01            True
-  ABNB           92.50               40            0.67              0.59        124.94                36.75            True
-   MAR           90.00               30            0.91              2.13        332.55                28.45            True
-  DXCM           89.74               39            1.21              0.53         62.14                31.67            True
-  ORLY           89.74               39            0.61              0.39         91.93                22.81            True
-  SNPS           89.13               46            0.54              1.51        396.09                35.88            True
-  KLAC           87.50               32            1.08             11.45       1514.93                56.48            True
-  FAST           86.96               23            1.32              0.43         46.45                21.97            True
-  GILD           86.96               23            0.94              0.92        139.91                21.47            True
-  MCHP           86.49               37            0.70              0.32         65.24                45.66            True
-  CDNS           86.21               29            1.75              3.42        278.72                26.25            True
+   WDC           97.22               36            1.01              2.11        296.82                91.06            True
+  ASML           93.33               15            2.79             26.60       1348.36                52.01            True
+  ABNB           92.50               40            0.67              0.58        124.94                36.75            True
+  ORLY           90.24               41            0.58              0.37         91.94                22.81            True
+  DXCM           89.74               39            1.23              0.54         62.14                31.67            True
+  CDNS           89.19               37            1.37              2.70        279.03                26.25            True
+   MAR           88.57               35            0.77              1.80        332.69                28.45            True
+  GILD           88.46               26            0.77              0.76        139.98                21.47            True
+  MCHP           87.18               39            0.54              0.25         65.27                45.66            True
+   WBD           85.71               35            0.53              0.10         27.45                11.93            True
+  KLAC           85.29               34            0.98             10.42       1515.38                56.48            True
+  FAST           85.00               20            1.53              0.50         46.42                21.97            True
 ```
 
 ## Recent Events
@@ -72,7 +72,7 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 
 ## Equity Curves
 
-Each chart is generated from the same live equity series with no-lookahead marks. The latest point is annotated with its exact ET checkpoint time and return %. GitHub does not support true app-style toggles, so the dashboard uses collapsible `1D / 1W / 1M` sections instead.
+Each chart is generated from the same live equity series with no-lookahead marks. The latest point is annotated with its exact ET checkpoint time and return %.
 
 <details>
 <summary><strong>1D</strong></summary>
