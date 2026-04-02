@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 10:00:03 EDT`
+Last updated (ET): `2026-04-02 10:05:05 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -20,16 +20,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$5,355.00`
-- Equity: `$9,562.50`
+- Equity: `$10,237.50`
 - Realized PnL: `$-257.50`
-- Unrealized PnL: `$-180.00`
+- Unrealized PnL: `$495.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  NFLX NFLX260508C00096000       2026-04-01                   1                4.88                  4.68       95.56          95.7          -180.0                   -4.1         94.87               39              0.58         41.74            48.5                  24.42
+  NFLX NFLX260508C00096000       2026-04-01                   1                4.88                  5.42       95.56         95.86           495.0                  11.28         94.87               39              0.58         41.74           45.73                  24.42
 ```
 
 ## Today's Closed Trades (2026-04-02)
@@ -40,24 +40,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               23            0.52              0.83        227.84                22.84            True
-   WDC           96.55               29            2.98              6.20        295.07                91.06            True
-   STX           94.44               36            1.47              4.36        421.25                80.16            True
-  SBUX           94.12               34            0.67              0.43         90.25                36.02            True
-  FTNT           93.33               45            0.62              0.35         81.00                29.50            True
-  NVDA           92.59               27            1.02              1.25        175.21                36.98            True
-  FAST           91.89               37            0.56              0.18         46.55                21.97            True
-  MPWR           91.43               35            1.04              8.15       1116.02                56.57            True
-  DXCM           90.48               42            0.93              0.41         62.20                31.67            True
-  UPRO           90.48               21            2.63              1.82         98.39                57.18            True
-  MRVL           89.47               19            2.99              2.23        105.75                92.70            True
-  AVGO           86.96               23            2.00              4.39        311.61                41.97            True
+   HON          100.00               23            0.56              0.90        227.81                22.84            True
+   WDC           96.55               29            3.09              6.43        294.97                91.06            True
+   STX           94.44               36            1.55              4.60        421.15                80.16            True
+  SBUX           94.12               34            0.66              0.42         90.25                36.02            True
+  NVDA           92.59               27            1.03              1.27        175.21                36.98            True
+  DXCM           91.18               34            1.44              0.63         62.10                31.67            True
+  MRVL           90.91               22            2.74              2.05        105.83                92.70            True
+  MPWR           90.00               30            1.68             13.15       1113.87                56.57            True
+  UPRO           90.00               20            2.71              1.88         98.36                57.18            True
+  ASML           87.50               16            2.69             25.60       1348.79                52.01            True
+  CHTR           86.11               36            0.88              1.33        215.70                36.36            True
+  ORLY           85.71               28            1.02              0.66         91.82                22.81            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et         slot   event_type                          detail
+2026-04-02T10:05:05.400756-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-02T10:00:03.566981-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-02T09:55:03.086371-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-02T09:40:05.889923-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-01T15:55:00.975857-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-01T15:40:05.880995-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 2026-04-01T15:35:05.885345-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-01T15:30:05.883058-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curve (1W)
