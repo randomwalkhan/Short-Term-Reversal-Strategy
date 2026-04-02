@@ -91,3 +91,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-02T11:05:05.887015-04:00,2026-04-02,manage_1100,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-02T11:10:05.886103-04:00,2026-04-02,manage_1100,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-02T11:20:05.893680-04:00,2026-04-02,manage_1130,exit,"{""contract_symbol"": ""NFLX260508C00096000"", ""pnl"": 1102.5, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 25.13, ""ticker"": ""NFLX""}"
+2026-04-02T11:25:05.883603-04:00,2026-04-02,manage_1130,slot_skipped,"{""reason"": ""already_processed""}"
