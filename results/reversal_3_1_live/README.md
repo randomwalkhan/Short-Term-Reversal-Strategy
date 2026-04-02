@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 15:20:05 EDT`
+Last updated (ET): `2026-04-02 15:25:05 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -29,7 +29,7 @@ Last processed slot: `manage_1530`
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   0               27.42                 28.58      294.77        295.07           115.0                   4.19         97.22               36              0.99         81.84           84.69                  91.06
+   WDC WDC260501C00295000       2026-04-02                   0               27.42                 28.58      294.77        294.18           115.0                   4.19         97.22               36              0.99         81.84           86.09                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-02)
@@ -43,24 +43,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           97.30               37            0.89              1.86        296.93                91.06            True
-  ASML           91.67               12            3.27             31.08       1346.44                52.01            True
-  DXCM           91.11               45            0.67              0.29         62.24                31.67            True
-   MAR           89.47               38            0.60              1.39        332.86                28.45            True
-  FAST           89.29               28            0.91              0.30         46.50                21.97            True
-   CSX           88.89               27            0.57              0.16         41.37                27.84            True
-  GILD           88.00               25            0.82              0.81        139.95                21.47            True
-  ORLY           87.10               31            0.85              0.55         91.87                22.81            True
-  KLAC           85.29               34            1.00             10.61       1515.29                56.48            True
-  AMAT           84.38               32            1.38              3.41        352.34                59.65            True
- GOOGL           83.78               37            0.75              1.56        296.72                35.66            True
-  BKNG           83.78               37            0.73             21.48       4175.36                42.15            True
+   WDC           97.22               36            1.19              2.49        296.66                91.06            True
+  UPRO           92.50               40            0.51              0.36         99.02                57.18            True
+  DXCM           91.11               45            0.63              0.27         62.25                31.67            True
+  FAST           90.00               30            0.86              0.28         46.51                21.97            True
+  ASML           90.00               10            3.41             32.47       1345.85                52.01            True
+   MAR           89.47               38            0.60              1.41        332.86                28.45            True
+   CSX           89.29               28            0.53              0.15         41.37                27.84            True
+  ORLY           88.24               34            0.78              0.50         91.89                22.81            True
+  GILD           87.50               24            0.83              0.82        139.95                21.47            True
+  KLAC           85.71               35            0.87              9.25       1515.88                56.48            True
+  BKNG           84.21               38            0.71             20.75       4175.67                42.15            True
+  AMAT           83.87               31            1.40              3.46        352.32                59.65            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                           detail
+2026-04-02T15:25:05.929228-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T15:10:05.887758-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T15:05:00.892731-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T15:00:05.892985-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
@@ -70,7 +71,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T14:35:05.892322-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T14:30:05.929668-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-02T14:25:06.347985-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-02T14:10:05.893357-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
