@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 12:05:05 EDT`
+Last updated (ET): `2026-04-02 12:10:05 EDT`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -40,24 +40,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  UPRO           92.31               39            0.75              0.52         98.95                57.18            True
-  MPWR           91.89               37            0.57              4.45       1117.60                56.57            True
-  CDNS           90.00               40            1.03              2.02        279.32                26.25            True
-   MAR           88.57               35            0.79              1.83        332.67                28.45            True
-  ORLY           88.24               34            0.76              0.49         91.89                22.81            True
-  MCHP           85.71               35            0.86              0.39         65.21                45.66            True
-  SOXL           85.29               34            1.34              0.49         52.05               138.72            True
-  AMAT           84.85               33            1.00              2.47        352.74                59.65            True
- GOOGL           84.21               38            0.70              1.45        296.77                35.66            True
-  VRTX           83.33               24            1.67              5.22        445.02                39.75            True
-  ASML           82.61               23            1.59             15.17       1353.26                52.01            True
-  GOOG           82.50               40            0.51              1.05        294.45                33.40            True
+   WDC           97.50               40            0.59              1.22        297.21                91.06            True
+  MRVL           94.59               37            0.86              0.64        106.43                92.70            True
+  MPWR           91.67               36            0.80              6.24       1116.84                56.57            True
+  DXCM           91.30               46            0.55              0.24         62.27                31.67            True
+  UPRO           90.62               32            1.02              0.71         98.87                57.18            True
+  GILD           90.62               32            0.54              0.53        140.07                21.47            True
+  CDNS           89.74               39            1.08              2.12        279.28                26.25            True
+  AVGO           89.74               39            0.62              1.35        312.91                41.97            True
+   MAR           89.66               29            0.94              2.19        332.52                28.45            True
+  KLAC           87.18               39            0.50              5.36       1517.54                56.48            True
+  ORLY           87.10               31            0.84              0.54         91.87                22.81            True
+  SOXL           84.85               33            1.86              0.68         51.97               138.72            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                     detail
+2026-04-02T12:10:05.892027-04:00 manage_1200 slot_skipped                                                                                                            {"reason": "already_processed"}
 2026-04-02T12:05:05.882439-04:00 manage_1200 slot_skipped                                                                                                            {"reason": "already_processed"}
 2026-04-02T12:00:03.471000-04:00 manage_1200 slot_skipped                                                                                                            {"reason": "already_processed"}
 2026-04-02T11:55:05.888116-04:00 manage_1200 slot_skipped                                                                                                            {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T11:25:05.883603-04:00 manage_1130 slot_skipped                                                                                                            {"reason": "already_processed"}
 2026-04-02T11:20:05.893680-04:00 manage_1130         exit {"contract_symbol": "NFLX260508C00096000", "pnl": 1102.5, "reason": "take_profit_day1_hit_at_scan", "return_pct": 25.13, "ticker": "NFLX"}
 2026-04-02T11:10:05.886103-04:00 manage_1100 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-02T11:05:05.887015-04:00 manage_1100 slot_skipped                                                                                                            {"reason": "already_processed"}
 ```
 
 ## Equity Curve (1W)
