@@ -3,10 +3,10 @@
 <!-- reversal-3.1-live:start -->
 ## Reversal 3.1 Live Paper Test
 
-- Last updated (ET): `2026-04-02 09:40:05 EDT`
+- Last updated (ET): `2026-04-02 09:45:05 EDT`
 - Equity: `$9,765.00` | Realized: `$-257.50` | Unrealized: `$22.50` | Open positions: `1`
 - Today closed trades: `0`
-- Current slot: `manage_0930`
+- Current slot: `manual_refresh`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart: trailing `1W` with ET timestamps
 
