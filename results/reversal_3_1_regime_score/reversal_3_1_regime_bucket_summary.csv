@@ -1,0 +1,5 @@
+score_bucket,days,avg_score,avg_forward_strategy_return_pct,avg_forward_market_return_pct,avg_market_drawdown_63d_pct,avg_realized_vol_20d_pct,avg_pct_above50
+0-35,228,10.54,10.87,0.83,14.81,34.6,32.8
+35-50,31,43.61,13.5,-2.59,7.7,28.9,60.7
+50-70,188,62.59,15.11,2.62,4.08,19.06,48.31
+70-100,789,78.03,19.6,1.0,1.96,16.59,65.36

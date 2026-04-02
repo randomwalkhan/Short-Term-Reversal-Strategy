@@ -18,6 +18,7 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 
+from plot_theme import AX_BG, BASELINE, FIG_BG, GREEN_LINE, RED_LINE, SUBTEXT, TEXT, style_dark_axis
 from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
@@ -925,18 +926,17 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     period_start_equity = float(plot_df["equity"].iloc[0])
     period_end_equity = float(plot_df["equity"].iloc[-1])
     period_return_pct = (period_end_equity / INITIAL_CAPITAL - 1.0) * 100
-    line_color = "#34C759" if period_end_equity >= period_start_equity else "#FF3B30"
+    line_color = GREEN_LINE if period_end_equity >= period_start_equity else RED_LINE
     y_band = INITIAL_CAPITAL * 0.10
     data_min = float(plot_df["equity"].min())
     data_max = float(plot_df["equity"].max())
     lower_bound = min(INITIAL_CAPITAL - y_band, data_min - INITIAL_CAPITAL * 0.01)
     upper_bound = max(INITIAL_CAPITAL + y_band, data_max + INITIAL_CAPITAL * 0.01)
 
-    plt.figure(figsize=(12, 6))
-    plt.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Equity")
-    plt.fill_between(plot_df["timestamp_plot"], plot_df["equity"], period_start_equity, color=line_color, alpha=0.12)
-    plt.axhline(INITIAL_CAPITAL, color="gray", linestyle="--", alpha=0.5, label="Initial Capital")
-    axis = plt.gca()
+    fig, axis = plt.subplots(figsize=(12, 6), facecolor=FIG_BG)
+    axis.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Equity", zorder=3)
+    axis.fill_between(plot_df["timestamp_plot"], plot_df["equity"], period_start_equity, color=line_color, alpha=0.12, zorder=1)
+    axis.axhline(INITIAL_CAPITAL, color=BASELINE, linestyle="--", alpha=0.5, label="Initial Capital", zorder=2)
     axis.set_ylim(lower_bound, upper_bound)
     locator = mdates.AutoDateLocator(minticks=3, maxticks=6)
     formatter = mdates.DateFormatter("%m-%d")
@@ -946,6 +946,9 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     return_axis.set_ylim(axis.get_ylim())
     return_axis.yaxis.set_major_formatter(FuncFormatter(lambda value, _: f"{((value / INITIAL_CAPITAL) - 1.0) * 100:+.1f}%"))
     return_axis.set_ylabel("Return (%)")
+    style_dark_axis(axis)
+    style_dark_axis(return_axis)
+    return_axis.set_facecolor("none")
 
     last_row = plot_df.iloc[-1]
     last_label = (
@@ -964,17 +967,18 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
         ha="right",
         va=label_va,
         fontsize=9,
-        color="#0F172A",
-        bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": line_color, "alpha": 0.95},
+        color=TEXT,
+        bbox={"boxstyle": "round,pad=0.25", "facecolor": AX_BG, "edgecolor": line_color, "alpha": 0.95},
     )
-    plt.title(f"Reversal 3.1 Live Paper Equity (1W)  |  Return {period_return_pct:+.2f}%")
-    plt.xlabel("Date (ET, trailing 1W)")
-    plt.ylabel("Portfolio Value ($)")
-    plt.grid(alpha=0.25)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(PLOT_PATH, dpi=160, bbox_inches="tight")
-    plt.close()
+    axis.set_title(f"Reversal 3.1 Live Paper Equity (1W)  |  Return {period_return_pct:+.2f}%")
+    axis.set_xlabel("Date (ET, trailing 1W)")
+    axis.set_ylabel("Portfolio Value ($)")
+    legend = axis.legend(frameon=False, loc="upper left")
+    for text in legend.get_texts():
+        text.set_color(TEXT)
+    fig.tight_layout()
+    fig.savefig(PLOT_PATH, dpi=160, bbox_inches="tight", facecolor=FIG_BG)
+    plt.close(fig)
 
 
 def render_dashboard(

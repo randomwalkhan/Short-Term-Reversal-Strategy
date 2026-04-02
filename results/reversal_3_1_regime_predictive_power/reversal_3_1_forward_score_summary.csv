@@ -1,0 +1,4 @@
+forward_window_days,sample_size,pearson_corr,spearman_corr,avg_forward_return_pct,negative_forward_return_rate_pct
+5,1251,0.0571,0.0831,3.8822,39.4085
+10,1246,0.0835,0.0988,7.9645,40.2889
+20,1236,0.0974,0.0962,17.1527,28.9644

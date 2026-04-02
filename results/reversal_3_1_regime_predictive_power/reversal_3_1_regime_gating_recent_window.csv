@@ -1,0 +1,6 @@
+label,threshold,recent_window_start,recent_return_pct,recent_max_drawdown_pct,recent_days_gate_open_pct
+Always On (0),0,2026-03-06,-15.69,-27.17,90.0
+Gate >= 35,35,2026-03-06,-23.53,-27.17,65.0
+Gate >= 50,50,2026-03-06,-23.34,-23.34,55.0
+Gate >= 60,60,2026-03-06,-19.1,-19.1,40.0
+Gate >= 70,70,2026-03-06,0.0,0.0,0.0
