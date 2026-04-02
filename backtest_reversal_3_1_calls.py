@@ -478,7 +478,7 @@ def main() -> None:
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
     equity_df.to_csv(EQUITY_PATH, index=False)
     trades_df.to_csv(TRADES_PATH, index=False)
-    plot_equity_curve(equity_df, trades_df, "Reversal 3.1 Call Backtest")
+    plot_equity_curve(equity_df, trades_df, "Call Backtest")
 
     print(f"Universe size: {summary['usable_tickers']}")
     print(f"Final equity: ${summary['final_equity']:,.2f}")

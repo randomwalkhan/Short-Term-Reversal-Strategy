@@ -45,7 +45,7 @@ def plot_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
     else:
         date_label = "date unavailable"
     ax.set_title(
-        "Reversal 2.3.3 Universe Comparison (dynamic matched_signals filter)\n"
+        "Universe Comparison (dynamic matched_signals filter)\n"
         f"Backtest window: {date_label}"
     )
     ax.set_xlabel("Date")

@@ -84,7 +84,7 @@ def plot_one_year_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
     else:
         date_label = "date unavailable"
     ax.set_title(
-        "Reversal 3.1 Leveraged ETF Overlay Experiment (1Y)\n"
+        "Leveraged ETF Overlay Experiment (1Y)\n"
         f"Backtest window: {date_label}"
     )
     ax.set_xlabel("Date")

@@ -69,7 +69,7 @@ def plot_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
         date_label = f"{date_start:%Y-%m-%d} to {date_end:%Y-%m-%d}"
     else:
         date_label = "date unavailable"
-    ax.set_title(f"Reversal 2.5 Minimum Drop Experiment\nBacktest window: {date_label}")
+    ax.set_title(f"Minimum Drop Experiment\nBacktest window: {date_label}")
     ax.set_xlabel("Date")
     ax.set_ylabel("Equity / Initial Capital")
     span_days = int((date_end - date_start).days) if date_start is not None and date_end is not None else None
