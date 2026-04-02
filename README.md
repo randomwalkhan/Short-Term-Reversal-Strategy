@@ -3,16 +3,16 @@
 <!-- reversal-3.1-live:start -->
 ## Reversal 3.1 Live Paper Test
 
-- Last updated (ET): `2026-04-02 14:35:05 EDT`
+- Last updated (ET): `2026-04-02 14:40:05 EDT`
 - Equity: `$10,845.00` | Realized: `$845.00` | Unrealized: `$0.00` | Open positions: `0`
 - Today closed trades: `1`
 - Current slot: `manage_1430`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `1D / 1W / 1M` (default open panel: `1W`)
 
-### Current Open Positions
-
 _None_
+
+GitHub README does not support true app-style interactive tabs, so the chart windows below use GitHub-native collapsible sections.
 
 <details>
 <summary><strong>1D</strong></summary>
