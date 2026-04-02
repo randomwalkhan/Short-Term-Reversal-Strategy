@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 15:40:05 EDT`
-Last processed slot: `manage_1530`
+Last updated (ET): `2026-04-02 15:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$8,102.50`
-- Equity: `$10,920.00`
+- Equity: `$10,942.50`
 - Realized PnL: `$845.00`
-- Unrealized PnL: `$75.00`
+- Unrealized PnL: `$97.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   0               27.42                 28.17      294.77        293.38            75.0                   2.73         97.22               36              0.99         81.84           86.35                  91.06
+   WDC WDC260501C00295000       2026-04-02                   0               27.42                  28.4      294.77        292.59            97.5                   3.56         97.22               36              0.99         81.84            88.1                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-02)
@@ -43,18 +43,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           97.22               36            1.46              3.04        296.43                91.06            True
-  DXCM           91.30               46            0.51              0.22         62.27                31.67            True
-  ASML           90.00               10            3.54             33.65       1345.34                52.01            True
-   MAR           89.74               39            0.51              1.19        332.95                28.45            True
-  FAST           88.46               26            0.97              0.31         46.50                21.97            True
-  ORLY           87.50               32            0.81              0.53         91.87                22.81            True
-  GILD           87.50               24            0.83              0.82        139.95                21.47            True
-  KLAC           85.71               35            0.90              9.54       1515.75                56.48            True
-   TXN           84.38               32            0.69              0.95        195.89                33.08            True
-  ODFL           84.21               38            0.64              0.89        199.25                46.64            True
-  MNST           84.21               38            0.51              0.26         72.66                21.32            True
-  AMAT           83.87               31            1.45              3.59        352.26                59.65            True
+   WDC           97.14               35            1.73              3.60        296.19                91.06            True
+  UPRO           92.50               40            0.51              0.35         99.02                57.18            True
+  ASML           90.00               10            3.43             32.68       1345.75                52.01            True
+  SNPS           89.13               46            0.54              1.50        396.10                35.88            True
+   MAR           88.89               36            0.64              1.50        332.82                28.45            True
+   CSX           88.89               27            0.57              0.16         41.37                27.84            True
+  ORLY           88.24               34            0.76              0.49         91.89                22.81            True
+  FAST           88.00               25            1.10              0.36         46.48                21.97            True
+  SHOP           86.36               44            0.58              0.48        118.31                47.54            True
+  GILD           86.36               22            1.02              1.00        139.87                21.47            True
+  KLAC           85.71               35            0.88              9.34       1515.84                56.48            True
+   TXN           83.87               31            0.74              1.02        195.86                33.08            True
 ```
 
 ## Recent Events
