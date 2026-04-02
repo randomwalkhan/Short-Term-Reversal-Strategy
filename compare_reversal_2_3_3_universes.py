@@ -13,6 +13,7 @@ from backtest_reversal_2_3_3_calls import (
     load_history_cache,
     summarize_backtest,
 )
+from plot_theme import BASELINE, FIG_BG, TEXT, style_dark_axis
 
 
 RESULTS_DIR = Path.cwd() / "results" / "reversal_2_3_3_universe_comparison"
@@ -22,21 +23,23 @@ ASSET_PLOT_PATH = Path.cwd() / "assets" / "reversal_2_3_3_universe_comparison.pn
 
 
 def plot_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
-    plt.figure(figsize=(13, 7))
+    fig, ax = plt.subplots(figsize=(13, 7), facecolor=FIG_BG)
     for label, equity_df in equity_curves.items():
         series = equity_df[["date", "equity"]].copy()
-        plt.plot(series["date"], series["equity"] / INITIAL_CAPITAL, linewidth=1.8, label=label)
+        ax.plot(series["date"], series["equity"] / INITIAL_CAPITAL, linewidth=1.8, label=label)
 
-    plt.axhline(1.0, color="gray", linestyle="--", alpha=0.5)
-    plt.title("Reversal 2.3.3 Universe Comparison (dynamic matched_signals filter)")
-    plt.xlabel("Date")
-    plt.ylabel("Equity / Initial Capital")
-    plt.grid(alpha=0.25)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(PLOT_PATH, dpi=160, bbox_inches="tight")
-    plt.savefig(ASSET_PLOT_PATH, dpi=160, bbox_inches="tight")
-    plt.close()
+    ax.axhline(1.0, color=BASELINE, linestyle="--", alpha=0.5)
+    style_dark_axis(ax)
+    ax.set_title("Reversal 2.3.3 Universe Comparison (dynamic matched_signals filter)")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Equity / Initial Capital")
+    legend = ax.legend(frameon=False)
+    for text in legend.get_texts():
+        text.set_color(TEXT)
+    fig.tight_layout()
+    fig.savefig(PLOT_PATH, dpi=160, bbox_inches="tight", facecolor=FIG_BG)
+    fig.savefig(ASSET_PLOT_PATH, dpi=160, bbox_inches="tight", facecolor=FIG_BG)
+    plt.close(fig)
 
 
 def main() -> None:

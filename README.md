@@ -25,7 +25,11 @@ _None_
 
 Update note: Reversal 3.1 keeps the Reversal 2.5 execution rules unchanged, but upgrades the official universe from `qqq_only_filtered` to `qqq_plus_leverage_etfs` by adding a curated `SOXL + UPRO` overlay after a controlled leveraged-ETF comparison. The live paper runner now uses the same upgraded ticker list.
 
+Display update: GitHub feature charts now use the shared dark Apple-style plotting theme, and the Featured Result image has been refreshed to the Reversal 3.1 label.
+
 更新说明：Reversal 3.1 保留 Reversal 2.5 的执行规则不变，但在受控的 leveraged ETF 对比实验之后，把官方 universe 从 `qqq_only_filtered` 升级为 `qqq_plus_leverage_etfs`，即在原有 QQQ 核心上加入精选的 `SOXL + UPRO` overlay；live paper runner 也同步切到了这份新 ticker list。
+
+展示更新：GitHub 上的主要曲线图现在统一使用共享的深色 Apple Stocks 风格配色，Featured Result 图片也已经刷新为 Reversal 3.1 标题。
 
 `Reversal2.5.3.ipynb`、`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb`、`Reversal2.3.ipynb`、`Reversal2.2.1.ipynb`、`Reversal2.1.ipynb` and `Reversal2.0.ipynb` are preserved as earlier version snapshots.
 

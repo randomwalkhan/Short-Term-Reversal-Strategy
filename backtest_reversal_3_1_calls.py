@@ -11,6 +11,7 @@ import yfinance as yf
 from scipy.stats import norm
 
 from backtest_metrics import TEN_YEAR_TBILL_DATE, TEN_YEAR_TBILL_RATE, compute_annualized_sharpe
+from plot_theme import AX_BG, BASELINE, FIG_BG, GREEN_LINE, SUBTEXT, TEXT, style_dark_axis
 from reversal_universe import build_named_universe_map
 
 
@@ -440,17 +441,20 @@ def summarize_backtest(label: str, tickers: list[str], history_cache: dict[str, 
 def plot_equity_curve(equity_df: pd.DataFrame, trades_df: pd.DataFrame, label: str) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    plt.figure(figsize=(12, 7))
-    plt.plot(equity_df["date"], equity_df["equity"], linewidth=2, label=label)
-    plt.axhline(INITIAL_CAPITAL, color="gray", linestyle="--", alpha=0.5, label="Initial Capital")
-    plt.title(f"{label} Equity Curve")
-    plt.xlabel("Date")
-    plt.ylabel("Portfolio Value ($)")
-    plt.grid(alpha=0.25)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(PLOT_PATH, dpi=160, bbox_inches="tight")
-    plt.close()
+    fig, ax = plt.subplots(figsize=(12, 7), facecolor=FIG_BG)
+    ax.plot(equity_df["date"], equity_df["equity"], linewidth=2.2, label=label, color=GREEN_LINE)
+    ax.axhline(INITIAL_CAPITAL, color=BASELINE, linestyle="--", alpha=0.55, label="Initial Capital")
+    ax.fill_between(equity_df["date"], equity_df["equity"], INITIAL_CAPITAL, color=GREEN_LINE, alpha=0.10)
+    style_dark_axis(ax)
+    ax.set_title(f"{label} Equity Curve")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Portfolio Value ($)")
+    legend = ax.legend(frameon=False, loc="upper left")
+    for text in legend.get_texts():
+        text.set_color(TEXT)
+    fig.tight_layout()
+    fig.savefig(PLOT_PATH, dpi=160, bbox_inches="tight", facecolor=FIG_BG)
+    plt.close(fig)
 
 
 def main() -> None:

@@ -11,6 +11,7 @@ import yfinance as yf
 from scipy.stats import norm
 
 from backtest_metrics import TEN_YEAR_TBILL_DATE, TEN_YEAR_TBILL_RATE, compute_annualized_sharpe
+from plot_theme import BASELINE, FIG_BG, TEXT, style_dark_axis
 from reversal_universe import build_named_universe_map
 
 
@@ -799,12 +800,12 @@ def build_variants() -> list[VariantConfig]:
 def plot_variant_curves(curves_df: pd.DataFrame, variants: list[VariantConfig]) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    plt.figure(figsize=(14, 8))
+    fig, ax = plt.subplots(figsize=(14, 8), facecolor=FIG_BG)
     for variant in variants:
         subset = curves_df.loc[curves_df["variant"].eq(variant.key)].copy()
         if subset.empty:
             continue
-        plt.plot(
+        ax.plot(
             subset["date"],
             subset["equity"],
             label=variant.label,
@@ -812,15 +813,17 @@ def plot_variant_curves(curves_df: pd.DataFrame, variants: list[VariantConfig]) 
             linestyle=variant.linestyle,
             linewidth=2.0,
         )
-    plt.axhline(INITIAL_CAPITAL, color="gray", linestyle=":", alpha=0.6, linewidth=1.2)
-    plt.title("Reversal Article Variants Equity Curve Comparison")
-    plt.xlabel("Date")
-    plt.ylabel("Portfolio Value ($)")
-    plt.grid(alpha=0.25)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(PLOT_PATH, dpi=180, bbox_inches="tight")
-    plt.close()
+    ax.axhline(INITIAL_CAPITAL, color=BASELINE, linestyle=":", alpha=0.6, linewidth=1.2)
+    style_dark_axis(ax)
+    ax.set_title("Reversal Article Variants Equity Curve Comparison")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Portfolio Value ($)")
+    legend = ax.legend(frameon=False)
+    for text in legend.get_texts():
+        text.set_color(TEXT)
+    fig.tight_layout()
+    fig.savefig(PLOT_PATH, dpi=180, bbox_inches="tight", facecolor=FIG_BG)
+    plt.close(fig)
 
 
 def main() -> None:

@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 
 import backtest_reversal_2_4_calls as base
+from plot_theme import BASELINE, FIG_BG, TEXT, style_dark_axis
 
 
 MINIMUM_DROP_PCTS = [0.00, 0.005, 0.01, 0.02, 0.03, 0.04]
@@ -47,20 +48,22 @@ def run_backtest_variant(
 
 
 def plot_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
-    plt.figure(figsize=(12, 7))
+    fig, ax = plt.subplots(figsize=(12, 7), facecolor=FIG_BG)
     for label, equity_df in equity_curves.items():
-        plt.plot(equity_df["date"], equity_df["equity"] / base.INITIAL_CAPITAL, linewidth=2, label=label)
+        ax.plot(equity_df["date"], equity_df["equity"] / base.INITIAL_CAPITAL, linewidth=2, label=label)
 
-    plt.axhline(1.0, color="gray", linestyle="--", alpha=0.5)
-    plt.title("Reversal 2.5 Minimum Drop Experiment")
-    plt.xlabel("Date")
-    plt.ylabel("Equity / Initial Capital")
-    plt.grid(alpha=0.25)
-    plt.legend()
-    plt.tight_layout()
+    ax.axhline(1.0, color=BASELINE, linestyle="--", alpha=0.5)
+    style_dark_axis(ax)
+    ax.set_title("Reversal 2.5 Minimum Drop Experiment")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Equity / Initial Capital")
+    legend = ax.legend(frameon=False)
+    for text in legend.get_texts():
+        text.set_color(TEXT)
+    fig.tight_layout()
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    plt.savefig(PLOT_PATH, dpi=160, bbox_inches="tight")
-    plt.close()
+    fig.savefig(PLOT_PATH, dpi=160, bbox_inches="tight", facecolor=FIG_BG)
+    plt.close(fig)
 
 
 def main() -> None:
