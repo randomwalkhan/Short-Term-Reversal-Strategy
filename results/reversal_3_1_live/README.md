@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 13:45:05 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-02 13:50:05 EDT`
+Last processed slot: `manage_1400`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           97.30               37            0.92              1.91        296.91                91.06            True
-  MRVL           95.35               43            0.52              0.39        106.54                92.70            True
-  UPRO           91.43               35            0.85              0.59         98.92                57.18            True
-  DXCM           91.11               45            0.66              0.29         62.25                31.67            True
-  ORLY           89.74               39            0.60              0.39         91.93                22.81            True
-  GILD           88.46               26            0.81              0.79        139.96                21.47            True
-  CDNS           88.24               34            1.47              2.89        278.95                26.25            True
-   MAR           86.36               22            1.26              2.94        332.20                28.45            True
-  MCHP           86.11               36            0.73              0.34         65.24                45.66            True
-  KLAC           85.71               28            1.48             15.76       1513.08                56.48            True
-  SOXL           85.29               34            1.47              0.54         52.03               138.72            True
-  TMUS           85.00               20            1.10              1.57        203.58                22.53            True
+   WDC           97.22               36            1.62              3.38        296.28                91.06            True
+  ASML           93.33               15            2.80             26.65       1348.34                52.01            True
+  ABNB           92.50               40            0.67              0.59        124.94                36.75            True
+  MPWR           91.67               36            0.77              6.07       1116.91                56.57            True
+  UPRO           90.62               32            1.01              0.70         98.87                57.18            True
+  DXCM           90.48               42            0.93              0.41         62.20                31.67            True
+  ORLY           88.57               35            0.75              0.48         91.89                22.81            True
+  CDNS           88.24               34            1.46              2.86        278.96                26.25            True
+   MAR           88.00               25            1.13              2.65        332.33                28.45            True
+  SNPS           87.80               41            0.68              1.90        395.93                35.88            True
+  MCHP           85.29               34            0.96              0.44         65.19                45.66            True
+  KLAC           85.19               27            1.53             16.28       1512.86                56.48            True
 ```
 
 ## Recent Events
