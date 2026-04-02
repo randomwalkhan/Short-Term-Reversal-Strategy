@@ -75,6 +75,10 @@ The official Reversal 3.1 backtest definition keeps the Reversal 2.5 execution l
 
 Reversal 3.1 的官方回测定义保留了 Reversal 2.5 的执行逻辑不变，包括动态交易级过滤 `matched_signals >= 10`、提升后的 `60d` 历史观察窗口，以及 `minimum current drop > 0.5%` 入场过滤。唯一被正式提升的变化，是精选的 universe overlay：`qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`。在当前数据快照下，官方 Reversal 3.1 结果为：总收益 `+1709.09%`、最大回撤 `-44.30%`、胜率 `63.33%`、Sharpe `4.28`。
 
+Backtest window: `2025-03-31` to `2026-03-31`.
+
+回测区间：`2025-03-31` 至 `2026-03-31`。
+
 Research discipline is documented in `RESEARCH_GUARDRAILS.md`; future upgrades
 should be judged against those standards instead of curve quality alone.
 
@@ -109,6 +113,10 @@ Reversal 2.3.3 compared five universes under the original dynamic `matched_signa
 
 Reversal 2.3.3 在原始动态 `matched_signals >= 10` 规则下比较了五组 universe，结论非常明确：`qqq_only_filtered` 仍然最优，因此在 Reversal 2.5.3 中被保留。
 
+Backtest window: `2025-03-17` to `2026-03-16`.
+
+回测区间：`2025-03-17` 至 `2026-03-16`。
+
 - [reversal_2_3_3_universe_comparison.csv](results/reversal_2_3_3_universe_comparison/reversal_2_3_3_universe_comparison.csv)
 - Sharpe uses the U.S. 10Y Treasury yield on `2026-03-16` (`4.23%`) as the annual risk-free rate.
 
@@ -128,6 +136,10 @@ Reversal 2.3.3 在原始动态 `matched_signals >= 10` 规则下比较了五组 
 After fixing the universe as `qqq_only_filtered`, the article-inspired comparison script tested volume rescaling, PCA de-factoring, kappa / s-score filtering, and shorter rolling windows. The `60d` window was the strongest factor upgrade and is therefore promoted into Reversal 2.4.
 
 在把 universe 固定为 `qqq_only_filtered` 之后，论文启发的对比脚本继续测试了成交量 rescaling、PCA 去市场因素、kappa / s-score 过滤以及更短滚动窗口。最终 `60d` 窗口是最强的因子升级，因此被提升为 Reversal 2.4 的正式默认设置。
+
+Backtest window: `2025-03-17` to `2026-03-16`.
+
+回测区间：`2025-03-17` 至 `2026-03-16`。
 
 Note: the stage 2 and stage 3 tables below use refreshed rerun results and include Sharpe ratios computed with the U.S. 10Y Treasury yield on `2026-03-16` (`4.23%`) as the annual risk-free rate.
 
@@ -155,6 +167,10 @@ After fixing both the universe and the `60d` factor, the next test was whether t
 
 在把 universe 和 `60d` 因子都固定下来之后，下一步测试的是是否要为 live / backtest 入场增加 minimum current drop 门槛。最终 `0.5%` 阈值表现最好，因此被提升为 Reversal 2.5 的正式执行过滤。
 
+Backtest window: `2025-03-17` to `2026-03-16`.
+
+回测区间：`2025-03-17` 至 `2026-03-16`。
+
 - [minimum drop summary](results/reversal_2_5_min_drop_experiment/reversal_2_5_min_drop_summary.csv)
 - [minimum drop equity](results/reversal_2_5_min_drop_experiment/reversal_2_5_min_drop_equity.csv)
 - [minimum drop plot](assets/reversal_2_5_min_drop_experiment.png)
@@ -175,6 +191,10 @@ After fixing both the universe and the `60d` factor, the next test was whether t
 After fixing the `60d` factor and the `minimum current drop > 0.5%` filter, the next question was whether a very small number of leveraged ETFs should be allowed into the official universe. The research result was narrower than the original intuition: adding `SOXL` and `UPRO` consistently improved `1Y`, `2Y`, and `3Y` results, while `TQQQ` did not add stable incremental benefit once those two were already present. Reversal 3.1 therefore promotes a curated overlay, not a broad leveraged-ETF bucket.
 
 在把 `60d` 因子和 `minimum current drop > 0.5%` 过滤都固定下来之后，下一步研究的问题是：是否应该允许极少数 leveraged ETF 进入官方 universe。结果比最初的直觉更窄：`SOXL` 和 `UPRO` 在 `1Y`、`2Y`、`3Y` 上都稳定改善了结果，而 `TQQQ` 在加入这两只之后并没有继续带来稳定增益。因此 Reversal 3.1 提升的是一个精选 overlay，而不是泛化的 leveraged ETF 大篮子。
+
+Backtest window shown below (`1Y` comparison): `2025-03-31` to `2026-03-31`.
+
+下图展示的回测区间（`1Y` 比较）：`2025-03-31` 至 `2026-03-31`。
 
 - [leveraged ETF summary](results/reversal_3_1_leveraged_etf_experiment/reversal_3_1_leveraged_etf_summary.csv)
 - [leveraged ETF robustness](results/reversal_3_1_leveraged_etf_experiment/reversal_3_1_leveraged_etf_robustness.csv)

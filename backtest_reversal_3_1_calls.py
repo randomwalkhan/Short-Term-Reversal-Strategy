@@ -441,12 +441,18 @@ def summarize_backtest(label: str, tickers: list[str], history_cache: dict[str, 
 def plot_equity_curve(equity_df: pd.DataFrame, trades_df: pd.DataFrame, label: str) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    date_series = pd.to_datetime(equity_df["date"], errors="coerce")
+    valid_dates = date_series[date_series.notna()]
+    if not valid_dates.empty:
+        date_label = f"{valid_dates.min():%Y-%m-%d} to {valid_dates.max():%Y-%m-%d}"
+    else:
+        date_label = "date unavailable"
     fig, ax = plt.subplots(figsize=(12, 7), facecolor=FIG_BG)
     ax.plot(equity_df["date"], equity_df["equity"], linewidth=2.2, label=label, color=GREEN_LINE)
     ax.axhline(INITIAL_CAPITAL, color=BASELINE, linestyle="--", alpha=0.55, label="Initial Capital")
     ax.fill_between(equity_df["date"], equity_df["equity"], INITIAL_CAPITAL, color=GREEN_LINE, alpha=0.10)
     style_dark_axis(ax)
-    ax.set_title(f"{label} Equity Curve")
+    ax.set_title(f"{label} Equity Curve\nBacktest window: {date_label}")
     ax.set_xlabel("Date")
     ax.set_ylabel("Portfolio Value ($)")
     legend = ax.legend(frameon=False, loc="upper left")

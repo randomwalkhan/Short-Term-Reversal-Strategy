@@ -63,12 +63,30 @@ def run_variant_summary(
 
 def plot_one_year_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
     fig, ax = plt.subplots(figsize=(12, 7), facecolor=FIG_BG)
+    date_start = None
+    date_end = None
     for label, equity_df in equity_curves.items():
-        ax.plot(equity_df["date"], equity_df["equity"] / base.INITIAL_CAPITAL, linewidth=2, label=label)
+        series = equity_df[["date", "equity"]].copy()
+        series["date"] = pd.to_datetime(series["date"], errors="coerce")
+        series = series[series["date"].notna()].copy()
+        if series.empty:
+            continue
+        local_start = series["date"].min()
+        local_end = series["date"].max()
+        date_start = local_start if date_start is None else min(date_start, local_start)
+        date_end = local_end if date_end is None else max(date_end, local_end)
+        ax.plot(series["date"], series["equity"] / base.INITIAL_CAPITAL, linewidth=2, label=label)
 
     ax.axhline(1.0, color=BASELINE, linestyle="--", alpha=0.45)
     style_dark_axis(ax)
-    ax.set_title("Reversal 3.1 Leveraged ETF Overlay Experiment (1Y)")
+    if date_start is not None and date_end is not None:
+        date_label = f"{date_start:%Y-%m-%d} to {date_end:%Y-%m-%d}"
+    else:
+        date_label = "date unavailable"
+    ax.set_title(
+        "Reversal 3.1 Leveraged ETF Overlay Experiment (1Y)\n"
+        f"Backtest window: {date_label}"
+    )
     ax.set_xlabel("Date")
     ax.set_ylabel("Equity / Initial Capital")
     legend = ax.legend(frameon=False)

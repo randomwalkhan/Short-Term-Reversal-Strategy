@@ -24,13 +24,30 @@ ASSET_PLOT_PATH = Path.cwd() / "assets" / "reversal_2_3_3_universe_comparison.pn
 
 def plot_comparison(equity_curves: dict[str, pd.DataFrame]) -> None:
     fig, ax = plt.subplots(figsize=(13, 7), facecolor=FIG_BG)
+    date_start = None
+    date_end = None
     for label, equity_df in equity_curves.items():
         series = equity_df[["date", "equity"]].copy()
+        series["date"] = pd.to_datetime(series["date"], errors="coerce")
+        series = series[series["date"].notna()].copy()
+        if series.empty:
+            continue
+        local_start = series["date"].min()
+        local_end = series["date"].max()
+        date_start = local_start if date_start is None else min(date_start, local_start)
+        date_end = local_end if date_end is None else max(date_end, local_end)
         ax.plot(series["date"], series["equity"] / INITIAL_CAPITAL, linewidth=1.8, label=label)
 
     ax.axhline(1.0, color=BASELINE, linestyle="--", alpha=0.5)
     style_dark_axis(ax)
-    ax.set_title("Reversal 2.3.3 Universe Comparison (dynamic matched_signals filter)")
+    if date_start is not None and date_end is not None:
+        date_label = f"{date_start:%Y-%m-%d} to {date_end:%Y-%m-%d}"
+    else:
+        date_label = "date unavailable"
+    ax.set_title(
+        "Reversal 2.3.3 Universe Comparison (dynamic matched_signals filter)\n"
+        f"Backtest window: {date_label}"
+    )
     ax.set_xlabel("Date")
     ax.set_ylabel("Equity / Initial Capital")
     legend = ax.legend(frameon=False)

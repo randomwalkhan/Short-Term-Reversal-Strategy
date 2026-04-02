@@ -800,6 +800,12 @@ def build_variants() -> list[VariantConfig]:
 def plot_variant_curves(curves_df: pd.DataFrame, variants: list[VariantConfig]) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    date_series = pd.to_datetime(curves_df["date"], errors="coerce")
+    valid_dates = date_series[date_series.notna()]
+    if not valid_dates.empty:
+        date_label = f"{valid_dates.min():%Y-%m-%d} to {valid_dates.max():%Y-%m-%d}"
+    else:
+        date_label = "date unavailable"
     fig, ax = plt.subplots(figsize=(14, 8), facecolor=FIG_BG)
     for variant in variants:
         subset = curves_df.loc[curves_df["variant"].eq(variant.key)].copy()
@@ -815,7 +821,10 @@ def plot_variant_curves(curves_df: pd.DataFrame, variants: list[VariantConfig]) 
         )
     ax.axhline(INITIAL_CAPITAL, color=BASELINE, linestyle=":", alpha=0.6, linewidth=1.2)
     style_dark_axis(ax)
-    ax.set_title("Reversal Article Variants Equity Curve Comparison")
+    ax.set_title(
+        "Reversal Article Variants Equity Curve Comparison\n"
+        f"Backtest window: {date_label}"
+    )
     ax.set_xlabel("Date")
     ax.set_ylabel("Portfolio Value ($)")
     legend = ax.legend(frameon=False)
