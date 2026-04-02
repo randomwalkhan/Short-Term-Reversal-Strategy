@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-02 13:10:05 EDT`
-Last processed slot: `manage_1300`
+Last updated (ET): `2026-04-02 13:15:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  MRVL           94.74               38            0.83              0.62        106.44                92.70            True
-  MPWR           91.89               37            0.50              3.93       1117.83                56.57            True
-  UPRO           91.43               35            0.83              0.58         98.92                57.18            True
-  DXCM           91.11               45            0.75              0.33         62.23                31.67            True
-   MAR           89.66               29            0.95              2.21        332.51                28.45            True
-  ORLY           88.57               35            0.69              0.45         91.91                22.81            True
-  GILD           88.46               26            0.77              0.76        139.98                21.47            True
-   BKR           88.24               34            0.53              0.22         60.24                40.20            True
-  SNPS           87.80               41            0.77              2.13        395.83                35.88            True
-  MCHP           87.18               39            0.50              0.23         65.28                45.66            True
-  KLAC           86.11               36            0.82              8.75       1516.09                56.48            True
-  CDNS           85.71               28            1.83              3.58        278.66                26.25            True
+  MRVL           95.00               40            0.75              0.56        106.47                92.70            True
+  DXCM           91.11               45            0.77              0.34         62.23                31.67            True
+  ORLY           89.74               39            0.65              0.42         91.92                22.81            True
+  GILD           88.46               26            0.78              0.77        139.97                21.47            True
+   MAR           88.24               34            0.83              1.94        332.63                28.45            True
+  KLAC           86.84               38            0.65              6.91       1516.88                56.48            True
+  CDNS           86.21               29            1.71              3.35        278.75                26.25            True
+  SOXL           85.71               35            0.70              0.26         52.15               138.72            True
+  BKNG           85.00               40            0.61             17.98       4176.85                42.15            True
+ GOOGL           84.62               39            0.53              1.11        296.91                35.66            True
+  AMAT           84.38               32            1.34              3.32        352.38                59.65            True
+    MU           83.78               37            1.02              2.62        366.73                84.85            True
 ```
 
 ## Recent Events
