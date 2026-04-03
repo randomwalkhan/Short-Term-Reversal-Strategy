@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-03 09:55:02 EDT`
+Last updated (ET): `2026-04-03 10:00:05 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -58,6 +58,7 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 
 ```text
                     timestamp_et         slot   event_type                          detail
+2026-04-03T10:00:05.449748-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-03T09:55:02.175348-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-03T09:40:05.888635-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-04-03T09:35:00.886224-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T15:40:05.898407-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 2026-04-02T15:35:05.886679-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 2026-04-02T15:30:05.889337-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-02T15:25:05.929228-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
