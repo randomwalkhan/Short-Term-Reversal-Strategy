@@ -6,6 +6,7 @@ import math
 import os
 import subprocess
 import sys
+from datetime import date, timedelta
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
@@ -82,6 +83,114 @@ SLOT_TO_ET = {
     "manage_1530": (15, 30),
     "manage_1600": (16, 0),
 }
+
+
+def _observed_fixed_holiday(year: int, month: int, day: int) -> date:
+    holiday = date(year, month, day)
+    if holiday.weekday() == 5:
+        return holiday - timedelta(days=1)
+    if holiday.weekday() == 6:
+        return holiday + timedelta(days=1)
+    return holiday
+
+
+def _nth_weekday_of_month(year: int, month: int, weekday: int, n: int) -> date:
+    current = date(year, month, 1)
+    delta_days = (weekday - current.weekday()) % 7
+    return current + timedelta(days=delta_days + (n - 1) * 7)
+
+
+def _last_weekday_of_month(year: int, month: int, weekday: int) -> date:
+    if month == 12:
+        current = date(year + 1, 1, 1) - timedelta(days=1)
+    else:
+        current = date(year, month + 1, 1) - timedelta(days=1)
+    while current.weekday() != weekday:
+        current -= timedelta(days=1)
+    return current
+
+
+def _western_easter(year: int) -> date:
+    a = year % 19
+    b = year // 100
+    c = year % 100
+    d = b // 4
+    e = b % 4
+    f = (b + 8) // 25
+    g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i = c // 4
+    k = c % 4
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    month = (h + l - 7 * m + 114) // 31
+    day = ((h + l - 7 * m + 114) % 31) + 1
+    return date(year, month, day)
+
+
+def nyse_full_day_holidays(year: int) -> dict[date, str]:
+    holidays: dict[date, str] = {
+        _observed_fixed_holiday(year, 1, 1): "New Year's Day",
+        _nth_weekday_of_month(year, 1, 0, 3): "Martin Luther King Jr. Day",
+        _nth_weekday_of_month(year, 2, 0, 3): "Presidents Day",
+        _western_easter(year) - timedelta(days=2): "Good Friday",
+        _last_weekday_of_month(year, 5, 0): "Memorial Day",
+        _observed_fixed_holiday(year, 7, 4): "Independence Day",
+        _nth_weekday_of_month(year, 9, 0, 1): "Labor Day",
+        _nth_weekday_of_month(year, 11, 3, 4): "Thanksgiving Day",
+        _observed_fixed_holiday(year, 12, 25): "Christmas Day",
+    }
+    if year >= 2022:
+        holidays[_observed_fixed_holiday(year, 6, 19)] = "Juneteenth National Independence Day"
+    next_new_year_obs = _observed_fixed_holiday(year + 1, 1, 1)
+    if next_new_year_obs.year == year:
+        holidays[next_new_year_obs] = "New Year's Day (observed)"
+    return holidays
+
+
+def _to_calendar_date(value: pd.Timestamp | str | date) -> date:
+    if isinstance(value, date) and not isinstance(value, pd.Timestamp):
+        return value
+    ts = pd.Timestamp(value)
+    if ts.tzinfo is not None:
+        ts = ts.tz_convert(ET)
+    return ts.date()
+
+
+def market_closure_reason(value: pd.Timestamp | str | date) -> dict[str, Any] | None:
+    current_date = _to_calendar_date(value)
+    if current_date.weekday() >= 5:
+        return {"reason": "weekend", "holiday_name": None}
+    holiday_name = nyse_full_day_holidays(current_date.year).get(current_date)
+    if holiday_name:
+        return {"reason": "nyse_holiday", "holiday_name": holiday_name}
+    return None
+
+
+def is_nyse_session_day(value: pd.Timestamp | str | date) -> bool:
+    return market_closure_reason(value) is None
+
+
+def previous_nyse_session_day(value: pd.Timestamp | str | date) -> pd.Timestamp:
+    current_date = _to_calendar_date(value)
+    candidate = current_date - timedelta(days=1)
+    while not is_nyse_session_day(candidate):
+        candidate -= timedelta(days=1)
+    return pd.Timestamp(candidate)
+
+
+def count_nyse_session_days(start_exclusive: pd.Timestamp | str | date, end_inclusive: pd.Timestamp | str | date) -> int:
+    start_date = _to_calendar_date(start_exclusive)
+    end_date = _to_calendar_date(end_inclusive)
+    if end_date <= start_date:
+        return 0
+    sessions = 0
+    current = start_date + timedelta(days=1)
+    while current <= end_date:
+        if is_nyse_session_day(current):
+            sessions += 1
+        current += timedelta(days=1)
+    return sessions
 
 
 @dataclass
@@ -199,8 +308,7 @@ def build_universe() -> list[str]:
 
 
 def latest_required_history_date(now_et: pd.Timestamp) -> pd.Timestamp:
-    current = now_et.normalize().tz_localize(None)
-    return (current - pd.offsets.BDay(1)).normalize()
+    return previous_nyse_session_day(now_et)
 
 
 def csv_history_is_stale(tickers: list[str], now_et: pd.Timestamp) -> bool:
@@ -384,11 +492,11 @@ def get_live_snapshot(ticker: str, allow_extended_hours: bool = True) -> dict[st
 
 
 def trading_days_to_expiry(expiry_str: str) -> int:
-    today = pd.Timestamp.today().normalize()
+    today = pd.Timestamp.today(tz=ET).normalize()
     expiry_ts = pd.Timestamp(expiry_str).normalize()
-    if expiry_ts <= today:
+    if expiry_ts.date() <= today.date():
         return 0
-    return len(pd.bdate_range(today + pd.Timedelta(days=1), expiry_ts))
+    return count_nyse_session_days(today, expiry_ts)
 
 
 def choose_option_mark(calls: pd.DataFrame) -> pd.Series:
@@ -621,11 +729,7 @@ def screen_live_candidates(tickers: list[str]) -> tuple[pd.DataFrame, dict[str, 
 
 
 def business_days_since(entry_trade_date: str, current_trade_date: str) -> int:
-    entry = pd.Timestamp(entry_trade_date).normalize()
-    current = pd.Timestamp(current_trade_date).normalize()
-    if current <= entry:
-        return 0
-    return len(pd.bdate_range(entry + pd.Timedelta(days=1), current))
+    return count_nyse_session_days(entry_trade_date, current_trade_date)
 
 
 def append_event(events_df: pd.DataFrame, now_et: pd.Timestamp, trade_date: str, slot: str, event_type: str, detail: dict[str, Any]) -> pd.DataFrame:
@@ -1244,6 +1348,7 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
     ensure_dirs()
     now_et = now_et_from_arg(args.now)
     slot_key = slot_key_for_timestamp(now_et, args.force_slot)
+    closure_detail = market_closure_reason(now_et)
     state = load_state(args.start_date)
     trades_df = load_csv_log(TRADES_PATH)
     events_df = load_csv_log(EVENTS_PATH)
@@ -1253,10 +1358,10 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
     trade_date = now_et.date().isoformat()
     pre_start = pd.Timestamp(trade_date) < pd.Timestamp(state["start_date"])
 
-    if not pre_start and REFRESH_DATA_IF_STALE and not args.skip_data_refresh:
+    if not pre_start and closure_detail is None and REFRESH_DATA_IF_STALE and not args.skip_data_refresh:
         events_df = maybe_refresh_daily_data(universe, now_et, events_df)
 
-    if pre_start:
+    if pre_start or closure_detail is not None:
         summary_df = pd.DataFrame()
     else:
         summary_df, _ = screen_live_candidates(universe)
@@ -1272,7 +1377,36 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
         )
     else:
         processed_for_day = state["processed_slots"].setdefault(trade_date, [])
-        if slot_key and slot_key not in processed_for_day:
+        if closure_detail is not None:
+            if slot_key and slot_key not in processed_for_day:
+                events_df = append_event(
+                    events_df,
+                    now_et=now_et,
+                    trade_date=trade_date,
+                    slot=slot_key,
+                    event_type="market_closed",
+                    detail=closure_detail,
+                )
+                processed_for_day.append(slot_key)
+            elif slot_key:
+                events_df = append_event(
+                    events_df,
+                    now_et=now_et,
+                    trade_date=trade_date,
+                    slot=slot_key,
+                    event_type="slot_skipped",
+                    detail={"reason": "already_processed"},
+                )
+            else:
+                events_df = append_event(
+                    events_df,
+                    now_et=now_et,
+                    trade_date=trade_date,
+                    slot="manual",
+                    event_type="market_closed",
+                    detail=closure_detail,
+                )
+        elif slot_key and slot_key not in processed_for_day:
             if slot_key.startswith("manage_"):
                 state, trades_df, events_df = maybe_exit_positions(state, now_et, slot_key, trades_df, events_df)
             if slot_key == "entry_1500":

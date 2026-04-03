@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-03 16:00:01 EDT`
+Last updated (ET): `2026-04-03 16:00:00 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -19,18 +19,17 @@ Last processed slot: `manage_1600`
 
 ## Portfolio Snapshot
 
-- Cash: `$2,892.50`
+- Cash: `$8,102.50`
 - Equity: `$10,827.50`
 - Realized PnL: `$845.00`
 - Unrealized PnL: `$-17.50`
-- Open positions: `2`
+- Open positions: `1`
 
 ## Open Positions
 
 ```text
-ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  REGN REGN260515C00760000       2026-04-03                   0               52.10                 52.10      761.39        761.39             0.0                   0.00         93.33               15              2.04         51.67           51.67                  27.37
-   WDC  WDC260501C00295000       2026-04-02                   1               27.42                 27.25      294.77        294.20           -17.5                  -0.64         97.22               36              0.99         81.84           82.37                  91.06
+ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
+   WDC WDC260501C00295000       2026-04-02                   0               27.42                 27.25      294.77         294.2           -17.5                  -0.64         97.22               36              0.99         81.84           82.37                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-03)
@@ -39,36 +38,22 @@ _None_
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           97.22               36            1.19              2.47        296.67                88.18            True
-  REGN           93.33               15            2.04             11.10        772.49                27.37            True
-  ASML           92.86               14            2.81             26.78       1348.28                51.28            True
-  CDNS           90.91               44            0.64              1.25        279.66                25.28            True
-  ORLY           88.24               34            0.74              0.48         91.90                22.90            True
-   CSX           88.00               25            0.63              0.18         41.36                27.22            True
-  KLAC           86.11               36            0.87              9.27       1515.87                55.10            True
-  FAST           85.71               21            1.44              0.47         46.43                21.85            True
-   KDP           85.71               14            0.97              0.17         25.62                19.41            True
- GOOGL           84.62               39            0.51              1.07        296.93                34.65            True
-  AMAT           84.38               32            1.38              3.41        352.34                57.49            True
-    MU           83.78               37            0.86              2.22        366.90                81.26            True
-```
+_None_
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-03T16:00:01.913141-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-03T15:55:05.942538-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-03T15:40:03.898307-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-03T15:35:05.900404-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-03T15:30:05.889192-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-03T15:25:05.896513-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-03T15:10:05.893314-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-03T15:05:00.923964-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-03T15:00:05.960286-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-03T14:55:05.881986-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+                    timestamp_et        slot    event_type                                                    detail
+       2026-04-03T16:00:00-04:00 manage_1600 market_closed {"holiday_name": "Good Friday", "reason": "nyse_holiday"}
+2026-04-02T16:00:05.925792-04:00 manage_1600  slot_skipped                           {"reason": "already_processed"}
+2026-04-02T15:55:05.893858-04:00 manage_1600  slot_skipped                           {"reason": "already_processed"}
+2026-04-02T15:40:05.898407-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
+2026-04-02T15:35:05.886679-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
+2026-04-02T15:30:05.889337-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
+2026-04-02T15:25:05.929228-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
+2026-04-02T15:10:05.887758-04:00  entry_1500  slot_skipped                           {"reason": "already_processed"}
+2026-04-02T15:05:00.892731-04:00  entry_1500  slot_skipped                           {"reason": "already_processed"}
+2026-04-02T15:00:05.892985-04:00  entry_1500  slot_skipped                           {"reason": "already_processed"}
 ```
 
 ## Equity Curves
