@@ -63,20 +63,20 @@ Each chart is generated from the same live equity series with no-lookahead marks
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_1_live_equity_1d.png)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_1_live_equity.png)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_1_live_equity_1m.png)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png)
 
 </details>

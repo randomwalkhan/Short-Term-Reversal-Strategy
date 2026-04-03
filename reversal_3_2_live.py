@@ -52,10 +52,10 @@ ET = ZoneInfo("America/New_York")
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "reversal_data"
 ASSETS_DIR = BASE_DIR / "assets"
-LIVE_DIR = BASE_DIR / "results" / "reversal_3_1_live"
+LIVE_DIR = BASE_DIR / "results" / "reversal_3_2_live"
 ROOT_README_PATH = BASE_DIR / "README.md"
-ROOT_SECTION_START = "<!-- reversal-3.1-live:start -->"
-ROOT_SECTION_END = "<!-- reversal-3.1-live:end -->"
+ROOT_SECTION_START = "<!-- reversal-3.2-live:start -->"
+ROOT_SECTION_END = "<!-- reversal-3.2-live:end -->"
 
 STATE_PATH = LIVE_DIR / "state.json"
 TRADES_PATH = LIVE_DIR / "live_trades.csv"
@@ -63,9 +63,9 @@ EVENTS_PATH = LIVE_DIR / "live_events.csv"
 POSITIONS_PATH = LIVE_DIR / "live_positions.csv"
 EQUITY_PATH = LIVE_DIR / "live_equity.csv"
 DASHBOARD_PATH = LIVE_DIR / "README.md"
-PLOT_1D_PATH = ASSETS_DIR / "reversal_3_1_live_equity_1d.png"
-PLOT_1W_PATH = ASSETS_DIR / "reversal_3_1_live_equity.png"
-PLOT_1M_PATH = ASSETS_DIR / "reversal_3_1_live_equity_1m.png"
+PLOT_1D_PATH = ASSETS_DIR / "reversal_3_2_live_equity_1d.png"
+PLOT_1W_PATH = ASSETS_DIR / "reversal_3_2_live_equity.png"
+PLOT_1M_PATH = ASSETS_DIR / "reversal_3_2_live_equity_1m.png"
 
 SLOT_TO_ET = {
     "manage_0930": (9, 30),
@@ -1107,21 +1107,21 @@ def build_chart_sections(image_prefix: str) -> list[str]:
         "<details>",
         "<summary><strong>1D</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity 1D]({image_prefix}assets/reversal_3_1_live_equity_1d.png)",
+        f"![Reversal 3.2 Live Equity 1D]({image_prefix}assets/reversal_3_2_live_equity_1d.png)",
         "",
         "</details>",
         "",
         "<details open>",
         "<summary><strong>1W</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity 1W]({image_prefix}assets/reversal_3_1_live_equity.png)",
+        f"![Reversal 3.2 Live Equity 1W]({image_prefix}assets/reversal_3_2_live_equity.png)",
         "",
         "</details>",
         "",
         "<details>",
         "<summary><strong>1M</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity 1M]({image_prefix}assets/reversal_3_1_live_equity_1m.png)",
+        f"![Reversal 3.2 Live Equity 1M]({image_prefix}assets/reversal_3_2_live_equity_1m.png)",
         "",
         "</details>",
         "",
@@ -1261,9 +1261,9 @@ def render_dashboard(
             ),
             "",
             *build_chart_sections(""),
-            "- [Full live dashboard](results/reversal_3_1_live/README.md)",
-            "- [Live trades csv](results/reversal_3_1_live/live_trades.csv)",
-            "- [Live equity csv](results/reversal_3_1_live/live_equity.csv)",
+            "- [Full live dashboard](results/reversal_3_2_live/README.md)",
+            "- [Live trades csv](results/reversal_3_2_live/live_trades.csv)",
+            "- [Live equity csv](results/reversal_3_2_live/live_equity.csv)",
             ROOT_SECTION_END,
         ]
     )
@@ -1306,15 +1306,15 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
     token = extract_github_token()
     tracked_paths = [
         "README.md",
-        "results/reversal_3_1_live/README.md",
-        "results/reversal_3_1_live/live_trades.csv",
-        "results/reversal_3_1_live/live_events.csv",
-        "results/reversal_3_1_live/live_positions.csv",
-        "results/reversal_3_1_live/live_equity.csv",
-        "results/reversal_3_1_live/state.json",
-        "assets/reversal_3_1_live_equity.png",
-        "assets/reversal_3_1_live_equity_1d.png",
-        "assets/reversal_3_1_live_equity_1m.png",
+        "results/reversal_3_2_live/README.md",
+        "results/reversal_3_2_live/live_trades.csv",
+        "results/reversal_3_2_live/live_events.csv",
+        "results/reversal_3_2_live/live_positions.csv",
+        "results/reversal_3_2_live/live_equity.csv",
+        "results/reversal_3_2_live/state.json",
+        "assets/reversal_3_2_live_equity.png",
+        "assets/reversal_3_2_live_equity_1d.png",
+        "assets/reversal_3_2_live_equity_1m.png",
     ]
 
     def run_git(cmd: list[str]) -> subprocess.CompletedProcess[str]:

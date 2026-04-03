@@ -1,6 +1,6 @@
 # Reversal 3.2
 
-<!-- reversal-3.1-live:start -->
+<!-- reversal-3.2-live:start -->
 ## Reversal 3.2 Live Paper Test
 
 - Last updated (ET): `2026-04-03 16:00:00 UTC-04:00`
@@ -20,28 +20,28 @@ ticker    contract_symbol  current_option_price  unrealized_pnl  unrealized_retu
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](assets/reversal_3_1_live_equity_1d.png)
+![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](assets/reversal_3_1_live_equity.png)
+![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](assets/reversal_3_1_live_equity_1m.png)
+![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png)
 
 </details>
 
-- [Full live dashboard](results/reversal_3_1_live/README.md)
-- [Live trades csv](results/reversal_3_1_live/live_trades.csv)
-- [Live equity csv](results/reversal_3_1_live/live_equity.csv)
-<!-- reversal-3.1-live:end -->
+- [Full live dashboard](results/reversal_3_2_live/README.md)
+- [Live trades csv](results/reversal_3_2_live/live_trades.csv)
+- [Live equity csv](results/reversal_3_2_live/live_equity.csv)
+<!-- reversal-3.2-live:end -->
 
 `Reversal3.2.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
 
@@ -267,8 +267,8 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
    如果你想复现 minimum-drop 阈值比较，并验证为什么最终选择 `0.5%` 过滤，再运行 `backtest_reversal_2_5_min_drop_experiment.py`。
 7. Read `RESEARCH_GUARDRAILS.md` before promoting any new factor, threshold, or story into an official version.  
    如果你想把新的因子、阈值或叙事升级成正式版本，先读 `RESEARCH_GUARDRAILS.md`。
-8. Run `reversal_3_1_live.py` if you want the no-lookahead live paper-test pipeline with scheduled entry / exit scans and auto-generated GitHub dashboard files.  
-   如果你想启用无未来函数的 live paper-test，并定时更新 GitHub dashboard，就运行 `reversal_3_1_live.py`。
+8. Run `reversal_3_2_live.py` if you want the no-lookahead live paper-test pipeline with scheduled entry / exit scans and auto-generated GitHub dashboard files.  
+   如果你想启用无未来函数的 live paper-test，并定时更新 GitHub dashboard，就运行 `reversal_3_2_live.py`。
 
 ## Notebook Contents | Notebook 内容
 
@@ -372,7 +372,7 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
 - `update_reversal_data.py` | Refresh the default `qqq_plus_leverage_etfs` CSV datasets from Yahoo Finance. | 从 Yahoo Finance 刷新默认的 `qqq_plus_leverage_etfs` 所需 CSV 数据。
 - `RESEARCH_GUARDRAILS.md` | Default research discipline for avoiding curve sculpting, weak narratives, and LLM-assisted overfitting. | 默认研究守则，用于避免曲线雕刻、伪机制叙事和 LLM 放大的过拟合。
-- `reversal_3_1_live.py` | Reversal 3.2 live paper-test runner with scheduled entry/exit logic, state persistence, dashboard generation, optional GitHub publishing, the promoted `qqq_plus_leverage_etfs` live universe, and NYSE holiday protection. | Reversal 3.2 的 live paper-test 主脚本，包含定时入场/离场逻辑、状态持久化、dashboard 生成、可选的 GitHub 发布、升级后的 `qqq_plus_leverage_etfs` live universe，以及 NYSE 节假日保护。
+- `reversal_3_2_live.py` | Reversal 3.2 live paper-test runner with scheduled entry/exit logic, state persistence, dashboard generation, optional GitHub publishing, the promoted `qqq_plus_leverage_etfs` live universe, and NYSE holiday protection. | Reversal 3.2 的 live paper-test 主脚本，包含定时入场/离场逻辑、状态持久化、dashboard 生成、可选的 GitHub 发布、升级后的 `qqq_plus_leverage_etfs` live universe，以及 NYSE 节假日保护。
 - `Reversal3.2.ipynb` | Current main notebook with the official `qqq_plus_leverage_etfs` universe, the default `60d` observation window, `minimum current drop > 0.5%` live-screen filter, improved extended-hours spot pricing, ATM-IV versus rolling-sigma context, and a cleaner single-table live screener output. | 当前主 notebook，使用官方 `qqq_plus_leverage_etfs` universe，默认 `60d` 观察窗口，加入 `minimum current drop > 0.5%` 的 live-screen 过滤，优先使用扩展时段 spot 价格，并在 screener 输出中补充 ATM IV 与 rolling sigma 对照，同时把 live screener 压缩成更清晰的单表输出。
 - `Reversal3.1.ipynb` | Prior main notebook snapshot before the Reversal 3.2 live holiday-protection release. | Reversal 3.2 节假日保护版本发布之前的上一版主 notebook 快照。
 - `Reversal2.5.3.ipynb` | Previous main notebook snapshot before the leveraged-ETF overlay promotion. | 提升 leveraged ETF overlay 之前的上一版主 notebook 快照。
