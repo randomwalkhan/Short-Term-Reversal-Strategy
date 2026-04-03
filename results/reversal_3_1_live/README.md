@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-03 15:00:05 EDT`
+Last updated (ET): `2026-04-03 15:05:00 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -59,6 +59,7 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                           detail
+2026-04-03T15:05:00.923964-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-03T15:00:05.960286-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-03T14:55:05.881986-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-03T14:50:06.418885-04:00  entry_1500        entry {"allocated_cash": 5210.0, "contract_symbol": "REGN260515C00760000", "contracts": 1, "entry_option_price": 52.1, "matched_signals": 15, "success_rate": 93.33, "ticker": "REGN"}
@@ -68,7 +69,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-03T14:25:01.014165-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-03T14:10:05.890389-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 2026-04-03T14:05:03.896646-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T14:00:03.898829-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
