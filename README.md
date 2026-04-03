@@ -216,7 +216,7 @@ Backtest window shown below (`1Y` comparison): `2025-03-31` to `2026-03-31`.
 
 The project keeps its optimization trail explicit rather than hiding earlier versions. The current path is:
 
-本项目保留完整的优化路径，而不是把旧版本直接抹掉。当前主线是：
+本项目保留完整的优化路径，当前主线是：
 
 - `2.3.3`: lock the best universe as `qqq_only_filtered`
 - `2.4`: promote the `60d` observation window
