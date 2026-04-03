@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-03 14:45:03 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-03 14:50:06 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -19,17 +19,18 @@ Last processed slot: `manual_refresh`
 
 ## Portfolio Snapshot
 
-- Cash: `$8,102.50`
+- Cash: `$2,892.50`
 - Equity: `$10,827.50`
 - Realized PnL: `$845.00`
 - Unrealized PnL: `$-17.50`
-- Open positions: `1`
+- Open positions: `2`
 
 ## Open Positions
 
 ```text
-ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   1               27.42                 27.25      294.77         294.2           -17.5                  -0.64         97.22               36              0.99         81.84           82.37                  91.06
+ticker     contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
+  REGN REGN260515C00760000       2026-04-03                   0               52.10                 52.10      761.39        761.39             0.0                   0.00         93.33               15              2.04         51.67           51.67                  27.37
+   WDC  WDC260501C00295000       2026-04-02                   1               27.42                 27.25      294.77        294.20           -17.5                  -0.64         97.22               36              0.99         81.84           82.37                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-03)
@@ -57,17 +58,17 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-03T14:40:05.887311-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-03T14:35:05.880366-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-03T14:30:00.896990-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-03T14:25:01.014165-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-03T14:10:05.890389-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-03T14:05:03.896646-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-03T14:00:03.898829-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-03T13:55:05.882580-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-03T13:40:05.891644-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-04-03T13:35:05.895244-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
+                    timestamp_et        slot   event_type                                                                                                                                                                           detail
+2026-04-03T14:50:06.418885-04:00  entry_1500        entry {"allocated_cash": 5210.0, "contract_symbol": "REGN260515C00760000", "contracts": 1, "entry_option_price": 52.1, "matched_signals": 15, "success_rate": 93.33, "ticker": "REGN"}
+2026-04-03T14:40:05.887311-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-03T14:35:05.880366-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-03T14:30:00.896990-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-03T14:25:01.014165-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-03T14:10:05.890389-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-03T14:05:03.896646-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-03T14:00:03.898829-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-03T13:55:05.882580-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-03T13:40:05.891644-04:00 manage_1330 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves

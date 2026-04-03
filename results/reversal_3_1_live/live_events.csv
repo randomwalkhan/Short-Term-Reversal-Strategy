@@ -173,3 +173,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-03T14:30:00.896990-04:00,2026-04-03,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-03T14:35:05.880366-04:00,2026-04-03,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-03T14:40:05.887311-04:00,2026-04-03,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-03T14:50:06.418885-04:00,2026-04-03,entry_1500,entry,"{""allocated_cash"": 5210.0, ""contract_symbol"": ""REGN260515C00760000"", ""contracts"": 1, ""entry_option_price"": 52.1, ""matched_signals"": 15, ""success_rate"": 93.33, ""ticker"": ""REGN""}"

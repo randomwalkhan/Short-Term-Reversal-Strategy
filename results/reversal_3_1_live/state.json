@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "initial_capital": 10000.0,
-  "cash": 8102.5,
+  "cash": 2892.5,
   "positions": [
     {
       "position_id": "WDC_20260402T145005",
@@ -26,6 +26,30 @@
       "planned_tp_day1": 30.167500000000004,
       "planned_tp_day2": 31.538749999999997,
       "planned_stop": 24.6825
+    },
+    {
+      "position_id": "REGN_20260403T145006",
+      "ticker": "REGN",
+      "contract_symbol": "REGN260515C00760000",
+      "expiry": "2026-05-15",
+      "strike": 760.0,
+      "entry_timestamp": "2026-04-03T14:50:06.418885-04:00",
+      "entry_trade_date": "2026-04-03",
+      "entry_slot": "entry_1500",
+      "entry_spot": 761.39,
+      "entry_option_price": 52.1,
+      "entry_bid": 49.5,
+      "entry_ask": 54.7,
+      "entry_iv_pct": 51.66979483032227,
+      "contracts": 1,
+      "allocated_cash": 5210.0,
+      "success_rate": 93.33,
+      "matched_signals": 15,
+      "current_drop_pct": 2.04,
+      "rolling_sigma_20d_pct": 27.37,
+      "planned_tp_day1": 57.31000000000001,
+      "planned_tp_day2": 59.915,
+      "planned_stop": 46.89
     }
   ],
   "processed_slots": {
@@ -146,7 +170,8 @@
       "manage_1300",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"
