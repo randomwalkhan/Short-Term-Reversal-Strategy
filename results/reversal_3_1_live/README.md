@@ -1,6 +1,6 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-03 15:55:05 EDT`
+Last updated (ET): `2026-04-03 16:00:01 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -58,17 +58,17 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                                                                           detail
-2026-04-03T15:55:05.942538-04:00 manage_1600 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T15:40:03.898307-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T15:35:05.900404-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T15:30:05.889192-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T15:25:05.896513-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T15:10:05.893314-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T15:05:00.923964-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T15:00:05.960286-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T14:55:05.881986-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-03T14:50:06.418885-04:00  entry_1500        entry {"allocated_cash": 5210.0, "contract_symbol": "REGN260515C00760000", "contracts": 1, "entry_option_price": 52.1, "matched_signals": 15, "success_rate": 93.33, "ticker": "REGN"}
+                    timestamp_et        slot   event_type                          detail
+2026-04-03T16:00:01.913141-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-03T15:55:05.942538-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-03T15:40:03.898307-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-03T15:35:05.900404-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-03T15:30:05.889192-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-03T15:25:05.896513-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-03T15:10:05.893314-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-03T15:05:00.923964-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-03T15:00:05.960286-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-03T14:55:05.881986-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
