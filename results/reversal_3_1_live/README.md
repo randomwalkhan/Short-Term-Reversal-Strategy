@@ -1,7 +1,7 @@
 # Reversal 3.1 Live Paper Test
 
-Last updated (ET): `2026-04-03 09:40:05 EDT`
-Last processed slot: `manage_0930`
+Last updated (ET): `2026-04-03 09:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
