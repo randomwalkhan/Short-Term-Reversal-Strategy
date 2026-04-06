@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 11:20:05 EDT`
+Last updated (ET): `2026-04-06 11:25:05 EDT`
 Last processed slot: `manage_1130`
 
 ## Active Configuration
@@ -40,24 +40,25 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               22            0.63              1.01        229.02                20.57            True
-  FTNT           93.02               43            0.67              0.39         82.36                30.26            True
-  FAST           91.89               37            0.55              0.18         46.22                21.85            True
-  CDNS           90.70               43            0.67              1.32        278.16                25.28            True
-  AVGO           89.74               39            0.90              1.97        313.70                41.04            True
-  ASML           85.19               27            1.42             13.07       1311.63                51.28            True
-  TSLA           85.00               20            1.95              4.92        358.48                42.35            True
-  TMUS           84.00               25            0.94              1.33        200.83                22.45            True
-  CTSH           83.87               31            0.91              0.40         62.37                26.11            True
-   PEP           83.33               18            0.75              0.83        156.65                18.34            True
-  FANG          100.00               28            0.45              0.62        193.62                28.70           False
-   XEL           93.75               32            0.02              0.01         80.74                19.13           False
+   HON          100.00               22            0.62              1.00        229.02                20.57            True
+  FTNT           93.02               43            0.65              0.38         82.37                30.26            True
+  NVDA           91.89               37            0.50              0.62        177.12                36.70            True
+  FAST           91.43               35            0.60              0.20         46.22                21.85            True
+  CDNS           90.70               43            0.72              1.41        278.12                25.28            True
+  AVGO           89.74               39            0.84              1.86        313.75                41.04            True
+  SNPS           89.13               46            0.56              1.55        395.29                35.67            True
+  TSLA           85.00               20            2.10              5.30        358.32                42.35            True
+   PEP           84.21               19            0.68              0.75        156.69                18.34            True
+  TMUS           84.00               25            0.84              1.18        200.89                22.45            True
+  CTSH           83.87               31            0.94              0.41         62.36                26.11            True
+  ASML           83.33               24            1.54             14.16       1311.16                51.28            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                 detail
+2026-04-06T11:25:05.885117-04:00 manage_1130 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T11:10:05.890334-04:00 manage_1100 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T11:05:06.304097-04:00 manage_1100 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T11:00:03.415712-04:00 manage_1100 slot_skipped                                                                                                        {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-06T10:30:05.886948-04:00 manage_1030 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T10:25:05.896716-04:00 manage_1030 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T10:20:05.891442-04:00 manage_1030         exit {"contract_symbol": "WDC260501C00295000", "pnl": 595.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 21.7, "ticker": "WDC"}
-2026-04-06T10:10:05.890008-04:00 manage_1000 slot_skipped                                                                                                        {"reason": "already_processed"}
 ```
 
 ## Equity Curves
