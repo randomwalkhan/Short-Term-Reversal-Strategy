@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 10:10:05 EDT`
-Last processed slot: `manage_1000`
+Last updated (ET): `2026-04-06 10:15:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$8,102.50`
-- Equity: `$11,317.50`
+- Equity: `$11,440.00`
 - Realized PnL: `$845.00`
-- Unrealized PnL: `$472.50`
+- Unrealized PnL: `$595.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   1               27.42                 32.15      294.77        308.54           472.5                  17.23         97.22               36              0.99         81.84           77.32                  91.06
+   WDC WDC260501C00295000       2026-04-02                   1               27.42                 33.38      294.77         311.5           595.0                   21.7         97.22               36              0.99         81.84            75.6                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-06)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               20            0.81              1.29        228.90                20.57            True
-  MRVL           95.35               43            0.54              0.40        106.94                90.41            True
-  NVDA           91.67               36            0.71              0.89        177.01                36.70            True
-  AVGO           90.91               33            1.12              2.46        313.49                41.04            True
-  CDNS           90.70               43            0.68              1.33        278.15                25.28            True
-  SNPS           89.13               46            0.60              1.67        395.23                35.67            True
-  FAST           88.89               27            0.95              0.31         46.17                21.85            True
-  CTSH           83.87               31            1.02              0.45         62.35                26.11            True
-  TSLA           83.78               37            0.71              1.79        359.82                42.35            True
-  ASML           81.82               22            1.80             16.63       1310.10                51.28            True
-   PEP           81.82               22            0.50              0.55        156.77                18.34            True
-  MELI           80.95               42            0.63              7.62       1712.25                39.93            True
+  CDNS           90.91               44            0.64              1.24        278.19                25.28            True
+  AVGO           89.74               39            0.79              1.73        313.81                41.04            True
+  TSLA           84.62               39            0.52              1.30        360.03                42.35            True
+  CTSH           83.78               37            0.61              0.27         62.43                26.11            True
+  DDOG           82.61               23            2.80              2.36        119.35                49.88            True
+  ASML           81.82               22            1.71             15.74       1310.49                51.28            True
+  CRWD           81.40               43            0.56              1.57        398.45                42.36            True
+   PEP           80.95               21            0.56              0.62        156.74                18.34            True
+  PANW           80.49               41            0.81              0.92        162.81                41.77            True
+  TTWO           80.00               30            1.51              2.11        198.96                26.67            True
+  FANG          100.00               32            0.02              0.03        193.87                28.70           False
+   HON          100.00               25            0.48              0.78        229.12                20.57           False
 ```
 
 ## Recent Events
