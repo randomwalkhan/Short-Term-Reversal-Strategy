@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 10:30:05 EDT`
+Last updated (ET): `2026-04-06 10:35:05 EDT`
 Last processed slot: `manage_1030`
 
 ## Active Configuration
@@ -41,33 +41,33 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
   AVGO           89.74               39            0.93              2.05        313.67                41.04            True
-  CDNS           88.89               45            0.55              1.07        278.26                25.28            True
-  CTSH           83.78               37            0.54              0.24         62.44                26.11            True
-  ASML           82.61               23            1.56             14.41       1311.05                51.28            True
-  CRWD           81.40               43            0.77              2.16        398.20                42.36            True
-  MELI           81.40               43            0.55              6.66       1712.67                39.93            True
-  TTWO           80.77               26            1.79              2.51        198.79                26.67            True
+  CDNS           88.89               45            0.56              1.10        278.25                25.28            True
+  ASML           84.00               25            1.53             14.09       1311.19                51.28            True
+  CRWD           81.40               43            0.76              2.12        398.21                42.36            True
+  MELI           80.95               42            0.68              8.19       1712.01                39.93            True
   DDOG           80.00               20            3.37              2.84        119.14                49.88            True
-  FANG          100.00               29            0.35              0.48        193.68                28.70           False
-   HON          100.00               25            0.41              0.66        229.17                20.57           False
-  FTNT           93.62               47            0.27              0.15         82.46                30.26           False
-  FAST           93.02               43            0.32              0.10         46.26                21.85           False
+  FANG          100.00               29            0.26              0.35        193.73                28.70           False
+   HON          100.00               25            0.47              0.76        229.13                20.57           False
+  FTNT           93.88               49            0.13              0.08         82.50                30.26           False
+   XEL           93.75               32            0.02              0.01         80.74                19.13           False
+  FAST           93.02               43            0.33              0.11         46.25                21.85           False
+  NVDA           92.50               40            0.34              0.42        177.21                36.70           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot    event_type                                                                                                                                 detail
-2026-04-06T10:30:05.886948-04:00 manage_1030  slot_skipped                                                                                                        {"reason": "already_processed"}
-2026-04-06T10:25:05.896716-04:00 manage_1030  slot_skipped                                                                                                        {"reason": "already_processed"}
-2026-04-06T10:20:05.891442-04:00 manage_1030          exit {"contract_symbol": "WDC260501C00295000", "pnl": 595.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 21.7, "ticker": "WDC"}
-2026-04-06T10:10:05.890008-04:00 manage_1000  slot_skipped                                                                                                        {"reason": "already_processed"}
-2026-04-06T10:05:05.886743-04:00 manage_1000  slot_skipped                                                                                                        {"reason": "already_processed"}
-2026-04-06T10:00:06.219713-04:00 manage_1000  slot_skipped                                                                                                        {"reason": "already_processed"}
-2026-04-06T09:55:02.509102-04:00 manage_1000  slot_skipped                                                                                                        {"reason": "already_processed"}
-2026-04-06T09:40:00.944679-04:00 manage_0930  slot_skipped                                                                                                        {"reason": "already_processed"}
-2026-04-06T09:35:05.895013-04:00 manage_0930  slot_skipped                                                                                                        {"reason": "already_processed"}
-       2026-04-03T16:00:00-04:00 manage_1600 market_closed                                                                              {"holiday_name": "Good Friday", "reason": "nyse_holiday"}
+                    timestamp_et        slot   event_type                                                                                                                                 detail
+2026-04-06T10:35:05.885229-04:00 manage_1030 slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T10:30:05.886948-04:00 manage_1030 slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T10:25:05.896716-04:00 manage_1030 slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T10:20:05.891442-04:00 manage_1030         exit {"contract_symbol": "WDC260501C00295000", "pnl": 595.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 21.7, "ticker": "WDC"}
+2026-04-06T10:10:05.890008-04:00 manage_1000 slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T10:05:05.886743-04:00 manage_1000 slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T10:00:06.219713-04:00 manage_1000 slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T09:55:02.509102-04:00 manage_1000 slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T09:40:00.944679-04:00 manage_0930 slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T09:35:05.895013-04:00 manage_0930 slot_skipped                                                                                                        {"reason": "already_processed"}
 ```
 
 ## Equity Curves
