@@ -1149,9 +1149,14 @@ def render_dashboard(
 
     positions_view = positions_df.copy()
     if not positions_view.empty:
+        if "allocated_cash" in positions_view.columns:
+            positions_view["cash_spent"] = positions_view["allocated_cash"]
+        if "position_value" in positions_view.columns:
+            positions_view["current_position_value"] = positions_view["position_value"]
         numeric_cols = [
             "entry_spot", "current_spot", "entry_option_price", "current_option_price", "unrealized_pnl",
-            "unrealized_return_pct", "entry_iv_pct", "current_iv_pct", "success_rate", "current_drop_pct", "rolling_sigma_20d_pct"
+            "unrealized_return_pct", "entry_iv_pct", "current_iv_pct", "success_rate", "current_drop_pct",
+            "rolling_sigma_20d_pct", "cash_spent", "current_position_value"
         ]
         for col in numeric_cols:
             if col in positions_view.columns:
@@ -1198,7 +1203,8 @@ def render_dashboard(
             format_table(
                 positions_view,
                 columns=[
-                    "ticker", "contract_symbol", "entry_trade_date", "business_days_held",
+                    "ticker", "contract_symbol", "entry_trade_date", "business_days_held", "contracts",
+                    "cash_spent", "current_position_value",
                     "entry_option_price", "current_option_price", "entry_spot", "current_spot",
                     "unrealized_pnl", "unrealized_return_pct", "success_rate", "matched_signals",
                     "current_drop_pct", "entry_iv_pct", "current_iv_pct", "rolling_sigma_20d_pct"
@@ -1256,7 +1262,10 @@ def render_dashboard(
             "",
             format_table(
                 positions_view,
-                columns=["ticker", "contract_symbol", "current_option_price", "unrealized_pnl", "unrealized_return_pct", "business_days_held"],
+                columns=[
+                    "ticker", "contract_symbol", "contracts", "cash_spent", "current_position_value",
+                    "current_option_price", "unrealized_pnl", "unrealized_return_pct", "business_days_held"
+                ],
                 max_rows=8,
             ),
             "",

@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 15:00:05 EDT`
-Last processed slot: `entry_1500`
+Last updated (ET): `2026-04-06 15:05:51 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -28,8 +28,8 @@ Last processed slot: `entry_1500`
 ## Open Positions
 
 ```text
-ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260515C00230000       2026-04-06                   0                 7.4                   7.6      227.61         227.7           140.0                    2.7         100.0               20               0.8         28.89           29.46                  20.57
+ticker    contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
+   HON HON260515C00230000       2026-04-06                   0          7      5180.0                  5320.0                 7.4                   7.6      227.61        227.56           140.0                    2.7         100.0               20               0.8         28.89           29.69                  20.57
 ```
 
 ## Today's Closed Trades (2026-04-06)
@@ -41,21 +41,7 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               19            0.85              1.36        228.87                20.57            True
- CMCSA           93.33               15            0.66              0.13         27.87                25.15            True
-  FAST           90.91               33            0.68              0.22         46.21                21.85            True
-  ASML           86.67               30            1.25             11.48       1312.31                51.28            True
-  VRTX           85.37               41            0.61              1.88        437.91                40.20            True
-  DDOG           85.19               27            2.48              2.09        119.46                49.88            True
-  CTAS           85.19               27            0.98              1.19        173.83                28.60            True
-   LIN           85.00               20            0.77              2.73        501.43                19.40            True
-  TSLA           84.21               19            2.66              6.71        357.72                42.35            True
-   EXC           84.21               19            0.61              0.21         49.24                21.30            True
-  TTWO           81.82               33            1.36              1.90        199.06                26.67            True
-   AEP           93.94               33            0.16              0.15        132.62                17.01           False
-```
+_None_
 
 ## Recent Events
 
