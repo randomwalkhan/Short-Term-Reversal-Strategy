@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 12:15:05 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-06 12:20:05 EDT`
+Last processed slot: `manage_1230`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               22            0.70              1.12        228.97                20.57            True
-  NFLX           95.00               40            0.50              0.35         98.51                27.07            True
-  AVGO           90.00               40            0.53              1.17        314.05                41.04            True
-  FAST           89.29               28            0.91              0.29         46.17                21.85            True
-  CDNS           88.89               45            0.52              1.02        278.28                25.28            True
-  ASML           87.10               31            1.09             10.07       1312.92                51.28            True
-   LIN           85.71               14            0.98              3.45        501.12                19.40            True
-  TSLA           85.00               20            2.24              5.65        358.17                42.35            True
-  VRSK           83.72               43            0.54              0.70        184.78                33.36            True
-  TMUS           83.33               18            1.13              1.59        200.72                22.45            True
-  CTSH           82.35               34            0.72              0.31         62.41                26.11            True
-   PEP           80.00               20            0.57              0.63        156.74                18.34            True
+   HON          100.00               20            0.75              1.20        228.93                20.57            True
+  NFLX           95.00               40            0.51              0.35         98.51                27.07            True
+  FAST           90.91               33            0.68              0.22         46.21                21.85            True
+  AVGO           89.74               39            0.62              1.35        313.97                41.04            True
+  CDNS           88.89               45            0.52              1.01        278.29                25.28            True
+  ASML           87.10               31            1.17             10.80       1312.60                51.28            True
+   LIN           86.67               15            0.96              3.39        501.15                19.40            True
+  TSLA           85.00               20            2.43              6.14        357.96                42.35            True
+  TMUS           85.00               20            1.10              1.55        200.74                22.45            True
+  VRSK           82.93               41            0.55              0.72        184.77                33.36            True
+  CTSH           82.86               35            0.67              0.29         62.41                26.11            True
+   PEP           80.95               21            0.57              0.62        156.74                18.34            True
 ```
 
 ## Recent Events
