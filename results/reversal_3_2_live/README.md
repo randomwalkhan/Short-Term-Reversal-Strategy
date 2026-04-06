@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 10:35:05 EDT`
+Last updated (ET): `2026-04-06 10:40:05 EDT`
 Last processed slot: `manage_1030`
 
 ## Active Configuration
@@ -40,24 +40,25 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  AVGO           89.74               39            0.93              2.05        313.67                41.04            True
-  CDNS           88.89               45            0.56              1.10        278.25                25.28            True
-  ASML           84.00               25            1.53             14.09       1311.19                51.28            True
-  CRWD           81.40               43            0.76              2.12        398.21                42.36            True
-  MELI           80.95               42            0.68              8.19       1712.01                39.93            True
-  DDOG           80.00               20            3.37              2.84        119.14                49.88            True
-  FANG          100.00               29            0.26              0.35        193.73                28.70           False
-   HON          100.00               25            0.47              0.76        229.13                20.57           False
-  FTNT           93.88               49            0.13              0.08         82.50                30.26           False
-   XEL           93.75               32            0.02              0.01         80.74                19.13           False
-  FAST           93.02               43            0.33              0.11         46.25                21.85           False
-  NVDA           92.50               40            0.34              0.42        177.21                36.70           False
+   HON          100.00               20            0.75              1.21        228.93                20.57            True
+  FAST           91.18               34            0.64              0.21         46.21                21.85            True
+  CDNS           90.70               43            0.81              1.59        278.04                25.28            True
+  AVGO           88.89               36            0.98              2.16        313.62                41.04            True
+  TSLA           84.62               39            0.53              1.34        360.01                42.35            True
+  ASML           82.61               23            1.62             14.93       1310.83                51.28            True
+  CTSH           82.35               34            0.70              0.31         62.41                26.11            True
+  MELI           81.58               38            0.95             11.44       1710.62                39.93            True
+  CRWD           80.00               40            0.87              2.43        398.08                42.36            True
+  FANG          100.00               30            0.18              0.25        193.77                28.70           False
+  FTNT           93.48               46            0.31              0.18         82.45                30.26           False
+  NVDA           92.11               38            0.39              0.48        177.18                36.70           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                 detail
+2026-04-06T10:40:05.887120-04:00 manage_1030 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T10:35:05.885229-04:00 manage_1030 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T10:30:05.886948-04:00 manage_1030 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T10:25:05.896716-04:00 manage_1030 slot_skipped                                                                                                        {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-06T10:00:06.219713-04:00 manage_1000 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T09:55:02.509102-04:00 manage_1000 slot_skipped                                                                                                        {"reason": "already_processed"}
 2026-04-06T09:40:00.944679-04:00 manage_0930 slot_skipped                                                                                                        {"reason": "already_processed"}
-2026-04-06T09:35:05.895013-04:00 manage_0930 slot_skipped                                                                                                        {"reason": "already_processed"}
 ```
 
 ## Equity Curves
