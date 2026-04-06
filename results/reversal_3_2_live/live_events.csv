@@ -131,3 +131,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-02T15:55:05.893858-04:00,2026-04-02,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-02T16:00:05.925792-04:00,2026-04-02,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-03T16:00:00-04:00,2026-04-03,manage_1600,market_closed,"{""holiday_name"": ""Good Friday"", ""reason"": ""nyse_holiday""}"
+2026-04-06T09:35:05.895013-04:00,2026-04-06,manage_0930,slot_skipped,"{""reason"": ""already_processed""}"
