@@ -3,7 +3,7 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.2 Live Paper Test
 
-- Last updated (ET): `2026-04-06 09:35:05 EDT`
+- Last updated (ET): `2026-04-06 09:40:00 EDT`
 - Equity: `$10,907.50` | Realized: `$845.00` | Unrealized: `$62.50` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_0930`
