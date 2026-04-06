@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 15:15:05 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-06 15:20:05 EDT`
+Last processed slot: `manage_1530`
 
 ## Active Configuration
 
@@ -20,16 +20,16 @@ Last processed slot: `manual_refresh`
 ## Portfolio Snapshot
 
 - Cash: `$6,260.00`
-- Equity: `$11,580.00`
+- Equity: `$11,545.00`
 - Realized PnL: `$1,440.00`
-- Unrealized PnL: `$140.00`
+- Unrealized PnL: `$105.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260515C00230000       2026-04-06                   0          7      5180.0                  5320.0                 7.4                   7.6      227.61        227.29           140.0                    2.7         100.0               20               0.8         28.89           30.12                  20.57
+   HON HON260515C00230000       2026-04-06                   0          7      5180.0                  5285.0                 7.4                  7.55      227.61        227.49           105.0                   2.03         100.0               20               0.8         28.89           29.46                  20.57
 ```
 
 ## Today's Closed Trades (2026-04-06)
@@ -43,18 +43,18 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               17            0.97              1.56        228.78                20.57            True
-   XEL           95.45               22            0.53              0.30         80.61                19.13            True
- CMCSA           90.00               10            0.88              0.17         27.86                25.15            True
-  FAST           88.46               26            0.98              0.32         46.16                21.85            True
-   EXC           87.50               16            0.80              0.28         49.21                21.30            True
-  ASML           86.67               30            1.18             10.92       1312.55                51.28            True
-   LIN           85.71               14            0.97              3.41        501.14                19.40            True
-  TSLA           85.00               20            2.51              6.33        357.88                42.35            True
-  VRTX           84.62               39            0.72              2.22        437.76                40.20            True
-  DDOG           84.00               25            2.56              2.16        119.43                49.88            True
+   HON          100.00               19            0.83              1.34        228.88                20.57            True
+   XEL           95.24               21            0.55              0.31         80.61                19.13            True
+ CMCSA           90.00               10            0.91              0.18         27.85                25.15            True
+   EXC           88.24               17            0.73              0.25         49.22                21.30            True
+  ASML           87.10               31            1.14             10.53       1312.72                51.28            True
+  FAST           86.96               23            1.31              0.42         46.12                21.85            True
+   LIN           85.71               14            0.97              3.42        501.13                19.40            True
+  TSLA           85.00               20            2.47              6.24        357.91                42.35            True
+  VRTX           84.62               39            0.68              2.09        437.81                40.20            True
+  DDOG           84.00               25            2.54              2.14        119.44                49.88            True
   CTAS           83.33               24            1.12              1.37        173.75                28.60            True
-  PANW           80.95               42            0.57              0.65        162.93                41.77            True
+  TTWO           80.65               31            1.43              2.01        199.01                26.67            True
 ```
 
 ## Recent Events
