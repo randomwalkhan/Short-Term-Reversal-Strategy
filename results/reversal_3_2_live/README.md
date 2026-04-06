@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 13:20:05 EDT`
+Last updated (ET): `2026-04-06 13:25:05 EDT`
 Last processed slot: `manage_1330`
 
 ## Active Configuration
@@ -40,24 +40,25 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               12            1.28              2.06        228.57                20.57            True
- CMCSA           93.75               16            0.52              0.10         27.89                25.15            True
-  NVDA           91.67               36            0.53              0.66        177.11                36.70            True
-  FAST           90.00               30            0.86              0.28         46.18                21.85            True
-  AVGO           89.19               37            0.98              2.16        313.63                41.04            True
-  PLTR           87.18               39            0.96              1.00        148.03                50.29            True
-  ASML           86.67               30            1.23             11.35       1312.37                51.28            True
-  SHOP           86.36               44            0.62              0.51        118.03                46.39            True
-   LIN           85.71               14            0.97              3.43        501.13                19.40            True
-   PEP           84.21               19            0.68              0.75        156.69                18.34            True
-  CRWD           81.40               43            0.57              1.60        398.43                42.36            True
-  CTSH           81.25               32            0.83              0.36         62.38                26.11            True
+   HON          100.00               15            1.16              1.86        228.65                20.57            True
+  TSLA          100.00               13            3.48              8.77        356.83                42.35            True
+ CMCSA           93.75               16            0.55              0.11         27.88                25.15            True
+  FAST           90.32               31            0.79              0.26         46.19                21.85            True
+  AVGO           89.74               39            0.69              1.53        313.90                41.04            True
+  PLTR           87.80               41            0.56              0.58        148.21                50.29            True
+  ASML           87.10               31            1.01              9.30       1313.25                51.28            True
+   LIN           86.67               15            0.91              3.20        501.23                19.40            True
+  CTSH           83.78               37            0.61              0.27         62.43                26.11            True
+  VRSK           83.72               43            0.53              0.69        184.79                33.36            True
+  DDOG           82.61               23            2.80              2.36        119.35                49.88            True
+  TMUS           82.35               17            1.19              1.67        200.68                22.45            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-06T13:25:05.887688-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
 2026-04-06T13:10:05.894755-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 2026-04-06T13:05:05.883688-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 2026-04-06T13:00:05.887824-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-06T12:30:05.890457-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
 2026-04-06T12:25:05.881954-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
 2026-04-06T12:10:05.895326-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
-2026-04-06T12:05:05.877929-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
