@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 10:15:05 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-06 10:20:05 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -19,55 +19,55 @@ Last processed slot: `manual_refresh`
 
 ## Portfolio Snapshot
 
-- Cash: `$8,102.50`
+- Cash: `$11,440.00`
 - Equity: `$11,440.00`
-- Realized PnL: `$845.00`
-- Unrealized PnL: `$595.00`
-- Open positions: `1`
+- Realized PnL: `$1,440.00`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   1               27.42                 33.38      294.77         311.5           595.0                   21.7         97.22               36              0.99         81.84            75.6                  91.06
-```
+_None_
 
 ## Today's Closed Trades (2026-04-06)
 
-_None_
+```text
+ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price   pnl  return_pct                  exit_reason
+   WDC WDC260501C00295000          2026-04-02         2026-04-06              27.425             33.375 595.0   21.695533 take_profit_day1_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CDNS           90.91               44            0.64              1.24        278.19                25.28            True
-  AVGO           89.74               39            0.79              1.73        313.81                41.04            True
-  TSLA           84.62               39            0.52              1.30        360.03                42.35            True
-  CTSH           83.78               37            0.61              0.27         62.43                26.11            True
-  DDOG           82.61               23            2.80              2.36        119.35                49.88            True
-  ASML           81.82               22            1.71             15.74       1310.49                51.28            True
-  CRWD           81.40               43            0.56              1.57        398.45                42.36            True
-   PEP           80.95               21            0.56              0.62        156.74                18.34            True
-  PANW           80.49               41            0.81              0.92        162.81                41.77            True
-  TTWO           80.00               30            1.51              2.11        198.96                26.67            True
-  FANG          100.00               32            0.02              0.03        193.87                28.70           False
-   HON          100.00               25            0.48              0.78        229.12                20.57           False
+   HON          100.00               24            0.51              0.82        229.10                20.57            True
+  AVGO           89.74               39            0.83              1.83        313.77                41.04            True
+  ASML           84.00               25            1.51             13.96       1311.25                51.28            True
+  CTSH           83.78               37            0.59              0.26         62.43                26.11            True
+  CRWD           81.40               43            0.56              1.55        398.45                42.36            True
+  DDOG           80.95               21            3.03              2.55        119.27                49.88            True
+  TTWO           80.77               26            1.69              2.37        198.85                26.67            True
+  PANW           80.00               40            0.88              1.01        162.78                41.77            True
+  FANG          100.00               32            0.03              0.03        193.87                28.70           False
+  FTNT           94.23               52            0.02              0.01         82.52                30.26           False
+  FAST           93.02               43            0.26              0.08         46.26                21.85           False
+  NVDA           92.50               40            0.24              0.29        177.26                36.70           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot    event_type                                                    detail
-2026-04-06T10:10:05.890008-04:00 manage_1000  slot_skipped                           {"reason": "already_processed"}
-2026-04-06T10:05:05.886743-04:00 manage_1000  slot_skipped                           {"reason": "already_processed"}
-2026-04-06T10:00:06.219713-04:00 manage_1000  slot_skipped                           {"reason": "already_processed"}
-2026-04-06T09:55:02.509102-04:00 manage_1000  slot_skipped                           {"reason": "already_processed"}
-2026-04-06T09:40:00.944679-04:00 manage_0930  slot_skipped                           {"reason": "already_processed"}
-2026-04-06T09:35:05.895013-04:00 manage_0930  slot_skipped                           {"reason": "already_processed"}
-       2026-04-03T16:00:00-04:00 manage_1600 market_closed {"holiday_name": "Good Friday", "reason": "nyse_holiday"}
-2026-04-02T16:00:05.925792-04:00 manage_1600  slot_skipped                           {"reason": "already_processed"}
-2026-04-02T15:55:05.893858-04:00 manage_1600  slot_skipped                           {"reason": "already_processed"}
-2026-04-02T15:40:05.898407-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
+                    timestamp_et        slot    event_type                                                                                                                                 detail
+2026-04-06T10:20:05.891442-04:00 manage_1030          exit {"contract_symbol": "WDC260501C00295000", "pnl": 595.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 21.7, "ticker": "WDC"}
+2026-04-06T10:10:05.890008-04:00 manage_1000  slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T10:05:05.886743-04:00 manage_1000  slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T10:00:06.219713-04:00 manage_1000  slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T09:55:02.509102-04:00 manage_1000  slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T09:40:00.944679-04:00 manage_0930  slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-06T09:35:05.895013-04:00 manage_0930  slot_skipped                                                                                                        {"reason": "already_processed"}
+       2026-04-03T16:00:00-04:00 manage_1600 market_closed                                                                              {"holiday_name": "Good Friday", "reason": "nyse_holiday"}
+2026-04-02T16:00:05.925792-04:00 manage_1600  slot_skipped                                                                                                        {"reason": "already_processed"}
+2026-04-02T15:55:05.893858-04:00 manage_1600  slot_skipped                                                                                                        {"reason": "already_processed"}
 ```
 
 ## Equity Curves
