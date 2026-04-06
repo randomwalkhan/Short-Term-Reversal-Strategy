@@ -1102,26 +1102,27 @@ def plot_live_equity(equity_df: pd.DataFrame) -> None:
     plot_live_equity_window(equity_df, "1M", 30, PLOT_1M_PATH)
 
 
-def build_chart_sections(image_prefix: str) -> list[str]:
+def build_chart_sections(image_prefix: str, cache_bust: str | None = None) -> list[str]:
+    suffix = f"?v={cache_bust}" if cache_bust else ""
     return [
         "<details>",
         "<summary><strong>1D</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity 1D]({image_prefix}assets/reversal_3_2_live_equity_1d.png)",
+        f"![Reversal 3.2 Live Equity 1D]({image_prefix}assets/reversal_3_2_live_equity_1d.png{suffix})",
         "",
         "</details>",
         "",
         "<details open>",
         "<summary><strong>1W</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity 1W]({image_prefix}assets/reversal_3_2_live_equity.png)",
+        f"![Reversal 3.2 Live Equity 1W]({image_prefix}assets/reversal_3_2_live_equity.png{suffix})",
         "",
         "</details>",
         "",
         "<details>",
         "<summary><strong>1M</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity 1M]({image_prefix}assets/reversal_3_2_live_equity_1m.png)",
+        f"![Reversal 3.2 Live Equity 1M]({image_prefix}assets/reversal_3_2_live_equity_1m.png{suffix})",
         "",
         "</details>",
         "",
@@ -1138,6 +1139,7 @@ def render_dashboard(
     now_et: pd.Timestamp,
     slot_key: str | None,
 ) -> tuple[str, str]:
+    cache_bust = now_et.strftime("%Y%m%d%H%M%S")
     last_equity = float(equity_df["equity"].iloc[-1]) if not equity_df.empty else float(state["cash"])
     realized_pnl = float(trades_df["pnl"].sum()) if not trades_df.empty else 0.0
     unrealized_pnl = float(positions_df["unrealized_pnl"].sum()) if not positions_df.empty else 0.0
@@ -1242,7 +1244,7 @@ def render_dashboard(
             "",
             "Each chart is generated from the same live equity series with no-lookahead marks. The latest point is annotated with its exact ET checkpoint time and return %.",
             "",
-            *build_chart_sections("../../"),
+            *build_chart_sections("../../", cache_bust=cache_bust),
         ]
     )
 
@@ -1269,7 +1271,7 @@ def render_dashboard(
                 max_rows=8,
             ),
             "",
-            *build_chart_sections(""),
+            *build_chart_sections("", cache_bust=cache_bust),
             "- [Full live dashboard](results/reversal_3_2_live/README.md)",
             "- [Live trades csv](results/reversal_3_2_live/live_trades.csv)",
             "- [Live equity csv](results/reversal_3_2_live/live_equity.csv)",
