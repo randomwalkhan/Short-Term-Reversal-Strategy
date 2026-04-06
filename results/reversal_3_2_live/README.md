@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 15:25:05 EDT`
+Last updated (ET): `2026-04-06 15:30:05 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -29,7 +29,7 @@ Last processed slot: `manage_1530`
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260515C00230000       2026-04-06                   0          7      5180.0                  5285.0                 7.4                  7.55      227.61         227.5           105.0                   2.03         100.0               20               0.8         28.89           29.45                  20.57
+   HON HON260515C00230000       2026-04-06                   0          7      5180.0                  5285.0                 7.4                  7.55      227.61        227.65           105.0                   2.03         100.0               20               0.8         28.89           29.22                  20.57
 ```
 
 ## Today's Closed Trades (2026-04-06)
@@ -43,24 +43,25 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               19            0.85              1.36        228.86                20.57            True
-   XEL           95.24               21            0.57              0.32         80.60                19.13            True
-  FAST           88.00               25            1.09              0.35         46.15                21.85            True
-   EXC           87.50               16            0.79              0.27         49.21                21.30            True
-  ASML           87.10               31            1.13             10.46       1312.75                51.28            True
-   LIN           86.67               15            0.91              3.20        501.23                19.40            True
-  TSLA           85.00               20            2.48              6.26        357.91                42.35            True
-  VRTX           84.85               33            1.00              3.07        437.39                40.20            True
-  DDOG           84.00               25            2.56              2.16        119.44                49.88            True
-  PANW           80.49               41            0.77              0.87        162.84                41.77            True
-  TTWO           80.00               30            1.51              2.11        198.97                26.67            True
-  CTAS           80.00               20            1.26              1.53        173.68                28.60            True
+   HON          100.00               20            0.78              1.25        228.91                20.57            True
+ CMCSA           90.00               10            0.88              0.17         27.86                25.15            True
+  FAST           88.00               25            1.10              0.36         46.15                21.85            True
+   LIN           87.50               16            0.84              2.97        501.33                19.40            True
+  ASML           87.10               31            1.07              9.86       1313.01                51.28            True
+  TSLA           84.21               19            2.60              6.56        357.78                42.35            True
+  VRTX           83.33               36            0.98              3.00        437.42                40.20            True
+  DDOG           83.33               24            2.73              2.30        119.38                49.88            True
+   EXC           83.33               18            0.70              0.24         49.23                21.30            True
+  CTAS           82.61               23            1.14              1.39        173.74                28.60            True
+  TTWO           80.65               31            1.40              1.96        199.03                26.67            True
+  PANW           80.49               41            0.81              0.93        162.81                41.77            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                        detail
+2026-04-06T15:30:05.882298-04:00 manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 2026-04-06T15:25:05.886761-04:00 manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 2026-04-06T15:10:05.888760-04:00  entry_1500 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 2026-04-06T15:00:05.880499-04:00  entry_1500 slot_skipped                                                                                                                                               {"reason": "already_processed"}
@@ -70,7 +71,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-06T14:35:05.889475-04:00 manage_1430 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 2026-04-06T14:30:05.890964-04:00 manage_1430 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 2026-04-06T14:25:05.885384-04:00 manage_1430 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-06T14:10:05.888996-04:00 manage_1400 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -80,20 +80,20 @@ Each chart is generated from the same live equity series with no-lookahead marks
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260406153005)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260406153005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260406153005)
 
 </details>
