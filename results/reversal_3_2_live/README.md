@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 09:40:00 EDT`
-Last processed slot: `manage_0930`
+Last updated (ET): `2026-04-06 09:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -29,7 +29,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   1               27.42                 28.05      294.77        300.88            62.5                   2.28         97.22               36              0.99         81.84             0.0                  91.06
+   WDC WDC260501C00295000       2026-04-02                   1               27.42                 28.05      294.77        306.67            62.5                   2.28         97.22               36              0.99         81.84             0.0                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-06)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               22            0.64              1.03        229.01                20.57            True
-  COST           92.86               28            0.75              5.31       1012.68                14.21            True
-  CDNS           90.70               43            0.68              1.33        278.15                25.28            True
-  AVGO           90.62               32            1.29              2.84        313.34                41.04            True
-  CTAS           87.88               33            0.54              0.65        174.06                28.60            True
-  SNPS           87.80               41            0.88              2.44        394.90                35.67            True
-  ORLY           86.67               30            0.86              0.55         91.18                22.90            True
-   KDP           85.71               14            1.09              0.19         25.23                19.41            True
-   LIN           85.19               27            0.53              1.86        501.80                19.40            True
-  CTSH           83.33               30            1.04              0.46         62.34                26.11            True
-  ASML           82.35               17            2.61             24.07       1306.91                51.28            True
-  TTWO           80.95               42            0.90              1.25        199.33                26.67            True
+   HON          100.00               18            0.96              1.54        228.79                20.57            True
+  COST           96.30               27            0.79              5.59       1012.56                14.21            True
+  FAST           90.32               31            0.78              0.25         46.19                21.85            True
+  AVGO           89.74               39            0.65              1.44        313.93                41.04            True
+   CSX           88.00               25            0.61              0.17         41.15                27.22            True
+  SNPS           87.80               41            0.79              2.18        395.02                35.67            True
+  CTAS           87.50               32            0.57              0.70        174.04                28.60            True
+  ASML           87.10               31            0.95              8.74       1313.48                51.28            True
+  ORLY           87.10               31            0.83              0.53         91.19                22.90            True
+   LIN           85.00               20            0.75              2.64        501.47                19.40            True
+  CTSH           83.87               31            0.96              0.42         62.36                26.11            True
+   PEP           81.25               16            0.86              0.94        156.61                18.34            True
 ```
 
 ## Recent Events
