@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 12:45:05 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-06 12:50:05 EDT`
+Last processed slot: `manage_1300`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               21            0.72              1.16        228.95                20.57            True
-  FAST           91.43               35            0.62              0.20         46.21                21.85            True
-  AVGO           89.74               39            0.68              1.50        313.91                41.04            True
-  ASML           87.10               31            1.10             10.13       1312.89                51.28            True
-   EXC           85.71               21            0.53              0.18         49.25                21.30            True
-   LIN           85.71               14            0.98              3.45        501.12                19.40            True
-  TSLA           85.00               20            2.55              6.43        357.83                42.35            True
-  VRSK           82.93               41            0.59              0.76        184.75                33.36            True
-  TMUS           81.25               16            1.27              1.79        200.63                22.45            True
-  TTWO           80.65               31            1.46              2.04        199.00                26.67            True
-  DDOG           80.00               20            3.16              2.66        119.22                49.88            True
-   PEP           80.00               20            0.61              0.67        156.72                18.34            True
+   HON          100.00               20            0.74              1.20        228.94                20.57            True
+  INTC           94.59               37            0.56              0.20         50.30                73.98            True
+  FAST           91.18               34            0.64              0.21         46.21                21.85            True
+  AVGO           89.74               39            0.60              1.33        313.98                41.04            True
+  ASML           87.10               31            1.08             10.00       1312.95                51.28            True
+   LIN           86.67               15            0.91              3.20        501.23                19.40            True
+  TSLA           84.21               19            2.62              6.60        357.76                42.35            True
+  CTSH           83.78               37            0.58              0.25         62.43                26.11            True
+   PEP           81.82               22            0.50              0.55        156.77                18.34            True
+  TMUS           81.25               16            1.27              1.80        200.63                22.45            True
+  TTWO           80.65               31            1.41              1.98        199.02                26.67            True
+  DDOG           80.00               20            3.23              2.72        119.19                49.88            True
 ```
 
 ## Recent Events
