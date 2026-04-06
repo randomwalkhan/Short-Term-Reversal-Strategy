@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 14:40:05 EDT`
-Last processed slot: `manage_1430`
+Last updated (ET): `2026-04-06 14:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               19            0.84              1.34        228.87                20.57            True
-   XEL           95.24               21            0.57              0.32         80.60                19.13            True
-  FAST           88.46               26            1.05              0.34         46.15                21.85            True
-  ASML           87.10               31            1.07              9.88       1313.00                51.28            True
-   LIN           86.67               15            0.96              3.38        501.15                19.40            True
-  VRTX           85.37               41            0.54              1.67        437.99                40.20            True
-  CTAS           85.19               27            0.96              1.18        173.84                28.60            True
-   EXC           84.21               19            0.61              0.21         49.24                21.30            True
-  DDOG           84.00               25            2.63              2.22        119.41                49.88            True
-  TSLA           83.33               18            2.90              7.31        357.46                42.35            True
-  TMUS           83.33               12            1.57              2.22        200.45                22.45            True
-  PANW           80.95               42            0.56              0.64        162.94                41.77            True
+   HON          100.00               19            0.85              1.36        228.87                20.57            True
+   XEL           95.24               21            0.55              0.31         80.61                19.13            True
+ CMCSA           90.00               10            0.88              0.17         27.86                25.15            True
+  FAST           88.46               26            1.00              0.33         46.16                21.85            True
+  ASML           87.10               31            1.09             10.09       1312.90                51.28            True
+   LIN           85.71               14            1.00              3.51        501.09                19.40            True
+  VRTX           85.37               41            0.59              1.81        437.93                40.20            True
+  DDOG           85.19               27            2.50              2.11        119.46                49.88            True
+  CTAS           85.19               27            0.89              1.09        173.87                28.60            True
+  TSLA           84.21               19            2.58              6.52        357.80                42.35            True
+   EXC           84.21               19            0.64              0.22         49.24                21.30            True
+  TMUS           83.33               12            1.62              2.29        200.42                22.45            True
 ```
 
 ## Recent Events
