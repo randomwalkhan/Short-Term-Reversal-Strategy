@@ -61,11 +61,11 @@ This repository studies a short-term reversal call-buying setup built around lar
 
 ## Current Version | 当前官方版本
 
-Update note: Reversal 3.2 keeps the Reversal 3.1 research setup unchanged, but hardens the live paper runner with NYSE holiday awareness. The Good Friday `2026-04-03` phantom entry was removed from the paper ledger, and holiday sessions now publish a `market_closed` event instead of opening new trades.
+Update note: Reversal 3.2 keeps the Reversal 3.1 research setup unchanged, but hardens the live paper runner with NYSE holiday awareness. The Good Friday `2026-04-03` phantom entry was removed from the paper ledger, holiday sessions now publish a `market_closed` event instead of opening new trades, and the live `Open Positions` table now shows `cash_spent` plus `current_position_value`.
 
 Display update: GitHub feature charts stay on the shared dark Apple-style plotting theme, and the repo-facing version label is now aligned to Reversal 3.2.
 
-更新说明：Reversal 3.2 保留 Reversal 3.1 的研究与交易口径不变，但补上了 NYSE 节假日识别。`2026-04-03` Good Friday 的那笔误开 paper trade 已从账本移除，之后遇到节假日将记录 `market_closed`，不会再新开仓。
+更新说明：Reversal 3.2 保留 Reversal 3.1 的研究与交易口径不变，但补上了 NYSE 节假日识别。`2026-04-03` Good Friday 的那笔误开 paper trade 已从账本移除，之后遇到节假日将记录 `market_closed`，不会再新开仓；同时 live 的 `Open Positions` 表现在也会显示 `cash_spent` 和 `current_position_value`。
 
 展示更新：GitHub 上的主要曲线图继续沿用统一的深色 Apple Stocks 风格配色，对外版本标签现已统一为 Reversal 3.2。
 
@@ -222,7 +222,7 @@ The project keeps its optimization trail explicit rather than hiding earlier ver
 - `2.4`: promote the `60d` observation window
 - `2.5`: promote `minimum current drop > 0.5%`
 - `3.1`: keep the `2.5` execution logic and upgrade the official universe to `qqq_plus_leverage_etfs`
-- `3.2`: keep the `3.1` research configuration unchanged and add NYSE holiday protection to the live paper runner
+- `3.2`: keep the `3.1` research configuration unchanged, add NYSE holiday protection to the live paper runner, and expose `cash_spent` / `current_position_value` in the live position table
 
 Earlier notebook snapshots such as `Reversal2.5.3.ipynb`, `Reversal2.5.ipynb`, `Reversal2.4.ipynb`, `Reversal2.3.3.ipynb`, `Reversal2.3.2.ipynb`, and `Reversal2.3.1.ipynb` are retained for version-by-version review.
 
