@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 10:00:06 EDT`
+Last updated (ET): `2026-04-06 10:05:05 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -20,16 +20,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$8,102.50`
-- Equity: `$10,907.50`
+- Equity: `$11,445.00`
 - Realized PnL: `$845.00`
-- Unrealized PnL: `$62.50`
+- Unrealized PnL: `$600.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   1               27.42                 28.05      294.77        309.18            62.5                   2.28         97.22               36              0.99         81.84             0.0                  91.06
+   WDC WDC260501C00295000       2026-04-02                   1               27.42                 33.42      294.77         306.0           600.0                  21.88         97.22               36              0.99         81.84           86.19                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-06)
@@ -40,24 +40,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               22            0.61              0.97        229.03                20.57            True
-  ASML           88.24               34            0.75              6.92       1314.27                51.28            True
-  DDOG           85.19               27            2.38              2.00        119.50                49.88            True
-  CTSH           84.21               38            0.53              0.23         62.44                26.11            True
+   HON          100.00               19            0.94              1.50        228.81                20.57            True
+  NVDA           91.67               36            0.73              0.90        177.00                36.70            True
+  PCAR           89.47               38            0.65              0.54        118.09                23.40            True
+  AVGO           89.19               37            0.96              2.12        313.64                41.04            True
+  SNPS           89.13               46            0.64              1.76        395.20                35.67            True
+  CDNS           88.89               45            0.51              1.00        278.29                25.28            True
+  FAST           88.89               27            0.95              0.31         46.17                21.85            True
+   CSX           88.00               25            0.59              0.17         41.15                27.22            True
+   LIN           85.71               21            0.70              2.45        501.55                19.40            True
+  CTSH           83.87               31            1.02              0.45         62.35                26.11            True
    PEP           82.35               17            0.81              0.89        156.63                18.34            True
-  TTWO           81.08               37            1.21              1.69        199.15                26.67            True
-  PANW           80.95               42            0.62              0.71        162.91                41.77            True
-   AEP           94.59               37            0.02              0.02        132.67                17.01           False
-  FAST           92.86               42            0.35              0.11         46.25                21.85           False
-  NVDA           92.50               40            0.26              0.32        177.25                36.70           False
-  PCAR           91.49               47            0.04              0.04        118.30                23.40           False
-  COST           90.70               43            0.31              2.18       1014.03                14.21           False
+  MELI           80.95               42            0.74              8.87       1711.72                39.93            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot    event_type                                                    detail
+2026-04-06T10:05:05.886743-04:00 manage_1000  slot_skipped                           {"reason": "already_processed"}
 2026-04-06T10:00:06.219713-04:00 manage_1000  slot_skipped                           {"reason": "already_processed"}
 2026-04-06T09:55:02.509102-04:00 manage_1000  slot_skipped                           {"reason": "already_processed"}
 2026-04-06T09:40:00.944679-04:00 manage_0930  slot_skipped                           {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T15:55:05.893858-04:00 manage_1600  slot_skipped                           {"reason": "already_processed"}
 2026-04-02T15:40:05.898407-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
 2026-04-02T15:35:05.886679-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
-2026-04-02T15:30:05.889337-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
 ```
 
 ## Equity Curves
