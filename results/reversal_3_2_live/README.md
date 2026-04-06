@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 13:10:05 EDT`
-Last processed slot: `manage_1300`
+Last updated (ET): `2026-04-06 13:15:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               19            0.95              1.53        228.79                20.57            True
-  TSLA          100.00               11            3.60              9.08        356.70                42.35            True
-  INTC           94.44               36            0.60              0.21         50.29                73.98            True
-  FAST           90.00               30            0.86              0.28         46.18                21.85            True
-  AVGO           89.74               39            0.87              1.93        313.72                41.04            True
-  PLTR           87.50               40            0.78              0.81        148.11                50.29            True
-  ASML           87.10               31            1.17             10.82       1312.59                51.28            True
-   LIN           86.67               15            0.95              3.35        501.16                19.40            True
-  TMUS           83.33               18            1.13              1.60        200.72                22.45            True
-  CTSH           81.82               33            0.74              0.32         62.40                26.11            True
-   PEP           80.95               21            0.57              0.62        156.74                18.34            True
-  TTWO           80.77               26            1.74              2.44        198.83                26.67            True
+   HON          100.00               15            1.16              1.86        228.65                20.57            True
+  TSLA          100.00               10            3.68              9.28        356.61                42.35            True
+  INTC           94.44               36            0.73              0.26         50.27                73.98            True
+ CMCSA           93.33               15            0.66              0.13         27.87                25.15            True
+  NVDA           91.67               36            0.61              0.76        177.06                36.70            True
+  FAST           89.29               28            0.94              0.30         46.17                21.85            True
+  CDNS           88.89               45            0.50              0.98        278.30                25.28            True
+  AVGO           88.57               35            1.04              2.29        313.57                41.04            True
+  PLTR           86.84               38            1.09              1.13        147.97                50.29            True
+  SHOP           86.05               43            0.87              0.72        117.94                46.39            True
+  TMUS           85.71               21            1.04              1.46        200.77                22.45            True
+   EXC           85.71               21            0.51              0.17         49.26                21.30            True
 ```
 
 ## Recent Events
