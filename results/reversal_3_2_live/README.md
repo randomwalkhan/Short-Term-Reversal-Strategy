@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 10:45:05 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-06 10:50:05 EDT`
+Last processed slot: `manage_1100`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               22            0.67              1.08        228.99                20.57            True
-  FAST           91.89               37            0.56              0.18         46.22                21.85            True
-  NVDA           91.67               36            0.57              0.71        177.09                36.70            True
-  AVGO           90.62               32            1.23              2.71        313.39                41.04            True
-  CDNS           90.48               42            0.92              1.80        277.95                25.28            True
-  TSLA           83.78               37            0.70              1.77        359.83                42.35            True
-  CTSH           83.33               36            0.64              0.28         62.42                26.11            True
-  MELI           81.08               37            1.11             13.38       1709.79                39.93            True
-  ASML           80.95               21            2.01             18.54       1309.29                51.28            True
-  FTNT           93.48               46            0.46              0.27         82.42                30.26           False
-  COST           91.11               45            0.26              1.87       1014.16                14.21           False
-  ORLY           89.58               48            0.02              0.01         91.42                22.90           False
+   HON          100.00               21            0.71              1.14        228.96                20.57            True
+  FTNT           93.02               43            0.65              0.38         82.37                30.26            True
+  NVDA           91.67               36            0.63              0.78        177.06                36.70            True
+  AVGO           91.18               34            1.08              2.38        313.53                41.04            True
+  FAST           91.18               34            0.65              0.21         46.21                21.85            True
+  CDNS           90.24               41            1.01              1.97        277.88                25.28            True
+  CTSH           83.87               31            0.91              0.40         62.37                26.11            True
+  TSLA           82.86               35            1.03              2.60        359.47                42.35            True
+  ASML           80.95               21            1.83             16.91       1309.98                51.28            True
+  MELI           80.00               35            1.18             14.14       1709.46                39.93            True
+  NFLX           95.83               48            0.02              0.01         98.65                27.07           False
+  COST           91.11               45            0.27              1.92       1014.14                14.21           False
 ```
 
 ## Recent Events
