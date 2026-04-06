@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-06 09:50:05 EDT`
+Last updated (ET): `2026-04-06 09:55:02 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -29,7 +29,7 @@ Last processed slot: `manage_1000`
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   WDC WDC260501C00295000       2026-04-02                   1               27.42                 28.05      294.77        309.39            62.5                   2.28         97.22               36              0.99         81.84             0.0                  91.06
+   WDC WDC260501C00295000       2026-04-02                   1               27.42                 28.05      294.77        310.44            62.5                   2.28         97.22               36              0.99         81.84             0.0                  91.06
 ```
 
 ## Today's Closed Trades (2026-04-06)
@@ -40,24 +40,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               19            0.87              1.40        228.85                20.57            True
-  FAST           90.32               31            0.80              0.26         46.19                21.85            True
-  PCAR           90.24               41            0.54              0.45        118.13                23.40            True
-  SNPS           89.13               46            0.62              1.71        395.21                35.67            True
-  COST           88.57               35            0.56              3.96       1013.26                14.21            True
-  ASML           88.24               34            0.75              6.94       1314.25                51.28            True
-  ORLY           87.50               32            0.80              0.51         91.20                22.90            True
-   CSX           85.71               21            0.73              0.21         41.13                27.22            True
-   LIN           85.71               21            0.69              2.42        501.56                19.40            True
-  ODFL           85.00               40            0.56              0.77        197.67                46.64            True
-   PEP           84.62               13            0.93              1.02        156.57                18.34            True
-   KDP           84.21               19            0.51              0.09         25.27                19.41            True
+   HON          100.00               19            0.88              1.41        228.85                20.57            True
+  FAST           90.91               33            0.69              0.22         46.20                21.85            True
+  ASML           88.24               34            0.78              7.16       1314.16                51.28            True
+   CSX           88.00               25            0.61              0.17         41.15                27.22            True
+   LIN           85.71               21            0.68              2.38        501.58                19.40            True
+  CTSH           83.33               30            1.10              0.48         62.33                26.11            True
+   PEP           81.25               16            0.84              0.92        156.61                18.34            True
+  PANW           80.95               42            0.54              0.62        162.95                41.77            True
+  TTWO           80.00               40            1.04              1.45        199.25                26.67            True
+  DDOG           80.00               20            3.39              2.86        119.14                49.88            True
+  FANG          100.00               31            0.12              0.16        193.81                28.70           False
+   AEP           94.59               37            0.01              0.01        132.68                17.01           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot    event_type                                                    detail
+2026-04-06T09:55:02.509102-04:00 manage_1000  slot_skipped                           {"reason": "already_processed"}
 2026-04-06T09:40:00.944679-04:00 manage_0930  slot_skipped                           {"reason": "already_processed"}
 2026-04-06T09:35:05.895013-04:00 manage_0930  slot_skipped                           {"reason": "already_processed"}
        2026-04-03T16:00:00-04:00 manage_1600 market_closed {"holiday_name": "Good Friday", "reason": "nyse_holiday"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-02T15:35:05.886679-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
 2026-04-02T15:30:05.889337-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
 2026-04-02T15:25:05.929228-04:00 manage_1530  slot_skipped                           {"reason": "already_processed"}
-2026-04-02T15:10:05.887758-04:00  entry_1500  slot_skipped                           {"reason": "already_processed"}
 ```
 
 ## Equity Curves
