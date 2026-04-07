@@ -66,6 +66,10 @@ DASHBOARD_PATH = LIVE_DIR / "README.md"
 PLOT_1D_PATH = ASSETS_DIR / "reversal_3_2_live_equity_1d.png"
 PLOT_1W_PATH = ASSETS_DIR / "reversal_3_2_live_equity.png"
 PLOT_1M_PATH = ASSETS_DIR / "reversal_3_2_live_equity_1m.png"
+BENCHMARK_COLORS = {
+    "QQQ": "#f59e0b",
+    "SPY": "#93c5fd",
+}
 
 SLOT_TO_ET = {
     "manage_0930": (9, 30),
@@ -1014,7 +1018,72 @@ def humanize_exit_reason(reason: str) -> str:
     return mapping.get(reason, reason)
 
 
-def plot_live_equity_window(equity_df: pd.DataFrame, window_label: str, window_days: int, output_path: Path) -> None:
+def build_live_benchmark_frame(equity_df: pd.DataFrame) -> pd.DataFrame:
+    if equity_df.empty:
+        return pd.DataFrame(columns=["timestamp_plot", *BENCHMARK_COLORS.keys()])
+
+    base_df = equity_df.copy()
+    base_df["timestamp_et"] = pd.to_datetime(base_df["timestamp_et"], errors="coerce", utc=True)
+    base_df = base_df[base_df["timestamp_et"].notna()].copy()
+    if base_df.empty:
+        return pd.DataFrame(columns=["timestamp_plot", *BENCHMARK_COLORS.keys()])
+
+    base_df["timestamp_plot"] = base_df["timestamp_et"].dt.tz_convert(ET).dt.tz_localize(None)
+    base_df = base_df.sort_values("timestamp_plot").drop_duplicates(subset=["timestamp_plot"], keep="last")
+    benchmark_df = base_df[["timestamp_plot"]].copy()
+
+    anchor_ts = pd.Timestamp(base_df["timestamp_plot"].min()).tz_localize(ET)
+    end_ts = pd.Timestamp(base_df["timestamp_plot"].max()).tz_localize(ET) + pd.Timedelta(days=1)
+
+    for symbol in BENCHMARK_COLORS:
+        history = yf.Ticker(symbol).history(
+            start=anchor_ts.date().isoformat(),
+            end=end_ts.date().isoformat(),
+            interval="5m",
+            auto_adjust=False,
+            prepost=False,
+        )
+        if history.empty:
+            benchmark_df[symbol] = np.nan
+            continue
+
+        history = history.reset_index()[["Datetime", "Close"]].rename(columns={"Datetime": "timestamp_et", "Close": symbol})
+        history["timestamp_et"] = pd.to_datetime(history["timestamp_et"], errors="coerce")
+        history = history[history["timestamp_et"].notna()].copy()
+        if history.empty:
+            benchmark_df[symbol] = np.nan
+            continue
+
+        if history["timestamp_et"].dt.tz is None:
+            history["timestamp_et"] = history["timestamp_et"].dt.tz_localize(ET)
+        else:
+            history["timestamp_et"] = history["timestamp_et"].dt.tz_convert(ET)
+
+        history["timestamp_plot"] = history["timestamp_et"].dt.tz_localize(None)
+        history = history.sort_values("timestamp_plot")[["timestamp_plot", symbol]]
+        aligned = pd.merge_asof(
+            benchmark_df[["timestamp_plot"]].sort_values("timestamp_plot"),
+            history,
+            on="timestamp_plot",
+            direction="backward",
+        )
+        first_valid = aligned[symbol].dropna()
+        if first_valid.empty:
+            benchmark_df[symbol] = np.nan
+            continue
+        first_price = float(first_valid.iloc[0])
+        benchmark_df[symbol] = INITIAL_CAPITAL * aligned[symbol] / first_price
+
+    return benchmark_df
+
+
+def plot_live_equity_window(
+    equity_df: pd.DataFrame,
+    benchmark_df: pd.DataFrame,
+    window_label: str,
+    window_days: int,
+    output_path: Path,
+) -> None:
     if equity_df.empty:
         return
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1030,6 +1099,9 @@ def plot_live_equity_window(equity_df: pd.DataFrame, window_label: str, window_d
     plot_df = plot_df[plot_df["timestamp_plot"] >= window_start].copy()
     if plot_df.empty:
         return
+    benchmark_window = benchmark_df.copy()
+    if not benchmark_window.empty:
+        benchmark_window = benchmark_window[benchmark_window["timestamp_plot"] >= window_start].copy()
     period_start_equity = float(plot_df["equity"].iloc[0])
     period_end_equity = float(plot_df["equity"].iloc[-1])
     if period_start_equity <= 0:
@@ -1038,15 +1110,36 @@ def plot_live_equity_window(equity_df: pd.DataFrame, window_label: str, window_d
         period_return_pct = (period_end_equity / period_start_equity - 1.0) * 100
     line_color = GREEN_LINE if period_end_equity >= period_start_equity else RED_LINE
     y_band = INITIAL_CAPITAL * 0.10
-    data_min = float(plot_df["equity"].min())
-    data_max = float(plot_df["equity"].max())
+    benchmark_values: list[float] = []
+    if not benchmark_window.empty:
+        for symbol in BENCHMARK_COLORS:
+            if symbol in benchmark_window.columns:
+                benchmark_values.extend(pd.to_numeric(benchmark_window[symbol], errors="coerce").dropna().tolist())
+    data_min = float(min([plot_df["equity"].min(), *benchmark_values])) if benchmark_values else float(plot_df["equity"].min())
+    data_max = float(max([plot_df["equity"].max(), *benchmark_values])) if benchmark_values else float(plot_df["equity"].max())
     lower_bound = min(INITIAL_CAPITAL - y_band, data_min - INITIAL_CAPITAL * 0.01)
     upper_bound = max(INITIAL_CAPITAL + y_band, data_max + INITIAL_CAPITAL * 0.01)
 
     fig, axis = plt.subplots(figsize=(12, 6), facecolor=FIG_BG)
-    axis.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Equity", zorder=3)
+    axis.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Strategy", zorder=3)
     axis.fill_between(plot_df["timestamp_plot"], plot_df["equity"], period_start_equity, color=line_color, alpha=0.12, zorder=1)
     axis.axhline(INITIAL_CAPITAL, color=BASELINE, linestyle="--", alpha=0.5, label="Initial Capital", zorder=2)
+    if not benchmark_window.empty:
+        for symbol, color in BENCHMARK_COLORS.items():
+            if symbol not in benchmark_window.columns:
+                continue
+            series = pd.to_numeric(benchmark_window[symbol], errors="coerce")
+            if series.notna().sum() == 0:
+                continue
+            axis.plot(
+                benchmark_window["timestamp_plot"],
+                series,
+                linewidth=1.8,
+                color=color,
+                alpha=0.95,
+                label=symbol,
+                zorder=2.5,
+            )
     axis.set_ylim(lower_bound, upper_bound)
     locator = mdates.AutoDateLocator(minticks=3, maxticks=6)
     formatter = mdates.DateFormatter("%m-%d %H:%M" if window_days <= 1 else "%m-%d")
@@ -1085,7 +1178,7 @@ def plot_live_equity_window(equity_df: pd.DataFrame, window_label: str, window_d
         color=TEXT,
         bbox={"boxstyle": "round,pad=0.25", "facecolor": AX_BG, "edgecolor": line_color, "alpha": 0.95},
     )
-    axis.set_title(f"Reversal 3.2 Live Paper Equity ({window_label})  |  Return {period_return_pct:+.2f}%")
+    axis.set_title(f"Reversal 3.2 Live Paper Equity vs QQQ / SPY ({window_label})  |  Return {period_return_pct:+.2f}%")
     axis.set_xlabel(f"Date (ET, trailing {window_label})")
     axis.set_ylabel("Portfolio Value ($)")
     legend = axis.legend(frameon=False, loc="upper left")
@@ -1097,9 +1190,10 @@ def plot_live_equity_window(equity_df: pd.DataFrame, window_label: str, window_d
 
 
 def plot_live_equity(equity_df: pd.DataFrame) -> None:
-    plot_live_equity_window(equity_df, "1D", 1, PLOT_1D_PATH)
-    plot_live_equity_window(equity_df, "1W", 7, PLOT_1W_PATH)
-    plot_live_equity_window(equity_df, "1M", 30, PLOT_1M_PATH)
+    benchmark_df = build_live_benchmark_frame(equity_df)
+    plot_live_equity_window(equity_df, benchmark_df, "1D", 1, PLOT_1D_PATH)
+    plot_live_equity_window(equity_df, benchmark_df, "1W", 7, PLOT_1W_PATH)
+    plot_live_equity_window(equity_df, benchmark_df, "1M", 30, PLOT_1M_PATH)
 
 
 def build_chart_sections(image_prefix: str, cache_bust: str | None = None) -> list[str]:
@@ -1242,7 +1336,7 @@ def render_dashboard(
             "",
             "## Equity Curves",
             "",
-            "Each chart is generated from the same live equity series with no-lookahead marks. The latest point is annotated with its exact ET checkpoint time and return %.",
+            "Each chart is generated from the same live equity series with no-lookahead marks and includes normalized QQQ / SPY benchmark overlays starting from the same initial capital. The latest point is annotated with its exact ET checkpoint time and return %.",
             "",
             *build_chart_sections("../../", cache_bust=cache_bust),
         ]

@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-07 15:05:00 EDT`
-Last processed slot: `entry_1500`
+Last updated (ET): `2026-04-07 15:09:52 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -22,14 +22,14 @@ Last processed slot: `entry_1500`
 - Cash: `$5,640.00`
 - Equity: `$10,350.00`
 - Realized PnL: `$320.00`
-- Unrealized PnL: `$30.00`
+- Unrealized PnL: `$-25.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  TSLA TSLA260515C00340000       2026-04-07                   0          2      4680.0                  4710.0                23.4                 23.55      340.83        340.31            30.0                   0.64         100.0               13               3.4         51.95           52.84                  42.33
+  TSLA TSLA260515C00340000       2026-04-07                   0          2      4680.0                  4655.0                23.4                 23.28      340.83         340.4           -25.0                  -0.53         100.0               13               3.4         51.95           52.07                  42.33
 ```
 
 ## Today's Closed Trades (2026-04-07)
@@ -41,21 +41,7 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  TSLA          100.00               12            3.55              8.76        349.07                42.33            True
-  MRVL           96.30               27            1.74              1.33        108.94                70.84            True
-  REGN           96.15               26            1.20              6.39        760.30                25.24            True
-  NFLX           94.87               39            0.61              0.42         98.75                26.96            True
-  SBUX           94.44               36            0.62              0.41         94.60                40.32            True
-  NVDA           92.00               25            1.31              1.63        176.94                33.70            True
-  MPWR           91.43               35            1.02              8.39       1176.43                51.99            True
-  UPRO           90.91               22            2.46              1.74        100.00                53.86            True
-  CDNS           90.00               40            1.07              2.09        278.50                25.26            True
-  COST           90.00               10            1.26              8.97       1014.71                13.04            True
-  PCAR           88.24               34            0.86              0.71        118.02                21.97            True
-   KDP           88.24               17            0.84              0.15         25.64                20.32            True
-```
+_None_
 
 ## Recent Events
 
@@ -75,25 +61,25 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 
 ## Equity Curves
 
-Each chart is generated from the same live equity series with no-lookahead marks. The latest point is annotated with its exact ET checkpoint time and return %.
+Each chart is generated from the same live equity series with no-lookahead marks and includes normalized QQQ / SPY benchmark overlays starting from the same initial capital. The latest point is annotated with its exact ET checkpoint time and return %.
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407150500)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407150952)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407150500)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407150952)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407150500)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407150952)
 
 </details>
