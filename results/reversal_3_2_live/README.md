@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-07 15:10:03 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-04-07 16:00:01 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -20,7 +20,7 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$5,640.00`
-- Equity: `$10,255.00`
+- Equity: `$10,305.00`
 - Realized PnL: `$320.00`
 - Unrealized PnL: `$-15.00`
 - Open positions: `1`
@@ -29,7 +29,7 @@ Last processed slot: `entry_1500`
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  TSLA TSLA260515C00340000       2026-04-07                   0          2      4680.0                  4665.0                23.4                 23.33      340.83        346.66           -15.0                  -0.32         100.0               13               3.4         51.95           44.37                  42.33
+  TSLA TSLA260515C00340000       2026-04-07                   0          2      4680.0                  4665.0                23.4                 23.32      340.83         347.9           -15.0                  -0.32         100.0               13               3.4         51.95           44.48                  42.33
 ```
 
 ## Today's Closed Trades (2026-04-07)
@@ -46,17 +46,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                                                                           detail
-2026-04-07T15:10:03.881676-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-07T15:05:00.890479-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-07T15:00:05.890204-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-07T14:55:00.887138-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-07T14:50:04.918653-04:00  entry_1500        entry {"allocated_cash": 4680.0, "contract_symbol": "TSLA260515C00340000", "contracts": 2, "entry_option_price": 23.4, "matched_signals": 13, "success_rate": 100.0, "ticker": "TSLA"}
-2026-04-07T14:40:00.896832-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-07T14:35:00.890525-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-07T14:30:00.927122-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-07T14:25:01.881173-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-07T14:10:00.879771-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+                    timestamp_et        slot   event_type                          detail
+2026-04-07T16:00:01.902913-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-07T15:55:05.888167-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-07T15:40:05.893189-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-07T15:35:04.883314-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-07T15:30:03.886489-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-07T15:25:00.886285-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-07T15:10:03.881676-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-07T15:05:00.890479-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-07T15:00:05.890204-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-07T14:55:00.887138-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -66,20 +66,20 @@ Each chart is generated from the same live equity series with no-lookahead marks
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407151003)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407160001)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407151003)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407160001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407151003)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407160001)
 
 </details>
