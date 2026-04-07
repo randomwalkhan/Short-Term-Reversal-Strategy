@@ -3,8 +3,8 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.2 Live Paper Test
 
-- Last updated (ET): `2026-04-07 10:30:05 EDT`
-- Equity: `$11,020.00` | Realized: `$1,440.00` | Unrealized: `$-420.00` | Open positions: `1`
+- Last updated (ET): `2026-04-07 10:35:05 EDT`
+- Equity: `$11,090.00` | Realized: `$1,440.00` | Unrealized: `$-350.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1030`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,27 +14,27 @@
 
 ```text
 ticker    contract_symbol  contracts  cash_spent  current_position_value  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   HON HON260515C00230000          7      5180.0                  4760.0                   6.8          -420.0                  -8.11                   1
+   HON HON260515C00230000          7      5180.0                  4830.0                   6.9          -350.0                  -6.76                   1
 ```
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260407103005)
+![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260407103505)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260407103005)
+![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260407103505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260407103005)
+![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260407103505)
 
 </details>
 
