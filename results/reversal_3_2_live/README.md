@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-07 13:45:04 EDT`
-Last processed slot: `manual_refresh`
+Last updated (ET): `2026-04-07 13:50:00 EDT`
+Last processed slot: `manage_1400`
 
 ## Active Configuration
 
@@ -40,18 +40,18 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  COST           95.65               23            0.84              5.96       1015.99                13.04            True
-  NVDA           92.59               27            1.19              1.48        177.01                33.70            True
-  UPRO           91.18               34            1.05              0.74        100.42                53.86            True
-  GILD           90.00               30            0.56              0.55        139.89                20.18            True
-  PCAR           89.47               38            0.62              0.51        118.10                21.97            True
-   KDP           89.47               19            0.58              0.11         25.65                20.32            True
-  ASML           88.89               36            0.54              4.89       1301.91                47.16            True
-  ABNB           88.89               27            1.55              1.37        126.22                36.80            True
-   CSX           88.00               25            0.60              0.18         41.40                24.91            True
-  FAST           87.50               24            1.11              0.36         45.72                20.98            True
-  VRTX           87.18               39            0.79              2.40        433.27                40.01            True
-  KLAC           87.18               39            0.71              7.65       1536.78                45.70            True
+  MRVL           97.62               42            0.58              0.44        109.32                70.84            True
+  COST           95.65               23            0.83              5.94       1016.00                13.04            True
+  NVDA           92.59               27            1.04              1.30        177.08                33.70            True
+  UPRO           91.18               34            0.91              0.64        100.46                53.86            True
+   LIN           90.00               10            1.50              5.24        497.22                19.02            True
+  PCAR           89.47               38            0.63              0.52        118.10                21.97            True
+  CDNS           89.13               46            0.50              0.99        278.97                25.26            True
+  ABNB           88.89               27            1.54              1.36        126.23                36.80            True
+  ORLY           88.57               35            0.72              0.47         91.93                23.11            True
+  GILD           88.46               26            0.67              0.65        139.85                20.18            True
+  MDLZ           88.24               17            0.51              0.21         58.29                25.49            True
+  VRTX           87.50               40            0.63              1.92        433.48                40.01            True
 ```
 
 ## Recent Events
@@ -77,20 +77,20 @@ Each chart is generated from the same live equity series with no-lookahead marks
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407134504)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407135000)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407134504)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407135000)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407134504)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407135000)
 
 </details>
