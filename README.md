@@ -4,7 +4,7 @@
 ## Reversal 3.2 Live Paper Test
 
 - Latest checkpoint (ET): `2026-04-07 16:00:01 EDT`
-- Equity: `$10,305.00` | Realized: `$320.00` | Unrealized: `$-15.00` | Open positions: `1`
+- Equity: `$10,305.00` | Realized: `$320.00` | Unrealized: `$410.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,7 +14,7 @@
 
 ```text
 ticker     contract_symbol  contracts  cash_spent  current_position_value  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  TSLA TSLA260515C00340000          2      4680.0                  4665.0                 23.32           -15.0                  -0.32                   0
+  TSLA TSLA260515C00340000          2      4680.0                  5090.0                 25.45           410.0                   8.76                   0
 ```
 
 <details>

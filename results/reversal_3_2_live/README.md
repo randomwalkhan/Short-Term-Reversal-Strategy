@@ -22,14 +22,14 @@ Last processed slot: `manage_1600`
 - Cash: `$5,640.00`
 - Equity: `$10,305.00`
 - Realized PnL: `$320.00`
-- Unrealized PnL: `$-15.00`
+- Unrealized PnL: `$410.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  TSLA TSLA260515C00340000       2026-04-07                   0          2      4680.0                  4665.0                23.4                 23.32      340.83         347.9           -15.0                  -0.32         100.0               13               3.4         51.95           44.48                  42.33
+  TSLA TSLA260515C00340000       2026-04-07                   0          2      4680.0                  5090.0                23.4                 25.45      340.83        347.96           410.0                   8.76         100.0               13               3.4         51.95           49.34                  42.33
 ```
 
 ## Today's Closed Trades (2026-04-07)

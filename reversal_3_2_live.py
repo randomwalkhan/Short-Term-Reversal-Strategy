@@ -1124,6 +1124,10 @@ def plot_live_equity_window(
     axis.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Strategy", zorder=3)
     axis.fill_between(plot_df["timestamp_plot"], plot_df["equity"], period_start_equity, color=line_color, alpha=0.12, zorder=1)
     axis.axhline(INITIAL_CAPITAL, color=BASELINE, linestyle="--", alpha=0.5, label="Initial Capital", zorder=2)
+    benchmark_label_offsets = {
+        "QQQ": (-10, -8),
+        "SPY": (-10, 10),
+    }
     if not benchmark_window.empty:
         for symbol, color in BENCHMARK_COLORS.items():
             if symbol not in benchmark_window.columns:
@@ -1134,11 +1138,32 @@ def plot_live_equity_window(
             axis.plot(
                 benchmark_window["timestamp_plot"],
                 series,
-                linewidth=1.8,
+                linewidth=2.4,
                 color=color,
-                alpha=0.95,
+                alpha=1.0,
                 label=symbol,
                 zorder=2.5,
+            )
+            latest_idx = series.last_valid_index()
+            if latest_idx is None:
+                continue
+            latest_value = float(series.loc[latest_idx])
+            latest_ts = benchmark_window.loc[latest_idx, "timestamp_plot"]
+            if period_start_equity > 0:
+                latest_return_pct = (latest_value / period_start_equity - 1.0) * 100
+            else:
+                latest_return_pct = 0.0
+            label_dx, label_dy = benchmark_label_offsets.get(symbol, (-10, 8))
+            axis.annotate(
+                f"{symbol} {latest_return_pct:+.1f}%",
+                xy=(latest_ts, latest_value),
+                xytext=(label_dx, label_dy),
+                textcoords="offset points",
+                ha="right",
+                va="center",
+                fontsize=8,
+                color=TEXT,
+                bbox={"boxstyle": "round,pad=0.2", "facecolor": AX_BG, "edgecolor": color, "alpha": 0.95},
             )
     axis.set_ylim(lower_bound, upper_bound)
     locator = mdates.AutoDateLocator(minticks=3, maxticks=6)
