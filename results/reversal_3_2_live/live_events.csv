@@ -228,3 +228,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-07T14:30:00.927122-04:00,2026-04-07,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-07T14:35:00.890525-04:00,2026-04-07,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-07T14:40:00.896832-04:00,2026-04-07,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-07T14:50:04.918653-04:00,2026-04-07,entry_1500,entry,"{""allocated_cash"": 4680.0, ""contract_symbol"": ""TSLA260515C00340000"", ""contracts"": 2, ""entry_option_price"": 23.4, ""matched_signals"": 13, ""success_rate"": 100.0, ""ticker"": ""TSLA""}"
