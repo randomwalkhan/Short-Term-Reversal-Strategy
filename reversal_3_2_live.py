@@ -1237,6 +1237,20 @@ def render_dashboard(
     last_equity = float(equity_df["equity"].iloc[-1]) if not equity_df.empty else float(state["cash"])
     realized_pnl = float(trades_df["pnl"].sum()) if not trades_df.empty else 0.0
     unrealized_pnl = float(positions_df["unrealized_pnl"].sum()) if not positions_df.empty else 0.0
+    if not equity_df.empty and "timestamp_et" in equity_df.columns:
+        checkpoint_ts = pd.to_datetime(equity_df["timestamp_et"].iloc[-1], errors="coerce")
+        if pd.notna(checkpoint_ts):
+            if checkpoint_ts.tzinfo is None:
+                checkpoint_ts = checkpoint_ts.tz_localize(ET)
+            else:
+                checkpoint_ts = checkpoint_ts.tz_convert(ET)
+        else:
+            checkpoint_ts = now_et
+        checkpoint_slot = str(equity_df["slot"].iloc[-1]) if "slot" in equity_df.columns else (slot_key or "manual_refresh")
+    else:
+        checkpoint_ts = now_et
+        checkpoint_slot = slot_key or "manual_refresh"
+    cache_bust = checkpoint_ts.strftime("%Y%m%d%H%M%S")
     today = now_et.date().isoformat()
     today_trades = trades_df[trades_df.get("exit_trade_date_et", pd.Series(dtype=str)).astype(str) == today].copy() if not trades_df.empty and "exit_trade_date_et" in trades_df.columns else pd.DataFrame()
     recent_events = events_df.sort_values("timestamp_et", ascending=False).head(10) if not events_df.empty else pd.DataFrame()
@@ -1269,8 +1283,8 @@ def render_dashboard(
         [
             "# Reversal 3.2 Live Paper Test",
             "",
-            f"Last updated (ET): `{now_et.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
-            f"Last processed slot: `{slot_key or 'manual_refresh'}`",
+            f"Latest checkpoint (ET): `{checkpoint_ts.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
+            f"Last processed slot: `{checkpoint_slot}`",
             "",
             "## Active Configuration",
             "",
@@ -1347,10 +1361,10 @@ def render_dashboard(
             ROOT_SECTION_START,
             "## Reversal 3.2 Live Paper Test",
             "",
-            f"- Last updated (ET): `{now_et.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
+            f"- Latest checkpoint (ET): `{checkpoint_ts.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
             f"- Equity: `${last_equity:,.2f}` | Realized: `${realized_pnl:,.2f}` | Unrealized: `${unrealized_pnl:,.2f}` | Open positions: `{len(state['positions'])}`",
             f"- Today closed trades: `{len(today_trades)}`",
-            f"- Current slot: `{slot_key or 'manual_refresh'}`",
+            f"- Current slot: `{checkpoint_slot}`",
             "- Universe: `qqq_plus_leverage_etfs`",
             "- Chart windows: `1D / 1W / 1M` (default open panel: `1W`)",
             "",
