@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-07 12:55:00 EDT`
+Last updated (ET): `2026-04-07 13:00:02 EDT`
 Last processed slot: `manage_1300`
 
 ## Active Configuration
@@ -40,34 +40,34 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN           96.77               31            1.00              5.36        760.74                25.24            True
-  NVDA           92.86               28            1.03              1.28        177.09                33.70            True
-  COST           92.59               27            0.76              5.44       1016.22                13.04            True
-  UPRO           90.62               32            1.24              0.88        100.36                53.86            True
-  PCAR           90.24               41            0.53              0.44        118.13                21.97            True
-   LIN           90.00               10            1.40              4.91        497.37                19.02            True
-  ORLY           89.74               39            0.60              0.38         91.97                23.11            True
-  ABNB           89.29               28            1.51              1.34        126.23                36.80            True
+  REGN           96.77               31            1.10              5.89        760.51                25.24            True
+  COST           95.24               21            0.87              6.18       1015.90                13.04            True
+  NVDA           92.59               27            1.20              1.49        177.00                33.70            True
+  UPRO           90.32               31            1.27              0.90        100.36                53.86            True
+   LIN           90.00               10            1.49              5.22        497.23                19.02            True
+  PCAR           89.47               38            0.63              0.52        118.10                21.97            True
+  ABNB           89.29               28            1.53              1.36        126.23                36.80            True
+  ASML           88.89               36            0.60              5.46       1301.67                47.16            True
+  ORLY           88.57               35            0.69              0.45         91.94                23.11            True
   FAST           87.50               24            1.09              0.35         45.72                20.98            True
-  MCHP           87.18               39            0.58              0.27         67.10                42.27            True
-  VRTX           86.67               30            1.25              3.80        432.67                40.01            True
-  MDLZ           86.67               15            0.72              0.29         58.25                25.49            True
+  MCHP           87.18               39            0.60              0.28         67.10                42.27            True
+  KLAC           87.18               39            0.53              5.73       1537.61                45.70            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                              detail
-2026-04-07T12:55:00.916656-04:00 manage_1300 slot_skipped                                                                                                     {"reason": "already_processed"}
-2026-04-07T12:40:05.895143-04:00 manage_1230 slot_skipped                                                                                                     {"reason": "already_processed"}
-2026-04-07T12:35:03.878614-04:00 manage_1230 slot_skipped                                                                                                     {"reason": "already_processed"}
-2026-04-07T12:30:00.912059-04:00 manage_1230 slot_skipped                                                                                                     {"reason": "already_processed"}
-2026-04-07T12:25:00.895869-04:00 manage_1230 slot_skipped                                                                                                     {"reason": "already_processed"}
-2026-04-07T12:10:05.880109-04:00 manage_1200 slot_skipped                                                                                                     {"reason": "already_processed"}
-2026-04-07T12:05:00.898216-04:00 manage_1200 slot_skipped                                                                                                     {"reason": "already_processed"}
-2026-04-07T12:00:02.896423-04:00 manage_1200 slot_skipped                                                                                                     {"reason": "already_processed"}
-2026-04-07T11:55:05.888145-04:00 manage_1200 slot_skipped                                                                                                     {"reason": "already_processed"}
-2026-04-07T11:50:05.887768-04:00 manage_1200         exit {"contract_symbol": "HON260515C00230000", "pnl": -1120.0, "reason": "stop_loss_hit_at_scan", "return_pct": -21.62, "ticker": "HON"}
+                    timestamp_et        slot   event_type                          detail
+2026-04-07T13:00:02.895617-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
+2026-04-07T12:55:00.916656-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
+2026-04-07T12:40:05.895143-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
+2026-04-07T12:35:03.878614-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
+2026-04-07T12:30:00.912059-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
+2026-04-07T12:25:00.895869-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
+2026-04-07T12:10:05.880109-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
+2026-04-07T12:05:00.898216-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
+2026-04-07T12:00:02.896423-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
+2026-04-07T11:55:05.888145-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -77,20 +77,20 @@ Each chart is generated from the same live equity series with no-lookahead marks
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407125500)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407130002)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407125500)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407130002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407125500)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407130002)
 
 </details>
