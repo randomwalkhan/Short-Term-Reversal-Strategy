@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-07 10:40:05 EDT`
-Last processed slot: `manage_1030`
+Last updated (ET): `2026-04-07 10:45:05 EDT`
+Last processed slot: `manual_refresh`
 
 ## Active Configuration
 
@@ -29,7 +29,7 @@ Last processed slot: `manage_1030`
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260515C00230000       2026-04-06                   1          7      5180.0                  4655.0                 7.4                  6.65      227.61        225.66          -525.0                 -10.14         100.0               20               0.8         28.89           30.32                  20.57
+   HON HON260515C00230000       2026-04-06                   1          7      5180.0                  4655.0                 7.4                  6.65      227.61        225.44          -525.0                 -10.14         100.0               20               0.8         28.89            30.3                  20.57
 ```
 
 ## Today's Closed Trades (2026-04-07)
@@ -40,18 +40,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               14            1.14              1.83        227.43                20.19            True
-  TSLA          100.00               10            3.69              9.11        348.92                42.33            True
-  REGN           96.77               31            1.03              5.52        760.67                25.24            True
-  MRVL           96.00               25            2.07              1.59        108.83                70.84            True
-  NVDA           95.65               23            1.62              2.01        176.78                33.70            True
-  UPRO           92.00               25            2.09              1.48        100.11                53.86            True
-  MPWR           91.18               34            1.18              9.75       1175.85                51.99            True
-  CDNS           90.91               44            0.78              1.53        278.73                25.26            True
-   MAR           90.91               33            0.89              2.12        337.09                25.97            True
-  ABNB           90.32               31            1.37              1.22        126.29                36.80            True
-  VRTX           88.46               26            1.48              4.51        432.37                40.01            True
-  GILD           88.46               26            0.80              0.78        139.79                20.18            True
+   HON          100.00               14            1.20              1.91        227.39                20.19            True
+  REGN           96.77               31            1.06              5.64        760.62                25.24            True
+  MRVL           96.30               27            1.75              1.34        108.93                70.84            True
+  NVDA           95.65               23            1.65              2.05        176.76                33.70            True
+  UPRO           92.00               25            2.24              1.58        100.06                53.86            True
+  MPWR           91.18               34            1.28             10.59       1175.49                51.99            True
+  CDNS           90.91               44            0.80              1.56        278.72                25.26            True
+   MAR           90.91               33            0.89              2.11        337.09                25.97            True
+  ABNB           90.32               31            1.34              1.19        126.30                36.80            True
+  GILD           88.46               26            0.75              0.73        139.82                20.18            True
+   LIN           87.50               24            0.61              2.13        498.56                19.02            True
+  SNPS           87.18               39            1.09              3.04        395.77                35.70            True
 ```
 
 ## Recent Events
@@ -77,20 +77,20 @@ Each chart is generated from the same live equity series with no-lookahead marks
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407104005)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407104505)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407104005)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407104505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407104005)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407104505)
 
 </details>
