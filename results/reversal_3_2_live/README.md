@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Last updated (ET): `2026-04-07 14:05:03 EDT`
+Last updated (ET): `2026-04-07 14:10:00 EDT`
 Last processed slot: `manage_1400`
 
 ## Active Configuration
@@ -40,24 +40,25 @@ ticker    contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_p
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  MRVL           97.56               41            0.66              0.50        109.29                70.84            True
-  NVDA           93.10               29            1.00              1.24        177.11                33.70            True
-  COST           92.86               14            1.03              7.32       1015.41                13.04            True
-  CDNS           91.11               45            0.62              1.22        278.87                25.26            True
-  UPRO           90.62               32            1.15              0.81        100.39                53.86            True
-   LIN           90.00               10            1.45              5.06        497.30                19.02            True
-  PCAR           89.19               37            0.68              0.57        118.08                21.97            True
-  ORLY           88.57               35            0.74              0.48         91.93                23.11            True
-  ASML           88.57               35            0.68              6.19       1301.36                47.16            True
-  ABNB           88.46               26            1.57              1.40        126.21                36.80            True
-   KDP           88.24               17            0.70              0.13         25.65                20.32            True
-  VRTX           87.50               40            0.62              1.89        433.49                40.01            True
+  MRVL           97.22               36            0.98              0.75        109.19                70.84            True
+  NVDA           92.59               27            1.08              1.34        177.06                33.70            True
+  COST           92.31               13            1.12              7.95       1015.14                13.04            True
+  UPRO           90.32               31            1.29              0.91        100.35                53.86            True
+   LIN           90.00               10            1.44              5.03        497.31                19.02            True
+   CSX           89.66               29            0.52              0.15         41.42                24.91            True
+  CDNS           89.13               46            0.58              1.14        278.90                25.26            True
+  PCAR           88.89               36            0.80              0.66        118.04                21.97            True
+  ORLY           88.57               35            0.69              0.45         91.94                23.11            True
+   KDP           88.24               17            0.72              0.13         25.64                20.32            True
+  ABNB           88.00               25            1.59              1.41        126.21                36.80            True
+  VRTX           87.80               41            0.60              1.83        433.52                40.01            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-07T14:10:00.879771-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
 2026-04-07T14:05:03.892395-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
 2026-04-07T14:00:04.896209-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
 2026-04-07T13:55:00.552170-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
@@ -67,7 +68,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-07T13:25:05.882654-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
 2026-04-07T13:10:04.926634-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 2026-04-07T13:05:02.889424-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
-2026-04-07T13:00:02.895617-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -77,20 +77,20 @@ Each chart is generated from the same live equity series with no-lookahead marks
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407140503)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260407141000)
 
 </details>
 
 <details open>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407140503)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260407141000)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407140503)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260407141000)
 
 </details>
