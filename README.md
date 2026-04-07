@@ -8,7 +8,7 @@
 - Today closed trades: `1`
 - Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
-- Chart windows: `1D / 1W / 1M` (default open panel: `1W`)
+- Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
@@ -17,6 +17,13 @@ ticker     contract_symbol  contracts  cash_spent  current_position_value  curre
   TSLA TSLA260515C00340000          2      4680.0                  5090.0                 25.45           410.0                   8.76                   0
 ```
 
+<details open>
+<summary><strong>Overall</strong></summary>
+
+![Reversal 3.2 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260407160001)
+
+</details>
+
 <details>
 <summary><strong>1D</strong></summary>
 
@@ -24,7 +31,7 @@ ticker     contract_symbol  contracts  cash_spent  current_position_value  curre
 
 </details>
 
-<details open>
+<details>
 <summary><strong>1W</strong></summary>
 
 ![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260407160001)
