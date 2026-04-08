@@ -1030,6 +1030,7 @@ def build_live_benchmark_frame(equity_df: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame(columns=["timestamp_plot", *BENCHMARK_COLORS.keys()])
 
     base_df["timestamp_plot"] = base_df["timestamp_et"].dt.tz_convert(ET).dt.tz_localize(None)
+    base_df["timestamp_plot"] = pd.to_datetime(base_df["timestamp_plot"]).astype("datetime64[ns]")
     base_df = base_df.sort_values("timestamp_plot").drop_duplicates(subset=["timestamp_plot"], keep="last")
     benchmark_df = base_df[["timestamp_plot"]].copy()
 
@@ -1061,6 +1062,7 @@ def build_live_benchmark_frame(equity_df: pd.DataFrame) -> pd.DataFrame:
             history["timestamp_et"] = history["timestamp_et"].dt.tz_convert(ET)
 
         history["timestamp_plot"] = history["timestamp_et"].dt.tz_localize(None)
+        history["timestamp_plot"] = pd.to_datetime(history["timestamp_plot"]).astype("datetime64[ns]")
         history = history.sort_values("timestamp_plot")[["timestamp_plot", symbol]]
         aligned = pd.merge_asof(
             benchmark_df[["timestamp_plot"]].sort_values("timestamp_plot"),
