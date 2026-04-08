@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-08 15:40:01 EDT`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-04-08 15:45:01 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -21,16 +21,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$6,275.00`
-- Equity: `$12,000.00`
+- Equity: `$11,925.00`
 - Realized PnL: `$1,650.00`
-- Unrealized PnL: `$350.00`
+- Unrealized PnL: `$275.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  FTNT FTNT260508C00083000       2026-04-08                   0         10      5375.0                  5725.0                5.38                  5.72       82.77         83.11           350.0                   6.51         91.89               37              1.13         57.03           58.79                  31.42
+  FTNT FTNT260508C00083000       2026-04-08                   0         10      5375.0                  5650.0                5.38                  5.65       82.77         83.26           275.0                   5.12         91.89               37              1.13         57.03           57.17                  31.42
 ```
 
 ## Today's Closed Trades (2026-04-08)
@@ -44,18 +44,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FTNT           92.50               40            0.81              0.48         83.52                31.42            True
-  TSLA           85.19               27            1.55              3.76        345.04                46.68            True
-  CHTR           84.38               32            1.21              1.90        222.99                33.96            True
-  CSGP           81.48               27            2.20              0.61         39.22                36.79            True
-  INSM           81.25               32            1.50              1.71        162.30                53.00            True
-  DDOG           88.89               45            0.02              0.01        116.53                49.79           False
-  CTSH           86.36               44            0.08              0.04         61.47                24.93           False
-   ROP           78.79               33            0.65              1.64        358.13                19.33           False
-  MSFT           75.56               45            0.04              0.10        372.25                25.09           False
+  FTNT           93.33               45            0.57              0.33         83.58                31.42            True
+  TSLA           86.21               29            1.46              3.54        345.13                46.68            True
+  CHTR           83.33               30            1.32              2.06        222.92                33.96            True
+  INSM           81.25               32            1.51              1.73        162.29                53.00            True
+  CSGP           80.77               26            2.28              0.63         39.21                36.79            True
+   ROP           80.00               30            0.88              2.22        357.88                19.33            True
+  CTSH           86.36               44            0.11              0.05         61.47                24.93           False
    ADP           75.00               12            1.83              2.60        202.49                22.69           False
-  PAYX           73.68               19            1.99              1.28         91.06                26.82           False
-  TMUS           73.33               15            1.44              2.02        199.68                22.17           False
+    ZS           73.68               19            3.12              3.10        140.76                47.83           False
+  PAYX           73.68               19            1.99              1.27         91.06                26.82           False
+  TMUS           73.33               15            1.49              2.09        199.64                22.17           False
+  ADBE           72.73               44            0.68              1.15        239.65                37.47           False
 ```
 
 ## Recent Events
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260408154001)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260408154501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260408154001)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260408154501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260408154001)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260408154501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260408154001)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260408154501)
 
 </details>
