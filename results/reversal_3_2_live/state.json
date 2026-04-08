@@ -1,8 +1,33 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 11650.0,
-  "positions": [],
+  "cash": 6275.0,
+  "positions": [
+    {
+      "position_id": "FTNT_20260408T145003",
+      "ticker": "FTNT",
+      "contract_symbol": "FTNT260508C00083000",
+      "expiry": "2026-05-08",
+      "strike": 83.0,
+      "entry_timestamp": "2026-04-08T14:50:03.439007-04:00",
+      "entry_trade_date": "2026-04-08",
+      "entry_slot": "entry_1500",
+      "entry_spot": 82.7698974609375,
+      "entry_option_price": 5.375,
+      "entry_bid": 5.2,
+      "entry_ask": 5.55,
+      "entry_iv_pct": 57.0316796875,
+      "contracts": 10,
+      "allocated_cash": 5375.0,
+      "success_rate": 91.89,
+      "matched_signals": 37,
+      "current_drop_pct": 1.13,
+      "rolling_sigma_20d_pct": 31.42,
+      "planned_tp_day1": 6.1812499999999995,
+      "planned_tp_day2": 6.1812499999999995,
+      "planned_stop": 4.73
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -156,7 +181,8 @@
       "manage_1300",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"
