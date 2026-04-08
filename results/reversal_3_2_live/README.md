@@ -14,6 +14,7 @@ Last processed slot: `manage_1400`
 - Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers
 - Entry scan: `3:00 PM ET`
 - Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`
+- Live exit ladder: `+15% / +15% / -12%`
 - Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed
 - Chart views: `Overall / 1D / 1W / 1M`, default open panel is `Overall`
 
@@ -38,21 +39,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FTNT           92.86               28            1.59              0.93         83.32                31.42            True
-  INSM           83.33               36            1.15              1.31        162.47                53.00            True
-  CSGP           82.35               34            1.52              0.42         39.30                36.79            True
-  PLTR           80.00               10            4.70              4.94        147.95                49.26            True
-  CHTR           88.10               42            0.42              0.66        223.52                33.96           False
-  TSLA           85.00               40            0.28              0.68        346.36                46.68           False
-   ROP           80.56               36            0.43              1.09        358.36                19.33           False
-   APP           78.79               33            2.30              6.59        407.61                67.83           False
-  PAYX           76.92               26            1.29              0.83         91.26                26.82           False
-   ADP           76.47               17            1.17              1.66        202.90                22.69           False
-  TEAM           76.09               46            0.51              0.23         64.73                51.08           False
-    ZS           76.00               25            2.09              2.08        141.20                47.83           False
-```
+_None_
 
 ## Recent Events
 

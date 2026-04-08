@@ -69,9 +69,13 @@ Update note: Reversal 3.2 keeps the Reversal 3.1 research setup unchanged, but h
 
 Display update: GitHub feature charts stay on the shared dark Apple-style plotting theme, and the repo-facing version label is now aligned to Reversal 3.2.
 
+Live paper update: the active live exit ladder is now `+15% / +15% / -12%`.
+
 更新说明：Reversal 3.2 保留 Reversal 3.1 的研究与交易口径不变，但补上了 NYSE 节假日识别。`2026-04-03` Good Friday 的那笔误开 paper trade 已从账本移除，之后遇到节假日将记录 `market_closed`，不会再新开仓；同时 live 的 `Open Positions` 表现在也会显示 `cash_spent` 和 `current_position_value`。
 
 展示更新：GitHub 上的主要曲线图继续沿用统一的深色 Apple Stocks 风格配色，对外版本标签现已统一为 Reversal 3.2。
+
+Live paper 更新：当前 live 的止盈止损梯度已调整为 `+15% / +15% / -12%`。
 
 ## Featured Result | 重点结果
 

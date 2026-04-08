@@ -42,9 +42,9 @@ MAX_SPREAD_PCT = 0.25
 MIN_OPEN_INTEREST = 10
 MAX_OPEN_POSITIONS = 2
 TARGET_POSITION_WEIGHT = 0.50
-DAY1_TAKE_PROFIT_PCT = 0.10
+DAY1_TAKE_PROFIT_PCT = 0.15
 DAY2_TAKE_PROFIT_PCT = 0.15
-STOP_LOSS_PCT = 0.10
+STOP_LOSS_PCT = 0.12
 REFRESH_DATA_IF_STALE = True
 LIVE_START_DATE = "2026-03-24"
 
@@ -1396,6 +1396,7 @@ def render_dashboard(
             "- Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers",
             "- Entry scan: `3:00 PM ET`",
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`",
+            "- Live exit ladder: `+15% / +15% / -12%`",
             "- Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed",
             "- Chart views: `Overall / 1D / 1W / 1M`, default open panel is `Overall`",
             "",
