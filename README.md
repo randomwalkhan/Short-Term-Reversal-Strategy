@@ -3,10 +3,10 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.2 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-08 15:45:01 EDT`
-- Equity: `$11,925.00` | Realized: `$1,650.00` | Unrealized: `$275.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-08 15:50:04 EDT`
+- Equity: `$11,875.00` | Realized: `$1,650.00` | Unrealized: `$225.00` | Open positions: `1`
 - Today closed trades: `1`
-- Current slot: `manual`
+- Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -14,34 +14,34 @@
 
 ```text
 ticker     contract_symbol  contracts  cash_spent  current_position_value  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  FTNT FTNT260508C00083000         10      5375.0                  5650.0                  5.65           275.0                   5.12                   0
+  FTNT FTNT260508C00083000         10      5375.0                  5600.0                   5.6           225.0                   4.19                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260408154501)
+![Reversal 3.2 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260408155004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260408154501)
+![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260408155004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260408154501)
+![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260408155004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260408154501)
+![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260408155004)
 
 </details>
 
