@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-08 15:55:05 EDT`
+Latest checkpoint (ET): `2026-04-08 16:00:06 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -21,16 +21,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$6,275.00`
-- Equity: `$11,100.00`
+- Equity: `$11,700.00`
 - Realized PnL: `$1,650.00`
-- Unrealized PnL: `$-550.00`
+- Unrealized PnL: `$50.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  FTNT FTNT260508C00083000       2026-04-08                   0         10      5375.0                  4825.0                5.38                  4.82       82.77         83.38          -550.0                 -10.23         91.89               37              1.13         57.03           57.01                  31.42
+  FTNT FTNT260508C00083000       2026-04-08                   0         10      5375.0                  5425.0                5.38                  5.43       82.77         83.51            50.0                   0.93         91.89               37              1.13         57.03           53.42                  31.42
 ```
 
 ## Today's Closed Trades (2026-04-08)
@@ -44,24 +44,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CHTR           85.71               35            1.01              1.58        223.12                33.96            True
-  CTSH           84.38               32            0.96              0.41         61.31                24.93            True
-  CSGP           83.87               31            1.77              0.49         39.27                36.79            True
-  TSLA           82.35               34            1.04              2.53        345.56                46.68            True
-  INSM           80.65               31            1.72              1.97        162.19                53.00            True
-   ROP           80.00               30            0.81              2.04        357.96                19.33            True
-    EA           94.87               39            0.01              0.02        203.94                 4.16           False
-  FTNT           93.48               46            0.41              0.24         83.62                31.42           False
-  DDOG           88.89               45            0.10              0.08        116.51                49.79           False
-    ZS           75.00               20            3.03              3.01        140.80                47.83           False
-   ADP           75.00               16            1.53              2.18        202.67                22.69           False
-  PLTR           75.00                4            6.35              6.67        147.21                49.26           False
+  CHTR           85.71               35            0.97              1.52        223.15                33.96            True
+  CSGP           83.87               31            1.67              0.46         39.28                36.79            True
+  TSLA           82.86               35            0.98              2.37        345.63                46.68            True
+  CTSH           82.35               34            0.80              0.34         61.34                24.93            True
+  INSM           80.00               30            1.75              1.99        162.18                53.00            True
+   ROP           80.00               30            0.83              2.09        357.94                19.33            True
+  FTNT           93.62               47            0.25              0.15         83.66                31.42           False
+  DDOG           88.89               45            0.03              0.03        116.53                49.79           False
+   ADP           76.47               17            1.50              2.14        202.69                22.69           False
+  TEAM           76.09               46            0.68              0.31         64.70                51.08           False
+    ZS           75.00               20            2.98              2.97        140.82                47.83           False
+  PLTR           75.00                4            6.11              6.42        147.32                49.26           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                             detail
+2026-04-08T16:00:06.439697-04:00 manage_1600 slot_skipped                                                                                                                                                    {"reason": "already_processed"}
 2026-04-08T15:55:05.442130-04:00 manage_1600 slot_skipped                                                                                                                                                    {"reason": "already_processed"}
 2026-04-08T15:40:01.444116-04:00 manage_1530 slot_skipped                                                                                                                                                    {"reason": "already_processed"}
 2026-04-08T15:35:04.435079-04:00 manage_1530 slot_skipped                                                                                                                                                    {"reason": "already_processed"}
@@ -71,7 +72,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-08T15:05:05.449071-04:00  entry_1500 slot_skipped                                                                                                                                                    {"reason": "already_processed"}
 2026-04-08T14:55:05.932900-04:00  entry_1500 slot_skipped                                                                                                                                                    {"reason": "already_processed"}
 2026-04-08T14:50:03.439007-04:00  entry_1500        entry {"allocated_cash": 5375.0, "contract_symbol": "FTNT260508C00083000", "contracts": 10, "entry_option_price": 5.375, "matched_signals": 37, "success_rate": 91.89, "ticker": "FTNT"}
-2026-04-08T14:40:04.447081-04:00 manage_1430 slot_skipped                                                                                                                                                    {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260408155505)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260408160006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260408155505)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260408160006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260408155505)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260408160006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260408155505)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260408160006)
 
 </details>

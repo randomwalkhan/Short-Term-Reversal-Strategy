@@ -3,8 +3,8 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.2 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-08 15:55:05 EDT`
-- Equity: `$11,100.00` | Realized: `$1,650.00` | Unrealized: `$-550.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-08 16:00:06 EDT`
+- Equity: `$11,700.00` | Realized: `$1,650.00` | Unrealized: `$50.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker     contract_symbol  contracts  cash_spent  current_position_value  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  FTNT FTNT260508C00083000         10      5375.0                  4825.0                  4.82          -550.0                 -10.23                   0
+  FTNT FTNT260508C00083000         10      5375.0                  5425.0                  5.43            50.0                   0.93                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260408155505)
+![Reversal 3.2 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260408160006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260408155505)
+![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260408160006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260408155505)
+![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260408160006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260408155505)
+![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260408160006)
 
 </details>
 
