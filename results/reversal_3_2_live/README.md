@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-08 15:10:06 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-04-08 15:15:06 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -30,7 +30,7 @@ Last processed slot: `entry_1500`
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  FTNT FTNT260508C00083000       2026-04-08                   0         10      5375.0                  5450.0                5.38                  5.45       82.77         83.27            75.0                    1.4         91.89               37              1.13         57.03           55.03                  31.42
+  FTNT FTNT260508C00083000       2026-04-08                   0         10      5375.0                  5450.0                5.38                  5.45       82.77         83.21            75.0                    1.4         91.89               37              1.13         57.03            55.4                  31.42
 ```
 
 ## Today's Closed Trades (2026-04-08)
@@ -44,18 +44,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FTNT           93.02               43            0.70              0.41         83.54                31.42            True
-  TSLA           86.67               30            1.25              3.04        345.35                46.68            True
-  INSM           81.25               32            1.56              1.78        162.27                53.00            True
-  CHTR           80.77               26            1.75              2.74        222.63                33.96            True
-  CSGP           80.56               36            1.32              0.36         39.32                36.79            True
- CMCSA           95.45               22            0.18              0.04         27.77                23.49           False
-   ROP           79.41               34            0.54              1.37        358.24                19.33           False
-  TEAM           76.60               47            0.35              0.16         64.76                51.08           False
-  ADBE           75.00               48            0.20              0.34        240.00                37.47           False
-  PLTR           75.00                4            6.10              6.41        147.32                49.26           False
-    ZS           73.91               23            2.27              2.26        141.12                47.83           False
-  PAYX           73.68               19            1.77              1.13         91.12                26.82           False
+  FTNT           93.48               46            0.50              0.29         83.59                31.42            True
+  TSLA           86.67               30            1.22              2.96        345.38                46.68            True
+  CHTR           81.48               27            1.55              2.42        222.76                33.96            True
+  INSM           81.25               32            1.62              1.85        162.24                53.00            True
+  CSGP           80.56               36            1.29              0.36         39.33                36.79            True
+ CMCSA           95.45               22            0.14              0.03         27.78                23.49           False
+   EXC           90.00               30            0.02              0.01         49.05                21.02           False
+   ROP           79.41               34            0.59              1.47        358.20                19.33           False
+  PAYX           78.26               23            1.59              1.02         91.17                26.82           False
+   ADP           76.47               17            1.43              2.04        202.73                22.69           False
+  TEAM           76.09               46            0.52              0.24         64.73                51.08           False
+  ADBE           75.51               49            0.17              0.28        240.02                37.47           False
 ```
 
 ## Recent Events
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260408151006)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260408151506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260408151006)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260408151506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260408151006)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260408151506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260408151006)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260408151506)
 
 </details>
