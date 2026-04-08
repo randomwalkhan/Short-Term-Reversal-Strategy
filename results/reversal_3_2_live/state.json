@@ -1,33 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 5640.0,
-  "positions": [
-    {
-      "position_id": "TSLA_20260407T145004",
-      "ticker": "TSLA",
-      "contract_symbol": "TSLA260515C00340000",
-      "expiry": "2026-05-15",
-      "strike": 340.0,
-      "entry_timestamp": "2026-04-07T14:50:04.918653-04:00",
-      "entry_trade_date": "2026-04-07",
-      "entry_slot": "entry_1500",
-      "entry_spot": 340.8299865722656,
-      "entry_option_price": 23.4,
-      "entry_bid": 23.35,
-      "entry_ask": 23.45,
-      "entry_iv_pct": 51.947502014160165,
-      "contracts": 2,
-      "allocated_cash": 4680.0,
-      "success_rate": 100.0,
-      "matched_signals": 13,
-      "current_drop_pct": 3.4,
-      "rolling_sigma_20d_pct": 42.33,
-      "planned_tp_day1": 25.740000000000002,
-      "planned_tp_day2": 26.909999999999997,
-      "planned_stop": 21.06
-    }
-  ],
+  "cash": 11650.0,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -169,6 +144,17 @@
       "entry_1500",
       "manage_1530",
       "manage_1600"
+    ],
+    "2026-04-08": [
+      "manage_0930",
+      "manage_1000",
+      "manage_1030",
+      "manage_1100",
+      "manage_1130",
+      "manage_1200",
+      "manage_1230",
+      "manage_1300",
+      "manage_1330"
     ]
   },
   "start_date": "2026-03-24"

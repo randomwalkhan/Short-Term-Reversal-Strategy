@@ -3,45 +3,42 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.2 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-07 16:00:01 EDT`
-- Equity: `$10,305.00` | Realized: `$320.00` | Unrealized: `$410.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-08 13:41:40 EDT`
+- Equity: `$11,650.00` | Realized: `$1,650.00` | Unrealized: `$0.00` | Open positions: `0`
 - Today closed trades: `1`
-- Current slot: `manage_1600`
+- Current slot: `manage_1330`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
-```text
-ticker     contract_symbol  contracts  cash_spent  current_position_value  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  TSLA TSLA260515C00340000          2      4680.0                  5090.0                 25.45           410.0                   8.76                   0
-```
+_None_
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260407160001)
+![Reversal 3.2 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260408134140)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260407160001)
+![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260408134140)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260407160001)
+![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260408134140)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260407160001)
+![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260408134140)
 
 </details>
 
