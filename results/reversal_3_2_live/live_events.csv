@@ -296,3 +296,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-09T09:30:04.707036-04:00,2026-04-09,data_refresh,data_refresh,{'saved': 99}
 2026-04-09T09:30:04.707036-04:00,2026-04-09,manage_0930,exit,"{""contract_symbol"": ""FTNT260508C00083000"", ""pnl"": 1375.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 25.58, ""ticker"": ""FTNT""}"
 2026-04-09T09:35:00.721623-04:00,2026-04-09,manage_0930,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-09T09:40:00.730980-04:00,2026-04-09,manage_0930,slot_skipped,"{""reason"": ""already_processed""}"
