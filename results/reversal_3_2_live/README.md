@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-09 15:55:05 EDT`
+Latest checkpoint (ET): `2026-04-09 16:00:01 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -30,7 +30,7 @@ Last processed slot: `manage_1600`
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  REGN REGN260515C00765000       2026-04-09                   0          1      4400.0                  4400.0                44.0                  44.0      764.07         767.2             0.0                    0.0         100.0               21              1.48         48.92            47.2                  26.04
+  REGN REGN260515C00765000       2026-04-09                   0          1      4400.0                  4400.0                44.0                  44.0      764.07        767.85             0.0                    0.0         100.0               21              1.48         48.92           46.84                  26.04
 ```
 
 ## Today's Closed Trades (2026-04-09)
@@ -44,34 +44,34 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               29            1.06              5.77        773.06                26.04            True
-   WDC           97.37               38            0.53              1.26        338.24                87.19            True
-  CDNS           90.91               11            3.31              6.71        286.63                28.11            True
-  ALNY           87.50               24            1.99              4.56        325.30                41.11            True
-  ABNB           85.71               21            1.69              1.55        130.73                41.34            True
-  SNPS           85.29               34            1.40              4.03        408.43                37.77            True
-   TRI           84.21               38            1.38              0.83         85.75                31.47            True
-   CEG           80.95               42            0.68              1.35        283.69                56.91            True
-  CSCO           80.95               21            0.59              0.34         83.55                27.82            True
-  TTWO           80.00               20            1.93              2.74        200.96                26.08            True
-   ROP           80.00               20            1.64              4.10        354.10                17.33            True
-    ZS          100.00                1           11.41             11.01        133.13                46.90           False
+  REGN          100.00               29            0.99              5.38        773.23                26.04            True
+  ALNY           88.89               27            1.86              4.26        325.43                41.11            True
+  SNPS           86.11               36            1.28              3.67        408.59                37.77            True
+  ABNB           85.71               21            1.71              1.58        130.72                41.34            True
+  CDNS           84.62               13            2.89              5.87        286.99                28.11            True
+   TRI           83.78               37            1.44              0.87         85.74                31.47            True
+  BKNG           80.95               21            2.40              3.05        179.69                36.69            True
+  CSCO           80.95               21            0.63              0.37         83.54                27.82            True
+   ROP           80.00               20            1.68              4.18        354.06                17.33            True
+  FANG          100.00               32            0.09              0.11        186.42                32.28           False
+    ZS          100.00                2           11.35             10.95        133.16                46.90           False
+   WDC           97.44               39            0.38              0.90        338.39                87.19           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                                                                           detail
-2026-04-09T15:55:05.644912-04:00 manage_1600 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-09T15:40:01.001993-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-09T15:35:00.892532-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-09T15:30:04.886669-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-09T15:25:00.951211-04:00 manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-09T15:10:05.606498-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-09T15:05:00.876232-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-09T15:00:05.892957-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-09T14:55:00.989254-04:00  entry_1500 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-04-09T14:50:03.978140-04:00  entry_1500        entry {"allocated_cash": 4400.0, "contract_symbol": "REGN260515C00765000", "contracts": 1, "entry_option_price": 44.0, "matched_signals": 21, "success_rate": 100.0, "ticker": "REGN"}
+                    timestamp_et        slot   event_type                          detail
+2026-04-09T16:00:01.894335-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:55:05.644912-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:40:01.001993-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:35:00.892532-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:30:04.886669-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:25:00.951211-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:10:05.606498-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:05:00.876232-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:00:05.892957-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-09T14:55:00.989254-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409155505)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409160001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409155505)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409160001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409155505)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409160001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409155505)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409160001)
 
 </details>
