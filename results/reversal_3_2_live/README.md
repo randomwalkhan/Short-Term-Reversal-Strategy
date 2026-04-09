@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-09 14:45:04 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-09 14:50:03 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -20,15 +20,18 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$13,025.00`
+- Cash: `$8,625.00`
 - Equity: `$13,025.00`
 - Realized PnL: `$3,025.00`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
+  REGN REGN260515C00765000       2026-04-09                   0          1      4400.0                  4400.0                44.0                  44.0      764.07        764.07             0.0                    0.0         100.0               21              1.48         48.92           48.92                  26.04
+```
 
 ## Today's Closed Trades (2026-04-09)
 
@@ -41,34 +44,34 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               22            1.44              7.83        772.18                26.04            True
-   WDC           97.22               36            0.90              2.13        337.87                87.19            True
-  CDNS           90.00               10            3.58              7.26        286.39                28.11            True
-  ALNY           88.89               27            1.88              4.30        325.41                41.11            True
-  CTAS           88.57               35            0.57              0.69        174.29                30.38            True
-  SNPS           85.19               27            2.05              5.87        407.64                37.77            True
+  REGN          100.00               21            1.48              8.02        772.09                26.04            True
+   WDC           97.14               35            1.02              2.41        337.75                87.19            True
+  CDNS           90.00               10            3.53              7.16        286.43                28.11            True
+  CTAS           87.88               33            0.62              0.76        174.26                30.38            True
+  ALNY           87.50               24            1.94              4.45        325.34                41.11            True
+  SNPS           85.71               28            2.00              5.73        407.70                37.77            True
   ABNB           83.33               18            1.96              1.81        130.63                41.34            True
-  ISRG           80.77               26            1.24              4.01        460.56                24.21            True
-  CSCO           80.00               20            0.80              0.47         83.50                27.82            True
-    ZS          100.00                1           12.12             11.70        132.84                46.90           False
-  SBUX           92.11               38            0.35              0.24         97.11                40.88           False
-  VRTX           91.30               46            0.23              0.71        443.61                28.00           False
+  CSCO           80.95               21            0.76              0.44         83.51                27.82            True
+    ZS          100.00                1           12.34             11.91        132.75                46.90           False
+  SBUX           94.59               37            0.41              0.28         97.09                40.88           False
+  VRTX           91.49               47            0.14              0.43        443.74                28.00           False
+  INSM           90.00               50            0.01              0.01        160.17                52.00           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-09T14:40:04.078140-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-09T14:35:00.960951-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-09T14:30:00.902865-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-09T14:25:00.971224-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-09T14:10:01.012659-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-09T14:05:00.920582-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-09T14:00:05.431112-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-09T13:55:04.050612-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-09T13:40:03.886505-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-04-09T13:35:04.885893-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
+                    timestamp_et        slot   event_type                                                                                                                                                                           detail
+2026-04-09T14:50:03.978140-04:00  entry_1500        entry {"allocated_cash": 4400.0, "contract_symbol": "REGN260515C00765000", "contracts": 1, "entry_option_price": 44.0, "matched_signals": 21, "success_rate": 100.0, "ticker": "REGN"}
+2026-04-09T14:40:04.078140-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-09T14:35:00.960951-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-09T14:30:00.902865-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-09T14:25:00.971224-04:00 manage_1430 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-09T14:10:01.012659-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-09T14:05:00.920582-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-09T14:00:05.431112-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-09T13:55:04.050612-04:00 manage_1400 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-09T13:40:03.886505-04:00 manage_1330 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -78,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409144504)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409145003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409144504)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409145003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409144504)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409145003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409144504)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409145003)
 
 </details>
