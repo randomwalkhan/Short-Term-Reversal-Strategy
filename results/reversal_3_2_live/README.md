@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-09 12:05:05 EDT`
+Latest checkpoint (ET): `2026-04-09 12:10:01 EDT`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -41,24 +41,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               21            1.47              7.98        772.11                26.04            True
-   WDC           97.14               35            1.12              2.65        337.65                87.19            True
-  SBUX           93.94               33            0.67              0.46         97.01                40.88            True
-  ABNB           90.62               32            1.22              1.12        130.92                41.34            True
-  INSM           89.13               46            0.53              0.60        159.92                52.00            True
-  DDOG           86.67               15            4.34              3.54        114.98                46.85            True
-  SNPS           86.11               36            1.27              3.64        408.60                37.77            True
-  PYPL           84.21               38            0.50              0.16         45.78                32.21            True
-  TTWO           83.33               42            0.66              0.94        201.73                26.08            True
-  SHOP           82.35               17            4.10              3.45        118.62                44.40            True
-  BKNG           81.82               22            2.23              2.82        179.79                36.69            True
-  CSCO           80.95               21            0.73              0.43         83.52                27.82            True
+  REGN          100.00               19            1.70              9.25        771.57                26.04            True
+   WDC           97.06               34            1.31              3.11        337.45                87.19            True
+  SBUX           93.94               33            0.66              0.45         97.02                40.88            True
+  ABNB           88.24               34            1.01              0.93        131.00                41.34            True
+  INSM           87.80               41            0.73              0.82        159.83                52.00            True
+  SNPS           87.18               39            1.10              3.16        408.81                37.77            True
+  SHOP           84.21               19            3.62              3.04        118.80                44.40            True
+  CSCO           84.21               19            0.91              0.53         83.47                27.82            True
+  TTWO           83.72               43            0.66              0.93        201.73                26.08            True
+  DDOG           83.33               18            3.86              3.15        115.15                46.85            True
+  BKNG           82.61               23            2.15              2.72        179.83                36.69            True
+   ROP           81.48               27            1.24              3.08        354.53                17.33            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-09T12:10:01.709238-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 2026-04-09T12:05:05.701665-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 2026-04-09T12:00:03.435227-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 2026-04-09T11:55:00.699806-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
@@ -68,7 +69,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-09T11:25:04.969818-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
 2026-04-09T11:10:04.715349-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-04-09T11:05:00.814155-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
-2026-04-09T11:00:01.740551-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -78,27 +78,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409120505)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409121001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409120505)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409121001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409120505)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409121001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409120505)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409121001)
 
 </details>
