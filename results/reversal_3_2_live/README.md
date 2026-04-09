@@ -1,6 +1,6 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-09 10:35:05 EDT`
+Latest checkpoint (ET): `2026-04-09 10:40:03 EDT`
 Last processed slot: `manage_1030`
 
 ## Active Configuration
@@ -41,34 +41,34 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               22            1.36              7.39        772.36                26.04            True
-   WDC           96.77               31            2.29              5.43        336.45                87.19            True
-  ALNY           90.91               44            0.85              1.96        326.41                41.11            True
-  UPRO           90.91               33            0.89              0.67        108.17                60.47            True
-   MAR           88.89               36            0.62              1.51        347.93                32.53            True
-  GILD           88.46               26            0.65              0.64        141.26                20.46            True
-  VRTX           88.24               34            0.93              2.88        442.68                28.00            True
-  INSM           87.80               41            0.71              0.80        159.84                52.00            True
-  CTAS           87.10               31            0.87              1.07        174.13                30.38            True
-  TSLA           86.67               30            1.21              2.90        342.01                40.98            True
-  DXCM           85.71               28            1.64              0.76         65.48                33.81            True
-  FTNT           85.71               14            2.54              1.48         82.87                30.61            True
+  REGN          100.00               29            1.06              5.78        773.05                26.04            True
+   WDC           96.88               32            2.04              4.84        336.71                87.19            True
+  UPRO           92.11               38            0.65              0.50        108.25                60.47            True
+  ALNY           91.49               47            0.54              1.24        326.72                41.11            True
+   MAR           90.62               32            0.85              2.09        347.69                32.53            True
+  FTNT           90.00               10            3.03              1.77         82.75                30.61            True
+  VRTX           89.19               37            0.75              2.32        442.93                28.00            True
+  CTAS           87.10               31            0.76              0.93        174.19                30.38            True
+  DXCM           85.19               27            1.67              0.77         65.47                33.81            True
+  DDOG           84.21               19            3.28              2.68        115.35                46.85            True
+  TTWO           83.78               37            1.02              1.45        201.51                26.08            True
+  TSLA           82.86               35            0.80              1.91        342.43                40.98            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                                     detail
-2026-04-09T10:35:05.721256-04:00 manage_1030 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-09T10:30:03.705847-04:00 manage_1030 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-09T10:25:03.711004-04:00 manage_1030 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-09T10:10:03.861770-04:00 manage_1000 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-09T10:05:05.524975-04:00 manage_1000 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-09T10:00:02.890491-04:00 manage_1000 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-09T09:55:03.701126-04:00 manage_1000 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-09T09:40:00.730980-04:00 manage_0930 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-09T09:35:00.721623-04:00 manage_0930 slot_skipped                                                                                                            {"reason": "already_processed"}
-2026-04-09T09:30:04.707036-04:00 manage_0930         exit {"contract_symbol": "FTNT260508C00083000", "pnl": 1375.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 25.58, "ticker": "FTNT"}
+                    timestamp_et        slot   event_type                          detail
+2026-04-09T10:40:03.920046-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-04-09T10:35:05.721256-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-04-09T10:30:03.705847-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-04-09T10:25:03.711004-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-04-09T10:10:03.861770-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
+2026-04-09T10:05:05.524975-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
+2026-04-09T10:00:02.890491-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
+2026-04-09T09:55:03.701126-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
+2026-04-09T09:40:00.730980-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
+2026-04-09T09:35:00.721623-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -78,27 +78,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409103505)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409104003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409103505)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409104003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409103505)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409104003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409103505)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409104003)
 
 </details>
