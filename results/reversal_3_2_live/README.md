@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-09 15:10:05 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-04-09 15:15:00 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -30,7 +30,7 @@ Last processed slot: `entry_1500`
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  REGN REGN260515C00765000       2026-04-09                   0          1      4400.0                  4400.0                44.0                  44.0      764.07         765.9             0.0                    0.0         100.0               21              1.48         48.92           47.92                  26.04
+  REGN REGN260515C00765000       2026-04-09                   0          1      4400.0                  4400.0                44.0                  44.0      764.07        766.17             0.0                    0.0         100.0               21              1.48         48.92           47.77                  26.04
 ```
 
 ## Today's Closed Trades (2026-04-09)
@@ -44,18 +44,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               25            1.22              6.63        772.69                26.04            True
-   WDC           97.44               39            0.52              1.23        338.25                87.19            True
-  CDNS           90.91               11            3.24              6.57        286.68                28.11            True
-  CTAS           88.57               35            0.56              0.69        174.30                30.38            True
-  SNPS           85.71               28            1.81              5.19        407.94                37.77            True
-  ABNB           85.71               21            1.66              1.53        130.75                41.34            True
-  ALNY           85.00               20            2.31              5.28        324.99                41.11            True
-  TTWO           83.33               24            1.82              2.57        201.03                26.08            True
-    ZS          100.00                1           11.59             11.18        133.06                46.90           False
-  SBUX           92.86               42            0.09              0.06         97.18                40.88           False
-  DXCM           89.13               46            0.41              0.19         65.72                33.81           False
-  INSM           89.13               46            0.27              0.30        160.05                52.00           False
+  REGN          100.00               25            1.21              6.55        772.72                26.04            True
+  CDNS           90.91               11            3.26              6.62        286.66                28.11            True
+  CTAS           88.24               34            0.58              0.71        174.28                30.38            True
+  ALNY           86.36               22            2.29              5.26        325.00                41.11            True
+  ABNB           85.71               21            1.72              1.58        130.72                41.34            True
+  SNPS           84.38               32            1.51              4.34        408.30                37.77            True
+  TTWO           84.00               25            1.75              2.48        201.07                26.08            True
+   ROP           80.00               20            1.68              4.18        354.06                17.33            True
+    ZS          100.00                1           11.60             11.19        133.05                46.90           False
+   WDC           97.44               39            0.41              0.97        338.36                87.19           False
+  SBUX           92.86               42            0.10              0.07         97.18                40.88           False
+  INSM           89.58               48            0.16              0.18        160.10                52.00           False
 ```
 
 ## Recent Events
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409151005)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409151500)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409151005)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409151500)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409151005)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409151500)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409151005)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409151500)
 
 </details>
