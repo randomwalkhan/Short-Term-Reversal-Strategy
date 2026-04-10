@@ -1,33 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 8625.0,
-  "positions": [
-    {
-      "position_id": "REGN_20260409T145003",
-      "ticker": "REGN",
-      "contract_symbol": "REGN260515C00765000",
-      "expiry": "2026-05-15",
-      "strike": 765.0,
-      "entry_timestamp": "2026-04-09T14:50:03.978140-04:00",
-      "entry_trade_date": "2026-04-09",
-      "entry_slot": "entry_1500",
-      "entry_spot": 764.0700073242188,
-      "entry_option_price": 44.0,
-      "entry_bid": 41.0,
-      "entry_ask": 47.0,
-      "entry_iv_pct": 48.921714401245126,
-      "contracts": 1,
-      "allocated_cash": 4400.0,
-      "success_rate": 100.0,
-      "matched_signals": 21,
-      "current_drop_pct": 1.48,
-      "rolling_sigma_20d_pct": 26.04,
-      "planned_tp_day1": 50.599999999999994,
-      "planned_tp_day2": 50.599999999999994,
-      "planned_stop": 38.72
-    }
-  ],
+  "cash": 12235.0,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -207,7 +182,8 @@
       "manage_1000",
       "manage_1030",
       "manage_1100",
-      "manage_1130"
+      "manage_1130",
+      "manage_1200"
     ]
   },
   "start_date": "2026-03-24"
