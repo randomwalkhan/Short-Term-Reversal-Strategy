@@ -3,10 +3,10 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.2 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-10 11:40:06 EDT`
-- Equity: `$12,480.00` | Realized: `$3,025.00` | Unrealized: `$-545.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-10 11:45:06 EDT`
+- Equity: `$12,355.00` | Realized: `$3,025.00` | Unrealized: `$-670.00` | Open positions: `1`
 - Today closed trades: `0`
-- Current slot: `manage_1130`
+- Current slot: `manual`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -14,34 +14,34 @@
 
 ```text
 ticker     contract_symbol  contracts  cash_spent  current_position_value  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  REGN REGN260515C00765000          1      4400.0                  3855.0                 38.55          -545.0                 -12.39                   1
+  REGN REGN260515C00765000          1      4400.0                  3730.0                  37.3          -670.0                 -15.23                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260410114006)
+![Reversal 3.2 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260410114506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260410114006)
+![Reversal 3.2 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260410114506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260410114006)
+![Reversal 3.2 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260410114506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260410114006)
+![Reversal 3.2 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260410114506)
 
 </details>
 
