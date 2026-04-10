@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-10 15:45:06 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-10 15:50:06 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -30,7 +30,7 @@ Last processed slot: `manual`
 
 ```text
 ticker    contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON HON260522C00235000       2026-04-10                   0          7      5810.0                  5915.0                 8.3                  8.45      234.53        234.65           105.0                   1.81         100.0               22              0.65         29.29           29.47                  23.67
+   HON HON260522C00235000       2026-04-10                   0          7      5810.0                  5915.0                 8.3                  8.45      234.53        234.77           105.0                   1.81         100.0               22              0.65         29.29           29.28                  23.67
 ```
 
 ## Today's Closed Trades (2026-04-10)
@@ -44,18 +44,18 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               24            0.60              0.99        235.64                23.67            True
-  SBUX           94.29               35            0.60              0.41         96.75                40.73            True
-   XEL           92.31               26            0.50              0.29         82.65                19.87            True
-  ABNB           87.50               40            0.67              0.60        128.90                41.65            True
-  SNPS           87.50               16            3.00              8.51        401.20                36.22            True
-  PLTR           86.21               29            1.96              1.79        129.77                58.33            True
-  TTWO           86.05               43            0.62              0.86        197.68                26.78            True
-  VRTX           85.71               14            2.14              6.68        443.88                28.30            True
-  SHOP           85.29               34            1.38              1.09        111.84                49.23            True
-   CSX           85.00               20            0.94              0.28         42.37                21.51            True
-  DDOG           84.21               19            3.79              2.89        107.74                49.83            True
-  ODFL           83.33               36            0.58              0.86        209.13                37.04            True
+  SBUX           94.29               35            0.62              0.42         96.74                40.73            True
+   XEL           92.00               25            0.51              0.30         82.64                19.87            True
+  ABNB           87.80               41            0.58              0.52        128.94                41.65            True
+  SNPS           86.67               15            3.15              8.92        401.02                36.22            True
+  PLTR           86.21               29            1.91              1.75        129.79                58.33            True
+  SHOP           86.11               36            1.16              0.91        111.91                49.23            True
+   CSX           85.71               21            0.85              0.25         42.38                21.51            True
+  VRTX           85.71               14            2.13              6.67        443.88                28.30            True
+  TTWO           85.37               41            0.68              0.95        197.64                26.78            True
+  DDOG           84.21               19            3.69              2.81        107.77                49.83            True
+  TMUS           84.00               25            0.96              1.32        196.97                21.21            True
+  MELI           82.86               35            1.18             14.78       1786.87                40.44            True
 ```
 
 ## Recent Events
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260410154506)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260410155006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260410154506)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260410155006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260410154506)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260410155006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260410154506)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260410155006)
 
 </details>
