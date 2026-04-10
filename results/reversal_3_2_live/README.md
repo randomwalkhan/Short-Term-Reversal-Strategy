@@ -1,7 +1,7 @@
 # Reversal 3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-09 16:00:01 EDT`
-Last processed slot: `manage_1600`
+Latest checkpoint (ET): `2026-04-10 09:30:06 EDT`
+Last processed slot: `manage_0930`
 
 ## Active Configuration
 
@@ -21,57 +21,54 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$8,625.00`
-- Equity: `$13,025.00`
+- Equity: `$12,825.00`
 - Realized PnL: `$3,025.00`
-- Unrealized PnL: `$0.00`
+- Unrealized PnL: `$-200.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker     contract_symbol entry_trade_date  business_days_held  contracts  cash_spent  current_position_value  entry_option_price  current_option_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-  REGN REGN260515C00765000       2026-04-09                   0          1      4400.0                  4400.0                44.0                  44.0      764.07        767.85             0.0                    0.0         100.0               21              1.48         48.92           46.84                  26.04
+  REGN REGN260515C00765000       2026-04-09                   1          1      4400.0                  4200.0                44.0                  42.0      764.07        769.03          -200.0                  -4.55         100.0               21              1.48         48.92             0.0                  26.04
 ```
 
-## Today's Closed Trades (2026-04-09)
+## Today's Closed Trades (2026-04-10)
 
-```text
-ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price    pnl  return_pct                  exit_reason
-  FTNT FTNT260508C00083000          2026-04-08         2026-04-09               5.375               6.75 1375.0   25.581395 take_profit_day1_hit_at_scan
-```
+_None_
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               29            0.99              5.38        773.23                26.04            True
-  ALNY           88.89               27            1.86              4.26        325.43                41.11            True
-  SNPS           86.11               36            1.28              3.67        408.59                37.77            True
-  ABNB           85.71               21            1.71              1.58        130.72                41.34            True
-  CDNS           84.62               13            2.89              5.87        286.99                28.11            True
-   TRI           83.78               37            1.44              0.87         85.74                31.47            True
-  BKNG           80.95               21            2.40              3.05        179.69                36.69            True
-  CSCO           80.95               21            0.63              0.37         83.54                27.82            True
-   ROP           80.00               20            1.68              4.18        354.06                17.33            True
-  FANG          100.00               32            0.09              0.11        186.42                32.28           False
-    ZS          100.00                2           11.35             10.95        133.16                46.90           False
-   WDC           97.44               39            0.38              0.90        338.39                87.19           False
+  FTNT           95.24               42            0.76              0.43         80.48                32.65            True
+  INTC           94.44               36            1.31              0.56         61.48                74.89            True
+   WMT           92.31               26            0.86              0.78        128.80                24.68            True
+  CDNS           90.91               44            0.64              1.25        280.47                29.62            True
+  COST           90.32               31            0.66              4.75       1030.00                13.79            True
+  GILD           88.46               26            0.65              0.64        141.81                20.31            True
+  DDOG           87.18               39            0.81              0.62        108.72                49.83            True
+   EXC           86.36               22            0.51              0.18         49.36                21.05            True
+  PLTR           86.21               29            2.20              2.01        129.68                58.33            True
+  ORLY           86.21               29            1.04              0.68         94.09                24.35            True
+    MU           83.33               36            0.86              2.53        420.42                78.74            True
+  CRWD           80.00               40            0.93              2.57        393.58                54.58            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-09T16:00:01.894335-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-09T15:55:05.644912-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-09T15:40:01.001993-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-09T15:35:00.892532-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-09T15:30:04.886669-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-09T15:25:00.951211-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-09T15:10:05.606498-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-09T15:05:00.876232-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-09T15:00:05.892957-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-09T14:55:00.989254-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+                    timestamp_et         slot   event_type                          detail
+2026-04-10T09:30:06.431975-04:00 data_refresh data_refresh                   {'saved': 99}
+2026-04-09T16:00:01.894335-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:55:05.644912-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:40:01.001993-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:35:00.892532-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:30:04.886669-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:25:00.951211-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:10:05.606498-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:05:00.876232-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-09T15:00:05.892957-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +78,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260409160001)
+![Reversal 3.2 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260410093006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260409160001)
+![Reversal 3.2 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260410093006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260409160001)
+![Reversal 3.2 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260410093006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260409160001)
+![Reversal 3.2 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260410093006)
 
 </details>
