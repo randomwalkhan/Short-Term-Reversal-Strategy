@@ -395,3 +395,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-10T14:50:01.462254-04:00,2026-04-10,entry_1500,entry,"{""allocated_cash"": 5810.0, ""contract_symbol"": ""HON260522C00235000"", ""contracts"": 7, ""entry_option_price"": 8.3, ""matched_signals"": 22, ""success_rate"": 100.0, ""ticker"": ""HON""}"
 2026-04-10T14:55:06.442916-04:00,2026-04-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-10T15:00:06.450530-04:00,2026-04-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-10T15:05:06.434805-04:00,2026-04-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
