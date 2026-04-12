@@ -42,7 +42,7 @@ MAX_SPREAD_PCT = 0.25
 MIN_OPEN_INTEREST = 10
 MIN_OPTION_ENTRY_OPEN_INTEREST = 100
 MIN_OPTION_ENTRY_VOLUME = 10
-MAX_OPTION_ENTRY_SPREAD_PCT = 0.12
+MAX_OPTION_ENTRY_SPREAD_PCT = 0.15
 MAX_OPEN_POSITIONS = 2
 TARGET_POSITION_WEIGHT = 0.50
 DAY1_TAKE_PROFIT_PCT = 0.15
@@ -1564,7 +1564,7 @@ def render_dashboard(
             "- Entry scan: `3:00 PM ET`",
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`",
             "- Live exit ladder: `+15% / +15% / -12%`",
-            "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 12%`",
+            "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`",
             "- Fallback execution: buy shares when the option fails the liquidity gate; use `+3% / -3%` for common-stock fallback and `+5% / -5%` for leveraged-ETF shares",
             "- Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed",
             "- Chart views: `Overall / 1D / 1W / 1M`, default open panel is `Overall`",

@@ -4,7 +4,7 @@
 ## Reversal 3.2 Live Paper Test
 
 - Latest checkpoint (ET): `2026-04-10 16:00:04 EDT`
-- Equity: `$12,340.00` | Realized: `$2,235.00` | Unrealized: `$105.00` | Open positions: `1`
+- Equity: `$12,340.00` | Realized: `$2,235.00` | Unrealized: `$70.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
@@ -13,8 +13,8 @@
 ### Current Open Positions
 
 ```text
-ticker    contract_symbol  contracts  cash_spent  current_position_value  current_option_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   HON HON260522C00235000          7      5810.0                  5915.0                  8.45           105.0                   1.81                   0
+ticker asset_type execution_mode         instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
+   HON     option         option HON260522C00235000      7      5810.0                  5880.0            8.4            70.0                    1.2                   0
 ```
 
 <details open>
@@ -68,7 +68,7 @@ This repository studies a short-term reversal call-buying setup built around lar
 
 ## Current Version | 当前官方版本
 
-Update note: Reversal 3.2 keeps the Reversal 3.1 research setup unchanged, but hardens the live paper runner with NYSE holiday awareness plus an option-liquidity gate. The Good Friday `2026-04-03` phantom entry was removed from the paper ledger, holiday sessions now publish a `market_closed` event instead of opening new trades, and live entries now require `open interest >= 100`, `volume >= 10`, and `spread <= 12%` before buying the option; otherwise the runner falls back to shares with tighter exits.
+Update note: Reversal 3.2 keeps the Reversal 3.1 research setup unchanged, but hardens the live paper runner with NYSE holiday awareness plus an option-liquidity gate. The Good Friday `2026-04-03` phantom entry was removed from the paper ledger, holiday sessions now publish a `market_closed` event instead of opening new trades, and live entries now require `open interest >= 100`, `volume >= 10`, and `spread <= 15%` before buying the option; otherwise the runner falls back to shares with tighter exits.
 
 Display update: GitHub feature charts stay on the shared dark Apple-style plotting theme, and the repo-facing version label is now aligned to Reversal 3.2.
 
