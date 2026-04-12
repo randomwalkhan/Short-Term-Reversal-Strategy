@@ -24,7 +24,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.2"
+VERSION = "3.3"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -239,7 +239,7 @@ class Position:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run the Reversal 3.2 live paper-trading cycle.")
+    parser = argparse.ArgumentParser(description="Run the Reversal 3.3 live paper-trading cycle.")
     parser.add_argument("--force-slot", choices=sorted(SLOT_TO_ET), default=None)
     parser.add_argument("--now", default=None, help="Optional override timestamp, e.g. 2026-03-24T15:00:00-04:00")
     parser.add_argument("--start-date", default=LIVE_START_DATE, help="Do not trade before this ET date.")
@@ -1288,7 +1288,7 @@ def plot_live_equity_window(
         color=TEXT,
         bbox={"boxstyle": "round,pad=0.25", "facecolor": AX_BG, "edgecolor": line_color, "alpha": 0.95},
     )
-    axis.set_title(f"Reversal 3.2 Live Paper Equity ({window_label})  |  Return {period_return_pct:+.2f}%")
+    axis.set_title(f"Reversal 3.3 Live Paper Equity ({window_label})  |  Return {period_return_pct:+.2f}%")
     axis.set_xlabel(f"Date (ET, trailing {window_label})")
     axis.set_ylabel("Portfolio Value ($)")
     legend = axis.legend(frameon=False, loc="upper left")
@@ -1401,7 +1401,7 @@ def plot_live_overall_benchmark(
         color=TEXT,
         bbox={"boxstyle": "round,pad=0.25", "facecolor": AX_BG, "edgecolor": line_color, "alpha": 0.95},
     )
-    axis.set_title(f"Reversal 3.2 Live Paper Equity vs QQQ / SPY (Overall)  |  Return {period_return_pct:+.2f}%")
+    axis.set_title(f"Reversal 3.3 Live Paper Equity vs QQQ / SPY (Overall)  |  Return {period_return_pct:+.2f}%")
     axis.set_xlabel("Date (ET, since live start)")
     axis.set_ylabel("Portfolio Value ($)")
     legend = axis.legend(frameon=False, loc="upper left")
@@ -1426,28 +1426,28 @@ def build_chart_sections(image_prefix: str, cache_bust: str | None = None) -> li
         "<details open>",
         "<summary><strong>Overall</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity Overall]({image_prefix}assets/reversal_3_2_live_equity_overall.png{suffix})",
+        f"![Reversal 3.3 Live Equity Overall]({image_prefix}assets/reversal_3_2_live_equity_overall.png{suffix})",
         "",
         "</details>",
         "",
         "<details>",
         "<summary><strong>1D</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity 1D]({image_prefix}assets/reversal_3_2_live_equity_1d.png{suffix})",
+        f"![Reversal 3.3 Live Equity 1D]({image_prefix}assets/reversal_3_2_live_equity_1d.png{suffix})",
         "",
         "</details>",
         "",
         "<details>",
         "<summary><strong>1W</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity 1W]({image_prefix}assets/reversal_3_2_live_equity.png{suffix})",
+        f"![Reversal 3.3 Live Equity 1W]({image_prefix}assets/reversal_3_2_live_equity.png{suffix})",
         "",
         "</details>",
         "",
         "<details>",
         "<summary><strong>1M</strong></summary>",
         "",
-        f"![Reversal 3.2 Live Equity 1M]({image_prefix}assets/reversal_3_2_live_equity_1m.png{suffix})",
+        f"![Reversal 3.3 Live Equity 1M]({image_prefix}assets/reversal_3_2_live_equity_1m.png{suffix})",
         "",
         "</details>",
         "",
@@ -1547,7 +1547,7 @@ def render_dashboard(
 
     dashboard_md = "\n".join(
         [
-            "# Reversal 3.2 Live Paper Test",
+            "# Reversal 3.3 Live Paper Test",
             "",
             f"Latest checkpoint (ET): `{checkpoint_ts.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
             f"Last processed slot: `{checkpoint_slot}`",
@@ -1629,7 +1629,7 @@ def render_dashboard(
     root_section = "\n".join(
         [
             ROOT_SECTION_START,
-            "## Reversal 3.2 Live Paper Test",
+            "## Reversal 3.3 Live Paper Test",
             "",
             f"- Latest checkpoint (ET): `{checkpoint_ts.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
             f"- Equity: `${last_equity:,.2f}` | Realized: `${realized_pnl:,.2f}` | Unrealized: `${unrealized_pnl:,.2f}` | Open positions: `{len(state['positions'])}`",
@@ -1668,7 +1668,7 @@ def update_root_readme(root_section: str) -> None:
         end = text.index(ROOT_SECTION_END) + len(ROOT_SECTION_END)
         text = text[:start] + root_section + text[end:]
     else:
-        text = text.replace("# Reversal 3.2\n", "# Reversal 3.2\n\n" + root_section + "\n\n", 1)
+        text = text.replace("# Reversal 3.3\n", "# Reversal 3.3\n\n" + root_section + "\n\n", 1)
     ROOT_README_PATH.write_text(text)
 
 
@@ -1720,7 +1720,7 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
     if not status.stdout.strip():
         return
 
-    commit_message = f"Update Reversal 3.2 live paper test {now_et.strftime('%Y-%m-%d %H:%M ET')}"
+    commit_message = f"Update Reversal 3.3 live paper test {now_et.strftime('%Y-%m-%d %H:%M ET')}"
     commit_result = run_git(["git", "commit", "-m", commit_message])
     if commit_result.returncode != 0:
         return
