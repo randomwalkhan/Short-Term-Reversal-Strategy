@@ -40,11 +40,18 @@ MAX_ABS_MONEYNESS_PCT = 0.08
 MAX_OTM_PCT = 0.05
 MAX_SPREAD_PCT = 0.25
 MIN_OPEN_INTEREST = 10
+MIN_OPTION_ENTRY_OPEN_INTEREST = 100
+MIN_OPTION_ENTRY_VOLUME = 10
+MAX_OPTION_ENTRY_SPREAD_PCT = 0.12
 MAX_OPEN_POSITIONS = 2
 TARGET_POSITION_WEIGHT = 0.50
 DAY1_TAKE_PROFIT_PCT = 0.15
 DAY2_TAKE_PROFIT_PCT = 0.15
 STOP_LOSS_PCT = 0.12
+SHARE_TAKE_PROFIT_PCT = 0.03
+SHARE_STOP_LOSS_PCT = 0.03
+LEVERAGED_SHARE_TAKE_PROFIT_PCT = 0.05
+LEVERAGED_SHARE_STOP_LOSS_PCT = 0.05
 REFRESH_DATA_IF_STALE = True
 LIVE_START_DATE = "2026-03-24"
 
@@ -71,6 +78,7 @@ BENCHMARK_COLORS = {
     "QQQ": "#f59e0b",
     "SPY": "#93c5fd",
 }
+LEVERAGED_LONG_TICKERS = {"SOXL", "UPRO", "TQQQ", "SPXL", "TECL", "ROM", "QLD", "SSO", "USD"}
 
 SLOT_TO_ET = {
     "manage_0930": (9, 30),
@@ -202,6 +210,8 @@ def count_nyse_session_days(start_exclusive: pd.Timestamp | str | date, end_incl
 class Position:
     position_id: str
     ticker: str
+    asset_type: str
+    execution_mode: str
     contract_symbol: str
     expiry: str
     strike: float
@@ -222,6 +232,10 @@ class Position:
     planned_tp_day1: float
     planned_tp_day2: float
     planned_stop: float
+    option_open_interest: float | None = None
+    option_volume: float | None = None
+    option_spread_pct: float | None = None
+    option_liquidity_status: str | None = None
 
 
 def parse_args() -> argparse.Namespace:
@@ -515,6 +529,32 @@ def choose_option_mark(calls: pd.DataFrame) -> pd.Series:
     return pd.Series(mark, index=calls.index, dtype=float)
 
 
+def is_leveraged_long_ticker(ticker: str) -> bool:
+    return str(ticker).upper() in LEVERAGED_LONG_TICKERS
+
+
+def share_exit_ladder(ticker: str) -> tuple[float, float, str]:
+    if is_leveraged_long_ticker(ticker):
+        return LEVERAGED_SHARE_TAKE_PROFIT_PCT, LEVERAGED_SHARE_STOP_LOSS_PCT, "leveraged_share_fallback"
+    return SHARE_TAKE_PROFIT_PCT, SHARE_STOP_LOSS_PCT, "share_fallback"
+
+
+def assess_option_entry_liquidity(row: pd.Series) -> tuple[bool, str]:
+    reasons: list[str] = []
+    open_interest = float(pd.to_numeric(pd.Series([row.get("openInterest")]), errors="coerce").iloc[0] or 0)
+    volume = float(pd.to_numeric(pd.Series([row.get("volume")]), errors="coerce").iloc[0] or 0)
+    spread_pct = pd.to_numeric(pd.Series([row.get("spread_pct")]), errors="coerce").iloc[0]
+
+    if open_interest < MIN_OPTION_ENTRY_OPEN_INTEREST:
+        reasons.append("low_open_interest")
+    if volume < MIN_OPTION_ENTRY_VOLUME:
+        reasons.append("low_volume")
+    if pd.isna(spread_pct) or float(spread_pct) > MAX_OPTION_ENTRY_SPREAD_PCT:
+        reasons.append("wide_spread")
+
+    return (len(reasons) == 0, "ok" if not reasons else ",".join(reasons))
+
+
 def fetch_call_candidates(
     ticker: str,
     spot: float,
@@ -575,9 +615,14 @@ def fetch_call_candidates(
         (calls["openInterest"] >= MIN_OPEN_INTEREST)
         & (calls["spread_pct"].fillna(1.0) <= MAX_SPREAD_PCT)
     )
+    calls["entry_liquidity_ok"] = (
+        (calls["openInterest"] >= MIN_OPTION_ENTRY_OPEN_INTEREST)
+        & (calls["volume"] >= MIN_OPTION_ENTRY_VOLUME)
+        & (calls["spread_pct"].fillna(1.0) <= MAX_OPTION_ENTRY_SPREAD_PCT)
+    )
     calls = calls.sort_values(
-        ["abs_moneyness_pct", "liquidity_ok", "spread_pct", "trading_dte", "openInterest", "volume"],
-        ascending=[True, False, True, True, False, False],
+        ["entry_liquidity_ok", "abs_moneyness_pct", "liquidity_ok", "spread_pct", "trading_dte", "openInterest", "volume"],
+        ascending=[False, True, False, True, True, False, False],
         na_position="last",
     ).reset_index(drop=True)
     return calls
@@ -753,21 +798,34 @@ def mark_open_positions(state: dict[str, Any], now_et: pd.Timestamp) -> tuple[li
     total_value = 0.0
     trade_date = now_et.date().isoformat()
     for raw in state["positions"]:
-        quote = fetch_contract_quote(raw["ticker"], raw["expiry"], raw["contract_symbol"], raw["strike"])
+        asset_type = str(raw.get("asset_type", "option"))
         live = get_live_snapshot(raw["ticker"])
-        current_price = float(quote["mark_price"])
-        position_value = current_price * 100 * raw["contracts"]
-        pnl = (current_price - raw["entry_option_price"]) * 100 * raw["contracts"]
+        if asset_type == "share":
+            current_price = float(live["current_price"])
+            position_value = current_price * raw["contracts"]
+            pnl = (current_price - raw["entry_option_price"]) * raw["contracts"]
+            current_bid = np.nan
+            current_ask = np.nan
+            current_iv_pct = np.nan
+        else:
+            quote = fetch_contract_quote(raw["ticker"], raw["expiry"], raw["contract_symbol"], raw["strike"])
+            current_price = float(quote["mark_price"])
+            position_value = current_price * 100 * raw["contracts"]
+            pnl = (current_price - raw["entry_option_price"]) * 100 * raw["contracts"]
+            current_bid = quote["bid"]
+            current_ask = quote["ask"]
+            current_iv_pct = quote["iv_pct"]
         pnl_pct = (current_price / raw["entry_option_price"] - 1) * 100 if raw["entry_option_price"] > 0 else np.nan
         day_number = business_days_since(raw["entry_trade_date"], trade_date)
         marked_row = {
             **raw,
             "asof_et": now_et.isoformat(),
+            "asset_type": asset_type,
             "current_spot": live["current_price"],
             "current_option_price": current_price,
-            "current_bid": quote["bid"],
-            "current_ask": quote["ask"],
-            "current_iv_pct": quote["iv_pct"],
+            "current_bid": current_bid,
+            "current_ask": current_ask,
+            "current_iv_pct": current_iv_pct,
             "position_value": position_value,
             "unrealized_pnl": pnl,
             "unrealized_return_pct": pnl_pct,
@@ -794,6 +852,7 @@ def maybe_exit_positions(
     for raw in state["positions"]:
         marked = by_id[raw["position_id"]]
         current_price = float(marked["current_option_price"])
+        asset_type = str(raw.get("asset_type", "option"))
         business_days_held = int(marked["business_days_held"])
         target = raw["planned_tp_day1"] if business_days_held <= 1 else raw["planned_tp_day2"]
         exit_reason = None
@@ -809,12 +868,15 @@ def maybe_exit_positions(
             remaining_positions.append(raw)
             continue
 
-        proceeds = current_price * 100 * raw["contracts"]
-        pnl = proceeds - raw["entry_option_price"] * 100 * raw["contracts"]
+        multiplier = 1 if asset_type == "share" else 100
+        proceeds = current_price * multiplier * raw["contracts"]
+        pnl = proceeds - raw["entry_option_price"] * multiplier * raw["contracts"]
         state["cash"] += proceeds
         trade_row = {
             "position_id": raw["position_id"],
             "ticker": raw["ticker"],
+            "asset_type": asset_type,
+            "execution_mode": raw.get("execution_mode", asset_type),
             "contract_symbol": raw["contract_symbol"],
             "entry_timestamp_et": raw["entry_timestamp"],
             "exit_timestamp_et": now_et.isoformat(),
@@ -846,6 +908,7 @@ def maybe_exit_positions(
             event_type="exit",
             detail={
                 "ticker": raw["ticker"],
+                "asset_type": asset_type,
                 "contract_symbol": raw["contract_symbol"],
                 "reason": exit_reason,
                 "pnl": round(float(pnl), 2),
@@ -889,24 +952,60 @@ def maybe_enter_position(
     candidate = candidates.iloc[0]
     ticker = str(candidate["ticker"])
     spot = float(candidate["live_price_raw"])
-    calls = fetch_call_candidates(ticker, spot=spot)
-    selected = calls.iloc[0]
-    entry_price = float(selected["mark_price"])
-    if entry_price <= 0:
-        events_df = append_event(
-            events_df,
-            now_et=now_et,
-            trade_date=now_et.date().isoformat(),
-            slot=slot_key,
-            event_type="entry_skipped",
-            detail={"ticker": ticker, "reason": "invalid_entry_price"},
-        )
-        return state, trades_df, events_df
+    option_liquidity_status = "unavailable"
+    option_open_interest = np.nan
+    option_volume = np.nan
+    option_spread_pct = np.nan
+    asset_type = "option"
+    execution_mode = "option"
+    selected = None
+
+    try:
+        calls = fetch_call_candidates(ticker, spot=spot)
+        selected = calls.iloc[0]
+        option_open_interest = float(selected.get("openInterest", np.nan))
+        option_volume = float(selected.get("volume", np.nan))
+        option_spread_pct = float(selected.get("spread_pct", np.nan))
+        option_liquid, option_liquidity_status = assess_option_entry_liquidity(selected)
+        if not option_liquid:
+            asset_type = "share"
+            _, _, execution_mode = share_exit_ladder(ticker)
+    except Exception as exc:
+        option_liquidity_status = f"option_unavailable:{exc}"
+        asset_type = "share"
+        _, _, execution_mode = share_exit_ladder(ticker)
+
+    if asset_type == "option":
+        assert selected is not None
+        entry_price = float(selected["mark_price"])
+        if entry_price <= 0:
+            events_df = append_event(
+                events_df,
+                now_et=now_et,
+                trade_date=now_et.date().isoformat(),
+                slot=slot_key,
+                event_type="entry_skipped",
+                detail={"ticker": ticker, "reason": "invalid_entry_price"},
+            )
+            return state, trades_df, events_df
+        entry_cost = entry_price * 100
+    else:
+        entry_price = spot
+        if entry_price <= 0:
+            events_df = append_event(
+                events_df,
+                now_et=now_et,
+                trade_date=now_et.date().isoformat(),
+                slot=slot_key,
+                event_type="entry_skipped",
+                detail={"ticker": ticker, "reason": "invalid_share_price"},
+            )
+            return state, trades_df, events_df
+        entry_cost = entry_price
 
     marked_positions, current_position_value = mark_open_positions(state, now_et) if state["positions"] else ([], 0.0)
     current_equity = float(state["cash"]) + current_position_value
     budget = min(float(state["cash"]), current_equity * TARGET_POSITION_WEIGHT)
-    entry_cost = entry_price * 100
     contracts = int(budget // entry_cost)
     if contracts <= 0:
         events_df = append_event(
@@ -921,20 +1020,41 @@ def maybe_enter_position(
 
     spent = contracts * entry_cost
     state["cash"] -= spent
-    entry_iv_pct = float(selected["impliedVolatility"]) * 100 if pd.notna(selected["impliedVolatility"]) else np.nan
+    entry_iv_pct = float(selected["impliedVolatility"]) * 100 if asset_type == "option" and pd.notna(selected["impliedVolatility"]) else np.nan
+    if asset_type == "option":
+        planned_tp_day1 = entry_price * (1 + DAY1_TAKE_PROFIT_PCT)
+        planned_tp_day2 = entry_price * (1 + DAY2_TAKE_PROFIT_PCT)
+        planned_stop = entry_price * (1 - STOP_LOSS_PCT)
+        contract_symbol = str(selected["contractSymbol"])
+        expiry = pd.Timestamp(selected["expiry"]).date().isoformat()
+        strike = float(selected["strike"])
+        entry_bid = float(selected["bid"]) if pd.notna(selected["bid"]) else np.nan
+        entry_ask = float(selected["ask"]) if pd.notna(selected["ask"]) else np.nan
+    else:
+        tp_pct, stop_pct, execution_mode = share_exit_ladder(ticker)
+        planned_tp_day1 = entry_price * (1 + tp_pct)
+        planned_tp_day2 = entry_price * (1 + tp_pct)
+        planned_stop = entry_price * (1 - stop_pct)
+        contract_symbol = ticker
+        expiry = ""
+        strike = float("nan")
+        entry_bid = np.nan
+        entry_ask = np.nan
     position = Position(
         position_id=f"{ticker}_{now_et.strftime('%Y%m%dT%H%M%S')}",
         ticker=ticker,
-        contract_symbol=str(selected["contractSymbol"]),
-        expiry=pd.Timestamp(selected["expiry"]).date().isoformat(),
-        strike=float(selected["strike"]),
+        asset_type=asset_type,
+        execution_mode=execution_mode,
+        contract_symbol=contract_symbol,
+        expiry=expiry,
+        strike=strike,
         entry_timestamp=now_et.isoformat(),
         entry_trade_date=now_et.date().isoformat(),
         entry_slot=slot_key,
         entry_spot=spot,
         entry_option_price=entry_price,
-        entry_bid=float(selected["bid"]) if pd.notna(selected["bid"]) else np.nan,
-        entry_ask=float(selected["ask"]) if pd.notna(selected["ask"]) else np.nan,
+        entry_bid=entry_bid,
+        entry_ask=entry_ask,
         entry_iv_pct=entry_iv_pct if np.isfinite(entry_iv_pct) else np.nan,
         contracts=contracts,
         allocated_cash=spent,
@@ -942,9 +1062,13 @@ def maybe_enter_position(
         matched_signals=int(candidate["matched_signals"]),
         current_drop_pct=float(candidate["current_drop_%"]),
         rolling_sigma_20d_pct=float(candidate["rolling_sigma_20d_%"]) if pd.notna(candidate["rolling_sigma_20d_%"]) else np.nan,
-        planned_tp_day1=entry_price * (1 + DAY1_TAKE_PROFIT_PCT),
-        planned_tp_day2=entry_price * (1 + DAY2_TAKE_PROFIT_PCT),
-        planned_stop=entry_price * (1 - STOP_LOSS_PCT),
+        planned_tp_day1=planned_tp_day1,
+        planned_tp_day2=planned_tp_day2,
+        planned_stop=planned_stop,
+        option_open_interest=option_open_interest if np.isfinite(option_open_interest) else np.nan,
+        option_volume=option_volume if np.isfinite(option_volume) else np.nan,
+        option_spread_pct=option_spread_pct if np.isfinite(option_spread_pct) else np.nan,
+        option_liquidity_status=option_liquidity_status,
     )
     state["positions"].append(asdict(position))
     events_df = append_event(
@@ -955,12 +1079,18 @@ def maybe_enter_position(
         event_type="entry",
         detail={
             "ticker": ticker,
+            "asset_type": asset_type,
+            "execution_mode": execution_mode,
             "contract_symbol": position.contract_symbol,
             "contracts": contracts,
             "entry_option_price": round(entry_price, 4),
             "allocated_cash": round(spent, 2),
             "success_rate": round(position.success_rate, 2),
             "matched_signals": position.matched_signals,
+            "option_open_interest": round(option_open_interest, 2) if np.isfinite(option_open_interest) else None,
+            "option_volume": round(option_volume, 2) if np.isfinite(option_volume) else None,
+            "option_spread_pct": round(option_spread_pct * 100, 2) if np.isfinite(option_spread_pct) else None,
+            "option_liquidity_status": option_liquidity_status,
         },
     )
     return state, trades_df, events_df
@@ -972,6 +1102,8 @@ def build_positions_frame(state: dict[str, Any], now_et: pd.Timestamp) -> pd.Dat
         return pd.DataFrame(
             columns=[
                 "ticker",
+                "asset_type",
+                "execution_mode",
                 "contract_symbol",
                 "entry_trade_date",
                 "current_option_price",
@@ -1358,18 +1490,53 @@ def render_dashboard(
 
     positions_view = positions_df.copy()
     if not positions_view.empty:
+        if "asset_type" in positions_view.columns:
+            positions_view["asset_type"] = positions_view["asset_type"].fillna("option")
+        else:
+            positions_view["asset_type"] = "option"
+        if "execution_mode" in positions_view.columns:
+            positions_view["execution_mode"] = positions_view["execution_mode"].fillna(positions_view["asset_type"])
+        else:
+            positions_view["execution_mode"] = positions_view["asset_type"]
+        positions_view["instrument"] = np.where(
+            positions_view["asset_type"].eq("option"),
+            positions_view.get("contract_symbol", positions_view.get("ticker")),
+            positions_view.get("ticker"),
+        )
+        positions_view["units"] = positions_view.get("contracts")
+        positions_view["entry_price"] = positions_view.get("entry_option_price")
+        positions_view["current_price"] = positions_view.get("current_option_price")
         if "allocated_cash" in positions_view.columns:
             positions_view["cash_spent"] = positions_view["allocated_cash"]
         if "position_value" in positions_view.columns:
             positions_view["current_position_value"] = positions_view["position_value"]
         numeric_cols = [
-            "entry_spot", "current_spot", "entry_option_price", "current_option_price", "unrealized_pnl",
+            "entry_spot", "current_spot", "entry_option_price", "current_option_price", "entry_price", "current_price", "unrealized_pnl",
             "unrealized_return_pct", "entry_iv_pct", "current_iv_pct", "success_rate", "current_drop_pct",
-            "rolling_sigma_20d_pct", "cash_spent", "current_position_value"
+            "rolling_sigma_20d_pct", "cash_spent", "current_position_value", "option_open_interest", "option_volume", "option_spread_pct"
         ]
         for col in numeric_cols:
             if col in positions_view.columns:
                 positions_view[col] = pd.to_numeric(positions_view[col], errors="coerce").round(2)
+
+    trades_view = today_trades.copy()
+    if not trades_view.empty:
+        if "asset_type" in trades_view.columns:
+            trades_view["asset_type"] = trades_view["asset_type"].fillna("option")
+        else:
+            trades_view["asset_type"] = "option"
+        if "execution_mode" in trades_view.columns:
+            trades_view["execution_mode"] = trades_view["execution_mode"].fillna(trades_view["asset_type"])
+        else:
+            trades_view["execution_mode"] = trades_view["asset_type"]
+        trades_view["instrument"] = np.where(
+            trades_view["asset_type"].eq("option"),
+            trades_view.get("contract_symbol", trades_view.get("ticker")),
+            trades_view.get("ticker"),
+        )
+        trades_view["units"] = trades_view.get("contracts")
+        trades_view["entry_price"] = trades_view.get("entry_option_price")
+        trades_view["exit_price"] = trades_view.get("exit_option_price")
 
     screener_view = summary_df.copy()
     if not screener_view.empty:
@@ -1397,6 +1564,8 @@ def render_dashboard(
             "- Entry scan: `3:00 PM ET`",
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`",
             "- Live exit ladder: `+15% / +15% / -12%`",
+            "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 12%`",
+            "- Fallback execution: buy shares when the option fails the liquidity gate; use `+3% / -3%` for common-stock fallback and `+5% / -5%` for leveraged-ETF shares",
             "- Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed",
             "- Chart views: `Overall / 1D / 1W / 1M`, default open panel is `Overall`",
             "",
@@ -1413,11 +1582,12 @@ def render_dashboard(
             format_table(
                 positions_view,
                 columns=[
-                    "ticker", "contract_symbol", "entry_trade_date", "business_days_held", "contracts",
+                    "ticker", "asset_type", "execution_mode", "instrument", "entry_trade_date", "business_days_held", "units",
                     "cash_spent", "current_position_value",
-                    "entry_option_price", "current_option_price", "entry_spot", "current_spot",
+                    "entry_price", "current_price", "entry_spot", "current_spot",
                     "unrealized_pnl", "unrealized_return_pct", "success_rate", "matched_signals",
-                    "current_drop_pct", "entry_iv_pct", "current_iv_pct", "rolling_sigma_20d_pct"
+                    "current_drop_pct", "entry_iv_pct", "current_iv_pct", "rolling_sigma_20d_pct",
+                    "option_open_interest", "option_volume", "option_spread_pct", "option_liquidity_status"
                 ],
                 max_rows=10,
             ),
@@ -1425,10 +1595,10 @@ def render_dashboard(
             f"## Today's Closed Trades ({today})",
             "",
             format_table(
-                today_trades,
+                trades_view,
                 columns=[
-                    "ticker", "contract_symbol", "entry_trade_date_et", "exit_trade_date_et",
-                    "entry_option_price", "exit_option_price", "pnl", "return_pct", "exit_reason"
+                    "ticker", "asset_type", "execution_mode", "instrument", "units", "entry_trade_date_et", "exit_trade_date_et",
+                    "entry_price", "exit_price", "pnl", "return_pct", "exit_reason"
                 ],
                 max_rows=20,
             ),
@@ -1473,8 +1643,8 @@ def render_dashboard(
             format_table(
                 positions_view,
                 columns=[
-                    "ticker", "contract_symbol", "contracts", "cash_spent", "current_position_value",
-                    "current_option_price", "unrealized_pnl", "unrealized_return_pct", "business_days_held"
+                    "ticker", "asset_type", "execution_mode", "instrument", "units", "cash_spent", "current_position_value",
+                    "current_price", "unrealized_pnl", "unrealized_return_pct", "business_days_held"
                 ],
                 max_rows=8,
             ),
