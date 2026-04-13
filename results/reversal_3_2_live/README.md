@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-13 15:55:05 EDT`
+Latest checkpoint (ET): `2026-04-13 16:00:05 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -23,16 +23,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$7,229.00`
-- Equity: `$13,186.76`
+- Equity: `$13,200.68`
 - Realized PnL: `$3,145.00`
-- Unrealized PnL: `$41.76`
+- Unrealized PnL: `$55.68`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct      option_liquidity_status
-  REGN      share share_fallback       REGN       2026-04-13                   0      8      5916.0                 5957.76        739.5         744.72       739.5        744.72           41.76                   0.71         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
+  REGN      share share_fallback       REGN       2026-04-13                   0      8      5916.0                 5971.68        739.5         746.46       739.5        746.46           55.68                   0.94         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
 ```
 
 ## Today's Closed Trades (2026-04-13)
@@ -46,34 +46,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               35            0.58              3.03        747.57                24.22            True
-   HON          100.00               25            0.56              0.92        234.67                23.73            True
-   WMT           90.00               10            1.71              1.52        126.14                25.46            True
-   EXC           88.89               18            0.81              0.28         48.45                21.28            True
-  DXCM           88.57               35            1.37              0.62         63.76                33.70            True
-   BKR           85.71               35            0.64              0.28         62.71                35.55            True
-   PEP           85.71               21            0.72              0.79        156.72                20.42            True
-  AMAT           84.85               33            0.97              2.71        398.33                55.88            True
-  ODFL           83.78               37            0.56              0.81        208.00                24.62            True
-  MNST           82.35               34            0.65              0.34         75.57                27.64            True
-   KDP           80.00               10            1.75              0.33         26.43                21.09            True
-  MDLZ          100.00                3            2.31              0.96         58.59                22.21           False
+   HON          100.00               23            0.61              1.00        234.64                23.73            True
+  DXCM           88.24               34            1.41              0.63         63.75                33.70            True
+   EXC           87.50               16            0.86              0.29         48.44                21.28            True
+   PEP           85.71               21            0.75              0.83        156.71                20.42            True
+  AMAT           85.29               34            0.94              2.64        398.37                55.88            True
+  INSM           80.95               21            2.37              2.57        153.71                53.55            True
+  MNST           80.65               31            0.73              0.38         75.56                27.64            True
+  REGN          100.00               39            0.32              1.69        748.15                24.22           False
+  MDLZ          100.00                3            2.24              0.92         58.60                22.21           False
+   XEL          100.00                1            2.34              1.35         81.80                18.59           False
+  ROST           95.45               44            0.09              0.15        221.10                24.81           False
+    EA           93.55               31            0.09              0.13        202.69                 5.04           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                                  detail
-2026-04-13T15:55:05.891523-04:00 manage_1600 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T15:40:00.935651-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T15:35:03.917727-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T15:30:05.898340-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T15:25:05.902167-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T15:10:02.902553-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T15:05:02.884164-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T15:00:05.899871-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T14:55:05.886859-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T14:50:05.902241-04:00  entry_1500        entry {"allocated_cash": 5916.0, "asset_type": "share", "contract_symbol": "REGN", "contracts": 8, "entry_option_price": 739.5, "execution_mode": "share_fallback", "matched_signals": 24, "option_liquidity_status": "low_open_interest,low_volume", "option_open_interest": 89.0, "option_spread_pct": 6.64, "option_volume": 1.0, "success_rate": 100.0, "ticker": "REGN"}
+                    timestamp_et        slot   event_type                          detail
+2026-04-13T16:00:05.899443-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-13T15:55:05.891523-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-13T15:40:00.935651-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-13T15:35:03.917727-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-13T15:30:05.898340-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-13T15:25:05.902167-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-13T15:10:02.902553-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-13T15:05:02.884164-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-13T15:00:05.899871-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-13T14:55:05.886859-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -83,27 +83,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260413155505)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260413160005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260413155505)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260413160005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260413155505)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260413160005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260413155505)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260413160005)
 
 </details>
