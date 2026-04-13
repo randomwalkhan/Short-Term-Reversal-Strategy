@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-10 16:00:04 EDT`
-Last processed slot: `manage_1600`
+Latest checkpoint (ET): `2026-04-13 09:30:05 EDT`
+Last processed slot: `manage_0930`
 
 ## Active Configuration
 
@@ -22,44 +22,55 @@ Last processed slot: `manage_1600`
 
 ## Portfolio Snapshot
 
-- Cash: `$6,425.00`
-- Equity: `$12,340.00`
-- Realized PnL: `$2,235.00`
-- Unrealized PnL: `$70.00`
-- Open positions: `1`
+- Cash: `$9,575.00`
+- Equity: `$9,575.00`
+- Realized PnL: `$-425.00`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct
-   HON     option         option HON260522C00235000       2026-04-10                   0      7      5810.0                  5880.0          8.3            8.4      234.53        235.42            70.0                    1.2         100.0               22              0.65         29.29           30.49                  23.67
-```
+_None_
 
-## Today's Closed Trades (2026-04-10)
+## Today's Closed Trades (2026-04-13)
 
 ```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price    pnl  return_pct           exit_reason
-  REGN     option         option REGN260515C00765000      1          2026-04-09         2026-04-10         44.0        36.1 -790.0  -17.954545 stop_loss_hit_at_scan
+ticker asset_type execution_mode         instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct           exit_reason
+   HON     option         option HON260522C00235000      7          2026-04-10         2026-04-13          8.3         4.5 -2660.0  -45.783133 stop_loss_hit_at_scan
 ```
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
+   STX           94.44               36            0.87              3.05        501.82                75.16            True
+   WMT           93.10               29            0.73              0.65        126.51                25.46            True
+  NVDA           92.00               25            1.41              1.86        187.95                35.03            True
+  MPWR           91.18               34            0.96              9.11       1349.95                59.12            True
+  UPRO           90.91               33            0.87              0.67        109.80                57.82            True
+  SNPS           90.00               40            0.78              2.13        391.33                37.51            True
+  ABNB           90.00               30            1.36              1.23        128.43                38.59            True
+  GILD           90.00               30            0.60              0.58        138.78                21.48            True
+  ASML           88.57               35            0.67              6.91       1475.32                52.64            True
+   MAR           88.24               34            0.81              2.01        353.24                29.84            True
+  FAST           86.96               23            1.35              0.46         48.97                26.67            True
+  BKNG           86.67               30            1.42              1.72        172.72                37.67            True
+```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-10T16:00:04.433718-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-10T15:55:06.433939-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-10T15:40:05.440122-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-10T15:35:01.390117-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-10T15:30:06.443787-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-10T15:25:06.434467-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-10T15:10:06.450785-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-10T15:05:06.434805-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-10T15:00:06.450530-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-10T14:55:06.442916-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+                    timestamp_et         slot   event_type                                                                                                                                                      detail
+2026-04-13T09:30:05.721136-04:00  manage_0930         exit {"asset_type": "option", "contract_symbol": "HON260522C00235000", "pnl": -2660.0, "reason": "stop_loss_hit_at_scan", "return_pct": -45.78, "ticker": "HON"}
+2026-04-13T09:30:05.721136-04:00 data_refresh data_refresh                                                                                                                                               {'saved': 99}
+2026-04-10T16:00:04.433718-04:00  manage_1600 slot_skipped                                                                                                                             {"reason": "already_processed"}
+2026-04-10T15:55:06.433939-04:00  manage_1600 slot_skipped                                                                                                                             {"reason": "already_processed"}
+2026-04-10T15:40:05.440122-04:00  manage_1530 slot_skipped                                                                                                                             {"reason": "already_processed"}
+2026-04-10T15:35:01.390117-04:00  manage_1530 slot_skipped                                                                                                                             {"reason": "already_processed"}
+2026-04-10T15:30:06.443787-04:00  manage_1530 slot_skipped                                                                                                                             {"reason": "already_processed"}
+2026-04-10T15:25:06.434467-04:00  manage_1530 slot_skipped                                                                                                                             {"reason": "already_processed"}
+2026-04-10T15:10:06.450785-04:00   entry_1500 slot_skipped                                                                                                                             {"reason": "already_processed"}
+2026-04-10T15:05:06.434805-04:00   entry_1500 slot_skipped                                                                                                                             {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -69,27 +80,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260410160004)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260413093005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260410160004)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260413093005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260410160004)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260413093005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260410160004)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260413093005)
 
 </details>
