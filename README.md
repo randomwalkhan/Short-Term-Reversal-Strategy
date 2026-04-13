@@ -66,6 +66,41 @@ This repository studies a short-term reversal call-buying setup built around lar
 - Live paper test: no-lookahead scheduled scans with an option-liquidity gate, share fallback, and GitHub-published dashboard output
 - Research discipline: `RESEARCH_GUARDRAILS.md`
 
+## Research Journey | 研究历程
+
+This project started from a simple market observation: some high-beta names and selected leveraged ETFs often rebound sharply over the next few trading days after a large intraday down move. That observation became the starting point for a more structured research process rather than a one-off backtest.
+
+这个项目最早来自一个很直观的观察：某些高 beta 个股和精选 leveraged ETF 在出现较大的日内下跌后，未来几个交易日里往往会有更明显的反弹。这个仓库后面的研究工作，就是把这个直觉逐步变成一套可验证、可回测、可执行的流程。
+
+The research path is:
+
+研究主线可以概括为：
+
+1. Define a signal day and a measurable recovery target.  
+   在 `Reversal3.3.ipynb` 和 `backtest_reversal_3_1_calls.py` 中，把“日内大跌” formalize 成 signal day，再检验未来 `5` 个交易日内是否能回补 signal-day 跌幅的 `70%`。
+2. Test where the effect is actually strongest.  
+   在 `compare_reversal_2_3_3_universes.py` 中比较多个 universe，确认这个效应在更精选的 `qqq_only_filtered` 里最强，而不是越广越好。
+3. Improve signal quality before adding execution.  
+   在 `backtest_reversal_article_variants.py`、`backtest_reversal_2_5_min_drop_experiment.py` 和 `backtest_reversal_3_1_leveraged_etf_experiment.py` 中，逐步提升 `60d` window、`minimum current drop > 0.5%` 和 `SOXL + UPRO` overlay。
+4. Translate the research into a no-lookahead live process.  
+   在 `reversal_3_2_live.py` 中把研究结果接成定时扫描的 live paper runner，并补上 holiday handling、option-liquidity gating、share fallback 和 GitHub dashboard。
+
+Representative research outputs:
+
+代表性的研究输出包括：
+
+| Research question | Script / notebook | Representative output |
+|---|---|---|
+| Which universe best captures the reversal effect? | `compare_reversal_2_3_3_universes.py` | [`reversal_2_3_3_universe_comparison.csv`](results/reversal_2_3_3_universe_comparison/reversal_2_3_3_universe_comparison.csv), [`reversal_2_3_3_universe_comparison.png`](assets/reversal_2_3_3_universe_comparison.png) |
+| Which factor refinement improves the base setup most? | `backtest_reversal_article_variants.py` | [`reversal_article_variants_summary.csv`](results/reversal_2_4_article_variants/reversal_article_variants_summary.csv), [`reversal_2_4_article_variants.png`](assets/reversal_2_4_article_variants.png) |
+| Does a minimum-drop threshold improve trade quality? | `backtest_reversal_2_5_min_drop_experiment.py` | [`reversal_2_5_min_drop_summary.csv`](results/reversal_2_5_min_drop_experiment/reversal_2_5_min_drop_summary.csv), [`reversal_2_5_min_drop_experiment.png`](assets/reversal_2_5_min_drop_experiment.png) |
+| Do a few leveraged ETFs improve the official setup? | `backtest_reversal_3_1_leveraged_etf_experiment.py` | [`reversal_3_1_leveraged_etf_summary.csv`](results/reversal_3_1_leveraged_etf_experiment/reversal_3_1_leveraged_etf_summary.csv), [`reversal_3_1_leveraged_etf_experiment.png`](assets/reversal_3_1_leveraged_etf_experiment.png) |
+| Should the strategy be paused in hostile market regimes? | `analyze_reversal_3_1_regime_score.py`, `analyze_reversal_3_1_regime_predictive_power.py` | [`reversal_3_1_regime_score.png`](assets/reversal_3_1_regime_score.png), [`reversal_3_1_regime_gating_comparison.png`](assets/reversal_3_1_regime_gating_comparison.png) |
+
+That research path is what naturally leads to the current live-paper implementation: the repo does not start from execution first and then search for a story; it starts from a repeatable price-recovery phenomenon, tests where it is strongest, and only then moves into scheduled live monitoring and execution controls.
+
+这条研究路径也自然引出了现在的 live paper implementation：先确认价格恢复现象是否存在、在哪些 universe 和参数下最稳定，再把它接成定时扫描、可追踪、可控风险的执行流程。
+
 ## Current Version | 当前官方版本
 
 Update note: Reversal 3.3 keeps the Reversal 3.1 research setup unchanged, but further refines live execution with the same NYSE holiday awareness, option-liquidity gate, and share fallback path while relaxing the option spread threshold from `12%` to `15%`. Live entries still require `open interest >= 100` and `volume >= 10`, and thin option setups still fall back to shares with tighter exits.
