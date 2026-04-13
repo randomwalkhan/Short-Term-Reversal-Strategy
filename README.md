@@ -68,26 +68,34 @@ This repository studies a short-term reversal call-buying setup built around lar
 
 ## Research Journey | 研究历程
 
-This project started from a simple market observation: some high-beta names and selected leveraged ETFs often rebound sharply over the next few trading days after a large intraday down move. That observation became the starting point for a more structured research process rather than a one-off backtest.
+This project started from something I kept seeing on my screen: after a sharp down day, some stocks would rebound surprisingly quickly over the next few sessions. I wanted to know which names actually behaved that way consistently, and whether that pattern was strong enough to support short-term reversal option trades rather than just a good-looking anecdote.
 
-这个项目最早来自一个很直观的观察：某些高 beta 个股和精选 leveraged ETF 在出现较大的日内下跌后，未来几个交易日里往往会有更明显的反弹。这个仓库后面的研究工作，就是把这个直觉逐步变成一套可验证、可回测、可执行的流程。
+这个项目最开始其实是一个很朴素的观察：我发现有些股票在大跌后的几天里，经常会出现比较快的反弹。我当时想弄清楚，到底是哪些股票更容易出现这种走势，这种现象到底只是偶然，还是能被系统化地验证，并进一步转化成 short-term reversal option trades。
 
-The research path is:
+In the earliest `Reversal 1.x` style work and the preserved early notebooks such as `Reversal2.0.ipynb` and `Reversal2.1.ipynb`, I started with a very small legacy watchlist of roughly ten names. The scripts pulled one year of Yahoo Finance `Close`, `High`, and `Low` data, computed daily `Max Drop`, and then let me set three simple inputs: a same-day drop threshold, a recovery target, and a lookahead window. Once those were set, the code would tell me which tickers had the tendency to rebound by `x%` of the drop within `t + lookahead` trading days after a qualifying drawdown.
 
-研究主线可以概括为：
+在最早的 `Reversal 1.x` 思路和现在仓库里保留下来的早期 notebook，例如 `Reversal2.0.ipynb`、`Reversal2.1.ipynb` 中，我一开始只研究大约十只左右的股票，也就是后面保留下来的 `legacy_watchlist_11` 这条线。那时的脚本会先从 Yahoo Finance 下载过去一年的 `Close`、`High`、`Low`，再计算每日的 `Max Drop`。然后我可以手动设定三个核心参数：当日跌幅阈值、反弹比例、以及 lookahead day。脚本跑完之后，会直接输出哪些 ticker 在满足当日跌幅条件后，能在 `t + lookahead` 的窗口里完成我设定的反弹比例。
 
-1. Define a signal day and a measurable recovery target.  
-   在 `Reversal3.3.ipynb` 和 `backtest_reversal_3_1_calls.py` 中，把“日内大跌” formalize 成 signal day，再检验未来 `5` 个交易日内是否能回补 signal-day 跌幅的 `X%`。
+After identifying the names that exhibited this behavior, I added an option layer. In those earlier versions, I could input expiry, implied volatility, entry price, risk-free rate, and related assumptions, then use Black-Scholes and GBM-based simulations to estimate day-by-day call PnL confidence intervals. That part was important because it moved the project from “which names bounce” to “what the option trade might actually look like.”
+
+在找出这些更容易反弹的股票之后，我又继续往期权端推进。早期版本里，我已经可以输入到期日、隐含波动率、买入成本、无风险利率等参数，然后用 Black-Scholes 和基于 GBM 的模拟去估计买入对应 call 之后，在未来每天的盈利区间和置信水平。对我来说，这一步很关键，因为它把问题从“哪些股票容易反弹”推进到了“如果真的买对应的 call，这笔交易可能长什么样”。
+
+From there, the project became a sequence of research upgrades rather than a single script:
+
+从那里开始，这个项目就逐步从一个小脚本，变成了一条连续推进的研究路径：
+
+1. Formalize the base signal.  
+   我先把“日内大跌” formalize 成 signal day，再把“未来几天是否回补 signal-day 跌幅的 `70%`”定义成最基础的成功标准。这条主线后来延续到 `Reversal3.3.ipynb` 和 `backtest_reversal_3_1_calls.py` 里。
 2. Test where the effect is actually strongest.  
-   在 `compare_reversal_2_3_3_universes.py` 中比较多个 universe，确认这个效应在更精选的 `qqq_only_filtered` 里最强，而不是越广越好。
-3. Improve signal quality before adding execution.  
-   在 `backtest_reversal_article_variants.py`、`backtest_reversal_2_5_min_drop_experiment.py` 和 `backtest_reversal_3_1_leveraged_etf_experiment.py` 中，逐步提升 `60d` window、`minimum current drop > 0.5%` 和 `SOXL + UPRO` overlay。
-4. Translate the research into a no-lookahead live process.  
-   在 `reversal_3_2_live.py` 中把研究结果接成定时扫描的 live paper runner，并补上 holiday handling、option-liquidity gating、share fallback 和 GitHub dashboard。
+   然后我开始比较不同 universe，确认这个现象究竟在哪类股票池里最稳定。`compare_reversal_2_3_3_universes.py` 这一步告诉我，效果最强的不是越广越好，而是更精选的 `qqq_only_filtered`。
+3. Improve the signal before scaling execution.  
+   在 universe 固定下来之后，我继续测试更短的观察窗口、minimum current drop、以及少量 leveraged ETF overlay，逐步形成了 `60d` window、`minimum current drop > 0.5%`、以及 `SOXL + UPRO` 这套现在的官方路径。
+4. Add regime awareness and execution controls.  
+   再往后，我开始研究 regime filter、holiday handling、option-liquidity gating、share fallback，以及如何把整个流程接成 no-lookahead 的 live paper runner，并持续把结果写回 GitHub dashboard。
 
-Representative research outputs:
+Representative research outputs I still keep in the repo:
 
-代表性的研究输出包括：
+我现在仍然保留在仓库里的代表性研究输出包括：
 
 | Research question | Script / notebook | Representative output |
 |---|---|---|
@@ -97,9 +105,9 @@ Representative research outputs:
 | Do a few leveraged ETFs improve the official setup? | `backtest_reversal_3_1_leveraged_etf_experiment.py` | [`reversal_3_1_leveraged_etf_summary.csv`](results/reversal_3_1_leveraged_etf_experiment/reversal_3_1_leveraged_etf_summary.csv), [`reversal_3_1_leveraged_etf_experiment.png`](assets/reversal_3_1_leveraged_etf_experiment.png) |
 | Should the strategy be paused in hostile market regimes? | `analyze_reversal_3_1_regime_score.py`, `analyze_reversal_3_1_regime_predictive_power.py` | [`reversal_3_1_regime_score.png`](assets/reversal_3_1_regime_score.png), [`reversal_3_1_regime_gating_comparison.png`](assets/reversal_3_1_regime_gating_comparison.png) |
 
-That research path is what naturally leads to the current live-paper implementation: the repo does not start from execution first and then search for a story; it starts from a repeatable price-recovery phenomenon, tests where it is strongest, and only then moves into scheduled live monitoring and execution controls.
+That is how the current live-paper implementation emerged. I did not begin with execution infrastructure first. I started with a repeatable rebound pattern, narrowed the universe, improved the signal path, tested option framing, and only then connected the research into a scheduled live process with execution constraints.
 
-这条研究路径也自然引出了现在的 live paper implementation：先确认价格恢复现象是否存在、在哪些 universe 和参数下最稳定，再把它接成定时扫描、可追踪、可控风险的执行流程。
+这也就是现在这套 live paper implementation 的来历。对我来说，顺序一直是先确认价格恢复现象是否真实存在，再判断它在哪些 universe 和参数下最稳定，然后再去讨论期权执行、流动性约束和 live monitoring。现在仓库里的执行层，就是这条研究路径自然延伸出来的结果。
 
 ## Current Version | 当前官方版本
 
