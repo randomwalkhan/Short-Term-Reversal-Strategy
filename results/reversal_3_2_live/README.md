@@ -39,7 +39,6 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
   PLTR     option         option PLTR260522C00125000      5          2026-04-10         2026-04-13        12.06       13.88 910.0   15.091211 take_profit_day1_hit_at_scan
 ```
 
-> Note: one-off manual override on `2026-04-10`. HON option was not traded due to poor liquidity, so the Friday live-paper entry was manually switched to `PLTR260522C00125000`.
 
 ## Current Screener Snapshot
 
