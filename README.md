@@ -77,7 +77,7 @@ The research path is:
 研究主线可以概括为：
 
 1. Define a signal day and a measurable recovery target.  
-   在 `Reversal3.3.ipynb` 和 `backtest_reversal_3_1_calls.py` 中，把“日内大跌” formalize 成 signal day，再检验未来 `5` 个交易日内是否能回补 signal-day 跌幅的 `70%`。
+   在 `Reversal3.3.ipynb` 和 `backtest_reversal_3_1_calls.py` 中，把“日内大跌” formalize 成 signal day，再检验未来 `5` 个交易日内是否能回补 signal-day 跌幅的 `X%`。
 2. Test where the effect is actually strongest.  
    在 `compare_reversal_2_3_3_universes.py` 中比较多个 universe，确认这个效应在更精选的 `qqq_only_filtered` 里最强，而不是越广越好。
 3. Improve signal quality before adding execution.  
