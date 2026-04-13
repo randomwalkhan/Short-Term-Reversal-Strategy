@@ -3,10 +3,10 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.3 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-13 15:10:02 EDT`
-- Equity: `$13,157.56` | Realized: `$3,145.00` | Unrealized: `$12.56` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-13 15:15:05 EDT`
+- Equity: `$13,161.00` | Realized: `$3,145.00` | Unrealized: `$16.00` | Open positions: `1`
 - Today closed trades: `1`
-- Current slot: `entry_1500`
+- Current slot: `manual`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  REGN      share share_fallback       REGN      8      5916.0                 5928.56         741.07           12.56                   0.21                   0
+  REGN      share share_fallback       REGN      8      5916.0                  5932.0          741.5            16.0                   0.27                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260413151002)
+![Reversal 3.3 Live Equity Overall](assets/reversal_3_2_live_equity_overall.png?v=20260413151505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260413151002)
+![Reversal 3.3 Live Equity 1D](assets/reversal_3_2_live_equity_1d.png?v=20260413151505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260413151002)
+![Reversal 3.3 Live Equity 1W](assets/reversal_3_2_live_equity.png?v=20260413151505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260413151002)
+![Reversal 3.3 Live Equity 1M](assets/reversal_3_2_live_equity_1m.png?v=20260413151505)
 
 </details>
 
