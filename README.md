@@ -4,7 +4,7 @@
 ## Reversal 3.3 Live Paper Test
 
 - Latest checkpoint (ET): `2026-04-13 13:50:05 EDT`
-- Equity: `$9,575.00` | Realized: `$-425.00` | Unrealized: `$0.00` | Open positions: `0`
+- Equity: `$13,145.00` | Realized: `$3,145.00` | Unrealized: `$0.00` | Open positions: `0`
 - Today closed trades: `1`
 - Current slot: `manage_1400`
 - Universe: `qqq_plus_leverage_etfs`
@@ -13,6 +13,8 @@
 ### Current Open Positions
 
 _None_
+
+Note: one-off manual override on `2026-04-10`. HON option was not traded due to poor liquidity, so the Friday live-paper entry was manually switched to `PLTR260522C00125000`, which then exited on `2026-04-13` at the first take-profit scan.
 
 <details open>
 <summary><strong>Overall</strong></summary>
