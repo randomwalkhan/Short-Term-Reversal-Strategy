@@ -407,3 +407,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-13T09:30:05.721136-04:00,2026-04-13,manage_0930,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""HON260522C00235000"", ""pnl"": -2660.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -45.78, ""ticker"": ""HON""}"
 2026-04-13T09:35:00.760791-04:00,2026-04-13,manage_0930,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-13T09:40:00.697850-04:00,2026-04-13,manage_0930,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-13T09:55:05.732527-04:00,2026-04-13,manage_1000,slot_skipped,"{""reason"": ""already_processed""}"
