@@ -14,8 +14,6 @@
 
 _None_
 
-Note: one-off manual override on `2026-04-10`. HON option was not traded due to poor liquidity, so the Friday live-paper entry was manually switched to `PLTR260522C00125000`, which then exited on `2026-04-13` at the first take-profit scan.
-
 <details open>
 <summary><strong>Overall</strong></summary>
 
