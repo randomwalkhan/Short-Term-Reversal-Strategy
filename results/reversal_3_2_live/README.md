@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-13 15:30:05 EDT`
+Latest checkpoint (ET): `2026-04-13 15:35:03 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -23,16 +23,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$7,229.00`
-- Equity: `$13,167.24`
+- Equity: `$13,164.60`
 - Realized PnL: `$3,145.00`
-- Unrealized PnL: `$22.24`
+- Unrealized PnL: `$19.60`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct      option_liquidity_status
-  REGN      share share_fallback       REGN       2026-04-13                   0      8      5916.0                 5938.24        739.5         742.28       739.5        742.28           22.24                   0.38         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
+  REGN      share share_fallback       REGN       2026-04-13                   0      8      5916.0                  5935.6        739.5         741.95       739.5        741.95            19.6                   0.33         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
 ```
 
 ## Today's Closed Trades (2026-04-13)
@@ -46,24 +46,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               32            0.85              4.45        746.96                24.22            True
-   HON          100.00               17            1.01              1.67        234.35                23.73            True
-   PEP           85.71               21            0.73              0.80        156.72                20.42            True
-   EXC           85.00               20            0.65              0.22         48.48                21.28            True
-  AMAT           83.87               31            1.43              4.00        397.78                55.88            True
-  ODFL           81.82               33            0.81              1.19        207.84                24.62            True
-  CSCO           80.95               21            0.73              0.42         82.04                28.42            True
-  AAPL           80.77               26            1.06              1.93        259.65                21.31            True
-   BKR           80.77               26            1.00              0.44         62.64                35.55            True
-  MNST           80.00               30            0.75              0.40         75.55                27.64            True
-   KDP           80.00               10            1.71              0.32         26.43                21.09            True
-   XEL          100.00                2            1.91              1.10         81.91                18.59           False
+  REGN          100.00               31            0.94              4.93        746.76                24.22            True
+   HON          100.00               20            0.91              1.49        234.42                23.73            True
+   EXC           87.50               16            0.84              0.29         48.45                21.28            True
+   PEP           86.36               22            0.66              0.72        156.75                20.42            True
+  AMAT           83.87               31            1.47              4.11        397.74                55.88            True
+   KDP           81.82               11            1.62              0.30         26.44                21.09            True
+  CSCO           80.95               21            0.71              0.41         82.04                28.42            True
+  AAPL           80.77               26            1.08              1.97        259.63                21.31            True
+  ODFL           80.00               30            0.94              1.37        207.76                24.62            True
+   BKR           80.00               25            1.13              0.50         62.62                35.55            True
+   XEL          100.00                2            2.12              1.22         81.86                18.59           False
+  ROST           94.44               36            0.41              0.63        220.89                24.81           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                                  detail
+2026-04-13T15:35:03.917727-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-04-13T15:30:05.898340-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-04-13T15:25:05.902167-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-04-13T15:10:02.902553-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
@@ -73,7 +74,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-13T14:50:05.902241-04:00  entry_1500        entry {"allocated_cash": 5916.0, "asset_type": "share", "contract_symbol": "REGN", "contracts": 8, "entry_option_price": 739.5, "execution_mode": "share_fallback", "matched_signals": 24, "option_liquidity_status": "low_open_interest,low_volume", "option_open_interest": 89.0, "option_spread_pct": 6.64, "option_volume": 1.0, "success_rate": 100.0, "ticker": "REGN"}
 2026-04-13T14:40:01.908593-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-04-13T14:35:05.900098-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-04-13T14:30:05.902792-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -83,27 +83,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260413153005)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_2_live_equity_overall.png?v=20260413153503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260413153005)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_2_live_equity_1d.png?v=20260413153503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260413153005)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_2_live_equity.png?v=20260413153503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260413153005)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_2_live_equity_1m.png?v=20260413153503)
 
 </details>
