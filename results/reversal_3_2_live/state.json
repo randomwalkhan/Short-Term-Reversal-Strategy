@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 13145.0,
-  "positions": [],
+  "cash": 7229.0,
+  "positions": [
+    {
+      "position_id": "REGN_20260413T145005",
+      "ticker": "REGN",
+      "asset_type": "share",
+      "execution_mode": "share_fallback",
+      "contract_symbol": "REGN",
+      "expiry": "",
+      "strike": NaN,
+      "entry_timestamp": "2026-04-13T14:50:05.902241-04:00",
+      "entry_trade_date": "2026-04-13",
+      "entry_slot": "entry_1500",
+      "entry_spot": 739.5,
+      "entry_option_price": 739.5,
+      "entry_bid": NaN,
+      "entry_ask": NaN,
+      "entry_iv_pct": NaN,
+      "contracts": 8,
+      "allocated_cash": 5916.0,
+      "success_rate": 100.0,
+      "matched_signals": 24,
+      "current_drop_pct": 1.25,
+      "rolling_sigma_20d_pct": 24.22,
+      "planned_tp_day1": 761.6850000000001,
+      "planned_tp_day2": 761.6850000000001,
+      "planned_stop": 717.3149999999999,
+      "option_open_interest": 89.0,
+      "option_volume": 1.0,
+      "option_spread_pct": 0.06642066420664214,
+      "option_liquidity_status": "low_open_interest,low_volume"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -204,7 +235,8 @@
       "manage_1300",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"
