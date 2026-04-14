@@ -111,7 +111,7 @@ That is how the current live-paper implementation emerged. I did not begin with 
 
 ## Current Version | 当前官方版本
 
-Update note: Reversal 3.2.1 keeps the Reversal 3.1 research setup unchanged, but refines live execution in two places: the option spread threshold is relaxed from `12%` to `15%`, and share-fallback positions now continue take-profit / stop-loss scans in after-hours, overnight, and pre-market. Live entries still require `open interest >= 100` and `volume >= 10`, and thin option setups still fall back to shares with tighter exits.
+Update note: Reversal 3.2.1 keeps the Reversal 3.1 research setup unchanged, but refines live execution in two places: the option spread threshold is relaxed from `12%` to `15%`, and share-fallback positions now continue take-profit / stop loss scans in after-hours, overnight, and pre-market. Live entries still require `open interest >= 100` and `volume >= 10`, and thin option setups still fall back to shares with tighter exits.
 
 Display update: GitHub feature charts stay on the shared dark Apple-style plotting theme, and the repo-facing version label is now aligned to Reversal 3.2.1.
 
@@ -279,7 +279,7 @@ The project keeps its optimization trail explicit rather than hiding earlier ver
 - `2.5`: promote `minimum current drop > 0.5%`
 - `3.1`: keep the `2.5` execution logic and upgrade the official universe to `qqq_plus_leverage_etfs`
 - `3.2`: keep the `3.1` research configuration unchanged, add NYSE holiday protection plus an option-liquidity gate to the live paper runner, expose `cash_spent` / `current_position_value` in the live position table, and fall back to shares when option liquidity is poor
-- `3.2.1`: keep the `3.2` research configuration unchanged, relax the live option spread gate from `<= 12%` to `<= 15%`, and extend share-fallback take-profit / stop-loss scans into after-hours, overnight, and pre-market
+- `3.2.1`: keep the `3.2` research configuration unchanged, relax the live option spread gate from `<= 12%` to `<= 15%`, and extend share-fallback take-profit / stop loss scans into after-hours, overnight, and pre-market
 
 Earlier notebook snapshots such as `Reversal2.5.3.ipynb`, `Reversal2.5.ipynb`, `Reversal2.4.ipynb`, `Reversal2.3.3.ipynb`, `Reversal2.3.2.ipynb`, and `Reversal2.3.1.ipynb` are retained for version-by-version review.
 
@@ -300,7 +300,7 @@ This project focuses on identifying large intraday drawdowns, evaluating whether
 
 本项目主要研究三件事：识别日内大幅下跌、评估未来几个交易日内的价格反转概率，以及估计相关看涨期权交易的收益分布。
 
-The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output, Reversal 2.4 promotes the `60d` observation window into the default research and official backtest setup, Reversal 2.5 adds the `minimum current drop > 0.5%` entry filter, Reversal 2.5.1 improves spot-price handling by preferring extended-hours prices when available, Reversal 2.5.2 adds current ATM call IV plus 20d rolling sigma to the live screener output, Reversal 2.5.3 consolidates that live screener into a cleaner single-table layout, Reversal 3.1 upgrades the official universe to `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`, Reversal 3.2 adds NYSE holiday awareness to the live paper runner, and Reversal 3.2.1 relaxes the live option spread gate to `<= 15%` while extending share-fallback take-profit / stop-loss scans into extended hours.
+The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output, Reversal 2.4 promotes the `60d` observation window into the default research and official backtest setup, Reversal 2.5 adds the `minimum current drop > 0.5%` entry filter, Reversal 2.5.1 improves spot-price handling by preferring extended-hours prices when available, Reversal 2.5.2 adds current ATM call IV plus 20d rolling sigma to the live screener output, Reversal 2.5.3 consolidates that live screener into a cleaner single-table layout, Reversal 3.1 upgrades the official universe to `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`, Reversal 3.2 adds NYSE holiday awareness to the live paper runner, and Reversal 3.2.1 relaxes the live option spread gate to `<= 15%` while extending share-fallback take-profit / stop loss scans into extended hours.
 
 Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，Reversal 2.3.3 进一步加入了最小样本过滤和前 15 名输出，Reversal 2.4 把 `60d` 观察窗口正式提升为默认研究与官方回测设定，Reversal 2.5 加入了 `minimum current drop > 0.5%` 入场过滤，Reversal 2.5.1 把 spot 取价改成优先使用扩展时段价格，Reversal 2.5.2 把当前 ATM call IV 和 20d rolling sigma 接进了 live screener 输出，Reversal 2.5.3 把 live screener 的展示压缩成更清晰的单表布局，Reversal 3.1 把官方 universe 升级为 `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`，Reversal 3.2 把 NYSE 节假日识别接进了 live paper runner，而 Reversal 3.2.1 则把 live option spread 门槛放宽到 `<= 15%`，并让 share fallback 在扩展时段继续执行止盈与止损扫描。
 
@@ -342,7 +342,7 @@ Before running the main analysis notebook, you can use `update_reversal_csv.ipyn
    使用当日近实时价格推断每个 ticker 当前的日内跌幅，可选地叠加 minimum current-drop 过滤，再回看过去一段观察窗口内“至少同等严重”的历史下跌日，统计未来 N 个交易日内回补 signal-day 跌幅指定比例的成功率。
 
 4. `Option Execution Planner for Call Entries`  
-   Pulls option chains for the chosen ticker, filters toward near-ATM calls in the 21-40 trading-day range, and translates the strategy into reference entry, take-profit, and stop-loss levels.  
+   Pulls option chains for the chosen ticker, filters toward near-ATM calls in the 21-40 trading-day range, and translates the strategy into reference entry, take-profit, and stop loss levels.  
    拉取所选 ticker 的期权链，筛选 21-40 个交易日范围内、接近 ATM 的 call，并把策略转成参考入场价、止盈价和止损价。
 
 5. `Black Scholes Methods for Profitability Confidence Interval`  

@@ -1198,8 +1198,8 @@ def format_table(df: pd.DataFrame, columns: list[str] | None = None, max_rows: i
 
 def humanize_exit_reason(reason: str) -> str:
     mapping = {
-        "stop_scan": "stop_loss_hit_at_scan",
-        "stop_ext_scan": "stop_loss_hit_extended_hours_scan",
+        "stop_scan": "stop loss hit at scan",
+        "stop_ext_scan": "stop loss hit in extended hours",
         "tp_day1_scan": "take_profit_day1_hit_at_scan",
         "tp_day2_scan": "take_profit_day2_hit_at_scan",
         "time_exit_scan": "time_exit_at_4pm_scan",
@@ -1620,11 +1620,11 @@ def render_dashboard(
             "- Matched-signal gate: `>= 10`",
             "- Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers",
             "- Entry scan: `3:00 PM ET`",
-            "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; share-fallback positions also run take-profit and stop-loss scans in after-hours / overnight / pre-market on `5-minute` checkpoints",
+            "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; share-fallback positions also run take-profit and stop loss scans in after-hours / overnight / pre-market on `5-minute` checkpoints",
             "- Live exit ladder: `+15% / +15% / -12%`",
             "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`",
             "- Fallback execution: buy shares when the option fails the liquidity gate; use `+3% / -3%` for common-stock fallback and `+5% / -5%` for leveraged-ETF shares",
-            "- Extended-hours share handling: only share positions participate; fresh extended-hours quotes can trigger take-profit fills at the target price and stop-loss exits at the current visible quote",
+            "- Extended-hours share handling: only share positions participate; fresh extended-hours quotes can trigger take-profit fills at the target price and stop loss exits at the current visible quote",
             "- Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed",
             "- Chart views: `Overall / 1D / 1W / 1M`, default open panel is `Overall`",
             "",
