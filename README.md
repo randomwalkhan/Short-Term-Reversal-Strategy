@@ -111,19 +111,15 @@ That is how the current live-paper implementation emerged. I did not begin with 
 
 ## Current Version | 当前官方版本
 
-Update note: Reversal 3.2.1 keeps the Reversal 3.1 research setup unchanged, but refines live execution in two places: the option spread threshold is relaxed from `12%` to `15%`, and share-fallback positions now continue take-profit / stop loss scans in after-hours, overnight, and pre-market. Live entries still require `open interest >= 100` and `volume >= 10`, and thin option setups still fall back to shares with tighter exits.
+Release notes (`3.2.1`)
+- Keep the official `3.1` research setup unchanged.
+- Preserve the `3.2` live execution layer: NYSE holiday protection, option-liquidity gate, share fallback, and the `spread <= 15%` entry threshold.
+- Patch the live system so open positions continue to update after hours, and share-fallback positions keep scanning take-profit / stop loss during after-hours, overnight, and pre-market.
 
-Display update: GitHub feature charts stay on the shared dark Apple-style plotting theme, and the repo-facing version label is now aligned to Reversal 3.2.1.
-
-Live paper update: the active option exit ladder remains `+15% / +15% / -12%`, the option-liquidity spread gate is now `<= 15%`, and share fallbacks still use `+3% / -3%` for common stocks plus `+5% / -5%` for leveraged ETF shares.
-
-更新说明：Reversal 3.2.1 保留 Reversal 3.1 的研究与交易口径不变，并在 live execution 上做了两处细化：一是把 option spread 门槛从 `12%` 放宽到 `15%`，二是让 share fallback 持仓在 after-hours / overnight / pre-market 继续执行止盈与止损扫描。live 仍要求 `open interest >= 100` 与 `volume >= 10`，但对可接受的 bid/ask 宽度更宽容一些。
-
-展示更新：GitHub 上的主要曲线图继续沿用统一的深色 Apple Stocks 风格配色，对外版本标签现已统一为 Reversal 3.2.1。
-
-Live paper 更新：当前 live 的 option 止盈止损梯度保持 `+15% / +15% / -12%`；若期权流动性不足，则退回 share execution，普通正股使用 `+3% / -3%`，leveraged ETF shares 使用 `+5% / -5%`，且 option spread 门槛现为 `<= 15%`。收盘后若仍有持仓，off-hours checkpoint 会继续更新净值曲线；其中 `share fallback` 还会继续执行止盈与 stop loss 扫描。
-
-最新执行改动：当策略触发 share fallback 且仍有 share 持仓时，系统现在会在 after-hours / overnight / pre-market 继续做 `5-minute` 的止盈与止损扫描；止盈按 target limit price 记 paper fill，止损则按当下可见价格做更保守的 paper exit。
+版本说明（`3.2.1`）
+- 官方研究口径仍沿用 `3.1`，不改 universe、lookback 和核心信号定义。
+- live execution 继续沿用 `3.2`：NYSE 节假日保护、期权流动性门槛、share fallback，以及 `spread <= 15%` 的入场约束。
+- 本次 patch 主要修复 live：收盘后若仍有持仓，净值曲线继续更新；若是 share fallback 持仓，则在 after-hours / overnight / pre-market 继续执行止盈与 stop loss 扫描。
 
 ## Featured Result | 重点结果
 
@@ -274,12 +270,16 @@ The project keeps its optimization trail explicit rather than hiding earlier ver
 
 本项目保留完整的优化路径，当前主线是：
 
+Versioning rule: when the research definition changes materially, bump the main version; for smaller fixes or execution-only adjustments, increment the last segment only.
+
+版本规则：研究口径发生实质变化时，提升主版本；若只是小修复或执行层微调，只增加最后一位。
+
 - `2.3.3`: lock the best universe as `qqq_only_filtered`
 - `2.4`: promote the `60d` observation window
 - `2.5`: promote `minimum current drop > 0.5%`
 - `3.1`: keep the `2.5` execution logic and upgrade the official universe to `qqq_plus_leverage_etfs`
-- `3.2`: keep the `3.1` research configuration unchanged, add NYSE holiday protection plus an option-liquidity gate to the live paper runner, expose `cash_spent` / `current_position_value` in the live position table, and fall back to shares when option liquidity is poor
-- `3.2.1`: keep the `3.2` research configuration unchanged, relax the live option spread gate from `<= 12%` to `<= 15%`, and extend share-fallback take-profit / stop loss scans into after-hours, overnight, and pre-market
+- `3.2`: keep the `3.1` research configuration unchanged, add NYSE holiday protection, option-liquidity gating, share fallback execution, live position cash/value fields, the `spread <= 15%` option entry threshold, and the extended-hours take-profit / stop loss handling for share fallback
+- `3.2.1`: keep the `3.2` strategy definition unchanged, but patch the live runner so off-hours checkpoints continue marking open positions and keep the dashboard/versioning flow consistent
 
 Earlier notebook snapshots such as `Reversal2.5.3.ipynb`, `Reversal2.5.ipynb`, `Reversal2.4.ipynb`, `Reversal2.3.3.ipynb`, `Reversal2.3.2.ipynb`, and `Reversal2.3.1.ipynb` are retained for version-by-version review.
 
