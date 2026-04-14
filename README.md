@@ -72,9 +72,9 @@ This project started from something I kept seeing on my screen: after a sharp do
 
 这个项目最开始其实是一个很朴素的观察：我发现有些股票在大跌后的几天里，经常会出现比较快的反弹。我当时想弄清楚，到底是哪些股票更容易出现这种走势，这种现象到底只是偶然，还是能被系统化地验证，并进一步转化成 short-term reversal option trades。
 
-In the earliest `Reversal 1.x` style work and the preserved early notebooks such as `Reversal2.0.ipynb` and `Reversal2.1.ipynb`, I started with a very small legacy watchlist of roughly ten names. The scripts pulled one year of Yahoo Finance `Close`, `High`, and `Low` data, computed daily `Max Drop`, and then let me set three simple inputs: a same-day drop threshold, a recovery target, and a lookahead window. Once those were set, the code would tell me which tickers had the tendency to rebound by `x%` of the drop within `t + lookahead` trading days after a qualifying drawdown.
+In the earliest `Reversal 1.x` style work and the preserved early notebooks such as `versions/notebooks/Reversal2.0.ipynb` and `versions/notebooks/Reversal2.1.ipynb`, I started with a very small legacy watchlist of roughly ten names. The scripts pulled one year of Yahoo Finance `Close`, `High`, and `Low` data, computed daily `Max Drop`, and then let me set three simple inputs: a same-day drop threshold, a recovery target, and a lookahead window. Once those were set, the code would tell me which tickers had the tendency to rebound by `x%` of the drop within `t + lookahead` trading days after a qualifying drawdown.
 
-在最早的 `Reversal 1.x` 思路和现在仓库里保留下来的早期 notebook，例如 `Reversal2.0.ipynb`、`Reversal2.1.ipynb` 中，我一开始只研究大约十只左右的股票，也就是后面保留下来的 `legacy_watchlist_11` 这条线。那时的脚本会先从 Yahoo Finance 下载过去一年的 `Close`、`High`、`Low`，再计算每日的 `Max Drop`。然后我可以手动设定三个核心参数：当日跌幅阈值、反弹比例、以及 lookahead day。脚本跑完之后，会直接输出哪些 ticker 在满足当日跌幅条件后，能在 `t + lookahead` 的窗口里完成我设定的反弹比例。
+在最早的 `Reversal 1.x` 思路和现在仓库里保留下来的早期 notebook，例如 `versions/notebooks/Reversal2.0.ipynb`、`versions/notebooks/Reversal2.1.ipynb` 中，我一开始只研究大约十只左右的股票，也就是后面保留下来的 `legacy_watchlist_11` 这条线。那时的脚本会先从 Yahoo Finance 下载过去一年的 `Close`、`High`、`Low`，再计算每日的 `Max Drop`。然后我可以手动设定三个核心参数：当日跌幅阈值、反弹比例、以及 lookahead day。脚本跑完之后，会直接输出哪些 ticker 在满足当日跌幅条件后，能在 `t + lookahead` 的窗口里完成我设定的反弹比例。
 
 After identifying the names that exhibited this behavior, I added an option layer. In those earlier versions, I could input expiry, implied volatility, entry price, risk-free rate, and related assumptions, then use Black-Scholes and GBM-based simulations to estimate day-by-day call PnL confidence intervals. That part was important because it moved the project from “which names bounce” to “what the option trade might actually look like.”
 
@@ -281,9 +281,9 @@ Versioning rule: when the research definition changes materially, bump the main 
 - `3.2`: keep the `3.1` research configuration unchanged, add NYSE holiday protection, option-liquidity gating, share fallback execution, live position cash/value fields, the `spread <= 15%` option entry threshold, and the extended-hours take-profit / stop loss handling for share fallback
 - `3.2.1`: keep the `3.2` strategy definition unchanged, but patch the live runner so off-hours checkpoints continue marking open positions and keep the dashboard/versioning flow consistent
 
-Earlier notebook snapshots such as `Reversal2.5.3.ipynb`, `Reversal2.5.ipynb`, `Reversal2.4.ipynb`, `Reversal2.3.3.ipynb`, `Reversal2.3.2.ipynb`, and `Reversal2.3.1.ipynb` are retained for version-by-version review.
+Earlier notebook snapshots such as `versions/notebooks/Reversal2.5.3.ipynb`, `versions/notebooks/Reversal2.5.ipynb`, `versions/notebooks/Reversal2.4.ipynb`, `versions/notebooks/Reversal2.3.3.ipynb`, `versions/notebooks/Reversal2.3.2.ipynb`, and `versions/notebooks/Reversal2.3.1.ipynb` are retained for version-by-version review.
 
-诸如 `Reversal2.5.3.ipynb`、`Reversal2.5.ipynb`、`Reversal2.4.ipynb`、`Reversal2.3.3.ipynb`、`Reversal2.3.2.ipynb`、`Reversal2.3.1.ipynb` 等旧版 notebook 都保留在仓库里，便于逐版本回看。
+诸如 `versions/notebooks/Reversal2.5.3.ipynb`、`versions/notebooks/Reversal2.5.ipynb`、`versions/notebooks/Reversal2.4.ipynb`、`versions/notebooks/Reversal2.3.3.ipynb`、`versions/notebooks/Reversal2.3.2.ipynb`、`versions/notebooks/Reversal2.3.1.ipynb` 等旧版 notebook 都保留在仓库里，便于逐版本回看。
 
 ## License | 版权
 
@@ -431,16 +431,8 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 - `RESEARCH_GUARDRAILS.md` | Default research discipline for avoiding curve sculpting, weak narratives, and LLM-assisted overfitting. | 默认研究守则，用于避免曲线雕刻、伪机制叙事和 LLM 放大的过拟合。
 - `reversal_3_2_1_live.py` | Reversal 3.2.1 live paper-test runner with scheduled entry/exit logic, state persistence, dashboard generation, optional GitHub publishing, the promoted `qqq_plus_leverage_etfs` live universe, NYSE holiday protection, and the current option-liquidity/share-fallback execution path. | Reversal 3.2.1 的 live paper-test 主脚本，包含定时入场/离场逻辑、状态持久化、dashboard 生成、可选的 GitHub 发布、升级后的 `qqq_plus_leverage_etfs` live universe、NYSE 节假日保护，以及当前的期权流动性门槛与 share fallback 执行路径。
 - `Reversal3.2.1.ipynb` | Current main notebook with the official `qqq_plus_leverage_etfs` universe, the default `60d` observation window, `minimum current drop > 0.5%` live-screen filter, improved extended-hours spot pricing, ATM-IV versus rolling-sigma context, and a cleaner single-table live screener output. | 当前主 notebook，使用官方 `qqq_plus_leverage_etfs` universe，默认 `60d` 观察窗口，加入 `minimum current drop > 0.5%` 的 live-screen 过滤，优先使用扩展时段 spot 价格，并在 screener 输出中补充 ATM IV 与 rolling sigma 对照，同时把 live screener 压缩成更清晰的单表输出。
-- `Reversal3.2.ipynb` | Prior main notebook snapshot before the Reversal 3.2.1 live spread-gate update. | Reversal 3.2.1 放宽 live spread 门槛之前的上一版主 notebook 快照。
-- `Reversal2.5.3.ipynb` | Previous main notebook snapshot before the leveraged-ETF overlay promotion. | 提升 leveraged ETF overlay 之前的上一版主 notebook 快照。
-- `Reversal2.5.2.ipynb` | Previous main notebook snapshot before the live screener layout cleanup. | 调整 live screener 展示布局之前的上一版主 notebook 快照。
-- `Reversal2.5.ipynb` | Previous main notebook snapshot before the extended-hours spot-pricing fix. | 修正扩展时段 spot 取价逻辑之前的上一版主 notebook 快照。
-- `Reversal2.4.ipynb` | Previous main notebook snapshot before the `minimum current drop > 0.5%` promotion. | 升级到 `minimum current drop > 0.5%` 过滤之前的上一版主 notebook 快照。
-- `Reversal2.3.3.ipynb` | Previous main notebook snapshot before the `60d` window promotion. | 升级到 `60d` 窗口之前的上一版主 notebook 快照。
-- `Reversal2.3.ipynb` | Previous notebook snapshot with the Nasdaq + SPY universe builder. | 上一版本 notebook 快照，包含 Nasdaq + SPY 股票池构建器。
-- `Reversal2.2.1.ipynb` | Previous notebook snapshot. | 上一版本 notebook 快照。
-- `Reversal2.1.ipynb` | Earlier notebook snapshot. | 更早版本 notebook 快照。
-- `Reversal2.0.ipynb` | Earlier notebook snapshot. | 更早版本 notebook 快照。
+- `versions/notebooks/` | Archived notebook snapshots from `Reversal2.0` through `Reversal3.2`, kept for version-by-version review without cluttering the repo root. | 历史 notebook 快照目录，收纳从 `Reversal2.0` 到 `Reversal3.2` 的版本，便于逐版本回看，同时避免根目录混杂。
+- `versions/notebooks/README.md` | Snapshot index for the archived notebook history. | 历史 notebook 快照索引。
 - `backtest_reversal_2_3_calls.py` | Reversal 2.3 call backtest with top-2 daily ranking, weighted sizing, and broad universe selection. | Reversal 2.3 的 call 回测脚本，包含每日前二打分、加权仓位和广义股票池。
 - `backtest_reversal_2_3_1_calls.py` | Reversal 2.3.1 call backtest with staggered 50% entries and up to two concurrent positions. | Reversal 2.3.1 的 call 回测脚本，采用分批 50% 建仓和最多两个同时持仓。
 - `backtest_reversal_2_3_3_calls.py` | Official Reversal 2.3.3 call backtest with `qqq_only_filtered` and the original dynamic `matched_signals >= 10` trade gate. | Reversal 2.3.3 的官方 call 回测脚本，默认使用 `qqq_only_filtered`，并沿用最初的动态 `matched_signals >= 10` 交易门槛。
