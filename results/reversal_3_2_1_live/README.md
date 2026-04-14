@@ -1,7 +1,7 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-14 09:45:06 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-14 09:50:06 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -24,16 +24,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$7,229.00`
-- Equity: `$13,209.00`
+- Equity: `$13,193.56`
 - Realized PnL: `$3,145.00`
-- Unrealized PnL: `$64.00`
+- Unrealized PnL: `$48.56`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct      option_liquidity_status
-  REGN      share share_fallback       REGN       2026-04-13                   1      8      5916.0                  5980.0        739.5          747.5       739.5         747.5            64.0                   1.08         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
+  REGN      share share_fallback       REGN       2026-04-13                   1      8      5916.0                 5964.56        739.5         745.57       739.5        745.57           48.56                   0.82         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
 ```
 
 ## Today's Closed Trades (2026-04-14)
@@ -44,18 +44,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               18            1.52              2.01        188.24                30.53            True
-   STX           94.12               34            1.18              4.22        511.47                74.84            True
-  INTC           93.94               33            2.08              0.95         64.79                75.15            True
-  MPWR           91.43               35            0.82              7.89       1368.85                58.48            True
-  ORLY           90.48               42            0.63              0.41         93.83                24.40            True
-   WMT           90.48               21            0.95              0.83        124.20                26.19            True
-   AEP           90.00               10            1.07              1.01        134.03                18.89            True
-  CHTR           88.89               36            1.01              1.60        225.61                32.05            True
-  PCAR           88.57               35            0.76              0.68        127.09                27.21            True
-   PEP           87.50               16            0.94              1.02        155.44                20.56            True
-   EXC           85.00               20            0.69              0.23         48.05                21.44            True
-   TXN           84.85               33            0.68              1.03        216.27                31.51            True
+  FANG          100.00               23            1.19              1.57        188.43                30.53            True
+   WDC           97.22               36            0.76              1.87        349.36                85.45            True
+  INTC           96.43               28            2.34              1.07         64.74                75.15            True
+   AEP           94.12               17            0.80              0.75        134.14                18.89            True
+   STX           93.55               31            1.87              6.73        510.39                74.84            True
+  MPWR           90.91               33            1.08             10.35       1367.80                58.48            True
+  ORLY           90.70               43            0.55              0.36         93.85                24.40            True
+   WMT           90.48               21            1.03              0.90        124.18                26.19            True
+  PCAR           90.00               40            0.55              0.49        127.17                27.21            True
+  COST           90.00               10            1.19              8.20        977.33                19.04            True
+  CHTR           87.50               32            1.22              1.94        225.47                32.05            True
+   EXC           86.96               23            0.52              0.17         48.08                21.44            True
 ```
 
 ## Recent Events
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414094506)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414095006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414094506)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414095006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414094506)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414095006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414094506)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414095006)
 
 </details>
