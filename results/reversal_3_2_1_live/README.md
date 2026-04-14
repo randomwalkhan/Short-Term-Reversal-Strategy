@@ -1,6 +1,6 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-14 10:25:06 EDT`
+Latest checkpoint (ET): `2026-04-14 10:30:06 EDT`
 Last processed slot: `manage_1030`
 
 ## Active Configuration
@@ -24,16 +24,16 @@ Last processed slot: `manage_1030`
 ## Portfolio Snapshot
 
 - Cash: `$7,229.00`
-- Equity: `$13,227.64`
+- Equity: `$13,238.16`
 - Realized PnL: `$3,145.00`
-- Unrealized PnL: `$82.64`
+- Unrealized PnL: `$93.16`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct      option_liquidity_status
-  REGN      share share_fallback       REGN       2026-04-13                   1      8      5916.0                 5998.64        739.5         749.83       739.5        749.83           82.64                    1.4         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
+  REGN      share share_fallback       REGN       2026-04-13                   1      8      5916.0                 6009.16        739.5         751.15       739.5        751.15           93.16                   1.57         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
 ```
 
 ## Today's Closed Trades (2026-04-14)
@@ -44,34 +44,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               11            2.34              3.09        187.77                30.53            True
-  INTC           96.00               25            2.85              1.30         64.64                75.15            True
-   XEL           91.67               12            0.94              0.53         80.22                20.44            True
-  MPWR           91.18               34            1.05             10.11       1367.90                58.48            True
-   WMT           90.32               31            0.66              0.57        124.31                26.19            True
-  PCAR           90.00               40            0.50              0.45        127.19                27.21            True
-  COST           90.00               10            1.19              8.19        977.34                19.04            True
-  TMUS           85.19               27            0.77              1.04        191.98                20.34            True
-   TXN           84.38               32            0.72              1.10        216.24                31.51            True
-  CSCO           83.33               18            0.81              0.47         82.15                28.38            True
-  WDAY           81.82               44            0.72              0.60        119.66                50.72            True
-  CHTR           81.82               22            2.11              3.35        224.87                32.05            True
+  FANG          100.00               15            1.91              2.53        188.02                30.53            True
+  INTC           96.00               25            2.87              1.31         64.64                75.15            True
+  COST           94.44               18            1.00              6.90        977.89                19.04            True
+   WMT           93.10               29            0.72              0.63        124.29                26.19            True
+  MPWR           91.43               35            0.88              8.46       1368.60                58.48            True
+   XEL           90.91               11            1.02              0.57         80.20                20.44            True
+  PCAR           89.19               37            0.66              0.59        127.13                27.21            True
+   TXN           84.38               32            0.89              1.34        216.13                31.51            True
+   BKR           83.87               31            0.86              0.38         62.40                33.24            True
+  WDAY           83.33               42            0.98              0.82        119.57                50.72            True
+  CSCO           83.33               18            0.86              0.50         82.14                28.38            True
+  TMUS           82.14               28            0.73              0.99        192.01                20.34            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et           slot   event_type                          detail
-2026-04-14T10:25:06.434099-04:00    manage_1030 slot_skipped {"reason": "already_processed"}
-2026-04-14T10:10:06.430685-04:00    manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-14T10:05:06.431814-04:00    manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-14T10:00:05.413958-04:00    manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-14T09:55:02.016600-04:00    manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-14T09:40:06.426052-04:00    manage_0930 slot_skipped {"reason": "already_processed"}
-2026-04-14T09:35:06.430444-04:00    manage_0930 slot_skipped {"reason": "already_processed"}
-2026-04-14T09:30:06.428322-04:00    manage_0930 slot_skipped {"reason": "already_processed"}
-2026-04-14T09:25:06.428256-04:00    manage_0930 slot_skipped {"reason": "already_processed"}
-2026-04-14T01:39:11.037721-04:00 share_ext_0135 slot_skipped {"reason": "already_processed"}
+                    timestamp_et        slot   event_type                          detail
+2026-04-14T10:30:06.433815-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-04-14T10:25:06.434099-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-04-14T10:10:06.430685-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
+2026-04-14T10:05:06.431814-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
+2026-04-14T10:00:05.413958-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
+2026-04-14T09:55:02.016600-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
+2026-04-14T09:40:06.426052-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
+2026-04-14T09:35:06.430444-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
+2026-04-14T09:30:06.428322-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
+2026-04-14T09:25:06.428256-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414102506)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414103006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414102506)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414103006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414102506)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414103006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414102506)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414103006)
 
 </details>
