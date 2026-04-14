@@ -1,7 +1,7 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-14 15:10:01 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-04-14 15:15:03 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -24,17 +24,17 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$1,069.00`
-- Equity: `$13,334.60`
+- Equity: `$13,405.44`
 - Realized PnL: `$3,145.00`
-- Unrealized PnL: `$189.60`
+- Unrealized PnL: `$260.44`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct      option_liquidity_status
-  REGN      share share_fallback                REGN       2026-04-13                   1      8      5916.0                  6035.6        739.5         754.45      739.50        754.45           119.6                   2.02         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
-  FANG     option         option FANG260515C00185000       2026-04-14                   0      7      6160.0                  6230.0          8.8           8.90      186.41        186.26            70.0                   1.14         100.0               20              1.42         38.05            39.5                  30.53                 326.0           18.0               0.07                           ok
+  FANG     option         option FANG260515C00185000       2026-04-14                   0      7      6160.0                 6300.00          8.8           9.00      186.41        186.40          140.00                   2.27         100.0               20              1.42         38.05            39.6                  30.53                 326.0           18.0               0.07                           ok
+  REGN      share share_fallback                REGN       2026-04-13                   1      8      5916.0                 6036.44        739.5         754.55      739.50        754.55          120.44                   2.04         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
 ```
 
 ## Today's Closed Trades (2026-04-14)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               18            1.48              1.96        188.26                30.53            True
-  INTC           96.00               25            2.98              1.36         64.62                75.15            True
-   XEL           94.12               17            0.73              0.41         80.27                20.44            True
-  FAST           92.31               13            2.10              0.67         45.51                37.61            True
-  MPWR           91.43               35            0.60              5.72       1369.78                58.48            True
-  COST           91.18               34            0.57              3.93        979.17                19.04            True
-  ORLY           90.48               42            0.61              0.40         93.84                24.40            True
-  DXCM           88.37               43            0.73              0.32         62.98                33.61            True
-  DDOG           87.80               41            0.55              0.42        109.90                53.71            True
-  CTSH           84.21               38            0.64              0.27         60.41                30.13            True
-  TMUS           81.25               16            1.47              1.97        191.58                20.34            True
-  WDAY           80.00               30            1.93              1.62        119.22                50.72            True
+  FANG          100.00               18            1.47              1.95        188.27                30.53            True
+  INTC           96.43               28            2.80              1.28         64.65                75.15            True
+   XEL           94.12               17            0.76              0.43         80.27                20.44            True
+  FAST           92.31               13            2.12              0.68         45.51                37.61            True
+  MPWR           91.43               35            0.57              5.47       1369.89                58.48            True
+  ORLY           90.48               42            0.62              0.41         93.83                24.40            True
+  COST           90.32               31            0.59              4.08        979.10                19.04            True
+  DXCM           88.37               43            0.67              0.30         62.99                33.61            True
+  CTSH           85.37               41            0.51              0.22         60.44                30.13            True
+  TMUS           81.25               16            1.43              1.93        191.60                20.34            True
+  PCAR           80.00               20            1.38              1.23        126.85                27.21            True
+   HON          100.00               28            0.40              0.66        233.36                23.77           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414151001)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414151503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414151001)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414151503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414151001)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414151503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414151001)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414151503)
 
 </details>
