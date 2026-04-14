@@ -1,7 +1,7 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-14 18:30:01 EDT`
-Last processed slot: `share_ext_1830`
+Latest checkpoint (ET): `2026-04-14 18:35:05 EDT`
+Last processed slot: `share_ext_1835`
 
 ## Active Configuration
 
@@ -33,8 +33,8 @@ Last processed slot: `share_ext_1830`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct      option_liquidity_status
-  FANG     option         option FANG260515C00185000       2026-04-14                   0      7      6160.0                  6510.0          8.8            9.3      186.41        186.36           350.0                   5.68         100.0               20              1.42         38.05           39.78                  30.53                 326.0           18.0               0.07                           ok
-  REGN      share share_fallback                REGN       2026-04-13                   1      8      5916.0                  6028.8        739.5          753.6      739.50        753.60           112.8                   1.91         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
+  FANG     option         option FANG260515C00185000       2026-04-14                   0      7      6160.0                  6510.0          8.8            9.3      186.41         186.5           350.0                   5.68         100.0               20              1.42         38.05           39.78                  30.53                 326.0           18.0               0.07                           ok
+  REGN      share share_fallback                REGN       2026-04-13                   1      8      5916.0                  6028.8        739.5          753.6      739.50         753.6           112.8                   1.91         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
 ```
 
 ## Today's Closed Trades (2026-04-14)
@@ -68,27 +68,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414183001)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414183505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414183001)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414183505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414183001)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414183505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414183001)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414183505)
 
 </details>
