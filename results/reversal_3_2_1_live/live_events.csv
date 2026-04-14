@@ -505,3 +505,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-14T14:40:05.427005-04:00,2026-04-14,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-14T14:50:06.429660-04:00,2026-04-14,entry_1500,entry,"{""allocated_cash"": 6160.0, ""asset_type"": ""option"", ""contract_symbol"": ""FANG260515C00185000"", ""contracts"": 7, ""entry_option_price"": 8.8, ""execution_mode"": ""option"", ""matched_signals"": 20, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 326.0, ""option_spread_pct"": 6.82, ""option_volume"": 18.0, ""success_rate"": 100.0, ""ticker"": ""FANG""}"
 2026-04-14T14:55:06.427880-04:00,2026-04-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-14T15:00:06.500790-04:00,2026-04-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
