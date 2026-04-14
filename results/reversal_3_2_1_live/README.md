@@ -1,7 +1,7 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-14 16:10:06 EDT`
-Last processed slot: `manage_1600`
+Latest checkpoint (ET): `2026-04-14 16:15:05 EDT`
+Last processed slot: `share_ext_1615`
 
 ## Active Configuration
 
@@ -24,9 +24,9 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$1,069.00`
-- Equity: `$13,098.08`
+- Equity: `$13,063.08`
 - Realized PnL: `$3,145.00`
-- Unrealized PnL: `$-46.92`
+- Unrealized PnL: `$-81.92`
 - Open positions: `2`
 
 ## Open Positions
@@ -34,7 +34,7 @@ Last processed slot: `manage_1600`
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct      option_liquidity_status
   REGN      share share_fallback                REGN       2026-04-13                   1      8      5916.0                 6044.08        739.5         755.51      739.50        755.51          128.08                   2.16         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
-  FANG     option         option FANG260515C00185000       2026-04-14                   0      7      6160.0                 5985.00          8.8           8.55      186.41        186.51         -175.00                  -2.84         100.0               20              1.42         38.05           36.43                  30.53                 326.0           18.0               0.07                           ok
+  FANG     option         option FANG260515C00185000       2026-04-14                   0      7      6160.0                 5950.00          8.8           8.50      186.41        186.75         -210.00                  -3.41         100.0               20              1.42         38.05           36.57                  30.53                 326.0           18.0               0.07                           ok
 ```
 
 ## Today's Closed Trades (2026-04-14)
@@ -68,27 +68,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414161006)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260414161505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414161006)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260414161505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414161006)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260414161505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414161006)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260414161505)
 
 </details>
