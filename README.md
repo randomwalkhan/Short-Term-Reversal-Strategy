@@ -3,7 +3,7 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.2.1 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-14 00:05:00 EDT`
+- Latest checkpoint (ET): `2026-04-14 00:08:05 EDT`
 - Equity: `$13,188.00` | Realized: `$3,145.00` | Unrealized: `$43.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `share_ext_0005`
@@ -20,28 +20,28 @@ ticker asset_type execution_mode instrument  units  cash_spent  current_position
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.1 Live Equity Overall](assets/reversal_3_2_1_live_equity_overall.png?v=20260414000500)
+![Reversal 3.2.1 Live Equity Overall](assets/reversal_3_2_1_live_equity_overall.png?v=20260414000805)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.1 Live Equity 1D](assets/reversal_3_2_1_live_equity_1d.png?v=20260414000500)
+![Reversal 3.2.1 Live Equity 1D](assets/reversal_3_2_1_live_equity_1d.png?v=20260414000805)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.1 Live Equity 1W](assets/reversal_3_2_1_live_equity.png?v=20260414000500)
+![Reversal 3.2.1 Live Equity 1W](assets/reversal_3_2_1_live_equity.png?v=20260414000805)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.1 Live Equity 1M](assets/reversal_3_2_1_live_equity_1m.png?v=20260414000500)
+![Reversal 3.2.1 Live Equity 1M](assets/reversal_3_2_1_live_equity_1m.png?v=20260414000805)
 
 </details>
 
