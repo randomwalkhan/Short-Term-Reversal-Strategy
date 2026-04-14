@@ -19,14 +19,7 @@ def parse_args() -> argparse.Namespace:
 
 def build_schedule() -> list[dict[str, int]]:
     weekday_entries = []
-    five_minute_slots = []
-    for hour in range(6, 14):
-        for minute in range(0, 60, 5):
-            if hour == 6 and minute < 30:
-                continue
-            if hour == 13 and minute > 0:
-                continue
-            five_minute_slots.append((hour, minute))
+    five_minute_slots = [(hour, minute) for hour in range(0, 24) for minute in range(0, 60, 5)]
     for weekday in [1, 2, 3, 4, 5]:
         for hour, minute in five_minute_slots:
             weekday_entries.append({"Weekday": weekday, "Hour": hour, "Minute": minute})
@@ -70,7 +63,7 @@ def main() -> None:
 
     print(f"Installed launchd service -> {plist_path}")
     print("Scheduled PT run times:")
-    print("Every 5 minutes from 06:30 through 13:00 on weekdays")
+    print("Every 5 minutes on weekdays. Regular-session logic remains unchanged; off-hours scans only act on open share-fallback positions.")
 
 
 if __name__ == "__main__":

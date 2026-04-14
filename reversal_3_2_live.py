@@ -52,6 +52,7 @@ SHARE_TAKE_PROFIT_PCT = 0.03
 SHARE_STOP_LOSS_PCT = 0.03
 LEVERAGED_SHARE_TAKE_PROFIT_PCT = 0.05
 LEVERAGED_SHARE_STOP_LOSS_PCT = 0.05
+MAX_EXTENDED_QUOTE_STALENESS_MINUTES = 20
 REFRESH_DATA_IF_STALE = True
 LIVE_START_DATE = "2026-03-24"
 
@@ -274,6 +275,10 @@ def slot_key_for_timestamp(now_et: pd.Timestamp, force_slot: str | None = None) 
         scheduled = now_et.normalize() + pd.Timedelta(hours=hour, minutes=minute)
         if abs((now_et - scheduled).total_seconds()) <= 12 * 60:
             return slot
+    minutes = now_et.hour * 60 + now_et.minute
+    if minutes < (9 * 60 + 30) or minutes > (16 * 60):
+        bucket = now_et.floor("5min")
+        return f"share_ext_{bucket.strftime('%H%M')}"
     return None
 
 
@@ -793,6 +798,14 @@ def append_event(events_df: pd.DataFrame, now_et: pd.Timestamp, trade_date: str,
     return pd.concat([events_df, pd.DataFrame([row])], ignore_index=True)
 
 
+def is_extended_share_slot(slot_key: str | None) -> bool:
+    return bool(slot_key and str(slot_key).startswith("share_ext_"))
+
+
+def has_open_share_position(state: dict[str, Any]) -> bool:
+    return any(str(position.get("asset_type", "option")) == "share" for position in state.get("positions", []))
+
+
 def mark_open_positions(state: dict[str, Any], now_et: pd.Timestamp) -> tuple[list[dict[str, Any]], float]:
     marked = []
     total_value = 0.0
@@ -831,6 +844,12 @@ def mark_open_positions(state: dict[str, Any], now_et: pd.Timestamp) -> tuple[li
             "unrealized_return_pct": pnl_pct,
             "business_days_held": day_number,
             "session": live["session"],
+            "spot_price_source": live.get("price_source"),
+            "spot_data_asof_et": (
+                pd.Timestamp(live["asof"]).tz_convert(ET).isoformat()
+                if pd.notna(live["asof"]) and getattr(pd.Timestamp(live["asof"]), "tzinfo", None) is not None
+                else (pd.Timestamp(live["asof"]).tz_localize(ET).isoformat() if pd.notna(live["asof"]) else None)
+            ),
         }
         marked.append(marked_row)
         total_value += position_value
@@ -848,6 +867,7 @@ def maybe_exit_positions(
     remaining_positions = []
     marked_positions, _ = mark_open_positions(state, now_et) if state["positions"] else ([], 0.0)
     by_id = {row["position_id"]: row for row in marked_positions}
+    extended_slot = is_extended_share_slot(slot_key)
 
     for raw in state["positions"]:
         marked = by_id[raw["position_id"]]
@@ -856,20 +876,48 @@ def maybe_exit_positions(
         business_days_held = int(marked["business_days_held"])
         target = raw["planned_tp_day1"] if business_days_held <= 1 else raw["planned_tp_day2"]
         exit_reason = None
+        exit_price = current_price
 
-        if current_price <= raw["planned_stop"]:
-            exit_reason = "stop_loss_hit_at_scan"
-        elif current_price >= target:
-            exit_reason = "take_profit_day1_hit_at_scan" if business_days_held <= 1 else "take_profit_day2_hit_at_scan"
-        elif business_days_held >= 2 and slot_key == "manage_1600":
-            exit_reason = "time_exit_at_4pm_scan"
+        if extended_slot:
+            if asset_type != "share":
+                remaining_positions.append(raw)
+                continue
+
+            session = str(marked.get("session", ""))
+            quote_ts = pd.to_datetime(marked.get("spot_data_asof_et"), errors="coerce")
+            quote_is_fresh = False
+            if pd.notna(quote_ts):
+                if quote_ts.tzinfo is None:
+                    quote_ts = quote_ts.tz_localize(ET)
+                else:
+                    quote_ts = quote_ts.tz_convert(ET)
+                quote_age_minutes = abs((now_et - quote_ts).total_seconds()) / 60
+                quote_is_fresh = quote_age_minutes <= MAX_EXTENDED_QUOTE_STALENESS_MINUTES
+
+            if session in {"pre", "post"} and quote_is_fresh and current_price >= target:
+                exit_reason = (
+                    "take_profit_day1_limit_fill_extended_hours"
+                    if business_days_held <= 1
+                    else "take_profit_day2_limit_fill_extended_hours"
+                )
+                exit_price = target
+            else:
+                remaining_positions.append(raw)
+                continue
+        else:
+            if current_price <= raw["planned_stop"]:
+                exit_reason = "stop_loss_hit_at_scan"
+            elif current_price >= target:
+                exit_reason = "take_profit_day1_hit_at_scan" if business_days_held <= 1 else "take_profit_day2_hit_at_scan"
+            elif business_days_held >= 2 and slot_key == "manage_1600":
+                exit_reason = "time_exit_at_4pm_scan"
 
         if exit_reason is None:
             remaining_positions.append(raw)
             continue
 
         multiplier = 1 if asset_type == "share" else 100
-        proceeds = current_price * multiplier * raw["contracts"]
+        proceeds = exit_price * multiplier * raw["contracts"]
         pnl = proceeds - raw["entry_option_price"] * multiplier * raw["contracts"]
         state["cash"] += proceeds
         trade_row = {
@@ -883,7 +931,7 @@ def maybe_exit_positions(
             "entry_trade_date_et": raw["entry_trade_date"],
             "exit_trade_date_et": trade_date,
             "entry_option_price": raw["entry_option_price"],
-            "exit_option_price": current_price,
+            "exit_option_price": exit_price,
             "entry_spot": raw["entry_spot"],
             "exit_spot": marked["current_spot"],
             "entry_iv_pct": raw.get("entry_iv_pct"),
@@ -913,6 +961,7 @@ def maybe_exit_positions(
                 "reason": exit_reason,
                 "pnl": round(float(pnl), 2),
                 "return_pct": round(float(trade_row["return_pct"]), 2) if pd.notna(trade_row["return_pct"]) else None,
+                "fill_price": round(float(exit_price), 4),
             },
         )
 
@@ -1147,6 +1196,8 @@ def humanize_exit_reason(reason: str) -> str:
         "tp_day1_scan": "take_profit_day1_hit_at_scan",
         "tp_day2_scan": "take_profit_day2_hit_at_scan",
         "time_exit_scan": "time_exit_at_4pm_scan",
+        "tp_day1_ext_limit": "take_profit_day1_limit_fill_extended_hours",
+        "tp_day2_ext_limit": "take_profit_day2_limit_fill_extended_hours",
     }
     return mapping.get(reason, reason)
 
@@ -1562,10 +1613,11 @@ def render_dashboard(
             "- Matched-signal gate: `>= 10`",
             "- Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers",
             "- Entry scan: `3:00 PM ET`",
-            "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`",
+            "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; share-fallback positions also run take-profit scans in after-hours / overnight / pre-market on `5-minute` checkpoints with a limit-fill assumption",
             "- Live exit ladder: `+15% / +15% / -12%`",
             "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`",
             "- Fallback execution: buy shares when the option fails the liquidity gate; use `+3% / -3%` for common-stock fallback and `+5% / -5%` for leveraged-ETF shares",
+            "- Extended-hours share handling: only share positions participate; if a fresh extended-hours quote is above the active take-profit level, the paper exit is booked at the take-profit limit price",
             "- Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed",
             "- Chart views: `Overall / 1D / 1W / 1M`, default open panel is `Overall`",
             "",
@@ -1738,6 +1790,7 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
     ensure_dirs()
     now_et = now_et_from_arg(args.now)
     slot_key = slot_key_for_timestamp(now_et, args.force_slot)
+    extended_slot = is_extended_share_slot(slot_key)
     closure_detail = market_closure_reason(now_et)
     state = load_state(args.start_date)
     trades_df = load_csv_log(TRADES_PATH)
@@ -1748,13 +1801,27 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
     trade_date = now_et.date().isoformat()
     pre_start = pd.Timestamp(trade_date) < pd.Timestamp(state["start_date"])
 
+    if extended_slot and not has_open_share_position(state):
+        return {
+            "timestamp_et": now_et.isoformat(),
+            "slot": slot_key,
+            "open_positions": len(state["positions"]),
+            "cash": round(float(state["cash"]), 2),
+            "equity": round(float(state["cash"]), 2),
+            "skipped": "no_open_share_position",
+        }
+
     if not pre_start and closure_detail is None and REFRESH_DATA_IF_STALE and not args.skip_data_refresh:
         events_df = maybe_refresh_daily_data(universe, now_et, events_df)
 
+    minutes = now_et.hour * 60 + now_et.minute
+    in_regular_session = (9 * 60 + 30) <= minutes <= (16 * 60)
     if pre_start or closure_detail is not None:
         summary_df = pd.DataFrame()
-    else:
+    elif slot_key == "entry_1500" or in_regular_session:
         summary_df, _ = screen_live_candidates(universe)
+    else:
+        summary_df = pd.DataFrame()
 
     if pre_start:
         events_df = append_event(
@@ -1797,7 +1864,7 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
                     detail=closure_detail,
                 )
         elif slot_key and slot_key not in processed_for_day:
-            if slot_key.startswith("manage_"):
+            if slot_key.startswith("manage_") or extended_slot:
                 state, trades_df, events_df = maybe_exit_positions(state, now_et, slot_key, trades_df, events_df)
             if slot_key == "entry_1500":
                 state, trades_df, events_df = maybe_enter_position(state, now_et, slot_key, summary_df, trades_df, events_df)

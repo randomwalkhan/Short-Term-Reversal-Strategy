@@ -123,6 +123,8 @@ Live paper update: the active option exit ladder remains `+15% / +15% / -12%`, t
 
 Live paper 更新：当前 live 的 option 止盈止损梯度保持 `+15% / +15% / -12%`；若期权流动性不足，则退回 share execution，普通正股使用 `+3% / -3%`，leveraged ETF shares 使用 `+5% / -5%`，且 option spread 门槛现为 `<= 15%`。
 
+最新执行改动：当策略触发 share fallback 且仍有 share 持仓时，系统现在会在 after-hours / overnight / pre-market 继续做 `5-minute` 的止盈扫描，并按 take-profit limit price 记 paper fill；止损仍保留在常规管理槽位处理。
+
 ## Featured Result | 重点结果
 
 The official Reversal 3.3 backtest definition keeps the Reversal 3.1 research setup intact, including the dynamic trade-level filter `matched_signals >= 10`, the promoted `60d` historical lookback window, the `minimum current drop > 0.5%` entry filter, and the curated universe overlay `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`. On the current data snapshot, the official Reversal 3.3 result remains `+1709.09%` total return, `-44.30%` max drawdown, `63.33%` win rate, and `4.28` Sharpe.
