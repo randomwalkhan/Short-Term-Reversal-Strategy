@@ -24,7 +24,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.2.1"
+VERSION = "3.2.2"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -240,7 +240,7 @@ class Position:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run the Reversal 3.2.1 live paper-trading cycle.")
+    parser = argparse.ArgumentParser(description=f"Run the Reversal {VERSION} live paper-trading cycle.")
     parser.add_argument("--force-slot", choices=sorted(SLOT_TO_ET), default=None)
     parser.add_argument("--now", default=None, help="Optional override timestamp, e.g. 2026-03-24T15:00:00-04:00")
     parser.add_argument("--start-date", default=LIVE_START_DATE, help="Do not trade before this ET date.")
@@ -1298,11 +1298,24 @@ def plot_live_equity_window(
     else:
         period_return_pct = (period_end_equity / period_start_equity - 1.0) * 100
     line_color = GREEN_LINE if period_end_equity >= period_start_equity else RED_LINE
-    y_band = INITIAL_CAPITAL * 0.10
     data_min = float(plot_df["equity"].min())
     data_max = float(plot_df["equity"].max())
-    lower_bound = min(INITIAL_CAPITAL - y_band, data_min - INITIAL_CAPITAL * 0.01)
-    upper_bound = max(INITIAL_CAPITAL + y_band, data_max + INITIAL_CAPITAL * 0.01)
+    if window_days <= 1:
+        data_span = max(data_max - data_min, 0.0)
+        reference_equity = max(period_start_equity, 1.0)
+        padding = max(reference_equity * 0.0015, data_span * 0.30, 6.0)
+        half_span = max((data_span + 2 * padding) / 2.0, reference_equity * 0.004)
+        center = (data_min + data_max) / 2.0 if data_span > 0 else period_end_equity
+        lower_bound = center - half_span
+        upper_bound = center + half_span
+        if period_start_equity < lower_bound:
+            lower_bound = period_start_equity - padding
+        if period_start_equity > upper_bound:
+            upper_bound = period_start_equity + padding
+    else:
+        y_band = INITIAL_CAPITAL * 0.10
+        lower_bound = min(INITIAL_CAPITAL - y_band, data_min - INITIAL_CAPITAL * 0.01)
+        upper_bound = max(INITIAL_CAPITAL + y_band, data_max + INITIAL_CAPITAL * 0.01)
 
     fig, axis = plt.subplots(figsize=(12, 6), facecolor=FIG_BG)
     axis.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Strategy", zorder=3)
@@ -1346,7 +1359,7 @@ def plot_live_equity_window(
         color=TEXT,
         bbox={"boxstyle": "round,pad=0.25", "facecolor": AX_BG, "edgecolor": line_color, "alpha": 0.95},
     )
-    axis.set_title(f"Reversal 3.2.1 Live Paper Equity ({window_label})  |  Return {period_return_pct:+.2f}%")
+    axis.set_title(f"Reversal {VERSION} Live Paper Equity ({window_label})  |  Return {period_return_pct:+.2f}%")
     axis.set_xlabel(f"Date (ET, trailing {window_label})")
     axis.set_ylabel("Portfolio Value ($)")
     legend = axis.legend(frameon=False, loc="upper left")
@@ -1459,7 +1472,7 @@ def plot_live_overall_benchmark(
         color=TEXT,
         bbox={"boxstyle": "round,pad=0.25", "facecolor": AX_BG, "edgecolor": line_color, "alpha": 0.95},
     )
-    axis.set_title(f"Reversal 3.2.1 Live Paper Equity vs QQQ / SPY (Overall)  |  Return {period_return_pct:+.2f}%")
+    axis.set_title(f"Reversal {VERSION} Live Paper Equity vs QQQ / SPY (Overall)  |  Return {period_return_pct:+.2f}%")
     axis.set_xlabel("Date (ET, since live start)")
     axis.set_ylabel("Portfolio Value ($)")
     legend = axis.legend(frameon=False, loc="upper left")
@@ -1484,28 +1497,28 @@ def build_chart_sections(image_prefix: str, cache_bust: str | None = None) -> li
         "<details open>",
         "<summary><strong>Overall</strong></summary>",
         "",
-        f"![Reversal 3.2.1 Live Equity Overall]({image_prefix}assets/reversal_3_2_1_live_equity_overall.png{suffix})",
+        f"![Reversal {VERSION} Live Equity Overall]({image_prefix}assets/reversal_3_2_1_live_equity_overall.png{suffix})",
         "",
         "</details>",
         "",
         "<details>",
         "<summary><strong>1D</strong></summary>",
         "",
-        f"![Reversal 3.2.1 Live Equity 1D]({image_prefix}assets/reversal_3_2_1_live_equity_1d.png{suffix})",
+        f"![Reversal {VERSION} Live Equity 1D]({image_prefix}assets/reversal_3_2_1_live_equity_1d.png{suffix})",
         "",
         "</details>",
         "",
         "<details>",
         "<summary><strong>1W</strong></summary>",
         "",
-        f"![Reversal 3.2.1 Live Equity 1W]({image_prefix}assets/reversal_3_2_1_live_equity.png{suffix})",
+        f"![Reversal {VERSION} Live Equity 1W]({image_prefix}assets/reversal_3_2_1_live_equity.png{suffix})",
         "",
         "</details>",
         "",
         "<details>",
         "<summary><strong>1M</strong></summary>",
         "",
-        f"![Reversal 3.2.1 Live Equity 1M]({image_prefix}assets/reversal_3_2_1_live_equity_1m.png{suffix})",
+        f"![Reversal {VERSION} Live Equity 1M]({image_prefix}assets/reversal_3_2_1_live_equity_1m.png{suffix})",
         "",
         "</details>",
         "",
@@ -1522,7 +1535,6 @@ def render_dashboard(
     now_et: pd.Timestamp,
     slot_key: str | None,
 ) -> tuple[str, str]:
-    cache_bust = now_et.strftime("%Y%m%d%H%M%S")
     last_equity = float(equity_df["equity"].iloc[-1]) if not equity_df.empty else float(state["cash"])
     realized_pnl = float(trades_df["pnl"].sum()) if not trades_df.empty else 0.0
     unrealized_pnl = float(positions_df["unrealized_pnl"].sum()) if not positions_df.empty else 0.0
@@ -1539,7 +1551,7 @@ def render_dashboard(
     else:
         checkpoint_ts = now_et
         checkpoint_slot = slot_key or "manual_refresh"
-    cache_bust = checkpoint_ts.strftime("%Y%m%d%H%M%S")
+    cache_bust = now_et.strftime("%Y%m%d%H%M%S")
     today = now_et.date().isoformat()
     today_trades = trades_df[trades_df.get("exit_trade_date_et", pd.Series(dtype=str)).astype(str) == today].copy() if not trades_df.empty and "exit_trade_date_et" in trades_df.columns else pd.DataFrame()
     recent_events = events_df.sort_values("timestamp_et", ascending=False).head(10) if not events_df.empty else pd.DataFrame()
@@ -1605,7 +1617,7 @@ def render_dashboard(
 
     dashboard_md = "\n".join(
         [
-            "# Reversal 3.2.1 Live Paper Test",
+            f"# Reversal {VERSION} Live Paper Test",
             "",
             f"Latest checkpoint (ET): `{checkpoint_ts.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
             f"Last processed slot: `{checkpoint_slot}`",
@@ -1688,7 +1700,7 @@ def render_dashboard(
     root_section = "\n".join(
         [
             ROOT_SECTION_START,
-            "## Reversal 3.2.1 Live Paper Test",
+            f"## Reversal {VERSION} Live Paper Test",
             "",
             f"- Latest checkpoint (ET): `{checkpoint_ts.strftime('%Y-%m-%d %H:%M:%S %Z')}`",
             f"- Equity: `${last_equity:,.2f}` | Realized: `${realized_pnl:,.2f}` | Unrealized: `${unrealized_pnl:,.2f}` | Open positions: `{len(state['positions'])}`",
@@ -1727,7 +1739,7 @@ def update_root_readme(root_section: str) -> None:
         end = text.index(ROOT_SECTION_END) + len(ROOT_SECTION_END)
         text = text[:start] + root_section + text[end:]
     else:
-        text = text.replace("# Reversal 3.2.1\n", "# Reversal 3.2.1\n\n" + root_section + "\n\n", 1)
+        text = text.replace(f"# Reversal {VERSION}\n", f"# Reversal {VERSION}\n\n" + root_section + "\n\n", 1)
     ROOT_README_PATH.write_text(text)
 
 
@@ -1779,7 +1791,7 @@ def maybe_git_publish(now_et: pd.Timestamp, dry_run: bool, skip_git_publish: boo
     if not status.stdout.strip():
         return
 
-    commit_message = f"Update Reversal 3.2.1 live paper test {now_et.strftime('%Y-%m-%d %H:%M ET')}"
+    commit_message = f"Update Reversal {VERSION} live paper test {now_et.strftime('%Y-%m-%d %H:%M ET')}"
     commit_result = run_git(["git", "commit", "-m", commit_message])
     if commit_result.returncode != 0:
         return

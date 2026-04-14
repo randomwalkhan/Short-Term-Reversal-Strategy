@@ -3,9 +3,10 @@
 This folder stores historical notebook snapshots for the Reversal project.
 
 Current main notebook:
-- `/Users/hanks/Documents/New project/Reversal3.2.1.ipynb`
+- `/Users/hanks/Documents/New project/Reversal3.2.2.ipynb`
 
 Archived snapshots:
+- `Reversal3.2.1.ipynb`
 - `Reversal3.2.ipynb`
 - `Reversal3.1.ipynb`
 - `Reversal2.5.3.ipynb`
