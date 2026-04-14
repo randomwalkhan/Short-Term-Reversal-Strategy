@@ -13,11 +13,11 @@ Last processed slot: `share_ext_0005`
 - Matched-signal gate: `>= 10`
 - Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers
 - Entry scan: `3:00 PM ET`
-- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; share-fallback positions also run take-profit and stop loss scans in after-hours / overnight / pre-market on `5-minute` checkpoints
+- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; off-hours `5-minute` checkpoints continue mark-to-market updates for open positions, while share-fallback positions also run take-profit and stop loss scans in after-hours / overnight / pre-market
 - Live exit ladder: `+15% / +15% / -12%`
 - Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`
 - Fallback execution: buy shares when the option fails the liquidity gate; use `+3% / -3%` for common-stock fallback and `+5% / -5%` for leveraged-ETF shares
-- Extended-hours share handling: only share positions participate; fresh extended-hours quotes can trigger take-profit fills at the target price and stop loss exits at the current visible quote
+- Extended-hours handling: open option positions continue to refresh their paper marks on off-hours checkpoints; share positions can additionally trigger take-profit fills at the target price and stop loss exits at the current visible quote
 - Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed
 - Chart views: `Overall / 1D / 1W / 1M`, default open panel is `Overall`
 
