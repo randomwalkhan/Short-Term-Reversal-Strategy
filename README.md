@@ -3,10 +3,10 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.2.2 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-14 16:40:06 EDT`
-- Equity: `$13,602.07` | Realized: `$3,145.00` | Unrealized: `$457.07` | Open positions: `2`
+- Latest checkpoint (ET): `2026-04-14 16:45:06 EDT`
+- Equity: `$13,623.08` | Realized: `$3,145.00` | Unrealized: `$478.08` | Open positions: `2`
 - Today closed trades: `0`
-- Current slot: `share_ext_1640`
+- Current slot: `share_ext_1645`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -15,34 +15,34 @@
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
   FANG     option         option FANG260515C00185000      7      6160.0                 6510.00           9.30          350.00                   5.68                   0
-  REGN      share share_fallback                REGN      8      5916.0                 6023.07         752.88          107.07                   1.81                   1
+  REGN      share share_fallback                REGN      8      5916.0                 6044.08         755.51          128.08                   2.16                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](assets/reversal_3_2_1_live_equity_overall.png?v=20260414164006)
+![Reversal 3.2.2 Live Equity Overall](assets/reversal_3_2_1_live_equity_overall.png?v=20260414164506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](assets/reversal_3_2_1_live_equity_1d.png?v=20260414164006)
+![Reversal 3.2.2 Live Equity 1D](assets/reversal_3_2_1_live_equity_1d.png?v=20260414164506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](assets/reversal_3_2_1_live_equity.png?v=20260414164006)
+![Reversal 3.2.2 Live Equity 1W](assets/reversal_3_2_1_live_equity.png?v=20260414164506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](assets/reversal_3_2_1_live_equity_1m.png?v=20260414164006)
+![Reversal 3.2.2 Live Equity 1M](assets/reversal_3_2_1_live_equity_1m.png?v=20260414164506)
 
 </details>
 
