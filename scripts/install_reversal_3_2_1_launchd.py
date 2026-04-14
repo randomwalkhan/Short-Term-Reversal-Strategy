@@ -6,11 +6,11 @@ import subprocess
 from pathlib import Path
 
 
-LABEL = "com.randomwalkhan.reversal-3-2"
+LABEL = "com.randomwalkhan.reversal-3-2-1"
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Install the Reversal 3.2 launchd schedule.")
+    parser = argparse.ArgumentParser(description="Install the Reversal 3.2.1 launchd schedule.")
     parser.add_argument("--project-dir", type=Path, default=Path.cwd().resolve())
     parser.add_argument("--python-bin", default="/Users/mac/miniconda3/envs/quant/bin/python")
     parser.add_argument("--start-immediately", action="store_true")
@@ -32,14 +32,14 @@ def main() -> None:
     launch_agents_dir.mkdir(parents=True, exist_ok=True)
 
     plist_path = launch_agents_dir / f"{LABEL}.plist"
-    log_dir = args.project_dir / "results" / "reversal_3_2_live"
+    log_dir = args.project_dir / "results" / "reversal_3_2_1_live"
     log_dir.mkdir(parents=True, exist_ok=True)
 
     plist_data = {
         "Label": LABEL,
         "ProgramArguments": [
             args.python_bin,
-            str((args.project_dir / "reversal_3_2_live.py").resolve()),
+            str((args.project_dir / "reversal_3_2_1_live.py").resolve()),
         ],
         "WorkingDirectory": str(args.project_dir),
         "StandardOutPath": str((log_dir / "launchd.out.log").resolve()),
