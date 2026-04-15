@@ -546,3 +546,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-15T13:30:00.707679-04:00,2026-04-15,manage_1330,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-15T13:35:00.758993-04:00,2026-04-15,manage_1330,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-15T13:40:03.714737-04:00,2026-04-15,manage_1330,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-15T13:50:00.792014-04:00,2026-04-15,manage_1400,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""FANG260515C00185000"", ""fill_price"": 10.35, ""pnl"": 1085.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 17.61, ""ticker"": ""FANG""}"

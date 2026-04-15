@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 1068.999999999999,
+  "cash": 8314.0,
   "positions": [
     {
       "position_id": "REGN_20260413T145005",
@@ -32,36 +32,6 @@
       "option_volume": 1.0,
       "option_spread_pct": 0.06642066420664214,
       "option_liquidity_status": "low_open_interest,low_volume"
-    },
-    {
-      "position_id": "FANG_20260414T145006",
-      "ticker": "FANG",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "FANG260515C00185000",
-      "expiry": "2026-05-15",
-      "strike": 185.0,
-      "entry_timestamp": "2026-04-14T14:50:06.429660-04:00",
-      "entry_trade_date": "2026-04-14",
-      "entry_slot": "entry_1500",
-      "entry_spot": 186.41000366210938,
-      "entry_option_price": 8.8,
-      "entry_bid": 8.5,
-      "entry_ask": 9.1,
-      "entry_iv_pct": 38.04993591308594,
-      "contracts": 7,
-      "allocated_cash": 6160.000000000001,
-      "success_rate": 100.0,
-      "matched_signals": 20,
-      "current_drop_pct": 1.42,
-      "rolling_sigma_20d_pct": 30.53,
-      "planned_tp_day1": 10.12,
-      "planned_tp_day2": 10.12,
-      "planned_stop": 7.744000000000001,
-      "option_open_interest": 326.0,
-      "option_volume": 18.0,
-      "option_spread_pct": 0.06818181818181814,
-      "option_liquidity_status": "ok"
     }
   ],
   "processed_slots": {
@@ -615,7 +585,8 @@
       "manage_1200",
       "manage_1230",
       "manage_1300",
-      "manage_1330"
+      "manage_1330",
+      "manage_1400"
     ]
   },
   "start_date": "2026-03-24"
