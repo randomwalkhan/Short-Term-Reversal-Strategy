@@ -1,6 +1,6 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-15 15:35:05 EDT`
+Latest checkpoint (ET): `2026-04-15 15:40:05 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -24,17 +24,17 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$1,294.00`
-- Equity: `$14,613.52`
+- Equity: `$14,712.00`
 - Realized PnL: `$4,230.00`
-- Unrealized PnL: `$383.52`
+- Unrealized PnL: `$482.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct      option_liquidity_status
-   HON     option         option HON260515C00240000       2026-04-15                   0     18      7020.0                 7290.00          3.9           4.05      231.34        232.09          270.00                   3.85         100.0               22              0.82         27.49           27.74                  23.78                2322.0          110.0               0.05                           ok
-  REGN      share share_fallback               REGN       2026-04-13                   2      8      5916.0                 6029.52        739.5         753.69      739.50        753.69          113.52                   1.92         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
+   HON     option         option HON260515C00240000       2026-04-15                   0     18      7020.0                  7380.0          3.9           4.10      231.34        231.83           360.0                   5.13         100.0               22              0.82         27.49            28.1                  23.78                2322.0          110.0               0.05                           ok
+  REGN      share share_fallback               REGN       2026-04-13                   2      8      5916.0                  6038.0        739.5         754.75      739.50        754.75           122.0                   2.06         100.0               24              1.25           NaN             NaN                  24.22                  89.0            1.0               0.07 low_open_interest,low_volume
 ```
 
 ## Today's Closed Trades (2026-04-15)
@@ -48,24 +48,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   AEP           94.44               18            0.66              0.63        135.19                19.01            True
-   STX           92.59               27            2.61              9.74        529.27                74.84            True
-  ASML           92.31               13            3.20             34.03       1503.71                52.27            True
-  ALNY           91.89               37            1.19              2.84        338.19                42.77            True
-  MPWR           89.66               29            1.90             18.16       1355.64                58.76            True
-   MAR           88.89               36            0.64              1.63        366.00                29.18            True
-   CSX           88.46               26            0.60              0.18         42.43                21.52            True
-  SOXL           86.11               36            0.60              0.36         85.16               129.42            True
-  AMAT           85.29               34            0.94              2.61        394.52                56.23            True
-  DXCM           85.00               20            1.85              0.82         62.60                31.26            True
-    MU           81.25               32            2.27              7.39        462.49                82.05            True
-   CEG           80.00               40            0.84              1.75        295.86                58.33            True
+   HON          100.00               27            0.57              0.94        232.84                23.78            True
+   WDC           97.37               38            0.53              1.35        365.64                85.18            True
+   AEP           93.33               15            0.82              0.78        135.13                19.01            True
+   STX           92.59               27            2.70             10.08        529.12                74.84            True
+  ASML           92.31               13            3.21             34.15       1503.66                52.27            True
+  ALNY           91.43               35            1.34              3.19        338.04                42.77            True
+  MPWR           89.66               29            1.91             18.19       1355.63                58.76            True
+   MAR           88.89               36            0.73              1.88        365.89                29.18            True
+   CSX           86.96               23            0.82              0.25         42.40                21.52            True
+  KLAC           85.71               14            3.44             43.27       1777.37                50.02            True
+  SOXL           85.29               34            0.82              0.49         85.10               129.42            True
+  AMAT           84.38               32            1.15              3.18        394.28                56.23            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                 detail
+2026-04-15T15:40:05.911045-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 2026-04-15T15:35:05.907365-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 2026-04-15T15:30:05.900838-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 2026-04-15T15:25:04.898383-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-15T14:55:00.892312-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 2026-04-15T14:50:03.896088-04:00  entry_1500        entry {"allocated_cash": 7020.0, "asset_type": "option", "contract_symbol": "HON260515C00240000", "contracts": 18, "entry_option_price": 3.9, "execution_mode": "option", "matched_signals": 22, "option_liquidity_status": "ok", "option_open_interest": 2322.0, "option_spread_pct": 5.13, "option_volume": 110.0, "success_rate": 100.0, "ticker": "HON"}
 2026-04-15T14:40:01.721975-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
-2026-04-15T14:35:00.735526-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260415153505)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260415154005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260415153505)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260415154005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260415153505)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260415154005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260415153505)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260415154005)
 
 </details>
