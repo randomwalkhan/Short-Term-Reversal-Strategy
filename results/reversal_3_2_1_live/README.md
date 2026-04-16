@@ -1,6 +1,6 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-16 16:05:06 EDT`
+Latest checkpoint (ET): `2026-04-16 16:10:06 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -24,16 +24,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$6,636.99`
-- Equity: `$13,352.88`
+- Equity: `$13,350.99`
 - Realized PnL: `$3,357.92`
-- Unrealized PnL: `$-5.04`
+- Unrealized PnL: `$-6.93`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  REGN      share share_fallback       REGN       2026-04-16                   0      9     6720.93                 6715.89       746.77         746.21      746.77        746.21           -5.04                  -0.07         100.0               30              0.95           NaN             NaN                  24.02                  51.0            3.0               0.15 low_open_interest,low_volume,wide_spread
+  REGN      share share_fallback       REGN       2026-04-16                   0      9     6720.93                  6714.0       746.77          746.0      746.77         746.0           -6.93                   -0.1         100.0               30              0.95           NaN             NaN                  24.02                  51.0            3.0               0.15 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-16)
@@ -51,6 +51,7 @@ _None_
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                        detail
+2026-04-16T16:10:06.586169-04:00 manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 2026-04-16T16:05:06.429687-04:00 manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 2026-04-16T16:00:06.436019-04:00 manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 2026-04-16T15:55:05.424408-04:00 manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
@@ -60,7 +61,6 @@ _None_
 2026-04-16T15:25:06.542766-04:00 manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 2026-04-16T15:20:06.408935-04:00 manage_1530         exit {"asset_type": "option", "contract_symbol": "HON260515C00240000", "fill_price": 3.35, "pnl": -990.0, "reason": "stop_loss_hit_at_scan", "return_pct": -14.1, "ticker": "HON"}
 2026-04-16T15:10:06.430073-04:00  entry_1500 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-16T15:05:05.470311-04:00  entry_1500 slot_skipped                                                                                                                                               {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -70,27 +70,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416160506)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416161006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416160506)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416161006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416160506)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416161006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416160506)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416161006)
 
 </details>
