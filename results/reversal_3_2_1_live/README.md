@@ -1,6 +1,6 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-16 09:50:06 EDT`
+Latest checkpoint (ET): `2026-04-16 09:55:01 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -33,7 +33,7 @@ Last processed slot: `manage_1000`
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   HON     option         option HON260515C00240000       2026-04-15                   1     18      7020.0                  7560.0          3.9            4.2      231.34        233.08           540.0                   7.69         100.0               22              0.82         27.49            3.13                  23.78                2322.0          110.0               0.05                      ok
+   HON     option         option HON260515C00240000       2026-04-15                   1     18      7020.0                  7560.0          3.9            4.2      231.34        233.02           540.0                   7.69         100.0               22              0.82         27.49            3.13                  23.78                2322.0          110.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-04-16)
@@ -44,34 +44,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NVDA           93.75               32            0.89              1.24        198.34                36.33            True
-  MRVL           93.75               16            3.40              3.20        133.23                70.04            True
-  ALNY           91.89               37            1.29              3.00        332.10                43.40            True
-  ASML           90.91               11            3.66             37.97       1465.50                53.24            True
-  ISRG           86.67               15            1.97              6.46        465.59                23.09            True
-  KLAC           86.21               29            1.39             17.02       1740.82                51.26            True
-  AAPL           85.71               21            1.32              2.46        265.38                21.71            True
-  MELI           85.37               41            0.57              7.43       1868.94                35.68            True
-  SOXL           85.29               34            0.94              0.57         85.72               129.54            True
-  TSLA           84.62               26            1.78              4.88        389.86                50.86            True
-    MU           83.33               36            1.03              3.30        454.82                80.92            True
-  AMAT           82.14               28            1.66              4.57        392.30                56.17            True
+   STX           94.59               37            0.82              2.98        518.32                74.63            True
+  NVDA           92.59               27            1.26              1.76        198.12                36.33            True
+  AVGO           89.74               39            0.66              1.83        395.93                46.90            True
+  ALNY           88.89               27            1.79              4.18        331.60                43.40            True
+  PLTR           87.18               39            0.93              0.92        141.75                63.23            True
+   APP           85.00               40            0.63              2.05        463.75                75.55            True
+  AAPL           85.00               20            1.36              2.53        265.34                21.71            True
+  SOXL           84.85               33            2.29              1.38         85.37               129.54            True
+  KLAC           84.21               19            2.39             29.27       1735.56                51.26            True
+  TSLA           83.33               24            2.06              5.65        389.53                50.86            True
+  ISRG           83.33               12            2.22              7.28        465.24                23.09            True
+    MU           82.35               34            1.53              4.89        454.13                80.92            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                                                                                                                                                           detail
-2026-04-16T09:40:05.435541-04:00  manage_0930 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-16T09:35:04.828747-04:00  manage_0930 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-16T09:30:06.428916-04:00  manage_0930 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-16T09:25:06.428686-04:00  manage_0930 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-16T00:00:03.899170-04:00 data_refresh data_refresh                                                                                                                                                    {'saved': 99}
-2026-04-15T16:10:06.073164-04:00  manage_1600 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-15T16:05:06.125049-04:00  manage_1600 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-15T16:00:04.897355-04:00  manage_1600 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-15T15:55:00.685389-04:00  manage_1600 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-15T15:50:05.921508-04:00  manage_1600         exit {"asset_type": "share", "contract_symbol": "REGN", "fill_price": 754.24, "pnl": 117.92, "reason": "time_exit_at_4pm_scan", "return_pct": 1.99, "ticker": "REGN"}
+                    timestamp_et         slot   event_type                          detail
+2026-04-16T09:55:01.387641-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
+2026-04-16T09:40:05.435541-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
+2026-04-16T09:35:04.828747-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
+2026-04-16T09:30:06.428916-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
+2026-04-16T09:25:06.428686-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
+2026-04-16T00:00:03.899170-04:00 data_refresh data_refresh                   {'saved': 99}
+2026-04-15T16:10:06.073164-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-15T16:05:06.125049-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-15T16:00:04.897355-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-15T15:55:00.685389-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416095006)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416095501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416095006)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416095501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416095006)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416095501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416095006)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416095501)
 
 </details>
