@@ -1,6 +1,6 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-16 10:35:06 EDT`
+Latest checkpoint (ET): `2026-04-16 10:40:06 EDT`
 Last processed slot: `manage_1030`
 
 ## Active Configuration
@@ -24,16 +24,16 @@ Last processed slot: `manage_1030`
 ## Portfolio Snapshot
 
 - Cash: `$7,327.92`
-- Equity: `$14,977.92`
+- Equity: `$14,617.92`
 - Realized PnL: `$4,347.92`
-- Unrealized PnL: `$630.00`
+- Unrealized PnL: `$270.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   HON     option         option HON260515C00240000       2026-04-15                   1     18      7020.0                  7650.0          3.9           4.25      231.34        230.65           630.0                   8.97         100.0               22              0.82         27.49           31.06                  23.78                2322.0          110.0               0.05                      ok
+   HON     option         option HON260515C00240000       2026-04-15                   1     18      7020.0                  7290.0          3.9           4.05      231.34         230.8           270.0                   3.85         100.0               22              0.82         27.49           30.02                  23.78                2322.0          110.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-04-16)
@@ -44,24 +44,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               35            0.51              2.72        752.77                24.02            True
-   HON          100.00               24            0.62              1.00        231.76                23.34            True
-   WDC           97.06               34            0.98              2.51        363.92                79.90            True
-  MRVL           96.15               26            2.31              2.17        133.67                70.04            True
-  ROST           92.59               27            0.60              0.94        223.75                24.88            True
-  NVDA           91.67               36            0.58              0.80        198.53                36.33            True
-  ALNY           88.89               27            1.71              4.00        331.68                43.40            True
-  ISRG           85.00               20            1.55              5.09        466.18                23.09            True
-  KLAC           84.62               26            1.81             22.18       1738.61                51.26            True
-  TSLA           82.76               29            1.58              4.34        390.09                50.86            True
-  AMAT           82.76               29            1.54              4.24        392.44                56.17            True
-  PYPL           82.35               34            0.83              0.29         49.45                36.71            True
+  REGN          100.00               32            0.68              3.57        752.40                24.02            True
+   HON          100.00               25            0.61              0.98        231.77                23.34            True
+   WDC           97.06               34            1.18              3.01        363.71                79.90            True
+  MRVL           96.15               26            2.18              2.05        133.72                70.04            True
+  ROST           92.59               27            0.59              0.93        223.75                24.88            True
+  NVDA           91.67               36            0.51              0.70        198.57                36.33            True
+  ALNY           90.91               22            2.06              4.80        331.33                43.40            True
+  ASML           90.00               10            4.05             41.96       1463.79                53.24            True
+  ISRG           86.96               23            1.35              4.43        466.46                23.09            True
+  KLAC           84.62               26            1.79             21.93       1738.71                51.26            True
+  AMAT           83.87               31            1.38              3.80        392.63                56.17            True
+  DASH           83.33               42            0.53              0.67        179.65                53.35            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-16T10:40:06.719835-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
 2026-04-16T10:35:06.428424-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
 2026-04-16T10:30:06.538163-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
 2026-04-16T10:25:06.584595-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
@@ -71,7 +72,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-16T09:55:01.387641-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-16T09:40:05.435541-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
 2026-04-16T09:35:04.828747-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
-2026-04-16T09:30:06.428916-04:00 manage_0930 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416103506)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416104006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416103506)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416104006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416103506)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416104006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416103506)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416104006)
 
 </details>
