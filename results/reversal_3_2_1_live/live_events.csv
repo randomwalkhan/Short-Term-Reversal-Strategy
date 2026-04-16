@@ -615,3 +615,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-16T14:35:06.445500-04:00,2026-04-16,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-16T14:40:06.525547-04:00,2026-04-16,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-16T14:50:02.253743-04:00,2026-04-16,entry_1500,entry,"{""allocated_cash"": 6720.93, ""asset_type"": ""share"", ""contract_symbol"": ""REGN"", ""contracts"": 9, ""entry_option_price"": 746.77, ""execution_mode"": ""share_fallback"", ""matched_signals"": 30, ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""option_open_interest"": 51.0, ""option_spread_pct"": 15.18, ""option_volume"": 3.0, ""success_rate"": 100.0, ""ticker"": ""REGN""}"
+2026-04-16T14:55:06.168816-04:00,2026-04-16,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
