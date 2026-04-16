@@ -1,38 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 606.98974609375,
+  "cash": 6636.98974609375,
   "positions": [
-    {
-      "position_id": "HON_20260415T145003",
-      "ticker": "HON",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "HON260515C00240000",
-      "expiry": "2026-05-15",
-      "strike": 240.0,
-      "entry_timestamp": "2026-04-15T14:50:03.896088-04:00",
-      "entry_trade_date": "2026-04-15",
-      "entry_slot": "entry_1500",
-      "entry_spot": 231.3350067138672,
-      "entry_option_price": 3.9,
-      "entry_bid": 3.8,
-      "entry_ask": 4.0,
-      "entry_iv_pct": 27.49095947265625,
-      "contracts": 18,
-      "allocated_cash": 7020.0,
-      "success_rate": 100.0,
-      "matched_signals": 22,
-      "current_drop_pct": 0.82,
-      "rolling_sigma_20d_pct": 23.78,
-      "planned_tp_day1": 4.484999999999999,
-      "planned_tp_day2": 4.484999999999999,
-      "planned_stop": 3.432,
-      "option_open_interest": 2322.0,
-      "option_volume": 110.0,
-      "option_spread_pct": 0.05128205128205133,
-      "option_liquidity_status": "ok"
-    },
     {
       "position_id": "REGN_20260416T145002",
       "ticker": "REGN",
@@ -839,7 +809,8 @@
       "manage_1330",
       "manage_1400",
       "manage_1430",
-      "entry_1500"
+      "entry_1500",
+      "manage_1530"
     ]
   },
   "start_date": "2026-03-24"
