@@ -1,6 +1,6 @@
 # Reversal 3.2.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-16 09:30:06 EDT`
+Latest checkpoint (ET): `2026-04-16 09:35:04 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -33,7 +33,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   HON     option         option HON260515C00240000       2026-04-15                   1     18      7020.0                  7560.0          3.9            4.2      231.34        233.24           540.0                   7.69         100.0               22              0.82         27.49            3.13                  23.78                2322.0          110.0               0.05                      ok
+   HON     option         option HON260515C00240000       2026-04-15                   1     18      7020.0                  7560.0          3.9            4.2      231.34        233.29           540.0                   7.69         100.0               22              0.82         27.49            3.13                  23.78                2322.0          110.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-04-16)
@@ -44,24 +44,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   WDC           96.97               33            1.31              3.34        363.57                79.90            True
-  MRVL           96.15               26            2.07              1.95        133.77                70.04            True
-   AEP           94.44               18            0.79              0.75        135.14                19.19            True
-   STX           94.29               35            1.70              6.17        516.95                74.63            True
-  NVDA           92.59               27            1.24              1.73        198.13                36.33            True
-  GILD           88.46               26            0.69              0.68        139.48                21.89            True
-  INSM           87.50               40            0.84              0.86        146.37                55.95            True
-  MCHP           87.50               40            0.64              0.34         74.35                40.09            True
-   EXC           86.96               23            0.54              0.18         47.80                22.11            True
-   BKR           86.49               37            0.55              0.23         59.97                34.00            True
-  SOXL           84.85               33            1.83              1.10         85.41               129.54            True
-  ASML           84.00               25            1.94             20.14       1473.14                53.24            True
+   WDC           97.06               34            1.14              2.92        363.75                79.90            True
+  NFLX           94.44               36            0.76              0.58        107.46                27.27            True
+   STX           94.29               35            1.43              5.19        517.38                74.63            True
+  MRVL           93.33               15            3.71              3.50        133.10                70.04            True
+  NVDA           93.10               29            1.04              1.44        198.25                36.33            True
+  ALNY           92.86               42            0.85              1.99        332.54                43.40            True
+  ASML           88.89               18            2.70             27.98       1469.78                53.24            True
+  MDLZ           88.89               18            0.70              0.28         56.46                20.45            True
+  GILD           88.46               26            0.69              0.67        139.48                21.89            True
+  INSM           86.49               37            1.09              1.12        146.26                55.95            True
+  SOXL           85.29               34            1.51              0.91         85.49               129.54            True
+  AAPL           85.19               27            0.90              1.69        265.71                21.71            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et         slot   event_type                                                                                                                                                           detail
+2026-04-16T09:35:04.828747-04:00  manage_0930 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 2026-04-16T09:30:06.428916-04:00  manage_0930 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 2026-04-16T09:25:06.428686-04:00  manage_0930 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 2026-04-16T00:00:03.899170-04:00 data_refresh data_refresh                                                                                                                                                    {'saved': 99}
@@ -71,7 +72,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-15T15:55:00.685389-04:00  manage_1600 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 2026-04-15T15:50:05.921508-04:00  manage_1600         exit {"asset_type": "share", "contract_symbol": "REGN", "fill_price": 754.24, "pnl": 117.92, "reason": "time_exit_at_4pm_scan", "return_pct": 1.99, "ticker": "REGN"}
 2026-04-15T15:40:05.911045-04:00  manage_1530 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-15T15:35:05.907365-04:00  manage_1530 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416093006)
+![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416093504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416093006)
+![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416093504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416093006)
+![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416093504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416093006)
+![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416093504)
 
 </details>
