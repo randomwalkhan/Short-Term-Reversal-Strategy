@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-17 16:05:05 EDT`
+Latest checkpoint (ET): `2026-04-17 16:10:05 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -24,9 +24,9 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$539.49`
-- Equity: `$13,212.12`
+- Equity: `$13,189.62`
 - Realized PnL: `$3,357.92`
-- Unrealized PnL: `$-145.80`
+- Unrealized PnL: `$-168.30`
 - Open positions: `2`
 
 ## Open Positions
@@ -34,7 +34,7 @@ Last processed slot: `manage_1600`
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
   REGN      share share_fallback                REGN       2026-04-16                   1      9     6720.93                 6755.13       746.77         750.57      746.77        750.57            34.2                   0.51        100.00               30              0.95           NaN             NaN                  24.02                  51.0            3.0               0.15 low_open_interest,low_volume,wide_spread
-  INTC     option         option INTC260529C00068000       2026-04-17                   0      9     6097.50                 5917.50         6.78           6.58       68.04         68.46          -180.0                  -2.95         94.59               37              0.66         72.85            67.8                  74.40                 143.0           74.0               0.04                                       ok
+  INTC     option         option INTC260529C00068000       2026-04-17                   0      9     6097.50                 5895.00         6.78           6.55       68.04         68.47          -202.5                  -3.32         94.59               37              0.66         72.85           67.53                  74.40                 143.0           74.0               0.04                                       ok
 ```
 
 ## Today's Closed Trades (2026-04-17)
@@ -49,6 +49,7 @@ _None_
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-17T16:10:05.853449-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-17T16:05:05.708545-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-17T16:00:05.708494-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-17T15:55:05.699041-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
@@ -58,7 +59,6 @@ _None_
 2026-04-17T15:25:05.763304-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
 2026-04-17T15:10:05.708534-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 2026-04-17T15:05:05.702166-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-17T15:00:03.706216-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -68,27 +68,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260417160505)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260417161005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260417160505)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260417161005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260417160505)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260417161005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260417160505)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260417161005)
 
 </details>
