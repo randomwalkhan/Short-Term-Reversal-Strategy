@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-17 15:40:05 EDT`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-04-17 15:45:05 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -24,17 +24,17 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$539.49`
-- Equity: `$13,200.33`
+- Equity: `$13,114.33`
 - Realized PnL: `$3,357.92`
-- Unrealized PnL: `$-157.59`
+- Unrealized PnL: `$-243.59`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  REGN      share share_fallback                REGN       2026-04-16                   1      9     6720.93                 6743.34       746.77         749.26      746.77        749.26           22.41                   0.33        100.00               30              0.95           NaN             NaN                  24.02                  51.0            3.0               0.15 low_open_interest,low_volume,wide_spread
-  INTC     option         option INTC260529C00068000       2026-04-17                   0      9     6097.50                 5917.50         6.78           6.58       68.04         67.97         -180.00                  -2.95         94.59               37              0.66         72.85           71.02                  74.40                 143.0           74.0               0.04                                       ok
+  REGN      share share_fallback                REGN       2026-04-16                   1      9     6720.93                 6747.35       746.77         749.71      746.77        749.71           26.41                   0.39        100.00               30              0.95           NaN             NaN                  24.02                  51.0            3.0               0.15 low_open_interest,low_volume,wide_spread
+  INTC     option         option INTC260529C00068000       2026-04-17                   0      9     6097.50                 5827.50         6.78           6.48       68.04         68.16         -270.00                  -4.43         94.59               37              0.66         72.85           68.87                  74.40                 143.0           74.0               0.04                                       ok
 ```
 
 ## Today's Closed Trades (2026-04-17)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FTNT           95.00               40            0.83              0.48         82.19                40.09            True
-  INTC           94.44               36            0.80              0.38         68.34                74.40            True
-   AEP           94.44               18            0.78              0.74        134.24                17.62            True
-   LIN           90.91               11            1.50              5.23        496.98                18.78            True
-  GILD           90.32               31            0.54              0.52        138.33                20.76            True
-  PAYX           84.21               38            0.61              0.39         91.96                31.23            True
-  WDAY           82.61               46            0.59              0.52        124.65                54.23            True
-   CEG           82.35               34            1.35              2.82        297.93                57.36            True
-  ADBE           81.82               33            1.51              2.62        247.03                38.98            True
-   BKR           81.48               27            0.95              0.40         60.43                34.01            True
-  TEAM           80.00               35            2.66              1.28         68.18                72.52            True
-  FANG          100.00                3            3.85              5.03        184.50                29.20           False
+  FTNT           94.74               38            0.95              0.55         82.17                40.09            True
+  INTC           94.74               38            0.56              0.27         68.39                74.40            True
+   AEP           94.74               19            0.69              0.65        134.28                17.62            True
+   LIN           91.67               12            1.47              5.13        497.02                18.78            True
+  GILD           90.62               32            0.51              0.49        138.34                20.76            True
+  PAYX           84.21               38            0.58              0.37         91.97                31.23            True
+   CEG           82.35               34            1.30              2.73        297.97                57.36            True
+  WDAY           81.82               44            0.70              0.61        124.61                54.23            True
+  ADBE           81.25               32            1.51              2.63        247.03                38.98            True
+   BKR           80.77               26            1.01              0.43         60.42                34.01            True
+   EXC           80.00               10            1.39              0.46         47.39                21.57            True
+  FANG          100.00                3            3.86              5.05        184.49                29.20           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260417154005)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260417154505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260417154005)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260417154505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260417154005)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260417154505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260417154005)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260417154505)
 
 </details>
