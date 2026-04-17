@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-17 16:35:05 EDT`
-Last processed slot: `share_ext_1635`
+Latest checkpoint (ET): `2026-04-17 16:40:00 EDT`
+Last processed slot: `share_ext_1640`
 
 ## Active Configuration
 
@@ -33,7 +33,7 @@ Last processed slot: `share_ext_1635`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  INTC     option         option INTC260529C00068000       2026-04-17                   0      9     6097.50                 6142.50         6.78           6.82       68.04         68.35            45.0                   0.74         94.59               37              0.66         72.85           70.48                  74.40                 143.0           74.0               0.04                                       ok
+  INTC     option         option INTC260529C00068000       2026-04-17                   0      9     6097.50                 6142.50         6.78           6.82       68.04         68.36            45.0                   0.74         94.59               37              0.66         72.85           70.48                  74.40                 143.0           74.0               0.04                                       ok
   REGN      share share_fallback                REGN       2026-04-16                   1      9     6720.93                 6755.13       746.77         750.57      746.77        750.57            34.2                   0.51        100.00               30              0.95           NaN             NaN                  24.02                  51.0            3.0               0.15 low_open_interest,low_volume,wide_spread
 ```
 
@@ -68,27 +68,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260417163505)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260417164000)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260417163505)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260417164000)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260417163505)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260417164000)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260417163505)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260417164000)
 
 </details>
