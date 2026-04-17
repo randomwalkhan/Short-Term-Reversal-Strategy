@@ -640,3 +640,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-17T10:05:00.758906-04:00,2026-04-17,manage_1000,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-17T10:10:03.834332-04:00,2026-04-17,manage_1000,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-17T10:25:03.697036-04:00,2026-04-17,manage_1030,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-17T10:30:01.382561-04:00,2026-04-17,manage_1030,slot_skipped,"{""reason"": ""already_processed""}"
