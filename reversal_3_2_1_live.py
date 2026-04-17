@@ -24,7 +24,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.2.2"
+VERSION = "3.2.3"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -397,7 +397,7 @@ def _clean_yf_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def get_live_snapshot(ticker: str, allow_extended_hours: bool = True) -> dict[str, Any]:
+def get_live_snapshot(ticker: str, allow_extended_hours: bool = True, now_et: pd.Timestamp | None = None) -> dict[str, Any]:
     def _safe_float(value: Any) -> float | None:
         if value is None:
             return None
@@ -423,10 +423,30 @@ def get_live_snapshot(ticker: str, allow_extended_hours: bool = True) -> dict[st
             return "post"
         return "regular"
 
+    def _safe_history(tk: yf.Ticker, **kwargs: Any) -> pd.DataFrame:
+        try:
+            return tk.history(**kwargs)
+        except Exception:
+            return pd.DataFrame()
+
+    def _session_for_now(ts: pd.Timestamp) -> str:
+        minutes = ts.hour * 60 + ts.minute
+        if minutes < 9 * 60 + 30:
+            return "pre"
+        if minutes >= 16 * 60:
+            return "post"
+        return "regular"
+
+    now_clock = now_et if now_et is not None else pd.Timestamp.now(tz=ET)
+    if now_clock.tzinfo is None:
+        now_clock = now_clock.tz_localize(ET)
+    else:
+        now_clock = now_clock.tz_convert(ET)
+
     tk = yf.Ticker(ticker)
-    intraday = tk.history(period="5d", interval="1m", auto_adjust=False, prepost=allow_extended_hours)
-    regular_intraday = tk.history(period="5d", interval="1m", auto_adjust=False, prepost=False)
-    daily = tk.history(period="10d", interval="1d", auto_adjust=False)
+    intraday = _safe_history(tk, period="5d", interval="1m", auto_adjust=False, prepost=allow_extended_hours)
+    regular_intraday = _safe_history(tk, period="5d", interval="1m", auto_adjust=False, prepost=False)
+    daily = _safe_history(tk, period="10d", interval="1d", auto_adjust=False)
 
     intraday = _clean_yf_columns(intraday)
     regular_intraday = _clean_yf_columns(regular_intraday)
@@ -457,18 +477,19 @@ def get_live_snapshot(ticker: str, allow_extended_hours: bool = True) -> dict[st
     asof = pd.Timestamp(intraday_close.index[-1]) if not intraday_close.empty else pd.NaT
     session = _session_from_timestamp(asof if not pd.isna(asof) else None)
     price_source = "1m intraday close"
+    desired_session = _session_for_now(now_clock)
 
-    if post_market_price is not None:
-        current_price = post_market_price
-        session = "post"
-        price_source = "Yahoo info.postMarketPrice"
-    elif pre_market_price is not None:
+    if not intraday_close.empty:
+        current_price = float(intraday_close.iloc[-1])
+        price_source = "1m pre/post close" if allow_extended_hours else "1m regular close"
+    elif desired_session == "pre" and pre_market_price is not None:
         current_price = pre_market_price
         session = "pre"
         price_source = "Yahoo info.preMarketPrice"
-    elif not intraday_close.empty:
-        current_price = float(intraday_close.iloc[-1])
-        price_source = "1m pre/post close" if allow_extended_hours else "1m regular close"
+    elif desired_session == "post" and post_market_price is not None:
+        current_price = post_market_price
+        session = "post"
+        price_source = "Yahoo info.postMarketPrice"
     elif regular_market_price is not None:
         current_price = regular_market_price
         session = "regular"
@@ -812,7 +833,7 @@ def mark_open_positions(state: dict[str, Any], now_et: pd.Timestamp) -> tuple[li
     trade_date = now_et.date().isoformat()
     for raw in state["positions"]:
         asset_type = str(raw.get("asset_type", "option"))
-        live = get_live_snapshot(raw["ticker"])
+        live = get_live_snapshot(raw["ticker"], now_et=now_et)
         if asset_type == "share":
             current_price = float(live["current_price"])
             position_value = current_price * raw["contracts"]
@@ -1313,9 +1334,13 @@ def plot_live_equity_window(
         if period_start_equity > upper_bound:
             upper_bound = period_start_equity + padding
     else:
-        y_band = INITIAL_CAPITAL * 0.10
-        lower_bound = min(INITIAL_CAPITAL - y_band, data_min - INITIAL_CAPITAL * 0.01)
-        upper_bound = max(INITIAL_CAPITAL + y_band, data_max + INITIAL_CAPITAL * 0.01)
+        data_span = max(data_max - data_min, 0.0)
+        reference_equity = max(period_start_equity, 1.0)
+        padding = max(reference_equity * 0.004, data_span * 0.12, 18.0)
+        half_span = max((data_span + 2 * padding) / 2.0, reference_equity * 0.012)
+        center = (data_min + data_max) / 2.0 if data_span > 0 else period_end_equity
+        lower_bound = center - half_span
+        upper_bound = center + half_span
 
     fig, axis = plt.subplots(figsize=(12, 6), facecolor=FIG_BG)
     axis.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Strategy", zorder=3)
@@ -1397,9 +1422,13 @@ def plot_live_overall_benchmark(
                 benchmark_values.extend(pd.to_numeric(benchmark_df[symbol], errors="coerce").dropna().tolist())
     data_min = float(min([plot_df["equity"].min(), *benchmark_values])) if benchmark_values else float(plot_df["equity"].min())
     data_max = float(max([plot_df["equity"].max(), *benchmark_values])) if benchmark_values else float(plot_df["equity"].max())
-    y_band = INITIAL_CAPITAL * 0.10
-    lower_bound = min(INITIAL_CAPITAL - y_band, data_min - INITIAL_CAPITAL * 0.01)
-    upper_bound = max(INITIAL_CAPITAL + y_band, data_max + INITIAL_CAPITAL * 0.01)
+    data_span = max(data_max - data_min, 0.0)
+    reference_equity = max(period_start_equity, 1.0)
+    padding = max(reference_equity * 0.0045, data_span * 0.10, 20.0)
+    half_span = max((data_span + 2 * padding) / 2.0, reference_equity * 0.014)
+    center = (data_min + data_max) / 2.0 if data_span > 0 else period_end_equity
+    lower_bound = center - half_span
+    upper_bound = center + half_span
 
     fig, axis = plt.subplots(figsize=(12, 6), facecolor=FIG_BG)
     axis.plot(plot_df["timestamp_plot"], plot_df["equity"], linewidth=2.5, color=line_color, label="Strategy", zorder=3)
