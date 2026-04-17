@@ -1,6 +1,6 @@
-# Reversal 3.2.2 Live Paper Test
+# Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-16 21:55:06 EDT`
+Latest checkpoint (ET): `2026-04-16 21:57:45 EDT`
 Last processed slot: `share_ext_2155`
 
 ## Active Configuration
@@ -50,17 +50,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                                                                        detail
-2026-04-16T16:10:06.586169-04:00 manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-16T16:05:06.429687-04:00 manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-16T16:00:06.436019-04:00 manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-16T15:55:05.424408-04:00 manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-16T15:40:06.417370-04:00 manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-16T15:35:06.621941-04:00 manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-16T15:30:06.430926-04:00 manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-16T15:25:06.542766-04:00 manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
-2026-04-16T15:20:06.408935-04:00 manage_1530         exit {"asset_type": "option", "contract_symbol": "HON260515C00240000", "fill_price": 3.35, "pnl": -990.0, "reason": "stop_loss_hit_at_scan", "return_pct": -14.1, "ticker": "HON"}
-2026-04-16T15:10:06.430073-04:00  entry_1500 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+                    timestamp_et           slot   event_type                                                                                                                                                                        detail
+2026-04-16T21:57:45.188264-04:00 share_ext_2155 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+2026-04-16T16:10:06.586169-04:00    manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+2026-04-16T16:05:06.429687-04:00    manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+2026-04-16T16:00:06.436019-04:00    manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+2026-04-16T15:55:05.424408-04:00    manage_1600 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+2026-04-16T15:40:06.417370-04:00    manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+2026-04-16T15:35:06.621941-04:00    manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+2026-04-16T15:30:06.430926-04:00    manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+2026-04-16T15:25:06.542766-04:00    manage_1530 slot_skipped                                                                                                                                               {"reason": "already_processed"}
+2026-04-16T15:20:06.408935-04:00    manage_1530         exit {"asset_type": "option", "contract_symbol": "HON260515C00240000", "fill_price": 3.35, "pnl": -990.0, "reason": "stop_loss_hit_at_scan", "return_pct": -14.1, "ticker": "HON"}
 ```
 
 ## Equity Curves
@@ -70,27 +70,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.2 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416215506)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260416215745)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416215506)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260416215745)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416215506)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260416215745)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.2 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416215506)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260416215745)
 
 </details>
