@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 6636.98974609375,
+  "cash": 539.48974609375,
   "positions": [
     {
       "position_id": "REGN_20260416T145002",
@@ -32,6 +32,36 @@
       "option_volume": 3.0,
       "option_spread_pct": 0.1518324607329844,
       "option_liquidity_status": "low_open_interest,low_volume,wide_spread"
+    },
+    {
+      "position_id": "INTC_20260417T145005",
+      "ticker": "INTC",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "INTC260529C00068000",
+      "expiry": "2026-05-29",
+      "strike": 68.0,
+      "entry_timestamp": "2026-04-17T14:50:05.923182-04:00",
+      "entry_trade_date": "2026-04-17",
+      "entry_slot": "entry_1500",
+      "entry_spot": 68.04499816894531,
+      "entry_option_price": 6.775,
+      "entry_bid": 6.65,
+      "entry_ask": 6.9,
+      "entry_iv_pct": 72.851833984375,
+      "contracts": 9,
+      "allocated_cash": 6097.5,
+      "success_rate": 94.59,
+      "matched_signals": 37,
+      "current_drop_pct": 0.66,
+      "rolling_sigma_20d_pct": 74.4,
+      "planned_tp_day1": 7.79125,
+      "planned_tp_day2": 7.79125,
+      "planned_stop": 5.962000000000001,
+      "option_open_interest": 143.0,
+      "option_volume": 74.0,
+      "option_spread_pct": 0.03690036900369004,
+      "option_liquidity_status": "ok"
     }
   ],
   "processed_slots": {
@@ -1029,7 +1059,8 @@
       "manage_1300",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"
