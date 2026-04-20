@@ -731,3 +731,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-20T10:00:02.779107-04:00,2026-04-20,manage_1000,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-20T10:05:01.895753-04:00,2026-04-20,manage_1000,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-20T10:10:00.900486-04:00,2026-04-20,manage_1000,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-20T10:20:05.896862-04:00,2026-04-20,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""INTC260529C00068000"", ""fill_price"": 5.4, ""pnl"": -1237.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -20.3, ""ticker"": ""INTC""}"
