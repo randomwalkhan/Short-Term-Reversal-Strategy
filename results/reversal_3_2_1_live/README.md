@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-20 11:15:06 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-20 11:20:00 EDT`
+Last processed slot: `manage_1130`
 
 ## Active Configuration
 
@@ -24,16 +24,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$5,399.49`
-- Equity: `$12,161.37`
+- Equity: `$12,170.19`
 - Realized PnL: `$2,120.42`
-- Unrealized PnL: `$40.95`
+- Unrealized PnL: `$49.77`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  REGN      share share_fallback       REGN       2026-04-16                   2      9     6720.93                 6761.88       746.77         751.32      746.77        751.32           40.95                   0.61         100.0               30              0.95           NaN             NaN                  24.02                  51.0            3.0               0.15 low_open_interest,low_volume,wide_spread
+  REGN      share share_fallback       REGN       2026-04-16                   2      9     6720.93                  6770.7       746.77          752.3      746.77         752.3           49.77                   0.74         100.0               30              0.95           NaN             NaN                  24.02                  51.0            3.0               0.15 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-20)
@@ -47,18 +47,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               24            0.71              1.16        233.05                24.45            True
-   WDC           97.22               36            0.96              2.51        371.44                78.62            True
-  NVDA           95.65               23            1.62              2.29        200.70                35.90            True
-  INTC           94.74               19            3.69              1.77         67.74                74.75            True
-   STX           92.86               28            2.10              8.06        544.30                70.39            True
-  UPRO           92.86               28            1.50              1.32        124.67                56.64            True
-  SBUX           90.91               22            1.18              0.83         99.65                34.23            True
-  GILD           90.00               30            0.60              0.57        137.39                20.86            True
-  BKNG           88.89               36            1.07              1.44        191.39                38.41            True
-  AVGO           88.89               18            2.45              6.97        403.55                45.93            True
-   ROP           87.10               31            0.76              1.92        361.62                23.20            True
-  PLTR           85.29               34            1.35              1.38        145.80                63.50            True
+   HON          100.00               19            1.05              1.71        232.82                24.45            True
+  INTC           95.24               21            3.55              1.70         67.77                74.75            True
+   STX           93.55               31            1.90              7.29        544.62                70.39            True
+  NVDA           91.67               24            1.53              2.16        200.75                35.90            True
+  SBUX           91.30               23            1.12              0.79         99.66                34.23            True
+  UPRO           90.00               30            1.18              1.04        124.79                56.64            True
+  AVGO           89.47               19            2.18              6.22        403.88                45.93            True
+  BKNG           88.89               36            1.11              1.49        191.37                38.41            True
+  GILD           88.89               27            0.64              0.62        137.38                20.86            True
+   ROP           86.67               30            0.79              2.00        361.58                23.20            True
+  PLTR           86.49               37            1.20              1.23        145.86                63.50            True
+  AMAT           85.71               35            0.87              2.43        395.90                56.13            True
 ```
 
 ## Recent Events
@@ -84,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260420111506)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260420112000)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260420111506)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260420112000)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260420111506)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260420112000)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260420111506)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260420112000)
 
 </details>
