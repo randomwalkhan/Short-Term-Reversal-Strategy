@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-20 15:45:05 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-20 15:50:06 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -23,49 +23,50 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$111.21`
-- Equity: `$12,142.16`
-- Realized PnL: `$2,120.42`
-- Unrealized PnL: `$21.74`
-- Open positions: `2`
+- Cash: `$6,851.31`
+- Equity: `$12,131.54`
+- Realized PnL: `$2,139.59`
+- Unrealized PnL: `$-8.05`
+- Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  REGN      share share_fallback       REGN       2026-04-16                   2      9     6720.93                 6751.53       746.77         750.17      746.77        750.17           30.60                   0.46         100.0               30              0.95           NaN             NaN                  24.02                  51.0            3.0               0.15 low_open_interest,low_volume,wide_spread
-   HON      share share_fallback        HON       2026-04-20                   0     23     5288.28                 5279.42       229.93         229.54      229.93        229.54           -8.86                  -0.17         100.0               11              1.55           NaN             NaN                  24.45                  32.0            3.0               0.17 low_open_interest,low_volume,wide_spread
+   HON      share share_fallback        HON       2026-04-20                   0     23     5288.28                 5280.22       229.93         229.57      229.93        229.57           -8.05                  -0.15         100.0               11              1.55           NaN             NaN                  24.45                  32.0            3.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-20)
 
 ```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct           exit_reason
-  INTC     option         option INTC260529C00068000      9          2026-04-17         2026-04-20        6.775         5.4 -1237.5  -20.295203 stop_loss_hit_at_scan
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price          pnl  return_pct           exit_reason
+  INTC     option         option INTC260529C00068000      9          2026-04-17         2026-04-20      6.77500    5.400000 -1237.500000  -20.295203 stop_loss_hit_at_scan
+  REGN      share share_fallback                REGN      9          2026-04-16         2026-04-20    746.77002  748.900024    19.170044    0.285229 time_exit_at_4pm_scan
 ```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   STX           94.29               35            1.63              6.23        545.08                70.39            True
-  INTC           92.86               14            4.32              2.07         67.61                74.75            True
-   XEL           92.86               14            0.91              0.52         80.86                22.98            True
-  FAST           91.67               36            0.62              0.20         45.69                38.81            True
-  AVGO           91.30               23            1.85              5.25        404.29                45.93            True
-  SBUX           90.91               22            1.18              0.83         99.65                34.23            True
+   STX           94.29               35            1.72              6.60        544.92                70.39            True
+   XEL           94.12               17            0.81              0.46         80.88                22.98            True
+  INTC           92.31               13            4.42              2.12         67.59                74.75            True
+  FAST           91.67               36            0.60              0.19         45.70                38.81            True
+  SBUX           91.67               24            1.09              0.76         99.67                34.23            True
+  UPRO           90.91               33            0.89              0.78        124.89                56.64            True
+  AVGO           90.91               22            1.92              5.46        404.20                45.93            True
   GILD           90.91               11            1.53              1.48        137.01                20.86            True
-  UPRO           90.62               32            0.99              0.87        124.86                56.64            True
-  VRTX           90.00               40            0.54              1.68        440.48                26.94            True
-   ROP           88.24               34            0.61              1.54        361.78                23.20            True
-  ORLY           87.88               33            0.91              0.60         93.45                22.78            True
+  NFLX           90.00               10            2.37              1.61         96.62                45.70            True
+  ORLY           88.24               34            0.82              0.54         93.48                22.78            True
   PLTR           87.50               40            0.53              0.54        146.16                63.50            True
+   ROP           87.10               31            0.69              1.74        361.69                23.20            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                                                 detail
+2026-04-20T15:50:06.460350-04:00 manage_1600         exit                                                                                                                                                                                                                         {"asset_type": "share", "contract_symbol": "REGN", "fill_price": 748.9, "pnl": 19.17, "reason": "time_exit_at_4pm_scan", "return_pct": 0.29, "ticker": "REGN"}
 2026-04-20T15:40:03.007489-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 2026-04-20T15:35:05.448312-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 2026-04-20T15:30:05.898034-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-20T15:00:06.434401-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 2026-04-20T14:55:06.431094-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 2026-04-20T14:50:06.432200-04:00  entry_1500        entry {"allocated_cash": 5288.28, "asset_type": "share", "contract_symbol": "HON", "contracts": 23, "entry_option_price": 229.925, "execution_mode": "share_fallback", "matched_signals": 11, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 32.0, "option_spread_pct": 16.77, "option_volume": 3.0, "success_rate": 100.0, "ticker": "HON"}
-2026-04-20T14:40:06.422017-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                                                        {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260420154505)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260420155006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260420154505)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260420155006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260420154505)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260420155006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260420154505)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260420155006)
 
 </details>

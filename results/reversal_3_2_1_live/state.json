@@ -1,38 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 111.21467590332031,
+  "cash": 6851.314895629883,
   "positions": [
-    {
-      "position_id": "REGN_20260416T145002",
-      "ticker": "REGN",
-      "asset_type": "share",
-      "execution_mode": "share_fallback",
-      "contract_symbol": "REGN",
-      "expiry": "",
-      "strike": NaN,
-      "entry_timestamp": "2026-04-16T14:50:02.253743-04:00",
-      "entry_trade_date": "2026-04-16",
-      "entry_slot": "entry_1500",
-      "entry_spot": 746.77001953125,
-      "entry_option_price": 746.77001953125,
-      "entry_bid": NaN,
-      "entry_ask": NaN,
-      "entry_iv_pct": NaN,
-      "contracts": 9,
-      "allocated_cash": 6720.93017578125,
-      "success_rate": 100.0,
-      "matched_signals": 30,
-      "current_drop_pct": 0.95,
-      "rolling_sigma_20d_pct": 24.02,
-      "planned_tp_day1": 769.1731201171875,
-      "planned_tp_day2": 769.1731201171875,
-      "planned_stop": 724.3669189453125,
-      "option_open_interest": 51.0,
-      "option_volume": 3.0,
-      "option_spread_pct": 0.1518324607329844,
-      "option_liquidity_status": "low_open_interest,low_volume,wide_spread"
-    },
     {
       "position_id": "HON_20260420T145006",
       "ticker": "HON",
@@ -1240,7 +1210,8 @@
       "manage_1400",
       "manage_1430",
       "entry_1500",
-      "manage_1530"
+      "manage_1530",
+      "manage_1600"
     ]
   },
   "start_date": "2026-03-24"
