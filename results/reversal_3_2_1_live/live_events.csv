@@ -770,3 +770,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-20T14:40:06.422017-04:00,2026-04-20,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-20T14:50:06.432200-04:00,2026-04-20,entry_1500,entry,"{""allocated_cash"": 5288.28, ""asset_type"": ""share"", ""contract_symbol"": ""HON"", ""contracts"": 23, ""entry_option_price"": 229.925, ""execution_mode"": ""share_fallback"", ""matched_signals"": 11, ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""option_open_interest"": 32.0, ""option_spread_pct"": 16.77, ""option_volume"": 3.0, ""success_rate"": 100.0, ""ticker"": ""HON""}"
 2026-04-20T14:55:06.431094-04:00,2026-04-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-20T15:00:06.434401-04:00,2026-04-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
