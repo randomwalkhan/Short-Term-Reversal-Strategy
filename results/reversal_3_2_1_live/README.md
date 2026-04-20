@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-20 16:05:05 EDT`
+Latest checkpoint (ET): `2026-04-20 16:10:06 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -52,6 +52,7 @@ _None_
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                         detail
+2026-04-20T16:10:06.425591-04:00 manage_1600 slot_skipped                                                                                                                                {"reason": "already_processed"}
 2026-04-20T16:05:05.426426-04:00 manage_1600 slot_skipped                                                                                                                                {"reason": "already_processed"}
 2026-04-20T16:00:06.436506-04:00 manage_1600 slot_skipped                                                                                                                                {"reason": "already_processed"}
 2026-04-20T15:55:06.432735-04:00 manage_1600 slot_skipped                                                                                                                                {"reason": "already_processed"}
@@ -61,7 +62,6 @@ _None_
 2026-04-20T15:30:05.898034-04:00 manage_1530 slot_skipped                                                                                                                                {"reason": "already_processed"}
 2026-04-20T15:25:06.452583-04:00 manage_1530 slot_skipped                                                                                                                                {"reason": "already_processed"}
 2026-04-20T15:10:06.433548-04:00  entry_1500 slot_skipped                                                                                                                                {"reason": "already_processed"}
-2026-04-20T15:05:06.429713-04:00  entry_1500 slot_skipped                                                                                                                                {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260420160505)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260420161006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260420160505)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260420161006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260420160505)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260420161006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260420160505)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260420161006)
 
 </details>
