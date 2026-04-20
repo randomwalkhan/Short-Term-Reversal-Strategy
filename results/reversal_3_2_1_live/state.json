@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 5399.48974609375,
+  "cash": 111.21467590332031,
   "positions": [
     {
       "position_id": "REGN_20260416T145002",
@@ -31,6 +31,36 @@
       "option_open_interest": 51.0,
       "option_volume": 3.0,
       "option_spread_pct": 0.1518324607329844,
+      "option_liquidity_status": "low_open_interest,low_volume,wide_spread"
+    },
+    {
+      "position_id": "HON_20260420T145006",
+      "ticker": "HON",
+      "asset_type": "share",
+      "execution_mode": "share_fallback",
+      "contract_symbol": "HON",
+      "expiry": "",
+      "strike": NaN,
+      "entry_timestamp": "2026-04-20T14:50:06.432200-04:00",
+      "entry_trade_date": "2026-04-20",
+      "entry_slot": "entry_1500",
+      "entry_spot": 229.9250030517578,
+      "entry_option_price": 229.9250030517578,
+      "entry_bid": NaN,
+      "entry_ask": NaN,
+      "entry_iv_pct": NaN,
+      "contracts": 23,
+      "allocated_cash": 5288.27507019043,
+      "success_rate": 100.0,
+      "matched_signals": 11,
+      "current_drop_pct": 1.55,
+      "rolling_sigma_20d_pct": 24.45,
+      "planned_tp_day1": 236.82275314331056,
+      "planned_tp_day2": 236.82275314331056,
+      "planned_stop": 223.02725296020506,
+      "option_open_interest": 32.0,
+      "option_volume": 3.0,
+      "option_spread_pct": 0.16774193548387106,
       "option_liquidity_status": "low_open_interest,low_volume,wide_spread"
     }
   ],
@@ -1208,7 +1238,8 @@
       "manage_1300",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"
