@@ -778,3 +778,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-20T15:35:05.448312-04:00,2026-04-20,manage_1530,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-20T15:40:03.007489-04:00,2026-04-20,manage_1530,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-20T15:50:06.460350-04:00,2026-04-20,manage_1600,exit,"{""asset_type"": ""share"", ""contract_symbol"": ""REGN"", ""fill_price"": 748.9, ""pnl"": 19.17, ""reason"": ""time_exit_at_4pm_scan"", ""return_pct"": 0.29, ""ticker"": ""REGN""}"
+2026-04-20T15:55:06.432735-04:00,2026-04-20,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
