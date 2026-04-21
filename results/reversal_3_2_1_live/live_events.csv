@@ -802,3 +802,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-21T11:20:06.439324-04:00,2026-04-21,manage_1130,exit,"{""asset_type"": ""share"", ""contract_symbol"": ""HON"", ""fill_price"": 222.725, ""pnl"": -165.6, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -3.13, ""ticker"": ""HON""}"
 2026-04-21T11:25:05.699661-04:00,2026-04-21,manage_1130,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-21T11:30:03.385825-04:00,2026-04-21,manage_1130,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-21T11:35:05.427020-04:00,2026-04-21,manage_1130,slot_skipped,"{""reason"": ""already_processed""}"
