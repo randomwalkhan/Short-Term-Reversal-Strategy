@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-21 17:00:05 EDT`
-Last processed slot: `share_ext_1700`
+Latest checkpoint (ET): `2026-04-21 17:05:05 EDT`
+Last processed slot: `share_ext_1705`
 
 ## Active Configuration
 
@@ -24,16 +24,16 @@ Last processed slot: `share_ext_1700`
 ## Portfolio Snapshot
 
 - Cash: `$6,100.20`
-- Equity: `$11,991.28`
+- Equity: `$12,051.60`
 - Realized PnL: `$1,973.99`
-- Unrealized PnL: `$17.29`
+- Unrealized PnL: `$77.61`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  ROST      share share_fallback       ROST       2026-04-21                   0     26     5873.79                 5891.08       225.91         226.58      225.91        226.58           17.29                   0.29         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  ROST      share share_fallback       ROST       2026-04-21                   0     26     5873.79                  5951.4       225.91          228.9      225.91         228.9           77.61                   1.32         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-21)
@@ -70,27 +70,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260421170005)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260421170505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260421170005)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260421170505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260421170005)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260421170505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260421170005)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260421170505)
 
 </details>
