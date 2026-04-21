@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-21 14:45:05 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-21 14:50:05 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -23,15 +23,18 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$11,973.99`
+- Cash: `$6,100.20`
 - Equity: `$11,973.99`
 - Realized PnL: `$1,973.99`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
+  ROST      share share_fallback       ROST       2026-04-21                   0     26     5873.79                 5873.79       225.91         225.91      225.91        225.91             0.0                    0.0         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+```
 
 ## Today's Closed Trades (2026-04-21)
 
@@ -44,34 +47,34 @@ ticker asset_type execution_mode instrument  units entry_trade_date_et exit_trad
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  ROST           95.00               20            1.04              1.66        227.54                25.78            True
-  UPRO           92.86               28            1.43              1.25        123.96                53.04            True
-  SHOP           92.31               26            2.40              2.28        134.16                55.61            True
-  NFLX           92.31               13            2.02              1.34         94.25                46.83            True
-  NVDA           91.43               35            0.82              1.16        201.56                32.81            True
-  ALNY           90.91               22            2.15              4.67        308.94                46.90            True
-  QCOM           90.62               32            0.90              0.87        137.15                21.00            True
-   MAR           90.00               30            0.97              2.58        377.62                30.20            True
-   LIN           88.89               27            0.61              2.11        497.25                19.90            True
-  SBUX           88.24               17            1.59              1.10         98.48                31.75            True
-  ASML           87.50               32            0.91              9.37       1472.49                54.76            True
-   PEP           86.67               15            1.18              1.30        156.43                19.06            True
+  ROST           95.24               21            1.02              1.63        227.55                25.78            True
+  NVDA           93.75               32            0.91              1.29        201.51                32.81            True
+  UPRO           92.59               27            1.57              1.37        123.90                53.04            True
+  SHOP           92.00               25            2.59              2.45        134.09                55.61            True
+  ISRG           90.91               11            2.57              8.36        462.02                25.78            True
+  NFLX           90.00               10            2.22              1.47         94.20                46.83            True
+  GILD           90.00               10            2.01              1.91        135.05                18.88            True
+   MAR           89.66               29            1.00              2.66        377.58                30.20            True
+  QCOM           89.29               28            1.06              1.02        137.08                21.00            True
+   LIN           89.29               28            0.58              2.01        497.29                19.90            True
+   CSX           89.29               28            0.55              0.17         43.64                16.22            True
+  ALNY           88.89               18            2.37              5.16        308.73                46.90            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-21T14:40:05.707420-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-21T14:35:05.698088-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-21T14:30:05.713405-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-21T14:25:05.717035-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-21T14:10:02.597542-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-21T14:05:05.877097-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-21T14:00:05.726262-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-21T13:55:05.880707-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-21T13:40:06.427254-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-04-21T13:35:04.423627-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
+                    timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                                                   detail
+2026-04-21T14:50:05.712479-04:00  entry_1500        entry {"allocated_cash": 5873.79, "asset_type": "share", "contract_symbol": "ROST", "contracts": 26, "entry_option_price": 225.915, "execution_mode": "share_fallback", "matched_signals": 21, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 88.0, "option_spread_pct": 17.04, "option_volume": 6.0, "success_rate": 95.24, "ticker": "ROST"}
+2026-04-21T14:40:05.707420-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
+2026-04-21T14:35:05.698088-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
+2026-04-21T14:30:05.713405-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
+2026-04-21T14:25:05.717035-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
+2026-04-21T14:10:02.597542-04:00 manage_1400 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
+2026-04-21T14:05:05.877097-04:00 manage_1400 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
+2026-04-21T14:00:05.726262-04:00 manage_1400 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
+2026-04-21T13:55:05.880707-04:00 manage_1400 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
+2026-04-21T13:40:06.427254-04:00 manage_1330 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260421144505)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260421145005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260421144505)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260421145005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260421144505)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260421145005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260421144505)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260421145005)
 
 </details>
