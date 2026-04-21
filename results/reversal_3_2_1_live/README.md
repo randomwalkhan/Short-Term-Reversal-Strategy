@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-21 11:20:06 EDT`
+Latest checkpoint (ET): `2026-04-21 11:25:05 EDT`
 Last processed slot: `manage_1130`
 
 ## Active Configuration
@@ -44,24 +44,25 @@ ticker asset_type execution_mode instrument  units entry_trade_date_et exit_trad
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               23            1.45              7.62        746.14                22.94            True
-  SHOP           95.45               44            0.55              0.53        134.91                55.61            True
-   AEP           94.74               19            0.71              0.66        133.00                13.52            True
-  NFLX           94.44               18            1.42              0.94         94.43                46.83            True
-  ROST           94.44               18            1.17              1.87        227.45                25.78            True
-  QCOM           90.91               33            0.80              0.77        137.19                21.00            True
-  VRTX           90.00               40            0.55              1.69        438.46                26.84            True
-  ALNY           88.89               27            1.69              3.67        309.37                46.90            True
-  ISRG           88.89               18            1.65              5.38        463.29                25.78            True
-  TMUS           88.46               26            0.89              1.23        197.83                22.76            True
-  SBUX           88.24               17            1.65              1.14         98.46                31.75            True
-   LIN           88.00               25            0.64              2.23        497.19                19.90            True
+  REGN          100.00               23            1.38              7.23        746.31                22.94            True
+  ROST           95.24               21            0.99              1.59        227.57                25.78            True
+  SHOP           94.87               39            1.02              0.97        134.73                55.61            True
+  NFLX           94.12               17            1.54              1.02         94.39                46.83            True
+   AEP           94.12               17            0.81              0.75        132.96                13.52            True
+  UPRO           91.67               36            0.83              0.72        124.18                53.04            True
+  QCOM           89.66               29            0.98              0.95        137.11                21.00            True
+  PCAR           89.47               38            0.63              0.57        128.07                27.18            True
+  ALNY           88.89               27            1.70              3.70        309.35                46.90            True
+  ISRG           88.89               18            1.68              5.47        463.25                25.78            True
+  TMUS           88.46               26            0.87              1.20        197.84                22.76            True
+  SBUX           88.24               17            1.70              1.18         98.44                31.75            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                           detail
+2026-04-21T11:25:05.699661-04:00 manage_1130 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 2026-04-21T11:20:06.439324-04:00 manage_1130         exit {"asset_type": "share", "contract_symbol": "HON", "fill_price": 222.725, "pnl": -165.6, "reason": "stop_loss_hit_at_scan", "return_pct": -3.13, "ticker": "HON"}
 2026-04-21T11:10:03.434849-04:00 manage_1100 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 2026-04-21T11:05:05.426636-04:00 manage_1100 slot_skipped                                                                                                                                  {"reason": "already_processed"}
@@ -71,7 +72,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-21T10:35:05.440766-04:00 manage_1030 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 2026-04-21T10:30:05.716181-04:00 manage_1030 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 2026-04-21T10:25:06.438286-04:00 manage_1030 slot_skipped                                                                                                                                  {"reason": "already_processed"}
-2026-04-21T10:10:06.423835-04:00 manage_1000 slot_skipped                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260421112006)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260421112505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260421112006)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260421112505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260421112006)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260421112505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260421112006)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260421112505)
 
 </details>
