@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-21 15:55:05 EDT`
+Latest checkpoint (ET): `2026-04-21 16:00:05 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -47,34 +47,34 @@ ticker asset_type execution_mode instrument  units entry_trade_date_et exit_trad
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  ROST           94.44               18            1.15              1.84        227.46                25.78            True
-  NVDA           92.59               27            1.24              1.75        201.31                32.81            True
-  UPRO           92.31               26            1.96              1.71        123.76                53.04            True
-   AEP           92.31               13            0.97              0.90        132.89                13.52            True
-  CHTR           92.11               38            0.99              1.69        243.96                38.05            True
-  ALNY           91.43               35            1.36              2.97        309.67                46.90            True
-  SHOP           90.00               20            3.12              2.95        133.87                55.61            True
-  SBUX           90.00               20            1.26              0.88         98.57                31.75            True
-  GILD           90.00               10            1.83              1.74        135.12                18.88            True
-   MAR           88.89               36            0.75              2.00        377.86                30.20            True
-  ABNB           88.57               35            0.76              0.76        143.26                39.21            True
-   LIN           88.00               25            0.70              2.45        497.10                19.90            True
+  ROST           94.44               18            1.17              1.86        227.45                25.78            True
+  ALNY           92.86               42            0.87              1.89        310.13                46.90            True
+  NVDA           92.86               28            1.16              1.64        201.36                32.81            True
+  UPRO           92.00               25            2.21              1.92        123.66                53.04            True
+  CHTR           91.43               35            1.14              1.95        243.85                38.05            True
+  SBUX           91.30               23            1.16              0.81         98.61                31.75            True
+   AEP           90.91               11            1.03              0.96        132.87                13.52            True
+  BKNG           90.00               40            0.60              0.80        191.69                38.46            True
+  VRTX           90.00               40            0.59              1.81        438.40                26.84            True
+  SHOP           90.00               20            3.06              2.90        133.90                55.61            True
+  GILD           90.00               10            1.90              1.81        135.10                18.88            True
+   MAR           88.24               34            0.83              2.19        377.78                30.20            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                                                   detail
-2026-04-21T15:55:05.701921-04:00 manage_1600 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-04-21T15:40:05.716931-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-04-21T15:35:05.716188-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-04-21T15:30:05.732127-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-04-21T15:25:01.726215-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-04-21T15:10:05.707514-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-04-21T15:05:05.718333-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-04-21T15:00:05.722865-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-04-21T14:55:05.717229-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-04-21T14:50:05.712479-04:00  entry_1500        entry {"allocated_cash": 5873.79, "asset_type": "share", "contract_symbol": "ROST", "contracts": 26, "entry_option_price": 225.915, "execution_mode": "share_fallback", "matched_signals": 21, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 88.0, "option_spread_pct": 17.04, "option_volume": 6.0, "success_rate": 95.24, "ticker": "ROST"}
+                    timestamp_et        slot   event_type                          detail
+2026-04-21T16:00:05.699902-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-21T15:55:05.701921-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-04-21T15:40:05.716931-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-21T15:35:05.716188-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-21T15:30:05.732127-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-21T15:25:01.726215-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-04-21T15:10:05.707514-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-21T15:05:05.718333-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-21T15:00:05.722865-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-04-21T14:55:05.717229-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -84,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260421155505)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260421160005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260421155505)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260421160005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260421155505)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260421160005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260421155505)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260421160005)
 
 </details>
