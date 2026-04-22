@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-22 15:25:03 EDT`
+Latest checkpoint (ET): `2026-04-22 15:30:05 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -24,17 +24,17 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$140.20`
-- Equity: `$11,980.75`
+- Equity: `$11,897.63`
 - Realized PnL: `$1,973.99`
-- Unrealized PnL: `$6.76`
+- Unrealized PnL: `$-76.36`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  ROST      share share_fallback                ROST       2026-04-21                   1     26     5873.79                 5880.55       225.91         226.18      225.91        226.18            6.76                   0.12         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
-  INTC     option         option INTC260618C00065000       2026-04-22                   0      8     5960.00                 5960.00         7.45           7.45       65.32         65.50            0.00                   0.00        100.00               34              1.42         70.65           69.58                  73.47               19823.0          361.0               0.01                                       ok
+  ROST      share share_fallback                ROST       2026-04-21                   1     26     5873.79                 5877.43       225.91         226.05      225.91        226.05            3.64                   0.06         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  INTC     option         option INTC260618C00065000       2026-04-22                   0      8     5960.00                 5880.00         7.45           7.35       65.32         65.35          -80.00                  -1.34        100.00               34              1.42         70.65           69.46                  73.47               19823.0          361.0               0.01                                       ok
 ```
 
 ## Today's Closed Trades (2026-04-22)
@@ -45,24 +45,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               34            1.15              0.53         66.03                73.47            True
-   HON          100.00               23            0.92              1.43        221.61                25.07            True
-  PCAR           90.00               40            0.55              0.49        125.97                27.36            True
-  CTAS           89.19               37            0.57              0.70        175.96                25.46            True
-  GILD           88.89               27            0.88              0.82        132.94                20.00            True
-  ASML           87.10               31            1.16             11.88       1453.88                53.63            True
-   CSX           86.96               23            0.76              0.23         43.27                16.22            True
-   PEP           85.71               28            0.56              0.61        154.66                19.79            True
-  FAST           85.71               14            1.97              0.63         45.43                37.98            True
-   MAR           84.62               13            1.93              5.08        373.27                30.40            True
-   EXC           84.21               19            0.86              0.28         46.15                15.78            True
-  DASH           83.33               42            0.74              0.94        182.05                52.99            True
+  INTC          100.00               34            1.37              0.63         65.99                73.47            True
+   HON          100.00               23            0.88              1.36        221.64                25.07            True
+   CSX           90.00               30            0.53              0.16         43.30                16.22            True
+  PCAR           88.89               36            0.74              0.65        125.90                27.36            True
+  GILD           87.50               24            1.02              0.96        132.88                20.00            True
+  ASML           85.19               27            1.40             14.27       1452.86                53.63            True
+  DASH           83.33               42            0.56              0.72        182.14                52.99            True
+   MAR           83.33               12            1.99              5.22        373.21                30.40            True
+  FAST           80.00               15            1.90              0.61         45.44                37.98            True
+  REGN          100.00               36            0.49              2.55        746.27                22.93           False
+   XEL          100.00                4            2.05              1.14         78.59                20.08           False
+  ALNY           93.88               49            0.19              0.41        308.26                46.54           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                    detail
+2026-04-22T15:30:05.687438-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
 2026-04-22T15:25:03.792481-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
 2026-04-22T15:10:03.771569-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
 2026-04-22T15:05:00.900183-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-22T14:40:00.880828-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
 2026-04-22T14:35:01.668405-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
 2026-04-22T14:30:00.682982-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
-2026-04-22T14:25:05.683900-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260422152503)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260422153005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260422152503)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260422153005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260422152503)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260422153005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260422152503)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260422153005)
 
 </details>
