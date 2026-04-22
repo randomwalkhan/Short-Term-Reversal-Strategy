@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-22 09:30:00 EDT`
+Latest checkpoint (ET): `2026-04-22 09:35:00 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -24,16 +24,16 @@ Last processed slot: `manage_0930`
 ## Portfolio Snapshot
 
 - Cash: `$6,100.20`
-- Equity: `$12,003.11`
+- Equity: `$11,986.08`
 - Realized PnL: `$1,973.99`
-- Unrealized PnL: `$29.12`
+- Unrealized PnL: `$12.09`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  ROST      share share_fallback       ROST       2026-04-21                   1     26     5873.79                 5902.91       225.91         227.04      225.91        227.04           29.12                    0.5         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  ROST      share share_fallback       ROST       2026-04-21                   1     26     5873.79                 5885.88       225.91         226.38      225.91        226.38           12.09                   0.21         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-22)
@@ -44,24 +44,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  ALNY           92.86               42            0.81              1.76        310.19                46.54            True
-  TMUS           87.50               24            1.11              1.52        194.74                23.13            True
-  CTSH           86.05               43            0.60              0.26         60.34                29.24            True
-    EA           95.56               45            0.01              0.02        203.54                 4.87           False
-  CHTR           93.62               47            0.15              0.26        241.84                38.39           False
-  FAST           93.48               46            0.13              0.04         45.68                37.98           False
-   WMT           90.24               41            0.26              0.24        129.50                24.14           False
-  COST           90.00               50            0.00              0.02       1005.80                18.71           False
-  ORLY           89.80               49            0.17              0.11         93.76                22.62           False
-  CTAS           88.37               43            0.18              0.22        176.17                25.46           False
-  DASH           84.78               46            0.13              0.17        182.38                52.99           False
-   ADI           79.17               24            1.52              4.05        379.32                37.63           False
+  BKNG           86.21               29            1.55              2.07        189.97                38.41            True
+  PAYX           85.00               40            0.58              0.38         93.52                30.98            True
+   APP           84.21               38            0.67              2.21        472.23                75.49            True
+  DASH           83.33               42            0.56              0.71        182.14                52.99            True
+   TRI           82.98               47            0.89              0.60         96.46                39.61            True
+   ADP           80.65               31            0.70              0.99        202.45                27.65            True
+    EA           95.56               45            0.02              0.02        203.54                 4.87           False
+  CHTR           93.62               47            0.12              0.21        241.86                38.39           False
+  FAST           93.33               45            0.22              0.07         45.67                37.98           False
+   WMT           90.24               41            0.28              0.25        129.49                24.14           False
+   ROP           89.58               48            0.06              0.14        362.87                23.54           False
+  COST           88.89               45            0.22              1.57       1005.14                18.71           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et         slot   event_type                          detail
+2026-04-22T09:35:00.782755-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-04-22T09:30:00.737460-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-04-22T09:25:03.754012-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-04-22T00:00:03.059399-04:00 data_refresh data_refresh                   {'saved': 99}
@@ -71,7 +72,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-21T15:55:05.701921-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-21T15:40:05.716931-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 2026-04-21T15:35:05.716188-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-21T15:30:05.732127-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260422093000)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260422093500)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260422093000)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260422093500)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260422093000)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260422093500)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260422093000)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260422093500)
 
 </details>
