@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-22 15:40:01 EDT`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-04-22 15:45:00 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -34,7 +34,7 @@ Last processed slot: `manage_1530`
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
   ROST      share share_fallback                ROST       2026-04-21                   1     26     5873.79                 5876.78       225.91         226.03      225.91        226.03            2.99                   0.05         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
-  INTC     option         option INTC260618C00065000       2026-04-22                   0      8     5960.00                 5960.00         7.45           7.45       65.32         65.34           -0.00                  -0.00        100.00               34              1.42         70.65           70.51                  73.47               19823.0          361.0               0.01                                       ok
+  INTC     option         option INTC260618C00065000       2026-04-22                   0      8     5960.00                 5960.00         7.45           7.45       65.32         65.28            0.00                   0.00        100.00               34              1.42         70.65           70.83                  73.47               19823.0          361.0               0.01                                       ok
 ```
 
 ## Today's Closed Trades (2026-04-22)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  REGN          100.00               35            0.60              3.15        746.01                22.93            True
-  INTC          100.00               34            1.38              0.64         65.99                73.47            True
-   HON          100.00               20            0.99              1.54        221.56                25.07            True
-  GILD           88.46               26            0.93              0.87        132.92                20.00            True
-  CTAS           87.88               33            0.85              1.04        175.81                25.46            True
-  PCAR           87.50               32            0.87              0.77        125.85                27.36            True
-   CSX           86.96               23            0.88              0.27         43.26                16.22            True
-   PEP           86.96               23            0.77              0.84        154.56                19.79            True
-  ASML           86.21               29            1.19             12.18       1453.75                53.63            True
-  FAST           84.62               13            2.17              0.69         45.40                37.98            True
-  DASH           83.33               42            0.71              0.91        182.06                52.99            True
-   MAR           83.33               12            2.17              5.71        373.00                30.40            True
+  REGN          100.00               36            0.56              2.94        746.10                22.93            True
+  INTC          100.00               34            1.53              0.71         65.96                73.47            True
+   HON          100.00               23            0.85              1.32        221.65                25.07            True
+  GILD           88.00               25            1.01              0.94        132.89                20.00            True
+  CTAS           87.88               33            0.82              1.01        175.83                25.46            True
+  ASML           87.10               31            1.00             10.25       1454.58                53.63            True
+   PEP           86.96               23            0.81              0.88        154.54                19.79            True
+   CSX           86.96               23            0.74              0.22         43.27                16.22            True
+  PCAR           86.67               30            0.99              0.87        125.81                27.36            True
+  FAST           85.71               14            2.09              0.67         45.41                37.98            True
+  DASH           83.33               42            0.75              0.95        182.04                52.99            True
+   MAR           83.33               12            2.19              5.75        372.99                30.40            True
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260422154001)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260422154500)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260422154001)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260422154500)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260422154001)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260422154500)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260422154001)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260422154500)
 
 </details>
