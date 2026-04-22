@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-22 15:10:03 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-04-22 15:15:00 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -24,17 +24,17 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$140.20`
-- Equity: `$12,003.74`
+- Equity: `$11,966.47`
 - Realized PnL: `$1,973.99`
-- Unrealized PnL: `$29.75`
+- Unrealized PnL: `$-7.52`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  INTC     option         option INTC260618C00065000       2026-04-22                   0      8     5960.00                 5980.00         7.45           7.48       65.32         65.37           20.00                   0.34        100.00               34              1.42         70.65           70.51                  73.47               19823.0          361.0               0.01                                       ok
-  ROST      share share_fallback                ROST       2026-04-21                   1     26     5873.79                 5883.54       225.91         226.29      225.91        226.29            9.75                   0.17         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  ROST      share share_fallback                ROST       2026-04-21                   1     26     5873.79                 5886.27       225.91         226.40      225.91        226.40           12.48                   0.21         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  INTC     option         option INTC260618C00065000       2026-04-22                   0      8     5960.00                 5940.00         7.45           7.43       65.32         65.37          -20.00                  -0.34        100.00               34              1.42         70.65           69.91                  73.47               19823.0          361.0               0.01                                       ok
 ```
 
 ## Today's Closed Trades (2026-04-22)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               34            1.39              0.64         65.98                73.47            True
-  REGN          100.00               32            0.80              4.18        745.57                22.93            True
-   HON          100.00               25            0.79              1.23        221.69                25.07            True
-  PCAR           89.19               37            0.73              0.65        125.90                27.36            True
-  CTAS           87.88               33            0.88              1.08        175.80                25.46            True
-   PEP           86.96               23            0.83              0.90        154.54                19.79            True
-   CSX           86.96               23            0.78              0.24         43.27                16.22            True
-   MAR           86.67               15            1.80              4.74        373.42                30.40            True
-  PAYX           85.71               42            0.52              0.34         93.53                30.98            True
-  FAST           85.71               14            2.00              0.64         45.43                37.98            True
-  DASH           83.33               42            0.73              0.93        182.05                52.99            True
-  MDLZ           83.33               24            0.51              0.20         56.04                19.49            True
+  INTC          100.00               34            1.32              0.61         66.00                73.47            True
+  REGN          100.00               32            0.78              4.10        745.60                22.93            True
+   HON          100.00               24            0.84              1.31        221.66                25.07            True
+  PCAR           89.19               37            0.71              0.63        125.91                27.36            True
+  CTAS           87.88               33            0.79              0.97        175.84                25.46            True
+   PEP           86.96               23            0.81              0.88        154.54                19.79            True
+   CSX           86.96               23            0.76              0.23         43.27                16.22            True
+  ASML           86.67               30            1.18             12.01       1453.82                53.63            True
+  FAST           85.71               14            2.01              0.64         45.42                37.98            True
+  PAYX           85.37               41            0.56              0.36         93.52                30.98            True
+  GILD           84.21               19            1.15              1.07        132.83                20.00            True
+  DASH           83.33               42            0.79              1.01        182.02                52.99            True
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260422151003)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260422151500)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260422151003)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260422151500)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260422151003)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260422151500)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260422151003)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260422151500)
 
 </details>
