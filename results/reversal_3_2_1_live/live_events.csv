@@ -889,3 +889,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-22T14:50:03.700065-04:00,2026-04-22,entry_1500,entry,"{""allocated_cash"": 5960.0, ""asset_type"": ""option"", ""contract_symbol"": ""INTC260618C00065000"", ""contracts"": 8, ""entry_option_price"": 7.45, ""execution_mode"": ""option"", ""matched_signals"": 34, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 19823.0, ""option_spread_pct"": 1.34, ""option_volume"": 361.0, ""success_rate"": 100.0, ""ticker"": ""INTC""}"
 2026-04-22T14:55:01.681230-04:00,2026-04-22,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-22T15:00:01.729298-04:00,2026-04-22,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-22T15:05:00.900183-04:00,2026-04-22,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
