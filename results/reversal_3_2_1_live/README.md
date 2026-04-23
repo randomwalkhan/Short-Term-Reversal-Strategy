@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 09:20:04 EDT`
+Latest checkpoint (ET): `2026-04-23 09:25:02 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -33,7 +33,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  INTC     option         option INTC260618C00065000       2026-04-22                   1      8     5960.00                 6000.00         7.45           7.50       65.32         65.90           40.00                   0.67        100.00               34              1.42         70.65             0.0                  73.47               19823.0          361.0               0.01                                       ok
+  INTC     option         option INTC260618C00065000       2026-04-22                   1      8     5960.00                 6000.00         7.45           7.50       65.32         66.07           40.00                   0.67        100.00               34              1.42         70.65             0.0                  73.47               19823.0          361.0               0.01                                       ok
   ROST      share share_fallback                ROST       2026-04-21                   2     26     5873.79                 5897.06       225.91         226.81      225.91        226.81           23.27                   0.40         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
@@ -49,6 +49,7 @@ _None_
 
 ```text
                     timestamp_et         slot   event_type                          detail
+2026-04-23T09:25:02.140928-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-04-23T00:00:05.676693-04:00 data_refresh data_refresh                   {'saved': 99}
 2026-04-22T16:10:00.877040-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-22T16:05:04.723707-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
@@ -58,7 +59,6 @@ _None_
 2026-04-22T15:35:00.909880-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 2026-04-22T15:30:05.687438-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 2026-04-22T15:25:03.792481-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-22T15:10:03.771569-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -68,27 +68,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423092004)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423092502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423092004)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423092502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423092004)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423092502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423092004)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423092502)
 
 </details>
