@@ -3,8 +3,8 @@
 <!-- reversal-3.2-live:start -->
 ## Reversal 3.2.3 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-23 12:25:03 EDT`
-- Equity: `$12,978.69` | Realized: `$2,953.99` | Unrealized: `$24.70` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-23 12:30:01 EDT`
+- Equity: `$12,982.72` | Realized: `$2,953.99` | Unrealized: `$28.73` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1230`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  ROST      share share_fallback       ROST     26     5873.79                 5898.49         226.87            24.7                   0.42                   2
+  ROST      share share_fallback       ROST     26     5873.79                 5902.52         227.02           28.73                   0.49                   2
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](assets/reversal_3_2_1_live_equity_overall.png?v=20260423122503)
+![Reversal 3.2.3 Live Equity Overall](assets/reversal_3_2_1_live_equity_overall.png?v=20260423123001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](assets/reversal_3_2_1_live_equity_1d.png?v=20260423122503)
+![Reversal 3.2.3 Live Equity 1D](assets/reversal_3_2_1_live_equity_1d.png?v=20260423123001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](assets/reversal_3_2_1_live_equity.png?v=20260423122503)
+![Reversal 3.2.3 Live Equity 1W](assets/reversal_3_2_1_live_equity.png?v=20260423123001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](assets/reversal_3_2_1_live_equity_1m.png?v=20260423122503)
+![Reversal 3.2.3 Live Equity 1M](assets/reversal_3_2_1_live_equity_1m.png?v=20260423123001)
 
 </details>
 
