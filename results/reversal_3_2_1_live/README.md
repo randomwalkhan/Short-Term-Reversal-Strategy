@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 14:40:04 EDT`
-Last processed slot: `manage_1430`
+Latest checkpoint (ET): `2026-04-23 14:45:05 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -24,16 +24,16 @@ Last processed slot: `manage_1430`
 ## Portfolio Snapshot
 
 - Cash: `$7,080.20`
-- Equity: `$12,974.53`
+- Equity: `$12,972.84`
 - Realized PnL: `$2,953.99`
-- Unrealized PnL: `$20.54`
+- Unrealized PnL: `$18.85`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  ROST      share share_fallback       ROST       2026-04-21                   2     26     5873.79                 5894.33       225.91         226.71      225.91        226.71           20.54                   0.35         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  ROST      share share_fallback       ROST       2026-04-21                   2     26     5873.79                 5892.64       225.91         226.64      225.91        226.64           18.85                   0.32         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-23)
@@ -47,18 +47,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  TSLA           94.12               17            3.31              8.99        383.66                48.19            True
+  TSLA           93.33               15            3.54              9.60        383.40                48.19            True
   NVDA           91.67               24            1.56              2.20        201.56                33.17            True
-  UPRO           90.91               33            1.03              0.91        125.30                53.56            True
-  DDOG           88.89               27            2.74              2.53        131.05                58.97            True
-  ABNB           87.50               24            1.65              1.67        143.47                37.26            True
-  ORLY           86.67               30            0.99              0.65         93.64                22.27            True
-  BKNG           85.19               27            1.81              2.27        178.43                44.00            True
-  DXCM           84.62               39            1.21              0.54         63.18                37.31            True
-  CSCO           83.33               24            0.81              0.51         89.58                27.83            True
-    MU           82.86               35            1.51              5.16        485.27                79.49            True
-  QCOM           81.25               16            1.76              1.68        135.35                21.23            True
-  MSTR           80.00               35            2.32              2.92        178.11                72.13            True
+  UPRO           90.32               31            1.20              1.06        125.24                53.56            True
+  DDOG           87.50               24            2.99              2.76        130.96                58.97            True
+  ABNB           87.50               24            1.67              1.69        143.46                37.26            True
+  ORLY           86.67               30            1.01              0.66         93.64                22.27            True
+  DXCM           86.49               37            1.30              0.58         63.16                37.31            True
+  CSCO           86.36               22            1.00              0.63         89.53                27.83            True
+  ISRG           84.62               39            0.60              2.02        482.76                37.51            True
+  BKNG           84.00               25            1.95              2.45        178.35                44.00            True
+    MU           82.86               35            1.35              4.61        485.51                79.49            True
+  QCOM           81.25               16            1.79              1.70        135.34                21.23            True
 ```
 
 ## Recent Events
@@ -84,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423144004)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423144505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423144004)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423144505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423144004)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423144505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423144004)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423144505)
 
 </details>
