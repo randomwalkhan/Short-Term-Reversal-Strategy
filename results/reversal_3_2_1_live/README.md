@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 09:30:05 EDT`
+Latest checkpoint (ET): `2026-04-23 09:35:00 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -24,17 +24,17 @@ Last processed slot: `manage_0930`
 ## Portfolio Snapshot
 
 - Cash: `$140.20`
-- Equity: `$12,054.68`
+- Equity: `$12,057.93`
 - Realized PnL: `$1,973.99`
-- Unrealized PnL: `$80.69`
+- Unrealized PnL: `$83.94`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  ROST      share share_fallback                ROST       2026-04-21                   2     26     5873.79                 5914.48       225.91         227.48      225.91        227.48           40.69                   0.69         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
-  INTC     option         option INTC260618C00065000       2026-04-22                   1      8     5960.00                 6000.00         7.45           7.50       65.32         66.19           40.00                   0.67        100.00               34              1.42         70.65             0.0                  73.47               19823.0          361.0               0.01                                       ok
+  ROST      share share_fallback                ROST       2026-04-21                   2     26     5873.79                 5917.73       225.91          227.6      225.91         227.6           43.94                   0.75         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  INTC     option         option INTC260618C00065000       2026-04-22                   1      8     5960.00                 6000.00         7.45            7.5       65.32          68.0           40.00                   0.67        100.00               34              1.42         70.65             0.0                  73.47               19823.0          361.0               0.01                                       ok
 ```
 
 ## Today's Closed Trades (2026-04-23)
@@ -45,24 +45,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   STX           94.74               38            1.06              4.28        578.04                65.20            True
-  UPRO           92.31               39            0.55              0.48        125.43                53.56            True
-  SHOP           91.67               24            2.80              2.58        130.85                53.34            True
-  TSLA           90.91               11            3.78             10.24        383.12                48.19            True
-  FTNT           90.00               20            2.10              1.28         86.54                37.78            True
-  SNPS           88.89               18            2.84              9.50        473.19                42.64            True
-  CDNS           88.24               34            1.40              3.24        330.22                46.12            True
-  DXCM           86.96               46            0.57              0.25         63.30                37.31            True
-  DDOG           86.36               22            3.59              3.32        130.72                58.97            True
-  PAYX           84.85               33            1.09              0.71         93.12                28.70            True
-  DASH           83.33               42            0.88              1.12        181.79                50.96            True
-  PLTR           83.33               24            2.78              2.97        151.35                58.48            True
+   STX           94.87               39            0.66              2.69        578.73                65.20            True
+  SHOP           94.12               17            4.16              3.84        130.31                53.34            True
+  UPRO           92.31               39            0.63              0.55        125.40                53.56            True
+  DDOG           90.48               21            4.11              3.80        130.51                58.97            True
+  SNPS           88.89               18            2.80              9.37        473.24                42.64            True
+  ABNB           88.24               34            0.83              0.83        143.82                37.26            True
+  KLAC           86.49               37            0.63              8.01       1808.63                51.27            True
+  TSLA           86.36               22            2.02              5.48        385.16                48.19            True
+  CSCO           84.00               25            0.77              0.49         89.59                27.83            True
+  DASH           83.33               42            0.70              0.89        181.89                50.96            True
+   TRI           82.86               35            1.86              1.21         92.34                39.58            True
+  CDNS           82.61               23            1.97              4.57        329.65                46.12            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et         slot   event_type                          detail
+2026-04-23T09:35:00.653658-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-04-23T09:30:05.624647-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-04-23T09:25:02.140928-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-04-23T00:00:05.676693-04:00 data_refresh data_refresh                   {'saved': 99}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-22T15:55:02.714519-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-22T15:40:01.767871-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 2026-04-22T15:35:00.909880-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-22T15:30:05.687438-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423093005)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423093500)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423093005)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423093500)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423093005)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423093500)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423093005)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423093500)
 
 </details>
