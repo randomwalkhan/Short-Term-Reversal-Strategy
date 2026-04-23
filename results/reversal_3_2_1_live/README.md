@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 11:55:01 EDT`
+Latest checkpoint (ET): `2026-04-23 12:00:03 EDT`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -24,16 +24,16 @@ Last processed slot: `manage_1200`
 ## Portfolio Snapshot
 
 - Cash: `$7,080.20`
-- Equity: `$12,974.66`
+- Equity: `$12,972.58`
 - Realized PnL: `$2,953.99`
-- Unrealized PnL: `$20.67`
+- Unrealized PnL: `$18.59`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  ROST      share share_fallback       ROST       2026-04-21                   2     26     5873.79                 5894.46       225.91         226.71      225.91        226.71           20.67                   0.35         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  ROST      share share_fallback       ROST       2026-04-21                   2     26     5873.79                 5892.38       225.91         226.63      225.91        226.63           18.59                   0.32         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-23)
@@ -47,24 +47,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  SHOP           92.86               14            4.93              4.56        130.01                53.34            True
-  NVDA           91.67               36            0.52              0.74        202.18                33.17            True
-  CDNS           90.00               10            3.88              9.00        327.75                46.12            True
-  ABNB           89.29               28            1.43              1.44        143.56                37.26            True
-  BKNG           89.19               37            0.89              1.12        178.92                44.00            True
-  DDOG           88.89               27            2.53              2.34        131.14                58.97            True
-  TSLA           87.50               24            1.80              4.89        385.41                48.19            True
-  QCOM           87.50               24            1.23              1.17        135.57                21.23            True
-  DXCM           85.71               42            0.99              0.44         63.22                37.31            True
-  SNPS           85.71               14            3.29             11.00        472.55                42.64            True
-  ASML           84.38               32            0.95              9.57       1439.56                53.38            True
-  ISRG           84.21               38            0.70              2.36        482.61                37.51            True
+  SHOP           92.86               14            4.90              4.53        130.02                53.34            True
+  NVDA           91.67               36            0.50              0.71        202.19                33.17            True
+  ABNB           90.32               31            1.27              1.28        143.63                37.26            True
+  CDNS           90.00               10            3.85              8.94        327.78                46.12            True
+  BKNG           88.89               36            0.92              1.16        178.91                44.00            True
+  DDOG           88.89               27            2.58              2.39        131.12                58.97            True
+  TSLA           87.50               24            1.79              4.85        385.43                48.19            True
+  DXCM           86.67               45            0.74              0.33         63.27                37.31            True
+  ISRG           85.37               41            0.54              1.81        482.84                37.51            True
+  QCOM           85.00               20            1.45              1.38        135.48                21.23            True
+  SNPS           84.62               13            3.33             11.12        472.49                42.64            True
+  ASML           84.38               32            0.89              8.99       1439.81                53.38            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                                 detail
+2026-04-23T12:00:03.198539-04:00 manage_1200 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
 2026-04-23T11:55:01.249277-04:00 manage_1200 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
 2026-04-23T11:50:01.202591-04:00 manage_1200         exit {"asset_type": "option", "contract_symbol": "INTC260618C00065000", "fill_price": 8.675, "pnl": 980.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 16.44, "ticker": "INTC"}
 2026-04-23T11:40:01.234723-04:00 manage_1130 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
@@ -74,7 +75,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-23T11:10:05.162914-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
 2026-04-23T11:05:01.126131-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
 2026-04-23T11:00:03.421218-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-23T10:55:01.987617-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -84,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423115501)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423120003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423115501)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423120003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423115501)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423120003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423115501)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423120003)
 
 </details>
