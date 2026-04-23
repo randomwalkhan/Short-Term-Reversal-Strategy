@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 16:00:04 EDT`
+Latest checkpoint (ET): `2026-04-23 16:05:01 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$6,808.00`
-- Equity: `$13,045.50`
+- Equity: `$13,058.00`
 - Realized PnL: `$2,970.50`
-- Unrealized PnL: `$75.00`
+- Unrealized PnL: `$87.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  NVDA     option         option NVDA260618C00200000       2026-04-23                   0      5      6162.5                  6237.5        12.32          12.48      198.79        199.83            75.0                   1.22         95.24               21              1.83          41.3           40.45                  33.17              111167.0         4613.0                0.0                      ok
+  NVDA     option         option NVDA260618C00200000       2026-04-23                   0      5      6162.5                  6250.0        12.32           12.5      198.79         199.9            87.5                   1.42         95.24               21              1.83          41.3           40.45                  33.17              111167.0         4613.0                0.0                      ok
 ```
 
 ## Today's Closed Trades (2026-04-23)
@@ -47,26 +47,13 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-    MU           83.33               36            1.25              4.26        485.66                79.49            True
-  UPRO           90.00               30            1.27              1.12        125.21                53.56            True
-  CSCO           81.25               16            1.34              0.84         89.44                27.83            True
-  AVGO           91.67               36            0.63              1.87        421.85                44.55            True
-  NVDA           92.31               26            1.41              2.00        201.64                33.17            True
-  META           68.75               16            2.28             10.77        670.10                51.97           False
-  NFLX           97.56               41            0.45              0.29         93.11                46.34           False
-  LRCX           72.73               22            2.62              4.87        263.46                67.48           False
-  ASML           79.17               24            1.86             18.77       1435.62                53.38           False
-   WBD           50.00                2            1.57              0.30         27.20                 7.69           False
-  AMZN           85.37               41            0.09              0.17        255.29                33.82           False
-  ABNB           88.46               26            1.58              1.60        143.50                37.26           False
-```
+_None_
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-23T16:05:01.797986-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-23T16:00:04.974935-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-23T15:55:05.889210-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-23T15:50:06.563469-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
@@ -76,7 +63,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-23T15:25:05.676765-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
 2026-04-23T15:10:03.835194-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 2026-04-23T15:05:05.649293-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-23T15:00:02.837489-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -86,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260423160004)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260423160501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260423160004)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260423160501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260423160004)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260423160501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260423160004)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260423160501)
 
 </details>
