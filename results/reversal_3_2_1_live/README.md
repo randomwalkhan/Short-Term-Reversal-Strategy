@@ -1,6 +1,6 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 11:00:03 EDT`
+Latest checkpoint (ET): `2026-04-23 11:05:01 EDT`
 Last processed slot: `manage_1100`
 
 ## Active Configuration
@@ -24,17 +24,17 @@ Last processed slot: `manage_1100`
 ## Portfolio Snapshot
 
 - Cash: `$140.20`
-- Equity: `$12,747.66`
+- Equity: `$12,742.96`
 - Realized PnL: `$1,973.99`
-- Unrealized PnL: `$773.67`
+- Unrealized PnL: `$768.97`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  INTC     option         option INTC260618C00065000       2026-04-22                   1      8     5960.00                 6700.00         7.45           8.38       65.32         67.05          740.00                  12.42        100.00               34              1.42         70.65            70.4                  73.47               19823.0          361.0               0.01                                       ok
-  ROST      share share_fallback                ROST       2026-04-21                   2     26     5873.79                 5907.46       225.91         227.21      225.91        227.21           33.67                   0.57         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  INTC     option         option INTC260618C00065000       2026-04-22                   1      8     5960.00                 6720.00         7.45           8.40       65.32         67.47          760.00                  12.75        100.00               34              1.42         70.65           68.35                  73.47               19823.0          361.0               0.01                                       ok
+  ROST      share share_fallback                ROST       2026-04-21                   2     26     5873.79                 5882.76       225.91         226.26      225.91        226.26            8.97                   0.15         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-23)
@@ -45,24 +45,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   HON          100.00               10            1.73              2.66        218.83                25.23            True
-  SHOP           92.86               14            4.59              4.24        130.14                53.34            True
-  SNPS           90.91               11            3.66             12.22        472.02                42.64            True
-  CDNS           90.91               11            3.40              7.90        328.23                46.12            True
-  ABNB           89.66               29            1.38              1.39        143.58                37.26            True
-  BKNG           89.47               38            0.77              0.97        178.98                44.00            True
-  QCOM           88.89               27            1.07              1.02        135.63                21.23            True
-  DDOG           87.50               24            2.92              2.70        130.98                58.97            True
-  ORLY           86.67               30            1.03              0.68         93.63                22.27            True
+  SHOP           92.86               14            4.86              4.49        130.04                53.34            True
+  SNPS           90.91               11            3.78             12.63        471.85                42.64            True
+  CDNS           90.00               10            3.65              8.47        327.98                46.12            True
+  ABNB           89.29               28            1.46              1.47        143.55                37.26            True
+  BKNG           88.89               36            1.02              1.28        178.85                44.00            True
+  DDOG           88.89               27            2.41              2.23        131.18                58.97            True
+  ORLY           86.21               29            1.08              0.71         93.62                22.27            True
+  QCOM           85.00               20            1.40              1.34        135.50                21.23            True
   TSLA           84.21               19            2.93              7.96        384.10                48.19            True
-  CSCO           84.00               25            0.55              0.34         89.65                27.83            True
-   ADP           83.33               12            2.46              3.47        200.20                26.51            True
+  CSCO           84.00               25            0.55              0.35         89.65                27.83            True
+    MU           83.78               37            0.96              3.28        486.07                79.49            True
+   ADP           83.33               12            2.48              3.50        200.19                26.51            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-23T11:05:01.126131-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-04-23T11:00:03.421218-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-04-23T10:55:01.987617-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-04-23T10:40:01.289444-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-23T10:10:04.132146-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-23T10:05:01.148686-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
 2026-04-23T10:00:04.240672-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-23T09:55:03.904981-04:00 manage_1000 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423110003)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423110501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423110003)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423110501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423110003)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423110501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423110003)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423110501)
 
 </details>
