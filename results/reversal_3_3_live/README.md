@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 15:30:06 EDT`
+Latest checkpoint (ET): `2026-04-23 15:35:05 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$6,808.00`
-- Equity: `$12,833.00`
+- Equity: `$12,845.50`
 - Realized PnL: `$2,970.50`
-- Unrealized PnL: `$-137.50`
+- Unrealized PnL: `$-125.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  NVDA     option         option NVDA260618C00200000       2026-04-23                   0      5      6162.5                  6025.0        12.32          12.05      198.79        199.29          -137.5                  -2.23         95.24               21              1.83          41.3           39.58                  33.17              111167.0         4613.0                0.0                      ok
+  NVDA     option         option NVDA260618C00200000       2026-04-23                   0      5      6162.5                  6037.5        12.32          12.08      198.79        198.84          -125.0                  -2.03         95.24               21              1.83          41.3           40.52                  33.17              111167.0         4613.0                0.0                      ok
 ```
 
 ## Today's Closed Trades (2026-04-23)
@@ -49,24 +49,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  UPRO           90.32               31            1.08              0.95        125.28                53.56            True
-  AMAT           86.11               36            0.69              1.94        402.65                55.83            True
-  CSCO           86.96               23            0.84              0.52         89.58                27.83            True
-    MU           82.35               34            2.14              7.29        484.36                79.49            True
-  AVGO           91.67               36            0.64              1.88        421.84                44.55            True
-  NVDA           95.65               23            1.61              2.29        201.52                33.17            True
-  ASML           81.82               22            2.42             24.46       1433.18                53.38            True
-  META           72.22               18            2.23             10.53        670.21                51.97           False
-  KLAC           86.49               37            0.31              3.89       1810.39                51.27           False
-   WBD           87.50                8            1.26              0.24         27.23                 7.69           False
-  NFLX           97.87               47            0.04              0.02         93.23                46.34           False
-  LRCX           68.75               16            3.73              6.94        262.58                67.48           False
+  UPRO           92.59               27            1.57              1.38        125.10                53.56            True
+  AMAT           86.11               36            0.74              2.09        402.58                55.83            True
+  KLAC           86.49               37            0.60              7.61       1808.80                51.27            True
+  CSCO           86.36               22            0.98              0.62         89.54                27.83            True
+  AVGO           91.43               35            0.90              2.67        421.50                44.55            True
+    MU           81.82               33            2.50              8.52        483.83                79.49            True
+  NVDA           95.45               22            1.77              2.51        201.43                33.17            True
+  META           68.75               16            2.30             10.85        670.07                51.97           False
+   WBD           87.50                8            1.35              0.26         27.22                 7.69           False
+  NFLX           97.78               45            0.20              0.13         93.18                46.34           False
+   AMD           86.36               44            0.16              0.34        303.31                56.67           False
+  ASML           78.95               19            2.59             26.22       1432.42                53.38           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                        detail
+2026-04-23T15:35:05.849801-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-04-23T15:30:06.675694-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-04-23T15:25:05.676765-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-04-23T15:10:03.835194-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
@@ -76,7 +77,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-23T14:50:05.228027-04:00  entry_1500        entry {"allocated_cash": 6162.5, "asset_type": "option", "contract_symbol": "NVDA260618C00200000", "contracts": 5, "entry_option_price": 12.325, "execution_mode": "option", "matched_signals": 21, "option_liquidity_status": "ok", "option_open_interest": 111167.0, "option_spread_pct": 0.41, "option_volume": 4613.0, "success_rate": 95.24, "ticker": "NVDA"}
 2026-04-23T14:40:04.065338-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-04-23T14:35:04.153865-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
-2026-04-23T14:30:04.173942-04:00 manage_1430 slot_skipped                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260423153006)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260423153505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260423153006)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260423153505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260423153006)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260423153505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260423153006)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260423153505)
 
 </details>
