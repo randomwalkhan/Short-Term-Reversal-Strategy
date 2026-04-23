@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-23 15:25:05 EDT`
-- Equity: `$12,908.00` | Realized: `$2,970.50` | Unrealized: `$-62.50` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-23 15:30:06 EDT`
+- Equity: `$12,833.00` | Realized: `$2,970.50` | Unrealized: `$-137.50` | Open positions: `1`
 - Today closed trades: `2`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  NVDA     option         option NVDA260618C00200000      5      6162.5                  6100.0           12.2           -62.5                  -1.01                   0
+  NVDA     option         option NVDA260618C00200000      5      6162.5                  6025.0          12.05          -137.5                  -2.23                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260423152505)
+![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260423153006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260423152505)
+![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260423153006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260423152505)
+![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260423153006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260423152505)
+![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260423153006)
 
 </details>
 
