@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 13:45:02 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-23 13:50:04 EDT`
+Last processed slot: `manage_1400`
 
 ## Active Configuration
 
@@ -24,16 +24,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$7,080.20`
-- Equity: `$12,949.96`
+- Equity: `$12,947.23`
 - Realized PnL: `$2,953.99`
-- Unrealized PnL: `$-4.03`
+- Unrealized PnL: `$-6.77`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  ROST      share share_fallback       ROST       2026-04-21                   2     26     5873.79                 5869.76       225.91         225.76      225.91        225.76           -4.03                  -0.07         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  ROST      share share_fallback       ROST       2026-04-21                   2     26     5873.79                 5867.02       225.91         225.65      225.91        225.65           -6.77                  -0.12         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-23)
@@ -47,18 +47,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NFLX           95.65               23            1.16              0.76         92.92                46.34            True
-  NVDA           93.33               15            2.31              3.27        201.10                33.17            True
-  DDOG           92.31               13            5.21              4.82        130.07                58.97            True
-  AVGO           91.43               35            0.91              2.70        421.49                44.55            True
-   MAR           88.57               35            0.71              1.83        366.35                31.81            True
-  UPRO           88.24               17            3.46              3.05        124.38                53.56            True
-  ISRG           86.96               23            1.24              4.19        481.82                37.51            True
-  ASML           86.67               15            2.97             30.05       1430.78                53.38            True
-   ROP           85.71               28            1.00              2.56        363.63                21.92            True
-  KLAC           84.38               32            1.01             12.87       1806.55                51.27            True
-   AMD           83.33               36            0.79              1.69        302.74                56.67            True
-  AMAT           83.33               30            1.23              3.47        401.99                55.83            True
+  NFLX           96.88               32            0.86              0.56         93.00                46.34            True
+  NVDA           93.33               15            2.35              3.33        201.07                33.17            True
+  DDOG           92.31               13            5.24              4.85        130.06                58.97            True
+  AVGO           91.67               36            0.87              2.58        421.55                44.55            True
+  UPRO           88.89               18            3.31              2.91        124.44                53.56            True
+   MAR           88.57               35            0.76              1.95        366.29                31.81            True
+  KLAC           85.71               35            0.92             11.73       1807.03                51.27            True
+   AMD           85.29               34            1.12              2.37        302.44                56.67            True
+ GOOGL           84.62               39            0.57              1.36        338.74                34.49            True
+  ASML           84.62               13            3.16             31.95       1429.97                53.38            True
+  AMZN           82.86               35            0.71              1.27        254.82                33.82            True
+  AMAT           82.76               29            1.37              3.87        401.82                55.83            True
 ```
 
 ## Recent Events
@@ -84,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423134502)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423135004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423134502)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423135004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423134502)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423135004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423134502)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423135004)
 
 </details>
