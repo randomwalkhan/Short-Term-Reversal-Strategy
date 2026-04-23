@@ -1,0 +1,2 @@
+label,universe_name,universe_size,final_equity,total_return_pct,max_drawdown_pct,trade_count,win_rate_pct,timing_window,timing_threshold,sharpe_rf_10y_tbill,risk_free_rate_annual,risk_free_rate_source_date
+reversal_3_3_official,qqq_plus_leverage_etfs,99,79084.73420604714,690.8473420604714,-26.417731009485777,117,69.23076923076923,5,0.5,4.32054437020171,0.0423,2026-03-16
