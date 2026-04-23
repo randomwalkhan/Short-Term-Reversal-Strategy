@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 13:15:04 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-23 13:20:05 EDT`
+Last processed slot: `manage_1330`
 
 ## Active Configuration
 
@@ -24,16 +24,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$7,080.20`
-- Equity: `$12,967.12`
+- Equity: `$12,964.78`
 - Realized PnL: `$2,953.99`
-- Unrealized PnL: `$13.13`
+- Unrealized PnL: `$10.79`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  ROST      share share_fallback       ROST       2026-04-21                   2     26     5873.79                 5886.92       225.91         226.42      225.91        226.42           13.13                   0.22         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+  ROST      share share_fallback       ROST       2026-04-21                   2     26     5873.79                 5884.58       225.91         226.33      225.91        226.33           10.79                   0.18         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-23)
@@ -47,18 +47,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NFLX           95.45               22            1.17              0.77         92.91                46.34            True
-  TSLA           93.33               15            3.49              9.47        383.45                48.19            True
-  UPRO           92.59               27            1.76              1.55        125.03                53.56            True
-  NVDA           92.59               27            1.26              1.79        201.73                33.17            True
-  ABNB           89.29               28            1.46              1.48        143.55                37.26            True
-  BKNG           88.57               35            1.23              1.54        178.74                44.00            True
-  DDOG           86.96               23            3.33              3.08        130.82                58.97            True
-  CSCO           86.36               22            1.10              0.69         89.50                27.83            True
+  NFLX           95.65               23            1.15              0.75         92.92                46.34            True
+  UPRO           92.31               26            1.88              1.65        124.98                53.56            True
+  NVDA           92.00               25            1.49              2.11        201.59                33.17            True
+  TSLA           90.91               11            3.82             10.37        383.07                48.19            True
+  ABNB           87.50               24            1.77              1.78        143.42                37.26            True
+  DDOG           86.36               22            3.66              3.39        130.69                58.97            True
+  BKNG           86.21               29            1.58              1.98        178.55                44.00            True
+  DXCM           86.11               36            1.39              0.62         63.15                37.31            True
    WBD           85.19               27            0.57              0.11         27.28                 7.69            True
-  DXCM           84.62               39            1.21              0.54         63.18                37.31            True
-    MU           83.78               37            1.08              3.67        485.91                79.49            True
-  ISRG           83.78               37            0.77              2.61        482.50                37.51            True
+    MU           83.78               37            1.07              3.64        485.92                79.49            True
+  ISRG           83.33               30            0.96              3.26        482.22                37.51            True
+   ADP           81.82               11            2.65              3.74        200.09                26.51            True
 ```
 
 ## Recent Events
@@ -84,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423131504)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423132005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423131504)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423132005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423131504)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423132005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423131504)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423132005)
 
 </details>
