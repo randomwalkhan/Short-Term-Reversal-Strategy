@@ -1,38 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 917.70021057129,
+  "cash": 6808.000289916993,
   "positions": [
-    {
-      "position_id": "ROST_20260421T145005",
-      "ticker": "ROST",
-      "asset_type": "share",
-      "execution_mode": "share_fallback",
-      "contract_symbol": "ROST",
-      "expiry": "",
-      "strike": NaN,
-      "entry_timestamp": "2026-04-21T14:50:05.712479-04:00",
-      "entry_trade_date": "2026-04-21",
-      "entry_slot": "entry_1500",
-      "entry_spot": 225.9149932861328,
-      "entry_option_price": 225.9149932861328,
-      "entry_bid": NaN,
-      "entry_ask": NaN,
-      "entry_iv_pct": NaN,
-      "contracts": 26,
-      "allocated_cash": 5873.789825439453,
-      "success_rate": 95.24,
-      "matched_signals": 21,
-      "current_drop_pct": 1.02,
-      "rolling_sigma_20d_pct": 25.78,
-      "planned_tp_day1": 232.6924430847168,
-      "planned_tp_day2": 232.6924430847168,
-      "planned_stop": 219.1375434875488,
-      "option_open_interest": 88.0,
-      "option_volume": 6.0,
-      "option_spread_pct": 0.17040358744394624,
-      "option_liquidity_status": "low_open_interest,low_volume,wide_spread"
-    },
     {
       "position_id": "NVDA_20260423T145005",
       "ticker": "NVDA",
@@ -1859,7 +1829,8 @@
       "manage_1330",
       "manage_1400",
       "manage_1430",
-      "entry_1500"
+      "entry_1500",
+      "manage_1600"
     ]
   },
   "start_date": "2026-03-24"

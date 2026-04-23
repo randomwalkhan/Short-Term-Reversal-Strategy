@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 15:00:02 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-04-23 16:05:00 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -24,44 +24,30 @@ Last processed slot: `entry_1500`
 
 ## Portfolio Snapshot
 
-- Cash: `$917.70`
-- Equity: `$13,045.50`
-- Realized PnL: `$2,953.99`
-- Unrealized PnL: `$91.51`
-- Open positions: `2`
+- Cash: `$6,808.00`
+- Equity: `$13,033.00`
+- Realized PnL: `$2,970.50`
+- Unrealized PnL: `$62.50`
+- Open positions: `1`
 
 ## Open Positions
 
 ```text
-ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  NVDA     option         option NVDA260618C00200000       2026-04-23                   0      5     6162.50                  6237.5        12.32          12.48      198.79        198.41           75.00                   1.22         95.24               21              1.83          41.3           42.54                  33.17              111167.0         4613.0               0.00                                       ok
-  ROST      share share_fallback                ROST       2026-04-21                   2     26     5873.79                  5890.3       225.91         226.55      225.91        226.55           16.51                   0.28         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
+  NVDA     option         option NVDA260618C00200000       2026-04-23                   0      5      6162.5                  6225.0        12.32          12.45      198.79        198.39            62.5                   1.01         95.24               21              1.83          41.3           42.35                  33.17              111167.0         4613.0                0.0                      ok
 ```
 
 ## Today's Closed Trades (2026-04-23)
 
 ```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price   pnl  return_pct                  exit_reason
-  INTC     option         option INTC260618C00065000      8          2026-04-22         2026-04-23         7.45       8.675 980.0   16.442953 take_profit_day1_hit_at_scan
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price        pnl  return_pct                   exit_reason
+  INTC     option         option INTC260618C00065000      8          2026-04-22         2026-04-23     7.450000    8.675000 980.000000   16.442953  take_profit_day1_hit_at_scan
+  ROST      share share_fallback                ROST     26          2026-04-21         2026-04-23   225.914993  226.550003  16.510254    0.281083 share_fallback_retired_in_3_3
 ```
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  UPRO           92.59               27            1.70              1.50        125.05                53.56            True
-  AMAT           85.71               35            0.88              2.49        402.41                55.83            True
-  KLAC           86.49               37            0.60              7.58       1808.81                51.27            True
-  AVGO           91.67               36            0.63              1.85        421.85                44.55            True
-  CSCO           86.36               22            1.09              0.69         89.51                27.83            True
-    MU           81.25               32            2.59              8.84        483.69                79.49            True
-  NVDA           94.44               18            2.00              2.84        201.28                33.17            True
-  META           68.75               16            2.50             11.78        669.67                51.97           False
-  NFLX           97.78               45            0.20              0.13         93.18                46.34           False
-  ASML           78.95               19            2.66             26.92       1432.12                53.38           False
-   WBD           78.57               14            1.02              0.20         27.25                 7.69           False
-   HON          100.00                3            2.61              4.02        218.25                25.23           False
-```
+_None_
 
 ## Recent Events
 
@@ -86,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260423150002)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260423160500)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260423150002)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260423160500)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260423150002)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260423160500)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260423150002)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260423160500)
 
 </details>
