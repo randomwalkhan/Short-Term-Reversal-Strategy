@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 7080.20021057129,
+  "cash": 917.70021057129,
   "positions": [
     {
       "position_id": "ROST_20260421T145005",
@@ -32,6 +32,36 @@
       "option_volume": 6.0,
       "option_spread_pct": 0.17040358744394624,
       "option_liquidity_status": "low_open_interest,low_volume,wide_spread"
+    },
+    {
+      "position_id": "NVDA_20260423T145005",
+      "ticker": "NVDA",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "NVDA260618C00200000",
+      "expiry": "2026-06-18",
+      "strike": 200.0,
+      "entry_timestamp": "2026-04-23T14:50:05.228027-04:00",
+      "entry_trade_date": "2026-04-23",
+      "entry_slot": "entry_1500",
+      "entry_spot": 198.7899932861328,
+      "entry_option_price": 12.325,
+      "entry_bid": 12.3,
+      "entry_ask": 12.35,
+      "entry_iv_pct": 41.296973754882806,
+      "contracts": 5,
+      "allocated_cash": 6162.5,
+      "success_rate": 95.24,
+      "matched_signals": 21,
+      "current_drop_pct": 1.83,
+      "rolling_sigma_20d_pct": 33.17,
+      "planned_tp_day1": 14.173749999999998,
+      "planned_tp_day2": 14.173749999999998,
+      "planned_stop": 10.846,
+      "option_open_interest": 111167.0,
+      "option_volume": 4613.0,
+      "option_spread_pct": 0.004056795131845756,
+      "option_liquidity_status": "ok"
     }
   ],
   "processed_slots": {
@@ -1828,7 +1858,8 @@
       "manage_1300",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"

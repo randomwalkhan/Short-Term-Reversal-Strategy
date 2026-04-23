@@ -3,45 +3,74 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3 Live Paper Test
 
+<<<<<<< HEAD
 - Latest checkpoint (ET): `2026-04-16 21:57:45 EDT`
 - Equity: `$13,358.91` | Realized: `$3,357.92` | Unrealized: `$112.36` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `share_ext_2155`
+=======
+- Latest checkpoint (ET): `2026-04-23 14:50:05 EDT`
+- Equity: `$12,974.66` | Realized: `$2,953.99` | Unrealized: `$20.67` | Open positions: `2`
+- Today closed trades: `1`
+- Current slot: `entry_1500`
+>>>>>>> 73abf9d7 (Update Reversal 3.2.3 live paper test 2026-04-23 14:50 ET)
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
 ```text
+<<<<<<< HEAD
 ticker asset_type execution_mode instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
   REGN      share share_fallback       REGN      9     6720.93                  6833.3         759.26          112.36                   1.67                   5
+=======
+ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
+  ROST      share share_fallback                ROST     26     5873.79                 5894.46         226.71           20.67                   0.35                   2
+  NVDA     option         option NVDA260618C00200000      5     6162.50                 6162.50          12.32            0.00                   0.00                   0
+>>>>>>> 73abf9d7 (Update Reversal 3.2.3 live paper test 2026-04-23 14:50 ET)
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
+<<<<<<< HEAD
 ![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260423215800)
+=======
+![Reversal 3.2.3 Live Equity Overall](assets/reversal_3_2_1_live_equity_overall.png?v=20260423145005)
+>>>>>>> 73abf9d7 (Update Reversal 3.2.3 live paper test 2026-04-23 14:50 ET)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
+<<<<<<< HEAD
 ![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260423215800)
+=======
+![Reversal 3.2.3 Live Equity 1D](assets/reversal_3_2_1_live_equity_1d.png?v=20260423145005)
+>>>>>>> 73abf9d7 (Update Reversal 3.2.3 live paper test 2026-04-23 14:50 ET)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
+<<<<<<< HEAD
 ![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260423215800)
+=======
+![Reversal 3.2.3 Live Equity 1W](assets/reversal_3_2_1_live_equity.png?v=20260423145005)
+>>>>>>> 73abf9d7 (Update Reversal 3.2.3 live paper test 2026-04-23 14:50 ET)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
+<<<<<<< HEAD
 ![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260423215800)
+=======
+![Reversal 3.2.3 Live Equity 1M](assets/reversal_3_2_1_live_equity_1m.png?v=20260423145005)
+>>>>>>> 73abf9d7 (Update Reversal 3.2.3 live paper test 2026-04-23 14:50 ET)
 
 </details>
 
