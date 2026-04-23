@@ -1,7 +1,7 @@
 # Reversal 3.2.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-23 11:45:04 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-23 11:50:01 EDT`
+Last processed slot: `manage_1200`
 
 ## Active Configuration
 
@@ -23,56 +23,58 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$140.20`
-- Equity: `$13,023.74`
-- Realized PnL: `$1,973.99`
-- Unrealized PnL: `$1,049.75`
-- Open positions: `2`
+- Cash: `$7,080.20`
+- Equity: `$12,967.90`
+- Realized PnL: `$2,953.99`
+- Unrealized PnL: `$13.91`
+- Open positions: `1`
 
 ## Open Positions
 
 ```text
-ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
-  INTC     option         option INTC260618C00065000       2026-04-22                   1      8     5960.00                 7000.00         7.45           8.75       65.32         67.61         1040.00                  17.45        100.00               34              1.42         70.65           70.75                  73.47               19823.0          361.0               0.01                                       ok
-  ROST      share share_fallback                ROST       2026-04-21                   2     26     5873.79                 5883.54       225.91         226.29      225.91        226.29            9.75                   0.17         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
+ticker asset_type execution_mode instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct                  option_liquidity_status
+  ROST      share share_fallback       ROST       2026-04-21                   2     26     5873.79                  5887.7       225.91         226.45      225.91        226.45           13.91                   0.24         95.24               21              1.02           NaN             NaN                  25.78                  88.0            6.0               0.17 low_open_interest,low_volume,wide_spread
 ```
 
 ## Today's Closed Trades (2026-04-23)
 
-_None_
+```text
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price   pnl  return_pct                  exit_reason
+  INTC     option         option INTC260618C00065000      8          2026-04-22         2026-04-23         7.45       8.675 980.0   16.442953 take_profit_day1_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  SHOP           92.86               14            4.78              4.42        130.07                53.34            True
-  ABNB           90.00               30            1.37              1.39        143.59                37.26            True
-  CDNS           90.00               10            3.66              8.49        327.97                46.12            True
-  BKNG           89.19               37            0.86              1.08        178.94                44.00            True
-  DDOG           88.89               27            2.67              2.47        131.08                58.97            True
-  DXCM           86.67               45            0.73              0.33         63.27                37.31            True
-  TSLA           86.36               22            2.48              6.74        384.62                48.19            True
-  QCOM           86.36               22            1.28              1.21        135.55                21.23            True
-  ASML           85.71               35            0.69              7.02       1440.65                53.38            True
-  SNPS           84.62               13            3.30             11.04        472.53                42.64            True
-  ISRG           83.78               37            0.83              2.80        482.42                37.51            True
-   ADP           83.33               12            2.16              3.05        200.38                26.51            True
+  SHOP           92.86               14            4.84              4.47        130.04                53.34            True
+  NVDA           91.67               36            0.52              0.74        202.18                33.17            True
+  SNPS           90.91               11            3.53             11.79        472.21                42.64            True
+  CDNS           90.00               10            4.00              9.29        327.63                46.12            True
+  ABNB           89.29               28            1.46              1.48        143.55                37.26            True
+  BKNG           88.89               36            1.02              1.28        178.85                44.00            True
+  DDOG           87.50               24            2.88              2.67        131.00                58.97            True
+  TSLA           86.36               22            2.17              5.87        384.99                48.19            True
+  QCOM           86.36               22            1.31              1.25        135.54                21.23            True
+  DXCM           86.05               43            0.90              0.40         63.24                37.31            True
+  ASML           85.71               35            0.72              7.26       1440.55                53.38            True
+  ISRG           83.78               37            0.81              2.75        482.44                37.51            True
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-23T11:40:01.234723-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
-2026-04-23T11:35:01.179247-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
-2026-04-23T11:30:04.126054-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
-2026-04-23T11:25:01.320467-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
-2026-04-23T11:10:05.162914-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
-2026-04-23T11:05:01.126131-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
-2026-04-23T11:00:03.421218-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
-2026-04-23T10:55:01.987617-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
-2026-04-23T10:40:01.289444-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
-2026-04-23T10:35:05.170152-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+                    timestamp_et        slot   event_type                                                                                                                                                                                 detail
+2026-04-23T11:50:01.202591-04:00 manage_1200         exit {"asset_type": "option", "contract_symbol": "INTC260618C00065000", "fill_price": 8.675, "pnl": 980.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 16.44, "ticker": "INTC"}
+2026-04-23T11:40:01.234723-04:00 manage_1130 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-23T11:35:01.179247-04:00 manage_1130 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-23T11:30:04.126054-04:00 manage_1130 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-23T11:25:01.320467-04:00 manage_1130 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-23T11:10:05.162914-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-23T11:05:01.126131-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-23T11:00:03.421218-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-23T10:55:01.987617-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-23T10:40:01.289444-04:00 manage_1030 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423114504)
+![Reversal 3.2.3 Live Equity Overall](../../assets/reversal_3_2_1_live_equity_overall.png?v=20260423115001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423114504)
+![Reversal 3.2.3 Live Equity 1D](../../assets/reversal_3_2_1_live_equity_1d.png?v=20260423115001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423114504)
+![Reversal 3.2.3 Live Equity 1W](../../assets/reversal_3_2_1_live_equity.png?v=20260423115001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423114504)
+![Reversal 3.2.3 Live Equity 1M](../../assets/reversal_3_2_1_live_equity_1m.png?v=20260423115001)
 
 </details>
