@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-24 14:55:06 EDT`
-- Equity: `$13,975.50` | Realized: `$4,045.50` | Unrealized: `$-70.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-24 15:00:04 EDT`
+- Equity: `$14,015.50` | Realized: `$4,045.50` | Unrealized: `$-30.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `entry_1500`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode         instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   TXN     option         option TXN260618C00280000      4      5790.0                  5720.0           14.3           -70.0                  -1.21                   0
+   TXN     option         option TXN260618C00280000      4      5790.0                  5760.0           14.4           -30.0                  -0.52                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260424145506)
+![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260424150004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260424145506)
+![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260424150004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260424145506)
+![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260424150004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260424145506)
+![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260424150004)
 
 </details>
 
