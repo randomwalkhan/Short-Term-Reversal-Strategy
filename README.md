@@ -3,45 +3,45 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-24 01:05:05 EDT`
-- Equity: `$13,133.00` | Realized: `$2,970.50` | Unrealized: `$162.50` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-16 21:57:45 EDT`
+- Equity: `$13,358.91` | Realized: `$3,357.92` | Unrealized: `$112.36` | Open positions: `1`
 - Today closed trades: `0`
-- Current slot: `share_ext_0105`
+- Current slot: `share_ext_2155`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
 ```text
-ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  NVDA     option         option NVDA260618C00200000      5      6162.5                  6325.0          12.65           162.5                   2.64                   1
+ticker asset_type execution_mode instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
+  REGN      share share_fallback       REGN      9     6720.93                  6833.3         759.26          112.36                   1.67                   5
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260424010505)
+![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260423215800)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260424010505)
+![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260423215800)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260424010505)
+![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260423215800)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260424010505)
+![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260423215800)
 
 </details>
 
@@ -293,6 +293,35 @@ Backtest window shown below (`3Y` timing study): `2023-04-23` to `2026-04-23`.
 
 ![Timing Overlay Experiment](assets/reversal_3_3_timing_overlay_experiment.png)
 
+### Stage 6: Target-Recovery Exit Study | 第六阶段：目标恢复价退出研究
+
+After promoting the timing overlay, I tested whether exits should also be tied back to the original reversal thesis. Instead of using only a fixed option-level take-profit, this experiment converts the expected stock recovery target into a modeled option target price using Black-Scholes, `20d` rolling realized volatility, and the 10-year Treasury rate used elsewhere in the project.
+
+在 timing overlay 提升之后，我继续测试退出规则是否也应该回到最初的反转假设上。除了固定的 option-level 止盈之外，这个实验把“股价回补当日跌幅的 70%”转换成一个 Black-Scholes 估算的期权目标价；波动率使用 `20d` rolling realized volatility，无风险利率沿用项目中使用的 10 年期 Treasury rate。
+
+The result is nuanced. A target based on the entry/reference close is useful as a risk-control idea, but it does not clearly dominate the current fixed `+15% / -12%` option exit. A target based on the signal-day low is too close to the entry in this backtest and performs poorly. I therefore keep this as research evidence rather than promoting it into the official live rule for now.
+
+结论比较细：基于买入时 reference close 的目标价，确实有风险控制价值，但并没有明显优于当前固定 `+15% / -12%` 的 option 退出规则；而基于 signal-day low 的目标价在回测中离入场太近，表现较差。因此这一步暂时保留为研究证据，不直接提升为 live 规则。
+
+Backtest window shown below: `2025-04-23` to `2026-04-23`.
+
+下图展示的回测区间：`2025-04-23` 至 `2026-04-23`。
+
+- [target-exit summary](results/reversal_3_3_target_exit_experiment/reversal_3_3_target_exit_summary.csv)
+- [target-exit trades](results/reversal_3_3_target_exit_experiment/reversal_3_3_target_exit_trades.csv)
+- [target-exit equity](results/reversal_3_3_target_exit_experiment/reversal_3_3_target_exit_equity.csv)
+- [target-exit plot](assets/reversal_3_3_target_exit_experiment.png)
+
+| Variant | Return | Max DD | Win Rate | Sharpe | Interpretation |
+|---|---:|---:|---:|---:|---|
+| `fixed_15_12` | `+3056.34%` | `-17.83%` | `70.43%` | `5.39` | Current fixed option exit remains the strongest return-oriented rule |
+| `target_close_stop12` | `+1390.86%` | `-16.87%` | `71.79%` | `4.91` | More thesis-linked, slightly lower drawdown, but lower return and Sharpe |
+| `target_close_symmetric_stop` | `+1308.54%` | `-8.24%` | `50.00%` | `6.53` | Strong risk-control profile, but the effective option stop is very tight and needs further execution testing |
+| `target_low_stop12` | `-10.74%` | `-32.89%` | `75.70%` | `-0.26` | Low-reference target is too close to entry |
+| `target_low_symmetric_stop` | `-11.30%` | `-37.50%` | `75.93%` | `-0.19` | Low-reference target is not viable under this setup |
+
+![Target-Recovery Exit Experiment](assets/reversal_3_3_target_exit_experiment.png)
+
 ## Version History | 历代更新
 
 The project keeps its optimization trail explicit rather than hiding earlier versions. The current path is:
@@ -472,6 +501,7 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 - `backtest_reversal_3_1_calls.py` | Promoted Reversal 3.1 / 3.2 baseline backtest before the timing-overlay upgrade. | Timing-overlay 升级前的 Reversal 3.1 / 3.2 主线基准回测脚本。
 - `backtest_reversal_3_3_calls.py` | Official Reversal 3.3 call backtest with the curated `qqq_plus_leverage_etfs` overlay, the promoted `60d` observation window, the `minimum current drop > 0.5%` filter, and the promoted `5d` timing overlay plus no-trade gate. | Reversal 3.3 的官方 call 回测脚本，使用精选的 `qqq_plus_leverage_etfs` overlay、提升后的 `60d` 观察窗口、`minimum current drop > 0.5%` 过滤，以及正式提升后的 `5d` timing overlay 与 no-trade gate。
 - `backtest_reversal_3_3_timing_overlay_experiment.py` | Research experiment that compares `3d / 5d / 7d / 10d` timing overlays and threshold-based no-trade rules before promotion into the official 3.3 version. | Timing-overlay 研究实验脚本，用于比较 `3d / 5d / 7d / 10d` timing overlay 与阈值型 no-trade 规则，并在正式提升到 3.3 前做完整对比。
+- `backtest_reversal_3_3_target_exit_experiment.py` | Exit-policy experiment that converts the expected stock recovery target into a Black-Scholes option target price and compares it with fixed option-level take-profit / stop loss rules. | 退出规则研究脚本，把预期股价恢复目标转换成 Black-Scholes 估算的期权目标价，并与固定 option-level 止盈 / stop loss 规则对比。
 - `backtest_reversal_3_1_leveraged_etf_experiment.py` | Controlled leveraged-ETF overlay comparison across `TQQQ`, `SOXL`, `UPRO`, and their combinations on top of the official 2.5 setup. | 受控的 leveraged ETF overlay 比较脚本，在官方 2.5 设定之上测试 `TQQQ`、`SOXL`、`UPRO` 及其组合。
 - `backtest_reversal_article_variants.py` | Article-inspired factor comparison across volume, PCA, kappa / s-score, and rolling-window variants. | 论文启发的因子比较脚本，横向测试成交量、PCA、kappa / s-score 和不同滚动窗口。
 - `backtest_reversal_2_5_min_drop_experiment.py` | Minimum-drop threshold comparison that tests `0.0%` through `4.0%` filters on top of the `60d + qqq_only_filtered` setup. | minimum-drop 阈值比较脚本，在 `60d + qqq_only_filtered` 设定上测试 `0.0%` 到 `4.0%` 的过滤门槛。
