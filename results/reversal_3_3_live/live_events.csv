@@ -970,3 +970,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-24T10:20:01.416891-04:00,2026-04-24,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""NVDA260618C00200000"", ""fill_price"": 14.475, ""pnl"": 1075.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 17.44, ""ticker"": ""NVDA""}"
 2026-04-24T10:25:05.335841-04:00,2026-04-24,manage_1030,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-24T10:30:05.226988-04:00,2026-04-24,manage_1030,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-24T10:35:02.034739-04:00,2026-04-24,manage_1030,slot_skipped,"{""reason"": ""already_processed""}"
