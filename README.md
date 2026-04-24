@@ -13,8 +13,8 @@
 ### Current Open Positions
 
 ```text
-ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  NVDA     option         option NVDA260618C00200000      5      6162.5                  6325.0          12.65           162.5                   2.64                   1
+ticker asset_type execution_mode instrument          units cash_spent current_position_value current_price unrealized_pnl unrealized_return_pct business_days_held
+  NVDA     option         option NVDA260618C00200000     5     6162.5                   6325         12.65          162.5                  2.64                  1
 ```
 
 <details open>
