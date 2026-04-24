@@ -1008,3 +1008,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-24T14:50:06.282476-04:00,2026-04-24,entry_1500,entry,"{""allocated_cash"": 5790.0, ""asset_type"": ""option"", ""contract_symbol"": ""TXN260618C00280000"", ""contracts"": 4, ""entry_option_price"": 14.475, ""execution_mode"": ""option"", ""matched_signals"": 21, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 1259.0, ""option_spread_pct"": 3.8, ""option_volume"": 219.0, ""success_rate"": 80.95, ""ticker"": ""TXN"", ""timing_score"": 0.579}"
 2026-04-24T14:55:06.115782-04:00,2026-04-24,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-24T15:00:04.108388-04:00,2026-04-24,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-24T15:05:01.122254-04:00,2026-04-24,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
