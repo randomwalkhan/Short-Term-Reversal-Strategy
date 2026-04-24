@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-24 15:10:01 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-04-24 15:15:05 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$8,255.50`
-- Equity: `$14,035.50`
+- Equity: `$13,905.50`
 - Realized PnL: `$4,045.50`
-- Unrealized PnL: `$-10.00`
+- Unrealized PnL: `$-140.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260618C00280000       2026-04-24                   0      4      5790.0                  5780.0        14.48          14.45      276.91        277.15           -10.0                  -0.17         80.95               21              1.88         37.37            37.2                  66.99                1259.0          219.0               0.04                      ok
+   TXN     option         option TXN260618C00280000       2026-04-24                   0      4      5790.0                  5650.0        14.48          14.12      276.91        277.34          -140.0                  -2.42         80.95               21              1.88         37.37           36.17                  66.99                1259.0          219.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-04-24)
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   TXN           82.61               23            1.80              3.55        280.71                66.99            True
-  FAST           88.00               25            1.25              0.40         45.28                38.70            True
-  MRVL           97.14               35            0.98              1.14        165.07                67.12            True
-   WMT           86.67               15            1.47              1.36        131.45                24.33            True
-  MDLZ           83.33               18            0.94              0.38         57.55                22.00            True
-   CSX           87.50               24            0.83              0.27         46.06                27.21            True
-   APP           84.21               38            0.94              2.98        452.89                77.03            True
-  AAPL           82.61               23            1.16              2.23        272.48                25.85            True
-  MSTR           81.40               43            0.23              0.28        172.35                74.46           False
-  NFLX           95.56               45            0.23              0.15         92.76                46.09           False
-  FANG          100.00               32            0.35              0.47        195.39                34.00           False
-   ADI           83.78               37            0.40              1.14        403.39                40.58           False
+  MRVL           97.30               37            0.74              0.85        165.19                67.12            True
+   WMT           84.62               13            1.57              1.45        131.41                24.33            True
+  FAST           88.00               25            1.31              0.42         45.27                38.70            True
+  MDLZ           83.33               18            0.96              0.39         57.54                22.00            True
+   CSX           87.50               24            0.90              0.29         46.06                27.21            True
+   APP           84.62               39            0.65              2.08        453.28                77.03            True
+  AAPL           82.61               23            1.15              2.20        272.49                25.85            True
+  SBUX           94.12               34            0.70              0.49         99.33                31.25            True
+   TXN           79.17               24            1.73              3.42        280.76                66.99           False
+  MSTR           81.40               43            0.12              0.14        172.41                74.46           False
+  NFLX           95.45               44            0.27              0.18         92.74                46.09           False
+  FANG          100.00               32            0.34              0.47        195.39                34.00           False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424151001)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424151505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424151001)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424151505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424151001)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424151505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424151001)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424151505)
 
 </details>
