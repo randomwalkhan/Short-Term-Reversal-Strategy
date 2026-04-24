@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-24 10:10:06 EDT`
-Last processed slot: `manage_1000`
+Latest checkpoint (ET): `2026-04-24 10:15:07 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$6,808.00`
-- Equity: `$14,158.00`
+- Equity: `$13,933.00`
 - Realized PnL: `$2,970.50`
-- Unrealized PnL: `$1,187.50`
+- Unrealized PnL: `$962.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  NVDA     option         option NVDA260618C00200000       2026-04-23                   1      5      6162.5                  7350.0        12.32           14.7      198.79        202.76          1187.5                  19.27         95.24               21              1.83          41.3           42.55                  33.17              111167.0         4613.0                0.0                      ok
+  NVDA     option         option NVDA260618C00200000       2026-04-23                   1      5      6162.5                  7125.0        12.32          14.25      198.79        202.96           962.5                  15.62         95.24               21              1.83          41.3           40.62                  33.17              111167.0         4613.0                0.0                      ok
 ```
 
 ## Today's Closed Trades (2026-04-24)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   TXN           83.33               12            2.36              4.66        280.23                66.99            True
+   TXN           81.82               11            2.53              4.99        280.09                66.99            True
+   WMT           88.89               18            1.18              1.09        131.56                24.33            True
   PLTR           89.74               39            0.66              0.65        141.29                64.15            True
-  CSCO           84.00               25            0.52              0.33         88.45                28.51            True
-   WMT           90.00               20            1.11              1.03        131.59                24.33            True
-  FAST           90.62               32            0.79              0.25         45.34                38.70            True
-  DDOG           86.21               29            1.77              1.59        127.18                60.38            True
-   CSX           88.00               25            0.69              0.22         46.08                27.21            True
-   APP           84.38               32            1.73              5.51        451.81                77.03            True
-   HON          100.00               12            1.57              2.35        213.33                25.71            True
-  MRVL           96.30               27            1.86              2.16        164.64                67.12            True
-  MSTR           81.40               43            0.20              0.24        172.37                74.46           False
-  CRWD           79.49               39            0.92              2.88        444.15                59.30           False
+  FAST           90.91               33            0.73              0.23         45.35                38.70            True
+  DDOG           89.29               28            1.90              1.70        127.13                60.38            True
+   CSX           86.36               22            0.97              0.32         46.04                27.21            True
+   APP           84.38               32            1.71              5.42        451.85                77.03            True
+  MRVL           96.15               26            1.96              2.28        164.58                67.12            True
+   HON          100.00               12            1.60              2.40        213.31                25.71            True
+  SHOP           95.12               41            0.59              0.51        124.01                58.07            True
+  CSCO           84.62               26            0.43              0.27         88.48                28.51           False
+  CRWD           79.49               39            0.90              2.79        444.19                59.30           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424101006)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424101507)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424101006)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424101507)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424101006)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424101507)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424101006)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424101507)
 
 </details>
