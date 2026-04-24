@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-24 15:35:01 EDT`
+Latest checkpoint (ET): `2026-04-24 15:40:01 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -34,7 +34,7 @@ Last processed slot: `manage_1530`
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260618C00280000       2026-04-24                   0      4      5790.0                  5660.0        14.48          14.15      276.91        275.88          -130.0                  -2.25         80.95               21              1.88         37.37           37.66                  66.99                1259.0          219.0               0.04                      ok
+   TXN     option         option TXN260618C00280000       2026-04-24                   0      4      5790.0                  5660.0        14.48          14.15      276.91        276.64          -130.0                  -2.25         80.95               21              1.88         37.37           37.38                  66.99                1259.0          219.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-04-24)
@@ -48,24 +48,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FAST           81.25               16            1.76              0.56         45.21                38.70            True
-  FANG          100.00               25            0.71              0.97        195.17                34.00            True
-   WMT           83.33               12            1.68              1.55        131.36                24.33            True
-  MRVL           97.22               36            0.91              1.05        165.11                67.12            True
-   ADI           82.14               28            1.00              2.82        402.67                40.58            True
-  MSTR           80.95               42            0.80              0.97        172.06                74.46            True
-   APP           83.33               36            1.07              3.39        452.72                77.03            True
-  AAPL           81.82               22            1.21              2.32        272.43                25.85            True
-  SBUX           94.12               34            0.70              0.49         99.33                31.25            True
-   TXN           78.57               14            2.25              4.45        280.32                66.99           False
-   WDC           97.50               40            0.22              0.63        402.85                71.37           False
-   CSX           76.92               13            1.40              0.45         45.99                27.21           False
+   TXN           84.21               19            1.98              3.91        280.55                66.99            True
+  FAST           82.35               17            1.72              0.55         45.22                38.70            True
+  MRVL           97.14               35            0.94              1.09        165.09                67.12            True
+  FANG          100.00               25            0.72              0.99        195.17                34.00            True
+   CSX           81.25               16            1.31              0.42         46.00                27.21            True
+   WMT           83.33               12            1.73              1.60        131.35                24.33            True
+   ADI           82.14               28            1.09              3.09        402.56                40.58            True
+   APP           82.86               35            1.10              3.49        452.68                77.03            True
+  AAPL           82.61               23            1.18              2.27        272.46                25.85            True
+  SBUX           94.12               34            0.69              0.48         99.33                31.25            True
+   WDC           97.50               40            0.18              0.52        402.90                71.37           False
+  MSTR           80.95               42            0.45              0.54        172.24                74.46           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot     event_type                                                                                                                                                                                                                                                                                                                                                                         detail
+2026-04-24T15:40:01.121969-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-04-24T15:35:01.140975-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-04-24T15:30:01.137261-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-04-24T15:25:01.130783-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-24T14:55:06.115782-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-04-24T14:50:06.282476-04:00  entry_1500          entry {"allocated_cash": 5790.0, "asset_type": "option", "contract_symbol": "TXN260618C00280000", "contracts": 4, "entry_option_price": 14.475, "execution_mode": "option", "matched_signals": 21, "option_liquidity_status": "ok", "option_open_interest": 1259.0, "option_spread_pct": 3.8, "option_volume": 219.0, "success_rate": 80.95, "ticker": "TXN", "timing_score": 0.579}
 2026-04-24T14:50:06.282476-04:00  entry_1500 timing_overlay                                                                                                                                                                                                                                                                   {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-04-24", "training_samples": 5461, "window": 5}
-2026-04-24T14:40:02.156742-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424153501)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424154001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424153501)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424154001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424153501)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424154001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424153501)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424154001)
 
 </details>
