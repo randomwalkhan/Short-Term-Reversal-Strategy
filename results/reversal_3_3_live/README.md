@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-24 14:40:02 EDT`
-Last processed slot: `manage_1430`
+Latest checkpoint (ET): `2026-04-24 14:45:06 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -45,18 +45,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  FANG          100.00               25            0.71              0.97        195.18                34.00            True
-  NFLX           94.87               39            0.58              0.37         92.66                46.09            True
+   TXN           80.95               21            1.85              3.66        280.66                66.99            True
+   CSX           81.25               16            1.19              0.38         46.02                27.21            True
   MRVL           96.97               33            1.00              1.16        165.06                67.12            True
-  FAST           88.00               25            1.32              0.42         45.27                38.70            True
-   CSX           85.71               21            1.03              0.33         46.04                27.21            True
-   WMT           81.82               11            1.93              1.79        131.26                24.33            True
+  FAST           87.50               24            1.36              0.43         45.26                38.70            True
+  NFLX           95.00               40            0.52              0.34         92.68                46.09            True
+   WMT           83.33               12            1.79              1.65        131.32                24.33            True
   MSTR           80.95               42            0.75              0.91        172.08                74.46            True
-  MDLZ           80.95               21            0.81              0.33         57.57                22.00            True
-   APP           83.33               36            1.04              3.30        452.75                77.03            True
-  AAPL           82.61               23            1.17              2.25        272.47                25.85            True
-   TXN           79.17               24            1.62              3.20        280.86                66.99           False
-   ADI           84.62               39            0.33              0.95        403.47                40.58           False
+  FANG          100.00               31            0.52              0.71        195.29                34.00            True
+  MDLZ           82.61               23            0.66              0.27         57.60                22.00            True
+  AAPL           82.61               23            1.15              2.20        272.49                25.85            True
+   APP           83.78               37            1.03              3.28        452.77                77.03            True
+   ADI           83.78               37            0.40              1.13        403.40                40.58           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424144002)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424144506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424144002)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424144506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424144002)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424144506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424144002)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424144506)
 
 </details>
