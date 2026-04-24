@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-24 15:50:04 EDT`
+Latest checkpoint (ET): `2026-04-24 15:55:02 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$8,255.50`
-- Equity: `$13,985.50`
+- Equity: `$13,875.50`
 - Realized PnL: `$4,045.50`
-- Unrealized PnL: `$-60.00`
+- Unrealized PnL: `$-170.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260618C00280000       2026-04-24                   0      4      5790.0                  5730.0        14.48          14.32      276.91        276.96           -60.0                  -1.04         80.95               21              1.88         37.37            36.9                  66.99                1259.0          219.0               0.04                      ok
+   TXN     option         option TXN260618C00280000       2026-04-24                   0      4      5790.0                  5620.0        14.48          14.05      276.91        276.83          -170.0                  -2.94         80.95               21              1.88         37.37           36.61                  66.99                1259.0          219.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-04-24)
@@ -48,34 +48,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   TXN           80.95               21            1.87              3.69        280.65                66.99            True
-  MRVL           96.88               32            1.14              1.32        165.00                67.12            True
-  FANG          100.00               28            0.60              0.83        195.24                34.00            True
-  FAST           85.71               21            1.58              0.50         45.23                38.70            True
-   WMT           83.33               12            1.70              1.57        131.36                24.33            True
-   ADI           80.77               26            1.28              3.60        402.34                40.58            True
-   APP           83.78               37            0.97              3.08        452.85                77.03            True
-  MSTR           80.95               42            0.95              1.15        171.98                74.46            True
-   WDC           97.50               40            0.14              0.40        402.95                71.37           False
-   CSX           70.00               10            1.63              0.53         45.95                27.21           False
-  NFLX           95.35               43            0.37              0.24         92.72                46.09           False
-   STX           95.24               42            0.08              0.33        587.48                63.32           False
+   TXN           80.95               21            1.91              3.78        280.61                66.99            True
+  FAST           82.35               17            1.72              0.55         45.22                38.70            True
+  MRVL           96.97               33            1.00              1.15        165.07                67.12            True
+   WMT           84.62               13            1.56              1.45        131.41                24.33            True
+  MSTR           80.95               42            0.66              0.80        172.13                74.46            True
+   ADI           82.14               28            1.06              3.00        402.60                40.58            True
+  SBUX           93.55               31            0.86              0.60         99.28                31.25            True
+   APP           82.86               35            1.18              3.74        452.57                77.03            True
+  NFLX           95.12               41            0.45              0.29         92.70                46.09           False
+   CSX           70.00               10            1.70              0.55         45.94                27.21           False
+  FANG          100.00               31            0.48              0.66        195.31                34.00           False
+  DASH           84.09               44            0.20              0.25        176.89                52.24           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot     event_type                                                                                                                                                                                                                                                                                                                                                                         detail
-2026-04-24T15:40:01.121969-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-04-24T15:35:01.140975-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-04-24T15:30:01.137261-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-04-24T15:25:01.130783-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-04-24T15:10:01.134952-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-04-24T15:05:01.122254-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-04-24T15:00:04.108388-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-04-24T14:55:06.115782-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-04-24T14:50:06.282476-04:00  entry_1500          entry {"allocated_cash": 5790.0, "asset_type": "option", "contract_symbol": "TXN260618C00280000", "contracts": 4, "entry_option_price": 14.475, "execution_mode": "option", "matched_signals": 21, "option_liquidity_status": "ok", "option_open_interest": 1259.0, "option_spread_pct": 3.8, "option_volume": 219.0, "success_rate": 80.95, "ticker": "TXN", "timing_score": 0.579}
-2026-04-24T14:50:06.282476-04:00  entry_1500 timing_overlay                                                                                                                                                                                                                                                                   {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-04-24", "training_samples": 5461, "window": 5}
+                    timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                                         detail
+2026-04-24T15:55:02.149717-04:00 manage_1600 slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-04-24T15:40:01.121969-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-04-24T15:35:01.140975-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-04-24T15:30:01.137261-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-04-24T15:25:01.130783-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-04-24T15:10:01.134952-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-04-24T15:05:01.122254-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-04-24T15:00:04.108388-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-04-24T14:55:06.115782-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-04-24T14:50:06.282476-04:00  entry_1500        entry {"allocated_cash": 5790.0, "asset_type": "option", "contract_symbol": "TXN260618C00280000", "contracts": 4, "entry_option_price": 14.475, "execution_mode": "option", "matched_signals": 21, "option_liquidity_status": "ok", "option_open_interest": 1259.0, "option_spread_pct": 3.8, "option_volume": 219.0, "success_rate": 80.95, "ticker": "TXN", "timing_score": 0.579}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424155004)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424155502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424155004)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424155502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424155004)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424155502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424155004)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424155502)
 
 </details>
