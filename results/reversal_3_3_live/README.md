@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-24 23:55:03 EDT`
-Last processed slot: `share_ext_2355`
+Latest checkpoint (ET): `2026-04-25 00:00:02 EDT`
+Last processed slot: `share_ext_0000`
 
 ## Active Configuration
 
@@ -37,12 +37,9 @@ ticker asset_type execution_mode         instrument entry_trade_date  business_d
    TXN     option         option TXN260618C00280000       2026-04-24                   0      4      5790.0                  5700.0        14.48          14.25      276.91        277.27           -90.0                  -1.55         80.95               21              1.88         37.37           36.98                  66.99                1259.0          219.0               0.04                      ok
 ```
 
-## Today's Closed Trades (2026-04-24)
+## Today's Closed Trades (2026-04-25)
 
-```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price    pnl  return_pct                  exit_reason
-  NVDA     option         option NVDA260618C00200000      5          2026-04-23         2026-04-24       12.325      14.475 1075.0   17.444219 take_profit_day1_hit_at_scan
-```
+_None_
 
 ## Current Screener Snapshot
 
@@ -51,17 +48,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-24T16:10:04.142961-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-24T16:05:01.331126-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-24T16:00:02.171187-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-24T15:55:02.149717-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
-2026-04-24T15:40:01.121969-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-24T15:35:01.140975-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-24T15:30:01.137261-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-24T15:25:01.130783-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
-2026-04-24T15:10:01.134952-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-24T15:05:01.122254-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+                    timestamp_et           slot    event_type                                      detail
+2026-04-25T00:00:02.299743-04:00 share_ext_0000 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-04-24T16:10:04.142961-04:00    manage_1600  slot_skipped             {"reason": "already_processed"}
+2026-04-24T16:05:01.331126-04:00    manage_1600  slot_skipped             {"reason": "already_processed"}
+2026-04-24T16:00:02.171187-04:00    manage_1600  slot_skipped             {"reason": "already_processed"}
+2026-04-24T15:55:02.149717-04:00    manage_1600  slot_skipped             {"reason": "already_processed"}
+2026-04-24T15:40:01.121969-04:00    manage_1530  slot_skipped             {"reason": "already_processed"}
+2026-04-24T15:35:01.140975-04:00    manage_1530  slot_skipped             {"reason": "already_processed"}
+2026-04-24T15:30:01.137261-04:00    manage_1530  slot_skipped             {"reason": "already_processed"}
+2026-04-24T15:25:01.130783-04:00    manage_1530  slot_skipped             {"reason": "already_processed"}
+2026-04-24T15:10:01.134952-04:00     entry_1500  slot_skipped             {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -71,27 +68,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260424235503)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260425000002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260424235503)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260425000002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260424235503)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260425000002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260424235503)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260425000002)
 
 </details>

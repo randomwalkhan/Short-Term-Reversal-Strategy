@@ -1018,3 +1018,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-24T16:00:02.171187-04:00,2026-04-24,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-24T16:05:01.331126-04:00,2026-04-24,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-24T16:10:04.142961-04:00,2026-04-24,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-25T00:00:02.299743-04:00,2026-04-25,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
