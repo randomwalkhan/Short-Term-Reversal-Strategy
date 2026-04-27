@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-27 15:40:07 EDT`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-04-27 15:45:07 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$6,573.50`
-- Equity: `$12,813.50`
+- Equity: `$13,021.50`
 - Realized PnL: `$3,125.50`
-- Unrealized PnL: `$-312.00`
+- Unrealized PnL: `$-104.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode           instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
- CMCSA     option         option CMCSA260618C00027500       2026-04-27                   0     52      6552.0                  6240.0         1.26            1.2       27.36         27.36          -312.0                  -4.76         91.67               24              0.55         32.42           31.06                  60.91                 871.0           87.0               0.03                      ok
+ CMCSA     option         option CMCSA260618C00027500       2026-04-27                   0     52      6552.0                  6448.0         1.26           1.24       27.36         27.33          -104.0                  -1.59         91.67               24              0.55         32.42           33.15                  60.91                 871.0           87.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-04-27)
@@ -48,18 +48,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
- CMCSA           91.67               24            0.55              0.11         27.47                60.91            True
+ CMCSA           91.67               24            0.58              0.11         27.47                60.91            True
   NFLX           90.91               33            0.78              0.50         92.14                45.93            True
-  SHOP           93.55               31            1.41              1.24        125.30                57.21            True
-   MAR           84.62               13            1.92              4.93        365.04                31.82            True
-  AVGO           92.00               25            1.50              4.44        420.86                42.01            True
-   WDC           97.22               36            1.28              3.63        402.44                62.15            True
-   WMT           83.33               12            1.75              1.60        129.24                25.05            True
-  AAPL           84.21               19            1.35              2.57        269.96                26.22            True
-  MSTR           82.93               41            0.85              1.01        170.59                71.85            True
-  SOXL           80.00               25            4.76              4.28        126.49               109.31            True
-  KLAC           83.33               18            2.59             35.11       1919.95                47.17            True
-  CSCO           86.36               22            1.08              0.68         88.72                28.51            True
+  COST           86.67               15            1.11              7.84       1007.79                18.94            True
+  SHOP           93.55               31            1.38              1.22        125.31                57.21            True
+   WDC           97.37               38            0.96              2.71        402.84                62.15            True
+  ASML           80.00               25            1.80             18.36       1449.83                51.44            True
+  AVGO           92.31               26            1.43              4.22        420.95                42.01            True
+   WMT           83.33               12            1.78              1.62        129.23                25.05            True
+   MAR           80.00               15            1.74              4.48        365.23                31.82            True
+  SOXL           80.00               25            4.57              4.11        126.56               109.31            True
+  MSTR           82.93               41            0.72              0.86        170.65                71.85            True
+  KLAC           84.21               19            2.38             32.27       1921.17                47.17            True
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427154007)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427154507)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427154007)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427154507)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427154007)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427154507)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427154007)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427154507)
 
 </details>
