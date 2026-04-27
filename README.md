@@ -3,10 +3,10 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-25 02:55:07 EDT`
-- Equity: `$13,955.50` | Realized: `$4,045.50` | Unrealized: `$-90.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-27 02:42:00 EDT`
+- Equity: `$13,815.50` | Realized: `$4,045.50` | Unrealized: `$-230.00` | Open positions: `1`
 - Today closed trades: `0`
-- Current slot: `share_ext_0255`
+- Current slot: `share_ext_0240`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode         instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   TXN     option         option TXN260618C00280000      4      5790.0                  5700.0          14.25           -90.0                  -1.55                   0
+   TXN     option         option TXN260618C00280000      4      5790.0                  5560.0           13.9          -230.0                  -3.97                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260425025507)
+![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260427024200)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260425025507)
+![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260427024200)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260425025507)
+![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260427024200)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260425025507)
+![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260427024200)
 
 </details>
 
