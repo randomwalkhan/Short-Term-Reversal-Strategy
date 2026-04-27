@@ -1065,3 +1065,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-27T10:05:01.450003-04:00,2026-04-27,manage_1000,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-27T10:10:05.431763-04:00,2026-04-27,manage_1000,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-27T10:20:02.444364-04:00,2026-04-27,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""TXN260618C00280000"", ""fill_price"": 12.175, ""pnl"": -920.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -15.89, ""ticker"": ""TXN""}"
+2026-04-27T10:25:04.454229-04:00,2026-04-27,manage_1030,slot_skipped,"{""reason"": ""already_processed""}"
