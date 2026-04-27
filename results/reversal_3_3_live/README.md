@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-27 14:45:04 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-27 14:50:04 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -24,15 +24,18 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$13,125.50`
+- Cash: `$6,573.50`
 - Equity: `$13,125.50`
 - Realized PnL: `$3,125.50`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode           instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
+ CMCSA     option         option CMCSA260618C00027500       2026-04-27                   0     52      6552.0                  6552.0         1.26           1.26       27.36         27.35             0.0                    0.0         91.67               24              0.55         32.42           32.42                  60.91                 871.0           87.0               0.03                      ok
+```
 
 ## Today's Closed Trades (2026-04-27)
 
@@ -45,34 +48,34 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
- CMCSA           94.44               18            0.76              0.15         27.45                60.91            True
-  NFLX           92.11               38            0.61              0.39         92.19                45.93            True
-   WDC           97.37               38            0.94              2.65        402.87                62.15            True
-  SHOP           93.55               31            1.56              1.37        125.24                57.21            True
-   WMT           83.33               12            1.80              1.64        129.22                25.05            True
-  AVGO           91.67               24            1.74              5.14        420.56                42.01            True
-  CSCO           81.25               16            1.39              0.86         88.64                28.51            True
-   MAR           83.33               12            2.22              5.70        364.70                31.82            True
-  GILD           90.00               10            1.85              1.69        129.68                21.39            True
-   TXN           71.43                7            2.98              5.79        274.69                67.06           False
-  PLTR           90.24               41            0.15              0.15        143.02                62.14           False
-   KDP           66.67                6            1.88              0.38         29.06                32.43           False
+ CMCSA           91.67               24            0.55              0.11         27.47                60.91            True
+  NFLX           91.89               37            0.63              0.41         92.18                45.93            True
+   KDP           83.33               12            1.76              0.36         29.07                32.43            True
+   WDC           97.44               39            0.81              2.29        403.02                62.15            True
+  SHOP           93.55               31            1.44              1.27        125.29                57.21            True
+   WMT           83.33               12            1.77              1.61        129.23                25.05            True
+   MAR           83.33               12            2.07              5.31        364.87                31.82            True
+  CSCO           81.25               16            1.31              0.82         88.66                28.51            True
+  AVGO           91.67               24            1.72              5.10        420.57                42.01            True
+  GILD           90.00               10            1.74              1.59        129.72                21.39            True
+   TXN           71.43                7            2.93              5.68        274.74                67.06           False
+  PLTR           90.24               41            0.09              0.09        143.05                62.14           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-04-27T14:40:03.828346-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-27T14:35:06.501400-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-27T14:30:04.508052-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-27T14:25:02.476196-04:00 manage_1430 slot_skipped {"reason": "already_processed"}
-2026-04-27T14:10:01.492312-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-27T14:05:03.452029-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-27T14:00:05.386547-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-27T13:55:01.507336-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-04-27T13:40:01.413909-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-04-27T13:35:05.278374-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
+                    timestamp_et        slot     event_type                                                                                                                                                                                                                                                                                                                                                                           detail
+2026-04-27T14:50:04.672861-04:00  entry_1500          entry {"allocated_cash": 6552.0, "asset_type": "option", "contract_symbol": "CMCSA260618C00027500", "contracts": 52, "entry_option_price": 1.26, "execution_mode": "option", "matched_signals": 24, "option_liquidity_status": "ok", "option_open_interest": 871.0, "option_spread_pct": 3.17, "option_volume": 87.0, "success_rate": 91.67, "ticker": "CMCSA", "timing_score": 0.589}
+2026-04-27T14:50:04.672861-04:00  entry_1500 timing_overlay                                                                                                                                                                                                                                                                     {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-04-27", "training_samples": 5471, "window": 5}
+2026-04-27T14:40:03.828346-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T14:35:06.501400-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T14:30:04.508052-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T14:25:02.476196-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T14:10:01.492312-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T14:05:03.452029-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T14:00:05.386547-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T13:55:01.507336-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427144504)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427145004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427144504)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427145004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427144504)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427145004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427144504)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427145004)
 
 </details>
