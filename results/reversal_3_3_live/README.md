@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-27 09:40:04 EDT`
-Last processed slot: `manage_0930`
+Latest checkpoint (ET): `2026-04-27 09:45:02 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -34,7 +34,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260618C00280000       2026-04-24                   1      4      5790.0                  5560.0        14.48           13.9      276.91        272.49          -230.0                  -3.97         80.95               21              1.88         37.37            1.56                  66.99                1259.0          219.0               0.04                      ok
+   TXN     option         option TXN260618C00280000       2026-04-24                   1      4      5790.0                  5560.0        14.48           13.9      276.91         272.6          -230.0                  -3.97         80.95               21              1.88         37.37            1.56                  66.99                1259.0          219.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-04-27)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  SOXL           82.14               28            3.36              3.01        127.02               109.31            True
-  ASML           84.38               32            0.89              9.04       1453.83                51.44            True
-   KDP           83.33               12            1.75              0.36         29.07                32.43            True
-  TEAM           80.00               45            0.83              0.42         71.37                79.96            True
-  CSCO           84.00               25            0.56              0.35         88.86                28.51            True
-  KLAC           85.71               28            1.53             20.76       1926.10                47.17            True
-  AVGO           91.67               36            0.57              1.68        422.04                42.01            True
-   ADI           82.35               34            0.66              1.84        398.78                38.91            True
-  AAPL           82.35               17            1.47              2.79        269.86                26.22            True
-  AMAT           81.48               27            1.68              4.89        415.01                44.46            True
-  SNPS           86.67               30            1.47              5.17        498.60                54.04            True
-  TSLA           87.50               24            1.97              5.20        374.07                48.15            True
+  CHTR           90.62               32            1.25              1.58        179.45               113.10            True
+   WDC           97.44               39            0.82              2.31        403.01                62.15            True
+   KDP           81.25               16            1.32              0.27         29.10                32.43            True
+  ASML           80.77               26            1.57             16.06       1450.82                51.44            True
+   ADI           80.77               26            1.36              3.79        397.94                38.91            True
+  AAPL           84.21               19            1.35              2.57        269.96                26.22            True
+  KLAC           84.21               19            2.53             34.30       1920.30                47.17            True
+   TXN           79.17               24            1.65              3.20        275.80                67.06           False
+  TEAM           82.00               50            0.11              0.06         71.53                79.96           False
+  UPRO           92.50               40            0.44              0.39        126.82                48.54           False
+  SHOP           95.56               45            0.05              0.04        125.81                57.21           False
+  NFLX           93.33               45            0.17              0.11         92.31                45.93           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427094004)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427094502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427094004)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427094502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427094004)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427094502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427094004)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427094502)
 
 </details>
