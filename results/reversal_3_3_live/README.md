@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-27 16:00:09 EDT`
+Latest checkpoint (ET): `2026-04-27 16:05:09 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$6,573.50`
-- Equity: `$12,917.50`
+- Equity: `$12,865.50`
 - Realized PnL: `$3,125.50`
-- Unrealized PnL: `$-208.00`
+- Unrealized PnL: `$-260.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode           instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
- CMCSA     option         option CMCSA260618C00027500       2026-04-27                   0     52      6552.0                  6344.0         1.26           1.22       27.36         27.46          -208.0                  -3.17         91.67               24              0.55         32.42           30.23                  60.91                 871.0           87.0               0.03                      ok
+ CMCSA     option         option CMCSA260618C00027500       2026-04-27                   0     52      6552.0                  6292.0         1.26           1.21       27.36         27.45          -260.0                  -3.97         91.67               24              0.55         32.42           29.54                  60.91                 871.0           87.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-04-27)
@@ -46,26 +46,13 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  NFLX           92.00               25            1.07              0.69         92.06                45.93            True
-  SOXL           82.14               28            3.95              3.55        126.80               109.31            True
-  COST           81.82               11            1.30              9.18       1007.22                18.94            True
-    ZS           80.56               36            1.03              0.97        135.08                69.32            True
-   WDC           97.44               39            0.81              2.29        403.02                62.15            True
-  ASML           80.00               25            1.71             17.46       1450.22                51.44            True
-  SHOP           94.12               34            1.27              1.12        125.35                57.21            True
-   WMT           83.33               12            1.79              1.63        129.22                25.05            True
-   MAR           80.00               15            1.78              4.56        365.19                31.82            True
-  CSCO           86.96               23            0.83              0.52         88.79                28.51            True
-  AAPL           85.00               20            1.25              2.38        270.04                26.22            True
-  KLAC           84.62               26            1.81             24.50       1924.50                47.17            True
-```
+_None_
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-04-27T16:05:09.393931-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-27T16:00:09.657283-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-27T15:55:07.763445-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-04-27T15:40:07.694980-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
@@ -75,7 +62,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-27T15:10:04.191055-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 2026-04-27T15:05:07.808930-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 2026-04-27T15:00:08.586913-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-04-27T14:55:05.183836-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427160009)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427160509)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427160009)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427160509)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427160009)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427160509)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427160009)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427160509)
 
 </details>
