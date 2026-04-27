@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-27 15:00:08 EDT`
+Latest checkpoint (ET): `2026-04-27 15:05:07 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$6,573.50`
-- Equity: `$12,995.50`
+- Equity: `$12,787.50`
 - Realized PnL: `$3,125.50`
-- Unrealized PnL: `$-130.00`
+- Unrealized PnL: `$-338.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode           instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
- CMCSA     option         option CMCSA260618C00027500       2026-04-27                   0     52      6552.0                  6422.0         1.26           1.23       27.36         27.34          -130.0                  -1.98         91.67               24              0.55         32.42           32.08                  60.91                 871.0           87.0               0.03                      ok
+ CMCSA     option         option CMCSA260618C00027500       2026-04-27                   0     52      6552.0                  6214.0         1.26           1.19       27.36         27.38          -338.0                  -5.16         91.67               24              0.55         32.42           30.52                  60.91                 871.0           87.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-04-27)
@@ -48,24 +48,25 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
- CMCSA           91.67               24            0.55              0.11         27.47                60.91            True
-  NFLX           90.62               32            0.86              0.55         92.12                45.93            True
-   WDC           97.44               39            0.54              1.53        403.34                62.15            True
-   MAR           83.33               12            2.01              5.16        364.94                31.82            True
-   WMT           83.33               12            1.74              1.59        129.24                25.05            True
-  SHOP           93.55               31            1.53              1.34        125.25                57.21            True
-  AVGO           91.67               24            1.67              4.95        420.64                42.01            True
-  CSCO           81.25               16            1.31              0.82         88.66                28.51            True
-  AAPL           80.00               15            1.67              3.17        269.70                26.22            True
-   TXN           77.78                9            2.81              5.45        274.83                67.06           False
-  CHTR           80.00                5            3.71              4.68        178.13               113.10           False
-  PLTR           90.24               41            0.16              0.16        143.02                62.14           False
+  NFLX           89.29               28            0.98              0.63         92.08                45.93            True
+   WDC           97.44               39            0.58              1.64        403.30                62.15            True
+  MSTR           82.93               41            0.55              0.66        170.74                71.85            True
+  SHOP           93.10               29            1.72              1.52        125.18                57.21            True
+   WMT           83.33               12            1.79              1.62        129.22                25.05            True
+  AVGO           91.67               24            1.66              4.90        420.66                42.01            True
+  CSCO           81.25               16            1.29              0.80         88.67                28.51            True
+   MAR           82.35               17            1.68              4.32        365.30                31.82            True
+   TXN           75.00                8            2.86              5.55        274.79                67.06           False
+ CMCSA           92.59               27            0.45              0.09         27.48                60.91           False
+   KDP          100.00                3            2.31              0.47         29.02                32.43           False
+  CHTR           80.00                5            3.80              4.79        178.08               113.10           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot     event_type                                                                                                                                                                                                                                                                                                                                                                           detail
+2026-04-27T15:05:07.808930-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 2026-04-27T15:00:08.586913-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 2026-04-27T14:55:05.183836-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 2026-04-27T14:50:04.672861-04:00  entry_1500          entry {"allocated_cash": 6552.0, "asset_type": "option", "contract_symbol": "CMCSA260618C00027500", "contracts": 52, "entry_option_price": 1.26, "execution_mode": "option", "matched_signals": 24, "option_liquidity_status": "ok", "option_open_interest": 871.0, "option_spread_pct": 3.17, "option_volume": 87.0, "success_rate": 91.67, "ticker": "CMCSA", "timing_score": 0.589}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-27T14:30:04.508052-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 2026-04-27T14:25:02.476196-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 2026-04-27T14:10:01.492312-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
-2026-04-27T14:05:03.452029-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427150008)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427150507)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427150008)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427150507)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427150008)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427150507)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427150008)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427150507)
 
 </details>

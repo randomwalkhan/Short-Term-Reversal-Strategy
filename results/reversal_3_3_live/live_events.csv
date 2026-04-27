@@ -1105,3 +1105,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-27T14:50:04.672861-04:00,2026-04-27,entry_1500,entry,"{""allocated_cash"": 6552.0, ""asset_type"": ""option"", ""contract_symbol"": ""CMCSA260618C00027500"", ""contracts"": 52, ""entry_option_price"": 1.26, ""execution_mode"": ""option"", ""matched_signals"": 24, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 871.0, ""option_spread_pct"": 3.17, ""option_volume"": 87.0, ""success_rate"": 91.67, ""ticker"": ""CMCSA"", ""timing_score"": 0.589}"
 2026-04-27T14:55:05.183836-04:00,2026-04-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-27T15:00:08.586913-04:00,2026-04-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-27T15:05:07.808930-04:00,2026-04-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
