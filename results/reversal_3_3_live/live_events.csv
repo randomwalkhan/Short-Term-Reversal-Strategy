@@ -1107,3 +1107,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-27T15:00:08.586913-04:00,2026-04-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-27T15:05:07.808930-04:00,2026-04-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-27T15:10:04.191055-04:00,2026-04-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-27T15:25:07.581352-04:00,2026-04-27,manage_1530,slot_skipped,"{""reason"": ""already_processed""}"
