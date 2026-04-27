@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-27 10:15:02 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-27 10:20:02 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -24,55 +24,55 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$8,255.50`
+- Cash: `$13,125.50`
 - Equity: `$13,125.50`
-- Realized PnL: `$4,045.50`
-- Unrealized PnL: `$-920.00`
-- Open positions: `1`
+- Realized PnL: `$3,125.50`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260618C00280000       2026-04-24                   1      4      5790.0                  4870.0        14.48          12.18      276.91        270.26          -920.0                 -15.89         80.95               21              1.88         37.37           43.12                  66.99                1259.0          219.0               0.04                      ok
-```
+_None_
 
 ## Today's Closed Trades (2026-04-27)
 
-_None_
+```text
+ticker asset_type execution_mode         instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price    pnl  return_pct           exit_reason
+   TXN     option         option TXN260618C00280000      4          2026-04-24         2026-04-27       14.475      12.175 -920.0  -15.889465 stop_loss_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   TXN           81.82               11            2.49              4.84        275.10                67.06            True
-  CHTR           91.89               37            0.92              1.16        179.63               113.10            True
-  TEAM           80.43               46            0.75              0.38         71.39                79.96            True
-   KDP           81.25               16            1.54              0.31         29.09                32.43            True
-  SHOP           95.24               42            0.54              0.48        125.63                57.21            True
-  KLAC           85.00               20            2.23             30.27       1922.03                47.17            True
-  AAPL           84.21               19            1.35              2.57        269.96                26.22            True
-   HON          100.00               21            1.09              1.62        212.47                25.73            True
-   MAR           88.89               27            1.05              2.70        365.99                31.82            True
-   WMT           88.89               27            0.87              0.79        129.58                25.05            True
- CMCSA           94.29               35            0.00              0.00         27.51                60.91           False
-  UPRO           92.50               40            0.20              0.18        126.91                48.54           False
+  CHTR           91.89               37            0.84              1.06        179.68               113.10            True
+   KDP           85.71               14            1.64              0.34         29.08                32.43            True
+   WMT           86.96               23            0.97              0.88        129.54                25.05            True
+  KLAC           85.00               20            2.27             30.76       1921.82                47.17            True
+  AAPL           85.00               20            1.28              2.43        270.02                26.22            True
+   HON          100.00               21            1.09              1.62        212.46                25.73            True
+   MAR           88.89               27            1.07              2.74        365.97                31.82            True
+   TXN           77.78                9            2.77              5.37        274.87                67.06           False
+ CMCSA           93.33               30            0.18              0.03         27.50                60.91           False
+  UPRO           92.50               40            0.22              0.20        126.91                48.54           False
+   ADI           71.43               14            2.12              5.93        397.03                38.91           False
+  SHOP           95.45               44            0.41              0.36        125.68                57.21           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et           slot   event_type                          detail
-2026-04-27T10:10:05.431763-04:00    manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-27T10:05:01.450003-04:00    manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-27T10:00:06.086949-04:00    manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-27T09:55:04.282451-04:00    manage_1000 slot_skipped {"reason": "already_processed"}
-2026-04-27T09:40:04.365918-04:00    manage_0930 slot_skipped {"reason": "already_processed"}
-2026-04-27T09:35:01.383848-04:00    manage_0930 slot_skipped {"reason": "already_processed"}
-2026-04-27T09:30:01.445280-04:00    manage_0930 slot_skipped {"reason": "already_processed"}
-2026-04-27T09:25:03.410352-04:00    manage_0930 slot_skipped {"reason": "already_processed"}
-2026-04-27T02:43:32.046615-04:00 share_ext_0240 slot_skipped {"reason": "already_processed"}
-2026-04-27T02:42:00.592151-04:00   data_refresh data_refresh                   {'saved': 99}
+                    timestamp_et           slot   event_type                                                                                                                                                                           detail
+2026-04-27T10:20:02.444364-04:00    manage_1030         exit {"asset_type": "option", "contract_symbol": "TXN260618C00280000", "fill_price": 12.175, "pnl": -920.0, "reason": "stop_loss_hit_at_scan", "return_pct": -15.89, "ticker": "TXN"}
+2026-04-27T10:10:05.431763-04:00    manage_1000 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T10:05:01.450003-04:00    manage_1000 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T10:00:06.086949-04:00    manage_1000 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T09:55:04.282451-04:00    manage_1000 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T09:40:04.365918-04:00    manage_0930 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T09:35:01.383848-04:00    manage_0930 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T09:30:01.445280-04:00    manage_0930 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T09:25:03.410352-04:00    manage_0930 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-04-27T02:43:32.046615-04:00 share_ext_0240 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427101502)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427102002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427101502)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427102002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427101502)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427102002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427101502)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427102002)
 
 </details>
