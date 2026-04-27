@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-27 10:10:05 EDT`
-Last processed slot: `manage_1000`
+Latest checkpoint (ET): `2026-04-27 10:15:02 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$8,255.50`
-- Equity: `$13,395.50`
+- Equity: `$13,125.50`
 - Realized PnL: `$4,045.50`
-- Unrealized PnL: `$-650.00`
+- Unrealized PnL: `$-920.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260618C00280000       2026-04-24                   1      4      5790.0                  5140.0        14.48          12.85      276.91        270.41          -650.0                 -11.23         80.95               21              1.88         37.37           43.87                  66.99                1259.0          219.0               0.04                      ok
+   TXN     option         option TXN260618C00280000       2026-04-24                   1      4      5790.0                  4870.0        14.48          12.18      276.91        270.26          -920.0                 -15.89         80.95               21              1.88         37.37           43.12                  66.99                1259.0          219.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-04-27)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   TXN           81.82               11            2.44              4.73        275.14                67.06            True
-   KDP           81.25               16            1.39              0.28         29.10                32.43            True
-  TEAM           80.00               45            0.83              0.42         71.37                79.96            True
-  AVGO           93.33               30            1.12              3.32        421.34                42.01            True
-  KLAC           85.71               21            2.15             29.12       1922.52                47.17            True
-  AAPL           85.00               20            1.30              2.46        270.00                26.22            True
-  SHOP           95.12               41            0.90              0.79        125.49                57.21            True
-  CHTR           92.86               42            0.45              0.57        179.89               113.10           False
-  UPRO           92.50               40            0.21              0.19        126.91                48.54           False
-  NFLX           93.02               43            0.31              0.20         92.27                45.93           False
-  MSTR           82.93               41            0.49              0.58        170.77                71.85           False
-   ADI           71.43               14            2.10              5.88        397.05                38.91           False
+   TXN           81.82               11            2.49              4.84        275.10                67.06            True
+  CHTR           91.89               37            0.92              1.16        179.63               113.10            True
+  TEAM           80.43               46            0.75              0.38         71.39                79.96            True
+   KDP           81.25               16            1.54              0.31         29.09                32.43            True
+  SHOP           95.24               42            0.54              0.48        125.63                57.21            True
+  KLAC           85.00               20            2.23             30.27       1922.03                47.17            True
+  AAPL           84.21               19            1.35              2.57        269.96                26.22            True
+   HON          100.00               21            1.09              1.62        212.47                25.73            True
+   MAR           88.89               27            1.05              2.70        365.99                31.82            True
+   WMT           88.89               27            0.87              0.79        129.58                25.05            True
+ CMCSA           94.29               35            0.00              0.00         27.51                60.91           False
+  UPRO           92.50               40            0.20              0.18        126.91                48.54           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427101005)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260427101502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427101005)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260427101502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427101005)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260427101502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427101005)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260427101502)
 
 </details>
