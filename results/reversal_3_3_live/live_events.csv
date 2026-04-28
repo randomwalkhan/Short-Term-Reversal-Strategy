@@ -1127,3 +1127,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-28T14:30:08.993297-04:00,2026-04-28,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-28T14:35:08.077135-04:00,2026-04-28,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-28T14:40:01.317981-04:00,2026-04-28,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-28T14:50:07.517584-04:00,2026-04-28,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-04-28"", ""training_samples"": 5496, ""window"": 5}"
+2026-04-28T14:50:07.517584-04:00,2026-04-28,entry_1500,entry,"{""allocated_cash"": 7075.0, ""asset_type"": ""option"", ""contract_symbol"": ""INTC260529C00084000"", ""contracts"": 10, ""entry_option_price"": 7.075, ""execution_mode"": ""option"", ""matched_signals"": 38, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 369.0, ""option_spread_pct"": 4.95, ""option_volume"": 78.0, ""success_rate"": 100.0, ""ticker"": ""INTC"", ""timing_score"": 0.645}"
