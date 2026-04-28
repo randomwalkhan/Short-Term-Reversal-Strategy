@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-28 15:45:04 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-28 15:50:07 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$7,922.50`
-- Equity: `$14,572.50`
+- Equity: `$14,522.50`
 - Realized PnL: `$4,997.50`
-- Unrealized PnL: `$-425.00`
+- Unrealized PnL: `$-475.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260529C00084000       2026-04-28                   0     10      7075.0                  6650.0         7.08           6.65       84.22         83.79          -425.0                  -6.01         100.0               38              0.91         70.58           68.26                  91.28                 369.0           78.0               0.05                      ok
+  INTC     option         option INTC260529C00084000       2026-04-28                   0     10      7075.0                  6600.0         7.08            6.6       84.22          84.1          -475.0                  -6.71         100.0               38              0.91         70.58           65.97                  91.28                 369.0           78.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-04-28)
@@ -48,18 +48,18 @@ ticker asset_type execution_mode           instrument  units entry_trade_date_et
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               34            1.40              0.83         84.63                91.28            True
-  CHTR           91.67               36            0.74              0.91        174.22               113.25            True
-  FAST           86.36               22            1.47              0.47         45.08                39.39            True
-  PLTR           89.19               37            1.12              1.12        142.62                61.16            True
-  UPRO           92.86               28            1.46              1.30        127.03                41.61            True
-  SNPS           94.12               17            2.61              9.09        494.64                48.57            True
-  SHOP           93.55               31            1.39              1.21        123.71                56.03            True
-   TXN           79.17               24            1.63              3.07        268.18                67.99           False
-   ADI           69.23               13            2.16              5.94        390.04                38.73           False
-  TSLA           86.84               38            0.48              1.28        378.01                46.97           False
-   CSX           90.91               33            0.47              0.15         45.40                28.49           False
-  PANW           83.72               43            0.40              0.51        182.68                50.54           False
+  INTC          100.00               34            1.21              0.72         84.68                91.28            True
+  CHTR           92.11               38            0.73              0.89        174.23               113.25            True
+  FAST           88.00               25            1.28              0.41         45.11                39.39            True
+  PLTR           89.19               37            1.07              1.07        142.64                61.16            True
+  SNPS           94.12               17            2.59              9.03        494.67                48.57            True
+  UPRO           90.00               30            1.35              1.20        127.07                41.61            True
+  SHOP           93.55               31            1.49              1.29        123.68                56.03            True
+  TSLA           86.49               37            0.57              1.51        377.91                46.97            True
+  PANW           82.93               41            0.55              0.70        182.60                50.54            True
+   TXN           79.17               24            1.68              3.17        268.14                67.99           False
+   ADI           60.00               10            2.36              6.48        389.81                38.73           False
+  META           76.67               30            1.13              5.38        676.31                37.38           False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260428154504)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260428155007)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260428154504)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260428155007)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260428154504)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260428155007)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260428154504)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260428155007)
 
 </details>
