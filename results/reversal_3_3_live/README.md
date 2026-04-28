@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-28 14:50:07 EDT`
+Latest checkpoint (ET): `2026-04-28 14:55:08 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$7,922.50`
-- Equity: `$14,997.50`
+- Equity: `$14,972.50`
 - Realized PnL: `$4,997.50`
-- Unrealized PnL: `$0.00`
+- Unrealized PnL: `$-25.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260529C00084000       2026-04-28                   0     10      7075.0                  7075.0         7.08           7.08       84.22         84.15             0.0                    0.0         100.0               38              0.91         70.58           70.58                  91.28                 369.0           78.0               0.05                      ok
+  INTC     option         option INTC260529C00084000       2026-04-28                   0     10      7075.0                  7050.0         7.08           7.05       84.22         84.04           -25.0                  -0.35         100.0               38              0.91         70.58           70.97                  91.28                 369.0           78.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-04-28)
@@ -48,24 +48,25 @@ ticker asset_type execution_mode           instrument  units entry_trade_date_et
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               38            0.91              0.54         84.76                91.28            True
-  CHTR           92.50               40            0.57              0.70        174.31               113.25            True
-   TXN           82.76               29            1.21              2.28        268.52                67.99            True
-  FAST           84.21               19            1.63              0.52         45.06                39.39            True
-  PLTR           89.19               37            1.06              1.06        142.65                61.16            True
-  UPRO           92.59               27            1.63              1.46        126.97                41.61            True
-  SHOP           94.29               35            1.22              1.06        123.77                56.03            True
-  SNPS           93.75               16            2.90             10.10        494.21                48.57            True
-  ROST           96.55               29            0.56              0.88        225.79                25.23            True
-  ISRG           90.48               21            1.43              4.71        468.97                36.51            True
-  TSLA           87.80               41            0.12              0.31        378.42                46.97           False
-  META           77.42               31            1.00              4.77        676.57                37.38           False
+  INTC          100.00               35            1.08              0.64         84.71                91.28            True
+   TXN           83.33               30            1.20              2.26        268.53                67.99            True
+  FAST           85.71               21            1.55              0.49         45.07                39.39            True
+  PLTR           89.19               37            1.03              1.04        142.66                61.16            True
+  UPRO           92.59               27            1.65              1.47        126.96                41.61            True
+  SHOP           94.44               36            1.15              1.00        123.80                56.03            True
+  SNPS           93.75               16            2.95             10.30        494.13                48.57            True
+  ROST           96.55               29            0.57              0.91        225.78                25.23            True
+  CHTR           92.68               41            0.47              0.57        174.36               113.25           False
+  TSLA           87.50               40            0.19              0.50        378.34                46.97           False
+   ADI           75.00               16            1.89              5.19        390.36                38.73           False
+  META           77.42               31            0.99              4.71        676.60                37.38           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot     event_type                                                                                                                                                                                                                                                                                                                                                                          detail
+2026-04-28T14:55:08.310355-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                 {"reason": "already_processed"}
 2026-04-28T14:50:07.517584-04:00  entry_1500          entry {"allocated_cash": 7075.0, "asset_type": "option", "contract_symbol": "INTC260529C00084000", "contracts": 10, "entry_option_price": 7.075, "execution_mode": "option", "matched_signals": 38, "option_liquidity_status": "ok", "option_open_interest": 369.0, "option_spread_pct": 4.95, "option_volume": 78.0, "success_rate": 100.0, "ticker": "INTC", "timing_score": 0.645}
 2026-04-28T14:50:07.517584-04:00  entry_1500 timing_overlay                                                                                                                                                                                                                                                                    {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-04-28", "training_samples": 5496, "window": 5}
 2026-04-28T14:40:01.317981-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                 {"reason": "already_processed"}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-28T14:10:08.581603-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                 {"reason": "already_processed"}
 2026-04-28T14:05:09.281623-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                 {"reason": "already_processed"}
 2026-04-28T14:00:07.167861-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                 {"reason": "already_processed"}
-2026-04-28T13:58:32.846901-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                 {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260428145007)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260428145508)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260428145007)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260428145508)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260428145007)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260428145508)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260428145007)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260428145508)
 
 </details>
