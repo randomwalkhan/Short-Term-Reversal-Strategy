@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-28 14:35:08 EDT`
+Latest checkpoint (ET): `2026-04-28 14:40:01 EDT`
 Last processed slot: `manage_1430`
 
 ## Active Configuration
@@ -45,24 +45,25 @@ ticker asset_type execution_mode           instrument  units entry_trade_date_et
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               39            0.67              0.40         84.82                91.28            True
-  FAST           83.33               18            1.65              0.52         45.06                39.39            True
+  INTC          100.00               39            0.77              0.46         84.79                91.28            True
+   TXN           80.77               26            1.46              2.76        268.32                67.99            True
   PLTR           89.19               37            1.03              1.03        142.66                61.16            True
-  UPRO           92.31               26            1.79              1.60        126.90                41.61            True
-  SHOP           94.12               34            1.29              1.12        123.75                56.03            True
-  SNPS           93.75               16            2.85              9.96        494.27                48.57            True
-  COST           85.71               14            1.11              7.75        994.69                19.60            True
-  ISRG           90.48               21            1.47              4.85        468.91                36.51            True
-  CHTR           92.86               42            0.34              0.41        174.43               113.25           False
-   TXN           79.17               24            1.49              2.81        268.29                67.99           False
-   ADI           69.23               13            2.11              5.81        390.10                38.73           False
-  META           76.67               30            1.10              5.22        676.38                37.38           False
+  FAST           85.71               21            1.60              0.51         45.06                39.39            True
+  UPRO           92.31               26            1.70              1.52        126.94                41.61            True
+  SHOP           94.12               34            1.24              1.08        123.77                56.03            True
+  SNPS           94.12               17            2.84              9.90        494.30                48.57            True
+  COST           88.89               18            1.03              7.21        994.92                19.60            True
+  ISRG           91.30               23            1.35              4.47        469.08                36.51            True
+  CHTR           92.68               41            0.47              0.57        174.37               113.25           False
+   ADI           69.23               13            2.10              5.78        390.11                38.73           False
+  META           76.67               30            1.05              5.00        676.48                37.38           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et            slot     event_type                                                                                                                                                                                                                                                                           detail
+2026-04-28T14:40:01.317981-04:00     manage_1430   slot_skipped                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 2026-04-28T14:35:08.077135-04:00     manage_1430   slot_skipped                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 2026-04-28T14:30:08.993297-04:00     manage_1430   slot_skipped                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 2026-04-28T14:25:07.550302-04:00     manage_1430   slot_skipped                                                                                                                                                                                                                                                  {"reason": "already_processed"}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-28T13:58:32.846901-04:00     manage_1400   slot_skipped                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 2026-04-28T13:58:25.436100-04:00 outage_recovery recovery_audit {"action": "inserted_missed_take_profit_exit", "contract_symbol": "CMCSA260618C00027500", "option_price_at_scan": 1.62, "recovered_exit_timestamp_et": "2026-04-28T09:33:00-04:00", "scheduled_slot_timestamp_et": "2026-04-28T09:30:00-04:00", "stop": 1.1088, "target": 1.449}
 2026-04-28T13:56:52.461724-04:00     manage_1400   slot_skipped                                                                                                                                                                                                                                                  {"reason": "already_processed"}
-       2026-04-28T09:33:00-04:00     manage_0930           exit           {"asset_type": "option", "contract_symbol": "CMCSA260618C00027500", "fill_price": 1.62, "pnl": 1872.0, "reason": "take_profit_day1_hit_at_scan", "recovered_after_power_outage": true, "return_pct": 28.57, "source": "yfinance_1m_option_history", "ticker": "CMCSA"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260428143508)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260428144001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260428143508)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260428144001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260428143508)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260428144001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260428143508)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260428144001)
 
 </details>
