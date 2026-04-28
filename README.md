@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3 Live Paper Test
 
-- Latest checkpoint (ET): `2026-04-28 13:50:06 EDT`
-- Equity: `$13,567.50` | Realized: `$3,125.50` | Unrealized: `$442.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-04-28 13:56:52 EDT`
+- Equity: `$13,619.50` | Realized: `$3,125.50` | Unrealized: `$494.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1400`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode           instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
- CMCSA     option         option CMCSA260618C00027500     52      6552.0                  6994.0           1.35           442.0                   6.75                   1
+ CMCSA     option         option CMCSA260618C00027500     52      6552.0                  7046.0           1.36           494.0                   7.54                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260428135006)
+![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260428135652)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260428135006)
+![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260428135652)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260428135006)
+![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260428135652)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260428135006)
+![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260428135652)
 
 </details>
 
