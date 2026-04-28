@@ -1117,3 +1117,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-27T16:10:05.210604-04:00,2026-04-27,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-28T00:00:09.203683-04:00,2026-04-28,data_refresh,data_refresh,{'saved': 99}
 2026-04-28T13:56:52.461724-04:00,2026-04-28,manage_1400,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-28T09:33:00-04:00,2026-04-28,manage_0930,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CMCSA260618C00027500"", ""fill_price"": 1.62, ""pnl"": 1872.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""recovered_after_power_outage"": true, ""return_pct"": 28.57, ""source"": ""yfinance_1m_option_history"", ""ticker"": ""CMCSA""}"
+2026-04-28T13:58:25.436100-04:00,2026-04-28,outage_recovery,recovery_audit,"{""action"": ""inserted_missed_take_profit_exit"", ""contract_symbol"": ""CMCSA260618C00027500"", ""option_price_at_scan"": 1.62, ""recovered_exit_timestamp_et"": ""2026-04-28T09:33:00-04:00"", ""scheduled_slot_timestamp_et"": ""2026-04-28T09:30:00-04:00"", ""stop"": 1.1088, ""target"": 1.449}"

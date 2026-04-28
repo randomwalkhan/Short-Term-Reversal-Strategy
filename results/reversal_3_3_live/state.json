@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 6573.500289916994,
-  "positions": [
-    {
-      "position_id": "CMCSA_20260427T145004",
-      "ticker": "CMCSA",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "CMCSA260618C00027500",
-      "expiry": "2026-06-18",
-      "strike": 27.5,
-      "entry_timestamp": "2026-04-27T14:50:04.672861-04:00",
-      "entry_trade_date": "2026-04-27",
-      "entry_slot": "entry_1500",
-      "entry_spot": 27.364999771118164,
-      "entry_option_price": 1.26,
-      "entry_bid": 1.24,
-      "entry_ask": 1.28,
-      "entry_iv_pct": 32.422550781249996,
-      "contracts": 52,
-      "allocated_cash": 6552.0,
-      "success_rate": 91.67,
-      "matched_signals": 24,
-      "current_drop_pct": 0.55,
-      "rolling_sigma_20d_pct": 60.91,
-      "planned_tp_day1": 1.4489999999999998,
-      "planned_tp_day2": 1.4489999999999998,
-      "planned_stop": 1.1088,
-      "option_open_interest": 871.0,
-      "option_volume": 87.0,
-      "option_spread_pct": 0.03174603174603177,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 14997.500314712526,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -2391,7 +2360,8 @@
       "share_ext_0135",
       "share_ext_0155",
       "share_ext_0210",
-      "manage_1400"
+      "manage_1400",
+      "manage_0930"
     ]
   },
   "start_date": "2026-03-24"
