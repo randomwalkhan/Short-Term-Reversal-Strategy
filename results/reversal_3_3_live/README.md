@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-29 11:25:04 EDT`
+Latest checkpoint (ET): `2026-04-29 11:30:07 EDT`
 Last processed slot: `manage_1130`
 
 ## Active Configuration
@@ -45,34 +45,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  SNPS           94.74               19            2.21              7.47        480.69                50.93            True
-    ZS           80.00               25            2.25              2.14        135.15                65.17            True
-  FAST           86.36               22            1.48              0.46         44.48                39.66            True
-  CDNS           88.24               17            2.50              5.70        322.89                53.80            True
-  CRWD           81.25               32            1.27              4.06        453.25                53.30            True
-  WDAY           83.33               42            0.99              0.84        120.82                63.12            True
-  ADSK           87.10               31            1.00              1.64        234.15                45.23            True
-   XEL           95.65               23            0.75              0.42         79.30                20.53            True
-   CSX           86.96               23            0.93              0.29         45.10                28.77            True
-  DDOG           88.24               34            1.15              1.06        131.10                52.25            True
+    ZS           80.77               26            2.18              2.07        135.18                65.17            True
+  FAST           82.35               17            1.68              0.53         44.45                39.66            True
+   XEL           94.74               19            0.86              0.48         79.28                20.53            True
+  SNPS           95.83               24            2.02              6.83        480.96                50.93            True
+  CDNS           91.30               23            1.94              4.42        323.44                53.80            True
+  ADSK           87.10               31            0.97              1.60        234.17                45.23            True
+  WDAY           83.72               43            0.91              0.77        120.85                63.12            True
+  CRWD           82.35               34            1.15              3.68        453.41                53.30            True
+   CSX           86.96               23            0.94              0.30         45.10                28.77            True
  CMCSA          100.00                4            1.83              0.35         27.50                60.29           False
-  CHTR           80.00                5            4.17              5.05        170.85               113.02           False
+  CHTR           66.67                6            3.64              4.41        171.13               113.02           False
+  INTU           74.07               27            1.72              4.83        398.31                55.13           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                                                                                 detail
-2026-04-29T11:25:04.288937-04:00 manage_1130 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T11:10:03.826422-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T11:05:04.165460-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T11:00:04.760456-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T10:55:04.247793-04:00 manage_1100 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T10:40:05.649444-04:00 manage_1030 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T10:35:07.394496-04:00 manage_1030 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T10:30:03.700381-04:00 manage_1030 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T10:25:04.185468-04:00 manage_1030 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T10:20:03.810424-04:00 manage_1030         exit {"asset_type": "option", "contract_symbol": "INTC260529C00084000", "fill_price": 8.85, "pnl": 1775.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 25.09, "ticker": "INTC"}
+                    timestamp_et        slot   event_type                          detail
+2026-04-29T11:30:07.200475-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
+2026-04-29T11:25:04.288937-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
+2026-04-29T11:10:03.826422-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
+2026-04-29T11:05:04.165460-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
+2026-04-29T11:00:04.760456-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
+2026-04-29T10:55:04.247793-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
+2026-04-29T10:40:05.649444-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-04-29T10:35:07.394496-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-04-29T10:30:03.700381-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-04-29T10:25:04.185468-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429112504)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429113007)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429112504)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429113007)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429112504)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429113007)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429112504)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429113007)
 
 </details>
