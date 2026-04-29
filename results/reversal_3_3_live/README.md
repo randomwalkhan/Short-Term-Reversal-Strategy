@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-29 15:00:05 EDT`
+Latest checkpoint (ET): `2026-04-29 15:05:05 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$9,532.50`
-- Equity: `$16,867.50`
+- Equity: `$16,987.50`
 - Realized PnL: `$6,772.50`
-- Unrealized PnL: `$95.00`
+- Unrealized PnL: `$215.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CRWD     option         option CRWD260618C00450000       2026-04-29                   0      2      7240.0                  7335.0         36.2          36.67      452.38        452.52            95.0                   1.31          85.0               40              0.57         51.94           52.69                   53.3                2047.0          316.0               0.03                      ok
+  CRWD     option         option CRWD260618C00450000       2026-04-29                   0      2      7240.0                  7455.0         36.2          37.28      452.38        451.49           215.0                   2.97          85.0               40              0.57         51.94           54.43                   53.3                2047.0          316.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-04-29)
@@ -48,24 +48,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  AXON           80.56               36            1.02              2.90        405.07                69.13            True
-   XEL           90.00               10            1.37              0.76         79.15                20.53            True
-  FAST           86.67               15            1.96              0.61         44.41                39.66            True
-  SNPS           94.44               36            0.74              2.51        482.82                50.93            True
-  CRWD           85.00               40            0.65              2.08        454.10                53.30            True
-   CSX           85.00               20            1.08              0.34         45.08                28.77            True
-   HON           84.62               13            1.56              2.33        211.93                25.70            True
- CMCSA          100.00                2            3.38              0.65         27.37                60.29           False
-    ZS           82.98               47            0.39              0.37        135.91                65.17           False
-  INTU           72.00               25            1.89              5.30        398.11                55.13           False
-  SHOP           95.56               45            0.07              0.06        122.02                56.59           False
-  NFLX           91.30               46            0.10              0.07         92.27                46.23           False
+   XEL           90.00               10            1.30              0.72         79.17                20.53            True
+  AXON           81.58               38            0.81              2.32        405.32                69.13            True
+  SNPS           94.44               36            0.68              2.32        482.90                50.93            True
+   CSX           80.00               15            1.25              0.40         45.06                28.77            True
+  FAST           86.67               15            2.08              0.65         44.40                39.66            True
+  CRWD           85.00               40            0.74              2.35        453.98                53.30            True
+ CMCSA          100.00                1            3.65              0.71         27.35                60.29           False
+    ZS           82.22               45            0.49              0.46        135.87                65.17           False
+  INTU           72.00               25            1.90              5.34        398.09                55.13           False
+  KLAC           91.89               37            0.25              3.15       1807.62                49.10           False
+  NFLX           91.30               46            0.11              0.07         92.26                46.23           False
+  MSFT           77.27               22            1.14              3.44        427.78                30.07           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot              event_type                                                                                                                                                                                                                                                                                                                                                                         detail
+2026-04-29T15:05:05.153851-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-04-29T15:00:05.120623-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-04-29T14:55:05.139248-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-04-29T14:50:04.147895-04:00  entry_1500                   entry {"allocated_cash": 7240.0, "asset_type": "option", "contract_symbol": "CRWD260618C00450000", "contracts": 2, "entry_option_price": 36.2, "execution_mode": "option", "matched_signals": 40, "option_liquidity_status": "ok", "option_open_interest": 2047.0, "option_spread_pct": 3.04, "option_volume": 316.0, "success_rate": 85.0, "ticker": "CRWD", "timing_score": 0.528}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-29T14:35:04.143140-04:00 manage_1430            slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-04-29T14:30:01.439060-04:00 manage_1430            slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-04-29T14:25:04.993410-04:00 manage_1430            slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-04-29T14:10:06.997817-04:00 manage_1400            slot_skipped                                                                                                                                                                                                                                                                                                                                                {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429150005)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429150505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429150005)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429150505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429150005)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429150505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429150005)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429150505)
 
 </details>
