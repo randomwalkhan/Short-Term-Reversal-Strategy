@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-29 09:40:03 EDT`
-Last processed slot: `manage_0930`
+Latest checkpoint (ET): `2026-04-29 09:45:04 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -34,7 +34,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260529C00084000       2026-04-28                   1     10      7075.0                  6910.0         7.08           6.91       84.22         87.09          -165.0                  -2.33         100.0               38              0.91         70.58             0.0                  91.28                 369.0           78.0               0.05                      ok
+  INTC     option         option INTC260529C00084000       2026-04-28                   1     10      7075.0                  6910.0         7.08           6.91       84.22         87.54          -165.0                  -2.33         100.0               38              0.91         70.58             0.0                  91.28                 369.0           78.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-04-29)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CHTR           91.89               37            0.94              1.13        172.53               113.02            True
-  NFLX           88.24               34            0.78              0.51         92.08                46.23            True
-  SNPS           96.15               26            1.73              5.86        481.38                50.93            True
-  CRWD           80.77               26            1.58              5.03        452.83                53.30            True
-   WMT           88.24               17            1.22              1.09        127.12                26.10            True
-  CDNS           92.59               27            1.64              3.74        323.73                53.80            True
-  ISRG           94.12               17            1.87              6.12        464.02                36.73            True
-  FAST           91.18               34            0.71              0.22         44.58                39.66            True
-  SHOP           93.55               31            1.35              1.15        121.56                56.59            True
-  ADSK           88.24               34            0.91              1.49        234.21                45.23            True
- CMCSA           93.10               29            0.34              0.07         27.62                60.29           False
-  TEAM           86.00               50            0.20              0.10         69.67                78.64           False
+  CHTR           88.46               26            1.64              1.99        172.17               113.02            True
+ CMCSA           91.67               24            0.56              0.11         27.60                60.29            True
+    ZS           80.77               26            2.11              2.01        135.21                65.17            True
+  SNPS           92.86               28            1.54              5.20        481.66                50.93            True
+  CDNS           90.91               22            1.95              4.45        323.43                53.80            True
+  NFLX           89.47               38            0.66              0.43         92.11                46.23            True
+  FAST           88.89               27            1.00              0.31         44.54                39.66            True
+  WDAY           81.82               33            1.91              1.62        120.49                63.12            True
+  ADSK           87.10               31            0.99              1.63        234.15                45.23            True
+  ISRG           92.86               14            2.18              7.12        463.59                36.73            True
+   WMT           86.36               22            1.05              0.94        127.19                26.10            True
+  CRWD           78.26               23            1.67              5.33        452.70                53.30           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429094003)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429094504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429094003)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429094504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429094003)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429094504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429094003)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429094504)
 
 </details>
