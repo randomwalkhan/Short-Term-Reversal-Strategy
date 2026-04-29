@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-29 15:10:01 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-04-29 15:15:01 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$9,532.50`
-- Equity: `$16,907.50`
+- Equity: `$16,752.50`
 - Realized PnL: `$6,772.50`
-- Unrealized PnL: `$135.00`
+- Unrealized PnL: `$-20.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CRWD     option         option CRWD260618C00450000       2026-04-29                   0      2      7240.0                  7375.0         36.2          36.88      452.38         451.5           135.0                   1.86          85.0               40              0.57         51.94           53.82                   53.3                2047.0          316.0               0.03                      ok
+  CRWD     option         option CRWD260618C00450000       2026-04-29                   0      2      7240.0                  7220.0         36.2           36.1      452.38        451.92           -20.0                  -0.28          85.0               40              0.57         51.94           52.32                   53.3                2047.0          316.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-04-29)
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   XEL           92.31               13            1.14              0.64         79.21                20.53            True
-  AXON           81.58               38            0.89              2.54        405.22                69.13            True
-  FAST           86.67               15            1.97              0.62         44.41                39.66            True
-   CSX           80.00               15            1.26              0.40         45.06                28.77            True
-  CRWD           85.00               40            0.76              2.41        453.96                53.30            True
-   HON           84.62               13            1.40              2.09        212.04                25.70            True
-  TSLA           86.84               38            0.59              1.56        375.35                46.49            True
-  ISRG          100.00               10            2.86              9.34        462.64                36.73            True
-  PLTR           82.61               23            2.36              2.33        140.18                59.63            True
- CMCSA          100.00                1            3.74              0.72         27.34                60.29           False
-    ZS           82.22               45            0.44              0.42        135.89                65.17           False
-  INTU           74.07               27            1.80              5.05        398.21                55.13           False
+   XEL           90.00               10            1.26              0.70         79.18                20.53            True
+  FAST           86.67               15            2.00              0.63         44.41                39.66            True
+  AXON           81.58               38            0.88              2.51        405.23                69.13            True
+   CSX           80.00               15            1.22              0.38         45.07                28.77            True
+  CRWD           85.00               40            0.67              2.13        454.08                53.30            True
+  SNPS           94.87               39            0.55              1.88        483.09                50.93            True
+  ISRG          100.00               10            2.84              9.27        462.67                36.73            True
+ CMCSA          100.00                1            3.56              0.69         27.35                60.29           False
+    ZS           83.33               48            0.34              0.32        135.93                65.17           False
+  INTU           74.07               27            1.68              4.72        398.36                55.13           False
+  SHOP           95.56               45            0.11              0.10        122.01                56.59           False
+  NFLX           91.49               47            0.00              0.00         92.29                46.23           False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429151001)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429151501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429151001)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429151501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429151001)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429151501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429151001)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429151501)
 
 </details>
