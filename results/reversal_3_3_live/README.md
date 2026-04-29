@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-29 10:20:03 EDT`
+Latest checkpoint (ET): `2026-04-29 10:25:04 EDT`
 Last processed slot: `manage_1030`
 
 ## Active Configuration
@@ -45,34 +45,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CDNS          100.00               12            2.80              6.38        322.60                53.80            True
-  TEAM           85.42               48            0.55              0.27         69.60                78.64            True
-  SNPS           95.24               21            2.09              7.08        480.86                50.93            True
-  FAST           89.29               28            0.95              0.30         44.55                39.66            True
-   KDP           86.21               29            0.52              0.10         28.78                36.44            True
-  NFLX           90.24               41            0.56              0.36         92.14                46.23            True
-   HON           84.62               13            1.47              2.19        211.99                25.70            True
-  ADSK           87.50               32            0.94              1.55        234.19                45.23            True
-   XEL           92.00               25            0.62              0.34         79.33                20.53            True
-  DDOG           88.89               36            1.01              0.93        131.15                52.25            True
- CMCSA          100.00                8            1.39              0.27         27.53                60.29           False
-  CHTR           75.00               12            2.83              3.43        171.55               113.02           False
+  FAST           88.00               25            1.14              0.36         44.52                39.66            True
+  SNPS           96.15               26            1.75              5.93        481.35                50.93            True
+   KDP           86.21               29            0.50              0.10         28.78                36.44            True
+  CRWD           81.25               32            1.22              3.88        453.33                53.30            True
+  CDNS           89.47               19            2.33              5.32        323.06                53.80            True
+  ADSK           87.10               31            0.97              1.60        234.17                45.23            True
+   XEL           95.65               23            0.77              0.43         79.30                20.53            True
+  WDAY           80.00               30            2.15              1.82        120.40                63.12            True
+  SHOP           93.55               31            1.44              1.23        121.52                56.59            True
+ CMCSA          100.00                8            1.34              0.26         27.54                60.29           False
+  CHTR           75.00               12            2.72              3.30        171.61               113.02           False
+  TEAM           86.00               50            0.17              0.08         69.67                78.64           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                                                                                                                                                                                 detail
-2026-04-29T10:20:03.810424-04:00  manage_1030         exit {"asset_type": "option", "contract_symbol": "INTC260529C00084000", "fill_price": 8.85, "pnl": 1775.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 25.09, "ticker": "INTC"}
-2026-04-29T10:10:03.767251-04:00  manage_1000 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T10:05:08.240355-04:00  manage_1000 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T10:00:04.620825-04:00  manage_1000 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T09:55:04.061412-04:00  manage_1000 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T09:40:03.886159-04:00  manage_0930 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T09:35:04.233499-04:00  manage_0930 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T09:30:03.967315-04:00  manage_0930 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T09:25:06.961152-04:00  manage_0930 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-04-29T00:01:06.010136-04:00 data_refresh data_refresh                                                                                                                                                                          {'saved': 99}
+                    timestamp_et        slot   event_type                                                                                                                                                                                 detail
+2026-04-29T10:25:04.185468-04:00 manage_1030 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-29T10:20:03.810424-04:00 manage_1030         exit {"asset_type": "option", "contract_symbol": "INTC260529C00084000", "fill_price": 8.85, "pnl": 1775.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 25.09, "ticker": "INTC"}
+2026-04-29T10:10:03.767251-04:00 manage_1000 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-29T10:05:08.240355-04:00 manage_1000 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-29T10:00:04.620825-04:00 manage_1000 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-29T09:55:04.061412-04:00 manage_1000 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-29T09:40:03.886159-04:00 manage_0930 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-29T09:35:04.233499-04:00 manage_0930 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-29T09:30:03.967315-04:00 manage_0930 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+2026-04-29T09:25:06.961152-04:00 manage_0930 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429102003)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429102504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429102003)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429102504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429102003)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429102504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429102003)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429102504)
 
 </details>
