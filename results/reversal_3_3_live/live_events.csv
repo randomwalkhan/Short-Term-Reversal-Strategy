@@ -1187,3 +1187,6 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-29T14:30:01.439060-04:00,2026-04-29,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-29T14:35:04.143140-04:00,2026-04-29,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-29T14:40:03.710393-04:00,2026-04-29,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
+2026-04-29T14:50:04.147895-04:00,2026-04-29,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-04-29"", ""training_samples"": 5504, ""window"": 5}"
+2026-04-29T14:50:04.147895-04:00,2026-04-29,entry_1500,entry_candidate_skipped,"{""option_liquidity_status"": ""low_volume"", ""option_open_interest"": 229.0, ""option_spread_pct"": 11.07, ""option_volume"": 5.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""AXON"", ""timing_score"": 0.536}"
+2026-04-29T14:50:04.147895-04:00,2026-04-29,entry_1500,entry,"{""allocated_cash"": 7240.0, ""asset_type"": ""option"", ""contract_symbol"": ""CRWD260618C00450000"", ""contracts"": 2, ""entry_option_price"": 36.2, ""execution_mode"": ""option"", ""matched_signals"": 40, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2047.0, ""option_spread_pct"": 3.04, ""option_volume"": 316.0, ""success_rate"": 85.0, ""ticker"": ""CRWD"", ""timing_score"": 0.528}"
