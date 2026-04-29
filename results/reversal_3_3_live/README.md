@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-29 12:10:08 EDT`
-Last processed slot: `manage_1200`
+Latest checkpoint (ET): `2026-04-29 12:15:05 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -45,18 +45,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
- CMCSA           92.86               14            0.92              0.18         27.57                60.29            True
-    ZS           82.76               29            1.57              1.49        135.43                65.17            True
-  SNPS           94.74               19            2.19              7.42        480.71                50.93            True
-  FAST           82.35               17            1.71              0.54         44.45                39.66            True
-  CDNS           90.48               21            2.00              4.56        323.38                53.80            True
-  ADSK           86.21               29            1.09              1.79        234.08                45.23            True
-  WDAY           83.72               43            0.85              0.72        120.87                63.12            True
-  CRWD           82.35               34            1.09              3.47        453.50                53.30            True
-   CSX           86.96               23            0.95              0.30         45.10                28.77            True
-  DDOG           90.00               30            1.54              1.41        130.94                52.25            True
-   HON           84.62               13            1.48              2.21        211.98                25.70            True
-  CHTR           57.14                7            3.45              4.18        171.23               113.02           False
+ CMCSA          100.00               12            0.96              0.19         27.57                60.29            True
+    ZS           83.33               30            1.50              1.43        135.46                65.17            True
+  SNPS           95.24               21            2.07              7.03        480.88                50.93            True
+  FAST           83.33               18            1.67              0.52         44.45                39.66            True
+  CDNS           90.91               22            1.95              4.43        323.43                53.80            True
+  ADSK           86.21               29            1.04              1.71        234.12                45.23            True
+  WDAY           84.09               44            0.74              0.63        120.91                63.12            True
+   CSX           85.00               20            1.06              0.34         45.09                28.77            True
+  CRWD           82.86               35            1.04              3.30        453.57                53.30            True
+  DDOG           88.24               34            1.15              1.06        131.10                52.25            True
+   XEL           92.59               27            0.54              0.30         79.35                20.53            True
+  CHTR           62.50                8            3.34              4.05        171.29               113.02           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429121008)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260429121505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429121008)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260429121505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429121008)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260429121505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429121008)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260429121505)
 
 </details>
