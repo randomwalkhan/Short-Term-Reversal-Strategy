@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-30 15:04:22 EDT`
+Latest checkpoint (ET): `2026-04-30 15:10:03 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$8,357.50`
-- Equity: `$15,777.50`
+- Equity: `$15,515.00`
 - Realized PnL: `$5,567.50`
-- Unrealized PnL: `$210.00`
+- Unrealized PnL: `$-52.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260618C00095000       2026-04-30                   0      7      7210.0                  7420.0         10.3           10.6       94.02         92.92           210.0                   2.91         100.0               38              0.77         78.24            84.0                   91.3               17799.0         2068.0               0.01                      ok
+  INTC     option         option INTC260618C00095000       2026-04-30                   0      7      7210.0                  7157.5         10.3          10.23       94.02         92.74           -52.5                  -0.73         100.0               38              0.77         78.24           82.02                   91.3               17799.0         2068.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-04-30)
@@ -48,24 +48,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               28            2.10              1.39         94.15                91.30            True
-  WDAY           84.09               44            0.71              0.61        122.17                63.16            True
-  CDNS           97.30               37            0.83              1.93        329.12                53.49            True
-  TMUS           80.00               15            1.87              2.59        197.06                38.48            True
-  SNPS           97.56               41            0.31              1.03        480.78                50.55           False
-  AXON           84.78               46            0.31              0.87        400.17                68.68           False
-  INTU           76.92               26            1.78              4.92        392.97                55.07           False
-  CRWD           75.00               20            2.31              7.30        449.25                53.11           False
-  PANW           77.78               27            1.45              1.84        180.75                47.73           False
-  FTNT           86.67               15            2.33              1.41         85.51                38.28           False
-    ZS           75.00               20            3.16              2.98        133.45                64.71           False
-   ADP           72.22               18            1.43              2.15        214.14                37.07           False
+  INTC          100.00               27            2.14              1.42         94.14                91.30            True
+  WDAY           84.78               46            0.54              0.46        122.23                63.16            True
+  CDNS           97.30               37            0.79              1.83        329.17                53.49            True
+  TMUS           80.00               15            1.84              2.55        197.08                38.48            True
+  SNPS           97.56               41            0.32              1.07        480.76                50.55           False
+  AXON           84.44               45            0.43              1.21        400.02                68.68           False
+  INTU           73.91               23            2.07              5.71        392.63                55.07           False
+  CRWD           73.68               19            2.34              7.41        449.20                53.11           False
+  PANW           79.31               29            1.23              1.57        180.87                47.73           False
+  FTNT           85.71               14            2.53              1.53         85.46                38.28           False
+  DDOG           90.32               31            1.29              1.21        133.46                52.22           False
+    ZS           75.00               20            3.19              3.01        133.44                64.71           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot     event_type                                                                                                                                                                                                                                                                                                                                                                            detail
+2026-04-30T15:10:03.423192-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-04-30T15:04:22.001854-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-04-30T14:48:57.081711-04:00  entry_1500          entry {"allocated_cash": 7210.0, "asset_type": "option", "contract_symbol": "INTC260618C00095000", "contracts": 7, "entry_option_price": 10.3, "execution_mode": "option", "matched_signals": 38, "option_liquidity_status": "ok", "option_open_interest": 17799.0, "option_spread_pct": 0.97, "option_volume": 2068.0, "success_rate": 100.0, "ticker": "INTC", "timing_score": 0.639}
 2026-04-30T14:48:57.081711-04:00  entry_1500 timing_overlay                                                                                                                                                                                                                                                                      {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-04-30", "training_samples": 5506, "window": 5}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-30T12:30:16.917018-04:00 manage_1230   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-04-30T11:35:01.336447-04:00 manage_1130   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-04-30T11:30:02.465737-04:00 manage_1130   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-04-30T11:25:26.566050-04:00 manage_1130   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430150422)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430151003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430150422)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430151003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430150422)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430151003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430150422)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430151003)
 
 </details>
