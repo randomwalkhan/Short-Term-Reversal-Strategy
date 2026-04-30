@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-30 15:40:04 EDT`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-04-30 15:45:01 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$8,357.50`
-- Equity: `$14,972.50`
+- Equity: `$15,007.50`
 - Realized PnL: `$5,567.50`
-- Unrealized PnL: `$-595.00`
+- Unrealized PnL: `$-560.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260618C00095000       2026-04-30                   0      7      7210.0                  6615.0         10.3           9.45       94.02          93.6          -595.0                  -8.25         100.0               38              0.77         78.24           72.99                   91.3               17799.0         2068.0               0.01                      ok
+  INTC     option         option INTC260618C00095000       2026-04-30                   0      7      7210.0                  6650.0         10.3            9.5       94.02         93.89          -560.0                  -7.77         100.0               38              0.77         78.24           72.13                   91.3               17799.0         2068.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-04-30)
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               33            1.18              0.78         94.41                91.30            True
-  FANG          100.00               24            0.72              1.04        204.88                33.59            True
-  TMUS           80.95               21            1.41              1.95        197.33                38.48            True
-  FTNT           88.89               18            1.97              1.19         85.60                38.28            True
-  WDAY           85.42               48            0.07              0.06        122.40                63.16           False
-  CDNS           97.50               40            0.25              0.57        329.70                53.49           False
-  INTU           78.57               28            1.54              4.27        393.25                55.07           False
-  CRWD           78.26               23            1.76              5.58        449.99                53.11           False
-    ZS           75.00               20            3.07              2.89        133.49                64.71           False
-  PANW           80.00               30            1.21              1.53        180.88                47.73           False
-  TEAM           85.71               35            2.67              1.32         69.92                78.43           False
-  MSFT          100.00                1            3.73             11.08        419.71                29.73           False
+  INTC          100.00               37            0.87              0.58         94.50                91.30            True
+  FANG          100.00               25            0.64              0.92        204.93                33.59            True
+  TMUS           83.33               24            1.24              1.72        197.43                38.48            True
+  AXON           84.78               46            0.05              0.13        400.48                68.68           False
+  WDAY           85.11               47            0.13              0.12        122.38                63.16           False
+  CRWD           78.26               23            1.67              5.29        450.11                53.11           False
+  INTU           79.31               29            1.40              3.89        393.41                55.07           False
+  CDNS           97.50               40            0.24              0.56        329.71                53.49           False
+  PANW           81.25               32            1.04              1.32        180.98                47.73           False
+    ZS           76.19               21            3.06              2.88        133.49                64.71           False
+  FTNT           91.30               23            1.75              1.05         85.66                38.28           False
+  MSFT          100.00                1            3.67             10.91        419.78                29.73           False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430154004)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430154501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430154004)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430154501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430154004)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430154501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430154004)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430154501)
 
 </details>
