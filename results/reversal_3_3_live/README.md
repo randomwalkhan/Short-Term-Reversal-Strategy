@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-30 10:03:46 EDT`
-Last processed slot: `manage_1000`
+Latest checkpoint (ET): `2026-04-30 10:23:40 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$9,532.50`
-- Equity: `$16,062.50`
+- Equity: `$16,162.50`
 - Realized PnL: `$6,772.50`
-- Unrealized PnL: `$-710.00`
+- Unrealized PnL: `$-610.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CRWD     option         option CRWD260618C00450000       2026-04-29                   1      2      7240.0                  6530.0         36.2          32.65      452.38        440.49          -710.0                  -9.81          85.0               40              0.57         51.94           56.71                   53.3                2047.0          316.0               0.03                      ok
+  CRWD     option         option CRWD260618C00450000       2026-04-29                   1      2      7240.0                  6630.0         36.2          33.15      452.38        437.95          -610.0                  -8.43          85.0               40              0.57         51.94           59.43                   53.3                2047.0          316.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-04-30)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               30            1.88              1.25         94.22                91.30            True
-  SNPS           96.67               30            1.35              4.56        479.26                50.55            True
-  ADSK           82.35               17            1.85              3.06        234.56                44.88            True
-  CDNS           94.44               18            2.31              5.33        327.67                53.49            True
-  AXON           81.82               33            1.52              4.25        398.72                68.68            True
-  TSLA           86.49               37            0.63              1.65        372.09                43.82            True
-  SBUX           93.75               32            0.82              0.60        105.24                35.05            True
-  NXPI           61.54               13            2.73              5.53        286.88                85.25           False
-  WDAY           72.22               18            3.04              2.61        121.31                63.16           False
-  CRWD           72.22               18            2.65              8.39        448.79                53.11           False
-  MCHP           88.37               43            0.13              0.08         90.14                46.39           False
-  FTNT           90.00               10            3.25              1.96         85.27                38.28           False
+  INTC          100.00               25            2.37              1.57         94.08                91.30            True
+  AXON           84.21               38            0.85              2.39        399.52                68.68            True
+  SNPS           96.30               27            1.63              5.47        478.87                50.55            True
+  CDNS           94.12               17            2.37              5.48        327.60                53.49            True
+  ADSK           86.21               29            1.12              1.85        235.08                44.88            True
+  NXPI           68.42               19            2.28              4.62        287.27                85.25           False
+  PLTR           90.24               41            0.09              0.09        137.93                55.72           False
+  WDAY           78.12               32            2.07              1.78        121.67                63.16           False
+  TSLA           86.11               36            0.82              2.14        371.88                43.82           False
+  INTU           66.67               15            3.20              8.84        391.29                55.07           False
+  SHOP           93.55               31            1.56              1.32        120.69                52.79           False
+    EA           92.00               25            0.26              0.37        202.51                 4.16           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430100346)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430102340)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430100346)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430102340)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430100346)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430102340)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430100346)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430102340)
 
 </details>
