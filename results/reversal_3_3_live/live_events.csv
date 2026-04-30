@@ -1215,3 +1215,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-04-30T14:32:17.011087-04:00,2026-04-30,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-04-30T14:48:57.081711-04:00,2026-04-30,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-04-30"", ""training_samples"": 5506, ""window"": 5}"
 2026-04-30T14:48:57.081711-04:00,2026-04-30,entry_1500,entry,"{""allocated_cash"": 7210.0, ""asset_type"": ""option"", ""contract_symbol"": ""INTC260618C00095000"", ""contracts"": 7, ""entry_option_price"": 10.3, ""execution_mode"": ""option"", ""matched_signals"": 38, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 17799.0, ""option_spread_pct"": 0.97, ""option_volume"": 2068.0, ""success_rate"": 100.0, ""ticker"": ""INTC"", ""timing_score"": 0.639}"
+2026-04-30T15:04:22.001854-04:00,2026-04-30,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
