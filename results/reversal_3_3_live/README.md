@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-30 15:15:02 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-04-30 15:20:01 EDT`
+Last processed slot: `manage_1530`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$8,357.50`
-- Equity: `$15,445.00`
+- Equity: `$15,497.50`
 - Realized PnL: `$5,567.50`
-- Unrealized PnL: `$-122.50`
+- Unrealized PnL: `$-70.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260618C00095000       2026-04-30                   0      7      7210.0                  7087.5         10.3          10.12       94.02         92.92          -122.5                   -1.7         100.0               38              0.77         78.24           80.53                   91.3               17799.0         2068.0               0.01                      ok
+  INTC     option         option INTC260618C00095000       2026-04-30                   0      7      7210.0                  7140.0         10.3           10.2       94.02         92.91           -70.0                  -0.97         100.0               38              0.77         78.24           81.15                   91.3               17799.0         2068.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-04-30)
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               28            1.96              1.30         94.19                91.30            True
-  CDNS           97.30               37            0.63              1.46        329.32                53.49            True
-  WDAY           84.78               46            0.56              0.48        122.23                63.16            True
-  TMUS           80.00               15            1.84              2.55        197.08                38.48            True
-  PANW           80.00               30            1.14              1.45        180.92                47.73            True
-  SNPS           97.56               41            0.23              0.79        480.88                50.55           False
-  AXON           84.78               46            0.17              0.49        400.33                68.68           False
+  INTC          100.00               30            1.90              1.26         94.21                91.30            True
+  TMUS           80.00               15            1.83              2.54        197.08                38.48            True
+  SNPS           97.67               43            0.11              0.37        481.06                50.55           False
+  CDNS           97.30               37            0.48              1.11        329.47                53.49           False
+  AXON           84.78               46            0.29              0.83        400.19                68.68           False
+  CRWD           77.27               22            1.80              5.70        449.94                53.11           False
+  WDAY           84.78               46            0.46              0.39        122.26                63.16           False
   INTU           76.00               25            1.84              5.08        392.90                55.07           False
-  CRWD           75.00               20            2.23              7.06        449.36                53.11           False
-    ZS           76.19               21            3.01              2.84        133.51                64.71           False
-  FTNT           85.71               14            2.61              1.57         85.44                38.28           False
-  DDOG           91.43               35            1.02              0.96        133.57                52.22           False
+    ZS           76.19               21            2.94              2.77        133.54                64.71           False
+  FTNT           85.71               14            2.52              1.52         85.46                38.28           False
+  PANW           83.78               37            0.77              0.98        181.12                47.73           False
+    MU           82.93               41            0.37              1.33        517.89                60.30           False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430151502)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430152001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430151502)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430152001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430151502)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430152001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430151502)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430152001)
 
 </details>
