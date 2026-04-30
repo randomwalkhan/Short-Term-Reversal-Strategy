@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-04-30 15:25:05 EDT`
+Latest checkpoint (ET): `2026-04-30 15:30:05 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$8,357.50`
-- Equity: `$15,270.00`
+- Equity: `$14,955.00`
 - Realized PnL: `$5,567.50`
-- Unrealized PnL: `$-297.50`
+- Unrealized PnL: `$-612.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260618C00095000       2026-04-30                   0      7      7210.0                  6912.5         10.3           9.88       94.02         92.82          -297.5                  -4.13         100.0               38              0.77         78.24            79.1                   91.3               17799.0         2068.0               0.01                      ok
+  INTC     option         option INTC260618C00095000       2026-04-30                   0      7      7210.0                  6597.5         10.3           9.43       94.02          92.9          -612.5                   -8.5         100.0               38              0.77         78.24           75.44                   91.3               17799.0         2068.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-04-30)
@@ -48,24 +48,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               28            2.06              1.37         94.16                91.30            True
-  AXON           84.78               46            0.08              0.22        400.45                68.68           False
-  CDNS           97.37               38            0.36              0.84        329.59                53.49           False
-  WDAY           85.11               47            0.25              0.22        122.34                63.16           False
-  INTU           78.57               28            1.51              4.18        393.29                55.07           False
-  CRWD           78.26               23            1.72              5.44        450.05                53.11           False
-    ZS           77.27               22            2.69              2.54        133.64                64.71           False
-  TMUS           76.47               17            1.73              2.40        197.14                38.48           False
-  FTNT           86.67               15            2.33              1.41         85.51                38.28           False
-  PANW           83.78               37            0.69              0.88        181.16                47.73           False
-  MSFT          100.00                1            3.67             10.89        419.79                29.73           False
-  TEAM           85.29               34            2.81              1.39         69.90                78.43           False
+  INTC          100.00               25            2.37              1.57         94.08                91.30            True
+  INTU           80.00               30            1.27              3.52        393.57                55.07            True
+  TMUS           80.00               15            1.92              2.66        197.03                38.48            True
+  AXON           84.78               46            0.19              0.52        400.32                68.68           False
+  WDAY           85.42               48            0.01              0.01        122.43                63.16           False
+  CDNS           97.44               39            0.27              0.62        329.69                53.49           False
+  CRWD           77.27               22            1.80              5.70        449.94                53.11           False
+    ZS           76.19               21            3.05              2.88        133.50                64.71           False
+  FTNT           85.71               14            2.57              1.55         85.45                38.28           False
+  PANW           82.86               35            0.96              1.23        181.01                47.73           False
+  TEAM           84.38               32            2.99              1.48         69.86                78.43           False
+  MSFT          100.00                1            3.82             11.34        419.60                29.73           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot     event_type                                                                                                                                                                                                                                                                                                                                                                            detail
+2026-04-30T15:30:05.829979-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-04-30T15:25:05.342773-04:00 manage_1530   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-04-30T15:10:03.423192-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-04-30T15:04:22.001854-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-04-30T14:06:17.032910-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-04-30T13:31:16.977135-04:00 manage_1330   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-04-30T12:30:16.917018-04:00 manage_1230   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-04-30T11:35:01.336447-04:00 manage_1130   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430152505)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260430153005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430152505)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260430153005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430152505)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260430153005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430152505)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260430153005)
 
 </details>
