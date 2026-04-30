@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 9532.500314712528,
-  "positions": [
-    {
-      "position_id": "CRWD_20260429T145004",
-      "ticker": "CRWD",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "CRWD260618C00450000",
-      "expiry": "2026-06-18",
-      "strike": 450.0,
-      "entry_timestamp": "2026-04-29T14:50:04.147895-04:00",
-      "entry_trade_date": "2026-04-29",
-      "entry_slot": "entry_1500",
-      "entry_spot": 452.3800048828125,
-      "entry_option_price": 36.2,
-      "entry_bid": 35.65,
-      "entry_ask": 36.75,
-      "entry_iv_pct": 51.93529510498047,
-      "contracts": 2,
-      "allocated_cash": 7240.000000000001,
-      "success_rate": 85.0,
-      "matched_signals": 40,
-      "current_drop_pct": 0.57,
-      "rolling_sigma_20d_pct": 53.3,
-      "planned_tp_day1": 41.63,
-      "planned_tp_day2": 41.63,
-      "planned_stop": 31.856,
-      "option_open_interest": 2047.0,
-      "option_volume": 316.0,
-      "option_spread_pct": 0.03038674033149175,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 15567.500314712528,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -2735,7 +2704,8 @@
       "share_ext_0900",
       "manage_0930",
       "manage_1000",
-      "manage_1030"
+      "manage_1030",
+      "manage_1100"
     ]
   },
   "start_date": "2026-03-24"
