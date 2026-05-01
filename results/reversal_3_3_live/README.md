@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-01 09:45:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-05-01 09:50:01 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -34,7 +34,7 @@ Last processed slot: `manual`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260618C00095000       2026-04-30                   1      7      7210.0                  7287.0         10.3          10.41       94.02         96.46            77.0                   1.07         100.0               38              0.77         78.24             0.0                   91.3               17799.0         2068.0               0.01                      ok
+  INTC     option         option INTC260618C00095000       2026-04-30                   1      7      7210.0                  7287.0         10.3          10.41       94.02         97.13            77.0                   1.07         100.0               38              0.77         78.24             0.0                   91.3               17799.0         2068.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-05-01)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   TXN           84.38               32            0.80              1.58        280.40                67.79            True
-   ADI           80.77               26            1.07              3.00        400.97                38.22            True
-  NXPI           69.57               23            1.52              3.12        292.25                84.73           False
-  SOXL           85.71               35            0.26              0.23        126.88                94.60           False
-  FAST           96.55               29            0.40              0.13         44.88                40.12           False
-   KDP           87.50               32            0.20              0.04         29.38                34.77           False
-  FANG          100.00               31            0.29              0.41        205.45                30.31           False
-  QCOM           66.67                6            2.83              3.56        178.05                62.29           False
-  ASML           86.84               38            0.28              2.83       1437.78                47.82           False
-   CSX           89.19               37            0.15              0.05         45.41                28.16           False
-  MCHP           87.18               39            0.44              0.29         92.79                46.58           False
-  ISRG           95.45               44            0.07              0.23        457.51                37.62           False
+  SOXL           84.85               33            0.54              0.48        126.85                94.60            True
+   TXN           83.87               31            1.06              2.09        280.18                67.79            True
+  ASML           83.87               31            0.76              7.69       1435.69                47.82            True
+  NXPI           66.67               18            2.18              4.48        291.67                84.73           False
+  FAST           96.88               32            0.24              0.08         44.90                40.12           False
+  FANG          100.00               30            0.33              0.48        205.42                30.31           False
+   ADI           78.26               23            1.48              4.17        400.47                38.22           False
+   CSX           91.43               35            0.37              0.12         45.38                28.16           False
+  QCOM           50.00                2            3.57              4.49        177.66                62.29           False
+  MCHP           86.84               38            0.55              0.36         92.76                46.58           False
+   MAR           88.10               42            0.04              0.10        361.65                31.25           False
+   AMD           86.49               37            0.57              1.41        353.88                60.73           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260501094501)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260501095001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260501094501)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260501095001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260501094501)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260501095001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260501094501)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260501095001)
 
 </details>
