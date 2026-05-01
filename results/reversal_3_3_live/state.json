@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 8357.500314712528,
-  "positions": [
-    {
-      "position_id": "INTC_20260430T144857",
-      "ticker": "INTC",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "INTC260618C00095000",
-      "expiry": "2026-06-18",
-      "strike": 95.0,
-      "entry_timestamp": "2026-04-30T14:48:57.081711-04:00",
-      "entry_trade_date": "2026-04-30",
-      "entry_slot": "entry_1500",
-      "entry_spot": 94.02369689941406,
-      "entry_option_price": 10.3,
-      "entry_bid": 10.25,
-      "entry_ask": 10.35,
-      "entry_iv_pct": 78.2350809326172,
-      "contracts": 7,
-      "allocated_cash": 7210.0,
-      "success_rate": 100.0,
-      "matched_signals": 38,
-      "current_drop_pct": 0.77,
-      "rolling_sigma_20d_pct": 91.3,
-      "planned_tp_day1": 11.845,
-      "planned_tp_day2": 11.845,
-      "planned_stop": 9.064,
-      "option_open_interest": 17799.0,
-      "option_volume": 2068.0,
-      "option_spread_pct": 0.009708737864077634,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 17667.500314712528,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -2956,7 +2925,8 @@
       "share_ext_0915",
       "manage_0930",
       "manage_1000",
-      "manage_1030"
+      "manage_1030",
+      "manage_1100"
     ]
   },
   "start_date": "2026-03-24"
