@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 17667.500314712528,
-  "positions": [],
+  "cash": 9067.500314712526,
+  "positions": [
+    {
+      "position_id": "CHTR_20260504T145009",
+      "ticker": "CHTR",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "CHTR260618C00175000",
+      "expiry": "2026-06-18",
+      "strike": 175.0,
+      "entry_timestamp": "2026-05-04T14:50:09.604154-04:00",
+      "entry_trade_date": "2026-05-04",
+      "entry_slot": "entry_1500",
+      "entry_spot": 169.9250030517578,
+      "entry_option_price": 8.600000000000001,
+      "entry_bid": 8.3,
+      "entry_ask": 8.9,
+      "entry_iv_pct": 46.31401342773438,
+      "contracts": 10,
+      "allocated_cash": 8600.000000000002,
+      "success_rate": 88.89,
+      "matched_signals": 36,
+      "current_drop_pct": 1.06,
+      "rolling_sigma_20d_pct": 118.68,
+      "planned_tp_day1": 9.89,
+      "planned_tp_day2": 9.89,
+      "planned_stop": 7.568000000000001,
+      "option_open_interest": 169.0,
+      "option_volume": 21.0,
+      "option_spread_pct": 0.06976744186046506,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -2941,7 +2972,8 @@
       "manage_1230",
       "manage_1330",
       "manage_1400",
-      "manage_1430"
+      "manage_1430",
+      "entry_1500"
     ]
   },
   "start_date": "2026-03-24"
