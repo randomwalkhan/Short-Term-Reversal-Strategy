@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-04 14:05:09 EDT`
+Latest checkpoint (ET): `2026-05-04 14:10:09 EDT`
 Last processed slot: `manage_1400`
 
 ## Active Configuration
@@ -42,24 +42,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CHTR           86.21               29            1.43              1.72        171.00               118.68            True
- CMCSA           88.89               18            0.79              0.15         27.10                61.39            True
-  INTC          100.00               24            2.74              1.91         98.79                90.80            True
-  SOXL           82.76               29            1.66              1.51        129.75                93.95            True
-  AXON           84.21               38            0.87              2.44        401.27                68.18            True
-   KDP           85.00               20            1.01              0.21         29.00                34.45            True
-  ISRG           94.74               19            1.50              4.81        455.72                36.31            True
-   ADP           82.61               23            1.02              1.53        213.56                37.25            True
-  NFLX           87.10               31            0.93              0.60         91.80                43.43            True
-   WMT           86.96               23            1.06              0.98        131.18                27.95            True
-  TMUS           85.19               27            1.04              1.43        195.45                37.34            True
-  ROST           93.75               16            1.22              1.95        228.00                21.04            True
+  CHTR           87.10               31            1.29              1.55        171.07               118.68            True
+ CMCSA           86.36               22            0.68              0.13         27.11                61.39            True
+  INTC          100.00               24            2.81              1.96         98.77                90.80            True
+  SOXL           82.14               28            1.75              1.60        129.71                93.95            True
+  AXON           83.33               36            0.97              2.73        401.14                68.18            True
+   KDP           85.00               20            1.03              0.21         29.00                34.45            True
+  ISRG           94.44               18            1.55              4.96        455.66                36.31            True
+   ADP           80.95               21            1.09              1.64        213.51                37.25            True
+  NFLX           86.67               30            0.96              0.62         91.80                43.43            True
+   WMT           87.50               24            1.03              0.94        131.19                27.95            True
+  MPWR           89.66               29            1.36             15.03       1577.04                53.29            True
+  TMUS           85.19               27            1.05              1.45        195.44                37.34            True
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et         slot   event_type                          detail
+2026-05-04T14:10:09.093734-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
 2026-05-04T14:05:09.193507-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
 2026-05-04T14:00:08.800470-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
 2026-05-04T13:55:10.029925-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
@@ -69,7 +70,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-04T09:28:28.007436-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-05-04T09:20:06.330074-04:00 data_refresh data_refresh                   {'saved': 99}
 2026-05-01T14:10:01.750184-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
-2026-05-01T14:05:02.593188-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -79,27 +79,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504140509)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504141009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504140509)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504141009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504140509)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504141009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504140509)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504141009)
 
 </details>
