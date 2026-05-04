@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-04 15:15:09 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-05-04 15:20:09 EDT`
+Last processed slot: `manage_1530`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$9,067.50`
-- Equity: `$17,817.50`
+- Equity: `$17,917.50`
 - Realized PnL: `$7,667.50`
-- Unrealized PnL: `$150.00`
+- Unrealized PnL: `$250.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CHTR     option         option CHTR260618C00175000       2026-05-04                   0     10      8600.0                  8750.0          8.6           8.75      169.93        167.35           150.0                   1.74         88.89               36              1.06         46.31           50.38                 118.68                 169.0           21.0               0.07                      ok
+  CHTR     option         option CHTR260618C00175000       2026-05-04                   0     10      8600.0                  8850.0          8.6           8.85      169.93        166.69           250.0                   2.91         88.89               36              1.06         46.31           52.03                 118.68                 169.0           21.0               0.07                      ok
 ```
 
 ## Today's Closed Trades (2026-05-04)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               24            2.75              1.92         98.79                90.80            True
-  SOXL           82.14               28            1.84              1.68        129.68                93.95            True
-  AXON           82.86               35            1.31              3.68        400.73                68.18            True
-  SHOP           92.68               41            0.55              0.49        127.46                55.83            True
-   WMT           88.24               17            1.27              1.17        131.10                27.95            True
-  ISRG           94.44               18            1.63              5.23        455.54                36.31            True
-  NFLX           87.50               32            0.85              0.55         91.82                43.43            True
-   KDP           81.25               16            1.55              0.32         28.95                34.45            True
-  MPWR           89.29               28            1.50             16.64       1576.35                53.29            True
-  MRVL          100.00               35            0.60              0.69        164.65                47.49            True
-  TMUS           85.19               27            1.07              1.46        195.43                37.34            True
-  ROST          100.00               12            1.55              2.49        227.77                21.04            True
+  INTC          100.00               21            2.88              2.01         98.75                90.80            True
+  SOXL           82.14               28            2.14              1.95        129.56                93.95            True
+   KDP           83.33               12            1.70              0.35         28.94                34.45            True
+  AXON           82.35               34            1.46              4.11        400.55                68.18            True
+  ISRG           94.44               18            1.63              5.22        455.54                36.31            True
+   WMT           89.47               19            1.19              1.09        131.13                27.95            True
+  AVGO           91.67               24            1.43              4.21        419.48                41.07            True
+  MRVL          100.00               32            0.75              0.86        164.58                47.49            True
+  MPWR           88.89               27            1.58             17.49       1575.98                53.29            True
+  NFLX           88.24               34            0.75              0.49         91.85                43.43            True
+  ROST          100.00               12            1.46              2.34        227.84                21.04            True
+  TMUS           85.71               28            0.99              1.36        195.48                37.34            True
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504151509)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504152009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504151509)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504152009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504151509)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504152009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504151509)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504152009)
 
 </details>
