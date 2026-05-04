@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-04 15:40:09 EDT`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-05-04 15:45:09 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -25,16 +25,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$9,067.50`
-- Equity: `$17,217.50`
+- Equity: `$17,167.50`
 - Realized PnL: `$7,667.50`
-- Unrealized PnL: `$-450.00`
+- Unrealized PnL: `$-500.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CHTR     option         option CHTR260618C00175000       2026-05-04                   0     10      8600.0                  8150.0          8.6           8.15      169.93        166.21          -450.0                  -5.23         88.89               36              1.06         46.31           51.41                 118.68                 169.0           21.0               0.07                      ok
+  CHTR     option         option CHTR260618C00175000       2026-05-04                   0     10      8600.0                  8100.0          8.6            8.1      169.93        165.91          -500.0                  -5.81         88.89               36              1.06         46.31           50.22                 118.68                 169.0           21.0               0.07                      ok
 ```
 
 ## Today's Closed Trades (2026-05-04)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  INTC          100.00               18            3.50              2.44         98.56                90.80            True
-  SOXL           82.14               28            1.75              1.60        129.71                93.95            True
-  AXON           83.33               36            0.97              2.72        401.14                68.18            True
-  MPWR           90.91               33            0.67              7.48       1580.28                53.29            True
-  ISRG           94.12               17            1.65              5.29        455.51                36.31            True
-   WMT           89.47               19            1.20              1.11        131.12                27.95            True
-   KDP           81.25               16            1.39              0.28         28.97                34.45            True
+  INTC          100.00               18            3.55              2.47         98.55                90.80            True
+  SOXL           82.76               29            1.72              1.57        129.73                93.95            True
+  AXON           84.21               38            0.90              2.53        401.23                68.18            True
+  SHOP           92.68               41            0.54              0.48        127.46                55.83            True
+   WMT           88.24               17            1.27              1.17        131.10                27.95            True
+  ISRG           94.12               17            1.66              5.33        455.49                36.31            True
+   KDP           81.25               16            1.41              0.29         28.97                34.45            True
   NFLX           86.67               30            0.98              0.63         91.79                43.43            True
-  MRVL          100.00               34            0.64              0.74        164.63                47.49            True
-  AVGO           93.33               30            1.11              3.29        419.87                41.07            True
-  TMUS           86.21               29            0.91              1.25        195.52                37.34            True
-  GOOG           80.65               31            0.85              2.27        382.25                37.53            True
+  AVGO           93.10               29            1.17              3.45        419.80                41.07            True
+  MRVL          100.00               36            0.50              0.58        164.70                47.49            True
+  ROST          100.00               12            1.51              2.42        227.80                21.04            True
+  TMUS           86.21               29            0.97              1.33        195.49                37.34            True
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504154009)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504154509)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504154009)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504154509)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504154009)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504154509)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504154009)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504154509)
 
 </details>
