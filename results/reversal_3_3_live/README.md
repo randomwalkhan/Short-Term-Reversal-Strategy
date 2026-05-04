@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-01 14:15:06 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-05-04 09:20:06 EDT`
+Last processed slot: `manage_0930`
 
 ## Active Configuration
 
@@ -34,45 +34,28 @@ Last processed slot: `manual`
 
 _None_
 
-## Today's Closed Trades (2026-05-01)
+## Today's Closed Trades (2026-05-04)
 
-```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price    pnl  return_pct                  exit_reason
-  INTC     option         option INTC260618C00095000      7          2026-04-30         2026-05-01         10.3        13.3 2100.0   29.126214 take_profit_day1_hit_at_scan
-```
+_None_
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  QCOM           85.71               21            1.43              1.80        178.81                62.29            True
-  MDLZ           85.00               20            0.86              0.37         61.28                26.54            True
-   CSX           89.66               29            0.63              0.20         45.34                28.16            True
-   XEL           92.59               27            0.59              0.34         82.80                27.62            True
-  NXPI           81.08               37            0.41              0.85        293.23                84.73           False
-   TXN           84.21               38            0.32              0.62        280.81                67.79           False
-  FAST           96.88               32            0.32              0.10         44.89                40.12           False
-   KDP           66.67                6            1.94              0.40         29.23                34.77           False
-  ASML           86.11               36            0.35              3.49       1437.50                47.82           False
-   ADI           75.00               20            1.64              4.63        400.28                38.22           False
-  ORLY          100.00                3            3.59              2.50         98.33                32.49           False
-   CEG           90.00               40            0.44              0.97        312.59                46.55           False
-```
+_None_
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-05-01T14:10:01.750184-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-05-01T14:05:02.593188-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-05-01T14:00:02.753183-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-05-01T13:55:05.465592-04:00 manage_1400 slot_skipped {"reason": "already_processed"}
-2026-05-01T13:40:06.684351-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-05-01T13:35:01.746076-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-05-01T13:30:03.675917-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-05-01T13:25:02.795278-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-05-01T13:10:01.603461-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
-2026-05-01T13:05:01.594771-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
+                    timestamp_et         slot   event_type                          detail
+2026-05-04T09:20:06.330074-04:00 data_refresh data_refresh                   {'saved': 99}
+2026-05-01T14:10:01.750184-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
+2026-05-01T14:05:02.593188-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
+2026-05-01T14:00:02.753183-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
+2026-05-01T13:55:05.465592-04:00  manage_1400 slot_skipped {"reason": "already_processed"}
+2026-05-01T13:40:06.684351-04:00  manage_1330 slot_skipped {"reason": "already_processed"}
+2026-05-01T13:35:01.746076-04:00  manage_1330 slot_skipped {"reason": "already_processed"}
+2026-05-01T13:30:03.675917-04:00  manage_1330 slot_skipped {"reason": "already_processed"}
+2026-05-01T13:25:02.795278-04:00  manage_1330 slot_skipped {"reason": "already_processed"}
+2026-05-01T13:10:01.603461-04:00  manage_1300 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +65,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260501141506)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504092006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260501141506)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504092006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260501141506)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504092006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260501141506)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504092006)
 
 </details>
