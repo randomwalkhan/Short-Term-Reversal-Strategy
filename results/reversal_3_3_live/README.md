@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-04 15:05:09 EDT`
+Latest checkpoint (ET): `2026-05-04 15:10:09 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$9,067.50`
-- Equity: `$17,767.50`
+- Equity: `$17,917.50`
 - Realized PnL: `$7,667.50`
-- Unrealized PnL: `$100.00`
+- Unrealized PnL: `$250.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CHTR     option         option CHTR260618C00175000       2026-05-04                   0     10      8600.0                  8700.0          8.6            8.7      169.93        168.62           100.0                   1.16         88.89               36              1.06         46.31           49.48                 118.68                 169.0           21.0               0.07                      ok
+  CHTR     option         option CHTR260618C00175000       2026-05-04                   0     10      8600.0                  8850.0          8.6           8.85      169.93        168.29           250.0                   2.91         88.89               36              1.06         46.31           51.37                 118.68                 169.0           21.0               0.07                      ok
 ```
 
 ## Today's Closed Trades (2026-05-04)
@@ -45,24 +45,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CHTR           82.61               23            1.82              2.18        170.80               118.68            True
-  INTC          100.00               24            2.67              1.86         98.81                90.80            True
-  SOXL           82.76               29            1.60              1.46        129.78                93.95            True
-  AXON           84.21               38            0.87              2.46        401.26                68.18            True
-  ISRG           94.44               18            1.59              5.11        455.59                36.31            True
-   WMT           88.24               17            1.35              1.25        131.07                27.95            True
-   KDP           81.25               16            1.53              0.31         28.96                34.45            True
+  INTC          100.00               24            2.65              1.85         98.82                90.80            True
+  SOXL           82.76               29            1.69              1.55        129.74                93.95            True
+  AXON           84.21               38            0.82              2.31        401.32                68.18            True
+   WMT           88.24               17            1.29              1.19        131.09                27.95            True
+  ISRG           94.44               18            1.57              5.04        455.62                36.31            True
+   KDP           81.25               16            1.46              0.30         28.96                34.45            True
   NFLX           87.50               32            0.90              0.58         91.81                43.43            True
- GOOGL           84.38               32            0.88              2.38        384.67                37.78            True
-  MPWR           89.29               28            1.51             16.74       1576.30                53.29            True
-  TMUS           86.21               29            0.95              1.30        195.50                37.34            True
-  ASML           85.71               14            2.99             29.82       1414.24                46.26            True
+  TMUS           85.71               28            1.04              1.42        195.45                37.34            True
+  MPWR           89.29               28            1.47             16.26       1576.51                53.29            True
+  ROST           92.86               14            1.36              2.18        227.90                21.04            True
+  ASML           85.71               14            2.90             28.94       1414.62                46.26            True
+  CHTR           77.78               18            2.14              2.57        170.64               118.68           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot     event_type                                                                                                                                                                                                                                                                                                                                                                        detail
+2026-05-04T15:10:09.065840-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-05-04T15:05:09.667886-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-05-04T15:00:09.508232-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-05-04T14:55:09.604545-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-04T14:35:09.922061-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-05-04T14:30:09.366130-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-05-04T14:25:09.855763-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
-2026-05-04T14:10:09.093734-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504150509)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504151009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504150509)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504151009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504150509)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504151009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504150509)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504151009)
 
 </details>
