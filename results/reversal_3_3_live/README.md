@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-04 14:55:09 EDT`
+Latest checkpoint (ET): `2026-05-04 15:00:09 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$9,067.50`
-- Equity: `$17,617.50`
+- Equity: `$17,667.50`
 - Realized PnL: `$7,667.50`
-- Unrealized PnL: `$-50.00`
+- Unrealized PnL: `$0.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CHTR     option         option CHTR260618C00175000       2026-05-04                   0     10      8600.0                  8550.0          8.6           8.55      169.93        169.63           -50.0                  -0.58         88.89               36              1.06         46.31           46.28                 118.68                 169.0           21.0               0.07                      ok
+  CHTR     option         option CHTR260618C00175000       2026-05-04                   0     10      8600.0                  8600.0          8.6            8.6      169.93        169.71             0.0                    0.0         88.89               36              1.06         46.31           46.56                 118.68                 169.0           21.0               0.07                      ok
 ```
 
 ## Today's Closed Trades (2026-05-04)
@@ -45,24 +45,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CHTR           87.50               32            1.29              1.55        171.08               118.68            True
-  INTC          100.00               21            2.93              2.04         98.73                90.80            True
-  SOXL           82.14               28            2.26              2.07        129.51                93.95            True
-  AXON           83.33               36            0.99              2.78        401.12                68.18            True
-   WMT           88.24               17            1.26              1.16        131.10                27.95            True
-  ISRG           94.44               18            1.61              5.16        455.57                36.31            True
+  CHTR           88.57               35            1.08              1.30        171.18               118.68            True
+  INTC          100.00               24            2.72              1.90         98.80                90.80            True
+  SOXL           82.14               28            2.12              1.93        129.57                93.95            True
+  AXON           85.00               40            0.74              2.08        401.42                68.18            True
+  ISRG           94.44               18            1.58              5.05        455.61                36.31            True
+   WMT           88.24               17            1.35              1.25        131.07                27.95            True
+  NFLX           87.50               32            0.80              0.51         91.84                43.43            True
    KDP           81.25               16            1.50              0.30         28.96                34.45            True
-  NFLX           87.50               32            0.85              0.55         91.83                43.43            True
-  MPWR           88.00               25            1.66             18.41       1575.59                53.29            True
-  TMUS           85.19               27            1.04              1.42        195.45                37.34            True
-   ADI           81.82               33            0.57              1.57        397.02                38.53            True
- GOOGL           85.71               35            0.77              2.08        384.80                37.78            True
+  MPWR           88.89               27            1.54             17.11       1576.15                53.29            True
+  TMUS           85.71               28            1.04              1.42        195.45                37.34            True
+  ASML           85.71               14            2.89             28.88       1414.64                46.26            True
+  NXPI           70.83               24            1.33              2.75        294.06                84.38           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot     event_type                                                                                                                                                                                                                                                                                                                                                                        detail
+2026-05-04T15:00:09.508232-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-05-04T14:55:09.604545-04:00  entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-05-04T14:50:09.604154-04:00  entry_1500          entry {"allocated_cash": 8600.0, "asset_type": "option", "contract_symbol": "CHTR260618C00175000", "contracts": 10, "entry_option_price": 8.6, "execution_mode": "option", "matched_signals": 36, "option_liquidity_status": "ok", "option_open_interest": 169.0, "option_spread_pct": 6.98, "option_volume": 21.0, "success_rate": 88.89, "ticker": "CHTR", "timing_score": 0.733}
 2026-05-04T14:50:09.604154-04:00  entry_1500 timing_overlay                                                                                                                                                                                                                                                                  {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-04", "training_samples": 5525, "window": 5}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-04T14:25:09.855763-04:00 manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-05-04T14:10:09.093734-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 2026-05-04T14:05:09.193507-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
-2026-05-04T14:00:08.800470-04:00 manage_1400   slot_skipped                                                                                                                                                                                                                                                                                                                                               {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504145509)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504150009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504145509)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504150009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504145509)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504150009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504145509)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504150009)
 
 </details>
