@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-04 16:00:09 EDT`
-- Equity: `$16,567.50` | Realized: `$7,667.50` | Unrealized: `$-1,100.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-05-04 16:05:09 EDT`
+- Equity: `$16,517.50` | Realized: `$7,667.50` | Unrealized: `$-1,150.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  CHTR     option         option CHTR260618C00175000     10      8600.0                  7500.0            7.5         -1100.0                 -12.79                   0
+  CHTR     option         option CHTR260618C00175000     10      8600.0                  7450.0           7.45         -1150.0                 -13.37                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260504160009)
+![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260504160509)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260504160009)
+![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260504160509)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260504160009)
+![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260504160509)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260504160009)
+![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260504160509)
 
 </details>
 
