@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-04 09:28:28 EDT`
-Last processed slot: `manage_0930`
+Latest checkpoint (ET): `2026-05-04 09:45:26 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -40,7 +40,21 @@ _None_
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
+ CMCSA           90.48               21            0.70              0.13         27.11                61.39            True
+  INTC          100.00               29            1.85              1.29         99.06                90.80            True
+  SHOP           92.68               41            0.72              0.64        127.39                55.83            True
+  META           85.71               35            0.70              3.00        607.46                47.45            True
+  ASML           81.48               27            1.08             10.83       1422.38                46.26            True
+  NFLX           87.88               33            0.79              0.51         91.84                43.43            True
+  TMUS           82.61               23            1.28              1.75        195.31                37.34            True
+ GOOGL           84.85               33            0.83              2.23        384.73                37.78            True
+   XEL           92.86               28            0.56              0.32         82.44                27.40            True
+   CSX           86.67               30            0.59              0.19         45.02                28.27            True
+  NXPI           80.00               35            0.44              0.91        294.85                84.38           False
+   TXN           84.62               39            0.18              0.35        280.80                67.49           False
+```
 
 ## Recent Events
 
@@ -65,27 +79,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504092828)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260504094526)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504092828)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260504094526)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504092828)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260504094526)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504092828)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260504094526)
 
 </details>
