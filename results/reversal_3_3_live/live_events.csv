@@ -1284,3 +1284,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-04T14:50:09.604154-04:00,2026-05-04,entry_1500,entry,"{""allocated_cash"": 8600.0, ""asset_type"": ""option"", ""contract_symbol"": ""CHTR260618C00175000"", ""contracts"": 10, ""entry_option_price"": 8.6, ""execution_mode"": ""option"", ""matched_signals"": 36, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 169.0, ""option_spread_pct"": 6.98, ""option_volume"": 21.0, ""success_rate"": 88.89, ""ticker"": ""CHTR"", ""timing_score"": 0.733}"
 2026-05-04T14:55:09.604545-04:00,2026-05-04,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-04T15:00:09.508232-04:00,2026-05-04,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-05-04T15:05:09.667886-04:00,2026-05-04,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
