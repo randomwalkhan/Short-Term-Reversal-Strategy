@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-05 01:30:06 EDT`
-Last processed slot: `share_ext_0130`
+Latest checkpoint (ET): `2026-05-05 11:30:06 EDT`
+Last processed slot: `manage_1130`
 
 ## Active Configuration
 
@@ -24,41 +24,55 @@ Last processed slot: `share_ext_0130`
 
 ## Portfolio Snapshot
 
-- Cash: `$9,107.50`
-- Equity: `$17,459.50`
-- Realized PnL: `$7,667.50`
-- Unrealized PnL: `$-208.00`
-- Open positions: `1`
+- Cash: `$23,087.50`
+- Equity: `$23,087.50`
+- Realized PnL: `$13,087.50`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260618C00095000       2026-05-04                   1      8      8560.0                  8352.0         10.7          10.44       96.63          95.8          -208.0                  -2.43         100.0               20               3.0         78.24             0.0                  98.58                   2844          921.0                5.5         ok
-```
+_None_
 
 ## Today's Closed Trades (2026-05-05)
 
-_None_
+```text
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price    pnl  return_pct                  exit_reason
+  INTC     option         option INTC260618C00095000      8          2026-05-04         2026-05-05         10.7      17.475 5420.0   63.317757 take_profit_day1_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
+  TEAM           84.21               38            1.77              1.15         92.70               121.39            True
+  META           85.19               27            0.94              4.00        608.75                47.41            True
+   KDP           89.29               28            0.57              0.12         28.82                34.67            True
+  MDLZ           85.71               21            0.88              0.38         61.22                26.22            True
+   ADP           80.95               21            1.06              1.56        210.65                37.69            True
+  FANG          100.00               10            2.67              4.00        211.98                31.30            True
+  MSFT           85.29               34            0.53              1.53        412.97                34.18            True
+  CHTR           60.00               10            3.31              3.83        163.70               118.91           False
+ CMCSA           75.00                4            2.64              0.50         26.86                61.32           False
+   TXN           83.33               36            0.44              0.86        280.52                67.78           False
+  FAST           97.22               36            0.08              0.02         44.87                39.95           False
+  GEHC           82.22               45            0.16              0.07         60.97                59.35           False
+```
 
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                                                                                                                                                                           detail
-2026-05-05T01:30:06.241617-04:00   entry_1500        entry {"allocated_cash": 8560.0, "contract_symbol": "INTC260618C00095000", "contracts": 8, "entry_option_price": 10.7, "matched_signals": 20, "success_rate": 100.0, "ticker": "INTC"}
-2026-05-05T00:00:06.231478-04:00 data_refresh data_refresh                                                                                                                                                                    {'saved': 99}
-2026-05-04T16:10:09.757546-04:00  manage_1600 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-05-04T16:05:09.908041-04:00  manage_1600 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-05-04T16:00:09.839612-04:00  manage_1600 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-05-04T15:55:09.975943-04:00  manage_1600 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-05-04T15:40:09.372943-04:00  manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-2026-05-04T15:35:09.467002-04:00  manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
-       2026-05-04T15:31:00-04:00   entry_1500        entry {"allocated_cash": 8560.0, "contract_symbol": "INTC260618C00095000", "contracts": 8, "entry_option_price": 10.7, "matched_signals": 20, "success_rate": 100.0, "ticker": "INTC"}
-2026-05-04T15:30:09.346876-04:00  manage_1530 slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+                    timestamp_et        slot   event_type                          detail
+2026-05-05T11:30:06.314731-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
+2026-05-05T11:25:06.295587-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
+2026-05-05T11:10:06.308576-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
+2026-05-05T11:05:06.306421-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
+2026-05-05T11:00:06.364534-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
+2026-05-05T10:55:06.306031-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
+2026-05-05T10:40:01.278924-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-05-05T10:35:06.304253-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-05-05T10:30:06.301065-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
+2026-05-05T10:25:06.315562-04:00 manage_1030 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -68,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260505013006)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260505113006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260505013006)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260505113006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260505013006)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260505113006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260505013006)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260505113006)
 
 </details>
