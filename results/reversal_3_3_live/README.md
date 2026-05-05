@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-05 11:55:05 EDT`
+Latest checkpoint (ET): `2026-05-05 12:00:06 EDT`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -45,24 +45,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  TEAM           83.78               37            2.04              1.33         92.62               121.39            True
-  META           84.00               25            1.25              5.33        608.18                47.41            True
-    ZS           84.09               44            0.52              0.52        141.98                69.57            True
-  MSFT           82.61               23            0.98              2.85        412.40                34.18            True
-  MDLZ           84.21               19            0.96              0.41         61.20                26.22            True
-  PANW           84.85               33            0.98              1.27        184.02                48.03            True
-  CHTR           71.43                7            4.08              4.72        163.32               118.91           False
-   TXN           83.33               36            0.43              0.85        280.52                67.78           False
- CMCSA           66.67                3            2.83              0.54         26.84                61.32           False
-  FAST           97.06               34            0.13              0.04         44.86                39.95           False
-  GEHC           80.49               41            0.34              0.14         60.94                59.35           False
-   KDP           87.10               31            0.31              0.06         28.84                34.67           False
+  TEAM           83.33               36            2.32              1.52         92.54               121.39            True
+  META           87.50               24            1.34              5.73        608.01                47.41            True
+  MSFT           80.95               21            1.06              3.08        412.30                34.18            True
+  MDLZ           82.61               23            0.81              0.35         61.23                26.22            True
+  CHTR           71.43                7            3.78              4.37        163.47               118.91           False
+ CMCSA           75.00                4            2.31              0.44         26.88                61.32           False
+   TXN           84.21               38            0.38              0.74        280.57                67.78           False
+  FAST           97.30               37            0.01              0.00         44.88                39.95           False
+  GEHC           80.95               42            0.23              0.10         60.96                59.35           False
+    ZS           84.44               45            0.49              0.48        141.99                69.57           False
+   KDP           87.88               33            0.19              0.04         28.85                34.67           False
+  DDOG           93.33               45            0.01              0.01        146.68                55.45           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-05-05T12:00:06.748217-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 2026-05-05T11:55:05.945498-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 2026-05-05T11:40:06.303988-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
 2026-05-05T11:35:06.313311-04:00 manage_1130 slot_skipped {"reason": "already_processed"}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-05T11:10:06.308576-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-05-05T11:05:06.306421-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 2026-05-05T11:00:06.364534-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
-2026-05-05T10:55:06.306031-04:00 manage_1100 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260505115505)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260505120006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260505115505)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260505120006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260505115505)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260505120006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260505115505)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260505120006)
 
 </details>
