@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-05 13:30:09 EDT`
-Last processed slot: `manage_1330`
+Latest checkpoint (ET): `2026-05-05 16:00:00 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -24,15 +24,18 @@ Last processed slot: `manage_1330`
 
 ## Portfolio Snapshot
 
-- Cash: `$23,087.50`
-- Equity: `$23,087.50`
+- Cash: `$12,472.50`
+- Equity: `$24,022.50`
 - Realized PnL: `$13,087.50`
-- Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Unrealized PnL: `$935.00`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
+  TEAM     option         option TEAM260618C00090000       2026-05-05                   0     11     10615.0                 11550.0         9.65           10.5       91.46         92.48           935.0                   8.81         84.21               38              1.82         72.84           73.24                 121.39                2308.0          583.0               0.04                      ok
+```
 
 ## Today's Closed Trades (2026-05-05)
 
@@ -43,36 +46,22 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  TEAM           84.21               38            1.90              1.24         92.66               121.39            True
-  FAST           95.65               23            0.91              0.29         44.76                39.95            True
-  META           84.00               25            1.26              5.38        608.16                47.41            True
-  MSFT           83.33               24            0.85              2.47        412.56                34.18            True
-  PANW           82.76               29            1.14              1.47        183.93                48.03            True
-  CHTR           71.43                7            3.90              4.52        163.40               118.91           False
- CMCSA           75.00                4            2.57              0.49         26.86                61.32           False
-  GEHC           78.38               37            0.77              0.33         60.86                59.35           False
-    ZS           85.42               48            0.36              0.36        142.05                69.57           False
-  DDOG           92.86               42            0.39              0.40        146.52                55.45           False
-   BKR           72.22               18            1.54              0.74         68.69                35.17           False
-  FANG          100.00                9            2.82              4.21        211.88                31.30           False
-```
+_None_
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                          detail
-2026-05-05T13:30:09.549744-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-05-05T13:25:09.992302-04:00 manage_1330 slot_skipped {"reason": "already_processed"}
-2026-05-05T13:10:09.568185-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
-2026-05-05T13:05:09.617226-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
-2026-05-05T13:00:07.034754-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
-2026-05-05T12:55:06.325768-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
-2026-05-05T12:40:06.300878-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
-2026-05-05T12:35:06.312532-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
-2026-05-05T12:30:06.303564-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
-2026-05-05T12:25:06.302342-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
+                    timestamp_et           slot     event_type                                                                                                                                                                                                                                                                                                                                                                            detail
+       2026-05-05T16:01:00-04:00 backfill_audit backfill_audit                                                                                                               {"open_positions_after_backfill": 1, "reason": "Mac was offline; reconstructed missed 2026-05-05 ET afternoon slots using stock and option 1m bars clipped at each slot time", "slots": ["manage_1400", "manage_1430", "entry_1500", "manage_1530", "manage_1600"]}
+       2026-05-05T15:00:00-04:00     entry_1500          entry {"allocated_cash": 10615.0, "asset_type": "option", "contract_symbol": "TEAM260618C00090000", "contracts": 11, "entry_option_price": 9.65, "execution_mode": "option", "matched_signals": 38, "option_liquidity_status": "ok", "option_open_interest": 2308.0, "option_spread_pct": 3.81, "option_volume": 583.0, "success_rate": 84.21, "ticker": "TEAM", "timing_score": 0.669}
+       2026-05-05T15:00:00-04:00     entry_1500 timing_overlay                                                                                                                                                                                                                                                                      {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-05", "training_samples": 5543, "window": 5}
+2026-05-05T13:30:09.549744-04:00    manage_1330   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
+2026-05-05T13:25:09.992302-04:00    manage_1330   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
+2026-05-05T13:10:09.568185-04:00    manage_1300   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
+2026-05-05T13:05:09.617226-04:00    manage_1300   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
+2026-05-05T13:00:07.034754-04:00    manage_1300   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
+2026-05-05T12:55:06.325768-04:00    manage_1300   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
+2026-05-05T12:40:06.300878-04:00    manage_1230   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260505133009)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260505160000)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260505133009)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260505160000)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260505133009)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260505160000)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260505133009)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260505160000)
 
 </details>
