@@ -4,7 +4,7 @@
 ## Reversal 3.3 Live Paper Test
 
 - Latest checkpoint (ET): `2026-05-05 01:30:06 EDT`
-- Equity: `$17,727.50` | Realized: `$7,667.50` | Unrealized: `$60.00` | Open positions: `1`
+- Equity: `$17,459.50` | Realized: `$7,667.50` | Unrealized: `$-208.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `share_ext_0130`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,7 +14,7 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  CHTR     option         option CHTR260618C00175000     10      8600.0                  8660.0           8.66            60.0                    0.7                   1
+  INTC     option         option INTC260618C00095000      8      8560.0                  8352.0          10.44          -208.0                  -2.43                   1
 ```
 
 <details open>

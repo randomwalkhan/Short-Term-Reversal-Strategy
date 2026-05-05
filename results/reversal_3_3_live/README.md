@@ -24,17 +24,17 @@ Last processed slot: `share_ext_0130`
 
 ## Portfolio Snapshot
 
-- Cash: `$9,067.50`
-- Equity: `$17,727.50`
+- Cash: `$9,107.50`
+- Equity: `$17,459.50`
 - Realized PnL: `$7,667.50`
-- Unrealized PnL: `$60.00`
+- Unrealized PnL: `$-208.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CHTR     option         option CHTR260618C00175000       2026-05-04                   1     10      8600.0                  8660.0          8.6           8.66      169.93        165.74            60.0                    0.7         88.89               36              1.06         46.31            3.13                 118.68                 169.0           21.0               0.07                      ok
+  INTC     option         option INTC260618C00095000       2026-05-04                   1      8      8560.0                  8352.0         10.7          10.44       96.63          95.8          -208.0                  -2.43         100.0               20               3.0         78.24             0.0                  98.58                   NaN          921.0                0.0         manual_override
 ```
 
 ## Today's Closed Trades (2026-05-05)
@@ -48,17 +48,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                          detail
-2026-05-05T00:00:06.231478-04:00 data_refresh data_refresh                   {'saved': 99}
-2026-05-04T16:10:09.757546-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
-2026-05-04T16:05:09.908041-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
-2026-05-04T16:00:09.839612-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
-2026-05-04T15:55:09.975943-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
-2026-05-04T15:40:09.372943-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-05-04T15:35:09.467002-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-05-04T15:30:09.346876-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-05-04T15:25:09.552870-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-05-04T15:10:09.065840-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
+                    timestamp_et         slot      event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       detail
+2026-05-05T01:30:06.241617-04:00       manual manual_override {"entry_option_price": 10.7, "entry_timestamp_et": "2026-05-04T15:31:00-04:00", "fill_source": "manual 10.70 fill within the observed 15:00-16:00 ET INTC option tape range", "new_contract_symbol": "INTC260618C00095000", "new_position_id": "INTC_20260504T153100", "new_ticker": "INTC", "old_contract_symbol": "CHTR260618C00175000", "old_position_id": "CHTR_20260504T145009", "old_ticker": "CHTR", "reason": "user_observed_intc_signal_on_2026_05_04; manual_midpoint_fill_10_70"}
+2026-05-05T00:00:06.231478-04:00 data_refresh    data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {'saved': 99}
+2026-05-04T16:10:09.757546-04:00  manage_1600    slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"reason": "already_processed"}
+2026-05-04T16:05:09.908041-04:00  manage_1600    slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"reason": "already_processed"}
+2026-05-04T16:00:09.839612-04:00  manage_1600    slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"reason": "already_processed"}
+2026-05-04T15:55:09.975943-04:00  manage_1600    slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"reason": "already_processed"}
+2026-05-04T15:40:09.372943-04:00  manage_1530    slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"reason": "already_processed"}
+2026-05-04T15:35:09.467002-04:00  manage_1530    slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"reason": "already_processed"}
+       2026-05-04T15:31:00-04:00   entry_1500           entry                {"allocated_cash": 8560.0, "asset_type": "option", "contract_symbol": "INTC260618C00095000", "contracts": 8, "entry_option_price": 10.7, "execution_mode": "option", "fill_source": "manual midpoint adjustment within 15:00-16:00 ET option tape range", "matched_signals": 20, "option_liquidity_status": "manual_override", "option_open_interest": null, "option_spread_pct": 0.0, "option_volume": 921.0, "success_rate": 100.0, "ticker": "INTC", "timing_score": null}
+2026-05-04T15:30:09.346876-04:00  manage_1530    slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"reason": "already_processed"}
 ```
 
 ## Equity Curves
