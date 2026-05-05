@@ -34,7 +34,7 @@ Last processed slot: `share_ext_0130`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260618C00095000       2026-05-04                   1      8      8560.0                  8352.0         10.7          10.44       96.63          95.8          -208.0                  -2.43         100.0               20               3.0         78.24             0.0                  98.58                   NaN          921.0                0.0         ok
+  INTC     option         option INTC260618C00095000       2026-05-04                   1      8      8560.0                  8352.0         10.7          10.44       96.63          95.8          -208.0                  -2.43         100.0               20               3.0         78.24             0.0                  98.58                   2844          921.0                0.0         ok
 ```
 
 ## Today's Closed Trades (2026-05-05)
