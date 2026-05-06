@@ -1,7 +1,7 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-06 09:53:26 EDT`
-Last processed slot: `manage_1000`
+Latest checkpoint (ET): `2026-05-06 10:28:45 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -24,45 +24,46 @@ Last processed slot: `manage_1000`
 
 ## Portfolio Snapshot
 
-- Cash: `$12,472.50`
-- Equity: `$24,022.50`
-- Realized PnL: `$13,087.50`
-- Unrealized PnL: `$935.00`
-- Open positions: `1`
+- Cash: `$19,842.50`
+- Equity: `$19,842.50`
+- Realized PnL: `$9,842.50`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  TEAM     option         option TEAM260618C00090000       2026-05-05                   1     11     10615.0                 11550.0         9.65           10.5       91.46         84.93           935.0                   8.81         84.21               38              1.82         72.84            3.13                 121.39                2308.0          583.0               0.04                      ok
-```
+_None_
 
 ## Today's Closed Trades (2026-05-06)
 
-_None_
+```text
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price         pnl  return_pct           exit_reason
+  TEAM     option         option TEAM260618C00090000     11          2026-05-05         2026-05-06         9.65         6.7 -3244.99958  -30.569945 stop_loss_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CDNS           97.30               37            0.61              1.50        352.99                54.11            True
-   XEL           93.33               15            1.07              0.61         81.19                28.13            True
-  FTNT           88.89               18            1.80              1.13         89.43                40.66            True
-  PANW           80.77               26            1.30              1.68        183.26                45.58            True
-  ADSK           81.82               11            2.98              5.20        247.20                46.09            True
-    ZS           80.00               15            3.61              3.57        139.83                69.30            True
-  ADBE           84.00               25            1.98              3.55        254.10                46.79            True
-  MSTR           87.80               41            0.90              1.18        186.40                66.92            True
-  PLTR           85.19               27            1.86              1.77        135.15                62.37            True
-  DDOG           89.29               28            1.72              1.75        144.98                55.69            True
-  COST           89.47               19            0.93              6.60       1013.59                18.81            True
-  CHTR           90.48               42            0.49              0.55        158.00               118.74           False
+  ADSK           91.67               24            1.40              2.44        248.38                46.09            True
+    ZS           82.86               35            1.25              1.23        140.83                69.30            True
+   XEL           95.65               23            0.71              0.41         81.28                28.13            True
+  PLTR           90.00               40            0.59              0.56        135.67                62.37            True
+  DDOG           91.67               36            0.92              0.94        145.33                55.69            True
+  INTC          100.00               44            0.08              0.06        108.15                99.33           False
+  CDNS           97.50               40            0.25              0.62        353.37                54.11           False
+  TEAM           75.00               12            5.39              3.48         90.86               119.37           False
+   ADP           78.95               19            1.22              1.80        209.83                37.68           False
+  CRWD           90.24               41            0.42              1.41        475.92                50.97           False
+  COST           75.00                8            1.37              9.74       1012.24                18.81           False
+   KDP           88.57               35            0.14              0.03         28.91                34.27           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et           slot     event_type                                                                                                                                                                                                                                                                                                                                                                            detail
+2026-05-06T10:28:45.392607-04:00    manage_1030           exit                                                                                                                                                                                                  {"asset_type": "option", "contract_symbol": "TEAM260618C00090000", "fill_price": 6.7, "pnl": -3245.0, "reason": "stop_loss_hit_at_scan", "return_pct": -30.57, "ticker": "TEAM"}
 2026-05-06T09:35:01.127893-04:00    manage_0930   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-05-06T00:00:03.652066-04:00   data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                     {'saved': 99}
        2026-05-05T16:01:00-04:00 backfill_audit backfill_audit                                                                                                               {"open_positions_after_backfill": 1, "reason": "Mac was offline; reconstructed missed 2026-05-05 ET afternoon slots using stock and option 1m bars clipped at each slot time", "slots": ["manage_1400", "manage_1430", "entry_1500", "manage_1530", "manage_1600"]}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-05T13:25:09.992302-04:00    manage_1330   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-05-05T13:10:09.568185-04:00    manage_1300   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-05-05T13:05:09.617226-04:00    manage_1300   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-05T13:00:07.034754-04:00    manage_1300   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506095326)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506102845)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506095326)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506102845)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506095326)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506102845)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506095326)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506102845)
 
 </details>
