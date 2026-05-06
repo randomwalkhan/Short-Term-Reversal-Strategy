@@ -32,6 +32,15 @@ NAME_EXCLUDE_PATTERNS = (
 )
 TICKER_RE = re.compile(r"^[A-Z]{1,5}(-[A-Z])?$")
 LEVERAGED_ETF_OVERLAYS = ("SOXL", "UPRO")
+HIGH_TRAILING_PE_EXCLUDE_TICKERS = (
+    "AMD",
+    "AXON",
+    "CSGP",
+    "DDOG",
+    "FANG",
+    "PLTR",
+    "TSLA",
+)
 
 
 def normalize_symbol(symbol: str) -> str:
@@ -159,6 +168,7 @@ def build_named_universe_map(
         min_price=min_price,
     )
     filtered["ticker"] = filtered["ticker"].astype(str)
+    filtered = filtered[~filtered["ticker"].isin(HIGH_TRAILING_PE_EXCLUDE_TICKERS)].copy()
 
     spy_tickers = load_local_tickers(spy_tickers_path)
     qqq_tickers = load_local_tickers(qqq_tickers_path)

@@ -20,7 +20,7 @@ from backtest_reversal_3_3_timing_overlay_experiment import (
 from plot_theme import BASELINE, FIG_BG, GREEN_LINE, TEXT, style_dark_axis, style_date_axis
 
 
-VERSION = "3.3"
+VERSION = "3.3.1"
 TIMING_WINDOW = 5
 TIMING_THRESHOLD = 0.50
 OFFICIAL_BACKTEST_YEARS = 1
