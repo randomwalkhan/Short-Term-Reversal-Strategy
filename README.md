@@ -1,10 +1,10 @@
-# Reversal 3.3
+# Reversal 3.3.1
 
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-06 15:00:04 EDT`
-- Equity: `$22,153.50` | Realized: `$12,026.00` | Unrealized: `$127.50` | Open positions: `1`
+- Latest checkpoint (ET): `2026-05-06 15:05:02 EDT`
+- Equity: `$21,921.00` | Realized: `$12,026.00` | Unrealized: `$-105.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `entry_1500`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  CRWD     option         option CRWD260618C00470000      3      9907.5                 10035.0          33.45           127.5                   1.29                   0
+  CRWD     option         option CRWD260618C00470000      3      9907.5                  9802.5          32.67          -105.0                  -1.06                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260506150004)
+![Reversal 3.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260506150502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260506150004)
+![Reversal 3.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260506150502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260506150004)
+![Reversal 3.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260506150502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260506150004)
+![Reversal 3.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260506150502)
 
 </details>
 
@@ -50,18 +50,18 @@ ticker asset_type execution_mode          instrument  units  cash_spent  current
 - [Live equity csv](results/reversal_3_3_live/live_equity.csv)
 <!-- reversal-3.3-live:end -->
 
-`Reversal3.3.ipynb` is the current research notebook for short-term reversal analysis and option profitability confidence estimation.
+`Reversal3.3.ipynb` remains the current research notebook for short-term reversal analysis and option profitability confidence estimation; `3.3.1` is the current execution/universe-maintenance version.
 
-`Reversal3.3.ipynb` 是当前版本的研究型 notebook，用于短期反转研究和期权盈利概率评估。
+`Reversal3.3.ipynb` 仍是当前研究型 notebook，用于短期反转研究和期权盈利概率评估；`3.3.1` 是当前执行层和股票池维护版本。
 
 ## Strategy Summary | 策略总结
 
-This repository studies a short-term reversal call-buying setup built around large intraday drawdowns, historical recovery probability, and staged optimization. The current official version is `Reversal 3.3`.
+This repository studies a short-term reversal call-buying setup built around large intraday drawdowns, historical recovery probability, and staged optimization. The current official version is `Reversal 3.3.1`.
 
-本仓库研究的是一套基于“日内大跌后短期反转”的 call 策略，通过历史反弹成功率和逐阶段优化来推进。目前官方版本是 `Reversal 3.3`。
+本仓库研究的是一套基于“日内大跌后短期反转”的 call 策略，通过历史反弹成功率和逐阶段优化来推进。目前官方版本是 `Reversal 3.3.1`。
 
 - Official universe: `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`
-- Official filters: `60d` lookback, `matched_signals >= 10`, `minimum current drop > 0.5%`
+- Official filters: `60d` lookback, `matched_signals >= 10`, `minimum current drop > 0.5%`, and a non-ETF `trailing P/E < 140` universe guard
 - Official timing overlay: `5d` technical-indicator timing score with a `0.50` no-trade gate
 - Trade framing: near-ATM calls, ~`30` DTE in backtests, `+10% / +15% / -10%` exit ladder in research, `+15% / +15% / -10%` in live execution
 - Live paper test: no-lookahead scheduled scans with an option-liquidity gate, a no-trade rule when liquidity is poor, and GitHub-published dashboard output
@@ -114,23 +114,23 @@ That is how the current live-paper implementation emerged. I did not begin with 
 
 ## Current Version | 当前官方版本
 
-Release notes (`3.3`)
-- Keep the official `3.1` core signal definition intact: `qqq_plus_leverage_etfs`, `60d`, `matched_signals >= 10`, and `minimum current drop > 0.5%`.
-- Remove new-entry `share fallback` from the execution layer and replace it with a no-trade rule when the option chain is unavailable or fails liquidity constraints.
-- Add a paper-inspired entry timing overlay using short-window technical indicators and promote the `5d` timing score with a `0.50` gate into the official strategy.
-- Keep the existing `3.2` holiday handling, option-liquidity protection, and live dashboard infrastructure, but align the live runner to the new no-trade execution path.
+Release notes (`3.3.1`)
+- Keep the official `3.3` timing-overlay and no-trade execution path intact.
+- Add a non-ETF high-valuation universe guard: remove stocks with current trailing P/E ratios at or above `140`.
+- Apply the guard to both the dynamic universe builder and saved ticker lists used by the live data refresh path.
+- Current removed tickers: `AMD`, `AXON`, `CSGP`, `DDOG`, `FANG`, `PLTR`, and `TSLA`; leveraged ETF overlays such as `SOXL` and `UPRO` are intentionally excluded from the P/E filter.
 
-版本说明（`3.3`）
-- 官方主信号仍沿用 `3.1` 的核心定义：`qqq_plus_leverage_etfs`、`60d`、`matched_signals >= 10`、以及 `minimum current drop > 0.5%`。
-- 执行层取消新的 `share fallback`，当期权链不可用或流动性不达标时，直接 `no trade`。
-- 引入受论文启发的短窗技术指标 timing overlay，并正式提升 `5d timing score + 0.50` gate 为官方版本的一部分。
-- 保留 `3.2` 已有的节假日保护、期权流动性保护和 live dashboard 基础设施，但让 live runner 与新的 no-trade 执行路径保持一致。
+版本说明（`3.3.1`）
+- 保留 `3.3` 已提升的 timing overlay 和 no-trade 执行路径。
+- 新增非 ETF 高估值股票池保护：移除当前 trailing P/E 大于等于 `140` 的股票。
+- 这个保护同时接入动态 universe builder 和 live 数据刷新使用的保存版 ticker 列表。
+- 本次移除：`AMD`、`AXON`、`CSGP`、`DDOG`、`FANG`、`PLTR`、`TSLA`；`SOXL` 和 `UPRO` 这类 leveraged ETF overlay 不参与 P/E 过滤。
 
 ## Featured Result | 重点结果
 
-The official Reversal 3.3 backtest keeps the promoted `3.1` research stack intact, then adds a `5d` timing overlay with a `0.50` no-trade gate on top of the existing candidate selection. On the current 1-year data snapshot, that change lifts win rate and sharply compresses drawdown while keeping Sharpe slightly above the no-overlay baseline. The current official Reversal 3.3 result is `+690.85%` total return, `-26.42%` max drawdown, `69.23%` win rate, and `4.32` Sharpe.
+The latest recorded official Reversal 3.3 backtest keeps the promoted `3.1` research stack intact, then adds a `5d` timing overlay with a `0.50` no-trade gate on top of the existing candidate selection. On the current 1-year data snapshot, that change lifts win rate and sharply compresses drawdown while keeping Sharpe slightly above the no-overlay baseline. The current recorded Reversal 3.3 result is `+690.85%` total return, `-26.42%` max drawdown, `69.23%` win rate, and `4.32` Sharpe. Reversal `3.3.1` keeps that strategy definition and adds the high trailing P/E universe guard described above.
 
-Reversal 3.3 的官方回测保留了 `3.1` 提升后的核心研究口径，并在现有候选筛选之上新增 `5d` timing overlay 与 `0.50` no-trade gate。在当前的 1 年数据快照下，这一改动显著压低了最大回撤，同时提升了胜率，并让 Sharpe 仍然略高于无 overlay 的基线。当前官方 Reversal 3.3 结果为：总收益 `+690.85%`、最大回撤 `-26.42%`、胜率 `69.23%`、Sharpe `4.32`。
+最近一次记录的 Reversal 3.3 官方回测保留了 `3.1` 提升后的核心研究口径，并在现有候选筛选之上新增 `5d` timing overlay 与 `0.50` no-trade gate。在当前的 1 年数据快照下，这一改动显著压低了最大回撤，同时提升了胜率，并让 Sharpe 仍然略高于无 overlay 的基线。当前记录的 Reversal 3.3 结果为：总收益 `+690.85%`、最大回撤 `-26.42%`、胜率 `69.23%`、Sharpe `4.32`。Reversal `3.3.1` 保留这套策略定义，并加入上面说明的高 trailing P/E 股票池保护。
 
 Backtest window: `2025-04-23` to `2026-04-23`.
 
@@ -340,6 +340,7 @@ Versioning rule: when the research definition changes materially, bump the main 
 - `3.2.1`: keep the `3.2` strategy definition unchanged, but patch the live runner so off-hours checkpoints continue marking open positions and keep the dashboard/versioning flow consistent
 - `3.2.2`: keep the `3.2.1` trading logic unchanged, but tighten the `1D` live chart y-axis so small daily moves are easier to read
 - `3.3`: remove new-entry `share fallback`, add a `5d` technical-indicator timing overlay with a `0.50` no-trade gate, and promote the resulting lower-drawdown option-only execution path into both the official backtest and the live paper runner
+- `3.3.1`: keep the `3.3` strategy intact, add a non-ETF trailing P/E guard at `140`, and remove `AMD`, `AXON`, `CSGP`, `DDOG`, `FANG`, `PLTR`, and `TSLA` from the saved and dynamically built official universe
 
 Earlier notebook snapshots such as `versions/notebooks/Reversal2.5.3.ipynb`, `versions/notebooks/Reversal2.5.ipynb`, `versions/notebooks/Reversal2.4.ipynb`, `versions/notebooks/Reversal2.3.3.ipynb`, `versions/notebooks/Reversal2.3.2.ipynb`, and `versions/notebooks/Reversal2.3.1.ipynb` are retained for version-by-version review.
 
