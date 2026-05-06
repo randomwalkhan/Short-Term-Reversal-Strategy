@@ -1,6 +1,6 @@
 # Reversal 3.3.1 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-06 15:35:07 EDT`
+Latest checkpoint (ET): `2026-05-06 15:40:03 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -25,16 +25,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$12,118.50`
-- Equity: `$21,906.00`
+- Equity: `$21,583.50`
 - Realized PnL: `$12,026.00`
-- Unrealized PnL: `$-120.00`
+- Unrealized PnL: `$-442.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CRWD     option         option CRWD260618C00470000       2026-05-06                   0      3      9907.5                  9787.5        33.02          32.62      466.99        467.22          -120.0                  -1.21         80.95               21               2.0         52.84           52.44                  50.97                3216.0          255.0               0.05                      ok
+  CRWD     option         option CRWD260618C00470000       2026-05-06                   0      3      9907.5                  9465.0        33.02          31.55      466.99        467.25          -442.5                  -4.47         80.95               21               2.0         52.84           50.76                  50.97                3216.0          255.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-05-06)
@@ -48,34 +48,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CHTR           88.57               35            1.17              1.29        157.68               118.74            True
-    ZS           82.61               23            2.17              2.15        140.44                69.30            True
-  MSTR           87.80               41            0.89              1.16        186.40                66.92            True
-   XEL           94.44               18            0.91              0.52         81.23                28.13            True
-  SHOP           86.96               23            2.50              1.89        106.81                83.08            True
-  CRWD           80.95               21            1.95              6.52        473.74                50.97            True
-   KDP           85.00               20            1.02              0.21         28.83                34.27            True
-  TEAM           78.26               23            3.93              2.54         91.26               119.37           False
-  SNPS           97.56               41            0.32              1.11        502.03                50.17           False
-  ADBE           76.47               17            2.30              4.11        253.86                46.79           False
-   ADP           78.95               19            1.46              2.16        209.68                37.68           False
-   BKR           61.54               13            1.65              0.78         67.45                35.93           False
+  CHTR           88.57               35            1.14              1.26        157.69               118.74            True
+  TEAM           80.00               20            4.21              2.72         91.18               119.37            True
+  MSTR           87.80               41            0.73              0.95        186.49                66.92            True
+    ZS           80.00               25            1.96              1.94        140.53                69.30            True
+  CRWD           80.95               21            1.81              6.05        473.94                50.97            True
+  SHOP           86.96               23            2.53              1.91        106.80                83.08            True
+   XEL           95.24               21            0.81              0.46         81.25                28.13            True
+   KDP           83.33               18            1.21              0.25         28.81                34.27            True
+  ADSK           80.00               10            3.24              5.66        247.00                46.09            True
+  SNPS           97.56               41            0.24              0.85        502.15                50.17           False
+  ADBE           77.78               18            2.15              3.85        253.97                46.79           False
+   ADP           78.95               19            1.41              2.07        209.71                37.68           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot              event_type                                                                                                                                                                                                                         detail
-2026-05-06T15:35:07.469158-04:00 manage_1530            slot_skipped                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-06T15:30:02.784375-04:00 manage_1530            slot_skipped                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-06T15:25:01.987747-04:00 manage_1530            slot_skipped                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-06T15:10:01.990575-04:00  entry_1500            slot_skipped                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-06T15:05:02.040467-04:00  entry_1500            slot_skipped                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-06T15:00:04.914832-04:00  entry_1500            slot_skipped                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-06T14:55:01.390762-04:00  entry_1500            slot_skipped                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-06T14:50:06.542235-04:00  entry_1500 entry_candidate_skipped               {"option_liquidity_status": "wide_spread", "option_open_interest": 634.0, "option_spread_pct": 18.18, "option_volume": 128.0, "reason": "no_trade_low_option_liquidity", "ticker": "XEL", "timing_score": 0.574}
-2026-05-06T14:50:06.542235-04:00  entry_1500          timing_overlay                                                                                                                   {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-06", "training_samples": 5546, "window": 5}
-2026-05-06T14:50:06.542235-04:00  entry_1500 entry_candidate_skipped {"option_liquidity_status": "low_open_interest,low_volume", "option_open_interest": 18.0, "option_spread_pct": 7.47, "option_volume": 3.0, "reason": "no_trade_low_option_liquidity", "ticker": "CHTR", "timing_score": 0.738}
+                    timestamp_et        slot              event_type                                                                                                                                                                                                           detail
+2026-05-06T15:40:03.512361-04:00 manage_1530            slot_skipped                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-06T15:35:07.469158-04:00 manage_1530            slot_skipped                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-06T15:30:02.784375-04:00 manage_1530            slot_skipped                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-06T15:25:01.987747-04:00 manage_1530            slot_skipped                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-06T15:10:01.990575-04:00  entry_1500            slot_skipped                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-06T15:05:02.040467-04:00  entry_1500            slot_skipped                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-06T15:00:04.914832-04:00  entry_1500            slot_skipped                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-06T14:55:01.390762-04:00  entry_1500            slot_skipped                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-06T14:50:06.542235-04:00  entry_1500 entry_candidate_skipped {"option_liquidity_status": "wide_spread", "option_open_interest": 634.0, "option_spread_pct": 18.18, "option_volume": 128.0, "reason": "no_trade_low_option_liquidity", "ticker": "XEL", "timing_score": 0.574}
+2026-05-06T14:50:06.542235-04:00  entry_1500          timing_overlay                                                                                                     {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-06", "training_samples": 5546, "window": 5}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506153507)
+![Reversal 3.3.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506154003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506153507)
+![Reversal 3.3.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506154003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506153507)
+![Reversal 3.3.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506154003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506153507)
+![Reversal 3.3.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506154003)
 
 </details>

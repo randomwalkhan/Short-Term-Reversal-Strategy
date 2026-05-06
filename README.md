@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3.1 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-06 15:35:07 EDT`
-- Equity: `$21,906.00` | Realized: `$12,026.00` | Unrealized: `$-120.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-05-06 15:40:03 EDT`
+- Equity: `$21,583.50` | Realized: `$12,026.00` | Unrealized: `$-442.50` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  CRWD     option         option CRWD260618C00470000      3      9907.5                  9787.5          32.62          -120.0                  -1.21                   0
+  CRWD     option         option CRWD260618C00470000      3      9907.5                  9465.0          31.55          -442.5                  -4.47                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.1 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260506153507)
+![Reversal 3.3.1 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260506154003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260506153507)
+![Reversal 3.3.1 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260506154003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260506153507)
+![Reversal 3.3.1 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260506154003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260506153507)
+![Reversal 3.3.1 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260506154003)
 
 </details>
 
