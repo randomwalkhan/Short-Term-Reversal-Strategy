@@ -1,6 +1,6 @@
 # Reversal 3.3.1 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-06 15:55:02 EDT`
+Latest checkpoint (ET): `2026-05-06 16:00:08 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -34,7 +34,7 @@ Last processed slot: `manage_1600`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CRWD     option         option CRWD260618C00470000       2026-05-06                   0      3      9907.5                  9712.5        33.02          32.38      466.99        468.16          -195.0                  -1.97         80.95               21               2.0         52.84           51.29                  50.97                3216.0          255.0               0.05                      ok
+  CRWD     option         option CRWD260618C00470000       2026-05-06                   0      3      9907.5                  9712.5        33.02          32.38      466.99        467.98          -195.0                  -1.97         80.95               21               2.0         52.84           51.37                  50.97                3216.0          255.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-05-06)
@@ -48,34 +48,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CHTR           89.19               37            0.98              1.09        157.76               118.74            True
-   XEL           91.67               12            1.13              0.64         81.17                28.13            True
-    ZS           81.48               27            1.85              1.83        140.58                69.30            True
-  SHOP           89.66               29            1.84              1.39        107.02                83.08            True
-  CRWD           80.95               21            1.97              6.57        473.72                50.97            True
-  ADSK           83.33               12            2.79              4.87        247.34                46.09            True
-   KDP           82.35               17            1.37              0.28         28.80                34.27            True
-  TMUS           84.85               33            0.68              0.93        193.95                36.92            True
- CMCSA           91.18               34            0.09              0.02         26.45                61.75           False
-  TEAM           78.26               23            3.90              2.52         91.27               119.37           False
-    EA           85.71               14            0.41              0.58        201.32                 4.03           False
-  ADBE           77.78               18            2.19              3.91        253.94                46.79           False
+  CHTR           88.89               36            1.11              1.23        157.70               118.74            True
+   XEL           90.00               10            1.25              0.71         81.14                28.13            True
+    ZS           81.48               27            1.79              1.77        140.60                69.30            True
+  SHOP           88.46               26            2.12              1.60        106.93                83.08            True
+  CRWD           80.95               21            1.79              5.98        473.97                50.97            True
+  ADSK           83.33               12            2.60              4.54        247.48                46.09            True
+   KDP           83.33               18            1.21              0.25         28.81                34.27            True
+  ADBE           80.00               20            2.12              3.80        253.99                46.79            True
+  TMUS           84.38               32            0.71              0.96        193.93                36.92            True
+ CMCSA           90.91               33            0.17              0.03         26.45                61.75           False
+  TEAM           78.26               23            3.85              2.49         91.28               119.37           False
+  MSTR           88.10               42            0.06              0.08        186.86                66.92           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et        slot   event_type                                                                                                                                                                                                                                                                                                                                                                            detail
-2026-05-06T15:55:02.698208-04:00 manage_1600 slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T15:40:03.512361-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T15:35:07.469158-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T15:30:02.784375-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T15:25:01.987747-04:00 manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T15:10:01.990575-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T15:05:02.040467-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T15:00:04.914832-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T14:55:01.390762-04:00  entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T14:50:06.542235-04:00  entry_1500        entry {"allocated_cash": 9907.5, "asset_type": "option", "contract_symbol": "CRWD260618C00470000", "contracts": 3, "entry_option_price": 33.025, "execution_mode": "option", "matched_signals": 21, "option_liquidity_status": "ok", "option_open_interest": 3216.0, "option_spread_pct": 4.69, "option_volume": 255.0, "success_rate": 80.95, "ticker": "CRWD", "timing_score": 0.537}
+                    timestamp_et        slot   event_type                          detail
+2026-05-06T16:00:08.490329-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-05-06T15:55:02.698208-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
+2026-05-06T15:40:03.512361-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-05-06T15:35:07.469158-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-05-06T15:30:02.784375-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-05-06T15:25:01.987747-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
+2026-05-06T15:10:01.990575-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-05-06T15:05:02.040467-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-05-06T15:00:04.914832-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
+2026-05-06T14:55:01.390762-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506155502)
+![Reversal 3.3.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506160008)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506155502)
+![Reversal 3.3.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506160008)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506155502)
+![Reversal 3.3.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506160008)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506155502)
+![Reversal 3.3.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506160008)
 
 </details>
