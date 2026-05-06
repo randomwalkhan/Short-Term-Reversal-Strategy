@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-06 14:35:04 EDT`
+Latest checkpoint (ET): `2026-05-06 14:40:06 EDT`
 Last processed slot: `manage_1430`
 
 ## Active Configuration
@@ -45,34 +45,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-  CHTR           89.19               37            0.94              1.04        157.78               118.74            True
-  TEAM           81.48               27            3.64              2.35         91.34               119.37            True
-   XEL           90.00               10            1.41              0.80         81.11                28.13            True
-    ZS           83.33               30            1.49              1.47        140.73                69.30            True
-  CRWD           81.82               22            1.73              5.76        474.06                50.97            True
-   KDP           83.33               18            1.16              0.23         28.82                34.27            True
-  MSTR           87.80               41            1.12              1.47        186.27                66.92            True
-  TMUS           86.21               29            0.84              1.14        193.86                36.92            True
-  ADSK           83.33               12            2.91              5.09        247.25                46.09            True
-  PYPL           94.12               34            0.57              0.19         46.40                42.64            True
-  ADBE           84.00               25            1.96              3.50        254.12                46.79            True
-  PLTR           87.50               32            1.47              1.40        135.31                62.37            True
+  CHTR           89.19               37            0.85              0.94        157.83               118.74            True
+  TEAM           82.14               28            3.55              2.30         91.37               119.37            True
+   XEL           90.00               10            1.37              0.78         81.12                28.13            True
+    ZS           81.48               27            1.66              1.65        140.65                69.30            True
+  CRWD           80.95               21            1.93              6.45        473.77                50.97            True
+  TMUS           86.21               29            0.79              1.08        193.89                36.92            True
+   KDP           83.33               18            1.23              0.25         28.81                34.27            True
+  MSTR           86.84               38            1.52              1.98        186.05                66.92            True
+  ADSK           80.00               10            3.04              5.31        247.16                46.09            True
+  PLTR           87.50               32            1.46              1.39        135.32                62.37            True
+  PYPL           94.29               35            0.56              0.18         46.40                42.64            True
+  SNPS           97.56               41            0.22              0.79        502.17                50.17           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et           slot     event_type                                                                                                                                                                                                                                                                                                                                                                            detail
-2026-05-06T14:35:04.878969-04:00    manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T14:30:01.890640-04:00    manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T14:25:05.857021-04:00    manage_1430   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T13:39:40.576601-04:00    manage_1330   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T11:37:18.444380-04:00    manage_1130   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T10:28:45.392607-04:00    manage_1030           exit                                                                                                                                                                                                  {"asset_type": "option", "contract_symbol": "TEAM260618C00090000", "fill_price": 6.7, "pnl": -3245.0, "reason": "stop_loss_hit_at_scan", "return_pct": -30.57, "ticker": "TEAM"}
-2026-05-06T09:35:01.127893-04:00    manage_0930   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-06T00:00:03.652066-04:00   data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                     {'saved': 99}
-       2026-05-05T16:01:00-04:00 backfill_audit backfill_audit                                                                                                               {"open_positions_after_backfill": 1, "reason": "Mac was offline; reconstructed missed 2026-05-05 ET afternoon slots using stock and option 1m bars clipped at each slot time", "slots": ["manage_1400", "manage_1430", "entry_1500", "manage_1530", "manage_1600"]}
-       2026-05-05T15:00:00-04:00     entry_1500          entry {"allocated_cash": 10615.0, "asset_type": "option", "contract_symbol": "TEAM260618C00090000", "contracts": 11, "entry_option_price": 9.65, "execution_mode": "option", "matched_signals": 38, "option_liquidity_status": "ok", "option_open_interest": 2308.0, "option_spread_pct": 3.81, "option_volume": 583.0, "success_rate": 84.21, "ticker": "TEAM", "timing_score": 0.669}
+                    timestamp_et           slot     event_type                                                                                                                                                                                                                                                              detail
+2026-05-06T14:40:06.021703-04:00    manage_1430   slot_skipped                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-05-06T14:35:04.878969-04:00    manage_1430   slot_skipped                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-05-06T14:30:01.890640-04:00    manage_1430   slot_skipped                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-05-06T14:25:05.857021-04:00    manage_1430   slot_skipped                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-05-06T13:39:40.576601-04:00    manage_1330   slot_skipped                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-05-06T11:37:18.444380-04:00    manage_1130   slot_skipped                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-05-06T10:28:45.392607-04:00    manage_1030           exit                                                                                    {"asset_type": "option", "contract_symbol": "TEAM260618C00090000", "fill_price": 6.7, "pnl": -3245.0, "reason": "stop_loss_hit_at_scan", "return_pct": -30.57, "ticker": "TEAM"}
+2026-05-06T09:35:01.127893-04:00    manage_0930   slot_skipped                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-05-06T00:00:03.652066-04:00   data_refresh   data_refresh                                                                                                                                                                                                                                                       {'saved': 99}
+       2026-05-05T16:01:00-04:00 backfill_audit backfill_audit {"open_positions_after_backfill": 1, "reason": "Mac was offline; reconstructed missed 2026-05-05 ET afternoon slots using stock and option 1m bars clipped at each slot time", "slots": ["manage_1400", "manage_1430", "entry_1500", "manage_1530", "manage_1600"]}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506143504)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506144006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506143504)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506144006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506143504)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506144006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506143504)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506144006)
 
 </details>
