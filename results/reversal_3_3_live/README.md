@@ -1,6 +1,6 @@
 # Reversal 3.3 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-06 11:19:06 EDT`
+Latest checkpoint (ET): `2026-05-06 11:37:18 EDT`
 Last processed slot: `manage_1130`
 
 ## Active Configuration
@@ -45,24 +45,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   XEL           93.75               16            1.02              0.58         81.20                28.13            True
-    ZS           80.00               20            2.44              2.41        140.33                69.30            True
-  CRWD           82.61               23            1.66              5.53        474.16                50.97            True
-  ADSK           84.62               13            2.45              4.27        247.60                46.09            True
-  TMUS           84.00               25            1.20              1.63        193.65                36.92            True
-   KDP           82.35               17            1.45              0.29         28.79                34.27            True
-  DDOG           89.66               29            1.46              1.49        145.09                55.69            True
-   ADP           80.00               15            1.90              2.80        209.40                37.68            True
-  PYPL           93.33               30            0.75              0.24         46.38                42.64            True
-  MSTR           89.19               37            1.65              2.16        185.97                66.92            True
-  PLTR           84.00               25            2.08              1.98        135.06                62.37            True
-  TEAM           75.00               12            5.16              3.34         90.92               119.37           False
+   XEL           92.31               13            1.10              0.63         81.18                28.13            True
+    ZS           80.00               20            2.55              2.53        140.28                69.30            True
+  CRWD           80.95               21            1.82              6.08        473.93                50.97            True
+   ADP           91.67               12            2.12              3.13        209.26                37.68            True
+   KDP           83.33               18            1.23              0.25         28.81                34.27            True
+  PYPL           92.00               25            1.22              0.40         46.31                42.64            True
+  ADSK           83.33               12            2.82              4.93        247.32                46.09            True
+  TMUS           85.71               28            0.99              1.35        193.77                36.92            True
+  DDOG           89.66               29            1.41              1.44        145.11                55.69            True
+  FTNT           94.12               34            0.89              0.56         89.68                40.66            True
+  PANW           86.11               36            0.74              0.95        183.57                45.58            True
+  CHTR           90.00               50            0.03              0.03        158.22               118.74           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et           slot     event_type                                                                                                                                                                                                                                                                                                                                                                            detail
+2026-05-06T11:37:18.444380-04:00    manage_1130   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-05-06T10:28:45.392607-04:00    manage_1030           exit                                                                                                                                                                                                  {"asset_type": "option", "contract_symbol": "TEAM260618C00090000", "fill_price": 6.7, "pnl": -3245.0, "reason": "stop_loss_hit_at_scan", "return_pct": -30.57, "ticker": "TEAM"}
 2026-05-06T09:35:01.127893-04:00    manage_0930   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-05-06T00:00:03.652066-04:00   data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                     {'saved': 99}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-05T13:30:09.549744-04:00    manage_1330   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-05-05T13:25:09.992302-04:00    manage_1330   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-05-05T13:10:09.568185-04:00    manage_1300   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
-2026-05-05T13:05:09.617226-04:00    manage_1300   slot_skipped                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506111906)
+![Reversal 3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260506113718)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506111906)
+![Reversal 3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260506113718)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506111906)
+![Reversal 3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260506113718)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506111906)
+![Reversal 3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260506113718)
 
 </details>
