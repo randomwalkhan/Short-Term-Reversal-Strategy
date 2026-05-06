@@ -58,7 +58,7 @@ MAX_OPEN_POSITIONS = 2
 TARGET_POSITION_WEIGHT = 0.50
 DAY1_TAKE_PROFIT_PCT = 0.15
 DAY2_TAKE_PROFIT_PCT = 0.15
-STOP_LOSS_PCT = 0.12
+STOP_LOSS_PCT = 0.10
 SHARE_TAKE_PROFIT_PCT = 0.03
 SHARE_STOP_LOSS_PCT = 0.03
 LEVERAGED_SHARE_TAKE_PROFIT_PCT = 0.05
@@ -1138,6 +1138,7 @@ def maybe_exit_positions(
         else:
             if current_price <= raw["planned_stop"]:
                 exit_reason = "stop_loss_hit_at_scan"
+                exit_price = raw["planned_stop"]
             elif current_price >= target:
                 exit_reason = "take_profit_day1_hit_at_scan" if business_days_held <= 1 else "take_profit_day2_hit_at_scan"
             elif business_days_held >= 2 and slot_key == "manage_1600":
@@ -1870,12 +1871,12 @@ def render_dashboard(
             "- Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers",
             "- Entry scan: `3:00 PM ET`",
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; off-hours `5-minute` checkpoints continue mark-to-market updates for open positions, while any legacy share positions still held from older versions continue extended-hours take-profit and stop loss scans until flat",
-            "- Live exit ladder: `+15% / +15% / -12%`",
+            f"- Live exit ladder: `+{DAY1_TAKE_PROFIT_PCT:.0%} / +{DAY2_TAKE_PROFIT_PCT:.0%} / -{STOP_LOSS_PCT:.0%}`",
             "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`",
             f"- Entry timing overlay: short-window technical-indicator score using a `{TIMING_OVERLAY_WINDOW}d` feature window; only trade when `timing_score >= {TIMING_OVERLAY_THRESHOLD:.2f}`",
             "- No-trade rule: if the option is unavailable or fails the liquidity gate, skip the signal rather than falling back into shares",
             "- Extended-hours handling: open option positions continue to refresh their paper marks on off-hours checkpoints; legacy share positions, if any, can still trigger take-profit fills at the target price and stop loss exits at the current visible quote",
-            "- Practical live-paper adjustment: entries and exits use the current option mark price; no intraday future path is assumed",
+            "- Practical live-paper adjustment: entries use the current option mark price; regular-session stop-loss exits book the planned stop level, with no intraday future path otherwise assumed",
             "- Chart views: `Overall / 1D / 1W / 1M`, default open panel is `Overall`",
             "",
             "## Portfolio Snapshot",
