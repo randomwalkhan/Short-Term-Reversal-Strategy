@@ -1,7 +1,7 @@
 # Reversal 3.3.1 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-07 10:15:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-05-07 10:20:01 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -24,55 +24,55 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$12,118.50`
-- Equity: `$28,048.50`
-- Realized PnL: `$12,026.00`
-- Unrealized PnL: `$6,022.50`
-- Open positions: `1`
+- Cash: `$27,583.50`
+- Equity: `$27,583.50`
+- Realized PnL: `$17,583.50`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CRWD     option         option CRWD260618C00470000       2026-05-06                   1      3      9907.5                 15930.0        33.02           53.1      466.99        496.75          6022.5                  60.79         80.95               21               2.0         52.84           57.89                  50.97                3216.0          255.0               0.05                      ok
-```
+_None_
 
 ## Today's Closed Trades (2026-05-07)
 
-_None_
+```text
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price    pnl  return_pct                  exit_reason
+  CRWD     option         option CRWD260618C00470000      3          2026-05-06         2026-05-07       33.025       51.55 5557.5   56.093868 take_profit_day1_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   KDP           80.00               10            1.80              0.36         28.41                34.76            True
-  ASML           82.76               29            0.98             10.61       1540.19                46.11            True
-  MSTR           89.19               37            1.78              2.32        185.82                67.05            True
-   TXN           88.89                9            2.57              5.22        287.20                67.07           False
-  NXPI           69.23               13            3.17              6.73        300.67                84.51           False
-  GEHC           76.19               42            0.27              0.12         61.69                55.11           False
-  SBUX          100.00                5            2.94              2.19        105.50                31.94           False
- GOOGL           88.10               42            0.26              0.73        397.51                37.42           False
-  GOOG           88.10               42            0.31              0.86        394.69                37.75           False
-   ADI           76.19               21            1.66              4.83        413.59                34.89           False
-  PCAR           73.68               19            1.51              1.23        115.98                31.28           False
-   CEG           89.74               39            0.68              1.53        322.12                45.75           False
+  ASML           83.87               31            0.84              9.12       1540.83                46.11            True
+  MSTR           89.19               37            1.92              2.51        185.75                67.05            True
+  ROST           92.86               14            1.23              1.97        228.07                15.20            True
+ CMCSA           91.18               34            0.09              0.02         26.43                61.67           False
+   TXN           87.50                8            2.62              5.32        287.16                67.07           False
+  NXPI           69.23               13            3.15              6.69        300.69                84.51           False
+   KDP           83.33                6            2.22              0.44         28.37                34.76           False
+  GEHC           73.68               38            0.70              0.30         61.61                55.11           False
+  QCOM           93.18               44            0.03              0.04        192.64                72.73           False
+  SBUX          100.00                5            3.06              2.28        105.46                31.94           False
+  SOXL           79.17               24            2.95              3.42        164.38                95.28           False
+  PCAR           76.47               17            1.61              1.32        115.95                31.28           False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                          detail
-2026-05-07T10:10:04.036694-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
-2026-05-07T10:05:04.033139-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
-2026-05-07T10:00:03.903840-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
-2026-05-07T09:55:02.556058-04:00  manage_1000 slot_skipped {"reason": "already_processed"}
-2026-05-07T09:40:01.922571-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
-2026-05-07T09:35:01.914408-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
-2026-05-07T09:30:01.925048-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
-2026-05-07T09:25:01.894252-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
-2026-05-07T00:00:03.858471-04:00 data_refresh data_refresh                   {'saved': 92}
-2026-05-06T16:10:02.677283-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
+                    timestamp_et         slot   event_type                                                                                                                                                                                  detail
+2026-05-07T10:20:01.930498-04:00  manage_1030         exit {"asset_type": "option", "contract_symbol": "CRWD260618C00470000", "fill_price": 51.55, "pnl": 5557.5, "reason": "take_profit_day1_hit_at_scan", "return_pct": 56.09, "ticker": "CRWD"}
+2026-05-07T10:10:04.036694-04:00  manage_1000 slot_skipped                                                                                                                                                         {"reason": "already_processed"}
+2026-05-07T10:05:04.033139-04:00  manage_1000 slot_skipped                                                                                                                                                         {"reason": "already_processed"}
+2026-05-07T10:00:03.903840-04:00  manage_1000 slot_skipped                                                                                                                                                         {"reason": "already_processed"}
+2026-05-07T09:55:02.556058-04:00  manage_1000 slot_skipped                                                                                                                                                         {"reason": "already_processed"}
+2026-05-07T09:40:01.922571-04:00  manage_0930 slot_skipped                                                                                                                                                         {"reason": "already_processed"}
+2026-05-07T09:35:01.914408-04:00  manage_0930 slot_skipped                                                                                                                                                         {"reason": "already_processed"}
+2026-05-07T09:30:01.925048-04:00  manage_0930 slot_skipped                                                                                                                                                         {"reason": "already_processed"}
+2026-05-07T09:25:01.894252-04:00  manage_0930 slot_skipped                                                                                                                                                         {"reason": "already_processed"}
+2026-05-07T00:00:03.858471-04:00 data_refresh data_refresh                                                                                                                                                                           {'saved': 92}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260507101501)
+![Reversal 3.3.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260507102001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260507101501)
+![Reversal 3.3.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260507102001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260507101501)
+![Reversal 3.3.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260507102001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260507101501)
+![Reversal 3.3.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260507102001)
 
 </details>

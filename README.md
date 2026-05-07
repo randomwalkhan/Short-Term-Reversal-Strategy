@@ -3,45 +3,42 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.3.1 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-07 10:15:01 EDT`
-- Equity: `$28,048.50` | Realized: `$12,026.00` | Unrealized: `$6,022.50` | Open positions: `1`
-- Today closed trades: `0`
-- Current slot: `manual`
+- Latest checkpoint (ET): `2026-05-07 10:20:01 EDT`
+- Equity: `$27,583.50` | Realized: `$17,583.50` | Unrealized: `$0.00` | Open positions: `0`
+- Today closed trades: `1`
+- Current slot: `manage_1030`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
-```text
-ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  CRWD     option         option CRWD260618C00470000      3      9907.5                 15930.0           53.1          6022.5                  60.79                   1
-```
+_None_
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.1 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260507101501)
+![Reversal 3.3.1 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260507102001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260507101501)
+![Reversal 3.3.1 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260507102001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260507101501)
+![Reversal 3.3.1 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260507102001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260507101501)
+![Reversal 3.3.1 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260507102001)
 
 </details>
 
