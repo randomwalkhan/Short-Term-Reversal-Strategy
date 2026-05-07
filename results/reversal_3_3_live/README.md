@@ -1,7 +1,7 @@
 # Reversal 3.3.1 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-07 09:45:03 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-05-07 09:50:01 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -34,7 +34,7 @@ Last processed slot: `manual`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CRWD     option         option CRWD260618C00470000       2026-05-06                   1      3      9907.5                  9711.0        33.02          32.37      466.99        497.33          -196.5                  -1.98         80.95               21               2.0         52.84             0.0                  50.97                3216.0          255.0               0.05                      ok
+  CRWD     option         option CRWD260618C00470000       2026-05-06                   1      3      9907.5                  9711.0        33.02          32.37      466.99        497.51          -196.5                  -1.98         80.95               21               2.0         52.84             0.0                  50.97                3216.0          255.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-05-07)
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  call_candidate
-   TXN           85.71               14            1.63              3.31        288.02                67.07            True
-  INTC          100.00               19            3.22              2.55        111.92                95.68            True
-  QCOM           88.24               17            1.75              2.35        191.65                72.73            True
-   KDP           85.00               20            0.98              0.20         28.48                34.76            True
-  SBUX          100.00               11            2.14              1.60        105.76                31.94            True
-  ASML           82.14               28            1.17             12.66       1539.32                46.11            True
-  MSTR           89.19               37            1.77              2.32        185.83                67.05            True
-   ADI           81.48               27            0.92              2.68        414.51                34.89            True
-  NXPI           66.67               21            1.94              4.12        301.78                84.51           False
-   XEL           90.00               30            0.46              0.26         80.44                28.12           False
- GOOGL           88.64               44            0.20              0.56        397.59                37.42           False
-   AEP           96.15               26            0.66              0.62        132.27                22.06           False
+   TXN           91.67               12            1.95              3.95        287.75                67.07            True
+  INTC          100.00               29            1.71              1.35        112.43                95.68            True
+  QCOM           90.48               21            1.41              1.91        191.85                72.73            True
+   KDP           83.33               18            1.28              0.26         28.45                34.76            True
+  ASML           83.87               31            0.81              8.74       1541.00                46.11            True
+   XEL           92.86               28            0.57              0.32         80.41                28.12            True
+  MSTR           87.88               33            2.41              3.15        185.47                67.05            True
+   ADI           80.00               30            0.70              2.02        414.79                34.89            True
+  NXPI           68.42               19            2.37              5.03        301.40                84.51           False
+  SBUX          100.00                6            2.63              1.96        105.60                31.94           False
+   CEG           90.70               43            0.19              0.42        322.60                45.75           False
+ GOOGL           87.50               40            0.41              1.15        397.33                37.42           False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260507094503)
+![Reversal 3.3.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260507095001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260507094503)
+![Reversal 3.3.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260507095001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260507094503)
+![Reversal 3.3.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260507095001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260507094503)
+![Reversal 3.3.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260507095001)
 
 </details>
