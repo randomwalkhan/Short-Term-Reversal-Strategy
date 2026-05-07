@@ -1,6 +1,6 @@
 # Reversal 3.3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-07 16:00:08 EDT`
+Latest checkpoint (ET): `2026-05-07 16:05:04 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -26,16 +26,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$14,483.50`
-- Equity: `$27,433.50`
+- Equity: `$27,508.50`
 - Realized PnL: `$17,583.50`
-- Unrealized PnL: `$-150.00`
+- Unrealized PnL: `$-75.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260618C00290000       2026-05-07                   0     10     13100.0                 12950.0         13.1          12.95      283.62        285.15          -150.0                  -1.15         91.67               12              2.01         41.87           39.29                  67.07                1293.0          214.0               0.05                      ok
+   TXN     option         option TXN260618C00290000       2026-05-07                   0     10     13100.0                 13025.0         13.1          13.02      283.62        285.24           -75.0                  -0.57         91.67               12              2.01         41.87           39.29                  67.07                1293.0          214.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-05-07)
@@ -47,26 +47,13 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate
-   TXN           88.89               18            1.48              3.00        288.15                67.07         0.681          pass                1.55              0.519                                 ok            True
-  INTC          100.00               20            3.02              2.39        111.99                95.68         0.661          pass               64.12              4.325                                 ok            True
-  FAST           96.00               25            0.78              0.24         44.61                34.69         0.556          pass               -1.88             -0.076                                 ok            True
-  MDLZ           83.33               18            0.91              0.39         61.70                24.46         0.544          pass                6.24              0.807                                 ok            True
-  MCHP           80.00               25            1.37              0.99        102.55                46.15         0.515          pass               12.05              1.632                                 ok            True
-  SBUX           85.71               14            2.08              1.55        105.78                31.94         0.512          pass                4.71              0.816                                 ok            True
-  ASML           80.77               26            1.80             19.49       1536.39                46.11         0.507          pass                7.22              0.579                                 ok            True
-   AEP           96.15               26            0.69              0.64        132.26                22.06         0.502          pass               -2.57             -0.134                                 ok            True
- CMCSA           88.89               18            0.79              0.15         26.38                61.67         0.711          pass              -17.10             -1.133 downtrend_blocked_slope_and_streak           False
-  NXPI           50.00                2            4.41              9.37        299.53                84.51         0.615          pass               20.32              2.650                                 ok           False
-  GEHC           73.68               38            0.64              0.28         61.62                55.11         0.554          pass              -12.23             -1.568            downtrend_blocked_slope           False
-   CSX           83.33                6            2.44              0.78         45.24                28.34         0.545          pass               -3.71             -0.195                                 ok           False
-```
+_None_
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-05-07T16:05:04.301944-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-05-07T16:00:08.945090-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-05-07T15:55:05.013610-04:00 manage_1600 slot_skipped {"reason": "already_processed"}
 2026-05-07T15:40:04.301487-04:00 manage_1530 slot_skipped {"reason": "already_processed"}
@@ -76,7 +63,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-07T15:10:07.636776-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 2026-05-07T15:05:07.086274-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 2026-05-07T15:00:07.624219-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
-2026-05-07T14:55:04.902714-04:00  entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -86,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260507160008)
+![Reversal 3.3.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260507160504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260507160008)
+![Reversal 3.3.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260507160504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260507160008)
+![Reversal 3.3.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260507160504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260507160008)
+![Reversal 3.3.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260507160504)
 
 </details>
