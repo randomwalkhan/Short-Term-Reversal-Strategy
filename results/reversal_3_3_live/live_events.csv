@@ -1392,3 +1392,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-07T14:35:07.263877-04:00,2026-05-07,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-07T14:40:04.362618-04:00,2026-05-07,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-07T14:49:26.807112-04:00,2026-05-07,manage_1430,slot_skipped,"{""reason"": ""already_processed""}"
+2026-05-07T14:50:57.198065-04:00,2026-05-07,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-05-07"", ""training_samples"": 4977, ""window"": 5}"
+2026-05-07T14:50:57.198065-04:00,2026-05-07,entry_1500,entry,"{""allocated_cash"": 13100.0, ""asset_type"": ""option"", ""contract_symbol"": ""TXN260618C00290000"", ""contracts"": 10, ""entry_option_price"": 13.1, ""execution_mode"": ""option"", ""matched_signals"": 12, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 1293.0, ""option_spread_pct"": 4.58, ""option_volume"": 214.0, ""success_rate"": 91.67, ""ticker"": ""TXN"", ""timing_score"": 0.69}"
