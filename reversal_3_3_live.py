@@ -32,7 +32,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.3.1"
+VERSION = "3.3.2"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -54,6 +54,12 @@ MAX_OPTION_ENTRY_SPREAD_PCT = 0.15
 TIMING_OVERLAY_WINDOW = 5
 TIMING_OVERLAY_THRESHOLD = 0.50
 TIMING_OVERLAY_RESEARCH_YEARS = 3
+TREND_HEALTH_LOOKBACK_DAYS = 10
+TREND_HEALTH_SLOPE_POINTS = 10
+TREND_HEALTH_MAX_NEGATIVE_SLOPE_PCT_PER_DAY = -0.25
+TREND_HEALTH_MAX_LOOKBACK_RETURN_PCT = -1.50
+TREND_HEALTH_SMA5_BUFFER = 0.995
+TREND_HEALTH_MAX_LOWER_CLOSE_STREAK = 4
 MAX_OPEN_POSITIONS = 2
 TARGET_POSITION_WEIGHT = 0.50
 DAY1_TAKE_PROFIT_PCT = 0.15
@@ -913,6 +919,87 @@ def compute_live_reversal_probability(
     return float(success_rate) if not np.isnan(success_rate) else np.nan, matches
 
 
+def _close_column(df: pd.DataFrame) -> str:
+    if "Close" in df.columns:
+        return "Close"
+    if "Adj Close" in df.columns:
+        return "Adj Close"
+    raise ValueError("No close column found for trend-health filter.")
+
+
+def compute_trend_health(df: pd.DataFrame, live: dict[str, Any]) -> dict[str, Any]:
+    """Block obvious down channels while allowing sideways or recovering names."""
+    close = pd.to_numeric(df[_close_column(df)], errors="coerce").dropna()
+    if len(close) < TREND_HEALTH_LOOKBACK_DAYS + 1:
+        return {
+            "trend_health_pass": True,
+            "trend_health_status": "insufficient_history",
+            "trend_slope_pct_per_day": np.nan,
+            "trend_return_10d_%": np.nan,
+            "trend_price_vs_sma5_%": np.nan,
+            "trend_lower_close_streak": 0,
+        }
+
+    current_price = float(live["current_price"])
+    historical_points = max(TREND_HEALTH_SLOPE_POINTS - 1, TREND_HEALTH_LOOKBACK_DAYS)
+    series = pd.concat(
+        [close.tail(historical_points).reset_index(drop=True), pd.Series([current_price])],
+        ignore_index=True,
+    ).astype(float)
+
+    log_prices = np.log(series)
+    x = np.arange(len(log_prices), dtype=float)
+    slope_pct_per_day = float(np.polyfit(x, log_prices, 1)[0]) * 100 if len(series) >= 2 else np.nan
+
+    lookback_start = float(series.iloc[-(TREND_HEALTH_LOOKBACK_DAYS + 1)])
+    lookback_return_pct = (current_price / lookback_start - 1) * 100 if lookback_start > 0 else np.nan
+    sma5 = float(series.iloc[-(TREND_HEALTH_LOOKBACK_DAYS + 1):-1].mean())
+    price_vs_sma5_pct = (current_price / sma5 - 1) * 100 if sma5 > 0 else np.nan
+    below_sma5 = current_price < sma5 * TREND_HEALTH_SMA5_BUFFER if np.isfinite(sma5) else False
+
+    lower_close_streak = 0
+    max_lower_close_streak = 0
+    recent = list(series.tail(TREND_HEALTH_LOOKBACK_DAYS + 1))
+    for previous, current in zip(recent[:-1], recent[1:]):
+        if current < previous:
+            lower_close_streak += 1
+            max_lower_close_streak = max(max_lower_close_streak, lower_close_streak)
+        else:
+            lower_close_streak = 0
+
+    slope_downtrend = (
+        np.isfinite(slope_pct_per_day)
+        and np.isfinite(lookback_return_pct)
+        and slope_pct_per_day <= TREND_HEALTH_MAX_NEGATIVE_SLOPE_PCT_PER_DAY
+        and lookback_return_pct <= TREND_HEALTH_MAX_LOOKBACK_RETURN_PCT
+        and below_sma5
+    )
+    streak_downtrend = (
+        np.isfinite(lookback_return_pct)
+        and lookback_return_pct <= TREND_HEALTH_MAX_LOOKBACK_RETURN_PCT
+        and max_lower_close_streak >= TREND_HEALTH_MAX_LOWER_CLOSE_STREAK
+    )
+    blocked = bool(slope_downtrend or streak_downtrend)
+
+    if blocked and slope_downtrend and streak_downtrend:
+        status = "downtrend_blocked_slope_and_streak"
+    elif blocked and slope_downtrend:
+        status = "downtrend_blocked_slope"
+    elif blocked:
+        status = "downtrend_blocked_streak"
+    else:
+        status = "ok"
+
+    return {
+        "trend_health_pass": not blocked,
+        "trend_health_status": status,
+        "trend_slope_pct_per_day": slope_pct_per_day,
+        "trend_return_10d_%": lookback_return_pct,
+        "trend_price_vs_sma5_%": price_vs_sma5_pct,
+        "trend_lower_close_streak": int(max_lower_close_streak),
+    }
+
+
 def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = None) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, Any]]:
     asof_clock = now_et if now_et is not None else pd.Timestamp.now(tz=ET)
     if asof_clock.tzinfo is None:
@@ -929,6 +1016,7 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
             df = load_reversal_csv(ticker)
             live = get_live_snapshot(ticker, now_et=asof_clock)
             success_rate, matches = compute_live_reversal_probability(df=df, current_drop_pct=live["current_drop_pct"])
+            trend_health = compute_trend_health(df, live)
             rolling_sigma_series = pd.to_numeric(df.get("Rolling Sigma 20d"), errors="coerce").dropna()
             latest_rolling_sigma = float(rolling_sigma_series.iloc[-1]) * 100 if not rolling_sigma_series.empty else np.nan
             matched_signals = int(len(matches))
@@ -967,6 +1055,12 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
                     "success_rate_%": round(success_rate, 2) if not np.isnan(success_rate) else np.nan,
                     "timing_score": round(float(timing_score), 3) if np.isfinite(timing_score) else np.nan,
                     "timing_status": timing_status,
+                    "trend_health_pass": bool(trend_health["trend_health_pass"]),
+                    "trend_health_status": trend_health["trend_health_status"],
+                    "trend_slope_%/day": round(float(trend_health["trend_slope_pct_per_day"]), 3) if np.isfinite(trend_health["trend_slope_pct_per_day"]) else np.nan,
+                    "trend_return_10d_%": round(float(trend_health["trend_return_10d_%"]), 2) if np.isfinite(trend_health["trend_return_10d_%"]) else np.nan,
+                    "trend_price_vs_sma5_%": round(float(trend_health["trend_price_vs_sma5_%"]), 2) if np.isfinite(trend_health["trend_price_vs_sma5_%"]) else np.nan,
+                    "trend_lower_close_streak": int(trend_health["trend_lower_close_streak"]),
                 }
             )
         except Exception as exc:
@@ -986,6 +1080,12 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
                     "success_rate_%": np.nan,
                     "timing_score": np.nan,
                     "timing_status": "error",
+                    "trend_health_pass": False,
+                    "trend_health_status": "error",
+                    "trend_slope_%/day": np.nan,
+                    "trend_return_10d_%": np.nan,
+                    "trend_price_vs_sma5_%": np.nan,
+                    "trend_lower_close_streak": 0,
                     "error": str(exc),
                 }
             )
@@ -999,6 +1099,7 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
         & summary_df["matched_signals"].ge(MIN_MATCHED_SIGNALS)
         & summary_df["current_drop_pct_raw"].fillna(0).gt(MINIMUM_CURRENT_DROP_PCT)
         & summary_df["timing_score"].fillna(-np.inf).ge(TIMING_OVERLAY_THRESHOLD)
+        & summary_df["trend_health_pass"].fillna(False)
     )
     summary_df = summary_df.sort_values(
         ["call_candidate", "timing_score", "success_rate_%", "matched_signals", "current_drop_%"],
@@ -1850,7 +1951,8 @@ def render_dashboard(
     if not screener_view.empty:
         screener_view = screener_view[[
             "ticker", "success_rate_%", "matched_signals", "current_drop_%", "target_rebound_$",
-            "target_price", "rolling_sigma_20d_%", "call_candidate"
+            "target_price", "rolling_sigma_20d_%", "timing_score", "timing_status",
+            "trend_return_10d_%", "trend_slope_%/day", "trend_health_status", "call_candidate"
         ]].head(12)
 
     dashboard_md = "\n".join(
@@ -1874,6 +1976,7 @@ def render_dashboard(
             f"- Live exit ladder: `+{DAY1_TAKE_PROFIT_PCT:.0%} / +{DAY2_TAKE_PROFIT_PCT:.0%} / -{STOP_LOSS_PCT:.0%}`",
             "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`",
             f"- Entry timing overlay: short-window technical-indicator score using a `{TIMING_OVERLAY_WINDOW}d` feature window; only trade when `timing_score >= {TIMING_OVERLAY_THRESHOLD:.2f}`",
+            f"- Trend-health gate: block candidates in a short-term down channel when 10d return <= `{TREND_HEALTH_MAX_LOOKBACK_RETURN_PCT:.1f}%` and either log-slope <= `{TREND_HEALTH_MAX_NEGATIVE_SLOPE_PCT_PER_DAY:.2f}%/day` below the 10d lookback average or lower-close streak >= `{TREND_HEALTH_MAX_LOWER_CLOSE_STREAK}`",
             "- No-trade rule: if the option is unavailable or fails the liquidity gate, skip the signal rather than falling back into shares",
             "- Extended-hours handling: open option positions continue to refresh their paper marks on off-hours checkpoints; legacy share positions, if any, can still trigger take-profit fills at the target price and stop loss exits at the current visible quote",
             "- Practical live-paper adjustment: entries use the current option mark price; regular-session stop-loss exits book the planned stop level, with no intraday future path otherwise assumed",
@@ -1919,7 +2022,8 @@ def render_dashboard(
                 screener_view,
                 columns=[
                     "ticker", "success_rate_%", "matched_signals", "current_drop_%",
-                    "target_rebound_$", "target_price", "rolling_sigma_20d_%", "timing_score", "timing_status", "call_candidate"
+                    "target_rebound_$", "target_price", "rolling_sigma_20d_%", "timing_score", "timing_status",
+                    "trend_return_10d_%", "trend_slope_%/day", "trend_health_status", "call_candidate"
                 ],
                 max_rows=12,
             ),
