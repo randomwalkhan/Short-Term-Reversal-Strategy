@@ -1372,3 +1372,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-07T10:10:04.036694-04:00,2026-05-07,manage_1000,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-07T10:20:01.930498-04:00,2026-05-07,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CRWD260618C00470000"", ""fill_price"": 51.55, ""pnl"": 5557.5, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 56.09, ""ticker"": ""CRWD""}"
 2026-05-07T10:25:01.892823-04:00,2026-05-07,manage_1030,slot_skipped,"{""reason"": ""already_processed""}"
+2026-05-07T10:30:05.917191-04:00,2026-05-07,manage_1030,slot_skipped,"{""reason"": ""already_processed""}"
