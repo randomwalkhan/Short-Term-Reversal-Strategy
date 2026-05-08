@@ -1,6 +1,6 @@
 {
-  "trade_date_et": "2026-05-07",
+  "trade_date_et": "2026-05-08",
   "window": 5,
   "threshold": 0.5,
-  "training_samples": 4977
+  "training_samples": 5000
 }
