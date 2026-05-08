@@ -32,7 +32,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.3.2"
+VERSION = "3.3.3"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -2227,7 +2227,7 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
                     event_type="market_closed",
                     detail=closure_detail,
                 )
-        elif slot_key and slot_key not in processed_for_day:
+        elif slot_key and (slot_key not in processed_for_day or slot_key.startswith("manage_") or extended_slot):
             if timing_meta and slot_key == "entry_1500":
                 events_df = append_event(
                     events_df,
@@ -2241,7 +2241,8 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
                 state, trades_df, events_df = maybe_exit_positions(state, now_et, slot_key, trades_df, events_df)
             if slot_key == "entry_1500":
                 state, trades_df, events_df = maybe_enter_position(state, now_et, slot_key, summary_df, trades_df, events_df)
-            processed_for_day.append(slot_key)
+            if not slot_key.startswith("manage_") and not extended_slot:
+                processed_for_day.append(slot_key)
         elif slot_key:
             events_df = append_event(
                 events_df,
