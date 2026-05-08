@@ -1,6 +1,6 @@
 # Reversal 3.3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-08 13:05:05 EDT`
+Latest checkpoint (ET): `2026-05-08 13:10:09 EDT`
 Last processed slot: `manage_1300`
 
 ## Active Configuration
@@ -46,24 +46,25 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate
-  TEAM           80.00               15            4.75              3.07         91.05               115.49         0.597          pass               22.96              3.418                                 ok            True
-  FAST           96.15               26            0.68              0.21         44.27                33.68         0.554          pass               -0.88             -0.069                                 ok            True
-   XEL           92.00               25            0.65              0.36         80.27                27.43         0.518          pass                0.96              0.166                                 ok            True
-  ORLY           88.00               25            1.13              0.75         94.26                34.97         0.518          pass                0.41              0.228                                 ok            True
-   ADP           88.00               25            0.90              1.34        213.51                38.09         0.510          pass                7.96              0.713                                 ok            True
-    ZS           83.78               37            1.02              1.09        152.32                60.77         0.506          pass               11.61              1.192                                 ok            True
-  CHTR           77.78               18            2.30              2.58        159.13               119.32         0.787          pass              -13.09             -1.229            downtrend_blocked_slope           False
+  TEAM           83.33               18            4.45              2.88         91.14               115.49         0.601          pass               23.35              3.433                                 ok            True
+  FAST           96.00               25            0.80              0.25         44.25                33.68         0.553          pass               -1.01             -0.075                                 ok            True
+   XEL           95.24               21            0.85              0.48         80.23                27.43         0.536          pass                0.76              0.157                                 ok            True
+  ORLY           88.00               25            1.16              0.77         94.25                34.97         0.516          pass                0.38              0.226                                 ok            True
+   ADP           88.46               26            0.74              1.11        213.61                38.09         0.513          pass                8.13              0.720                                 ok            True
+  ADSK           87.50               16            1.95              3.43        249.57                40.37         0.503          pass                3.66              0.638                                 ok            True
+  CHTR           76.47               17            2.42              2.72        159.08               119.32         0.785          pass              -13.20             -1.234            downtrend_blocked_slope           False
  CMCSA           83.33                6            2.15              0.40         26.07                61.43         0.682          pass               -6.84             -0.634 downtrend_blocked_slope_and_streak           False
-  SHOP           93.75               16            3.79              2.97        110.47                82.33         0.574          pass              -14.57             -1.670 downtrend_blocked_slope_and_streak           False
-  PYPL           92.86               28            0.90              0.29         46.10                42.03         0.546          pass               -9.26             -1.064 downtrend_blocked_slope_and_streak           False
-  META           80.00               25            1.31              5.66        614.39                41.17         0.537          pass               -9.82             -1.251 downtrend_blocked_slope_and_streak           False
-  NFLX           88.57               35            0.84              0.52         88.04                43.15         0.535          pass               -5.32             -0.607            downtrend_blocked_slope           False
+  SHOP           93.75               16            3.58              2.80        110.54                82.33         0.586          pass              -14.38             -1.660 downtrend_blocked_slope_and_streak           False
+  PYPL           93.55               31            0.84              0.27         46.10                42.03         0.533          pass               -9.21             -1.062 downtrend_blocked_slope_and_streak           False
+  MSFT           78.26               23            1.08              3.19        419.55                34.38         0.532          pass               -1.94             -0.267            downtrend_blocked_slope           False
+  NFLX           89.19               37            0.76              0.47         88.06                43.15         0.529          pass               -5.24             -0.603            downtrend_blocked_slope           False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et        slot   event_type                          detail
+2026-05-08T13:10:09.442593-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 2026-05-08T13:05:05.272156-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 2026-05-08T13:00:07.011484-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
 2026-05-08T12:55:09.634470-04:00 manage_1300 slot_skipped {"reason": "already_processed"}
@@ -73,7 +74,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-08T12:25:05.406767-04:00 manage_1230 slot_skipped {"reason": "already_processed"}
 2026-05-08T12:10:10.747163-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 2026-05-08T12:05:08.430158-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
-2026-05-08T12:00:07.637390-04:00 manage_1200 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -83,27 +83,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260508130505)
+![Reversal 3.3.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260508131009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260508130505)
+![Reversal 3.3.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260508131009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260508130505)
+![Reversal 3.3.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260508131009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260508130505)
+![Reversal 3.3.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260508131009)
 
 </details>
