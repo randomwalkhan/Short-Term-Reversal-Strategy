@@ -1,6 +1,6 @@
 # Reversal 3.3.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-08 09:20:06 EDT`
+Latest checkpoint (ET): `2026-05-08 09:25:02 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -35,7 +35,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260618C00290000       2026-05-07                   1     10     13100.0                 13080.0         13.1          13.08      283.62         291.0           -20.0                  -0.15         91.67               12              2.01         41.87            1.56                  67.07                1293.0          214.0               0.05                      ok
+   TXN     option         option TXN260618C00290000       2026-05-07                   1     10     13100.0                 13080.0         13.1          13.08      283.62        289.83           -20.0                  -0.15         91.67               12              2.01         41.87            1.56                  67.07                1293.0          214.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-05-08)
@@ -50,6 +50,7 @@ _None_
 
 ```text
                     timestamp_et         slot   event_type                          detail
+2026-05-08T09:25:02.109177-04:00  manage_0930 slot_skipped {"reason": "already_processed"}
 2026-05-08T00:00:05.874567-04:00 data_refresh data_refresh                   {'saved': 92}
 2026-05-07T16:10:04.394572-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
 2026-05-07T16:05:04.301944-04:00  manage_1600 slot_skipped {"reason": "already_processed"}
@@ -59,7 +60,6 @@ _None_
 2026-05-07T15:35:09.139839-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 2026-05-07T15:30:09.012076-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
 2026-05-07T15:25:04.977816-04:00  manage_1530 slot_skipped {"reason": "already_processed"}
-2026-05-07T15:10:07.636776-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -69,27 +69,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260508092006)
+![Reversal 3.3.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260508092502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260508092006)
+![Reversal 3.3.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260508092502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260508092006)
+![Reversal 3.3.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260508092502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260508092006)
+![Reversal 3.3.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260508092502)
 
 </details>
