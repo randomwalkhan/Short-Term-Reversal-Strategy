@@ -1456,3 +1456,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-08T14:50:08.791874-04:00,2026-05-08,entry_1500,entry,"{""allocated_cash"": 14725.0, ""asset_type"": ""option"", ""contract_symbol"": ""TEAM260618C00090000"", ""contracts"": 19, ""entry_option_price"": 7.75, ""execution_mode"": ""option"", ""matched_signals"": 30, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2469.0, ""option_spread_pct"": 3.87, ""option_volume"": 138.0, ""success_rate"": 83.33, ""ticker"": ""TEAM"", ""timing_score"": 0.621}"
 2026-05-08T14:55:02.174561-04:00,2026-05-08,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-08T15:00:03.172365-04:00,2026-05-08,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-05-08T15:05:03.959571-04:00,2026-05-08,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
