@@ -32,7 +32,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.3.3"
+VERSION = "3.4"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -54,6 +54,12 @@ MAX_OPTION_ENTRY_SPREAD_PCT = 0.15
 TIMING_OVERLAY_WINDOW = 5
 TIMING_OVERLAY_THRESHOLD = 0.50
 TIMING_OVERLAY_RESEARCH_YEARS = 3
+EARLY_ENTRY_START_MINUTE = 10 * 60
+EARLY_ENTRY_END_MINUTE = 12 * 60
+EARLY_ENTRY_SCORE_GATE = 0.67
+EARLY_ENTRY_MIN_SUCCESS_RATE = 88.0
+EARLY_ENTRY_MIN_MATCHED_SIGNALS = 30
+EARLY_ENTRY_MIN_RECLAIM_RATIO = 0.60
 TREND_HEALTH_LOOKBACK_DAYS = 10
 TREND_HEALTH_SLOPE_POINTS = 10
 TREND_HEALTH_MAX_NEGATIVE_SLOPE_PCT_PER_DAY = -0.25
@@ -298,6 +304,14 @@ def slot_key_for_timestamp(now_et: pd.Timestamp, force_slot: str | None = None) 
     if minutes < (9 * 60 + 30) or minutes > (16 * 60):
         bucket = now_et.floor("5min")
         return f"share_ext_{bucket.strftime('%H%M')}"
+    return None
+
+
+def early_entry_slot_key_for_timestamp(now_et: pd.Timestamp) -> str | None:
+    minutes = now_et.hour * 60 + now_et.minute
+    if EARLY_ENTRY_START_MINUTE <= minutes <= EARLY_ENTRY_END_MINUTE:
+        bucket = now_et.floor("5min")
+        return f"early_entry_{bucket.strftime('%H%M')}"
     return None
 
 
@@ -692,10 +706,18 @@ def get_live_snapshot(ticker: str, allow_extended_hours: bool = True, now_et: pd
     target_rebound_amount = current_drop_amount * RECOVER_TARGET
     target_price = current_price + target_rebound_amount
     if not intraday.empty and {"High", "Low"}.issubset(intraday.columns):
-        intraday_high = pd.to_numeric(intraday["High"], errors="coerce").dropna()
-        intraday_low = pd.to_numeric(intraday["Low"], errors="coerce").dropna()
-        session_high = float(intraday_high.iloc[-390:].max()) if not intraday_high.empty else np.nan
-        session_low = float(intraday_low.iloc[-390:].min()) if not intraday_low.empty else np.nan
+        session_frame = intraday
+        if not pd.isna(asof):
+            asof_ts = pd.Timestamp(asof)
+            if asof_ts.tzinfo is not None and getattr(session_frame.index, "tz", None) is not None:
+                session_index = session_frame.index.tz_convert(asof_ts.tz)
+                session_frame = session_frame.loc[session_index.date == asof_ts.date()]
+            else:
+                session_frame = session_frame.loc[pd.to_datetime(session_frame.index).date == asof_ts.date()]
+        intraday_high = pd.to_numeric(session_frame["High"], errors="coerce").dropna()
+        intraday_low = pd.to_numeric(session_frame["Low"], errors="coerce").dropna()
+        session_high = float(intraday_high.max()) if not intraday_high.empty else np.nan
+        session_low = float(intraday_low.min()) if not intraday_low.empty else np.nan
     else:
         session_high = float(max(prev_close, current_price))
         session_low = float(min(prev_close, current_price))
@@ -1000,6 +1022,34 @@ def compute_trend_health(df: pd.DataFrame, live: dict[str, Any]) -> dict[str, An
     }
 
 
+def compute_early_entry_score(
+    success_rate: float,
+    matched_signals: int,
+    timing_score: float,
+    live: dict[str, Any],
+) -> tuple[float, float]:
+    if not np.isfinite(success_rate) or not np.isfinite(timing_score):
+        return np.nan, np.nan
+
+    current_price = float(live["current_price"])
+    prev_close = float(live["prev_close"])
+    session_low = float(live.get("session_low", np.nan))
+    drop_range = max(prev_close - session_low, 0.0) if np.isfinite(session_low) else 0.0
+    reclaim_ratio = (current_price - session_low) / drop_range if drop_range > 0 else 0.0
+
+    success_component = np.clip((success_rate - SUCCESS_RATE_GATE) / 15.0, 0.0, 1.0)
+    match_component = np.clip((matched_signals - MIN_MATCHED_SIGNALS) / 30.0, 0.0, 1.0)
+    reclaim_component = np.clip(reclaim_ratio, 0.0, 1.0)
+    timing_component = np.clip(timing_score, 0.0, 1.0)
+    score = (
+        0.40 * success_component
+        + 0.20 * match_component
+        + 0.30 * reclaim_component
+        + 0.10 * timing_component
+    )
+    return float(score), float(reclaim_ratio)
+
+
 def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = None) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, Any]]:
     asof_clock = now_et if now_et is not None else pd.Timestamp.now(tz=ET)
     if asof_clock.tzinfo is None:
@@ -1038,6 +1088,12 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
                     timing_status = "pass"
                 else:
                     timing_status = "below_threshold"
+            early_entry_score, early_reclaim_ratio = compute_early_entry_score(
+                success_rate=float(success_rate) if not np.isnan(success_rate) else np.nan,
+                matched_signals=matched_signals,
+                timing_score=float(timing_score) if np.isfinite(timing_score) else np.nan,
+                live=live,
+            )
             detail_map[ticker] = matches
             summary_rows.append(
                 {
@@ -1050,11 +1106,14 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
                     "current_drop_pct_raw": float(live["current_drop_pct"]),
                     "target_rebound_$": round(live["target_rebound_amount"], 2),
                     "target_price": round(live["target_price"], 2),
+                    "session_low": round(live["session_low"], 2) if np.isfinite(live["session_low"]) else np.nan,
+                    "early_reclaim_%": round(early_reclaim_ratio * 100, 1) if np.isfinite(early_reclaim_ratio) else np.nan,
                     "rolling_sigma_20d_%": round(latest_rolling_sigma, 2) if np.isfinite(latest_rolling_sigma) else np.nan,
                     "matched_signals": matched_signals,
                     "success_rate_%": round(success_rate, 2) if not np.isnan(success_rate) else np.nan,
                     "timing_score": round(float(timing_score), 3) if np.isfinite(timing_score) else np.nan,
                     "timing_status": timing_status,
+                    "early_entry_score": round(float(early_entry_score), 3) if np.isfinite(early_entry_score) else np.nan,
                     "trend_health_pass": bool(trend_health["trend_health_pass"]),
                     "trend_health_status": trend_health["trend_health_status"],
                     "trend_slope_%/day": round(float(trend_health["trend_slope_pct_per_day"]), 3) if np.isfinite(trend_health["trend_slope_pct_per_day"]) else np.nan,
@@ -1075,11 +1134,14 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
                     "current_drop_pct_raw": np.nan,
                     "target_rebound_$": np.nan,
                     "target_price": np.nan,
+                    "session_low": np.nan,
+                    "early_reclaim_%": np.nan,
                     "rolling_sigma_20d_%": np.nan,
                     "matched_signals": 0,
                     "success_rate_%": np.nan,
                     "timing_score": np.nan,
                     "timing_status": "error",
+                    "early_entry_score": np.nan,
                     "trend_health_pass": False,
                     "trend_health_status": "error",
                     "trend_slope_%/day": np.nan,
@@ -1101,9 +1163,17 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
         & summary_df["timing_score"].fillna(-np.inf).ge(TIMING_OVERLAY_THRESHOLD)
         & summary_df["trend_health_pass"].fillna(False)
     )
+    summary_df["early_entry_candidate"] = (
+        summary_df["success_rate_%"].fillna(-np.inf).ge(EARLY_ENTRY_MIN_SUCCESS_RATE)
+        & summary_df["matched_signals"].ge(EARLY_ENTRY_MIN_MATCHED_SIGNALS)
+        & summary_df["current_drop_pct_raw"].fillna(0).gt(MINIMUM_CURRENT_DROP_PCT)
+        & summary_df["early_entry_score"].fillna(-np.inf).ge(EARLY_ENTRY_SCORE_GATE)
+        & summary_df["early_reclaim_%"].fillna(-np.inf).ge(EARLY_ENTRY_MIN_RECLAIM_RATIO * 100)
+        & summary_df["trend_health_pass"].fillna(False)
+    )
     summary_df = summary_df.sort_values(
-        ["call_candidate", "timing_score", "success_rate_%", "matched_signals", "current_drop_%"],
-        ascending=[False, False, False, False, False],
+        ["call_candidate", "timing_score", "early_entry_score", "success_rate_%", "matched_signals", "current_drop_%"],
+        ascending=[False, False, False, False, False, False],
         na_position="last",
     ).reset_index(drop=True)
     return summary_df, detail_map, timing_meta
@@ -1130,6 +1200,32 @@ def is_extended_share_slot(slot_key: str | None) -> bool:
 
 def has_open_share_position(state: dict[str, Any]) -> bool:
     return any(str(position.get("asset_type", "option")) == "share" for position in state.get("positions", []))
+
+
+def has_entry_on_trade_date(
+    state: dict[str, Any],
+    trades_df: pd.DataFrame,
+    events_df: pd.DataFrame,
+    trade_date: str,
+) -> bool:
+    for position in state.get("positions", []):
+        if str(position.get("entry_trade_date")) == trade_date:
+            return True
+
+    if not trades_df.empty and "entry_trade_date_et" in trades_df.columns:
+        trade_dates = trades_df["entry_trade_date_et"].astype(str)
+        if bool((trade_dates == trade_date).any()):
+            return True
+
+    if not events_df.empty and {"trade_date_et", "event_type"}.issubset(events_df.columns):
+        same_day_entries = (
+            events_df["trade_date_et"].astype(str).eq(trade_date)
+            & events_df["event_type"].astype(str).eq("entry")
+        )
+        if bool(same_day_entries.any()):
+            return True
+
+    return False
 
 
 def mark_open_positions(state: dict[str, Any], now_et: pd.Timestamp) -> tuple[list[dict[str, Any]], float]:
@@ -1309,17 +1405,31 @@ def maybe_enter_position(
     summary_df: pd.DataFrame,
     trades_df: pd.DataFrame,
     events_df: pd.DataFrame,
+    entry_mode: str = "regular",
 ) -> tuple[dict[str, Any], pd.DataFrame, pd.DataFrame]:
-    if slot_key != "entry_1500":
+    if slot_key != "entry_1500" and not slot_key.startswith("early_entry_"):
         return state, trades_df, events_df
+    if has_entry_on_trade_date(state, trades_df, events_df, now_et.date().isoformat()):
+        return state, trades_df, append_event(
+            events_df,
+            now_et,
+            now_et.date().isoformat(),
+            slot_key,
+            "entry_skipped",
+            {"reason": "daily_entry_limit"},
+        )  # type: ignore[arg-type]
     if len(state["positions"]) >= MAX_OPEN_POSITIONS:
         return state, trades_df, append_event(events_df, now_et, now_et.date().isoformat(), slot_key, "entry_skipped", {"reason": "max_open_positions"})  # type: ignore[arg-type]
 
     open_tickers = {position["ticker"] for position in state["positions"]}
-    candidates = summary_df[
-        summary_df["call_candidate"]
-        & ~summary_df["ticker"].isin(open_tickers)
-    ].copy()
+    candidate_col = "early_entry_candidate" if entry_mode == "early" else "call_candidate"
+    candidates = summary_df[summary_df[candidate_col] & ~summary_df["ticker"].isin(open_tickers)].copy()
+    if entry_mode == "early" and not candidates.empty:
+        candidates = candidates.sort_values(
+            ["early_entry_score", "success_rate_%", "matched_signals", "current_drop_%"],
+            ascending=[False, False, False, False],
+            na_position="last",
+        )
     if candidates.empty:
         events_df = append_event(
             events_df,
@@ -1361,6 +1471,7 @@ def maybe_enter_position(
                         "ticker": ticker,
                         "reason": "no_trade_low_option_liquidity",
                         "timing_score": round(float(candidate.get("timing_score", np.nan)), 3) if pd.notna(candidate.get("timing_score")) else None,
+                        "early_entry_score": round(float(candidate.get("early_entry_score", np.nan)), 3) if pd.notna(candidate.get("early_entry_score")) else None,
                         "option_open_interest": round(option_open_interest, 2) if np.isfinite(option_open_interest) else None,
                         "option_volume": round(option_volume, 2) if np.isfinite(option_volume) else None,
                         "option_spread_pct": round(option_spread_pct * 100, 2) if np.isfinite(option_spread_pct) else None,
@@ -1379,6 +1490,7 @@ def maybe_enter_position(
                     "ticker": ticker,
                     "reason": "no_trade_option_unavailable",
                     "timing_score": round(float(candidate.get("timing_score", np.nan)), 3) if pd.notna(candidate.get("timing_score")) else None,
+                    "early_entry_score": round(float(candidate.get("early_entry_score", np.nan)), 3) if pd.notna(candidate.get("early_entry_score")) else None,
                     "error": str(exc),
                 },
             )
@@ -1456,6 +1568,7 @@ def maybe_enter_position(
                 "ticker": ticker,
                 "asset_type": "option",
                 "execution_mode": "option",
+                "entry_mode": entry_mode,
                 "contract_symbol": position.contract_symbol,
                 "contracts": contracts,
                 "entry_option_price": round(entry_price, 4),
@@ -1463,6 +1576,7 @@ def maybe_enter_position(
                 "success_rate": round(position.success_rate, 2),
                 "matched_signals": position.matched_signals,
                 "timing_score": round(float(candidate.get("timing_score", np.nan)), 3) if pd.notna(candidate.get("timing_score")) else None,
+                "early_entry_score": round(float(candidate.get("early_entry_score", np.nan)), 3) if pd.notna(candidate.get("early_entry_score")) else None,
                 "option_open_interest": round(option_open_interest, 2) if np.isfinite(option_open_interest) else None,
                 "option_volume": round(option_volume, 2) if np.isfinite(option_volume) else None,
                 "option_spread_pct": round(option_spread_pct * 100, 2) if np.isfinite(option_spread_pct) else None,
@@ -1952,7 +2066,8 @@ def render_dashboard(
         screener_view = screener_view[[
             "ticker", "success_rate_%", "matched_signals", "current_drop_%", "target_rebound_$",
             "target_price", "rolling_sigma_20d_%", "timing_score", "timing_status",
-            "trend_return_10d_%", "trend_slope_%/day", "trend_health_status", "call_candidate"
+            "early_entry_score", "early_reclaim_%",
+            "trend_return_10d_%", "trend_slope_%/day", "trend_health_status", "call_candidate", "early_entry_candidate"
         ]].head(12)
 
     dashboard_md = "\n".join(
@@ -1972,6 +2087,7 @@ def render_dashboard(
             "- Matched-signal gate: `>= 10`",
             "- Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers",
             "- Entry scan: `3:00 PM ET`",
+            f"- Early-entry permission: `10:00 AM-12:00 PM ET` 5-minute scans may enter one exceptional candidate only when `early_entry_score >= {EARLY_ENTRY_SCORE_GATE:.2f}`, success rate `>= {EARLY_ENTRY_MIN_SUCCESS_RATE:.0f}%`, matched signals `>= {EARLY_ENTRY_MIN_MATCHED_SIGNALS}`, and early reclaim `>= {EARLY_ENTRY_MIN_RECLAIM_RATIO:.0%}`; the one-new-entry-per-day limit still applies",
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; off-hours `5-minute` checkpoints continue mark-to-market updates for open positions, while any legacy share positions still held from older versions continue extended-hours take-profit and stop loss scans until flat",
             f"- Live exit ladder: `+{DAY1_TAKE_PROFIT_PCT:.0%} / +{DAY2_TAKE_PROFIT_PCT:.0%} / -{STOP_LOSS_PCT:.0%}`",
             "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`",
@@ -2023,7 +2139,8 @@ def render_dashboard(
                 columns=[
                     "ticker", "success_rate_%", "matched_signals", "current_drop_%",
                     "target_rebound_$", "target_price", "rolling_sigma_20d_%", "timing_score", "timing_status",
-                    "trend_return_10d_%", "trend_slope_%/day", "trend_health_status", "call_candidate"
+                    "early_entry_score", "early_reclaim_%",
+                    "trend_return_10d_%", "trend_slope_%/day", "trend_health_status", "call_candidate", "early_entry_candidate"
                 ],
                 max_rows=12,
             ),
@@ -2153,6 +2270,7 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
     ensure_dirs()
     now_et = now_et_from_arg(args.now)
     slot_key = slot_key_for_timestamp(now_et, args.force_slot)
+    early_entry_slot_key = early_entry_slot_key_for_timestamp(now_et)
     extended_slot = is_extended_share_slot(slot_key)
     closure_detail = market_closure_reason(now_et)
     state = load_state(args.start_date)
@@ -2253,8 +2371,20 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
                 detail={"reason": "already_processed"},
             )
 
+    if not pre_start and closure_detail is None and early_entry_slot_key:
+        state, trades_df, events_df = maybe_enter_position(
+            state,
+            now_et,
+            early_entry_slot_key,
+            summary_df,
+            trades_df,
+            events_df,
+            entry_mode="early",
+        )
+
+    effective_slot_key = slot_key or early_entry_slot_key
     positions_df = build_positions_frame(state, now_et)
-    equity_row = build_equity_row(state, now_et, slot_key)
+    equity_row = build_equity_row(state, now_et, effective_slot_key)
     equity_df = pd.concat([equity_df, pd.DataFrame([equity_row])], ignore_index=True)
 
     if not args.dry_run:
@@ -2264,14 +2394,14 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
         save_csv_log(POSITIONS_PATH, positions_df)
         save_csv_log(EQUITY_PATH, equity_df)
         plot_live_equity(equity_df)
-        dashboard_md, root_section = render_dashboard(state, summary_df, trades_df, events_df, positions_df, equity_df, now_et, slot_key)
+        dashboard_md, root_section = render_dashboard(state, summary_df, trades_df, events_df, positions_df, equity_df, now_et, effective_slot_key)
         DASHBOARD_PATH.write_text(dashboard_md)
         update_root_readme(root_section)
         maybe_git_publish(now_et, dry_run=args.dry_run, skip_git_publish=args.skip_git_publish)
 
     return {
         "timestamp_et": now_et.isoformat(),
-        "slot": slot_key,
+        "slot": effective_slot_key,
         "open_positions": len(state["positions"]),
         "cash": round(float(state["cash"]), 2),
         "equity": float(equity_row["equity"]),
