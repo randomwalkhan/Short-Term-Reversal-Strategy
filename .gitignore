@@ -2,3 +2,6 @@
 .ipynb_checkpoints/
 __pycache__/
 reversal_data/
+
+.secrets/
+results/*/launchd*.log
