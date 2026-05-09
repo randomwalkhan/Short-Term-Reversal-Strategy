@@ -1,6 +1,6 @@
-# Reversal 3.3.3 Live Paper Test
+# Reversal 3.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-08 16:10:01 EDT`
+Latest checkpoint (ET): `2026-05-08 16:00:00 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -13,6 +13,7 @@ Last processed slot: `manage_1600`
 - Matched-signal gate: `>= 10`
 - Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers
 - Entry scan: `3:00 PM ET`
+- Early-entry permission: `10:00 AM-12:00 PM ET` 5-minute scans may enter one high-confidence candidate when `early_entry_score >= 0.62`; the one-new-entry-per-day limit still applies
 - Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; off-hours `5-minute` checkpoints continue mark-to-market updates for open positions, while any legacy share positions still held from older versions continue extended-hours take-profit and stop loss scans until flat
 - Live exit ladder: `+15% / +15% / -10%`
 - Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`
@@ -45,7 +46,21 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  TEAM           82.86               35            2.29              1.48         91.74               115.49         0.621            pass              0.525             73.4               26.14              3.534                                 ok            True                  False
+   XEL           90.91               11            1.29              0.73         80.12                27.43         0.559            pass              0.382              9.6                0.30              0.137                                 ok            True                  False
+  FAST           95.83               24            0.96              0.30         44.23                33.68         0.547            pass              0.635             29.1               -1.17             -0.082                                 ok            True                   True
+    ZS           82.05               39            0.84              0.90        152.40                60.77         0.501            pass              0.548             83.2               11.81              1.200                                 ok            True                  False
+  CHTR           69.23               13            3.02              3.39        158.79               119.32         0.763            pass              0.134             12.6              -13.73             -1.262            downtrend_blocked_slope           False                  False
+ CMCSA           75.00                4            2.93              0.54         26.01                61.43         0.633            pass              0.104             13.5               -7.58             -0.671 downtrend_blocked_slope_and_streak           False                  False
+  SHOP           91.67               36            1.24              0.97        111.33                82.33         0.597            pass              0.750             68.6              -12.29             -1.550 downtrend_blocked_slope_and_streak           False                  False
+  ORLY           77.78                9            1.92              1.27         94.03                34.97         0.538            pass              0.142             29.5               -0.40              0.191                                 ok           False                  False
+   AEP           94.44               18            1.01              0.93        131.36                20.97         0.517            pass              0.564             24.7               -3.19             -0.281            downtrend_blocked_slope           False                  False
+  PYPL           91.30               23            1.95              0.63         45.95                42.03         0.511            pass              0.446              2.2              -10.22             -1.113 downtrend_blocked_slope_and_streak           False                  False
+  TMUS           87.18               39            0.37              0.50        193.99                36.72         0.500            pass              0.621             62.1                1.94              0.360                                 ok           False                  False
+  INSM           75.00               28            1.72              1.26        104.26                99.84         0.496 below_threshold              0.377             69.0              -23.80             -2.050 downtrend_blocked_slope_and_streak           False                  False
+```
 
 ## Recent Events
 
@@ -70,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.3.3 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260508161001)
+![Reversal 3.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260508160000)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.3.3 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260508161001)
+![Reversal 3.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260508160000)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.3.3 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260508161001)
+![Reversal 3.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260508160000)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.3.3 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260508161001)
+![Reversal 3.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260508160000)
 
 </details>
