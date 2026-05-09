@@ -32,7 +32,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.4"
+VERSION = "3.4.1"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -60,6 +60,7 @@ EARLY_ENTRY_SCORE_GATE = 0.67
 EARLY_ENTRY_MIN_SUCCESS_RATE = 88.0
 EARLY_ENTRY_MIN_MATCHED_SIGNALS = 30
 EARLY_ENTRY_MIN_RECLAIM_RATIO = 0.60
+EARLY_ENTRY_STABILITY_GATE = 0.55
 TREND_HEALTH_LOOKBACK_DAYS = 10
 TREND_HEALTH_SLOPE_POINTS = 10
 TREND_HEALTH_MAX_NEGATIVE_SLOPE_PCT_PER_DAY = -0.25
@@ -636,6 +637,19 @@ def get_live_snapshot(ticker: str, allow_extended_hours: bool = True, now_et: pd
     regular_intraday = _clean_yf_columns(regular_intraday)
     daily = _clean_yf_columns(daily)
 
+    def _clip_intraday_to_clock(frame: pd.DataFrame) -> pd.DataFrame:
+        if frame.empty:
+            return frame
+        idx = pd.to_datetime(frame.index)
+        if getattr(idx, "tz", None) is None:
+            idx_et = idx.tz_localize(ET)
+        else:
+            idx_et = idx.tz_convert(ET)
+        return frame.loc[idx_et <= now_clock]
+
+    intraday = _clip_intraday_to_clock(intraday)
+    regular_intraday = _clip_intraday_to_clock(regular_intraday)
+
     if daily.empty or "Close" not in daily.columns:
         raise ValueError(f"{ticker}: unable to fetch recent daily close data.")
 
@@ -705,19 +719,32 @@ def get_live_snapshot(ticker: str, allow_extended_hours: bool = True, now_et: pd
     current_drop_pct = current_drop_amount / prev_close if prev_close > 0 else np.nan
     target_rebound_amount = current_drop_amount * RECOVER_TARGET
     target_price = current_price + target_rebound_amount
+    recovery_stability = {
+        "early_recovery_stability_score": np.nan,
+        "early_last30_slope_%hr": np.nan,
+        "early_above_ema20_last30_%": np.nan,
+        "early_above_vwap": False,
+        "early_retracement_from_high_%": np.nan,
+        "early_minutes_since_low": np.nan,
+    }
     if not intraday.empty and {"High", "Low"}.issubset(intraday.columns):
         session_frame = intraday
         if not pd.isna(asof):
             asof_ts = pd.Timestamp(asof)
-            if asof_ts.tzinfo is not None and getattr(session_frame.index, "tz", None) is not None:
-                session_index = session_frame.index.tz_convert(asof_ts.tz)
-                session_frame = session_frame.loc[session_index.date == asof_ts.date()]
+            if asof_ts.tzinfo is None:
+                asof_et = asof_ts.tz_localize(ET)
             else:
-                session_frame = session_frame.loc[pd.to_datetime(session_frame.index).date == asof_ts.date()]
+                asof_et = asof_ts.tz_convert(ET)
+            if getattr(session_frame.index, "tz", None) is not None:
+                session_index = session_frame.index.tz_convert(ET)
+            else:
+                session_index = pd.to_datetime(session_frame.index).tz_localize(ET)
+            session_frame = session_frame.loc[(session_index.date == asof_et.date()) & (session_index <= asof_et)]
         intraday_high = pd.to_numeric(session_frame["High"], errors="coerce").dropna()
         intraday_low = pd.to_numeric(session_frame["Low"], errors="coerce").dropna()
         session_high = float(intraday_high.max()) if not intraday_high.empty else np.nan
         session_low = float(intraday_low.min()) if not intraday_low.empty else np.nan
+        recovery_stability = compute_intraday_recovery_stability(session_frame, prev_close, float(current_price))
     else:
         session_high = float(max(prev_close, current_price))
         session_low = float(min(prev_close, current_price))
@@ -735,6 +762,81 @@ def get_live_snapshot(ticker: str, allow_extended_hours: bool = True, now_et: pd
         "target_price": float(target_price),
         "session_high": session_high,
         "session_low": session_low,
+        **recovery_stability,
+    }
+
+
+def compute_intraday_recovery_stability(
+    session_frame: pd.DataFrame,
+    prev_close: float,
+    current_price: float,
+) -> dict[str, Any]:
+    defaults = {
+        "early_recovery_stability_score": np.nan,
+        "early_last30_slope_%hr": np.nan,
+        "early_above_ema20_last30_%": np.nan,
+        "early_above_vwap": False,
+        "early_retracement_from_high_%": np.nan,
+        "early_minutes_since_low": np.nan,
+    }
+    required = {"Close", "High", "Low"}
+    if session_frame.empty or not required.issubset(session_frame.columns):
+        return defaults
+
+    close = pd.to_numeric(session_frame["Close"], errors="coerce").dropna()
+    low = pd.to_numeric(session_frame["Low"], errors="coerce").dropna()
+    if close.empty or low.empty:
+        return defaults
+
+    session_low = float(low.min())
+    low_time = low.idxmin()
+    post_low = close.loc[close.index >= low_time]
+    last30 = close.tail(30)
+    low_gap = max(prev_close - session_low, 0.0)
+    reclaim_ratio = (current_price - session_low) / low_gap if low_gap > 0 else np.nan
+
+    def _slope_pct_per_hour(series: pd.Series) -> float:
+        if len(series) < 5:
+            return np.nan
+        values = pd.to_numeric(series, errors="coerce").dropna().astype(float)
+        if len(values) < 5 or (values <= 0).any():
+            return np.nan
+        y = np.log(values.values)
+        x = np.arange(len(y), dtype=float)
+        return float(np.polyfit(x, y, 1)[0]) * 60 * 100
+
+    last30_slope = _slope_pct_per_hour(last30)
+    ema20 = close.ewm(span=20, adjust=False).mean()
+    above_ema20_last30 = float((last30 >= ema20.loc[last30.index]).mean()) if len(last30) else np.nan
+
+    volume = pd.to_numeric(session_frame.get("Volume", pd.Series(index=session_frame.index, dtype=float)), errors="coerce").fillna(0)
+    typical = (session_frame["High"] + session_frame["Low"] + session_frame["Close"]) / 3
+    vwap = float((typical * volume).sum() / volume.sum()) if float(volume.sum()) > 0 else np.nan
+    above_vwap = bool(current_price >= vwap) if np.isfinite(vwap) else False
+
+    post_low_high = float(post_low.max()) if len(post_low) else np.nan
+    retracement_from_high = (
+        (post_low_high - current_price) / max(post_low_high - session_low, 1e-9)
+        if np.isfinite(post_low_high)
+        else np.nan
+    )
+    asof_ts = close.index[-1]
+    minutes_since_low = float((pd.Timestamp(asof_ts) - pd.Timestamp(low_time)).total_seconds() / 60)
+
+    stability_score = 0.30 * np.clip(reclaim_ratio, 0, 1) if np.isfinite(reclaim_ratio) else 0
+    stability_score += 0.20 * np.clip((last30_slope + 1.0) / 5.0, 0, 1) if np.isfinite(last30_slope) else 0
+    stability_score += 0.20 * np.clip(above_ema20_last30, 0, 1) if np.isfinite(above_ema20_last30) else 0
+    stability_score += 0.15 * np.clip(1 - retracement_from_high, 0, 1) if np.isfinite(retracement_from_high) else 0
+    stability_score += 0.10 * (1.0 if above_vwap else 0.0)
+    stability_score += 0.05 * np.clip(minutes_since_low / 30.0, 0, 1)
+
+    return {
+        "early_recovery_stability_score": float(stability_score),
+        "early_last30_slope_%hr": float(last30_slope) if np.isfinite(last30_slope) else np.nan,
+        "early_above_ema20_last30_%": float(above_ema20_last30 * 100) if np.isfinite(above_ema20_last30) else np.nan,
+        "early_above_vwap": above_vwap,
+        "early_retracement_from_high_%": float(retracement_from_high * 100) if np.isfinite(retracement_from_high) else np.nan,
+        "early_minutes_since_low": minutes_since_low,
     }
 
 
@@ -1114,6 +1216,11 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
                     "timing_score": round(float(timing_score), 3) if np.isfinite(timing_score) else np.nan,
                     "timing_status": timing_status,
                     "early_entry_score": round(float(early_entry_score), 3) if np.isfinite(early_entry_score) else np.nan,
+                    "early_recovery_stability_score": round(float(live["early_recovery_stability_score"]), 3) if np.isfinite(live["early_recovery_stability_score"]) else np.nan,
+                    "early_last30_slope_%hr": round(float(live["early_last30_slope_%hr"]), 3) if np.isfinite(live["early_last30_slope_%hr"]) else np.nan,
+                    "early_above_ema20_last30_%": round(float(live["early_above_ema20_last30_%"]), 1) if np.isfinite(live["early_above_ema20_last30_%"]) else np.nan,
+                    "early_above_vwap": bool(live["early_above_vwap"]),
+                    "early_retracement_from_high_%": round(float(live["early_retracement_from_high_%"]), 1) if np.isfinite(live["early_retracement_from_high_%"]) else np.nan,
                     "trend_health_pass": bool(trend_health["trend_health_pass"]),
                     "trend_health_status": trend_health["trend_health_status"],
                     "trend_slope_%/day": round(float(trend_health["trend_slope_pct_per_day"]), 3) if np.isfinite(trend_health["trend_slope_pct_per_day"]) else np.nan,
@@ -1142,6 +1249,11 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
                     "timing_score": np.nan,
                     "timing_status": "error",
                     "early_entry_score": np.nan,
+                    "early_recovery_stability_score": np.nan,
+                    "early_last30_slope_%hr": np.nan,
+                    "early_above_ema20_last30_%": np.nan,
+                    "early_above_vwap": False,
+                    "early_retracement_from_high_%": np.nan,
                     "trend_health_pass": False,
                     "trend_health_status": "error",
                     "trend_slope_%/day": np.nan,
@@ -1169,6 +1281,7 @@ def screen_live_candidates(tickers: list[str], now_et: pd.Timestamp | None = Non
         & summary_df["current_drop_pct_raw"].fillna(0).gt(MINIMUM_CURRENT_DROP_PCT)
         & summary_df["early_entry_score"].fillna(-np.inf).ge(EARLY_ENTRY_SCORE_GATE)
         & summary_df["early_reclaim_%"].fillna(-np.inf).ge(EARLY_ENTRY_MIN_RECLAIM_RATIO * 100)
+        & summary_df["early_recovery_stability_score"].fillna(-np.inf).ge(EARLY_ENTRY_STABILITY_GATE)
         & summary_df["trend_health_pass"].fillna(False)
     )
     summary_df = summary_df.sort_values(
@@ -2066,7 +2179,7 @@ def render_dashboard(
         screener_view = screener_view[[
             "ticker", "success_rate_%", "matched_signals", "current_drop_%", "target_rebound_$",
             "target_price", "rolling_sigma_20d_%", "timing_score", "timing_status",
-            "early_entry_score", "early_reclaim_%",
+            "early_entry_score", "early_reclaim_%", "early_recovery_stability_score",
             "trend_return_10d_%", "trend_slope_%/day", "trend_health_status", "call_candidate", "early_entry_candidate"
         ]].head(12)
 
@@ -2087,7 +2200,7 @@ def render_dashboard(
             "- Matched-signal gate: `>= 10`",
             "- Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers",
             "- Entry scan: `3:00 PM ET`",
-            f"- Early-entry permission: `10:00 AM-12:00 PM ET` 5-minute scans may enter one exceptional candidate only when `early_entry_score >= {EARLY_ENTRY_SCORE_GATE:.2f}`, success rate `>= {EARLY_ENTRY_MIN_SUCCESS_RATE:.0f}%`, matched signals `>= {EARLY_ENTRY_MIN_MATCHED_SIGNALS}`, and early reclaim `>= {EARLY_ENTRY_MIN_RECLAIM_RATIO:.0%}`; the one-new-entry-per-day limit still applies",
+            f"- Early-entry permission: `10:00 AM-12:00 PM ET` 5-minute scans may enter one exceptional candidate only when `early_entry_score >= {EARLY_ENTRY_SCORE_GATE:.2f}`, success rate `>= {EARLY_ENTRY_MIN_SUCCESS_RATE:.0f}%`, matched signals `>= {EARLY_ENTRY_MIN_MATCHED_SIGNALS}`, early reclaim `>= {EARLY_ENTRY_MIN_RECLAIM_RATIO:.0%}`, and recovery stability `>= {EARLY_ENTRY_STABILITY_GATE:.2f}`; the one-new-entry-per-day limit still applies",
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; off-hours `5-minute` checkpoints continue mark-to-market updates for open positions, while any legacy share positions still held from older versions continue extended-hours take-profit and stop loss scans until flat",
             f"- Live exit ladder: `+{DAY1_TAKE_PROFIT_PCT:.0%} / +{DAY2_TAKE_PROFIT_PCT:.0%} / -{STOP_LOSS_PCT:.0%}`",
             "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`",
@@ -2139,7 +2252,7 @@ def render_dashboard(
                 columns=[
                     "ticker", "success_rate_%", "matched_signals", "current_drop_%",
                     "target_rebound_$", "target_price", "rolling_sigma_20d_%", "timing_score", "timing_status",
-                    "early_entry_score", "early_reclaim_%",
+                    "early_entry_score", "early_reclaim_%", "early_recovery_stability_score",
                     "trend_return_10d_%", "trend_slope_%/day", "trend_health_status", "call_candidate", "early_entry_candidate"
                 ],
                 max_rows=12,
