@@ -1469,3 +1469,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-11T10:05:43.962541-04:00,2026-05-11,early_entry_1005,entry,"{""allocated_cash"": 16240.0, ""asset_type"": ""option"", ""contract_symbol"": ""CEG260618C00290000"", ""contracts"": 7, ""early_entry_score"": 0.766, ""entry_mode"": ""early"", ""entry_option_price"": 23.2, ""execution_mode"": ""option"", ""matched_signals"": 39, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 991.0, ""option_spread_pct"": 14.66, ""option_volume"": 18.0, ""success_rate"": 89.74, ""ticker"": ""CEG"", ""timing_score"": 0.357}"
 2026-05-11T10:12:01.604493-04:00,2026-05-11,early_entry_1010,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-11T10:18:18.755092-04:00,2026-05-11,early_entry_1015,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-11T10:24:36.025323-04:00,2026-05-11,early_entry_1020,entry_skipped,"{""reason"": ""daily_entry_limit""}"
