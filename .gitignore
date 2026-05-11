@@ -5,3 +5,4 @@ reversal_data/
 
 .secrets/
 results/*/launchd*.log
+results/*/*launchd*.log
