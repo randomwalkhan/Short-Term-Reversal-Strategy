@@ -32,7 +32,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.4.1"
+VERSION = "3.4.2"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -355,7 +355,40 @@ def save_csv_log(path: Path, df: pd.DataFrame) -> None:
     df.to_csv(path, index=False)
 
 
+def load_cached_universe(name: str) -> list[str]:
+    path = BASE_DIR / f"{name}_tickers.csv"
+    if not path.exists():
+        return []
+    try:
+        df = pd.read_csv(path)
+    except Exception as exc:
+        print(f"Cached universe load failed for {path.name}: {exc}", file=sys.stderr)
+        return []
+
+    if "ticker" in df.columns:
+        raw_tickers = df["ticker"].tolist()
+    elif len(df.columns) >= 1:
+        raw_tickers = df.iloc[:, 0].tolist()
+    else:
+        return []
+
+    tickers: list[str] = []
+    seen: set[str] = set()
+    for raw in raw_tickers:
+        ticker = str(raw).strip().upper().replace(".", "-")
+        if not ticker or ticker == "TICKER" or ticker in seen:
+            continue
+        tickers.append(ticker)
+        seen.add(ticker)
+    return tickers
+
+
 def build_universe() -> list[str]:
+    if os.getenv("REVERSAL_FORCE_DYNAMIC_UNIVERSE", "").strip().lower() not in {"1", "true", "yes"}:
+        cached = load_cached_universe(UNIVERSE_NAME)
+        if cached:
+            return cached
+
     presets = build_named_universe_map(
         min_market_cap=1e9,
         min_price=10.0,
