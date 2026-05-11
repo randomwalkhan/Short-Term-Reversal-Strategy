@@ -1,0 +1,539 @@
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 497, in run_cycle
+    render_dashboard(account, positions_df, trades_df, events_df, now_et, effective_slot)
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 431, in render_dashboard
+    live.format_table(events_df.tail(20).sort_values("timestamp_et", ascending=False), columns=["timestamp_et", "slot", "event_type", "detail"], max_rows=20),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 7176, in sort_values
+    k = self._get_label_or_level_values(by[0], axis=axis)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/core/generic.py", line 1910, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'timestamp_et'
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 516, in <module>
+    main()
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 511, in main
+    result = run_cycle(parse_args())
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 459, in run_cycle
+    events_df = load_csv(EVENTS_PATH)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/services/reversal-3-4-live-air/reversal_3_4_1_alpaca_paper.py", line 103, in load_csv
+    return pd.read_csv(path)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hanks/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file

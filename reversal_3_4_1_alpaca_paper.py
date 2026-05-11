@@ -9,12 +9,13 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
+from pandas.errors import EmptyDataError
 import requests
 
 import reversal_3_3_live as live
 
 
-VERSION = "3.4.1-alpaca-paper"
+VERSION = "3.4.1-alpaca-paper.1"
 BASE_DIR = Path(__file__).resolve().parent
 RESULT_DIR = BASE_DIR / "results" / "reversal_3_4_1_alpaca_paper"
 STATE_PATH = RESULT_DIR / "alpaca_state.json"
@@ -87,9 +88,10 @@ def load_state() -> dict[str, Any]:
     if STATE_PATH.exists():
         state = json.loads(STATE_PATH.read_text())
     else:
-        state = {"version": VERSION, "positions": [], "start_date": live.LIVE_START_DATE}
+        state = {"version": VERSION, "positions": [], "blocked_trade_dates": [], "start_date": live.LIVE_START_DATE}
     state.setdefault("version", VERSION)
     state.setdefault("positions", [])
+    state.setdefault("blocked_trade_dates", [])
     return state
 
 
@@ -100,7 +102,10 @@ def save_state(state: dict[str, Any]) -> None:
 
 def load_csv(path: Path) -> pd.DataFrame:
     if path.exists() and path.stat().st_size:
-        return pd.read_csv(path)
+        try:
+            return pd.read_csv(path)
+        except EmptyDataError:
+            return pd.DataFrame()
     return pd.DataFrame()
 
 
@@ -120,6 +125,8 @@ def append_event(events_df: pd.DataFrame, now_et: pd.Timestamp, slot: str | None
 
 
 def has_entry_today(state: dict[str, Any], trades_df: pd.DataFrame, events_df: pd.DataFrame, trade_date: str) -> bool:
+    if trade_date in set(map(str, state.get("blocked_trade_dates", []))):
+        return True
     return live.has_entry_on_trade_date(state, trades_df, events_df, trade_date)
 
 
