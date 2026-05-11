@@ -1,6 +1,6 @@
 # Reversal 3.4.1 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-11 10:56:33 EDT`
+Latest checkpoint (ET): `2026-05-11 11:02:58 EDT`
 Last processed slot: `manage_1100`
 
 ## Active Configuration
@@ -47,34 +47,34 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  TEAM           81.82               11            5.28              3.39         90.15               114.36         0.598          pass              0.157             14.0                           0.227               25.34              3.261                                 ok            True                  False
-  GOOG           84.21               19            1.48              4.12        395.29                37.66         0.573          pass              0.318             29.5                           0.396               12.24              1.427                                 ok            True                  False
-    ZS           80.00               20            2.40              2.56        151.03                58.64         0.537          pass              0.167             15.6                           0.197               10.71              1.331                                 ok            True                  False
-  TMUS           86.21               29            0.97              1.31        193.07                36.59         0.531          pass              0.439             31.2                           0.265                4.93              0.266                                 ok            True                  False
-   KDP           89.66               29            0.61              0.12         28.78                34.30         0.529          pass              0.579             47.3                           0.289                1.79             -0.011                                 ok            True                  False
-   WMT           87.50               16            1.20              1.10        129.96                19.38         0.526          pass              0.361             22.7                           0.352                1.19              0.156                                 ok            True                  False
-  WDAY           80.00               15            3.16              2.83        126.62                62.51         0.512          pass              0.089              1.6                           0.175                5.05              0.617                                 ok            True                  False
-  MDLZ           84.00               25            0.66              0.28         61.42                24.76         0.502          pass              0.479             74.1                           0.441                6.48              0.492                                 ok            True                  False
-  CHTR           78.57               14            2.67              2.89        153.62               119.48         0.785          pass              0.190             28.3                           0.247              -13.68             -1.219            downtrend_blocked_slope           False                  False
- CMCSA           88.89               18            0.81              0.14         25.33                62.19         0.708          pass              0.410             16.3                           0.156               -8.43             -0.827 downtrend_blocked_slope_and_streak           False                  False
-  NXPI           81.08               37            0.44              0.92        294.36                87.07         0.707          pass              0.475             65.1                           0.525               23.88              1.930                                 ok           False                  False
-  MSTR           90.00               40            0.32              0.42        187.41                70.10         0.586          pass              0.791             88.6                           0.685               10.51              1.525                                 ok           False                  False
+  TEAM           86.67               15            4.72              3.02         90.30               114.36         0.613          pass              0.342             23.2                           0.379               26.09              3.288                                 ok            True                  False
+  GOOG           83.33               18            1.64              4.57        395.09                37.66         0.569          pass              0.264             21.7                           0.334               12.05              1.419                                 ok            True                  False
+    ZS           80.00               20            2.45              2.61        151.01                58.64         0.535          pass              0.162             13.9                           0.187               10.66              1.329                                 ok            True                  False
+  TMUS           86.21               29            0.96              1.30        193.07                36.59         0.532          pass              0.441             32.0                           0.228                4.94              0.266                                 ok            True                  False
+   WMT           86.67               15            1.27              1.16        129.93                19.38         0.527          pass              0.319             18.2                           0.324                1.12              0.152                                 ok            True                  False
+   KDP           87.10               31            0.50              0.10         28.79                34.30         0.519          pass              0.550             56.4                           0.299                1.90             -0.006                                 ok            True                  False
+  ASML           84.62               13            3.20             35.67       1576.73                48.89         0.500          pass              0.275             27.4                           0.529                7.58              1.209                                 ok            True                  False
+  CHTR           80.00               15            2.63              2.86        153.64               119.48         0.783          pass              0.199             29.2                           0.211              -13.65             -1.217            downtrend_blocked_slope           False                  False
+  NXPI           81.58               38            0.27              0.57        294.51                87.07         0.711          pass              0.535             78.4                           0.600               24.09              1.938                                 ok           False                  False
+ CMCSA           88.24               17            0.91              0.16         25.33                62.19         0.706          pass              0.377             13.2                           0.183               -8.52             -0.831 downtrend_blocked_slope_and_streak           False                  False
+  MSTR           90.00               40            0.30              0.40        187.42                70.10         0.587          pass              0.793             89.3                           0.673               10.53              1.526                                 ok           False                  False
+  SHOP           92.31               13            4.30              3.33        109.08                82.28         0.576          pass              0.438             10.6                           0.370              -14.87             -1.727            downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot    event_type                                                                                                                                                                                                                                                                                                                                                                                                                           detail
-2026-05-11T10:56:33.081827-04:00 early_entry_1055 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "daily_entry_limit"}
-2026-05-11T10:50:08.671190-04:00 early_entry_1050 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "daily_entry_limit"}
-2026-05-11T10:43:44.045089-04:00 early_entry_1040 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "daily_entry_limit"}
-2026-05-11T10:37:19.097633-04:00 early_entry_1035 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "daily_entry_limit"}
-2026-05-11T10:37:19.097633-04:00      manage_1030          exit                                                                                                                                                                                                                                             {"asset_type": "option", "contract_symbol": "CEG260618C00290000", "fill_price": 26.8, "pnl": 2520.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 15.52, "ticker": "CEG"}
-2026-05-11T10:30:53.059924-04:00 early_entry_1030 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "daily_entry_limit"}
-2026-05-11T10:24:36.025323-04:00 early_entry_1020 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "daily_entry_limit"}
-2026-05-11T10:18:18.755092-04:00 early_entry_1015 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "daily_entry_limit"}
-2026-05-11T10:12:01.604493-04:00 early_entry_1010 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "daily_entry_limit"}
-2026-05-11T10:05:43.962541-04:00 early_entry_1005         entry {"allocated_cash": 16240.0, "asset_type": "option", "contract_symbol": "CEG260618C00290000", "contracts": 7, "early_entry_score": 0.766, "entry_mode": "early", "entry_option_price": 23.2, "execution_mode": "option", "matched_signals": 39, "option_liquidity_status": "ok", "option_open_interest": 991.0, "option_spread_pct": 14.66, "option_volume": 18.0, "success_rate": 89.74, "ticker": "CEG", "timing_score": 0.357}
+                    timestamp_et             slot    event_type                                                                                                                                                                               detail
+2026-05-11T11:02:58.554215-04:00 early_entry_1100 entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
+2026-05-11T10:56:33.081827-04:00 early_entry_1055 entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
+2026-05-11T10:50:08.671190-04:00 early_entry_1050 entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
+2026-05-11T10:43:44.045089-04:00 early_entry_1040 entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
+2026-05-11T10:37:19.097633-04:00 early_entry_1035 entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
+2026-05-11T10:37:19.097633-04:00      manage_1030          exit {"asset_type": "option", "contract_symbol": "CEG260618C00290000", "fill_price": 26.8, "pnl": 2520.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 15.52, "ticker": "CEG"}
+2026-05-11T10:30:53.059924-04:00 early_entry_1030 entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
+2026-05-11T10:24:36.025323-04:00 early_entry_1020 entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
+2026-05-11T10:18:18.755092-04:00 early_entry_1015 entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
+2026-05-11T10:12:01.604493-04:00 early_entry_1010 entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
 ```
 
 ## Equity Curves
@@ -84,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260511105633)
+![Reversal 3.4.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260511110258)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260511105633)
+![Reversal 3.4.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260511110258)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260511105633)
+![Reversal 3.4.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260511110258)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260511105633)
+![Reversal 3.4.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260511110258)
 
 </details>
