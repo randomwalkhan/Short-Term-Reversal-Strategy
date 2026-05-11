@@ -1,1 +1,1 @@
-
+position_id,ticker,contract_symbol,entry_timestamp_et,exit_timestamp_et,entry_trade_date_et,exit_trade_date_et,entry_option_price,exit_option_price,contracts,allocated_cash,proceeds,pnl,return_pct,exit_reason,alpaca_entry_order_id,alpaca_exit_order_id

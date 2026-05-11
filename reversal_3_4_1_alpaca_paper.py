@@ -15,7 +15,7 @@ import requests
 import reversal_3_3_live as live
 
 
-VERSION = "3.4.1-alpaca-paper.1"
+VERSION = "3.4.1-alpaca-paper.2"
 BASE_DIR = Path(__file__).resolve().parent
 RESULT_DIR = BASE_DIR / "results" / "reversal_3_4_1_alpaca_paper"
 STATE_PATH = RESULT_DIR / "alpaca_state.json"
@@ -24,6 +24,68 @@ TRADES_PATH = RESULT_DIR / "alpaca_trades.csv"
 POSITIONS_PATH = RESULT_DIR / "alpaca_positions.csv"
 DASHBOARD_PATH = RESULT_DIR / "README.md"
 ENV_PATH = BASE_DIR / ".secrets" / "alpaca_paper.env"
+
+EVENT_COLUMNS = ["timestamp_et", "trade_date_et", "slot", "event_type", "detail"]
+TRADE_COLUMNS = [
+    "position_id",
+    "ticker",
+    "contract_symbol",
+    "entry_timestamp_et",
+    "exit_timestamp_et",
+    "entry_trade_date_et",
+    "exit_trade_date_et",
+    "entry_option_price",
+    "exit_option_price",
+    "contracts",
+    "allocated_cash",
+    "proceeds",
+    "pnl",
+    "return_pct",
+    "exit_reason",
+    "alpaca_entry_order_id",
+    "alpaca_exit_order_id",
+]
+POSITION_COLUMNS = [
+    "position_id",
+    "ticker",
+    "asset_type",
+    "execution_mode",
+    "entry_mode",
+    "contract_symbol",
+    "expiry",
+    "strike",
+    "entry_timestamp",
+    "entry_trade_date",
+    "entry_slot",
+    "entry_spot",
+    "entry_option_price",
+    "contracts",
+    "allocated_cash",
+    "planned_tp_day1",
+    "planned_tp_day2",
+    "planned_stop",
+    "success_rate",
+    "matched_signals",
+    "current_drop_pct",
+    "timing_score",
+    "early_entry_score",
+    "alpaca_entry_order_id",
+    "alpaca_entry_client_order_id",
+    "status",
+    "asof_et",
+    "current_option_price",
+    "current_bid",
+    "current_ask",
+    "position_value",
+    "unrealized_pnl",
+    "unrealized_return_pct",
+    "business_days_held",
+]
+CSV_COLUMNS = {
+    EVENTS_PATH.name: EVENT_COLUMNS,
+    TRADES_PATH.name: TRADE_COLUMNS,
+    POSITIONS_PATH.name: POSITION_COLUMNS,
+}
 
 STRATEGY_CAPITAL_CAP = float(os.getenv("ALPACA_PAPER_STRATEGY_CAPITAL_CAP", str(live.INITIAL_CAPITAL)))
 FINAL_ORDER_STATES = {"filled", "canceled", "expired", "rejected", "replaced", "done_for_day"}
@@ -105,8 +167,8 @@ def load_csv(path: Path) -> pd.DataFrame:
         try:
             return pd.read_csv(path)
         except EmptyDataError:
-            return pd.DataFrame()
-    return pd.DataFrame()
+            return pd.DataFrame(columns=CSV_COLUMNS.get(path.name, []))
+    return pd.DataFrame(columns=CSV_COLUMNS.get(path.name, []))
 
 
 def save_csv(path: Path, df: pd.DataFrame) -> None:
@@ -358,6 +420,8 @@ def mark_positions(state: dict[str, Any], now_et: pd.Timestamp) -> pd.DataFrame:
             "unrealized_return_pct": pnl / float(pos["allocated_cash"]) * 100 if float(pos["allocated_cash"]) > 0 else np.nan,
             "business_days_held": live.business_days_since(pos["entry_trade_date"], now_et.date().isoformat()),
         })
+    if not rows:
+        return pd.DataFrame(columns=POSITION_COLUMNS)
     return pd.DataFrame(rows)
 
 
