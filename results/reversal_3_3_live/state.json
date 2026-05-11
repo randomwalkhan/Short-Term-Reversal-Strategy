@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 32833.500356674194,
-  "positions": [],
+  "cash": 16593.500356674194,
+  "positions": [
+    {
+      "position_id": "CEG_20260511T100543",
+      "ticker": "CEG",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "CEG260618C00290000",
+      "expiry": "2026-06-18",
+      "strike": 290.0,
+      "entry_timestamp": "2026-05-11T10:05:43.962541-04:00",
+      "entry_trade_date": "2026-05-11",
+      "entry_slot": "early_entry_1005",
+      "entry_spot": 301.8599853515625,
+      "entry_option_price": 23.2,
+      "entry_bid": 21.5,
+      "entry_ask": 24.9,
+      "entry_iv_pct": 46.88773815917969,
+      "contracts": 7,
+      "allocated_cash": 16240.0,
+      "success_rate": 89.74,
+      "matched_signals": 39,
+      "current_drop_pct": 0.58,
+      "rolling_sigma_20d_pct": 48.41,
+      "planned_tp_day1": 26.679999999999996,
+      "planned_tp_day2": 26.679999999999996,
+      "planned_stop": 20.88,
+      "option_open_interest": 991.0,
+      "option_volume": 18.0,
+      "option_spread_pct": 0.14655172413793097,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",

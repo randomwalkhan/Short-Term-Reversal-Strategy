@@ -1,6 +1,6 @@
 # Reversal 3.4.1 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-11 09:59:30 EDT`
+Latest checkpoint (ET): `2026-05-11 10:05:43 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -26,15 +26,18 @@ Last processed slot: `manage_1000`
 
 ## Portfolio Snapshot
 
-- Cash: `$32,833.50`
+- Cash: `$16,593.50`
 - Equity: `$32,833.50`
 - Realized PnL: `$22,833.50`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
+   CEG     option         option CEG260618C00290000       2026-05-11                   0      7     16240.0                 16240.0         23.2           23.2      301.86        302.13             0.0                    0.0         89.74               39              0.58         46.89           46.89                  48.41                 991.0           18.0               0.15                      ok
+```
 
 ## Today's Closed Trades (2026-05-11)
 
@@ -43,35 +46,35 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  NXPI           80.56               36            0.73              1.50        294.11                87.07         0.698          pass              0.386             42.7                           0.309               23.53              1.917                                 ok            True                  False
-  TEAM           87.88               33            2.49              1.60         90.92               114.36         0.652          pass              0.556             42.6                           0.293               29.04              3.393                                 ok            True                  False
-  GOOG           85.19               27            1.05              2.92        395.80                37.66         0.550          pass              0.457             50.0                           0.635               12.73              1.447                                 ok            True                  False
-    ZS           83.33               36            1.06              1.13        151.65                58.64         0.540          pass              0.389             24.4                           0.307               12.24              1.393                                 ok            True                  False
-   ADP           92.00               25            0.93              1.39        212.40                34.95         0.527          pass              0.632             53.0                           0.320                6.99              0.482                                 ok            True                  False
-  FAST           94.74               19            1.19              0.37         44.01                33.60         0.524          pass              0.590             28.1                           0.273               -3.10             -0.165                                 ok            True                  False
-   ADI           83.33               30            0.78              2.27        415.55                36.03         0.521          pass              0.381             35.6                           0.276                5.27              0.743                                 ok            True                  False
-  ORLY           85.71               28            1.07              0.70         92.66                35.12         0.510          pass              0.471             49.2                           0.495               -0.01              0.037                                 ok            True                  False
-  TMUS           86.11               36            0.63              0.85        193.27                36.59         0.508          pass              0.553             55.3                           0.494                5.29              0.281                                 ok            True                  False
-  WDAY           80.77               26            2.35              2.10        126.93                62.51         0.503          pass              0.178              0.0                           0.217                5.94              0.656                                 ok            True                  False
-  CHTR           80.00               15            2.62              2.84        153.64               119.48         0.784          pass              0.200             29.5                           0.280              -13.64             -1.217            downtrend_blocked_slope           False                  False
- CMCSA           90.62               32            0.24              0.04         25.38                62.19         0.668          pass              0.723             75.5                           0.447               -7.91             -0.801 downtrend_blocked_slope_and_streak           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  TEAM           84.62               26            3.60              2.31         90.61               114.36         0.628          pass              0.343             16.9                           0.167               27.56              3.341                      ok            True                  False
+  GOOG           84.00               25            1.12              3.11        395.72                37.66         0.557          pass              0.403             46.8                           0.570               12.65              1.443                      ok            True                  False
+   ADP           89.47               19            1.22              1.82        212.22                34.95         0.543          pass              0.482             38.5                           0.248                6.68              0.469                      ok            True                  False
+    ZS           83.33               36            1.00              1.06        151.67                58.64         0.543          pass              0.402             28.6                           0.265               12.30              1.396                      ok            True                  False
+  TMUS           84.62               26            1.09              1.48        193.00                36.59         0.539          pass              0.351             22.4                           0.225                4.80              0.260                      ok            True                  False
+   WMT           87.50               16            1.20              1.09        129.96                19.38         0.530          pass              0.316              7.7                           0.162                1.20              0.156                      ok            True                  False
+  ASML           86.67               15            2.85             31.72       1578.42                48.89         0.520          pass              0.327             21.4                           0.259                7.98              1.225                      ok            True                  False
+  MRVL          100.00               23            2.05              2.44        169.09                55.66         0.518          pass              0.704             55.0                           0.605                5.33              0.772                      ok            True                  False
+   ADI           81.25               32            0.62              1.81        415.75                36.03         0.514          pass              0.378             48.8                           0.290                5.44              0.750                      ok            True                  False
+  MDLZ           83.33               24            0.78              0.33         61.40                24.76         0.500          pass              0.441             69.7                           0.493                6.36              0.487                      ok            True                  False
+  CHTR           81.25               16            2.47              2.68        153.71               119.48         0.787          pass              0.253             33.6                           0.470              -13.50             -1.209 downtrend_blocked_slope           False                  False
+  NXPI           78.79               33            0.98              2.03        293.88                87.07         0.699          pass              0.292             22.8                           0.195               23.21              1.906                      ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                                                                                                                                                                                 detail
-2026-05-11T09:18:42.943466-04:00 data_refresh data_refresh                                                                                                                                                                          {'saved': 92}
-2026-05-08T16:05:06.142170-04:00  manage_1600         exit {"asset_type": "option", "contract_symbol": "TEAM260618C00090000", "fill_price": 9.25, "pnl": 2850.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 19.35, "ticker": "TEAM"}
-2026-05-08T16:00:06.094263-04:00  manage_1600 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-05-08T15:55:02.084715-04:00  manage_1600 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-05-08T15:40:02.063692-04:00  manage_1530 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-05-08T15:35:05.923584-04:00  manage_1530 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-05-08T15:30:06.082521-04:00  manage_1530 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-05-08T15:25:06.105856-04:00  manage_1530 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-05-08T15:10:02.102478-04:00   entry_1500 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
-2026-05-08T15:05:03.959571-04:00   entry_1500 slot_skipped                                                                                                                                                        {"reason": "already_processed"}
+                    timestamp_et             slot   event_type                                                                                                                                                                                                                                                                                                                                                                                                                           detail
+2026-05-11T10:05:43.962541-04:00 early_entry_1005        entry {"allocated_cash": 16240.0, "asset_type": "option", "contract_symbol": "CEG260618C00290000", "contracts": 7, "early_entry_score": 0.766, "entry_mode": "early", "entry_option_price": 23.2, "execution_mode": "option", "matched_signals": 39, "option_liquidity_status": "ok", "option_open_interest": 991.0, "option_spread_pct": 14.66, "option_volume": 18.0, "success_rate": 89.74, "ticker": "CEG", "timing_score": 0.357}
+2026-05-11T09:18:42.943466-04:00     data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                    {'saved': 92}
+2026-05-08T16:05:06.142170-04:00      manage_1600         exit                                                                                                                                                                                                                                           {"asset_type": "option", "contract_symbol": "TEAM260618C00090000", "fill_price": 9.25, "pnl": 2850.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 19.35, "ticker": "TEAM"}
+2026-05-08T16:00:06.094263-04:00      manage_1600 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-08T15:55:02.084715-04:00      manage_1600 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-08T15:40:02.063692-04:00      manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-08T15:35:05.923584-04:00      manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-08T15:30:06.082521-04:00      manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-08T15:25:06.105856-04:00      manage_1530 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
+2026-05-08T15:10:02.102478-04:00       entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -81,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260511095930)
+![Reversal 3.4.1 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260511100543)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260511095930)
+![Reversal 3.4.1 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260511100543)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260511095930)
+![Reversal 3.4.1 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260511100543)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260511095930)
+![Reversal 3.4.1 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260511100543)
 
 </details>
