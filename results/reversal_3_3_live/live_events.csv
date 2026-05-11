@@ -1465,3 +1465,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-08T15:55:02.084715-04:00,2026-05-08,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-08T16:00:06.094263-04:00,2026-05-08,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-08T16:05:06.142170-04:00,2026-05-08,manage_1600,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""TEAM260618C00090000"", ""fill_price"": 9.25, ""pnl"": 2850.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 19.35, ""ticker"": ""TEAM""}"
+2026-05-11T09:18:42.943466-04:00,2026-05-11,data_refresh,data_refresh,{'saved': 92}
