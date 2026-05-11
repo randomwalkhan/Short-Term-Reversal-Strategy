@@ -1,12 +1,12 @@
-# Reversal 3.3.2
+# Reversal 3.4.2
 
 <!-- reversal-3.3-live:start -->
-## Reversal 3.4.1 Live Paper Test
+## Reversal 3.4.2 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-11 15:43:37 EDT`
+- Latest checkpoint (ET): `2026-05-11 15:50:21 EDT`
 - Equity: `$35,353.50` | Realized: `$25,353.50` | Unrealized: `$0.00` | Open positions: `0`
 - Today closed trades: `1`
-- Current slot: `manual`
+- Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -17,28 +17,28 @@ _None_
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.1 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260511154337)
+![Reversal 3.4.2 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260511155021)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260511154337)
+![Reversal 3.4.2 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260511155021)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260511154337)
+![Reversal 3.4.2 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260511155021)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260511154337)
+![Reversal 3.4.2 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260511155021)
 
 </details>
 
@@ -47,15 +47,15 @@ _None_
 - [Live equity csv](results/reversal_3_3_live/live_equity.csv)
 <!-- reversal-3.3-live:end -->
 
-`Reversal3.3.ipynb` remains the current research notebook for short-term reversal analysis and option profitability confidence estimation; `3.4.1` is the current execution/filtering version.
+`Reversal3.3.ipynb` remains the current research notebook for short-term reversal analysis and option profitability confidence estimation; `3.4.2` is the current execution/filtering version.
 
-`Reversal3.3.ipynb` 仍是当前研究型 notebook，用于短期反转研究和期权盈利概率评估；`3.4.1` 是当前执行层和过滤器版本。
+`Reversal3.3.ipynb` 仍是当前研究型 notebook，用于短期反转研究和期权盈利概率评估；`3.4.2` 是当前执行层和过滤器版本。
 
 ## Strategy Summary | 策略总结
 
-This repository studies a short-term reversal call-buying setup built around large intraday drawdowns, historical recovery probability, and staged optimization. The current official version is `Reversal 3.4.1`.
+This repository studies a short-term reversal call-buying setup built around large intraday drawdowns, historical recovery probability, and staged optimization. The current official version is `Reversal 3.4.2`.
 
-本仓库研究的是一套基于“日内大跌后短期反转”的 call 策略，通过历史反弹成功率和逐阶段优化来推进。目前官方版本是 `Reversal 3.4.1`。
+本仓库研究的是一套基于“日内大跌后短期反转”的 call 策略，通过历史反弹成功率和逐阶段优化来推进。目前官方版本是 `Reversal 3.4.2`。
 
 - Official universe: `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`
 - Official filters: `60d` lookback, `matched_signals >= 10`, `minimum current drop > 0.5%`, a non-ETF `trailing P/E < 140` universe guard, and a live trend-health gate that blocks short-term down channels
@@ -111,7 +111,8 @@ That is how the current live-paper implementation emerged. I did not begin with 
 
 ## Current Version | 当前官方版本
 
-Release notes (`3.4.1`)
+Release notes (`3.4.2`)
+- `3.4.2` hotfix: live execution now loads the promoted `qqq_plus_leverage_etfs` universe from the checked-in ticker cache by default, avoiding repeated Nasdaq screener requests during every 5-minute cycle. Set `REVERSAL_FORCE_DYNAMIC_UNIVERSE=true` only when an operator intentionally wants to rebuild the universe live.
 - Keep the official `3.3.3` strategy definition and exit-rescan patch intact.
 - Add a high-confidence early-entry permission window from `10:00 AM` to `12:00 PM ET`, scanned every 5 minutes.
 - Introduce a deliberately strict `early_entry_score` gate, calibrated from the CRWD 2026-05-08 morning case: `early_entry_score >= 0.67`, `success_rate >= 88%`, `matched_signals >= 30`, and at least `60%` reclaim from the early intraday low.
@@ -120,7 +121,8 @@ Release notes (`3.4.1`)
 - Add an isolated Alpaca paper execution runner for the current `3.4.1` signal stack. It uses local-only credentials, submits Alpaca paper option orders, and keeps the existing GitHub simulator separate.
 - `3.4.1-alpaca-paper.1` hotfix: tolerate empty first-run CSV files and support a same-day block list after a missed simulator trade, preventing late catch-up entries that would make Alpaca paper results incomparable.
 
-版本说明（`3.4.1`）
+版本说明（`3.4.2`）
+- `3.4.2` hotfix：live 执行默认直接读取 repo 中已生成的 `qqq_plus_leverage_etfs` ticker cache，避免每 5 分钟循环都请求 Nasdaq screener；只有在明确设置 `REVERSAL_FORCE_DYNAMIC_UNIVERSE=true` 时才现场重建 universe。
 - 保留 `3.3.3` 的策略定义和 exit-rescan 修复。
 - 新增 `10:00 AM` 到 `12:00 PM ET` 的高置信早盘入场许可，每 5 分钟扫描一次。
 - 新增刻意更严格的 `early_entry_score` gate，以 2026-05-08 早盘 CRWD 这类案例为校准标准：`early_entry_score >= 0.67`、`success_rate >= 88%`、`matched_signals >= 30`，并且至少从早盘日内低点 reclaim `60%`。
@@ -131,9 +133,9 @@ Release notes (`3.4.1`)
 
 ## Featured Result | 重点结果
 
-The latest recorded official Reversal 3.3 backtest keeps the promoted `3.1` research stack intact, then adds a `5d` timing overlay with a `0.50` no-trade gate on top of the existing candidate selection. On the current 1-year data snapshot, that change lifts win rate and sharply compresses drawdown while keeping Sharpe slightly above the no-overlay baseline. The current recorded Reversal 3.3 result is `+690.85%` total return, `-26.42%` max drawdown, `69.23%` win rate, and `4.32` Sharpe. Reversal `3.4.1` keeps that strategy definition and adds a live-only early-entry permission layer for unusually strong morning reversal setups, with an additional TEAM-inspired stability check.
+The latest recorded official Reversal 3.3 backtest keeps the promoted `3.1` research stack intact, then adds a `5d` timing overlay with a `0.50` no-trade gate on top of the existing candidate selection. On the current 1-year data snapshot, that change lifts win rate and sharply compresses drawdown while keeping Sharpe slightly above the no-overlay baseline. The current recorded Reversal 3.3 result is `+690.85%` total return, `-26.42%` max drawdown, `69.23%` win rate, and `4.32` Sharpe. Reversal `3.4.2` keeps that strategy definition and adds a live-only early-entry permission layer for unusually strong morning reversal setups, with an additional TEAM-inspired stability check and a cached live-universe fallback for operational reliability.
 
-最近一次记录的 Reversal 3.3 官方回测保留了 `3.1` 提升后的核心研究口径，并在现有候选筛选之上新增 `5d` timing overlay 与 `0.50` no-trade gate。在当前的 1 年数据快照下，这一改动显著压低了最大回撤，同时提升了胜率，并让 Sharpe 仍然略高于无 overlay 的基线。当前记录的 Reversal 3.3 结果为：总收益 `+690.85%`、最大回撤 `-26.42%`、胜率 `69.23%`、Sharpe `4.32`。Reversal `3.4.1` 保留这套策略定义，并在 live 执行层增加针对高质量早盘反转结构的提前入场许可，同时加入从 TEAM 案例提炼出的稳定修复检查。
+最近一次记录的 Reversal 3.3 官方回测保留了 `3.1` 提升后的核心研究口径，并在现有候选筛选之上新增 `5d` timing overlay 与 `0.50` no-trade gate。在当前的 1 年数据快照下，这一改动显著压低了最大回撤，同时提升了胜率，并让 Sharpe 仍然略高于无 overlay 的基线。当前记录的 Reversal 3.3 结果为：总收益 `+690.85%`、最大回撤 `-26.42%`、胜率 `69.23%`、Sharpe `4.32`。Reversal `3.4.2` 保留这套策略定义，并在 live 执行层增加针对高质量早盘反转结构的提前入场许可，同时加入从 TEAM 案例提炼出的稳定修复检查，以及用于提升运行稳定性的 cached live-universe fallback。
 
 Backtest window: `2025-04-23` to `2026-04-23`.
 
@@ -348,8 +350,10 @@ Versioning rule: when the research definition changes materially, bump the main 
 - `3.3.3`: keep the `3.3.2` strategy unchanged, but patch live exit scanning so take-profit / stop-loss checks rerun every 5 minutes inside repeated `manage_*` windows
 - `3.4`: keep the `3.3.3` strategy and risk controls intact, then add a deliberately strict `10:00 AM-12:00 PM ET` high-confidence early-entry permission using `early_entry_score >= 0.67`, `success_rate >= 88%`, `matched_signals >= 30`, and `early reclaim >= 60%`, while preserving the one-new-entry-per-day limit
 - `3.4.1`: keep the `3.4` morning gate intact, then add a TEAM-inspired intraday recovery-stability filter so early entries also require a stable reclaim path instead of a single sharp bounce
+- `3.4.2`: keep the `3.4.1` signal logic intact, but make live execution use the checked-in `qqq_plus_leverage_etfs_tickers.csv` cache by default so 5-minute cycles do not depend on live Nasdaq screener availability
 - `3.4.1-alpaca-paper`: add a separate Alpaca paper execution adapter for the current `3.4.1` signal stack without changing the research definition
 - `3.4.1-alpaca-paper.1`: hotfix empty first-run CSV handling and same-day missed-trade blocking for the Alpaca paper adapter
+- `3.4.2-alpaca-paper.0`: align the Alpaca paper adapter version with the `3.4.2` live runner
 
 Earlier notebook snapshots such as `versions/notebooks/Reversal2.5.3.ipynb`, `versions/notebooks/Reversal2.5.ipynb`, `versions/notebooks/Reversal2.4.ipynb`, `versions/notebooks/Reversal2.3.3.ipynb`, `versions/notebooks/Reversal2.3.2.ipynb`, and `versions/notebooks/Reversal2.3.1.ipynb` are retained for version-by-version review.
 
