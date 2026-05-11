@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.4.1 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-11 10:24:36 EDT`
-- Equity: `$34,233.50` | Realized: `$22,833.50` | Unrealized: `$1,400.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-05-11 10:30:53 EDT`
+- Equity: `$34,443.50` | Realized: `$22,833.50` | Unrealized: `$1,610.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1030`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode         instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   CEG     option         option CEG260618C00290000      7     16240.0                 17640.0           25.2          1400.0                   8.62                   0
+   CEG     option         option CEG260618C00290000      7     16240.0                 17850.0           25.5          1610.0                   9.91                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.1 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260511102436)
+![Reversal 3.4.1 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260511103053)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260511102436)
+![Reversal 3.4.1 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260511103053)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260511102436)
+![Reversal 3.4.1 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260511103053)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.1 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260511102436)
+![Reversal 3.4.1 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260511103053)
 
 </details>
 
