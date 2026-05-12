@@ -1,7 +1,7 @@
 # Reversal 3.4.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-12 11:45:01 EDT`
-Last processed slot: `early_entry_1145`
+Latest checkpoint (ET): `2026-05-12 11:50:02 EDT`
+Last processed slot: `manage_1200`
 
 ## Active Configuration
 
@@ -47,24 +47,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  TEAM           87.50               40            1.09              0.66         87.03               115.89         0.702          pass              0.639             56.4                           0.430               23.88              2.556                                 ok            True                  False
-  FTNT           93.94               33            0.96              0.78        115.11                70.54         0.601          pass              0.698             37.6                           0.331               33.38              3.606                                 ok            True                  False
-   XEL           91.67               12            1.33              0.75         80.28                27.14         0.539          pass              0.552             57.9                           0.402                0.06             -0.088                                 ok            True                  False
-    ZS           82.86               35            1.06              1.11        148.40                59.15         0.531          pass              0.420             41.5                           0.330                8.25              1.272                                 ok            True                  False
-  INTU           88.57               35            0.73              2.01        392.43                46.70         0.523          pass              0.623             58.4                           0.327               -2.49             -0.099                                 ok            True                  False
-  CDNS           95.83               24            1.84              4.69        362.19                37.36         0.522          pass              0.602             18.9                           0.389                9.90              1.145                                 ok            True                  False
-  MNST           85.71               35            0.62              0.37         86.25                49.64         0.516          pass              0.614             81.3                           0.536               11.25              1.208                                 ok            True                  False
-  WDAY           88.64               44            0.54              0.46        121.22                61.87         0.513          pass              0.621             46.4                           0.264               -0.34              0.089                                 ok            True                  False
-   CSX           86.67               30            0.75              0.23         44.64                30.07         0.510          pass              0.467             35.0                           0.575               -1.82             -0.123                                 ok            True                  False
- CMCSA           92.31               26            0.64              0.11         24.98                62.25         0.681          pass              0.594             30.4                           0.288              -10.02             -0.989 downtrend_blocked_slope_and_streak           False                  False
-   TXN           85.71                7            2.79              5.82        295.27                67.69         0.680          pass              0.265             14.9                           0.325                9.78              0.932                                 ok           False                  False
-  SHOP           89.19               37            1.11              0.80        102.20                84.99         0.647          pass              0.557             22.4                           0.252              -16.92             -2.120            downtrend_blocked_slope           False                  False
+  TEAM           87.50               40            1.13              0.69         87.01               115.89         0.700          pass              0.634             54.6                           0.477               23.83              2.554                                 ok            True                  False
+  FTNT           93.94               33            0.96              0.78        115.11                70.54         0.601          pass              0.698             37.6                           0.395               33.38              3.606                                 ok            True                  False
+   XEL           91.67               12            1.25              0.71         80.30                27.14         0.543          pass              0.559             60.2                           0.379                0.14             -0.084                                 ok            True                  False
+    ZS           82.86               35            0.97              1.01        148.44                59.15         0.536          pass              0.436             46.7                           0.417                8.35              1.276                                 ok            True                  False
+  INTU           88.57               35            0.78              2.15        392.37                46.70         0.521          pass              0.614             55.5                           0.288               -2.54             -0.101                                 ok            True                  False
+  CDNS           96.00               25            1.83              4.66        362.20                37.36         0.517          pass              0.610             19.5                           0.426                9.91              1.145                                 ok            True                  False
+  MNST           86.11               36            0.59              0.36         86.26                49.64         0.512          pass              0.634             82.1                           0.605               11.28              1.209                                 ok            True                  False
+   CSX           87.88               33            0.56              0.17         44.67                30.07         0.504          pass              0.568             51.5                           0.676               -1.64             -0.114                                 ok            True                  False
+ CMCSA           94.44               18            0.84              0.15         24.97                62.25         0.714          pass              0.536              8.7                           0.156              -10.20             -0.998 downtrend_blocked_slope_and_streak           False                  False
+   TXN           87.50                8            2.63              5.48        295.41                67.69         0.684          pass              0.328             19.8                           0.426                9.96              0.940                                 ok           False                  False
+  SHOP           88.89               36            1.23              0.88        102.16                84.99         0.646          pass              0.518             14.3                           0.235              -17.02             -2.125            downtrend_blocked_slope           False                  False
+  NXPI           66.67                3            4.04              8.66        302.28                87.21         0.632          pass              0.209             48.6                           0.476               27.44              1.307                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot    event_type                          detail
+2026-05-12T11:50:02.083143-04:00 early_entry_1150 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-12T11:45:01.039711-04:00 early_entry_1145 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-12T11:40:05.033124-04:00 early_entry_1140 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-12T11:35:01.042494-04:00 early_entry_1135 entry_skipped {"reason": "daily_entry_limit"}
@@ -74,7 +75,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-12T11:15:02.113250-04:00 early_entry_1115 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-12T11:10:01.083696-04:00 early_entry_1110 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-12T11:05:04.072050-04:00 early_entry_1105 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-12T11:00:02.153694-04:00 early_entry_1100 entry_skipped {"reason": "daily_entry_limit"}
 ```
 
 ## Equity Curves
@@ -84,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260512114501)
+![Reversal 3.4.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260512115002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260512114501)
+![Reversal 3.4.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260512115002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260512114501)
+![Reversal 3.4.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260512115002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260512114501)
+![Reversal 3.4.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260512115002)
 
 </details>
