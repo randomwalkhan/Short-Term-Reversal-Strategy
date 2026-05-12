@@ -3,45 +3,42 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.4.2 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-12 10:30:01 EDT`
-- Equity: `$33,778.50` | Realized: `$25,353.50` | Unrealized: `$-1,575.00` | Open positions: `1`
-- Today closed trades: `0`
+- Latest checkpoint (ET): `2026-05-12 10:35:01 EDT`
+- Equity: `$33,603.50` | Realized: `$23,603.50` | Unrealized: `$0.00` | Open positions: `0`
+- Today closed trades: `1`
 - Current slot: `manage_1030`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
-```text
-ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS     option         option SNPS260618C00520000      5     17500.0                 15925.0          31.85         -1575.0                   -9.0                   0
-```
+_None_
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.2 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260512103001)
+![Reversal 3.4.2 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260512103501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260512103001)
+![Reversal 3.4.2 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260512103501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260512103001)
+![Reversal 3.4.2 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260512103501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260512103001)
+![Reversal 3.4.2 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260512103501)
 
 </details>
 

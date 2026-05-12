@@ -1493,3 +1493,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-12T10:20:02.261414-04:00,2026-05-12,early_entry_1020,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-12T10:25:01.082139-04:00,2026-05-12,early_entry_1025,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-12T10:30:01.090620-04:00,2026-05-12,early_entry_1030,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-12T10:35:01.096348-04:00,2026-05-12,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""SNPS260618C00520000"", ""fill_price"": 31.5, ""pnl"": -1750.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""SNPS""}"
+2026-05-12T10:35:01.096348-04:00,2026-05-12,early_entry_1035,entry_skipped,"{""reason"": ""daily_entry_limit""}"
