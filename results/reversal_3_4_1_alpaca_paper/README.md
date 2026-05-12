@@ -1,31 +1,32 @@
 # Reversal 3.4.2-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-12 15:49:27 EDT`
+Latest checkpoint (ET): `2026-05-12 15:54:31 EDT`
 Last slot: `manage_1600`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$97,104.98`
-- Portfolio value: `$99,459.98`
+- Cash: `$99,559.96`
+- Portfolio value: `$99,559.96`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AVGO exit_submitted      early AVGO260612C00425000          1               28.95                23.275          2327.5          -567.5             -19.602763                   0
-```
+_None_
 
 ## Closed Trades
 
-_None_
+```text
+ticker     contract_symbol entry_trade_date_et exit_trade_date_et entry_option_price exit_option_price contracts    pnl return_pct           exit_reason
+  AVGO AVGO260612C00425000          2026-05-12         2026-05-12              28.95             24.55         1 -440.0 -15.198618 stop_loss_hit_at_scan
+```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot               event_type                                                                                                                                                                                                                                                                                                                                                     detail
+2026-05-12T15:54:31.789727-04:00             exit              exit_filled                                                                                                                                                                                                                        {"contract_symbol": "AVGO260612C00425000", "exit_price": 24.55, "pnl": -440.0, "reason": "stop_loss_hit_at_scan", "ticker": "AVGO"}
 2026-05-12T11:05:40.979834-04:00      manage_1100     exit_order_submitted                                                                                                                                                                         {"alpaca_order_id": "79d5f44f-d6d5-4507-8c98-ff437fee09b0", "contract_symbol": "AVGO260612C00425000", "limit_price": "24.20", "reason": "stop_loss_hit_at_scan", "ticker": "AVGO"}
 2026-05-12T10:15:04.282278-04:00 early_entry_1005             entry_filled                                                                                                                                                                                                                                                        {"contract_symbol": "AVGO260612C00425000", "contracts": 1, "filled_price": 28.95, "ticker": "AVGO"}
 2026-05-12T10:08:53.681217-04:00 early_entry_1005    entry_order_submitted                                                                                                                                                                     {"alpaca_order_id": "38db7217-e7e8-4357-a32f-a9fbd6afdc57", "contract_symbol": "AVGO260612C00425000", "contracts": 1, "entry_mode": "early", "limit_price": "29.05", "ticker": "AVGO"}
