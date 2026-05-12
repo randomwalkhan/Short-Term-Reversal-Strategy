@@ -1,7 +1,7 @@
 # Reversal 3.4.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-12 09:40:05 EDT`
-Last processed slot: `manage_0930`
+Latest checkpoint (ET): `2026-05-12 09:45:01 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -44,18 +44,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-   TXN           86.67               15            1.58              3.30        296.35                67.69         0.707          pass              0.351             23.2                           0.207               11.15              0.989                  ok            True                  False
-  TEAM           86.49               37            1.44              0.88         86.93               115.89         0.698          pass              0.549             42.2                           0.267               23.44              2.540                  ok            True                  False
-  INTC          100.00               27            1.94              1.76        128.69               104.15         0.658          pass              0.778             66.3                           0.816               50.18              4.051                  ok            True                  False
-  FTNT           93.94               33            1.01              0.82        115.09                70.54         0.604          pass              0.606              6.8                           0.164               33.31              3.603                  ok            True                  False
-  GOOG           86.21               29            0.89              2.40        385.74                39.86         0.569          pass              0.429             26.7                           0.208               10.31              1.039                  ok            True                  False
-  MNST           80.00               20            1.35              0.82         86.06                49.64         0.554          pass              0.299             59.0                           0.378               10.43              1.174                  ok            True                  False
-   XEL           92.31               13            1.19              0.67         80.31                27.14         0.541          pass              0.589             62.2                           0.442                0.20             -0.081                  ok            True                  False
-  INTU           90.00               30            1.09              3.01        392.00                46.70         0.535          pass              0.566             37.6                           0.351               -2.84             -0.115                  ok            True                  False
-    ZS           81.58               38            0.72              0.75        148.55                59.15         0.534          pass              0.434             50.5                           0.401                8.62              1.288                  ok            True                  False
-  ASML           82.61               23            2.15             23.53       1555.73                49.29         0.523          pass              0.302             31.2                           0.491               10.66              1.363                  ok            True                  False
-  MSTR           88.00               25            2.95              4.05        194.21                70.52         0.514          pass              0.441             25.5                           0.258               14.75              1.784                  ok            True                  False
-  CDNS           96.97               33            1.15              2.93        362.94                37.36         0.511          pass              0.707             34.2                           0.424               10.67              1.177                  ok            True                  False
+   TXN           91.67               12            1.90              3.97        296.06                67.69         0.714          pass              0.419              7.6                           0.135               10.78              0.974                  ok            True                  False
+  INTC          100.00               26            2.04              1.84        128.65               104.15         0.659          pass              0.766             64.6                           0.829               50.03              4.047                  ok            True                  False
+   XEL           91.67               12            1.28              0.72         80.29                27.14         0.542          pass              0.557             59.4                           0.402                0.11             -0.085                  ok            True                  False
+  MRVL          100.00               24            1.50              1.80        170.07                55.77         0.534          pass              0.742             65.2                           0.778                9.82              0.803                  ok            True                  False
+  MSTR           90.32               31            2.13              2.93        194.69                70.52         0.526          pass              0.606             46.1                           0.448               15.72              1.822                  ok            True                  False
+  INTU           88.57               35            0.71              1.95        392.45                46.70         0.524          pass              0.626             59.6                           0.392               -2.47             -0.098                  ok            True                  False
+  ASML           81.82               22            2.25             24.61       1555.26                49.29         0.523          pass              0.265             28.0                           0.560               10.55              1.358                  ok            True                  False
+   STX           94.44               36            0.89              5.19        831.79                54.89         0.521          pass              0.837             75.6                           0.818               42.76              3.134                  ok            True                   True
+  MCHP           80.00               25            1.31              0.91         98.64                50.26         0.520          pass              0.300             49.2                           0.519               15.99              1.366                  ok            True                  False
+  CDNS           96.97               33            1.15              2.94        362.94                37.36         0.511          pass              0.707             34.1                           0.403               10.66              1.176                  ok            True                  False
+   CSX           87.50               32            0.66              0.21         44.65                30.07         0.511          pass              0.398              0.0                           0.158               -1.74             -0.119                  ok            True                  False
+    MU           83.33               30            2.42             13.49        789.55                78.34         0.509          pass              0.415             47.4                           0.574               53.89              4.973                  ok            True                  False
 ```
 
 ## Recent Events
@@ -81,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260512094005)
+![Reversal 3.4.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260512094501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260512094005)
+![Reversal 3.4.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260512094501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260512094005)
+![Reversal 3.4.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260512094501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260512094005)
+![Reversal 3.4.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260512094501)
 
 </details>
