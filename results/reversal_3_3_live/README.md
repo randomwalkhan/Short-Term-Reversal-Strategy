@@ -1,7 +1,7 @@
 # Reversal 3.4.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-13 14:45:07 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-05-13 14:50:04 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -36,7 +36,7 @@ Last processed slot: `manual`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SNPS     option         option SNPS260618C00490000       2026-05-13                   0      3     13410.0                 12780.0         44.7           42.6      510.62        506.68          -630.0                   -4.7         97.14               35               0.5         52.16           53.31                  43.23                 154.0           10.0               0.12                      ok
+  SNPS     option         option SNPS260618C00490000       2026-05-13                   0      3     13410.0                 12780.0         44.7           42.6      510.62        507.07          -630.0                   -4.7         97.14               35               0.5         52.16           52.77                  43.23                 154.0           10.0               0.12                      ok
 ```
 
 ## Today's Closed Trades (2026-05-13)
@@ -47,34 +47,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  TEAM           85.71               14            4.72              2.81         83.80               115.69         0.607          pass              0.289             16.5                           0.273               14.90              1.332                                 ok            True                  False
-   ADP          100.00               10            2.24              3.36        212.37                33.54         0.548          pass              0.599             48.2                           0.738               -2.81             -0.101                                 ok            True                  False
-  SNPS           96.67               30            1.27              4.57        511.25                43.23         0.538          pass              0.708             40.2                           0.607                5.29              0.678                                 ok            True                  False
-  MDLZ           86.36               22            0.88              0.38         61.54                23.07         0.519          pass              0.426             41.3                           0.416                0.20              0.030                                 ok            True                  False
-  CDNS           96.55               29            1.43              3.59        356.50                38.69         0.517          pass              0.687             36.2                           0.292                6.96              0.863                                 ok            True                  False
-  MCHP           82.76               29            1.11              0.76         97.37                50.72         0.506          pass              0.400             49.8                           0.244                7.15              0.739                                 ok            True                  False
-  SBUX           96.43               28            0.99              0.74        106.26                32.93         0.505          pass              0.752             60.4                           0.355                0.02              0.033                                 ok            True                  False
-  MSTR           91.18               34            1.93              2.50        183.35                75.69         0.505          pass              0.688             59.7                           0.705               14.33              1.280                                 ok            True                  False
-  CHTR           70.00               10            3.78              3.91        146.24               118.13         0.750          pass              0.099              7.9                           0.150              -10.29             -1.412            downtrend_blocked_slope           False                  False
-  ORLY           85.71                7            2.32              1.49         91.20                35.45         0.561          pass              0.297             29.5                           0.305               -2.16             -0.565 downtrend_blocked_slope_and_streak           False                  False
-  GEHC           75.00               40            0.47              0.20         62.20                57.10         0.560          pass              0.488             77.3                           0.514                4.23              0.380                                 ok           False                  False
-   PEP           88.89                9            1.74              1.85        151.06                21.96         0.528          pass              0.315              8.5                           0.290               -3.92             -0.472            downtrend_blocked_slope           False                  False
+  TEAM           86.67               15            4.66              2.77         83.81               115.69         0.606          pass              0.324             17.5                           0.292               14.97              1.335                                 ok            True                  False
+   ADP          100.00               12            2.11              3.16        212.46                33.54         0.542          pass              0.621             51.2                           0.754               -2.68             -0.095                                 ok            True                  False
+  SNPS           96.88               32            1.20              4.30        511.37                43.23         0.531          pass              0.731             43.7                           0.623                5.37              0.682                                 ok            True                  False
+  CDNS           96.67               30            1.39              3.49        356.54                38.69         0.513          pass              0.699             38.0                           0.317                7.00              0.864                                 ok            True                  False
+  MSTR           90.32               31            2.14              2.76        183.24                75.69         0.510          pass              0.633             55.4                           0.613               14.09              1.271                                 ok            True                  False
+  MDLZ           83.33               24            0.80              0.35         61.55                23.07         0.506          pass              0.371             46.2                           0.491                0.27              0.034                                 ok            True                  False
+  MCHP           82.76               29            1.13              0.77         97.37                50.72         0.505          pass              0.398             49.1                           0.235                7.13              0.739                                 ok            True                  False
+  CHTR           70.00               10            3.79              3.92        146.24               118.13         0.750          pass              0.098              7.7                           0.174              -10.29             -1.412            downtrend_blocked_slope           False                  False
+  GEHC           73.68               38            0.53              0.23         62.19                57.10         0.566          pass              0.466             74.2                           0.503                4.16              0.377                                 ok           False                  False
+  ORLY           87.50                8            2.16              1.39         91.25                35.45         0.566          pass              0.360             34.4                           0.311               -2.00             -0.558 downtrend_blocked_slope_and_streak           False                  False
+   PEP           88.89                9            1.69              1.80        151.08                21.96         0.530          pass              0.323             11.1                           0.317               -3.87             -0.470            downtrend_blocked_slope           False                  False
+  TMUS           84.00               25            1.26              1.70        192.57                36.44         0.519          pass              0.330             23.8                           0.386               -3.68             -0.293            downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot    event_type                          detail
-2026-05-13T12:00:04.870227-04:00 early_entry_1200 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-13T11:55:04.850117-04:00 early_entry_1155 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-13T11:50:06.013562-04:00 early_entry_1150 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-13T11:45:03.915734-04:00 early_entry_1145 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-13T11:23:31.678775-04:00 early_entry_1120 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-13T11:05:05.896760-04:00 early_entry_1105 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-13T11:00:06.549783-04:00 early_entry_1100 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-13T10:55:05.050603-04:00 early_entry_1055 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-13T10:50:03.713971-04:00 early_entry_1050 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-13T10:45:06.364119-04:00 early_entry_1045 entry_skipped {"reason": "daily_entry_limit"}
+                    timestamp_et             slot     event_type                                                                                                       detail
+2026-05-13T14:50:04.762391-04:00       entry_1500  entry_skipped                                                                              {"reason": "daily_entry_limit"}
+2026-05-13T14:50:04.762391-04:00       entry_1500 timing_overlay {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-13", "training_samples": 5035, "window": 5}
+2026-05-13T12:00:04.870227-04:00 early_entry_1200  entry_skipped                                                                              {"reason": "daily_entry_limit"}
+2026-05-13T11:55:04.850117-04:00 early_entry_1155  entry_skipped                                                                              {"reason": "daily_entry_limit"}
+2026-05-13T11:50:06.013562-04:00 early_entry_1150  entry_skipped                                                                              {"reason": "daily_entry_limit"}
+2026-05-13T11:45:03.915734-04:00 early_entry_1145  entry_skipped                                                                              {"reason": "daily_entry_limit"}
+2026-05-13T11:23:31.678775-04:00 early_entry_1120  entry_skipped                                                                              {"reason": "daily_entry_limit"}
+2026-05-13T11:05:05.896760-04:00 early_entry_1105  entry_skipped                                                                              {"reason": "daily_entry_limit"}
+2026-05-13T11:00:06.549783-04:00 early_entry_1100  entry_skipped                                                                              {"reason": "daily_entry_limit"}
+2026-05-13T10:55:05.050603-04:00 early_entry_1055  entry_skipped                                                                              {"reason": "daily_entry_limit"}
 ```
 
 ## Equity Curves
@@ -84,27 +84,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260513144507)
+![Reversal 3.4.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260513145004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260513144507)
+![Reversal 3.4.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260513145004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260513144507)
+![Reversal 3.4.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260513145004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260513144507)
+![Reversal 3.4.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260513145004)
 
 </details>
