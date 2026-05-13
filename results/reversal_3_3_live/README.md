@@ -1,7 +1,7 @@
 # Reversal 3.4.2 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-12 16:10:01 EDT`
-Last processed slot: `manage_1600`
+Latest checkpoint (ET): `2026-05-13 09:32:34 EDT`
+Last processed slot: `manage_0930`
 
 ## Active Configuration
 
@@ -36,16 +36,27 @@ Last processed slot: `manage_1600`
 
 _None_
 
-## Today's Closed Trades (2026-05-12)
+## Today's Closed Trades (2026-05-13)
 
-```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct           exit_reason
-  SNPS     option         option SNPS260618C00520000      5          2026-05-12         2026-05-12         35.0        31.5 -1750.0       -10.0 stop_loss_hit_at_scan
-```
+_None_
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  TEAM           87.50               40            1.13              0.67         84.71               115.69         0.692          pass              0.625             51.9                           0.382               19.22              1.500                                 ok            True                  False
+   XEL           93.33               15            1.10              0.62         79.64                27.12         0.563          pass              0.517             24.0                           0.211                0.25             -0.243                                 ok            True                  False
+  MSTR           91.18               34            1.63              2.11        183.52                75.69         0.554          pass              0.576             21.0                           0.335               14.68              1.294                                 ok            True                  False
+  ORLY           84.00               25            1.21              0.78         91.51                35.45         0.541          pass              0.261              0.0                           0.193               -1.05             -0.514                                 ok            True                  False
+   ADP           89.47               19            1.34              2.00        212.95                33.54         0.529          pass              0.565             66.4                           0.404               -1.91             -0.059                                 ok            True                  False
+  CHTR           88.57               35            1.15              1.19        147.41               118.13         0.795          pass              0.551             25.5                           0.240               -7.84             -1.289            downtrend_blocked_slope           False                  False
+ CMCSA           92.31               13            1.17              0.20         24.81                62.10         0.731          pass              0.421              0.0                           0.213               -8.04             -1.030 downtrend_blocked_slope_and_streak           False                  False
+  INSM           75.76               33            1.21              0.98        115.58               110.65         0.618          pass              0.259             14.8                           0.100              -15.13             -2.857 downtrend_blocked_slope_and_streak           False                  False
+  SHOP           83.87               31            1.68              1.18         99.34                84.62         0.585          pass              0.409             35.6                           0.405              -19.05             -2.490 downtrend_blocked_slope_and_streak           False                  False
+  GEHC           55.00               20            1.85              0.81         61.94                57.10         0.573          pass              0.154             10.2                           0.254                2.78              0.317                                 ok           False                  False
+  SNPS           97.44               39            0.20              0.72        512.90                43.23         0.548          pass              0.908             86.7                           0.550                6.43              0.727                                 ok           False                  False
+  NFLX           82.14               28            1.14              0.70         87.36                42.38         0.537          pass              0.313             27.5                           0.386               -5.93             -0.788            downtrend_blocked_slope           False                  False
+```
 
 ## Recent Events
 
@@ -70,27 +81,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260512161001)
+![Reversal 3.4.2 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260513093234)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260512161001)
+![Reversal 3.4.2 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260513093234)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260512161001)
+![Reversal 3.4.2 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260513093234)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260512161001)
+![Reversal 3.4.2 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260513093234)
 
 </details>
