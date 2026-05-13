@@ -1,7 +1,7 @@
 # Reversal 3.4.2-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-13 10:10:54 EDT`
-Last slot: `manage_1000`
+Latest checkpoint (ET): `2026-05-13 10:17:04 EDT`
+Last slot: `early_entry_1015`
 
 ## Alpaca Paper Account
 
@@ -26,6 +26,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot               event_type                                                                                                                                                                                                                                                                                                                                                     detail
+2026-05-13T10:17:04.025534-04:00 early_entry_1015            entry_skipped                                                                                                                                                                                                {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-13T10:10:54.018081-04:00 early_entry_1010            entry_skipped                                                                                                                                                                                                                                                                                                          {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-13T10:04:46.993511-04:00 early_entry_1000            entry_skipped                                                                                                                                                                                                                                                                                                          {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-12T15:54:31.789727-04:00             exit              exit_filled                                                                                                                                                                                                                        {"contract_symbol": "AVGO260612C00425000", "exit_price": 24.55, "pnl": -440.0, "reason": "stop_loss_hit_at_scan", "ticker": "AVGO"}
