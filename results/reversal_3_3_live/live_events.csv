@@ -1521,3 +1521,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-13T10:00:05.846029-04:00,2026-05-13,early_entry_1000,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-05-13T10:05:05.859086-04:00,2026-05-13,early_entry_1005,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-05-13T10:10:06.807841-04:00,2026-05-13,early_entry_1010,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-05-13T10:15:05.895485-04:00,2026-05-13,early_entry_1015,entry_candidate_skipped,"{""early_entry_score"": 0.815, ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""option_open_interest"": 14.0, ""option_spread_pct"": 21.38, ""option_volume"": 8.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""TTWO"", ""timing_score"": 0.437}"
+2026-05-13T10:15:05.895485-04:00,2026-05-13,early_entry_1015,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
