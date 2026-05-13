@@ -1,6 +1,6 @@
 # Reversal 3.4.2-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-13 09:59:39 EDT`
+Latest checkpoint (ET): `2026-05-13 10:04:46 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
@@ -26,6 +26,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot               event_type                                                                                                                                                                                                                                                                                                                                                     detail
+2026-05-13T10:04:46.993511-04:00 early_entry_1000            entry_skipped                                                                                                                                                                                                                                                                                                          {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-12T15:54:31.789727-04:00             exit              exit_filled                                                                                                                                                                                                                        {"contract_symbol": "AVGO260612C00425000", "exit_price": 24.55, "pnl": -440.0, "reason": "stop_loss_hit_at_scan", "ticker": "AVGO"}
 2026-05-12T11:05:40.979834-04:00      manage_1100     exit_order_submitted                                                                                                                                                                         {"alpaca_order_id": "79d5f44f-d6d5-4507-8c98-ff437fee09b0", "contract_symbol": "AVGO260612C00425000", "limit_price": "24.20", "reason": "stop_loss_hit_at_scan", "ticker": "AVGO"}
 2026-05-12T10:15:04.282278-04:00 early_entry_1005             entry_filled                                                                                                                                                                                                                                                        {"contract_symbol": "AVGO260612C00425000", "contracts": 1, "filled_price": 28.95, "ticker": "AVGO"}
