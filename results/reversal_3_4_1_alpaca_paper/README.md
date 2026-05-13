@@ -1,7 +1,7 @@
 # Reversal 3.4.2-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-13 10:17:04 EDT`
-Last slot: `early_entry_1015`
+Latest checkpoint (ET): `2026-05-13 10:23:16 EDT`
+Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
@@ -13,7 +13,10 @@ Last slot: `early_entry_1015`
 
 ## Open / Pending Positions
 
-_None_
+```text
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
+  SNPS entry_submitted      early SNPS260618C00490000          1                44.7                   NaN             NaN                    NaN
+```
 
 ## Closed Trades
 
@@ -26,6 +29,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot               event_type                                                                                                                                                                                                                                                                                                                                                     detail
+2026-05-13T10:23:16.811406-04:00 early_entry_1020    entry_order_submitted                                                                                                                                                                     {"alpaca_order_id": "8bbe1576-32e5-4cb1-863a-6aed57d594fa", "contract_symbol": "SNPS260618C00490000", "contracts": 1, "entry_mode": "early", "limit_price": "47.40", "ticker": "SNPS"}
 2026-05-13T10:17:04.025534-04:00 early_entry_1015            entry_skipped                                                                                                                                                                                                {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-13T10:10:54.018081-04:00 early_entry_1010            entry_skipped                                                                                                                                                                                                                                                                                                          {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-13T10:04:46.993511-04:00 early_entry_1000            entry_skipped                                                                                                                                                                                                                                                                                                          {"entry_mode": "early", "reason": "no_candidate"}
