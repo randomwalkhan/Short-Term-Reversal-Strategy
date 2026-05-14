@@ -32,7 +32,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.4.3"
+VERSION = "3.4.4"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -48,9 +48,9 @@ MAX_ABS_MONEYNESS_PCT = 0.08
 MAX_OTM_PCT = 0.05
 MAX_SPREAD_PCT = 0.25
 MIN_OPEN_INTEREST = 10
-MIN_OPTION_ENTRY_OPEN_INTEREST = 100
-MIN_OPTION_ENTRY_VOLUME = 10
-MAX_OPTION_ENTRY_SPREAD_PCT = 0.15
+MIN_OPTION_ENTRY_OPEN_INTEREST = 110
+MIN_OPTION_ENTRY_VOLUME = 20
+MAX_OPTION_ENTRY_SPREAD_PCT = 0.14
 TIMING_OVERLAY_WINDOW = 5
 TIMING_OVERLAY_THRESHOLD = 0.50
 TIMING_OVERLAY_RESEARCH_YEARS = 3
@@ -2330,7 +2330,7 @@ def render_dashboard(
             f"- Early-entry permission: `10:00 AM-12:00 PM ET` 5-minute scans may enter one exceptional candidate only when `early_entry_score >= {EARLY_ENTRY_SCORE_GATE:.2f}`, success rate `>= {EARLY_ENTRY_MIN_SUCCESS_RATE:.0f}%`, matched signals `>= {EARLY_ENTRY_MIN_MATCHED_SIGNALS}`, early reclaim `>= {EARLY_ENTRY_MIN_RECLAIM_RATIO:.0%}`, and recovery stability `>= {EARLY_ENTRY_STABILITY_GATE:.2f}`; the one-new-entry-per-day limit still applies",
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; off-hours `5-minute` checkpoints continue mark-to-market updates for open positions, while any legacy share positions still held from older versions continue extended-hours take-profit and stop loss scans until flat",
             f"- Live exit ladder: `+{DAY1_TAKE_PROFIT_PCT:.0%} / +{DAY2_TAKE_PROFIT_PCT:.0%} / -{STOP_LOSS_PCT:.0%}`",
-            "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`",
+            "- Option entry liquidity gate: `open interest >= 110`, `volume >= 20`, `spread <= 14%`",
             "- Option exit safety: stale option `lastPrice` may be shown for mark-to-market, but take-profit / stop-loss triggers require an executable quote from bid/ask or bid",
             f"- Entry timing overlay: short-window technical-indicator score using a `{TIMING_OVERLAY_WINDOW}d` feature window; only trade when `timing_score >= {TIMING_OVERLAY_THRESHOLD:.2f}`",
             f"- Trend-health gate: block candidates in a short-term down channel when 10d return <= `{TREND_HEALTH_MAX_LOOKBACK_RETURN_PCT:.1f}%` and either log-slope <= `{TREND_HEALTH_MAX_NEGATIVE_SLOPE_PCT_PER_DAY:.2f}%/day` below the 10d lookback average or lower-close streak >= `{TREND_HEALTH_MAX_LOWER_CLOSE_STREAK}`",

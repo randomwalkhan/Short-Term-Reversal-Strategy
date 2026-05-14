@@ -1,7 +1,7 @@
-# Reversal 3.4.3
+# Reversal 3.4.4
 
 <!-- reversal-3.3-live:start -->
-## Reversal 3.4.3 Live Paper Test
+## Reversal 3.4.4 Live Paper Test
 
 - Latest checkpoint (ET): `2026-05-14 10:50:02 EDT`
 - Equity: `$34,803.50` | Realized: `$23,603.50` | Unrealized: `$1,200.00` | Open positions: `2`
@@ -21,28 +21,28 @@ ticker asset_type execution_mode          instrument  units  cash_spent  current
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.3 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260514105002)
+![Reversal 3.4.4 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260514105002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.3 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260514105002)
+![Reversal 3.4.4 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260514105002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.3 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260514105002)
+![Reversal 3.4.4 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260514105002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.3 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260514105002)
+![Reversal 3.4.4 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260514105002)
 
 </details>
 
@@ -51,15 +51,15 @@ ticker asset_type execution_mode          instrument  units  cash_spent  current
 - [Live equity csv](results/reversal_3_3_live/live_equity.csv)
 <!-- reversal-3.3-live:end -->
 
-`Reversal3.3.ipynb` remains the current research notebook for short-term reversal analysis and option profitability confidence estimation; `3.4.3` is the current execution/filtering version.
+`Reversal3.3.ipynb` remains the current research notebook for short-term reversal analysis and option profitability confidence estimation; `3.4.4` is the current execution/filtering version.
 
-`Reversal3.3.ipynb` 仍是当前研究型 notebook，用于短期反转研究和期权盈利概率评估；`3.4.3` 是当前执行层和过滤器版本。
+`Reversal3.3.ipynb` 仍是当前研究型 notebook，用于短期反转研究和期权盈利概率评估；`3.4.4` 是当前执行层和过滤器版本。
 
 ## Strategy Summary | 策略总结
 
-This repository studies a short-term reversal call-buying setup built around large intraday drawdowns, historical recovery probability, and staged optimization. The current official version is `Reversal 3.4.3`.
+This repository studies a short-term reversal call-buying setup built around large intraday drawdowns, historical recovery probability, and staged optimization. The current official version is `Reversal 3.4.4`.
 
-本仓库研究的是一套基于“日内大跌后短期反转”的 call 策略，通过历史反弹成功率和逐阶段优化来推进。目前官方版本是 `Reversal 3.4.3`。
+本仓库研究的是一套基于“日内大跌后短期反转”的 call 策略，通过历史反弹成功率和逐阶段优化来推进。目前官方版本是 `Reversal 3.4.4`。
 
 - Official universe: `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`
 - Official filters: `60d` lookback, `matched_signals >= 10`, `minimum current drop > 0.5%`, a non-ETF `trailing P/E < 140` universe guard, and a live trend-health gate that blocks short-term down channels
@@ -115,7 +115,8 @@ That is how the current live-paper implementation emerged. I did not begin with 
 
 ## Current Version | 当前官方版本
 
-Release notes (`3.4.3`)
+Release notes (`3.4.4`)
+- `3.4.4` hotfix: tighten the option entry liquidity gate to `open interest >= 110`, `volume >= 20`, and `spread <= 14%` to reduce low-liquidity option fills.
 - `3.4.3` hotfix: distinguish executable option quotes from stale `lastPrice` marks. Live dashboards now expose option mark source / exit signal price, and take-profit / stop-loss triggers ignore stale last-price-only marks when bid/ask are unavailable.
 - `3.4.2` hotfix: live execution now loads the promoted `qqq_plus_leverage_etfs` universe from the checked-in ticker cache by default, avoiding repeated Nasdaq screener requests during every 5-minute cycle. Set `REVERSAL_FORCE_DYNAMIC_UNIVERSE=true` only when an operator intentionally wants to rebuild the universe live.
 - Keep the official `3.3.3` strategy definition and exit-rescan patch intact.
@@ -123,10 +124,11 @@ Release notes (`3.4.3`)
 - Introduce a deliberately strict `early_entry_score` gate, calibrated from the CRWD 2026-05-08 morning case: `early_entry_score >= 0.67`, `success_rate >= 88%`, `matched_signals >= 30`, and at least `60%` reclaim from the early intraday low.
 - Add a TEAM-inspired recovery-stability filter to the morning gate: candidates must show stable intraday repair through reclaim, positive short-window slope, EMA/VWAP support, and limited pullback from the post-low high.
 - Preserve the one-new-entry-per-day rule, so an early entry blocks the regular `3:00 PM ET` entry on the same trade date.
-- Add an isolated Alpaca paper execution runner for the current `3.4.3` signal stack. It uses local-only credentials, submits Alpaca paper option orders, and keeps the GitHub-published live paper runner separate.
+- Add an isolated Alpaca paper execution runner for the current `3.4.4` signal stack. It uses local-only credentials, submits Alpaca paper option orders, and keeps the GitHub-published live paper runner separate.
 - `3.4.1-alpaca-paper.1` hotfix: tolerate empty first-run CSV files and support a same-day block list after a missed live paper runner trade, preventing late catch-up entries that would make Alpaca paper results incomparable.
 
-版本说明（`3.4.3`）
+版本说明（`3.4.4`）
+- `3.4.4` hotfix：把期权入场流动性门槛提高到 `open interest >= 110`、`volume >= 20`、`spread <= 14%`，降低低流动性 option fill 的风险。
 - `3.4.3` hotfix：区分可执行的期权 bid/ask 报价与 stale `lastPrice` mark。live dashboard 现在展示 option mark 来源 / exit signal price，并且当 bid/ask 不可用时，不再用 stale lastPrice-only mark 触发止盈或止损。
 - `3.4.2` hotfix：live 执行默认直接读取 repo 中已生成的 `qqq_plus_leverage_etfs` ticker cache，避免每 5 分钟循环都请求 Nasdaq screener；只有在明确设置 `REVERSAL_FORCE_DYNAMIC_UNIVERSE=true` 时才现场重建 universe。
 - 保留 `3.3.3` 的策略定义和 exit-rescan 修复。
@@ -134,14 +136,14 @@ Release notes (`3.4.3`)
 - 新增刻意更严格的 `early_entry_score` gate，以 2026-05-08 早盘 CRWD 这类案例为校准标准：`early_entry_score >= 0.67`、`success_rate >= 88%`、`matched_signals >= 30`，并且至少从早盘日内低点 reclaim `60%`。
 - 加入从 TEAM 日内稳定修复案例提炼出的 recovery-stability 过滤：早盘候选必须体现 reclaim、短窗斜率转正、EMA/VWAP 支撑，以及从低点后高点回撤有限。
 - 保留一天最多新开一笔的限制，因此早盘入场后，同一天 `3:00 PM ET` 不会再次开仓。
-- 新增独立的 Alpaca paper execution runner，用当前 `3.4.3` 信号栈提交 Alpaca paper 期权订单；API 凭据只保存在本地，不进入 GitHub，并且和现有 GitHub-published live paper runner 分开运行。
+- 新增独立的 Alpaca paper execution runner，用当前 `3.4.4` 信号栈提交 Alpaca paper 期权订单；API 凭据只保存在本地，不进入 GitHub，并且和现有 GitHub-published live paper runner 分开运行。
 - `3.4.1-alpaca-paper.1` hotfix：修复首次运行空 CSV 导致的读取崩溃，并支持在错过 live paper runner 交易后封锁当天剩余入场，避免 Alpaca paper 下午补开一笔不可比的交易。
 
 ## Featured Result | 重点结果
 
-The latest recorded official Reversal 3.3 backtest keeps the promoted `3.1` research stack intact, then adds a `5d` timing overlay with a `0.50` no-trade gate on top of the existing candidate selection. On the current 1-year data snapshot, that change lifts win rate and sharply compresses drawdown while keeping Sharpe slightly above the no-overlay baseline. The current recorded Reversal 3.3 result is `+690.85%` total return, `-26.42%` max drawdown, `69.23%` win rate, and `4.32` Sharpe. Reversal `3.4.3` keeps that strategy definition and adds a live-only early-entry permission layer for unusually strong morning reversal setups, with an additional TEAM-inspired stability check, a cached live-universe fallback for operational reliability, and stale option quote protection.
+The latest recorded official Reversal 3.3 backtest keeps the promoted `3.1` research stack intact, then adds a `5d` timing overlay with a `0.50` no-trade gate on top of the existing candidate selection. On the current 1-year data snapshot, that change lifts win rate and sharply compresses drawdown while keeping Sharpe slightly above the no-overlay baseline. The current recorded Reversal 3.3 result is `+690.85%` total return, `-26.42%` max drawdown, `69.23%` win rate, and `4.32` Sharpe. Reversal `3.4.4` keeps that strategy definition and adds a live-only early-entry permission layer for unusually strong morning reversal setups, with an additional TEAM-inspired stability check, a cached live-universe fallback for operational reliability, stale option quote protection, and a tighter option-liquidity entry gate.
 
-最近一次记录的 Reversal 3.3 官方回测保留了 `3.1` 提升后的核心研究口径，并在现有候选筛选之上新增 `5d` timing overlay 与 `0.50` no-trade gate。在当前的 1 年数据快照下，这一改动显著压低了最大回撤，同时提升了胜率，并让 Sharpe 仍然略高于无 overlay 的基线。当前记录的 Reversal 3.3 结果为：总收益 `+690.85%`、最大回撤 `-26.42%`、胜率 `69.23%`、Sharpe `4.32`。Reversal `3.4.3` 保留这套策略定义，并在 live 执行层增加针对高质量早盘反转结构的提前入场许可，同时加入从 TEAM 案例提炼出的稳定修复检查、用于提升运行稳定性的 cached live-universe fallback，以及 stale option quote 保护。
+最近一次记录的 Reversal 3.3 官方回测保留了 `3.1` 提升后的核心研究口径，并在现有候选筛选之上新增 `5d` timing overlay 与 `0.50` no-trade gate。在当前的 1 年数据快照下，这一改动显著压低了最大回撤，同时提升了胜率，并让 Sharpe 仍然略高于无 overlay 的基线。当前记录的 Reversal 3.3 结果为：总收益 `+690.85%`、最大回撤 `-26.42%`、胜率 `69.23%`、Sharpe `4.32`。Reversal `3.4.4` 保留这套策略定义，并在 live 执行层增加针对高质量早盘反转结构的提前入场许可，同时加入从 TEAM 案例提炼出的稳定修复检查、用于提升运行稳定性的 cached live-universe fallback、stale option quote 保护，以及更严格的 option-liquidity 入场门槛。
 
 Backtest window: `2025-04-23` to `2026-04-23`.
 
@@ -358,10 +360,12 @@ Versioning rule: when the research definition changes materially, bump the main 
 - `3.4.1`: keep the `3.4` morning gate intact, then add a TEAM-inspired intraday recovery-stability filter so early entries also require a stable reclaim path instead of a single sharp bounce
 - `3.4.2`: keep the `3.4.1` signal logic intact, but make live execution use the checked-in `qqq_plus_leverage_etfs_tickers.csv` cache by default so 5-minute cycles do not depend on live Nasdaq screener availability
 - `3.4.3`: keep the `3.4.2` signal logic intact, but add executable-quote protection so stale option `lastPrice` marks do not trigger take-profit / stop-loss exits when bid/ask are unavailable
+- `3.4.4`: keep the `3.4.3` signal and exit logic intact, but tighten option entry liquidity to `open interest >= 110`, `volume >= 20`, and `spread <= 14%`
 - `3.4.1-alpaca-paper`: add a separate Alpaca paper execution adapter for the current `3.4.1` signal stack without changing the research definition
 - `3.4.1-alpaca-paper.1`: hotfix empty first-run CSV handling and same-day missed-trade blocking for the Alpaca paper adapter
 - `3.4.2-alpaca-paper.0`: align the Alpaca paper adapter version with the `3.4.2` live runner
 - `3.4.3-alpaca-paper.0`: inherit the `3.4.3` stale option quote protection in the Alpaca paper adapter
+- `3.4.4-alpaca-paper.0`: inherit the `3.4.4` tighter option-liquidity entry gate in the Alpaca paper adapter
 
 Earlier notebook snapshots such as `versions/notebooks/Reversal2.5.3.ipynb`, `versions/notebooks/Reversal2.5.ipynb`, `versions/notebooks/Reversal2.4.ipynb`, `versions/notebooks/Reversal2.3.3.ipynb`, `versions/notebooks/Reversal2.3.2.ipynb`, and `versions/notebooks/Reversal2.3.1.ipynb` are retained for version-by-version review.
 
@@ -382,9 +386,9 @@ This project focuses on identifying large intraday drawdowns, evaluating whether
 
 本项目主要研究三件事：识别日内大幅下跌、评估未来几个交易日内的价格反转概率，以及估计相关看涨期权交易的收益分布。
 
-The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output, Reversal 2.4 promotes the `60d` observation window into the default research and official backtest setup, Reversal 2.5 adds the `minimum current drop > 0.5%` entry filter, Reversal 2.5.1 improves spot-price handling by preferring extended-hours prices when available, Reversal 2.5.2 adds current ATM call IV plus 20d rolling sigma to the live screener output, Reversal 2.5.3 consolidates that live screener into a cleaner single-table layout, Reversal 3.1 upgrades the official universe to `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`, Reversal 3.2 adds NYSE holiday awareness plus the option-liquidity/share-fallback execution layer to the live paper runner, Reversal 3.2.1 keeps open-position marking alive after hours, Reversal 3.2.2 tightens the `1D` live chart axis when daily moves are small, Reversal 3.3 replaces new-entry share fallback with a no-trade rule while adding a promoted short-window timing overlay, Reversal 3.3.1 adds a non-ETF trailing P/E guard to the official universe, Reversal 3.3.2 adds a live trend-health gate to avoid short-term down-channel candidates, Reversal 3.3.3 patches repeated live exit scanning inside `manage_*` slots, Reversal 3.4 adds a high-confidence morning entry permission for unusually strong early reversal setups, Reversal 3.4.1 adds an intraday recovery-stability check inspired by TEAM, Reversal 3.4.2 adds a cached live-universe fallback for operational reliability, and Reversal 3.4.3 protects live exits from stale last-price-only option marks.
+The notebook works from CSV files stored under `reversal_data/`, Reversal 2.3 adds a dynamic universe builder, Reversal 2.3.1 adds a staged-entry options backtest plus universe-comparison scripts, Reversal 2.3.2 defaults the research flow to `qqq_only_filtered` with an in-notebook data-refresh step, Reversal 2.3.3 adds minimum-sample filtering plus top-15 ranked output, Reversal 2.4 promotes the `60d` observation window into the default research and official backtest setup, Reversal 2.5 adds the `minimum current drop > 0.5%` entry filter, Reversal 2.5.1 improves spot-price handling by preferring extended-hours prices when available, Reversal 2.5.2 adds current ATM call IV plus 20d rolling sigma to the live screener output, Reversal 2.5.3 consolidates that live screener into a cleaner single-table layout, Reversal 3.1 upgrades the official universe to `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`, Reversal 3.2 adds NYSE holiday awareness plus the option-liquidity/share-fallback execution layer to the live paper runner, Reversal 3.2.1 keeps open-position marking alive after hours, Reversal 3.2.2 tightens the `1D` live chart axis when daily moves are small, Reversal 3.3 replaces new-entry share fallback with a no-trade rule while adding a promoted short-window timing overlay, Reversal 3.3.1 adds a non-ETF trailing P/E guard to the official universe, Reversal 3.3.2 adds a live trend-health gate to avoid short-term down-channel candidates, Reversal 3.3.3 patches repeated live exit scanning inside `manage_*` slots, Reversal 3.4 adds a high-confidence morning entry permission for unusually strong early reversal setups, Reversal 3.4.1 adds an intraday recovery-stability check inspired by TEAM, Reversal 3.4.2 adds a cached live-universe fallback for operational reliability, Reversal 3.4.3 protects live exits from stale last-price-only option marks, and Reversal 3.4.4 tightens option entry liquidity.
 
-Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，Reversal 2.3.3 进一步加入了最小样本过滤和前 15 名输出，Reversal 2.4 把 `60d` 观察窗口正式提升为默认研究与官方回测设定，Reversal 2.5 加入了 `minimum current drop > 0.5%` 入场过滤，Reversal 2.5.1 把 spot 取价改成优先使用扩展时段价格，Reversal 2.5.2 把当前 ATM call IV 和 20d rolling sigma 接进了 live screener 输出，Reversal 2.5.3 把 live screener 的展示压缩成更清晰的单表布局，Reversal 3.1 把官方 universe 升级为 `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`，Reversal 3.2 把 NYSE 节假日识别、期权流动性门槛、share fallback 和 `spread <= 15%` 接进了 live paper runner，Reversal 3.2.1 让盘后持仓继续更新并让 share fallback 在扩展时段继续执行止盈 / stop loss，Reversal 3.2.2 则进一步把 `1D` 实时净值图的纵轴做成自适应缩放，Reversal 3.3 正式取消新的 share fallback 并把 timing overlay + no-trade gate 提升为主线执行逻辑，Reversal 3.3.1 为官方股票池加入非 ETF trailing P/E 保护，Reversal 3.3.2 加入 live trend-health gate，避免买入短期下跌通道里的候选，Reversal 3.3.3 修复 `manage_*` slot 内重复止盈 / stop loss 扫描，Reversal 3.4 新增高置信早盘反转入场许可，Reversal 3.4.1 加入从 TEAM 案例提炼出的日内稳定修复检查，Reversal 3.4.2 加入 cached live-universe fallback 来提升运行稳定性，而 Reversal 3.4.3 防止 stale lastPrice-only option mark 触发 live exit。
+Notebook 通过 `reversal_data/` 目录下的 CSV 数据运行；Reversal 2.3 新增了动态股票池构建器，Reversal 2.3.1 新增了分批建仓的回测和股票池横向比较脚本，Reversal 2.3.2 把默认研究流程切到 `qqq_only_filtered` 并在 notebook 内加入了数据刷新步骤，Reversal 2.3.3 进一步加入了最小样本过滤和前 15 名输出，Reversal 2.4 把 `60d` 观察窗口正式提升为默认研究与官方回测设定，Reversal 2.5 加入了 `minimum current drop > 0.5%` 入场过滤，Reversal 2.5.1 把 spot 取价改成优先使用扩展时段价格，Reversal 2.5.2 把当前 ATM call IV 和 20d rolling sigma 接进了 live screener 输出，Reversal 2.5.3 把 live screener 的展示压缩成更清晰的单表布局，Reversal 3.1 把官方 universe 升级为 `qqq_plus_leverage_etfs = qqq_only_filtered + SOXL + UPRO`，Reversal 3.2 把 NYSE 节假日识别、期权流动性门槛、share fallback 和 `spread <= 15%` 接进了 live paper runner，Reversal 3.2.1 让盘后持仓继续更新并让 share fallback 在扩展时段继续执行止盈 / stop loss，Reversal 3.2.2 则进一步把 `1D` 实时净值图的纵轴做成自适应缩放，Reversal 3.3 正式取消新的 share fallback 并把 timing overlay + no-trade gate 提升为主线执行逻辑，Reversal 3.3.1 为官方股票池加入非 ETF trailing P/E 保护，Reversal 3.3.2 加入 live trend-health gate，避免买入短期下跌通道里的候选，Reversal 3.3.3 修复 `manage_*` slot 内重复止盈 / stop loss 扫描，Reversal 3.4 新增高置信早盘反转入场许可，Reversal 3.4.1 加入从 TEAM 案例提炼出的日内稳定修复检查，Reversal 3.4.2 加入 cached live-universe fallback 来提升运行稳定性，Reversal 3.4.3 防止 stale lastPrice-only option mark 触发 live exit，而 Reversal 3.4.4 进一步收紧 option entry liquidity。
 
 Before running the main analysis notebook, you can use `update_reversal_csv.ipynb` to download and refresh the input CSV files.
 
@@ -511,8 +515,8 @@ For `update_reversal_csv.ipynb`, the main configurable inputs are:
 - `update_reversal_csv.ipynb` | Download and prepare CSV market data before analysis. | 在分析前下载并整理 CSV 市场数据。
 - `update_reversal_data.py` | Refresh the default `qqq_plus_leverage_etfs` CSV datasets from Yahoo Finance. | 从 Yahoo Finance 刷新默认的 `qqq_plus_leverage_etfs` 所需 CSV 数据。
 - `RESEARCH_GUARDRAILS.md` | Default research discipline for avoiding curve sculpting, weak narratives, and LLM-assisted overfitting. | 默认研究守则，用于避免曲线雕刻、伪机制叙事和 LLM 放大的过拟合。
-- `reversal_3_3_live.py` | Reversal 3.4.3 live paper-test runner with scheduled entry/exit logic, state persistence, dashboard generation, optional GitHub publishing, the promoted cached `qqq_plus_leverage_etfs` live universe, the non-ETF trailing P/E guard, NYSE holiday protection, option-liquidity gating, stale option quote protection, the promoted `5d` timing overlay, the live trend-health down-channel gate, repeated 5-minute exit rescans inside `manage_*` slots, a high-confidence `10:00 AM-12:00 PM ET` early-entry permission, and a TEAM-inspired intraday recovery-stability filter. | Reversal 3.4.3 的 live paper-test 主脚本，包含定时入场/离场逻辑、状态持久化、dashboard 生成、可选的 GitHub 发布、默认读取已缓存的 `qqq_plus_leverage_etfs` live universe、非 ETF trailing P/E 保护、NYSE 节假日保护、期权流动性门槛、stale option quote 保护、正式提升后的 `5d` timing overlay、live trend-health 下跌通道过滤、`manage_*` slot 内每 5 分钟重复止盈 / stop loss 扫描、`10:00 AM-12:00 PM ET` 的高置信早盘入场许可，以及从 TEAM 案例提炼出的日内稳定修复过滤。
-- `reversal_3_4_1_alpaca_paper.py` | Separate Alpaca paper execution runner that reuses the Reversal 3.4.3 signal stack, submits Alpaca paper option limit orders, reconciles fills, manages exits, and stores credentials only in a local ignored `.secrets/` file. | 独立的 Alpaca paper execution runner，复用 Reversal 3.4.3 信号栈，提交 Alpaca paper 期权 limit order，跟踪成交和退出，并且只从本地忽略提交的 `.secrets/` 目录读取凭据。
+- `reversal_3_3_live.py` | Reversal 3.4.4 live paper-test runner with scheduled entry/exit logic, state persistence, dashboard generation, optional GitHub publishing, the promoted cached `qqq_plus_leverage_etfs` live universe, the non-ETF trailing P/E guard, NYSE holiday protection, tighter option-liquidity gating, stale option quote protection, the promoted `5d` timing overlay, the live trend-health down-channel gate, repeated 5-minute exit rescans inside `manage_*` slots, a high-confidence `10:00 AM-12:00 PM ET` early-entry permission, and a TEAM-inspired intraday recovery-stability filter. | Reversal 3.4.4 的 live paper-test 主脚本，包含定时入场/离场逻辑、状态持久化、dashboard 生成、可选的 GitHub 发布、默认读取已缓存的 `qqq_plus_leverage_etfs` live universe、非 ETF trailing P/E 保护、NYSE 节假日保护、更严格的期权流动性门槛、stale option quote 保护、正式提升后的 `5d` timing overlay、live trend-health 下跌通道过滤、`manage_*` slot 内每 5 分钟重复止盈 / stop loss 扫描、`10:00 AM-12:00 PM ET` 的高置信早盘入场许可，以及从 TEAM 案例提炼出的日内稳定修复过滤。
+- `reversal_3_4_1_alpaca_paper.py` | Separate Alpaca paper execution runner that reuses the Reversal 3.4.4 signal stack, submits Alpaca paper option limit orders, reconciles fills, manages exits, and stores credentials only in a local ignored `.secrets/` file. | 独立的 Alpaca paper execution runner，复用 Reversal 3.4.4 信号栈，提交 Alpaca paper 期权 limit order，跟踪成交和退出，并且只从本地忽略提交的 `.secrets/` 目录读取凭据。
 - `Reversal3.3.ipynb` | Current main notebook with the official `qqq_plus_leverage_etfs` universe, the default `60d` observation window, the `minimum current drop > 0.5%` live-screen filter, and the current research workflow that now feeds the Reversal 3.3 timing-overlay version line. | 当前主 notebook，使用官方 `qqq_plus_leverage_etfs` universe、默认 `60d` 观察窗口、`minimum current drop > 0.5%` live-screen 过滤，以及已经衔接到 Reversal 3.3 timing-overlay 主线的研究流程。
 - `versions/notebooks/` | Archived notebook snapshots from `Reversal2.0` through `Reversal3.2`, kept for version-by-version review without cluttering the repo root. | 历史 notebook 快照目录，收纳从 `Reversal2.0` 到 `Reversal3.2` 的版本，便于逐版本回看，同时避免根目录混杂。
 - `versions/notebooks/README.md` | Snapshot index for the archived notebook history. | 历史 notebook 快照索引。

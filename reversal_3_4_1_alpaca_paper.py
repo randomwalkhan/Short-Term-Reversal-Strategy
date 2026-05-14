@@ -15,7 +15,7 @@ import requests
 import reversal_3_3_live as live
 
 
-VERSION = "3.4.3-alpaca-paper.0"
+VERSION = "3.4.4-alpaca-paper.0"
 BASE_DIR = Path(__file__).resolve().parent
 RESULT_DIR = BASE_DIR / "results" / "reversal_3_4_1_alpaca_paper"
 STATE_PATH = RESULT_DIR / "alpaca_state.json"
