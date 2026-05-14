@@ -1,22 +1,22 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-14 14:50:02 EDT`
+Latest checkpoint (ET): `2026-05-14 14:56:46 EDT`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$90,949.78`
-- Portfolio value: `$99,139.78`
+- Portfolio value: `$99,169.78`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS            open      early SNPS260618C00490000          1               46.20                 46.05          bid_ask_mid                      46.05                   True          4605.0           -15.0              -0.324675                 1.0
-  INTC entry_submitted    regular INTC260618C00115000          3               13.35                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
+ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  SNPS   open      early SNPS260618C00490000          1                46.2                 46.05          bid_ask_mid                      46.05                    True          4605.0           -15.0              -0.324675                   1
+  INTC   open    regular INTC260618C00115000          3                13.3                 13.10          bid_ask_mid                      13.10                    True          3930.0           -60.0              -1.503759                   0
 ```
 
 ## Closed Trades
@@ -30,6 +30,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot               event_type                                                                                                                                                                                                                                                                                                                                                     detail
+2026-05-14T14:56:46.485369-04:00       entry_1500             entry_filled                                                                                                                                                                                                                                                         {"contract_symbol": "INTC260618C00115000", "contracts": 3, "filled_price": 13.3, "ticker": "INTC"}
 2026-05-14T14:50:02.003933-04:00       entry_1500    entry_order_submitted                                                                                                                                                                   {"alpaca_order_id": "1243471d-0d2b-4531-b787-bbc8875df658", "contract_symbol": "INTC260618C00115000", "contracts": 3, "entry_mode": "regular", "limit_price": "13.60", "ticker": "INTC"}
 2026-05-14T10:23:06.380585-04:00 early_entry_1020            entry_skipped                                                                                                                                                                                                                                                                                                          {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-13T10:39:33.767755-04:00 early_entry_1020             entry_filled                                                                                                                                                                                                                                                         {"contract_symbol": "SNPS260618C00490000", "contracts": 1, "filled_price": 46.2, "ticker": "SNPS"}
