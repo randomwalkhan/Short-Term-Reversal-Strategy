@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-14 15:32:18 EDT`
+Latest checkpoint (ET): `2026-05-14 15:37:25 EDT`
 Last slot: `manage_1530`
 
 ## Alpaca Paper Account
@@ -15,8 +15,8 @@ Last slot: `manage_1530`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS   open      early SNPS260618C00490000          1                46.2                 45.45          bid_ask_mid                      45.45                    True          4545.0           -75.0              -1.623377                   1
-  INTC   open    regular INTC260618C00115000          3                13.3                 13.20          bid_ask_mid                      13.20                    True          3960.0           -30.0              -0.751880                   0
+  SNPS   open      early SNPS260618C00490000          1                46.2                45.450          bid_ask_mid                     45.450                    True          4545.0           -75.0              -1.623377                   1
+  INTC   open    regular INTC260618C00115000          3                13.3                13.125          bid_ask_mid                     13.125                    True          3937.5           -52.5              -1.315789                   0
 ```
 
 ## Closed Trades
