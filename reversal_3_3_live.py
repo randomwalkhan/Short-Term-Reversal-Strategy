@@ -32,7 +32,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.4.2"
+VERSION = "3.4.3"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -892,6 +892,40 @@ def choose_option_mark(calls: pd.DataFrame) -> pd.Series:
     return pd.Series(mark, index=calls.index, dtype=float)
 
 
+def choose_option_mark_source(calls: pd.DataFrame) -> pd.Series:
+    bid = pd.to_numeric(calls.get("bid"), errors="coerce")
+    ask = pd.to_numeric(calls.get("ask"), errors="coerce")
+    last = pd.to_numeric(calls.get("lastPrice"), errors="coerce")
+    source = np.full(len(calls), "unavailable", dtype=object)
+    has_mark = np.zeros(len(calls), dtype=bool)
+
+    use_mid = (bid > 0) & (ask > 0)
+    source = np.where(use_mid, "bid_ask_mid", source)
+    has_mark |= np.asarray(use_mid.fillna(False), dtype=bool)
+
+    use_last = (~has_mark) & np.asarray((last > 0).fillna(False), dtype=bool)
+    source = np.where(use_last, "last_price_stale", source)
+    has_mark |= use_last
+
+    use_ask = (~has_mark) & np.asarray((ask > 0).fillna(False), dtype=bool)
+    source = np.where(use_ask, "ask_only", source)
+    has_mark |= use_ask
+
+    use_bid = (~has_mark) & np.asarray((bid > 0).fillna(False), dtype=bool)
+    source = np.where(use_bid, "bid_only", source)
+    return pd.Series(source, index=calls.index, dtype=object)
+
+
+def option_exit_signal_price(bid: float, ask: float) -> tuple[float, str, bool]:
+    bid_ok = np.isfinite(bid) and bid > 0
+    ask_ok = np.isfinite(ask) and ask > 0
+    if bid_ok and ask_ok:
+        return (bid + ask) / 2, "bid_ask_mid", True
+    if bid_ok:
+        return bid, "bid_only", True
+    return np.nan, "unavailable", False
+
+
 def is_leveraged_long_ticker(ticker: str) -> bool:
     return str(ticker).upper() in LEVERAGED_LONG_TICKERS
 
@@ -904,14 +938,20 @@ def share_exit_ladder(ticker: str) -> tuple[float, float, str]:
 
 def assess_option_entry_liquidity(row: pd.Series) -> tuple[bool, str]:
     reasons: list[str] = []
-    open_interest = float(pd.to_numeric(pd.Series([row.get("openInterest")]), errors="coerce").iloc[0] or 0)
-    volume = float(pd.to_numeric(pd.Series([row.get("volume")]), errors="coerce").iloc[0] or 0)
+    open_interest_raw = pd.to_numeric(pd.Series([row.get("openInterest")]), errors="coerce").iloc[0]
+    volume_raw = pd.to_numeric(pd.Series([row.get("volume")]), errors="coerce").iloc[0]
+    open_interest = float(open_interest_raw) if pd.notna(open_interest_raw) else 0.0
+    volume = float(volume_raw) if pd.notna(volume_raw) else 0.0
+    bid = pd.to_numeric(pd.Series([row.get("bid")]), errors="coerce").iloc[0]
+    ask = pd.to_numeric(pd.Series([row.get("ask")]), errors="coerce").iloc[0]
     spread_pct = pd.to_numeric(pd.Series([row.get("spread_pct")]), errors="coerce").iloc[0]
 
     if open_interest < MIN_OPTION_ENTRY_OPEN_INTEREST:
         reasons.append("low_open_interest")
     if volume < MIN_OPTION_ENTRY_VOLUME:
         reasons.append("low_volume")
+    if pd.isna(bid) or pd.isna(ask) or float(bid) <= 0 or float(ask) <= 0:
+        reasons.append("no_two_sided_quote")
     if pd.isna(spread_pct) or float(spread_pct) > MAX_OPTION_ENTRY_SPREAD_PCT:
         reasons.append("wide_spread")
 
@@ -960,10 +1000,11 @@ def fetch_call_candidates(
     calls["openInterest"] = pd.to_numeric(calls.get("openInterest"), errors="coerce").fillna(0)
     calls["impliedVolatility"] = pd.to_numeric(calls.get("impliedVolatility"), errors="coerce")
     calls["mark_price"] = choose_option_mark(calls)
+    calls["mark_price_source"] = choose_option_mark_source(calls)
     calls = calls[calls["mark_price"] > 0].copy()
 
     calls["spread_pct"] = np.where(
-        calls["mark_price"] > 0,
+        (calls["bid"] > 0) & (calls["ask"] > 0) & (calls["mark_price"] > 0),
         (calls["ask"] - calls["bid"]) / calls["mark_price"],
         np.nan,
     )
@@ -981,6 +1022,8 @@ def fetch_call_candidates(
     calls["entry_liquidity_ok"] = (
         (calls["openInterest"] >= MIN_OPTION_ENTRY_OPEN_INTEREST)
         & (calls["volume"] >= MIN_OPTION_ENTRY_VOLUME)
+        & (calls["bid"] > 0)
+        & (calls["ask"] > 0)
         & (calls["spread_pct"].fillna(1.0) <= MAX_OPTION_ENTRY_SPREAD_PCT)
     )
     calls = calls.sort_values(
@@ -1003,6 +1046,7 @@ def fetch_contract_quote(ticker: str, expiry: str, contract_symbol: str, strike:
     calls["lastPrice"] = pd.to_numeric(calls.get("lastPrice"), errors="coerce")
     calls["impliedVolatility"] = pd.to_numeric(calls.get("impliedVolatility"), errors="coerce")
     calls["mark_price"] = choose_option_mark(calls)
+    calls["mark_price_source"] = choose_option_mark_source(calls)
 
     selected = calls[calls["contractSymbol"].astype(str) == contract_symbol]
     if selected.empty:
@@ -1012,13 +1056,20 @@ def fetch_contract_quote(ticker: str, expiry: str, contract_symbol: str, strike:
 
     row = selected.iloc[0]
     iv = float(row["impliedVolatility"]) * 100 if pd.notna(row["impliedVolatility"]) else np.nan
+    bid = float(row["bid"]) if pd.notna(row["bid"]) else np.nan
+    ask = float(row["ask"]) if pd.notna(row["ask"]) else np.nan
+    exit_signal_price, exit_signal_source, exit_quote_reliable = option_exit_signal_price(bid, ask)
     return {
         "contract_symbol": str(row["contractSymbol"]),
         "mark_price": float(row["mark_price"]),
-        "bid": float(row["bid"]) if pd.notna(row["bid"]) else np.nan,
-        "ask": float(row["ask"]) if pd.notna(row["ask"]) else np.nan,
+        "mark_price_source": str(row.get("mark_price_source", "unavailable")),
+        "bid": bid,
+        "ask": ask,
         "last_price": float(row["lastPrice"]) if pd.notna(row["lastPrice"]) else np.nan,
         "iv_pct": iv if np.isfinite(iv) else np.nan,
+        "exit_signal_price": exit_signal_price,
+        "exit_signal_source": exit_signal_source,
+        "exit_quote_reliable": exit_quote_reliable,
     }
 
 
@@ -1388,6 +1439,10 @@ def mark_open_positions(state: dict[str, Any], now_et: pd.Timestamp) -> tuple[li
             current_bid = np.nan
             current_ask = np.nan
             current_iv_pct = np.nan
+            current_price_source = str(live.get("price_source", "spot"))
+            current_exit_signal_price = current_price
+            current_exit_signal_source = current_price_source
+            current_quote_reliable = True
         else:
             quote = fetch_contract_quote(raw["ticker"], raw["expiry"], raw["contract_symbol"], raw["strike"])
             current_price = float(quote["mark_price"])
@@ -1396,6 +1451,10 @@ def mark_open_positions(state: dict[str, Any], now_et: pd.Timestamp) -> tuple[li
             current_bid = quote["bid"]
             current_ask = quote["ask"]
             current_iv_pct = quote["iv_pct"]
+            current_price_source = quote.get("mark_price_source", "unavailable")
+            current_exit_signal_price = quote.get("exit_signal_price", np.nan)
+            current_exit_signal_source = quote.get("exit_signal_source", "unavailable")
+            current_quote_reliable = bool(quote.get("exit_quote_reliable", False))
         pnl_pct = (current_price / raw["entry_option_price"] - 1) * 100 if raw["entry_option_price"] > 0 else np.nan
         day_number = business_days_since(raw["entry_trade_date"], trade_date)
         marked_row = {
@@ -1407,6 +1466,10 @@ def mark_open_positions(state: dict[str, Any], now_et: pd.Timestamp) -> tuple[li
             "current_bid": current_bid,
             "current_ask": current_ask,
             "current_iv_pct": current_iv_pct,
+            "current_price_source": current_price_source,
+            "current_exit_signal_price": current_exit_signal_price,
+            "current_exit_signal_source": current_exit_signal_source,
+            "current_quote_reliable": current_quote_reliable,
             "position_value": position_value,
             "unrealized_pnl": pnl,
             "unrealized_return_pct": pnl_pct,
@@ -1479,6 +1542,36 @@ def maybe_exit_positions(
                 remaining_positions.append(raw)
                 continue
         else:
+            if asset_type == "option":
+                quote_reliable = bool(marked.get("current_quote_reliable", False))
+                exit_signal_price = pd.to_numeric(pd.Series([marked.get("current_exit_signal_price")]), errors="coerce").iloc[0]
+                if not quote_reliable or pd.isna(exit_signal_price):
+                    stale_would_trigger = (
+                        current_price <= raw["planned_stop"]
+                        or current_price >= target
+                        or (business_days_held >= 2 and slot_key == "manage_1600")
+                    )
+                    if stale_would_trigger:
+                        events_df = append_event(
+                            events_df,
+                            now_et=now_et,
+                            trade_date=trade_date,
+                            slot=slot_key,
+                            event_type="exit_skipped",
+                            detail={
+                                "ticker": raw["ticker"],
+                                "contract_symbol": raw["contract_symbol"],
+                                "reason": "unreliable_option_quote",
+                                "current_option_price": round(float(current_price), 4),
+                                "current_price_source": marked.get("current_price_source"),
+                                "current_bid": marked.get("current_bid"),
+                                "current_ask": marked.get("current_ask"),
+                            },
+                        )
+                    remaining_positions.append(raw)
+                    continue
+                current_price = float(exit_signal_price)
+
             if current_price <= raw["planned_stop"]:
                 exit_reason = "stop_loss_hit_at_scan"
                 exit_price = raw["planned_stop"]
@@ -2182,7 +2275,8 @@ def render_dashboard(
         numeric_cols = [
             "entry_spot", "current_spot", "entry_option_price", "current_option_price", "entry_price", "current_price", "unrealized_pnl",
             "unrealized_return_pct", "entry_iv_pct", "current_iv_pct", "success_rate", "current_drop_pct",
-            "rolling_sigma_20d_pct", "cash_spent", "current_position_value", "option_open_interest", "option_volume", "option_spread_pct"
+            "rolling_sigma_20d_pct", "cash_spent", "current_position_value", "option_open_interest", "option_volume", "option_spread_pct",
+            "current_exit_signal_price"
         ]
         for col in numeric_cols:
             if col in positions_view.columns:
@@ -2237,6 +2331,7 @@ def render_dashboard(
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; off-hours `5-minute` checkpoints continue mark-to-market updates for open positions, while any legacy share positions still held from older versions continue extended-hours take-profit and stop loss scans until flat",
             f"- Live exit ladder: `+{DAY1_TAKE_PROFIT_PCT:.0%} / +{DAY2_TAKE_PROFIT_PCT:.0%} / -{STOP_LOSS_PCT:.0%}`",
             "- Option entry liquidity gate: `open interest >= 100`, `volume >= 10`, `spread <= 15%`",
+            "- Option exit safety: stale option `lastPrice` may be shown for mark-to-market, but take-profit / stop-loss triggers require an executable quote from bid/ask or bid",
             f"- Entry timing overlay: short-window technical-indicator score using a `{TIMING_OVERLAY_WINDOW}d` feature window; only trade when `timing_score >= {TIMING_OVERLAY_THRESHOLD:.2f}`",
             f"- Trend-health gate: block candidates in a short-term down channel when 10d return <= `{TREND_HEALTH_MAX_LOOKBACK_RETURN_PCT:.1f}%` and either log-slope <= `{TREND_HEALTH_MAX_NEGATIVE_SLOPE_PCT_PER_DAY:.2f}%/day` below the 10d lookback average or lower-close streak >= `{TREND_HEALTH_MAX_LOWER_CLOSE_STREAK}`",
             "- No-trade rule: if the option is unavailable or fails the liquidity gate, skip the signal rather than falling back into shares",
@@ -2260,6 +2355,7 @@ def render_dashboard(
                     "ticker", "asset_type", "execution_mode", "instrument", "entry_trade_date", "business_days_held", "units",
                     "cash_spent", "current_position_value",
                     "entry_price", "current_price", "entry_spot", "current_spot",
+                    "current_price_source", "current_exit_signal_price", "current_exit_signal_source", "current_quote_reliable",
                     "unrealized_pnl", "unrealized_return_pct", "success_rate", "matched_signals",
                     "current_drop_pct", "entry_iv_pct", "current_iv_pct", "rolling_sigma_20d_pct",
                     "option_open_interest", "option_volume", "option_spread_pct", "option_liquidity_status"

@@ -15,7 +15,7 @@ import requests
 import reversal_3_3_live as live
 
 
-VERSION = "3.4.2-alpaca-paper.0"
+VERSION = "3.4.3-alpaca-paper.0"
 BASE_DIR = Path(__file__).resolve().parent
 RESULT_DIR = BASE_DIR / "results" / "reversal_3_4_1_alpaca_paper"
 STATE_PATH = RESULT_DIR / "alpaca_state.json"
@@ -76,6 +76,10 @@ POSITION_COLUMNS = [
     "current_option_price",
     "current_bid",
     "current_ask",
+    "current_price_source",
+    "current_exit_signal_price",
+    "current_exit_signal_source",
+    "current_quote_reliable",
     "position_value",
     "unrealized_pnl",
     "unrealized_return_pct",
@@ -415,6 +419,10 @@ def mark_positions(state: dict[str, Any], now_et: pd.Timestamp) -> pd.DataFrame:
             "current_option_price": current_price,
             "current_bid": quote.get("bid"),
             "current_ask": quote.get("ask"),
+            "current_price_source": quote.get("mark_price_source"),
+            "current_exit_signal_price": quote.get("exit_signal_price"),
+            "current_exit_signal_source": quote.get("exit_signal_source"),
+            "current_quote_reliable": quote.get("exit_quote_reliable"),
             "position_value": value,
             "unrealized_pnl": pnl,
             "unrealized_return_pct": pnl / float(pos["allocated_cash"]) * 100 if float(pos["allocated_cash"]) > 0 else np.nan,
@@ -439,8 +447,34 @@ def submit_exits(
         if pos.get("status") != "open":
             continue
         quote = live.fetch_contract_quote(pos["ticker"], pos["expiry"], pos["contract_symbol"], pos["strike"])
-        current = float(quote["mark_price"])
+        current = pd.to_numeric(pd.Series([quote.get("exit_signal_price")]), errors="coerce").iloc[0]
         bid = float(quote.get("bid", np.nan))
+        if not bool(quote.get("exit_quote_reliable", False)) or pd.isna(current):
+            stale_mark = pd.to_numeric(pd.Series([quote.get("mark_price")]), errors="coerce").iloc[0]
+            business_days_held = live.business_days_since(pos["entry_trade_date"], now_et.date().isoformat())
+            target = float(pos["planned_tp_day1"] if business_days_held <= 1 else pos["planned_tp_day2"])
+            stale_would_trigger = pd.notna(stale_mark) and (
+                float(stale_mark) <= float(pos["planned_stop"])
+                or float(stale_mark) >= target
+                or (business_days_held >= 2 and slot == "manage_1600")
+            )
+            if stale_would_trigger:
+                events_df = append_event(
+                    events_df,
+                    now_et,
+                    slot,
+                    "exit_skipped",
+                    {
+                        "ticker": pos["ticker"],
+                        "contract_symbol": pos["contract_symbol"],
+                        "reason": "unreliable_option_quote",
+                        "current_option_price": float(stale_mark),
+                        "current_price_source": quote.get("mark_price_source"),
+                        "current_bid": quote.get("bid"),
+                        "current_ask": quote.get("ask"),
+                    },
+                )
+            continue
         business_days_held = live.business_days_since(pos["entry_trade_date"], now_et.date().isoformat())
         target = float(pos["planned_tp_day1"] if business_days_held <= 1 else pos["planned_tp_day2"])
         reason = None
@@ -491,7 +525,7 @@ def render_dashboard(account: dict[str, Any], positions_df: pd.DataFrame, trades
         "",
         "## Open / Pending Positions",
         "",
-        live.format_table(positions_df, columns=["ticker", "status", "entry_mode", "contract_symbol", "contracts", "entry_option_price", "current_option_price", "position_value", "unrealized_pnl", "unrealized_return_pct", "business_days_held"], max_rows=20),
+        live.format_table(positions_df, columns=["ticker", "status", "entry_mode", "contract_symbol", "contracts", "entry_option_price", "current_option_price", "current_price_source", "current_exit_signal_price", "current_quote_reliable", "position_value", "unrealized_pnl", "unrealized_return_pct", "business_days_held"], max_rows=20),
         "",
         "## Closed Trades",
         "",
