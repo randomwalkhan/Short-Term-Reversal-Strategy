@@ -3,10 +3,10 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.4.2 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-14 09:44:26 EDT`
-- Equity: `$35,394.50` | Realized: `$23,603.50` | Unrealized: `$1,791.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-05-14 10:06:24 EDT`
+- Equity: `$33,618.50` | Realized: `$23,603.50` | Unrealized: `$15.00` | Open positions: `2`
 - Today closed trades: `0`
-- Current slot: `manual`
+- Current slot: `manage_1000`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -14,34 +14,35 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS     option         option SNPS260618C00490000      3     13410.0                 15201.0          50.67          1791.0                  13.36                   1
+  SNPS     option         option SNPS260618C00490000      3     13410.0                 13425.0          44.75            15.0                   0.11                   1
+  CDNS     option         option CDNS260618C00330000      5     16175.0                 16175.0          32.35             0.0                   0.00                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.2 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260514094426)
+![Reversal 3.4.2 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260514100624)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260514094426)
+![Reversal 3.4.2 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260514100624)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260514094426)
+![Reversal 3.4.2 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260514100624)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260514094426)
+![Reversal 3.4.2 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260514100624)
 
 </details>
 
