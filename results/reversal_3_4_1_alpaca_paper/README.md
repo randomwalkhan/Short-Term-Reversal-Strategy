@@ -1,13 +1,13 @@
 # Reversal 3.4.2-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-14 09:11:12 EDT`
-Last slot: `share_ext_0910`
+Latest checkpoint (ET): `2026-05-14 10:23:06 EDT`
+Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$94,939.84`
-- Portfolio value: `$99,099.84`
+- Portfolio value: `$99,359.84`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_0910`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS   open      early SNPS260618C00490000          1                46.2                 50.67          5067.0           447.0               9.675325                   1
+  SNPS   open      early SNPS260618C00490000          1                46.2                  45.6          4560.0           -60.0              -1.298701                   1
 ```
 
 ## Closed Trades
@@ -29,6 +29,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot               event_type                                                                                                                                                                                                                                                                                                                                                     detail
+2026-05-14T10:23:06.380585-04:00 early_entry_1020            entry_skipped                                                                                                                                                                                                                                                                                                          {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-13T10:39:33.767755-04:00 early_entry_1020             entry_filled                                                                                                                                                                                                                                                         {"contract_symbol": "SNPS260618C00490000", "contracts": 1, "filled_price": 46.2, "ticker": "SNPS"}
 2026-05-13T10:23:16.811406-04:00 early_entry_1020    entry_order_submitted                                                                                                                                                                     {"alpaca_order_id": "8bbe1576-32e5-4cb1-863a-6aed57d594fa", "contract_symbol": "SNPS260618C00490000", "contracts": 1, "entry_mode": "early", "limit_price": "47.40", "ticker": "SNPS"}
 2026-05-13T10:17:04.025534-04:00 early_entry_1015            entry_skipped                                                                                                                                                                                                {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}

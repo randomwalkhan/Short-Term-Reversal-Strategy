@@ -10,3 +10,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-13T10:17:04.025534-04:00,2026-05-13,early_entry_1015,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""TTWO""}"
 2026-05-13T10:23:16.811406-04:00,2026-05-13,early_entry_1020,entry_order_submitted,"{""alpaca_order_id"": ""8bbe1576-32e5-4cb1-863a-6aed57d594fa"", ""contract_symbol"": ""SNPS260618C00490000"", ""contracts"": 1, ""entry_mode"": ""early"", ""limit_price"": ""47.40"", ""ticker"": ""SNPS""}"
 2026-05-13T10:39:33.767755-04:00,2026-05-13,early_entry_1020,entry_filled,"{""contract_symbol"": ""SNPS260618C00490000"", ""contracts"": 1, ""filled_price"": 46.2, ""ticker"": ""SNPS""}"
+2026-05-14T10:23:06.380585-04:00,2026-05-14,early_entry_1020,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
