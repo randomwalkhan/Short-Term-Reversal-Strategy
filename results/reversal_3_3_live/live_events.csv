@@ -1546,3 +1546,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-13T15:10:06.837461-04:00,2026-05-13,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-14T00:00:04.843423-04:00,2026-05-14,data_refresh,data_refresh,{'saved': 92}
 2026-05-14T10:06:24.763261-04:00,2026-05-14,early_entry_1005,entry,"{""allocated_cash"": 16175.0, ""asset_type"": ""option"", ""contract_symbol"": ""CDNS260618C00330000"", ""contracts"": 5, ""early_entry_score"": 0.833, ""entry_mode"": ""early"", ""entry_option_price"": 32.35, ""execution_mode"": ""option"", ""matched_signals"": 37, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2023.0, ""option_spread_pct"": 10.2, ""option_volume"": 40.0, ""success_rate"": 97.3, ""ticker"": ""CDNS"", ""timing_score"": 0.51}"
+2026-05-14T10:50:02.088724-04:00,2026-05-14,early_entry_1050,entry_skipped,"{""reason"": ""daily_entry_limit""}"
