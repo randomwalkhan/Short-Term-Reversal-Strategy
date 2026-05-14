@@ -3,10 +3,10 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.4.2 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-13 23:55:04 EDT`
+- Latest checkpoint (ET): `2026-05-14 00:00:04 EDT`
 - Equity: `$33,528.50` | Realized: `$23,603.50` | Unrealized: `$-75.00` | Open positions: `1`
 - Today closed trades: `0`
-- Current slot: `share_ext_2355`
+- Current slot: `share_ext_0000`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS     option         option SNPS260618C00490000      3     13410.0                 13335.0          44.45           -75.0                  -0.56                   0
+  SNPS     option         option SNPS260618C00490000      3     13410.0                 13335.0          44.45           -75.0                  -0.56                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.2 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260513235504)
+![Reversal 3.4.2 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260514000004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260513235504)
+![Reversal 3.4.2 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260514000004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260513235504)
+![Reversal 3.4.2 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260514000004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.2 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260513235504)
+![Reversal 3.4.2 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260514000004)
 
 </details>
 
