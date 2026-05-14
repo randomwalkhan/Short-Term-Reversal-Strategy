@@ -1,7 +1,7 @@
 # Reversal 3.4.2-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-14 00:42:25 EDT`
-Last slot: `share_ext_0040`
+Latest checkpoint (ET): `2026-05-14 00:47:29 EDT`
+Last slot: `share_ext_0045`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_0040`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS   open      early SNPS260618C00490000          1                46.2                 44.45          4445.0          -175.0              -3.787879                   1
+  SNPS   open      early SNPS260618C00490000          1                46.2                 50.67          5067.0           447.0               9.675325                   1
 ```
 
 ## Closed Trades
