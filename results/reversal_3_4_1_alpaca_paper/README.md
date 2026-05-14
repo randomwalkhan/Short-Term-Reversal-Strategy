@@ -1,13 +1,13 @@
 # Reversal 3.4.2-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-14 04:01:39 EDT`
-Last slot: `share_ext_0400`
+Latest checkpoint (ET): `2026-05-14 05:17:24 EDT`
+Last slot: `share_ext_0515`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$94,939.87`
-- Portfolio value: `$99,099.87`
+- Cash: `$94,939.84`
+- Portfolio value: `$99,099.84`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
