@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-14 13:50:09 EDT`
+Latest checkpoint (ET): `2026-05-14 13:55:07 EDT`
 Last processed slot: `manage_1400`
 
 ## Active Configuration
@@ -37,8 +37,8 @@ Last processed slot: `manage_1400`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SNPS     option         option SNPS260618C00490000       2026-05-13                   1      3     13410.0                 13830.0        44.70           46.1      510.62        511.72          bid_ask_mid                       46.1                bid_ask_mid                    True           420.0                   3.13         97.14               35              0.50         52.16           54.30                  43.23                 154.0           10.0               0.12                      ok
-  CDNS     option         option CDNS260618C00330000       2026-05-14                   0      5     16175.0                 15900.0        32.35           31.8      352.55        351.68          bid_ask_mid                       31.8                bid_ask_mid                    True          -275.0                  -1.70         97.30               37              0.56         47.46           47.77                  37.69                2023.0           40.0               0.10                      ok
+  SNPS     option         option SNPS260618C00490000       2026-05-13                   1      3     13410.0                 13830.0        44.70           46.1      510.62        511.70          bid_ask_mid                       46.1                bid_ask_mid                    True           420.0                   3.13         97.14               35              0.50         52.16           54.21                  43.23                 154.0           10.0               0.12                      ok
+  CDNS     option         option CDNS260618C00330000       2026-05-14                   0      5     16175.0                 15900.0        32.35           31.8      352.55        351.56          bid_ask_mid                       31.8                bid_ask_mid                    True          -275.0                  -1.70         97.30               37              0.56         47.46           47.86                  37.69                2023.0           40.0               0.10                      ok
 ```
 
 ## Today's Closed Trades (2026-05-14)
@@ -49,18 +49,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  INTC          100.00               15            3.81              3.21        118.92               109.59         0.645          pass              0.605             35.7                           0.371               22.47              2.653                                 ok            True                  False
-    MU           84.85               33            1.32              7.42        800.45                77.31         0.564          pass              0.524             61.6                           0.661               53.34              4.649                                 ok            True                  False
-   KDP           88.46               26            0.80              0.16         29.24                33.33         0.549          pass              0.452             21.7                           0.188               -1.11              0.000                                 ok            True                  False
-  MCHP           84.38               32            0.77              0.52         96.49                51.21         0.546          pass              0.464             48.6                           0.531                3.29              0.296                                 ok            True                  False
-  MPWR           86.36               22            1.98             22.89       1640.54                51.84         0.510          pass              0.402             33.7                           0.510                0.20              0.257                                 ok            True                  False
-   ADI           81.48               27            1.12              3.38        430.94                36.56         0.504          pass              0.328             41.7                           0.575                6.29              0.813                                 ok            True                  False
-  NXPI           68.18               22            1.85              3.87        296.75                89.45         0.708          pass              0.219             22.6                           0.422               -0.24              0.116                                 ok           False                  False
-  TEAM           88.89               45            0.48              0.27         80.50               113.96         0.701          pass              0.759             83.9                           0.379               16.97              0.034                                 ok           False                  False
-  INSM           69.23               26            1.79              1.48        117.36               110.56         0.592          pass              0.392             75.3                           0.525              -15.00             -2.504 downtrend_blocked_slope_and_streak           False                  False
-  MNST           89.36               47            0.12              0.07         85.90                49.70         0.516          pass              0.769             89.2                           0.725               11.37              1.584                                 ok           False                  False
- GOOGL           90.48               42            0.08              0.22        402.52                40.63         0.513          pass              0.816             95.3                           0.877                4.55              0.395                                 ok           False                  False
-   BKR           71.88               32            0.70              0.32         65.27                37.91         0.508          pass              0.388             63.5                           0.754               -6.46             -0.762 downtrend_blocked_slope_and_streak           False                  False
+  TEAM           88.89               45            0.73              0.41         80.44               113.96         0.687          pass              0.733             75.6                           0.341               16.68              0.023                                 ok            True                  False
+  INTC          100.00               15            3.68              3.10        118.96               109.59         0.652          pass              0.612             37.8                           0.442               22.63              2.659                                 ok            True                  False
+    MU           85.71               35            1.05              5.90        801.10                77.31         0.568          pass              0.584             69.4                           0.746               53.76              4.662                                 ok            True                  False
+   KDP           86.96               23            0.97              0.20         29.22                33.33         0.556          pass              0.343              5.0                           0.101               -1.28             -0.007                                 ok            True                  False
+  MCHP           84.38               32            0.76              0.51         96.49                51.21         0.546          pass              0.465             49.0                           0.574                3.30              0.296                                 ok            True                  False
+  MPWR           86.36               22            1.95             22.56       1640.68                51.84         0.511          pass              0.405             34.7                           0.558                0.23              0.259                                 ok            True                  False
+   ADI           81.48               27            1.12              3.38        430.94                36.56         0.504          pass              0.328             41.7                           0.586                6.29              0.814                                 ok            True                  False
+  NXPI           68.18               22            1.93              4.02        296.69                89.45         0.705          pass              0.209             19.5                           0.413               -0.32              0.113                                 ok           False                  False
+  INSM           69.23               26            1.91              1.58        117.31               110.56         0.584          pass              0.386             73.6                           0.497              -15.11             -2.510 downtrend_blocked_slope_and_streak           False                  False
+  QCOM          100.00                1            5.23              7.81        209.82                94.09         0.554          pass              0.508             17.4                           0.419               12.49              2.374                                 ok           False                  False
+  MNST           88.64               44            0.26              0.15         85.86                49.70         0.525          pass              0.712             76.3                           0.679               11.21              1.578                                 ok           False                  False
+   BKR           68.97               29            0.89              0.41         65.24                37.91         0.512          pass              0.340             54.0                           0.668               -6.64             -0.771 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260514135009)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260514135507)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260514135009)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260514135507)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260514135009)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260514135507)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260514135009)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260514135507)
 
 </details>
