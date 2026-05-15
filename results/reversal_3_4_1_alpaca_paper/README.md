@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-15 10:12:22 EDT`
-Last slot: `early_entry_1010`
+Latest checkpoint (ET): `2026-05-15 10:17:26 EDT`
+Last slot: `early_entry_1015`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$90,949.69`
-- Portfolio value: `$97,429.69`
+- Cash: `$93,574.63`
+- Portfolio value: `$97,564.63`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,24 +15,25 @@ Last slot: `early_entry_1010`
 
 ```text
 ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS            open      early SNPS260618C00490000          1               46.20                42.000          bid_ask_mid                     42.000                   True          4200.0          -420.0              -9.090909                 2.0
-  INTC  exit_submitted    regular INTC260618C00115000          3               13.30                 8.375          bid_ask_mid                      8.375                   True          2512.5         -1477.5             -37.030075                 1.0
+  SNPS            open      early SNPS260618C00490000          1               46.20                  41.0          bid_ask_mid                       41.0                   True          4100.0          -520.0             -11.255411                 2.0
   CRWD entry_submitted      early CRWD260618C00560000          1               44.25                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
 ```
 
 ## Closed Trades
 
 ```text
-ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts    pnl  return_pct           exit_reason
-  AVGO AVGO260612C00425000          2026-05-12         2026-05-12               28.95              24.55          1 -440.0  -15.198618 stop_loss_hit_at_scan
+ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct           exit_reason
+  AVGO AVGO260612C00425000          2026-05-12         2026-05-12               28.95              24.55          1  -440.0  -15.198618 stop_loss_hit_at_scan
+  INTC INTC260618C00115000          2026-05-14         2026-05-15               13.30               8.75          3 -1365.0  -34.210526 stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot               event_type                                                                                                                                                                                                                                                                                                                                                     detail
-2026-05-15T10:00:59.774968-04:00      manage_1000     exit_order_submitted                                                                                                                                                                          {"alpaca_order_id": "5c375fa6-c3f6-4b83-a5eb-05811b36bc8e", "contract_symbol": "INTC260618C00115000", "limit_price": "8.65", "reason": "stop_loss_hit_at_scan", "ticker": "INTC"}
+2026-05-15T10:17:26.983517-04:00             exit              exit_filled                                                                                                                                                                                                                        {"contract_symbol": "INTC260618C00115000", "exit_price": 8.75, "pnl": -1365.0, "reason": "stop_loss_hit_at_scan", "ticker": "INTC"}
 2026-05-15T10:00:59.774968-04:00 early_entry_1000    entry_order_submitted                                                                                                                                                                     {"alpaca_order_id": "e75aa353-7720-4c23-88c3-3f7f65f3813f", "contract_symbol": "CRWD260618C00560000", "contracts": 1, "entry_mode": "early", "limit_price": "47.10", "ticker": "CRWD"}
+2026-05-15T10:00:59.774968-04:00      manage_1000     exit_order_submitted                                                                                                                                                                          {"alpaca_order_id": "5c375fa6-c3f6-4b83-a5eb-05811b36bc8e", "contract_symbol": "INTC260618C00115000", "limit_price": "8.65", "reason": "stop_loss_hit_at_scan", "ticker": "INTC"}
 2026-05-14T14:56:46.485369-04:00       entry_1500             entry_filled                                                                                                                                                                                                                                                         {"contract_symbol": "INTC260618C00115000", "contracts": 3, "filled_price": 13.3, "ticker": "INTC"}
 2026-05-14T14:50:02.003933-04:00       entry_1500    entry_order_submitted                                                                                                                                                                   {"alpaca_order_id": "1243471d-0d2b-4531-b787-bbc8875df658", "contract_symbol": "INTC260618C00115000", "contracts": 3, "entry_mode": "regular", "limit_price": "13.60", "ticker": "INTC"}
 2026-05-14T10:23:06.380585-04:00 early_entry_1020            entry_skipped                                                                                                                                                                                                                                                                                                          {"entry_mode": "early", "reason": "no_candidate"}
