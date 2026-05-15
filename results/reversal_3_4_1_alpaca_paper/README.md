@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-15 10:22:31 EDT`
+Latest checkpoint (ET): `2026-05-15 10:27:35 EDT`
 Last slot: `manage_1030`
 
 ## Alpaca Paper Account
@@ -14,9 +14,8 @@ Last slot: `manage_1030`
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS  exit_submitted      early SNPS260618C00490000          1               46.20                  41.0          bid_ask_mid                       41.0                   True          4100.0          -520.0             -11.255411                 2.0
-  CRWD entry_submitted      early CRWD260618C00560000          1               44.25                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
+  CRWD entry_submitted      early CRWD260618C00560000          1               44.25                   NaN             NaN                    NaN
 ```
 
 ## Closed Trades
@@ -25,12 +24,14 @@ ticker          status entry_mode     contract_symbol  contracts  entry_option_p
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct           exit_reason
   AVGO AVGO260612C00425000          2026-05-12         2026-05-12               28.95              24.55          1  -440.0  -15.198618 stop_loss_hit_at_scan
   INTC INTC260618C00115000          2026-05-14         2026-05-15               13.30               8.75          3 -1365.0  -34.210526 stop_loss_hit_at_scan
+  SNPS SNPS260618C00490000          2026-05-13         2026-05-15               46.20              39.90          1  -630.0  -13.636364 stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot               event_type                                                                                                                                                                                                                                                                                                                                                     detail
+2026-05-15T10:27:35.870371-04:00             exit              exit_filled                                                                                                                                                                                                                         {"contract_symbol": "SNPS260618C00490000", "exit_price": 39.9, "pnl": -630.0, "reason": "stop_loss_hit_at_scan", "ticker": "SNPS"}
 2026-05-15T10:22:31.525931-04:00      manage_1030     exit_order_submitted                                                                                                                                                                         {"alpaca_order_id": "8fa09024-4872-4b72-ba9c-0bcfcecdc473", "contract_symbol": "SNPS260618C00490000", "limit_price": "38.60", "reason": "stop_loss_hit_at_scan", "ticker": "SNPS"}
 2026-05-15T10:17:26.983517-04:00             exit              exit_filled                                                                                                                                                                                                                        {"contract_symbol": "INTC260618C00115000", "exit_price": 8.75, "pnl": -1365.0, "reason": "stop_loss_hit_at_scan", "ticker": "INTC"}
 2026-05-15T10:00:59.774968-04:00 early_entry_1000    entry_order_submitted                                                                                                                                                                     {"alpaca_order_id": "e75aa353-7720-4c23-88c3-3f7f65f3813f", "contract_symbol": "CRWD260618C00560000", "contracts": 1, "entry_mode": "early", "limit_price": "47.10", "ticker": "CRWD"}
