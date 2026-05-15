@@ -1,22 +1,23 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-15 09:55:53 EDT`
+Latest checkpoint (ET): `2026-05-15 10:00:59 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$90,949.69`
-- Portfolio value: `$97,344.69`
+- Portfolio value: `$97,264.69`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS   open      early SNPS260618C00490000          1                46.2                 45.95     last_price_stale                        NaN                   False          4595.0           -25.0              -0.541126                   2
-  INTC   open    regular INTC260618C00115000          3                13.3                 12.76     last_price_stale                        NaN                   False          3828.0          -162.0              -4.060150                   1
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  SNPS            open      early SNPS260618C00490000          1               46.20                 45.95     last_price_stale                        NaN                  False          4595.0           -25.0              -0.541126                 2.0
+  INTC  exit_submitted    regular INTC260618C00115000          3               13.30                  9.55          bid_ask_mid                       9.55                   True          2865.0         -1125.0             -28.195489                 1.0
+  CRWD entry_submitted      early CRWD260618C00560000          1               44.25                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
 ```
 
 ## Closed Trades
@@ -30,6 +31,8 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot               event_type                                                                                                                                                                                                                                                                                                                                                     detail
+2026-05-15T10:00:59.774968-04:00      manage_1000     exit_order_submitted                                                                                                                                                                          {"alpaca_order_id": "5c375fa6-c3f6-4b83-a5eb-05811b36bc8e", "contract_symbol": "INTC260618C00115000", "limit_price": "8.65", "reason": "stop_loss_hit_at_scan", "ticker": "INTC"}
+2026-05-15T10:00:59.774968-04:00 early_entry_1000    entry_order_submitted                                                                                                                                                                     {"alpaca_order_id": "e75aa353-7720-4c23-88c3-3f7f65f3813f", "contract_symbol": "CRWD260618C00560000", "contracts": 1, "entry_mode": "early", "limit_price": "47.10", "ticker": "CRWD"}
 2026-05-14T14:56:46.485369-04:00       entry_1500             entry_filled                                                                                                                                                                                                                                                         {"contract_symbol": "INTC260618C00115000", "contracts": 3, "filled_price": 13.3, "ticker": "INTC"}
 2026-05-14T14:50:02.003933-04:00       entry_1500    entry_order_submitted                                                                                                                                                                   {"alpaca_order_id": "1243471d-0d2b-4531-b787-bbc8875df658", "contract_symbol": "INTC260618C00115000", "contracts": 3, "entry_mode": "regular", "limit_price": "13.60", "ticker": "INTC"}
 2026-05-14T10:23:06.380585-04:00 early_entry_1020            entry_skipped                                                                                                                                                                                                                                                                                                          {"entry_mode": "early", "reason": "no_candidate"}
