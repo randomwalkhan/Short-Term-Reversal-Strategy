@@ -18,3 +18,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-15T10:17:26.983517-04:00,2026-05-15,exit,exit_filled,"{""contract_symbol"": ""INTC260618C00115000"", ""exit_price"": 8.75, ""pnl"": -1365.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""INTC""}"
 2026-05-15T10:22:31.525931-04:00,2026-05-15,manage_1030,exit_order_submitted,"{""alpaca_order_id"": ""8fa09024-4872-4b72-ba9c-0bcfcecdc473"", ""contract_symbol"": ""SNPS260618C00490000"", ""limit_price"": ""38.60"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""SNPS""}"
 2026-05-15T10:27:35.870371-04:00,2026-05-15,exit,exit_filled,"{""contract_symbol"": ""SNPS260618C00490000"", ""exit_price"": 39.9, ""pnl"": -630.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""SNPS""}"
+2026-05-15T16:01:52.248476-04:00,2026-05-15,early_entry_1000,entry_not_filled,"{""contract_symbol"": ""CRWD260618C00560000"", ""status"": ""expired"", ""ticker"": ""CRWD""}"

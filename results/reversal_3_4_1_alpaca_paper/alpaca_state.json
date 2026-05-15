@@ -2,36 +2,7 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [
-    {
-      "allocated_cash": 4425.0,
-      "alpaca_entry_client_order_id": "rev-20260515100059-crwd-early",
-      "alpaca_entry_order_id": "e75aa353-7720-4c23-88c3-3f7f65f3813f",
-      "asset_type": "option",
-      "contract_symbol": "CRWD260618C00560000",
-      "contracts": 1,
-      "current_drop_pct": 0.52,
-      "early_entry_score": 0.739,
-      "entry_mode": "early",
-      "entry_option_price": 44.25,
-      "entry_slot": "early_entry_1000",
-      "entry_spot": 576.9500122070312,
-      "entry_timestamp": "2026-05-15T10:00:59.774968-04:00",
-      "entry_trade_date": "2026-05-15",
-      "execution_mode": "alpaca_paper_option",
-      "expiry": "2026-06-18",
-      "matched_signals": 38,
-      "planned_stop": 39.825,
-      "planned_tp_day1": 50.887499999999996,
-      "planned_tp_day2": 50.887499999999996,
-      "position_id": "CRWD_20260515T100059",
-      "status": "entry_submitted",
-      "strike": 560.0,
-      "success_rate": 89.47,
-      "ticker": "CRWD",
-      "timing_score": 0.461
-    }
-  ],
+  "positions": [],
   "start_date": "2026-03-24",
   "version": "3.4.4-alpaca-paper.0"
 }
