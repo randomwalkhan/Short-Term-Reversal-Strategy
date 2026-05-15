@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.4.4 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-15 15:35:05 EDT`
-- Equity: `$30,920.00` | Realized: `$20,645.00` | Unrealized: `$275.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-05-15 15:40:05 EDT`
+- Equity: `$30,670.00` | Realized: `$20,645.00` | Unrealized: `$25.00` | Open positions: `1`
 - Today closed trades: `2`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  CDNS     option         option CDNS260618C00330000      5     14525.0                 14800.0           29.6           275.0                   1.89                   0
+  CDNS     option         option CDNS260618C00330000      5     14525.0                 14550.0           29.1            25.0                   0.17                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260515153505)
+![Reversal 3.4.4 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260515154005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260515153505)
+![Reversal 3.4.4 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260515154005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260515153505)
+![Reversal 3.4.4 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260515154005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260515153505)
+![Reversal 3.4.4 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260515154005)
 
 </details>
 
