@@ -1557,3 +1557,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-15T00:00:05.036344-04:00,2026-05-15,data_refresh,data_refresh,{'saved': 92}
 2026-05-15T10:00:02.295451-04:00,2026-05-15,early_entry_1000,entry_skipped,"{""reason"": ""max_open_positions""}"
 2026-05-15T10:05:04.229030-04:00,2026-05-15,early_entry_1005,entry_skipped,"{""reason"": ""max_open_positions""}"
+2026-05-15T10:10:04.236759-04:00,2026-05-15,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CDNS260618C00330000"", ""fill_price"": 29.115, ""pnl"": -1617.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""CDNS""}"
+2026-05-15T10:10:04.236759-04:00,2026-05-15,early_entry_1010,entry,"{""allocated_cash"": 14525.0, ""asset_type"": ""option"", ""contract_symbol"": ""CDNS260618C00330000"", ""contracts"": 5, ""early_entry_score"": 0.838, ""entry_mode"": ""early"", ""entry_option_price"": 29.05, ""execution_mode"": ""option"", ""matched_signals"": 37, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2023.0, ""option_spread_pct"": 13.43, ""option_volume"": 40.0, ""success_rate"": 97.3, ""ticker"": ""CDNS"", ""timing_score"": 0.521}"
