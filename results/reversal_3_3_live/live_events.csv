@@ -1610,3 +1610,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-16T02:55:09.369538-04:00,2026-05-16,share_ext_0255,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-05-18T03:00:02.728743-04:00,2026-05-18,data_refresh,data_refresh,{'saved': 92}
 2026-05-18T10:27:37.648386-04:00,2026-05-18,early_entry_1025,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-05-18T11:00:09.683441-04:00,2026-05-18,early_entry_1100,entry_skipped,"{""reason"": ""no_candidate""}"
