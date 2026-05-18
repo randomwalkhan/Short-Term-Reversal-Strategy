@@ -21,3 +21,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-15T16:01:52.248476-04:00,2026-05-15,early_entry_1000,entry_not_filled,"{""contract_symbol"": ""CRWD260618C00560000"", ""status"": ""expired"", ""ticker"": ""CRWD""}"
 2026-05-18T10:43:30.017496-04:00,2026-05-18,early_entry_1040,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
 2026-05-18T11:08:20.679676-04:00,2026-05-18,early_entry_1105,entry_order_submitted,"{""alpaca_order_id"": ""66a4794c-2ceb-4b7d-b398-79b62129fb14"", ""contract_symbol"": ""INTC260618C00110000"", ""contracts"": 5, ""entry_mode"": ""early"", ""limit_price"": ""9.40"", ""ticker"": ""INTC""}"
+2026-05-18T11:24:39.449679-04:00,2026-05-18,early_entry_1105,entry_filled,"{""contract_symbol"": ""INTC260618C00110000"", ""contracts"": 5, ""filled_price"": 9.4, ""ticker"": ""INTC""}"
