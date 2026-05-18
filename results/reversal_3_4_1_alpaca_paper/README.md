@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-18 12:35:31 EDT`
+Latest checkpoint (ET): `2026-05-18 12:40:35 EDT`
 Last slot: `manage_1230`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$92,864.38`
-- Portfolio value: `$96,889.38`
+- Portfolio value: `$97,014.38`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1230`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC   open      early INTC260618C00110000          5                 9.4                  8.65          bid_ask_mid                       8.65                    True          4325.0          -375.0              -7.978723                   0
+  INTC   open      early INTC260618C00110000          5                 9.4                 8.825          bid_ask_mid                      8.825                    True          4412.5          -287.5              -6.117021                   0
 ```
 
 ## Closed Trades
