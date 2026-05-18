@@ -1613,3 +1613,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-18T11:00:09.683441-04:00,2026-05-18,early_entry_1100,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-05-18T11:05:05.558676-04:00,2026-05-18,early_entry_1105,entry,"{""allocated_cash"": 13550.0, ""asset_type"": ""option"", ""contract_symbol"": ""TTWO260618C00250000"", ""contracts"": 10, ""early_entry_score"": 0.906, ""entry_mode"": ""early"", ""entry_option_price"": 13.55, ""execution_mode"": ""option"", ""matched_signals"": 42, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 3069.0, ""option_spread_pct"": 11.07, ""option_volume"": 22.0, ""success_rate"": 97.62, ""ticker"": ""TTWO"", ""timing_score"": 0.402}"
 2026-05-18T11:10:02.609364-04:00,2026-05-18,early_entry_1110,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-18T11:15:03.521300-04:00,2026-05-18,early_entry_1115,entry_skipped,"{""reason"": ""daily_entry_limit""}"
