@@ -1615,3 +1615,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-18T11:10:02.609364-04:00,2026-05-18,early_entry_1110,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-18T11:15:03.521300-04:00,2026-05-18,early_entry_1115,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-18T11:20:01.549476-04:00,2026-05-18,early_entry_1120,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-18T11:25:06.197767-04:00,2026-05-18,manage_1130,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CDNS260618C00330000"", ""fill_price"": 26.145, ""pnl"": -1452.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""CDNS""}"
+2026-05-18T11:25:06.197767-04:00,2026-05-18,early_entry_1125,entry_skipped,"{""reason"": ""daily_entry_limit""}"
