@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4625.0,
+      "alpaca_entry_client_order_id": "rev-20260518110820-intc-early",
+      "alpaca_entry_order_id": "66a4794c-2ceb-4b7d-b398-79b62129fb14",
+      "asset_type": "option",
+      "contract_symbol": "INTC260618C00110000",
+      "contracts": 5,
+      "current_drop_pct": 0.61,
+      "early_entry_score": 0.88,
+      "entry_mode": "early",
+      "entry_option_price": 9.25,
+      "entry_slot": "early_entry_1105",
+      "entry_spot": 108.10990142822266,
+      "entry_timestamp": "2026-05-18T11:08:20.679676-04:00",
+      "entry_trade_date": "2026-05-18",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-06-18",
+      "matched_signals": 34,
+      "planned_stop": 8.325000000000001,
+      "planned_tp_day1": 10.6375,
+      "planned_tp_day2": 10.6375,
+      "position_id": "INTC_20260518T110820",
+      "status": "entry_submitted",
+      "strike": 110.0,
+      "success_rate": 100.0,
+      "ticker": "INTC",
+      "timing_score": 0.711
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.4.4-alpaca-paper.0"
 }
