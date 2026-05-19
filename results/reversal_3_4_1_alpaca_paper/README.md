@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-19 15:59:40 EDT`
+Latest checkpoint (ET): `2026-05-19 16:04:44 EDT`
 Last slot: `manage_1600`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1600`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  PANW exit_submitted      early PANW260618C00250000          3               16.05                12.975          bid_ask_mid                     12.975                    True          3892.5          -922.5             -19.158879                   0
+  PANW exit_submitted      early PANW260618C00250000          3               16.05                 13.15          bid_ask_mid                      13.15                    True          3945.0          -870.0             -18.068536                   0
 ```
 
 ## Closed Trades
@@ -32,6 +32,8 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-05-19T16:04:44.982187-04:00      manage_1600  exit_order_submitted       {"alpaca_order_id": "5abeb2ab-fddd-4ee5-b52a-fdeb6b88520f", "contract_symbol": "PANW260618C00250000", "limit_price": "12.85", "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
+2026-05-19T16:04:44.982187-04:00             exit       exit_not_filled                                                                                                        {"contract_symbol": "PANW260618C00250000", "status": "expired", "ticker": "PANW"}
 2026-05-19T12:01:32.059087-04:00      manage_1200  exit_order_submitted       {"alpaca_order_id": "583a8972-adb7-4f86-9f64-ef9b65bcd08a", "contract_symbol": "PANW260618C00250000", "limit_price": "14.00", "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
 2026-05-19T10:15:11.678665-04:00 early_entry_1005          entry_filled                                                                                      {"contract_symbol": "PANW260618C00250000", "contracts": 3, "filled_price": 16.05, "ticker": "PANW"}
 2026-05-19T10:09:01.081129-04:00 early_entry_1005 entry_order_submitted   {"alpaca_order_id": "8567becd-cf83-4697-a41b-74ad47cad857", "contract_symbol": "PANW260618C00250000", "contracts": 3, "entry_mode": "early", "limit_price": "16.05", "ticker": "PANW"}
@@ -50,6 +52,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-14T14:56:46.485369-04:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "INTC260618C00115000", "contracts": 3, "filled_price": 13.3, "ticker": "INTC"}
 2026-05-14T14:50:02.003933-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "1243471d-0d2b-4531-b787-bbc8875df658", "contract_symbol": "INTC260618C00115000", "contracts": 3, "entry_mode": "regular", "limit_price": "13.60", "ticker": "INTC"}
 2026-05-14T10:23:06.380585-04:00 early_entry_1020         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-13T10:39:33.767755-04:00 early_entry_1020          entry_filled                                                                                       {"contract_symbol": "SNPS260618C00490000", "contracts": 1, "filled_price": 46.2, "ticker": "SNPS"}
-2026-05-13T10:23:16.811406-04:00 early_entry_1020 entry_order_submitted   {"alpaca_order_id": "8bbe1576-32e5-4cb1-863a-6aed57d594fa", "contract_symbol": "SNPS260618C00490000", "contracts": 1, "entry_mode": "early", "limit_price": "47.40", "ticker": "SNPS"}
 ```
