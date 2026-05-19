@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-19 11:56:27 EDT`
+Latest checkpoint (ET): `2026-05-19 12:01:32 EDT`
 Last slot: `manage_1200`
 
 ## Alpaca Paper Account
@@ -14,8 +14,8 @@ Last slot: `manage_1200`
 ## Open / Pending Positions
 
 ```text
-ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  PANW   open      early PANW260618C00250000          3               16.05                  14.5          bid_ask_mid                       14.5                    True          4350.0          -465.0              -9.657321                   0
+ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  PANW exit_submitted      early PANW260618C00250000          3               16.05                  14.3          bid_ask_mid                       14.3                    True          4290.0          -525.0             -10.903427                   0
 ```
 
 ## Closed Trades
@@ -32,6 +32,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-05-19T12:01:32.059087-04:00      manage_1200  exit_order_submitted       {"alpaca_order_id": "583a8972-adb7-4f86-9f64-ef9b65bcd08a", "contract_symbol": "PANW260618C00250000", "limit_price": "14.00", "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
 2026-05-19T10:15:11.678665-04:00 early_entry_1005          entry_filled                                                                                      {"contract_symbol": "PANW260618C00250000", "contracts": 3, "filled_price": 16.05, "ticker": "PANW"}
 2026-05-19T10:09:01.081129-04:00 early_entry_1005 entry_order_submitted   {"alpaca_order_id": "8567becd-cf83-4697-a41b-74ad47cad857", "contract_symbol": "PANW260618C00250000", "contracts": 3, "entry_mode": "early", "limit_price": "16.05", "ticker": "PANW"}
 2026-05-19T10:02:51.168832-04:00 early_entry_1000         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
@@ -51,5 +52,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-14T10:23:06.380585-04:00 early_entry_1020         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-13T10:39:33.767755-04:00 early_entry_1020          entry_filled                                                                                       {"contract_symbol": "SNPS260618C00490000", "contracts": 1, "filled_price": 46.2, "ticker": "SNPS"}
 2026-05-13T10:23:16.811406-04:00 early_entry_1020 entry_order_submitted   {"alpaca_order_id": "8bbe1576-32e5-4cb1-863a-6aed57d594fa", "contract_symbol": "SNPS260618C00490000", "contracts": 1, "entry_mode": "early", "limit_price": "47.40", "ticker": "SNPS"}
-2026-05-13T10:17:04.025534-04:00 early_entry_1015         entry_skipped                              {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 ```
