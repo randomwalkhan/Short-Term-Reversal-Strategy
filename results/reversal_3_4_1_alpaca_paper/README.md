@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-19 13:52:56 EDT`
+Latest checkpoint (ET): `2026-05-19 13:58:00 EDT`
 Last slot: `manage_1400`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1400`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  PANW exit_submitted      early PANW260618C00250000          3               16.05                  13.4          bid_ask_mid                       13.4                    True          4020.0          -795.0             -16.510903                   0
+  PANW exit_submitted      early PANW260618C00250000          3               16.05                13.325          bid_ask_mid                     13.325                    True          3997.5          -817.5             -16.978193                   0
 ```
 
 ## Closed Trades
