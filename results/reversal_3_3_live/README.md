@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-19 10:55:01 EDT`
+Latest checkpoint (ET): `2026-05-19 11:00:04 EDT`
 Last processed slot: `manage_1100`
 
 ## Active Configuration
@@ -27,56 +27,58 @@ Last processed slot: `manage_1100`
 
 ## Portfolio Snapshot
 
-- Cash: `$1,895.00`
-- Equity: `$27,972.50`
-- Realized PnL: `$19,192.50`
-- Unrealized PnL: `$-1,220.00`
-- Open positions: `2`
+- Cash: `$14,090.00`
+- Equity: `$27,882.50`
+- Realized PnL: `$17,837.50`
+- Unrealized PnL: `$45.00`
+- Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  PANW     option         option PANW260618C00250000       2026-05-19                   0      9     13747.5                 13477.5        15.28          14.98      245.93        245.66          bid_ask_mid                      14.98                bid_ask_mid                    True          -270.0                  -1.96         91.67               36              0.66         58.04           59.27                  42.55                2852.0           34.0               0.10                      ok
-  TTWO     option         option TTWO260618C00250000       2026-05-18                   1     10     13550.0                 12600.0        13.55          12.60      241.03        238.94          bid_ask_mid                      12.60                bid_ask_mid                    True          -950.0                  -7.01         97.62               42              0.58         61.06           62.18                  33.53                3069.0           22.0               0.11                      ok
+  PANW     option         option PANW260618C00250000       2026-05-19                   0      9     13747.5                 13792.5        15.28          15.32      245.93        245.25          bid_ask_mid                      15.32                bid_ask_mid                    True            45.0                   0.33         91.67               36              0.66         58.04           61.04                  42.55                2852.0           34.0                0.1                      ok
 ```
 
 ## Today's Closed Trades (2026-05-19)
 
-_None_
+```text
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct           exit_reason
+  TTWO     option         option TTWO260618C00250000     10          2026-05-18         2026-05-19        13.55      12.195 -1355.0       -10.0 stop_loss_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  NXPI           82.35               34            0.51              1.05        291.23                90.65         0.727          pass              0.523             75.7                           0.660               -0.74             -0.193                                 ok            True                  False
-   TXN           90.00               20            1.36              2.86        299.38                69.24         0.674          pass              0.585             61.3                           0.631                5.52              0.694                                 ok            True                  False
-  GOOG           80.00               10            1.83              5.04        390.95                40.55         0.576          pass              0.119             20.5                           0.259                0.43              0.016                                 ok            True                  False
- GOOGL           81.82               11            1.97              5.47        394.59                40.53         0.568          pass              0.157             15.1                           0.222                0.18              0.023                                 ok            True                  False
-    MU           85.29               34            0.98              4.69        679.53                90.51         0.558          pass              0.588             77.2                           0.892                5.41              0.710                                 ok            True                  False
-  SNPS           96.30               27            1.39              4.84        496.36                41.65         0.542          pass              0.603             11.9                           0.144               -2.19             -0.194                                 ok            True                  False
-  NVDA           89.29               28            1.12              1.74        221.58                44.74         0.523          pass              0.551             43.8                           0.512               11.88              1.120                                 ok            True                  False
-  ASML           82.14               28            1.43             14.75       1466.07                50.95         0.518          pass              0.326             32.2                           0.365                0.58             -0.174                                 ok            True                  False
-  FAST           91.30               23            1.05              0.32         43.86                22.17         0.504          pass              0.570             43.9                           0.454               -1.78             -0.206                                 ok            True                  False
-  TEAM           90.91               44            0.49              0.30         89.30               113.67         0.692          pass              0.680             40.0                           0.216               -3.63             -0.590           downtrend_blocked_streak           False                  False
-  INTC          100.00               15            3.53              2.67        107.02               114.00         0.668          pass              0.602             33.8                           0.511               -3.51             -0.545 downtrend_blocked_slope_and_streak           False                  False
-  SHOP           83.72               43            0.04              0.03        102.38                78.89         0.626          pass              0.653             97.0                           0.419               -4.90             -0.924 downtrend_blocked_slope_and_streak           False                  False
+   TXN           91.67               24            1.05              2.22        299.65                69.24         0.670          pass              0.681             70.0                           0.696                5.85              0.708                                 ok            True                  False
+  GOOG           81.82               11            1.80              4.96        390.99                40.55         0.574          pass              0.178             21.9                           0.268                0.46              0.017                                 ok            True                  False
+ GOOGL           81.82               11            1.96              5.44        394.61                40.53         0.568          pass              0.159             15.6                           0.235                0.19              0.024                                 ok            True                  False
+  SNPS           96.43               28            1.24              4.33        496.57                41.65         0.545          pass              0.638             21.1                           0.243               -2.04             -0.187                                 ok            True                  False
+  ASML           82.76               29            1.16             11.91       1467.29                50.95         0.531          pass              0.389             45.3                           0.461                0.86             -0.162                                 ok            True                  False
+  NVDA           87.88               33            0.67              1.05        221.87                44.74         0.517          pass              0.613             66.0                           0.735               12.38              1.140                                 ok            True                  False
+  AVGO           88.24               17            2.41              7.11        417.66                42.85         0.505          pass              0.411             31.5                           0.592               -3.93             -0.125                                 ok            True                  False
+  KLAC           81.82               22            2.02             24.83       1745.81                51.34         0.501          pass              0.318             46.4                           0.709               -0.69             -0.065                                 ok            True                  False
+  NXPI           82.86               35            0.43              0.88        291.30                90.65         0.726          pass              0.554             79.6                           0.678               -0.66             -0.190                                 ok           False                  False
+  TEAM           91.30               46            0.34              0.21         89.34               113.67         0.690          pass              0.744             57.9                           0.302               -3.49             -0.584           downtrend_blocked_streak           False                  False
+  INTC          100.00               18            2.92              2.21        107.22               114.00         0.685          pass              0.658             45.2                           0.603               -2.90             -0.517 downtrend_blocked_slope_and_streak           False                  False
+  QCOM          100.00                1            5.03              7.17        200.57                99.05         0.614          pass              0.518             18.9                           0.393                3.67              0.089                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot    event_type                                                                                                                                                                                                                                                                                                                                                                                                                                detail
-2026-05-19T10:55:01.036439-04:00 early_entry_1055 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "daily_entry_limit"}
-2026-05-19T10:50:05.059636-04:00 early_entry_1050 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "daily_entry_limit"}
-2026-05-19T10:45:01.038335-04:00 early_entry_1045 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "daily_entry_limit"}
-2026-05-19T10:40:01.036176-04:00 early_entry_1040 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "daily_entry_limit"}
-2026-05-19T10:35:03.933477-04:00 early_entry_1035 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "daily_entry_limit"}
-2026-05-19T10:30:01.041969-04:00 early_entry_1030 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "daily_entry_limit"}
-2026-05-19T10:25:01.081339-04:00 early_entry_1025 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "daily_entry_limit"}
-2026-05-19T10:20:03.970688-04:00 early_entry_1020 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "daily_entry_limit"}
-2026-05-19T10:15:01.057449-04:00 early_entry_1015 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "daily_entry_limit"}
-2026-05-19T10:10:01.046495-04:00 early_entry_1010         entry {"allocated_cash": 13747.5, "asset_type": "option", "contract_symbol": "PANW260618C00250000", "contracts": 9, "early_entry_score": 0.729, "entry_mode": "early", "entry_option_price": 15.275, "execution_mode": "option", "matched_signals": 36, "option_liquidity_status": "ok", "option_open_interest": 2852.0, "option_spread_pct": 10.15, "option_volume": 34.0, "success_rate": 91.67, "ticker": "PANW", "timing_score": 0.462}
+                    timestamp_et             slot    event_type                                                                                                                                                                             detail
+2026-05-19T11:00:04.023655-04:00 early_entry_1100 entry_skipped                                                                                                                                                    {"reason": "daily_entry_limit"}
+2026-05-19T11:00:04.023655-04:00      manage_1100          exit {"asset_type": "option", "contract_symbol": "TTWO260618C00250000", "fill_price": 12.195, "pnl": -1355.0, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "TTWO"}
+2026-05-19T10:55:01.036439-04:00 early_entry_1055 entry_skipped                                                                                                                                                    {"reason": "daily_entry_limit"}
+2026-05-19T10:50:05.059636-04:00 early_entry_1050 entry_skipped                                                                                                                                                    {"reason": "daily_entry_limit"}
+2026-05-19T10:45:01.038335-04:00 early_entry_1045 entry_skipped                                                                                                                                                    {"reason": "daily_entry_limit"}
+2026-05-19T10:40:01.036176-04:00 early_entry_1040 entry_skipped                                                                                                                                                    {"reason": "daily_entry_limit"}
+2026-05-19T10:35:03.933477-04:00 early_entry_1035 entry_skipped                                                                                                                                                    {"reason": "daily_entry_limit"}
+2026-05-19T10:30:01.041969-04:00 early_entry_1030 entry_skipped                                                                                                                                                    {"reason": "daily_entry_limit"}
+2026-05-19T10:25:01.081339-04:00 early_entry_1025 entry_skipped                                                                                                                                                    {"reason": "daily_entry_limit"}
+2026-05-19T10:20:03.970688-04:00 early_entry_1020 entry_skipped                                                                                                                                                    {"reason": "daily_entry_limit"}
 ```
 
 ## Equity Curves
@@ -86,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260519105501)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260519110004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260519105501)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260519110004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260519105501)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260519110004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260519105501)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260519110004)
 
 </details>
