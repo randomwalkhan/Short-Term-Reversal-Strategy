@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-19 09:35:01 EDT`
+Latest checkpoint (ET): `2026-05-19 09:40:01 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  TTWO     option         option TTWO260618C00250000       2026-05-18                   1     10     13550.0                 13300.0        13.55           13.3      241.03        240.27     last_price_stale                        NaN                unavailable                   False          -250.0                  -1.85         97.62               42              0.58         61.06            3.13                  33.53                3069.0           22.0               0.11                      ok
+  TTWO     option         option TTWO260618C00250000       2026-05-18                   1     10     13550.0                 13300.0        13.55           13.3      241.03        241.88     last_price_stale                        NaN                unavailable                   False          -250.0                  -1.85         97.62               42              0.58         61.06            3.13                  33.53                3069.0           22.0               0.11                      ok
 ```
 
 ## Today's Closed Trades (2026-05-19)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  QCOM           88.89               18            1.99              2.84        202.42                99.05         0.695          pass              0.518             52.7                           0.460                6.99              0.233                  ok            True                  False
-   TXN           89.47               19            1.43              3.02        299.31                69.24         0.675          pass              0.558             59.1                           0.527                5.44              0.691                  ok            True                  False
-  FTNT          100.00               24            1.63              1.45        125.88                70.72         0.653          pass              0.632             24.5                           0.289               38.38              3.205                  ok            True                  False
-  CSCO           92.59               27            0.66              0.55        118.64                49.96         0.608          pass              0.726             72.2                           0.604               25.23              3.002                  ok            True                  False
-  ASML           84.38               32            0.64              6.63       1469.55                50.95         0.556          pass              0.515             65.4                           0.594                1.39             -0.138                  ok            True                  False
- GOOGL           86.96               23            1.29              3.58        395.41                40.53         0.549          pass              0.327              0.0                           0.163                0.88              0.055                  ok            True                  False
-  FAST           93.75               16            1.30              0.40         43.83                22.17         0.545          pass              0.461              0.0                           0.188               -2.03             -0.218                  ok            True                  False
-  GOOG           82.61               23            1.22              3.37        391.67                40.55         0.544          pass              0.211              0.0                           0.163                1.05              0.044                  ok            True                  False
-  SNPS           97.14               35            0.77              2.68        497.28                41.65         0.533          pass              0.744             41.4                           0.305               -1.57             -0.166                  ok            True                  False
-   CSX           86.21               29            0.84              0.27         46.08                31.65         0.520          pass              0.390             15.2                           0.265                1.73              0.235                  ok            True                  False
-  AMGN           84.00               25            0.52              1.17        323.89                25.96         0.518          pass              0.401             47.4                           0.356               -1.35             -0.068                  ok            True                  False
-  NVDA           87.88               33            0.79              1.22        221.80                44.74         0.515          pass              0.573             52.6                           0.469               12.25              1.135                  ok            True                  False
+  INTC          100.00               34            0.66              0.50        107.95               114.00         0.745          pass              0.857             74.0                           0.799               -0.65             -0.412                  ok            True                   True
+  QCOM           92.31               13            2.47              3.53        202.13                99.05         0.701          pass              0.542             41.1                           0.346                6.46              0.210                  ok            True                  False
+  SOXL           81.48               27            0.92              0.97        151.26               141.41         0.699          pass              0.487             88.0                           0.778                4.25              0.137                  ok            True                  False
+   TXN           90.48               21            1.25              2.64        299.47                69.24         0.675          pass              0.613             64.3                           0.587                5.63              0.699                  ok            True                  False
+  FTNT          100.00               33            1.09              0.97        126.09                70.72         0.629          pass              0.765             49.6                           0.336               39.15              3.230                  ok            True                  False
+  CSCO           92.00               25            0.87              0.72        118.57                49.96         0.607          pass              0.671             63.6                           0.656               24.97              2.993                  ok            True                  False
+  MNST           81.82               22            1.29              0.80         88.20                49.83         0.606          pass              0.277             29.3                           0.367               15.30              1.503                  ok            True                  False
+ GOOGL           84.00               25            1.20              3.32        395.52                40.53         0.537          pass              0.297             12.3                           0.140                0.97              0.059                  ok            True                  False
+  FAST           93.33               15            1.43              0.44         43.81                22.17         0.536          pass              0.512             23.2                           0.251               -2.17             -0.224                  ok            True                  False
+  GOOG           84.00               25            1.19              3.29        391.70                40.55         0.532          pass              0.299             13.1                           0.150                1.08              0.045                  ok            True                  False
+  AVGO           92.00               25            1.55              4.56        418.76                42.85         0.519          pass              0.617             48.3                           0.461               -3.08             -0.085                  ok            True                  False
+   CSX           87.50               32            0.65              0.21         46.11                31.65         0.514          pass              0.502             34.8                           0.459                1.93              0.244                  ok            True                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260519093501)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260519094001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260519093501)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260519094001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260519093501)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260519094001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260519093501)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260519094001)
 
 </details>
