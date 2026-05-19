@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-19 14:35:04 EDT`
+Latest checkpoint (ET): `2026-05-19 14:40:02 EDT`
 Last processed slot: `manage_1430`
 
 ## Active Configuration
@@ -49,18 +49,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  QCOM           89.47               19            1.84              2.63        202.51                99.05         0.679          pass              0.591             70.3                           0.595                7.15              0.239                                 ok            True                  False
-  CSCO           90.91               11            1.72              1.43        118.27                49.96         0.632          pass              0.510             49.9                           0.463               23.89              2.954                                 ok            True                  False
-   KDP           86.36               22            1.10              0.23         29.33                33.71         0.556          pass              0.319              4.4                           0.184                0.64              0.213                                 ok            True                  False
- GOOGL           80.00               15            1.71              4.76        394.90                40.53         0.550          pass              0.200             37.2                           0.317                0.44              0.035                                 ok            True                  False
-  SNPS           97.14               35            0.57              2.00        497.57                41.65         0.543          pass              0.812             63.6                           0.495               -1.38             -0.157                                 ok            True                  False
-  ASML           84.38               32            0.69              7.12       1469.34                50.95         0.543          pass              0.519             67.3                           0.494                1.34             -0.140                                 ok            True                  False
-  GOOG           82.35               17            1.68              4.61        391.13                40.55         0.539          pass              0.268             34.8                           0.269                0.59              0.023                                 ok            True                  False
-  AVGO           90.91               22            1.94              5.71        418.26                42.85         0.506          pass              0.557             45.0                           0.435               -3.47             -0.103                                 ok            True                  False
-  TTWO          100.00               19            1.70              2.88        240.92                33.10         0.501          pass              0.613             34.2                           0.404                6.69              1.027                                 ok            True                  False
- CMCSA           85.71               21            0.82              0.14         24.87                60.09         0.680          pass              0.308              4.7                           0.212               -6.56             -0.700 downtrend_blocked_slope_and_streak           False                  False
-  TEAM           90.62               32            2.48              1.55         88.77               113.67         0.610          pass              0.609             39.3                           0.552               -5.56             -0.682           downtrend_blocked_streak           False                  False
-  MSTR           90.00               40            0.17              0.20        166.55                74.15         0.591          pass              0.803             92.4                           0.656              -11.00             -1.075            downtrend_blocked_slope           False                  False
+  QCOM           88.24               17            2.09              2.98        202.36                99.05         0.675          pass              0.533             66.3                           0.596                6.88              0.228                                 ok            True                  False
+  CSCO           90.00               10            1.77              1.47        118.25                49.96         0.635          pass              0.476             48.7                           0.423               23.84              2.952                                 ok            True                  False
+   KDP           86.96               23            1.00              0.21         29.34                33.71         0.557          pass              0.368             13.2                           0.232                0.74              0.217                                 ok            True                  False
+  ASML           83.87               31            0.72              7.47       1469.19                50.95         0.547          pass              0.495             65.7                           0.460                1.30             -0.142                                 ok            True                  False
+  GOOG           81.25               16            1.70              4.67        391.11                40.55         0.543          pass              0.230             34.1                           0.261                0.57              0.022                                 ok            True                  False
+  SNPS           97.14               35            0.67              2.32        497.43                41.65         0.536          pass              0.793             57.7                           0.509               -1.47             -0.161                                 ok            True                  False
+  AVGO           90.00               20            2.15              6.32        418.00                42.85         0.505          pass              0.501             39.2                           0.372               -3.67             -0.112                                 ok            True                  False
+ CMCSA           85.71               21            0.86              0.15         24.87                60.09         0.678          pass              0.300              2.3                           0.122               -6.59             -0.702 downtrend_blocked_slope_and_streak           False                  False
+  SHOP           83.72               43            0.15              0.11        102.34                78.89         0.615          pass              0.634             91.0                           0.631               -5.01             -0.929 downtrend_blocked_slope_and_streak           False                  False
+  TEAM           89.66               29            2.89              1.81         88.66               113.67         0.602          pass              0.532             29.3                           0.496               -5.96             -0.701 downtrend_blocked_slope_and_streak           False                  False
+  FTNT          100.00               48            0.01              0.01        126.50                70.72         0.599          pass              0.958             99.5                           0.767               40.66              3.279                                 ok           False                  False
+  MNST           70.00               10            2.29              1.42         87.93                49.83         0.598          pass              0.092             10.6                           0.224               14.13              1.457                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260519143504)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260519144002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260519143504)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260519144002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260519143504)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260519144002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260519143504)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260519144002)
 
 </details>
