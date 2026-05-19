@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-19 10:40:30 EDT`
-Last slot: `manage_1030`
+Latest checkpoint (ET): `2026-05-19 10:45:33 EDT`
+Last slot: `early_entry_1045`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$92,373.93`
-- Portfolio value: `$96,783.93`
+- Portfolio value: `$96,888.93`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1030`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  PANW   open      early PANW260618C00250000          3               16.05                15.425          bid_ask_mid                     15.425                    True          4627.5          -187.5              -3.894081                   0
+  PANW   open      early PANW260618C00250000          3               16.05                  15.2          bid_ask_mid                       15.2                    True          4560.0          -255.0               -5.29595                   0
 ```
 
 ## Closed Trades
