@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 14090.000356674196,
-  "positions": [
-    {
-      "position_id": "PANW_20260519T101001",
-      "ticker": "PANW",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "PANW260618C00250000",
-      "expiry": "2026-06-18",
-      "strike": 250.0,
-      "entry_timestamp": "2026-05-19T10:10:01.046495-04:00",
-      "entry_trade_date": "2026-05-19",
-      "entry_slot": "early_entry_1010",
-      "entry_spot": 245.9250030517578,
-      "entry_option_price": 15.275,
-      "entry_bid": 14.5,
-      "entry_ask": 16.05,
-      "entry_iv_pct": 58.04485314941408,
-      "contracts": 9,
-      "allocated_cash": 13747.5,
-      "success_rate": 91.67,
-      "matched_signals": 36,
-      "current_drop_pct": 0.66,
-      "rolling_sigma_20d_pct": 42.55,
-      "planned_tp_day1": 17.56625,
-      "planned_tp_day2": 17.56625,
-      "planned_stop": 13.7475,
-      "option_open_interest": 2852.0,
-      "option_volume": 34.0,
-      "option_spread_pct": 0.10147299509001641,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 26462.750356674194,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
