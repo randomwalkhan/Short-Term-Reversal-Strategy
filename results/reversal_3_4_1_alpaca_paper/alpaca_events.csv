@@ -24,3 +24,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-18T11:24:39.449679-04:00,2026-05-18,early_entry_1105,entry_filled,"{""contract_symbol"": ""INTC260618C00110000"", ""contracts"": 5, ""filled_price"": 9.4, ""ticker"": ""INTC""}"
 2026-05-18T12:55:45.710585-04:00,2026-05-18,manage_1300,exit_order_submitted,"{""alpaca_order_id"": ""d0b0fc70-7e01-4e32-98de-5148e23c2d0f"", ""contract_symbol"": ""INTC260618C00110000"", ""limit_price"": ""7.85"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""INTC""}"
 2026-05-18T13:00:49.767100-04:00,2026-05-18,exit,exit_filled,"{""contract_symbol"": ""INTC260618C00110000"", ""exit_price"": 8.65, ""pnl"": -375.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""INTC""}"
+2026-05-19T10:02:51.168832-04:00,2026-05-19,early_entry_1000,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
