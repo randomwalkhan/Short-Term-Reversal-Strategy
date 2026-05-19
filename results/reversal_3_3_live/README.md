@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-19 11:50:03 EDT`
+Latest checkpoint (ET): `2026-05-19 11:55:04 EDT`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1200`
 ## Portfolio Snapshot
 
 - Cash: `$14,090.00`
-- Equity: `$27,185.00`
+- Equity: `$27,140.00`
 - Realized PnL: `$17,837.50`
-- Unrealized PnL: `$-652.50`
+- Unrealized PnL: `$-697.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  PANW     option         option PANW260618C00250000       2026-05-19                   0      9     13747.5                 13095.0        15.28          14.55      245.93        242.48          bid_ask_mid                      14.55                bid_ask_mid                    True          -652.5                  -4.75         91.67               36              0.66         58.04           63.16                  42.55                2852.0           34.0                0.1                      ok
+  PANW     option         option PANW260618C00250000       2026-05-19                   0      9     13747.5                 13050.0        15.28           14.5      245.93        241.32          bid_ask_mid                       14.5                bid_ask_mid                    True          -697.5                  -5.07         91.67               36              0.66         58.04            65.2                  42.55                2852.0           34.0                0.1                      ok
 ```
 
 ## Today's Closed Trades (2026-05-19)
@@ -51,24 +51,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  INTC          100.00               29            1.38              1.04        107.72               114.00         0.709          pass              0.820             74.2                           0.846               -1.36             -0.445                                 ok            True                  False
-  SOXL           80.00               25            2.64              2.81        150.55               141.41         0.564          pass              0.384             76.0                           0.905                2.48              0.059                                 ok            True                  False
-  SNPS           96.43               28            1.27              4.45        496.52                41.65         0.543          pass              0.631             19.0                           0.258               -2.08             -0.189                                 ok            True                  False
-  GOOG           80.00               10            2.34              6.44        390.35                40.55         0.543          pass              0.069              4.8                           0.186               -0.09             -0.008                                 ok            True                  False
-  ASML           82.76               29            1.23             12.68       1466.96                50.95         0.526          pass              0.378             41.7                           0.444                0.79             -0.165                                 ok            True                  False
-  NVDA           88.57               35            0.60              0.93        221.92                44.74         0.509          pass              0.656             69.8                           0.637               12.46              1.143                                 ok            True                  False
-  AVGO           89.47               19            2.23              6.56        417.90                42.85         0.505          pass              0.474             36.9                           0.647               -3.75             -0.116                                 ok            True                  False
-  QCOM          100.00                3            4.17              5.95        201.09                99.05         0.653          pass              0.563             32.7                           0.656                4.61              0.130                                 ok           False                  False
- CMCSA           90.00               40            0.06              0.01         24.93                60.09         0.621          pass              0.784             85.0                           0.344               -5.84             -0.665 downtrend_blocked_slope_and_streak           False                  False
-  TEAM           90.00               30            2.81              1.76         88.68               113.67         0.613          pass              0.479              6.0                           0.125               -5.88             -0.698 downtrend_blocked_slope_and_streak           False                  False
-  SHOP           83.33               42            0.40              0.28        102.27                78.89         0.609          pass              0.554             68.0                           0.394               -5.24             -0.940 downtrend_blocked_slope_and_streak           False                  False
-  FTNT          100.00               46            0.21              0.19        126.42                70.72         0.600          pass              0.930             90.1                           0.614               40.38              3.270                                 ok           False                  False
+  SNPS           96.00               25            1.49              5.20        496.20                41.65         0.548          pass              0.571              5.2                           0.169               -2.29             -0.199                                 ok            True                  False
+  GOOG           80.00               10            2.40              6.60        390.28                40.55         0.539          pass              0.061              2.4                           0.160               -0.15             -0.010                                 ok            True                  False
+  ASML           82.14               28            1.35             13.94       1466.42                50.95         0.523          pass              0.337             35.9                           0.428                0.66             -0.171                                 ok            True                  False
+  NVDA           87.50               32            0.83              1.29        221.77                44.74         0.513          pass              0.573             58.3                           0.550               12.20              1.133                                 ok            True                  False
+  AVGO           88.89               18            2.31              6.81        417.79                42.85         0.506          pass              0.444             34.4                           0.648               -3.83             -0.120                                 ok            True                  False
+  TTWO          100.00               20            1.67              2.82        240.95                33.10         0.502          pass              0.582             21.8                           0.227                6.73              1.029                                 ok            True                  False
+  INTC          100.00               26            1.69              1.28        107.62               114.00         0.708          pass              0.782             68.3                           0.772               -1.67             -0.460 downtrend_blocked_slope_and_streak           False                  False
+  QCOM          100.00                4            4.16              5.93        201.10                99.05         0.648          pass              0.564             32.9                           0.650                4.62              0.131                                 ok           False                  False
+ CMCSA           89.47               38            0.12              0.02         24.92                60.09         0.629          pass              0.712             70.0                           0.310               -5.90             -0.668 downtrend_blocked_slope_and_streak           False                  False
+  CSCO          100.00                3            2.89              2.41        117.85                49.96         0.627          pass              0.510             15.9                           0.368               22.42              2.899                                 ok           False                  False
+  FTNT          100.00               43            0.43              0.39        126.33                70.72         0.605          pass              0.900             79.9                           0.546               40.07              3.260                                 ok           False                  False
+  SHOP           81.08               37            1.18              0.85        102.03                78.89         0.587          pass              0.281              4.5                           0.150               -5.99             -0.976 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot    event_type                          detail
+2026-05-19T11:55:04.964087-04:00 early_entry_1155 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-19T11:50:03.963905-04:00 early_entry_1150 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-19T11:45:02.013628-04:00 early_entry_1145 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-19T11:40:06.318992-04:00 early_entry_1140 entry_skipped {"reason": "daily_entry_limit"}
@@ -78,7 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-19T11:20:06.455937-04:00 early_entry_1120 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-19T11:15:01.967392-04:00 early_entry_1115 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-19T11:10:06.161691-04:00 early_entry_1110 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-19T11:05:01.947940-04:00 early_entry_1105 entry_skipped {"reason": "daily_entry_limit"}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260519115003)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260519115504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260519115003)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260519115504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260519115003)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260519115504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260519115003)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260519115504)
 
 </details>
