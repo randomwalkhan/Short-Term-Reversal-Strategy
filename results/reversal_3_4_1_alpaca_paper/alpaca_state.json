@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 3409.9999999999995,
+      "alpaca_entry_client_order_id": "rev-20260520111903-ttwo-early",
+      "alpaca_entry_order_id": "3e3c8dfc-2286-4e36-9ffb-4cf8435d27c4",
+      "asset_type": "option",
+      "contract_symbol": "TTWO260717C00240000",
+      "contracts": 2,
+      "current_drop_pct": 0.75,
+      "early_entry_score": 0.871,
+      "entry_mode": "early",
+      "entry_option_price": 17.049999999999997,
+      "entry_slot": "early_entry_1115",
+      "entry_spot": 236.35499572753906,
+      "entry_timestamp": "2026-05-20T11:19:03.434065-04:00",
+      "entry_trade_date": "2026-05-20",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-07-17",
+      "matched_signals": 35,
+      "planned_stop": 15.344999999999997,
+      "planned_tp_day1": 19.607499999999995,
+      "planned_tp_day2": 19.607499999999995,
+      "position_id": "TTWO_20260520T111903",
+      "status": "entry_submitted",
+      "strike": 240.0,
+      "success_rate": 100.0,
+      "ticker": "TTWO",
+      "timing_score": 0.428
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.4.4-alpaca-paper.0"
 }
