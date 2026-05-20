@@ -1695,3 +1695,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-20T12:00:03.589849-04:00,2026-05-20,early_entry_1200,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-20T14:50:06.419995-04:00,2026-05-20,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-05-20"", ""training_samples"": 5043, ""window"": 5}"
 2026-05-20T14:50:06.419995-04:00,2026-05-20,entry_1500,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-20T14:55:06.339368-04:00,2026-05-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
