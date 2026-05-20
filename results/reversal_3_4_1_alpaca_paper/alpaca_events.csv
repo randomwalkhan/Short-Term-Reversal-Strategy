@@ -31,3 +31,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-19T16:04:44.982187-04:00,2026-05-19,exit,exit_not_filled,"{""contract_symbol"": ""PANW260618C00250000"", ""status"": ""expired"", ""ticker"": ""PANW""}"
 2026-05-19T16:04:44.982187-04:00,2026-05-19,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""5abeb2ab-fddd-4ee5-b52a-fdeb6b88520f"", ""contract_symbol"": ""PANW260618C00250000"", ""limit_price"": ""12.85"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""PANW""}"
 2026-05-20T09:56:30.679364-04:00,2026-05-20,exit,exit_filled,"{""contract_symbol"": ""PANW260618C00250000"", ""exit_price"": 13.65, ""pnl"": -720.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""PANW""}"
+2026-05-20T10:22:11.379624-04:00,2026-05-20,early_entry_1020,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""FTNT""}"
