@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-20 10:05:07 EDT`
-Last processed slot: `manage_1000`
+Latest checkpoint (ET): `2026-05-20 10:21:54 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -44,25 +44,28 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  FTNT          100.00               37            0.77              0.69        127.34                70.74         0.623          pass              0.818             58.4                           0.496               40.81              2.620                                 ok            True                  False
-  PAYX           90.91               11            1.14              0.76         94.16                29.36         0.567          pass              0.547             64.1                           0.683                3.53              0.204                                 ok            True                  False
-  AMGN           86.67               15            0.95              2.19        329.81                26.77         0.545          pass              0.468             67.6                           0.469               -0.31             -0.013                                 ok            True                  False
- GOOGL           86.21               29            0.87              2.35        386.65                41.27         0.523          pass              0.344              0.0                           0.170               -3.45             -0.212                                 ok            True                  False
-   HON           84.62               26            0.70              1.07        216.69                24.50         0.504          pass              0.348             22.6                           0.262               -0.02              0.061                                 ok            True                  False
-  ADSK           90.48               21            1.57              2.68        243.01                38.52         0.502          pass              0.598             65.0                           0.822               -1.13             -0.164                                 ok            True                  False
-   TXN           93.94               33            0.08              0.18        302.23                69.06         0.645          pass              0.883             97.9                           0.535                4.36              0.593                                 ok           False                  False
-  TEAM           88.57               35            1.69              1.03         86.18               114.61         0.619          pass              0.658             66.9                           0.806               -4.10             -0.532 downtrend_blocked_slope_and_streak           False                  False
-  SBUX           96.55               29            0.29              0.22        106.29                31.99         0.555          pass              0.787             68.2                           0.524                0.24              0.192                                 ok           False                  False
-   WMT          100.00                3            2.28              2.14        133.28                20.68         0.541          pass              0.551             32.5                           0.203                1.01              0.291                                 ok           False                  False
-  GOOG           85.71               28            0.89              2.40        383.87                41.08         0.516          pass              0.324              0.0                           0.163               -3.46             -0.223           downtrend_blocked_streak           False                  False
-  SNPS           93.75               16            2.24              7.75        490.55                41.71         0.511          pass              0.592             44.8                           0.714               -4.29             -0.433 downtrend_blocked_slope_and_streak           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  PAYX           94.12               17            0.75              0.49         94.27                29.36         0.557            pass              0.709             76.6                           0.759                3.94              0.222                                 ok            True                  False
+   KDP           88.89               27            0.83              0.17         28.78                34.80         0.527            pass              0.566             54.3                           0.304                0.18              0.118                                 ok            True                  False
+  ADSK           88.24               17            1.66              2.84        242.94                38.52         0.521            pass              0.507             63.0                           0.778               -1.23             -0.168                                 ok            True                  False
+  FTNT          100.00               42            0.47              0.42        127.46                70.74         0.609            pass              0.885             74.7                           0.741               41.23              2.634                                 ok           False                  False
+  TEAM           90.62               32            2.41              1.46         85.99               114.61         0.594            pass              0.648             52.7                           0.690               -4.81             -0.565 downtrend_blocked_slope_and_streak           False                  False
+  CTSH           81.25               16            1.87              0.66         50.60                50.98         0.520            pass              0.280             51.4                           0.640               -2.04             -0.251           downtrend_blocked_streak           False                  False
+   WMT           85.71                7            1.94              1.83        133.42                20.68         0.516            pass              0.331             42.4                           0.268                1.35              0.307                                 ok           False                  False
+   TRI           75.00               12            2.44              1.49         86.71                57.28         0.497 below_threshold              0.208             48.4                           0.644               -7.12             -0.893 downtrend_blocked_slope_and_streak           False                  False
+  TMUS           85.19               27            1.23              1.67        192.71                36.70         0.493 below_threshold              0.392             30.4                           0.232               -1.10             -0.186                                 ok           False                  False
+  SNPS           96.67               30            1.17              4.03        492.14                41.71         0.490 below_threshold              0.796             71.3                           0.778               -3.23             -0.384 downtrend_blocked_slope_and_streak           False                  False
+  META           80.00               40            0.05              0.23        602.51                37.13         0.487 below_threshold              0.528             93.1                           0.644               -1.73             -0.088           downtrend_blocked_streak           False                  False
+  MSFT           84.62               26            0.95              2.77        416.23                29.51         0.486 below_threshold              0.384             35.3                           0.382               -0.12              0.064                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                         detail
+2026-05-20T10:21:54.079183-04:00 early_entry_1020           entry_skipped                                                                                                                                                                                                                         {"reason": "no_trade_after_option_and_timing_filters"}
+2026-05-20T10:21:54.079183-04:00 early_entry_1020 entry_candidate_skipped         {"early_entry_score": 0.683, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 1.0, "option_spread_pct": 46.51, "option_volume": 0.0, "reason": "no_trade_low_option_liquidity", "ticker": "CTAS", "timing_score": 0.458}
+2026-05-20T10:21:54.079183-04:00 early_entry_1020 entry_candidate_skipped                   {"early_entry_score": 0.801, "option_liquidity_status": "low_open_interest,wide_spread", "option_open_interest": 29.0, "option_spread_pct": 26.59, "option_volume": 20.0, "reason": "no_trade_low_option_liquidity", "ticker": "ADP", "timing_score": 0.484}
 2026-05-20T10:05:07.673831-04:00 early_entry_1005           entry_skipped                                                                                                                                                                                                                                                     {"reason": "no_candidate"}
 2026-05-20T10:03:13.062601-04:00 early_entry_1000           entry_skipped                                                                                                                                                                                                                         {"reason": "no_trade_after_option_and_timing_filters"}
 2026-05-20T10:03:13.062601-04:00 early_entry_1000 entry_candidate_skipped {"early_entry_score": 0.801, "option_liquidity_status": "low_open_interest,no_two_sided_quote,wide_spread", "option_open_interest": 29.0, "option_spread_pct": null, "option_volume": 20.0, "reason": "no_trade_low_option_liquidity", "ticker": "ADP", "timing_score": 0.484}
@@ -70,9 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-20T09:18:59.431991-04:00     data_refresh            data_refresh                                                                                                                                                                                                                                                                  {'saved': 92}
 2026-05-19T15:10:04.056831-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                {"reason": "already_processed"}
 2026-05-19T15:05:05.027114-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-19T15:00:02.089036-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-19T14:55:06.057081-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                {"reason": "already_processed"}
-2026-05-19T14:50:01.084215-04:00       entry_1500          timing_overlay                                                                                                                                                                   {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-19", "training_samples": 5044, "window": 5}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260520100507)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260520102154)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260520100507)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260520102154)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260520100507)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260520102154)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260520100507)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260520102154)
 
 </details>
