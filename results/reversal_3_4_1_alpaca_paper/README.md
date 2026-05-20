@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-20 11:00:07 EDT`
+Latest checkpoint (ET): `2026-05-20 11:06:27 EDT`
 Last slot: `manage_1100`
 
 ## Alpaca Paper Account
@@ -30,6 +30,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-05-20T11:06:27.663743-04:00 early_entry_1105         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-20T11:00:07.702182-04:00 early_entry_1100         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-20T10:53:49.849791-04:00 early_entry_1050         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-20T10:47:32.363203-04:00 early_entry_1045         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
@@ -49,5 +50,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-18T11:24:39.449679-04:00 early_entry_1105          entry_filled                                                                                      {"contract_symbol": "INTC260618C00110000", "contracts": 5, "filled_price": 9.4, "ticker": "INTC"}
 2026-05-18T11:08:20.679676-04:00 early_entry_1105 entry_order_submitted  {"alpaca_order_id": "66a4794c-2ceb-4b7d-b398-79b62129fb14", "contract_symbol": "INTC260618C00110000", "contracts": 5, "entry_mode": "early", "limit_price": "9.40", "ticker": "INTC"}
 2026-05-18T10:43:30.017496-04:00 early_entry_1040         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-15T16:01:52.248476-04:00 early_entry_1000      entry_not_filled                                                                                                      {"contract_symbol": "CRWD260618C00560000", "status": "expired", "ticker": "CRWD"}
 ```
