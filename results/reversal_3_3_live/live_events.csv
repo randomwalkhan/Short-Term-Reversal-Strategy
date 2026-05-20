@@ -1684,3 +1684,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-20T11:10:02.083171-04:00,2026-05-20,early_entry_1110,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-20T11:15:01.033814-04:00,2026-05-20,early_entry_1115,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-20T11:20:04.061677-04:00,2026-05-20,early_entry_1120,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-20T11:25:06.020090-04:00,2026-05-20,early_entry_1125,entry_skipped,"{""reason"": ""daily_entry_limit""}"
