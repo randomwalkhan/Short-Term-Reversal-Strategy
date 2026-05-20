@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.4.4 Live Paper Test
 
-- Latest checkpoint (ET): `2026-05-20 10:50:01 EDT`
-- Equity: `$26,847.75` | Realized: `$16,462.75` | Unrealized: `$385.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-05-20 10:55:04 EDT`
+- Equity: `$27,197.75` | Realized: `$16,462.75` | Unrealized: `$735.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1100`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  FTNT     option         option FTNT260717C00125000     14     12355.0                 12740.0            9.1           385.0                   3.12                   0
+  FTNT     option         option FTNT260717C00125000     14     12355.0                 13090.0           9.35           735.0                   5.95                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260520105001)
+![Reversal 3.4.4 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260520105504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260520105001)
+![Reversal 3.4.4 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260520105504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260520105001)
+![Reversal 3.4.4 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260520105504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260520105001)
+![Reversal 3.4.4 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260520105504)
 
 </details>
 
