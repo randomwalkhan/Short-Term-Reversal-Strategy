@@ -1690,3 +1690,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-20T11:40:04.008173-04:00,2026-05-20,manage_1130,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""FTNT260717C00125000"", ""fill_price"": 10.15, ""pnl"": 1855.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 15.01, ""ticker"": ""FTNT""}"
 2026-05-20T11:40:04.008173-04:00,2026-05-20,early_entry_1140,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-20T11:45:06.973921-04:00,2026-05-20,early_entry_1145,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-20T11:50:01.042142-04:00,2026-05-20,early_entry_1150,entry_skipped,"{""reason"": ""daily_entry_limit""}"
