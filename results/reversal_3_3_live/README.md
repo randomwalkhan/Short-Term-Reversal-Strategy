@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-20 09:56:26 EDT`
+Latest checkpoint (ET): `2026-05-20 10:03:13 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -45,34 +45,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  FTNT          100.00               24            1.57              1.40        127.04                70.74         0.657            pass              0.605             15.4                           0.225               39.67              2.583                                 ok            True                  False
-  PAYX           91.67               12            1.13              0.75         94.16                29.36         0.563            pass              0.575             64.6                           0.699                3.54              0.205                                 ok            True                  False
-   WMT           90.00               10            1.44              1.35        133.62                20.68         0.535            pass              0.492             57.3                           0.322                1.87              0.330                                 ok            True                  False
- GOOGL           88.57               35            0.56              1.52        387.01                41.27         0.508            pass              0.446              0.0                           0.230               -3.15             -0.198                                 ok            True                  False
-  SHOP           83.72               43            0.10              0.07        100.98                78.65         0.604            pass              0.643             94.4                           0.761               -4.30             -0.835 downtrend_blocked_slope_and_streak           False                  False
-  TEAM           89.29               28            3.04              1.84         85.83               114.61         0.578            pass              0.547             40.4                           0.587               -5.42             -0.595 downtrend_blocked_slope_and_streak           False                  False
-  CTSH           81.25               16            1.93              0.69         50.59                50.98         0.516            pass              0.275             49.9                           0.553               -2.10             -0.254           downtrend_blocked_streak           False                  False
-  ADSK           84.62               13            2.25              3.85        242.51                38.52         0.504            pass              0.343             49.8                           0.589               -1.82             -0.196           downtrend_blocked_streak           False                  False
-  SNPS           95.45               22            1.98              6.85        490.94                41.71         0.489 below_threshold              0.683             51.2                           0.657               -4.03             -0.421 downtrend_blocked_slope_and_streak           False                  False
-  MSFT           83.33               24            1.11              3.24        416.03                29.51         0.488 below_threshold              0.304             24.4                           0.237               -0.28              0.057                                 ok           False                  False
-   ADP           93.10               29            0.80              1.23        219.91                38.42         0.486 below_threshold              0.785             86.8                           0.763                5.54              0.476                                 ok           False                  False
-  GOOG           89.19               37            0.57              1.53        384.24                41.08         0.483 below_threshold              0.473              0.0                           0.223               -3.15             -0.208           downtrend_blocked_streak           False                  False
+  FTNT          100.00               34            0.84              0.75        127.32                70.74         0.638            pass              0.788             54.9                           0.477               40.71              2.617                                 ok            True                  False
+  PAYX           92.86               14            0.88              0.58         94.23                29.36         0.567            pass              0.643             72.4                           0.751                3.80              0.216                                 ok            True                  False
+  ADSK           88.24               17            1.69              2.89        242.92                38.52         0.519            pass              0.505             62.4                           0.800               -1.25             -0.169                                 ok            True                  False
+   KDP           90.91               33            0.54              0.11         28.80                34.80         0.509            pass              0.707             70.5                           0.428                0.47              0.131                                 ok            True                  False
+ GOOGL           87.88               33            0.72              1.97        386.82                41.27         0.508            pass              0.414              0.0                           0.183               -3.31             -0.206                                 ok            True                  False
+  TEAM           88.89               36            1.42              0.86         86.25               114.61         0.630            pass              0.690             72.2                           0.830               -3.84             -0.519 downtrend_blocked_slope_and_streak           False                  False
+   WMT          100.00                3            2.27              2.13        133.29                20.68         0.542            pass              0.553             32.9                           0.212                1.02              0.292                                 ok           False                  False
+  SBUX           97.14               35            0.03              0.02        106.37                31.99         0.533            pass              0.911             96.9                           0.660                0.50              0.204                                 ok           False                  False
+  CTSH           85.00               20            1.49              0.53         50.65                50.98         0.523            pass              0.436             61.1                           0.755               -1.67             -0.234           downtrend_blocked_streak           False                  False
+  AMGN           84.00               25            0.58              1.34        330.17                26.77         0.497 below_threshold              0.497             80.1                           0.543                0.06              0.004                                 ok           False                  False
+  GOOG           87.88               33            0.74              2.00        384.04                41.08         0.495 below_threshold              0.413              0.0                           0.177               -3.32             -0.216           downtrend_blocked_streak           False                  False
+   TRI           69.23               13            2.27              1.39         86.76                57.28         0.493 below_threshold              0.225             52.0                           0.560               -6.95             -0.885 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot     event_type                                                                                                                                                                               detail
-2026-05-20T09:18:59.431991-04:00     data_refresh   data_refresh                                                                                                                                                                        {'saved': 92}
-2026-05-19T15:10:04.056831-04:00       entry_1500   slot_skipped                                                                                                                                                      {"reason": "already_processed"}
-2026-05-19T15:05:05.027114-04:00       entry_1500   slot_skipped                                                                                                                                                      {"reason": "already_processed"}
-2026-05-19T15:00:02.089036-04:00       entry_1500   slot_skipped                                                                                                                                                      {"reason": "already_processed"}
-2026-05-19T14:55:06.057081-04:00       entry_1500   slot_skipped                                                                                                                                                      {"reason": "already_processed"}
-2026-05-19T14:50:01.084215-04:00       entry_1500  entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
-2026-05-19T14:50:01.084215-04:00       entry_1500 timing_overlay                                                                         {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-19", "training_samples": 5044, "window": 5}
-2026-05-19T12:20:01.028030-04:00      manage_1230           exit {"asset_type": "option", "contract_symbol": "PANW260618C00250000", "fill_price": 13.7475, "pnl": -1374.75, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "PANW"}
-2026-05-19T12:00:03.873446-04:00 early_entry_1200  entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
-2026-05-19T11:55:04.964087-04:00 early_entry_1155  entry_skipped                                                                                                                                                      {"reason": "daily_entry_limit"}
+                    timestamp_et             slot              event_type                                                                                                                                                                                                                                                                         detail
+2026-05-20T10:03:13.062601-04:00 early_entry_1000           entry_skipped                                                                                                                                                                                                                         {"reason": "no_trade_after_option_and_timing_filters"}
+2026-05-20T10:03:13.062601-04:00 early_entry_1000 entry_candidate_skipped {"early_entry_score": 0.801, "option_liquidity_status": "low_open_interest,no_two_sided_quote,wide_spread", "option_open_interest": 29.0, "option_spread_pct": null, "option_volume": 20.0, "reason": "no_trade_low_option_liquidity", "ticker": "ADP", "timing_score": 0.484}
+2026-05-20T10:03:13.062601-04:00 early_entry_1000 entry_candidate_skipped          {"early_entry_score": 0.821, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 7.0, "option_spread_pct": 15.38, "option_volume": 5.0, "reason": "no_trade_low_option_liquidity", "ticker": "TTWO", "timing_score": 0.44}
+2026-05-20T09:18:59.431991-04:00     data_refresh            data_refresh                                                                                                                                                                                                                                                                  {'saved': 92}
+2026-05-19T15:10:04.056831-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-05-19T15:05:05.027114-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-05-19T15:00:02.089036-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-05-19T14:55:06.057081-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                {"reason": "already_processed"}
+2026-05-19T14:50:01.084215-04:00       entry_1500           entry_skipped                                                                                                                                                                                                                                                {"reason": "daily_entry_limit"}
+2026-05-19T14:50:01.084215-04:00       entry_1500          timing_overlay                                                                                                                                                                   {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-19", "training_samples": 5044, "window": 5}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260520095626)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260520100313)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260520095626)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260520100313)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260520095626)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260520100313)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260520095626)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260520100313)
 
 </details>

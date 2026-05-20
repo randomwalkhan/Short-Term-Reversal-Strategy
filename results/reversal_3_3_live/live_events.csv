@@ -1665,3 +1665,6 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-19T15:05:05.027114-04:00,2026-05-19,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-19T15:10:04.056831-04:00,2026-05-19,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-20T09:18:59.431991-04:00,2026-05-20,data_refresh,data_refresh,{'saved': 92}
+2026-05-20T10:03:13.062601-04:00,2026-05-20,early_entry_1000,entry_candidate_skipped,"{""early_entry_score"": 0.821, ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""option_open_interest"": 7.0, ""option_spread_pct"": 15.38, ""option_volume"": 5.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""TTWO"", ""timing_score"": 0.44}"
+2026-05-20T10:03:13.062601-04:00,2026-05-20,early_entry_1000,entry_candidate_skipped,"{""early_entry_score"": 0.801, ""option_liquidity_status"": ""low_open_interest,no_two_sided_quote,wide_spread"", ""option_open_interest"": 29.0, ""option_spread_pct"": null, ""option_volume"": 20.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ADP"", ""timing_score"": 0.484}"
+2026-05-20T10:03:13.062601-04:00,2026-05-20,early_entry_1000,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
