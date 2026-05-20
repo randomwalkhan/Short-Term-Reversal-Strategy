@@ -1,22 +1,19 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-20 09:19:16 EDT`
-Last slot: `manage_0930`
+Latest checkpoint (ET): `2026-05-20 09:56:30 EDT`
+Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$92,373.84`
-- Portfolio value: `$95,808.84`
+- Cash: `$96,468.78`
+- Portfolio value: `$96,468.78`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  PANW exit_submitted      early PANW260618C00250000          3               16.05                 12.05     last_price_stale                        NaN                   False          3615.0         -1200.0             -24.922118                   1
-```
+_None_
 
 ## Closed Trades
 
@@ -26,12 +23,14 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   INTC INTC260618C00115000          2026-05-14         2026-05-15               13.30               8.75          3 -1365.0  -34.210526 stop_loss_hit_at_scan
   SNPS SNPS260618C00490000          2026-05-13         2026-05-15               46.20              39.90          1  -630.0  -13.636364 stop_loss_hit_at_scan
   INTC INTC260618C00110000          2026-05-18         2026-05-18                9.40               8.65          5  -375.0   -7.978723 stop_loss_hit_at_scan
+  PANW PANW260618C00250000          2026-05-19         2026-05-20               16.05              13.65          3  -720.0  -14.953271 stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-05-20T09:56:30.679364-04:00             exit           exit_filled                                                      {"contract_symbol": "PANW260618C00250000", "exit_price": 13.65, "pnl": -720.0, "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
 2026-05-19T16:04:44.982187-04:00      manage_1600  exit_order_submitted       {"alpaca_order_id": "5abeb2ab-fddd-4ee5-b52a-fdeb6b88520f", "contract_symbol": "PANW260618C00250000", "limit_price": "12.85", "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
 2026-05-19T16:04:44.982187-04:00             exit       exit_not_filled                                                                                                        {"contract_symbol": "PANW260618C00250000", "status": "expired", "ticker": "PANW"}
 2026-05-19T12:01:32.059087-04:00      manage_1200  exit_order_submitted       {"alpaca_order_id": "583a8972-adb7-4f86-9f64-ef9b65bcd08a", "contract_symbol": "PANW260618C00250000", "limit_price": "14.00", "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
@@ -51,5 +50,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-15T10:00:59.774968-04:00      manage_1000  exit_order_submitted        {"alpaca_order_id": "5c375fa6-c3f6-4b83-a5eb-05811b36bc8e", "contract_symbol": "INTC260618C00115000", "limit_price": "8.65", "reason": "stop_loss_hit_at_scan", "ticker": "INTC"}
 2026-05-14T14:56:46.485369-04:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "INTC260618C00115000", "contracts": 3, "filled_price": 13.3, "ticker": "INTC"}
 2026-05-14T14:50:02.003933-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "1243471d-0d2b-4531-b787-bbc8875df658", "contract_symbol": "INTC260618C00115000", "contracts": 3, "entry_mode": "regular", "limit_price": "13.60", "ticker": "INTC"}
-2026-05-14T10:23:06.380585-04:00 early_entry_1020         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 ```
