@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-20 12:56:28 EDT`
+Latest checkpoint (ET): `2026-05-20 13:01:32 EDT`
 Last slot: `manage_1300`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1300`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  TTWO   open      early TTWO260717C00240000          2                17.0                  16.6          bid_ask_mid                       16.6                    True          3320.0           -80.0              -2.352941                   0
+  TTWO   open      early TTWO260717C00240000          2                17.0                  16.5          bid_ask_mid                       16.5                    True          3300.0          -100.0              -2.941176                   0
 ```
 
 ## Closed Trades
