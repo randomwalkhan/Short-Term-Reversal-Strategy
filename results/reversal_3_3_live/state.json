@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 14107.750356674196,
-  "positions": [
-    {
-      "position_id": "FTNT_20260520T102506",
-      "ticker": "FTNT",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "FTNT260717C00125000",
-      "expiry": "2026-07-17",
-      "strike": 125.0,
-      "entry_timestamp": "2026-05-20T10:25:06.944713-04:00",
-      "entry_trade_date": "2026-05-20",
-      "entry_slot": "early_entry_1025",
-      "entry_spot": 126.75499725341797,
-      "entry_option_price": 8.825,
-      "entry_bid": 8.3,
-      "entry_ask": 9.35,
-      "entry_iv_pct": 41.39462902832031,
-      "contracts": 14,
-      "allocated_cash": 12354.999999999998,
-      "success_rate": 100.0,
-      "matched_signals": 38,
-      "current_drop_pct": 0.69,
-      "rolling_sigma_20d_pct": 70.74,
-      "planned_tp_day1": 10.148749999999998,
-      "planned_tp_day2": 10.148749999999998,
-      "planned_stop": 7.9425,
-      "option_open_interest": 1300.0,
-      "option_volume": 40.0,
-      "option_spread_pct": 0.11898016997167128,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 28317.750356674194,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
