@@ -1,21 +1,21 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-20 12:10:54 EDT`
-Last slot: `manage_1200`
+Latest checkpoint (ET): `2026-05-20 12:15:57 EDT`
+Last slot: `manual`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$96,468.78`
-- Portfolio value: `$96,468.78`
+- Cash: `$93,068.74`
+- Portfolio value: `$96,308.74`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
-  TTWO entry_submitted      early TTWO260717C00240000          2               17.05                   NaN             NaN                    NaN
+ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  TTWO   open      early TTWO260717C00240000          2                17.0                 16.55          bid_ask_mid                      16.55                    True          3310.0           -90.0              -2.647059                   0
 ```
 
 ## Closed Trades
@@ -33,6 +33,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-05-20T12:15:57.679645-04:00 early_entry_1115          entry_filled                                                                                     {"contract_symbol": "TTWO260717C00240000", "contracts": 2, "filled_price": 17.0, "ticker": "TTWO"}
 2026-05-20T11:19:03.434065-04:00 early_entry_1115 entry_order_submitted {"alpaca_order_id": "3e3c8dfc-2286-4e36-9ffb-4cf8435d27c4", "contract_symbol": "TTWO260717C00240000", "contracts": 2, "entry_mode": "early", "limit_price": "17.20", "ticker": "TTWO"}
 2026-05-20T11:12:45.922551-04:00 early_entry_1110         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-20T11:06:27.663743-04:00 early_entry_1105         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
@@ -52,5 +53,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-19T10:02:51.168832-04:00 early_entry_1000         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-18T13:00:49.767100-04:00             exit           exit_filled                                                     {"contract_symbol": "INTC260618C00110000", "exit_price": 8.65, "pnl": -375.0, "reason": "stop_loss_hit_at_scan", "ticker": "INTC"}
 2026-05-18T12:55:45.710585-04:00      manage_1300  exit_order_submitted      {"alpaca_order_id": "d0b0fc70-7e01-4e32-98de-5148e23c2d0f", "contract_symbol": "INTC260618C00110000", "limit_price": "7.85", "reason": "stop_loss_hit_at_scan", "ticker": "INTC"}
-2026-05-18T11:24:39.449679-04:00 early_entry_1105          entry_filled                                                                                      {"contract_symbol": "INTC260618C00110000", "contracts": 5, "filled_price": 9.4, "ticker": "INTC"}
 ```
