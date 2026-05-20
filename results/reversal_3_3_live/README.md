@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-20 14:05:01 EDT`
+Latest checkpoint (ET): `2026-05-20 14:10:05 EDT`
 Last processed slot: `manage_1400`
 
 ## Active Configuration
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   KDP           89.66               29            0.71              0.14         28.79                34.80         0.523            pass              0.619             61.0                           0.392                0.30              0.123                                 ok            True                  False
-  TEAM           90.91               44            0.47              0.29         86.50               114.61         0.642            pass              0.827             90.7                           0.884               -2.92             -0.476 downtrend_blocked_slope_and_streak           False                  False
-   TXN           93.75               32            0.44              0.94        301.91                69.06         0.628            pass              0.842             88.7                           0.619                3.98              0.577                                 ok           False                  False
-  PAYX           95.83               24            0.03              0.02         94.47                29.36         0.560            pass              0.846             99.0                           0.721                4.69              0.255                                 ok           False                  False
-    EA           86.67               15            0.32              0.45        201.51                 2.97         0.554            pass              0.372             35.0                           0.308                0.13              0.036                                 ok           False                  False
-   WMT          100.00                5            2.10              1.97        133.35                20.68         0.539            pass              0.567             37.7                           0.247                1.19              0.300                                 ok           False                  False
-   AEP           88.89               27            0.13              0.12        128.87                26.29         0.505            pass              0.683             93.9                           0.445               -2.16             -0.307                                 ok           False                  False
-  TMUS           77.78               18            1.73              2.34        192.42                36.70         0.504            pass              0.188             28.2                           0.362               -1.60             -0.209                                 ok           False                  False
-  SNPS           97.14               35            0.50              1.74        493.13                41.71         0.501            pass              0.880             87.6                           0.772               -2.58             -0.353 downtrend_blocked_slope_and_streak           False                  False
-  CTSH           92.31               39            0.20              0.07         50.85                50.98         0.491 below_threshold              0.855             94.9                           0.822               -0.37             -0.175                                 ok           False                  False
- GOOGL           90.24               41            0.27              0.74        387.34                41.27         0.483 below_threshold              0.755             77.8                           0.726               -2.87             -0.185                                 ok           False                  False
-   ADP           93.94               33            0.48              0.74        220.12                38.42         0.481 below_threshold              0.850             92.1                           0.781                5.88              0.491                                 ok           False                  False
+   KDP           89.66               29            0.78              0.16         28.78                34.80         0.518            pass              0.607             57.1                           0.345                0.23              0.120                                 ok            True                  False
+  TEAM           90.48               42            0.81              0.49         86.41               114.61         0.633            pass              0.795             84.2                           0.795               -3.24             -0.491 downtrend_blocked_slope_and_streak           False                  False
+   TXN           93.75               32            0.50              1.05        301.86                69.06         0.624            pass              0.838             87.4                           0.633                3.93              0.574                                 ok           False                  False
+  PAYX           95.45               22            0.20              0.13         94.42                29.36         0.561            pass              0.817             93.7                           0.658                4.51              0.247                                 ok           False                  False
+    EA           86.67               15            0.33              0.47        201.50                 2.97         0.553            pass              0.364             32.5                           0.321                0.12              0.035                                 ok           False                  False
+   WMT           87.50                8            1.87              1.75        133.45                20.68         0.517            pass              0.386             44.7                           0.285                1.43              0.311                                 ok           False                  False
+  SNPS           97.14               35            0.54              1.88        493.07                41.71         0.499 below_threshold              0.876             86.6                           0.739               -2.62             -0.355 downtrend_blocked_slope_and_streak           False                  False
+  TMUS           80.00               20            1.66              2.25        192.46                36.70         0.498 below_threshold              0.210             31.1                           0.363               -1.53             -0.206                                 ok           False                  False
+  CTSH           91.67               36            0.39              0.14         50.82                50.98         0.497 below_threshold              0.803             89.8                           0.733               -0.57             -0.184                                 ok           False                  False
+  ADSK           88.46               26            1.15              1.97        243.32                38.52         0.493 below_threshold              0.605             74.3                           0.641               -0.71             -0.145                                 ok           False                  False
+  GOOG           89.19               37            0.45              1.22        384.38                41.08         0.486 below_threshold              0.667             64.4                           0.571               -3.03             -0.202           downtrend_blocked_streak           False                  False
+ GOOGL           90.48               42            0.20              0.54        387.43                41.27         0.482 below_threshold              0.779             83.7                           0.772               -2.80             -0.182                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260520140501)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260520141005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260520140501)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260520141005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260520140501)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260520141005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260520140501)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260520141005)
 
 </details>
