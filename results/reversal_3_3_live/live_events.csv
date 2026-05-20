@@ -1674,3 +1674,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-20T10:21:54.079183-04:00,2026-05-20,early_entry_1020,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
 2026-05-20T10:25:06.944713-04:00,2026-05-20,early_entry_1025,entry,"{""allocated_cash"": 12355.0, ""asset_type"": ""option"", ""contract_symbol"": ""FTNT260717C00125000"", ""contracts"": 14, ""early_entry_score"": 0.837, ""entry_mode"": ""early"", ""entry_option_price"": 8.825, ""execution_mode"": ""option"", ""matched_signals"": 38, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 1300.0, ""option_spread_pct"": 11.9, ""option_volume"": 40.0, ""success_rate"": 100.0, ""ticker"": ""FTNT"", ""timing_score"": 0.622}"
 2026-05-20T10:30:01.058983-04:00,2026-05-20,early_entry_1030,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-20T10:35:01.049335-04:00,2026-05-20,early_entry_1035,entry_skipped,"{""reason"": ""daily_entry_limit""}"
