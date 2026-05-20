@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-20 11:06:27 EDT`
-Last slot: `manage_1100`
+Latest checkpoint (ET): `2026-05-20 11:12:45 EDT`
+Last slot: `early_entry_1110`
 
 ## Alpaca Paper Account
 
@@ -30,6 +30,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-05-20T11:12:45.922551-04:00 early_entry_1110         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-20T11:06:27.663743-04:00 early_entry_1105         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-20T11:00:07.702182-04:00 early_entry_1100         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-20T10:53:49.849791-04:00 early_entry_1050         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
@@ -49,5 +50,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-18T12:55:45.710585-04:00      manage_1300  exit_order_submitted      {"alpaca_order_id": "d0b0fc70-7e01-4e32-98de-5148e23c2d0f", "contract_symbol": "INTC260618C00110000", "limit_price": "7.85", "reason": "stop_loss_hit_at_scan", "ticker": "INTC"}
 2026-05-18T11:24:39.449679-04:00 early_entry_1105          entry_filled                                                                                      {"contract_symbol": "INTC260618C00110000", "contracts": 5, "filled_price": 9.4, "ticker": "INTC"}
 2026-05-18T11:08:20.679676-04:00 early_entry_1105 entry_order_submitted  {"alpaca_order_id": "66a4794c-2ceb-4b7d-b398-79b62129fb14", "contract_symbol": "INTC260618C00110000", "contracts": 5, "entry_mode": "early", "limit_price": "9.40", "ticker": "INTC"}
-2026-05-18T10:43:30.017496-04:00 early_entry_1040         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 ```
