@@ -1735,3 +1735,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-21T11:00:05.229849-04:00,2026-05-21,early_entry_1100,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
 2026-05-21T11:05:03.180136-04:00,2026-05-21,early_entry_1105,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-05-21T11:10:05.158469-04:00,2026-05-21,early_entry_1110,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-05-21T11:15:01.031462-04:00,2026-05-21,early_entry_1115,entry_candidate_skipped,"{""early_entry_score"": 0.713, ""option_liquidity_status"": ""low_volume"", ""option_open_interest"": 225.0, ""option_spread_pct"": 6.82, ""option_volume"": 1.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ALNY"", ""timing_score"": 0.393}"
+2026-05-21T11:15:01.031462-04:00,2026-05-21,early_entry_1115,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
