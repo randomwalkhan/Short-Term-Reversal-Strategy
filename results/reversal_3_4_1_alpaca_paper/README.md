@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-21 15:45:44 EDT`
-Last slot: `manual`
+Latest checkpoint (ET): `2026-05-21 15:50:48 EDT`
+Last slot: `manage_1600`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `manual`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC   open    regular INTC260626C00117000          3               13.45                12.625          bid_ask_mid                     12.625                    True          3787.5          -247.5              -6.133829                   0
+  INTC   open    regular INTC260626C00117000          3               13.45                 12.65          bid_ask_mid                      12.65                    True          3795.0          -240.0              -5.947955                   0
 ```
 
 ## Closed Trades
