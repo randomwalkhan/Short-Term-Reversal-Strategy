@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-21 12:40:01 EDT`
-Last processed slot: `manage_1230`
+Latest checkpoint (ET): `2026-05-21 12:45:02 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `manage_1230`
 ## Portfolio Snapshot
 
 - Cash: `$16,177.75`
-- Equity: `$28,867.75`
+- Equity: `$28,697.75`
 - Realized PnL: `$18,317.75`
-- Unrealized PnL: `$550.00`
+- Unrealized PnL: `$380.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  AVGO     option         option AVGO260717C00420000       2026-05-21                   0      4     12140.0                 12690.0        30.35          31.72      415.18         413.1          bid_ask_mid                      31.72                bid_ask_mid                    True           550.0                   4.53         91.67               36              0.62         50.17           53.08                  40.33                2101.0          296.0               0.03                      ok
+  AVGO     option         option AVGO260717C00420000       2026-05-21                   0      4     12140.0                 12520.0        30.35           31.3      415.18        413.01          bid_ask_mid                       31.3                bid_ask_mid                    True           380.0                   3.13         91.67               36              0.62         50.17           52.46                  40.33                2101.0          296.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-05-21)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  INTC           96.67               30            1.27              1.06        118.51               113.85         0.727          pass              0.828             73.9                           0.623                7.14             -0.578                  ok            True                   True
-  FTNT          100.00               27            1.31              1.19        129.49                70.74         0.650          pass              0.694             38.4                           0.307               18.83              1.763                  ok            True                  False
-  MNST           83.33               24            1.17              0.71         86.57                49.77         0.565          pass              0.470             77.1                           0.437               13.02              0.647                  ok            True                  False
-  PAYX           94.44               18            0.71              0.47         94.72                29.35         0.559          pass              0.701             69.0                           0.524                1.28              0.249                  ok            True                  False
-  AMAT           81.82               33            0.83              2.49        425.78                55.19         0.547          pass              0.389             44.2                           0.350                3.08             -0.246                  ok            True                  False
-  FAST           93.33               15            1.39              0.42         43.50                21.35         0.533          pass              0.506             21.4                           0.258               -2.90             -0.140                  ok            True                  False
-   ADP           93.94               33            0.57              0.88        220.31                38.26         0.531          pass              0.785             69.1                           0.522                2.49              0.453                  ok            True                  False
-  NVDA           85.00               20            1.79              2.81        222.27                44.60         0.521          pass              0.335             27.6                           0.329                3.76              0.330                  ok            True                  False
-    ZS           82.35               17            2.51              3.07        173.14                63.59         0.517          pass              0.225             21.2                           0.336               11.31              1.804                  ok            True                  False
-  ISRG           90.91               11            2.56              8.04        445.58                35.82         0.515          pass              0.401             17.2                           0.461               -3.52             -0.025                  ok            True                  False
-  AVGO           93.55               31            1.11              3.23        416.37                40.33         0.503          pass              0.654             34.1                           0.224                0.14             -0.187                  ok            True                  False
-  SOXL           84.38               32            0.12              0.14        173.14               145.82         0.803          pass              0.633             96.4                           0.663               13.74             -0.447                  ok           False                  False
+  INTC           96.67               30            1.21              1.01        118.53               113.85         0.730          pass              0.831             75.0                           0.686                7.20             -0.575                  ok            True                   True
+  NXPI           81.82               11            3.45              7.50        306.94                91.65         0.670          pass              0.169             15.5                           0.322                3.18              0.184                  ok            True                  False
+  FTNT          100.00               25            1.40              1.27        129.45                70.74         0.657          pass              0.668             34.1                           0.257               18.72              1.759                  ok            True                  False
+  PAYX           93.75               16            0.80              0.53         94.69                29.35         0.566          pass              0.658             64.8                           0.426                1.18              0.245                  ok            True                  False
+  MNST           80.77               26            1.06              0.64         86.60                49.77         0.555          pass              0.421             79.4                           0.471               13.15              0.652                  ok            True                  False
+  AMAT           81.82               33            0.81              2.42        425.81                55.19         0.549          pass              0.394             45.8                           0.354                3.10             -0.245                  ok            True                  False
+  FAST           94.12               17            1.21              0.37         43.52                21.35         0.531          pass              0.570             31.2                           0.327               -2.73             -0.132                  ok            True                  False
+   ADP           94.12               34            0.55              0.85        220.33                38.26         0.526          pass              0.800             70.3                           0.581                2.52              0.454                  ok            True                   True
+  NVDA           85.00               20            1.83              2.87        222.24                44.60         0.519          pass              0.330             26.0                           0.324                3.72              0.328                  ok            True                  False
+  ISRG           90.00               10            2.61              8.20        445.51                35.82         0.518          pass              0.365             15.6                           0.446               -3.57             -0.027                  ok            True                  False
+    ZS           82.35               17            2.61              3.19        173.08                63.59         0.511          pass              0.215             18.2                           0.278               11.20              1.799                  ok            True                  False
+  AVGO           93.55               31            1.14              3.33        416.33                40.33         0.500          pass              0.648             32.1                           0.229                0.11             -0.189                  ok            True                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260521124001)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260521124502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260521124001)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260521124502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260521124001)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260521124502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260521124001)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260521124502)
 
 </details>
