@@ -62,3 +62,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-21T11:47:32.644554-04:00,2026-05-21,early_entry_1145,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
 2026-05-21T11:53:44.244584-04:00,2026-05-21,early_entry_1150,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ADP""}"
 2026-05-21T11:59:54.060175-04:00,2026-05-21,early_entry_1155,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
+2026-05-21T13:52:40.103301-04:00,2026-05-21,manage_1400,exit_order_submitted,"{""alpaca_order_id"": ""8a309bc9-b19c-4144-9daf-a4e3261cc6c0"", ""contract_symbol"": ""TTWO260717C00240000"", ""limit_price"": ""18.90"", ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""TTWO""}"
