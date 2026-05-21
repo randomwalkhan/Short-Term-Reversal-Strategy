@@ -1,19 +1,22 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-21 14:38:23 EDT`
-Last slot: `manage_1430`
+Latest checkpoint (ET): `2026-05-21 14:48:31 EDT`
+Last slot: `entry_1500`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$96,868.55`
-- Portfolio value: `$96,868.55`
+- Cash: `$92,833.49`
+- Portfolio value: `$96,388.49`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
-_None_
+```text
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
+  INTC entry_submitted    regular INTC260626C00117000          3               13.05                   NaN             NaN                    NaN
+```
 
 ## Closed Trades
 
@@ -30,25 +33,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot           event_type                                                                                                                                                                                    detail
-2026-05-21T13:57:44.888649-04:00             exit          exit_filled                                                  {"contract_symbol": "TTWO260717C00240000", "exit_price": 19.0, "pnl": 400.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "TTWO"}
-2026-05-21T13:52:40.103301-04:00      manage_1400 exit_order_submitted {"alpaca_order_id": "8a309bc9-b19c-4144-9daf-a4e3261cc6c0", "contract_symbol": "TTWO260717C00240000", "limit_price": "18.90", "reason": "take_profit_day1_hit_at_scan", "ticker": "TTWO"}
-2026-05-21T11:59:54.060175-04:00 early_entry_1155        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-21T11:53:44.244584-04:00 early_entry_1150        entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
-2026-05-21T11:47:32.644554-04:00 early_entry_1145        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-21T11:41:10.828251-04:00 early_entry_1140        entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
-2026-05-21T11:34:59.275965-04:00 early_entry_1130        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-21T11:28:49.809880-04:00 early_entry_1125        entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
-2026-05-21T11:22:36.879635-04:00 early_entry_1120        entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
-2026-05-21T11:16:27.628893-04:00 early_entry_1115        entry_skipped                                                             {"entry_mode": "early", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ALNY"}
-2026-05-21T11:10:17.360503-04:00 early_entry_1110        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-21T11:04:07.561903-04:00 early_entry_1100        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-21T10:57:47.255750-04:00 early_entry_1055        entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FAST"}
-2026-05-21T10:51:36.138066-04:00 early_entry_1050        entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FAST"}
-2026-05-21T10:45:26.333850-04:00 early_entry_1045        entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
-2026-05-21T10:39:14.366488-04:00 early_entry_1035        entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
-2026-05-21T10:33:05.062811-04:00 early_entry_1030        entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
-2026-05-21T10:26:56.960797-04:00 early_entry_1025        entry_skipped                                                  {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "MAR"}
-2026-05-21T10:20:47.021865-04:00 early_entry_1020        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-21T10:14:35.263301-04:00 early_entry_1010        entry_skipped                                {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
+                    timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-21T14:48:31.785006-04:00       entry_1500 entry_order_submitted  {"alpaca_order_id": "ec033fb0-02a9-46ac-9e86-fad49d5b5473", "contract_symbol": "INTC260626C00117000", "contracts": 3, "entry_mode": "regular", "limit_price": "13.85", "ticker": "INTC"}
+2026-05-21T13:57:44.888649-04:00             exit           exit_filled                                                  {"contract_symbol": "TTWO260717C00240000", "exit_price": 19.0, "pnl": 400.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "TTWO"}
+2026-05-21T13:52:40.103301-04:00      manage_1400  exit_order_submitted {"alpaca_order_id": "8a309bc9-b19c-4144-9daf-a4e3261cc6c0", "contract_symbol": "TTWO260717C00240000", "limit_price": "18.90", "reason": "take_profit_day1_hit_at_scan", "ticker": "TTWO"}
+2026-05-21T11:59:54.060175-04:00 early_entry_1155         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-21T11:53:44.244584-04:00 early_entry_1150         entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
+2026-05-21T11:47:32.644554-04:00 early_entry_1145         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-21T11:41:10.828251-04:00 early_entry_1140         entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
+2026-05-21T11:34:59.275965-04:00 early_entry_1130         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-21T11:28:49.809880-04:00 early_entry_1125         entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
+2026-05-21T11:22:36.879635-04:00 early_entry_1120         entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
+2026-05-21T11:16:27.628893-04:00 early_entry_1115         entry_skipped                                                             {"entry_mode": "early", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ALNY"}
+2026-05-21T11:10:17.360503-04:00 early_entry_1110         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-21T11:04:07.561903-04:00 early_entry_1100         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-21T10:57:47.255750-04:00 early_entry_1055         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FAST"}
+2026-05-21T10:51:36.138066-04:00 early_entry_1050         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FAST"}
+2026-05-21T10:45:26.333850-04:00 early_entry_1045         entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
+2026-05-21T10:39:14.366488-04:00 early_entry_1035         entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
+2026-05-21T10:33:05.062811-04:00 early_entry_1030         entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
+2026-05-21T10:26:56.960797-04:00 early_entry_1025         entry_skipped                                                  {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "MAR"}
+2026-05-21T10:20:47.021865-04:00 early_entry_1020         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 ```
