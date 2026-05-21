@@ -61,3 +61,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-21T11:41:10.828251-04:00,2026-05-21,early_entry_1140,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ADP""}"
 2026-05-21T11:47:32.644554-04:00,2026-05-21,early_entry_1145,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
 2026-05-21T11:53:44.244584-04:00,2026-05-21,early_entry_1150,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ADP""}"
+2026-05-21T11:59:54.060175-04:00,2026-05-21,early_entry_1155,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
