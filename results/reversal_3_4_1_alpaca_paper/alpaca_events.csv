@@ -53,3 +53,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-21T10:51:36.138066-04:00,2026-05-21,early_entry_1050,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""FAST""}"
 2026-05-21T10:57:47.255750-04:00,2026-05-21,early_entry_1055,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""FAST""}"
 2026-05-21T11:04:07.561903-04:00,2026-05-21,early_entry_1100,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
+2026-05-21T11:10:17.360503-04:00,2026-05-21,early_entry_1110,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
