@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-21 10:05:05 EDT`
+Latest checkpoint (ET): `2026-05-21 10:10:05 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -44,35 +44,35 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  INTC           96.43               28            1.50              1.25        118.43               113.85         0.730          pass              0.792             66.4                           0.855                6.90             -0.588                      ok            True                  False
-  NXPI           81.82               33            0.63              1.38        309.56                91.65         0.714          pass              0.493             73.3                           0.811                6.19              0.315                      ok            True                  False
-  FTNT          100.00               38            0.72              0.66        129.72                70.74         0.615          pass              0.846             66.0                           0.584               19.53              1.790                      ok            True                   True
-  SBUX           91.67               12            1.52              1.13        106.02                31.64         0.586          pass              0.495             37.3                           0.378                1.19              0.185                      ok            True                  False
-  PAYX           94.44               18            0.73              0.48         94.71                29.35         0.558          pass              0.698             68.1                           0.760                1.25              0.248                      ok            True                  False
-  MNST           83.87               31            0.71              0.43         86.70                49.77         0.549          pass              0.557             86.2                           0.688               13.55              0.668                      ok            True                  False
-   ADP           93.33               30            0.86              1.32        220.12                38.26         0.532          pass              0.703             53.6                           0.633                2.20              0.440                      ok            True                  False
-    ZS           85.00               20            2.25              2.75        173.27                63.59         0.518          pass              0.332             26.6                           0.258               11.60              1.816                      ok            True                  False
-  ISRG           85.71               14            2.18              6.84        446.10                35.82         0.512          pass              0.316             28.7                           0.328               -3.14             -0.007                      ok            True                  False
-   TXN           90.91               22            1.17              2.51        303.81                69.08         0.506          pass              0.564             47.5                           0.580                5.63              0.522                      ok            True                  False
-  INSM           76.32               38            0.82              0.62        107.65               110.82         0.741          pass              0.365             34.8                           0.276                1.93              0.191                      ok           False                  False
- CMCSA           86.67               30            0.56              0.10         24.84                59.59         0.617          pass              0.542             56.3                           0.576               -5.72             -0.372 downtrend_blocked_slope           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  INTC           95.24               21            2.42              2.02        118.10               113.85         0.719            pass              0.682             45.7                           0.556                5.89             -0.631                      ok            True                  False
+  NXPI           81.82               33            0.59              1.27        309.60                91.65         0.717            pass              0.499             75.3                           0.835                6.24              0.317                      ok            True                  False
+  FTNT          100.00               34            0.83              0.76        129.68                70.74         0.634            pass              0.806             60.9                           0.608               19.40              1.785                      ok            True                   True
+  PAYX           94.74               19            0.66              0.44         94.73                29.35         0.556            pass              0.721             70.8                           0.809                1.32              0.251                      ok            True                  False
+ GOOGL           83.33               24            1.16              3.15        387.56                41.00         0.555            pass              0.309             23.6                           0.269               -3.41             -0.243                      ok            True                  False
+  MNST           83.87               31            0.69              0.42         86.70                49.77         0.550            pass              0.558             86.5                           0.689               13.57              0.669                      ok            True                  False
+   ADP           93.33               30            0.81              1.25        220.16                38.26         0.536            pass              0.711             56.3                           0.688                2.25              0.442                      ok            True                  False
+  ISRG           86.67               15            2.07              6.49        446.25                35.82         0.513            pass              0.359             32.3                           0.538               -3.03             -0.002                      ok            True                  False
+   TXN           90.91               22            1.21              2.58        303.78                69.08         0.504            pass              0.559             46.0                           0.583                5.60              0.521                      ok            True                  False
+  FAST           90.91               22            1.05              0.32         43.54                21.35         0.503            pass              0.542             40.3                           0.623               -2.57             -0.124                      ok            True                  False
+    ZS           87.10               31            1.40              1.72        173.71                63.59         0.500 below_threshold              0.542             54.2                           0.526               12.57              1.855                      ok            True                  False
+  CHTR           88.10               42            0.41              0.42        144.43               113.96         0.764            pass              0.727             78.2                           0.766              -10.13             -0.936 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                  detail
+2026-05-21T10:10:05.107052-04:00 early_entry_1010           entry_skipped                                                                                                                                                                                                                  {"reason": "no_trade_after_option_and_timing_filters"}
+2026-05-21T10:10:05.107052-04:00 early_entry_1010 entry_candidate_skipped                  {"early_entry_score": 0.691, "option_liquidity_status": "low_volume,wide_spread", "option_open_interest": 1903.0, "option_spread_pct": 73.17, "option_volume": 14.0, "reason": "no_trade_low_option_liquidity", "ticker": "KDP", "timing_score": 0.46}
+2026-05-21T10:10:05.107052-04:00 early_entry_1010 entry_candidate_skipped                   {"early_entry_score": 0.694, "option_liquidity_status": "low_volume,wide_spread", "option_open_interest": 493.0, "option_spread_pct": 20.94, "option_volume": 1.0, "reason": "no_trade_low_option_liquidity", "ticker": "MAR", "timing_score": 0.414}
+2026-05-21T10:10:05.107052-04:00 early_entry_1010 entry_candidate_skipped {"early_entry_score": 0.718, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 38.0, "option_spread_pct": 29.21, "option_volume": 7.0, "reason": "no_trade_low_option_liquidity", "ticker": "CTSH", "timing_score": 0.487}
+2026-05-21T10:10:05.107052-04:00 early_entry_1010 entry_candidate_skipped                  {"early_entry_score": 0.806, "option_liquidity_status": "low_volume,wide_spread", "option_open_interest": 608.0, "option_spread_pct": 30.23, "option_volume": 1.0, "reason": "no_trade_low_option_liquidity", "ticker": "FTNT", "timing_score": 0.634}
 2026-05-21T10:05:05.076526-04:00 early_entry_1005           entry_skipped                                                                                                                                                                                                                  {"reason": "no_trade_after_option_and_timing_filters"}
 2026-05-21T10:05:05.076526-04:00 early_entry_1005 entry_candidate_skipped  {"early_entry_score": 0.71, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 38.0, "option_spread_pct": 29.21, "option_volume": 7.0, "reason": "no_trade_low_option_liquidity", "ticker": "CTSH", "timing_score": 0.483}
 2026-05-21T10:05:05.076526-04:00 early_entry_1005 entry_candidate_skipped                  {"early_entry_score": 0.846, "option_liquidity_status": "low_volume,wide_spread", "option_open_interest": 608.0, "option_spread_pct": 30.23, "option_volume": 1.0, "reason": "no_trade_low_option_liquidity", "ticker": "FTNT", "timing_score": 0.615}
-2026-05-21T10:00:05.181059-04:00 early_entry_1000           entry_skipped                                                                                                                                                                                                                  {"reason": "no_trade_after_option_and_timing_filters"}
-2026-05-21T10:00:05.181059-04:00 early_entry_1000 entry_candidate_skipped {"early_entry_score": 0.679, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 13.0, "option_spread_pct": 19.61, "option_volume": 6.0, "reason": "no_trade_low_option_liquidity", "ticker": "UPRO", "timing_score": 0.487}
 2026-05-21T10:00:05.181059-04:00 early_entry_1000 entry_candidate_skipped {"early_entry_score": 0.726, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 10.0, "option_spread_pct": 36.96, "option_volume": 2.0, "reason": "no_trade_low_option_liquidity", "ticker": "MELI", "timing_score": 0.571}
-2026-05-21T09:20:03.993328-04:00     data_refresh            data_refresh                                                                                                                                                                                                                                                           {'saved': 92}
-2026-05-20T15:10:05.258354-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-05-20T15:05:01.057777-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-05-20T15:00:06.267185-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
+2026-05-21T10:00:05.181059-04:00 early_entry_1000           entry_skipped                                                                                                                                                                                                                  {"reason": "no_trade_after_option_and_timing_filters"}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260521100505)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260521101005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260521100505)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260521101005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260521100505)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260521101005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260521100505)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260521101005)
 
 </details>
