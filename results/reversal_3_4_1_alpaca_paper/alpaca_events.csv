@@ -45,3 +45,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-21T10:02:15.629333-04:00,2026-05-21,early_entry_1000,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MELI""}"
 2026-05-21T10:08:27.134192-04:00,2026-05-21,early_entry_1005,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""FTNT""}"
 2026-05-21T10:14:35.263301-04:00,2026-05-21,early_entry_1010,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ADP""}"
+2026-05-21T10:20:47.021865-04:00,2026-05-21,early_entry_1020,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
