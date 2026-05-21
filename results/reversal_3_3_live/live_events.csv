@@ -1700,3 +1700,6 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-20T15:05:01.057777-04:00,2026-05-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-20T15:10:05.258354-04:00,2026-05-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-21T09:20:03.993328-04:00,2026-05-21,data_refresh,data_refresh,{'saved': 92}
+2026-05-21T10:00:05.181059-04:00,2026-05-21,early_entry_1000,entry_candidate_skipped,"{""early_entry_score"": 0.726, ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""option_open_interest"": 10.0, ""option_spread_pct"": 36.96, ""option_volume"": 2.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MELI"", ""timing_score"": 0.571}"
+2026-05-21T10:00:05.181059-04:00,2026-05-21,early_entry_1000,entry_candidate_skipped,"{""early_entry_score"": 0.679, ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""option_open_interest"": 13.0, ""option_spread_pct"": 19.61, ""option_volume"": 6.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""UPRO"", ""timing_score"": 0.487}"
+2026-05-21T10:00:05.181059-04:00,2026-05-21,early_entry_1000,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
