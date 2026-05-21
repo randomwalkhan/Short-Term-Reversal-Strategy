@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-21 10:26:56 EDT`
+Latest checkpoint (ET): `2026-05-21 10:33:05 EDT`
 Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$93,068.59`
-- Portfolio value: `$96,588.59`
+- Portfolio value: `$96,528.59`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -33,6 +33,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-05-21T10:33:05.062811-04:00 early_entry_1030         entry_skipped                                         {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
 2026-05-21T10:26:56.960797-04:00 early_entry_1025         entry_skipped                                               {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "MAR"}
 2026-05-21T10:20:47.021865-04:00 early_entry_1020         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-21T10:14:35.263301-04:00 early_entry_1010         entry_skipped                             {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
@@ -50,7 +51,6 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-20T10:28:39.432516-04:00 early_entry_1025         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TTWO"}
 2026-05-20T10:22:11.379624-04:00 early_entry_1020         entry_skipped                                                         {"entry_mode": "early", "option_liquidity_status": "wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
 2026-05-20T09:56:30.679364-04:00             exit           exit_filled                                                    {"contract_symbol": "PANW260618C00250000", "exit_price": 13.65, "pnl": -720.0, "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
-2026-05-19T16:04:44.982187-04:00             exit       exit_not_filled                                                                                                      {"contract_symbol": "PANW260618C00250000", "status": "expired", "ticker": "PANW"}
 2026-05-19T16:04:44.982187-04:00      manage_1600  exit_order_submitted     {"alpaca_order_id": "5abeb2ab-fddd-4ee5-b52a-fdeb6b88520f", "contract_symbol": "PANW260618C00250000", "limit_price": "12.85", "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
-2026-05-19T12:01:32.059087-04:00      manage_1200  exit_order_submitted     {"alpaca_order_id": "583a8972-adb7-4f86-9f64-ef9b65bcd08a", "contract_symbol": "PANW260618C00250000", "limit_price": "14.00", "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
+2026-05-19T16:04:44.982187-04:00             exit       exit_not_filled                                                                                                      {"contract_symbol": "PANW260618C00250000", "status": "expired", "ticker": "PANW"}
 ```
