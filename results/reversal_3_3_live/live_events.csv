@@ -1699,3 +1699,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-20T15:00:06.267185-04:00,2026-05-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-20T15:05:01.057777-04:00,2026-05-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-20T15:10:05.258354-04:00,2026-05-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-05-21T09:20:03.993328-04:00,2026-05-21,data_refresh,data_refresh,{'saved': 92}
