@@ -1775,3 +1775,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-22T11:25:01.413702-04:00,2026-05-22,early_entry_1125,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-05-22T11:30:01.234875-04:00,2026-05-22,early_entry_1130,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-05-22T11:35:01.410809-04:00,2026-05-22,early_entry_1135,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-05-22T11:40:06.366318-04:00,2026-05-22,early_entry_1140,entry_skipped,"{""reason"": ""no_candidate""}"
