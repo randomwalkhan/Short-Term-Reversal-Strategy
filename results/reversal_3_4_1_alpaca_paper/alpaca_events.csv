@@ -66,3 +66,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-21T13:57:44.888649-04:00,2026-05-21,exit,exit_filled,"{""contract_symbol"": ""TTWO260717C00240000"", ""exit_price"": 19.0, ""pnl"": 400.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""TTWO""}"
 2026-05-21T14:48:31.785006-04:00,2026-05-21,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""ec033fb0-02a9-46ac-9e86-fad49d5b5473"", ""contract_symbol"": ""INTC260626C00117000"", ""contracts"": 3, ""entry_mode"": ""regular"", ""limit_price"": ""13.85"", ""ticker"": ""INTC""}"
 2026-05-21T14:54:53.036519-04:00,2026-05-21,entry_1500,entry_filled,"{""contract_symbol"": ""INTC260626C00117000"", ""contracts"": 3, ""filled_price"": 13.45, ""ticker"": ""INTC""}"
+2026-05-22T10:01:40.288325-04:00,2026-05-22,early_entry_1000,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
