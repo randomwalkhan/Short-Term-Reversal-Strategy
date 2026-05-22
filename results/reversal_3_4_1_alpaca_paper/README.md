@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-22 11:28:32 EDT`
+Latest checkpoint (ET): `2026-05-22 11:34:43 EDT`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1130`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC   open    regular INTC260626C00117000          3               13.45                14.725          bid_ask_mid                     14.725                    True          4417.5           382.5               9.479554                   1
+  INTC   open    regular INTC260626C00117000          3               13.45                14.675          bid_ask_mid                     14.675                    True          4402.5           367.5               9.107807                   1
 ```
 
 ## Closed Trades
@@ -34,6 +34,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-22T11:34:43.085077-04:00 early_entry_1130         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T11:28:32.027911-04:00 early_entry_1125         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T11:22:20.926392-04:00 early_entry_1120         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T11:16:09.558838-04:00 early_entry_1115         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
@@ -53,5 +54,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-21T14:48:31.785006-04:00       entry_1500 entry_order_submitted  {"alpaca_order_id": "ec033fb0-02a9-46ac-9e86-fad49d5b5473", "contract_symbol": "INTC260626C00117000", "contracts": 3, "entry_mode": "regular", "limit_price": "13.85", "ticker": "INTC"}
 2026-05-21T13:57:44.888649-04:00             exit           exit_filled                                                  {"contract_symbol": "TTWO260717C00240000", "exit_price": 19.0, "pnl": 400.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "TTWO"}
 2026-05-21T13:52:40.103301-04:00      manage_1400  exit_order_submitted {"alpaca_order_id": "8a309bc9-b19c-4144-9daf-a4e3261cc6c0", "contract_symbol": "TTWO260717C00240000", "limit_price": "18.90", "reason": "take_profit_day1_hit_at_scan", "ticker": "TTWO"}
-2026-05-21T11:59:54.060175-04:00 early_entry_1155         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 ```
