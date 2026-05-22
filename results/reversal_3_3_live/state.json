@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 16177.750356674194,
+  "cash": 2402.7503566741943,
   "positions": [
     {
       "position_id": "AVGO_20260521T115001",
@@ -31,6 +31,36 @@
       "option_open_interest": 2101.0,
       "option_volume": 296.0,
       "option_spread_pct": 0.029654036243822145,
+      "option_liquidity_status": "ok"
+    },
+    {
+      "position_id": "SBUX_20260522T145009",
+      "ticker": "SBUX",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "SBUX260717C00105000",
+      "expiry": "2026-07-17",
+      "strike": 105.0,
+      "entry_timestamp": "2026-05-22T14:50:09.909553-04:00",
+      "entry_trade_date": "2026-05-22",
+      "entry_slot": "entry_1500",
+      "entry_spot": 103.16000366210938,
+      "entry_option_price": 3.625,
+      "entry_bid": 3.5,
+      "entry_ask": 3.75,
+      "entry_iv_pct": 28.125718749999994,
+      "contracts": 38,
+      "allocated_cash": 13775.0,
+      "success_rate": 94.74,
+      "matched_signals": 19,
+      "current_drop_pct": 0.93,
+      "rolling_sigma_20d_pct": 32.97,
+      "planned_tp_day1": 4.168749999999999,
+      "planned_tp_day2": 4.168749999999999,
+      "planned_stop": 3.2625,
+      "option_open_interest": 2147.0,
+      "option_volume": 78.0,
+      "option_spread_pct": 0.06896551724137931,
       "option_liquidity_status": "ok"
     }
   ],
@@ -3870,7 +3900,9 @@
     "2026-05-21": [
       "entry_1500"
     ],
-    "2026-05-22": []
+    "2026-05-22": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
