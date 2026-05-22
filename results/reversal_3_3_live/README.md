@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-22 15:45:09 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-05-22 15:50:09 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -28,17 +28,17 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$2,402.75`
-- Equity: `$28,657.75`
+- Equity: `$28,717.75`
 - Realized PnL: `$18,317.75`
-- Unrealized PnL: `$340.00`
+- Unrealized PnL: `$400.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SBUX     option         option SBUX260717C00105000       2026-05-22                   0     38     13775.0                 14725.0         3.62           3.88      103.16        103.14          bid_ask_mid                       3.88                bid_ask_mid                    True           950.0                   6.90         94.74               19              0.93         28.13           30.12                  32.97                2147.0           78.0               0.07                      ok
-  AVGO     option         option AVGO260717C00420000       2026-05-21                   1      4     12140.0                 11530.0        30.35          28.82      415.18        411.62          bid_ask_mid                      28.82                bid_ask_mid                    True          -610.0                  -5.02         91.67               36              0.62         50.17           50.22                  40.33                2101.0          296.0               0.03                      ok
+  SBUX     option         option SBUX260717C00105000       2026-05-22                   0     38     13775.0                 14725.0         3.62           3.88      103.16        103.18          bid_ask_mid                       3.88                bid_ask_mid                    True           950.0                   6.90         94.74               19              0.93         28.13           29.54                  32.97                2147.0           78.0               0.07                      ok
+  AVGO     option         option AVGO260717C00420000       2026-05-21                   1      4     12140.0                 11590.0        30.35          28.98      415.18        413.71          bid_ask_mid                      28.98                bid_ask_mid                    True          -550.0                  -4.53         91.67               36              0.62         50.17           50.14                  40.33                2101.0          296.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-05-22)
@@ -49,18 +49,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-    MU           80.00               35            0.68              3.62        760.55                87.43         0.628          pass              0.448             72.7                           0.337                1.36             -0.592                                 ok            True                  False
-  SBUX           94.12               17            0.96              0.70        103.83                32.97         0.595          pass              0.611             42.8                           0.452               -1.13             -0.048                                 ok            True                  False
-  SHOP           82.05               39            1.02              0.75        104.54                78.48         0.578          pass              0.311              1.6                           0.155               -6.00              0.087                                 ok            True                  False
-  MELI           94.59               37            0.69              8.15       1674.41                61.16         0.575          pass              0.801             58.1                           0.487                2.07              0.512                                 ok            True                  False
-   WDC           94.74               38            0.76              2.59        485.35                59.01         0.526          pass              0.792             53.2                           0.309                0.58             -0.560                                 ok            True                  False
-  NVDA           85.00               20            1.84              2.83        218.30                44.83         0.515          pass              0.291             13.1                           0.360                0.13             -0.056                                 ok            True                  False
-  INSM           69.57               23            2.47              1.89        108.72               111.27         0.726          pass              0.200             13.6                           0.206                5.40             -0.006                                 ok           False                  False
-   WMT           94.12               17            1.04              0.88        120.96                34.61         0.571          pass              0.625             48.1                           0.402               -7.94             -0.505            downtrend_blocked_slope           False                  False
-  GEHC           75.00               40            0.33              0.15         64.27                59.89         0.571          pass              0.407             50.0                           0.343                1.02              0.257                                 ok           False                  False
- GOOGL           86.36               22            1.41              3.82        386.02                41.05         0.557          pass              0.315              3.4                           0.135               -4.64             -0.292            downtrend_blocked_slope           False                  False
-  GOOG           82.61               23            1.25              3.35        382.04                40.91         0.557          pass              0.222              3.4                           0.144               -4.62             -0.314 downtrend_blocked_slope_and_streak           False                  False
-    EA           75.00                8            0.48              0.68        201.58                 2.73         0.555          pass              0.176             40.1                           0.315                0.23              0.074                                 ok           False                  False
+    MU           80.00               35            0.69              3.69        760.52                87.43         0.627          pass              0.446             72.2                           0.338                1.34             -0.593                                 ok            True                  False
+  SBUX           94.74               19            0.91              0.66        103.85                32.97         0.586          pass              0.649             45.7                           0.496               -1.09             -0.045                                 ok            True                  False
+  MELI           94.44               36            0.76              8.88       1674.10                61.16         0.577          pass              0.779             54.3                           0.465                2.00              0.509                                 ok            True                  False
+  SHOP           82.05               39            1.04              0.76        104.53                78.48         0.576          pass              0.340             11.4                           0.191               -6.01              0.086                                 ok            True                  False
+  NVDA           85.71               21            1.69              2.59        218.40                44.83         0.519          pass              0.339             20.4                           0.422                0.28             -0.049                                 ok            True                  False
+  INSM           64.71               17            2.68              2.06        108.65               111.27         0.741          pass              0.139              6.1                           0.158                5.17             -0.016                                 ok           False                  False
+   WMT           94.12               17            1.00              0.85        120.98                34.61         0.573          pass              0.631             50.2                           0.517               -7.90             -0.503            downtrend_blocked_slope           False                  False
+  GEHC           75.00               40            0.37              0.17         64.26                59.89         0.568          pass              0.385             42.9                           0.293                0.98              0.255                                 ok           False                  False
+ GOOGL           86.36               22            1.36              3.69        386.08                41.05         0.559          pass              0.336             10.2                           0.197               -4.59             -0.290            downtrend_blocked_slope           False                  False
+    EA           77.78                9            0.46              0.64        201.59                 2.73         0.554          pass              0.185             43.2                           0.320                0.25              0.075                                 ok           False                  False
+  GOOG           84.00               25            1.22              3.26        382.07                40.91         0.547          pass              0.289              9.3                           0.199               -4.59             -0.312 downtrend_blocked_slope_and_streak           False                  False
+  REGN           94.12               34            0.66              2.97        641.32                49.06         0.538          pass              0.842             84.0                           0.700              -10.57             -1.523 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260522154509)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260522155009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260522154509)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260522155009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260522154509)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260522155009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260522154509)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260522155009)
 
 </details>
