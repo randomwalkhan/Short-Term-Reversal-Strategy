@@ -1784,3 +1784,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-22T14:50:09.909553-04:00,2026-05-22,entry_1500,entry,"{""allocated_cash"": 13775.0, ""asset_type"": ""option"", ""contract_symbol"": ""SBUX260717C00105000"", ""contracts"": 38, ""early_entry_score"": 0.644, ""entry_mode"": ""regular"", ""entry_option_price"": 3.625, ""execution_mode"": ""option"", ""matched_signals"": 19, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2147.0, ""option_spread_pct"": 6.9, ""option_volume"": 78.0, ""success_rate"": 94.74, ""ticker"": ""SBUX"", ""timing_score"": 0.584}"
 2026-05-22T14:55:09.944950-04:00,2026-05-22,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-22T15:00:10.044120-04:00,2026-05-22,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-05-22T15:05:09.997978-04:00,2026-05-22,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
