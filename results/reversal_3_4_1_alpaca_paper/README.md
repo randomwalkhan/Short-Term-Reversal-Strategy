@@ -1,22 +1,22 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-22 15:35:45 EDT`
+Latest checkpoint (ET): `2026-05-22 15:40:49 EDT`
 Last slot: `manage_1530`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$92,833.34`
-- Portfolio value: `$96,538.34`
+- Cash: `$87,958.08`
+- Portfolio value: `$96,278.08`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC            open    regular INTC260626C00117000          3              13.450                 13.55          bid_ask_mid                      13.55                   True          4065.0            30.0               0.743494                 1.0
-  SBUX entry_submitted    regular SBUX260717C00105000         13               3.625                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
+ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  INTC   open    regular INTC260626C00117000          3               13.45                13.225          bid_ask_mid                     13.225                    True          3967.5           -67.5              -1.672862                   1
+  SBUX   open    regular SBUX260717C00105000         13                3.75                 3.925          bid_ask_mid                      3.925                    True          5102.5           227.5               4.666667                   0
 ```
 
 ## Closed Trades
@@ -35,6 +35,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-05-22T15:40:49.867920-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "SBUX260717C00105000", "contracts": 13, "filled_price": 3.75, "ticker": "SBUX"}
 2026-05-22T14:48:54.200962-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "25ae4817-4805-468f-b6e2-b9bbabb07100", "contract_symbol": "SBUX260717C00105000", "contracts": 13, "entry_mode": "regular", "limit_price": "3.75", "ticker": "SBUX"}
 2026-05-22T11:59:49.162853-04:00 early_entry_1155         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T11:53:28.237361-04:00 early_entry_1150         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
@@ -54,5 +55,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-22T10:26:28.661701-04:00 early_entry_1025         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T10:20:17.696794-04:00 early_entry_1020         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T10:14:06.428603-04:00 early_entry_1010         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-22T10:07:52.347186-04:00 early_entry_1005         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 ```
