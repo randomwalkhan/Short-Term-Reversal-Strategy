@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-22 16:20:09 EDT`
-Last processed slot: `share_ext_1620`
+Latest checkpoint (ET): `2026-05-22 16:25:10 EDT`
+Last processed slot: `share_ext_1625`
 
 ## Active Configuration
 
@@ -28,17 +28,17 @@ Last processed slot: `share_ext_1620`
 ## Portfolio Snapshot
 
 - Cash: `$2,402.75`
-- Equity: `$28,402.75`
+- Equity: `$28,382.75`
 - Realized PnL: `$18,317.75`
-- Unrealized PnL: `$85.00`
+- Unrealized PnL: `$65.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SBUX     option         option SBUX260717C00105000       2026-05-22                   0     38     13775.0                 14250.0         3.62           3.75      103.16        103.11          bid_ask_mid                       3.75                bid_ask_mid                    True           475.0                   3.45         94.74               19              0.93         28.13           29.49                  32.97                2147.0           78.0               0.07                      ok
-  AVGO     option         option AVGO260717C00420000       2026-05-21                   1      4     12140.0                 11750.0        30.35          29.38      415.18        413.72          bid_ask_mid                      29.38                bid_ask_mid                    True          -390.0                  -3.21         91.67               36              0.62         50.17           49.65                  40.33                2101.0          296.0               0.03                      ok
+  SBUX     option         option SBUX260717C00105000       2026-05-22                   0     38     13775.0                 14250.0         3.62           3.75      103.16        103.00          bid_ask_mid                       3.75                bid_ask_mid                    True           475.0                   3.45         94.74               19              0.93         28.13           29.49                  32.97                2147.0           78.0               0.07                      ok
+  AVGO     option         option AVGO260717C00420000       2026-05-21                   1      4     12140.0                 11730.0        30.35          29.32      415.18        413.56          bid_ask_mid                      29.32                bid_ask_mid                    True          -410.0                  -3.38         91.67               36              0.62         50.17           49.65                  40.33                2101.0          296.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-05-22)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260522162009)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260522162510)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260522162009)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260522162510)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260522162009)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260522162510)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260522162009)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260522162510)
 
 </details>
