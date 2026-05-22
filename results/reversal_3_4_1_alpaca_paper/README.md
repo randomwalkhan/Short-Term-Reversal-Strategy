@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-22 10:57:31 EDT`
+Latest checkpoint (ET): `2026-05-22 11:03:43 EDT`
 Last slot: `manage_1100`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1100`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC   open    regular INTC260626C00117000          3               13.45                  14.1          bid_ask_mid                       14.1                    True          4230.0           195.0               4.832714                   1
+  INTC   open    regular INTC260626C00117000          3               13.45                 14.85          bid_ask_mid                      14.85                    True          4455.0           420.0              10.408922                   1
 ```
 
 ## Closed Trades
@@ -34,6 +34,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-22T11:03:43.624983-04:00 early_entry_1100         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T10:57:31.114861-04:00 early_entry_1055         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T10:51:20.106412-04:00 early_entry_1050         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T10:45:11.001838-04:00 early_entry_1045         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
@@ -53,5 +54,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-21T11:47:32.644554-04:00 early_entry_1145         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-21T11:41:10.828251-04:00 early_entry_1140         entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
 2026-05-21T11:34:59.275965-04:00 early_entry_1130         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-21T11:28:49.809880-04:00 early_entry_1125         entry_skipped                                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ADP"}
 ```
