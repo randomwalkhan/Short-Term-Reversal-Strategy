@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-22 23:55:10 EDT`
-Last processed slot: `share_ext_2355`
+Latest checkpoint (ET): `2026-05-23 00:00:09 EDT`
+Last processed slot: `share_ext_0000`
 
 ## Active Configuration
 
@@ -41,7 +41,7 @@ ticker asset_type execution_mode          instrument entry_trade_date  business_
   AVGO     option         option AVGO260717C00420000       2026-05-21                   1      4     12140.0                 11960.0        30.35           29.9      415.18        412.85          bid_ask_mid                       29.9                bid_ask_mid                    True          -180.0                  -1.48         91.67               36              0.62         50.17           50.32                  40.33                2101.0          296.0               0.03                      ok
 ```
 
-## Today's Closed Trades (2026-05-22)
+## Today's Closed Trades (2026-05-23)
 
 _None_
 
@@ -53,6 +53,7 @@ _None_
 
 ```text
                     timestamp_et             slot     event_type                                                                                                                                                                                                                                                                                                                                                                                                                                detail
+2026-05-23T00:00:09.557687-04:00   share_ext_0000  market_closed                                                                                                                                                                                                                                                                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
 2026-05-22T15:10:09.874412-04:00       entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
 2026-05-22T15:05:09.997978-04:00       entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
 2026-05-22T15:00:10.044120-04:00       entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
@@ -62,7 +63,6 @@ _None_
 2026-05-22T12:00:04.237005-04:00 early_entry_1200  entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                            {"reason": "no_candidate"}
 2026-05-22T11:55:01.324366-04:00 early_entry_1155  entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                            {"reason": "no_candidate"}
 2026-05-22T11:50:01.298135-04:00 early_entry_1150  entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                            {"reason": "no_candidate"}
-2026-05-22T11:45:04.354154-04:00 early_entry_1145  entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                            {"reason": "no_candidate"}
 ```
 
 ## Equity Curves
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260522235510)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260523000009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260522235510)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260523000009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260522235510)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260523000009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260522235510)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260523000009)
 
 </details>
