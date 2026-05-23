@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-23 03:04:24 EDT`
-Last slot: `share_ext_0300`
+Latest checkpoint (ET): `2026-05-23 03:09:29 EDT`
+Last slot: `share_ext_0305`
 
 ## Alpaca Paper Account
 
@@ -35,6 +35,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-05-23T03:09:29.433721-04:00   share_ext_0305         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-05-23T03:04:24.433232-04:00   share_ext_0300         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-05-23T02:59:20.047748-04:00   share_ext_0255         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-05-23T02:54:15.926427-04:00   share_ext_0250         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
@@ -54,5 +55,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-22T15:40:49.867920-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "SBUX260717C00105000", "contracts": 13, "filled_price": 3.75, "ticker": "SBUX"}
 2026-05-22T14:48:54.200962-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "25ae4817-4805-468f-b6e2-b9bbabb07100", "contract_symbol": "SBUX260717C00105000", "contracts": 13, "entry_mode": "regular", "limit_price": "3.75", "ticker": "SBUX"}
 2026-05-22T11:59:49.162853-04:00 early_entry_1155         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-22T11:53:28.237361-04:00 early_entry_1150         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 ```
