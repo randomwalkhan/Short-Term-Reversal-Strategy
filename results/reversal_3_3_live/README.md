@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-23 01:45:06 EDT`
-Last processed slot: `share_ext_0145`
+Latest checkpoint (ET): `2026-05-23 01:50:06 EDT`
+Last processed slot: `share_ext_0150`
 
 ## Active Configuration
 
@@ -38,7 +38,7 @@ Last processed slot: `share_ext_0145`
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
   SBUX     option         option SBUX260717C00105000       2026-05-22                   0     38     13775.0                 14060.0         3.62            3.7      103.16        102.83          bid_ask_mid                        3.7                bid_ask_mid                    True           285.0                   2.07         94.74               19              0.93         28.13           29.44                  32.97                2147.0           78.0               0.07                      ok
-  AVGO     option         option AVGO260717C00420000       2026-05-21                   1      4     12140.0                 11960.0        30.35           29.9      415.18        414.14          bid_ask_mid                       29.9                bid_ask_mid                    True          -180.0                  -1.48         91.67               36              0.62         50.17           50.32                  40.33                2101.0          296.0               0.03                      ok
+  AVGO     option         option AVGO260717C00420000       2026-05-21                   1      4     12140.0                 11960.0        30.35           29.9      415.18        412.85          bid_ask_mid                       29.9                bid_ask_mid                    True          -180.0                  -1.48         91.67               36              0.62         50.17           50.32                  40.33                2101.0          296.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-05-23)
@@ -52,17 +52,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot     event_type                                                                                                                                                                                                                                                                                                                                                                                                                                detail
-2026-05-23T01:45:06.555380-04:00 share_ext_0145  market_closed                                                                                                                                                                                                                                                                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-05-23T00:10:09.989784-04:00 share_ext_0010  market_closed                                                                                                                                                                                                                                                                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-05-23T00:05:10.034169-04:00 share_ext_0005  market_closed                                                                                                                                                                                                                                                                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-05-23T00:00:09.557687-04:00 share_ext_0000  market_closed                                                                                                                                                                                                                                                                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-05-22T15:10:09.874412-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
-2026-05-22T15:05:09.997978-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
-2026-05-22T15:00:10.044120-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
-2026-05-22T14:55:09.944950-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
-2026-05-22T14:50:09.909553-04:00     entry_1500          entry {"allocated_cash": 13775.0, "asset_type": "option", "contract_symbol": "SBUX260717C00105000", "contracts": 38, "early_entry_score": 0.644, "entry_mode": "regular", "entry_option_price": 3.625, "execution_mode": "option", "matched_signals": 19, "option_liquidity_status": "ok", "option_open_interest": 2147.0, "option_spread_pct": 6.9, "option_volume": 78.0, "success_rate": 94.74, "ticker": "SBUX", "timing_score": 0.584}
-2026-05-22T14:50:09.909553-04:00     entry_1500 timing_overlay                                                                                                                                                                                                                                                                                                                          {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-22", "training_samples": 5081, "window": 5}
+                    timestamp_et           slot     event_type                                                                                                       detail
+2026-05-23T01:50:06.107382-04:00 share_ext_0150  market_closed                                                                  {"holiday_name": null, "reason": "weekend"}
+2026-05-23T01:45:06.555380-04:00 share_ext_0145  market_closed                                                                  {"holiday_name": null, "reason": "weekend"}
+2026-05-23T00:10:09.989784-04:00 share_ext_0010  market_closed                                                                  {"holiday_name": null, "reason": "weekend"}
+2026-05-23T00:05:10.034169-04:00 share_ext_0005  market_closed                                                                  {"holiday_name": null, "reason": "weekend"}
+2026-05-23T00:00:09.557687-04:00 share_ext_0000  market_closed                                                                  {"holiday_name": null, "reason": "weekend"}
+2026-05-22T15:10:09.874412-04:00     entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
+2026-05-22T15:05:09.997978-04:00     entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
+2026-05-22T15:00:10.044120-04:00     entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
+2026-05-22T14:55:09.944950-04:00     entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
+2026-05-22T14:50:09.909553-04:00     entry_1500 timing_overlay {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-05-22", "training_samples": 5081, "window": 5}
 ```
 
 ## Equity Curves
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260523014506)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260523015006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260523014506)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260523015006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260523014506)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260523015006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260523014506)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260523015006)
 
 </details>
