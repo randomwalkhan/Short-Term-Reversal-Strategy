@@ -88,3 +88,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-22T11:59:49.162853-04:00,2026-05-22,early_entry_1155,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
 2026-05-22T14:48:54.200962-04:00,2026-05-22,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""25ae4817-4805-468f-b6e2-b9bbabb07100"", ""contract_symbol"": ""SBUX260717C00105000"", ""contracts"": 13, ""entry_mode"": ""regular"", ""limit_price"": ""3.75"", ""ticker"": ""SBUX""}"
 2026-05-22T15:40:49.867920-04:00,2026-05-22,entry_1500,entry_filled,"{""contract_symbol"": ""SBUX260717C00105000"", ""contracts"": 13, ""filled_price"": 3.75, ""ticker"": ""SBUX""}"
+2026-05-23T00:03:53.320269-04:00,2026-05-23,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
