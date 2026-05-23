@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-23 02:10:33 EDT`
-Last slot: `share_ext_0210`
+Latest checkpoint (ET): `2026-05-23 02:15:36 EDT`
+Last slot: `share_ext_0215`
 
 ## Alpaca Paper Account
 
@@ -35,6 +35,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-05-23T02:15:36.646239-04:00   share_ext_0215         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-05-23T02:10:33.250648-04:00   share_ext_0210         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-05-23T02:05:29.832350-04:00   share_ext_0205         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-05-23T02:00:26.575941-04:00   share_ext_0200         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
@@ -54,5 +55,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-22T11:16:09.558838-04:00 early_entry_1115         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T11:09:59.497169-04:00 early_entry_1105         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-22T11:03:43.624983-04:00 early_entry_1100         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-22T10:57:31.114861-04:00 early_entry_1055         entry_skipped                                                                                                                                        {"entry_mode": "early", "reason": "no_candidate"}
 ```
