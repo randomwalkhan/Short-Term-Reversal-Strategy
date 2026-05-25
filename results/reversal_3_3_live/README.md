@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-23 02:55:10 EDT`
-Last processed slot: `share_ext_0255`
+Latest checkpoint (ET): `2026-05-25 03:00:10 EDT`
+Last processed slot: `share_ext_0300`
 
 ## Active Configuration
 
@@ -37,11 +37,11 @@ Last processed slot: `share_ext_0255`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SBUX     option         option SBUX260717C00105000       2026-05-22                   0     38     13775.0                 14060.0         3.62            3.7      103.16        102.83          bid_ask_mid                        3.7                bid_ask_mid                    True           285.0                   2.07         94.74               19              0.93         28.13           29.44                  32.97                2147.0           78.0               0.07                      ok
-  AVGO     option         option AVGO260717C00420000       2026-05-21                   1      4     12140.0                 11960.0        30.35           29.9      415.18        412.85          bid_ask_mid                       29.9                bid_ask_mid                    True          -180.0                  -1.48         91.67               36              0.62         50.17           50.32                  40.33                2101.0          296.0               0.03                      ok
+  SBUX     option         option SBUX260717C00105000       2026-05-22                   0     38     13775.0                 14060.0         3.62            3.7      103.16        102.83          bid_ask_mid                        3.7                bid_ask_mid                    True           285.0                   2.07         94.74               19              0.93         28.13           29.98                  32.97                2147.0           78.0               0.07                      ok
+  AVGO     option         option AVGO260717C00420000       2026-05-21                   1      4     12140.0                 11960.0        30.35           29.9      415.18        412.85          bid_ask_mid                       29.9                bid_ask_mid                    True          -180.0                  -1.48         91.67               36              0.62         50.17           51.25                  40.33                2101.0          296.0               0.03                      ok
 ```
 
-## Today's Closed Trades (2026-05-23)
+## Today's Closed Trades (2026-05-25)
 
 _None_
 
@@ -52,17 +52,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                      detail
-2026-05-23T02:55:10.925292-04:00 share_ext_0255 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-05-23T02:50:09.936016-04:00 share_ext_0250 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-05-23T02:45:04.156542-04:00 share_ext_0245 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-05-23T02:40:08.618892-04:00 share_ext_0240 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-05-23T02:30:02.395663-04:00 share_ext_0230 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-05-23T02:25:01.324415-04:00 share_ext_0225 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-05-23T02:20:04.354875-04:00 share_ext_0220 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-05-23T02:15:04.366152-04:00 share_ext_0215 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-05-23T02:10:02.201196-04:00 share_ext_0210 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-05-23T02:05:04.465609-04:00 share_ext_0205 market_closed {"holiday_name": null, "reason": "weekend"}
+                    timestamp_et           slot    event_type                                                     detail
+2026-05-25T03:00:10.003115-04:00 share_ext_0300 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-23T02:55:10.925292-04:00 share_ext_0255 market_closed                {"holiday_name": null, "reason": "weekend"}
+2026-05-23T02:50:09.936016-04:00 share_ext_0250 market_closed                {"holiday_name": null, "reason": "weekend"}
+2026-05-23T02:45:04.156542-04:00 share_ext_0245 market_closed                {"holiday_name": null, "reason": "weekend"}
+2026-05-23T02:40:08.618892-04:00 share_ext_0240 market_closed                {"holiday_name": null, "reason": "weekend"}
+2026-05-23T02:30:02.395663-04:00 share_ext_0230 market_closed                {"holiday_name": null, "reason": "weekend"}
+2026-05-23T02:25:01.324415-04:00 share_ext_0225 market_closed                {"holiday_name": null, "reason": "weekend"}
+2026-05-23T02:20:04.354875-04:00 share_ext_0220 market_closed                {"holiday_name": null, "reason": "weekend"}
+2026-05-23T02:15:04.366152-04:00 share_ext_0215 market_closed                {"holiday_name": null, "reason": "weekend"}
+2026-05-23T02:10:02.201196-04:00 share_ext_0210 market_closed                {"holiday_name": null, "reason": "weekend"}
 ```
 
 ## Equity Curves
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260523025510)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260525030010)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260523025510)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260525030010)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260523025510)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260525030010)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260523025510)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260525030010)
 
 </details>
