@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-25 10:00:05 EDT`
+Latest checkpoint (ET): `2026-05-25 10:05:06 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -52,17 +52,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                                     detail
-2026-05-25T10:00:05.966403-04:00    manage_1000  slot_skipped                            {"reason": "already_processed"}
-2026-05-25T09:55:06.343686-04:00    manage_1000  slot_skipped                            {"reason": "already_processed"}
-2026-05-25T09:50:05.919377-04:00    manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:45:04.930318-04:00         manual market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:40:03.963520-04:00    manage_0930  slot_skipped                            {"reason": "already_processed"}
-2026-05-25T09:35:04.921188-04:00    manage_0930  slot_skipped                            {"reason": "already_processed"}
-2026-05-25T09:30:05.933647-04:00    manage_0930  slot_skipped                            {"reason": "already_processed"}
-2026-05-25T09:25:06.320059-04:00    manage_0930  slot_skipped                            {"reason": "already_processed"}
-2026-05-25T09:20:05.868169-04:00    manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:15:06.110035-04:00 share_ext_0915 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+                    timestamp_et        slot    event_type                                                     detail
+2026-05-25T10:05:06.294790-04:00 manage_1000  slot_skipped                            {"reason": "already_processed"}
+2026-05-25T10:00:05.966403-04:00 manage_1000  slot_skipped                            {"reason": "already_processed"}
+2026-05-25T09:55:06.343686-04:00 manage_1000  slot_skipped                            {"reason": "already_processed"}
+2026-05-25T09:50:05.919377-04:00 manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:45:04.930318-04:00      manual market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:40:03.963520-04:00 manage_0930  slot_skipped                            {"reason": "already_processed"}
+2026-05-25T09:35:04.921188-04:00 manage_0930  slot_skipped                            {"reason": "already_processed"}
+2026-05-25T09:30:05.933647-04:00 manage_0930  slot_skipped                            {"reason": "already_processed"}
+2026-05-25T09:25:06.320059-04:00 manage_0930  slot_skipped                            {"reason": "already_processed"}
+2026-05-25T09:20:05.868169-04:00 manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
 
 ## Equity Curves
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260525100005)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260525100506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260525100005)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260525100506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260525100005)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260525100506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260525100005)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260525100506)
 
 </details>
