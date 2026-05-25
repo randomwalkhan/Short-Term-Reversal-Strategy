@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-25 10:07:45 EDT`
-Last slot: `manage_1000`
+Latest checkpoint (ET): `2026-05-25 10:12:48 EDT`
+Last slot: `early_entry_1010`
 
 ## Alpaca Paper Account
 
@@ -34,25 +34,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                                     detail
-2026-05-25T10:07:45.242567-04:00    manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T10:02:41.703578-04:00    manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:57:38.209560-04:00    manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:52:34.538947-04:00    manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:47:31.043803-04:00         manual market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:42:27.435412-04:00         manual market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:37:23.941795-04:00    manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:32:20.418626-04:00    manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:27:16.193217-04:00    manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:22:12.471308-04:00    manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:17:08.599251-04:00 share_ext_0915 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:12:05.090362-04:00 share_ext_0910 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:07:01.393708-04:00 share_ext_0905 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T09:01:57.861886-04:00 share_ext_0900 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T08:56:54.358777-04:00 share_ext_0855 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T08:51:50.794649-04:00 share_ext_0850 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T08:46:47.328925-04:00 share_ext_0845 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T08:41:43.570560-04:00 share_ext_0840 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T08:36:40.027825-04:00 share_ext_0835 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T08:31:36.443311-04:00 share_ext_0830 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+                    timestamp_et             slot    event_type                                                     detail
+2026-05-25T10:12:48.998803-04:00 early_entry_1010 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T10:07:45.242567-04:00      manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T10:02:41.703578-04:00      manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:57:38.209560-04:00      manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:52:34.538947-04:00      manage_1000 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:47:31.043803-04:00           manual market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:42:27.435412-04:00           manual market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:37:23.941795-04:00      manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:32:20.418626-04:00      manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:27:16.193217-04:00      manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:22:12.471308-04:00      manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:17:08.599251-04:00   share_ext_0915 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:12:05.090362-04:00   share_ext_0910 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:07:01.393708-04:00   share_ext_0905 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T09:01:57.861886-04:00   share_ext_0900 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T08:56:54.358777-04:00   share_ext_0855 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T08:51:50.794649-04:00   share_ext_0850 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T08:46:47.328925-04:00   share_ext_0845 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T08:41:43.570560-04:00   share_ext_0840 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T08:36:40.027825-04:00   share_ext_0835 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
