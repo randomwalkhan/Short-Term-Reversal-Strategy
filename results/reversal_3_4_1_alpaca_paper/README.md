@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-25 09:27:16 EDT`
+Latest checkpoint (ET): `2026-05-25 09:32:20 EDT`
 Last slot: `manage_0930`
 
 ## Alpaca Paper Account
@@ -35,6 +35,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot    event_type                                                     detail
+2026-05-25T09:32:20.418626-04:00    manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T09:27:16.193217-04:00    manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T09:22:12.471308-04:00    manage_0930 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T09:17:08.599251-04:00 share_ext_0915 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
@@ -54,5 +55,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-25T08:06:18.096590-04:00 share_ext_0805 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T08:01:14.464107-04:00 share_ext_0800 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T07:56:10.957730-04:00 share_ext_0755 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T07:51:07.179874-04:00 share_ext_0750 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
