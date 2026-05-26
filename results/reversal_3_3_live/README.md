@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-26 16:00:02 EDT`
+Latest checkpoint (ET): `2026-05-26 16:05:03 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -48,21 +48,7 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  TEAM           90.91               44            0.59              0.35         85.27               109.49         0.675          pass              0.815             85.4                           0.644               -2.74              0.052                                 ok            True                   True
-  CSCO           90.00               10            1.74              1.46        119.78                52.25         0.650          pass              0.443             37.0                           0.657               19.85              1.889                                 ok            True                  False
-  AMGN           92.86               14            1.03              2.44        338.25                27.24         0.585          pass              0.473             14.9                           0.364                2.66              0.208                                 ok            True                  False
-  MELI           94.29               35            1.01             11.82       1659.36                60.80         0.560          pass              0.798             64.8                           0.546                5.79              0.720                                 ok            True                  False
-  CTSH           82.35               17            1.78              0.66         52.47                46.65         0.545          pass              0.293             43.0                           0.394                5.94              1.309                                 ok            True                  False
-   ROP           81.82               11            2.02              4.61        324.96                26.18         0.523          pass              0.127              6.5                           0.179               -2.57              0.034                                 ok            True                  False
-  SBUX          100.00                8            1.66              1.20        102.60                33.02         0.625          pass              0.540             25.8                           0.403               -3.54             -0.286            downtrend_blocked_slope           False                  False
-   WMT           90.91               11            1.36              1.14        119.78                34.37         0.604          pass              0.449             30.5                           0.490               -7.02             -0.846 downtrend_blocked_slope_and_streak           False                  False
-   AEP           75.00               16            0.50              0.46        131.39                25.20         0.596          pass              0.267             55.7                           0.469                0.18              0.064                                 ok           False                  False
-  GEHC           76.74               43            0.05              0.02         64.22                59.75         0.573          pass              0.543             95.2                           0.402                4.04              0.455                                 ok           False                  False
-   TRI           72.73               11            2.53              1.52         85.21                55.00         0.571          pass              0.092              9.6                           0.279               -5.49              0.050                                 ok           False                  False
-  ORLY           77.78                9            2.01              1.29         91.19                38.39         0.555          pass              0.244             62.8                           0.792               -1.59              0.088                                 ok           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -87,27 +73,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260526160002)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260526160503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260526160002)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260526160503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260526160002)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260526160503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260526160002)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260526160503)
 
 </details>
