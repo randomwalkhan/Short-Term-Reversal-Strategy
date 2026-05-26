@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 16862.750356674194,
+  "cash": 2162.7503566741925,
   "positions": [
     {
       "position_id": "SBUX_20260522T145009",
@@ -31,6 +31,36 @@
       "option_open_interest": 2147.0,
       "option_volume": 78.0,
       "option_spread_pct": 0.06896551724137931,
+      "option_liquidity_status": "ok"
+    },
+    {
+      "position_id": "TTWO_20260526T101001",
+      "ticker": "TTWO",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "TTWO260717C00230000",
+      "expiry": "2026-07-17",
+      "strike": 230.0,
+      "entry_timestamp": "2026-05-26T10:10:01.332535-04:00",
+      "entry_trade_date": "2026-05-26",
+      "entry_slot": "early_entry_1010",
+      "entry_spot": 225.58999633789062,
+      "entry_option_price": 9.8,
+      "entry_bid": 9.2,
+      "entry_ask": 10.4,
+      "entry_iv_pct": 35.63907135009765,
+      "contracts": 15,
+      "allocated_cash": 14700.000000000002,
+      "success_rate": 100.0,
+      "matched_signals": 35,
+      "current_drop_pct": 0.86,
+      "rolling_sigma_20d_pct": 35.4,
+      "planned_tp_day1": 11.27,
+      "planned_tp_day2": 11.27,
+      "planned_stop": 8.82,
+      "option_open_interest": 169.0,
+      "option_volume": 22.0,
+      "option_spread_pct": 0.12244897959183683,
       "option_liquidity_status": "ok"
     }
   ],
