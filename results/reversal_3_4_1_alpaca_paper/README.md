@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-26 10:41:06 EDT`
-Last slot: `manage_1030`
+Latest checkpoint (ET): `2026-05-26 10:47:18 EDT`
+Last slot: `early_entry_1045`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$87,957.73`
-- Portfolio value: `$96,095.73`
+- Portfolio value: `$96,437.73`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,8 +15,8 @@ Last slot: `manage_1030`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC exit_submitted    regular INTC260626C00117000          3               13.45                14.275          bid_ask_mid                     14.275                    True          4282.5           247.5               6.133829                   2
-  SBUX           open    regular SBUX260717C00105000         13                3.75                 3.475          bid_ask_mid                      3.475                    True          4517.5          -357.5              -7.333333                   1
+  INTC exit_submitted    regular INTC260626C00117000          3               13.45                14.525          bid_ask_mid                     14.525                    True          4357.5           322.5               7.992565                   2
+  SBUX           open    regular SBUX260717C00105000         13                3.75                 3.150          bid_ask_mid                      3.150                    True          4095.0          -780.0             -16.000000                   1
 ```
 
 ## Closed Trades
@@ -35,6 +35,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                                    detail
+2026-05-26T10:47:18.644238-04:00 early_entry_1045        entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
 2026-05-26T10:41:06.481605-04:00 early_entry_1040        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-26T10:34:54.291795-04:00 early_entry_1030        entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
 2026-05-26T10:28:36.599915-04:00 early_entry_1025        entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
@@ -54,5 +55,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-25T23:17:02.874289-04:00   share_ext_2315        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T23:11:59.246891-04:00   share_ext_2310        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T23:06:55.759000-04:00   share_ext_2305        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:01:52.264844-04:00   share_ext_2300        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
