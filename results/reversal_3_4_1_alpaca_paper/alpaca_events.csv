@@ -736,3 +736,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-25T20:04:46.104494-04:00,2026-05-25,share_ext_2000,market_closed,"{""holiday_name"": ""Memorial Day"", ""reason"": ""nyse_holiday""}"
 2026-05-25T20:09:49.582553-04:00,2026-05-25,share_ext_2005,market_closed,"{""holiday_name"": ""Memorial Day"", ""reason"": ""nyse_holiday""}"
 2026-05-25T20:14:53.005785-04:00,2026-05-25,share_ext_2010,market_closed,"{""holiday_name"": ""Memorial Day"", ""reason"": ""nyse_holiday""}"
+2026-05-25T20:19:56.433246-04:00,2026-05-25,share_ext_2015,market_closed,"{""holiday_name"": ""Memorial Day"", ""reason"": ""nyse_holiday""}"
