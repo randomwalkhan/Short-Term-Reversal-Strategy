@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-26 09:55:03 EDT`
+Latest checkpoint (ET): `2026-05-26 10:00:03 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$2,402.75`
-- Equity: `$28,552.75`
+- Equity: `$29,662.75`
 - Realized PnL: `$18,317.75`
-- Unrealized PnL: `$235.00`
+- Unrealized PnL: `$1,345.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SBUX     option         option SBUX260717C00105000       2026-05-22                   1     38     13775.0                 14250.0         3.62           3.75      103.16        102.67     last_price_stale                        NaN                unavailable                   False           475.0                   3.45         94.74               19              0.93         28.13            1.56                  32.97                2147.0           78.0               0.07                      ok
-  AVGO     option         option AVGO260717C00420000       2026-05-21                   2      4     12140.0                 11900.0        30.35          29.75      415.18        427.67     last_price_stale                        NaN                unavailable                   False          -240.0                  -1.98         91.67               36              0.62         50.17            0.00                  40.33                2101.0          296.0               0.03                      ok
+  AVGO     option         option AVGO260717C00420000       2026-05-21                   2      4     12140.0                 13200.0        30.35           33.0      415.18        428.00     last_price_stale                        NaN                unavailable                   False          1060.0                   8.73         91.67               36              0.62         50.17            0.00                  40.33                2101.0          296.0               0.03                      ok
+  SBUX     option         option SBUX260717C00105000       2026-05-22                   1     38     13775.0                 14060.0         3.62            3.7      103.16        102.29          bid_ask_mid                        3.7                bid_ask_mid                    True           285.0                   2.07         94.74               19              0.93         28.13           35.16                  32.97                2147.0           78.0               0.07                      ok
 ```
 
 ## Today's Closed Trades (2026-05-26)
@@ -49,34 +49,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  TEAM           89.19               37            1.47              0.88         85.04               109.49         0.663          pass              0.681             63.3                           0.609               -3.60              0.012                      ok            True                   True
-  FTNT          100.00               33            1.04              0.97        133.51                66.43         0.613          pass              0.830             71.8                           0.637               14.81              1.631                      ok            True                   True
-  MELI           91.67               24            1.95             22.68       1654.70                60.80         0.572          pass              0.559             32.4                           0.297                4.80              0.677                      ok            True                  False
-   ADP          100.00               12            2.28              3.59        223.77                37.70         0.555          pass              0.497              9.4                           0.117                4.02              0.645                      ok            True                  False
-  CTSH           82.35               17            1.84              0.68         52.46                46.65         0.541          pass              0.287             41.2                           0.434                5.88              1.306                      ok            True                  False
-   PEP           85.71               14            1.41              1.48        149.93                20.74         0.534          pass              0.252              6.6                           0.190               -0.64             -0.053                      ok            True                  False
-  CHTR           84.62               26            1.55              1.58        144.47                56.19         0.522          pass              0.282              0.0                           0.192               -3.31             -0.141                      ok            True                  False
-   ROP           89.47               19            1.52              3.48        325.45                26.18         0.511          pass              0.428             21.4                           0.224               -2.08              0.057                      ok            True                  False
-  ROST           93.55               31            0.79              1.29        234.26                38.50         0.510          pass              0.701             49.5                           0.306                8.58              0.757                      ok            True                  False
-  INSM           77.27               44            0.15              0.11        106.19               110.00         0.758          pass              0.537             87.1                           0.573                2.11             -0.568                      ok           False                  False
-  CSCO           83.33                6            1.89              1.60        119.73                52.25         0.662          pass              0.224             23.0                           0.160               19.66              1.882                      ok           False                  False
-  INTU           80.00               20            2.80              6.26        317.26                90.56         0.649          pass              0.191             19.7                           0.249              -20.93             -2.245 downtrend_blocked_slope           False                  False
+  SBUX           95.00               20            0.80              0.57        102.86                33.02         0.605          pass              0.605             26.0                           0.207               -2.70             -0.246                      ok            True                  False
+  MELI           90.00               20            2.03             23.68       1654.27                60.80         0.592          pass              0.481             29.4                           0.320                4.71              0.673                      ok            True                  False
+  FTNT          100.00               41            0.62              0.58        133.68                66.43         0.585          pass              0.908             83.1                           0.755               15.29              1.650                      ok            True                   True
+  ASML           88.57               35            0.58              6.59       1630.08                54.77         0.577          pass              0.584             43.7                           0.274                3.68              0.375                      ok            True                  False
+   ADP          100.00               11            2.42              3.81        223.68                37.70         0.554          pass              0.474              3.9                           0.065                3.87              0.638                      ok            True                  False
+  CTSH           85.71               21            1.48              0.55         52.52                46.65         0.541          pass              0.438             52.7                           0.656                6.27              1.323                      ok            True                  False
+  ROST           92.59               27            0.90              1.48        234.18                38.50         0.529          pass              0.628             42.1                           0.353                8.46              0.752                      ok            True                  False
+   ROP           91.30               23            1.25              2.87        325.71                26.18         0.503          pass              0.544             35.1                           0.412               -1.81              0.069                      ok            True                  False
+  TEAM           91.30               46            0.14              0.08         85.38               109.49         0.690          pass              0.860             96.5                           0.871               -2.30              0.072                      ok           False                  False
+  INTU           80.00               20            2.59              5.80        317.45                90.56         0.662          pass              0.210             25.6                           0.378              -20.76             -2.235 downtrend_blocked_slope           False                  False
+  CSCO           83.33                6            1.98              1.67        119.69                52.25         0.656          pass              0.212             19.3                           0.148               19.55              1.878                      ok           False                  False
+   TRI           73.33               15            1.53              0.92         85.47                55.00         0.610          pass              0.223             42.8                           0.325               -4.52              0.096                      ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                                     detail
-2026-05-26T00:00:03.086607-04:00   data_refresh  data_refresh                                              {'saved': 92}
-2026-05-25T23:55:01.101287-04:00 share_ext_2355 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:50:02.099383-04:00 share_ext_2350 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:45:01.097228-04:00 share_ext_2345 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:40:05.102217-04:00 share_ext_2340 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:35:01.093781-04:00 share_ext_2335 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:30:01.103317-04:00 share_ext_2330 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:25:02.099760-04:00 share_ext_2325 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:20:01.104241-04:00 share_ext_2320 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:15:05.147623-04:00 share_ext_2315 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+                    timestamp_et             slot    event_type                                                     detail
+2026-05-26T10:00:03.313012-04:00 early_entry_1000 entry_skipped                           {"reason": "max_open_positions"}
+2026-05-26T00:00:03.086607-04:00     data_refresh  data_refresh                                              {'saved': 92}
+2026-05-25T23:55:01.101287-04:00   share_ext_2355 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:50:02.099383-04:00   share_ext_2350 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:45:01.097228-04:00   share_ext_2345 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:40:05.102217-04:00   share_ext_2340 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:35:01.093781-04:00   share_ext_2335 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:30:01.103317-04:00   share_ext_2330 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:25:02.099760-04:00   share_ext_2325 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:20:01.104241-04:00   share_ext_2320 market_closed {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
 
 ## Equity Curves
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260526095503)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260526100003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260526095503)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260526100003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260526095503)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260526100003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260526095503)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260526100003)
 
 </details>
