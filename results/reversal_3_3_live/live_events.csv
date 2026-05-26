@@ -2069,3 +2069,6 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-26T10:35:01.414005-04:00,2026-05-26,early_entry_1035,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-26T10:40:05.315818-04:00,2026-05-26,early_entry_1040,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-26T10:45:02.313357-04:00,2026-05-26,early_entry_1045,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-26T10:50:01.303434-04:00,2026-05-26,manage_1100,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""SBUX260717C00105000"", ""fill_price"": 3.2625, ""pnl"": -1377.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""SBUX""}"
+2026-05-26T10:50:01.303434-04:00,2026-05-26,manage_1100,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""TTWO260717C00230000"", ""fill_price"": 11.35, ""pnl"": 2325.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 15.82, ""ticker"": ""TTWO""}"
+2026-05-26T10:50:01.303434-04:00,2026-05-26,early_entry_1050,entry_skipped,"{""reason"": ""daily_entry_limit""}"
