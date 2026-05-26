@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-26 10:03:44 EDT`
+Latest checkpoint (ET): `2026-05-26 10:09:53 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$87,957.73`
-- Portfolio value: `$96,352.73`
+- Portfolio value: `$96,282.73`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,8 +15,8 @@ Last slot: `manage_1000`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC   open    regular INTC260626C00117000          3               13.45                  12.3          bid_ask_mid                       12.3                    True          3690.0          -345.0              -8.550186                   2
-  SBUX   open    regular SBUX260717C00105000         13                3.75                   3.7          bid_ask_mid                        3.7                    True          4810.0           -65.0              -1.333333                   1
+  INTC   open    regular INTC260626C00117000          3               13.45                13.525          bid_ask_mid                     13.525                    True          4057.5            22.5               0.557621                   2
+  SBUX   open    regular SBUX260717C00105000         13                3.75                 3.725          bid_ask_mid                      3.725                    True          4842.5           -32.5              -0.666667                   1
 ```
 
 ## Closed Trades
@@ -35,6 +35,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot    event_type                                                                                                                                                                         detail
+2026-05-26T10:09:53.668214-04:00 early_entry_1005 entry_skipped                    {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
 2026-05-26T10:03:44.720190-04:00 early_entry_1000 entry_skipped {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,no_two_sided_quote,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
 2026-05-25T23:57:31.407523-04:00   share_ext_2355 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T23:52:27.970798-04:00   share_ext_2350 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
@@ -54,5 +55,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-25T22:41:38.162951-04:00   share_ext_2240 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T22:36:34.667460-04:00   share_ext_2235 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T22:31:31.116712-04:00   share_ext_2230 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T22:26:27.591477-04:00   share_ext_2225 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
