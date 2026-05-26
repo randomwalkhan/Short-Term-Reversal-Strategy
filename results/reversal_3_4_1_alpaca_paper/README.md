@@ -1,21 +1,22 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-26 11:05:57 EDT`
-Last slot: `manage_1100`
+Latest checkpoint (ET): `2026-05-26 11:12:09 EDT`
+Last slot: `early_entry_1110`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$92,312.47`
-- Portfolio value: `$96,692.47`
+- Portfolio value: `$96,602.47`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC exit_submitted    regular INTC260626C00117000          3               13.45                14.925          bid_ask_mid                     14.925                    True          4477.5           442.5              10.966543                   2
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  INTC  exit_submitted    regular INTC260626C00117000          3              13.450                15.125          bid_ask_mid                     15.125                   True          4537.5           502.5              12.453532                 2.0
+  PANW entry_submitted      early PANW260717C00260000          2              19.475                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
 ```
 
 ## Closed Trades
@@ -34,25 +35,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot           event_type                                                                                                                                                                                    detail
-2026-05-26T11:05:57.430326-04:00 early_entry_1105        entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ROST"}
-2026-05-26T10:59:42.328626-04:00 early_entry_1055        entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
-2026-05-26T10:59:42.328626-04:00             exit          exit_filled                                                        {"contract_symbol": "SBUX260717C00105000", "exit_price": 3.35, "pnl": -520.0, "reason": "stop_loss_hit_at_scan", "ticker": "SBUX"}
-2026-05-26T10:53:29.366120-04:00 early_entry_1050        entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
-2026-05-26T10:53:29.366120-04:00      manage_1100 exit_order_submitted         {"alpaca_order_id": "adda5fbd-15fc-422c-9b62-83850aec48a0", "contract_symbol": "SBUX260717C00105000", "limit_price": "2.92", "reason": "stop_loss_hit_at_scan", "ticker": "SBUX"}
-2026-05-26T10:47:18.644238-04:00 early_entry_1045        entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
-2026-05-26T10:41:06.481605-04:00 early_entry_1040        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-26T10:34:54.291795-04:00 early_entry_1030        entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-05-26T10:28:36.599915-04:00 early_entry_1025        entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-05-26T10:28:36.599915-04:00      manage_1030 exit_order_submitted {"alpaca_order_id": "dea66ffd-9a9b-4909-96a1-65758b153680", "contract_symbol": "INTC260626C00117000", "limit_price": "15.50", "reason": "take_profit_day2_hit_at_scan", "ticker": "INTC"}
-2026-05-26T10:22:24.472094-04:00 early_entry_1020        entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ADSK"}
-2026-05-26T10:16:13.343478-04:00 early_entry_1015        entry_skipped                                                            {"entry_mode": "early", "option_liquidity_status": "wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-05-26T10:09:53.668214-04:00 early_entry_1005        entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-05-26T10:03:44.720190-04:00 early_entry_1000        entry_skipped            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,no_two_sided_quote,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-05-25T23:57:31.407523-04:00   share_ext_2355        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:52:27.970798-04:00   share_ext_2350        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:47:24.610071-04:00   share_ext_2345        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:42:21.118060-04:00   share_ext_2340        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:37:17.443729-04:00   share_ext_2335        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:32:14.001797-04:00   share_ext_2330        market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+                    timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-26T11:12:09.227523-04:00 early_entry_1110 entry_order_submitted    {"alpaca_order_id": "f018255d-8911-447e-8321-8e1f5bf59752", "contract_symbol": "PANW260717C00260000", "contracts": 2, "entry_mode": "early", "limit_price": "20.45", "ticker": "PANW"}
+2026-05-26T11:05:57.430326-04:00 early_entry_1105         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ROST"}
+2026-05-26T10:59:42.328626-04:00 early_entry_1055         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
+2026-05-26T10:59:42.328626-04:00             exit           exit_filled                                                        {"contract_symbol": "SBUX260717C00105000", "exit_price": 3.35, "pnl": -520.0, "reason": "stop_loss_hit_at_scan", "ticker": "SBUX"}
+2026-05-26T10:53:29.366120-04:00 early_entry_1050         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
+2026-05-26T10:53:29.366120-04:00      manage_1100  exit_order_submitted         {"alpaca_order_id": "adda5fbd-15fc-422c-9b62-83850aec48a0", "contract_symbol": "SBUX260717C00105000", "limit_price": "2.92", "reason": "stop_loss_hit_at_scan", "ticker": "SBUX"}
+2026-05-26T10:47:18.644238-04:00 early_entry_1045         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
+2026-05-26T10:41:06.481605-04:00 early_entry_1040         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-26T10:34:54.291795-04:00 early_entry_1030         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
+2026-05-26T10:28:36.599915-04:00 early_entry_1025         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
+2026-05-26T10:28:36.599915-04:00      manage_1030  exit_order_submitted {"alpaca_order_id": "dea66ffd-9a9b-4909-96a1-65758b153680", "contract_symbol": "INTC260626C00117000", "limit_price": "15.50", "reason": "take_profit_day2_hit_at_scan", "ticker": "INTC"}
+2026-05-26T10:22:24.472094-04:00 early_entry_1020         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ADSK"}
+2026-05-26T10:16:13.343478-04:00 early_entry_1015         entry_skipped                                                            {"entry_mode": "early", "option_liquidity_status": "wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
+2026-05-26T10:09:53.668214-04:00 early_entry_1005         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
+2026-05-26T10:03:44.720190-04:00 early_entry_1000         entry_skipped            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,no_two_sided_quote,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
+2026-05-25T23:57:31.407523-04:00   share_ext_2355         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:52:27.970798-04:00   share_ext_2350         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:47:24.610071-04:00   share_ext_2345         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:42:21.118060-04:00   share_ext_2340         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
+2026-05-25T23:37:17.443729-04:00   share_ext_2335         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
