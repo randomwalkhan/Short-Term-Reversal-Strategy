@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-26 10:10:01 EDT`
-Last processed slot: `manage_1000`
+Latest checkpoint (ET): `2026-05-26 10:15:02 EDT`
+Last processed slot: `early_entry_1015`
 
 ## Active Configuration
 
@@ -28,17 +28,17 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$2,162.75`
-- Equity: `$31,017.75`
+- Equity: `$32,612.75`
 - Realized PnL: `$20,637.75`
-- Unrealized PnL: `$380.00`
+- Unrealized PnL: `$1,975.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SBUX     option         option SBUX260717C00105000       2026-05-22                   1     38     13775.0                 14155.0         3.62           3.72      103.16        102.50          bid_ask_mid                       3.72                bid_ask_mid                    True           380.0                   2.76         94.74               19              0.93         28.13           35.51                  32.97                2147.0           78.0               0.07                      ok
-  TTWO     option         option TTWO260717C00230000       2026-05-26                   0     15     14700.0                 14700.0         9.80           9.80      225.59        225.59          bid_ask_mid                       9.80                bid_ask_mid                    True             0.0                   0.00        100.00               35              0.86         35.64           35.64                  35.40                 169.0           22.0               0.12                      ok
+  TTWO     option         option TTWO260717C00230000       2026-05-26                   0     15     14700.0                 16200.0         9.80          10.80      225.59        225.28          bid_ask_mid                      10.80                bid_ask_mid                    True          1500.0                  10.20        100.00               35              0.86         35.64           39.42                  35.40                 169.0           22.0               0.12                      ok
+  SBUX     option         option SBUX260717C00105000       2026-05-22                   1     38     13775.0                 14250.0         3.62           3.75      103.16        101.54          bid_ask_mid                       3.75                bid_ask_mid                    True           475.0                   3.45         94.74               19              0.93         28.13           38.03                  32.97                2147.0           78.0               0.07                      ok
 ```
 
 ## Today's Closed Trades (2026-05-26)
@@ -51,25 +51,26 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  FTNT          100.00               34            0.91              0.85        133.57                66.43         0.615            pass              0.848             75.4                           0.740               14.96              1.637                      ok            True                   True
-  SBUX           95.83               24            0.59              0.43        102.93                33.02         0.592            pass              0.687             45.0                           0.242               -2.50             -0.237                      ok            True                  False
-  MELI           92.31               26            1.76             20.53       1655.62                60.80         0.571            pass              0.608             38.8                           0.629                5.00              0.686                      ok            True                  False
-   ADP          100.00               14            2.11              3.33        223.88                37.70         0.552            pass              0.531             16.2                           0.288                4.20              0.653                      ok            True                  False
-   PEP           90.00               10            1.78              1.88        149.77                20.74         0.537            pass              0.370             16.5                           0.181               -1.02             -0.070                      ok            True                  False
-  CTSH           88.00               25            1.23              0.46         52.55                46.65         0.532            pass              0.548             60.6                           0.728                6.53              1.334                      ok            True                  False
-  ROST           93.10               29            0.87              1.43        234.20                38.50         0.518            pass              0.660             44.1                           0.344                8.49              0.753                      ok            True                  False
-   ROP           91.67               24            1.20              2.74        325.77                26.18         0.500 below_threshold              0.569             38.1                           0.488               -1.75              0.071                      ok            True                  False
-  INTU           85.19               27            1.54              3.46        318.46                90.56         0.688            pass              0.487             55.7                           0.723              -19.91             -2.187 downtrend_blocked_slope           False                  False
-   TRI           73.33               15            1.16              0.70         85.56                55.00         0.633            pass              0.266             56.5                           0.623               -4.17              0.113                      ok           False                  False
-  CSCO           80.00                5            2.48              2.09        119.51                52.25         0.628            pass              0.078              4.9                           0.097               18.94              1.855                      ok           False                  False
-  ASML           88.89               36            0.41              4.72       1630.88                54.77         0.582            pass              0.648             59.7                           0.335                3.85              0.382                      ok           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+   TRI           80.00               20            0.71              0.43         85.68                55.00         0.637          pass              0.351             73.5                           0.769               -3.73              0.134                      ok            True                  False
+  FTNT          100.00               33            1.06              0.99        133.50                66.43         0.612          pass              0.828             71.2                           0.644               14.79              1.630                      ok            True                   True
+  MELI           91.30               23            2.02             23.54       1654.33                60.80         0.573          pass              0.535             29.9                           0.441                4.72              0.674                      ok            True                  False
+   ADP          100.00               14            2.08              3.28        223.90                37.70         0.554          pass              0.534             17.4                           0.279                4.23              0.654                      ok            True                  False
+  ROST           90.48               21            1.20              1.97        233.97                38.50         0.549          pass              0.476             22.9                           0.222                8.13              0.738                      ok            True                  False
+  CTSH           89.29               28            1.06              0.39         52.58                46.65         0.524          pass              0.618             66.1                           0.764                6.72              1.342                      ok            True                  False
+   ROP           89.47               19            1.51              3.46        325.46                26.18         0.512          pass              0.429             21.8                           0.287               -2.07              0.057                      ok            True                  False
+  TEAM           91.30               46            0.00              0.00         85.42               109.49         0.698          pass              0.871            100.0                           0.976               -2.16              0.079                      ok           False                  False
+  INTU           86.67               30            1.14              2.55        318.85                90.56         0.695          pass              0.582             67.3                           0.809              -19.58             -2.168 downtrend_blocked_slope           False                  False
+  SBUX          100.00                9            1.61              1.16        102.61                33.02         0.629          pass              0.463              0.0                           0.150               -3.50             -0.284 downtrend_blocked_slope           False                  False
+  CSCO           80.00                5            2.57              2.17        119.48                52.25         0.621          pass              0.082              6.5                           0.143               18.83              1.850                      ok           False                  False
+   AEP           69.23               13            0.61              0.56        131.35                25.20         0.602          pass              0.218             45.9                           0.279                0.07              0.059                      ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                             detail
+2026-05-26T10:15:02.302661-04:00 early_entry_1015           entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "daily_entry_limit"}
 2026-05-26T10:10:01.332535-04:00 early_entry_1010                   entry {"allocated_cash": 14700.0, "asset_type": "option", "contract_symbol": "TTWO260717C00230000", "contracts": 15, "early_entry_score": 0.809, "entry_mode": "early", "entry_option_price": 9.8, "execution_mode": "option", "matched_signals": 35, "option_liquidity_status": "ok", "option_open_interest": 169.0, "option_spread_pct": 12.24, "option_volume": 22.0, "success_rate": 100.0, "ticker": "TTWO", "timing_score": 0.397}
 2026-05-26T10:10:01.332535-04:00 early_entry_1010 entry_candidate_skipped                                                                                                                                                             {"early_entry_score": 0.848, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 2.0, "option_spread_pct": 53.06, "option_volume": 2.0, "reason": "no_trade_low_option_liquidity", "ticker": "FTNT", "timing_score": 0.615}
 2026-05-26T10:05:02.315056-04:00 early_entry_1005           entry_skipped                                                                                                                                                                                                                                                                                                                                                                             {"reason": "no_trade_after_option_and_timing_filters"}
@@ -79,7 +80,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-26T00:00:03.086607-04:00     data_refresh            data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                      {'saved': 92}
 2026-05-25T23:55:01.101287-04:00   share_ext_2355           market_closed                                                                                                                                                                                                                                                                                                                                                                         {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T23:50:02.099383-04:00   share_ext_2350           market_closed                                                                                                                                                                                                                                                                                                                                                                         {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:45:01.097228-04:00   share_ext_2345           market_closed                                                                                                                                                                                                                                                                                                                                                                         {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
 
 ## Equity Curves
@@ -89,27 +89,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260526101001)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260526101502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260526101001)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260526101502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260526101001)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260526101502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260526101001)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260526101502)
 
 </details>
