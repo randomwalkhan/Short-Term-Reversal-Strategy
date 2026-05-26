@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-26 09:45:02 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-05-26 09:50:01 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -37,8 +37,8 @@ Last processed slot: `manual`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SBUX     option         option SBUX260717C00105000       2026-05-22                   1     38     13775.0                 14250.0         3.62           3.75      103.16         103.0     last_price_stale                        NaN                unavailable                   False           475.0                   3.45         94.74               19              0.93         28.13            1.56                  32.97                2147.0           78.0               0.07                      ok
-  AVGO     option         option AVGO260717C00420000       2026-05-21                   2      4     12140.0                 11900.0        30.35          29.75      415.18         427.8     last_price_stale                        NaN                unavailable                   False          -240.0                  -1.98         91.67               36              0.62         50.17            0.00                  40.33                2101.0          296.0               0.03                      ok
+  SBUX     option         option SBUX260717C00105000       2026-05-22                   1     38     13775.0                 14250.0         3.62           3.75      103.16        102.79     last_price_stale                        NaN                unavailable                   False           475.0                   3.45         94.74               19              0.93         28.13            1.56                  32.97                2147.0           78.0               0.07                      ok
+  AVGO     option         option AVGO260717C00420000       2026-05-21                   2      4     12140.0                 11900.0        30.35          29.75      415.18        428.20     last_price_stale                        NaN                unavailable                   False          -240.0                  -1.98         91.67               36              0.62         50.17            0.00                  40.33                2101.0          296.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-05-26)
@@ -48,19 +48,19 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  TEAM           88.89               36            1.74              1.04         84.97               109.49         0.652          pass              0.645             56.4                           0.471               -3.87             -0.001                      ok            True                  False
-  CSCO           87.50               16            1.35              1.14        119.92                52.25         0.633          pass              0.438             44.9                           0.284               20.32              1.907                      ok            True                  False
-  FTNT          100.00               30            1.25              1.17        133.43                66.43         0.621          pass              0.794             66.1                           0.505               14.57              1.621                      ok            True                  False
-  MELI           88.89               18            2.29             26.70       1652.98                60.80         0.587          pass              0.410             20.4                           0.235                4.43              0.661                      ok            True                  False
-   ADP          100.00               14            2.12              3.35        223.88                37.70         0.551          pass              0.529             15.7                           0.234                4.19              0.652                      ok            True                  False
-  CTSH           82.35               17            1.82              0.67         52.46                46.65         0.542          pass              0.289             41.8                           0.447                5.90              1.307                      ok            True                  False
-  ROST           93.75               32            0.70              1.15        234.32                38.50         0.509          pass              0.729             54.9                           0.320                8.68              0.761                      ok            True                  False
-  QCOM           92.86               42            0.08              0.14        238.10               100.82         0.679          pass              0.764             51.0                           0.260                0.18              0.459                      ok           False                  False
-  INTU           81.25               16            3.03              6.79        317.03                90.56         0.661          pass              0.178             12.9                           0.239              -21.12             -2.256 downtrend_blocked_slope           False                  False
-   TRI           73.33               15            1.58              0.95         85.45                55.00         0.613          pass              0.173             26.0                           0.283               -4.57              0.094                      ok           False                  False
-  ASML           89.74               39            0.13              1.51       1632.25                54.77         0.580          pass              0.772             87.1                           0.455                4.15              0.395                      ok           False                  False
-  GEHC           76.74               43            0.12              0.05         64.21                59.75         0.573          pass              0.526             89.7                           0.569                3.98              0.452                      ok           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  QCOM           91.67               36            0.61              1.02        237.72               100.82         0.674          pass              0.666             38.1                           0.286               -0.35              0.434                                 ok            True                  False
+  TEAM           88.57               35            1.80              1.08         84.96               109.49         0.655          pass              0.626             55.1                           0.462               -3.92             -0.004                                 ok            True                  False
+  CSCO           87.50               16            1.45              1.22        119.89                52.25         0.628          pass              0.426             41.2                           0.259               20.21              1.903                                 ok            True                  False
+  FTNT          100.00               35            0.81              0.76        133.60                66.43         0.614          pass              0.862             77.9                           0.599               15.07              1.641                                 ok            True                   True
+  MELI           90.00               20            2.09             24.38       1653.97                60.80         0.588          pass              0.474             27.4                           0.244                4.64              0.670                                 ok            True                  False
+  CTSH           85.00               20            1.57              0.58         52.50                46.65         0.541          pass              0.403             49.7                           0.492                6.16              1.318                                 ok            True                  False
+   ADP           93.33               15            2.05              3.23        223.93                37.70         0.540          pass              0.499             18.7                           0.227                4.27              0.655                                 ok            True                  False
+  ROST           93.75               32            0.70              1.15        234.32                38.50         0.509          pass              0.729             55.1                           0.435                8.68              0.761                                 ok            True                  False
+  INSM           75.61               41            0.53              0.39        106.07               110.00         0.753          pass              0.440             54.8                           0.330                1.72             -0.585                                 ok           False                  False
+  INTU           81.25               16            3.03              6.78        317.03                90.56         0.662          pass              0.179             13.0                           0.205              -21.11             -2.256            downtrend_blocked_slope           False                  False
+   TRI           78.57               14            1.86              1.12         85.38                55.00         0.609          pass              0.125             12.6                           0.161               -4.85              0.081                                 ok           False                  False
+   WMT           94.12               17            0.99              0.84        119.91                34.37         0.599          pass              0.547             21.4                           0.262               -6.67             -0.829 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260526094502)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260526095001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260526094502)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260526095001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260526094502)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260526095001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260526094502)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260526095001)
 
 </details>
