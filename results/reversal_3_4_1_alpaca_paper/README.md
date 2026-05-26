@@ -1,22 +1,22 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-26 13:20:20 EDT`
+Latest checkpoint (ET): `2026-05-26 13:25:24 EDT`
 Last slot: `manage_1330`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$92,312.47`
-- Portfolio value: `$96,287.47`
+- Cash: `$88,222.43`
+- Portfolio value: `$96,087.43`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC  exit_submitted    regular INTC260626C00117000          3              13.450                13.925          bid_ask_mid                     13.925                   True          4177.5           142.5               3.531599                 2.0
-  PANW entry_submitted      early PANW260717C00260000          2              19.475                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
+ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  INTC exit_submitted    regular INTC260626C00117000          3               13.45                 13.85          bid_ask_mid                      13.85                    True          4155.0           120.0               2.973978                   2
+  PANW           open      early PANW260717C00260000          2               20.45                 20.80          bid_ask_mid                      20.80                    True          4160.0            70.0               1.711491                   0
 ```
 
 ## Closed Trades
@@ -36,6 +36,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-26T13:25:24.718183-04:00 early_entry_1110          entry_filled                                                                                       {"contract_symbol": "PANW260717C00260000", "contracts": 2, "filled_price": 20.45, "ticker": "PANW"}
 2026-05-26T11:12:09.227523-04:00 early_entry_1110 entry_order_submitted    {"alpaca_order_id": "f018255d-8911-447e-8321-8e1f5bf59752", "contract_symbol": "PANW260717C00260000", "contracts": 2, "entry_mode": "early", "limit_price": "20.45", "ticker": "PANW"}
 2026-05-26T11:05:57.430326-04:00 early_entry_1105         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ROST"}
 2026-05-26T10:59:42.328626-04:00 early_entry_1055         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
@@ -55,5 +56,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-25T23:52:27.970798-04:00   share_ext_2350         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T23:47:24.610071-04:00   share_ext_2345         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T23:42:21.118060-04:00   share_ext_2340         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T23:37:17.443729-04:00   share_ext_2335         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
