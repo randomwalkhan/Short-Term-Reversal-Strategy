@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-26 10:16:13 EDT`
-Last slot: `early_entry_1015`
+Latest checkpoint (ET): `2026-05-26 10:22:24 EDT`
+Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$87,957.73`
-- Portfolio value: `$95,889.73`
+- Portfolio value: `$95,777.73`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,8 +15,8 @@ Last slot: `early_entry_1015`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  INTC   open    regular INTC260626C00117000          3               13.45                 14.10          bid_ask_mid                      14.10                    True          4230.0           195.0               4.832714                   2
-  SBUX   open    regular SBUX260717C00105000         13                3.75                  3.75          bid_ask_mid                       3.75                    True          4875.0             0.0               0.000000                   1
+  INTC   open    regular INTC260626C00117000          3               13.45                14.975          bid_ask_mid                     14.975                    True          4492.5           457.5               11.33829                   2
+  SBUX   open    regular SBUX260717C00105000         13                3.75                 3.750          bid_ask_mid                      3.750                    True          4875.0             0.0                0.00000                   1
 ```
 
 ## Closed Trades
@@ -35,6 +35,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot    event_type                                                                                                                                                                         detail
+2026-05-26T10:22:24.472094-04:00 early_entry_1020 entry_skipped                    {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ADSK"}
 2026-05-26T10:16:13.343478-04:00 early_entry_1015 entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
 2026-05-26T10:09:53.668214-04:00 early_entry_1005 entry_skipped                    {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
 2026-05-26T10:03:44.720190-04:00 early_entry_1000 entry_skipped {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,no_two_sided_quote,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
@@ -54,5 +55,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-25T22:51:45.418544-04:00   share_ext_2250 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T22:46:41.674859-04:00   share_ext_2245 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 2026-05-25T22:41:38.162951-04:00   share_ext_2240 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
-2026-05-25T22:36:34.667460-04:00   share_ext_2235 market_closed                                                                                                                     {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
