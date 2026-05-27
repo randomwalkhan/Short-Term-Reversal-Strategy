@@ -2103,3 +2103,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-27T10:35:01.630649-04:00,2026-05-27,early_entry_1035,entry,"{""allocated_cash"": 12010.0, ""asset_type"": ""option"", ""contract_symbol"": ""SNPS260717C00500000"", ""contracts"": 2, ""early_entry_score"": 0.805, ""entry_mode"": ""early"", ""entry_option_price"": 60.05, ""execution_mode"": ""option"", ""matched_signals"": 36, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 302.0, ""option_spread_pct"": 9.83, ""option_volume"": 157.0, ""success_rate"": 97.22, ""ticker"": ""SNPS"", ""timing_score"": 0.413}"
 2026-05-27T10:40:01.617422-04:00,2026-05-27,early_entry_1040,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-27T10:45:02.652833-04:00,2026-05-27,early_entry_1045,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-27T10:50:01.641792-04:00,2026-05-27,early_entry_1050,entry_skipped,"{""reason"": ""daily_entry_limit""}"
