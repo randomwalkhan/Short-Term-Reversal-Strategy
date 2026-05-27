@@ -807,3 +807,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-27T10:22:38.211342-04:00,2026-05-27,early_entry_1020,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
 2026-05-27T10:28:50.092346-04:00,2026-05-27,early_entry_1025,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
 2026-05-27T10:34:59.298014-04:00,2026-05-27,early_entry_1030,entry_skipped,"{""budget"": 5000.0, ""entry_limit"": 63.0, ""reason"": ""insufficient_cash"", ""ticker"": ""SNPS""}"
+2026-05-27T10:41:11.964523-04:00,2026-05-27,early_entry_1040,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
