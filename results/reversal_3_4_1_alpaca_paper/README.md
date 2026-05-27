@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-27 10:10:15 EDT`
-Last slot: `manage_1000`
+Latest checkpoint (ET): `2026-05-27 10:16:27 EDT`
+Last slot: `early_entry_1015`
 
 ## Alpaca Paper Account
 
@@ -34,6 +34,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-27T10:16:27.646862-04:00 early_entry_1015         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T10:10:15.784488-04:00 early_entry_1010         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T10:10:15.784488-04:00             exit           exit_filled                                                       {"contract_symbol": "PANW260717C00260000", "exit_price": 14.8, "pnl": -1130.0, "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
 2026-05-27T10:04:03.735411-04:00 early_entry_1000         entry_skipped                                                                                                  {"budget": 5000.0, "entry_limit": 65.0, "reason": "insufficient_cash", "ticker": "SNPS"}
@@ -51,7 +52,6 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-26T10:47:18.644238-04:00 early_entry_1045         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
 2026-05-26T10:41:06.481605-04:00 early_entry_1040         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-26T10:34:54.291795-04:00 early_entry_1030         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-05-26T10:28:36.599915-04:00      manage_1030  exit_order_submitted {"alpaca_order_id": "dea66ffd-9a9b-4909-96a1-65758b153680", "contract_symbol": "INTC260626C00117000", "limit_price": "15.50", "reason": "take_profit_day2_hit_at_scan", "ticker": "INTC"}
 2026-05-26T10:28:36.599915-04:00 early_entry_1025         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-05-26T10:22:24.472094-04:00 early_entry_1020         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ADSK"}
+2026-05-26T10:28:36.599915-04:00      manage_1030  exit_order_submitted {"alpaca_order_id": "dea66ffd-9a9b-4909-96a1-65758b153680", "contract_symbol": "INTC260626C00117000", "limit_price": "15.50", "reason": "take_profit_day2_hit_at_scan", "ticker": "INTC"}
 ```

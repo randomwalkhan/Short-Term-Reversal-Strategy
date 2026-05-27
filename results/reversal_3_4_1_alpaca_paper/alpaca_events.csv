@@ -803,3 +803,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-27T10:04:03.735411-04:00,2026-05-27,early_entry_1000,entry_skipped,"{""budget"": 5000.0, ""entry_limit"": 65.0, ""reason"": ""insufficient_cash"", ""ticker"": ""SNPS""}"
 2026-05-27T10:10:15.784488-04:00,2026-05-27,exit,exit_filled,"{""contract_symbol"": ""PANW260717C00260000"", ""exit_price"": 14.8, ""pnl"": -1130.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""PANW""}"
 2026-05-27T10:10:15.784488-04:00,2026-05-27,early_entry_1010,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
+2026-05-27T10:16:27.646862-04:00,2026-05-27,early_entry_1015,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
