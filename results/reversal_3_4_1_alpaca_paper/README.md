@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-27 11:48:57 EDT`
+Latest checkpoint (ET): `2026-05-27 11:55:12 EDT`
 Last slot: `manage_1200`
 
 ## Alpaca Paper Account
@@ -33,25 +33,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot           event_type                                                                                                                                                                             detail
-2026-05-27T11:48:57.330665-04:00 early_entry_1145        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:42:48.973748-04:00 early_entry_1140        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:36:41.236063-04:00 early_entry_1135        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:30:32.575558-04:00 early_entry_1130        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:24:23.275408-04:00 early_entry_1120        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:18:10.299261-04:00 early_entry_1115        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:11:58.509133-04:00 early_entry_1110        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:05:52.604228-04:00 early_entry_1105        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:59:45.771179-04:00 early_entry_1055        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:53:36.022473-04:00 early_entry_1050        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:47:25.850725-04:00 early_entry_1045        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:41:11.964523-04:00 early_entry_1040        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:34:59.298014-04:00 early_entry_1030        entry_skipped                                                                                           {"budget": 5000.0, "entry_limit": 63.0, "reason": "insufficient_cash", "ticker": "SNPS"}
-2026-05-27T10:28:50.092346-04:00 early_entry_1025        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:22:38.211342-04:00 early_entry_1020        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:16:27.646862-04:00 early_entry_1015        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:10:15.784488-04:00 early_entry_1010        entry_skipped                                                                                                                                  {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:10:15.784488-04:00             exit          exit_filled                                                {"contract_symbol": "PANW260717C00260000", "exit_price": 14.8, "pnl": -1130.0, "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
-2026-05-27T10:04:03.735411-04:00 early_entry_1000        entry_skipped                                                                                           {"budget": 5000.0, "entry_limit": 65.0, "reason": "insufficient_cash", "ticker": "SNPS"}
-2026-05-27T10:04:03.735411-04:00      manage_1000 exit_order_submitted {"alpaca_order_id": "844180c3-400a-4c6b-9f73-b3c1b512e866", "contract_symbol": "PANW260717C00260000", "limit_price": "14.05", "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
+                    timestamp_et             slot    event_type                                                                                                                              detail
+2026-05-27T11:55:12.007255-04:00 early_entry_1155 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:48:57.330665-04:00 early_entry_1145 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:42:48.973748-04:00 early_entry_1140 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:36:41.236063-04:00 early_entry_1135 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:30:32.575558-04:00 early_entry_1130 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:24:23.275408-04:00 early_entry_1120 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:18:10.299261-04:00 early_entry_1115 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:11:58.509133-04:00 early_entry_1110 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:05:52.604228-04:00 early_entry_1105 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:59:45.771179-04:00 early_entry_1055 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:53:36.022473-04:00 early_entry_1050 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:47:25.850725-04:00 early_entry_1045 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:41:11.964523-04:00 early_entry_1040 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:34:59.298014-04:00 early_entry_1030 entry_skipped                                            {"budget": 5000.0, "entry_limit": 63.0, "reason": "insufficient_cash", "ticker": "SNPS"}
+2026-05-27T10:28:50.092346-04:00 early_entry_1025 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:22:38.211342-04:00 early_entry_1020 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:16:27.646862-04:00 early_entry_1015 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:10:15.784488-04:00             exit   exit_filled {"contract_symbol": "PANW260717C00260000", "exit_price": 14.8, "pnl": -1130.0, "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
+2026-05-27T10:10:15.784488-04:00 early_entry_1010 entry_skipped                                                                                   {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:04:03.735411-04:00 early_entry_1000 entry_skipped                                            {"budget": 5000.0, "entry_limit": 65.0, "reason": "insufficient_cash", "ticker": "SNPS"}
 ```
