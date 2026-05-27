@@ -2,39 +2,7 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [
-    {
-      "allocated_cash": 4090.0,
-      "alpaca_entry_client_order_id": "rev-20260526111209-panw-early",
-      "alpaca_entry_order_id": "f018255d-8911-447e-8321-8e1f5bf59752",
-      "alpaca_exit_order_id": "844180c3-400a-4c6b-9f73-b3c1b512e866",
-      "asset_type": "option",
-      "contract_symbol": "PANW260717C00260000",
-      "contracts": 2,
-      "current_drop_pct": 1.05,
-      "early_entry_score": 0.703,
-      "entry_mode": "early",
-      "entry_option_price": 20.45,
-      "entry_slot": "early_entry_1110",
-      "entry_spot": 257.8500061035156,
-      "entry_timestamp": "2026-05-26T11:12:09.227523-04:00",
-      "entry_trade_date": "2026-05-26",
-      "execution_mode": "alpaca_paper_option",
-      "exit_reason": "stop_loss_hit_at_scan",
-      "exit_reference_price": 14.05,
-      "expiry": "2026-07-17",
-      "matched_signals": 33,
-      "planned_stop": 18.405,
-      "planned_tp_day1": 23.5175,
-      "planned_tp_day2": 23.5175,
-      "position_id": "PANW_20260526T111209",
-      "status": "exit_submitted",
-      "strike": 260.0,
-      "success_rate": 90.91,
-      "ticker": "PANW",
-      "timing_score": 0.42
-    }
-  ],
+  "positions": [],
   "start_date": "2026-03-24",
   "version": "3.4.4-alpaca-paper.0"
 }
