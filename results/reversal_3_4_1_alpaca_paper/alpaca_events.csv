@@ -822,3 +822,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-27T11:55:12.007255-04:00,2026-05-27,early_entry_1155,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
 2026-05-27T14:52:59.210728-04:00,2026-05-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""NXPI""}"
 2026-05-27T14:59:13.815238-04:00,2026-05-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""NXPI""}"
+2026-05-27T15:05:23.333934-04:00,2026-05-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""NXPI""}"

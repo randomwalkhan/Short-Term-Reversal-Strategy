@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-27 14:59:13 EDT`
+Latest checkpoint (ET): `2026-05-27 15:05:23 EDT`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
@@ -34,6 +34,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot    event_type                                                                                                                          detail
+2026-05-27T15:05:23.333934-04:00       entry_1500 entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
 2026-05-27T14:59:13.815238-04:00       entry_1500 entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
 2026-05-27T14:52:59.210728-04:00       entry_1500 entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
 2026-05-27T11:55:12.007255-04:00 early_entry_1155 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
@@ -53,5 +54,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-27T10:28:50.092346-04:00 early_entry_1025 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T10:22:38.211342-04:00 early_entry_1020 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T10:16:27.646862-04:00 early_entry_1015 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:10:15.784488-04:00 early_entry_1010 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
 ```
