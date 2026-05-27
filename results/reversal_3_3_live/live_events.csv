@@ -2098,3 +2098,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-27T10:10:01.607453-04:00,2026-05-27,early_entry_1010,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-05-27T10:15:02.626707-04:00,2026-05-27,early_entry_1015,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-05-27T10:20:05.595233-04:00,2026-05-27,early_entry_1020,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-05-27T10:25:01.625508-04:00,2026-05-27,early_entry_1025,entry_skipped,"{""reason"": ""no_candidate""}"
