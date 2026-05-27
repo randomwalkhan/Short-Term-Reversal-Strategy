@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-27 11:05:52 EDT`
+Latest checkpoint (ET): `2026-05-27 11:11:58 EDT`
 Last slot: `manage_1100`
 
 ## Alpaca Paper Account
@@ -34,6 +34,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-05-27T11:11:58.509133-04:00 early_entry_1110         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T11:05:52.604228-04:00 early_entry_1105         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T10:59:45.771179-04:00 early_entry_1055         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T10:53:36.022473-04:00 early_entry_1050         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
@@ -53,5 +54,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-26T13:25:24.718183-04:00 early_entry_1110          entry_filled                                                                                    {"contract_symbol": "PANW260717C00260000", "contracts": 2, "filled_price": 20.45, "ticker": "PANW"}
 2026-05-26T11:12:09.227523-04:00 early_entry_1110 entry_order_submitted {"alpaca_order_id": "f018255d-8911-447e-8321-8e1f5bf59752", "contract_symbol": "PANW260717C00260000", "contracts": 2, "entry_mode": "early", "limit_price": "20.45", "ticker": "PANW"}
 2026-05-26T11:05:57.430326-04:00 early_entry_1105         entry_skipped                            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ROST"}
-2026-05-26T10:59:42.328626-04:00 early_entry_1055         entry_skipped                                              {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "TEAM"}
 ```
