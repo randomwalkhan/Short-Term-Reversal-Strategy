@@ -1,21 +1,21 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-27 09:58:59 EDT`
+Latest checkpoint (ET): `2026-05-27 10:04:03 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$92,766.92`
-- Portfolio value: `$95,726.92`
+- Cash: `$95,726.88`
+- Portfolio value: `$95,726.88`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  PANW   open      early PANW260717C00260000          2               20.45                 20.33     last_price_stale                        NaN                   False          4066.0           -24.0              -0.586797                   1
+ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  PANW exit_submitted      early PANW260717C00260000          2               20.45                15.625          bid_ask_mid                     15.625                    True          3125.0          -965.0             -23.594132                   1
 ```
 
 ## Closed Trades
@@ -36,6 +36,8 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-27T10:04:03.735411-04:00 early_entry_1000         entry_skipped                                                                                                  {"budget": 5000.0, "entry_limit": 65.0, "reason": "insufficient_cash", "ticker": "SNPS"}
+2026-05-27T10:04:03.735411-04:00      manage_1000  exit_order_submitted        {"alpaca_order_id": "844180c3-400a-4c6b-9f73-b3c1b512e866", "contract_symbol": "PANW260717C00260000", "limit_price": "14.05", "reason": "stop_loss_hit_at_scan", "ticker": "PANW"}
 2026-05-27T09:33:35.120835-04:00             exit           exit_filled                                                        {"contract_symbol": "INTC260626C00117000", "exit_price": 15.15, "pnl": 510.0, "reason": "time_exit_at_4pm_scan", "ticker": "INTC"}
 2026-05-26T16:02:53.627444-04:00      manage_1600  exit_order_submitted        {"alpaca_order_id": "b44a5668-d787-4b80-917d-cff951dc8f5f", "contract_symbol": "INTC260626C00117000", "limit_price": "14.45", "reason": "time_exit_at_4pm_scan", "ticker": "INTC"}
 2026-05-26T16:02:53.627444-04:00             exit       exit_not_filled                                                                                                         {"contract_symbol": "INTC260626C00117000", "status": "expired", "ticker": "INTC"}
@@ -54,6 +56,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-26T10:22:24.472094-04:00 early_entry_1020         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ADSK"}
 2026-05-26T10:16:13.343478-04:00 early_entry_1015         entry_skipped                                                            {"entry_mode": "early", "option_liquidity_status": "wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
 2026-05-26T10:09:53.668214-04:00 early_entry_1005         entry_skipped                               {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-05-26T10:03:44.720190-04:00 early_entry_1000         entry_skipped            {"entry_mode": "early", "option_liquidity_status": "low_open_interest,low_volume,no_two_sided_quote,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-05-25T23:57:31.407523-04:00   share_ext_2355         market_closed                                                                                                                                {"holiday_name": "Memorial Day", "reason": "nyse_holiday"}
 ```
