@@ -798,3 +798,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-26T13:25:24.718183-04:00,2026-05-26,early_entry_1110,entry_filled,"{""contract_symbol"": ""PANW260717C00260000"", ""contracts"": 2, ""filled_price"": 20.45, ""ticker"": ""PANW""}"
 2026-05-26T16:02:53.627444-04:00,2026-05-26,exit,exit_not_filled,"{""contract_symbol"": ""INTC260626C00117000"", ""status"": ""expired"", ""ticker"": ""INTC""}"
 2026-05-26T16:02:53.627444-04:00,2026-05-26,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""b44a5668-d787-4b80-917d-cff951dc8f5f"", ""contract_symbol"": ""INTC260626C00117000"", ""limit_price"": ""14.45"", ""reason"": ""time_exit_at_4pm_scan"", ""ticker"": ""INTC""}"
+2026-05-27T09:33:35.120835-04:00,2026-05-27,exit,exit_filled,"{""contract_symbol"": ""INTC260626C00117000"", ""exit_price"": 15.15, ""pnl"": 510.0, ""reason"": ""time_exit_at_4pm_scan"", ""ticker"": ""INTC""}"
