@@ -2125,3 +2125,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-27T15:05:04.292282-04:00,2026-05-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-27T15:10:02.000661-04:00,2026-05-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-28T00:00:03.757313-04:00,2026-05-28,data_refresh,data_refresh,{'saved': 92}
+2026-05-28T10:00:04.925583-04:00,2026-05-28,early_entry_1000,entry_skipped,"{""reason"": ""no_candidate""}"
