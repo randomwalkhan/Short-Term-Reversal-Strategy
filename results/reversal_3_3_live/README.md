@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-28 10:55:05 EDT`
+Latest checkpoint (ET): `2026-05-28 11:00:06 EDT`
 Last processed slot: `manage_1100`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1100`
 ## Portfolio Snapshot
 
 - Cash: `$17,884.25`
-- Equity: `$30,444.25`
+- Equity: `$30,684.25`
 - Realized PnL: `$20,384.25`
-- Unrealized PnL: `$60.00`
+- Unrealized PnL: `$300.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  AVGO     option         option AVGO260717C00420000       2026-05-28                   0      4     12500.0                 12560.0        31.25           31.4      419.65        422.49          bid_ask_mid                       31.4                bid_ask_mid                    True            60.0                   0.48         89.19               37              0.52         51.04           49.49                  36.99                2631.0           27.0               0.06                      ok
+  AVGO     option         option AVGO260717C00420000       2026-05-28                   0      4     12500.0                 12800.0        31.25           32.0      419.65        423.88          bid_ask_mid                       32.0                bid_ask_mid                    True           300.0                    2.4         89.19               37              0.52         51.04           48.59                  36.99                2631.0           27.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-05-28)
@@ -51,24 +51,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  INTC           95.83               24            1.97              1.68        121.05                92.16         0.614            pass              0.724             56.5                           0.697               -0.76              0.738                                 ok            True                  False
-   XEL           90.91               11            1.59              0.90         80.61                25.49         0.564            pass              0.354              0.0                           0.005               -0.25              0.204                                 ok            True                  False
-  LRCX           87.10               31            0.90              2.00        318.07                56.04         0.536            pass              0.599             72.0                           0.748                6.98              1.143                                 ok            True                  False
-   LIN           88.89               18            1.28              4.55        505.92                20.85         0.500            pass              0.431             30.1                           0.434               -2.32             -0.047                                 ok            True                  False
-    ZS           85.29               34            1.05              0.93        126.01               152.21         0.826            pass              0.586             67.5                           0.719              -17.94             -1.182            downtrend_blocked_slope           False                  False
-  CSCO           94.12               34            0.28              0.24        119.57                51.65         0.604            pass              0.837             80.1                           0.772               17.14              0.895                                 ok           False                  False
-   AEP           71.43                7            1.42              1.29        129.02                25.33         0.565            pass              0.197             47.0                           0.270               -0.17              0.202                                 ok           False                  False
-  ROST           75.00                4            2.88              4.70        231.45                38.54         0.546            pass              0.079              8.1                           0.196                7.08              1.120                                 ok           False                  False
-  REGN           88.24               34            0.64              2.81        626.54                48.81         0.521            pass              0.531             33.1                           0.385              -13.23             -1.310 downtrend_blocked_slope_and_streak           False                  False
-  NVDA           89.74               39            0.18              0.27        212.48                40.71         0.495 below_threshold              0.768             88.6                           0.457               -6.03             -0.851 downtrend_blocked_slope_and_streak           False                  False
-   CEG           80.00               35            0.97              1.95        287.84                55.24         0.494 below_threshold              0.427             70.2                           0.712                4.16              0.988                                 ok           False                  False
-  MPWR           93.10               29            1.27             14.40       1614.00                53.62         0.493 below_threshold              0.689             54.5                           0.581               -3.08              0.242           downtrend_blocked_streak           False                  False
+  INTC           96.30               27            1.70              1.45        121.15                92.16         0.612            pass              0.761             62.3                           0.792               -0.49              0.750                                 ok            True                  False
+  LRCX           89.19               37            0.56              1.26        318.39                56.04         0.519            pass              0.724             82.3                           0.782                7.34              1.158                                 ok            True                   True
+  MNST           91.67               36            0.54              0.34         89.10                49.17         0.507            pass              0.719             61.3                           0.594                3.29              0.263                                 ok            True                   True
+   LIN           89.47               19            1.19              4.22        506.06                20.85         0.501            pass              0.468             35.1                           0.508               -2.22             -0.043                                 ok            True                  False
+    ZS           83.33               36            0.84              0.74        126.09               152.21         0.825            pass              0.567             74.1                           0.822              -17.77             -1.172            downtrend_blocked_slope           False                  False
+  CSCO           94.12               34            0.33              0.27        119.55                51.65         0.601            pass              0.828             77.2                           0.765               17.09              0.893                                 ok           False                  False
+   XEL          100.00                9            1.77              1.00         80.57                25.49         0.574            pass              0.461              1.0                           0.153               -0.43              0.196                                 ok           False                  False
+   AEP           66.67                6            1.67              1.52        128.92                25.33         0.548            pass              0.167             37.5                           0.233               -0.43              0.190                                 ok           False                  False
+  ROST           75.00                4            2.92              4.77        231.42                38.54         0.543            pass              0.074              6.7                           0.155                7.03              1.118                                 ok           False                  False
+  REGN           88.24               34            0.60              2.62        626.62                48.81         0.524            pass              0.545             37.6                           0.390              -13.19             -1.308 downtrend_blocked_slope_and_streak           False                  False
+   WMT           91.43               35            0.42              0.35        118.39                34.18         0.505            pass              0.531              2.9                           0.163              -10.22             -1.454 downtrend_blocked_slope_and_streak           False                  False
+  NVDA           90.00               40            0.05              0.07        212.57                40.71         0.498 below_threshold              0.808             97.1                           0.532               -5.90             -0.845 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot    event_type                          detail
+2026-05-28T11:00:06.281016-04:00 early_entry_1100 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-28T10:55:05.933793-04:00 early_entry_1055 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-28T10:50:05.877302-04:00 early_entry_1050 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-28T10:45:02.890829-04:00 early_entry_1045 entry_skipped {"reason": "daily_entry_limit"}
@@ -78,7 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-28T10:25:06.392243-04:00 early_entry_1025 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-28T10:20:03.857163-04:00 early_entry_1020 entry_skipped {"reason": "daily_entry_limit"}
 2026-05-28T10:15:02.929662-04:00 early_entry_1015 entry_skipped {"reason": "daily_entry_limit"}
-2026-05-28T10:10:02.928305-04:00 early_entry_1010 entry_skipped {"reason": "daily_entry_limit"}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260528105505)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260528110006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260528105505)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260528110006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260528105505)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260528110006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260528105505)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260528110006)
 
 </details>
