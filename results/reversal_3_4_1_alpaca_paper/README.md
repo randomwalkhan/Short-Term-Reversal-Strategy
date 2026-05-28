@@ -1,19 +1,22 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-28 09:56:20 EDT`
+Latest checkpoint (ET): `2026-05-28 10:01:23 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$95,726.72`
-- Portfolio value: `$95,726.72`
+- Cash: `$92,386.70`
+- Portfolio value: `$95,611.70`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
-_None_
+```text
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
+  AVGO entry_submitted      early AVGO260717C00420000          1                35.2                   NaN             NaN                    NaN
+```
 
 ## Closed Trades
 
@@ -33,25 +36,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot    event_type                                                                                                                          detail
-2026-05-27T15:11:39.018745-04:00       entry_1500 entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
-2026-05-27T15:05:23.333934-04:00       entry_1500 entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
-2026-05-27T14:59:13.815238-04:00       entry_1500 entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
-2026-05-27T14:52:59.210728-04:00       entry_1500 entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
-2026-05-27T11:55:12.007255-04:00 early_entry_1155 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:48:57.330665-04:00 early_entry_1145 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:42:48.973748-04:00 early_entry_1140 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:36:41.236063-04:00 early_entry_1135 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:30:32.575558-04:00 early_entry_1130 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:24:23.275408-04:00 early_entry_1120 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:18:10.299261-04:00 early_entry_1115 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:11:58.509133-04:00 early_entry_1110 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:05:52.604228-04:00 early_entry_1105 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:59:45.771179-04:00 early_entry_1055 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:53:36.022473-04:00 early_entry_1050 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:47:25.850725-04:00 early_entry_1045 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:41:11.964523-04:00 early_entry_1040 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:34:59.298014-04:00 early_entry_1030 entry_skipped                                        {"budget": 5000.0, "entry_limit": 63.0, "reason": "insufficient_cash", "ticker": "SNPS"}
-2026-05-27T10:28:50.092346-04:00 early_entry_1025 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:22:38.211342-04:00 early_entry_1020 entry_skipped                                                                               {"entry_mode": "early", "reason": "no_candidate"}
+                    timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-05-28T10:01:23.351204-04:00 early_entry_1000 entry_order_submitted {"alpaca_order_id": "a7b7954f-7027-4fe6-bc6b-040c4d748493", "contract_symbol": "AVGO260717C00420000", "contracts": 1, "entry_mode": "early", "limit_price": "36.20", "ticker": "AVGO"}
+2026-05-27T15:11:39.018745-04:00       entry_1500         entry_skipped                                                        {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
+2026-05-27T15:05:23.333934-04:00       entry_1500         entry_skipped                                                        {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
+2026-05-27T14:59:13.815238-04:00       entry_1500         entry_skipped                                                        {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
+2026-05-27T14:52:59.210728-04:00       entry_1500         entry_skipped                                                        {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
+2026-05-27T11:55:12.007255-04:00 early_entry_1155         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:48:57.330665-04:00 early_entry_1145         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:42:48.973748-04:00 early_entry_1140         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:36:41.236063-04:00 early_entry_1135         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:30:32.575558-04:00 early_entry_1130         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:24:23.275408-04:00 early_entry_1120         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:18:10.299261-04:00 early_entry_1115         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:11:58.509133-04:00 early_entry_1110         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T11:05:52.604228-04:00 early_entry_1105         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:59:45.771179-04:00 early_entry_1055         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:53:36.022473-04:00 early_entry_1050         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:47:25.850725-04:00 early_entry_1045         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:41:11.964523-04:00 early_entry_1040         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-27T10:34:59.298014-04:00 early_entry_1030         entry_skipped                                                                                               {"budget": 5000.0, "entry_limit": 63.0, "reason": "insufficient_cash", "ticker": "SNPS"}
+2026-05-27T10:28:50.092346-04:00 early_entry_1025         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 ```
