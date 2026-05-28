@@ -2130,3 +2130,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-28T10:05:05.949315-04:00,2026-05-28,early_entry_1005,entry,"{""allocated_cash"": 12500.0, ""asset_type"": ""option"", ""contract_symbol"": ""AVGO260717C00420000"", ""contracts"": 4, ""early_entry_score"": 0.738, ""entry_mode"": ""early"", ""entry_option_price"": 31.25, ""execution_mode"": ""option"", ""matched_signals"": 37, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2631.0, ""option_spread_pct"": 5.76, ""option_volume"": 27.0, ""success_rate"": 89.19, ""ticker"": ""AVGO"", ""timing_score"": 0.427}"
 2026-05-28T10:10:02.928305-04:00,2026-05-28,early_entry_1010,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-05-28T10:15:02.929662-04:00,2026-05-28,early_entry_1015,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-28T10:20:03.857163-04:00,2026-05-28,early_entry_1020,entry_skipped,"{""reason"": ""daily_entry_limit""}"
