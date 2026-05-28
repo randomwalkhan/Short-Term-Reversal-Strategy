@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-28 09:25:05 EDT`
+Latest checkpoint (ET): `2026-05-28 09:30:06 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SNPS     option         option SNPS260717C00500000       2026-05-27                   1      2     12010.0                 11500.0        60.05           57.5       531.8         514.4     last_price_stale                        NaN                unavailable                   False          -510.0                  -4.25         97.22               36              0.52         54.56             0.0                  24.18                 302.0          157.0                0.1                      ok
+  SNPS     option         option SNPS260717C00500000       2026-05-27                   1      2     12010.0                 11500.0        60.05           57.5       531.8        521.05     last_price_stale                        NaN                unavailable                   False          -510.0                  -4.25         97.22               36              0.52         54.56             0.0                  24.18                 302.0          157.0                0.1                      ok
 ```
 
 ## Today's Closed Trades (2026-05-28)
@@ -46,7 +46,21 @@ _None_
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  ROST           92.59               27            0.94              1.53        232.81                38.54         0.563          pass              0.505              0.0                           0.188                9.22              1.210                                 ok            True                  False
+  AMAT           88.89               36            0.50              1.57        447.57                50.47         0.549          pass              0.647             60.5                           0.405                2.28              0.413                                 ok            True                  False
+  LRCX           88.57               35            0.58              1.30        318.37                56.04         0.547          pass              0.656             68.5                           0.449                7.32              1.157                                 ok            True                  False
+  MNST           90.32               31            0.68              0.43         89.06                49.17         0.530          pass              0.621             50.8                           0.331                3.14              0.256                                 ok            True                  False
+  NXPI           91.18               34            0.58              1.33        328.67                91.24         0.509          pass              0.758             83.1                           0.616                9.69              1.354                                 ok            True                   True
+    ZS           85.19               27            1.84              1.63        125.71               152.21         0.832          pass              0.345              3.3                           0.271              -18.60             -1.218            downtrend_blocked_slope           False                  False
+  INTU           83.72               43            0.25              0.53        307.50                90.92         0.672          pass              0.380              4.4                           0.171              -17.42             -2.978            downtrend_blocked_slope           False                  False
+  PAYX           95.65               23            0.14              0.09         94.38                30.06         0.544          pass              0.736             64.9                           0.372                4.86              0.579                                 ok           False                  False
+  KLAC           89.19               37            0.11              1.50       1956.55                51.91         0.540          pass              0.753             91.5                           0.587                5.83              0.867                                 ok           False                  False
+  MPWR           94.12               34            0.42              4.80       1618.11                53.62         0.529          pass              0.821             77.2                           0.660               -2.24              0.281           downtrend_blocked_streak           False                  False
+  UPRO           94.59               37            0.13              0.13        145.77                29.93         0.526          pass              0.891             89.9                           0.629                2.69              0.336                                 ok           False                  False
+  GOOG           90.91               44            0.17              0.46        384.63                41.06         0.519          pass              0.782             79.8                           0.537               -3.72             -0.415 downtrend_blocked_slope_and_streak           False                  False
+```
 
 ## Recent Events
 
@@ -71,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260528092505)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260528093006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260528092505)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260528093006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260528092505)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260528093006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260528092505)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260528093006)
 
 </details>
