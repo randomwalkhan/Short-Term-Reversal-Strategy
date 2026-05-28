@@ -2154,3 +2154,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-28T12:40:01.998163-04:00,2026-05-28,manage_1230,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""AVGO260717C00420000"", ""fill_price"": 35.95, ""pnl"": 1880.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 15.04, ""ticker"": ""AVGO""}"
 2026-05-28T14:50:05.035990-04:00,2026-05-28,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-05-28"", ""training_samples"": 5117, ""window"": 5}"
 2026-05-28T14:50:05.035990-04:00,2026-05-28,entry_1500,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-05-28T14:55:06.010831-04:00,2026-05-28,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
