@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 17884.250356674194,
-  "positions": [
-    {
-      "position_id": "AVGO_20260528T100505",
-      "ticker": "AVGO",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "AVGO260717C00420000",
-      "expiry": "2026-07-17",
-      "strike": 420.0,
-      "entry_timestamp": "2026-05-28T10:05:05.949315-04:00",
-      "entry_trade_date": "2026-05-28",
-      "entry_slot": "early_entry_1005",
-      "entry_spot": 419.6499938964844,
-      "entry_option_price": 31.25,
-      "entry_bid": 30.35,
-      "entry_ask": 32.15,
-      "entry_iv_pct": 51.03503555297851,
-      "contracts": 4,
-      "allocated_cash": 12500.0,
-      "success_rate": 89.19,
-      "matched_signals": 37,
-      "current_drop_pct": 0.52,
-      "rolling_sigma_20d_pct": 36.99,
-      "planned_tp_day1": 35.9375,
-      "planned_tp_day2": 35.9375,
-      "planned_stop": 28.125,
-      "option_open_interest": 2631.0,
-      "option_volume": 27.0,
-      "option_spread_pct": 0.05759999999999991,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 32264.250356674194,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
