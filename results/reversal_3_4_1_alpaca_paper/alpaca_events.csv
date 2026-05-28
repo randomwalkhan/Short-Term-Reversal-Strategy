@@ -825,3 +825,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-27T15:05:23.333934-04:00,2026-05-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""NXPI""}"
 2026-05-27T15:11:39.018745-04:00,2026-05-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""NXPI""}"
 2026-05-28T10:01:23.351204-04:00,2026-05-28,early_entry_1000,entry_order_submitted,"{""alpaca_order_id"": ""a7b7954f-7027-4fe6-bc6b-040c4d748493"", ""contract_symbol"": ""AVGO260717C00420000"", ""contracts"": 1, ""entry_mode"": ""early"", ""limit_price"": ""36.20"", ""ticker"": ""AVGO""}"
+2026-05-28T10:07:32.783111-04:00,2026-05-28,early_entry_1000,entry_filled,"{""contract_symbol"": ""AVGO260717C00420000"", ""contracts"": 1, ""filled_price"": 33.4, ""ticker"": ""AVGO""}"

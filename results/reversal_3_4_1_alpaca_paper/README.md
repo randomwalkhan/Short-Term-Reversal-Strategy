@@ -1,21 +1,21 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-28 10:01:23 EDT`
+Latest checkpoint (ET): `2026-05-28 10:07:32 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$92,386.70`
-- Portfolio value: `$95,611.70`
+- Portfolio value: `$95,556.70`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
-  AVGO entry_submitted      early AVGO260717C00420000          1                35.2                   NaN             NaN                    NaN
+ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  AVGO   open      early AVGO260717C00420000          1                33.4                  31.1          bid_ask_mid                       31.1                    True          3110.0          -230.0              -6.886228                   0
 ```
 
 ## Closed Trades
@@ -37,6 +37,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-05-28T10:07:32.783111-04:00 early_entry_1000          entry_filled                                                                                     {"contract_symbol": "AVGO260717C00420000", "contracts": 1, "filled_price": 33.4, "ticker": "AVGO"}
 2026-05-28T10:01:23.351204-04:00 early_entry_1000 entry_order_submitted {"alpaca_order_id": "a7b7954f-7027-4fe6-bc6b-040c4d748493", "contract_symbol": "AVGO260717C00420000", "contracts": 1, "entry_mode": "early", "limit_price": "36.20", "ticker": "AVGO"}
 2026-05-27T15:11:39.018745-04:00       entry_1500         entry_skipped                                                        {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
 2026-05-27T15:05:23.333934-04:00       entry_1500         entry_skipped                                                        {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
@@ -56,5 +57,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-27T10:47:25.850725-04:00 early_entry_1045         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T10:41:11.964523-04:00 early_entry_1040         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T10:34:59.298014-04:00 early_entry_1030         entry_skipped                                                                                               {"budget": 5000.0, "entry_limit": 63.0, "reason": "insufficient_cash", "ticker": "SNPS"}
-2026-05-27T10:28:50.092346-04:00 early_entry_1025         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 ```
