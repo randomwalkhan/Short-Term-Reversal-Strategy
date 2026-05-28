@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-28 15:47:12 EDT`
-Last slot: `manual`
+Latest checkpoint (ET): `2026-05-28 15:52:16 EDT`
+Last slot: `manage_1600`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$92,386.70`
-- Portfolio value: `$95,996.70`
+- Portfolio value: `$95,961.70`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manual`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AVGO   open      early AVGO260717C00420000          1                33.4                37.175          bid_ask_mid                     37.175                    True          3717.5           377.5              11.302395                   0
+  AVGO   open      early AVGO260717C00420000          1                33.4                36.575          bid_ask_mid                     36.575                    True          3657.5           317.5               9.505988                   0
 ```
 
 ## Closed Trades
