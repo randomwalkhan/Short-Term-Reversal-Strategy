@@ -2126,3 +2126,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-27T15:10:02.000661-04:00,2026-05-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-28T00:00:03.757313-04:00,2026-05-28,data_refresh,data_refresh,{'saved': 92}
 2026-05-28T10:00:04.925583-04:00,2026-05-28,early_entry_1000,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-05-28T10:05:05.949315-04:00,2026-05-28,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""SNPS260717C00500000"", ""fill_price"": 54.045, ""pnl"": -1201.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""SNPS""}"
+2026-05-28T10:05:05.949315-04:00,2026-05-28,early_entry_1005,entry,"{""allocated_cash"": 12500.0, ""asset_type"": ""option"", ""contract_symbol"": ""AVGO260717C00420000"", ""contracts"": 4, ""early_entry_score"": 0.738, ""entry_mode"": ""early"", ""entry_option_price"": 31.25, ""execution_mode"": ""option"", ""matched_signals"": 37, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2631.0, ""option_spread_pct"": 5.76, ""option_volume"": 27.0, ""success_rate"": 89.19, ""ticker"": ""AVGO"", ""timing_score"": 0.427}"
