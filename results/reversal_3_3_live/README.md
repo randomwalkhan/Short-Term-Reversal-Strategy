@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-28 10:50:05 EDT`
+Latest checkpoint (ET): `2026-05-28 10:55:05 EDT`
 Last processed slot: `manage_1100`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1100`
 ## Portfolio Snapshot
 
 - Cash: `$17,884.25`
-- Equity: `$31,344.25`
+- Equity: `$30,444.25`
 - Realized PnL: `$20,384.25`
-- Unrealized PnL: `$960.00`
+- Unrealized PnL: `$60.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  AVGO     option         option AVGO260717C00420000       2026-05-28                   0      4     12500.0                 13460.0        31.25          33.65      419.65        421.12          bid_ask_mid                      33.65                bid_ask_mid                    True           960.0                   7.68         89.19               37              0.52         51.04           52.85                  36.99                2631.0           27.0               0.06                      ok
+  AVGO     option         option AVGO260717C00420000       2026-05-28                   0      4     12500.0                 12560.0        31.25           31.4      419.65        422.49          bid_ask_mid                       31.4                bid_ask_mid                    True            60.0                   0.48         89.19               37              0.52         51.04           49.49                  36.99                2631.0           27.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-05-28)
@@ -51,34 +51,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  INTC           95.65               23            2.75              2.35        120.76                92.16         0.569            pass              0.661             39.1                           0.441               -1.55              0.702                                 ok            True                  False
-   XEL           92.86               14            1.57              0.89         80.62                25.49         0.548            pass              0.424              0.0                           0.150               -0.23              0.205                                 ok            True                  False
-  LRCX           87.88               33            0.78              1.74        318.19                56.04         0.531            pass              0.643             75.7                           0.809                7.11              1.149                                 ok            True                  False
-   CEG           81.08               37            0.63              1.28        288.13                55.24         0.505            pass              0.501             80.5                           0.773                4.51              1.003                                 ok            True                  False
-   LIN           87.50               16            1.47              5.21        505.64                20.85         0.500 below_threshold              0.349             19.8                           0.354               -2.50             -0.056                                 ok            True                  False
-    ZS           85.29               34            1.18              1.04        125.96               152.21         0.821            pass              0.574             63.6                           0.648              -18.05             -1.187            downtrend_blocked_slope           False                  False
-  CSCO           94.12               34            0.28              0.24        119.57                51.65         0.604            pass              0.837             80.1                           0.751               17.14              0.895                                 ok           False                  False
-   AEP           71.43                7            1.37              1.25        129.04                25.33         0.568            pass              0.203             48.7                           0.272               -0.13              0.204                                 ok           False                  False
-  ROST           83.33                6            2.68              4.38        231.59                38.54         0.560            pass              0.152              2.3                           0.176                7.30              1.130                                 ok           False                  False
-  REGN           88.24               34            0.54              2.39        626.72                48.81         0.528            pass              0.562             43.1                           0.435              -13.14             -1.306 downtrend_blocked_slope_and_streak           False                  False
-  GOOG           91.11               45            0.01              0.02        384.82                41.06         0.519            pass              0.846             99.3                           0.714               -3.57             -0.407 downtrend_blocked_slope_and_streak           False                  False
-   WMT           91.89               37            0.35              0.29        118.42                34.18         0.498 below_threshold              0.567              6.8                           0.126              -10.15             -1.450 downtrend_blocked_slope_and_streak           False                  False
+  INTC           95.83               24            1.97              1.68        121.05                92.16         0.614            pass              0.724             56.5                           0.697               -0.76              0.738                                 ok            True                  False
+   XEL           90.91               11            1.59              0.90         80.61                25.49         0.564            pass              0.354              0.0                           0.005               -0.25              0.204                                 ok            True                  False
+  LRCX           87.10               31            0.90              2.00        318.07                56.04         0.536            pass              0.599             72.0                           0.748                6.98              1.143                                 ok            True                  False
+   LIN           88.89               18            1.28              4.55        505.92                20.85         0.500            pass              0.431             30.1                           0.434               -2.32             -0.047                                 ok            True                  False
+    ZS           85.29               34            1.05              0.93        126.01               152.21         0.826            pass              0.586             67.5                           0.719              -17.94             -1.182            downtrend_blocked_slope           False                  False
+  CSCO           94.12               34            0.28              0.24        119.57                51.65         0.604            pass              0.837             80.1                           0.772               17.14              0.895                                 ok           False                  False
+   AEP           71.43                7            1.42              1.29        129.02                25.33         0.565            pass              0.197             47.0                           0.270               -0.17              0.202                                 ok           False                  False
+  ROST           75.00                4            2.88              4.70        231.45                38.54         0.546            pass              0.079              8.1                           0.196                7.08              1.120                                 ok           False                  False
+  REGN           88.24               34            0.64              2.81        626.54                48.81         0.521            pass              0.531             33.1                           0.385              -13.23             -1.310 downtrend_blocked_slope_and_streak           False                  False
+  NVDA           89.74               39            0.18              0.27        212.48                40.71         0.495 below_threshold              0.768             88.6                           0.457               -6.03             -0.851 downtrend_blocked_slope_and_streak           False                  False
+   CEG           80.00               35            0.97              1.95        287.84                55.24         0.494 below_threshold              0.427             70.2                           0.712                4.16              0.988                                 ok           False                  False
+  MPWR           93.10               29            1.27             14.40       1614.00                53.62         0.493 below_threshold              0.689             54.5                           0.581               -3.08              0.242           downtrend_blocked_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot    event_type                                                                                                                                                                                                                                                                                                                                                                                                                              detail
-2026-05-28T10:50:05.877302-04:00 early_entry_1050 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "daily_entry_limit"}
-2026-05-28T10:45:02.890829-04:00 early_entry_1045 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "daily_entry_limit"}
-2026-05-28T10:40:06.973903-04:00 early_entry_1040 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "daily_entry_limit"}
-2026-05-28T10:35:04.979836-04:00 early_entry_1035 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "daily_entry_limit"}
-2026-05-28T10:30:05.932623-04:00 early_entry_1030 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "daily_entry_limit"}
-2026-05-28T10:25:06.392243-04:00 early_entry_1025 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "daily_entry_limit"}
-2026-05-28T10:20:03.857163-04:00 early_entry_1020 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "daily_entry_limit"}
-2026-05-28T10:15:02.929662-04:00 early_entry_1015 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "daily_entry_limit"}
-2026-05-28T10:10:02.928305-04:00 early_entry_1010 entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "daily_entry_limit"}
-2026-05-28T10:05:05.949315-04:00 early_entry_1005         entry {"allocated_cash": 12500.0, "asset_type": "option", "contract_symbol": "AVGO260717C00420000", "contracts": 4, "early_entry_score": 0.738, "entry_mode": "early", "entry_option_price": 31.25, "execution_mode": "option", "matched_signals": 37, "option_liquidity_status": "ok", "option_open_interest": 2631.0, "option_spread_pct": 5.76, "option_volume": 27.0, "success_rate": 89.19, "ticker": "AVGO", "timing_score": 0.427}
+                    timestamp_et             slot    event_type                          detail
+2026-05-28T10:55:05.933793-04:00 early_entry_1055 entry_skipped {"reason": "daily_entry_limit"}
+2026-05-28T10:50:05.877302-04:00 early_entry_1050 entry_skipped {"reason": "daily_entry_limit"}
+2026-05-28T10:45:02.890829-04:00 early_entry_1045 entry_skipped {"reason": "daily_entry_limit"}
+2026-05-28T10:40:06.973903-04:00 early_entry_1040 entry_skipped {"reason": "daily_entry_limit"}
+2026-05-28T10:35:04.979836-04:00 early_entry_1035 entry_skipped {"reason": "daily_entry_limit"}
+2026-05-28T10:30:05.932623-04:00 early_entry_1030 entry_skipped {"reason": "daily_entry_limit"}
+2026-05-28T10:25:06.392243-04:00 early_entry_1025 entry_skipped {"reason": "daily_entry_limit"}
+2026-05-28T10:20:03.857163-04:00 early_entry_1020 entry_skipped {"reason": "daily_entry_limit"}
+2026-05-28T10:15:02.929662-04:00 early_entry_1015 entry_skipped {"reason": "daily_entry_limit"}
+2026-05-28T10:10:02.928305-04:00 early_entry_1010 entry_skipped {"reason": "daily_entry_limit"}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260528105005)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260528105505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260528105005)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260528105505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260528105005)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260528105505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260528105005)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260528105505)
 
 </details>
