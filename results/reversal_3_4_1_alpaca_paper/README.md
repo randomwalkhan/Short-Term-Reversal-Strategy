@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-29 10:03:14 EDT`
+Latest checkpoint (ET): `2026-05-29 10:09:25 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
@@ -13,10 +13,7 @@ Last slot: `manage_1000`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AVGO exit_submitted      early AVGO260717C00420000          1                33.4                43.025          bid_ask_mid                     43.025                    True          4302.5           962.5              28.817365                   1
-```
+_None_
 
 ## Closed Trades
 
@@ -31,12 +28,15 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   SBUX SBUX260717C00105000          2026-05-22         2026-05-26                3.75               3.35         13  -520.0  -10.666667        stop_loss_hit_at_scan
   INTC INTC260626C00117000          2026-05-21         2026-05-27               13.45              15.15          3   510.0   12.639405        time_exit_at_4pm_scan
   PANW PANW260717C00260000          2026-05-26         2026-05-27               20.45              14.80          2 -1130.0  -27.628362        stop_loss_hit_at_scan
+  AVGO AVGO260717C00420000          2026-05-28         2026-05-29               33.40              47.35          1  1395.0   41.766467 take_profit_day1_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-29T10:09:25.831795-04:00 early_entry_1005         entry_skipped                                          {"entry_mode": "early", "option_liquidity_status": "low_open_interest,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "SNPS"}
+2026-05-29T10:09:25.831795-04:00             exit           exit_filled                                                {"contract_symbol": "AVGO260717C00420000", "exit_price": 47.35, "pnl": 1395.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "AVGO"}
 2026-05-29T10:03:14.971644-04:00 early_entry_1000         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-29T10:03:14.971644-04:00      manage_1000  exit_order_submitted {"alpaca_order_id": "8e7190d6-4868-47fe-a8f2-905a885d34d4", "contract_symbol": "AVGO260717C00420000", "limit_price": "42.05", "reason": "take_profit_day1_hit_at_scan", "ticker": "AVGO"}
 2026-05-28T10:07:32.783111-04:00 early_entry_1000          entry_filled                                                                                        {"contract_symbol": "AVGO260717C00420000", "contracts": 1, "filled_price": 33.4, "ticker": "AVGO"}
@@ -55,6 +55,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-27T11:11:58.509133-04:00 early_entry_1110         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T11:05:52.604228-04:00 early_entry_1105         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T10:59:45.771179-04:00 early_entry_1055         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:53:36.022473-04:00 early_entry_1050         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T10:47:25.850725-04:00 early_entry_1045         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 ```

@@ -828,3 +828,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-28T10:07:32.783111-04:00,2026-05-28,early_entry_1000,entry_filled,"{""contract_symbol"": ""AVGO260717C00420000"", ""contracts"": 1, ""filled_price"": 33.4, ""ticker"": ""AVGO""}"
 2026-05-29T10:03:14.971644-04:00,2026-05-29,manage_1000,exit_order_submitted,"{""alpaca_order_id"": ""8e7190d6-4868-47fe-a8f2-905a885d34d4"", ""contract_symbol"": ""AVGO260717C00420000"", ""limit_price"": ""42.05"", ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""AVGO""}"
 2026-05-29T10:03:14.971644-04:00,2026-05-29,early_entry_1000,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
+2026-05-29T10:09:25.831795-04:00,2026-05-29,exit,exit_filled,"{""contract_symbol"": ""AVGO260717C00420000"", ""exit_price"": 47.35, ""pnl"": 1395.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""AVGO""}"
+2026-05-29T10:09:25.831795-04:00,2026-05-29,early_entry_1005,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_open_interest,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""SNPS""}"
