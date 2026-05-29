@@ -2160,3 +2160,6 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-28T15:10:10.028312-04:00,2026-05-28,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-05-29T09:20:06.125686-04:00,2026-05-29,data_refresh,data_refresh,{'saved': 92}
 2026-05-29T10:00:05.402847-04:00,2026-05-29,early_entry_1000,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-05-29T10:05:04.226067-04:00,2026-05-29,early_entry_1005,entry_candidate_skipped,"{""early_entry_score"": 0.817, ""option_liquidity_status"": ""low_open_interest,wide_spread"", ""option_open_interest"": 51.0, ""option_spread_pct"": 15.95, ""option_volume"": 80.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""SNPS"", ""timing_score"": 0.397}"
+2026-05-29T10:05:04.226067-04:00,2026-05-29,early_entry_1005,entry_candidate_skipped,"{""early_entry_score"": 0.776, ""option_liquidity_status"": ""low_volume,wide_spread"", ""option_open_interest"": 611.0, ""option_spread_pct"": 26.98, ""option_volume"": 1.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""GILD"", ""timing_score"": 0.366}"
+2026-05-29T10:05:04.226067-04:00,2026-05-29,early_entry_1005,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
