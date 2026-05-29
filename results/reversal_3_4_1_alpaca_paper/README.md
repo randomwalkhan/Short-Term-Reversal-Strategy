@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-29 16:17:21 EDT`
-Last slot: `share_ext_1615`
+Latest checkpoint (ET): `2026-05-29 16:22:25 EDT`
+Last slot: `share_ext_1620`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_1615`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  MRVL   open      early MRVL260717C00200000          1                26.0                26.925          bid_ask_mid                     26.925                    True          2692.5            92.5               3.557692                   0
+  MRVL   open      early MRVL260717C00200000          1                26.0                  27.3          bid_ask_mid                       27.3                    True          2730.0           130.0                    5.0                   0
 ```
 
 ## Closed Trades
