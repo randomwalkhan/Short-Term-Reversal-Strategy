@@ -2164,3 +2164,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-05-29T10:05:04.226067-04:00,2026-05-29,early_entry_1005,entry_candidate_skipped,"{""early_entry_score"": 0.776, ""option_liquidity_status"": ""low_volume,wide_spread"", ""option_open_interest"": 611.0, ""option_spread_pct"": 26.98, ""option_volume"": 1.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""GILD"", ""timing_score"": 0.366}"
 2026-05-29T10:05:04.226067-04:00,2026-05-29,early_entry_1005,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
 2026-05-29T10:10:01.230925-04:00,2026-05-29,early_entry_1010,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-05-29T10:15:06.109113-04:00,2026-05-29,early_entry_1015,entry_candidate_skipped,"{""early_entry_score"": 0.716, ""option_liquidity_status"": ""low_volume,wide_spread"", ""option_open_interest"": 225.0, ""option_spread_pct"": 15.24, ""option_volume"": 10.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ALNY"", ""timing_score"": 0.402}"
+2026-05-29T10:15:06.109113-04:00,2026-05-29,early_entry_1015,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
