@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 2625.0,
+      "alpaca_entry_client_order_id": "rev-20260529102144-mrvl-early",
+      "alpaca_entry_order_id": "ee94ce56-1778-4d77-8317-e6df9525ca15",
+      "asset_type": "option",
+      "contract_symbol": "MRVL260717C00200000",
+      "contracts": 1,
+      "current_drop_pct": 0.59,
+      "early_entry_score": 0.876,
+      "entry_mode": "early",
+      "entry_option_price": 26.25,
+      "entry_slot": "early_entry_1020",
+      "entry_spot": 203.625,
+      "entry_timestamp": "2026-05-29T10:21:44.021302-04:00",
+      "entry_trade_date": "2026-05-29",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-07-17",
+      "matched_signals": 32,
+      "planned_stop": 23.625,
+      "planned_tp_day1": 30.187499999999996,
+      "planned_tp_day2": 30.187499999999996,
+      "position_id": "MRVL_20260529T102144",
+      "status": "entry_submitted",
+      "strike": 200.0,
+      "success_rate": 100.0,
+      "ticker": "MRVL",
+      "timing_score": 0.41
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.4.4-alpaca-paper.0"
 }

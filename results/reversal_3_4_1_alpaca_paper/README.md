@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-29 10:15:35 EDT`
-Last slot: `early_entry_1015`
+Latest checkpoint (ET): `2026-05-29 10:21:44 EDT`
+Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
@@ -13,7 +13,10 @@ Last slot: `early_entry_1015`
 
 ## Open / Pending Positions
 
-_None_
+```text
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
+  MRVL entry_submitted      early MRVL260717C00200000          1               26.25                   NaN             NaN                    NaN
+```
 
 ## Closed Trades
 
@@ -35,6 +38,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-29T10:21:44.021302-04:00 early_entry_1020 entry_order_submitted    {"alpaca_order_id": "ee94ce56-1778-4d77-8317-e6df9525ca15", "contract_symbol": "MRVL260717C00200000", "contracts": 1, "entry_mode": "early", "limit_price": "26.80", "ticker": "MRVL"}
 2026-05-29T10:15:35.264629-04:00 early_entry_1015         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ALNY"}
 2026-05-29T10:09:25.831795-04:00 early_entry_1005         entry_skipped                                          {"entry_mode": "early", "option_liquidity_status": "low_open_interest,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "SNPS"}
 2026-05-29T10:09:25.831795-04:00             exit           exit_filled                                                {"contract_symbol": "AVGO260717C00420000", "exit_price": 47.35, "pnl": 1395.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "AVGO"}
@@ -54,5 +58,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-27T11:24:23.275408-04:00 early_entry_1120         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T11:18:10.299261-04:00 early_entry_1115         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T11:11:58.509133-04:00 early_entry_1110         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:05:52.604228-04:00 early_entry_1105         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 ```
