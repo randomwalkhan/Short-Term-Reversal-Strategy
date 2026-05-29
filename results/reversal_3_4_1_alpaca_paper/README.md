@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-28 22:02:51 EDT`
-Last slot: `share_ext_2200`
+Latest checkpoint (ET): `2026-05-28 22:07:54 EDT`
+Last slot: `share_ext_2205`
 
 ## Alpaca Paper Account
 
