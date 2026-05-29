@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 32264.250356674194,
-  "positions": [],
+  "cash": 18164.250356674194,
+  "positions": [
+    {
+      "position_id": "SNPS_20260529T103002",
+      "ticker": "SNPS",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "SNPS260717C00470000",
+      "expiry": "2026-07-17",
+      "strike": 470.0,
+      "entry_timestamp": "2026-05-29T10:30:02.245861-04:00",
+      "entry_trade_date": "2026-05-29",
+      "entry_slot": "early_entry_1030",
+      "entry_spot": 477.3399963378906,
+      "entry_option_price": 35.25,
+      "entry_bid": 33.3,
+      "entry_ask": 37.2,
+      "entry_iv_pct": 45.691461059570315,
+      "contracts": 4,
+      "allocated_cash": 14100.0,
+      "success_rate": 97.22,
+      "matched_signals": 36,
+      "current_drop_pct": 0.69,
+      "rolling_sigma_20d_pct": 40.06,
+      "planned_tp_day1": 40.537499999999994,
+      "planned_tp_day2": 40.537499999999994,
+      "planned_stop": 31.725,
+      "option_open_interest": 115.0,
+      "option_volume": 67.0,
+      "option_spread_pct": 0.11063829787234059,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
