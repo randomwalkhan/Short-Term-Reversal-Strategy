@@ -1,21 +1,21 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-29 10:21:44 EDT`
+Latest checkpoint (ET): `2026-05-29 10:27:54 EDT`
 Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$97,121.65`
-- Portfolio value: `$97,121.65`
+- Cash: `$94,521.63`
+- Portfolio value: `$96,801.63`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
-  MRVL entry_submitted      early MRVL260717C00200000          1               26.25                   NaN             NaN                    NaN
+ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  MRVL   open      early MRVL260717C00200000          1                26.0                 26.95          bid_ask_mid                      26.95                    True          2695.0            95.0               3.653846                   0
 ```
 
 ## Closed Trades
@@ -38,6 +38,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-29T10:27:54.144898-04:00 early_entry_1020          entry_filled                                                                                        {"contract_symbol": "MRVL260717C00200000", "contracts": 1, "filled_price": 26.0, "ticker": "MRVL"}
 2026-05-29T10:21:44.021302-04:00 early_entry_1020 entry_order_submitted    {"alpaca_order_id": "ee94ce56-1778-4d77-8317-e6df9525ca15", "contract_symbol": "MRVL260717C00200000", "contracts": 1, "entry_mode": "early", "limit_price": "26.80", "ticker": "MRVL"}
 2026-05-29T10:15:35.264629-04:00 early_entry_1015         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ALNY"}
 2026-05-29T10:09:25.831795-04:00 early_entry_1005         entry_skipped                                          {"entry_mode": "early", "option_liquidity_status": "low_open_interest,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "SNPS"}
@@ -57,5 +58,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-27T11:30:32.575558-04:00 early_entry_1130         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T11:24:23.275408-04:00 early_entry_1120         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-27T11:18:10.299261-04:00 early_entry_1115         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-27T11:11:58.509133-04:00 early_entry_1110         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 ```
