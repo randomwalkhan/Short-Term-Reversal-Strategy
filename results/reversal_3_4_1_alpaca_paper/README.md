@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-29 11:03:20 EDT`
+Latest checkpoint (ET): `2026-05-29 11:08:23 EDT`
 Last slot: `manage_1100`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$94,521.63`
-- Portfolio value: `$96,991.63`
+- Portfolio value: `$96,966.63`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1100`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  MRVL   open      early MRVL260717C00200000          1                26.0                 24.25          bid_ask_mid                      24.25                    True          2425.0          -175.0              -6.730769                   0
+  MRVL   open      early MRVL260717C00200000          1                26.0                24.775          bid_ask_mid                     24.775                    True          2477.5          -122.5              -4.711538                   0
 ```
 
 ## Closed Trades
