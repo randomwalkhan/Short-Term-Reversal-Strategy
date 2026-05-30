@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-30 01:23:55 EDT`
-Last slot: `share_ext_0120`
+Latest checkpoint (ET): `2026-05-30 01:29:01 EDT`
+Last slot: `share_ext_0125`
 
 ## Alpaca Paper Account
 
@@ -38,6 +38,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-30T01:29:01.962817-04:00   share_ext_0125         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-30T01:23:55.928226-04:00   share_ext_0120         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-30T01:18:51.454445-04:00   share_ext_0115         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-30T01:13:46.496052-04:00   share_ext_0110         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
@@ -57,5 +58,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-27T15:11:39.018745-04:00       entry_1500         entry_skipped                                                           {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
 2026-05-27T15:05:23.333934-04:00       entry_1500         entry_skipped                                                           {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
 2026-05-27T14:59:13.815238-04:00       entry_1500         entry_skipped                                                           {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
-2026-05-27T14:52:59.210728-04:00       entry_1500         entry_skipped                                                           {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "NXPI"}
 ```
