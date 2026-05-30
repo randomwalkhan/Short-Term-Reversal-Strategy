@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-30 01:44:12 EDT`
-Last slot: `share_ext_0140`
+Latest checkpoint (ET): `2026-05-30 01:49:16 EDT`
+Last slot: `share_ext_0145`
 
 ## Alpaca Paper Account
 
@@ -38,6 +38,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-05-30T01:49:16.147195-04:00   share_ext_0145         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-30T01:44:12.674150-04:00   share_ext_0140         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-30T01:39:09.218275-04:00   share_ext_0135         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-30T01:34:05.808052-04:00   share_ext_0130         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
@@ -54,8 +55,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-29T10:15:35.264629-04:00 early_entry_1015         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ALNY"}
 2026-05-29T10:09:25.831795-04:00 early_entry_1005         entry_skipped                                          {"entry_mode": "early", "option_liquidity_status": "low_open_interest,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "SNPS"}
 2026-05-29T10:09:25.831795-04:00             exit           exit_filled                                                {"contract_symbol": "AVGO260717C00420000", "exit_price": 47.35, "pnl": 1395.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "AVGO"}
-2026-05-29T10:03:14.971644-04:00 early_entry_1000         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-29T10:03:14.971644-04:00      manage_1000  exit_order_submitted {"alpaca_order_id": "8e7190d6-4868-47fe-a8f2-905a885d34d4", "contract_symbol": "AVGO260717C00420000", "limit_price": "42.05", "reason": "take_profit_day1_hit_at_scan", "ticker": "AVGO"}
+2026-05-29T10:03:14.971644-04:00 early_entry_1000         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-05-28T10:07:32.783111-04:00 early_entry_1000          entry_filled                                                                                        {"contract_symbol": "AVGO260717C00420000", "contracts": 1, "filled_price": 33.4, "ticker": "AVGO"}
-2026-05-28T10:01:23.351204-04:00 early_entry_1000 entry_order_submitted    {"alpaca_order_id": "a7b7954f-7027-4fe6-bc6b-040c4d748493", "contract_symbol": "AVGO260717C00420000", "contracts": 1, "entry_mode": "early", "limit_price": "36.20", "ticker": "AVGO"}
 ```
