@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-05-30 01:59:22 EDT`
-Last slot: `share_ext_0155`
+Latest checkpoint (ET): `2026-05-30 02:04:26 EDT`
+Last slot: `share_ext_0200`
 
 ## Alpaca Paper Account
 
@@ -38,6 +38,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-05-30T02:04:26.366688-04:00   share_ext_0200         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-05-30T01:59:22.898207-04:00   share_ext_0155         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-05-30T01:54:19.547310-04:00   share_ext_0150         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-05-30T01:49:16.147195-04:00   share_ext_0145         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
@@ -55,7 +56,6 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-29T10:27:54.144898-04:00 early_entry_1020          entry_filled                                                                                     {"contract_symbol": "MRVL260717C00200000", "contracts": 1, "filled_price": 26.0, "ticker": "MRVL"}
 2026-05-29T10:21:44.021302-04:00 early_entry_1020 entry_order_submitted {"alpaca_order_id": "ee94ce56-1778-4d77-8317-e6df9525ca15", "contract_symbol": "MRVL260717C00200000", "contracts": 1, "entry_mode": "early", "limit_price": "26.80", "ticker": "MRVL"}
 2026-05-29T10:15:35.264629-04:00 early_entry_1015         entry_skipped                                              {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ALNY"}
-2026-05-29T10:09:25.831795-04:00             exit           exit_filled                                             {"contract_symbol": "AVGO260717C00420000", "exit_price": 47.35, "pnl": 1395.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "AVGO"}
 2026-05-29T10:09:25.831795-04:00 early_entry_1005         entry_skipped                                       {"entry_mode": "early", "option_liquidity_status": "low_open_interest,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "SNPS"}
-2026-05-29T10:03:14.971644-04:00 early_entry_1000         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-29T10:09:25.831795-04:00             exit           exit_filled                                             {"contract_symbol": "AVGO260717C00420000", "exit_price": 47.35, "pnl": 1395.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "AVGO"}
 ```
