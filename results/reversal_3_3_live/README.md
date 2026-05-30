@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-05-29 23:30:07 EDT`
-Last processed slot: `share_ext_2330`
+Latest checkpoint (ET): `2026-05-30 00:50:04 EDT`
+Last processed slot: `share_ext_0050`
 
 ## Active Configuration
 
@@ -40,7 +40,7 @@ ticker asset_type execution_mode          instrument entry_trade_date  business_
   SNPS     option         option SNPS260717C00470000       2026-05-29                   0      4     14100.0                 14560.0        35.25           36.4      477.34         475.0          bid_ask_mid                       36.4                bid_ask_mid                    True           460.0                   3.26         97.22               36              0.69         45.69           52.05                  40.06                 115.0           67.0               0.11                      ok
 ```
 
-## Today's Closed Trades (2026-05-29)
+## Today's Closed Trades (2026-05-30)
 
 _None_
 
@@ -52,6 +52,7 @@ _None_
 
 ```text
                     timestamp_et             slot     event_type                                                                                                       detail
+2026-05-30T00:50:04.950264-04:00   share_ext_0050  market_closed                                                                  {"holiday_name": null, "reason": "weekend"}
 2026-05-29T15:10:06.877260-04:00       entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
 2026-05-29T15:05:06.057787-04:00       entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
 2026-05-29T15:00:04.945442-04:00       entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
@@ -61,7 +62,6 @@ _None_
 2026-05-29T12:00:03.057178-04:00 early_entry_1200  entry_skipped                                                                              {"reason": "daily_entry_limit"}
 2026-05-29T11:55:04.089378-04:00 early_entry_1155  entry_skipped                                                                              {"reason": "daily_entry_limit"}
 2026-05-29T11:50:02.199680-04:00 early_entry_1150  entry_skipped                                                                              {"reason": "daily_entry_limit"}
-2026-05-29T11:45:01.211344-04:00 early_entry_1145  entry_skipped                                                                              {"reason": "daily_entry_limit"}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260529233007)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260530005004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260529233007)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260530005004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260529233007)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260530005004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260529233007)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260530005004)
 
 </details>
