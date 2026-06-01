@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-01 11:27:56 EDT`
+Latest checkpoint (ET): `2026-06-01 11:33:00 EDT`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
@@ -13,10 +13,7 @@ Last slot: `manage_1130`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  CHTR exit_submitted      early CHTR260717C00150000          5                 8.8                   7.9          bid_ask_mid                        7.9                    True          3950.0          -450.0             -10.227273                   0
-```
+_None_
 
 ## Closed Trades
 
@@ -33,12 +30,14 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   PANW PANW260717C00260000          2026-05-26         2026-05-27               20.45              14.80          2 -1130.0  -27.628362        stop_loss_hit_at_scan
   AVGO AVGO260717C00420000          2026-05-28         2026-05-29               33.40              47.35          1  1395.0   41.766467 take_profit_day1_hit_at_scan
   MRVL MRVL260717C00200000          2026-05-29         2026-06-01               26.00              31.75          1   575.0   22.115385 take_profit_day1_hit_at_scan
+  CHTR CHTR260717C00150000          2026-06-01         2026-06-01                8.80               8.00          5  -400.0   -9.090909        stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-06-01T11:33:00.369304-04:00             exit           exit_filled                                                         {"contract_symbol": "CHTR260717C00150000", "exit_price": 8.0, "pnl": -400.0, "reason": "stop_loss_hit_at_scan", "ticker": "CHTR"}
 2026-06-01T11:27:56.503852-04:00      manage_1130  exit_order_submitted         {"alpaca_order_id": "3b5dbe89-3ac6-41aa-bfe5-f1aeb555569f", "contract_symbol": "CHTR260717C00150000", "limit_price": "7.50", "reason": "stop_loss_hit_at_scan", "ticker": "CHTR"}
 2026-06-01T11:17:48.946288-04:00 early_entry_1110          entry_filled                                                                                         {"contract_symbol": "CHTR260717C00150000", "contracts": 5, "filled_price": 8.8, "ticker": "CHTR"}
 2026-06-01T11:11:40.991182-04:00 early_entry_1110 entry_order_submitted     {"alpaca_order_id": "86b16257-84f3-4a1e-8f57-17e0cb8449e0", "contract_symbol": "CHTR260717C00150000", "contracts": 5, "entry_mode": "early", "limit_price": "8.80", "ticker": "CHTR"}
@@ -58,5 +57,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-31T22:11:44.901572-04:00   share_ext_2210         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-31T22:06:40.041251-04:00   share_ext_2205         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-31T22:01:34.899171-04:00   share_ext_2200         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:56:30.299518-04:00   share_ext_2155         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 ```
