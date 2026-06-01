@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-01 10:05:05 EDT`
+Latest checkpoint (ET): `2026-06-01 10:10:06 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_1000`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SNPS     option         option SNPS260717C00470000       2026-05-29                   1      4     14100.0                 14220.0        35.25          35.55      477.34        480.13          bid_ask_mid                      35.55                bid_ask_mid                    True           120.0                   0.85         97.22               36              0.69         45.69           49.69                  40.06                 115.0           67.0               0.11                      ok
+  SNPS     option         option SNPS260717C00470000       2026-05-29                   1      4     14100.0                 14220.0        35.25          35.55      477.34        477.04          bid_ask_mid                      35.55                bid_ask_mid                    True           120.0                   0.85         97.22               36              0.69         45.69           50.93                  40.06                 115.0           67.0               0.11                      ok
 ```
 
 ## Today's Closed Trades (2026-06-01)
@@ -47,25 +47,26 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  CSCO           92.31               26            0.83              0.70        120.12                51.99         0.618          pass              0.654             52.6                           0.466                1.02              0.253                  ok            True                  False
-  ROST           89.47               19            1.26              2.05        230.85                40.27         0.579          pass              0.504             44.6                           0.479                7.54              1.047                  ok            True                  False
-  ASML           93.10               29            1.26             14.27       1606.65                52.38         0.564          pass              0.620             29.1                           0.261                6.03              0.936                  ok            True                  False
-  SOXL           94.74               19            4.98              7.83        220.99               138.67         0.561          pass              0.573             21.3                           0.272               29.83              4.308                  ok            True                  False
-  LRCX           88.00               25            1.78              3.96        316.48                55.15         0.531          pass              0.515             49.4                           0.494                9.77              1.547                  ok            True                  False
-  KLAC           91.18               34            0.81             10.89       1917.04                50.27         0.518          pass              0.679             56.4                           0.397                5.78              1.063                  ok            True                  False
-  MRVL          100.00               24            1.54              2.21        204.05                65.80         0.516          pass              0.748             67.8                           0.379               14.11              1.906                  ok            True                  False
-  INSM           67.74               31            1.55              1.16        106.41               110.85         0.746          pass              0.299             28.0                           0.376               -3.56             -0.180                  ok           False                  False
-  MELI           95.24               42            0.19              2.21       1694.71                60.97         0.596          pass              0.894             78.1                           0.357                9.42              0.852                  ok           False                  False
-   AEP           70.00               10            1.16              1.03        126.23                24.34         0.568          pass              0.093             12.2                           0.214                0.04             -0.033                  ok           False                  False
-  AMAT           91.67               36            0.20              0.63        449.79                49.82         0.546          pass              0.816             92.4                           0.757                3.00              0.870                  ok           False                  False
-  AMGN           80.00                5            2.04              4.81        334.73                25.52         0.539          pass              0.103             16.5                           0.252                1.11              0.254                  ok           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
+  CSCO           92.31               26            0.79              0.66        120.14                51.99         0.621            pass              0.663             55.2                           0.490                1.07              0.255                  ok            True                  False
+  SOXL           95.00               20            4.26              6.69        221.47               138.67         0.604            pass              0.625             32.7                           0.276               30.83              4.342                  ok            True                  False
+  ROST           88.24               17            1.37              2.23        230.78                40.27         0.584            pass              0.444             39.9                           0.497                7.43              1.042                  ok            True                  False
+  ASML           93.75               32            0.83              9.36       1608.75                52.38         0.573            pass              0.731             53.5                           0.352                6.50              0.956                  ok            True                  False
+  LRCX           88.00               25            1.61              3.58        316.64                55.15         0.542            pass              0.530             54.2                           0.511                9.95              1.554                  ok            True                  False
+  KLAC           91.18               34            0.84             11.34       1916.85                50.27         0.515            pass              0.673             54.6                           0.363                5.74              1.062                  ok            True                  False
+  MRVL          100.00               28            1.20              1.72        204.26                65.80         0.511            pass              0.796             74.9                           0.400               14.50              1.921                  ok            True                  False
+  AAPL           96.00               25            0.75              1.65        311.35                17.18         0.500 below_threshold              0.652             34.0                           0.453                3.16              0.493                  ok            True                  False
+  INSM           68.97               29            1.72              1.29        106.36               110.85         0.749            pass              0.262             20.0                           0.248               -3.73             -0.188                  ok           False                  False
+  MELI           95.35               43            0.15              1.77       1694.89                60.97         0.592            pass              0.906             82.4                           0.339                9.46              0.854                  ok           False                  False
+   AEP           66.67                9            1.21              1.07        126.21                24.34         0.568            pass              0.091             11.3                           0.238               -0.01             -0.035                  ok           False                  False
+  AMGN           80.00                5            2.10              4.94        334.67                25.52         0.535            pass              0.096             14.2                           0.215                1.05              0.251                  ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                   detail
+2026-06-01T10:10:06.342773-04:00 early_entry_1010           entry_skipped                                                                                                                                                                                                                                                               {"reason": "no_candidate"}
 2026-06-01T10:05:05.997517-04:00 early_entry_1005           entry_skipped                                                                                                                                                                                                                                                               {"reason": "no_candidate"}
 2026-06-01T10:00:03.895970-04:00 early_entry_1000           entry_skipped                                                                                                                                                                                                                                   {"reason": "no_trade_after_option_and_timing_filters"}
 2026-06-01T10:00:03.895970-04:00 early_entry_1000 entry_candidate_skipped {"early_entry_score": 0.779, "option_liquidity_status": "low_open_interest,low_volume,no_two_sided_quote,wide_spread", "option_open_interest": 2.0, "option_spread_pct": null, "option_volume": 0.0, "reason": "no_trade_low_option_liquidity", "ticker": "MDLZ", "timing_score": 0.419}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-05-30T02:45:02.331534-04:00   share_ext_0245           market_closed                                                                                                                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-05-30T02:40:01.232868-04:00   share_ext_0240           market_closed                                                                                                                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-05-30T02:35:01.344797-04:00   share_ext_0235           market_closed                                                                                                                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
-2026-05-30T02:30:06.367900-04:00   share_ext_0230           market_closed                                                                                                                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260601100505)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260601101006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260601100505)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260601101006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260601100505)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260601101006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260601100505)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260601101006)
 
 </details>
