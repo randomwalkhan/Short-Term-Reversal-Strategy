@@ -1255,3 +1255,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-01T10:53:19.158352-04:00,2026-06-01,early_entry_1050,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
 2026-06-01T10:59:27.570705-04:00,2026-06-01,manage_1100,exit_order_submitted,"{""alpaca_order_id"": ""9e06dd09-a5ff-4c5e-95d4-d4be59a16dc8"", ""contract_symbol"": ""MRVL260717C00200000"", ""limit_price"": ""29.70"", ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""MRVL""}"
 2026-06-01T10:59:27.570705-04:00,2026-06-01,early_entry_1055,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
+2026-06-01T11:05:34.425918-04:00,2026-06-01,exit,exit_filled,"{""contract_symbol"": ""MRVL260717C00200000"", ""exit_price"": 31.75, ""pnl"": 575.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""MRVL""}"
+2026-06-01T11:05:34.425918-04:00,2026-06-01,early_entry_1105,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
