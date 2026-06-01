@@ -2223,3 +2223,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-01T03:00:05.806892-04:00,2026-06-01,data_refresh,data_refresh,{'saved': 92}
 2026-06-01T10:00:03.895970-04:00,2026-06-01,early_entry_1000,entry_candidate_skipped,"{""early_entry_score"": 0.779, ""option_liquidity_status"": ""low_open_interest,low_volume,no_two_sided_quote,wide_spread"", ""option_open_interest"": 2.0, ""option_spread_pct"": null, ""option_volume"": 0.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MDLZ"", ""timing_score"": 0.419}"
 2026-06-01T10:00:03.895970-04:00,2026-06-01,early_entry_1000,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
+2026-06-01T10:05:05.997517-04:00,2026-06-01,early_entry_1005,entry_skipped,"{""reason"": ""no_candidate""}"
