@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-01 09:40:03 EDT`
-Last processed slot: `manage_0930`
+Latest checkpoint (ET): `2026-06-01 09:45:06 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -37,7 +37,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SNPS     option         option SNPS260717C00470000       2026-05-29                   1      4     14100.0                 14100.0        35.25          35.25      477.34        473.39     last_price_stale                        NaN                unavailable                   False             0.0                    0.0         97.22               36              0.69         45.69             0.0                  40.06                 115.0           67.0               0.11                      ok
+  SNPS     option         option SNPS260717C00470000       2026-05-29                   1      4     14100.0                 14100.0        35.25          35.25      477.34        476.56     last_price_stale                        NaN                unavailable                   False             0.0                    0.0         97.22               36              0.69         45.69             0.0                  40.06                 115.0           67.0               0.11                      ok
 ```
 
 ## Today's Closed Trades (2026-06-01)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  LRCX           88.46               26            1.39              3.09        316.86                55.15         0.551          pass              0.569             60.6                           0.603               10.20              1.565                                 ok            True                  False
-  CTSH           90.62               32            0.67              0.26         55.64                47.94         0.536          pass              0.603             39.8                           0.285               18.33              1.272                                 ok            True                  False
-  AAPL           96.00               25            0.72              1.57        311.39                17.18         0.502          pass              0.661             37.1                           0.356                3.19              0.494                                 ok            True                  False
-   MAR           90.91               22            1.17              3.09        374.28                25.77         0.502          pass              0.458             12.2                           0.176                5.31              0.700                                 ok            True                  False
-  SOXL           93.75               32            0.25              0.40        223.89               138.67         0.787          pass              0.874             94.1                           0.817               36.13              4.523                                 ok           False                  False
-  INSM           70.37               27            1.98              1.48        106.28               110.85         0.747          pass              0.212              8.0                           0.131               -3.98             -0.200                                 ok           False                  False
-  ROST           88.89                9            1.82              2.95        230.47                40.27         0.610          pass              0.359             20.4                           0.175                6.94              1.021                                 ok           False                  False
-  CSCO           94.29               35            0.32              0.27        120.31                51.99         0.593          pass              0.853             82.1                           0.680                1.55              0.276                                 ok           False                  False
-   AEP           70.00               10            1.16              1.03        126.23                24.34         0.568          pass              0.094             12.5                           0.206                0.04             -0.033                                 ok           False                  False
-   HON           75.00                8            1.68              2.80        236.66                24.41         0.541          pass              0.107             17.7                           0.170                9.67              1.088                                 ok           False                  False
-  COST           71.43               14            1.14              7.64        953.04                27.93         0.539          pass              0.081              0.0                           0.223               -9.87             -1.327 downtrend_blocked_slope_and_streak           False                  False
-  REGN           85.71               28            1.04              4.49        612.86                42.14         0.536          pass              0.380             17.9                           0.139              -12.74             -0.809 downtrend_blocked_slope_and_streak           False                  False
+  SOXL           92.59               27            1.57              2.46        223.00               138.67         0.744          pass              0.713             63.2                           0.710               34.33              4.462                                 ok            True                  False
+  CSCO           92.31               26            0.88              0.74        120.10                51.99         0.615          pass              0.646             50.0                           0.443                0.97              0.250                                 ok            True                  False
+  LRCX           89.66               29            1.01              2.25        317.22                55.15         0.557          pass              0.654             71.3                           0.745               10.62              1.582                                 ok            True                  False
+  CTSH           89.66               29            0.96              0.37         55.59                47.94         0.534          pass              0.522             28.2                           0.266               17.99              1.259                                 ok            True                  False
+  INSM           71.43               35            1.10              0.83        106.56               110.85         0.752          pass              0.388             48.7                           0.424               -3.12             -0.159                                 ok           False                  False
+  ROST           88.89                9            1.79              2.90        230.49                40.27         0.612          pass              0.363             21.6                           0.167                6.97              1.023                                 ok           False                  False
+  ASML           94.87               39            0.11              1.23       1612.23                52.38         0.575          pass              0.929             93.9                           0.856                7.27              0.988                                 ok           False                  False
+   AEP           72.73               11            1.07              0.95        126.26                24.34         0.570          pass              0.121             19.0                           0.180                0.13             -0.029                                 ok           False                  False
+  AMGN           83.33                6            1.73              4.07        335.04                25.52         0.556          pass              0.232             29.3                           0.266                1.43              0.268                                 ok           False                  False
+  AMAT           92.11               38            0.02              0.05        450.04                49.82         0.546          pass              0.862             99.4                           0.889                3.19              0.879                                 ok           False                  False
+   HON           75.00                8            1.71              2.84        236.64                24.41         0.539          pass              0.110             18.8                           0.230                9.64              1.087                                 ok           False                  False
+  COST           76.47               17            0.94              6.32        953.61                27.93         0.536          pass              0.175             24.9                           0.281               -9.69             -1.318 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260601094003)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260601094506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260601094003)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260601094506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260601094003)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260601094506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260601094003)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260601094506)
 
 </details>
