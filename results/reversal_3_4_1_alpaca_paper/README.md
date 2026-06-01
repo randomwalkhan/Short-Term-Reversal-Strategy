@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-01 10:47:11 EDT`
-Last slot: `early_entry_1045`
+Latest checkpoint (ET): `2026-06-01 10:53:19 EDT`
+Last slot: `manage_1100`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$94,521.56`
-- Portfolio value: `$97,601.56`
+- Portfolio value: `$97,606.56`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `early_entry_1045`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  MRVL   open      early MRVL260717C00200000          1                26.0                26.125          bid_ask_mid                     26.125                    True          2612.5            12.5               0.480769                   1
+  MRVL   open      early MRVL260717C00200000          1                26.0                 29.45          bid_ask_mid                      29.45                    True          2945.0           345.0              13.269231                   1
 ```
 
 ## Closed Trades
@@ -38,6 +38,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot    event_type                                                                                    detail
+2026-06-01T10:53:19.158352-04:00 early_entry_1050 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:47:11.042971-04:00 early_entry_1045 entry_skipped {"budget": 5000.0, "entry_limit": 112.5, "reason": "insufficient_cash", "ticker": "ASML"}
 2026-06-01T10:41:05.682630-04:00 early_entry_1040 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:34:59.544234-04:00 early_entry_1030 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
@@ -57,5 +58,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-31T21:31:07.175173-04:00   share_ext_2130 market_closed                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-31T21:26:03.039241-04:00   share_ext_2125 market_closed                                               {"holiday_name": null, "reason": "weekend"}
 2026-05-31T21:20:58.618838-04:00   share_ext_2120 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:15:54.495764-04:00   share_ext_2115 market_closed                                               {"holiday_name": null, "reason": "weekend"}
 ```
