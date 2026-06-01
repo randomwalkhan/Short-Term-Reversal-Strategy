@@ -1,21 +1,21 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-01 10:53:19 EDT`
+Latest checkpoint (ET): `2026-06-01 10:59:27 EDT`
 Last slot: `manage_1100`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$94,521.56`
-- Portfolio value: `$97,606.56`
+- Cash: `$97,696.54`
+- Portfolio value: `$97,696.54`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  MRVL   open      early MRVL260717C00200000          1                26.0                 29.45          bid_ask_mid                      29.45                    True          2945.0           345.0              13.269231                   1
+ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  MRVL exit_submitted      early MRVL260717C00200000          1                26.0                  30.5          bid_ask_mid                       30.5                    True          3050.0           450.0              17.307692                   1
 ```
 
 ## Closed Trades
@@ -37,25 +37,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot    event_type                                                                                    detail
-2026-06-01T10:53:19.158352-04:00 early_entry_1050 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:47:11.042971-04:00 early_entry_1045 entry_skipped {"budget": 5000.0, "entry_limit": 112.5, "reason": "insufficient_cash", "ticker": "ASML"}
-2026-06-01T10:41:05.682630-04:00 early_entry_1040 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:34:59.544234-04:00 early_entry_1030 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:28:54.065687-04:00 early_entry_1025 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:22:49.687478-04:00 early_entry_1020 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:16:44.336219-04:00 early_entry_1015 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:10:39.189800-04:00 early_entry_1010 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:04:32.086679-04:00 early_entry_1000 entry_skipped                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-31T22:11:44.901572-04:00   share_ext_2210 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T22:06:40.041251-04:00   share_ext_2205 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T22:01:34.899171-04:00   share_ext_2200 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:56:30.299518-04:00   share_ext_2155 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:51:25.637385-04:00   share_ext_2150 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:46:21.095952-04:00   share_ext_2145 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:41:16.957774-04:00   share_ext_2140 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:36:12.378186-04:00   share_ext_2135 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:31:07.175173-04:00   share_ext_2130 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:26:03.039241-04:00   share_ext_2125 market_closed                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:20:58.618838-04:00   share_ext_2120 market_closed                                               {"holiday_name": null, "reason": "weekend"}
+                    timestamp_et             slot           event_type                                                                                                                                                                                    detail
+2026-06-01T10:59:27.570705-04:00 early_entry_1055        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:59:27.570705-04:00      manage_1100 exit_order_submitted {"alpaca_order_id": "9e06dd09-a5ff-4c5e-95d4-d4be59a16dc8", "contract_symbol": "MRVL260717C00200000", "limit_price": "29.70", "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
+2026-06-01T10:53:19.158352-04:00 early_entry_1050        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:47:11.042971-04:00 early_entry_1045        entry_skipped                                                                                                 {"budget": 5000.0, "entry_limit": 112.5, "reason": "insufficient_cash", "ticker": "ASML"}
+2026-06-01T10:41:05.682630-04:00 early_entry_1040        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:34:59.544234-04:00 early_entry_1030        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:28:54.065687-04:00 early_entry_1025        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:22:49.687478-04:00 early_entry_1020        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:16:44.336219-04:00 early_entry_1015        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:10:39.189800-04:00 early_entry_1010        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:04:32.086679-04:00 early_entry_1000        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-31T22:11:44.901572-04:00   share_ext_2210        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T22:06:40.041251-04:00   share_ext_2205        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T22:01:34.899171-04:00   share_ext_2200        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T21:56:30.299518-04:00   share_ext_2155        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T21:51:25.637385-04:00   share_ext_2150        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T21:46:21.095952-04:00   share_ext_2145        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T21:41:16.957774-04:00   share_ext_2140        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T21:36:12.378186-04:00   share_ext_2135        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T21:31:07.175173-04:00   share_ext_2130        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 ```
