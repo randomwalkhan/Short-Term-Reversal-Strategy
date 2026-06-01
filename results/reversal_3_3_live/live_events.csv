@@ -2251,3 +2251,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-01T12:50:07.149920-04:00,2026-06-01,manage_1300,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""SNPS260717C00470000"", ""fill_price"": 42.3, ""pnl"": 2820.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 20.0, ""ticker"": ""SNPS""}"
 2026-06-01T14:50:06.115038-04:00,2026-06-01,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-06-01"", ""training_samples"": 5165, ""window"": 5}"
 2026-06-01T14:50:06.115038-04:00,2026-06-01,entry_1500,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-06-01T14:55:05.958850-04:00,2026-06-01,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
