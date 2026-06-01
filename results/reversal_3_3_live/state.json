@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 4014.2503566741943,
+  "cash": 16749.250356674194,
   "positions": [
     {
       "position_id": "SNPS_20260529T103002",
@@ -31,36 +31,6 @@
       "option_open_interest": 115.0,
       "option_volume": 67.0,
       "option_spread_pct": 0.11063829787234059,
-      "option_liquidity_status": "ok"
-    },
-    {
-      "position_id": "MRVL_20260601T101504",
-      "ticker": "MRVL",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "MRVL260717C00200000",
-      "expiry": "2026-07-17",
-      "strike": 200.0,
-      "entry_timestamp": "2026-06-01T10:15:04.991229-04:00",
-      "entry_trade_date": "2026-06-01",
-      "entry_slot": "early_entry_1015",
-      "entry_spot": 203.78500366210938,
-      "entry_option_price": 28.3,
-      "entry_bid": 27.55,
-      "entry_ask": 29.05,
-      "entry_iv_pct": 91.49178430175782,
-      "contracts": 5,
-      "allocated_cash": 14150.0,
-      "success_rate": 100.0,
-      "matched_signals": 32,
-      "current_drop_pct": 0.59,
-      "rolling_sigma_20d_pct": 65.8,
-      "planned_tp_day1": 32.545,
-      "planned_tp_day2": 32.545,
-      "planned_stop": 25.470000000000002,
-      "option_open_interest": 4958.0,
-      "option_volume": 50.0,
-      "option_spread_pct": 0.053003533568904596,
       "option_liquidity_status": "ok"
     }
   ],
