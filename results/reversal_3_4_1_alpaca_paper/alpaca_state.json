@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4200.0,
+      "alpaca_entry_client_order_id": "rev-20260601111140-chtr-early",
+      "alpaca_entry_order_id": "86b16257-84f3-4a1e-8f57-17e0cb8449e0",
+      "asset_type": "option",
+      "contract_symbol": "CHTR260717C00150000",
+      "contracts": 5,
+      "current_drop_pct": 0.69,
+      "early_entry_score": 0.702,
+      "entry_mode": "early",
+      "entry_option_price": 8.4,
+      "entry_slot": "early_entry_1110",
+      "entry_spot": 143.05999755859375,
+      "entry_timestamp": "2026-06-01T11:11:40.991182-04:00",
+      "entry_trade_date": "2026-06-01",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-07-17",
+      "matched_signals": 39,
+      "planned_stop": 7.5600000000000005,
+      "planned_tp_day1": 9.66,
+      "planned_tp_day2": 9.66,
+      "position_id": "CHTR_20260601T111140",
+      "status": "entry_submitted",
+      "strike": 150.0,
+      "success_rate": 89.74,
+      "ticker": "CHTR",
+      "timing_score": 0.458
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.4.4-alpaca-paper.0"
 }

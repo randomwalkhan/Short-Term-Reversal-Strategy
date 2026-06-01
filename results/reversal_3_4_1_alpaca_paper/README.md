@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-01 11:05:34 EDT`
+Latest checkpoint (ET): `2026-06-01 11:11:40 EDT`
 Last slot: `manage_1100`
 
 ## Alpaca Paper Account
@@ -13,7 +13,10 @@ Last slot: `manage_1100`
 
 ## Open / Pending Positions
 
-_None_
+```text
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
+  CHTR entry_submitted      early CHTR260717C00150000          5                 8.4                   NaN             NaN                    NaN
+```
 
 ## Closed Trades
 
@@ -35,25 +38,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot           event_type                                                                                                                                                                                    detail
-2026-06-01T11:05:34.425918-04:00 early_entry_1105        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T11:05:34.425918-04:00             exit          exit_filled                                                 {"contract_symbol": "MRVL260717C00200000", "exit_price": 31.75, "pnl": 575.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
-2026-06-01T10:59:27.570705-04:00 early_entry_1055        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:59:27.570705-04:00      manage_1100 exit_order_submitted {"alpaca_order_id": "9e06dd09-a5ff-4c5e-95d4-d4be59a16dc8", "contract_symbol": "MRVL260717C00200000", "limit_price": "29.70", "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
-2026-06-01T10:53:19.158352-04:00 early_entry_1050        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:47:11.042971-04:00 early_entry_1045        entry_skipped                                                                                                 {"budget": 5000.0, "entry_limit": 112.5, "reason": "insufficient_cash", "ticker": "ASML"}
-2026-06-01T10:41:05.682630-04:00 early_entry_1040        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:34:59.544234-04:00 early_entry_1030        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:28:54.065687-04:00 early_entry_1025        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:22:49.687478-04:00 early_entry_1020        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:16:44.336219-04:00 early_entry_1015        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:10:39.189800-04:00 early_entry_1010        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:04:32.086679-04:00 early_entry_1000        entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-05-31T22:11:44.901572-04:00   share_ext_2210        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T22:06:40.041251-04:00   share_ext_2205        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T22:01:34.899171-04:00   share_ext_2200        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:56:30.299518-04:00   share_ext_2155        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:51:25.637385-04:00   share_ext_2150        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:46:21.095952-04:00   share_ext_2145        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:41:16.957774-04:00   share_ext_2140        market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+                    timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-06-01T11:11:40.991182-04:00 early_entry_1110 entry_order_submitted     {"alpaca_order_id": "86b16257-84f3-4a1e-8f57-17e0cb8449e0", "contract_symbol": "CHTR260717C00150000", "contracts": 5, "entry_mode": "early", "limit_price": "8.80", "ticker": "CHTR"}
+2026-06-01T11:05:34.425918-04:00 early_entry_1105         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T11:05:34.425918-04:00             exit           exit_filled                                                 {"contract_symbol": "MRVL260717C00200000", "exit_price": 31.75, "pnl": 575.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
+2026-06-01T10:59:27.570705-04:00 early_entry_1055         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:59:27.570705-04:00      manage_1100  exit_order_submitted {"alpaca_order_id": "9e06dd09-a5ff-4c5e-95d4-d4be59a16dc8", "contract_symbol": "MRVL260717C00200000", "limit_price": "29.70", "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
+2026-06-01T10:53:19.158352-04:00 early_entry_1050         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:47:11.042971-04:00 early_entry_1045         entry_skipped                                                                                                 {"budget": 5000.0, "entry_limit": 112.5, "reason": "insufficient_cash", "ticker": "ASML"}
+2026-06-01T10:41:05.682630-04:00 early_entry_1040         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:34:59.544234-04:00 early_entry_1030         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:28:54.065687-04:00 early_entry_1025         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:22:49.687478-04:00 early_entry_1020         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:16:44.336219-04:00 early_entry_1015         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:10:39.189800-04:00 early_entry_1010         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T10:04:32.086679-04:00 early_entry_1000         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-05-31T22:11:44.901572-04:00   share_ext_2210         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T22:06:40.041251-04:00   share_ext_2205         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T22:01:34.899171-04:00   share_ext_2200         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T21:56:30.299518-04:00   share_ext_2155         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T21:51:25.637385-04:00   share_ext_2150         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
+2026-05-31T21:46:21.095952-04:00   share_ext_2145         market_closed                                                                                                                                               {"holiday_name": null, "reason": "weekend"}
 ```
