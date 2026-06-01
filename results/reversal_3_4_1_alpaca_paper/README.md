@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-01 10:34:59 EDT`
+Latest checkpoint (ET): `2026-06-01 10:41:05 EDT`
 Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$94,521.56`
-- Portfolio value: `$97,716.56`
+- Portfolio value: `$97,536.56`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1030`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  MRVL   open      early MRVL260717C00200000          1                26.0                23.775          bid_ask_mid                     23.775                    True          2377.5          -222.5              -8.557692                   1
+  MRVL   open      early MRVL260717C00200000          1                26.0                24.775          bid_ask_mid                     24.775                    True          2477.5          -122.5              -4.711538                   1
 ```
 
 ## Closed Trades
@@ -38,6 +38,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot    event_type                                            detail
+2026-06-01T10:41:05.682630-04:00 early_entry_1040 entry_skipped {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:34:59.544234-04:00 early_entry_1030 entry_skipped {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:28:54.065687-04:00 early_entry_1025 entry_skipped {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:22:49.687478-04:00 early_entry_1020 entry_skipped {"entry_mode": "early", "reason": "no_candidate"}
@@ -57,5 +58,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-05-31T21:20:58.618838-04:00   share_ext_2120 market_closed       {"holiday_name": null, "reason": "weekend"}
 2026-05-31T21:15:54.495764-04:00   share_ext_2115 market_closed       {"holiday_name": null, "reason": "weekend"}
 2026-05-31T21:10:50.026270-04:00   share_ext_2110 market_closed       {"holiday_name": null, "reason": "weekend"}
-2026-05-31T21:05:45.696405-04:00   share_ext_2105 market_closed       {"holiday_name": null, "reason": "weekend"}
 ```
