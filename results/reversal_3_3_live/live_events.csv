@@ -2229,3 +2229,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-01T10:20:03.923727-04:00,2026-06-01,early_entry_1020,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-06-01T10:25:05.840855-04:00,2026-06-01,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MRVL260717C00200000"", ""fill_price"": 25.47, ""pnl"": -1415.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""MRVL""}"
 2026-06-01T10:25:05.840855-04:00,2026-06-01,early_entry_1025,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-06-01T10:30:02.004330-04:00,2026-06-01,early_entry_1030,entry_skipped,"{""reason"": ""daily_entry_limit""}"
