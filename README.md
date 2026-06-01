@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.4.4 Live Paper Test
 
-- Latest checkpoint (ET): `2026-06-01 12:00:03 EDT`
-- Equity: `$32,049.25` | Realized: `$20,849.25` | Unrealized: `$1,200.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-06-01 12:05:06 EDT`
+- Equity: `$32,169.25` | Realized: `$20,849.25` | Unrealized: `$1,320.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1200`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS     option         option SNPS260717C00470000      4     14100.0                 15300.0          38.25          1200.0                   8.51                   1
+  SNPS     option         option SNPS260717C00470000      4     14100.0                 15420.0          38.55          1320.0                   9.36                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260601120003)
+![Reversal 3.4.4 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260601120506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260601120003)
+![Reversal 3.4.4 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260601120506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260601120003)
+![Reversal 3.4.4 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260601120506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260601120003)
+![Reversal 3.4.4 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260601120506)
 
 </details>
 
