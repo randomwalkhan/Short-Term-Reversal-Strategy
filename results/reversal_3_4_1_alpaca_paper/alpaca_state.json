@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4320.0,
+      "alpaca_entry_client_order_id": "rev-20260602104510-amzn-early",
+      "alpaca_entry_order_id": "51d9bebc-535b-4ea4-9169-a36179dc3fd4",
+      "asset_type": "option",
+      "contract_symbol": "AMZN260717C00260000",
+      "contracts": 4,
+      "current_drop_pct": 0.67,
+      "early_entry_score": 0.7,
+      "entry_mode": "early",
+      "entry_option_price": 10.8,
+      "entry_slot": "early_entry_1045",
+      "entry_spot": 259.5199890136719,
+      "entry_timestamp": "2026-06-02T10:45:10.985069-04:00",
+      "entry_trade_date": "2026-06-02",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-07-17",
+      "matched_signals": 32,
+      "planned_stop": 9.72,
+      "planned_tp_day1": 12.42,
+      "planned_tp_day2": 12.42,
+      "position_id": "AMZN_20260602T104510",
+      "status": "entry_submitted",
+      "strike": 260.0,
+      "success_rate": 90.62,
+      "ticker": "AMZN",
+      "timing_score": 0.455
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.4.4-alpaca-paper.0"
 }

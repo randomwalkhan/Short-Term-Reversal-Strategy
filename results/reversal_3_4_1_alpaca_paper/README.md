@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-02 10:39:06 EDT`
-Last slot: `manage_1030`
+Latest checkpoint (ET): `2026-06-02 10:45:10 EDT`
+Last slot: `early_entry_1045`
 
 ## Alpaca Paper Account
 
@@ -13,7 +13,10 @@ Last slot: `manage_1030`
 
 ## Open / Pending Positions
 
-_None_
+```text
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
+  AMZN entry_submitted      early AMZN260717C00260000          4                10.8                   NaN             NaN                    NaN
+```
 
 ## Closed Trades
 
@@ -37,6 +40,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-06-02T10:45:10.985069-04:00 early_entry_1045 entry_order_submitted    {"alpaca_order_id": "51d9bebc-535b-4ea4-9169-a36179dc3fd4", "contract_symbol": "AMZN260717C00260000", "contracts": 4, "entry_mode": "early", "limit_price": "10.90", "ticker": "AMZN"}
 2026-06-02T10:39:06.042989-04:00 early_entry_1035         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:33:01.232465-04:00 early_entry_1030         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:26:54.080275-04:00 early_entry_1025         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
@@ -56,5 +60,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-01T10:47:11.042971-04:00 early_entry_1045         entry_skipped                                                                                                 {"budget": 5000.0, "entry_limit": 112.5, "reason": "insufficient_cash", "ticker": "ASML"}
 2026-06-01T10:41:05.682630-04:00 early_entry_1040         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:34:59.544234-04:00 early_entry_1030         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:28:54.065687-04:00 early_entry_1025         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 ```
