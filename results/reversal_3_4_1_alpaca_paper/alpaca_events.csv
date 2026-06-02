@@ -1263,3 +1263,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-01T11:33:00.369304-04:00,2026-06-01,exit,exit_filled,"{""contract_symbol"": ""CHTR260717C00150000"", ""exit_price"": 8.0, ""pnl"": -400.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""CHTR""}"
 2026-06-02T10:02:27.364407-04:00,2026-06-02,early_entry_1000,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
 2026-06-02T10:08:33.527929-04:00,2026-06-02,early_entry_1005,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
+2026-06-02T10:14:41.660152-04:00,2026-06-02,early_entry_1010,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
