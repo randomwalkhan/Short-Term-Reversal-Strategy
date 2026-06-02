@@ -1,6 +1,6 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-02 10:20:49 EDT`
+Latest checkpoint (ET): `2026-06-02 10:26:54 EDT`
 Last slot: `manage_1030`
 
 ## Alpaca Paper Account
@@ -37,6 +37,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-06-02T10:26:54.080275-04:00 early_entry_1025         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:20:49.026891-04:00 early_entry_1020         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:14:41.660152-04:00 early_entry_1010         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:08:33.527929-04:00 early_entry_1005         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
@@ -56,5 +57,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-01T10:28:54.065687-04:00 early_entry_1025         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:22:49.687478-04:00 early_entry_1020         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:16:44.336219-04:00 early_entry_1015         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:10:39.189800-04:00 early_entry_1010         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 ```
