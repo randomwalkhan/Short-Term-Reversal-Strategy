@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-02 10:14:41 EDT`
-Last slot: `early_entry_1010`
+Latest checkpoint (ET): `2026-06-02 10:20:49 EDT`
+Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
@@ -37,6 +37,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-06-02T10:20:49.026891-04:00 early_entry_1020         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:14:41.660152-04:00 early_entry_1010         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:08:33.527929-04:00 early_entry_1005         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:02:27.364407-04:00 early_entry_1000         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
@@ -44,8 +45,8 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-01T11:27:56.503852-04:00      manage_1130  exit_order_submitted         {"alpaca_order_id": "3b5dbe89-3ac6-41aa-bfe5-f1aeb555569f", "contract_symbol": "CHTR260717C00150000", "limit_price": "7.50", "reason": "stop_loss_hit_at_scan", "ticker": "CHTR"}
 2026-06-01T11:17:48.946288-04:00 early_entry_1110          entry_filled                                                                                         {"contract_symbol": "CHTR260717C00150000", "contracts": 5, "filled_price": 8.8, "ticker": "CHTR"}
 2026-06-01T11:11:40.991182-04:00 early_entry_1110 entry_order_submitted     {"alpaca_order_id": "86b16257-84f3-4a1e-8f57-17e0cb8449e0", "contract_symbol": "CHTR260717C00150000", "contracts": 5, "entry_mode": "early", "limit_price": "8.80", "ticker": "CHTR"}
-2026-06-01T11:05:34.425918-04:00             exit           exit_filled                                                 {"contract_symbol": "MRVL260717C00200000", "exit_price": 31.75, "pnl": 575.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
 2026-06-01T11:05:34.425918-04:00 early_entry_1105         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T11:05:34.425918-04:00             exit           exit_filled                                                 {"contract_symbol": "MRVL260717C00200000", "exit_price": 31.75, "pnl": 575.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
 2026-06-01T10:59:27.570705-04:00 early_entry_1055         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:59:27.570705-04:00      manage_1100  exit_order_submitted {"alpaca_order_id": "9e06dd09-a5ff-4c5e-95d4-d4be59a16dc8", "contract_symbol": "MRVL260717C00200000", "limit_price": "29.70", "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
 2026-06-01T10:53:19.158352-04:00 early_entry_1050         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
@@ -56,5 +57,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-01T10:22:49.687478-04:00 early_entry_1020         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:16:44.336219-04:00 early_entry_1015         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:10:39.189800-04:00 early_entry_1010         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:04:32.086679-04:00 early_entry_1000         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 ```
