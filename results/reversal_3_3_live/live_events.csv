@@ -2267,3 +2267,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-02T10:35:04.553797-04:00,2026-06-02,early_entry_1035,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-06-02T10:40:04.457109-04:00,2026-06-02,early_entry_1040,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-06-02T10:45:01.434257-04:00,2026-06-02,early_entry_1045,entry,"{""allocated_cash"": 16200.0, ""asset_type"": ""option"", ""contract_symbol"": ""AMZN260717C00260000"", ""contracts"": 15, ""early_entry_score"": 0.702, ""entry_mode"": ""early"", ""entry_option_price"": 10.8, ""execution_mode"": ""option"", ""matched_signals"": 32, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 8913.0, ""option_spread_pct"": 1.85, ""option_volume"": 913.0, ""success_rate"": 90.62, ""ticker"": ""AMZN"", ""timing_score"": 0.457}"
+2026-06-02T10:50:06.041869-04:00,2026-06-02,early_entry_1050,entry_skipped,"{""reason"": ""daily_entry_limit""}"
