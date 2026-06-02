@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 17469.250356674194,
-  "positions": [
-    {
-      "position_id": "AMZN_20260602T104501",
-      "ticker": "AMZN",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "AMZN260717C00260000",
-      "expiry": "2026-07-17",
-      "strike": 260.0,
-      "entry_timestamp": "2026-06-02T10:45:01.434257-04:00",
-      "entry_trade_date": "2026-06-02",
-      "entry_slot": "early_entry_1045",
-      "entry_spot": 259.57000732421875,
-      "entry_option_price": 10.8,
-      "entry_bid": 10.7,
-      "entry_ask": 10.9,
-      "entry_iv_pct": 30.51827294921875,
-      "contracts": 15,
-      "allocated_cash": 16200.0,
-      "success_rate": 90.62,
-      "matched_signals": 32,
-      "current_drop_pct": 0.65,
-      "rolling_sigma_20d_pct": 24.44,
-      "planned_tp_day1": 12.42,
-      "planned_tp_day2": 12.42,
-      "planned_stop": 9.72,
-      "option_open_interest": 8913.0,
-      "option_volume": 913.0,
-      "option_spread_pct": 0.018518518518518615,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 36331.750356674194,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",

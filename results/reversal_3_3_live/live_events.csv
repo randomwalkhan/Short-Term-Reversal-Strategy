@@ -2274,3 +2274,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-02T11:10:04.323542-04:00,2026-06-02,early_entry_1110,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-06-02T11:15:04.236525-04:00,2026-06-02,early_entry_1115,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-06-02T11:20:04.407163-04:00,2026-06-02,early_entry_1120,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-06-02T11:25:01.418868-04:00,2026-06-02,manage_1130,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""AMZN260717C00260000"", ""fill_price"": 12.575, ""pnl"": 2662.5, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 16.44, ""ticker"": ""AMZN""}"
+2026-06-02T11:25:01.418868-04:00,2026-06-02,early_entry_1125,entry_skipped,"{""reason"": ""daily_entry_limit""}"
