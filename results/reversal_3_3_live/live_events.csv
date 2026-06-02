@@ -2258,3 +2258,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-02T09:20:05.650957-04:00,2026-06-02,data_refresh,data_refresh,{'saved': 92}
 2026-06-02T10:00:02.499087-04:00,2026-06-02,early_entry_1000,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-06-02T10:05:01.451088-04:00,2026-06-02,early_entry_1005,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-06-02T10:10:06.260122-04:00,2026-06-02,early_entry_1010,entry_skipped,"{""reason"": ""no_candidate""}"
