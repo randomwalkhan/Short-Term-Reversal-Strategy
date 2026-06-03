@@ -1,21 +1,21 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-03 10:15:08 EDT`
-Last slot: `early_entry_1015`
+Latest checkpoint (ET): `2026-06-03 10:21:19 EDT`
+Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$92,935.83`
-- Portfolio value: `$96,575.83`
+- Portfolio value: `$96,475.83`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN   open      early AMZN260717C00260000          4                10.9                  10.2          bid_ask_mid                       10.2                    True          4080.0          -280.0              -6.422018                   1
+ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  AMZN exit_submitted      early AMZN260717C00260000          4                10.9                   9.6          bid_ask_mid                        9.6                    True          3840.0          -520.0             -11.926606                   1
 ```
 
 ## Closed Trades
@@ -39,25 +39,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot            event_type                                                                                                                                                                                    detail
-2026-06-03T10:15:08.712348-04:00 early_entry_1015         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-06-03T10:09:01.541019-04:00 early_entry_1005         entry_skipped                                                 {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
-2026-06-03T10:02:54.003242-04:00 early_entry_1000         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-02T15:44:57.895912-04:00 early_entry_1045          entry_filled                                                                                        {"contract_symbol": "AMZN260717C00260000", "contracts": 4, "filled_price": 10.9, "ticker": "AMZN"}
-2026-06-02T10:45:10.985069-04:00 early_entry_1045 entry_order_submitted    {"alpaca_order_id": "51d9bebc-535b-4ea4-9169-a36179dc3fd4", "contract_symbol": "AMZN260717C00260000", "contracts": 4, "entry_mode": "early", "limit_price": "10.90", "ticker": "AMZN"}
-2026-06-02T10:39:06.042989-04:00 early_entry_1035         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-02T10:33:01.232465-04:00 early_entry_1030         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-02T10:26:54.080275-04:00 early_entry_1025         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-02T10:20:49.026891-04:00 early_entry_1020         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-02T10:14:41.660152-04:00 early_entry_1010         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-02T10:08:33.527929-04:00 early_entry_1005         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-02T10:02:27.364407-04:00 early_entry_1000         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T11:33:00.369304-04:00             exit           exit_filled                                                         {"contract_symbol": "CHTR260717C00150000", "exit_price": 8.0, "pnl": -400.0, "reason": "stop_loss_hit_at_scan", "ticker": "CHTR"}
-2026-06-01T11:27:56.503852-04:00      manage_1130  exit_order_submitted         {"alpaca_order_id": "3b5dbe89-3ac6-41aa-bfe5-f1aeb555569f", "contract_symbol": "CHTR260717C00150000", "limit_price": "7.50", "reason": "stop_loss_hit_at_scan", "ticker": "CHTR"}
-2026-06-01T11:17:48.946288-04:00 early_entry_1110          entry_filled                                                                                         {"contract_symbol": "CHTR260717C00150000", "contracts": 5, "filled_price": 8.8, "ticker": "CHTR"}
-2026-06-01T11:11:40.991182-04:00 early_entry_1110 entry_order_submitted     {"alpaca_order_id": "86b16257-84f3-4a1e-8f57-17e0cb8449e0", "contract_symbol": "CHTR260717C00150000", "contracts": 5, "entry_mode": "early", "limit_price": "8.80", "ticker": "CHTR"}
-2026-06-01T11:05:34.425918-04:00 early_entry_1105         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T11:05:34.425918-04:00             exit           exit_filled                                                 {"contract_symbol": "MRVL260717C00200000", "exit_price": 31.75, "pnl": 575.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
-2026-06-01T10:59:27.570705-04:00 early_entry_1055         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T10:59:27.570705-04:00      manage_1100  exit_order_submitted {"alpaca_order_id": "9e06dd09-a5ff-4c5e-95d4-d4be59a16dc8", "contract_symbol": "MRVL260717C00200000", "limit_price": "29.70", "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
+                    timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-06-03T10:21:19.342860-04:00 early_entry_1020         entry_skipped                                              {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
+2026-06-03T10:21:19.342860-04:00      manage_1030  exit_order_submitted      {"alpaca_order_id": "fc5f02b6-3924-49ce-9237-a37cfbc5b418", "contract_symbol": "AMZN260717C00260000", "limit_price": "9.65", "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
+2026-06-03T10:15:08.712348-04:00 early_entry_1015         entry_skipped                                              {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
+2026-06-03T10:09:01.541019-04:00 early_entry_1005         entry_skipped                                              {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
+2026-06-03T10:02:54.003242-04:00 early_entry_1000         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-02T15:44:57.895912-04:00 early_entry_1045          entry_filled                                                                                     {"contract_symbol": "AMZN260717C00260000", "contracts": 4, "filled_price": 10.9, "ticker": "AMZN"}
+2026-06-02T10:45:10.985069-04:00 early_entry_1045 entry_order_submitted {"alpaca_order_id": "51d9bebc-535b-4ea4-9169-a36179dc3fd4", "contract_symbol": "AMZN260717C00260000", "contracts": 4, "entry_mode": "early", "limit_price": "10.90", "ticker": "AMZN"}
+2026-06-02T10:39:06.042989-04:00 early_entry_1035         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-02T10:33:01.232465-04:00 early_entry_1030         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-02T10:26:54.080275-04:00 early_entry_1025         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-02T10:20:49.026891-04:00 early_entry_1020         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-02T10:14:41.660152-04:00 early_entry_1010         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-02T10:08:33.527929-04:00 early_entry_1005         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-02T10:02:27.364407-04:00 early_entry_1000         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T11:33:00.369304-04:00             exit           exit_filled                                                      {"contract_symbol": "CHTR260717C00150000", "exit_price": 8.0, "pnl": -400.0, "reason": "stop_loss_hit_at_scan", "ticker": "CHTR"}
+2026-06-01T11:27:56.503852-04:00      manage_1130  exit_order_submitted      {"alpaca_order_id": "3b5dbe89-3ac6-41aa-bfe5-f1aeb555569f", "contract_symbol": "CHTR260717C00150000", "limit_price": "7.50", "reason": "stop_loss_hit_at_scan", "ticker": "CHTR"}
+2026-06-01T11:17:48.946288-04:00 early_entry_1110          entry_filled                                                                                      {"contract_symbol": "CHTR260717C00150000", "contracts": 5, "filled_price": 8.8, "ticker": "CHTR"}
+2026-06-01T11:11:40.991182-04:00 early_entry_1110 entry_order_submitted  {"alpaca_order_id": "86b16257-84f3-4a1e-8f57-17e0cb8449e0", "contract_symbol": "CHTR260717C00150000", "contracts": 5, "entry_mode": "early", "limit_price": "8.80", "ticker": "CHTR"}
+2026-06-01T11:05:34.425918-04:00 early_entry_1105         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
+2026-06-01T11:05:34.425918-04:00             exit           exit_filled                                              {"contract_symbol": "MRVL260717C00200000", "exit_price": 31.75, "pnl": 575.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
 ```
