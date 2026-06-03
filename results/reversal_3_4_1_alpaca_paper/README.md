@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-03 16:09:41 EDT`
-Last slot: `manage_1600`
+Latest checkpoint (ET): `2026-06-03 16:14:46 EDT`
+Last slot: `share_ext_1610`
 
 ## Alpaca Paper Account
 
@@ -15,8 +15,8 @@ Last slot: `manage_1600`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN exit_submitted      early AMZN260717C00260000          4                10.9                  7.25          bid_ask_mid                       7.25                    True          2900.0         -1460.0             -33.486239                   1
-  FTNT           open      early FTNT260717C00155000          7                 6.6                  6.85          bid_ask_mid                       6.85                    True          4795.0           175.0               3.787879                   0
+  AMZN exit_submitted      early AMZN260717C00260000          4                10.9                 7.375          bid_ask_mid                      7.375                    True          2950.0         -1410.0             -32.339450                   1
+  FTNT           open      early FTNT260717C00155000          7                 6.6                 6.850          bid_ask_mid                      6.850                    True          4795.0           175.0               3.787879                   0
 ```
 
 ## Closed Trades
