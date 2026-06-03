@@ -2292,3 +2292,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-03T09:20:04.119925-04:00,2026-06-03,data_refresh,data_refresh,{'saved': 92}
 2026-06-03T10:00:06.995022-04:00,2026-06-03,early_entry_1000,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-06-03T10:05:03.196018-04:00,2026-06-03,early_entry_1005,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-06-03T10:10:05.039776-04:00,2026-06-03,early_entry_1010,entry_candidate_skipped,"{""early_entry_score"": 0.848, ""option_liquidity_status"": ""low_volume,wide_spread"", ""option_open_interest"": 383.0, ""option_spread_pct"": 21.64, ""option_volume"": 1.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""FTNT"", ""timing_score"": 0.579}"
+2026-06-03T10:10:05.039776-04:00,2026-06-03,early_entry_1010,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
