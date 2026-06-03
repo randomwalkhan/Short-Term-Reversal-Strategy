@@ -1,7 +1,7 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-03 10:15:06 EDT`
-Last processed slot: `early_entry_1015`
+Latest checkpoint (ET): `2026-06-03 10:20:06 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -27,45 +27,47 @@ Last processed slot: `early_entry_1015`
 
 ## Portfolio Snapshot
 
-- Cash: `$18,731.75`
-- Equity: `$36,331.75`
-- Realized PnL: `$26,331.75`
+- Cash: `$34,571.75`
+- Equity: `$34,571.75`
+- Realized PnL: `$24,571.75`
 - Unrealized PnL: `$0.00`
-- Open positions: `1`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260717C00310000       2026-06-03                   0      8     17600.0                 17600.0         22.0           22.0      306.54        306.54          bid_ask_mid                       22.0                bid_ask_mid                    True             0.0                    0.0         100.0               30              0.51         54.92           54.92                   42.9                1851.0           30.0                0.1                      ok
-```
+_None_
 
 ## Today's Closed Trades (2026-06-03)
 
-_None_
+```text
+ticker asset_type execution_mode         instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct           exit_reason
+   TXN     option         option TXN260717C00310000      8          2026-06-03         2026-06-03         22.0        19.8 -1760.0       -10.0 stop_loss_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-    MU           81.82               33            0.62              4.63       1062.12               101.17         0.719          pass              0.496             74.2                           0.529               51.34              4.575                  ok            True                  False
-  CSCO           95.65               23            1.10              0.99        127.58                53.71         0.615          pass              0.729             60.3                           0.643                9.72              0.905                  ok            True                  False
-  MELI           94.12               34            1.04             12.15       1667.62                61.01         0.589          pass              0.732             45.4                           0.581                3.80              0.361                  ok            True                  False
-  FTNT          100.00               38            0.78              0.81        148.51                71.83         0.573          pass              0.885             80.2                           0.842               15.72              1.530                  ok            True                   True
-   TXN          100.00               30            0.51              1.11        307.64                42.90         0.547          pass              0.813             75.0                           0.619                1.40              0.007                  ok            True                   True
-  MCHP           96.30               27            0.68              0.46         96.76                44.80         0.532          pass              0.800             77.8                           0.680                5.42              0.401                  ok            True                  False
-   CEG           81.82               22            2.02              3.86        270.99                55.62         0.526          pass              0.207              8.8                           0.189                2.48             -0.288                  ok            True                  False
-  CDNS           92.31               13            2.36              6.87        413.45                43.85         0.521          pass              0.506             35.2                           0.630               20.25              1.842                  ok            True                  False
-  CRWD           82.35               17            1.96             10.53        764.44                51.19         0.519          pass              0.293             43.9                           0.634               22.21              2.210                  ok            True                  False
-  WDAY           84.00               25            2.58              2.68        147.73                75.59         0.517          pass              0.361             34.3                           0.616               12.14              2.088                  ok            True                  False
-   ADP          100.00               13            2.31              3.73        229.58                34.09         0.510          pass              0.510             13.1                           0.101                2.45              0.421                  ok            True                  False
- CMCSA           80.00               10            1.71              0.30         24.72                17.52         0.509          pass              0.071              6.6                           0.112               -1.51             -0.101                  ok            True                  False
+  CSCO           95.00               20            1.26              1.13        127.52                53.71         0.625          pass              0.693             54.6                           0.645                9.54              0.898                  ok            True                  False
+  MELI           94.44               36            0.86             10.04       1668.53                61.01         0.588          pass              0.782             54.9                           0.690                3.99              0.370                  ok            True                  False
+  FTNT          100.00               35            0.99              1.04        148.42                71.83         0.579          pass              0.849             74.7                           0.834               15.47              1.520                  ok            True                   True
+   TXN          100.00               26            0.77              1.67        307.41                42.90         0.558          pass              0.750             62.5                           0.601                1.13             -0.004                  ok            True                  False
+  MCHP          100.00               20            1.40              0.95         96.55                44.80         0.535          pass              0.682             53.9                           0.532                4.65              0.367                  ok            True                  False
+   ROP           85.71               14            1.97              4.64        334.51                35.89         0.523          pass              0.282             17.0                           0.278                0.29              0.316                  ok            True                  False
+  CDNS           92.86               14            2.34              6.83        413.46                43.85         0.515          pass              0.528             35.5                           0.672               20.26              1.842                  ok            True                  False
+   ADP          100.00               13            2.23              3.61        229.63                34.09         0.515          pass              0.521             16.5                           0.220                2.53              0.425                  ok            True                  False
+  CRWD           80.00               15            2.26             12.19        763.73                51.19         0.510          pass              0.190             35.1                           0.525               21.83              2.196                  ok            True                  False
+  WDAY           84.38               32            1.98              2.07        147.99                75.59         0.509          pass              0.463             49.5                           0.750               12.83              2.115                  ok            True                  False
+  UPRO           92.59               27            1.19              1.25        150.33                28.22         0.505          pass              0.611             37.1                           0.454                9.10              0.900                  ok            True                  False
+ CMCSA           83.33               12            1.65              0.29         24.73                17.52         0.501          pass              0.191             12.8                           0.192               -1.45             -0.098                  ok            True                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                           detail
+2026-06-03T10:20:06.156013-04:00 early_entry_1020           entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "daily_entry_limit"}
+2026-06-03T10:20:06.156013-04:00      manage_1030                    exit                                                                                                                                                                                                                                                   {"asset_type": "option", "contract_symbol": "TXN260717C00310000", "fill_price": 19.8, "pnl": -1760.0, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "TXN"}
 2026-06-03T10:15:06.039702-04:00 early_entry_1015                   entry {"allocated_cash": 17600.0, "asset_type": "option", "contract_symbol": "TXN260717C00310000", "contracts": 8, "early_entry_score": 0.813, "entry_mode": "early", "entry_option_price": 22.0, "execution_mode": "option", "matched_signals": 30, "option_liquidity_status": "ok", "option_open_interest": 1851.0, "option_spread_pct": 10.0, "option_volume": 30.0, "success_rate": 100.0, "ticker": "TXN", "timing_score": 0.547}
 2026-06-03T10:15:06.039702-04:00 early_entry_1015 entry_candidate_skipped                                                                                                                                                                          {"early_entry_score": 0.885, "option_liquidity_status": "low_volume,wide_spread", "option_open_interest": 771.0, "option_spread_pct": 18.79, "option_volume": 13.0, "reason": "no_trade_low_option_liquidity", "ticker": "FTNT", "timing_score": 0.573}
 2026-06-03T10:10:05.039776-04:00 early_entry_1010           entry_skipped                                                                                                                                                                                                                                                                                                                                                                           {"reason": "no_trade_after_option_and_timing_filters"}
@@ -74,8 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-06-03T10:00:06.995022-04:00 early_entry_1000           entry_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "no_candidate"}
 2026-06-03T09:20:04.119925-04:00     data_refresh            data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                    {'saved': 92}
 2026-06-02T15:10:01.501174-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
-2026-06-02T15:05:06.421436-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
-2026-06-02T15:00:02.491254-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260603101506)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260603102006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260603101506)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260603102006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260603101506)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260603102006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260603101506)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260603102006)
 
 </details>
