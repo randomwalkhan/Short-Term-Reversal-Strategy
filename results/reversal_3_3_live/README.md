@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-03 09:30:06 EDT`
+Latest checkpoint (ET): `2026-06-03 09:35:05 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  QCOM           94.12               17            2.16              3.65        239.28               100.94         0.694          pass              0.610             39.2                           0.344               20.46              1.744                  ok            True                  False
-  FTNT          100.00               14            1.98              2.07        147.97                71.83         0.658          pass              0.641             49.7                           0.274               14.31              1.474                  ok            True                  False
-  CSCO           95.65               23            1.03              0.92        127.60                53.71         0.620          pass              0.737             62.8                           0.411                9.79              0.909                  ok            True                  False
-  MELI           94.74               38            0.57              6.68       1669.97                61.01         0.601          pass              0.802             54.2                           0.373                4.29              0.383                  ok            True                  False
-  PAYX           93.33               15            1.20              0.84        100.43                33.97         0.590          pass              0.545             32.3                           0.270                5.40              0.691                  ok            True                  False
-  CTSH           90.62               32            0.53              0.20         55.05                50.18         0.557          pass              0.625             46.3                           0.363                7.80              0.981                  ok            True                  False
-  MCHP           96.00               25            0.83              0.56         96.72                44.80         0.535          pass              0.772             72.9                           0.494                5.26              0.394                  ok            True                  False
-   APP           85.29               34            1.79              7.58        602.38                70.50         0.517          pass              0.431             26.0                           0.269               24.72              3.048                  ok            True                  False
-  WDAY           80.77               26            2.54              2.65        147.74                75.59         0.515          pass              0.256             25.7                           0.308               12.18              2.089                  ok            True                  False
-  MSFT           85.19               27            0.96              2.97        440.04                33.05         0.514          pass              0.396             30.9                           0.206                4.93              0.811                  ok            True                  False
-  SNPS           96.55               29            1.10              3.91        506.68                42.98         0.510          pass              0.677             33.2                           0.344                1.80             -0.190                  ok            True                  False
-   HON           84.00               25            0.70              1.15        234.74                23.49         0.509          pass              0.336             26.0                           0.272                7.57              0.852                  ok            True                  False
+    MU           83.33               30            1.51             11.26       1059.28               101.17         0.696          pass              0.292              0.0                           0.277               49.99              4.534                  ok            True                  False
+  CSCO           95.00               20            1.26              1.13        127.52                53.71         0.625          pass              0.693             54.6                           0.525                9.54              0.898                  ok            True                  False
+  MELI           93.55               31            1.15             13.50       1667.04                61.01         0.607          pass              0.609             15.5                           0.287                3.68              0.356                  ok            True                  False
+  PAYX           90.00               10            1.55              1.09        100.32                33.97         0.598          pass              0.364             12.4                           0.145                5.03              0.675                  ok            True                  False
+  CTSH           88.00               25            1.27              0.49         54.93                50.18         0.543          pass              0.451             27.8                           0.278                7.00              0.947                  ok            True                  False
+  MSFT           86.96               23            1.23              3.79        439.68                33.05         0.527          pass              0.360             11.7                           0.133                4.65              0.799                  ok            True                  False
+   ROP           88.24               17            1.74              4.10        334.74                35.89         0.527          pass              0.319              0.0                           0.183                0.53              0.327                  ok            True                  False
+  SNPS           93.33               15            2.18              7.75        505.03                42.98         0.526          pass              0.441              0.0                           0.243                0.69             -0.240                  ok            True                  False
+  WDAY           84.21               19            3.18              3.31        147.46                75.59         0.525          pass              0.247              7.3                           0.167               11.45              2.060                  ok            True                  False
+  UPRO           93.55               31            0.69              0.73        150.62                28.22         0.524          pass              0.582              9.5                           0.289                9.69              0.924                  ok            True                  False
+  CDNS           90.91               22            1.75              5.10        414.20                43.85         0.512          pass              0.489             22.4                           0.212               20.99              1.870                  ok            True                  False
+ CMCSA           83.33               12            1.65              0.29         24.73                17.52         0.502          pass              0.179              8.9                           0.218               -1.45             -0.098                  ok            True                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260603093006)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260603093505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260603093006)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260603093505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260603093006)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260603093505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260603093006)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260603093505)
 
 </details>
