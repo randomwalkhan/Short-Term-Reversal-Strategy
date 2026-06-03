@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-03 10:21:19 EDT`
+Latest checkpoint (ET): `2026-06-03 10:27:28 EDT`
 Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$92,935.83`
-- Portfolio value: `$96,475.83`
+- Portfolio value: `$96,435.83`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1030`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN exit_submitted      early AMZN260717C00260000          4                10.9                   9.6          bid_ask_mid                        9.6                    True          3840.0          -520.0             -11.926606                   1
+  AMZN exit_submitted      early AMZN260717C00260000          4                10.9                  9.85          bid_ask_mid                       9.85                    True          3940.0          -420.0              -9.633028                   1
 ```
 
 ## Closed Trades
@@ -40,6 +40,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-06-03T10:27:28.701183-04:00 early_entry_1025         entry_skipped                                              {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
 2026-06-03T10:21:19.342860-04:00 early_entry_1020         entry_skipped                                              {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
 2026-06-03T10:21:19.342860-04:00      manage_1030  exit_order_submitted      {"alpaca_order_id": "fc5f02b6-3924-49ce-9237-a37cfbc5b418", "contract_symbol": "AMZN260717C00260000", "limit_price": "9.65", "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
 2026-06-03T10:15:08.712348-04:00 early_entry_1015         entry_skipped                                              {"entry_mode": "early", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FTNT"}
@@ -59,5 +60,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-01T11:17:48.946288-04:00 early_entry_1110          entry_filled                                                                                      {"contract_symbol": "CHTR260717C00150000", "contracts": 5, "filled_price": 8.8, "ticker": "CHTR"}
 2026-06-01T11:11:40.991182-04:00 early_entry_1110 entry_order_submitted  {"alpaca_order_id": "86b16257-84f3-4a1e-8f57-17e0cb8449e0", "contract_symbol": "CHTR260717C00150000", "contracts": 5, "entry_mode": "early", "limit_price": "8.80", "ticker": "CHTR"}
 2026-06-01T11:05:34.425918-04:00 early_entry_1105         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T11:05:34.425918-04:00             exit           exit_filled                                              {"contract_symbol": "MRVL260717C00200000", "exit_price": 31.75, "pnl": 575.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
 ```
