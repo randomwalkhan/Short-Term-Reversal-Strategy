@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-03 14:18:04 EDT`
+Latest checkpoint (ET): `2026-06-03 14:23:08 EDT`
 Last slot: `manage_1430`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$88,315.69`
-- Portfolio value: `$95,530.69`
+- Portfolio value: `$95,550.69`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1430`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN exit_submitted      early AMZN260717C00260000          4                10.9                 7.025          bid_ask_mid                      7.025                    True          2810.0         -1550.0             -35.550459                   1
+  AMZN exit_submitted      early AMZN260717C00260000          4                10.9                 7.175          bid_ask_mid                      7.175                    True          2870.0         -1490.0             -34.174312                   1
   FTNT           open      early FTNT260717C00155000          7                 6.6                 6.475          bid_ask_mid                      6.475                    True          4532.5           -87.5              -1.893939                   0
 ```
 
