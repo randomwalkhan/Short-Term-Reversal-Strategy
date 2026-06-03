@@ -1271,3 +1271,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-02T10:45:10.985069-04:00,2026-06-02,early_entry_1045,entry_order_submitted,"{""alpaca_order_id"": ""51d9bebc-535b-4ea4-9169-a36179dc3fd4"", ""contract_symbol"": ""AMZN260717C00260000"", ""contracts"": 4, ""entry_mode"": ""early"", ""limit_price"": ""10.90"", ""ticker"": ""AMZN""}"
 2026-06-02T15:44:57.895912-04:00,2026-06-02,early_entry_1045,entry_filled,"{""contract_symbol"": ""AMZN260717C00260000"", ""contracts"": 4, ""filled_price"": 10.9, ""ticker"": ""AMZN""}"
 2026-06-03T10:02:54.003242-04:00,2026-06-03,early_entry_1000,entry_skipped,"{""entry_mode"": ""early"", ""reason"": ""no_candidate""}"
+2026-06-03T10:09:01.541019-04:00,2026-06-03,early_entry_1005,entry_skipped,"{""entry_mode"": ""early"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""FTNT""}"
