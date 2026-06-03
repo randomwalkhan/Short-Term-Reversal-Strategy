@@ -1,13 +1,13 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-03 09:57:50 EDT`
+Latest checkpoint (ET): `2026-06-03 10:02:54 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$92,935.83`
-- Portfolio value: `$96,895.83`
+- Portfolio value: `$96,815.83`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1000`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN   open      early AMZN260717C00260000          4                10.9                 10.33     last_price_stale                        NaN                   False          4132.0          -228.0              -5.229358                   1
+  AMZN   open      early AMZN260717C00260000          4                10.9                  10.0          bid_ask_mid                       10.0                    True          4000.0          -360.0              -8.256881                   1
 ```
 
 ## Closed Trades
@@ -40,6 +40,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-06-03T10:02:54.003242-04:00 early_entry_1000         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T15:44:57.895912-04:00 early_entry_1045          entry_filled                                                                                        {"contract_symbol": "AMZN260717C00260000", "contracts": 4, "filled_price": 10.9, "ticker": "AMZN"}
 2026-06-02T10:45:10.985069-04:00 early_entry_1045 entry_order_submitted    {"alpaca_order_id": "51d9bebc-535b-4ea4-9169-a36179dc3fd4", "contract_symbol": "AMZN260717C00260000", "contracts": 4, "entry_mode": "early", "limit_price": "10.90", "ticker": "AMZN"}
 2026-06-02T10:39:06.042989-04:00 early_entry_1035         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
@@ -59,5 +60,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-01T10:59:27.570705-04:00      manage_1100  exit_order_submitted {"alpaca_order_id": "9e06dd09-a5ff-4c5e-95d4-d4be59a16dc8", "contract_symbol": "MRVL260717C00200000", "limit_price": "29.70", "reason": "take_profit_day1_hit_at_scan", "ticker": "MRVL"}
 2026-06-01T10:53:19.158352-04:00 early_entry_1050         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-01T10:47:11.042971-04:00 early_entry_1045         entry_skipped                                                                                                 {"budget": 5000.0, "entry_limit": 112.5, "reason": "insufficient_cash", "ticker": "ASML"}
-2026-06-01T10:41:05.682630-04:00 early_entry_1040         entry_skipped                                                                                                                                         {"entry_mode": "early", "reason": "no_candidate"}
 ```
