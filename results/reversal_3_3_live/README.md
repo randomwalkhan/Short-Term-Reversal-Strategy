@@ -1,6 +1,6 @@
 # Reversal 3.4.4 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-03 15:30:05 EDT`
+Latest checkpoint (ET): `2026-06-03 15:35:05 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -48,18 +48,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MELI           92.31               13            2.53             29.58       1660.15                61.01         0.624          pass              0.418              2.4                           0.193                2.24              0.293                                 ok            True                  False
-  FTNT          100.00               26            1.53              1.60        148.18                71.83         0.606          pass              0.751             61.1                           0.557               14.84              1.495                                 ok            True                  False
-  NXPI           96.77               31            0.79              1.78        322.86                50.93         0.565          pass              0.746             49.9                           0.269                9.10              0.679                                 ok            True                  False
-  CDNS          100.00               12            2.38              6.94        413.41                43.85         0.534          pass              0.573             35.4                           0.566               20.21              1.841                                 ok            True                  False
-  CRWD           83.33               18            1.69              9.10        765.05                51.19         0.531          pass              0.350             51.5                           0.684               22.54              2.222                                 ok            True                  False
-  AAPL           90.91               11            1.50              3.31        313.78                17.72         0.528          pass              0.427             25.6                           0.509                3.85              0.367                                 ok            True                  False
-   WBD           95.45               22            0.52              0.10         27.14                 9.03         0.517          pass              0.585             17.6                           0.327               -0.18             -0.025                                 ok            True                  False
-  WDAY           84.38               32            1.92              2.00        148.02                75.59         0.513          pass              0.468             51.0                           0.669               12.90              2.118                                 ok            True                  False
-  UPRO           95.00               20            1.83              1.93        150.04                28.22         0.510          pass              0.584             22.0                           0.229                8.39              0.870                                 ok            True                  False
-   ROP           85.71               14            2.07              4.88        334.41                35.89         0.510          pass              0.312             27.4                           0.451                0.19              0.311                                 ok            True                  False
-  INSM           78.57               42            0.59              0.43        103.55               108.46         0.741          pass              0.487             71.0                           0.500               -3.99             -0.410 downtrend_blocked_slope_and_streak           False                  False
-    ZS           50.00                4            6.92              6.99        141.16               159.87         0.652          pass              0.083              6.0                           0.124              -23.44             -2.966            downtrend_blocked_slope           False                  False
+  MELI           86.67               15            2.32             27.15       1661.19                61.01         0.618          pass              0.304             10.5                           0.334                2.46              0.302                                 ok            True                  False
+  FTNT          100.00               25            1.59              1.66        148.15                71.83         0.609          pass              0.740             59.6                           0.550               14.77              1.493                                 ok            True                  False
+  NXPI           96.97               33            0.54              1.22        323.10                50.93         0.568          pass              0.807             65.7                           0.385                9.38              0.690                                 ok            True                  False
+   WBD           94.12               17            0.61              0.12         27.13                 9.03         0.545          pass              0.486              2.9                           0.243               -0.28             -0.030                                 ok            True                  False
+  AAPL           90.91               11            1.45              3.21        313.82                17.72         0.531          pass              0.434             27.8                           0.512                3.90              0.369                                 ok            True                  False
+   ROP           81.82               11            2.16              5.08        334.32                35.89         0.521          pass              0.180             24.4                           0.342                0.10              0.307                                 ok            True                  False
+  CRWD           82.35               17            2.08             11.19        764.15                51.19         0.511          pass              0.282             40.4                           0.553               22.06              2.204                                 ok            True                  False
+  UPRO           95.00               20            1.85              1.95        150.03                28.22         0.509          pass              0.581             21.2                           0.231                8.37              0.869                                 ok            True                  False
+  CDNS           93.33               15            2.32              6.76        413.49                43.85         0.509          pass              0.551             37.1                           0.607               20.29              1.844                                 ok            True                  False
+  WDAY           84.38               32            1.98              2.06        148.00                75.59         0.509          pass              0.463             49.6                           0.634               12.83              2.116                                 ok            True                  False
+  SNPS           94.12               17            2.11              7.51        505.13                42.98         0.503          pass              0.586             37.4                           0.431                0.76             -0.237                                 ok            True                  False
+  INSM           79.07               43            0.38              0.28        103.61               108.46         0.747          pass              0.518             81.2                           0.573               -3.79             -0.401 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260603153005)
+![Reversal 3.4.4 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260603153505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260603153005)
+![Reversal 3.4.4 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260603153505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260603153005)
+![Reversal 3.4.4 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260603153505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260603153005)
+![Reversal 3.4.4 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260603153505)
 
 </details>
