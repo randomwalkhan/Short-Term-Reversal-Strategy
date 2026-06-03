@@ -2299,3 +2299,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-03T10:20:06.156013-04:00,2026-06-03,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""TXN260717C00310000"", ""fill_price"": 19.8, ""pnl"": -1760.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""TXN""}"
 2026-06-03T10:20:06.156013-04:00,2026-06-03,early_entry_1020,entry_skipped,"{""reason"": ""daily_entry_limit""}"
 2026-06-03T10:25:05.972496-04:00,2026-06-03,early_entry_1025,entry_skipped,"{""reason"": ""daily_entry_limit""}"
+2026-06-03T10:30:02.209101-04:00,2026-06-03,early_entry_1030,entry_skipped,"{""reason"": ""daily_entry_limit""}"
