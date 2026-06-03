@@ -1,7 +1,7 @@
 # Reversal 3.4.4-alpaca-paper.0
 
-Latest checkpoint (ET): `2026-06-03 00:41:42 EDT`
-Last slot: `share_ext_0040`
+Latest checkpoint (ET): `2026-06-03 00:46:45 EDT`
+Last slot: `share_ext_0045`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_0040`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN   open      early AMZN260717C00260000          4                10.9                 10.35          bid_ask_mid                      10.35                    True          4140.0          -220.0              -5.045872                   1
+  AMZN   open      early AMZN260717C00260000          4                10.9                 10.33     last_price_stale                        NaN                   False          4132.0          -228.0              -5.229358                   1
 ```
 
 ## Closed Trades
