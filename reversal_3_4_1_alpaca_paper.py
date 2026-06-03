@@ -15,7 +15,7 @@ import requests
 import reversal_3_3_live as live
 
 
-VERSION = "3.5-alpaca-paper.0"
+VERSION = "3.5-alpaca-paper.1"
 BASE_DIR = Path(__file__).resolve().parent
 RESULT_DIR = BASE_DIR / "results" / "reversal_3_4_1_alpaca_paper"
 STATE_PATH = RESULT_DIR / "alpaca_state.json"
@@ -584,7 +584,10 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
 
     if closure_detail is None and early_slot:
         summary, _, _ = live.screen_live_candidates(live.build_universe(), now_et=now_et)
-        events_df = live.log_early_entry_shadow(state, now_et, early_slot, summary, events_df)
+        account = client.account()
+        shadow_state = dict(state)
+        shadow_state["cash"] = float(account.get("cash", 0.0))
+        events_df = live.log_early_entry_shadow(shadow_state, now_et, early_slot, summary, events_df)
     elif closure_detail is None and slot == "entry_1500" and not has_entry_today(state, trades_df, events_df, now_et.date().isoformat()):
         summary, _, _ = live.screen_live_candidates(live.build_universe(), now_et=now_et)
         state, events_df = submit_entry(client, state, events_df, now_et, slot, summary, "regular", args.dry_run)

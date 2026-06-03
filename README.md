@@ -368,6 +368,7 @@ Versioning rule: when the research definition changes materially, bump the main 
 - `3.4.3-alpaca-paper.0`: inherit the `3.4.3` stale option quote protection in the Alpaca paper adapter
 - `3.4.4-alpaca-paper.0`: inherit the `3.4.4` tighter option-liquidity entry gate in the Alpaca paper adapter
 - `3.5-alpaca-paper.0`: align Alpaca paper with `3.5` by shadow-logging early entries rather than submitting morning option orders
+- `3.5-alpaca-paper.1`: use live Alpaca account cash for early-entry shadow logging, so hypothetical budget context is not reported as zero
 
 Earlier notebook snapshots such as `versions/notebooks/Reversal2.5.3.ipynb`, `versions/notebooks/Reversal2.5.ipynb`, `versions/notebooks/Reversal2.4.ipynb`, `versions/notebooks/Reversal2.3.3.ipynb`, `versions/notebooks/Reversal2.3.2.ipynb`, and `versions/notebooks/Reversal2.3.1.ipynb` are retained for version-by-version review.
 
