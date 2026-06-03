@@ -32,7 +32,7 @@ from reversal_universe import build_named_universe_map
 from update_reversal_data import refresh_reversal_data
 
 
-VERSION = "3.4.4"
+VERSION = "3.5"
 UNIVERSE_NAME = "qqq_plus_leverage_etfs"
 INITIAL_CAPITAL = 10_000.0
 LOOKBACK_DAYS = 60
@@ -61,6 +61,7 @@ EARLY_ENTRY_MIN_SUCCESS_RATE = 88.0
 EARLY_ENTRY_MIN_MATCHED_SIGNALS = 30
 EARLY_ENTRY_MIN_RECLAIM_RATIO = 0.60
 EARLY_ENTRY_STABILITY_GATE = 0.55
+EARLY_ENTRY_SHADOW_ONLY = True
 TREND_HEALTH_LOOKBACK_DAYS = 10
 TREND_HEALTH_SLOPE_POINTS = 10
 TREND_HEALTH_MAX_NEGATIVE_SLOPE_PCT_PER_DAY = -0.25
@@ -404,11 +405,13 @@ def latest_required_history_date(now_et: pd.Timestamp) -> pd.Timestamp:
 
 def csv_history_is_stale(tickers: list[str], now_et: pd.Timestamp) -> bool:
     required = latest_required_history_date(now_et).normalize()
+    for ticker in tickers:
+        if not (DATA_DIR / f"{ticker}.csv").exists():
+            return True
+
     sample = tickers[: min(10, len(tickers))]
     for ticker in sample:
         path = DATA_DIR / f"{ticker}.csv"
-        if not path.exists():
-            return True
         try:
             df = pd.read_csv(path, usecols=["Date"])
             last_date = pd.to_datetime(df["Date"], errors="coerce").dropna().max()
@@ -1835,6 +1838,118 @@ def maybe_enter_position(
     return state, trades_df, events_df
 
 
+def log_early_entry_shadow(
+    state: dict[str, Any],
+    now_et: pd.Timestamp,
+    slot_key: str,
+    summary_df: pd.DataFrame,
+    events_df: pd.DataFrame,
+) -> pd.DataFrame:
+    if not slot_key.startswith("early_entry_"):
+        return events_df
+
+    def clean_number(value: Any, digits: int = 3) -> float | None:
+        numeric = pd.to_numeric(pd.Series([value]), errors="coerce").iloc[0]
+        if pd.isna(numeric) or not np.isfinite(float(numeric)):
+            return None
+        return round(float(numeric), digits)
+
+    def candidate_snapshot(row: pd.Series) -> dict[str, Any]:
+        return {
+            "ticker": str(row.get("ticker")),
+            "early_entry_score": clean_number(row.get("early_entry_score")),
+            "timing_score": clean_number(row.get("timing_score")),
+            "success_rate": clean_number(row.get("success_rate_%"), 2),
+            "matched_signals": int(row.get("matched_signals", 0)) if pd.notna(row.get("matched_signals")) else None,
+            "current_drop_pct": clean_number(row.get("current_drop_%"), 2),
+            "early_reclaim_pct": clean_number(row.get("early_reclaim_%"), 1),
+            "recovery_stability_score": clean_number(row.get("early_recovery_stability_score")),
+            "trend_health_status": row.get("trend_health_status"),
+        }
+
+    if summary_df.empty or "early_entry_candidate" not in summary_df.columns:
+        return append_event(
+            events_df,
+            now_et=now_et,
+            trade_date=now_et.date().isoformat(),
+            slot=slot_key,
+            event_type="early_entry_shadow",
+            detail={"shadow_only": True, "would_enter": False, "reason": "no_summary"},
+        )
+
+    open_tickers = {position["ticker"] for position in state.get("positions", [])}
+    candidates = summary_df[summary_df["early_entry_candidate"].fillna(False) & ~summary_df["ticker"].isin(open_tickers)].copy()
+    if not candidates.empty:
+        candidates = candidates.sort_values(
+            ["early_entry_score", "success_rate_%", "matched_signals", "current_drop_%"],
+            ascending=[False, False, False, False],
+            na_position="last",
+        )
+
+    if candidates.empty:
+        return append_event(
+            events_df,
+            now_et=now_et,
+            trade_date=now_et.date().isoformat(),
+            slot=slot_key,
+            event_type="early_entry_shadow",
+            detail={"shadow_only": True, "would_enter": False, "reason": "no_candidate"},
+        )
+
+    candidate = candidates.iloc[0]
+    ticker = str(candidate["ticker"])
+    spot = float(candidate["live_price_raw"])
+    detail: dict[str, Any] = {
+        "shadow_only": True,
+        "would_enter": False,
+        "reason": "shadow_mode_no_order",
+        "entry_mode": "early",
+        "ticker": ticker,
+        "top_candidates": [candidate_snapshot(row) for _, row in candidates.head(5).iterrows()],
+        **candidate_snapshot(candidate),
+    }
+
+    try:
+        calls = fetch_call_candidates(ticker, spot=spot)
+        selected = calls.iloc[0]
+        option_liquid, option_liquidity_status = assess_option_entry_liquidity(selected)
+        entry_price = float(selected["mark_price"])
+        entry_cost = entry_price * 100
+        hypothetical_budget = min(float(state.get("cash", 0.0)), max(float(state.get("cash", 0.0)), INITIAL_CAPITAL) * TARGET_POSITION_WEIGHT)
+        hypothetical_contracts = int(hypothetical_budget // entry_cost) if entry_cost > 0 else 0
+
+        detail.update(
+            {
+                "contract_symbol": str(selected["contractSymbol"]),
+                "entry_option_price": round(entry_price, 4),
+                "entry_bid": clean_number(selected.get("bid"), 4),
+                "entry_ask": clean_number(selected.get("ask"), 4),
+                "option_open_interest": clean_number(selected.get("openInterest"), 2),
+                "option_volume": clean_number(selected.get("volume"), 2),
+                "option_spread_pct": clean_number(float(selected.get("spread_pct", np.nan)) * 100, 2),
+                "option_liquidity_status": option_liquidity_status,
+                "hypothetical_budget": round(hypothetical_budget, 2),
+                "hypothetical_contracts": hypothetical_contracts,
+                "would_enter": bool(option_liquid and entry_price > 0 and hypothetical_contracts > 0),
+            }
+        )
+        if not option_liquid:
+            detail["reason"] = "shadow_option_failed_liquidity"
+        elif hypothetical_contracts <= 0:
+            detail["reason"] = "shadow_insufficient_cash"
+    except Exception as exc:
+        detail.update({"reason": "shadow_option_unavailable", "error": str(exc)[:300]})
+
+    return append_event(
+        events_df,
+        now_et=now_et,
+        trade_date=now_et.date().isoformat(),
+        slot=slot_key,
+        event_type="early_entry_shadow",
+        detail=detail,
+    )
+
+
 def build_positions_frame(state: dict[str, Any], now_et: pd.Timestamp) -> pd.DataFrame:
     marked_positions, _ = mark_open_positions(state, now_et) if state["positions"] else ([], 0.0)
     if not marked_positions:
@@ -2319,7 +2434,7 @@ def render_dashboard(
             "",
             "## Active Configuration",
             "",
-            "- Universe: `qqq_plus_leverage_etfs` (`qqq_only_filtered + SOXL + UPRO`)",
+            "- Universe: `qqq_plus_leverage_etfs` (`qqq_only_filtered + SOXL + UPRO + DRAM`)",
             "- Lookback window: `60d`",
             "- Minimum current drop: `> 0.5%`",
             "- Recovery target: `70% of the signal-day drop`",
@@ -2327,7 +2442,7 @@ def render_dashboard(
             "- Matched-signal gate: `>= 10`",
             "- Positioning: `50%` target allocation per new entry, up to `2` concurrent tickers",
             "- Entry scan: `3:00 PM ET`",
-            f"- Early-entry permission: `10:00 AM-12:00 PM ET` 5-minute scans may enter one exceptional candidate only when `early_entry_score >= {EARLY_ENTRY_SCORE_GATE:.2f}`, success rate `>= {EARLY_ENTRY_MIN_SUCCESS_RATE:.0f}%`, matched signals `>= {EARLY_ENTRY_MIN_MATCHED_SIGNALS}`, early reclaim `>= {EARLY_ENTRY_MIN_RECLAIM_RATIO:.0%}`, and recovery stability `>= {EARLY_ENTRY_STABILITY_GATE:.2f}`; the one-new-entry-per-day limit still applies",
+            f"- Early-entry mode: `shadow-only`; `10:00 AM-12:00 PM ET` 5-minute scans still log candidates when `early_entry_score >= {EARLY_ENTRY_SCORE_GATE:.2f}`, success rate `>= {EARLY_ENTRY_MIN_SUCCESS_RATE:.0f}%`, matched signals `>= {EARLY_ENTRY_MIN_MATCHED_SIGNALS}`, early reclaim `>= {EARLY_ENTRY_MIN_RECLAIM_RATIO:.0%}`, and recovery stability `>= {EARLY_ENTRY_STABILITY_GATE:.2f}`, but they do not open positions",
             "- Exit scans: `9:30 AM ET` and every `30` minutes through `4:00 PM ET`; off-hours `5-minute` checkpoints continue mark-to-market updates for open positions, while any legacy share positions still held from older versions continue extended-hours take-profit and stop loss scans until flat",
             f"- Live exit ladder: `+{DAY1_TAKE_PROFIT_PCT:.0%} / +{DAY2_TAKE_PROFIT_PCT:.0%} / -{STOP_LOSS_PCT:.0%}`",
             "- Option entry liquidity gate: `open interest >= 110`, `volume >= 20`, `spread <= 14%`",
@@ -2614,15 +2729,18 @@ def run_cycle(args: argparse.Namespace) -> dict[str, Any]:
             )
 
     if not pre_start and closure_detail is None and early_entry_slot_key:
-        state, trades_df, events_df = maybe_enter_position(
-            state,
-            now_et,
-            early_entry_slot_key,
-            summary_df,
-            trades_df,
-            events_df,
-            entry_mode="early",
-        )
+        if EARLY_ENTRY_SHADOW_ONLY:
+            events_df = log_early_entry_shadow(state, now_et, early_entry_slot_key, summary_df, events_df)
+        else:
+            state, trades_df, events_df = maybe_enter_position(
+                state,
+                now_et,
+                early_entry_slot_key,
+                summary_df,
+                trades_df,
+                events_df,
+                entry_mode="early",
+            )
 
     effective_slot_key = slot_key or early_entry_slot_key
     positions_df = build_positions_frame(state, now_et)
