@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-04 13:31:30 EDT`
+Latest checkpoint (ET): `2026-06-04 13:36:33 EDT`
 Last slot: `manage_1330`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1330`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  FTNT   open      early FTNT260717C00155000          7                 6.6                  6.55          bid_ask_mid                       6.55                    True          4585.0           -35.0              -0.757576                   1
+  FTNT   open      early FTNT260717C00155000          7                 6.6                 6.675          bid_ask_mid                      6.675                    True          4672.5            52.5               1.136364                   1
 ```
 
 ## Closed Trades
