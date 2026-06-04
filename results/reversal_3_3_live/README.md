@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-04 14:55:06 EDT`
+Latest checkpoint (ET): `2026-06-04 15:00:02 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$22,561.75`
-- Equity: `$34,576.75`
+- Equity: `$34,601.75`
 - Realized PnL: `$24,571.75`
-- Unrealized PnL: `$5.00`
+- Unrealized PnL: `$30.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SOXL     option         option SOXL260717C00270000       2026-06-04                   0      2     12010.0                 12015.0        60.05          60.08      270.38        269.23          bid_ask_mid                      60.08                bid_ask_mid                    True             5.0                   0.04         94.74               19              3.62        161.75          163.68                 141.59                 112.0           64.0               0.05                      ok
+  SOXL     option         option SOXL260717C00270000       2026-06-04                   0      2     12010.0                 12040.0        60.05           60.2      270.38        268.75          bid_ask_mid                       60.2                bid_ask_mid                    True            30.0                   0.25         94.74               19              3.62        161.75          165.16                 141.59                 112.0           64.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-06-04)
@@ -47,25 +47,26 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  MELI           94.59               37            0.70              8.06       1635.09                61.24         0.589            pass              0.670             14.0                           0.276               -1.46             -0.051                      ok            True                  False
-  TEAM           93.18               44            0.53              0.38        101.37                88.72         0.548            pass              0.842             78.7                           0.435               17.12              2.893                      ok            True                  False
-  CTSH           93.55               31            0.64              0.24         53.41                51.56         0.548            pass              0.601             15.0                           0.298                3.65              0.587                      ok            True                  False
-   TXN           96.15               26            0.74              1.59        307.91                42.91         0.546            pass              0.780             72.8                           0.574                0.47             -0.087                      ok            True                  False
-  SOXL           94.74               19            4.03              7.91        277.15               141.59         0.537            pass              0.741             78.3                           0.605               55.45              4.601                      ok            True                  False
-   ADI           95.00               20            1.62              4.97        435.54                44.48         0.524            pass              0.694             58.5                           0.570                8.47              0.952                      ok            True                  False
-   WDC           96.30               27            1.72              7.16        591.04                59.52         0.517            pass              0.761             65.2                           0.501               27.03              2.300                      ok            True                  False
-  LRCX           90.32               31            0.71              1.70        342.98                54.10         0.506            pass              0.728             87.2                           0.786               16.84              1.389                      ok            True                   True
-  SNPS           93.10               29            1.09              3.81        496.39                43.50         0.506            pass              0.701             58.2                           0.568               -1.27             -0.429                      ok            True                  False
-   STX           97.14               35            0.65              4.29        938.85                53.35         0.500 below_threshold              0.884             89.0                           0.677               24.43              2.058                      ok            True                   True
-  INTU           77.27               22            2.38              5.18        309.22               102.00         0.678            pass              0.234             28.6                           0.556              -20.81             -0.649 downtrend_blocked_slope           False                  False
-  QCOM           88.89                9            3.28              5.74        247.55                96.24         0.642            pass              0.435             44.6                           0.449               19.41              1.327                      ok           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  MELI           94.12               34            0.91             10.40       1634.08                61.24         0.594          pass              0.596              0.0                           0.230               -1.67             -0.060                      ok            True                  False
+  CTSH           93.55               31            0.58              0.22         53.42                51.56         0.552          pass              0.624             22.5                           0.322                3.70              0.590                      ok            True                  False
+   TXN           95.83               24            0.88              1.89        307.78                42.91         0.550          pass              0.751             67.6                           0.450                0.33             -0.093                      ok            True                  False
+   ADI          100.00               17            1.81              5.54        435.30                44.48         0.538          pass              0.662             53.7                           0.573                8.26              0.943                      ok            True                  False
+  TEAM           93.18               44            0.73              0.52        101.31                88.72         0.534          pass              0.817             70.8                           0.418               16.89              2.884                      ok            True                  False
+  SOXL           94.44               18            4.20              8.25        277.00               141.59         0.531          pass              0.724             77.3                           0.648               55.17              4.592                      ok            True                  False
+  PANW           90.32               31            1.15              2.26        279.46                59.60         0.523          pass              0.699             77.0                           0.785               12.38              1.664                      ok            True                   True
+   WDC           96.55               29            1.59              6.59        591.28                59.52         0.512          pass              0.782             68.0                           0.501               27.21              2.306                      ok            True                  False
+   APP           85.71               35            1.55              6.21        568.17                74.91         0.506          pass              0.509             46.6                           0.540               16.52              2.297                      ok            True                  False
+  LRCX           90.62               32            0.65              1.58        343.03                54.10         0.502          pass              0.745             88.2                           0.808               16.90              1.392                      ok            True                   True
+  SNPS           93.10               29            1.15              4.03        496.29                43.50         0.502          pass              0.694             55.8                           0.509               -1.33             -0.432                      ok            True                  False
+  INTU           77.27               22            2.48              5.40        309.13               102.00         0.671          pass              0.224             25.7                           0.506              -20.89             -0.654 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              detail
+2026-06-04T15:00:02.553545-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 2026-06-04T14:55:06.549299-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 2026-06-04T14:50:05.645592-04:00       entry_1500                   entry                                                                                                                                                                                                                                                                                                                                                                                                                                                                {"allocated_cash": 12010.0, "asset_type": "option", "contract_symbol": "SOXL260717C00270000", "contracts": 2, "early_entry_score": 0.751, "entry_mode": "regular", "entry_option_price": 60.05, "execution_mode": "option", "matched_signals": 19, "option_liquidity_status": "ok", "option_open_interest": 112.0, "option_spread_pct": 5.33, "option_volume": 64.0, "success_rate": 94.74, "ticker": "SOXL", "timing_score": 0.565}
 2026-06-04T14:50:05.645592-04:00       entry_1500 entry_candidate_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {"early_entry_score": 0.634, "option_liquidity_status": "low_open_interest,low_volume", "option_open_interest": 16.0, "option_spread_pct": 7.13, "option_volume": 14.0, "reason": "no_trade_low_option_liquidity", "ticker": "MELI", "timing_score": 0.593}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-06-04T10:07:26.962733-04:00 early_entry_1005      early_entry_shadow {"contract_symbol": "PANW260717C00280000", "current_drop_pct": 1.2, "early_entry_score": 0.681, "early_reclaim_pct": 76.1, "entry_ask": 19.1, "entry_bid": 17.1, "entry_mode": "early", "entry_option_price": 18.1, "hypothetical_budget": 17285.88, "hypothetical_contracts": 9, "matched_signals": 30, "option_liquidity_status": "ok", "option_open_interest": 1675.0, "option_spread_pct": 11.05, "option_volume": 84.0, "reason": "shadow_mode_no_order", "recovery_stability_score": 0.831, "shadow_only": true, "success_rate": 90.0, "ticker": "PANW", "timing_score": 0.527, "top_candidates": [{"current_drop_pct": 1.2, "early_entry_score": 0.681, "early_reclaim_pct": 76.1, "matched_signals": 30, "recovery_stability_score": 0.831, "success_rate": 90.0, "ticker": "PANW", "timing_score": 0.527, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": true}
 2026-06-04T09:22:28.092024-04:00     data_refresh            data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       {'saved': 93}
 2026-06-03T15:10:03.976623-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-06-03T15:05:05.758809-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260604145506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260604150002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260604145506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260604150002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260604145506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260604150002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260604145506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260604150002)
 
 </details>
