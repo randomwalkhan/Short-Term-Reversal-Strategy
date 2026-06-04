@@ -1280,3 +1280,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-03T13:42:27.866188-04:00,2026-06-03,early_entry_1030,entry_filled,"{""contract_symbol"": ""FTNT260717C00155000"", ""contracts"": 7, ""filled_price"": 6.6, ""ticker"": ""FTNT""}"
 2026-06-03T16:04:34.934318-04:00,2026-06-03,exit,exit_not_filled,"{""contract_symbol"": ""AMZN260717C00260000"", ""status"": ""expired"", ""ticker"": ""AMZN""}"
 2026-06-03T16:04:34.934318-04:00,2026-06-03,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""7586c794-5b10-4f38-9d64-1fb353016ac2"", ""contract_symbol"": ""AMZN260717C00260000"", ""limit_price"": ""7.10"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""AMZN""}"
+2026-06-04T09:51:15.240090-04:00,2026-06-04,exit,exit_filled,"{""contract_symbol"": ""AMZN260717C00260000"", ""exit_price"": 8.4, ""pnl"": -1000.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""AMZN""}"

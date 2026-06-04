@@ -1,22 +1,21 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-04 06:48:47 EDT`
-Last slot: `share_ext_0645`
+Latest checkpoint (ET): `2026-06-04 09:51:15 EDT`
+Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$88,315.49`
-- Portfolio value: `$95,925.49`
+- Cash: `$91,675.41`
+- Portfolio value: `$95,665.41`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN exit_submitted      early AMZN260717C00260000          4                10.9                   7.9     last_price_stale                        NaN                   False          3160.0         -1200.0             -27.522936                   2
-  FTNT           open      early FTNT260717C00155000          7                 6.6                   6.8     last_price_stale                        NaN                   False          4760.0           140.0               3.030303                   1
+ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  FTNT   open      early FTNT260717C00155000          7                 6.6                   6.8     last_price_stale                        NaN                   False          4760.0           140.0               3.030303                   1
 ```
 
 ## Closed Trades
@@ -35,12 +34,14 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   AVGO AVGO260717C00420000          2026-05-28         2026-05-29               33.40              47.35          1  1395.0   41.766467 take_profit_day1_hit_at_scan
   MRVL MRVL260717C00200000          2026-05-29         2026-06-01               26.00              31.75          1   575.0   22.115385 take_profit_day1_hit_at_scan
   CHTR CHTR260717C00150000          2026-06-01         2026-06-01                8.80               8.00          5  -400.0   -9.090909        stop_loss_hit_at_scan
+  AMZN AMZN260717C00260000          2026-06-02         2026-06-04               10.90               8.40          4 -1000.0  -22.935780        stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-06-04T09:51:15.240090-04:00             exit           exit_filled                                                     {"contract_symbol": "AMZN260717C00260000", "exit_price": 8.4, "pnl": -1000.0, "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
 2026-06-03T16:04:34.934318-04:00      manage_1600  exit_order_submitted      {"alpaca_order_id": "7586c794-5b10-4f38-9d64-1fb353016ac2", "contract_symbol": "AMZN260717C00260000", "limit_price": "7.10", "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
 2026-06-03T16:04:34.934318-04:00             exit       exit_not_filled                                                                                                      {"contract_symbol": "AMZN260717C00260000", "status": "expired", "ticker": "AMZN"}
 2026-06-03T13:42:27.866188-04:00 early_entry_1030          entry_filled                                                                                      {"contract_symbol": "FTNT260717C00155000", "contracts": 7, "filled_price": 6.6, "ticker": "FTNT"}
@@ -60,5 +61,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-02T10:14:41.660152-04:00 early_entry_1010         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:08:33.527929-04:00 early_entry_1005         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
 2026-06-02T10:02:27.364407-04:00 early_entry_1000         entry_skipped                                                                                                                                      {"entry_mode": "early", "reason": "no_candidate"}
-2026-06-01T11:33:00.369304-04:00             exit           exit_filled                                                      {"contract_symbol": "CHTR260717C00150000", "exit_price": 8.0, "pnl": -400.0, "reason": "stop_loss_hit_at_scan", "ticker": "CHTR"}
 ```
