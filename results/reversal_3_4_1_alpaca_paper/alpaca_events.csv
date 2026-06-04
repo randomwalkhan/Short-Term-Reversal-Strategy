@@ -1286,3 +1286,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-04T14:27:10.599982-04:00,2026-06-04,exit,exit_filled,"{""contract_symbol"": ""FTNT260717C00155000"", ""exit_price"": 7.4, ""pnl"": 560.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""FTNT""}"
 2026-06-04T14:52:22.899406-04:00,2026-06-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MELI""}"
 2026-06-04T14:58:38.269080-04:00,2026-06-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MELI""}"
+2026-06-04T15:04:48.383460-04:00,2026-06-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MELI""}"
