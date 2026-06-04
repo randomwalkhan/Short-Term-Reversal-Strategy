@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-04 14:10:02 EDT`
-Last processed slot: `manage_1400`
+Latest checkpoint (ET): `2026-06-04 14:15:02 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  QCOM           92.31               13            2.60              4.55        248.06                96.24         0.663          pass              0.583             56.1                           0.751               20.25              1.359                      ok            True                  False
-  SOXL           91.67               24            2.44              4.79        278.49               141.59         0.610          pass              0.726             86.8                           0.960               58.03              4.675                      ok            True                  False
-  ROST           94.12               34            0.50              0.82        232.27                44.04         0.557          pass              0.610              6.0                           0.274                6.27              0.305                      ok            True                  False
-  CTSH           93.55               31            0.58              0.22         53.42                51.56         0.552          pass              0.617             20.2                           0.306                3.70              0.590                      ok            True                  False
-    MU           80.00               15            4.28             32.32       1065.72                97.39         0.550          pass              0.260             57.2                           0.797               41.18              4.088                      ok            True                  False
-   WDC           96.88               32            0.94              3.90        592.44                59.52         0.536          pass              0.843             81.1                           0.680               28.05              2.336                      ok            True                   True
-   TXN           96.67               30            0.53              1.14        308.10                42.91         0.533          pass              0.828             80.5                           0.765                0.68             -0.077                      ok            True                   True
-  PANW           86.96               23            1.78              3.50        278.93                59.60         0.533          pass              0.519             64.5                           0.781               11.66              1.635                      ok            True                  False
-   ADI           95.24               21            1.51              4.64        435.68                44.48         0.525          pass              0.709             61.2                           0.748                8.59              0.956                      ok            True                  False
-  LRCX           87.50               24            1.38              3.31        342.29                54.10         0.506          pass              0.569             75.1                           0.712               16.05              1.358                      ok            True                  False
-  SNPS           93.33               30            1.01              3.53        496.51                43.50         0.505          pass              0.723             61.3                           0.644               -1.19             -0.426                      ok            True                   True
-  INSM           80.85               47            0.06              0.04        103.84               108.54         0.741          pass              0.591             98.2                           0.500               -3.81             -0.479 downtrend_blocked_slope           False                  False
+  QCOM           91.67               12            2.82              4.94        247.89                96.24         0.655          pass              0.547             52.3                           0.733               19.97              1.349                      ok            True                  False
+  SOXL           90.48               21            2.94              5.77        278.07               141.59         0.595          pass              0.665             84.2                           0.939               57.22              4.652                      ok            True                  False
+  CTSH           93.55               31            0.57              0.21         53.42                51.56         0.553          pass              0.621             21.5                           0.287                3.71              0.590                      ok            True                  False
+    MU           80.00               15            4.28             32.33       1065.72                97.39         0.550          pass              0.260             57.2                           0.814               41.18              4.088                      ok            True                  False
+  PANW           87.50               24            1.62              3.18        279.07                59.60         0.538          pass              0.550             67.8                           0.778               11.85              1.643                      ok            True                  False
+   TXN           96.67               30            0.50              1.08        308.13                42.91         0.534          pass              0.831             81.5                           0.783                0.71             -0.076                      ok            True                   True
+   WDC           96.88               32            1.00              4.14        592.33                59.52         0.532          pass              0.840             79.9                           0.636               27.97              2.334                      ok            True                   True
+   ADI           95.45               22            1.36              4.16        435.89                44.48         0.529          pass              0.728             65.2                           0.779                8.76              0.964                      ok            True                  False
+  SNPS           93.55               31            0.96              3.34        496.59                43.50         0.502          pass              0.742             63.4                           0.661               -1.14             -0.423                      ok            True                   True
+  LRCX           88.46               26            1.23              2.97        342.44                54.10         0.502          pass              0.616             77.7                           0.755               16.22              1.365                      ok            True                  False
+  INTU           73.68               19            2.90              6.33        308.73               102.00         0.664          pass              0.133              2.1                           0.203              -21.24             -0.674 downtrend_blocked_slope           False                  False
+  DRAM          100.00                9            3.88              1.89         68.90                86.94         0.604          pass              0.636             58.6                           0.770               30.09              3.101                      ok           False                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260604141002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260604141502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260604141002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260604141502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260604141002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260604141502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260604141002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260604141502)
 
 </details>
