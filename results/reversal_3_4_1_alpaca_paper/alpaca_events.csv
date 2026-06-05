@@ -1311,3 +1311,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-05T14:49:54.667078-04:00,2026-06-05,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""WDAY""}"
 2026-06-05T14:56:06.810372-04:00,2026-06-05,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""WDAY""}"
 2026-06-05T15:02:16.006183-04:00,2026-06-05,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""WDAY""}"
+2026-06-05T15:08:29.624374-04:00,2026-06-05,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""WDAY""}"
