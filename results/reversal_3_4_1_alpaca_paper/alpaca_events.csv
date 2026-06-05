@@ -1289,3 +1289,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-04T15:04:48.383460-04:00,2026-06-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MELI""}"
 2026-06-04T15:11:05.001276-04:00,2026-06-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MELI""}"
 2026-06-05T10:00:08.022144-04:00,2026-06-05,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-06-05T10:06:18.199411-04:00,2026-06-05,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
