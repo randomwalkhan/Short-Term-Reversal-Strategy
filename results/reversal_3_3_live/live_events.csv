@@ -2451,3 +2451,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-05T09:25:01.283083-04:00,2026-06-05,data_refresh,data_refresh,{'saved': 93}
 2026-06-05T09:30:04.938889-04:00,2026-06-05,data_refresh,data_refresh,{'saved': 93}
 2026-06-05T09:35:04.249601-04:00,2026-06-05,data_refresh,data_refresh,{'saved': 93}
+2026-06-05T10:00:04.998731-04:00,2026-06-05,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
