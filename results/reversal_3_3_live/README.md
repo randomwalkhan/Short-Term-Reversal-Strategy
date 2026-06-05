@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-05 00:20:02 EDT`
-Last processed slot: `share_ext_0020`
+Latest checkpoint (ET): `2026-06-05 00:25:02 EDT`
+Last processed slot: `share_ext_0025`
 
 ## Active Configuration
 
@@ -51,17 +51,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                                                                                                                                                                                                                                                                                                                                                                                                                               detail
-2026-06-05T00:20:02.533901-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                        {'saved': 93}
-2026-06-05T00:15:06.501933-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                        {'saved': 93}
-2026-06-05T00:10:06.467501-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                        {'saved': 93}
-2026-06-05T00:05:06.668790-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                        {'saved': 93}
-2026-06-05T00:00:06.821114-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                        {'saved': 93}
-2026-06-04T15:10:05.730387-04:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
-2026-06-04T15:05:04.544660-04:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
-2026-06-04T15:00:02.553545-04:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
-2026-06-04T14:55:06.549299-04:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
-2026-06-04T14:50:05.645592-04:00   entry_1500        entry {"allocated_cash": 12010.0, "asset_type": "option", "contract_symbol": "SOXL260717C00270000", "contracts": 2, "early_entry_score": 0.751, "entry_mode": "regular", "entry_option_price": 60.05, "execution_mode": "option", "matched_signals": 19, "option_liquidity_status": "ok", "option_open_interest": 112.0, "option_spread_pct": 5.33, "option_volume": 64.0, "success_rate": 94.74, "ticker": "SOXL", "timing_score": 0.565}
+                    timestamp_et         slot   event_type                          detail
+2026-06-05T00:25:02.855384-04:00 data_refresh data_refresh                   {'saved': 93}
+2026-06-05T00:20:02.533901-04:00 data_refresh data_refresh                   {'saved': 93}
+2026-06-05T00:15:06.501933-04:00 data_refresh data_refresh                   {'saved': 93}
+2026-06-05T00:10:06.467501-04:00 data_refresh data_refresh                   {'saved': 93}
+2026-06-05T00:05:06.668790-04:00 data_refresh data_refresh                   {'saved': 93}
+2026-06-05T00:00:06.821114-04:00 data_refresh data_refresh                   {'saved': 93}
+2026-06-04T15:10:05.730387-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
+2026-06-04T15:05:04.544660-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
+2026-06-04T15:00:02.553545-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
+2026-06-04T14:55:06.549299-04:00   entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260605002002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260605002502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260605002002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260605002502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260605002002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260605002502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260605002002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260605002502)
 
 </details>
