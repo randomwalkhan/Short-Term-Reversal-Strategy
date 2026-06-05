@@ -2372,3 +2372,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-05T02:50:06.342296-04:00,2026-06-05,data_refresh,data_refresh,{'saved': 93}
 2026-06-05T02:55:03.755509-04:00,2026-06-05,data_refresh,data_refresh,{'saved': 93}
 2026-06-05T03:00:01.735064-04:00,2026-06-05,data_refresh,data_refresh,{'saved': 93}
+2026-06-05T03:05:04.790271-04:00,2026-06-05,data_refresh,data_refresh,{'saved': 93}
