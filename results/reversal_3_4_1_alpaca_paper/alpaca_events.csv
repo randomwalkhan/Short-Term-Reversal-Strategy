@@ -1333,3 +1333,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-08T11:51:43.281167-04:00,2026-06-08,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-06-08T11:57:52.259584-04:00,2026-06-08,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-06-08T14:50:57.199717-04:00,2026-06-08,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""886b1d78-9340-4645-82bd-379ca3fa12d4"", ""contract_symbol"": ""TEAM260717C00100000"", ""contracts"": 5, ""entry_mode"": ""regular"", ""limit_price"": ""9.50"", ""ticker"": ""TEAM""}"
+2026-06-08T14:57:04.227036-04:00,2026-06-08,entry_1500,entry_filled,"{""contract_symbol"": ""TEAM260717C00100000"", ""contracts"": 5, ""filled_price"": 9.0, ""ticker"": ""TEAM""}"
