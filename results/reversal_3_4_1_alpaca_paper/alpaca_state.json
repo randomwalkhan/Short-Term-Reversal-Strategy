@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4625.0,
+      "alpaca_entry_client_order_id": "rev-20260608145057-team-regular",
+      "alpaca_entry_order_id": "886b1d78-9340-4645-82bd-379ca3fa12d4",
+      "asset_type": "option",
+      "contract_symbol": "TEAM260717C00100000",
+      "contracts": 5,
+      "current_drop_pct": 1.73,
+      "early_entry_score": 0.733,
+      "entry_mode": "regular",
+      "entry_option_price": 9.25,
+      "entry_slot": "entry_1500",
+      "entry_spot": 97.75,
+      "entry_timestamp": "2026-06-08T14:50:57.199717-04:00",
+      "entry_trade_date": "2026-06-08",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-07-17",
+      "matched_signals": 33,
+      "planned_stop": 8.325000000000001,
+      "planned_tp_day1": 10.6375,
+      "planned_tp_day2": 10.6375,
+      "position_id": "TEAM_20260608T145057",
+      "status": "entry_submitted",
+      "strike": 100.0,
+      "success_rate": 93.94,
+      "ticker": "TEAM",
+      "timing_score": 0.623
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
