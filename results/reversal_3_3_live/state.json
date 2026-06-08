@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 31794.750356674198,
-  "positions": [],
+  "cash": 16069.750356674198,
+  "positions": [
+    {
+      "position_id": "TEAM_20260608T145004",
+      "ticker": "TEAM",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "TEAM260717C00100000",
+      "expiry": "2026-07-17",
+      "strike": 100.0,
+      "entry_timestamp": "2026-06-08T14:50:04.804691-04:00",
+      "entry_trade_date": "2026-06-08",
+      "entry_slot": "entry_1500",
+      "entry_spot": 97.75,
+      "entry_option_price": 9.25,
+      "entry_bid": 9.0,
+      "entry_ask": 9.5,
+      "entry_iv_pct": 79.3825303955078,
+      "contracts": 17,
+      "allocated_cash": 15725.0,
+      "success_rate": 93.94,
+      "matched_signals": 33,
+      "current_drop_pct": 1.73,
+      "rolling_sigma_20d_pct": 86.36,
+      "planned_tp_day1": 10.6375,
+      "planned_tp_day2": 10.6375,
+      "planned_stop": 8.325000000000001,
+      "option_open_interest": 1396.0,
+      "option_volume": 69.0,
+      "option_spread_pct": 0.05405405405405406,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4138,7 +4169,9 @@
       "share_ext_0250",
       "share_ext_0255"
     ],
-    "2026-06-08": []
+    "2026-06-08": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
