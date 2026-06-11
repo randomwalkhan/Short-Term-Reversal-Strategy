@@ -1334,3 +1334,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-11T11:58:35.065367-04:00,2026-06-11,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-06-11T14:52:06.168178-04:00,2026-06-11,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""f2f5ec6e-c1eb-401e-8c79-6f502e6c9759"", ""contract_symbol"": ""PAYX260717C00100000"", ""contracts"": 9, ""entry_mode"": ""regular"", ""limit_price"": ""5.50"", ""ticker"": ""PAYX""}"
 2026-06-11T14:58:22.734162-04:00,2026-06-11,entry_1500,entry_filled,"{""contract_symbol"": ""PAYX260717C00100000"", ""contracts"": 9, ""filled_price"": 5.5, ""ticker"": ""PAYX""}"
+2026-06-11T15:54:03.030290-04:00,2026-06-11,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""98c28e54-367b-4bfb-bd79-bead2356fcae"", ""contract_symbol"": ""PAYX260717C00100000"", ""limit_price"": ""4.70"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""PAYX""}"
