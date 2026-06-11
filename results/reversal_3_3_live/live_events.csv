@@ -2800,3 +2800,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-11T15:00:05.308604-04:00,2026-06-11,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-06-11T15:05:01.637462-04:00,2026-06-11,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-06-11T15:10:05.901456-04:00,2026-06-11,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-06-11T16:00:02.840701-04:00,2026-06-11,manage_1600,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""PAYX260717C00100000"", ""fill_price"": 4.725, ""pnl"": -1417.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""PAYX""}"
