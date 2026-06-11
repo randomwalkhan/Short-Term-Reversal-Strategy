@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 28725.7503566742,
-  "positions": [],
+  "cash": 14550.750356674202,
+  "positions": [
+    {
+      "position_id": "PAYX_20260611T145001",
+      "ticker": "PAYX",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "PAYX260717C00100000",
+      "expiry": "2026-07-17",
+      "strike": 100.0,
+      "entry_timestamp": "2026-06-11T14:50:01.795515-04:00",
+      "entry_trade_date": "2026-06-11",
+      "entry_slot": "entry_1500",
+      "entry_spot": 100.45999908447266,
+      "entry_option_price": 5.25,
+      "entry_bid": 5.0,
+      "entry_ask": 5.5,
+      "entry_iv_pct": 41.78525012207031,
+      "contracts": 27,
+      "allocated_cash": 14175.0,
+      "success_rate": 100.0,
+      "matched_signals": 22,
+      "current_drop_pct": 0.63,
+      "rolling_sigma_20d_pct": 34.22,
+      "planned_tp_day1": 6.0375,
+      "planned_tp_day2": 6.0375,
+      "planned_stop": 4.7250000000000005,
+      "option_open_interest": 685.0,
+      "option_volume": 131.0,
+      "option_spread_pct": 0.09523809523809523,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4145,7 +4176,9 @@
       "entry_1500"
     ],
     "2026-06-10": [],
-    "2026-06-11": []
+    "2026-06-11": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
