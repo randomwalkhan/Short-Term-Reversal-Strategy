@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-06-11 15:35:04 EDT`
-- Equity: `$28,590.75` | Realized: `$18,725.75` | Unrealized: `$-135.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-06-11 15:40:01 EDT`
+- Equity: `$28,320.75` | Realized: `$18,725.75` | Unrealized: `$-405.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  PAYX     option         option PAYX260717C00100000     27     14175.0                 14040.0            5.2          -135.0                  -0.95                   0
+  PAYX     option         option PAYX260717C00100000     27     14175.0                 13770.0            5.1          -405.0                  -2.86                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260611153504)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260611154001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260611153504)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260611154001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260611153504)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260611154001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260611153504)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260611154001)
 
 </details>
 
