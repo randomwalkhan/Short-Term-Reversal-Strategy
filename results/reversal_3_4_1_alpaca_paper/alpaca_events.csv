@@ -1340,3 +1340,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-12T13:34:24.390036-04:00,2026-06-12,exit,exit_filled,"{""contract_symbol"": ""PAYX260717C00100000"", ""exit_price"": 4.4, ""pnl"": -990.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""PAYX""}"
 2026-06-12T14:50:15.366872-04:00,2026-06-12,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MPWR""}"
 2026-06-12T14:56:39.052705-04:00,2026-06-12,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MPWR""}"
+2026-06-12T15:02:58.129575-04:00,2026-06-12,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MPWR""}"
