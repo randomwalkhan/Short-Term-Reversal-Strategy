@@ -2805,3 +2805,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-12T14:50:07.527766-04:00,2026-06-12,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-06-12"", ""training_samples"": 5261, ""window"": 5}"
 2026-06-12T14:50:07.527766-04:00,2026-06-12,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.73, ""option_liquidity_status"": ""low_open_interest,low_volume"", ""option_open_interest"": 0.0, ""option_spread_pct"": 7.0, ""option_volume"": 1.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MPWR"", ""timing_score"": 0.565}"
 2026-06-12T14:50:07.527766-04:00,2026-06-12,entry_1500,entry_skipped,"{""budget"": 13654.13, ""entry_cost"": 15345.0, ""reason"": ""insufficient_cash"", ""ticker"": ""ASML""}"
+2026-06-12T14:55:11.337200-04:00,2026-06-12,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
