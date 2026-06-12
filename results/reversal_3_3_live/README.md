@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-12 14:20:06 EDT`
+Latest checkpoint (ET): `2026-06-12 14:25:06 EDT`
 Last processed slot: `manage_1430`
 
 ## Active Configuration
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-    MU           80.56               36            0.56              3.93        994.18               115.24         0.686          pass              0.515             86.0                           0.520               -4.37             -0.777                                 ok            True                  False
-  MPWR           93.10               29            1.10             12.28       1584.29                71.83         0.573          pass              0.666             44.1                           0.299                1.92             -0.362                                 ok            True                  False
-  CSCO           93.75               32            0.53              0.45        121.64                43.07         0.543          pass              0.638             23.5                           0.202               -0.12             -0.472                                 ok            True                  False
-  ASML           93.33               30            1.21             16.06       1892.60                60.86         0.521          pass              0.754             71.0                           0.541               15.23              1.312                                 ok            True                  False
-  CPRT           86.36               22            1.26              0.27         30.94                31.00         0.514          pass              0.409             36.1                           0.315               -5.11             -0.143                                 ok            True                  False
-  INTU           79.41               34            1.14              2.22        275.96               100.42         0.717          pass              0.425             64.4                           0.686              -22.62             -2.196 downtrend_blocked_slope_and_streak           False                  False
-  AVGO           79.17               24            1.51              4.09        383.82                69.71         0.604          pass              0.249             31.9                           0.298              -17.44             -2.513            downtrend_blocked_slope           False                  False
-  CDNS           95.12               41            0.12              0.32        383.60                58.63         0.560          pass              0.938             94.1                           0.503               -7.46             -0.897            downtrend_blocked_slope           False                  False
-  AAPL          100.00                5            1.87              3.88        293.97                23.83         0.555          pass              0.479              7.8                           0.209               -5.30             -0.833            downtrend_blocked_slope           False                  False
-  TEAM           85.29               34            1.56              0.97         88.78                85.01         0.551          pass              0.562             68.7                           0.550              -24.27             -2.629 downtrend_blocked_slope_and_streak           False                  False
-  CRWD           80.00               35            0.81              3.90        689.86                64.88         0.522          pass              0.395             58.8                           0.356              -12.30             -1.437 downtrend_blocked_slope_and_streak           False                  False
-  ISRG           77.27               22            1.33              3.85        411.25                34.54         0.513          pass              0.269             45.9                           0.420               -1.18              0.016                                 ok           False                  False
+    MU           80.56               36            0.62              4.30        994.03               115.24         0.683          pass              0.511             84.7                           0.508               -4.42             -0.780                                 ok            True                  False
+  MPWR           93.10               29            1.13             12.53       1584.18                71.83         0.571          pass              0.662             42.9                           0.296                1.90             -0.363                                 ok            True                  False
+  CSCO           93.75               32            0.51              0.44        121.64                43.07         0.545          pass              0.647             26.5                           0.208               -0.10             -0.471                                 ok            True                  False
+  ASML           93.33               30            1.23             16.34       1892.48                60.86         0.519          pass              0.752             70.5                           0.538               15.20              1.311                                 ok            True                  False
+  CPRT           86.96               23            1.21              0.26         30.95                31.00         0.511          pass              0.439             38.5                           0.334               -5.06             -0.141                                 ok            True                  False
+  INTU           79.41               34            1.10              2.14        275.99               100.42         0.719          pass              0.429             65.7                           0.707              -22.59             -2.194 downtrend_blocked_slope_and_streak           False                  False
+  AVGO           79.17               24            1.54              4.15        383.79                69.71         0.603          pass              0.246             30.8                           0.261              -17.46             -2.514            downtrend_blocked_slope           False                  False
+  CDNS           95.24               42            0.04              0.12        383.69                58.63         0.558          pass              0.949             97.8                           0.533               -7.39             -0.893            downtrend_blocked_slope           False                  False
+  TEAM           85.29               34            1.59              0.99         88.77                85.01         0.549          pass              0.560             68.0                           0.534              -24.29             -2.631 downtrend_blocked_slope_and_streak           False                  False
+  AAPL          100.00                8            1.81              3.75        294.02                23.83         0.538          pass              0.487             11.0                           0.292               -5.23             -0.830            downtrend_blocked_slope           False                  False
+  CRWD           78.79               33            1.02              4.95        689.41                64.88         0.520          pass              0.348             47.7                           0.287              -12.49             -1.447 downtrend_blocked_slope_and_streak           False                  False
+  ISRG           77.27               22            1.35              3.91        411.23                34.54         0.512          pass              0.267             45.1                           0.389               -1.20              0.015                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260612142006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260612142506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260612142006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260612142506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260612142006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260612142506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260612142006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260612142506)
 
 </details>
