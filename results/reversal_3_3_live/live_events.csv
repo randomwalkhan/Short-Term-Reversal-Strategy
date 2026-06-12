@@ -2802,3 +2802,6 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-11T15:10:05.901456-04:00,2026-06-11,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-06-11T16:00:02.840701-04:00,2026-06-11,manage_1600,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""PAYX260717C00100000"", ""fill_price"": 4.725, ""pnl"": -1417.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""PAYX""}"
 2026-06-12T13:30:06.922165-04:00,2026-06-12,data_refresh,data_refresh,{'saved': 93}
+2026-06-12T14:50:07.527766-04:00,2026-06-12,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-06-12"", ""training_samples"": 5261, ""window"": 5}"
+2026-06-12T14:50:07.527766-04:00,2026-06-12,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.73, ""option_liquidity_status"": ""low_open_interest,low_volume"", ""option_open_interest"": 0.0, ""option_spread_pct"": 7.0, ""option_volume"": 1.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MPWR"", ""timing_score"": 0.565}"
+2026-06-12T14:50:07.527766-04:00,2026-06-12,entry_1500,entry_skipped,"{""budget"": 13654.13, ""entry_cost"": 15345.0, ""reason"": ""insufficient_cash"", ""ticker"": ""ASML""}"
