@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-15 14:45:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-06-15 14:50:01 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -27,15 +27,18 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$27,308.25`
+- Cash: `$14,083.25`
 - Equity: `$27,308.25`
 - Realized PnL: `$17,308.25`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
+  ROST     option         option ROST260717C00240000       2026-06-15                   0     23     13225.0                 13225.0         5.75           5.75      236.66        236.66          bid_ask_mid                       5.75                bid_ask_mid                    True             0.0                    0.0         91.67               12              1.45         26.78           26.78                  38.75                 169.0           31.0               0.12                      ok
+```
 
 ## Today's Closed Trades (2026-06-15)
 
@@ -45,34 +48,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  ROST           92.86               14            1.40              2.35        239.12                38.75         0.612          pass              0.497             21.9                           0.275                5.88              0.612                                 ok            True                  False
-  CPRT           86.67               15            1.71              0.37         30.59                31.00         0.542          pass              0.291              8.7                           0.281               -6.48             -0.209                                 ok            True                  False
-  AMGN           91.67               24            0.70              1.75        354.45                28.14         0.521          pass              0.589             44.3                           0.358                7.16              0.665                                 ok            True                  False
-  CTAS           95.65               23            1.20              1.48        175.65                29.28         0.512          pass              0.618             26.7                           0.187                0.73              0.230                                 ok            True                  False
-   BKR           82.35               34            0.81              0.36         62.99                39.91         0.509          pass              0.483             69.9                           0.734               -0.54             -0.201                                 ok            True                  False
-   KHC          100.00                3            1.19              0.20         24.30                26.17         0.661          pass              0.502             12.1                           0.347                3.84              0.776                                 ok           False                  False
-   TRI           80.77               26            0.61              0.35         81.26                63.37         0.644          pass              0.264             24.2                           0.132              -13.89             -1.153 downtrend_blocked_slope_and_streak           False                  False
-   ADP           95.65               23            1.17              1.86        225.41                32.50         0.556          pass              0.631             29.7                           0.207               -4.36             -0.301            downtrend_blocked_slope           False                  False
-  WDAY           83.87               31            1.46              1.34        130.23                70.45         0.552          pass              0.308              3.0                           0.159              -18.02             -1.909 downtrend_blocked_slope_and_streak           False                  False
- CMCSA           70.00               10            1.69              0.29         24.38                24.55         0.531          pass              0.064              3.5                           0.165               -3.85             -0.144                                 ok           False                  False
-  MDLZ           66.67                3            2.21              0.98         62.57                19.17         0.528          pass              0.090             12.5                           0.328                0.89              0.341                                 ok           False                  False
-   WMT           88.24               34            0.41              0.35        120.89                34.65         0.526          pass              0.672             79.9                           0.544                5.19              0.581                                 ok           False                  False
+  ROST           91.67               12            1.45              2.43        239.09                38.75         0.621          pass              0.444             19.1                           0.237                5.83              0.610                                 ok            True                  False
+  CPRT           86.67               15            1.77              0.38         30.59                31.00         0.538          pass              0.281              5.2                           0.219               -6.54             -0.212                                 ok            True                  False
+  AMGN           95.45               22            0.77              1.90        354.38                28.14         0.535          pass              0.651             39.3                           0.319                7.09              0.663                                 ok            True                  False
+  CTAS           95.45               22            1.28              1.59        175.60                29.28         0.513          pass              0.595             21.4                           0.150                0.64              0.226                                 ok            True                  False
+   BKR           82.35               34            0.78              0.35         62.99                39.91         0.510          pass              0.486             70.8                           0.742               -0.52             -0.200                                 ok            True                  False
+   KHC          100.00                3            1.17              0.20         24.30                26.17         0.662          pass              0.507             13.6                           0.401                3.86              0.777                                 ok           False                  False
+   TRI           82.61               23            0.82              0.47         81.21                63.37         0.652          pass              0.224              0.7                           0.154              -14.06             -1.162 downtrend_blocked_slope_and_streak           False                  False
+  WDAY           83.87               31            1.49              1.36        130.22                70.45         0.550          pass              0.307              3.0                           0.159              -18.05             -1.911 downtrend_blocked_slope_and_streak           False                  False
+   ADP           95.45               22            1.39              2.21        225.26                32.50         0.549          pass              0.584             16.4                           0.165               -4.57             -0.311            downtrend_blocked_slope           False                  False
+ CMCSA           70.00               10            1.68              0.29         24.38                24.55         0.532          pass              0.067              4.5                           0.184               -3.84             -0.143                                 ok           False                  False
+  MDLZ           66.67                3            2.19              0.97         62.58                19.17         0.529          pass              0.093             13.5                           0.378                0.92              0.342                                 ok           False                  False
+   WMT           88.24               34            0.42              0.36        120.89                34.65         0.525          pass              0.670             79.3                           0.547                5.17              0.580                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et         slot              event_type                                                                                                                                                                                                                                                  detail
-2026-06-12T15:10:11.830500-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-06-12T15:05:11.809096-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-06-12T15:00:11.776390-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-06-12T14:55:11.337200-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-06-12T14:50:07.527766-04:00   entry_1500           entry_skipped                                                                                                                                                            {"budget": 13654.13, "entry_cost": 15345.0, "reason": "insufficient_cash", "ticker": "ASML"}
-2026-06-12T14:50:07.527766-04:00   entry_1500 entry_candidate_skipped {"early_entry_score": 0.73, "option_liquidity_status": "low_open_interest,low_volume", "option_open_interest": 0.0, "option_spread_pct": 7.0, "option_volume": 1.0, "reason": "no_trade_low_option_liquidity", "ticker": "MPWR", "timing_score": 0.565}
-2026-06-12T14:50:07.527766-04:00   entry_1500          timing_overlay                                                                                                                                            {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-12", "training_samples": 5261, "window": 5}
-2026-06-12T13:30:06.922165-04:00 data_refresh            data_refresh                                                                                                                                                                                                                                           {'saved': 93}
-2026-06-11T16:00:02.840701-04:00  manage_1600                    exit                                                                       {"asset_type": "option", "contract_symbol": "PAYX260717C00100000", "fill_price": 4.725, "pnl": -1417.5, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "PAYX"}
-2026-06-11T15:10:05.901456-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                         {"reason": "already_processed"}
+                    timestamp_et         slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                                detail
+2026-06-15T14:50:01.113692-04:00   entry_1500                   entry {"allocated_cash": 13225.0, "asset_type": "option", "contract_symbol": "ROST260717C00240000", "contracts": 23, "early_entry_score": 0.444, "entry_mode": "regular", "entry_option_price": 5.75, "execution_mode": "option", "matched_signals": 12, "option_liquidity_status": "ok", "option_open_interest": 169.0, "option_spread_pct": 12.17, "option_volume": 31.0, "success_rate": 91.67, "ticker": "ROST", "timing_score": 0.621}
+2026-06-15T14:50:01.113692-04:00   entry_1500          timing_overlay                                                                                                                                                                                                                                                                                                                          {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-15", "training_samples": 5261, "window": 5}
+2026-06-12T15:10:11.830500-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
+2026-06-12T15:05:11.809096-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
+2026-06-12T15:00:11.776390-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
+2026-06-12T14:55:11.337200-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
+2026-06-12T14:50:07.527766-04:00   entry_1500 entry_candidate_skipped                                                                                                                                                                               {"early_entry_score": 0.73, "option_liquidity_status": "low_open_interest,low_volume", "option_open_interest": 0.0, "option_spread_pct": 7.0, "option_volume": 1.0, "reason": "no_trade_low_option_liquidity", "ticker": "MPWR", "timing_score": 0.565}
+2026-06-12T14:50:07.527766-04:00   entry_1500          timing_overlay                                                                                                                                                                                                                                                                                                                          {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-12", "training_samples": 5261, "window": 5}
+2026-06-12T14:50:07.527766-04:00   entry_1500           entry_skipped                                                                                                                                                                                                                                                                                                                                          {"budget": 13654.13, "entry_cost": 15345.0, "reason": "insufficient_cash", "ticker": "ASML"}
+2026-06-12T13:30:06.922165-04:00 data_refresh            data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
 ```
 
 ## Equity Curves
@@ -82,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260615144501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260615145001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260615144501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260615145001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260615144501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260615145001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260615144501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260615145001)
 
 </details>
