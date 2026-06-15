@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-15 16:21:37 EDT`
-Last slot: `share_ext_1620`
+Latest checkpoint (ET): `2026-06-15 16:26:41 EDT`
+Last slot: `share_ext_1625`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_1620`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  ROST   open    regular ROST260717C00240000          8                 5.6                  5.35          bid_ask_mid                       5.35                    True          4280.0          -200.0              -4.464286                   0
+  ROST   open    regular ROST260717C00240000          8                 5.6                   5.5          bid_ask_mid                        5.5                    True          4400.0           -80.0              -1.785714                   0
 ```
 
 ## Closed Trades
