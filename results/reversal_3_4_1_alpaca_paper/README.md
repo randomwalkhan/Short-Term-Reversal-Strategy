@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-16 15:49:44 EDT`
+Latest checkpoint (ET): `2026-06-16 15:54:48 EDT`
 Last slot: `manage_1600`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$90,412.82`
-- Portfolio value: `$94,402.82`
+- Portfolio value: `$94,312.82`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1600`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  DRAM   open    regular DRAM260717C00069000          6                 7.6                 7.125          bid_ask_mid                      7.125                    True          4275.0          -285.0                  -6.25                   0
+  DRAM   open    regular DRAM260717C00069000          6                 7.6                 7.025          bid_ask_mid                      7.025                    True          4215.0          -345.0              -7.565789                   0
 ```
 
 ## Closed Trades
