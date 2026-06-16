@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-16 16:15:01 EDT`
-Last processed slot: `share_ext_1615`
+Latest checkpoint (ET): `2026-06-16 16:20:04 EDT`
+Last processed slot: `share_ext_1620`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `share_ext_1615`
 ## Portfolio Snapshot
 
 - Cash: `$13,363.25`
-- Equity: `$25,050.75`
+- Equity: `$25,220.75`
 - Realized PnL: `$15,985.75`
-- Unrealized PnL: `$-935.00`
+- Unrealized PnL: `$-765.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  DRAM     option         option DRAM260717C00069000       2026-06-16                   0     17     12622.5                 11687.5         7.43           6.88       68.52         68.41          bid_ask_mid                       6.88                bid_ask_mid                    True          -935.0                  -7.41         90.91               11              3.59         94.78           91.43                 109.99                 846.0          111.0               0.06                      ok
+  DRAM     option         option DRAM260717C00069000       2026-06-16                   0     17     12622.5                 11857.5         7.43           6.98       68.52         68.15          bid_ask_mid                       6.98                bid_ask_mid                    True          -765.0                  -6.06         90.91               11              3.59         94.78           91.72                 109.99                 846.0          111.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-06-16)
@@ -74,27 +74,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260616161501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260616162004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260616161501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260616162004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260616161501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260616162004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260616161501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260616162004)
 
 </details>
