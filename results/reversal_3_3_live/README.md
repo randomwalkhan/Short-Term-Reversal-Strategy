@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-16 14:45:02 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-06-16 14:50:02 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -27,15 +27,18 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$25,985.75`
+- Cash: `$13,363.25`
 - Equity: `$25,985.75`
 - Realized PnL: `$15,985.75`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
+  DRAM     option         option DRAM260717C00069000       2026-06-16                   0     17     12622.5                 12622.5         7.43           7.43       68.52         68.45          bid_ask_mid                       7.43                bid_ask_mid                    True             0.0                    0.0         90.91               11              3.59         94.78           94.78                 109.99                 846.0          111.0               0.06                      ok
+```
 
 ## Today's Closed Trades (2026-06-16)
 
@@ -48,24 +51,26 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  DRAM           90.91               11            3.25              1.62         70.38               109.99         0.680          pass              0.458             30.8                           0.217               -1.16              0.274                  ok            True                  False
-  AMAT           88.00               25            1.25              5.15        583.57                72.99         0.601          pass              0.510             45.5                           0.324               18.03              2.051                  ok            True                  False
-   TXN           88.89               18            1.55              3.40        311.88                52.85         0.590          pass              0.381             10.5                           0.210                0.12              0.096                  ok            True                  False
-  PAYX          100.00               15            1.20              0.85        100.54                31.37         0.581          pass              0.581             29.8                           0.508               -1.10              0.091                  ok            True                  False
-  ROST           96.77               31            0.64              1.06        236.32                39.26         0.563          pass              0.719             40.8                           0.414                5.32              0.487                  ok            True                  False
-  AMGN           94.12               17            1.02              2.51        349.46                26.73         0.560          pass              0.549             23.2                           0.197                5.69              0.484                  ok            True                  False
-  UPRO           91.67               24            1.05              1.07        146.28                48.01         0.560          pass              0.517             18.8                           0.309               -3.75             -0.437                  ok            True                  False
-  NXPI           92.86               14            2.66              5.89        313.36                59.92         0.552          pass              0.463             12.7                           0.198               -4.99             -0.441                  ok            True                  False
-   ADI           92.86               28            1.06              3.16        426.22                53.45         0.548          pass              0.566             16.1                           0.257               -0.03             -0.086                  ok            True                  False
-   CSX           95.65               23            0.66              0.22         47.30                20.12         0.535          pass              0.674             44.7                           0.419                2.03              0.264                  ok            True                  False
-   LIN           94.44               18            1.04              3.80        519.85                19.32         0.535          pass              0.586             31.3                           0.360                4.39              0.430                  ok            True                  False
-  PANW           85.19               27            1.77              3.52        283.03                59.82         0.523          pass              0.442             46.1                           0.518               -0.33              0.237                  ok            True                  False
+  DRAM           90.91               11            3.59              1.79         70.30               109.99         0.657          pass              0.434             23.7                           0.178               -1.51              0.258                  ok            True                  False
+  AMAT           87.50               24            1.50              6.17        583.14                72.99         0.589          pass              0.456             34.7                           0.258               17.74              2.039                  ok            True                  False
+   TXN           88.24               17            1.65              3.63        311.79                52.85         0.588          pass              0.339              4.5                           0.152                0.01              0.091                  ok            True                  False
+  PAYX          100.00               15            1.18              0.83        100.54                31.37         0.583          pass              0.585             31.2                           0.513               -1.07              0.092                  ok            True                  False
+  UPRO           95.45               22            1.14              1.18        146.24                48.01         0.571          pass              0.570             11.1                           0.269               -3.85             -0.441                  ok            True                  False
+  ROST           96.77               31            0.57              0.95        236.36                39.26         0.567          pass              0.737             46.9                           0.555                5.38              0.490                  ok            True                  False
+   ADI           91.67               24            1.29              3.86        425.93                53.45         0.558          pass              0.472              3.9                           0.193               -0.27             -0.097                  ok            True                  False
+  AMGN           95.00               20            0.86              2.12        349.62                26.73         0.549          pass              0.627             35.1                           0.251                5.86              0.491                  ok            True                  False
+  NXPI           92.31               13            2.93              6.47        313.11                59.92         0.540          pass              0.414              4.0                           0.124               -5.25             -0.454                  ok            True                  False
+   CSX           95.65               23            0.66              0.22         47.30                20.12         0.535          pass              0.674             44.7                           0.403                2.03              0.264                  ok            True                  False
+   LIN           94.44               18            1.06              3.87        519.82                19.32         0.534          pass              0.582             30.1                           0.369                4.37              0.429                  ok            True                  False
+  FTNT           92.31               13            2.35              2.46        148.44                47.06         0.521          pass              0.496             31.9                           0.389               -1.93             -0.214                  ok            True                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             detail
+2026-06-16T14:50:02.059942-04:00       entry_1500              entry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             {"allocated_cash": 12622.5, "asset_type": "option", "contract_symbol": "DRAM260717C00069000", "contracts": 17, "early_entry_score": 0.434, "entry_mode": "regular", "entry_option_price": 7.425, "execution_mode": "option", "matched_signals": 11, "option_liquidity_status": "ok", "option_open_interest": 846.0, "option_spread_pct": 6.06, "option_volume": 111.0, "success_rate": 90.91, "ticker": "DRAM", "timing_score": 0.657}
+2026-06-16T14:50:02.059942-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-16", "training_samples": 5231, "window": 5}
 2026-06-16T11:52:05.052043-04:00 early_entry_1150 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-16T11:10:06.057140-04:00 early_entry_1110 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-16T10:36:17.030970-04:00 early_entry_1035 early_entry_shadow {"contract_symbol": "MAR260717C00400000", "current_drop_pct": 0.57, "early_entry_score": 0.842, "early_reclaim_pct": 82.6, "entry_ask": 13.9, "entry_bid": 11.5, "entry_mode": "early", "entry_option_price": 12.7, "hypothetical_budget": 12992.88, "hypothetical_contracts": 10, "matched_signals": 32, "option_liquidity_status": "low_volume,wide_spread", "option_open_interest": 400.0, "option_spread_pct": 18.9, "option_volume": 13.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.854, "shadow_only": true, "success_rate": 96.88, "ticker": "MAR", "timing_score": 0.469, "top_candidates": [{"current_drop_pct": 0.57, "early_entry_score": 0.842, "early_reclaim_pct": 82.6, "matched_signals": 32, "recovery_stability_score": 0.854, "success_rate": 96.88, "ticker": "MAR", "timing_score": 0.469, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
@@ -74,8 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-06-16T09:17:33.022205-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {'saved': 93}
 2026-06-16T09:07:53.036386-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {'saved': 93}
 2026-06-16T08:52:12.067336-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {'saved': 93}
-2026-06-16T08:35:06.869974-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {'saved': 93}
-2026-06-16T08:34:05.066207-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {'saved': 93}
 ```
 
 ## Equity Curves
@@ -85,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260616144502)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260616145002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260616144502)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260616145002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260616144502)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260616145002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260616144502)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260616145002)
 
 </details>
