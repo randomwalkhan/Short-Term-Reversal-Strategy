@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-16 06:50:02 EDT`
-Last processed slot: `share_ext_0650`
+Latest checkpoint (ET): `2026-06-16 07:06:34 EDT`
+Last processed slot: `share_ext_0705`
 
 ## Active Configuration
 
@@ -37,7 +37,7 @@ Last processed slot: `share_ext_0650`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ROST     option         option ROST260717C00240000       2026-06-15                   1     23     13225.0                 12190.0         5.75            5.3      236.66        235.75     last_price_stale                        NaN                unavailable                   False         -1035.0                  -7.83         91.67               12              1.45         26.78            1.56                  38.75                 169.0           31.0               0.12                      ok
+  ROST     option         option ROST260717C00240000       2026-06-15                   1     23     13225.0                 12190.0         5.75            5.3      236.66        236.77     last_price_stale                        NaN                unavailable                   False         -1035.0                  -7.83         91.67               12              1.45         26.78            1.56                  38.75                 169.0           31.0               0.12                      ok
 ```
 
 ## Today's Closed Trades (2026-06-16)
@@ -52,6 +52,7 @@ _None_
 
 ```text
                     timestamp_et         slot   event_type        detail
+2026-06-16T07:06:34.033795-04:00 data_refresh data_refresh {'saved': 93}
 2026-06-16T06:50:02.074824-04:00 data_refresh data_refresh {'saved': 93}
 2026-06-16T06:49:12.039611-04:00 data_refresh data_refresh {'saved': 93}
 2026-06-16T06:32:13.070111-04:00 data_refresh data_refresh {'saved': 93}
@@ -61,7 +62,6 @@ _None_
 2026-06-16T05:32:15.092595-04:00 data_refresh data_refresh {'saved': 93}
 2026-06-16T05:15:05.971435-04:00 data_refresh data_refresh {'saved': 93}
 2026-06-16T05:13:33.071290-04:00 data_refresh data_refresh {'saved': 93}
-2026-06-16T05:04:58.105812-04:00 data_refresh data_refresh {'saved': 93}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260616065002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260616070634)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260616065002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260616070634)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260616065002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260616070634)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260616065002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260616070634)
 
 </details>
