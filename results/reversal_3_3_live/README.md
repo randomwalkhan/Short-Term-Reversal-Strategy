@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-16 05:32:15 EDT`
-Last processed slot: `share_ext_0530`
+Latest checkpoint (ET): `2026-06-16 05:50:06 EDT`
+Last processed slot: `share_ext_0550`
 
 ## Active Configuration
 
@@ -51,17 +51,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                    detail
-2026-06-16T05:32:15.092595-04:00 data_refresh data_refresh             {'saved': 93}
-2026-06-16T05:15:05.971435-04:00 data_refresh data_refresh             {'saved': 93}
-2026-06-16T05:13:33.071290-04:00 data_refresh data_refresh             {'saved': 93}
-2026-06-16T05:04:58.105812-04:00 data_refresh data_refresh             {'saved': 93}
-2026-06-16T04:47:29.027857-04:00 data_refresh data_refresh             {'saved': 93}
-2026-06-16T04:30:06.047458-04:00 data_refresh data_refresh             {'saved': 93}
-2026-06-16T04:28:31.118897-04:00 data_refresh data_refresh             {'saved': 93}
-2026-06-16T04:11:48.068115-04:00 data_refresh data_refresh             {'saved': 93}
-2026-06-16T03:55:41.070229-04:00 data_refresh data_refresh             {'saved': 93}
-2026-06-16T03:36:57.078251-04:00 data_refresh data_refresh {'saved': 92, 'empty': 1}
+                    timestamp_et         slot   event_type        detail
+2026-06-16T05:50:06.179156-04:00 data_refresh data_refresh {'saved': 93}
+2026-06-16T05:32:15.092595-04:00 data_refresh data_refresh {'saved': 93}
+2026-06-16T05:15:05.971435-04:00 data_refresh data_refresh {'saved': 93}
+2026-06-16T05:13:33.071290-04:00 data_refresh data_refresh {'saved': 93}
+2026-06-16T05:04:58.105812-04:00 data_refresh data_refresh {'saved': 93}
+2026-06-16T04:47:29.027857-04:00 data_refresh data_refresh {'saved': 93}
+2026-06-16T04:30:06.047458-04:00 data_refresh data_refresh {'saved': 93}
+2026-06-16T04:28:31.118897-04:00 data_refresh data_refresh {'saved': 93}
+2026-06-16T04:11:48.068115-04:00 data_refresh data_refresh {'saved': 93}
+2026-06-16T03:55:41.070229-04:00 data_refresh data_refresh {'saved': 93}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260616053215)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260616055006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260616053215)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260616055006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260616053215)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260616055006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260616053215)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260616055006)
 
 </details>
