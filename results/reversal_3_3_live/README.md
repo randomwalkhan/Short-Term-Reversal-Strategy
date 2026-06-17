@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-17 14:50:06 EDT`
+Latest checkpoint (ET): `2026-06-17 14:55:04 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$14,060.75`
-- Equity: `$27,898.25`
+- Equity: `$27,673.25`
 - Realized PnL: `$17,898.25`
-- Unrealized PnL: `$0.00`
+- Unrealized PnL: `$-225.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  GOOG     option         option GOOG260724C00380000       2026-06-17                   0     15     13837.5                 13837.5         9.23           9.23      363.95        363.83          bid_ask_mid                       9.23                bid_ask_mid                    True             0.0                    0.0          80.0               10              1.93         34.49           34.47                  27.92                 639.0          103.0               0.09                      ok
+  GOOG     option         option GOOG260724C00380000       2026-06-17                   0     15     13837.5                 13612.5         9.23           9.07      363.95        363.24          bid_ask_mid                       9.07                bid_ask_mid                    True          -225.0                  -1.63          80.0               10              1.93         34.49           34.66                  27.92                 639.0          103.0               0.09                      ok
 ```
 
 ## Today's Closed Trades (2026-06-17)
@@ -51,24 +51,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   XEL          100.00               10            1.08              0.60         78.72                23.22         0.640          pass              0.468              1.2                           0.265                1.09              0.235                                 ok            True                  False
-  PAYX          100.00               11            1.58              1.11         99.81                31.37         0.608          pass              0.541             24.4                           0.330               -2.07              0.046                                 ok            True                  False
-  UPRO           92.31               26            0.75              0.75        143.82                48.01         0.589          pass              0.711             72.5                           0.660               -5.17             -0.504                                 ok            True                  False
-   AEP           80.00               10            1.25              1.13        129.26                20.43         0.582          pass              0.100             13.8                           0.342                0.80              0.186                                 ok            True                  False
-  GOOG           80.00               10            1.93              5.00        368.96                27.92         0.538          pass              0.146             30.7                           0.531                2.39              0.074                                 ok            True                  False
-   KDP           91.67               12            1.73              0.39         31.83                18.96         0.529          pass              0.407              9.8                           0.272                3.57              0.544                                 ok            True                  False
-   ROP           90.00               20            1.50              3.55        335.81                28.84         0.512          pass              0.456             23.8                           0.291               -1.26              0.002                                 ok            True                  False
-  DXCM           85.19               27            1.50              0.77         72.83                42.95         0.503          pass              0.344             14.1                           0.264               -1.89              0.136                                 ok            True                  False
-    ZS           76.47               34            1.08              0.96        126.82               152.67         0.874          pass              0.407             53.2                           0.491               -6.33             -0.577 downtrend_blocked_slope_and_streak           False                  False
-  INTU           75.00               24            2.07              4.07        279.24                99.11         0.714          pass              0.223             19.4                           0.126              -14.58             -1.534 downtrend_blocked_slope_and_streak           False                  False
-   KHC          100.00                2            1.73              0.29         23.68                25.54         0.646          pass              0.565             33.5                           0.464                4.62              0.776                                 ok           False                  False
-   WBD           88.89                9            0.71              0.13         26.54                17.02         0.609          pass              0.420             40.6                           0.429               -2.83             -0.130                                 ok           False                  False
+   XEL          100.00               10            1.15              0.64         78.71                23.22         0.635          pass              0.464              0.0                           0.240                1.01              0.231                                 ok            True                  False
+  PAYX          100.00               11            1.79              1.25         99.74                31.37         0.595          pass              0.509             14.4                           0.231               -2.28              0.036                                 ok            True                  False
+  UPRO           95.45               22            1.21              1.22        143.62                48.01         0.589          pass              0.705             55.4                           0.594               -5.62             -0.525                                 ok            True                  False
+   AEP           80.00               10            1.26              1.14        129.26                20.43         0.581          pass              0.098             13.3                           0.315                0.79              0.185                                 ok            True                  False
+   ROP           88.89               18            1.58              3.72        335.74                28.84         0.521          pass              0.403             20.1                           0.234               -1.33             -0.002                                 ok            True                  False
+  FTNT           95.83               24            1.56              1.61        146.33                47.06         0.513          pass              0.715             56.8                           0.642               -2.78             -0.254                                 ok            True                  False
+  DXCM           83.33               24            1.67              0.86         72.79                42.95         0.512          pass              0.247              4.6                           0.177               -2.06              0.128                                 ok            True                  False
+   LIN           96.67               30            0.54              1.95        517.34                19.32         0.502          pass              0.760             58.9                           0.437                4.26              0.424                                 ok            True                  False
+  BKNG           85.71               21            1.51              1.86        174.92                30.85         0.502          pass              0.336             20.1                           0.332                3.76              0.335                                 ok            True                  False
+    ZS           76.47               34            1.29              1.15        126.74               152.67         0.867          pass              0.379             44.0                           0.422               -6.53             -0.586 downtrend_blocked_slope_and_streak           False                  False
+  INTU           75.00               24            2.27              4.47        279.08                99.11         0.702          pass              0.198             11.6                           0.096              -14.75             -1.543 downtrend_blocked_slope_and_streak           False                  False
+   KHC          100.00                1            1.87              0.31         23.67                25.54         0.645          pass              0.549             28.2                           0.382                4.47              0.769                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              detail
+2026-06-17T14:55:04.542004-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 2026-06-17T14:50:06.575124-04:00       entry_1500                   entry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               {"allocated_cash": 13837.5, "asset_type": "option", "contract_symbol": "GOOG260724C00380000", "contracts": 15, "early_entry_score": 0.146, "entry_mode": "regular", "entry_option_price": 9.225, "execution_mode": "option", "matched_signals": 10, "option_liquidity_status": "ok", "option_open_interest": 639.0, "option_spread_pct": 9.21, "option_volume": 103.0, "success_rate": 80.0, "ticker": "GOOG", "timing_score": 0.538}
 2026-06-17T14:50:06.575124-04:00       entry_1500 entry_candidate_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {"early_entry_score": 0.1, "error": "AEP: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "AEP", "timing_score": 0.582}
 2026-06-17T14:50:06.575124-04:00       entry_1500 entry_candidate_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             {"early_entry_score": 0.711, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 67.0, "option_spread_pct": 30.66, "option_volume": 2.0, "reason": "no_trade_low_option_liquidity", "ticker": "UPRO", "timing_score": 0.589}
@@ -78,7 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-06-17T12:20:05.226581-04:00      manage_1230                    exit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"asset_type": "option", "contract_symbol": "DRAM260717C00069000", "fill_price": 8.55, "pnl": 1912.5, "reason": "take_profit_day1_hit_at_scan", "return_pct": 15.15, "ticker": "DRAM"}
 2026-06-17T12:00:04.853951-04:00 early_entry_1200      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-17T11:55:03.988623-04:00 early_entry_1155      early_entry_shadow {"contract_symbol": "CTAS260731C00180000", "current_drop_pct": 0.73, "early_entry_score": 0.778, "early_reclaim_pct": 63.1, "entry_ask": 7.1, "entry_bid": 5.0, "entry_mode": "early", "entry_option_price": 6.05, "hypothetical_budget": 6681.63, "hypothetical_contracts": 11, "matched_signals": 31, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 11.0, "option_spread_pct": 34.71, "option_volume": 0.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.625, "shadow_only": true, "success_rate": 96.77, "ticker": "CTAS", "timing_score": 0.489, "top_candidates": [{"current_drop_pct": 0.73, "early_entry_score": 0.778, "early_reclaim_pct": 63.1, "matched_signals": 31, "recovery_stability_score": 0.625, "success_rate": 96.77, "ticker": "CTAS", "timing_score": 0.489, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
-2026-06-17T11:50:02.970534-04:00 early_entry_1150      early_entry_shadow   {"contract_symbol": "CTAS260731C00180000", "current_drop_pct": 0.58, "early_entry_score": 0.82, "early_reclaim_pct": 70.7, "entry_ask": 7.1, "entry_bid": 5.0, "entry_mode": "early", "entry_option_price": 6.05, "hypothetical_budget": 6681.63, "hypothetical_contracts": 11, "matched_signals": 34, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 11.0, "option_spread_pct": 34.71, "option_volume": 0.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.685, "shadow_only": true, "success_rate": 97.06, "ticker": "CTAS", "timing_score": 0.478, "top_candidates": [{"current_drop_pct": 0.58, "early_entry_score": 0.82, "early_reclaim_pct": 70.7, "matched_signals": 34, "recovery_stability_score": 0.685, "success_rate": 97.06, "ticker": "CTAS", "timing_score": 0.478, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260617145006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260617145504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260617145006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260617145504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260617145006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260617145504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260617145006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260617145504)
 
 </details>
