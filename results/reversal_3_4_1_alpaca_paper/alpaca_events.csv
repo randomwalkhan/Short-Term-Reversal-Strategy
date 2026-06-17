@@ -1372,3 +1372,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-17T11:58:01.544046-04:00,2026-06-17,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-06-17T14:51:07.521928-04:00,2026-06-17,entry_1500,entry_skipped,"{""error"": ""XEL: no call expiries found in the 21-40 trading-day window."", ""reason"": ""option_selection_failed"", ""ticker"": ""XEL""}"
 2026-06-17T14:57:27.454302-04:00,2026-06-17,entry_1500,entry_skipped,"{""error"": ""XEL: no call expiries found in the 21-40 trading-day window."", ""reason"": ""option_selection_failed"", ""ticker"": ""XEL""}"
+2026-06-17T15:03:47.092907-04:00,2026-06-17,entry_1500,entry_skipped,"{""error"": ""XEL: no call expiries found in the 21-40 trading-day window."", ""reason"": ""option_selection_failed"", ""ticker"": ""XEL""}"
