@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-17 16:05:06 EDT`
+Latest checkpoint (ET): `2026-06-17 16:10:06 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -27,24 +27,22 @@ Last processed slot: `manage_1600`
 
 ## Portfolio Snapshot
 
-- Cash: `$14,060.75`
-- Equity: `$26,735.75`
-- Realized PnL: `$17,898.25`
-- Unrealized PnL: `$-1,162.50`
-- Open positions: `1`
+- Cash: `$26,514.50`
+- Equity: `$26,514.50`
+- Realized PnL: `$16,514.50`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  GOOG     option         option GOOG260724C00380000       2026-06-17                   0     15     13837.5                 12675.0         9.23           8.45      363.95        362.61          bid_ask_mid                       8.45                bid_ask_mid                    True         -1162.5                   -8.4          80.0               10              1.93         34.49           33.94                  27.92                 639.0          103.0               0.09                      ok
-```
+_None_
 
 ## Today's Closed Trades (2026-06-17)
 
 ```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price    pnl  return_pct                  exit_reason
-  DRAM     option         option DRAM260717C00069000     17          2026-06-16         2026-06-17        7.425        8.55 1912.5   15.151515 take_profit_day1_hit_at_scan
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price      pnl  return_pct                  exit_reason
+  DRAM     option         option DRAM260717C00069000     17          2026-06-16         2026-06-17        7.425      8.5500  1912.50   15.151515 take_profit_day1_hit_at_scan
+  GOOG     option         option GOOG260724C00380000     15          2026-06-17         2026-06-17        9.225      8.3025 -1383.75  -10.000000        stop_loss_hit_at_scan
 ```
 
 ## Current Screener Snapshot
@@ -54,17 +52,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et       slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                                detail
-2026-06-17T15:10:05.396926-04:00 entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
-2026-06-17T15:05:04.450318-04:00 entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
-2026-06-17T15:00:06.393380-04:00 entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
-2026-06-17T14:55:04.542004-04:00 entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
-2026-06-17T14:50:06.575124-04:00 entry_1500 entry_candidate_skipped                                                                                                                                                               {"early_entry_score": 0.711, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 67.0, "option_spread_pct": 30.66, "option_volume": 2.0, "reason": "no_trade_low_option_liquidity", "ticker": "UPRO", "timing_score": 0.589}
-2026-06-17T14:50:06.575124-04:00 entry_1500 entry_candidate_skipped                                                                                                                                                                                                                                                 {"early_entry_score": 0.468, "error": "XEL: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "XEL", "timing_score": 0.64}
-2026-06-17T14:50:06.575124-04:00 entry_1500 entry_candidate_skipped                                                                                                                                                                                                                                              {"early_entry_score": 0.541, "error": "PAYX: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "PAYX", "timing_score": 0.608}
-2026-06-17T14:50:06.575124-04:00 entry_1500          timing_overlay                                                                                                                                                                                                                                                                                                                          {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-17", "training_samples": 5231, "window": 5}
-2026-06-17T14:50:06.575124-04:00 entry_1500 entry_candidate_skipped                                                                                                                                                                                                                                                  {"early_entry_score": 0.1, "error": "AEP: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "AEP", "timing_score": 0.582}
-2026-06-17T14:50:06.575124-04:00 entry_1500                   entry {"allocated_cash": 13837.5, "asset_type": "option", "contract_symbol": "GOOG260724C00380000", "contracts": 15, "early_entry_score": 0.146, "entry_mode": "regular", "entry_option_price": 9.225, "execution_mode": "option", "matched_signals": 10, "option_liquidity_status": "ok", "option_open_interest": 639.0, "option_spread_pct": 9.21, "option_volume": 103.0, "success_rate": 80.0, "ticker": "GOOG", "timing_score": 0.538}
+                    timestamp_et        slot              event_type                                                                                                                                                                                                                                                                  detail
+2026-06-17T16:10:06.900615-04:00 manage_1600                    exit                                                                                     {"asset_type": "option", "contract_symbol": "GOOG260724C00380000", "fill_price": 8.3025, "pnl": -1383.75, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "GOOG"}
+2026-06-17T15:10:05.396926-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
+2026-06-17T15:05:04.450318-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
+2026-06-17T15:00:06.393380-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
+2026-06-17T14:55:04.542004-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
+2026-06-17T14:50:06.575124-04:00  entry_1500 entry_candidate_skipped {"early_entry_score": 0.711, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 67.0, "option_spread_pct": 30.66, "option_volume": 2.0, "reason": "no_trade_low_option_liquidity", "ticker": "UPRO", "timing_score": 0.589}
+2026-06-17T14:50:06.575124-04:00  entry_1500          timing_overlay                                                                                                                                                            {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-17", "training_samples": 5231, "window": 5}
+2026-06-17T14:50:06.575124-04:00  entry_1500 entry_candidate_skipped                                                                                {"early_entry_score": 0.541, "error": "PAYX: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "PAYX", "timing_score": 0.608}
+2026-06-17T14:50:06.575124-04:00  entry_1500 entry_candidate_skipped                                                                                   {"early_entry_score": 0.468, "error": "XEL: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "XEL", "timing_score": 0.64}
+2026-06-17T14:50:06.575124-04:00  entry_1500 entry_candidate_skipped                                                                                    {"early_entry_score": 0.1, "error": "AEP: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "AEP", "timing_score": 0.582}
 ```
 
 ## Equity Curves
@@ -74,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260617160506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260617161006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260617160506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260617161006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260617160506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260617161006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260617160506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260617161006)
 
 </details>

@@ -2920,3 +2920,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-17T15:00:06.393380-04:00,2026-06-17,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-06-17T15:05:04.450318-04:00,2026-06-17,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-06-17T15:10:05.396926-04:00,2026-06-17,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-06-17T16:10:06.900615-04:00,2026-06-17,manage_1600,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""GOOG260724C00380000"", ""fill_price"": 8.3025, ""pnl"": -1383.75, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""GOOG""}"
