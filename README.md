@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-06-17 10:50:01 EDT`
-- Equity: `$26,793.25` | Realized: `$15,985.75` | Unrealized: `$807.50` | Open positions: `1`
+- Latest checkpoint (ET): `2026-06-17 10:55:04 EDT`
+- Equity: `$27,515.75` | Realized: `$15,985.75` | Unrealized: `$1,530.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1100`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  DRAM     option         option DRAM260717C00069000     17     12622.5                 13430.0            7.9           807.5                    6.4                   1
+  DRAM     option         option DRAM260717C00069000     17     12622.5                 14152.5           8.32          1530.0                  12.12                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260617105001)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260617105504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260617105001)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260617105504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260617105001)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260617105504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260617105001)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260617105504)
 
 </details>
 
