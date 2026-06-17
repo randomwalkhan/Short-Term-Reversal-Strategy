@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-17 12:05:02 EDT`
+Latest checkpoint (ET): `2026-06-17 12:10:02 EDT`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1200`
 ## Portfolio Snapshot
 
 - Cash: `$13,363.25`
-- Equity: `$27,728.25`
+- Equity: `$27,813.25`
 - Realized PnL: `$15,985.75`
-- Unrealized PnL: `$1,742.50`
+- Unrealized PnL: `$1,827.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  DRAM     option         option DRAM260717C00069000       2026-06-16                   1     17     12622.5                 14365.0         7.43           8.45       68.52          72.0          bid_ask_mid                       8.45                bid_ask_mid                    True          1742.5                   13.8         90.91               11              3.59         94.78            83.2                 109.99                 846.0          111.0               0.06                      ok
+  DRAM     option         option DRAM260717C00069000       2026-06-16                   1     17     12622.5                 14450.0         7.43            8.5       68.52         72.04          bid_ask_mid                        8.5                bid_ask_mid                    True          1827.5                  14.48         90.91               11              3.59         94.78           83.98                 109.99                 846.0          111.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-06-17)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MDLZ           92.31               13            1.26              0.55         61.92                20.23         0.570          pass              0.445             13.3                           0.246                0.49              0.212                                 ok            True                  False
-   EXC           81.82               11            1.03              0.34         46.45                19.22         0.567          pass              0.118              2.0                           0.117                3.43              0.400                                 ok            True                  False
-  FTNT           94.44               18            1.92              1.97        146.17                47.06         0.530          pass              0.633             47.1                           0.459               -3.13             -0.270                                 ok            True                  False
-  CTAS           95.65               23            1.22              1.51        176.06                29.79         0.512          pass              0.654             38.6                           0.316                0.72              0.042                                 ok            True                  False
-    ZS           76.32               38            0.62              0.55        126.99               152.67         0.876          pass              0.493             73.0                           0.645               -5.90             -0.556 downtrend_blocked_slope_and_streak           False                  False
-  INTU           79.07               43            0.40              0.78        280.66                99.11         0.704          pass              0.524             84.6                           0.535              -13.12             -1.456 downtrend_blocked_slope_and_streak           False                  False
-   KHC          100.00                2            1.53              0.26         23.69                25.54         0.671          pass              0.479              3.9                           0.189                4.83              0.785                                 ok           False                  False
-   PEP          100.00                4            1.53              1.57        145.45                20.43         0.632          pass              0.501             12.5                           0.236                2.39              0.375                                 ok           False                  False
-   CSX          100.00                4            1.63              0.54         46.67                20.12         0.626          pass              0.474              3.8                           0.159               -0.01              0.173                                 ok           False                  False
-   XEL          100.00               20            0.37              0.20         78.89                23.22         0.618          pass              0.686             52.5                           0.305                1.82              0.267                                 ok           False                  False
-  PAYX          100.00               28            0.08              0.06        100.26                31.37         0.585          pass              0.865             95.5                           0.712               -0.59              0.115                                 ok           False                  False
-   TXN           93.94               33            0.47              1.00        305.28                52.85         0.578          pass              0.808             75.0                           0.401               -1.25              0.033                                 ok           False                  False
+   EXC           90.00               10            1.11              0.36         46.44                19.22         0.577          pass              0.333              2.8                           0.109                3.35              0.397                                 ok            True                  False
+  MDLZ           91.67               12            1.29              0.56         61.91                20.23         0.575          pass              0.415             11.1                           0.190                0.46              0.210                                 ok            True                  False
+  FTNT           94.12               17            1.97              2.03        146.15                47.06         0.534          pass              0.614             45.7                           0.411               -3.18             -0.272                                 ok            True                  False
+  CTAS           95.00               20            1.40              1.74        175.97                29.79         0.520          pass              0.606             29.1                           0.255                0.53              0.034                                 ok            True                  False
+  SBUX           86.21               29            0.52              0.37        101.52                25.47         0.512          pass              0.548             68.4                           0.557                5.91              0.907                                 ok            True                  False
+    ZS           76.92               39            0.61              0.54        127.00               152.67         0.874          pass              0.502             73.7                           0.614               -5.89             -0.555 downtrend_blocked_slope_and_streak           False                  False
+  INTU           78.57               42            0.43              0.84        280.63                99.11         0.708          pass              0.521             83.4                           0.410              -13.14             -1.458 downtrend_blocked_slope_and_streak           False                  False
+   KHC          100.00                2            1.74              0.29         23.68                25.54         0.656          pass              0.466              0.0                           0.234                4.61              0.775                                 ok           False                  False
+   XEL          100.00               17            0.46              0.25         78.87                23.22         0.633          pass              0.633             41.0                           0.243                1.72              0.263                                 ok           False                  False
+   PEP          100.00                4            1.61              1.64        145.42                20.43         0.627          pass              0.487              8.2                           0.163                2.31              0.372                                 ok           False                  False
+   CSX          100.00                4            1.66              0.55         46.67                20.12         0.624          pass              0.468              1.9                           0.132               -0.04              0.171                                 ok           False                  False
+  PAYX          100.00               26            0.17              0.12        100.23                31.37         0.593          pass              0.837             90.4                           0.645               -0.67              0.111                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260617120502)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260617121002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260617120502)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260617121002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260617120502)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260617121002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260617120502)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260617121002)
 
 </details>
