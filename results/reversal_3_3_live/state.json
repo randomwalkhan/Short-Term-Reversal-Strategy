@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 27898.2503566742,
-  "positions": [],
+  "cash": 14060.7503566742,
+  "positions": [
+    {
+      "position_id": "GOOG_20260617T145006",
+      "ticker": "GOOG",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "GOOG260724C00380000",
+      "expiry": "2026-07-24",
+      "strike": 380.0,
+      "entry_timestamp": "2026-06-17T14:50:06.575124-04:00",
+      "entry_trade_date": "2026-06-17",
+      "entry_slot": "entry_1500",
+      "entry_spot": 363.95001220703125,
+      "entry_option_price": 9.225000000000001,
+      "entry_bid": 8.8,
+      "entry_ask": 9.65,
+      "entry_iv_pct": 34.48551843261719,
+      "contracts": 15,
+      "allocated_cash": 13837.500000000002,
+      "success_rate": 80.0,
+      "matched_signals": 10,
+      "current_drop_pct": 1.93,
+      "rolling_sigma_20d_pct": 27.92,
+      "planned_tp_day1": 10.60875,
+      "planned_tp_day2": 10.60875,
+      "planned_stop": 8.302500000000002,
+      "option_open_interest": 639.0,
+      "option_volume": 103.0,
+      "option_spread_pct": 0.09214092140921404,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4157,7 +4188,9 @@
     "2026-06-16": [
       "entry_1500"
     ],
-    "2026-06-17": []
+    "2026-06-17": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
