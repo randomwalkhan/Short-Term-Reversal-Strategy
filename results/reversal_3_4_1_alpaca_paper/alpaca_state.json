@@ -2,39 +2,7 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [
-    {
-      "allocated_cash": 4560.0,
-      "alpaca_entry_client_order_id": "rev-20260616145238-dram-regular",
-      "alpaca_entry_order_id": "a72976a4-7eca-4488-99bb-769ca0624c41",
-      "alpaca_exit_order_id": "ccc64bc0-e407-4afd-90d5-911534676a65",
-      "asset_type": "option",
-      "contract_symbol": "DRAM260717C00069000",
-      "contracts": 6,
-      "current_drop_pct": 3.57,
-      "early_entry_score": 0.435,
-      "entry_mode": "regular",
-      "entry_option_price": 7.6,
-      "entry_slot": "entry_1500",
-      "entry_spot": 68.52999877929688,
-      "entry_timestamp": "2026-06-16T14:52:38.144559-04:00",
-      "entry_trade_date": "2026-06-16",
-      "execution_mode": "alpaca_paper_option",
-      "exit_reason": "stop_loss_hit_at_scan",
-      "exit_reference_price": 6.45,
-      "expiry": "2026-07-17",
-      "matched_signals": 11,
-      "planned_stop": 6.84,
-      "planned_tp_day1": 8.739999999999998,
-      "planned_tp_day2": 8.739999999999998,
-      "position_id": "DRAM_20260616T145238",
-      "status": "exit_submitted",
-      "strike": 69.0,
-      "success_rate": 90.91,
-      "ticker": "DRAM",
-      "timing_score": 0.658
-    }
-  ],
+  "positions": [],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
