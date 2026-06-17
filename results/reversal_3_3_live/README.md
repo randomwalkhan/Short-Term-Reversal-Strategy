@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-17 09:45:03 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-06-17 09:50:02 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -37,7 +37,7 @@ Last processed slot: `manual`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  DRAM     option         option DRAM260717C00069000       2026-06-16                   1     17     12622.5                 11475.0         7.43           6.75       68.52         71.16     last_price_stale                        NaN                unavailable                   False         -1147.5                  -9.09         90.91               11              3.59         94.78             0.0                 109.99                 846.0          111.0               0.06                      ok
+  DRAM     option         option DRAM260717C00069000       2026-06-16                   1     17     12622.5                 11475.0         7.43           6.75       68.52          70.5     last_price_stale                        NaN                unavailable                   False         -1147.5                  -9.09         90.91               11              3.59         94.78             0.0                 109.99                 846.0          111.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-06-17)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   CSX           91.67               12            1.02              0.34         46.76                20.12         0.602          pass              0.450             22.0                           0.253                0.61              0.201                                 ok            True                  False
-   WMT           84.00               25            0.81              0.69        120.74                34.81         0.569          pass              0.382             39.5                           0.318                6.18              0.504                                 ok            True                  False
-  ODFL           80.00               10            2.37              3.84        229.98                37.63         0.548          pass              0.106             17.1                           0.191               -1.16             -0.025                                 ok            True                  False
-  AMGN           93.10               29            0.54              1.33        347.27                26.73         0.521          pass              0.617             29.4                           0.303                5.39              0.471                                 ok            True                  False
-  GOOG           83.33               18            1.61              4.19        369.31                27.92         0.518          pass              0.194              0.0                           0.217                2.72              0.089                                 ok            True                  False
-   LIN           96.30               27            0.68              2.45        517.12                19.32         0.516          pass              0.709             48.2                           0.500                4.11              0.418                                 ok            True                  False
-  MDLZ           92.00               25            0.83              0.36         62.00                20.23         0.516          pass              0.548             25.4                           0.309                0.93              0.231                                 ok            True                  False
- GOOGL           81.25               16            1.56              4.08        371.50                28.01         0.506          pass              0.124              0.0                           0.210                1.60              0.016                                 ok            True                  False
-  INTU           80.00               35            1.21              2.39        279.97                99.11         0.715          pass              0.396             52.8                           0.508              -13.83             -1.494 downtrend_blocked_slope_and_streak           False                  False
-   KHC           90.00               10            0.04              0.01         23.80                25.54         0.702          pass              0.625             96.2                           0.751                6.42              0.853                                 ok           False                  False
-   PEP          100.00                7            1.01              1.03        145.68                20.43         0.651          pass              0.465              0.0                           0.214                2.94              0.400                                 ok           False                  False
-   ADP           96.15               26            0.34              0.53        221.77                31.58         0.588          pass              0.795             76.4                           0.555               -3.57             -0.279            downtrend_blocked_slope           False                  False
+   WMT           83.33               24            0.88              0.74        120.71                34.81         0.571          pass              0.343             34.6                           0.288                6.11              0.501                                 ok            True                  False
+   WBD           95.45               22            0.51              0.09         26.56                17.02         0.542          pass              0.605             23.6                           0.327               -2.63             -0.120                                 ok            True                  False
+  MDLZ           95.65               23            0.87              0.38         61.99                20.23         0.532          pass              0.605             21.7                           0.244                0.88              0.230                                 ok            True                  False
+  GOOG           81.25               16            1.66              4.31        369.25                27.92         0.526          pass              0.133              2.3                           0.089                2.67              0.087                                 ok            True                  False
+   LIN           96.15               26            0.70              2.53        517.08                19.32         0.522          pass              0.698             46.4                           0.453                4.09              0.417                                 ok            True                  False
+ GOOGL           80.00               15            1.65              4.30        371.41                28.01         0.504          pass              0.091              2.5                           0.094                1.51              0.012                                 ok            True                  False
+    ZS           78.57               42            0.28              0.25        127.12               152.67         0.877          pass              0.552             88.1                           0.697               -5.57             -0.540 downtrend_blocked_slope_and_streak           False                  False
+  INTU           78.05               41            0.49              0.96        280.58                99.11         0.721          pass              0.515             81.0                           0.642              -13.20             -1.461 downtrend_blocked_slope_and_streak           False                  False
+   KHC           87.50                8            0.27              0.05         23.78                25.54         0.699          pass              0.495             75.0                           0.645                6.17              0.843                                 ok           False                  False
+  MPWR           94.12               34            0.16              1.68       1498.05                71.82         0.696          pass              0.733             42.2                           0.312               -7.92             -0.523            downtrend_blocked_slope           False                  False
+   PEP          100.00                6            1.13              1.15        145.63                20.43         0.648          pass              0.477              4.1                           0.159                2.81              0.394                                 ok           False                  False
+   CSX           87.50                8            1.18              0.39         46.73                20.12         0.616          pass              0.291              9.8                           0.144                0.44              0.193                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260617094503)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260617095002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260617094503)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260617095002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260617094503)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260617095002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260617094503)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260617095002)
 
 </details>
