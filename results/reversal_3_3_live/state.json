@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 26514.5003566742,
-  "positions": [],
+  "cash": 13462.500356674203,
+  "positions": [
+    {
+      "position_id": "WMT_20260618T145001",
+      "ticker": "WMT",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "WMT260724C00120000",
+      "expiry": "2026-07-24",
+      "strike": 120.0,
+      "entry_timestamp": "2026-06-18T14:50:01.395672-04:00",
+      "entry_trade_date": "2026-06-18",
+      "entry_slot": "entry_1500",
+      "entry_spot": 117.33000183105469,
+      "entry_option_price": 2.51,
+      "entry_bid": 2.34,
+      "entry_ask": 2.68,
+      "entry_iv_pct": 25.574474731445317,
+      "contracts": 52,
+      "allocated_cash": 13051.999999999998,
+      "success_rate": 86.21,
+      "matched_signals": 29,
+      "current_drop_pct": 0.68,
+      "rolling_sigma_20d_pct": 34.58,
+      "planned_tp_day1": 2.8864999999999994,
+      "planned_tp_day2": 2.8864999999999994,
+      "planned_stop": 2.259,
+      "option_open_interest": 124.0,
+      "option_volume": 47.0,
+      "option_spread_pct": 0.13545816733067742,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4160,7 +4191,9 @@
     "2026-06-17": [
       "entry_1500"
     ],
-    "2026-06-18": []
+    "2026-06-18": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
