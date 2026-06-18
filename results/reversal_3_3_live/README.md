@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-17 16:10:06 EDT`
-Last processed slot: `manage_1600`
+Latest checkpoint (ET): `2026-06-18 09:20:05 EDT`
+Last processed slot: `manage_0930`
 
 ## Active Configuration
 
@@ -37,13 +37,9 @@ Last processed slot: `manage_1600`
 
 _None_
 
-## Today's Closed Trades (2026-06-17)
+## Today's Closed Trades (2026-06-18)
 
-```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price      pnl  return_pct                  exit_reason
-  DRAM     option         option DRAM260717C00069000     17          2026-06-16         2026-06-17        7.425      8.5500  1912.50   15.151515 take_profit_day1_hit_at_scan
-  GOOG     option         option GOOG260724C00380000     15          2026-06-17         2026-06-17        9.225      8.3025 -1383.75  -10.000000        stop_loss_hit_at_scan
-```
+_None_
 
 ## Current Screener Snapshot
 
@@ -52,17 +48,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et        slot              event_type                                                                                                                                                                                                                                                                  detail
-2026-06-17T16:10:06.900615-04:00 manage_1600                    exit                                                                                     {"asset_type": "option", "contract_symbol": "GOOG260724C00380000", "fill_price": 8.3025, "pnl": -1383.75, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "GOOG"}
-2026-06-17T15:10:05.396926-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-06-17T15:05:04.450318-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-06-17T15:00:06.393380-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-06-17T14:55:04.542004-04:00  entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-06-17T14:50:06.575124-04:00  entry_1500 entry_candidate_skipped {"early_entry_score": 0.711, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 67.0, "option_spread_pct": 30.66, "option_volume": 2.0, "reason": "no_trade_low_option_liquidity", "ticker": "UPRO", "timing_score": 0.589}
-2026-06-17T14:50:06.575124-04:00  entry_1500          timing_overlay                                                                                                                                                            {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-17", "training_samples": 5231, "window": 5}
-2026-06-17T14:50:06.575124-04:00  entry_1500 entry_candidate_skipped                                                                                {"early_entry_score": 0.541, "error": "PAYX: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "PAYX", "timing_score": 0.608}
-2026-06-17T14:50:06.575124-04:00  entry_1500 entry_candidate_skipped                                                                                   {"early_entry_score": 0.468, "error": "XEL: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "XEL", "timing_score": 0.64}
-2026-06-17T14:50:06.575124-04:00  entry_1500 entry_candidate_skipped                                                                                    {"early_entry_score": 0.1, "error": "AEP: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "AEP", "timing_score": 0.582}
+                    timestamp_et         slot              event_type                                                                                                                                                                                                                                                                  detail
+2026-06-18T09:20:05.276411-04:00 data_refresh            data_refresh                                                                                                                                                                                                                                                           {'saved': 93}
+2026-06-17T16:10:06.900615-04:00  manage_1600                    exit                                                                                     {"asset_type": "option", "contract_symbol": "GOOG260724C00380000", "fill_price": 8.3025, "pnl": -1383.75, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "GOOG"}
+2026-06-17T15:10:05.396926-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
+2026-06-17T15:05:04.450318-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
+2026-06-17T15:00:06.393380-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
+2026-06-17T14:55:04.542004-04:00   entry_1500            slot_skipped                                                                                                                                                                                                                                         {"reason": "already_processed"}
+2026-06-17T14:50:06.575124-04:00   entry_1500 entry_candidate_skipped {"early_entry_score": 0.711, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 67.0, "option_spread_pct": 30.66, "option_volume": 2.0, "reason": "no_trade_low_option_liquidity", "ticker": "UPRO", "timing_score": 0.589}
+2026-06-17T14:50:06.575124-04:00   entry_1500          timing_overlay                                                                                                                                                            {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-17", "training_samples": 5231, "window": 5}
+2026-06-17T14:50:06.575124-04:00   entry_1500 entry_candidate_skipped                                                                                   {"early_entry_score": 0.468, "error": "XEL: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "XEL", "timing_score": 0.64}
+2026-06-17T14:50:06.575124-04:00   entry_1500 entry_candidate_skipped                                                                                {"early_entry_score": 0.541, "error": "PAYX: no call expiries found in the 21-40 trading-day window.", "reason": "no_trade_option_unavailable", "ticker": "PAYX", "timing_score": 0.608}
 ```
 
 ## Equity Curves
@@ -72,27 +68,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260617161006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260618092005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260617161006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260618092005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260617161006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260618092005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260617161006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260618092005)
 
 </details>
