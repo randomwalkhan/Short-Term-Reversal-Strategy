@@ -2953,3 +2953,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-18T15:00:03.400898-04:00,2026-06-18,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-06-18T15:05:02.244288-04:00,2026-06-18,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-06-18T15:10:04.271531-04:00,2026-06-18,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-06-19T00:00:05.512455-04:00,2026-06-19,share_ext_0000,market_closed,"{""holiday_name"": ""Juneteenth National Independence Day"", ""reason"": ""nyse_holiday""}"
