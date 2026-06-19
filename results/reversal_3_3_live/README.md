@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-19 00:10:01 EDT`
-Last processed slot: `share_ext_0010`
+Latest checkpoint (ET): `2026-06-19 00:15:02 EDT`
+Last processed slot: `share_ext_0015`
 
 ## Active Configuration
 
@@ -51,17 +51,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                              detail
-2026-06-19T00:10:01.418164-04:00   share_ext_0010      market_closed                                                                                                                                                                                                                                                                                                                                                  {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:05:01.505743-04:00   share_ext_0005      market_closed                                                                                                                                                                                                                                                                                                                                                  {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:00:05.512455-04:00   share_ext_0000      market_closed                                                                                                                                                                                                                                                                                                                                                  {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-18T15:10:04.271531-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-06-18T15:05:02.244288-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-06-18T15:00:03.400898-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-06-18T14:55:03.329967-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-06-18T14:50:01.395672-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                        {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-18", "training_samples": 5252, "window": 5}
-2026-06-18T14:50:01.395672-04:00       entry_1500              entry {"allocated_cash": 13052.0, "asset_type": "option", "contract_symbol": "WMT260724C00120000", "contracts": 52, "early_entry_score": 0.467, "entry_mode": "regular", "entry_option_price": 2.51, "execution_mode": "option", "matched_signals": 29, "option_liquidity_status": "ok", "option_open_interest": 124.0, "option_spread_pct": 13.55, "option_volume": 47.0, "success_rate": 86.21, "ticker": "WMT", "timing_score": 0.549}
-2026-06-18T12:00:02.352957-04:00 early_entry_1200 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+                    timestamp_et           slot     event_type                                                                                                                                                                                                                                                                                                                                                                                                                              detail
+2026-06-19T00:15:02.527076-04:00 share_ext_0015  market_closed                                                                                                                                                                                                                                                                                                                                                  {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:10:01.418164-04:00 share_ext_0010  market_closed                                                                                                                                                                                                                                                                                                                                                  {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:05:01.505743-04:00 share_ext_0005  market_closed                                                                                                                                                                                                                                                                                                                                                  {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:00:05.512455-04:00 share_ext_0000  market_closed                                                                                                                                                                                                                                                                                                                                                  {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-18T15:10:04.271531-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-06-18T15:05:02.244288-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-06-18T15:00:03.400898-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-06-18T14:55:03.329967-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-06-18T14:50:01.395672-04:00     entry_1500          entry {"allocated_cash": 13052.0, "asset_type": "option", "contract_symbol": "WMT260724C00120000", "contracts": 52, "early_entry_score": 0.467, "entry_mode": "regular", "entry_option_price": 2.51, "execution_mode": "option", "matched_signals": 29, "option_liquidity_status": "ok", "option_open_interest": 124.0, "option_spread_pct": 13.55, "option_volume": 47.0, "success_rate": 86.21, "ticker": "WMT", "timing_score": 0.549}
+2026-06-18T14:50:01.395672-04:00     entry_1500 timing_overlay                                                                                                                                                                                                                                                                                                                        {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-18", "training_samples": 5252, "window": 5}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260619001001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260619001502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260619001001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260619001502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260619001001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260619001502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260619001001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260619001502)
 
 </details>
