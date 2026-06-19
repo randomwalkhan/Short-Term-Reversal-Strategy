@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-19 01:24:14 EDT`
-Last slot: `share_ext_0120`
+Latest checkpoint (ET): `2026-06-19 01:29:18 EDT`
+Last slot: `share_ext_0125`
 
 ## Alpaca Paper Account
 
@@ -45,25 +45,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot            event_type                                                                                                                                                                                 detail
-2026-06-19T01:24:14.146758-04:00   share_ext_0120         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T01:19:10.318770-04:00   share_ext_0115         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T01:14:06.216709-04:00   share_ext_0110         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T01:09:02.680059-04:00   share_ext_0105         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T01:03:58.987043-04:00   share_ext_0100         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:58:55.117233-04:00   share_ext_0055         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:53:51.703809-04:00   share_ext_0050         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:48:48.268829-04:00   share_ext_0045         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:43:44.754517-04:00   share_ext_0040         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:38:41.239126-04:00   share_ext_0035         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:33:37.720280-04:00   share_ext_0030         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:28:34.240097-04:00   share_ext_0025         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:23:30.776225-04:00   share_ext_0020         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:18:27.228799-04:00   share_ext_0015         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:13:21.823761-04:00   share_ext_0010         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:08:18.158987-04:00   share_ext_0005         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:03:14.613882-04:00   share_ext_0000         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-18T15:42:16.198220-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "WMT260724C00120000", "contracts": 18, "filled_price": 2.65, "ticker": "WMT"}
-2026-06-18T14:50:25.955843-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "ea178de4-eec8-4d51-8e68-6c2517725fe6", "contract_symbol": "WMT260724C00120000", "contracts": 18, "entry_mode": "regular", "limit_price": "2.68", "ticker": "WMT"}
-2026-06-18T11:57:24.636377-04:00 early_entry_1155    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+                    timestamp_et           slot            event_type                                                                                                                                                                                 detail
+2026-06-19T01:29:18.126107-04:00 share_ext_0125         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T01:24:14.146758-04:00 share_ext_0120         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T01:19:10.318770-04:00 share_ext_0115         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T01:14:06.216709-04:00 share_ext_0110         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T01:09:02.680059-04:00 share_ext_0105         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T01:03:58.987043-04:00 share_ext_0100         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:58:55.117233-04:00 share_ext_0055         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:53:51.703809-04:00 share_ext_0050         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:48:48.268829-04:00 share_ext_0045         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:43:44.754517-04:00 share_ext_0040         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:38:41.239126-04:00 share_ext_0035         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:33:37.720280-04:00 share_ext_0030         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:28:34.240097-04:00 share_ext_0025         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:23:30.776225-04:00 share_ext_0020         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:18:27.228799-04:00 share_ext_0015         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:13:21.823761-04:00 share_ext_0010         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:08:18.158987-04:00 share_ext_0005         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:03:14.613882-04:00 share_ext_0000         market_closed                                                                                                     {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-18T15:42:16.198220-04:00     entry_1500          entry_filled                                                                                      {"contract_symbol": "WMT260724C00120000", "contracts": 18, "filled_price": 2.65, "ticker": "WMT"}
+2026-06-18T14:50:25.955843-04:00     entry_1500 entry_order_submitted {"alpaca_order_id": "ea178de4-eec8-4d51-8e68-6c2517725fe6", "contract_symbol": "WMT260724C00120000", "contracts": 18, "entry_mode": "regular", "limit_price": "2.68", "ticker": "WMT"}
 ```
