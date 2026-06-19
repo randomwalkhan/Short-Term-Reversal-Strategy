@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-19 00:20:01 EDT`
-Last processed slot: `share_ext_0020`
+Latest checkpoint (ET): `2026-06-19 00:25:05 EDT`
+Last processed slot: `share_ext_0025`
 
 ## Active Configuration
 
@@ -51,17 +51,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot     event_type                                                                                                       detail
-2026-06-19T00:20:01.564074-04:00 share_ext_0020  market_closed                           {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:15:02.527076-04:00 share_ext_0015  market_closed                           {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:10:01.418164-04:00 share_ext_0010  market_closed                           {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:05:01.505743-04:00 share_ext_0005  market_closed                           {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T00:00:05.512455-04:00 share_ext_0000  market_closed                           {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-18T15:10:04.271531-04:00     entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
-2026-06-18T15:05:02.244288-04:00     entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
-2026-06-18T15:00:03.400898-04:00     entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
-2026-06-18T14:55:03.329967-04:00     entry_1500   slot_skipped                                                                              {"reason": "already_processed"}
-2026-06-18T14:50:01.395672-04:00     entry_1500 timing_overlay {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-06-18", "training_samples": 5252, "window": 5}
+                    timestamp_et           slot    event_type                                                                             detail
+2026-06-19T00:25:05.531083-04:00 share_ext_0025 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:20:01.564074-04:00 share_ext_0020 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:15:02.527076-04:00 share_ext_0015 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:10:01.418164-04:00 share_ext_0010 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:05:01.505743-04:00 share_ext_0005 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T00:00:05.512455-04:00 share_ext_0000 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-18T15:10:04.271531-04:00     entry_1500  slot_skipped                                                    {"reason": "already_processed"}
+2026-06-18T15:05:02.244288-04:00     entry_1500  slot_skipped                                                    {"reason": "already_processed"}
+2026-06-18T15:00:03.400898-04:00     entry_1500  slot_skipped                                                    {"reason": "already_processed"}
+2026-06-18T14:55:03.329967-04:00     entry_1500  slot_skipped                                                    {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260619002001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260619002505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260619002001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260619002505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260619002001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260619002505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260619002001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260619002505)
 
 </details>
