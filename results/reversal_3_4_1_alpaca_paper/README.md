@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-19 18:41:22 EDT`
-Last slot: `share_ext_1840`
+Latest checkpoint (ET): `2026-06-19 18:46:25 EDT`
+Last slot: `share_ext_1845`
 
 ## Alpaca Paper Account
 
@@ -46,6 +46,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot    event_type                                                                             detail
+2026-06-19T18:46:25.749433-04:00 share_ext_1845 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
 2026-06-19T18:41:22.337887-04:00 share_ext_1840 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
 2026-06-19T18:36:18.824180-04:00 share_ext_1835 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
 2026-06-19T18:31:15.337258-04:00 share_ext_1830 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
@@ -65,5 +66,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-19T17:20:27.043006-04:00 share_ext_1720 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
 2026-06-19T17:15:23.610386-04:00 share_ext_1715 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
 2026-06-19T17:10:20.182494-04:00 share_ext_1710 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T17:05:16.791558-04:00 share_ext_1705 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
 ```
