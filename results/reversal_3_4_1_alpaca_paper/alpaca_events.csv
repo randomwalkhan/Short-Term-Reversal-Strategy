@@ -1623,3 +1623,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-19T19:01:36.841516-04:00,2026-06-19,share_ext_1900,market_closed,"{""holiday_name"": ""Juneteenth National Independence Day"", ""reason"": ""nyse_holiday""}"
 2026-06-19T19:06:40.340518-04:00,2026-06-19,share_ext_1905,market_closed,"{""holiday_name"": ""Juneteenth National Independence Day"", ""reason"": ""nyse_holiday""}"
 2026-06-19T19:11:43.849589-04:00,2026-06-19,share_ext_1910,market_closed,"{""holiday_name"": ""Juneteenth National Independence Day"", ""reason"": ""nyse_holiday""}"
+2026-06-19T19:16:47.300707-04:00,2026-06-19,share_ext_1915,market_closed,"{""holiday_name"": ""Juneteenth National Independence Day"", ""reason"": ""nyse_holiday""}"
