@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-19 16:09:36 EDT`
-Last slot: `manage_1600`
+Latest checkpoint (ET): `2026-06-19 16:14:40 EDT`
+Last slot: `share_ext_1610`
 
 ## Alpaca Paper Account
 
@@ -45,25 +45,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et        slot    event_type                                                                             detail
-2026-06-19T16:09:36.949416-04:00 manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T16:04:33.278697-04:00 manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:59:29.146947-04:00 manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:54:23.521391-04:00 manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:49:19.897693-04:00 manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:44:16.314382-04:00      manual market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:39:12.989027-04:00 manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:34:09.534625-04:00 manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:29:06.030672-04:00 manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:24:01.822516-04:00 manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:18:58.299094-04:00 manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:13:54.943377-04:00      manual market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:08:51.592263-04:00  entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T15:03:48.155959-04:00  entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T14:58:44.883663-04:00  entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T14:53:41.563025-04:00  entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T14:48:38.049146-04:00  entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T14:43:34.398610-04:00      manual market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T14:38:31.017599-04:00 manage_1430 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
-2026-06-19T14:33:27.670475-04:00 manage_1430 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+                    timestamp_et           slot    event_type                                                                             detail
+2026-06-19T16:14:40.697994-04:00 share_ext_1610 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T16:09:36.949416-04:00    manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T16:04:33.278697-04:00    manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:59:29.146947-04:00    manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:54:23.521391-04:00    manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:49:19.897693-04:00    manage_1600 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:44:16.314382-04:00         manual market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:39:12.989027-04:00    manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:34:09.534625-04:00    manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:29:06.030672-04:00    manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:24:01.822516-04:00    manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:18:58.299094-04:00    manage_1530 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:13:54.943377-04:00         manual market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:08:51.592263-04:00     entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T15:03:48.155959-04:00     entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T14:58:44.883663-04:00     entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T14:53:41.563025-04:00     entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T14:48:38.049146-04:00     entry_1500 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T14:43:34.398610-04:00         manual market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
+2026-06-19T14:38:31.017599-04:00    manage_1430 market_closed {"holiday_name": "Juneteenth National Independence Day", "reason": "nyse_holiday"}
 ```
