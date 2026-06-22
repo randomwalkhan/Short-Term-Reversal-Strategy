@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-22 14:50:23 EDT`
+Latest checkpoint (ET): `2026-06-22 14:56:46 EDT`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
@@ -14,9 +14,9 @@ Last slot: `entry_1500`
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   WMT            open    regular  WMT260724C00120000         18                2.65                  2.54          bid_ask_mid                       2.54                   True          4572.0          -198.0              -4.150943                 1.0
-  MRVL entry_submitted    regular MRVL260724C00310000          1               35.00                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
+ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+   WMT   open    regular  WMT260724C00120000         18                2.65                 2.540          bid_ask_mid                      2.540                    True          4572.0          -198.0              -4.150943                   1
+  MRVL   open    regular MRVL260724C00310000          1               35.45                35.175          bid_ask_mid                     35.175                    True          3517.5           -27.5              -0.775740                   0
 ```
 
 ## Closed Trades
@@ -47,6 +47,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot            event_type                                                                                                                                                                                   detail
+2026-06-22T14:56:46.480916-04:00     entry_1500          entry_filled                                                                                      {"contract_symbol": "MRVL260724C00310000", "contracts": 1, "filled_price": 35.45, "ticker": "MRVL"}
 2026-06-22T14:50:23.231779-04:00     entry_1500 entry_order_submitted {"alpaca_order_id": "882c58a0-9924-4129-9013-85a7852df07a", "contract_symbol": "MRVL260724C00310000", "contracts": 1, "entry_mode": "regular", "limit_price": "36.00", "ticker": "MRVL"}
 2026-06-21T23:55:22.090927-04:00 share_ext_2355         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-06-21T23:50:17.802265-04:00 share_ext_2350         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
@@ -66,5 +67,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-21T22:39:17.970094-04:00 share_ext_2235         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-06-21T22:34:13.681747-04:00 share_ext_2230         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-06-21T22:29:09.563039-04:00 share_ext_2225         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
-2026-06-21T22:24:05.286010-04:00 share_ext_2220         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 ```

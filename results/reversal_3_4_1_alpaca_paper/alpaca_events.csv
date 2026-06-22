@@ -2031,3 +2031,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-21T23:50:17.802265-04:00,2026-06-21,share_ext_2350,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-06-21T23:55:22.090927-04:00,2026-06-21,share_ext_2355,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-06-22T14:50:23.231779-04:00,2026-06-22,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""882c58a0-9924-4129-9013-85a7852df07a"", ""contract_symbol"": ""MRVL260724C00310000"", ""contracts"": 1, ""entry_mode"": ""regular"", ""limit_price"": ""36.00"", ""ticker"": ""MRVL""}"
+2026-06-22T14:56:46.480916-04:00,2026-06-22,entry_1500,entry_filled,"{""contract_symbol"": ""MRVL260724C00310000"", ""contracts"": 1, ""filled_price"": 35.45, ""ticker"": ""MRVL""}"
