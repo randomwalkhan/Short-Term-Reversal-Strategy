@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-22 15:35:03 EDT`
+Latest checkpoint (ET): `2026-06-22 15:40:05 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$2,962.50`
-- Equity: `$26,043.50`
+- Equity: `$25,931.00`
 - Realized PnL: `$16,514.50`
-- Unrealized PnL: `$-471.00`
+- Unrealized PnL: `$-583.50`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   WMT     option         option  WMT260724C00120000       2026-06-18                   1     52     13052.0                 12896.0         2.51           2.48      117.33        117.38          bid_ask_mid                       2.48                bid_ask_mid                    True          -156.0                   -1.2         86.21               29              0.68         25.57           27.03                  34.58                 124.0           47.0               0.14                      ok
-  MRVL     option         option MRVL260724C00310000       2026-06-22                   0      3     10500.0                 10185.0        35.00          33.95      305.16        304.95          bid_ask_mid                      33.95                bid_ask_mid                    True          -315.0                   -3.0        100.00               24              1.75        101.16           98.72                 150.94                 195.0           52.0               0.06                      ok
+   WMT     option         option  WMT260724C00120000       2026-06-18                   1     52     13052.0                 12896.0         2.51           2.48      117.33        117.34          bid_ask_mid                       2.48                bid_ask_mid                    True          -156.0                  -1.20         86.21               29              0.68         25.57           27.10                  34.58                 124.0           47.0               0.14                      ok
+  MRVL     option         option MRVL260724C00310000       2026-06-22                   0      3     10500.0                 10072.5        35.00          33.58      305.16        306.00          bid_ask_mid                      33.58                bid_ask_mid                    True          -427.5                  -4.07        100.00               24              1.75        101.16           96.38                 150.94                 195.0           52.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-06-22)
@@ -48,19 +48,19 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  MRVL          100.00               24            1.69              3.68        309.00               150.94         0.838          pass              0.750             57.6                           0.511               15.88              1.422                       ok            True                  False
-  QCOM           86.96               23            1.38              2.18        225.18                96.20         0.683          pass              0.552             70.6                           0.462                3.27              0.663                       ok            True                  False
-  UPRO           95.24               21            1.26              1.26        142.27                49.73         0.622          pass              0.564              9.6                           0.167                2.53              0.492                       ok            True                  False
-  MPWR           91.30               23            2.10             23.00       1553.84                82.20         0.603          pass              0.576             42.7                           0.434                3.36              0.074                       ok            True                  False
-  ASML           93.10               29            1.42             19.15       1921.47                57.74         0.573          pass              0.643             36.6                           0.509               15.87              1.230                       ok            True                  False
-   WDC           92.00               25            2.02             10.55        741.71                88.76         0.558          pass              0.545             23.2                           0.194               42.88              4.547                       ok            True                  False
-  CDNS           94.44               36            0.90              2.45        386.34                57.09         0.556          pass              0.800             61.9                           0.671                2.05              0.057                       ok            True                   True
-  NVDA           81.48               27            1.35              1.99        209.84                45.37         0.543          pass              0.207              0.0                           0.185                1.34              0.144                       ok            True                  False
-   ROP           88.89               18            1.66              3.83        328.61                27.66         0.501          pass              0.479             46.0                           0.578               -2.23             -0.168                       ok            True                  False
-    ZS           80.00               35            1.23              1.07        124.39               152.43         0.863          pass              0.406             51.1                           0.567               -5.70             -0.358  downtrend_blocked_slope           False                  False
-   PEP          100.00                8            0.91              0.90        141.63                22.29         0.651          pass              0.514             16.2                           0.321               -0.84              0.012                       ok           False                  False
-  META           81.82               11            2.17              8.77        573.46                45.32         0.588          pass              0.198             28.0                           0.373               -4.69             -0.211 downtrend_blocked_streak           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  MRVL          100.00               25            1.51              3.28        309.17               150.94         0.842          pass              0.771             62.2                           0.653               16.10              1.430                      ok            True                  False
+  QCOM           86.36               22            1.45              2.30        225.13                96.20         0.684          pass              0.525             69.1                           0.509                3.19              0.660                      ok            True                  False
+  UPRO           95.24               21            1.26              1.26        142.27                49.73         0.622          pass              0.564              9.5                           0.157                2.53              0.492                      ok            True                  False
+  MPWR           91.30               23            2.18             23.90       1553.46                82.20         0.597          pass              0.569             40.5                           0.470                3.28              0.070                      ok            True                  False
+  ASML           93.10               29            1.39             18.74       1921.65                57.74         0.575          pass              0.648             38.0                           0.559               15.91              1.232                      ok            True                  False
+   WDC           92.31               26            1.74              9.07        742.34                88.76         0.571          pass              0.594             34.0                           0.292               43.30              4.560                      ok            True                  False
+  CDNS           94.59               37            0.76              2.05        386.51                57.09         0.559          pass              0.829             68.1                           0.742                2.20              0.064                      ok            True                   True
+  NVDA           82.14               28            1.29              1.90        209.88                45.37         0.540          pass              0.252              6.9                           0.205                1.40              0.148                      ok            True                  False
+  CRWD           89.47               38            0.65              3.14        683.51                61.84         0.533          pass              0.677             61.6                           0.586                1.39              0.449                      ok            True                   True
+  SBUX           84.62               26            0.55              0.39        100.48                26.69         0.518          pass              0.503             73.7                           0.414                5.05              0.554                      ok            True                  False
+    ZS           80.00               35            1.18              1.03        124.41               152.43         0.864          pass              0.412             52.9                           0.622               -5.66             -0.356 downtrend_blocked_slope           False                  False
+   PEP          100.00                7            0.95              0.95        141.61                22.29         0.656          pass              0.503             12.3                           0.282               -0.88              0.010                      ok           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260622153503)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260622154005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260622153503)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260622154005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260622153503)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260622154005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260622153503)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260622154005)
 
 </details>
