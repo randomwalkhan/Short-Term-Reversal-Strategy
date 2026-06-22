@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 13462.500356674203,
+  "cash": 2962.5003566742034,
   "positions": [
     {
       "position_id": "WMT_20260618T145001",
@@ -31,6 +31,36 @@
       "option_open_interest": 124.0,
       "option_volume": 47.0,
       "option_spread_pct": 0.13545816733067742,
+      "option_liquidity_status": "ok"
+    },
+    {
+      "position_id": "MRVL_20260622T145005",
+      "ticker": "MRVL",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "MRVL260724C00310000",
+      "expiry": "2026-07-24",
+      "strike": 310.0,
+      "entry_timestamp": "2026-06-22T14:50:05.502859-04:00",
+      "entry_trade_date": "2026-06-22",
+      "entry_slot": "entry_1500",
+      "entry_spot": 305.15509033203125,
+      "entry_option_price": 35.0,
+      "entry_bid": 34.0,
+      "entry_ask": 36.0,
+      "entry_iv_pct": 101.16016217041015,
+      "contracts": 3,
+      "allocated_cash": 10500.0,
+      "success_rate": 100.0,
+      "matched_signals": 24,
+      "current_drop_pct": 1.75,
+      "rolling_sigma_20d_pct": 150.94,
+      "planned_tp_day1": 40.25,
+      "planned_tp_day2": 40.25,
+      "planned_stop": 31.5,
+      "option_open_interest": 195.0,
+      "option_volume": 52.0,
+      "option_spread_pct": 0.05714285714285714,
       "option_liquidity_status": "ok"
     }
   ],
@@ -4437,7 +4467,9 @@
       "share_ext_0250",
       "share_ext_0255"
     ],
-    "2026-06-22": []
+    "2026-06-22": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }

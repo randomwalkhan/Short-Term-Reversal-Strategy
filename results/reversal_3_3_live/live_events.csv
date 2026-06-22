@@ -3262,3 +3262,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-20T02:50:04.120512-04:00,2026-06-20,share_ext_0250,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-06-20T02:55:02.206016-04:00,2026-06-20,share_ext_0255,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-06-22T03:00:02.560041-04:00,2026-06-22,data_refresh,data_refresh,{'saved': 93}
+2026-06-22T14:50:05.502859-04:00,2026-06-22,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-06-22"", ""training_samples"": 5273, ""window"": 5}"
+2026-06-22T14:50:05.502859-04:00,2026-06-22,entry_1500,entry,"{""allocated_cash"": 10500.0, ""asset_type"": ""option"", ""contract_symbol"": ""MRVL260724C00310000"", ""contracts"": 3, ""early_entry_score"": 0.746, ""entry_mode"": ""regular"", ""entry_option_price"": 35.0, ""execution_mode"": ""option"", ""matched_signals"": 24, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 195.0, ""option_spread_pct"": 5.71, ""option_volume"": 52.0, ""success_rate"": 100.0, ""ticker"": ""MRVL"", ""timing_score"": 0.836}"
