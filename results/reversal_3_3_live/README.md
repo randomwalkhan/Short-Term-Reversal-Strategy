@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-22 16:00:05 EDT`
+Latest checkpoint (ET): `2026-06-22 16:05:01 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$2,962.50`
-- Equity: `$26,122.00`
+- Equity: `$26,287.00`
 - Realized PnL: `$16,514.50`
-- Unrealized PnL: `$-392.50`
+- Unrealized PnL: `$-227.50`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   WMT     option         option  WMT260724C00120000       2026-06-18                   1     52     13052.0                 12922.0         2.51           2.48      117.33        117.17          bid_ask_mid                       2.48                bid_ask_mid                    True          -130.0                   -1.0         86.21               29              0.68         25.57           27.56                  34.58                 124.0           47.0               0.14                      ok
-  MRVL     option         option MRVL260724C00310000       2026-06-22                   0      3     10500.0                 10237.5        35.00          34.12      305.16        308.61          bid_ask_mid                      34.12                bid_ask_mid                    True          -262.5                   -2.5        100.00               24              1.75        101.16           95.27                 150.94                 195.0           52.0               0.06                      ok
+  MRVL     option         option MRVL260724C00310000       2026-06-22                   0      3     10500.0                 10402.5        35.00          34.67      305.16        308.20          bid_ask_mid                      34.67                bid_ask_mid                    True           -97.5                  -0.93        100.00               24              1.75        101.16           96.77                 150.94                 195.0           52.0               0.06                      ok
+   WMT     option         option  WMT260724C00120000       2026-06-18                   1     52     13052.0                 12922.0         2.51           2.48      117.33        117.19          bid_ask_mid                       2.48                bid_ask_mid                    True          -130.0                  -1.00         86.21               29              0.68         25.57           27.56                  34.58                 124.0           47.0               0.14                      ok
 ```
 
 ## Today's Closed Trades (2026-06-22)
@@ -47,21 +47,7 @@ _None_
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  MRVL          100.00               29            0.87              1.90        309.77               150.94         0.851            pass              0.846             78.1                           0.800               16.85              1.460                      ok            True                  False
-  QCOM           85.71               21            1.96              3.10        224.78                96.20         0.657            pass              0.466             58.2                           0.414                2.66              0.636                      ok            True                  False
-  UPRO           92.31               26            0.87              0.87        142.44                49.73         0.609            pass              0.613             39.2                           0.459                2.94              0.510                      ok            True                  False
-  MPWR           92.86               28            1.60             17.47       1556.22                82.20         0.605            pass              0.693             56.5                           0.690                3.90              0.098                      ok            True                  False
-   WDC           92.31               26            1.66              8.67        742.51                88.76         0.577            pass              0.603             36.9                           0.412               43.41              4.564                      ok            True                  False
-  CRWD           84.62               26            1.36              6.50        682.07                61.84         0.565            pass              0.347             20.4                           0.289                0.68              0.417                      ok            True                  False
-  NVDA           80.65               31            1.01              1.49        210.05                45.37         0.535            pass              0.296             28.3                           0.380                1.69              0.160                      ok            True                  False
-  PANW           92.86               42            0.51              1.04        287.34                57.46         0.523            pass              0.800             68.3                           0.516                5.24              0.859                      ok            True                  False
-  SBUX           84.62               26            0.55              0.39        100.48                26.69         0.518            pass              0.503             73.7                           0.470                5.05              0.554                      ok            True                  False
-   ROP           89.47               19            1.58              3.65        328.69                27.66         0.500 below_threshold              0.508             48.6                           0.565               -2.15             -0.164                      ok            True                  False
-    ZS           81.58               38            0.63              0.55        124.61               152.43         0.874            pass              0.540             74.8                           0.710               -5.14             -0.331 downtrend_blocked_slope           False                  False
-   PEP          100.00                7            0.96              0.95        141.61                22.29         0.655            pass              0.501             11.7                           0.301               -0.89              0.009                      ok           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -86,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260622160005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260622160501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260622160005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260622160501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260622160005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260622160501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260622160005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260622160501)
 
 </details>
