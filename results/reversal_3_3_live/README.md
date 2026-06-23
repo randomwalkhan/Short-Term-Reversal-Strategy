@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-23 00:40:02 EDT`
-Last processed slot: `share_ext_0040`
+Latest checkpoint (ET): `2026-06-23 00:45:02 EDT`
+Last processed slot: `share_ext_0045`
 
 ## Active Configuration
 
@@ -28,17 +28,17 @@ Last processed slot: `share_ext_0040`
 ## Portfolio Snapshot
 
 - Cash: `$2,962.50`
-- Equity: `$26,452.50`
+- Equity: `$25,980.50`
 - Realized PnL: `$16,514.50`
-- Unrealized PnL: `$-62.00`
+- Unrealized PnL: `$-534.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  MRVL     option         option MRVL260724C00310000       2026-06-22                   1      3     10500.0                 10620.0        35.00          35.40      305.16        303.56          bid_ask_mid                      35.40                bid_ask_mid                    True           120.0                   1.14        100.00               24              1.75        101.16          100.28                 150.94                 195.0           52.0               0.06                      ok
-   WMT     option         option  WMT260724C00120000       2026-06-18                   2     52     13052.0                 12870.0         2.51           2.47      117.33        117.09          bid_ask_mid                       2.47                bid_ask_mid                    True          -182.0                  -1.39         86.21               29              0.68         25.57           27.99                  34.58                 124.0           47.0               0.14                      ok
+   WMT     option         option  WMT260724C00120000       2026-06-18                   2     52     13052.0                 12896.0         2.51           2.48      117.33        117.09     last_price_stale                        NaN                unavailable                   False          -156.0                   -1.2         86.21               29              0.68         25.57            1.56                  34.58                 124.0           47.0               0.14                      ok
+  MRVL     option         option MRVL260724C00310000       2026-06-22                   1      3     10500.0                 10122.0        35.00          33.74      305.16        303.56     last_price_stale                        NaN                unavailable                   False          -378.0                   -3.6        100.00               24              1.75        101.16            0.78                 150.94                 195.0           52.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-06-23)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260623004002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260623004502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260623004002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260623004502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260623004002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260623004502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260623004002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260623004502)
 
 </details>
