@@ -3272,3 +3272,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-23T09:35:06.707471-04:00,2026-06-23,manage_0930,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""WMT260724C00120000"", ""fill_price"": 3.5, ""pnl"": 5148.0, ""reason"": ""take_profit_day2_hit_at_scan"", ""return_pct"": 39.44, ""ticker"": ""WMT""}"
 2026-06-23T09:35:06.707471-04:00,2026-06-23,manage_0930,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MRVL260724C00310000"", ""fill_price"": 31.5, ""pnl"": -1050.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""MRVL""}"
 2026-06-23T10:17:41.614110-04:00,2026-06-23,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-06-23T10:51:17.657217-04:00,2026-06-23,early_entry_1050,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
