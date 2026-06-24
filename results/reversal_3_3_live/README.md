@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-24 12:20:05 EDT`
-Last processed slot: `manage_1230`
+Latest checkpoint (ET): `2026-06-24 16:10:04 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -43,21 +43,7 @@ _None_
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MRVL          100.00               23            2.50              4.89        276.95               157.48         0.764          pass              0.718             51.8                           0.493                1.94              0.833                                 ok            True                  False
-  KLAC           91.67               24            1.34              2.30        243.51                93.06         0.726          pass              0.632             51.8                           0.652               12.75              1.307                                 ok            True                  False
-  NXPI           91.30               23            1.70              3.56        298.41                63.85         0.523          pass              0.529             29.7                           0.232               -0.86              0.317                                 ok            True                  False
-  FTNT           96.88               32            1.03              1.07        147.54                46.74         0.521          pass              0.724             41.6                           0.290                5.84              0.443                                 ok            True                  False
-  PANW           92.50               40            0.98              1.99        290.06                56.69         0.515          pass              0.756             57.2                           0.631               10.58              0.932                                 ok            True                  False
-    MU           90.91               33            0.40              2.96       1050.50               131.92         0.783          pass              0.767             81.5                           0.630               11.93              1.870                                 ok           False                  False
-  ASML           97.22               36            0.12              1.46       1777.83                65.60         0.656          pass              0.926             95.7                           0.853               -0.08              0.182                                 ok           False                  False
-  MCHP           93.94               33            0.21              0.14         93.20                72.77         0.646          pass              0.854             88.2                           0.722                1.74              0.592                                 ok           False                  False
-   WBD           95.83               24            0.47              0.09         26.84                19.64         0.538          pass              0.613             21.9                           0.282                0.73              0.058                                 ok           False                  False
-   APP           89.47               38            1.24              4.05        465.29                74.04         0.535          pass              0.623             43.3                           0.265              -11.44             -0.979 downtrend_blocked_slope_and_streak           False                  False
-   EXC           88.46               26            0.20              0.07         46.59                19.83         0.530          pass              0.606             73.6                           0.348                2.64              0.195                                 ok           False                  False
-   MAR           95.00               20            1.02              2.76        385.65                26.46         0.516          pass              0.730             70.4                           0.343               -2.72             -0.251            downtrend_blocked_slope           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -82,27 +68,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260624122005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260624161004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260624122005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260624161004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260624122005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260624161004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260624122005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260624161004)
 
 </details>
