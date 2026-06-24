@@ -2038,3 +2038,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-23T12:32:24.199539-04:00,2026-06-23,exit,exit_filled,"{""contract_symbol"": ""WMT260724C00120000"", ""exit_price"": 3.55, ""pnl"": 1620.0, ""reason"": ""take_profit_day2_hit_at_scan"", ""ticker"": ""WMT""}"
 2026-06-23T12:32:24.199539-04:00,2026-06-23,exit,exit_filled,"{""contract_symbol"": ""MRVL260724C00310000"", ""exit_price"": 22.45, ""pnl"": -1300.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""MRVL""}"
 2026-06-23T14:56:46.295177-04:00,2026-06-23,entry_1500,entry_skipped,"{""error"": ""PCAR: no call expiries found in the 21-40 trading-day window."", ""reason"": ""option_selection_failed"", ""ticker"": ""PCAR""}"
+2026-06-24T10:02:26.641991-04:00,2026-06-24,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
