@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 3130.0,
+      "alpaca_entry_client_order_id": "rev-20260625145039-avgo-regular",
+      "alpaca_entry_order_id": "e8b0b225-d191-427e-a058-5bb8a6802577",
+      "asset_type": "option",
+      "contract_symbol": "AVGO260821C00380000",
+      "contracts": 1,
+      "current_drop_pct": 0.59,
+      "early_entry_score": 0.674,
+      "entry_mode": "regular",
+      "entry_option_price": 31.3,
+      "entry_slot": "entry_1500",
+      "entry_spot": 379.81500244140625,
+      "entry_timestamp": "2026-06-25T14:50:39.186626-04:00",
+      "entry_trade_date": "2026-06-25",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-08-21",
+      "matched_signals": 34,
+      "planned_stop": 28.17,
+      "planned_tp_day1": 35.995,
+      "planned_tp_day2": 35.995,
+      "position_id": "AVGO_20260625T145039",
+      "status": "entry_submitted",
+      "strike": 380.0,
+      "success_rate": 88.24,
+      "ticker": "AVGO",
+      "timing_score": 0.664
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
