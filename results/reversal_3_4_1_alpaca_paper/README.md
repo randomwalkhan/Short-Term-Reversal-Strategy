@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-25 16:33:20 EDT`
-Last slot: `share_ext_1630`
+Latest checkpoint (ET): `2026-06-25 16:38:24 EDT`
+Last slot: `share_ext_1635`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_1630`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AVGO   open    regular AVGO260821C00380000          1                30.2                  29.5          bid_ask_mid                       29.5                    True          2950.0           -70.0              -2.317881                   0
+  AVGO   open    regular AVGO260821C00380000          1                30.2                29.575          bid_ask_mid                     29.575                    True          2957.5           -62.5              -2.069536                   0
 ```
 
 ## Closed Trades
