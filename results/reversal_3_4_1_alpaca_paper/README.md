@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-26 16:24:02 EDT`
-Last slot: `share_ext_1620`
+Latest checkpoint (ET): `2026-06-26 16:29:06 EDT`
+Last slot: `share_ext_1625`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_1620`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  DRAM   open    regular DRAM260731C00073000          5                 8.9                 8.525          bid_ask_mid                      8.525                    True          4262.5          -187.5              -4.213483                   0
+  DRAM   open    regular DRAM260731C00073000          5                 8.9                 8.375          bid_ask_mid                      8.375                    True          4187.5          -262.5              -5.898876                   0
 ```
 
 ## Closed Trades
