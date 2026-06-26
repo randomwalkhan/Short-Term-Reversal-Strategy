@@ -3322,3 +3322,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-26T14:50:01.669190-04:00,2026-06-26,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.416, ""option_liquidity_status"": ""low_volume,wide_spread"", ""option_open_interest"": 3233.0, ""option_spread_pct"": 43.38, ""option_volume"": 9.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""WBD"", ""timing_score"": 0.62}"
 2026-06-26T14:50:01.669190-04:00,2026-06-26,entry_1500,entry_skipped,"{""budget"": 14680.25, ""entry_cost"": 16617.5, ""reason"": ""insufficient_cash"", ""ticker"": ""MU""}"
 2026-06-26T14:55:05.737035-04:00,2026-06-26,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-06-26T15:00:04.609792-04:00,2026-06-26,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
