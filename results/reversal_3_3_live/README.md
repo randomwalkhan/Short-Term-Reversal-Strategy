@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-26 13:40:01 EDT`
-Last processed slot: `manage_1330`
+Latest checkpoint (ET): `2026-06-26 13:45:01 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  DRAM           92.31               13            4.06              2.18         75.95               122.54         0.714          pass              0.553             44.4                           0.466               13.28              1.292                      ok            True                  False
-    MU           92.86               14            3.77             32.05       1199.83               127.35         0.711          pass              0.595             51.3                           0.447               17.26              1.585                      ok            True                  False
-  AMAT           91.67               12            3.12             14.61        661.74                87.16         0.634          pass              0.547             53.2                           0.482               17.10              1.452                      ok            True                  False
-   WBD           94.44               18            0.61              0.12         26.93                20.23         0.584          pass              0.555             19.5                           0.400               -0.17              0.073                      ok            True                  False
-  INTC           91.30               23            3.07              2.86        131.65                97.28         0.579          pass              0.580             44.6                           0.463               10.11              1.113                      ok            True                  False
-  PCAR           81.82               22            1.13              0.97        121.27                36.28         0.531          pass              0.369             62.5                           0.328                2.31              0.072                      ok            True                  False
-  LRCX          100.00               10            5.03             14.15        395.76                86.42         0.517          pass              0.531             26.3                           0.397                5.34              0.565                      ok            True                  False
-  MRVL          100.00               13            5.01              9.87        277.03               155.27         0.772          pass              0.575             26.0                           0.376               -4.83             -0.447 downtrend_blocked_slope           False                  False
-  AVGO           81.25               16            2.11              5.60        376.51                76.91         0.689          pass              0.266             41.2                           0.463               -3.65             -0.254 downtrend_blocked_slope           False                  False
-  KLAC           85.71                7            4.82              8.74        255.06                93.32         0.595          pass              0.274             20.6                           0.261                2.14              0.145                      ok           False                  False
-  ASML           94.74               19            2.93             37.81       1824.98                66.48         0.583          pass              0.591             26.5                           0.262               -5.91             -0.511 downtrend_blocked_slope           False                  False
-  QCOM           78.57               14            3.12              4.47        202.98                88.20         0.576          pass              0.143             19.6                           0.379               -2.19             -0.574 downtrend_blocked_slope           False                  False
+  DRAM           92.86               14            3.71              1.99         76.04               122.54         0.730          pass              0.590             49.2                           0.490               13.70              1.309                      ok            True                  False
+    MU           92.86               14            3.81             32.40       1199.68               127.35         0.709          pass              0.593             50.8                           0.418               17.21              1.583                      ok            True                  False
+  AVGO           83.33               18            1.92              5.09        376.73                76.91         0.691          pass              0.351             46.6                           0.503               -3.46             -0.245                      ok            True                  False
+  AMAT           92.86               14            3.02             14.10        661.96                87.16         0.629          pass              0.597             54.8                           0.463               17.23              1.457                      ok            True                  False
+  INTC           91.30               23            2.98              2.77        131.68                97.28         0.585          pass              0.585             46.3                           0.473               10.22              1.117                      ok            True                  False
+  LRCX          100.00               10            4.75             13.35        396.10                86.42         0.537          pass              0.545             30.5                           0.402                5.65              0.578                      ok            True                  False
+  PCAR           80.95               21            1.15              0.98        121.26                36.28         0.536          pass              0.338             61.9                           0.326                2.30              0.071                      ok            True                  False
+   HON           80.00               30            0.65              1.05        230.79                41.95         0.517          pass              0.394             69.8                           0.671                4.85              0.332                      ok            True                  False
+  MRVL          100.00               13            4.93              9.70        277.10               155.27         0.777          pass              0.580             27.3                           0.395               -4.74             -0.442 downtrend_blocked_slope           False                  False
+  KLAC           85.71                7            4.80              8.69        255.08                93.32         0.597          pass              0.275             21.0                           0.237                2.16              0.146                      ok           False                  False
+  ASML           94.74               19            2.93             37.76       1825.00                66.48         0.584          pass              0.591             26.6                           0.236               -5.91             -0.511 downtrend_blocked_slope           False                  False
+  QCOM           76.92               13            3.25              4.66        202.91                88.20         0.572          pass              0.126             16.4                           0.312               -2.32             -0.580 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260626134001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260626134501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260626134001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260626134501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260626134001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260626134501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260626134001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260626134501)
 
 </details>
