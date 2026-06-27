@@ -2161,3 +2161,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-27T08:57:51.163816-04:00,2026-06-27,share_ext_0855,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-06-27T09:02:54.897226-04:00,2026-06-27,share_ext_0900,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-06-27T09:07:58.496825-04:00,2026-06-27,share_ext_0905,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-06-27T09:13:02.404753-04:00,2026-06-27,share_ext_0910,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
