@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-27 10:08:42 EDT`
-Last slot: `manage_1000`
+Latest checkpoint (ET): `2026-06-27 10:13:46 EDT`
+Last slot: `early_entry_1010`
 
 ## Alpaca Paper Account
 
@@ -47,25 +47,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                      detail
-2026-06-27T10:08:42.992304-04:00    manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T10:03:39.122764-04:00    manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:58:35.437860-04:00    manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:53:31.744582-04:00    manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:48:28.227091-04:00    manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:43:24.376268-04:00         manual market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:38:20.866684-04:00    manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:33:17.302679-04:00    manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:28:13.739461-04:00    manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:23:10.212977-04:00    manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:18:06.363157-04:00    manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:13:02.404753-04:00 share_ext_0910 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:07:58.496825-04:00 share_ext_0905 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T09:02:54.897226-04:00 share_ext_0900 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T08:57:51.163816-04:00 share_ext_0855 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T08:52:47.654560-04:00 share_ext_0850 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T08:47:44.038106-04:00 share_ext_0845 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T08:42:40.325771-04:00 share_ext_0840 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T08:37:36.719034-04:00 share_ext_0835 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-06-27T08:32:32.828567-04:00 share_ext_0830 market_closed {"holiday_name": null, "reason": "weekend"}
+                    timestamp_et             slot    event_type                                      detail
+2026-06-27T10:13:46.663759-04:00 early_entry_1010 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T10:08:42.992304-04:00      manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T10:03:39.122764-04:00      manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:58:35.437860-04:00      manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:53:31.744582-04:00      manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:48:28.227091-04:00      manage_1000 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:43:24.376268-04:00           manual market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:38:20.866684-04:00      manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:33:17.302679-04:00      manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:28:13.739461-04:00      manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:23:10.212977-04:00      manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:18:06.363157-04:00      manage_0930 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:13:02.404753-04:00   share_ext_0910 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:07:58.496825-04:00   share_ext_0905 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T09:02:54.897226-04:00   share_ext_0900 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T08:57:51.163816-04:00   share_ext_0855 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T08:52:47.654560-04:00   share_ext_0850 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T08:47:44.038106-04:00   share_ext_0845 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T08:42:40.325771-04:00   share_ext_0840 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-06-27T08:37:36.719034-04:00   share_ext_0835 market_closed {"holiday_name": null, "reason": "weekend"}
 ```
