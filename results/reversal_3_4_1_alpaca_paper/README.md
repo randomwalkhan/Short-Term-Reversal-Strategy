@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-27 01:26:02 EDT`
-Last slot: `share_ext_0125`
+Latest checkpoint (ET): `2026-06-27 01:31:06 EDT`
+Last slot: `share_ext_0130`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot            event_type                                                                                                                                                                                  detail
+2026-06-27T01:31:06.042065-04:00 share_ext_0130         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-06-27T01:26:02.297363-04:00 share_ext_0125         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-06-27T01:20:58.505858-04:00 share_ext_0120         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-06-27T01:15:54.691168-04:00 share_ext_0115         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-27T00:04:58.732132-04:00 share_ext_0000         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-06-26T15:02:56.433352-04:00     entry_1500          entry_filled                                                                                       {"contract_symbol": "DRAM260731C00073000", "contracts": 5, "filled_price": 8.9, "ticker": "DRAM"}
 2026-06-26T14:56:17.889520-04:00     entry_1500 entry_order_submitted {"alpaca_order_id": "1e219f66-5403-4aef-8438-e14565e597d8", "contract_symbol": "DRAM260731C00073000", "contracts": 5, "entry_mode": "regular", "limit_price": "9.40", "ticker": "DRAM"}
-2026-06-26T14:49:45.235421-04:00     entry_1500         entry_skipped                                              {"entry_mode": "regular", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "WBD"}
 ```
