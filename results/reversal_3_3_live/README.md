@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-29 16:05:02 EDT`
+Latest checkpoint (ET): `2026-06-29 16:10:05 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$14,720.50`
-- Equity: `$28,480.50`
+- Equity: `$28,640.50`
 - Realized PnL: `$19,360.50`
-- Unrealized PnL: `$-880.00`
+- Unrealized PnL: `$-720.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  GILD     option         option GILD260821C00130000       2026-06-29                   0     32     14640.0                 13760.0         4.58            4.3      126.19        126.33          bid_ask_mid                        4.3                bid_ask_mid                    True          -880.0                  -6.01         93.33               15              1.32         33.41           31.09                  29.34                 807.0           40.0               0.08                      ok
+  GILD     option         option GILD260821C00130000       2026-06-29                   0     32     14640.0                 13920.0         4.58           4.35      126.19        126.33          bid_ask_mid                       4.35                bid_ask_mid                    True          -720.0                  -4.92         93.33               15              1.32         33.41           31.61                  29.34                 807.0           40.0               0.08                      ok
 ```
 
 ## Today's Closed Trades (2026-06-29)
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260629160502)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260629161005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260629160502)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260629161005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260629160502)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260629161005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260629160502)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260629161005)
 
 </details>
