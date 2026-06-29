@@ -2574,3 +2574,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-28T23:47:14.366342-04:00,2026-06-28,share_ext_2345,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-06-28T23:52:18.067342-04:00,2026-06-28,share_ext_2350,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-06-28T23:57:21.675610-04:00,2026-06-28,share_ext_2355,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-06-29T10:09:00.850938-04:00,2026-06-29,manage_1000,exit_order_submitted,"{""alpaca_order_id"": ""e728c28c-4a45-4de8-bc8f-8a6885cf0140"", ""contract_symbol"": ""DRAM260731C00073000"", ""limit_price"": ""6.35"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""DRAM""}"
+2026-06-29T10:09:00.850938-04:00,2026-06-29,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
