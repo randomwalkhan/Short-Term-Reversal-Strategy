@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-29 11:01:53 EDT`
+Latest checkpoint (ET): `2026-06-29 11:08:29 EDT`
 Last slot: `manage_1100`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1100`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  DRAM exit_submitted    regular DRAM260731C00073000          5                 8.9                  5.75          bid_ask_mid                       5.75                    True          2875.0         -1575.0             -35.393258                   1
+  DRAM exit_submitted    regular DRAM260731C00073000          5                 8.9                  5.65          bid_ask_mid                       5.65                    True          2825.0         -1625.0             -36.516854                   1
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                            detail
+2026-06-29T11:08:29.050985-04:00 early_entry_1105   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-29T11:01:53.158416-04:00 early_entry_1100   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-29T10:22:40.942806-04:00 early_entry_1020   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-29T10:15:36.101830-04:00 early_entry_1015   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-28T23:01:41.786639-04:00   share_ext_2300        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-06-28T22:56:37.967571-04:00   share_ext_2255        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-06-28T22:51:34.314366-04:00   share_ext_2250        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-06-28T22:46:30.764354-04:00   share_ext_2245        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 ```
