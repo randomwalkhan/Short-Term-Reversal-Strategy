@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-06-29 16:00:05 EDT`
+Latest checkpoint (ET): `2026-06-29 16:05:02 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_1600`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  GILD     option         option GILD260821C00130000       2026-06-29                   0     32     14640.0                 13760.0         4.58            4.3      126.19        126.32          bid_ask_mid                        4.3                bid_ask_mid                    True          -880.0                  -6.01         93.33               15              1.32         33.41           31.09                  29.34                 807.0           40.0               0.08                      ok
+  GILD     option         option GILD260821C00130000       2026-06-29                   0     32     14640.0                 13760.0         4.58            4.3      126.19        126.33          bid_ask_mid                        4.3                bid_ask_mid                    True          -880.0                  -6.01         93.33               15              1.32         33.41           31.09                  29.34                 807.0           40.0               0.08                      ok
 ```
 
 ## Today's Closed Trades (2026-06-29)
@@ -46,21 +46,7 @@ _None_
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-   EXC           81.25               16            0.56              0.19         47.32                19.58         0.576          pass              0.284             50.9                           0.623                2.00              0.263                       ok            True                  False
-  GILD           87.50               16            1.22              1.09        127.41                29.34         0.555          pass              0.400             34.7                           0.605                1.24              0.091                       ok            True                  False
-  SBUX           86.96               23            0.75              0.55        104.37                26.41         0.534          pass              0.456             43.5                           0.381                0.76              0.250                       ok            True                  False
-   TRI           80.00               25            1.47              0.86         83.50                56.35         0.534          pass              0.351             66.0                           0.766                1.50              0.277                       ok            True                  False
-  PCAR           84.00               25            0.92              0.78        120.35                36.52         0.531          pass              0.415             51.7                           0.650                0.89              0.033                       ok            True                  False
-  MPWR           91.43               35            0.04              0.37       1313.16                89.21         0.674          pass              0.835             98.6                           0.489              -16.77             -1.884  downtrend_blocked_slope           False                  False
-   TXN           94.12               34            0.04              0.09        285.39                70.58         0.645          pass              0.897             98.7                           0.638               -5.25             -0.577  downtrend_blocked_slope           False                  False
-  QCOM           91.43               35            0.31              0.41        189.21                89.86         0.622          pass              0.803             89.8                           0.453              -10.83             -1.429  downtrend_blocked_slope           False                  False
-   XEL          100.00               24            0.30              0.17         82.16                23.26         0.577          pass              0.748             65.8                           0.596                4.26              0.539                       ok           False                  False
-  CDNS           92.86               28            1.18              3.12        375.93                56.11         0.566          pass              0.593             24.4                           0.358               -3.16             -0.552  downtrend_blocked_slope           False                  False
-  CTAS           72.73               11            1.66              1.99        171.05                30.93         0.563          pass              0.135             24.0                           0.483               -4.10             -0.367  downtrend_blocked_slope           False                  False
-   LIN           80.00                5            1.66              6.03        517.03                18.17         0.555          pass              0.154             32.9                           0.463               -2.40             -0.102 downtrend_blocked_streak           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -85,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260629160005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260629160502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260629160005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260629160502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260629160005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260629160502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260629160005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260629160502)
 
 </details>
