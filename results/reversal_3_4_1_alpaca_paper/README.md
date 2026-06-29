@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-29 10:09:00 EDT`
-Last slot: `manage_1000`
+Latest checkpoint (ET): `2026-06-29 10:15:36 EDT`
+Last slot: `early_entry_1015`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$90,534.82`
-- Portfolio value: `$93,259.82`
+- Portfolio value: `$93,034.82`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1000`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  DRAM exit_submitted    regular DRAM260731C00073000          5                 8.9                 6.475          bid_ask_mid                      6.475                    True          3237.5         -1212.5             -27.247191                   1
+  DRAM exit_submitted    regular DRAM260731C00073000          5                 8.9                 6.575          bid_ask_mid                      6.575                    True          3287.5         -1162.5             -26.123596                   1
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                            detail
+2026-06-29T10:15:36.101830-04:00 early_entry_1015   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-29T10:09:00.850938-04:00 early_entry_1005   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-29T10:09:00.850938-04:00      manage_1000 exit_order_submitted {"alpaca_order_id": "e728c28c-4a45-4de8-bc8f-8a6885cf0140", "contract_symbol": "DRAM260731C00073000", "limit_price": "6.35", "reason": "stop_loss_hit_at_scan", "ticker": "DRAM"}
 2026-06-28T23:57:21.675610-04:00   share_ext_2355        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-28T22:46:30.764354-04:00   share_ext_2245        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-06-28T22:41:27.061471-04:00   share_ext_2240        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-06-28T22:36:23.434516-04:00   share_ext_2235        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-06-28T22:31:19.833262-04:00   share_ext_2230        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 ```
