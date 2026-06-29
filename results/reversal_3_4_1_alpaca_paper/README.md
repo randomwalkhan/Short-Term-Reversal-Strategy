@@ -1,28 +1,24 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-29 11:59:05 EDT`
+Latest checkpoint (ET): `2026-06-29 12:05:38 EDT`
 Last slot: `manage_1200`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$90,534.82`
-- Portfolio value: `$93,684.82`
+- Cash: `$93,784.72`
+- Portfolio value: `$93,784.72`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  DRAM exit_submitted    regular DRAM260731C00073000          5                 8.9                 5.875          bid_ask_mid                      5.875                    True          2937.5         -1512.5             -33.988764                   1
-```
+_None_
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-  INTC INTC260618C00115000          2026-05-14         2026-05-15               13.30               8.75          3 -1365.0  -34.210526        stop_loss_hit_at_scan
   SNPS SNPS260618C00490000          2026-05-13         2026-05-15               46.20              39.90          1  -630.0  -13.636364        stop_loss_hit_at_scan
   INTC INTC260618C00110000          2026-05-18         2026-05-18                9.40               8.65          5  -375.0   -7.978723        stop_loss_hit_at_scan
   PANW PANW260618C00250000          2026-05-19         2026-05-20               16.05              13.65          3  -720.0  -14.953271        stop_loss_hit_at_scan
@@ -42,12 +38,14 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
    WMT  WMT260724C00120000          2026-06-18         2026-06-23                2.65               3.55         18  1620.0   33.962264 take_profit_day2_hit_at_scan
   MRVL MRVL260724C00310000          2026-06-22         2026-06-23               35.45              22.45          1 -1300.0  -36.671368        stop_loss_hit_at_scan
   AVGO AVGO260821C00380000          2026-06-25         2026-06-26               30.20              23.85          1  -635.0  -21.026490        stop_loss_hit_at_scan
+  DRAM DRAM260731C00073000          2026-06-26         2026-06-29                8.90               6.50          5 -1200.0  -26.966292        stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                            detail
+2026-06-29T12:05:38.290090-04:00             exit          exit_filled                                                {"contract_symbol": "DRAM260731C00073000", "exit_price": 6.5, "pnl": -1200.0, "reason": "stop_loss_hit_at_scan", "ticker": "DRAM"}
 2026-06-29T11:59:05.309758-04:00 early_entry_1155   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-29T11:52:35.576964-04:00 early_entry_1150   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-29T11:45:58.449257-04:00 early_entry_1145   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-28T23:42:10.805395-04:00   share_ext_2340        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-06-28T23:37:07.019470-04:00   share_ext_2335        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-06-28T23:32:03.339544-04:00   share_ext_2330        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-06-28T23:26:59.840751-04:00   share_ext_2325        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 ```

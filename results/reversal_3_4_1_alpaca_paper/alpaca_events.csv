@@ -2587,3 +2587,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-29T11:45:58.449257-04:00,2026-06-29,early_entry_1145,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-06-29T11:52:35.576964-04:00,2026-06-29,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-06-29T11:59:05.309758-04:00,2026-06-29,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-06-29T12:05:38.290090-04:00,2026-06-29,exit,exit_filled,"{""contract_symbol"": ""DRAM260731C00073000"", ""exit_price"": 6.5, ""pnl"": -1200.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""DRAM""}"
