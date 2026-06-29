@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-06-29 14:37:28 EDT`
-Last slot: `manage_1430`
+Latest checkpoint (ET): `2026-06-29 14:52:38 EDT`
+Last slot: `entry_1500`
 
 ## Alpaca Paper Account
 
@@ -13,7 +13,10 @@ Last slot: `manage_1430`
 
 ## Open / Pending Positions
 
-_None_
+```text
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
+  DRAM entry_submitted    regular DRAM260821C00071000          4                10.6                   NaN             NaN                    NaN
+```
 
 ## Closed Trades
 
@@ -44,25 +47,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot           event_type                                                                                                                                                                            detail
-2026-06-29T12:05:38.290090-04:00             exit          exit_filled                                                {"contract_symbol": "DRAM260731C00073000", "exit_price": 6.5, "pnl": -1200.0, "reason": "stop_loss_hit_at_scan", "ticker": "DRAM"}
-2026-06-29T11:59:05.309758-04:00 early_entry_1155   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T11:52:35.576964-04:00 early_entry_1150   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T11:45:58.449257-04:00 early_entry_1145   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T11:39:27.604285-04:00 early_entry_1135   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T11:32:53.946055-04:00 early_entry_1130   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T11:26:12.352944-04:00 early_entry_1125   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T11:15:46.404569-04:00 early_entry_1115   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T11:08:29.050985-04:00 early_entry_1105   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T11:01:53.158416-04:00 early_entry_1100   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T10:22:40.942806-04:00 early_entry_1020   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T10:15:36.101830-04:00 early_entry_1015   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T10:09:00.850938-04:00 early_entry_1005   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-06-29T10:09:00.850938-04:00      manage_1000 exit_order_submitted {"alpaca_order_id": "e728c28c-4a45-4de8-bc8f-8a6885cf0140", "contract_symbol": "DRAM260731C00073000", "limit_price": "6.35", "reason": "stop_loss_hit_at_scan", "ticker": "DRAM"}
-2026-06-28T23:57:21.675610-04:00   share_ext_2355        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-06-28T23:52:18.067342-04:00   share_ext_2350        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-06-28T23:47:14.366342-04:00   share_ext_2345        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-06-28T23:42:10.805395-04:00   share_ext_2340        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-06-28T23:37:07.019470-04:00   share_ext_2335        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-06-28T23:32:03.339544-04:00   share_ext_2330        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
+                    timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-06-29T14:52:38.392190-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "adf829b4-7582-44be-b931-21cae76df178", "contract_symbol": "DRAM260821C00071000", "contracts": 4, "entry_mode": "regular", "limit_price": "10.85", "ticker": "DRAM"}
+2026-06-29T12:05:38.290090-04:00             exit           exit_filled                                                       {"contract_symbol": "DRAM260731C00073000", "exit_price": 6.5, "pnl": -1200.0, "reason": "stop_loss_hit_at_scan", "ticker": "DRAM"}
+2026-06-29T11:59:05.309758-04:00 early_entry_1155    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T11:52:35.576964-04:00 early_entry_1150    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T11:45:58.449257-04:00 early_entry_1145    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T11:39:27.604285-04:00 early_entry_1135    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T11:32:53.946055-04:00 early_entry_1130    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T11:26:12.352944-04:00 early_entry_1125    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T11:15:46.404569-04:00 early_entry_1115    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T11:08:29.050985-04:00 early_entry_1105    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T11:01:53.158416-04:00 early_entry_1100    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T10:22:40.942806-04:00 early_entry_1020    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T10:15:36.101830-04:00 early_entry_1015    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T10:09:00.850938-04:00 early_entry_1005    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-06-29T10:09:00.850938-04:00      manage_1000  exit_order_submitted        {"alpaca_order_id": "e728c28c-4a45-4de8-bc8f-8a6885cf0140", "contract_symbol": "DRAM260731C00073000", "limit_price": "6.35", "reason": "stop_loss_hit_at_scan", "ticker": "DRAM"}
+2026-06-28T23:57:21.675610-04:00   share_ext_2355         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-06-28T23:52:18.067342-04:00   share_ext_2350         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-06-28T23:47:14.366342-04:00   share_ext_2345         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-06-28T23:42:10.805395-04:00   share_ext_2340         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-06-28T23:37:07.019470-04:00   share_ext_2335         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 ```
