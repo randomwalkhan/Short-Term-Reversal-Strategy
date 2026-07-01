@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-01 10:42:16 EDT`
-Last slot: `early_entry_1040`
+Latest checkpoint (ET): `2026-07-01 11:35:11 EDT`
+Last slot: `manage_1130`
 
 ## Alpaca Paper Account
 
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-07-01T11:35:11.922927-04:00 early_entry_1135    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-01T10:42:16.967130-04:00 early_entry_1040    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-06-29T16:05:04.964285-04:00       entry_1500      entry_not_filled                                                                                                        {"contract_symbol": "DRAM260821C00071000", "status": "expired", "ticker": "DRAM"}
 2026-06-29T14:52:38.392190-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "adf829b4-7582-44be-b931-21cae76df178", "contract_symbol": "DRAM260821C00071000", "contracts": 4, "entry_mode": "regular", "limit_price": "10.85", "ticker": "DRAM"}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-06-29T10:09:00.850938-04:00      manage_1000  exit_order_submitted        {"alpaca_order_id": "e728c28c-4a45-4de8-bc8f-8a6885cf0140", "contract_symbol": "DRAM260731C00073000", "limit_price": "6.35", "reason": "stop_loss_hit_at_scan", "ticker": "DRAM"}
 2026-06-28T23:57:21.675610-04:00   share_ext_2355         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-06-28T23:52:18.067342-04:00   share_ext_2350         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
-2026-06-28T23:47:14.366342-04:00   share_ext_2345         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 ```

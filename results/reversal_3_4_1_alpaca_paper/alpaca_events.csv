@@ -2591,3 +2591,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-06-29T14:52:38.392190-04:00,2026-06-29,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""adf829b4-7582-44be-b931-21cae76df178"", ""contract_symbol"": ""DRAM260821C00071000"", ""contracts"": 4, ""entry_mode"": ""regular"", ""limit_price"": ""10.85"", ""ticker"": ""DRAM""}"
 2026-06-29T16:05:04.964285-04:00,2026-06-29,entry_1500,entry_not_filled,"{""contract_symbol"": ""DRAM260821C00071000"", ""status"": ""expired"", ""ticker"": ""DRAM""}"
 2026-07-01T10:42:16.967130-04:00,2026-07-01,early_entry_1040,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-01T11:35:11.922927-04:00,2026-07-01,early_entry_1135,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
