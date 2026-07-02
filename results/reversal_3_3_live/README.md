@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-02 13:30:01 EDT`
+Latest checkpoint (ET): `2026-07-02 13:35:04 EDT`
 Last processed slot: `manage_1330`
 
 ## Active Configuration
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  UPRO           93.33               15            1.76              1.74        140.64                55.10         0.627          pass              0.516             21.5                           0.290                0.34              0.031                       ok            True                  False
-   KDP          100.00               12            1.02              0.24         33.27                28.32         0.616          pass              0.492              5.6                           0.071                7.69              1.062                       ok            True                  False
-  AVGO           69.23               13            2.71              7.01        366.33                71.90         0.635          pass              0.122             12.9                           0.368               -8.40             -0.965  downtrend_blocked_slope           False                  False
-    MU           88.89                9            5.77             41.71       1014.41               134.25         0.609          pass              0.328             10.1                           0.301               -6.76             -0.567  downtrend_blocked_slope           False                  False
-   WBD           83.33                6            1.23              0.23         26.71                21.87         0.608          pass              0.277             42.6                           0.474                0.91              0.097                       ok           False                  False
-   TXN           86.67               15            2.50              5.22        296.17                67.74         0.592          pass              0.289              6.3                           0.245               -3.62             -0.921  downtrend_blocked_slope           False                  False
-  GOOG           82.35               17            1.64              4.12        356.13                36.19         0.540          pass              0.282             39.4                           0.409               -2.79             -0.190 downtrend_blocked_streak           False                  False
-  PCAR           78.57               14            1.68              1.43        120.63                34.47         0.533          pass              0.090              3.3                           0.108                1.59              0.212                       ok           False                  False
-   ADI           66.67                6            3.56              9.70        384.82                61.24         0.527          pass              0.061              2.7                           0.192               -9.49             -1.298  downtrend_blocked_slope           False                  False
- GOOGL           73.33               15            1.68              4.24        359.39                35.15         0.517          pass              0.252             55.6                           0.480               -2.38             -0.100 downtrend_blocked_streak           False                  False
-  NXPI           81.82               11            3.36              6.56        276.37                63.41         0.513          pass              0.117              3.4                           0.242               -9.22             -1.402  downtrend_blocked_slope           False                  False
-  MPWR           84.62               13            4.29             39.97       1314.60                89.16         0.510          pass              0.227             10.9                           0.262              -11.85             -1.666  downtrend_blocked_slope           False                  False
+  UPRO           93.33               15            1.80              1.78        140.63                55.10         0.625          pass              0.511             19.9                           0.307                0.30              0.030                       ok            True                  False
+   KDP          100.00               11            1.09              0.26         33.26                28.32         0.616          pass              0.480              3.9                           0.129                7.61              1.058                       ok            True                  False
+  AVGO           71.43               14            2.60              6.73        366.46                71.90         0.639          pass              0.140             16.5                           0.395               -8.30             -0.960  downtrend_blocked_slope           False                  False
+   WBD           80.00                5            1.31              0.25         26.70                21.87         0.606          pass              0.178             39.1                           0.519                0.84              0.093                       ok           False                  False
+   TXN           85.71               14            2.72              5.68        295.98                67.74         0.582          pass              0.237              0.0                           0.211               -3.84             -0.932  downtrend_blocked_slope           False                  False
+    MU           87.50                8            6.30             45.53       1012.77               134.25         0.576          pass              0.263              1.9                           0.183               -7.28             -0.592  downtrend_blocked_slope           False                  False
+  GOOG           81.25               16            1.66              4.16        356.11                36.19         0.544          pass              0.244             38.7                           0.440               -2.81             -0.191 downtrend_blocked_streak           False                  False
+   ADI           66.67                6            3.54              9.65        384.85                61.24         0.529          pass              0.063              3.3                           0.149               -9.47             -1.298  downtrend_blocked_slope           False                  False
+  PCAR           78.57               14            1.77              1.51        120.59                34.47         0.526          pass              0.079              0.0                           0.184                1.49              0.208                       ok           False                  False
+ GOOGL           73.33               15            1.69              4.28        359.38                35.15         0.516          pass              0.250             55.2                           0.514               -2.39             -0.101 downtrend_blocked_streak           False                  False
+  ODFL           87.50               40            0.23              0.35        217.81                43.21         0.503          pass              0.632             60.7                           0.467               -0.41             -0.090                       ok           False                  False
+  ASML           88.89                9            4.50             58.10       1818.14                76.04         0.501          pass              0.318             10.1                           0.113               -5.77             -0.233                       ok           False                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260702133001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260702133504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260702133001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260702133504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260702133001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260702133504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260702133001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260702133504)
 
 </details>
