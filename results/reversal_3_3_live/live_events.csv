@@ -3366,3 +3366,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-01T15:05:07.919397-04:00,2026-07-01,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-01T15:10:11.143271-04:00,2026-07-01,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-01T15:20:08.894033-04:00,2026-07-01,manage_1530,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""GILD260821C00130000"", ""fill_price"": 4.1175, ""pnl"": -1464.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""GILD""}"
+2026-07-02T09:20:05.802169-04:00,2026-07-02,data_refresh,data_refresh,{'saved': 93}
