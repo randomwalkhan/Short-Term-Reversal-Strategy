@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-03 00:00:09 EDT`
-Last processed slot: `share_ext_0000`
+Latest checkpoint (ET): `2026-07-03 00:05:06 EDT`
+Last processed slot: `share_ext_0005`
 
 ## Active Configuration
 
@@ -52,6 +52,7 @@ _None_
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                               detail
+2026-07-03T00:05:06.968668-04:00   share_ext_0005           market_closed                                                                                                                                                                                                                                                                                                                                                                       {"holiday_name": "Independence Day", "reason": "nyse_holiday"}
 2026-07-03T00:00:09.797065-04:00   share_ext_0000           market_closed                                                                                                                                                                                                                                                                                                                                                                       {"holiday_name": "Independence Day", "reason": "nyse_holiday"}
 2026-07-02T15:10:04.628574-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
 2026-07-02T15:05:06.760446-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
@@ -61,7 +62,6 @@ _None_
 2026-07-02T14:50:01.813724-04:00       entry_1500 entry_candidate_skipped                                                                                                                                                               {"early_entry_score": 0.47, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 11.0, "option_spread_pct": 22.49, "option_volume": 9.0, "reason": "no_trade_low_option_liquidity", "ticker": "UPRO", "timing_score": 0.614}
 2026-07-02T14:50:01.813724-04:00       entry_1500          timing_overlay                                                                                                                                                                                                                                                                                                                         {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-07-02", "training_samples": 5311, "window": 5}
 2026-07-02T12:00:01.950437-04:00 early_entry_1200      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-02T11:55:04.784699-04:00 early_entry_1155      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260703000009)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260703000506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260703000009)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260703000506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260703000009)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260703000506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260703000009)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260703000506)
 
 </details>
