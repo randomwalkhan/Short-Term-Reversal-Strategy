@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-06 15:10:01 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-07-06 15:15:01 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -37,7 +37,7 @@ Last processed slot: `entry_1500`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  AMAT     option         option AMAT260821C00600000       2026-07-06                   0      1      7577.5                  7477.5        75.78          74.78      595.55        595.44          bid_ask_mid                      74.78                bid_ask_mid                    True          -100.0                  -1.32         95.83               24              1.24         92.05           90.27                 110.01                 762.0           41.0               0.07                      ok
+  AMAT     option         option AMAT260821C00600000       2026-07-06                   0      1      7577.5                  7477.5        75.78          74.78      595.55        596.37          bid_ask_mid                      74.78                bid_ask_mid                    True          -100.0                  -1.32         95.83               24              1.24         92.05           89.71                 110.01                 762.0           41.0               0.07                      ok
 ```
 
 ## Today's Closed Trades (2026-07-06)
@@ -51,18 +51,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  AMAT           95.83               24            1.17              4.95        600.92               110.01         0.682          pass              0.675             37.8                           0.367               -3.43              0.320                  ok            True                  False
-  KLAC           94.12               34            0.70              1.16        235.05               124.01         0.641          pass              0.788             62.4                           0.395               -9.89             -0.248                  ok            True                  False
-   PEP           87.50               16            0.55              0.55        143.98                27.18         0.593          pass              0.516             72.2                           0.747                0.99              0.022                  ok            True                  False
-   WBD           94.74               19            0.61              0.11         26.43                22.17         0.564          pass              0.694             61.5                           0.528                0.45             -0.082                  ok            True                  False
-  CTAS           82.35               17            1.47              1.86        180.57                35.27         0.543          pass              0.269             35.0                           0.403                4.60              0.529                  ok            True                  False
-  GILD           92.31               13            1.55              1.43        130.66                30.05         0.539          pass              0.521             39.6                           0.490                4.42              0.433                  ok            True                  False
-   LIN           90.91               11            1.42              5.42        544.32                21.57         0.538          pass              0.501             49.9                           0.610                5.22              0.539                  ok            True                  False
-  BKNG           82.61               23            1.38              1.79        183.79                41.33         0.528          pass              0.272             21.1                           0.309                5.96              0.819                  ok            True                  False
-  PYPL           80.00               20            1.18              0.37         45.31                34.53         0.518          pass              0.324             68.3                           0.585                5.70              0.734                  ok            True                  False
-   ADP           92.86               28            0.59              1.01        241.84                30.79         0.514          pass              0.725             70.3                           0.564               10.27              1.137                  ok            True                  False
-  FAST           93.33               15            1.42              0.48         48.39                20.75         0.509          pass              0.586             48.9                           0.479                4.40              0.589                  ok            True                  False
-   KHC          100.00                3            2.27              0.40         25.20                36.79         0.608          pass              0.566             35.2                           0.644                8.65              1.263                  ok           False                  False
+  AMAT           95.83               24            1.18              4.99        600.90               110.01         0.681          pass              0.673             37.2                           0.378               -3.44              0.319                  ok            True                  False
+  KLAC           94.12               34            0.64              1.06        235.10               124.01         0.645          pass              0.798             65.6                           0.472               -9.83             -0.245                  ok            True                  False
+   WBD           91.67               12            0.68              0.13         26.43                22.17         0.603          pass              0.556             57.1                           0.510                0.38             -0.085                  ok            True                  False
+   PEP           87.50               16            0.56              0.57        143.98                27.18         0.592          pass              0.514             71.5                           0.762                0.98              0.021                  ok            True                  False
+  CTAS           82.35               17            1.48              1.88        180.56                35.27         0.542          pass              0.267             34.4                           0.366                4.59              0.528                  ok            True                  False
+  GILD           92.86               14            1.47              1.35        130.69                30.05         0.539          pass              0.553             43.0                           0.480                4.51              0.438                  ok            True                  False
+  BKNG           80.95               21            1.43              1.85        183.77                41.33         0.537          pass              0.207             18.3                           0.278                5.90              0.817                  ok            True                  False
+  PAYX          100.00               29            0.53              0.40        106.18                31.56         0.532          pass              0.780             66.8                           0.396                7.68              0.906                  ok            True                  False
+  PYPL           80.00               20            1.17              0.37         45.31                34.53         0.519          pass              0.324             68.6                           0.589                5.72              0.734                  ok            True                  False
+  FAST           92.31               13            1.49              0.51         48.38                20.75         0.516          pass              0.539             46.3                           0.450                4.33              0.586                  ok            True                  False
+   ADP           92.31               26            0.79              1.34        241.69                30.79         0.513          pass              0.667             60.4                           0.401               10.05              1.127                  ok            True                  False
+   KHC          100.00                3            2.27              0.40         25.20                36.79         0.609          pass              0.567             35.4                           0.641                8.65              1.263                  ok           False                  False
 ```
 
 ## Recent Events
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260706151001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260706151501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260706151001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260706151501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260706151001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260706151501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260706151001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260706151501)
 
 </details>
