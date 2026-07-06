@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 13976.500356674198,
-  "positions": [
-    {
-      "position_id": "KDP_20260702T145001",
-      "ticker": "KDP",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "KDP260821C00033000",
-      "expiry": "2026-08-21",
-      "strike": 33.0,
-      "entry_timestamp": "2026-07-02T14:50:01.813724-04:00",
-      "entry_trade_date": "2026-07-02",
-      "entry_slot": "entry_1500",
-      "entry_spot": 33.1150016784668,
-      "entry_option_price": 1.4500000000000002,
-      "entry_bid": 1.35,
-      "entry_ask": 1.55,
-      "entry_iv_pct": 30.371790039062496,
-      "contracts": 96,
-      "allocated_cash": 13920.000000000004,
-      "success_rate": 100.0,
-      "matched_signals": 15,
-      "current_drop_pct": 0.76,
-      "rolling_sigma_20d_pct": 28.32,
-      "planned_tp_day1": 1.6675,
-      "planned_tp_day2": 1.6675,
-      "planned_stop": 1.3050000000000002,
-      "option_open_interest": 2956.0,
-      "option_volume": 194.0,
-      "option_spread_pct": 0.13793103448275856,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 26504.5003566742,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
