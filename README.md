@@ -3,42 +3,45 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-07-06 14:45:08 EDT`
-- Equity: `$26,504.50` | Realized: `$16,504.50` | Unrealized: `$0.00` | Open positions: `0`
+- Latest checkpoint (ET): `2026-07-06 14:50:04 EDT`
+- Equity: `$26,504.50` | Realized: `$16,504.50` | Unrealized: `$0.00` | Open positions: `1`
 - Today closed trades: `1`
-- Current slot: `manual`
+- Current slot: `entry_1500`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
+  AMAT     option         option AMAT260821C00600000      1      7577.5                  7577.5          75.78             0.0                    0.0                   0
+```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260706144508)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260706145004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260706144508)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260706145004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260706144508)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260706145004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260706144508)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260706145004)
 
 </details>
 
