@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 18927.0003566742,
-  "positions": [
-    {
-      "position_id": "AMAT_20260706T145004",
-      "ticker": "AMAT",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "AMAT260821C00600000",
-      "expiry": "2026-08-21",
-      "strike": 600.0,
-      "entry_timestamp": "2026-07-06T14:50:04.793934-04:00",
-      "entry_trade_date": "2026-07-06",
-      "entry_slot": "entry_1500",
-      "entry_spot": 595.5501098632812,
-      "entry_option_price": 75.775,
-      "entry_bid": 73.0,
-      "entry_ask": 78.55,
-      "entry_iv_pct": 92.0502503967285,
-      "contracts": 1,
-      "allocated_cash": 7577.500000000001,
-      "success_rate": 95.83,
-      "matched_signals": 24,
-      "current_drop_pct": 1.24,
-      "rolling_sigma_20d_pct": 110.01,
-      "planned_tp_day1": 87.14125,
-      "planned_tp_day2": 87.14125,
-      "planned_stop": 68.1975,
-      "option_open_interest": 762.0,
-      "option_volume": 41.0,
-      "option_spread_pct": 0.0732431540745628,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 25746.7503566742,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",

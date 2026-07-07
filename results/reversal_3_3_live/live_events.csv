@@ -3685,3 +3685,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-06T15:05:05.496825-04:00,2026-07-06,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-06T15:10:01.561163-04:00,2026-07-06,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-07T00:00:02.324788-04:00,2026-07-07,data_refresh,data_refresh,{'saved': 93}
+2026-07-07T09:56:39.997866-04:00,2026-07-07,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""AMAT260821C00600000"", ""fill_price"": 68.1975, ""pnl"": -757.75, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""AMAT""}"
