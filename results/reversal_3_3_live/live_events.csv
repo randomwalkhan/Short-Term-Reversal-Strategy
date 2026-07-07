@@ -3697,3 +3697,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-07T14:50:02.270348-04:00,2026-07-07,entry_1500,entry,"{""allocated_cash"": 12690.0, ""asset_type"": ""option"", ""contract_symbol"": ""CSX260821C00047500"", ""contracts"": 54, ""early_entry_score"": 0.601, ""entry_mode"": ""regular"", ""entry_option_price"": 2.35, ""execution_mode"": ""option"", ""matched_signals"": 23, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2967.0, ""option_spread_pct"": 8.51, ""option_volume"": 20.0, ""success_rate"": 91.3, ""ticker"": ""CSX"", ""timing_score"": 0.525}"
 2026-07-07T14:55:05.093959-04:00,2026-07-07,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-07T15:00:05.200618-04:00,2026-07-07,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-07-07T15:05:02.177767-04:00,2026-07-07,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
