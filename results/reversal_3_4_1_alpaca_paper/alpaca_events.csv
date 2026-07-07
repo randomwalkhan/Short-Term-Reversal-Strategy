@@ -2644,3 +2644,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-06T14:54:58.793762-04:00,2026-07-06,entry_1500,entry_skipped,"{""budget"": 5000.0, ""entry_limit"": 78.0, ""reason"": ""insufficient_cash"", ""ticker"": ""AMAT""}"
 2026-07-06T15:02:02.276555-04:00,2026-07-06,entry_1500,entry_skipped,"{""budget"": 5000.0, ""entry_limit"": 76.85, ""reason"": ""insufficient_cash"", ""ticker"": ""AMAT""}"
 2026-07-06T15:08:34.838921-04:00,2026-07-06,entry_1500,entry_skipped,"{""budget"": 5000.0, ""entry_limit"": 76.25, ""reason"": ""insufficient_cash"", ""ticker"": ""AMAT""}"
+2026-07-07T11:39:46.877373-04:00,2026-07-07,early_entry_1135,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
