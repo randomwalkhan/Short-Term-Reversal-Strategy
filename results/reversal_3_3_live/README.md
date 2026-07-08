@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-08 16:00:06 EDT`
+Latest checkpoint (ET): `2026-07-08 16:05:05 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_1600`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CSX     option         option  CSX260821C00047500       2026-07-07                   1     54     12690.0                 14040.0         2.35           2.60       48.48         48.68          bid_ask_mid                       2.60                bid_ask_mid                    True          1350.0                  10.64          91.3               23              0.68         28.35           30.45                  21.52                2967.0           20.0               0.09                      ok
+   CSX     option         option  CSX260821C00047500       2026-07-07                   1     54     12690.0                 14040.0         2.35           2.60       48.48         48.69          bid_ask_mid                       2.60                bid_ask_mid                    True          1350.0                  10.64          91.3               23              0.68         28.35           30.45                  21.52                2967.0           20.0               0.09                      ok
   PAYX     option         option PAYX260821C00110000       2026-07-08                   0     50     12625.0                 13125.0         2.53           2.62      106.22        106.58          bid_ask_mid                       2.62                bid_ask_mid                    True           500.0                   3.96         100.0               12              1.76         27.87           27.98                  32.70                 820.0          338.0               0.06                      ok
 ```
 
@@ -47,21 +47,7 @@ _None_
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  UPRO           86.96               23            1.05              1.05        141.76                46.91         0.577            pass              0.535             68.5                           0.654                4.17              0.705                       ok            True                  False
-   ADP          100.00               11            1.66              2.86        244.38                31.95         0.570            pass              0.541             25.8                           0.268                9.53              1.283                       ok            True                  False
-  PAYX          100.00               16            1.45              1.10        107.65                32.70         0.552            pass              0.644             49.7                           0.534                8.74              1.176                       ok            True                  False
-  PCAR           83.33               18            1.57              1.37        123.87                37.78         0.536            pass              0.296             33.6                           0.218                4.90              0.529                       ok            True                  False
-  CTAS           88.46               26            0.92              1.17        181.33                35.06         0.534            pass              0.412              8.7                           0.111                6.73              0.789                       ok            True                  False
-  IDXX           90.91               11            2.56             10.21        565.87                37.15         0.508            pass              0.438             30.0                           0.307                2.65              0.328                       ok            True                  False
-   APP           87.50               40            1.00              3.70        526.39                76.24         0.507            pass              0.675             74.8                           0.571               11.92              1.809                       ok            True                  False
-   AEP           83.33               12            1.22              1.18        137.03                21.11         0.501            pass              0.199             15.6                           0.215                1.58              0.098                       ok            True                  False
- GOOGL           80.00               20            1.47              3.77        365.41                32.97         0.500 below_threshold              0.237             40.2                           0.699                4.48              0.733                       ok            True                  False
-  INTC           95.12               41            0.05              0.04        110.37               101.27         0.611            pass              0.959             99.2                           0.931              -16.59             -1.843  downtrend_blocked_slope           False                  False
-  MDLZ          100.00                7            1.25              0.53         59.99                30.26         0.602            pass              0.547             28.8                           0.220               -1.80             -0.198 downtrend_blocked_streak           False                  False
-    EA          100.00               10            0.27              0.39        205.27                 3.69         0.583            pass              0.471              4.3                           0.219                0.67              0.055                       ok           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -86,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260708160006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260708160505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260708160006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260708160505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260708160006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260708160505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260708160006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260708160505)
 
 </details>
