@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-08 15:45:02 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-07-08 15:50:05 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -28,17 +28,17 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$431.75`
-- Equity: `$26,681.75`
+- Equity: `$27,181.75`
 - Realized PnL: `$15,746.75`
-- Unrealized PnL: `$935.00`
+- Unrealized PnL: `$1,435.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CSX     option         option  CSX260821C00047500       2026-07-07                   1     54     12690.0                 13500.0         2.35           2.50       48.48         48.51          bid_ask_mid                       2.50                bid_ask_mid                    True           810.0                   6.38          91.3               23              0.68         28.35           31.96                  21.52                2967.0           20.0               0.09                      ok
-  PAYX     option         option PAYX260821C00110000       2026-07-08                   0     50     12625.0                 12750.0         2.53           2.55      106.22        106.95          bid_ask_mid                       2.55                bid_ask_mid                    True           125.0                   0.99         100.0               12              1.76         27.87           26.76                  32.70                 820.0          338.0               0.06                      ok
+   CSX     option         option  CSX260821C00047500       2026-07-07                   1     54     12690.0                 13500.0         2.35           2.50       48.48         48.58          bid_ask_mid                       2.50                bid_ask_mid                    True           810.0                   6.38          91.3               23              0.68         28.35           31.54                  21.52                2967.0           20.0               0.09                      ok
+  PAYX     option         option PAYX260821C00110000       2026-07-08                   0     50     12625.0                 13250.0         2.53           2.65      106.22        106.79          bid_ask_mid                       2.65                bid_ask_mid                    True           625.0                   4.95         100.0               12              1.76         27.87           28.20                  32.70                 820.0          338.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-07-08)
@@ -49,18 +49,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-   KDP          100.00               10            1.13              0.25         31.38                33.17         0.572            pass              0.607             50.0                           0.510                1.58              0.052                  ok            True                  False
-  UPRO           86.96               23            1.12              1.12        141.73                46.91         0.572            pass              0.529             66.5                           0.596                4.10              0.702                  ok            True                  False
-   ADP           94.44               18            1.15              1.98        244.75                31.95         0.551            pass              0.639             48.5                           0.611               10.10              1.306                  ok            True                  False
-  GILD           88.46               26            0.62              0.59        136.11                35.29         0.541            pass              0.551             54.8                           0.610                8.37              0.846                  ok            True                  False
-  PAYX          100.00               23            1.08              0.82        107.77                32.70         0.531            pass              0.727             62.5                           0.692                9.14              1.193                  ok            True                  False
-  PCAR           80.95               21            1.40              1.22        123.94                37.78         0.525            pass              0.274             40.8                           0.421                5.08              0.537                  ok            True                  False
-  GOOG           83.33               12            2.01              5.12        361.43                34.43         0.523            pass              0.209             18.0                           0.479                2.96              0.628                  ok            True                  False
-   XEL          100.00               10            1.21              0.69         80.38                21.69         0.516            pass              0.469              5.8                           0.291               -0.80             -0.150                  ok            True                  False
-  CTAS           91.18               34            0.52              0.66        181.55                35.06         0.512            pass              0.654             48.1                           0.371                7.16              0.807                  ok            True                  False
-  TMUS           84.62               13            1.88              2.43        183.69                35.69         0.508            pass              0.319             41.6                           0.276               -1.79             -0.057                  ok            True                  False
-   APP           85.37               41            0.89              3.30        526.57                76.24         0.505            pass              0.626             77.5                           0.571               12.04              1.814                  ok            True                  False
-   AEP           83.33               12            1.26              1.21        137.01                21.11         0.500 below_threshold              0.167              4.9                           0.163                1.54              0.096                  ok            True                  False
+  UPRO           86.96               23            1.02              1.02        141.77                46.91         0.579            pass              0.539             69.6                           0.610                4.20              0.707                  ok            True                  False
+   KDP          100.00               13            1.02              0.22         31.39                33.17         0.560            pass              0.641             54.9                           0.529                1.69              0.057                  ok            True                  False
+  PAYX          100.00               19            1.23              0.93        107.72                32.70         0.548            pass              0.687             57.4                           0.639                8.98              1.186                  ok            True                  False
+   ADP           93.75               16            1.45              2.48        244.54                31.95         0.544            pass              0.567             35.5                           0.401                9.77              1.293                  ok            True                  False
+  PCAR           83.33               18            1.59              1.38        123.87                37.78         0.535            pass              0.295             33.1                           0.249                4.89              0.528                  ok            True                  False
+  GILD           89.66               29            0.56              0.54        136.13                35.29         0.527            pass              0.613             58.6                           0.639                8.43              0.849                  ok            True                  False
+   XEL          100.00               11            1.00              0.56         80.43                21.69         0.524            pass              0.527             22.6                           0.391               -0.58             -0.140                  ok            True                  False
+  CTAS           91.18               34            0.50              0.64        181.56                35.06         0.514            pass              0.660             50.3                           0.327                7.18              0.808                  ok            True                  False
+  TMUS           85.71               14            1.82              2.35        183.72                35.69         0.507            pass              0.360             43.5                           0.312               -1.73             -0.055                  ok            True                  False
+  IDXX           87.50               16            2.07              8.27        566.71                37.15         0.504            pass              0.420             43.3                           0.533                3.16              0.351                  ok            True                  False
+  GOOG           84.21               19            1.64              4.18        361.83                34.43         0.504            pass              0.322             33.1                           0.570                3.34              0.646                  ok            True                  False
+   APP           85.37               41            0.96              3.56        526.46                76.24         0.500 below_threshold              0.620             75.8                           0.577               11.96              1.811                  ok            True                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260708154502)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260708155005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260708154502)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260708155005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260708154502)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260708155005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260708154502)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260708155005)
 
 </details>
