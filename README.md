@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-07-09 15:25:11 EDT`
-- Equity: `$28,219.25` | Realized: `$18,399.25` | Unrealized: `$-180.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-07-09 15:30:05 EDT`
+- Equity: `$28,519.25` | Realized: `$18,399.25` | Unrealized: `$120.00` | Open positions: `1`
 - Today closed trades: `2`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  GILD     option         option GILD260821C00135000     24     14040.0                 13860.0           5.78          -180.0                  -1.28                   0
+  GILD     option         option GILD260821C00135000     24     14040.0                 14160.0            5.9           120.0                   0.85                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260709152511)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260709153005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260709152511)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260709153005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260709152511)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260709153005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260709152511)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260709153005)
 
 </details>
 
