@@ -2675,3 +2675,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-09T11:43:46.954995-04:00,2026-07-09,early_entry_1140,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-09T11:49:58.049724-04:00,2026-07-09,early_entry_1145,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-09T11:56:13.680875-04:00,2026-07-09,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-09T14:51:00.504904-04:00,2026-07-09,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""c969f585-2541-4fad-bd42-a96645812589"", ""contract_symbol"": ""GILD260821C00135000"", ""contracts"": 8, ""entry_mode"": ""regular"", ""limit_price"": ""6.05"", ""ticker"": ""GILD""}"
