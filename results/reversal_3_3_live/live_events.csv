@@ -3744,3 +3744,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-09T14:50:10.393351-04:00,2026-07-09,entry_1500,entry,"{""allocated_cash"": 14040.0, ""asset_type"": ""option"", ""contract_symbol"": ""GILD260821C00135000"", ""contracts"": 24, ""early_entry_score"": 0.621, ""entry_mode"": ""regular"", ""entry_option_price"": 5.85, ""execution_mode"": ""option"", ""matched_signals"": 15, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 8090.0, ""option_spread_pct"": 6.84, ""option_volume"": 34.0, ""success_rate"": 93.33, ""ticker"": ""GILD"", ""timing_score"": 0.541}"
 2026-07-09T14:55:10.687527-04:00,2026-07-09,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-09T15:00:11.129710-04:00,2026-07-09,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-07-09T15:05:11.506156-04:00,2026-07-09,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
