@@ -2680,3 +2680,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-10T10:35:29.283542-04:00,2026-07-10,manage_1030,exit_order_submitted,"{""alpaca_order_id"": ""66e449d9-5e68-4c9c-92c4-52f1480bcc36"", ""contract_symbol"": ""GILD260821C00135000"", ""limit_price"": ""4.75"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""GILD""}"
 2026-07-10T10:35:29.283542-04:00,2026-07-10,early_entry_1035,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-10T14:50:51.701538-04:00,2026-07-10,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
+2026-07-10T14:57:16.777024-04:00,2026-07-10,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
