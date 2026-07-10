@@ -2681,3 +2681,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-10T10:35:29.283542-04:00,2026-07-10,early_entry_1035,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-10T14:50:51.701538-04:00,2026-07-10,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
 2026-07-10T14:57:16.777024-04:00,2026-07-10,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
+2026-07-10T15:03:36.880227-04:00,2026-07-10,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MPWR""}"
