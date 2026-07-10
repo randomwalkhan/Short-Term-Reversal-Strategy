@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-10 12:59:14 EDT`
+Latest checkpoint (ET): `2026-07-10 13:04:19 EDT`
 Last slot: `manage_1300`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$89,024.26`
-- Portfolio value: `$91,864.26`
+- Portfolio value: `$91,784.26`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1300`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  GILD exit_submitted    regular GILD260821C00135000          8                5.95                   3.8          bid_ask_mid                        3.8                    True          3040.0         -1720.0             -36.134454                   1
+  GILD exit_submitted    regular GILD260821C00135000          8                5.95                   3.7          bid_ask_mid                        3.7                    True          2960.0         -1800.0             -37.815126                   1
 ```
 
 ## Closed Trades
