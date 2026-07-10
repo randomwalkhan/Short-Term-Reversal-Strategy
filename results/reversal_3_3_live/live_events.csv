@@ -3755,3 +3755,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-10T14:50:05.489745-04:00,2026-07-10,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-07-10"", ""training_samples"": 5470, ""window"": 5}"
 2026-07-10T14:50:05.489745-04:00,2026-07-10,entry_1500,entry_skipped,"{""reason"": ""no_candidate""}"
 2026-07-10T14:55:05.716481-04:00,2026-07-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-07-10T15:00:09.226035-04:00,2026-07-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
