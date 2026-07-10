@@ -2683,3 +2683,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-10T14:57:16.777024-04:00,2026-07-10,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
 2026-07-10T15:03:36.880227-04:00,2026-07-10,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MPWR""}"
 2026-07-10T15:10:01.218359-04:00,2026-07-10,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
+2026-07-10T16:02:06.367474-04:00,2026-07-10,exit,exit_not_filled,"{""contract_symbol"": ""GILD260821C00135000"", ""status"": ""expired"", ""ticker"": ""GILD""}"
+2026-07-10T16:02:06.367474-04:00,2026-07-10,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""b9f16ce6-0435-4647-a199-5a6cda970e4a"", ""contract_symbol"": ""GILD260821C00135000"", ""limit_price"": ""3.70"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""GILD""}"
