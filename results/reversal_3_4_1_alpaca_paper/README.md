@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-10 12:49:06 EDT`
+Latest checkpoint (ET): `2026-07-10 12:54:10 EDT`
 Last slot: `manage_1300`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1300`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  GILD exit_submitted    regular GILD260821C00135000          8                5.95                  3.95          bid_ask_mid                       3.95                    True          3160.0         -1600.0             -33.613445                   1
+  GILD exit_submitted    regular GILD260821C00135000          8                5.95                  3.85          bid_ask_mid                       3.85                    True          3080.0         -1680.0             -35.294118                   1
 ```
 
 ## Closed Trades
