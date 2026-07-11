@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-11 01:31:13 EDT`
-Last slot: `share_ext_0130`
+Latest checkpoint (ET): `2026-07-11 01:36:17 EDT`
+Last slot: `share_ext_0135`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                  detail
+2026-07-11T01:36:17.636986-04:00   share_ext_0135         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-07-11T01:31:13.666372-04:00   share_ext_0130         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-07-11T01:26:09.610948-04:00   share_ext_0125         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-07-11T01:21:05.792732-04:00   share_ext_0120         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-10T10:35:29.283542-04:00      manage_1030  exit_order_submitted       {"alpaca_order_id": "66e449d9-5e68-4c9c-92c4-52f1480bcc36", "contract_symbol": "GILD260821C00135000", "limit_price": "4.75", "reason": "stop_loss_hit_at_scan", "ticker": "GILD"}
 2026-07-09T14:57:15.083842-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "GILD260821C00135000", "contracts": 8, "filled_price": 5.95, "ticker": "GILD"}
 2026-07-09T14:51:00.504904-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "c969f585-2541-4fad-bd42-a96645812589", "contract_symbol": "GILD260821C00135000", "contracts": 8, "entry_mode": "regular", "limit_price": "6.05", "ticker": "GILD"}
-2026-07-09T11:56:13.680875-04:00 early_entry_1155    early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
