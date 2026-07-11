@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-11 01:41:21 EDT`
-Last slot: `share_ext_0140`
+Latest checkpoint (ET): `2026-07-11 01:46:25 EDT`
+Last slot: `share_ext_0145`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                            detail
+2026-07-11T01:46:25.456860-04:00   share_ext_0145        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-07-11T01:41:21.423783-04:00   share_ext_0140        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-07-11T01:36:17.636986-04:00   share_ext_0135        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-07-11T01:31:13.666372-04:00   share_ext_0130        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
@@ -65,7 +66,6 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-10T15:03:36.880227-04:00       entry_1500        entry_skipped                                 {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "MPWR"}
 2026-07-10T14:57:16.777024-04:00       entry_1500        entry_skipped                                                                                                                               {"entry_mode": "regular", "reason": "no_candidate"}
 2026-07-10T14:50:51.701538-04:00       entry_1500        entry_skipped                                                                                                                               {"entry_mode": "regular", "reason": "no_candidate"}
-2026-07-10T10:35:29.283542-04:00      manage_1030 exit_order_submitted {"alpaca_order_id": "66e449d9-5e68-4c9c-92c4-52f1480bcc36", "contract_symbol": "GILD260821C00135000", "limit_price": "4.75", "reason": "stop_loss_hit_at_scan", "ticker": "GILD"}
 2026-07-10T10:35:29.283542-04:00 early_entry_1035   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-09T14:57:15.083842-04:00       entry_1500         entry_filled                                                                                {"contract_symbol": "GILD260821C00135000", "contracts": 8, "filled_price": 5.95, "ticker": "GILD"}
+2026-07-10T10:35:29.283542-04:00      manage_1030 exit_order_submitted {"alpaca_order_id": "66e449d9-5e68-4c9c-92c4-52f1480bcc36", "contract_symbol": "GILD260821C00135000", "limit_price": "4.75", "reason": "stop_loss_hit_at_scan", "ticker": "GILD"}
 ```
