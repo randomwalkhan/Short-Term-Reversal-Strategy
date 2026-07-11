@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-11 00:50:43 EDT`
-Last slot: `share_ext_0050`
+Latest checkpoint (ET): `2026-07-11 00:55:46 EDT`
+Last slot: `share_ext_0055`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                  detail
+2026-07-11T00:55:46.933033-04:00   share_ext_0055         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-07-11T00:50:43.076111-04:00   share_ext_0050         market_closed                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-07-10T16:02:06.367474-04:00      manage_1600  exit_order_submitted       {"alpaca_order_id": "b9f16ce6-0435-4647-a199-5a6cda970e4a", "contract_symbol": "GILD260821C00135000", "limit_price": "3.70", "reason": "stop_loss_hit_at_scan", "ticker": "GILD"}
 2026-07-10T16:02:06.367474-04:00             exit       exit_not_filled                                                                                                       {"contract_symbol": "GILD260821C00135000", "status": "expired", "ticker": "GILD"}
@@ -55,8 +56,8 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-10T15:03:36.880227-04:00       entry_1500         entry_skipped                                       {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "MPWR"}
 2026-07-10T14:57:16.777024-04:00       entry_1500         entry_skipped                                                                                                                                     {"entry_mode": "regular", "reason": "no_candidate"}
 2026-07-10T14:50:51.701538-04:00       entry_1500         entry_skipped                                                                                                                                     {"entry_mode": "regular", "reason": "no_candidate"}
-2026-07-10T10:35:29.283542-04:00      manage_1030  exit_order_submitted       {"alpaca_order_id": "66e449d9-5e68-4c9c-92c4-52f1480bcc36", "contract_symbol": "GILD260821C00135000", "limit_price": "4.75", "reason": "stop_loss_hit_at_scan", "ticker": "GILD"}
 2026-07-10T10:35:29.283542-04:00 early_entry_1035    early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-10T10:35:29.283542-04:00      manage_1030  exit_order_submitted       {"alpaca_order_id": "66e449d9-5e68-4c9c-92c4-52f1480bcc36", "contract_symbol": "GILD260821C00135000", "limit_price": "4.75", "reason": "stop_loss_hit_at_scan", "ticker": "GILD"}
 2026-07-09T14:57:15.083842-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "GILD260821C00135000", "contracts": 8, "filled_price": 5.95, "ticker": "GILD"}
 2026-07-09T14:51:00.504904-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "c969f585-2541-4fad-bd42-a96645812589", "contract_symbol": "GILD260821C00135000", "contracts": 8, "entry_mode": "regular", "limit_price": "6.05", "ticker": "GILD"}
 2026-07-09T11:56:13.680875-04:00 early_entry_1155    early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-09T11:25:16.220907-04:00 early_entry_1125    early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-09T11:19:05.791667-04:00 early_entry_1115    early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-09T11:12:56.043858-04:00 early_entry_1110    early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-09T11:06:45.505791-04:00 early_entry_1105    early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
