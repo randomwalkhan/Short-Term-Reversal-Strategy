@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-11 02:01:36 EDT`
-Last slot: `share_ext_0200`
+Latest checkpoint (ET): `2026-07-11 02:06:40 EDT`
+Last slot: `share_ext_0205`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot           event_type                                                                                                                                                                            detail
+2026-07-11T02:06:40.396593-04:00 share_ext_0205        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-07-11T02:01:36.850958-04:00 share_ext_0200        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-07-11T01:56:33.136961-04:00 share_ext_0155        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-07-11T01:51:29.229346-04:00 share_ext_0150        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-10T16:02:06.367474-04:00           exit      exit_not_filled                                                                                                 {"contract_symbol": "GILD260821C00135000", "status": "expired", "ticker": "GILD"}
 2026-07-10T15:10:01.218359-04:00     entry_1500        entry_skipped                                                                                                                               {"entry_mode": "regular", "reason": "no_candidate"}
 2026-07-10T15:03:36.880227-04:00     entry_1500        entry_skipped                                 {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "MPWR"}
-2026-07-10T14:57:16.777024-04:00     entry_1500        entry_skipped                                                                                                                               {"entry_mode": "regular", "reason": "no_candidate"}
 ```
