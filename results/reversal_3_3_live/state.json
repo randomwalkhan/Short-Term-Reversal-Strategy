@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 26995.2503566742,
-  "positions": [],
+  "cash": 17620.2503566742,
+  "positions": [
+    {
+      "position_id": "META_20260713T145006",
+      "ticker": "META",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "META260821C00660000",
+      "expiry": "2026-08-21",
+      "strike": 660.0,
+      "entry_timestamp": "2026-07-13T14:50:06.804809-04:00",
+      "entry_trade_date": "2026-07-13",
+      "entry_slot": "entry_1500",
+      "entry_spot": 660.7249755859375,
+      "entry_option_price": 46.875,
+      "entry_bid": 46.4,
+      "entry_ask": 47.35,
+      "entry_iv_pct": 53.38486557006835,
+      "contracts": 2,
+      "allocated_cash": 9375.0,
+      "success_rate": 81.82,
+      "matched_signals": 22,
+      "current_drop_pct": 1.27,
+      "rolling_sigma_20d_pct": 55.99,
+      "planned_tp_day1": 53.90624999999999,
+      "planned_tp_day2": 53.90624999999999,
+      "planned_stop": 42.1875,
+      "option_open_interest": 7322.0,
+      "option_volume": 1343.0,
+      "option_spread_pct": 0.020266666666666728,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4644,7 +4675,9 @@
     "2026-07-10": [
       "entry_1500"
     ],
-    "2026-07-13": []
+    "2026-07-13": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
