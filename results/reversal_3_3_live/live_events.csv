@@ -3759,3 +3759,6 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-10T15:05:06.429039-04:00,2026-07-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-10T15:10:08.910811-04:00,2026-07-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-13T09:20:04.012010-04:00,2026-07-13,data_refresh,data_refresh,"{'empty': 63, 'saved': 30}"
+2026-07-13T09:55:05.995868-04:00,2026-07-13,data_refresh,data_refresh,"{'saved': 92, 'empty': 1}"
+2026-07-13T10:00:02.015857-04:00,2026-07-13,data_refresh,data_refresh,{'saved': 93}
+2026-07-13T10:00:02.015857-04:00,2026-07-13,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
