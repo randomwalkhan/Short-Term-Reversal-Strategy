@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-14 15:35:01 EDT`
+Latest checkpoint (ET): `2026-07-14 15:40:01 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$4,915.25`
-- Equity: `$26,840.25`
+- Equity: `$26,940.25`
 - Realized PnL: `$16,995.25`
-- Unrealized PnL: `$-155.00`
+- Unrealized PnL: `$-55.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  AAPL     option         option AAPL260821C00315000       2026-07-14                   0     11     12705.0                 12980.0        11.55          11.80      315.21        315.38          bid_ask_mid                      11.80                bid_ask_mid                    True           275.0                   2.16         95.83               24              0.66         28.20           28.53                  35.57               11042.0         1070.0               0.02                      ok
-  META     option         option META260821C00660000       2026-07-13                   1      2      9375.0                  8945.0        46.88          44.72      660.72        659.12          bid_ask_mid                      44.72                bid_ask_mid                    True          -430.0                  -4.59         81.82               22              1.27         53.38           52.62                  55.99                7322.0         1343.0               0.02                      ok
+  AAPL     option         option AAPL260821C00315000       2026-07-14                   0     11     12705.0                 13090.0        11.55          11.90      315.21        315.30          bid_ask_mid                      11.90                bid_ask_mid                    True           385.0                   3.03         95.83               24              0.66         28.20           28.88                  35.57               11042.0         1070.0               0.02                      ok
+  META     option         option META260821C00660000       2026-07-13                   1      2      9375.0                  8935.0        46.88          44.68      660.72        659.22          bid_ask_mid                      44.68                bid_ask_mid                    True          -440.0                  -4.69         81.82               22              1.27         53.38           52.68                  55.99                7322.0         1343.0               0.02                      ok
 ```
 
 ## Today's Closed Trades (2026-07-14)
@@ -49,18 +49,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  AAPL           96.00               25            0.62              1.37        316.72                35.57         0.586          pass              0.770             70.4                           0.644               11.93              1.125                                 ok            True                  False
-  GILD           89.47               19            1.04              0.95        130.99                32.97         0.568          pass              0.463             31.3                           0.207                2.94              0.405                                 ok            True                  False
-  AMGN           92.86               14            1.32              3.32        359.03                21.45         0.558          pass              0.477             17.2                           0.256               -1.35             -0.096                                 ok            True                  False
-  CSCO           90.00               10            1.88              1.57        118.58                35.64         0.556          pass              0.372             16.5                           0.455               -0.22              0.228                                 ok            True                  False
-  PYPL           80.95               21            1.10              0.37         47.49                33.27         0.541          pass              0.324             57.0                           0.628                6.19              0.671                                 ok            True                  False
-  PAYX          100.00               24            1.01              0.78        110.41                31.82         0.539          pass              0.768             73.6                           0.517                9.84              0.945                                 ok            True                  False
-   KHC           88.89                9            0.73              0.13         25.17                36.18         0.675          pass              0.478             57.8                           0.635                3.53              0.341                                 ok           False                  False
-  MDLZ          100.00                3            1.77              0.74         59.54                31.17         0.639          pass              0.497             10.9                           0.328               -1.42              0.006                                 ok           False                  False
-   ADP          100.00                7            1.95              3.43        249.58                31.20         0.585          pass              0.591             44.3                           0.434                9.42              0.829                                 ok           False                  False
-   PEP           85.71                7            1.95              1.89        137.68                30.22         0.583          pass              0.228              5.9                           0.268               -2.08             -0.145                                 ok           False                  False
-   KDP           75.00                4            2.64              0.58         31.00                34.17         0.558          pass              0.075              6.2                           0.315               -9.18             -0.836 downtrend_blocked_slope_and_streak           False                  False
-   XEL          100.00               26            0.30              0.17         80.41                22.03         0.553          pass              0.739             59.2                           0.490               -2.13             -0.133                                 ok           False                  False
+   KHC           81.82               11            0.65              0.12         25.18                36.18         0.660          pass              0.308             62.4                           0.641                3.62              0.345                                 ok            True                  False
+  AAPL           96.15               26            0.59              1.31        316.75                35.57         0.581          pass              0.780             71.8                           0.611               11.96              1.127                                 ok            True                  False
+  GILD           89.47               19            1.07              0.98        130.98                32.97         0.566          pass              0.457             29.3                           0.200                2.91              0.404                                 ok            True                  False
+  AMGN           92.86               14            1.29              3.26        359.05                21.45         0.559          pass              0.482             18.8                           0.254               -1.32             -0.095                                 ok            True                  False
+  CSCO           90.00               10            1.87              1.56        118.58                35.64         0.557          pass              0.373             16.9                           0.474               -0.21              0.229                                 ok            True                  False
+  PAYX          100.00               23            1.10              0.85        110.38                31.82         0.540          pass              0.755             71.3                           0.505                9.74              0.941                                 ok            True                  False
+  PYPL           81.82               22            1.03              0.34         47.50                33.27         0.540          pass              0.362             59.8                           0.648                6.26              0.674                                 ok            True                  False
+  MDLZ          100.00                4            1.70              0.71         59.56                31.17         0.637          pass              0.508             14.7                           0.328               -1.35              0.009                                 ok           False                  False
+   ADP          100.00                6            2.01              3.52        249.54                31.20         0.588          pass              0.587             42.7                           0.430                9.35              0.827                                 ok           False                  False
+   PEP           85.71                7            1.89              1.83        137.70                30.22         0.586          pass              0.237              8.6                           0.302               -2.03             -0.143                                 ok           False                  False
+   KDP           75.00                4            2.67              0.58         31.00                34.17         0.556          pass              0.071              5.1                           0.281               -9.21             -0.838 downtrend_blocked_slope_and_streak           False                  False
+   EXC           95.65               23            0.38              0.13         47.04                22.01         0.550          pass              0.787             81.8                           0.596               -0.51              0.007                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260714153501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260714154001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260714153501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260714154001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260714153501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260714154001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260714153501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260714154001)
 
 </details>
