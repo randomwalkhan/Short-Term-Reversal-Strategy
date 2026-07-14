@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-14 12:06:56 EDT`
-Last slot: `manage_1200`
+Latest checkpoint (ET): `2026-07-14 12:12:00 EDT`
+Last slot: `manual`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `manage_1200`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  META   open    regular META260821C00660000          1               47.35                 43.95          bid_ask_mid                      43.95                    True          4395.0          -340.0               -7.18057                   1
+  META   open    regular META260821C00660000          1               47.35                43.875          bid_ask_mid                     43.875                    True          4387.5          -347.5              -7.338965                   1
 ```
 
 ## Closed Trades
