@@ -3206,3 +3206,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-14T11:52:57.612007-04:00,2026-07-14,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-14T11:59:54.373859-04:00,2026-07-14,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-14T14:49:09.889993-04:00,2026-07-14,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""ea13e503-c485-48fa-9e14-8bdd94d1ae53"", ""contract_symbol"": ""AAPL260821C00315000"", ""contracts"": 4, ""entry_mode"": ""regular"", ""limit_price"": ""11.65"", ""ticker"": ""AAPL""}"
+2026-07-14T14:56:06.897311-04:00,2026-07-14,entry_1500,entry_filled,"{""contract_symbol"": ""AAPL260821C00315000"", ""contracts"": 4, ""filled_price"": 11.6, ""ticker"": ""AAPL""}"
