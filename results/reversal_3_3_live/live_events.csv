@@ -3818,3 +3818,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-14T14:50:02.479277-04:00,2026-07-14,entry_1500,entry,"{""allocated_cash"": 12705.0, ""asset_type"": ""option"", ""contract_symbol"": ""AAPL260821C00315000"", ""contracts"": 11, ""early_entry_score"": 0.757, ""entry_mode"": ""regular"", ""entry_option_price"": 11.55, ""execution_mode"": ""option"", ""matched_signals"": 24, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 11042.0, ""option_spread_pct"": 1.73, ""option_volume"": 1070.0, ""success_rate"": 95.83, ""ticker"": ""AAPL"", ""timing_score"": 0.589}"
 2026-07-14T14:55:01.276896-04:00,2026-07-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-14T15:00:04.423415-04:00,2026-07-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-07-14T15:05:02.308534-04:00,2026-07-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
