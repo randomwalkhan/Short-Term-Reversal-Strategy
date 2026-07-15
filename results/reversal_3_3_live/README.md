@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-15 00:15:04 EDT`
-Last processed slot: `share_ext_0015`
+Latest checkpoint (ET): `2026-07-15 00:20:02 EDT`
+Last processed slot: `share_ext_0020`
 
 ## Active Configuration
 
@@ -52,17 +52,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et         slot     event_type                                                                                                                                                                                                                                                                                                                                                                                                                                    detail
-2026-07-15T00:15:04.579712-04:00 data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                             {'saved': 93}
-2026-07-15T00:10:01.682789-04:00 data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                             {'saved': 93}
-2026-07-15T00:05:04.513469-04:00 data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                             {'saved': 93}
-2026-07-15T00:00:02.607469-04:00 data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                             {'saved': 93}
-2026-07-14T15:10:01.456053-04:00   entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
-2026-07-14T15:05:02.308534-04:00   entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
-2026-07-14T15:00:04.423415-04:00   entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
-2026-07-14T14:55:01.276896-04:00   entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
-2026-07-14T14:50:02.479277-04:00   entry_1500          entry {"allocated_cash": 12705.0, "asset_type": "option", "contract_symbol": "AAPL260821C00315000", "contracts": 11, "early_entry_score": 0.757, "entry_mode": "regular", "entry_option_price": 11.55, "execution_mode": "option", "matched_signals": 24, "option_liquidity_status": "ok", "option_open_interest": 11042.0, "option_spread_pct": 1.73, "option_volume": 1070.0, "success_rate": 95.83, "ticker": "AAPL", "timing_score": 0.589}
-2026-07-14T14:50:02.479277-04:00   entry_1500 timing_overlay                                                                                                                                                                                                                                                                                                                              {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-07-14", "training_samples": 5400, "window": 5}
+                    timestamp_et         slot   event_type                                                                                                                                                                                                                                                                                                                                                                                                                                    detail
+2026-07-15T00:20:02.614713-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                             {'saved': 93}
+2026-07-15T00:15:04.579712-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                             {'saved': 93}
+2026-07-15T00:10:01.682789-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                             {'saved': 93}
+2026-07-15T00:05:04.513469-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                             {'saved': 93}
+2026-07-15T00:00:02.607469-04:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                             {'saved': 93}
+2026-07-14T15:10:01.456053-04:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
+2026-07-14T15:05:02.308534-04:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
+2026-07-14T15:00:04.423415-04:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
+2026-07-14T14:55:01.276896-04:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                           {"reason": "already_processed"}
+2026-07-14T14:50:02.479277-04:00   entry_1500        entry {"allocated_cash": 12705.0, "asset_type": "option", "contract_symbol": "AAPL260821C00315000", "contracts": 11, "early_entry_score": 0.757, "entry_mode": "regular", "entry_option_price": 11.55, "execution_mode": "option", "matched_signals": 24, "option_liquidity_status": "ok", "option_open_interest": 11042.0, "option_spread_pct": 1.73, "option_volume": 1070.0, "success_rate": 95.83, "ticker": "AAPL", "timing_score": 0.589}
 ```
 
 ## Equity Curves
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260715001504)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260715002002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260715001504)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260715002002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260715001504)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260715002002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260715001504)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260715002002)
 
 </details>
