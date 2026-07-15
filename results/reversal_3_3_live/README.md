@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-15 10:30:03 EDT`
+Latest checkpoint (ET): `2026-07-15 10:35:02 EDT`
 Last processed slot: `manage_1030`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1030`
 ## Portfolio Snapshot
 
 - Cash: `$19,710.25`
-- Equity: `$28,960.25`
+- Equity: `$29,555.25`
 - Realized PnL: `$19,085.25`
-- Unrealized PnL: `$-125.00`
+- Unrealized PnL: `$470.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  META     option         option META260821C00660000       2026-07-13                   2      2      9375.0                  9250.0        46.88          46.25      660.72        671.68          bid_ask_mid                      46.25                bid_ask_mid                    True          -125.0                  -1.33         81.82               22              1.27         53.38           47.15                  55.99                7322.0         1343.0               0.02                      ok
+  META     option         option META260821C00660000       2026-07-13                   2      2      9375.0                  9845.0        46.88          49.22      660.72        674.24          bid_ask_mid                      49.22                bid_ask_mid                    True           470.0                   5.01         81.82               22              1.27         53.38           49.25                  55.99                7322.0         1343.0               0.02                      ok
 ```
 
 ## Today's Closed Trades (2026-07-15)
@@ -51,24 +51,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   TXN           87.50               24            1.63              3.49        304.06                65.52         0.595          pass              0.366              4.4                           0.237                0.84              0.274                                 ok            True                  False
-  MPWR           80.65               31            1.81             17.45       1368.93                84.79         0.595          pass              0.278             20.6                           0.221               -2.23              0.149                                 ok            True                  False
-   ADI           86.21               29            1.00              2.74        391.57                55.85         0.584          pass              0.402             17.1                           0.203               -2.10              0.088                                 ok            True                  False
-   CSX           87.50               16            0.89              0.31         49.79                19.08         0.560          pass              0.411             38.2                           0.567                4.09              0.354                                 ok            True                  False
-   EXC           94.74               19            0.58              0.19         46.84                21.56         0.555          pass              0.669             53.4                           0.557                0.06             -0.045                                 ok            True                  False
-   LIN          100.00               17            1.07              3.90        520.87                20.66         0.538          pass              0.605             34.8                           0.302               -0.38             -0.293                                 ok            True                  False
-  SOXL           85.00               20            6.40              7.91        173.27               219.49         0.727          pass              0.330             19.0                           0.205              -38.00             -3.054            downtrend_blocked_slope           False                  False
-  AMAT           85.00               20            2.14              8.91        591.88                98.89         0.651          pass              0.368             34.3                           0.305              -19.37             -1.349 downtrend_blocked_slope_and_streak           False                  False
-  KLAC           80.00               20            3.06              4.93        228.26               109.33         0.635          pass              0.204             24.8                           0.251              -25.98             -2.050 downtrend_blocked_slope_and_streak           False                  False
-  LRCX           86.36               22            2.62              6.36        343.37                98.70         0.614          pass              0.397             28.8                           0.271              -22.23             -1.724 downtrend_blocked_slope_and_streak           False                  False
-  MCHP           93.10               29            1.49              0.91         86.72                68.63         0.586          pass              0.584             16.4                           0.205               -5.91             -0.263            downtrend_blocked_slope           False                  False
-  QCOM           86.49               37            0.45              0.56        177.86                61.79         0.583          pass              0.582             56.8                           0.339               -4.05             -0.064           downtrend_blocked_streak           False                  False
+   TXN           90.00               20            2.24              4.79        303.50                65.52         0.574          pass              0.425             11.5                           0.166                0.21              0.246                                 ok            True                  False
+   ADI           84.00               25            1.40              3.85        391.10                55.85         0.572          pass              0.351             29.0                           0.249               -2.50              0.070                                 ok            True                  False
+   EXC           94.12               17            0.64              0.21         46.83                21.56         0.564          pass              0.624             48.3                           0.486                0.00             -0.048                                 ok            True                  False
+   LIN          100.00               10            1.40              5.11        520.35                20.66         0.564          pass              0.500             14.6                           0.232               -0.71             -0.308                                 ok            True                  False
+  NXPI           87.10               31            1.04              2.08        282.98                58.07         0.563          pass              0.423             12.5                           0.112               -0.04              0.270                                 ok            True                  False
+   CSX           86.67               15            1.01              0.35         49.77                19.08         0.558          pass              0.356             29.9                           0.445                3.97              0.349                                 ok            True                  False
+   AEP           83.33               18            0.97              0.92        134.55                21.64         0.542          pass              0.298             33.8                           0.362               -2.32             -0.199                                 ok            True                  False
+   WBD           83.33               12            1.16              0.22         27.38                20.00         0.531          pass              0.199             14.7                           0.236                1.88              0.265                                 ok            True                  False
+  AMAT           84.21               19            2.43             10.14        591.36                98.89         0.637          pass              0.312             25.2                           0.236              -19.61             -1.363 downtrend_blocked_slope_and_streak           False                  False
+  SOXL           85.00               20            7.86              9.72        172.49               219.49         0.626          pass              0.296             11.0                           0.145              -38.97             -3.126            downtrend_blocked_slope           False                  False
+  KLAC           78.57               14            3.81              6.15        227.74               109.33         0.623          pass              0.108              6.3                           0.092              -26.56             -2.085 downtrend_blocked_slope_and_streak           False                  False
+  QCOM           84.85               33            0.73              0.91        177.71                61.79         0.590          pass              0.431             29.7                           0.201               -4.32             -0.077           downtrend_blocked_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                  detail
+2026-07-15T10:35:02.734120-04:00 early_entry_1035 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-15T10:30:03.936476-04:00 early_entry_1030 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-15T10:25:06.040216-04:00 early_entry_1025 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-15T10:20:02.772383-04:00 early_entry_1020 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -78,7 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-07-15T10:00:03.493578-04:00 early_entry_1000 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-15T10:00:03.493578-04:00      manage_1000               exit {"asset_type": "option", "contract_symbol": "AAPL260821C00315000", "fill_price": 13.45, "pnl": 2090.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 16.45, "ticker": "AAPL"}
 2026-07-15T09:35:02.740173-04:00     data_refresh       data_refresh                                                                                                                                                                           {'saved': 93}
-2026-07-15T09:30:04.740888-04:00     data_refresh       data_refresh                                                                                                                                                                           {'saved': 93}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260715103003)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260715103502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260715103003)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260715103502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260715103003)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260715103502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260715103003)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260715103502)
 
 </details>
