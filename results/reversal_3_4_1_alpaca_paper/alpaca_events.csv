@@ -3222,3 +3222,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-15T11:08:26.373905-04:00,2026-07-15,early_entry_1105,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-15T11:15:29.788832-04:00,2026-07-15,exit,exit_filled,"{""contract_symbol"": ""META260821C00660000"", ""exit_price"": 55.9, ""pnl"": 855.0, ""reason"": ""take_profit_day2_hit_at_scan"", ""ticker"": ""META""}"
 2026-07-15T11:15:29.788832-04:00,2026-07-15,early_entry_1115,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-15T11:22:30.573698-04:00,2026-07-15,early_entry_1120,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
