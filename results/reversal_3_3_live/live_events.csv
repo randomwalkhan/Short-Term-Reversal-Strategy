@@ -3963,3 +3963,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-15T14:50:07.762689-04:00,2026-07-15,entry_1500,entry,"{""allocated_cash"": 14060.0, ""asset_type"": ""option"", ""contract_symbol"": ""ADI260821C00380000"", ""contracts"": 4, ""early_entry_score"": 0.523, ""entry_mode"": ""regular"", ""entry_option_price"": 35.15, ""execution_mode"": ""option"", ""matched_signals"": 29, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 129.0, ""option_spread_pct"": 5.41, ""option_volume"": 42.0, ""success_rate"": 86.21, ""ticker"": ""ADI"", ""timing_score"": 0.569}"
 2026-07-15T15:00:06.972520-04:00,2026-07-15,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-15T15:05:02.437789-04:00,2026-07-15,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-07-15T15:10:01.366399-04:00,2026-07-15,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
