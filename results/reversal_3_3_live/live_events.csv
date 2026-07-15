@@ -3948,3 +3948,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-15T11:05:05.849714-04:00,2026-07-15,manage_1100,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""META260821C00660000"", ""fill_price"": 54.6, ""pnl"": 1545.0, ""reason"": ""take_profit_day2_hit_at_scan"", ""return_pct"": 16.48, ""ticker"": ""META""}"
 2026-07-15T11:05:05.849714-04:00,2026-07-15,early_entry_1105,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-15T11:10:02.751788-04:00,2026-07-15,early_entry_1110,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-15T11:15:06.015471-04:00,2026-07-15,early_entry_1115,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
