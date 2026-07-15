@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-15 11:29:33 EDT`
+Latest checkpoint (ET): `2026-07-15 11:36:34 EDT`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-07-15T11:36:34.545725-04:00 early_entry_1135    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-15T11:29:33.560419-04:00 early_entry_1125    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-15T11:22:30.573698-04:00 early_entry_1120    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-15T11:15:29.788832-04:00 early_entry_1115    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-15T10:04:39.779341-04:00      manage_1000  exit_order_submitted {"alpaca_order_id": "a2298041-9f80-4bb1-89c1-37105eb7721b", "contract_symbol": "AAPL260821C00315000", "limit_price": "13.20", "reason": "take_profit_day1_hit_at_scan", "ticker": "AAPL"}
 2026-07-14T14:56:06.897311-04:00       entry_1500          entry_filled                                                                                        {"contract_symbol": "AAPL260821C00315000", "contracts": 4, "filled_price": 11.6, "ticker": "AAPL"}
 2026-07-14T14:49:09.889993-04:00       entry_1500 entry_order_submitted  {"alpaca_order_id": "ea13e503-c485-48fa-9e14-8bdd94d1ae53", "contract_symbol": "AAPL260821C00315000", "contracts": 4, "entry_mode": "regular", "limit_price": "11.65", "ticker": "AAPL"}
-2026-07-14T11:59:54.373859-04:00 early_entry_1155    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
