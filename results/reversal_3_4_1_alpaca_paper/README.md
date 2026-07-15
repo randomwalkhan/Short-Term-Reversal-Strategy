@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-15 11:36:34 EDT`
-Last slot: `manage_1130`
+Latest checkpoint (ET): `2026-07-15 11:43:38 EDT`
+Last slot: `early_entry_1140`
 
 ## Alpaca Paper Account
 
@@ -44,25 +44,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot            event_type                                                                                                                                                                                    detail
-2026-07-15T11:36:34.545725-04:00 early_entry_1135    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T11:29:33.560419-04:00 early_entry_1125    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T11:22:30.573698-04:00 early_entry_1120    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T11:15:29.788832-04:00 early_entry_1115    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T11:15:29.788832-04:00             exit           exit_filled                                                  {"contract_symbol": "META260821C00660000", "exit_price": 55.9, "pnl": 855.0, "reason": "take_profit_day2_hit_at_scan", "ticker": "META"}
-2026-07-15T11:08:26.373905-04:00 early_entry_1105    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T11:08:26.373905-04:00      manage_1100  exit_order_submitted {"alpaca_order_id": "4fe675e9-dcef-4fa3-9dac-70f06409602f", "contract_symbol": "META260821C00660000", "limit_price": "54.05", "reason": "take_profit_day2_hit_at_scan", "ticker": "META"}
-2026-07-15T11:01:06.773152-04:00 early_entry_1100    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T10:54:02.828292-04:00 early_entry_1050    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T10:46:52.375292-04:00 early_entry_1045    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T10:39:48.136490-04:00 early_entry_1035    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T10:32:43.437685-04:00 early_entry_1030    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T10:25:41.411777-04:00 early_entry_1025    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T10:18:37.309507-04:00 early_entry_1015    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T10:11:36.356450-04:00 early_entry_1010    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T10:11:36.356450-04:00             exit           exit_filled                                                 {"contract_symbol": "AAPL260821C00315000", "exit_price": 16.6, "pnl": 2000.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "AAPL"}
-2026-07-15T10:04:39.779341-04:00 early_entry_1000    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-15T10:04:39.779341-04:00      manage_1000  exit_order_submitted {"alpaca_order_id": "a2298041-9f80-4bb1-89c1-37105eb7721b", "contract_symbol": "AAPL260821C00315000", "limit_price": "13.20", "reason": "take_profit_day1_hit_at_scan", "ticker": "AAPL"}
-2026-07-14T14:56:06.897311-04:00       entry_1500          entry_filled                                                                                        {"contract_symbol": "AAPL260821C00315000", "contracts": 4, "filled_price": 11.6, "ticker": "AAPL"}
-2026-07-14T14:49:09.889993-04:00       entry_1500 entry_order_submitted  {"alpaca_order_id": "ea13e503-c485-48fa-9e14-8bdd94d1ae53", "contract_symbol": "AAPL260821C00315000", "contracts": 4, "entry_mode": "regular", "limit_price": "11.65", "ticker": "AAPL"}
+                    timestamp_et             slot           event_type                                                                                                                                                                                    detail
+2026-07-15T11:43:38.141573-04:00 early_entry_1140   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T11:36:34.545725-04:00 early_entry_1135   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T11:29:33.560419-04:00 early_entry_1125   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T11:22:30.573698-04:00 early_entry_1120   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T11:15:29.788832-04:00 early_entry_1115   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T11:15:29.788832-04:00             exit          exit_filled                                                  {"contract_symbol": "META260821C00660000", "exit_price": 55.9, "pnl": 855.0, "reason": "take_profit_day2_hit_at_scan", "ticker": "META"}
+2026-07-15T11:08:26.373905-04:00 early_entry_1105   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T11:08:26.373905-04:00      manage_1100 exit_order_submitted {"alpaca_order_id": "4fe675e9-dcef-4fa3-9dac-70f06409602f", "contract_symbol": "META260821C00660000", "limit_price": "54.05", "reason": "take_profit_day2_hit_at_scan", "ticker": "META"}
+2026-07-15T11:01:06.773152-04:00 early_entry_1100   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T10:54:02.828292-04:00 early_entry_1050   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T10:46:52.375292-04:00 early_entry_1045   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T10:39:48.136490-04:00 early_entry_1035   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T10:32:43.437685-04:00 early_entry_1030   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T10:25:41.411777-04:00 early_entry_1025   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T10:18:37.309507-04:00 early_entry_1015   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T10:11:36.356450-04:00 early_entry_1010   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T10:11:36.356450-04:00             exit          exit_filled                                                 {"contract_symbol": "AAPL260821C00315000", "exit_price": 16.6, "pnl": 2000.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "AAPL"}
+2026-07-15T10:04:39.779341-04:00      manage_1000 exit_order_submitted {"alpaca_order_id": "a2298041-9f80-4bb1-89c1-37105eb7721b", "contract_symbol": "AAPL260821C00315000", "limit_price": "13.20", "reason": "take_profit_day1_hit_at_scan", "ticker": "AAPL"}
+2026-07-15T10:04:39.779341-04:00 early_entry_1000   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-14T14:56:06.897311-04:00       entry_1500         entry_filled                                                                                        {"contract_symbol": "AAPL260821C00315000", "contracts": 4, "filled_price": 11.6, "ticker": "AAPL"}
 ```
