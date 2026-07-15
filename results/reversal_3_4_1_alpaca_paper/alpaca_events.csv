@@ -3218,3 +3218,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-15T10:46:52.375292-04:00,2026-07-15,early_entry_1045,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-15T10:54:02.828292-04:00,2026-07-15,early_entry_1050,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-15T11:01:06.773152-04:00,2026-07-15,early_entry_1100,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-15T11:08:26.373905-04:00,2026-07-15,manage_1100,exit_order_submitted,"{""alpaca_order_id"": ""4fe675e9-dcef-4fa3-9dac-70f06409602f"", ""contract_symbol"": ""META260821C00660000"", ""limit_price"": ""54.05"", ""reason"": ""take_profit_day2_hit_at_scan"", ""ticker"": ""META""}"
+2026-07-15T11:08:26.373905-04:00,2026-07-15,early_entry_1105,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
