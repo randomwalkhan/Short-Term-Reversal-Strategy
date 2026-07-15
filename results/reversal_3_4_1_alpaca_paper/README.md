@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-15 11:08:26 EDT`
-Last slot: `manage_1100`
+Latest checkpoint (ET): `2026-07-15 11:15:29 EDT`
+Last slot: `early_entry_1115`
 
 ## Alpaca Paper Account
 
@@ -13,16 +13,12 @@ Last slot: `manage_1100`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  META exit_submitted    regular META260821C00660000          1               47.35                  54.7          bid_ask_mid                       54.7                    True          5470.0           735.0              15.522703                   2
-```
+_None_
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-  PANW PANW260618C00250000          2026-05-19         2026-05-20               16.05              13.65          3  -720.0  -14.953271        stop_loss_hit_at_scan
   TTWO TTWO260717C00240000          2026-05-20         2026-05-21               17.00              19.00          2   400.0   11.764706 take_profit_day1_hit_at_scan
   SBUX SBUX260717C00105000          2026-05-22         2026-05-26                3.75               3.35         13  -520.0  -10.666667        stop_loss_hit_at_scan
   INTC INTC260626C00117000          2026-05-21         2026-05-27               13.45              15.15          3   510.0   12.639405        time_exit_at_4pm_scan
@@ -42,12 +38,15 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   DRAM DRAM260731C00073000          2026-06-26         2026-06-29                8.90               6.50          5 -1200.0  -26.966292        stop_loss_hit_at_scan
   GILD GILD260821C00135000          2026-07-09         2026-07-13                5.95               3.70          8 -1800.0  -37.815126        stop_loss_hit_at_scan
   AAPL AAPL260821C00315000          2026-07-14         2026-07-15               11.60              16.60          4  2000.0   43.103448 take_profit_day1_hit_at_scan
+  META META260821C00660000          2026-07-13         2026-07-15               47.35              55.90          1   855.0   18.057022 take_profit_day2_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-07-15T11:15:29.788832-04:00 early_entry_1115    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-15T11:15:29.788832-04:00             exit           exit_filled                                                  {"contract_symbol": "META260821C00660000", "exit_price": 55.9, "pnl": 855.0, "reason": "take_profit_day2_hit_at_scan", "ticker": "META"}
 2026-07-15T11:08:26.373905-04:00 early_entry_1105    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-15T11:08:26.373905-04:00      manage_1100  exit_order_submitted {"alpaca_order_id": "4fe675e9-dcef-4fa3-9dac-70f06409602f", "contract_symbol": "META260821C00660000", "limit_price": "54.05", "reason": "take_profit_day2_hit_at_scan", "ticker": "META"}
 2026-07-15T11:01:06.773152-04:00 early_entry_1100    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -66,6 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-14T11:59:54.373859-04:00 early_entry_1155    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-14T11:52:57.612007-04:00 early_entry_1150    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-14T11:46:00.800710-04:00 early_entry_1145    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-14T11:39:03.049113-04:00 early_entry_1135    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-14T11:32:00.252618-04:00 early_entry_1130    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```

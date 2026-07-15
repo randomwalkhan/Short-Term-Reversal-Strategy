@@ -2,39 +2,7 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [
-    {
-      "allocated_cash": 4735.0,
-      "alpaca_entry_client_order_id": "rev-20260713145143-meta-regular",
-      "alpaca_entry_order_id": "3b5b3761-3dc1-4bf3-a69f-e392a67c5ad9",
-      "alpaca_exit_order_id": "4fe675e9-dcef-4fa3-9dac-70f06409602f",
-      "asset_type": "option",
-      "contract_symbol": "META260821C00660000",
-      "contracts": 1,
-      "current_drop_pct": 1.33,
-      "early_entry_score": 0.309,
-      "entry_mode": "regular",
-      "entry_option_price": 47.35,
-      "entry_slot": "entry_1500",
-      "entry_spot": 660.3300170898438,
-      "entry_timestamp": "2026-07-13T14:51:43.434341-04:00",
-      "entry_trade_date": "2026-07-13",
-      "execution_mode": "alpaca_paper_option",
-      "exit_reason": "take_profit_day2_hit_at_scan",
-      "exit_reference_price": 54.05,
-      "expiry": "2026-08-21",
-      "matched_signals": 22,
-      "planned_stop": 42.615,
-      "planned_tp_day1": 54.4525,
-      "planned_tp_day2": 54.4525,
-      "position_id": "META_20260713T145143",
-      "status": "exit_submitted",
-      "strike": 660.0,
-      "success_rate": 81.82,
-      "ticker": "META",
-      "timing_score": 0.579
-    }
-  ],
+  "positions": [],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
