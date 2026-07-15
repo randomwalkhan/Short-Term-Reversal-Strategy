@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-15 13:45:05 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-07-15 13:50:05 EDT`
+Last processed slot: `manage_1400`
 
 ## Active Configuration
 
@@ -49,18 +49,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   TXN           90.91               22            1.86              3.98        303.85                65.52         0.578          pass              0.559             43.4                           0.579                0.60              0.263                                 ok            True                  False
-   ADI           86.67               30            0.84              2.30        391.76                55.85         0.575          pass              0.564             65.3                           0.768               -1.94              0.095                                 ok            True                  False
-   EXC           91.67               12            1.15              0.38         46.76                21.56         0.562          pass              0.401              6.9                           0.140               -0.51             -0.071                                 ok            True                  False
-   LIN          100.00               13            1.17              4.29        520.70                20.66         0.556          pass              0.574             32.9                           0.533               -0.49             -0.298                                 ok            True                  False
-   XEL          100.00               12            0.91              0.51         79.95                21.57         0.556          pass              0.495              8.7                           0.141               -1.07             -0.102                                 ok            True                  False
-  NXPI           84.00               25            1.52              3.02        282.58                58.07         0.541          pass              0.424             54.3                           0.602               -0.52              0.248                                 ok            True                  False
-   AEP           82.35               17            1.10              1.04        134.49                21.64         0.539          pass              0.238             24.7                           0.247               -2.46             -0.205                                 ok            True                  False
-   WBD           83.33               12            1.11              0.21         27.39                20.00         0.531          pass              0.256             33.7                           0.448                1.93              0.268                                 ok            True                  False
-  MDLZ           95.24               21            0.23              0.09         58.76                30.54         0.604          pass              0.790             85.3                           0.507                1.43             -0.070                                 ok           False                  False
-  KLAC           81.25               16            3.73              6.01        227.79               109.33         0.596          pass              0.247             38.2                           0.584              -26.49             -2.081 downtrend_blocked_slope_and_streak           False                  False
-  QCOM           87.18               39            0.22              0.28        177.98                61.79         0.576          pass              0.707             88.2                           0.811               -3.83             -0.054           downtrend_blocked_streak           False                  False
-   CSX           87.50                8            1.46              0.51         49.70                19.08         0.570          pass              0.340             27.7                           0.466                3.49              0.328                                 ok           False                  False
+   TXN           87.50               24            1.51              3.23        304.16                65.52         0.584          pass              0.514             54.0                           0.625                0.96              0.279                                 ok            True                  False
+   ADI           87.50               32            0.59              1.61        392.06                55.85         0.579          pass              0.632             75.7                           0.806               -1.69              0.107                                 ok            True                  False
+   LIN          100.00               12            1.21              4.42        520.65                20.66         0.561          pass              0.562             30.9                           0.522               -0.52             -0.300                                 ok            True                  False
+   EXC           90.91               11            1.27              0.42         46.74                21.56         0.560          pass              0.354              0.0                           0.062               -0.63             -0.076                                 ok            True                  False
+   CSX           80.00               10            1.26              0.44         49.73                19.08         0.560          pass              0.169             37.6                           0.647                3.70              0.337                                 ok            True                  False
+   XEL          100.00               12            0.97              0.55         79.94                21.57         0.552          pass              0.476              2.5                           0.087               -1.13             -0.105                                 ok            True                  False
+   AEP           81.25               16            1.13              1.06        134.48                21.64         0.543          pass              0.197             23.2                           0.240               -2.48             -0.206                                 ok            True                  False
+  NXPI           85.71               28            1.27              2.52        282.79                58.07         0.540          pass              0.512             61.9                           0.628               -0.27              0.260                                 ok            True                  False
+   WBD           83.33               12            1.15              0.22         27.39                20.00         0.528          pass              0.250             31.5                           0.415                1.89              0.266                                 ok            True                  False
+  MDLZ           93.75               16            0.32              0.13         58.74                30.54         0.629          pass              0.708             79.3                           0.490                1.33             -0.075                                 ok           False                  False
+  KLAC           80.95               21            3.03              4.89        228.27               109.33         0.609          pass              0.309             49.7                           0.752              -25.96             -2.049 downtrend_blocked_slope_and_streak           False                  False
+  CTSH           83.72               43            0.00              0.00         43.03                65.21         0.587          pass              0.658            100.0                           0.381               11.10              0.887                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260715134505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260715135005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260715134505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260715135005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260715134505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260715135005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260715134505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260715135005)
 
 </details>
