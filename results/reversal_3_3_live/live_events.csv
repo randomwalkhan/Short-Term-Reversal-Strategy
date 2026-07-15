@@ -3858,3 +3858,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-15T03:20:06.776526-04:00,2026-07-15,data_refresh,data_refresh,{'saved': 93}
 2026-07-15T03:25:03.890502-04:00,2026-07-15,data_refresh,data_refresh,{'saved': 93}
 2026-07-15T03:30:06.895453-04:00,2026-07-15,data_refresh,data_refresh,{'saved': 93}
+2026-07-15T03:35:04.990241-04:00,2026-07-15,data_refresh,data_refresh,{'saved': 93}
