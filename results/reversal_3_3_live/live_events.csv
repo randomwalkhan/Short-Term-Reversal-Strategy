@@ -3998,3 +3998,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-16T14:50:02.142710-04:00,2026-07-16,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.671, ""option_liquidity_status"": ""low_volume"", ""option_open_interest"": 761.0, ""option_spread_pct"": 4.13, ""option_volume"": 7.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""FTNT"", ""timing_score"": 0.508}"
 2026-07-16T14:50:02.142710-04:00,2026-07-16,entry_1500,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
 2026-07-16T14:55:06.750715-04:00,2026-07-16,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-07-16T15:00:06.149748-04:00,2026-07-16,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
