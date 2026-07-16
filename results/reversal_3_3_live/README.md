@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-15 23:55:05 EDT`
-Last processed slot: `share_ext_2355`
+Latest checkpoint (ET): `2026-07-16 00:00:03 EDT`
+Last processed slot: `share_ext_0000`
 
 ## Active Configuration
 
@@ -37,16 +37,12 @@ Last processed slot: `share_ext_2355`
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   ADI     option         option ADI260821C00380000       2026-07-15                   0      4     14060.0                 14420.0        35.15          36.05      388.76         391.0          bid_ask_mid                      36.05                bid_ask_mid                    True           360.0                   2.56         86.21               29              1.02          62.6           61.89                  55.85                 129.0           42.0               0.05                      ok
+   ADI     option         option ADI260821C00380000       2026-07-15                   1      4     14060.0                 14420.0        35.15          36.05      388.76         391.0          bid_ask_mid                      36.05                bid_ask_mid                    True           360.0                   2.56         86.21               29              1.02          62.6           61.89                  55.85                 129.0           42.0               0.05                      ok
 ```
 
-## Today's Closed Trades (2026-07-15)
+## Today's Closed Trades (2026-07-16)
 
-```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price    pnl  return_pct                  exit_reason
-  AAPL     option         option AAPL260821C00315000     11          2026-07-14         2026-07-15       11.550       13.45 2090.0   16.450216 take_profit_day1_hit_at_scan
-  META     option         option META260821C00660000      2          2026-07-13         2026-07-15       46.875       54.60 1545.0   16.480000 take_profit_day2_hit_at_scan
-```
+_None_
 
 ## Current Screener Snapshot
 
@@ -75,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260715235505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260716000003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260715235505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260716000003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260715235505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260716000003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260715235505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260716000003)
 
 </details>
