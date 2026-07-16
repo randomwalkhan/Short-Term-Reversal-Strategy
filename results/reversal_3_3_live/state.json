@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 16570.2503566742,
-  "positions": [
-    {
-      "position_id": "ADI_20260715T145007",
-      "ticker": "ADI",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "ADI260821C00380000",
-      "expiry": "2026-08-21",
-      "strike": 380.0,
-      "entry_timestamp": "2026-07-15T14:50:07.762689-04:00",
-      "entry_trade_date": "2026-07-15",
-      "entry_slot": "entry_1500",
-      "entry_spot": 388.760009765625,
-      "entry_option_price": 35.150000000000006,
-      "entry_bid": 34.2,
-      "entry_ask": 36.1,
-      "entry_iv_pct": 62.60413372802736,
-      "contracts": 4,
-      "allocated_cash": 14060.000000000002,
-      "success_rate": 86.21,
-      "matched_signals": 29,
-      "current_drop_pct": 1.02,
-      "rolling_sigma_20d_pct": 55.85,
-      "planned_tp_day1": 40.42250000000001,
-      "planned_tp_day2": 40.42250000000001,
-      "planned_stop": 31.635000000000005,
-      "option_open_interest": 129.0,
-      "option_volume": 42.0,
-      "option_spread_pct": 0.054054054054054,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 29224.2503566742,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
