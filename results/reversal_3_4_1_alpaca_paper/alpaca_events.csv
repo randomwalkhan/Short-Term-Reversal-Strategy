@@ -3251,3 +3251,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-16T14:48:07.882873-04:00,2026-07-16,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ASML""}"
 2026-07-16T14:55:11.973860-04:00,2026-07-16,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""UPRO""}"
 2026-07-16T15:02:24.933954-04:00,2026-07-16,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""UPRO""}"
+2026-07-16T15:09:32.643377-04:00,2026-07-16,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MPWR""}"
