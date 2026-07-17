@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-17 14:55:11 EDT`
+Latest checkpoint (ET): `2026-07-17 15:00:09 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `entry_1500`
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   TXN     option         option TXN260821C00290000       2026-07-17                   0      7     14105.0                 14105.0        20.15          20.15      284.95        285.61          bid_ask_mid                      20.15                bid_ask_mid                    True             0.0                    0.0          90.0               20              2.15         62.88           62.57                  64.46                 207.0          231.0               0.09                      ok
+   TXN     option         option TXN260821C00290000       2026-07-17                   0      7     14105.0                 14105.0        20.15          20.15      284.95        285.33          bid_ask_mid                      20.15                bid_ask_mid                    True             0.0                    0.0          90.0               20              2.15         62.88           62.49                  64.46                 207.0          231.0               0.09                      ok
 ```
 
 ## Today's Closed Trades (2026-07-17)
@@ -47,25 +47,26 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-   TXN           90.91               22            1.93              3.93        289.54                64.46         0.605          pass              0.591             53.2                           0.608               -2.55             -0.200                  ok            True                  False
-  MDLZ          100.00               14            0.90              0.39         61.25                33.43         0.602          pass              0.572             28.4                           0.455               -0.07              0.067                  ok            True                  False
-   KHC           90.91               11            1.22              0.22         26.13                36.78         0.591          pass              0.423             22.0                           0.355                2.13              0.344                  ok            True                  False
-   ADI           85.19               27            1.23              3.28        379.13                54.65         0.584          pass              0.508             66.0                           0.669               -0.35              0.007                  ok            True                  False
-  ASML           93.75               32            1.10             13.72       1778.99                64.12         0.574          pass              0.799             75.9                           0.546               -0.23             -0.020                  ok            True                  False
-   XEL          100.00               13            1.10              0.62         79.72                21.95         0.558          pass              0.570             31.3                           0.519               -3.49             -0.198                  ok            True                  False
-  NXPI           87.10               31            0.98              1.85        269.87                54.99         0.543          pass              0.618             78.2                           0.625               -1.96             -0.200                  ok            True                  False
-   CSX           88.24               17            0.87              0.31         50.76                21.08         0.527          pass              0.400             27.0                           0.332                3.18              0.396                  ok            True                  False
-  GILD           90.48               21            1.13              1.08        135.84                34.67         0.521          pass              0.465             19.9                           0.242                2.65              0.105                  ok            True                  False
-   ADP           96.30               27            0.80              1.44        255.94                34.79         0.515          pass              0.745             59.9                           0.539                5.05              0.569                  ok            True                  False
-  UPRO           90.91               11            2.63              2.64        142.48                37.18         0.509          pass              0.455             35.6                           0.484               -0.66              0.052                  ok            True                  False
-  PAYX          100.00               30            0.65              0.52        114.48                35.43         0.506          pass              0.782             66.1                           0.583                7.15              0.756                  ok            True                   True
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  MDLZ          100.00               12            0.96              0.41         61.24                33.43         0.611          pass              0.546             23.9                           0.422               -0.13              0.064                      ok            True                  False
+   TXN           90.91               22            2.02              4.13        289.45                64.46         0.599          pass              0.583             50.8                           0.616               -2.65             -0.204                      ok            True                  False
+   KHC           90.91               11            1.28              0.23         26.13                36.78         0.587          pass              0.411             18.3                           0.333                2.07              0.342                      ok            True                  False
+   ADI           84.62               26            1.36              3.63        378.97                54.65         0.580          pass              0.475             62.3                           0.671               -0.48              0.001                      ok            True                  False
+  ASML           93.10               29            1.32             16.50       1777.80                64.12         0.578          pass              0.747             71.1                           0.551               -0.45             -0.031                      ok            True                  False
+   XEL          100.00               13            1.15              0.64         79.70                21.95         0.555          pass              0.560             28.1                           0.511               -3.54             -0.201                      ok            True                  False
+  NXPI           86.67               30            1.02              1.94        269.83                54.99         0.546          pass              0.597             77.2                           0.654               -2.00             -0.202                      ok            True                  False
+   CSX           88.89               18            0.84              0.30         50.76                21.08         0.524          pass              0.434             30.3                           0.378                3.22              0.398                      ok            True                  False
+  GILD           89.47               19            1.28              1.22        135.78                34.67         0.523          pass              0.395              9.8                           0.192                2.51              0.098                      ok            True                  False
+   ADP           96.30               27            0.70              1.25        256.02                34.79         0.522          pass              0.761             65.1                           0.575                5.16              0.574                      ok            True                  False
+  BKNG           85.71               21            1.67              2.16        183.69                41.98         0.512          pass              0.419             47.4                           0.514               -1.64              0.016                      ok            True                  False
+  SOXL           86.96               23            4.21              4.20        140.68               207.84         0.698          pass              0.573             76.9                           0.658              -24.79             -2.544 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                             detail
+2026-07-17T15:00:09.838561-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
 2026-07-17T14:55:11.420522-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
 2026-07-17T14:50:08.434742-04:00       entry_1500                   entry {"allocated_cash": 14105.0, "asset_type": "option", "contract_symbol": "TXN260821C00290000", "contracts": 7, "early_entry_score": 0.537, "entry_mode": "regular", "entry_option_price": 20.15, "execution_mode": "option", "matched_signals": 20, "option_liquidity_status": "ok", "option_open_interest": 207.0, "option_spread_pct": 8.93, "option_volume": 231.0, "success_rate": 90.0, "ticker": "TXN", "timing_score": 0.602}
 2026-07-17T14:50:08.434742-04:00       entry_1500 entry_candidate_skipped                                                                                                                                                                                         {"early_entry_score": 0.572, "option_liquidity_status": "low_volume", "option_open_interest": 709.0, "option_spread_pct": 11.11, "option_volume": 6.0, "reason": "no_trade_low_option_liquidity", "ticker": "MDLZ", "timing_score": 0.602}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-07-17T11:50:01.906755-04:00 early_entry_1150      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:45:01.890808-04:00 early_entry_1145      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:40:01.919825-04:00 early_entry_1140      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-17T11:35:01.723156-04:00 early_entry_1135      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260717145511)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260717150009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260717145511)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260717150009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260717145511)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260717150009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260717145511)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260717150009)
 
 </details>
