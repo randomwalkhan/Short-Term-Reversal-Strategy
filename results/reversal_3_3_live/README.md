@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-17 14:30:06 EDT`
+Latest checkpoint (ET): `2026-07-17 14:35:06 EDT`
 Last processed slot: `manage_1430`
 
 ## Active Configuration
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  MDLZ          100.00               10            1.04              0.45         61.23                33.43         0.619          pass              0.514             17.4                           0.404               -0.21              0.060                  ok            True                  False
-   TXN           90.91               22            2.10              4.28        289.39                64.46         0.594          pass              0.577             49.0                           0.434               -2.72             -0.208                  ok            True                  False
-   KHC           90.91               11            1.28              0.23         26.13                36.78         0.587          pass              0.411             18.3                           0.414                2.07              0.342                  ok            True                  False
-   ADI           84.00               25            1.40              3.74        378.93                54.65         0.584          pass              0.448             61.1                           0.457               -0.52             -0.001                  ok            True                  False
-  ASML           94.12               34            0.79              9.85       1780.65                64.12         0.583          pass              0.843             82.7                           0.570                0.08             -0.006                  ok            True                   True
-  NXPI           87.10               31            0.92              1.75        269.91                54.99         0.547          pass              0.622             79.4                           0.548               -1.90             -0.198                  ok            True                  False
-   WBD           83.33               12            1.16              0.22         27.20                20.20         0.535          pass              0.270             38.1                           0.382                1.87              0.467                  ok            True                  False
-   CSX           85.71               14            1.04              0.37         50.73                21.08         0.534          pass              0.272             13.1                           0.219                3.01              0.388                  ok            True                  False
-  GILD           90.48               21            1.17              1.11        135.82                34.67         0.519          pass              0.447             14.1                           0.330                2.62              0.103                  ok            True                  False
-  CTAS           81.25               16            1.60              2.30        205.26                39.81         0.516          pass              0.214             29.7                           0.463               11.90              1.268                  ok            True                  False
-   ADP           96.30               27            0.86              1.54        255.90                34.79         0.512          pass              0.736             57.0                           0.599                4.99              0.566                  ok            True                  False
-  PAYX          100.00               28            0.79              0.64        114.43                35.43         0.510          pass              0.747             58.6                           0.607                7.00              0.749                  ok            True                  False
+  MDLZ          100.00               11            1.00              0.43         61.24                33.43         0.615          pass              0.530             20.6                           0.416               -0.17              0.062                  ok            True                  False
+   TXN           88.89               18            2.41              4.92        289.11                64.46         0.597          pass              0.474             41.3                           0.419               -3.03             -0.222                  ok            True                  False
+   KHC           90.91               11            1.28              0.23         26.13                36.78         0.587          pass              0.411             18.3                           0.377                2.07              0.342                  ok            True                  False
+  ASML           93.75               32            1.06             13.19       1779.22                64.12         0.577          pass              0.802             76.9                           0.568               -0.19             -0.018                  ok            True                   True
+   ADI           87.50               24            1.66              4.42        378.63                54.65         0.577          pass              0.513             54.0                           0.466               -0.78             -0.013                  ok            True                  False
+  NXPI           85.19               27            1.33              2.51        269.58                54.99         0.543          pass              0.517             70.5                           0.530               -2.30             -0.216                  ok            True                  False
+   CSX           86.67               15            1.03              0.37         50.73                21.08         0.529          pass              0.306             13.9                           0.210                3.02              0.389                  ok            True                  False
+  GILD           90.48               21            1.05              1.00        135.87                34.67         0.527          pass              0.473             22.4                           0.348                2.74              0.108                  ok            True                  False
+   ADP           95.83               24            0.95              1.71        255.83                34.79         0.525          pass              0.703             52.3                           0.530                4.89              0.562                  ok            True                  False
+  PAYX          100.00               26            0.89              0.71        114.39                35.43         0.517          pass              0.719             53.6                           0.537                6.89              0.745                  ok            True                  False
+  BKNG           85.71               21            1.77              2.29        183.63                41.98         0.504          pass              0.408             44.0                           0.522               -1.75              0.011                  ok            True                  False
+  CTAS           85.00               20            1.48              2.14        205.33                39.81         0.501          pass              0.354             34.6                           0.492               12.03              1.273                  ok            True                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260717143006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260717143506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260717143006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260717143506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260717143006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260717143506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260717143006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260717143506)
 
 </details>
