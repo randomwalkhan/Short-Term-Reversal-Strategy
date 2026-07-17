@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4029.9999999999995,
+      "alpaca_entry_client_order_id": "rev-20260717145105-txn-regular",
+      "alpaca_entry_order_id": "52b5f968-17aa-4599-8080-ade2a8edd057",
+      "asset_type": "option",
+      "contract_symbol": "TXN260821C00290000",
+      "contracts": 2,
+      "current_drop_pct": 2.13,
+      "early_entry_score": 0.538,
+      "entry_mode": "regular",
+      "entry_option_price": 20.15,
+      "entry_slot": "entry_1500",
+      "entry_spot": 285.010009765625,
+      "entry_timestamp": "2026-07-17T14:51:05.188951-04:00",
+      "entry_trade_date": "2026-07-17",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-08-21",
+      "matched_signals": 20,
+      "planned_stop": 18.134999999999998,
+      "planned_tp_day1": 23.172499999999996,
+      "planned_tp_day2": 23.172499999999996,
+      "position_id": "TXN_20260717T145105",
+      "status": "entry_submitted",
+      "strike": 290.0,
+      "success_rate": 90.0,
+      "ticker": "TXN",
+      "timing_score": 0.604
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
