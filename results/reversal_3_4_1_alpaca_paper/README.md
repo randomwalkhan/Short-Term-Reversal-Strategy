@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-17 15:33:49 EDT`
+Latest checkpoint (ET): `2026-07-17 15:38:55 EDT`
 Last slot: `manage_1530`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1530`
 
 ```text
 ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   TXN   open    regular TXN260821C00290000          2               21.05                 20.35          bid_ask_mid                      20.35                    True          4070.0          -140.0              -3.325416                   0
+   TXN   open    regular TXN260821C00290000          2               21.05                 20.25          bid_ask_mid                      20.25                    True          4050.0          -160.0              -3.800475                   0
 ```
 
 ## Closed Trades
