@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-17 11:50:01 EDT`
+Latest checkpoint (ET): `2026-07-17 11:57:02 EDT`
 Last slot: `manage_1200`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                            detail
+2026-07-17T11:57:02.823582-04:00 early_entry_1155 early_entry_shadow                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:50:01.557607-04:00 early_entry_1150 early_entry_shadow                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:43:00.631094-04:00 early_entry_1140 early_entry_shadow                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:36:00.566899-04:00 early_entry_1135 early_entry_shadow                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-16T15:09:32.643377-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "MPWR"}
 2026-07-16T15:02:24.933954-04:00       entry_1500      entry_skipped       {"entry_mode": "regular", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "UPRO"}
 2026-07-16T14:55:11.973860-04:00       entry_1500      entry_skipped       {"entry_mode": "regular", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "UPRO"}
-2026-07-16T14:48:07.882873-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ASML"}
 ```
