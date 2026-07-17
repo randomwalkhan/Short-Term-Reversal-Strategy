@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-17 11:50:01 EDT`
+Latest checkpoint (ET): `2026-07-17 11:55:01 EDT`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -44,25 +44,26 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  PYPL           87.50               32            0.68              0.27         56.61                63.95         0.627          pass              0.632             74.0                           0.771               23.92              2.502                  ok            True                  False
-   TXN           89.47               19            2.36              4.81        289.16                64.46         0.594          pass              0.500             42.7                           0.620               -2.98             -0.220                  ok            True                  False
-  MPWR           81.82               33            0.93              8.50       1302.01                74.72         0.589          pass              0.512             83.7                           0.876                0.42              0.100                  ok            True                  False
-  ASML           93.10               29            1.25             15.65       1778.16                64.12         0.586          pass              0.752             72.6                           0.829               -0.38             -0.028                  ok            True                  False
-   ADI           84.62               26            1.33              3.53        379.02                54.65         0.583          pass              0.478             63.3                           0.654               -0.45              0.002                  ok            True                  False
-   ADP           95.24               21            1.22              2.20        255.62                34.79         0.535          pass              0.534              2.5                           0.167                4.60              0.549                  ok            True                  False
-  NXPI           83.33               24            1.78              3.37        269.21                54.99         0.531          pass              0.416             60.3                           0.716               -2.75             -0.237                  ok            True                  False
-  PAYX          100.00               21            1.34              1.08        114.24                35.43         0.526          pass              0.543              5.5                           0.167                6.40              0.724                  ok            True                  False
-  CTAS           81.25               16            1.61              2.33        205.25                39.81         0.522          pass              0.134              2.8                           0.160               11.88              1.267                  ok            True                  False
-  AVGO           84.38               32            0.92              2.41        373.42                50.81         0.514          pass              0.553             79.3                           0.755                2.93              0.267                  ok            True                  False
-  UPRO           92.86               14            2.31              2.32        142.61                37.18         0.511          pass              0.551             43.3                           0.595               -0.34              0.067                  ok            True                  False
-  SBUX           82.35               17            1.18              0.90        107.99                23.69         0.508          pass              0.180              6.6                           0.183                2.70              0.425                  ok            True                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  PYPL           87.50               32            0.63              0.25         56.62                63.95         0.631          pass              0.638             76.1                           0.780               23.98              2.504                      ok            True                  False
+   KHC           84.62               13            0.67              0.12         26.18                36.78         0.616          pass              0.229              8.3                           0.077                2.70              0.370                      ok            True                  False
+   TXN           90.91               22            1.81              3.69        289.64                64.46         0.613          pass              0.600             56.1                           0.744               -2.43             -0.194                      ok            True                  False
+   ADI           86.67               30            1.07              2.86        379.31                54.65         0.576          pass              0.580             70.3                           0.745               -0.19              0.014                      ok            True                  False
+  NXPI           85.19               27            1.34              2.54        269.57                54.99         0.544          pass              0.516             70.1                           0.799               -2.32             -0.217                      ok            True                  False
+   ADP           94.12               17            1.52              2.73        255.39                34.79         0.538          pass              0.477              0.0                           0.157                4.29              0.536                      ok            True                  False
+  PAYX          100.00               18            1.64              1.32        114.14                35.43         0.524          pass              0.509              1.1                           0.153                6.08              0.710                      ok            True                  False
+  UPRO           94.44               18            1.92              1.93        142.78                37.18         0.512          pass              0.648             52.9                           0.648                0.06              0.085                      ok            True                  False
+  AVGO           86.49               37            0.60              1.58        373.77                50.81         0.505          pass              0.663             86.5                           0.815                3.26              0.281                      ok            True                  False
+  SBUX           81.25               16            1.30              0.98        107.95                23.69         0.505          pass              0.129              1.7                           0.189                2.58              0.419                      ok            True                  False
+  SOXL           85.71               28            3.03              3.02        141.18               207.84         0.754          pass              0.598             83.4                           0.937              -23.87             -2.488 downtrend_blocked_slope           False                  False
+  KLAC           84.00               25            1.80              2.77        218.18               106.93         0.702          pass              0.497             73.3                           0.900               -8.55             -0.486 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                detail
+2026-07-17T11:55:01.882856-04:00 early_entry_1155 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:50:01.906755-04:00 early_entry_1150 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:45:01.890808-04:00 early_entry_1145 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:40:01.919825-04:00 early_entry_1140 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-07-17T11:20:01.891090-04:00 early_entry_1120 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:15:01.934131-04:00 early_entry_1115 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T11:10:03.757690-04:00 early_entry_1110 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-17T11:05:01.918068-04:00 early_entry_1105 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260717115001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260717115501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260717115001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260717115501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260717115001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260717115501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260717115001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260717115501)
 
 </details>
