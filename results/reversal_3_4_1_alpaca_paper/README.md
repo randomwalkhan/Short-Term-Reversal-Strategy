@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-17 23:59:39 EDT`
-Last slot: `share_ext_2355`
+Latest checkpoint (ET): `2026-07-18 00:04:49 EDT`
+Last slot: `share_ext_0000`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-07-18T00:04:49.621403-04:00   share_ext_0000         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-07-17T14:58:14.413684-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "TXN260821C00290000", "contracts": 2, "filled_price": 21.05, "ticker": "TXN"}
 2026-07-17T14:51:05.188951-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "52b5f968-17aa-4599-8080-ade2a8edd057", "contract_symbol": "TXN260821C00290000", "contracts": 2, "entry_mode": "regular", "limit_price": "21.05", "ticker": "TXN"}
 2026-07-17T11:57:02.823582-04:00 early_entry_1155    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-17T10:17:47.150965-04:00 early_entry_1015    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T10:10:47.090257-04:00 early_entry_1010    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-17T10:03:46.763748-04:00 early_entry_1000    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-16T15:09:32.643377-04:00       entry_1500         entry_skipped                                      {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "MPWR"}
 ```
