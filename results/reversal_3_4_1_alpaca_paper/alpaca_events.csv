@@ -3272,3 +3272,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-17T14:51:05.188951-04:00,2026-07-17,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""52b5f968-17aa-4599-8080-ade2a8edd057"", ""contract_symbol"": ""TXN260821C00290000"", ""contracts"": 2, ""entry_mode"": ""regular"", ""limit_price"": ""21.05"", ""ticker"": ""TXN""}"
 2026-07-17T14:58:14.413684-04:00,2026-07-17,entry_1500,entry_filled,"{""contract_symbol"": ""TXN260821C00290000"", ""contracts"": 2, ""filled_price"": 21.05, ""ticker"": ""TXN""}"
 2026-07-18T00:04:49.621403-04:00,2026-07-18,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-07-18T00:10:02.429075-04:00,2026-07-18,share_ext_0010,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
