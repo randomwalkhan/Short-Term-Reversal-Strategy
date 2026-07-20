@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-20 14:55:03 EDT`
+Latest checkpoint (ET): `2026-07-20 15:00:01 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$21,916.75`
-- Equity: `$31,381.75`
+- Equity: `$31,446.75`
 - Realized PnL: `$21,411.75`
-- Unrealized PnL: `$-30.00`
+- Unrealized PnL: `$35.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ASML     option         option ASML260821C01800000       2026-07-20                   0      1      9495.0                  9465.0        94.95          94.65     1735.72       1738.29          bid_ask_mid                      94.65                bid_ask_mid                    True           -30.0                  -0.32         94.29               35              0.68         58.71           58.23                  63.09                 214.0           26.0               0.04                      ok
+  ASML     option         option ASML260821C01800000       2026-07-20                   0      1      9495.0                  9530.0        94.95           95.3     1735.72       1736.93          bid_ask_mid                       95.3                bid_ask_mid                    True            35.0                   0.37         94.29               35              0.68         58.71           58.79                  63.09                 214.0           26.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-07-20)
@@ -51,24 +51,25 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  ASML           94.29               35            0.53              6.51       1744.79                63.09         0.595          pass              0.741             44.6                           0.348               -4.76             -0.196                                 ok            True                  False
-  MNST          100.00               11            1.68              1.15         97.01                20.09         0.537          pass              0.511             16.8                           0.409               -1.55              0.109                                 ok            True                  False
-  GILD           91.67               24            0.77              0.72        133.97                34.72         0.526          pass              0.531             24.5                           0.328                2.81              0.038                                 ok            True                  False
-  CTAS           82.35               17            1.58              2.26        203.48                36.07         0.526          pass              0.236             24.8                           0.313               12.90              1.514                                 ok            True                  False
-  BKNG           85.71               21            1.86              2.37        180.67                41.44         0.505          pass              0.341             21.8                           0.225               -1.51              0.138                                 ok            True                  False
-  PCAR           86.21               29            0.90              0.79        125.86                30.30         0.503          pass              0.411             22.8                           0.249               -0.67              0.105                                 ok            True                  False
-  KLAC           86.67               30            1.14              1.69        212.03               107.27         0.699          pass              0.503             40.8                           0.400               -9.85             -0.601 downtrend_blocked_slope_and_streak           False                  False
-  LRCX           88.46               26            1.56              3.42        311.83                96.49         0.640          pass              0.513             38.8                           0.300              -11.93             -0.930 downtrend_blocked_slope_and_streak           False                  False
-  MDLZ          100.00                7            1.27              0.54         60.77                32.63         0.608          pass              0.583             40.8                           0.494                1.78              0.227                                 ok           False                  False
-   KDP           85.71               14            1.18              0.26         30.80                36.31         0.595          pass              0.290             17.0                           0.282               -3.80             -0.275            downtrend_blocked_slope           False                  False
-  AAPL           85.71                7            1.97              4.61        331.76                36.42         0.592          pass              0.315             34.4                           0.620                4.63              0.697                                 ok           False                  False
-   EXC           93.33               15            0.90              0.29         46.14                23.43         0.578          pass              0.490             14.4                           0.247               -2.56             -0.271            downtrend_blocked_slope           False                  False
+  ASML           94.29               35            0.63              7.76       1744.26                63.09         0.588          pass              0.709             34.0                           0.320               -4.85             -0.201                                 ok            True                  False
+  GILD           91.67               24            0.79              0.74        133.96                34.72         0.524          pass              0.524             22.3                           0.337                2.79              0.037                                 ok            True                  False
+  CTAS           85.00               20            1.35              1.94        203.62                36.07         0.523          pass              0.359             35.4                           0.519               13.15              1.524                                 ok            True                  False
+  BKNG           86.36               22            1.53              1.95        180.85                41.44         0.521          pass              0.409             35.6                           0.353               -1.18              0.153                                 ok            True                  False
+  PCAR           85.71               28            0.95              0.84        125.84                30.30         0.506          pass              0.378             18.4                           0.233               -0.72              0.102                                 ok            True                  False
+  AMAT           91.18               34            0.41              1.53        529.01                99.49         0.702          pass              0.553              8.4                           0.171              -11.02             -0.782 downtrend_blocked_slope_and_streak           False                  False
+  KLAC           84.62               26            1.51              2.25        211.78               107.27         0.697          pass              0.363             21.1                           0.311              -10.19             -0.619 downtrend_blocked_slope_and_streak           False                  False
+  LRCX           88.46               26            1.74              3.82        311.66                96.49         0.628          pass              0.490             31.7                           0.320              -12.10             -0.938 downtrend_blocked_slope_and_streak           False                  False
+  AAPL          100.00                4            2.09              4.89        331.64                36.42         0.620          pass              0.553             30.4                           0.497                4.51              0.691                                 ok           False                  False
+  MDLZ          100.00                7            1.35              0.58         60.75                32.63         0.602          pass              0.571             37.0                           0.441                1.70              0.223                                 ok           False                  False
+   KDP           85.71               14            1.31              0.28         30.79                36.31         0.586          pass              0.262              8.0                           0.184               -3.92             -0.281            downtrend_blocked_slope           False                  False
+   ADI           86.49               37            0.10              0.27        375.25                54.75         0.582          pass              0.533             40.6                           0.231               -3.56             -0.254 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  detail
+2026-07-20T15:00:01.116839-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-07-20T14:55:03.114879-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-07-20T14:50:01.117820-04:00       entry_1500              entry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {"allocated_cash": 9495.0, "asset_type": "option", "contract_symbol": "ASML260821C01800000", "contracts": 1, "early_entry_score": 0.694, "entry_mode": "regular", "entry_option_price": 94.95, "execution_mode": "option", "matched_signals": 35, "option_liquidity_status": "ok", "option_open_interest": 214.0, "option_spread_pct": 3.9, "option_volume": 26.0, "success_rate": 94.29, "ticker": "ASML", "timing_score": 0.585}
 2026-07-20T14:50:01.117820-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-07-20", "training_samples": 5478, "window": 5}
@@ -78,7 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-07-20T11:45:01.103753-04:00 early_entry_1145 early_entry_shadow {"contract_symbol": "VRSK260821C00200000", "current_drop_pct": 0.51, "early_entry_score": 0.725, "early_reclaim_pct": 68.7, "entry_ask": 9.6, "entry_bid": 8.6, "entry_mode": "early", "entry_option_price": 9.1, "hypothetical_budget": 15705.88, "hypothetical_contracts": 17, "matched_signals": 41, "option_liquidity_status": "low_open_interest,low_volume", "option_open_interest": 47.0, "option_spread_pct": 10.99, "option_volume": 1.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.668, "shadow_only": true, "success_rate": 90.24, "ticker": "VRSK", "timing_score": 0.455, "top_candidates": [{"current_drop_pct": 0.51, "early_entry_score": 0.725, "early_reclaim_pct": 68.7, "matched_signals": 41, "recovery_stability_score": 0.668, "success_rate": 90.24, "ticker": "VRSK", "timing_score": 0.455, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
 2026-07-20T11:40:02.180070-04:00 early_entry_1140 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-20T11:35:01.099987-04:00 early_entry_1135 early_entry_shadow {"contract_symbol": "VRSK260821C00200000", "current_drop_pct": 0.57, "early_entry_score": 0.695, "early_reclaim_pct": 65.2, "entry_ask": 9.4, "entry_bid": 8.7, "entry_mode": "early", "entry_option_price": 9.05, "hypothetical_budget": 15705.88, "hypothetical_contracts": 17, "matched_signals": 39, "option_liquidity_status": "low_open_interest,low_volume", "option_open_interest": 47.0, "option_spread_pct": 7.73, "option_volume": 1.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.692, "shadow_only": true, "success_rate": 89.74, "ticker": "VRSK", "timing_score": 0.463, "top_candidates": [{"current_drop_pct": 0.57, "early_entry_score": 0.695, "early_reclaim_pct": 65.2, "matched_signals": 39, "recovery_stability_score": 0.692, "success_rate": 89.74, "ticker": "VRSK", "timing_score": 0.463, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
-2026-07-20T11:30:02.147951-04:00 early_entry_1130 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260720145503)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260720150001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260720145503)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260720150001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260720145503)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260720150001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260720145503)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260720150001)
 
 </details>
