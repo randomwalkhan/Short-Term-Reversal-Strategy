@@ -3560,3 +3560,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-20T11:53:24.604970-04:00,2026-07-20,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-20T12:00:14.609863-04:00,2026-07-20,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-20T14:49:29.930723-04:00,2026-07-20,entry_1500,entry_skipped,"{""budget"": 5000.0, ""entry_limit"": 96.8, ""reason"": ""insufficient_cash"", ""ticker"": ""ASML""}"
+2026-07-20T14:56:26.367897-04:00,2026-07-20,entry_1500,entry_skipped,"{""budget"": 5000.0, ""entry_limit"": 96.2, ""reason"": ""insufficient_cash"", ""ticker"": ""ASML""}"
