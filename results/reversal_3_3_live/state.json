@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 15119.250356674203,
-  "positions": [
-    {
-      "position_id": "TXN_20260717T145008",
-      "ticker": "TXN",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "TXN260821C00290000",
-      "expiry": "2026-08-21",
-      "strike": 290.0,
-      "entry_timestamp": "2026-07-17T14:50:08.434742-04:00",
-      "entry_trade_date": "2026-07-17",
-      "entry_slot": "entry_1500",
-      "entry_spot": 284.9549865722656,
-      "entry_option_price": 20.15,
-      "entry_bid": 19.25,
-      "entry_ask": 21.05,
-      "entry_iv_pct": 62.87878918457033,
-      "contracts": 7,
-      "allocated_cash": 14104.999999999998,
-      "success_rate": 90.0,
-      "matched_signals": 20,
-      "current_drop_pct": 2.15,
-      "rolling_sigma_20d_pct": 64.46,
-      "planned_tp_day1": 23.172499999999996,
-      "planned_tp_day2": 23.172499999999996,
-      "planned_stop": 18.134999999999998,
-      "option_open_interest": 207.0,
-      "option_volume": 231.0,
-      "option_spread_pct": 0.08933002481389582,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 31411.7503566742,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
