@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-20 12:30:05 EDT`
+Latest checkpoint (ET): `2026-07-20 12:35:05 EDT`
 Last processed slot: `manage_1230`
 
 ## Active Configuration
@@ -48,18 +48,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   WBD           90.91               22            0.58              0.11         26.82                20.40         0.543          pass              0.594             56.3                           0.709                2.28              0.395                                 ok            True                  False
-   CSX           86.67               15            1.01              0.36         50.60                17.40         0.533          pass              0.291              8.8                           0.213                2.92              0.428                                 ok            True                  False
-  MNST          100.00               14            1.50              1.02         97.06                20.09         0.530          pass              0.549             23.2                           0.345               -1.37              0.118                                 ok            True                  False
-  SBUX           81.25               16            1.26              0.93        105.09                24.88         0.525          pass              0.126              0.0                           0.179                2.01              0.250                                 ok            True                  False
-  CTAS           85.71               21            1.29              1.84        203.66                36.07         0.522          pass              0.394             38.7                           0.635               13.23              1.528                                 ok            True                  False
-  ORLY           80.00               25            1.41              0.85         85.69                41.23         0.521          pass              0.208             18.8                           0.282                0.71             -0.010                                 ok            True                  False
-  GILD           92.86               28            0.56              0.53        134.05                34.72         0.516          pass              0.633             39.5                           0.351                3.02              0.048                                 ok            True                  False
-  BKNG           87.50               32            0.77              0.97        181.26                41.44         0.506          pass              0.601             67.8                           0.782               -0.41              0.189                                 ok            True                  False
-  KLAC           88.89               36            0.61              0.90        212.36               107.27         0.700          pass              0.678             65.8                           0.520               -9.37             -0.577 downtrend_blocked_slope_and_streak           False                  False
-  LRCX           89.66               29            0.69              1.52        312.65                96.49         0.679          pass              0.671             72.8                           0.536              -11.16             -0.890 downtrend_blocked_slope_and_streak           False                  False
-   KHC           88.89               18            0.06              0.01         25.88                35.69         0.638          pass              0.635             93.6                           0.630                4.21              0.474                                 ok           False                  False
-  ASML           94.29               35            0.29              3.55       1746.06                63.09         0.611          pass              0.818             69.8                           0.549               -4.52             -0.185                                 ok           False                  False
+   WBD           90.91               22            0.61              0.12         26.82                20.40         0.541          pass              0.586             53.5                           0.714                2.24              0.393                                 ok            True                  False
+  MNST          100.00               12            1.59              1.09         97.03                20.09         0.537          pass              0.522             18.4                           0.310               -1.46              0.114                                 ok            True                  False
+   CSX           85.71               14            1.04              0.37         50.59                17.40         0.537          pass              0.251              6.2                           0.201                2.89              0.426                                 ok            True                  False
+  CTAS           85.00               20            1.35              1.93        203.62                36.07         0.524          pass              0.360             35.9                           0.627               13.16              1.525                                 ok            True                  False
+  GILD           92.86               28            0.56              0.53        134.05                34.72         0.516          pass              0.633             39.5                           0.355                3.02              0.048                                 ok            True                  False
+  BKNG           87.50               32            0.77              0.98        181.26                41.44         0.506          pass              0.600             67.7                           0.774               -0.41              0.188                                 ok            True                  False
+  KLAC           88.89               36            0.76              1.13        212.27               107.27         0.691          pass              0.652             57.4                           0.427               -9.50             -0.584 downtrend_blocked_slope_and_streak           False                  False
+  LRCX           89.29               28            0.87              1.91        312.48                96.49         0.673          pass              0.632             65.8                           0.452              -11.32             -0.898 downtrend_blocked_slope_and_streak           False                  False
+   KHC           88.89               18            0.14              0.02         25.87                35.69         0.633          pass              0.609             85.1                           0.492                4.13              0.470                                 ok           False                  False
+  ASML           94.29               35            0.38              4.69       1745.57                63.09         0.605          pass              0.788             60.1                           0.444               -4.61             -0.189                                 ok           False                  False
+   KDP           85.71               14            1.26              0.27         30.79                36.31         0.591          pass              0.242              1.3                           0.207               -3.87             -0.279            downtrend_blocked_slope           False                  False
+   EXC           93.33               15            0.77              0.25         46.15                23.43         0.589          pass              0.448              0.0                           0.196               -2.43             -0.265            downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260720123005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260720123505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260720123005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260720123505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260720123005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260720123505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260720123005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260720123505)
 
 </details>
