@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-21 14:45:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-07-21 14:50:05 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -27,15 +27,18 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$34,176.75`
+- Cash: `$17,264.25`
 - Equity: `$34,176.75`
 - Realized PnL: `$24,176.75`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
+  PYPL     option         option PYPL260821C00055000       2026-07-21                   0     55     16912.5                 16912.5         3.08           3.08       55.67         55.67          bid_ask_mid                       3.08                bid_ask_mid                    True             0.0                    0.0          80.0               10              2.03         42.85           42.85                  61.63                6395.0           68.0               0.05                      ok
+```
 
 ## Today's Closed Trades (2026-07-21)
 
@@ -48,24 +51,26 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  PYPL           80.00               10            1.84              0.73         56.51                61.63         0.674          pass              0.185             39.2                           0.469               22.18              2.909                                 ok            True                  False
-  MDLZ          100.00               13            0.87              0.37         60.11                32.62         0.624          pass              0.648             55.3                           0.525               -0.79              0.196                                 ok            True                  False
-  BKNG           90.00               30            0.82              1.04        179.01                41.79         0.546          pass              0.566             37.0                           0.492               -2.19              0.197                                 ok            True                  False
-  TMUS           83.33               12            1.98              2.72        194.48                36.36         0.540          pass              0.226             23.2                           0.463                3.81              0.676                                 ok            True                  False
-   KHC           87.50               16            0.41              0.07         25.83                34.83         0.603          pass              0.472             57.1                           0.486                1.80              0.451                                 ok           False                  False
-   PEP           86.36               22            0.49              0.47        135.26                30.90         0.589          pass              0.441             44.1                           0.523               -7.03             -0.524            downtrend_blocked_slope           False                  False
-   EXC           95.24               21            0.42              0.14         45.90                23.50         0.562          pass              0.747             72.5                           0.449               -3.79             -0.313            downtrend_blocked_slope           False                  False
-  GILD          100.00                9            2.34              2.18        132.27                34.42         0.557          pass              0.526             23.5                           0.417               -4.60             -0.205                                 ok           False                  False
-   XEL          100.00               27            0.15              0.08         78.63                21.50         0.552          pass              0.816             82.6                           0.619               -2.63             -0.189                                 ok           False                  False
-   ADP          100.00                1            3.12              5.57        252.85                34.09         0.548          pass              0.461              2.1                           0.138                0.68              0.482                                 ok           False                  False
-   LIN           93.75               16            1.13              4.05        510.32                21.97         0.540          pass              0.555             31.4                           0.305               -5.94             -0.501            downtrend_blocked_slope           False                  False
-  CPRT           78.26               23            1.55              0.30         27.36                44.09         0.528          pass              0.240             33.6                           0.503               -7.53             -0.524 downtrend_blocked_slope_and_streak           False                  False
+  PYPL           80.00               10            2.03              0.81         56.47                61.63         0.663          pass              0.165             32.8                           0.422               21.94              2.900                                 ok            True                  False
+  MDLZ          100.00               14            0.76              0.32         60.13                32.62         0.625          pass              0.672             60.9                           0.566               -0.68              0.201                                 ok            True                  False
+  GILD           90.00               10            2.16              2.01        132.35                34.42         0.551          pass              0.410             29.5                           0.454               -4.42             -0.197                                 ok            True                  False
+  BKNG           90.00               30            0.83              1.04        179.00                41.79         0.546          pass              0.564             36.6                           0.469               -2.19              0.197                                 ok            True                  False
+  TMUS           81.82               11            2.14              2.93        194.38                36.36         0.535          pass              0.160             17.1                           0.292                3.64              0.669                                 ok            True                  False
+   KHC           88.24               17            0.33              0.06         25.83                34.83         0.602          pass              0.522             65.3                           0.494                1.88              0.455                                 ok           False                  False
+   PEP           87.50               24            0.36              0.34        135.31                30.90         0.586          pass              0.528             58.8                           0.612               -6.90             -0.518            downtrend_blocked_slope           False                  False
+   EXC           95.24               21            0.39              0.13         45.91                23.50         0.564          pass              0.754             74.6                           0.554               -3.76             -0.311            downtrend_blocked_slope           False                  False
+   XEL          100.00               28            0.06              0.03         78.66                21.50         0.551          pass              0.853             92.8                           0.676               -2.54             -0.185                                 ok           False                  False
+   LIN           93.33               15            1.16              4.15        510.27                21.97         0.544          pass              0.532             29.6                           0.284               -5.97             -0.502            downtrend_blocked_slope           False                  False
+   ADP          100.00                1            3.19              5.70        252.80                34.09         0.543          pass              0.462              2.7                           0.121                0.61              0.478                                 ok           False                  False
+  CPRT           81.82               22            1.58              0.30         27.36                44.09         0.537          pass              0.278             32.0                           0.491               -7.57             -0.526 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              detail
+2026-07-21T14:50:05.500810-04:00       entry_1500              entry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               {"allocated_cash": 16912.5, "asset_type": "option", "contract_symbol": "PYPL260821C00055000", "contracts": 55, "early_entry_score": 0.165, "entry_mode": "regular", "entry_option_price": 3.075, "execution_mode": "option", "matched_signals": 10, "option_liquidity_status": "ok", "option_open_interest": 6395.0, "option_spread_pct": 4.88, "option_volume": 68.0, "success_rate": 80.0, "ticker": "PYPL", "timing_score": 0.663}
+2026-07-21T14:50:05.500810-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-07-21", "training_samples": 5488, "window": 5}
 2026-07-21T11:17:25.409204-04:00 early_entry_1115 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-21T10:59:34.342189-04:00 early_entry_1055 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-21T10:16:24.427902-04:00 early_entry_1015 early_entry_shadow {"contract_symbol": "CTAS260821C00200000", "current_drop_pct": 0.64, "early_entry_score": 0.741, "early_reclaim_pct": 77.8, "entry_ask": 8.0, "entry_bid": 6.9, "entry_mode": "early", "entry_option_price": 7.45, "hypothetical_budget": 17088.38, "hypothetical_contracts": 22, "matched_signals": 34, "option_liquidity_status": "low_volume,wide_spread", "option_open_interest": 548.0, "option_spread_pct": 14.77, "option_volume": 3.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.727, "shadow_only": true, "success_rate": 91.18, "ticker": "CTAS", "timing_score": 0.495, "top_candidates": [{"current_drop_pct": 0.64, "early_entry_score": 0.741, "early_reclaim_pct": 77.8, "matched_signals": 34, "recovery_stability_score": 0.727, "success_rate": 91.18, "ticker": "CTAS", "timing_score": 0.495, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
@@ -74,8 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-07-20T15:10:01.116454-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 2026-07-20T15:05:01.111853-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 2026-07-20T15:00:01.116839-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-07-20T14:55:03.114879-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-07-20T14:50:01.117820-04:00       entry_1500              entry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {"allocated_cash": 9495.0, "asset_type": "option", "contract_symbol": "ASML260821C01800000", "contracts": 1, "early_entry_score": 0.694, "entry_mode": "regular", "entry_option_price": 94.95, "execution_mode": "option", "matched_signals": 35, "option_liquidity_status": "ok", "option_open_interest": 214.0, "option_spread_pct": 3.9, "option_volume": 26.0, "success_rate": 94.29, "ticker": "ASML", "timing_score": 0.585}
 ```
 
 ## Equity Curves
@@ -85,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260721144501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260721145005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260721144501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260721145005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260721144501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260721145005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260721144501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260721145005)
 
 </details>
