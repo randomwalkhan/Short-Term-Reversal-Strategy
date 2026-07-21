@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-07-21 15:05:04 EDT`
-- Equity: `$34,314.25` | Realized: `$24,176.75` | Unrealized: `$137.50` | Open positions: `1`
+- Latest checkpoint (ET): `2026-07-21 15:10:09 EDT`
+- Equity: `$33,351.75` | Realized: `$24,176.75` | Unrealized: `$-825.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `entry_1500`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  PYPL     option         option PYPL260821C00055000     55     16912.5                 17050.0            3.1           137.5                   0.81                   0
+  PYPL     option         option PYPL260821C00055000     55     16912.5                 16087.5           2.92          -825.0                  -4.88                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260721150504)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260721151009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260721150504)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260721151009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260721150504)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260721151009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260721150504)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260721151009)
 
 </details>
 
