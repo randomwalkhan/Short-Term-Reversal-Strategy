@@ -4104,3 +4104,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-20T15:05:01.111853-04:00,2026-07-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-20T15:10:01.116454-04:00,2026-07-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-21T00:00:02.341945-04:00,2026-07-21,data_refresh,data_refresh,{'saved': 93}
+2026-07-21T09:33:02.218910-04:00,2026-07-21,manage_0930,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""ASML260821C01800000"", ""fill_price"": 122.6, ""pnl"": 2765.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 29.12, ""ticker"": ""ASML""}"

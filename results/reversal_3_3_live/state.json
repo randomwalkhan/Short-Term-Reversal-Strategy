@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 21916.7503566742,
-  "positions": [
-    {
-      "position_id": "ASML_20260720T145001",
-      "ticker": "ASML",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "ASML260821C01800000",
-      "expiry": "2026-08-21",
-      "strike": 1800.0,
-      "entry_timestamp": "2026-07-20T14:50:01.117820-04:00",
-      "entry_trade_date": "2026-07-20",
-      "entry_slot": "entry_1500",
-      "entry_spot": 1735.719970703125,
-      "entry_option_price": 94.94999999999999,
-      "entry_bid": 93.1,
-      "entry_ask": 96.8,
-      "entry_iv_pct": 58.712418495178234,
-      "contracts": 1,
-      "allocated_cash": 9494.999999999998,
-      "success_rate": 94.29,
-      "matched_signals": 35,
-      "current_drop_pct": 0.68,
-      "rolling_sigma_20d_pct": 63.09,
-      "planned_tp_day1": 109.19249999999998,
-      "planned_tp_day2": 109.19249999999998,
-      "planned_stop": 85.455,
-      "option_open_interest": 214.0,
-      "option_volume": 26.0,
-      "option_spread_pct": 0.038967877830437106,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 34176.7503566742,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
