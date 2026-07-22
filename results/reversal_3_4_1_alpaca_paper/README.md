@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-22 13:27:40 EDT`
+Latest checkpoint (ET): `2026-07-22 13:32:44 EDT`
 Last slot: `manage_1330`
 
 ## Alpaca Paper Account
@@ -15,8 +15,8 @@ Last slot: `manage_1330`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AAPL exit_submitted    regular AAPL260821C00330000          4               10.70                  8.50          bid_ask_mid                       8.50                    True          3400.0          -880.0             -20.560748                   2
-  PYPL           open    regular PYPL260821C00055000         15                3.15                  3.17          bid_ask_mid                       3.17                    True          4755.0            30.0               0.634921                   1
+  AAPL exit_submitted    regular AAPL260821C00330000          4               10.70                 8.475          bid_ask_mid                      8.475                    True          3390.0          -890.0             -20.794393                   2
+  PYPL           open    regular PYPL260821C00055000         15                3.15                 3.165          bid_ask_mid                      3.165                    True          4747.5            22.5               0.476190                   1
 ```
 
 ## Closed Trades
