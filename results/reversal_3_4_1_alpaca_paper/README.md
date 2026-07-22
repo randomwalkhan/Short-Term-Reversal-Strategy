@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-22 15:46:35 EDT`
-Last slot: `manual`
+Latest checkpoint (ET): `2026-07-22 15:51:40 EDT`
+Last slot: `manage_1600`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$81,547.39`
-- Portfolio value: `$93,887.39`
+- Portfolio value: `$93,897.39`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,9 +15,9 @@ Last slot: `manual`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AAPL exit_submitted    regular AAPL260821C00330000          4               10.70                 8.625          bid_ask_mid                      8.625                    True          3450.0          -830.0             -19.392523                   2
-  PYPL           open    regular PYPL260821C00055000         15                3.15                 3.150          bid_ask_mid                      3.150                    True          4725.0             0.0               0.000000                   1
-  PYPL           open    regular PYPL260821C00055000         15                3.25                 3.150          bid_ask_mid                      3.150                    True          4725.0          -150.0              -3.076923                   0
+  AAPL exit_submitted    regular AAPL260821C00330000          4               10.70                 8.575          bid_ask_mid                      8.575                    True          3430.0          -850.0             -19.859813                   2
+  PYPL           open    regular PYPL260821C00055000         15                3.15                 3.095          bid_ask_mid                      3.095                    True          4642.5           -82.5              -1.746032                   1
+  PYPL           open    regular PYPL260821C00055000         15                3.25                 3.095          bid_ask_mid                      3.095                    True          4642.5          -232.5              -4.769231                   0
 ```
 
 ## Closed Trades
