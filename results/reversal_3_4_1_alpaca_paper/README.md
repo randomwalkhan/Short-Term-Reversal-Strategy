@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-22 12:06:26 EDT`
+Latest checkpoint (ET): `2026-07-22 12:11:31 EDT`
 Last slot: `manage_1200`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$86,422.69`
-- Portfolio value: `$94,207.69`
+- Portfolio value: `$94,257.69`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,8 +15,8 @@ Last slot: `manage_1200`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AAPL exit_submitted    regular AAPL260821C00330000          4               10.70                 9.175          bid_ask_mid                      9.175                    True          3670.0          -610.0             -14.252336                   2
-  PYPL           open    regular PYPL260821C00055000         15                3.15                 3.090          bid_ask_mid                      3.090                    True          4635.0           -90.0              -1.904762                   1
+  AAPL exit_submitted    regular AAPL260821C00330000          4               10.70                 9.125          bid_ask_mid                      9.125                    True          3650.0          -630.0             -14.719626                   2
+  PYPL           open    regular PYPL260821C00055000         15                3.15                 3.110          bid_ask_mid                      3.110                    True          4665.0           -60.0              -1.269841                   1
 ```
 
 ## Closed Trades
