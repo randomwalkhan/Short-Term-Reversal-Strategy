@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-22 14:00:01 EDT`
+Latest checkpoint (ET): `2026-07-22 14:05:01 EDT`
 Last processed slot: `manage_1400`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1400`
 ## Portfolio Snapshot
 
 - Cash: `$17,264.25`
-- Equity: `$34,699.25`
+- Equity: `$34,561.75`
 - Realized PnL: `$24,176.75`
-- Unrealized PnL: `$522.50`
+- Unrealized PnL: `$385.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  PYPL     option         option PYPL260821C00055000       2026-07-21                   1     55     16912.5                 17435.0         3.08           3.17       55.67         55.33          bid_ask_mid                       3.17                bid_ask_mid                    True           522.5                   3.09          80.0               10              2.03         42.85           49.54                  61.63                6395.0           68.0               0.05                      ok
+  PYPL     option         option PYPL260821C00055000       2026-07-21                   1     55     16912.5                 17297.5         3.08           3.14       55.67         55.35          bid_ask_mid                       3.14                bid_ask_mid                    True           385.0                   2.28          80.0               10              2.03         42.85           48.93                  61.63                6395.0           68.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-07-22)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  DRAM           82.76               29            1.29              0.53         58.62               115.77         0.696          pass              0.497             75.9                           0.513               -6.37             -1.389                                 ok            True                  False
-  PYPL           84.62               26            0.92              0.36         55.70                62.33         0.663          pass              0.313              5.5                           0.174               24.26              2.780                                 ok            True                  False
-  AAPL           94.74               19            1.16              2.66        326.60                37.60         0.608          pass              0.554             13.5                           0.439                3.36              0.520                                 ok            True                  False
-   ADP           94.74               19            1.36              2.34        245.22                36.45         0.572          pass              0.530              6.4                           0.237                0.63              0.315                                 ok            True                  False
-  INTC           86.11               36            0.86              0.64        105.18                79.77         0.570          pass              0.637             81.2                           0.456               -5.17             -1.059                                 ok            True                  False
-  PAYX          100.00               26            1.06              0.83        111.60                33.94         0.540          pass              0.620             19.7                           0.360                3.94              0.654                                 ok            True                  False
-  ORLY           80.00               25            1.40              0.86         87.60                43.42         0.524          pass              0.220             22.6                           0.193                2.07              0.137                                 ok            True                  False
-  CTSH           81.48               27            1.72              0.52         43.41                49.89         0.509          pass              0.204              0.0                           0.195                1.06              0.253                                 ok            True                  False
-  PANW           91.30               23            2.26              5.41        339.83                60.47         0.507          pass              0.567             42.8                           0.350                4.32              0.570                                 ok            True                  False
-  AMZN           80.00               15            2.01              3.48        246.06                25.29         0.503          pass              0.085              0.4                           0.086               -0.43              0.047                                 ok            True                  False
-  KLAC           88.89               36            0.43              0.66        217.28               102.77         0.719          pass              0.754             90.7                           0.692               -2.06             -0.711 downtrend_blocked_slope_and_streak           False                  False
-  AMAT           90.62               32            0.75              2.96        563.28               100.84         0.714          pass              0.752             83.7                           0.672               -1.79             -0.811 downtrend_blocked_slope_and_streak           False                  False
+  DRAM           82.76               29            1.34              0.55         58.61               115.77         0.693          pass              0.494             74.9                           0.502               -6.42             -1.391                                 ok            True                  False
+  PYPL           84.62               26            0.90              0.35         55.70                62.33         0.664          pass              0.318              7.3                           0.159               24.29              2.781                                 ok            True                  False
+  AAPL           94.12               17            1.21              2.78        326.55                37.60         0.618          pass              0.515              9.9                           0.385                3.31              0.517                                 ok            True                  False
+   ADP           95.00               20            1.32              2.27        245.25                36.45         0.568          pass              0.550              9.0                           0.234                0.66              0.317                                 ok            True                  False
+  INTC           86.11               36            1.00              0.73        105.14                79.77         0.560          pass              0.627             78.4                           0.427               -5.30             -1.066                                 ok            True                  False
+  PAYX          100.00               26            1.04              0.81        111.61                33.94         0.542          pass              0.625             21.4                           0.343                3.96              0.655                                 ok            True                  False
+  ORLY           80.00               25            1.41              0.87         87.60                43.42         0.523          pass              0.218             22.0                           0.194                2.06              0.136                                 ok            True                  False
+  ABNB           93.75               16            2.19              2.21        143.15                31.72         0.522          pass              0.486              9.2                           0.193               -1.40             -0.199                                 ok            True                  False
+  CTSH           81.48               27            1.54              0.47         43.43                49.89         0.520          pass              0.249             14.6                           0.230                1.25              0.262                                 ok            True                  False
+  AMZN           81.25               16            1.93              3.34        246.12                25.29         0.502          pass              0.143              6.5                           0.236               -0.34              0.051                                 ok            True                  False
+  PANW           92.59               27            1.98              4.74        340.12                60.47         0.500          pass              0.649             49.9                           0.386                4.61              0.583                                 ok            True                  False
+  AMAT           90.62               32            0.73              2.89        563.31               100.84         0.715          pass              0.754             84.1                           0.700               -1.77             -0.810 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260722140001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260722140501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260722140001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260722140501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260722140001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260722140501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260722140001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260722140501)
 
 </details>
