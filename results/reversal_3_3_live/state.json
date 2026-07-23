@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 989.250356674198,
+  "cash": 15636.750356674202,
   "positions": [
     {
       "position_id": "PYPL_20260721T145005",
@@ -31,36 +31,6 @@
       "option_open_interest": 6395.0,
       "option_volume": 68.0,
       "option_spread_pct": 0.048780487804878016,
-      "option_liquidity_status": "ok"
-    },
-    {
-      "position_id": "AAPL_20260722T145006",
-      "ticker": "AAPL",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "AAPL260821C00325000",
-      "expiry": "2026-08-21",
-      "strike": 325.0,
-      "entry_timestamp": "2026-07-22T14:50:06.810797-04:00",
-      "entry_trade_date": "2026-07-22",
-      "entry_slot": "entry_1500",
-      "entry_spot": 324.6600036621094,
-      "entry_option_price": 10.850000000000001,
-      "entry_bid": 10.8,
-      "entry_ask": 10.9,
-      "entry_iv_pct": 29.63937548828125,
-      "contracts": 15,
-      "allocated_cash": 16275.000000000004,
-      "success_rate": 95.83,
-      "matched_signals": 24,
-      "current_drop_pct": 0.94,
-      "rolling_sigma_20d_pct": 37.6,
-      "planned_tp_day1": 12.477500000000001,
-      "planned_tp_day2": 12.477500000000001,
-      "planned_stop": 9.765000000000002,
-      "option_open_interest": 16822.0,
-      "option_volume": 985.0,
-      "option_spread_pct": 0.009216589861751117,
       "option_liquidity_status": "ok"
     }
   ],
