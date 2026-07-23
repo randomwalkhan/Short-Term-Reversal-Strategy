@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-07-23 15:20:04 EDT`
-- Equity: `$31,248.00` | Realized: `$20,858.00` | Unrealized: `$390.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-07-23 15:25:03 EDT`
+- Equity: `$31,313.00` | Realized: `$20,858.00` | Unrealized: `$455.00` | Open positions: `1`
 - Today closed trades: `2`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  AAPL     option         option AAPL260821C00320000     13     14592.5                 14982.5          11.52           390.0                   2.67                   0
+  AAPL     option         option AAPL260821C00320000     13     14592.5                 15047.5          11.58           455.0                   3.12                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260723152004)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260723152503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260723152004)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260723152503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260723152004)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260723152503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260723152004)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260723152503)
 
 </details>
 
