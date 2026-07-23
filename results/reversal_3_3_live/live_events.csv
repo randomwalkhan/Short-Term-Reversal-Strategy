@@ -4149,3 +4149,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-23T00:00:02.907448-04:00,2026-07-23,data_refresh,data_refresh,{'saved': 93}
 2026-07-23T09:55:06.076284-04:00,2026-07-23,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""AAPL260821C00325000"", ""fill_price"": 9.765, ""pnl"": -1627.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""AAPL""}"
 2026-07-23T10:00:05.051160-04:00,2026-07-23,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-23T10:05:02.098066-04:00,2026-07-23,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""PYPL260821C00055000"", ""fill_price"": 2.7675, ""pnl"": -1691.25, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""PYPL""}"
+2026-07-23T10:05:02.098066-04:00,2026-07-23,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
