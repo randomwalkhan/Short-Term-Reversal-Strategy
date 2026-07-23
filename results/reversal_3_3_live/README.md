@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-23 10:05:02 EDT`
+Latest checkpoint (ET): `2026-07-23 10:10:06 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -48,35 +48,35 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  PYPL           86.67               30            0.72              0.28         55.39                61.85         0.664          pass              0.469             30.4                           0.286               21.60              2.328                  ok            True                  False
-  MDLZ          100.00               10            1.21              0.51         60.64                31.72         0.640          pass              0.544             26.5                           0.244                3.13              0.343                  ok            True                  False
-   KHC           92.31               13            0.83              0.15         25.90                31.13         0.634          pass              0.510             32.8                           0.255                4.32              0.482                  ok            True                  False
-  AAPL           92.31               13            1.34              3.05        324.58                37.45         0.629          pass              0.511             33.3                           0.409                1.68              0.367                  ok            True                  False
-   PEP           84.62               13            1.12              1.06        135.19                30.61         0.611          pass              0.216              4.1                           0.096               -2.71             -0.229                  ok            True                  False
-  GILD           90.91               11            1.84              1.68        129.62                35.55         0.567          pass              0.391             12.1                           0.141               -5.12             -0.186                  ok            True                  False
-   ADP           96.15               26            0.70              1.20        242.61                36.25         0.551          pass              0.657             31.9                           0.174                0.05              0.059                  ok            True                  False
-  PAYX          100.00               30            0.61              0.48        110.54                34.17         0.536          pass              0.664             25.7                           0.197                3.58              0.423                  ok            True                  False
-   MAR          100.00               13            1.74              4.50        367.87                21.19         0.532          pass              0.569             32.0                           0.269               -2.44             -0.125                  ok            True                  False
-  ORLY           80.00               25            1.34              0.81         86.18                43.13         0.524          pass              0.167              4.9                           0.178                0.29              0.055                  ok            True                  False
-  REGN           83.33               12            1.79              8.14        647.69                30.35         0.512          pass              0.310             52.2                           0.302               -4.25             -0.161                  ok            True                  False
-  AMGN           96.00               25            0.91              2.33        365.05                23.29         0.507          pass              0.705             51.3                           0.469               -0.25              0.124                  ok            True                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  PYPL           87.10               31            0.66              0.26         55.40                61.85         0.662          pass              0.505             36.5                           0.345               21.68              2.331                      ok            True                  False
+   KHC           92.31               13            0.75              0.14         25.90                31.13         0.639          pass              0.529             39.1                           0.325                4.40              0.485                      ok            True                  False
+  MDLZ          100.00               11            1.17              0.50         60.65                31.72         0.636          pass              0.557             29.0                           0.396                3.17              0.345                      ok            True                  False
+  AAPL           91.67               12            1.56              3.56        324.37                37.45         0.620          pass              0.453             22.3                           0.281                1.45              0.357                      ok            True                  False
+   PEP           84.62               13            1.17              1.11        135.17                30.61         0.605          pass              0.243             13.1                           0.189               -2.76             -0.231                      ok            True                  False
+  GILD           94.74               19            1.33              1.21        129.82                35.55         0.553          pass              0.618             36.6                           0.443               -4.62             -0.163                      ok            True                  False
+   ADP           96.15               26            0.76              1.30        242.56                36.25         0.547          pass              0.640             26.1                           0.146               -0.01              0.057                      ok            True                  False
+   MAR          100.00               13            1.69              4.36        367.93                21.19         0.536          pass              0.576             34.1                           0.274               -2.39             -0.123                      ok            True                  False
+  PAYX          100.00               29            0.73              0.56        110.50                34.17         0.534          pass              0.654             24.8                           0.228                3.46              0.418                      ok            True                  False
+  ORLY           81.48               27            1.23              0.74         86.21                43.13         0.520          pass              0.244             13.1                           0.163                0.41              0.060                      ok            True                  False
+  AMGN           96.15               26            0.78              1.99        365.20                23.29         0.509          pass              0.733             58.5                           0.523               -0.11              0.130                      ok            True                  False
+  SOXL           85.71               35            0.36              0.41        160.82               181.21         0.870          pass              0.691             94.9                           0.733              -16.65             -2.235 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                  detail
-2026-07-23T10:05:02.098066-04:00 early_entry_1005 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-23T10:05:02.098066-04:00      manage_1000               exit                                                                                                                                                                                                                                                     {"asset_type": "option", "contract_symbol": "PYPL260821C00055000", "fill_price": 2.7675, "pnl": -1691.25, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "PYPL"}
-2026-07-23T10:00:05.051160-04:00 early_entry_1000 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-23T09:55:06.076284-04:00      manage_1000               exit                                                                                                                                                                                                                                                       {"asset_type": "option", "contract_symbol": "AAPL260821C00325000", "fill_price": 9.765, "pnl": -1627.5, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "AAPL"}
-2026-07-23T00:00:02.907448-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                           {'saved': 93}
-2026-07-22T15:10:06.070612-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-07-22T15:05:02.089739-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-07-22T15:00:04.754101-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-07-22T14:55:01.833206-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
-2026-07-22T14:50:06.810797-04:00       entry_1500              entry {"allocated_cash": 16275.0, "asset_type": "option", "contract_symbol": "AAPL260821C00325000", "contracts": 15, "early_entry_score": 0.642, "entry_mode": "regular", "entry_option_price": 10.85, "execution_mode": "option", "matched_signals": 24, "option_liquidity_status": "ok", "option_open_interest": 16822.0, "option_spread_pct": 0.92, "option_volume": 985.0, "success_rate": 95.83, "ticker": "AAPL", "timing_score": 0.59}
+                    timestamp_et             slot         event_type                                                                                                                                                                              detail
+2026-07-23T10:10:06.093555-04:00 early_entry_1010 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-23T10:05:02.098066-04:00 early_entry_1005 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-23T10:05:02.098066-04:00      manage_1000               exit {"asset_type": "option", "contract_symbol": "PYPL260821C00055000", "fill_price": 2.7675, "pnl": -1691.25, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "PYPL"}
+2026-07-23T10:00:05.051160-04:00 early_entry_1000 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-23T09:55:06.076284-04:00      manage_1000               exit   {"asset_type": "option", "contract_symbol": "AAPL260821C00325000", "fill_price": 9.765, "pnl": -1627.5, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "AAPL"}
+2026-07-23T00:00:02.907448-04:00     data_refresh       data_refresh                                                                                                                                                                       {'saved': 93}
+2026-07-22T15:10:06.070612-04:00       entry_1500       slot_skipped                                                                                                                                                     {"reason": "already_processed"}
+2026-07-22T15:05:02.089739-04:00       entry_1500       slot_skipped                                                                                                                                                     {"reason": "already_processed"}
+2026-07-22T15:00:04.754101-04:00       entry_1500       slot_skipped                                                                                                                                                     {"reason": "already_processed"}
+2026-07-22T14:55:01.833206-04:00       entry_1500       slot_skipped                                                                                                                                                     {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260723100502)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260723101006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260723100502)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260723101006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260723100502)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260723101006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260723100502)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260723101006)
 
 </details>
