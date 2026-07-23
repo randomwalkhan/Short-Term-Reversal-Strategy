@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-23 00:25:06 EDT`
-Last processed slot: `share_ext_0025`
+Latest checkpoint (ET): `2026-07-23 00:30:01 EDT`
+Last processed slot: `share_ext_0030`
 
 ## Active Configuration
 
@@ -28,17 +28,17 @@ Last processed slot: `share_ext_0025`
 ## Portfolio Snapshot
 
 - Cash: `$989.25`
-- Equity: `$35,789.25`
+- Equity: `$35,914.25`
 - Realized PnL: `$24,176.75`
-- Unrealized PnL: `$1,612.50`
+- Unrealized PnL: `$1,737.50`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  AAPL     option         option AAPL260821C00325000       2026-07-22                   1     15     16275.0                 17475.0        10.85          11.65      324.66        325.74          bid_ask_mid                      11.65                bid_ask_mid                    True          1200.0                   7.37         95.83               24              0.94         29.64           31.71                  37.60               16822.0          985.0               0.01                      ok
-  PYPL     option         option PYPL260821C00055000       2026-07-21                   2     55     16912.5                 17325.0         3.08           3.15       55.67         55.44          bid_ask_mid                       3.15                bid_ask_mid                    True           412.5                   2.44         80.00               10              2.03         42.85           48.10                  61.63                6395.0           68.0               0.05                      ok
+  AAPL     option         option AAPL260821C00325000       2026-07-22                   1     15     16275.0                 18150.0        10.85          12.10      324.66        325.74     last_price_stale                        NaN                unavailable                   False          1875.0                  11.52         95.83               24              0.94         29.64             0.0                  37.60               16822.0          985.0               0.01                      ok
+  PYPL     option         option PYPL260821C00055000       2026-07-21                   2     55     16912.5                 16775.0         3.08           3.05       55.67         55.44     last_price_stale                        NaN                unavailable                   False          -137.5                  -0.81         80.00               10              2.03         42.85             0.0                  61.63                6395.0           68.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-07-23)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260723002506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260723003001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260723002506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260723003001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260723002506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260723003001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260723002506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260723003001)
 
 </details>
