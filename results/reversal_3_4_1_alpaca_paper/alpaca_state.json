@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4490.0,
+      "alpaca_entry_client_order_id": "rev-20260723145916-aapl-regular",
+      "alpaca_entry_order_id": "14b7ac6c-b23e-4cf5-a1bb-97b2cc01e12d",
+      "asset_type": "option",
+      "contract_symbol": "AAPL260821C00320000",
+      "contracts": 4,
+      "current_drop_pct": 1.66,
+      "early_entry_score": 0.411,
+      "entry_mode": "regular",
+      "entry_option_price": 11.225,
+      "entry_slot": "entry_1500",
+      "entry_spot": 320.4800109863281,
+      "entry_timestamp": "2026-07-23T14:59:16.854884-04:00",
+      "entry_trade_date": "2026-07-23",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-08-21",
+      "matched_signals": 11,
+      "planned_stop": 10.1025,
+      "planned_tp_day1": 12.908749999999998,
+      "planned_tp_day2": 12.908749999999998,
+      "position_id": "AAPL_20260723T145916",
+      "status": "entry_submitted",
+      "strike": 320.0,
+      "success_rate": 90.91,
+      "ticker": "AAPL",
+      "timing_score": 0.619
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }

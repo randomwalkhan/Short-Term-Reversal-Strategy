@@ -3614,3 +3614,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-23T11:51:44.903890-04:00,2026-07-23,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-23T11:58:34.688019-04:00,2026-07-23,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-23T14:52:10.216041-04:00,2026-07-23,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ASML""}"
+2026-07-23T14:59:16.854884-04:00,2026-07-23,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""14b7ac6c-b23e-4cf5-a1bb-97b2cc01e12d"", ""contract_symbol"": ""AAPL260821C00320000"", ""contracts"": 4, ""entry_mode"": ""regular"", ""limit_price"": ""11.25"", ""ticker"": ""AAPL""}"
