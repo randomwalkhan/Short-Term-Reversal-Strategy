@@ -4181,3 +4181,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-23T15:05:04.134167-04:00,2026-07-23,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-23T15:10:05.971667-04:00,2026-07-23,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-07-24T00:00:02.342132-04:00,2026-07-24,data_refresh,data_refresh,{'saved': 93}
+2026-07-24T09:50:06.179967-04:00,2026-07-24,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""AAPL260821C00320000"", ""fill_price"": 13.675, ""pnl"": 3185.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 21.83, ""ticker"": ""AAPL""}"
