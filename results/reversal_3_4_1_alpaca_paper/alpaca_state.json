@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4585.000000000001,
+      "alpaca_entry_client_order_id": "rev-20260724145152-gild-regular",
+      "alpaca_entry_order_id": "c313a9e0-a2b9-4d0b-b281-9c559b922841",
+      "asset_type": "option",
+      "contract_symbol": "GILD260918C00130000",
+      "contracts": 7,
+      "current_drop_pct": 0.71,
+      "early_entry_score": 0.565,
+      "entry_mode": "regular",
+      "entry_option_price": 6.550000000000001,
+      "entry_slot": "entry_1500",
+      "entry_spot": 129.92999267578125,
+      "entry_timestamp": "2026-07-24T14:51:52.348849-04:00",
+      "entry_trade_date": "2026-07-24",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-09-18",
+      "matched_signals": 24,
+      "planned_stop": 5.8950000000000005,
+      "planned_tp_day1": 7.532500000000001,
+      "planned_tp_day2": 7.532500000000001,
+      "position_id": "GILD_20260724T145152",
+      "status": "entry_submitted",
+      "strike": 130.0,
+      "success_rate": 91.67,
+      "ticker": "GILD",
+      "timing_score": 0.569
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
