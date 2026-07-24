@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-24 11:26:36 EDT`
+Latest checkpoint (ET): `2026-07-24 11:32:49 EDT`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-07-24T11:32:49.823980-04:00 early_entry_1130    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-24T11:26:36.614216-04:00 early_entry_1125    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-24T11:20:26.557963-04:00 early_entry_1120    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-24T11:14:16.304498-04:00 early_entry_1110    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-23T14:59:16.854884-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "14b7ac6c-b23e-4cf5-a1bb-97b2cc01e12d", "contract_symbol": "AAPL260821C00320000", "contracts": 4, "entry_mode": "regular", "limit_price": "11.25", "ticker": "AAPL"}
 2026-07-23T14:52:10.216041-04:00       entry_1500         entry_skipped                                        {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "ASML"}
 2026-07-23T11:58:34.688019-04:00 early_entry_1155    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-23T11:51:44.903890-04:00 early_entry_1150    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
