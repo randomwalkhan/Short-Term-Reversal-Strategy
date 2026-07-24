@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-24 10:18:54 EDT`
+Latest checkpoint (ET): `2026-07-24 10:25:02 EDT`
 Last slot: `manage_1030`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-07-24T10:25:02.987670-04:00 early_entry_1025    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-24T10:18:54.966145-04:00 early_entry_1015    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-24T10:12:48.106198-04:00 early_entry_1010    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-24T10:06:40.258365-04:00 early_entry_1005    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -62,7 +63,6 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-23T11:10:24.445273-04:00 early_entry_1110    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-23T11:03:30.942615-04:00 early_entry_1100    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-23T10:56:36.891207-04:00 early_entry_1055    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-23T10:49:42.487444-04:00             exit           exit_filled                                                       {"contract_symbol": "PYPL260821C00055000", "exit_price": 2.98, "pnl": -405.0, "reason": "stop_loss_hit_at_scan", "ticker": "PYPL"}
 2026-07-23T10:49:42.487444-04:00 early_entry_1045    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-23T10:42:45.317819-04:00 early_entry_1040    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-23T10:49:42.487444-04:00             exit           exit_filled                                                       {"contract_symbol": "PYPL260821C00055000", "exit_price": 2.98, "pnl": -405.0, "reason": "stop_loss_hit_at_scan", "ticker": "PYPL"}
 ```
