@@ -3639,3 +3639,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-24T14:51:52.348849-04:00,2026-07-24,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""c313a9e0-a2b9-4d0b-b281-9c559b922841"", ""contract_symbol"": ""GILD260918C00130000"", ""contracts"": 7, ""entry_mode"": ""regular"", ""limit_price"": ""6.70"", ""ticker"": ""GILD""}"
 2026-07-24T15:53:54.963351-04:00,2026-07-24,entry_1500,entry_filled,"{""contract_symbol"": ""GILD260918C00130000"", ""contracts"": 7, ""filled_price"": 6.7, ""ticker"": ""GILD""}"
 2026-07-25T01:33:51.565085-04:00,2026-07-25,share_ext_0130,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-07-25T01:38:54.975086-04:00,2026-07-25,share_ext_0135,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
