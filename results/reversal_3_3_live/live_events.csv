@@ -4320,3 +4320,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-27T10:30:04.376237-04:00,2026-07-27,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""GILD260918C00130000"", ""fill_price"": 7.65, ""pnl"": 2750.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 16.79, ""ticker"": ""GILD""}"
 2026-07-27T10:30:04.376237-04:00,2026-07-27,early_entry_1030,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-27T10:35:01.579138-04:00,2026-07-27,early_entry_1035,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-27T10:40:03.993472-04:00,2026-07-27,early_entry_1040,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
