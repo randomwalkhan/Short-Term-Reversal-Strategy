@@ -4301,3 +4301,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-27T08:35:03.368040-04:00,2026-07-27,data_refresh,data_refresh,{'saved': 93}
 2026-07-27T08:40:01.143958-04:00,2026-07-27,data_refresh,data_refresh,{'saved': 93}
 2026-07-27T08:45:04.558373-04:00,2026-07-27,data_refresh,data_refresh,{'saved': 93}
+2026-07-27T08:50:01.513320-04:00,2026-07-27,data_refresh,data_refresh,{'saved': 93}
