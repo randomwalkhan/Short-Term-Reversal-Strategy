@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-27 10:25:02 EDT`
+Latest checkpoint (ET): `2026-07-27 10:31:13 EDT`
 Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$89,005.58`
-- Portfolio value: `$94,430.58`
+- Portfolio value: `$94,465.58`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1030`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  GILD   open    regular GILD260918C00130000          7                 6.7                  7.45          bid_ask_mid                       7.45                    True          5215.0           525.0               11.19403                   1
+  GILD   open    regular GILD260918C00130000          7                 6.7                   7.9          bid_ask_mid                        7.9                    True          5530.0           840.0              17.910448                   1
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot         event_type                                                                detail
+2026-07-27T10:31:13.289191-04:00 early_entry_1030 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-27T10:25:02.008318-04:00 early_entry_1025 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-27T10:18:51.888784-04:00 early_entry_1015 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-27T10:12:40.801501-04:00 early_entry_1010 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-26T23:02:22.453056-04:00   share_ext_2300      market_closed                           {"holiday_name": null, "reason": "weekend"}
 2026-07-26T22:57:18.881671-04:00   share_ext_2255      market_closed                           {"holiday_name": null, "reason": "weekend"}
 2026-07-26T22:52:15.205145-04:00   share_ext_2250      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T22:47:11.684388-04:00   share_ext_2245      market_closed                           {"holiday_name": null, "reason": "weekend"}
 ```
