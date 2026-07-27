@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-27 10:37:24 EDT`
-Last slot: `manage_1030`
+Latest checkpoint (ET): `2026-07-27 10:43:38 EDT`
+Last slot: `early_entry_1040`
 
 ## Alpaca Paper Account
 
@@ -13,16 +13,12 @@ Last slot: `manage_1030`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  GILD exit_submitted    regular GILD260918C00130000          7                 6.7                 8.075          bid_ask_mid                      8.075                    True          5652.5           962.5              20.522388                   1
-```
+_None_
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-  AVGO AVGO260717C00420000          2026-05-28         2026-05-29               33.40              47.35          1  1395.0   41.766467 take_profit_day1_hit_at_scan
   MRVL MRVL260717C00200000          2026-05-29         2026-06-01               26.00              31.75          1   575.0   22.115385 take_profit_day1_hit_at_scan
   CHTR CHTR260717C00150000          2026-06-01         2026-06-01                8.80               8.00          5  -400.0   -9.090909        stop_loss_hit_at_scan
   AMZN AMZN260717C00260000          2026-06-02         2026-06-04               10.90               8.40          4 -1000.0  -22.935780        stop_loss_hit_at_scan
@@ -42,12 +38,15 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   AAPL AAPL260821C00330000          2026-07-20         2026-07-22               10.70               9.45          4  -500.0  -11.682243        stop_loss_hit_at_scan
   PYPL PYPL260821C00055000          2026-07-21         2026-07-23                3.15               2.60         15  -825.0  -17.460317        stop_loss_hit_at_scan
   PYPL PYPL260821C00055000          2026-07-22         2026-07-23                3.25               2.98         15  -405.0   -8.307692        stop_loss_hit_at_scan
+  GILD GILD260918C00130000          2026-07-24         2026-07-27                6.70               8.05          7   945.0   20.149254 take_profit_day1_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                                   detail
+2026-07-27T10:43:38.764176-04:00 early_entry_1040   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-27T10:43:38.764176-04:00             exit          exit_filled                                                 {"contract_symbol": "GILD260918C00130000", "exit_price": 8.05, "pnl": 945.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "GILD"}
 2026-07-27T10:37:24.369596-04:00 early_entry_1035   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-27T10:37:24.369596-04:00      manage_1030 exit_order_submitted {"alpaca_order_id": "7b9d19f5-c8e1-4dc8-bac7-5d1f9bdeac2d", "contract_symbol": "GILD260918C00130000", "limit_price": "7.75", "reason": "take_profit_day1_hit_at_scan", "ticker": "GILD"}
 2026-07-27T10:31:13.289191-04:00 early_entry_1030   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -66,6 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-26T23:22:36.908305-04:00   share_ext_2320        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-07-26T23:17:32.809500-04:00   share_ext_2315        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-07-26T23:12:29.350116-04:00   share_ext_2310        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:07:25.849954-04:00   share_ext_2305        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:02:22.453056-04:00   share_ext_2300        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 ```
