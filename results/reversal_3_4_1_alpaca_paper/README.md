@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-27 10:43:38 EDT`
-Last slot: `early_entry_1040`
+Latest checkpoint (ET): `2026-07-27 10:49:51 EDT`
+Last slot: `manage_1100`
 
 ## Alpaca Paper Account
 
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                                   detail
+2026-07-27T10:49:51.300397-04:00 early_entry_1045   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-27T10:43:38.764176-04:00 early_entry_1040   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-07-27T10:43:38.764176-04:00             exit          exit_filled                                                 {"contract_symbol": "GILD260918C00130000", "exit_price": 8.05, "pnl": 945.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "GILD"}
 2026-07-27T10:37:24.369596-04:00 early_entry_1035   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-07-26T23:27:40.347348-04:00   share_ext_2325        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-07-26T23:22:36.908305-04:00   share_ext_2320        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-07-26T23:17:32.809500-04:00   share_ext_2315        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:12:29.350116-04:00   share_ext_2310        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 ```

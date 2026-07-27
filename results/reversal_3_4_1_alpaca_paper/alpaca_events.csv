@@ -4088,3 +4088,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-27T10:37:24.369596-04:00,2026-07-27,early_entry_1035,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-27T10:43:38.764176-04:00,2026-07-27,exit,exit_filled,"{""contract_symbol"": ""GILD260918C00130000"", ""exit_price"": 8.05, ""pnl"": 945.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""GILD""}"
 2026-07-27T10:43:38.764176-04:00,2026-07-27,early_entry_1040,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-27T10:49:51.300397-04:00,2026-07-27,early_entry_1045,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
