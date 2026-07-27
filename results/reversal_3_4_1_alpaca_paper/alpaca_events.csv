@@ -4101,3 +4101,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-27T11:51:56.815172-04:00,2026-07-27,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-27T11:58:09.001688-04:00,2026-07-27,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-27T14:50:59.056803-04:00,2026-07-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""XEL""}"
+2026-07-27T14:57:31.976728-04:00,2026-07-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""XEL""}"
