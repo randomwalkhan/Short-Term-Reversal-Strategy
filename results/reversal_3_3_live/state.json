@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 17668.000356674198,
-  "positions": [
-    {
-      "position_id": "GILD_20260724T145006",
-      "ticker": "GILD",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "GILD260918C00130000",
-      "expiry": "2026-09-18",
-      "strike": 130.0,
-      "entry_timestamp": "2026-07-24T14:50:06.472791-04:00",
-      "entry_trade_date": "2026-07-24",
-      "entry_slot": "entry_1500",
-      "entry_spot": 129.89999389648438,
-      "entry_option_price": 6.550000000000001,
-      "entry_bid": 6.4,
-      "entry_ask": 6.7,
-      "entry_iv_pct": 32.92303405761719,
-      "contracts": 25,
-      "allocated_cash": 16375.000000000004,
-      "success_rate": 91.67,
-      "matched_signals": 24,
-      "current_drop_pct": 0.73,
-      "rolling_sigma_20d_pct": 35.55,
-      "planned_tp_day1": 7.532500000000001,
-      "planned_tp_day2": 7.532500000000001,
-      "planned_stop": 5.8950000000000005,
-      "option_open_interest": 1088.0,
-      "option_volume": 26.0,
-      "option_spread_pct": 0.04580152671755722,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 36793.000356674194,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
