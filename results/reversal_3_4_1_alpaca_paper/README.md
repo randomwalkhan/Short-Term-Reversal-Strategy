@@ -1,21 +1,21 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-27 10:31:13 EDT`
+Latest checkpoint (ET): `2026-07-27 10:37:24 EDT`
 Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$89,005.58`
-- Portfolio value: `$94,465.58`
+- Cash: `$94,640.44`
+- Portfolio value: `$94,640.44`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  GILD   open    regular GILD260918C00130000          7                 6.7                   7.9          bid_ask_mid                        7.9                    True          5530.0           840.0              17.910448                   1
+ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  GILD exit_submitted    regular GILD260918C00130000          7                 6.7                 8.075          bid_ask_mid                      8.075                    True          5652.5           962.5              20.522388                   1
 ```
 
 ## Closed Trades
@@ -47,25 +47,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                detail
-2026-07-27T10:31:13.289191-04:00 early_entry_1030 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-27T10:25:02.008318-04:00 early_entry_1025 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-27T10:18:51.888784-04:00 early_entry_1015 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-27T10:12:40.801501-04:00 early_entry_1010 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-27T10:06:14.863780-04:00 early_entry_1005 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-27T10:00:11.052271-04:00 early_entry_1000 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-07-26T23:58:01.660071-04:00   share_ext_2355      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:52:58.150968-04:00   share_ext_2350      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:47:54.612892-04:00   share_ext_2345      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:42:50.879198-04:00   share_ext_2340      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:37:47.197439-04:00   share_ext_2335      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:32:43.677402-04:00   share_ext_2330      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:27:40.347348-04:00   share_ext_2325      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:22:36.908305-04:00   share_ext_2320      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:17:32.809500-04:00   share_ext_2315      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:12:29.350116-04:00   share_ext_2310      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:07:25.849954-04:00   share_ext_2305      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T23:02:22.453056-04:00   share_ext_2300      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T22:57:18.881671-04:00   share_ext_2255      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-07-26T22:52:15.205145-04:00   share_ext_2250      market_closed                           {"holiday_name": null, "reason": "weekend"}
+                    timestamp_et             slot           event_type                                                                                                                                                                                   detail
+2026-07-27T10:37:24.369596-04:00 early_entry_1035   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-27T10:37:24.369596-04:00      manage_1030 exit_order_submitted {"alpaca_order_id": "7b9d19f5-c8e1-4dc8-bac7-5d1f9bdeac2d", "contract_symbol": "GILD260918C00130000", "limit_price": "7.75", "reason": "take_profit_day1_hit_at_scan", "ticker": "GILD"}
+2026-07-27T10:31:13.289191-04:00 early_entry_1030   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-27T10:25:02.008318-04:00 early_entry_1025   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-27T10:18:51.888784-04:00 early_entry_1015   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-27T10:12:40.801501-04:00 early_entry_1010   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-27T10:06:14.863780-04:00 early_entry_1005   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-27T10:00:11.052271-04:00 early_entry_1000   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-26T23:58:01.660071-04:00   share_ext_2355        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:52:58.150968-04:00   share_ext_2350        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:47:54.612892-04:00   share_ext_2345        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:42:50.879198-04:00   share_ext_2340        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:37:47.197439-04:00   share_ext_2335        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:32:43.677402-04:00   share_ext_2330        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:27:40.347348-04:00   share_ext_2325        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:22:36.908305-04:00   share_ext_2320        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:17:32.809500-04:00   share_ext_2315        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:12:29.350116-04:00   share_ext_2310        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:07:25.849954-04:00   share_ext_2305        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
+2026-07-26T23:02:22.453056-04:00   share_ext_2300        market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 ```
