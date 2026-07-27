@@ -4337,3 +4337,7 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-27T11:50:05.732067-04:00,2026-07-27,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-27T11:55:01.558921-04:00,2026-07-27,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-27T12:00:02.583905-04:00,2026-07-27,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-27T14:50:01.830454-04:00,2026-07-27,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-07-27"", ""training_samples"": 5518, ""window"": 5}"
+2026-07-27T14:50:01.830454-04:00,2026-07-27,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.544, ""option_liquidity_status"": ""low_volume,wide_spread"", ""option_open_interest"": 216.0, ""option_spread_pct"": 14.49, ""option_volume"": 2.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""XEL"", ""timing_score"": 0.558}"
+2026-07-27T14:50:01.830454-04:00,2026-07-27,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.242, ""option_liquidity_status"": ""low_volume,wide_spread"", ""option_open_interest"": 375.0, ""option_spread_pct"": 15.38, ""option_volume"": 9.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""AEP"", ""timing_score"": 0.504}"
+2026-07-27T14:50:01.830454-04:00,2026-07-27,entry_1500,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
