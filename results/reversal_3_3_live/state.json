@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 36793.000356674194,
-  "positions": [],
+  "cash": 18410.500356674198,
+  "positions": [
+    {
+      "position_id": "CSX_20260728T145006",
+      "ticker": "CSX",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "CSX260918C00052500",
+      "expiry": "2026-09-18",
+      "strike": 52.5,
+      "entry_timestamp": "2026-07-28T14:50:06.162637-04:00",
+      "entry_trade_date": "2026-07-28",
+      "entry_slot": "entry_1500",
+      "entry_spot": 51.224998474121094,
+      "entry_option_price": 1.4249999999999998,
+      "entry_bid": 1.4,
+      "entry_ask": 1.45,
+      "entry_iv_pct": 25.659923095703125,
+      "contracts": 129,
+      "allocated_cash": 18382.499999999996,
+      "success_rate": 92.86,
+      "matched_signals": 14,
+      "current_drop_pct": 1.11,
+      "rolling_sigma_20d_pct": 24.65,
+      "planned_tp_day1": 1.6387499999999997,
+      "planned_tp_day2": 1.6387499999999997,
+      "planned_stop": 1.2825,
+      "option_open_interest": 4433.0,
+      "option_volume": 101.0,
+      "option_spread_pct": 0.03508771929824565,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4735,7 +4766,9 @@
     "2026-07-27": [
       "entry_1500"
     ],
-    "2026-07-28": []
+    "2026-07-28": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
