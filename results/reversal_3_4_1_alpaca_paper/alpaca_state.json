@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4844.999999999999,
+      "alpaca_entry_client_order_id": "rev-20260728145135-csx-regular",
+      "alpaca_entry_order_id": "d770b4a1-cf56-46f4-9f25-c913f9eab9de",
+      "asset_type": "option",
+      "contract_symbol": "CSX260918C00052500",
+      "contracts": 34,
+      "current_drop_pct": 1.09,
+      "early_entry_score": 0.457,
+      "entry_mode": "regular",
+      "entry_option_price": 1.4249999999999998,
+      "entry_slot": "entry_1500",
+      "entry_spot": 51.23500061035156,
+      "entry_timestamp": "2026-07-28T14:51:35.484861-04:00",
+      "entry_trade_date": "2026-07-28",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-09-18",
+      "matched_signals": 14,
+      "planned_stop": 1.2825,
+      "planned_tp_day1": 1.6387499999999997,
+      "planned_tp_day2": 1.6387499999999997,
+      "position_id": "CSX_20260728T145135",
+      "status": "entry_submitted",
+      "strike": 52.5,
+      "success_rate": 92.86,
+      "ticker": "CSX",
+      "timing_score": 0.583
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
