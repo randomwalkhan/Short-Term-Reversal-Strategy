@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-28 15:50:02 EDT`
+Latest checkpoint (ET): `2026-07-28 15:55:01 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$18,410.50`
-- Equity: `$36,470.50`
+- Equity: `$36,793.00`
 - Realized PnL: `$26,793.00`
-- Unrealized PnL: `$-322.50`
+- Unrealized PnL: `$0.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CSX     option         option CSX260918C00052500       2026-07-28                   0    129     18382.5                 18060.0         1.42            1.4       51.22         51.04          bid_ask_mid                        1.4                bid_ask_mid                    True          -322.5                  -1.75         92.86               14              1.11         25.66           26.81                  24.65                4433.0          101.0               0.04                      ok
+   CSX     option         option CSX260918C00052500       2026-07-28                   0    129     18382.5                 18382.5         1.42           1.42       51.22         50.92          bid_ask_mid                       1.42                bid_ask_mid                    True             0.0                    0.0         92.86               14              1.11         25.66            27.2                  24.65                4433.0          101.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-07-28)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   CSX          100.00                9            1.41              0.51         51.58                24.65         0.604            pass              0.481              7.0                           0.179                2.88              0.464                                 ok           False                  False
-  KLAC           85.71               14            4.65              6.61        200.53                94.03         0.572            pass              0.366             43.1                           0.501              -12.75             -1.025 downtrend_blocked_slope_and_streak           False                  False
-  ASML           91.67               12            4.18             48.48       1634.48                55.90         0.499 below_threshold              0.470             31.9                           0.446               -8.11             -0.462            downtrend_blocked_slope           False                  False
-   TXN           89.47               38            0.21              0.41        279.23                50.69         0.498 below_threshold              0.770             93.7                           0.651               -6.61             -0.701            downtrend_blocked_slope           False                  False
-  MCHP           90.00               30            1.93              1.05         77.45                53.73         0.490 below_threshold              0.599             50.2                           0.464               -9.30             -0.817 downtrend_blocked_slope_and_streak           False                  False
-   ADI           85.29               34            0.67              1.76        371.14                41.03         0.470 below_threshold              0.583             78.2                           0.591               -4.31             -0.403 downtrend_blocked_slope_and_streak           False                  False
-   BKR           75.00                4            3.77              1.60         59.90                42.85         0.470 below_threshold              0.095             16.0                           0.337                1.12              0.213                                 ok           False                  False
-  SBUX           87.10               31            0.70              0.51        103.43                24.10         0.464 below_threshold              0.456             26.6                           0.360               -4.12             -0.374 downtrend_blocked_slope_and_streak           False                  False
-  MSTR           67.74               31            3.02              2.09         97.76                77.85         0.463 below_threshold              0.325             46.1                           0.368                3.88              0.178                                 ok           False                  False
-  NXPI           82.61               23            2.26              4.23        265.86                43.93         0.451 below_threshold              0.304             34.3                           0.291               -6.02             -0.340            downtrend_blocked_slope           False                  False
-    EA          100.00               38            0.06              0.09        209.03                 3.91         0.449 below_threshold              0.858             75.6                           0.448                1.26              0.133                                 ok           False                  False
-   AEP           85.37               41            0.08              0.08        133.56                20.37         0.443 below_threshold              0.609             73.8                           0.368               -1.59             -0.033                                 ok           False                  False
+   CSX          100.00                6            1.74              0.63         51.53                24.65         0.602            pass              0.465              1.6                           0.060                2.54              0.449                                 ok           False                  False
+  KLAC           85.71               14            4.43              6.31        200.66                94.03         0.586            pass              0.375             45.8                           0.503              -12.55             -1.014 downtrend_blocked_slope_and_streak           False                  False
+   XEL          100.00               29            0.19              0.11         80.66                20.22         0.527            pass              0.686             35.4                           0.345                0.09              0.121                                 ok           False                  False
+  MCHP           92.59               27            2.09              1.14         77.41                53.73         0.503            pass              0.637             45.8                           0.316               -9.45             -0.825 downtrend_blocked_slope_and_streak           False                  False
+  AVGO           85.71               42            0.02              0.05        383.20                43.69         0.499 below_threshold              0.701             99.5                           0.739               -0.23              0.094                                 ok           False                  False
+  ASML           92.31               13            4.15             48.10       1634.64                55.90         0.495 below_threshold              0.495             32.4                           0.422               -8.08             -0.461            downtrend_blocked_slope           False                  False
+   TXN           89.47               38            0.27              0.53        279.18                50.69         0.494 below_threshold              0.764             91.9                           0.640               -6.67             -0.704            downtrend_blocked_slope           False                  False
+   BKR           80.00                5            3.50              1.48         59.95                42.85         0.488 below_threshold              0.115             22.1                           0.377                1.40              0.225                                 ok           False                  False
+  MSTR           68.75               32            2.63              1.81         97.87                77.85         0.485 below_threshold              0.355             53.2                           0.528                4.30              0.196                                 ok           False                  False
+   AEP           80.65               31            0.37              0.35        133.44                20.37         0.483 below_threshold              0.205              0.0                           0.212               -1.87             -0.047                                 ok           False                  False
+   ADI           86.49               37            0.46              1.20        371.38                41.03         0.466 below_threshold              0.655             85.1                           0.608               -4.10             -0.393 downtrend_blocked_slope_and_streak           False                  False
+  SBUX           88.24               34            0.56              0.41        103.48                24.10         0.455 below_threshold              0.550             41.7                           0.438               -3.98             -0.368 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260728155002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260728155501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260728155002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260728155501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260728155002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260728155501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260728155002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260728155501)
 
 </details>
