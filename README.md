@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-07-29 15:30:04 EDT`
-- Equity: `$34,279.75` | Realized: `$24,954.75` | Unrealized: `$-675.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-07-29 15:35:04 EDT`
+- Equity: `$34,054.75` | Realized: `$24,954.75` | Unrealized: `$-900.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  FAST     option         option FAST260918C00045000     45     17325.0                 16650.0            3.7          -675.0                   -3.9                   0
+  FAST     option         option FAST260918C00045000     45     17325.0                 16425.0           3.65          -900.0                  -5.19                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260729153004)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260729153504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260729153004)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260729153504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260729153004)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260729153504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260729153004)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260729153504)
 
 </details>
 
