@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-29 09:35:02 EDT`
+Latest checkpoint (ET): `2026-07-29 09:40:02 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CSX     option         option CSX260918C00052500       2026-07-28                   1    129     18382.5                 18060.0         1.42            1.4       51.22         50.62     last_price_stale                        NaN                unavailable                   False          -322.5                  -1.75         92.86               14              1.11         25.66            3.13                  24.65                4433.0          101.0               0.04                      ok
+   CSX     option         option CSX260918C00052500       2026-07-28                   1    129     18382.5                 18060.0         1.42            1.4       51.22         50.74     last_price_stale                        NaN                unavailable                   False          -322.5                  -1.75         92.86               14              1.11         25.66            3.13                  24.65                4433.0          101.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-07-29)
@@ -47,19 +47,19 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  BKNG           91.30               23            1.49              2.08        198.42                45.62         0.562          pass              0.563             39.5                           0.435               12.29              0.721                      ok            True                  False
-   TRI           87.88               33            1.28              0.93        102.89                68.18         0.557          pass              0.427              2.6                           0.109               11.15              0.421                      ok            True                  False
-   HON           84.21               19            1.09              1.89        246.24                39.75         0.540          pass              0.231              1.6                           0.174                9.73              1.172                      ok            True                  False
-   MAR          100.00               24            0.98              2.63        382.39                28.18         0.537          pass              0.700             51.0                           0.423                4.57              0.395                      ok            True                  False
-  GILD           86.96               23            1.02              0.96        133.91                34.28         0.517          pass              0.338              4.9                           0.048                2.24             -0.040                      ok            True                  False
-  DXCM           88.24               34            0.92              0.48         74.64                45.20         0.511          pass              0.583             50.9                           0.460                0.05             -0.306                      ok            True                  False
-  ISRG           71.43               14            1.93              4.89        359.70                72.57         0.660          pass              0.137             14.6                           0.205               -8.78             -0.911                      ok           False                  False
-   KHC           91.30               23            0.04              0.01         27.30                34.60         0.630          pass              0.740             96.3                           0.620                7.23              0.475                      ok           False                  False
-  PYPL           90.00               40            0.36              0.15         58.26                61.52         0.616          pass              0.751             74.4                           0.607                4.66              0.264                      ok           False                  False
-  TMUS           92.31               26            0.90              1.15        181.90                56.22         0.597          pass              0.584             29.7                           0.232               -3.66             -0.887 downtrend_blocked_slope           False                  False
-  FAST          100.00                8            1.77              0.60         47.84                27.18         0.575          pass              0.477              6.6                           0.082                3.87              0.433                      ok           False                  False
-   APP           82.22               45            0.54              1.58        417.54                74.36         0.573          pass              0.547             76.7                           0.544               -8.12             -0.831 downtrend_blocked_slope           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  FAST          100.00               10            1.41              0.48         47.90                27.18         0.586          pass              0.534             25.3                           0.244                4.24              0.449                                 ok            True                  False
+  BKNG           93.33               30            0.80              1.11        198.83                45.62         0.571          pass              0.749             67.6                           0.655               13.08              0.753                                 ok            True                   True
+   HON           84.21               19            1.03              1.78        246.29                39.75         0.544          pass              0.265             12.7                           0.252                9.80              1.175                                 ok            True                  False
+  ORLY           80.77               26            1.23              0.78         90.83                45.72         0.512          pass              0.353             58.1                           0.502                5.01              0.664                                 ok            True                  False
+  AVGO           81.25               32            0.88              2.36        379.90                41.80         0.502          pass              0.384             51.3                           0.331               -4.24             -0.024                                 ok            True                  False
+  ISRG           73.91               23            1.30              3.30        360.39                72.57         0.648          pass              0.279             42.4                           0.322               -8.20             -0.882                                 ok           False                  False
+  SOXL           85.29               34            0.87              0.67        109.22               173.28         0.647          pass              0.643             92.4                           0.857              -34.43             -2.957 downtrend_blocked_slope_and_streak           False                  False
+  DRAM           81.25               32            0.64              0.21         47.66               100.66         0.610          pass              0.524             94.2                           0.755              -17.33             -1.170 downtrend_blocked_slope_and_streak           False                  False
+ CMCSA           82.35               17            0.37              0.06         24.16                39.20         0.610          pass              0.393             74.3                           0.419                2.60             -0.223                                 ok           False                  False
+   TRI           87.18               39            0.46              0.34        103.15                68.18         0.576          pass              0.637             64.7                           0.385               12.07              0.459                                 ok           False                  False
+    MU           82.35               34            0.48              2.73        819.36                86.39         0.567          pass              0.562             94.0                           0.667               -9.69             -0.254 downtrend_blocked_slope_and_streak           False                  False
+   APP           81.82               44            0.99              2.90        416.98                74.36         0.547          pass              0.475             57.1                           0.459               -8.54             -0.852            downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260729093502)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260729094002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260729093502)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260729094002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260729093502)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260729094002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260729093502)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260729094002)
 
 </details>
