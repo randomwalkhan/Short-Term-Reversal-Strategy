@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-07-29 00:25:07 EDT`
-Last slot: `share_ext_0025`
+Latest checkpoint (ET): `2026-07-29 00:30:11 EDT`
+Last slot: `share_ext_0030`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_0025`
 
 ```text
 ticker         status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   CSX exit_submitted    regular CSX260918C00052500         34                1.45                  1.25          bid_ask_mid                       1.25                    True          4250.0          -680.0             -13.793103                   1
+   CSX exit_submitted    regular CSX260918C00052500         34                1.45                   1.4     last_price_stale                        NaN                   False          4760.0          -170.0              -3.448276                   1
 ```
 
 ## Closed Trades
