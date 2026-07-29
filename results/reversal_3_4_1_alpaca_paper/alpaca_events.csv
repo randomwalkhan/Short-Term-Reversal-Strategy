@@ -4130,3 +4130,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-29T11:55:27.954466-04:00,2026-07-29,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-29T14:48:22.543879-04:00,2026-07-29,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""a7d6528f-f6a0-4cf6-b91e-f00cbf65180c"", ""contract_symbol"": ""FAST260918C00045000"", ""contracts"": 12, ""entry_mode"": ""regular"", ""limit_price"": ""4.00"", ""ticker"": ""FAST""}"
 2026-07-29T14:54:39.698869-04:00,2026-07-29,entry_1500,entry_filled,"{""contract_symbol"": ""FAST260918C00045000"", ""contracts"": 12, ""filled_price"": 4.0, ""ticker"": ""FAST""}"
+2026-07-29T15:50:22.087429-04:00,2026-07-29,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""5c831737-f0a7-4afe-8083-0fb6f2aec8da"", ""contract_symbol"": ""FAST260918C00045000"", ""limit_price"": ""3.40"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""FAST""}"
