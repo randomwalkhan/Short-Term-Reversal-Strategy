@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 34954.750356674194,
-  "positions": [],
+  "cash": 17629.750356674194,
+  "positions": [
+    {
+      "position_id": "FAST_20260729T145004",
+      "ticker": "FAST",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "FAST260918C00045000",
+      "expiry": "2026-09-18",
+      "strike": 45.0,
+      "entry_timestamp": "2026-07-29T14:50:04.497983-04:00",
+      "entry_trade_date": "2026-07-29",
+      "entry_slot": "entry_1500",
+      "entry_spot": 47.84000015258789,
+      "entry_option_price": 3.85,
+      "entry_bid": 3.7,
+      "entry_ask": 4.0,
+      "entry_iv_pct": 33.32586206054688,
+      "contracts": 45,
+      "allocated_cash": 17325.0,
+      "success_rate": 100.0,
+      "matched_signals": 21,
+      "current_drop_pct": 0.54,
+      "rolling_sigma_20d_pct": 27.18,
+      "planned_tp_day1": 4.427499999999999,
+      "planned_tp_day2": 4.427499999999999,
+      "planned_stop": 3.4650000000000003,
+      "option_open_interest": 324.0,
+      "option_volume": 33.0,
+      "option_spread_pct": 0.07792207792207788,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4738,7 +4769,9 @@
     "2026-07-28": [
       "entry_1500"
     ],
-    "2026-07-29": []
+    "2026-07-29": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
