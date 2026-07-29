@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-29 09:55:01 EDT`
+Latest checkpoint (ET): `2026-07-29 10:00:06 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -48,34 +48,34 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  ISRG           84.62               39            0.66              1.66        361.09                72.57         0.602          pass              0.596             73.1                           0.555               -7.59             -0.852                                 ok            True                  False
-  FAST          100.00               19            0.72              0.24         48.00                27.18         0.574          pass              0.704             62.1                           0.635                4.98              0.481                                 ok            True                  False
-   HON           84.21               19            1.03              1.78        246.29                39.75         0.543          pass              0.283             18.7                           0.180                9.80              1.175                                 ok            True                  False
-   MAR          100.00               32            0.56              1.51        382.87                28.18         0.510          pass              0.813             71.8                           0.583                5.00              0.415                                 ok            True                   True
-  META           90.00               30            0.94              3.90        591.74                53.87         0.601          pass              0.497             12.4                           0.215              -13.72             -1.532 downtrend_blocked_slope_and_streak           False                  False
-  MRVL           85.71               35            0.74              0.90        174.08                89.75         0.586          pass              0.638             86.8                           0.559              -16.04             -1.020 downtrend_blocked_slope_and_streak           False                  False
-   WDC           83.87               31            0.66              2.14        462.59                95.99         0.577          pass              0.572             90.3                           0.454              -10.39             -0.150           downtrend_blocked_streak           False                  False
-   APP           77.14               35            1.86              5.45        415.88                74.36         0.540          pass              0.279             19.6                           0.220               -9.34             -0.892            downtrend_blocked_slope           False                  False
-  DRAM           77.78               27            2.44              0.82         47.41               100.66         0.519          pass              0.399             77.8                           0.445              -18.83             -1.253 downtrend_blocked_slope_and_streak           False                  False
-  MPWR           84.21               38            0.54              4.82       1279.95                58.32         0.517          pass              0.587             78.9                           0.569               -7.36             -0.237           downtrend_blocked_streak           False                  False
-   CEG           69.44               36            0.43              0.78        259.48                41.76         0.509          pass              0.368             48.0                           0.400                0.23              0.502                                 ok           False                  False
-    EA          100.00               30            0.11              0.16        208.80                 3.93         0.505          pass              0.691             35.7                           0.292                0.97              0.087                                 ok           False                  False
+  FAST          100.00               18            0.83              0.28         47.98                27.18         0.573          pass              0.679             56.0                           0.690                4.86              0.476                                 ok            True                  False
+   HON           80.00               15            1.51              2.61        245.93                39.75         0.528          pass              0.086              0.0                           0.155                9.27              1.153                                 ok            True                  False
+   MAR          100.00               27            0.86              2.30        382.53                28.18         0.524          pass              0.737             57.0                           0.524                4.69              0.401                                 ok            True                  False
+  ISRG           77.78               27            1.16              2.93        360.55                72.57         0.636          pass              0.335             52.6                           0.591               -8.06             -0.875                                 ok           False                  False
+  MRVL           85.71               35            0.66              0.81        174.12                89.75         0.590          pass              0.642             88.1                           0.523              -15.97             -1.017 downtrend_blocked_slope_and_streak           False                  False
+  TMUS           90.32               31            0.73              0.93        181.99                56.22         0.573          pass              0.602             43.2                           0.371               -3.50             -0.879            downtrend_blocked_slope           False                  False
+  DRAM           80.65               31            1.31              0.44         47.58               100.66         0.572          pass              0.479             88.1                           0.489              -17.87             -1.200 downtrend_blocked_slope_and_streak           False                  False
+  META           92.50               40            0.46              1.90        592.59                53.87         0.571          pass              0.762             57.2                           0.373              -13.30             -1.510 downtrend_blocked_slope_and_streak           False                  False
+   APP           76.47               34            1.95              5.72        415.77                74.36         0.539          pass              0.270             18.6                           0.267               -9.43             -0.897            downtrend_blocked_slope           False                  False
+  MPWR           84.62               39            0.15              1.35       1281.43                58.32         0.536          pass              0.652             94.1                           0.519               -7.00             -0.219           downtrend_blocked_streak           False                  False
+   CSX           96.30               27            0.43              0.15         50.77                28.82         0.535          pass              0.688             40.5                           0.275                2.41              0.307                                 ok           False                  False
+   XEL          100.00               29            0.16              0.09         80.29                19.80         0.534          pass              0.784             67.9                           0.409                0.04              0.139                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                                                                                                                                                                            detail
-2026-07-29T09:50:04.461343-04:00  manage_1000         exit {"asset_type": "option", "contract_symbol": "CSX260918C00052500", "fill_price": 1.2825, "pnl": -1838.25, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "CSX"}
-2026-07-29T09:35:02.435322-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 93}
-2026-07-29T09:30:03.798822-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 93}
-2026-07-29T09:25:01.530149-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 93}
-2026-07-29T09:20:02.789351-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 93}
-2026-07-29T09:15:01.480372-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 93}
-2026-07-29T09:10:04.312418-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 93}
-2026-07-29T09:05:01.483120-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 93}
-2026-07-29T09:00:02.430762-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 93}
-2026-07-29T08:55:05.405467-04:00 data_refresh data_refresh                                                                                                                                                                     {'saved': 93}
+                    timestamp_et             slot         event_type                                                                                                                                                                            detail
+2026-07-29T10:00:06.571588-04:00 early_entry_1000 early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-07-29T09:50:04.461343-04:00      manage_1000               exit {"asset_type": "option", "contract_symbol": "CSX260918C00052500", "fill_price": 1.2825, "pnl": -1838.25, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "CSX"}
+2026-07-29T09:35:02.435322-04:00     data_refresh       data_refresh                                                                                                                                                                     {'saved': 93}
+2026-07-29T09:30:03.798822-04:00     data_refresh       data_refresh                                                                                                                                                                     {'saved': 93}
+2026-07-29T09:25:01.530149-04:00     data_refresh       data_refresh                                                                                                                                                                     {'saved': 93}
+2026-07-29T09:20:02.789351-04:00     data_refresh       data_refresh                                                                                                                                                                     {'saved': 93}
+2026-07-29T09:15:01.480372-04:00     data_refresh       data_refresh                                                                                                                                                                     {'saved': 93}
+2026-07-29T09:10:04.312418-04:00     data_refresh       data_refresh                                                                                                                                                                     {'saved': 93}
+2026-07-29T09:05:01.483120-04:00     data_refresh       data_refresh                                                                                                                                                                     {'saved': 93}
+2026-07-29T09:00:02.430762-04:00     data_refresh       data_refresh                                                                                                                                                                     {'saved': 93}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260729095501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260729100006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260729095501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260729100006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260729095501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260729100006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260729095501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260729100006)
 
 </details>
