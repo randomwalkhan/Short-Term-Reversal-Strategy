@@ -4471,3 +4471,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-29T09:25:01.530149-04:00,2026-07-29,data_refresh,data_refresh,{'saved': 93}
 2026-07-29T09:30:03.798822-04:00,2026-07-29,data_refresh,data_refresh,{'saved': 93}
 2026-07-29T09:35:02.435322-04:00,2026-07-29,data_refresh,data_refresh,{'saved': 93}
+2026-07-29T09:50:04.461343-04:00,2026-07-29,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CSX260918C00052500"", ""fill_price"": 1.2825, ""pnl"": -1838.25, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""CSX""}"
