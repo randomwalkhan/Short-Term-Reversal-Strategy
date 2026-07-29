@@ -4110,3 +4110,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-28T16:08:46.680564-04:00,2026-07-28,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""8aaf92bd-58e1-4e45-a0c5-324e47d98689"", ""contract_symbol"": ""CSX260918C00052500"", ""limit_price"": ""1.25"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""CSX""}"
 2026-07-29T10:02:39.957879-04:00,2026-07-29,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-07-29T10:08:56.480576-04:00,2026-07-29,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-07-29T10:15:15.067236-04:00,2026-07-29,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
