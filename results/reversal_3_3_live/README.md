@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-07-31 19:45:03 EDT`
-Last processed slot: `share_ext_1945`
+Latest checkpoint (ET): `2026-07-31 19:50:04 EDT`
+Last processed slot: `share_ext_1950`
 
 ## Active Configuration
 
@@ -37,8 +37,8 @@ Last processed slot: `share_ext_1945`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CSX     option         option  CSX260918C00050000       2026-07-30                   1     86     16555.0                 17415.0         1.92           2.02       50.11         50.95          bid_ask_mid                       2.02                bid_ask_mid                    True           860.0                   5.19         92.31               13              1.24         25.34           25.54                  28.82                2759.0          136.0               0.03                      ok
-  PYPL     option         option PYPL260918C00057500       2026-07-31                   0     66     16500.0                 16962.0         2.50           2.57       57.10         57.20          bid_ask_mid                       2.57                bid_ask_mid                    True           462.0                   2.80         86.21               29              0.95         31.54           33.11                  60.55                6425.0          263.0               0.05                      ok
+   CSX     option         option  CSX260918C00050000       2026-07-30                   1     86     16555.0                 17415.0         1.92           2.02       50.11         50.96          bid_ask_mid                       2.02                bid_ask_mid                    True           860.0                   5.19         92.31               13              1.24         25.34           25.54                  28.82                2759.0          136.0               0.03                      ok
+  PYPL     option         option PYPL260918C00057500       2026-07-31                   0     66     16500.0                 16962.0         2.50           2.57       57.10         57.05          bid_ask_mid                       2.57                bid_ask_mid                    True           462.0                   2.80         86.21               29              0.95         31.54           33.11                  60.55                6425.0          263.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-07-31)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260731194503)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260731195004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260731194503)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260731195004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260731194503)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260731195004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260731194503)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260731195004)
 
 </details>
