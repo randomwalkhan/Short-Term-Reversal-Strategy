@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 16667.250356674198,
+  "cash": 167.25035667419797,
   "positions": [
     {
       "position_id": "CSX_20260730T145004",
@@ -31,6 +31,36 @@
       "option_open_interest": 2759.0,
       "option_volume": 136.0,
       "option_spread_pct": 0.025974025974026,
+      "option_liquidity_status": "ok"
+    },
+    {
+      "position_id": "PYPL_20260731T150550",
+      "ticker": "PYPL",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "PYPL260918C00057500",
+      "expiry": "2026-09-18",
+      "strike": 57.5,
+      "entry_timestamp": "2026-07-31T15:05:50.400930-04:00",
+      "entry_trade_date": "2026-07-31",
+      "entry_slot": "entry_1500",
+      "entry_spot": 57.10499954223633,
+      "entry_option_price": 2.5,
+      "entry_bid": 2.44,
+      "entry_ask": 2.56,
+      "entry_iv_pct": 31.543653320312494,
+      "contracts": 66,
+      "allocated_cash": 16500.0,
+      "success_rate": 86.21,
+      "matched_signals": 29,
+      "current_drop_pct": 0.95,
+      "rolling_sigma_20d_pct": 60.55,
+      "planned_tp_day1": 2.875,
+      "planned_tp_day2": 2.875,
+      "planned_stop": 2.25,
+      "option_open_interest": 6425.0,
+      "option_volume": 263.0,
+      "option_spread_pct": 0.04800000000000004,
       "option_liquidity_status": "ok"
     }
   ],
@@ -4775,7 +4805,9 @@
     "2026-07-30": [
       "entry_1500"
     ],
-    "2026-07-31": []
+    "2026-07-31": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
