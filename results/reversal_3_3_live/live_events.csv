@@ -4543,3 +4543,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-31T15:05:50.400930-04:00,2026-07-31,entry_1500,entry,"{""allocated_cash"": 16500.0, ""asset_type"": ""option"", ""contract_symbol"": ""PYPL260918C00057500"", ""contracts"": 66, ""early_entry_score"": 0.505, ""entry_mode"": ""regular"", ""entry_option_price"": 2.5, ""execution_mode"": ""option"", ""matched_signals"": 29, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 6425.0, ""option_spread_pct"": 4.8, ""option_volume"": 263.0, ""success_rate"": 86.21, ""ticker"": ""PYPL"", ""timing_score"": 0.642}"
 2026-08-01T00:00:06.278712-04:00,2026-08-01,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-08-01T00:05:02.570794-04:00,2026-08-01,share_ext_0005,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-08-01T00:10:06.263394-04:00,2026-08-01,share_ext_0010,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
