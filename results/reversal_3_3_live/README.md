@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-01 00:40:04 EDT`
-Last processed slot: `share_ext_0040`
+Latest checkpoint (ET): `2026-08-01 00:45:04 EDT`
+Last processed slot: `share_ext_0045`
 
 ## Active Configuration
 
@@ -52,17 +52,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                                                                                                                                                                                                                                                                                                                                                                                                               detail
-2026-08-01T00:40:04.611126-04:00 share_ext_0040 market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-08-01T00:35:01.519447-04:00 share_ext_0035 market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-08-01T00:30:01.654919-04:00 share_ext_0030 market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-08-01T00:25:06.287208-04:00 share_ext_0025 market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-08-01T00:20:01.556634-04:00 share_ext_0020 market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-08-01T00:15:03.588917-04:00 share_ext_0015 market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-08-01T00:10:06.263394-04:00 share_ext_0010 market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-08-01T00:05:02.570794-04:00 share_ext_0005 market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-08-01T00:00:06.278712-04:00 share_ext_0000 market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-07-31T15:05:50.400930-04:00     entry_1500         entry {"allocated_cash": 16500.0, "asset_type": "option", "contract_symbol": "PYPL260918C00057500", "contracts": 66, "early_entry_score": 0.505, "entry_mode": "regular", "entry_option_price": 2.5, "execution_mode": "option", "matched_signals": 29, "option_liquidity_status": "ok", "option_open_interest": 6425.0, "option_spread_pct": 4.8, "option_volume": 263.0, "success_rate": 86.21, "ticker": "PYPL", "timing_score": 0.642}
+                    timestamp_et           slot    event_type                                      detail
+2026-08-01T00:45:04.492411-04:00 share_ext_0045 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-08-01T00:40:04.611126-04:00 share_ext_0040 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-08-01T00:35:01.519447-04:00 share_ext_0035 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-08-01T00:30:01.654919-04:00 share_ext_0030 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-08-01T00:25:06.287208-04:00 share_ext_0025 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-08-01T00:20:01.556634-04:00 share_ext_0020 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-08-01T00:15:03.588917-04:00 share_ext_0015 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-08-01T00:10:06.263394-04:00 share_ext_0010 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-08-01T00:05:02.570794-04:00 share_ext_0005 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-08-01T00:00:06.278712-04:00 share_ext_0000 market_closed {"holiday_name": null, "reason": "weekend"}
 ```
 
 ## Equity Curves
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260801004004)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260801004504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260801004004)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260801004504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260801004004)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260801004504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260801004004)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260801004504)
 
 </details>
