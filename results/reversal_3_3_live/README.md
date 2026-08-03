@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-03 09:05:04 EDT`
-Last processed slot: `share_ext_0905`
+Latest checkpoint (ET): `2026-08-03 09:10:01 EDT`
+Last processed slot: `share_ext_0910`
 
 ## Active Configuration
 
@@ -37,8 +37,8 @@ Last processed slot: `share_ext_0905`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CSX     option         option  CSX260918C00050000       2026-07-30                   2     86     16555.0                 17630.0         1.92           2.05       50.11         50.46     last_price_stale                        NaN                unavailable                   False          1075.0                   6.49         92.31               13              1.24         25.34            0.00                  28.82                2759.0          136.0               0.03                      ok
-  PYPL     option         option PYPL260918C00057500       2026-07-31                   1     66     16500.0                 16764.0         2.50           2.54       57.10         57.80     last_price_stale                        NaN                unavailable                   False           264.0                   1.60         86.21               29              0.95         31.54            0.39                  60.55                6425.0          263.0               0.05                      ok
+   CSX     option         option  CSX260918C00050000       2026-07-30                   2     86     16555.0                 17630.0         1.92           2.05       50.11         50.81     last_price_stale                        NaN                unavailable                   False          1075.0                   6.49         92.31               13              1.24         25.34            0.00                  28.82                2759.0          136.0               0.03                      ok
+  PYPL     option         option PYPL260918C00057500       2026-07-31                   1     66     16500.0                 16764.0         2.50           2.54       57.10         57.91     last_price_stale                        NaN                unavailable                   False           264.0                   1.60         86.21               29              0.95         31.54            0.39                  60.55                6425.0          263.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-08-03)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260803090504)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260803091001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260803090504)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260803091001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260803090504)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260803091001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260803090504)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260803091001)
 
 </details>
