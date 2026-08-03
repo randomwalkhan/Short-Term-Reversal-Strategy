@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 35229.750356674194,
-  "positions": [],
+  "cash": 17739.750356674194,
+  "positions": [
+    {
+      "position_id": "CSX_20260803T145005",
+      "ticker": "CSX",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "CSX260918C00050000",
+      "expiry": "2026-09-18",
+      "strike": 50.0,
+      "entry_timestamp": "2026-08-03T14:50:05.995871-04:00",
+      "entry_trade_date": "2026-08-03",
+      "entry_slot": "entry_1500",
+      "entry_spot": 49.755001068115234,
+      "entry_option_price": 1.65,
+      "entry_bid": 1.6,
+      "entry_ask": 1.7,
+      "entry_iv_pct": 25.537854003906258,
+      "contracts": 106,
+      "allocated_cash": 17490.0,
+      "success_rate": 100.0,
+      "matched_signals": 11,
+      "current_drop_pct": 1.28,
+      "rolling_sigma_20d_pct": 27.78,
+      "planned_tp_day1": 1.8974999999999997,
+      "planned_tp_day2": 1.8974999999999997,
+      "planned_stop": 1.4849999999999999,
+      "option_open_interest": 2866.0,
+      "option_volume": 205.0,
+      "option_spread_pct": 0.06060606060606053,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4785,7 +4816,9 @@
       "share_ext_0250",
       "share_ext_0255"
     ],
-    "2026-08-03": []
+    "2026-08-03": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
