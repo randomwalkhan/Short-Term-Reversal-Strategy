@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-03 15:35:11 EDT`
+Latest checkpoint (ET): `2026-08-03 15:40:14 EDT`
 Last slot: `manage_1530`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$87,464.99`
-- Portfolio value: `$91,959.99`
+- Portfolio value: `$91,814.99`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1530`
 
 ```text
 ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   CSX   open    regular CSX260918C00050000         29                 1.7                   1.7          bid_ask_mid                        1.7                    True          4930.0             0.0                    0.0                   0
+   CSX   open    regular CSX260918C00050000         29                 1.7                  1.65          bid_ask_mid                       1.65                    True          4785.0          -145.0              -2.941176                   0
 ```
 
 ## Closed Trades
