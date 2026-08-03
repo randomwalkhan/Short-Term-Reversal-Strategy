@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-03 09:40:03 EDT`
-Last processed slot: `manage_0930`
+Latest checkpoint (ET): `2026-08-03 09:45:03 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -37,8 +37,8 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CSX     option         option  CSX260918C00050000       2026-07-30                   2     86     16555.0                 17630.0         1.92           2.05       50.11         50.07     last_price_stale                        NaN                unavailable                   False          1075.0                   6.49         92.31               13              1.24         25.34             0.0                  28.82                2759.0          136.0               0.03                      ok
-  PYPL     option         option PYPL260918C00057500       2026-07-31                   1     66     16500.0                 16764.0         2.50           2.54       57.10         58.12     last_price_stale                        NaN                unavailable                   False           264.0                   1.60         86.21               29              0.95         31.54             0.0                  60.55                6425.0          263.0               0.05                      ok
+   CSX     option         option  CSX260918C00050000       2026-07-30                   2     86     16555.0                 17630.0         1.92           2.05       50.11         49.96     last_price_stale                        NaN                unavailable                   False          1075.0                   6.49         92.31               13              1.24         25.34             0.1                  28.82                2759.0          136.0               0.03                      ok
+  PYPL     option         option PYPL260918C00057500       2026-07-31                   1     66     16500.0                 16764.0         2.50           2.54       57.10         57.92     last_price_stale                        NaN                unavailable                   False           264.0                   1.60         86.21               29              0.95         31.54             0.0                  60.55                6425.0          263.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-08-03)
@@ -49,18 +49,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   CSX           95.24               21            0.73              0.26         50.29                27.78         0.582            pass              0.547              5.1                           0.247               -0.16             -0.071                                 ok            True                  False
-   EXC           94.44               18            0.87              0.28         45.70                22.49         0.555            pass              0.554             20.0                           0.317               -1.17             -0.139                                 ok            True                  False
-   XEL          100.00               21            0.73              0.40         78.03                17.46         0.529            pass              0.585             19.7                           0.252               -1.32             -0.213                                 ok            True                  False
-  AMAT           88.89               27            1.69              6.01        505.09                87.25         0.604            pass              0.565             51.4                           0.581               -5.06             -1.462 downtrend_blocked_slope_and_streak           False                  False
-  AAPL           96.55               29            0.57              1.24        308.38                37.33         0.574            pass              0.742             52.7                           0.300               -5.96             -0.322 downtrend_blocked_slope_and_streak           False                  False
-  MNST           94.87               39            0.20              0.13         96.32                24.15         0.497 below_threshold              0.790             50.0                           0.367                0.78              0.275                                 ok           False                  False
-  CSCO           83.33               24            1.14              0.93        115.59                33.42         0.497 below_threshold              0.363             43.9                           0.336                3.58              0.321                                 ok           False                  False
-  ASML           90.32               31            1.07             12.21       1623.77                49.80         0.496 below_threshold              0.654             62.9                           0.516               -7.21             -1.301 downtrend_blocked_slope_and_streak           False                  False
-   BKR           61.54               13            2.13              0.90         60.10                35.32         0.496 below_threshold              0.070              0.0                           0.243                7.34              0.835                                 ok           False                  False
-   AEP           78.95               19            1.13              1.01        127.42                19.72         0.489 below_threshold              0.115              2.0                           0.224               -3.55             -0.442 downtrend_blocked_slope_and_streak           False                  False
-  DRAM           73.91               23            4.02              1.42         49.74               111.30         0.474 below_threshold              0.206             24.0                           0.261               -8.93             -1.835 downtrend_blocked_slope_and_streak           False                  False
-  NVDA           82.35               34            1.06              1.49        200.11                42.43         0.470 below_threshold              0.410             46.7                           0.557               -2.29             -0.666            downtrend_blocked_slope           False                  False
+   CSX           94.44               18            0.85              0.30         50.27                27.78         0.591            pass              0.523              8.5                           0.200               -0.28             -0.076                                 ok            True                  False
+  MNST           92.31               26            0.66              0.45         96.19                24.15         0.548            pass              0.490              0.0                           0.210                0.30              0.253                                 ok            True                  False
+  AMAT           87.50               24            2.28              8.10        504.20                87.25         0.581            pass              0.455             34.5                           0.390               -5.63             -1.489 downtrend_blocked_slope_and_streak           False                  False
+  AAPL           96.00               25            0.89              1.92        308.09                37.33         0.579            pass              0.638             26.7                           0.183               -6.25             -0.336 downtrend_blocked_slope_and_streak           False                  False
+   EXC           95.83               24            0.48              0.15         45.75                22.49         0.542            pass              0.716             56.0                           0.393               -0.78             -0.121                                 ok           False                  False
+   XEL          100.00               26            0.38              0.21         78.11                17.46         0.517            pass              0.732             57.7                           0.367               -0.98             -0.197                                 ok           False                  False
+  DRAM           76.00               25            3.41              1.20         49.83               111.30         0.507            pass              0.258             35.7                           0.437               -8.35             -1.806 downtrend_blocked_slope_and_streak           False                  False
+   BKR           62.50               16            1.78              0.75         60.17                35.32         0.498 below_threshold              0.149             19.8                           0.248                7.73              0.851                                 ok           False                  False
+  ASML           90.62               32            1.00             11.39       1624.12                49.80         0.494 below_threshold              0.676             65.4                           0.565               -7.14             -1.298 downtrend_blocked_slope_and_streak           False                  False
+  CSCO           85.19               27            0.96              0.78        115.66                33.42         0.491 below_threshold              0.460             53.0                           0.483                3.78              0.329                                 ok           False                  False
+  ABNB           92.11               38            0.53              0.57        151.28                33.42         0.489 below_threshold              0.558              0.0                           0.230                3.98              0.852                                 ok           False                  False
+  NVDA           82.35               34            0.96              1.35        200.17                42.43         0.477 below_threshold              0.426             51.8                           0.565               -2.19             -0.661            downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260803094003)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260803094503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260803094003)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260803094503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260803094003)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260803094503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260803094003)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260803094503)
 
 </details>
