@@ -4158,3 +4158,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-07-31T12:19:48.923915-04:00,2026-07-31,manage_1230,exit_order_submitted,"{""alpaca_order_id"": ""49bb3a05-8368-4f7b-a22a-e9384ede700a"", ""contract_symbol"": ""PYPL260918C00057500"", ""limit_price"": ""2.32"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""PYPL""}"
 2026-07-31T13:38:17.028706-04:00,2026-07-31,exit,exit_filled,"{""contract_symbol"": ""PYPL260918C00057500"", ""exit_price"": 2.32, ""pnl"": -960.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""PYPL""}"
 2026-08-03T10:01:26.776956-04:00,2026-08-03,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-03T10:07:37.628224-04:00,2026-08-03,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
