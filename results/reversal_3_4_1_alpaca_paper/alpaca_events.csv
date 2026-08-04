@@ -4183,3 +4183,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-04T10:03:20.467373-04:00,2026-08-04,exit,exit_filled,"{""contract_symbol"": ""CSX260918C00050000"", ""exit_price"": 1.65, ""pnl"": -145.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""CSX""}"
 2026-08-04T10:03:20.467373-04:00,2026-08-04,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-04T10:09:33.042959-04:00,2026-08-04,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-04T10:15:45.974390-04:00,2026-08-04,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
