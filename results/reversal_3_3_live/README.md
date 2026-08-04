@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-04 04:25:01 EDT`
-Last processed slot: `share_ext_0425`
+Latest checkpoint (ET): `2026-08-04 04:30:05 EDT`
+Last processed slot: `share_ext_0430`
 
 ## Active Configuration
 
@@ -52,6 +52,7 @@ _None_
 
 ```text
                     timestamp_et         slot   event_type        detail
+2026-08-04T04:30:05.995242-04:00 data_refresh data_refresh {'saved': 93}
 2026-08-04T04:25:01.152955-04:00 data_refresh data_refresh {'saved': 93}
 2026-08-04T04:20:02.119087-04:00 data_refresh data_refresh {'saved': 93}
 2026-08-04T04:15:05.185107-04:00 data_refresh data_refresh {'saved': 93}
@@ -61,7 +62,6 @@ _None_
 2026-08-04T03:55:01.169727-04:00 data_refresh data_refresh {'saved': 93}
 2026-08-04T03:50:02.245233-04:00 data_refresh data_refresh {'saved': 93}
 2026-08-04T03:45:06.108203-04:00 data_refresh data_refresh {'saved': 93}
-2026-08-04T03:40:05.490564-04:00 data_refresh data_refresh {'saved': 93}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260804042501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260804043005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260804042501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260804043005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260804042501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260804043005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260804042501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260804043005)
 
 </details>
