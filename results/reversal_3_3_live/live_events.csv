@@ -4710,3 +4710,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-04T08:00:06.156963-04:00,2026-08-04,data_refresh,data_refresh,{'saved': 93}
 2026-08-04T08:05:01.281633-04:00,2026-08-04,data_refresh,data_refresh,{'saved': 93}
 2026-08-04T10:00:02.269549-04:00,2026-08-04,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-04T10:05:05.202403-04:00,2026-08-04,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CSX260918C00050000"", ""fill_price"": 1.485, ""pnl"": -1749.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""CSX""}"
+2026-08-04T10:05:05.202403-04:00,2026-08-04,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
