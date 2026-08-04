@@ -4740,3 +4740,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-04T14:50:05.317970-04:00,2026-08-04,entry_1500,entry,"{""allocated_cash"": 16400.0, ""asset_type"": ""option"", ""contract_symbol"": ""PEP260918C00140000"", ""contracts"": 40, ""early_entry_score"": 0.423, ""entry_mode"": ""regular"", ""entry_option_price"": 4.1, ""execution_mode"": ""option"", ""matched_signals"": 24, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 3513.0, ""option_spread_pct"": 4.88, ""option_volume"": 30.0, ""success_rate"": 83.33, ""ticker"": ""PEP"", ""timing_score"": 0.544}"
 2026-08-04T14:55:02.363501-04:00,2026-08-04,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-08-04T15:00:05.343102-04:00,2026-08-04,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-08-04T15:05:01.446900-04:00,2026-08-04,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
