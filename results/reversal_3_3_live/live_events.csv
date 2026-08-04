@@ -4629,3 +4629,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-04T01:15:01.090995-04:00,2026-08-04,data_refresh,data_refresh,{'saved': 93}
 2026-08-04T01:20:01.100298-04:00,2026-08-04,data_refresh,data_refresh,{'saved': 93}
 2026-08-04T01:25:01.103493-04:00,2026-08-04,data_refresh,data_refresh,{'saved': 93}
+2026-08-04T01:30:05.698926-04:00,2026-08-04,data_refresh,data_refresh,{'saved': 93}
