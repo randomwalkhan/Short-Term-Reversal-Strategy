@@ -4204,3 +4204,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-04T14:55:19.324034-04:00,2026-08-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ROP""}"
 2026-08-04T15:01:36.853873-04:00,2026-08-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ROP""}"
 2026-08-04T15:07:58.251313-04:00,2026-08-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ROP""}"
+2026-08-05T10:00:33.941281-04:00,2026-08-05,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
