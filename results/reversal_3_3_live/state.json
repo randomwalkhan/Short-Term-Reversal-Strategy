@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 31840.750356674198,
-  "positions": [],
+  "cash": 16083.250356674198,
+  "positions": [
+    {
+      "position_id": "PYPL_20260805T145006",
+      "ticker": "PYPL",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "PYPL260918C00057500",
+      "expiry": "2026-09-18",
+      "strike": 57.5,
+      "entry_timestamp": "2026-08-05T14:50:06.241655-04:00",
+      "entry_trade_date": "2026-08-05",
+      "entry_slot": "entry_1500",
+      "entry_spot": 58.154998779296875,
+      "entry_option_price": 2.865,
+      "entry_bid": 2.81,
+      "entry_ask": 2.92,
+      "entry_iv_pct": 31.86103295898437,
+      "contracts": 55,
+      "allocated_cash": 15757.5,
+      "success_rate": 91.18,
+      "matched_signals": 34,
+      "current_drop_pct": 0.66,
+      "rolling_sigma_20d_pct": 60.15,
+      "planned_tp_day1": 3.29475,
+      "planned_tp_day2": 3.29475,
+      "planned_stop": 2.5785000000000005,
+      "option_open_interest": 7033.0,
+      "option_volume": 38.0,
+      "option_spread_pct": 0.038394415357766096,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4791,7 +4822,9 @@
     "2026-08-04": [
       "entry_1500"
     ],
-    "2026-08-05": []
+    "2026-08-05": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }

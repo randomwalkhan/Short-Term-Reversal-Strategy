@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-05 14:45:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-08-05 14:50:06 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -27,15 +27,18 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$31,840.75`
+- Cash: `$16,083.25`
 - Equity: `$31,840.75`
 - Realized PnL: `$21,840.75`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
+  PYPL     option         option PYPL260918C00057500       2026-08-05                   0     55     15757.5                 15757.5         2.86           2.86       58.15         58.15          bid_ask_mid                       2.86                bid_ask_mid                    True             0.0                    0.0         91.18               34              0.66         31.86           31.86                  60.15                7033.0           38.0               0.04                      ok
+```
 
 ## Today's Closed Trades (2026-08-05)
 
@@ -48,34 +51,34 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  GEHC           94.12               34            0.65              0.32         70.12                58.11         0.626          pass              0.644             14.8                           0.234               13.73              1.699                       ok            True                  False
-  PYPL           90.91               33            0.69              0.28         58.42                60.15         0.618          pass              0.736             76.6                           0.438                4.73              0.480                       ok            True                  False
- CMCSA           83.33               12            1.43              0.25         24.82                44.00         0.597          pass              0.282             40.0                           0.579                4.48              1.001                       ok            True                  False
-  PAYX          100.00               17            0.73              0.61        118.40                35.13         0.583          pass              0.734             76.4                           0.576                7.48              0.765                       ok            True                  False
-  CTAS           90.48               21            1.22              1.74        202.91                37.77         0.583          pass              0.523             37.2                           0.595               -0.09             -0.113                       ok            True                  False
-  MSFT           81.58               38            0.58              2.02        491.95                57.86         0.547          pass              0.462             59.6                           0.532               25.51              3.079                       ok            True                  False
-  CPRT           87.50               16            2.19              0.45         29.21                38.86         0.516          pass              0.360             22.8                           0.424                5.83              0.600                       ok            True                  False
-  DRAM           77.14               35            0.33              0.13         54.84               109.93         0.735          pass              0.515             91.7                           0.619               -5.30             -0.565 downtrend_blocked_streak           False                  False
-  SOXL           78.79               33            3.23              3.17        138.54               182.46         0.718          pass              0.388             54.3                           0.395              -15.91             -1.811 downtrend_blocked_streak           False                  False
-   WDC           82.35               34            0.38              1.44        547.94                99.34         0.709          pass              0.520             75.5                           0.397               -1.83              0.182 downtrend_blocked_streak           False                  False
-  AMAT           90.00               30            1.27              4.87        544.53                87.24         0.659          pass              0.636             56.7                           0.402               -2.57             -0.304 downtrend_blocked_streak           False                  False
-  TMUS           77.78                9            2.52              3.12        175.87                55.59         0.620          pass              0.140             26.0                           0.420               -9.53             -0.452  downtrend_blocked_slope           False                  False
+  GEHC           94.12               34            0.63              0.31         70.13                58.11         0.628          pass              0.655             18.5                           0.255               13.76              1.701                       ok            True                  False
+  PYPL           91.18               34            0.66              0.27         58.42                60.15         0.614          pass              0.753             77.7                           0.447                4.76              0.481                       ok            True                  False
+ CMCSA           83.33               12            1.46              0.26         24.82                44.00         0.595          pass              0.278             38.7                           0.537                4.44              0.999                       ok            True                  False
+  CTAS           90.48               21            1.24              1.76        202.89                37.77         0.582          pass              0.520             36.2                           0.594               -0.11             -0.114                       ok            True                  False
+  PAYX          100.00               17            0.76              0.63        118.39                35.13         0.581          pass              0.731             75.5                           0.541                7.45              0.764                       ok            True                  False
+  MSFT           81.58               38            0.56              1.94        491.98                57.86         0.549          pass              0.467             61.2                           0.550               25.54              3.080                       ok            True                  False
+  CPRT           86.67               15            2.30              0.47         29.20                38.86         0.515          pass              0.320             19.2                           0.360                5.72              0.595                       ok            True                  False
+  DRAM           75.00               36            0.20              0.08         54.86               109.93         0.734          pass              0.532             95.0                           0.657               -5.18             -0.559 downtrend_blocked_streak           False                  False
+  SOXL           78.79               33            3.09              3.02        138.60               182.46         0.727          pass              0.395             56.4                           0.432              -15.78             -1.804 downtrend_blocked_streak           False                  False
+   WDC           82.35               34            0.31              1.19        548.05                99.34         0.713          pass              0.533             79.8                           0.399               -1.76              0.185 downtrend_blocked_streak           False                  False
+  AMAT           90.62               32            1.11              4.24        544.80                87.24         0.658          pass              0.682             62.2                           0.451               -2.41             -0.296 downtrend_blocked_streak           False                  False
+  LRCX           86.21               29            1.62              3.60        316.20                92.33         0.623          pass              0.530             58.5                           0.469               -2.10             -0.117 downtrend_blocked_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                                                                                                                         detail
-2026-08-05T12:00:04.693066-04:00 early_entry_1200 early_entry_shadow                                                                                                          {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T11:55:03.663510-04:00 early_entry_1155 early_entry_shadow                                                                                                          {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T11:50:01.727726-04:00 early_entry_1150 early_entry_shadow                                                                                                          {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T11:50:01.727726-04:00      manage_1200               exit {"asset_type": "option", "contract_symbol": "PEP260918C00140000", "fill_price": 3.69, "pnl": -1640.0, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "PEP"}
-2026-08-05T11:45:04.673736-04:00 early_entry_1145 early_entry_shadow                                                                                                          {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T11:40:04.834796-04:00 early_entry_1140 early_entry_shadow                                                                                                          {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T11:35:01.719935-04:00 early_entry_1135 early_entry_shadow                                                                                                          {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T11:30:04.698899-04:00 early_entry_1130 early_entry_shadow                                                                                                          {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T11:25:03.699168-04:00 early_entry_1125 early_entry_shadow                                                                                                          {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T11:20:04.670230-04:00 early_entry_1120 early_entry_shadow                                                                                                          {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+                    timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                                 detail
+2026-08-05T14:50:06.241655-04:00       entry_1500                   entry {"allocated_cash": 15757.5, "asset_type": "option", "contract_symbol": "PYPL260918C00057500", "contracts": 55, "early_entry_score": 0.753, "entry_mode": "regular", "entry_option_price": 2.865, "execution_mode": "option", "matched_signals": 34, "option_liquidity_status": "ok", "option_open_interest": 7033.0, "option_spread_pct": 3.84, "option_volume": 38.0, "success_rate": 91.18, "ticker": "PYPL", "timing_score": 0.614}
+2026-08-05T14:50:06.241655-04:00       entry_1500 entry_candidate_skipped                                                                                                                                                                                             {"early_entry_score": 0.655, "option_liquidity_status": "low_volume", "option_open_interest": 2148.0, "option_spread_pct": 6.06, "option_volume": 9.0, "reason": "no_trade_low_option_liquidity", "ticker": "GEHC", "timing_score": 0.628}
+2026-08-05T14:50:06.241655-04:00       entry_1500          timing_overlay                                                                                                                                                                                                                                                                                                                           {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-08-05", "training_samples": 5567, "window": 5}
+2026-08-05T12:00:04.693066-04:00 early_entry_1200      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-05T11:55:03.663510-04:00 early_entry_1155      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-05T11:50:01.727726-04:00 early_entry_1150      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-05T11:50:01.727726-04:00      manage_1200                    exit                                                                                                                                                                                                                                                         {"asset_type": "option", "contract_symbol": "PEP260918C00140000", "fill_price": 3.69, "pnl": -1640.0, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "PEP"}
+2026-08-05T11:45:04.673736-04:00 early_entry_1145      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-05T11:40:04.834796-04:00 early_entry_1140      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-05T11:35:01.719935-04:00 early_entry_1135      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -85,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260805144501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260805145006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260805144501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260805145006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260805144501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260805145006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260805144501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260805145006)
 
 </details>
