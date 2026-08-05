@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 17080.750356674198,
-  "positions": [
-    {
-      "position_id": "PEP_20260804T145005",
-      "ticker": "PEP",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "PEP260918C00140000",
-      "expiry": "2026-09-18",
-      "strike": 140.0,
-      "entry_timestamp": "2026-08-04T14:50:05.317970-04:00",
-      "entry_trade_date": "2026-08-04",
-      "entry_slot": "entry_1500",
-      "entry_spot": 138.67999267578125,
-      "entry_option_price": 4.1,
-      "entry_bid": 4.0,
-      "entry_ask": 4.2,
-      "entry_iv_pct": 24.500266723632812,
-      "contracts": 40,
-      "allocated_cash": 16399.999999999996,
-      "success_rate": 83.33,
-      "matched_signals": 24,
-      "current_drop_pct": 0.68,
-      "rolling_sigma_20d_pct": 26.13,
-      "planned_tp_day1": 4.714999999999999,
-      "planned_tp_day2": 4.714999999999999,
-      "planned_stop": 3.69,
-      "option_open_interest": 3513.0,
-      "option_volume": 30.0,
-      "option_spread_pct": 0.0487804878048781,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 31840.750356674198,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
