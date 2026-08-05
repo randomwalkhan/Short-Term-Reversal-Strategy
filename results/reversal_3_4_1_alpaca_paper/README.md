@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-05 11:34:03 EDT`
+Latest checkpoint (ET): `2026-08-05 11:40:19 EDT`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                       detail
+2026-08-05T11:40:19.735049-04:00 early_entry_1140 early_entry_shadow                                                                                        {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T11:34:03.137082-04:00 early_entry_1130 early_entry_shadow                                                                                        {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T11:27:49.697644-04:00 early_entry_1125 early_entry_shadow                                                                                        {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T11:21:36.206376-04:00 early_entry_1120 early_entry_shadow                                                                                        {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-04T15:07:58.251313-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ROP"}
 2026-08-04T15:01:36.853873-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ROP"}
 2026-08-04T14:55:19.324034-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ROP"}
-2026-08-04T14:49:05.448788-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "ROP"}
 ```
