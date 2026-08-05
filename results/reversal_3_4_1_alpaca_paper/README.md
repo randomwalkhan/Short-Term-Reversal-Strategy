@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-05 15:05:00 EDT`
+Latest checkpoint (ET): `2026-08-05 15:11:20 EDT`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                          detail
+2026-08-05T15:11:20.335469-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "GEHC"}
 2026-08-05T15:05:00.877697-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "GEHC"}
 2026-08-05T14:58:39.356943-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "GEHC"}
 2026-08-05T14:52:22.851258-04:00       entry_1500      entry_skipped {"entry_mode": "regular", "option_liquidity_status": "low_volume", "reason": "no_trade_low_option_liquidity", "ticker": "GEHC"}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-05T10:37:51.114557-04:00 early_entry_1035 early_entry_shadow                                                           {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T10:31:39.278528-04:00 early_entry_1030 early_entry_shadow                                                           {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T10:25:27.899537-04:00 early_entry_1025 early_entry_shadow                                                           {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T10:19:14.993990-04:00 early_entry_1015 early_entry_shadow                                                           {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
