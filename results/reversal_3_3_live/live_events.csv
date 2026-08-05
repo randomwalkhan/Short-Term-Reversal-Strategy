@@ -4767,3 +4767,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-05T11:45:04.673736-04:00,2026-08-05,early_entry_1145,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-05T11:50:01.727726-04:00,2026-08-05,manage_1200,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""PEP260918C00140000"", ""fill_price"": 3.69, ""pnl"": -1640.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""PEP""}"
 2026-08-05T11:50:01.727726-04:00,2026-08-05,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-05T11:55:03.663510-04:00,2026-08-05,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
