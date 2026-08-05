@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-05 14:40:01 EDT`
-Last processed slot: `manage_1430`
+Latest checkpoint (ET): `2026-08-05 14:45:01 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -48,18 +48,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  GEHC           94.12               34            0.68              0.34         70.12                58.11         0.625          pass              0.632             11.1                           0.243               13.69              1.698                       ok            True                  False
-  PYPL           91.18               34            0.65              0.27         58.43                60.15         0.614          pass              0.754             78.0                           0.432                4.77              0.482                       ok            True                  False
-  PAYX          100.00               17            0.71              0.59        118.41                35.13         0.584          pass              0.736             77.0                           0.583                7.50              0.766                       ok            True                  False
-  CTAS           90.48               21            1.21              1.73        202.91                37.77         0.584          pass              0.523             37.5                           0.575               -0.09             -0.113                       ok            True                  False
-  MSFT           81.58               38            0.61              2.12        491.90                57.86         0.545          pass              0.456             57.5                           0.519               25.48              3.077                       ok            True                  False
-  DRAM           77.14               35            0.36              0.14         54.83               109.93         0.733          pass              0.513             91.1                           0.623               -5.32             -0.566 downtrend_blocked_streak           False                  False
-  SOXL           80.65               31            3.55              3.48        138.41               182.46         0.712          pass              0.378             49.8                           0.386              -16.19             -1.826 downtrend_blocked_streak           False                  False
-   WDC           82.35               34            0.47              1.79        547.79                99.34         0.704          pass              0.502             69.5                           0.407               -1.92              0.177 downtrend_blocked_streak           False                  False
-  AMAT           90.32               31            1.23              4.70        544.61                87.24         0.656          pass              0.655             58.2                           0.432               -2.53             -0.302 downtrend_blocked_streak           False                  False
-  TMUS           77.78                9            2.41              2.99        175.93                55.59         0.626          pass              0.150             29.2                           0.437               -9.43             -0.447  downtrend_blocked_slope           False                  False
-  LRCX           86.21               29            1.76              3.91        316.06                92.33         0.614          pass              0.518             54.8                           0.447               -2.24             -0.124 downtrend_blocked_streak           False                  False
-  AMZN           76.47               17            2.15              4.18        275.63                61.32         0.597          pass              0.124              6.0                           0.281               10.86              1.953                       ok           False                  False
+  GEHC           94.12               34            0.65              0.32         70.12                58.11         0.626          pass              0.644             14.8                           0.234               13.73              1.699                       ok            True                  False
+  PYPL           90.91               33            0.69              0.28         58.42                60.15         0.618          pass              0.736             76.6                           0.438                4.73              0.480                       ok            True                  False
+ CMCSA           83.33               12            1.43              0.25         24.82                44.00         0.597          pass              0.282             40.0                           0.579                4.48              1.001                       ok            True                  False
+  PAYX          100.00               17            0.73              0.61        118.40                35.13         0.583          pass              0.734             76.4                           0.576                7.48              0.765                       ok            True                  False
+  CTAS           90.48               21            1.22              1.74        202.91                37.77         0.583          pass              0.523             37.2                           0.595               -0.09             -0.113                       ok            True                  False
+  MSFT           81.58               38            0.58              2.02        491.95                57.86         0.547          pass              0.462             59.6                           0.532               25.51              3.079                       ok            True                  False
+  CPRT           87.50               16            2.19              0.45         29.21                38.86         0.516          pass              0.360             22.8                           0.424                5.83              0.600                       ok            True                  False
+  DRAM           77.14               35            0.33              0.13         54.84               109.93         0.735          pass              0.515             91.7                           0.619               -5.30             -0.565 downtrend_blocked_streak           False                  False
+  SOXL           78.79               33            3.23              3.17        138.54               182.46         0.718          pass              0.388             54.3                           0.395              -15.91             -1.811 downtrend_blocked_streak           False                  False
+   WDC           82.35               34            0.38              1.44        547.94                99.34         0.709          pass              0.520             75.5                           0.397               -1.83              0.182 downtrend_blocked_streak           False                  False
+  AMAT           90.00               30            1.27              4.87        544.53                87.24         0.659          pass              0.636             56.7                           0.402               -2.57             -0.304 downtrend_blocked_streak           False                  False
+  TMUS           77.78                9            2.52              3.12        175.87                55.59         0.620          pass              0.140             26.0                           0.420               -9.53             -0.452  downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260805144001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260805144501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260805144001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260805144501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260805144001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260805144501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260805144001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260805144501)
 
 </details>
