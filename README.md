@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-08-05 10:25:05 EDT`
-- Equity: `$33,380.75` | Realized: `$23,480.75` | Unrealized: `$-100.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-08-05 10:30:06 EDT`
+- Equity: `$32,780.75` | Realized: `$23,480.75` | Unrealized: `$-700.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1030`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode         instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   PEP     option         option PEP260918C00140000     40     16400.0                 16300.0           4.08          -100.0                  -0.61                   1
+   PEP     option         option PEP260918C00140000     40     16400.0                 15700.0           3.92          -700.0                  -4.27                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260805102505)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260805103006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260805102505)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260805103006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260805102505)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260805103006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260805102505)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260805103006)
 
 </details>
 
