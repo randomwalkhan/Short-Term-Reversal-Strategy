@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-05 11:20:04 EDT`
+Latest checkpoint (ET): `2026-08-05 11:25:03 EDT`
 Last processed slot: `manage_1130`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1130`
 ## Portfolio Snapshot
 
 - Cash: `$17,080.75`
-- Equity: `$32,680.75`
+- Equity: `$32,480.75`
 - Realized PnL: `$23,480.75`
-- Unrealized PnL: `$-800.00`
+- Unrealized PnL: `$-1,000.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   PEP     option         option PEP260918C00140000       2026-08-04                   1     40     16400.0                 15600.0          4.1            3.9      138.68        138.26          bid_ask_mid                        3.9                bid_ask_mid                    True          -800.0                  -4.88         83.33               24              0.68          24.5           24.73                  26.13                3513.0           30.0               0.05                      ok
+   PEP     option         option PEP260918C00140000       2026-08-04                   1     40     16400.0                 15400.0          4.1           3.85      138.68        137.99          bid_ask_mid                       3.85                bid_ask_mid                    True         -1000.0                   -6.1         83.33               24              0.68          24.5           24.77                  26.13                3513.0           30.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-08-05)
@@ -48,24 +48,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  GEHC           94.44               36            0.53              0.26         70.15                58.11         0.623          pass              0.690             22.9                           0.132               13.87              1.705                       ok            True                  False
-  MRVL           80.00               35            1.33              2.04        217.72               100.52         0.612          pass              0.418             63.5                           0.548                2.22              0.280                       ok            True                  False
-  CTAS           83.33               12            1.80              2.56        202.55                37.77         0.598          pass              0.164              0.8                           0.080               -0.68             -0.140                       ok            True                  False
-  PAYX          100.00               10            1.56              1.30        118.10                35.13         0.576          pass              0.606             49.5                           0.244                6.58              0.727                       ok            True                  False
-   KDP           80.00               20            0.68              0.15         31.04                28.75         0.558          pass              0.276             51.2                           0.429                2.28              0.458                       ok            True                  False
-   CSX           91.67               24            0.64              0.23         50.93                29.11         0.557          pass              0.489              9.7                           0.176                1.55             -0.296                       ok            True                  False
-  MSFT           81.58               38            0.50              1.74        492.06                57.86         0.556          pass              0.451             55.6                           0.441               25.61              3.082                       ok            True                  False
-   PEP           83.33               24            0.60              0.59        138.85                25.68         0.551          pass              0.324             28.8                           0.198                1.92              0.236                       ok            True                  False
-   ADP           96.00               25            0.96              1.81        269.84                35.53         0.513          pass              0.675             41.1                           0.193               10.25              1.122                       ok            True                  False
-  CPRT           83.33               18            2.14              0.44         29.21                38.86         0.506          pass              0.221              9.4                           0.222                5.89              0.602                       ok            True                  False
-  DRAM           77.14               35            0.26              0.10         54.85               109.93         0.739          pass              0.521             93.6                           0.841               -5.23             -0.561 downtrend_blocked_streak           False                  False
-  SOXL           79.31               29            4.49              4.40        138.02               182.46         0.662          pass              0.303             36.6                           0.548              -17.00             -1.871 downtrend_blocked_streak           False                  False
+  GEHC           94.12               34            0.70              0.34         70.11                58.11         0.624          pass              0.605              2.0                           0.084               13.68              1.697                       ok            True                  False
+  MRVL           80.00               35            1.44              2.20        217.65               100.52         0.605          pass              0.409             60.7                           0.555                2.11              0.276                       ok            True                  False
+  CTAS           83.33               12            1.73              2.47        202.59                37.77         0.601          pass              0.181              6.3                           0.181               -0.62             -0.137                       ok            True                  False
+   CSX           91.67               24            0.61              0.22         50.94                29.11         0.559          pass              0.502             13.9                           0.216                1.58             -0.295                       ok            True                  False
+   PEP           83.33               24            0.80              0.78        138.77                25.68         0.539          pass              0.254              5.9                           0.096                1.73              0.227                       ok            True                  False
+   ADP           95.83               24            1.01              1.90        269.80                35.53         0.517          pass              0.660             38.2                           0.183               10.19              1.120                       ok            True                  False
+  CPRT           83.33               18            2.11              0.43         29.21                38.86         0.509          pass              0.225             10.8                           0.206                5.93              0.604                       ok            True                  False
+  DRAM           75.00               36            0.19              0.07         54.86               109.93         0.734          pass              0.532             95.2                           0.863               -5.17             -0.558 downtrend_blocked_streak           False                  False
+  SOXL           78.57               28            4.92              4.82        137.84               182.46         0.638          pass              0.275             30.5                           0.463              -17.37             -1.891 downtrend_blocked_streak           False                  False
+  TEAM           85.37               41            0.10              0.07        110.28                86.98         0.636          pass              0.681             91.5                           0.502               29.05              2.881                       ok           False                  False
+  AMAT           88.46               26            2.02              7.74        543.30                87.24         0.632          pass              0.489             31.1                           0.470               -3.31             -0.338 downtrend_blocked_streak           False                  False
+  TMUS           80.00                5            2.98              3.69        175.63                55.59         0.621          pass              0.100             12.5                           0.320               -9.95             -0.473  downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                detail
+2026-08-05T11:25:03.699168-04:00 early_entry_1125 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T11:20:04.670230-04:00 early_entry_1120 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T11:15:01.663027-04:00 early_entry_1115 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T11:10:04.712256-04:00 early_entry_1110 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-08-05T10:50:01.771343-04:00 early_entry_1050 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T10:45:01.734892-04:00 early_entry_1045 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-05T10:40:05.699069-04:00 early_entry_1040 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-05T10:35:01.163054-04:00 early_entry_1035 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260805112004)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260805112503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260805112004)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260805112503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260805112004)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260805112503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260805112004)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260805112503)
 
 </details>
