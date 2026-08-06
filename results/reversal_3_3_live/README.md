@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-06 12:00:02 EDT`
+Latest checkpoint (ET): `2026-08-06 12:05:05 EDT`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -47,19 +47,19 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  GEHC           94.12               34            0.64              0.31         70.11                58.07         0.633          pass              0.650             16.7                           0.356               12.65              1.562                       ok            True                  False
-   ROP           93.75               32            0.54              1.50        393.89                46.42         0.586          pass              0.738             55.4                           0.684               10.50              0.810                       ok            True                  False
-  INTC           85.00               40            0.65              0.46        100.86                86.71         0.567          pass              0.654             87.9                           0.543                0.17              0.782                       ok            True                  False
-  MNST           88.24               17            1.09              0.72         94.15                25.70         0.558          pass              0.346              8.1                           0.226               -0.13             -0.089                       ok            True                  False
-  WDAY           80.65               31            1.65              1.97        169.79                67.74         0.523          pass              0.416             68.7                           0.802               31.24              2.503                       ok            True                  False
-  UPRO           81.82               33            0.70              0.75        152.92                43.16         0.518          pass              0.267              4.5                           0.236               11.78              1.445                       ok            True                  False
-   PEP           83.33               24            0.71              0.69        138.49                25.05         0.517          pass              0.354             40.0                           0.409                2.11              0.071                       ok            True                  False
-  AMGN          100.00               18            1.21              3.46        406.35                30.87         0.513          pass              0.567             20.8                           0.293                8.45              0.689                       ok            True                  False
-  ROST           89.66               29            0.72              1.27        252.68                22.84         0.506          pass              0.504             23.3                           0.361                8.18              0.665                       ok            True                  False
-  ALNY           85.71               28            1.32              2.11        227.82               127.65         0.823          pass              0.465             36.8                           0.408              -16.01             -2.867  downtrend_blocked_slope           False                  False
-  AMAT           91.89               37            0.15              0.55        534.01                86.87         0.690          pass              0.856             96.6                           0.660               -5.21              0.186 downtrend_blocked_streak           False                  False
-  ISRG           86.84               38            0.34              0.89        374.82                72.98         0.678          pass              0.628             63.6                           0.578               12.62              1.079                       ok           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  GEHC           93.75               32            0.74              0.36         70.08                58.07         0.639          pass              0.588              3.7                           0.183               12.53              1.557                                 ok            True                  False
+  INTC           85.00               40            0.75              0.53        100.83                86.71         0.560          pass              0.648             86.1                           0.536                0.07              0.777                                 ok            True                  False
+  MNST           88.24               17            1.13              0.75         94.14                25.70         0.555          pass              0.334              4.0                           0.122               -0.18             -0.091                                 ok            True                  False
+  WDAY           82.35               34            1.24              1.48        170.00                67.74         0.534          pass              0.506             76.5                           0.822               31.79              2.522                                 ok            True                  False
+  UPRO           81.82               33            0.69              0.74        152.92                43.16         0.517          pass              0.301             15.9                           0.234               11.79              1.446                                 ok            True                  False
+   PEP           83.33               24            0.73              0.71        138.48                25.05         0.516          pass              0.348             38.0                           0.418                2.09              0.070                                 ok            True                  False
+  AMGN          100.00               20            1.19              3.40        406.37                30.87         0.500          pass              0.583             22.2                           0.340                8.47              0.690                                 ok            True                  False
+  ALNY           85.71               28            1.35              2.16        227.79               127.65         0.822          pass              0.460             35.2                           0.378              -16.04             -2.868            downtrend_blocked_slope           False                  False
+  AMAT           91.89               37            0.39              1.46        533.61                86.87         0.675          pass              0.838             91.0                           0.604               -5.45              0.175           downtrend_blocked_streak           False                  False
+  ISRG           87.18               39            0.29              0.76        374.88                72.98         0.675          pass              0.659             68.9                           0.593               12.68              1.082                                 ok           False                  False
+   ROP           93.94               33            0.41              1.14        394.04                46.42         0.589          pass              0.782             66.1                           0.753               10.64              0.816                                 ok           False                  False
+   MAR           94.44               18            1.25              3.16        359.95                38.12         0.583          pass              0.541             14.7                           0.323               -2.11             -0.713 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260806120002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260806120505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260806120002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260806120505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260806120002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260806120505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260806120002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260806120505)
 
 </details>
