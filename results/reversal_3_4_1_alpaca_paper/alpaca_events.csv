@@ -4246,3 +4246,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-06T11:43:06.841901-04:00,2026-08-06,early_entry_1140,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-06T11:50:06.788788-04:00,2026-08-06,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-06T11:57:03.060980-04:00,2026-08-06,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-06T14:50:46.321850-04:00,2026-08-06,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""35c5c7f4-371a-4f0b-8be7-5f745ab587d7"", ""contract_symbol"": ""INTC260918C00100000"", ""contracts"": 4, ""entry_mode"": ""regular"", ""limit_price"": ""11.35"", ""ticker"": ""INTC""}"
