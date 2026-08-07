@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-07 09:50:04 EDT`
+Latest checkpoint (ET): `2026-08-07 09:55:04 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$17,608.25`
-- Equity: `$36,545.75`
+- Equity: `$34,933.25`
 - Realized PnL: `$24,370.75`
-- Unrealized PnL: `$2,175.00`
+- Unrealized PnL: `$562.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  INTC     option         option INTC260918C00100000       2026-08-06                   1     15     16762.5                 18937.5        11.18          12.62      100.37        100.19          bid_ask_mid                      12.62                bid_ask_mid                    True          2175.0                  12.98          85.0               40              0.68         79.69           91.75                  86.71               28020.0         1406.0               0.03                      ok
+  INTC     option         option INTC260918C00100000       2026-08-06                   1     15     16762.5                 17325.0        11.18          11.55      100.37         99.92          bid_ask_mid                      11.55                bid_ask_mid                    True           562.5                   3.36          85.0               40              0.68         79.69           85.27                  86.71               28020.0         1406.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-08-07)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  INSM           80.00               40            0.91              0.84        132.19               110.04         0.732          pass              0.430             52.2                           0.354               22.85              1.548                      ok            True                  False
-  TMUS           90.48               21            1.28              1.62        179.28                57.01         0.644          pass              0.505             29.1                           0.253               -1.35             -0.167                      ok            True                  False
-  ROST           92.59               27            0.94              1.67        253.60                22.77         0.520          pass              0.585             28.1                           0.190                5.46              0.420                      ok            True                  False
-   ADP           96.43               28            0.80              1.54        272.85                34.67         0.509          pass              0.789             72.7                           0.354                8.48              0.687                      ok            True                  False
-    MU           80.56               36            0.27              1.65        880.76               110.38         0.719          pass              0.471             70.4                           0.294               -4.54              0.239                      ok           False                  False
-  DRAM           79.41               34            1.28              0.46         51.24               108.98         0.695          pass              0.341             37.1                           0.195               -4.55              0.386                      ok           False                  False
-  PYPL           95.24               42            0.21              0.09         59.74                59.52         0.628          pass              0.882             73.2                           0.575                6.24              0.499                      ok           False                  False
-  DXCM           90.00               40            0.19              0.11         82.97                60.80         0.624          pass              0.777             82.8                           0.612               15.82              1.797                      ok           False                  False
-  ALNY           87.80               41            0.51              0.77        215.79               128.30         0.620          pass              0.711             80.4                           0.521              -20.88             -3.044 downtrend_blocked_slope           False                  False
-   ROP           96.97               33            0.45              1.25        396.54                46.41         0.586          pass              0.631              6.3                           0.179                7.61              0.504                      ok           False                  False
-  PAYX          100.00               25            0.37              0.31        120.00                34.54         0.576          pass              0.734             58.9                           0.478                6.50              0.412                      ok           False                  False
-  MDLZ           87.50               24            0.43              0.19         62.67                30.17         0.565          pass              0.554             68.1                           0.538                3.24              0.170                      ok           False                  False
+  TMUS           90.48               21            1.30              1.64        179.27                57.01         0.643          pass              0.501             28.1                           0.233               -1.37             -0.168                      ok            True                  False
+   ADP           96.30               27            0.92              1.76        272.76                34.67         0.508          pass              0.770             68.8                           0.342                8.36              0.682                      ok            True                  False
+  ROST           93.94               33            0.53              0.95        253.90                22.77         0.506          pass              0.752             58.9                           0.455                5.89              0.439                      ok            True                  False
+  INSM           73.08               26            1.77              1.64        131.85               110.04         0.748          pass              0.201              6.6                           0.099               21.78              1.509                      ok           False                  False
+    MU           79.41               34            1.14              7.04        878.45               110.38         0.672          pass              0.227              0.0                           0.150               -5.38              0.199                      ok           False                  False
+  DRAM           78.12               32            2.14              0.77         51.11               108.98         0.649          pass              0.212              0.0                           0.150               -5.38              0.347                      ok           False                  False
+  GEHC           95.12               41            0.04              0.02         70.30                58.07         0.633          pass              0.953             96.7                           0.711               16.01              1.389                      ok           False                  False
+  INTC           85.37               41            0.10              0.07         99.78                86.24         0.626          pass              0.643             79.2                           0.432                8.00              1.468                      ok           False                  False
+  PYPL           95.45               44            0.07              0.03         59.77                59.52         0.625          pass              0.937             91.7                           0.698                6.39              0.506                      ok           False                  False
+  ALNY           88.37               43            0.32              0.48        215.91               128.30         0.622          pass              0.749             87.7                           0.586              -20.73             -3.035 downtrend_blocked_slope           False                  False
+  DXCM           90.00               40            0.26              0.15         82.95                60.80         0.620          pass              0.758             76.3                           0.672               15.74              1.793                      ok           False                  False
+   ROP           97.14               35            0.18              0.51        396.86                46.41         0.590          pass              0.833             69.1                           0.462                7.90              0.517                      ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260807095004)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260807095504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260807095004)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260807095504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260807095004)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260807095504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260807095004)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260807095504)
 
 </details>
