@@ -4446,3 +4446,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-08T14:36:51.426722-04:00,2026-08-08,manage_1430,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-08-08T14:41:55.173082-04:00,2026-08-08,manage_1430,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-08-08T14:46:58.714651-04:00,2026-08-08,manual,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-08-08T14:52:02.335949-04:00,2026-08-08,entry_1500,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
