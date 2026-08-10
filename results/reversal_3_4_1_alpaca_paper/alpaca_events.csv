@@ -4857,3 +4857,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-10T11:37:17.676415-04:00,2026-08-10,early_entry_1135,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-10T11:43:32.600849-04:00,2026-08-10,early_entry_1140,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-10T11:49:49.384075-04:00,2026-08-10,early_entry_1145,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-10T11:56:05.128191-04:00,2026-08-10,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
