@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-10 16:21:37 EDT`
-Last slot: `share_ext_1620`
+Latest checkpoint (ET): `2026-08-10 16:26:41 EDT`
+Last slot: `share_ext_1625`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_1620`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  LRCX   open    regular LRCX260918C00310000          1               27.25                26.125          bid_ask_mid                     26.125                    True          2612.5          -112.5               -4.12844                   0
+  LRCX   open    regular LRCX260918C00310000          1               27.25                25.775          bid_ask_mid                     25.775                    True          2577.5          -147.5              -5.412844                   0
 ```
 
 ## Closed Trades
