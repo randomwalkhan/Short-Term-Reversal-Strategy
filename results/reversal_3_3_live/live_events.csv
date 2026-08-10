@@ -4886,3 +4886,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-10T10:20:04.656698-04:00,2026-08-10,early_entry_1020,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-10T10:25:03.677192-04:00,2026-08-10,early_entry_1025,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-10T10:30:04.655219-04:00,2026-08-10,early_entry_1030,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-10T10:35:06.500306-04:00,2026-08-10,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""PYPL260918C00060000"", ""fill_price"": 1.5525, ""pnl"": -1621.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""PYPL""}"
+2026-08-10T10:35:06.500306-04:00,2026-08-10,early_entry_1035,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
