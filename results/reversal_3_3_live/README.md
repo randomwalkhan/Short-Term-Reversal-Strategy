@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-10 13:40:01 EDT`
-Last processed slot: `manage_1330`
+Latest checkpoint (ET): `2026-08-10 13:45:03 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  PYPL           93.10               29            0.96              0.40         58.90                60.12         0.661            pass              0.643             33.5                           0.347                4.34              0.335                       ok            True                  False
-  LRCX           87.10               31            1.36              2.96        310.08                90.05         0.637            pass              0.476             27.7                           0.268                5.32              1.415                       ok            True                  False
-  AMAT           88.46               26            2.03              7.66        535.86                85.88         0.625            pass              0.423              9.4                           0.215                2.19              1.246                       ok            True                  False
- CMCSA           87.50               16            1.26              0.22         25.26                44.15         0.624            pass              0.438             45.3                           0.548                9.82              0.776                       ok            True                  False
-  TMUS           88.89               36            0.56              0.69        176.89                55.81         0.599            pass              0.698             75.8                           0.706               -0.57             -0.130                       ok            True                   True
-  BKNG           95.24               21            1.67              2.51        213.35                46.72         0.558            pass              0.623             31.3                           0.395               12.88              1.029                       ok            True                  False
-  ORLY           85.00               20            1.60              1.05         93.08                35.75         0.537            pass              0.296             14.0                           0.251                1.59              0.393                       ok            True                  False
-   PEP           80.00               25            0.80              0.78        138.69                22.07         0.502            pass              0.238             29.3                           0.290               -1.34             -0.280                       ok            True                  False
-   HON           85.71               21            1.30              2.24        245.25                29.28         0.500 below_threshold              0.399             40.9                           0.322               -1.11             -0.000                       ok            True                  False
-  ALNY           88.10               42            0.48              0.74        218.88               128.37         0.801            pass              0.638             47.3                           0.451              -21.65             -2.624  downtrend_blocked_slope           False                  False
-  DRAM           77.14               35            0.80              0.28         50.48               108.94         0.703            pass              0.452             71.7                           0.570               -4.26              0.511 downtrend_blocked_streak           False                  False
-  SOXL           79.31               29            4.73              4.65        138.26               179.06         0.633            pass              0.215              8.4                           0.219                4.26              2.516                       ok           False                  False
+  PYPL           92.86               28            0.99              0.41         58.89                60.12         0.665            pass              0.623             31.2                           0.368                4.31              0.334                       ok            True                  False
+  LRCX           87.10               31            1.52              3.31        309.93                90.05         0.627            pass              0.449             19.1                           0.183                5.15              1.407                       ok            True                  False
+  AMAT           88.46               26            2.07              7.80        535.80                85.88         0.623            pass              0.418              7.8                           0.167                2.15              1.244                       ok            True                  False
+ CMCSA           87.50               16            1.28              0.23         25.26                44.15         0.622            pass              0.436             44.4                           0.505                9.80              0.775                       ok            True                  False
+  TMUS           88.89               36            0.55              0.68        176.90                55.81         0.600            pass              0.699             76.2                           0.697               -0.56             -0.130                       ok            True                   True
+  BKNG           95.00               20            1.70              2.56        213.32                46.72         0.563            pass              0.612             29.8                           0.388               12.84              1.028                       ok            True                  False
+  ORLY           85.71               21            1.57              1.03         93.09                35.75         0.534            pass              0.326             15.8                           0.263                1.62              0.395                       ok            True                  False
+  MPWR           81.08               37            0.53              5.21       1399.31                61.17         0.511            pass              0.460             66.7                           0.482                4.11              0.718                       ok            True                  False
+   HON           86.36               22            1.18              2.03        245.34                29.28         0.502            pass              0.439             46.5                           0.390               -0.99              0.005                       ok            True                  False
+   PEP           80.00               25            0.83              0.81        138.67                22.07         0.500 below_threshold              0.229             26.4                           0.264               -1.38             -0.282                       ok            True                  False
+  ALNY           88.64               44            0.36              0.55        218.96               128.37         0.798            pass              0.692             60.7                           0.554              -21.55             -2.618  downtrend_blocked_slope           False                  False
+  DRAM           77.14               35            0.77              0.27         50.48               108.94         0.705            pass              0.455             72.7                           0.553               -4.23              0.513 downtrend_blocked_streak           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260810134001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260810134503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260810134001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260810134503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260810134001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260810134503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260810134001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260810134503)
 
 </details>
