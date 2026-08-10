@@ -4909,3 +4909,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-10T14:50:01.766475-04:00,2026-08-10,entry_1500,entry,"{""allocated_cash"": 13425.0, ""asset_type"": ""option"", ""contract_symbol"": ""LRCX260918C00310000"", ""contracts"": 5, ""early_entry_score"": 0.505, ""entry_mode"": ""regular"", ""entry_option_price"": 26.85, ""execution_mode"": ""option"", ""matched_signals"": 31, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 1499.0, ""option_spread_pct"": 3.35, ""option_volume"": 93.0, ""success_rate"": 87.1, ""ticker"": ""LRCX"", ""timing_score"": 0.649}"
 2026-08-10T14:55:05.599659-04:00,2026-08-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-08-10T15:00:04.645498-04:00,2026-08-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-08-10T15:05:01.609183-04:00,2026-08-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
