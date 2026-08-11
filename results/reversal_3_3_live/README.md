@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-11 12:48:58 EDT`
-Last processed slot: `manage_1300`
+Latest checkpoint (ET): `2026-08-11 13:23:19 EDT`
+Last processed slot: `manage_1330`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `manage_1300`
 ## Portfolio Snapshot
 
 - Cash: `$17,648.00`
-- Equity: `$31,098.00`
+- Equity: `$30,910.50`
 - Realized PnL: `$21,073.00`
-- Unrealized PnL: `$25.00`
+- Unrealized PnL: `$-162.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  LRCX     option         option LRCX260918C00310000       2026-08-10                   1      5     13425.0                 13450.0        26.85           26.9      307.66        310.26          bid_ask_mid                       26.9                bid_ask_mid                    True            25.0                   0.19          87.1               31              1.19         68.92           65.79                  90.05                1499.0           93.0               0.03                      ok
+  LRCX     option         option LRCX260918C00310000       2026-08-10                   1      5     13425.0                 13262.5        26.85          26.52      307.66         310.3          bid_ask_mid                      26.52                bid_ask_mid                    True          -162.5                  -1.21          87.1               31              1.19         68.92           65.24                  90.05                1499.0           93.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-08-11)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  INSM           82.98               47            0.53              0.50        134.54               107.27         0.707          pass              0.579             76.3                           0.555               28.72              3.362                  ok            True                  False
-    MU           80.00               35            1.03              6.18        858.35               109.54         0.700          pass              0.375             46.1                           0.390                3.86              0.929                  ok            True                  False
-  SHOP           97.06               34            1.38              1.50        154.54                81.38         0.645          pass              0.747             40.9                           0.603               17.47              2.590                  ok            True                  False
-  GEHC           94.29               35            0.55              0.28         72.82                58.44         0.604          pass              0.746             45.9                           0.408               13.15              0.751                  ok            True                  False
-   ROP          100.00               29            0.73              2.06        403.01                46.36         0.601          pass              0.732             48.5                           0.414                2.57              0.195                  ok            True                  False
-  GOOG           80.00               15            2.28              5.67        353.41                50.40         0.587          pass              0.093              0.5                           0.264                4.55              0.540                  ok            True                  False
-  WDAY           81.82               33            1.10              1.41        183.58                68.85         0.558          pass              0.434             58.9                           0.340               14.08              1.420                  ok            True                  False
-  UPRO           81.25               32            0.70              0.76        154.65                41.60         0.555          pass              0.241              1.8                           0.212               12.08              1.649                  ok            True                  False
-  NFLX           83.33               18            1.76              0.94         75.89                35.90         0.524          pass              0.205              3.6                           0.159                3.53              0.383                  ok            True                  False
-  PYPL           95.12               41            0.28              0.12         59.02                59.96         0.632          pass              0.888             75.0                           0.382                1.00              0.237                  ok           False                  False
-  AMZN           71.43               14            2.26              4.40        276.21                61.51         0.632          pass              0.107              5.8                           0.253               17.74              1.871                  ok           False                  False
-  MSFT           78.79               33            0.85              3.02        504.77                57.78         0.603          pass              0.315             33.7                           0.372               27.56              2.461                  ok           False                  False
+  INSM           81.40               43            0.59              0.55        134.51               107.27         0.723          pass              0.530             73.6                           0.619               28.65              3.359                  ok            True                  False
+    MU           80.00               35            1.03              6.18        858.35               109.54         0.700          pass              0.375             46.1                           0.333                3.86              0.929                  ok            True                  False
+  SHOP           96.77               31            1.57              1.71        154.45                81.38         0.651          pass              0.703             32.6                           0.357               17.24              2.581                  ok            True                  False
+  GEHC           94.29               35            0.58              0.29         72.81                58.44         0.603          pass              0.738             43.2                           0.451               13.12              0.750                  ok            True                  False
+   ROP          100.00               29            0.76              2.14        402.97                46.36         0.599          pass              0.726             46.4                           0.372                2.54              0.194                  ok            True                  False
+  UPRO           85.71               28            0.96              1.04        154.53                41.60         0.568          pass              0.364             11.6                           0.157               11.79              1.637                  ok            True                  False
+  WDAY           81.25               32            1.25              1.62        183.50                68.85         0.554          pass              0.394             53.0                           0.390               13.90              1.413                  ok            True                  False
+  NFLX           83.33               18            1.98              1.06         75.84                35.90         0.507          pass              0.205              4.1                           0.201                3.30              0.373                  ok            True                  False
+  INTC           87.50               40            0.30              0.20         97.43                84.72         0.641          pass              0.724             86.6                           0.566               12.67              1.755                  ok           False                  False
+  PYPL           95.12               41            0.34              0.14         59.01                59.96         0.628          pass              0.872             69.7                           0.441                0.94              0.234                  ok           False                  False
+  AMZN           71.43               14            2.33              4.54        276.15                61.51         0.627          pass              0.098              2.8                           0.196               17.65              1.868                  ok           False                  False
+  MSFT           79.41               34            0.70              2.49        504.99                57.78         0.607          pass              0.357             45.3                           0.606               27.75              2.468                  ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260811124858)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260811132319)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260811124858)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260811132319)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260811124858)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260811132319)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260811124858)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260811132319)
 
 </details>
