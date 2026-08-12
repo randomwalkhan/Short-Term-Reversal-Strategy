@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-12 07:10:02 EDT`
-Last processed slot: `share_ext_0710`
+Latest checkpoint (ET): `2026-08-12 07:15:01 EDT`
+Last processed slot: `share_ext_0715`
 
 ## Active Configuration
 
@@ -51,17 +51,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                detail
-2026-08-12T07:10:02.590730-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-12T07:05:06.380067-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-12T07:00:04.713079-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-12T06:55:05.791801-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-12T06:50:04.746294-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-12T06:45:06.278883-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-12T06:40:06.484247-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-12T06:35:05.575468-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-12T06:30:03.680654-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-11T11:31:47.849981-04:00 early_entry_1130 early_entry_shadow {"contract_symbol": "PANW260918C00380000", "current_drop_pct": 0.6, "early_entry_score": 0.708, "early_reclaim_pct": 74.5, "entry_ask": 33.15, "entry_bid": 31.2, "entry_mode": "early", "entry_option_price": 32.175, "hypothetical_budget": 8824.0, "hypothetical_contracts": 2, "matched_signals": 46, "option_liquidity_status": "ok", "option_open_interest": 3447.0, "option_spread_pct": 6.06, "option_volume": 31.0, "reason": "shadow_mode_no_order", "recovery_stability_score": 0.556, "shadow_only": true, "success_rate": 89.13, "ticker": "PANW", "timing_score": 0.407, "top_candidates": [{"current_drop_pct": 0.6, "early_entry_score": 0.708, "early_reclaim_pct": 74.5, "matched_signals": 46, "recovery_stability_score": 0.556, "success_rate": 89.13, "ticker": "PANW", "timing_score": 0.407, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": true}
+                    timestamp_et         slot   event_type        detail
+2026-08-12T07:15:01.586865-04:00 data_refresh data_refresh {'saved': 93}
+2026-08-12T07:10:02.590730-04:00 data_refresh data_refresh {'saved': 93}
+2026-08-12T07:05:06.380067-04:00 data_refresh data_refresh {'saved': 93}
+2026-08-12T07:00:04.713079-04:00 data_refresh data_refresh {'saved': 93}
+2026-08-12T06:55:05.791801-04:00 data_refresh data_refresh {'saved': 93}
+2026-08-12T06:50:04.746294-04:00 data_refresh data_refresh {'saved': 93}
+2026-08-12T06:45:06.278883-04:00 data_refresh data_refresh {'saved': 93}
+2026-08-12T06:40:06.484247-04:00 data_refresh data_refresh {'saved': 93}
+2026-08-12T06:35:05.575468-04:00 data_refresh data_refresh {'saved': 93}
+2026-08-12T06:30:03.680654-04:00 data_refresh data_refresh {'saved': 93}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260812071002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260812071501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260812071002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260812071501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260812071002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260812071501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260812071002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260812071501)
 
 </details>
