@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 17648.000356674194,
-  "positions": [
-    {
-      "position_id": "LRCX_20260810T145001",
-      "ticker": "LRCX",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "LRCX260918C00310000",
-      "expiry": "2026-09-18",
-      "strike": 310.0,
-      "entry_timestamp": "2026-08-10T14:50:01.766475-04:00",
-      "entry_trade_date": "2026-08-10",
-      "entry_slot": "entry_1500",
-      "entry_spot": 307.6600036621094,
-      "entry_option_price": 26.85,
-      "entry_bid": 26.4,
-      "entry_ask": 27.3,
-      "entry_iv_pct": 68.92426095581055,
-      "contracts": 5,
-      "allocated_cash": 13425.0,
-      "success_rate": 87.1,
-      "matched_signals": 31,
-      "current_drop_pct": 1.19,
-      "rolling_sigma_20d_pct": 90.05,
-      "planned_tp_day1": 30.877499999999998,
-      "planned_tp_day2": 30.877499999999998,
-      "planned_stop": 24.165000000000003,
-      "option_open_interest": 1499.0,
-      "option_volume": 93.0,
-      "option_spread_pct": 0.033519553072625774,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 35098.000356674194,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",

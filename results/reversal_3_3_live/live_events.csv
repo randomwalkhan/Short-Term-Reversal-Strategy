@@ -4953,3 +4953,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-12T09:25:01.593760-04:00,2026-08-12,data_refresh,data_refresh,{'saved': 93}
 2026-08-12T09:30:01.771593-04:00,2026-08-12,data_refresh,data_refresh,{'saved': 93}
 2026-08-12T09:35:01.769154-04:00,2026-08-12,data_refresh,data_refresh,{'saved': 93}
+2026-08-12T09:50:02.620693-04:00,2026-08-12,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""LRCX260918C00310000"", ""fill_price"": 34.9, ""pnl"": 4025.0, ""reason"": ""take_profit_day2_hit_at_scan"", ""return_pct"": 29.98, ""ticker"": ""LRCX""}"
