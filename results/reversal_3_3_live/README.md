@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-12 14:15:05 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-08-12 14:20:01 EDT`
+Last processed slot: `manage_1430`
 
 ## Active Configuration
 
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  TEAM           83.78               37            0.58              0.63        153.81               126.50         0.804          pass              0.599             79.3                           0.694               46.89              5.200                  ok            True                  False
-  SHOP           95.65               23            2.14              2.29        151.63                81.89         0.655          pass              0.602             16.5                           0.407               15.62              2.868                  ok            True                  False
-  PYPL           93.75               32            0.73              0.30         58.87                59.96         0.652          pass              0.783             68.1                           0.619                0.38              0.228                  ok            True                   True
-  ABNB          100.00               10            2.39              3.10        183.65                64.05         0.643          pass              0.522             19.3                           0.279               18.00              2.263                  ok            True                  False
-  TMUS           90.91               22            1.41              1.76        177.83                55.82         0.628          pass              0.470             12.2                           0.259                1.57              0.235                  ok            True                  False
- CMCSA           90.91               11            1.79              0.32         25.51                42.38         0.621          pass              0.422             20.7                           0.429                6.42              0.658                  ok            True                  False
-   ROP          100.00               18            1.85              5.18        397.28                44.32         0.595          pass              0.587             24.6                           0.311                0.73              0.170                  ok            True                  False
-  GEHC           94.59               37            0.54              0.27         72.63                54.33         0.584          pass              0.860             77.6                           0.553                0.64              0.359                  ok            True                   True
-  MCHP           86.84               38            0.80              0.45         80.83                74.47         0.580          pass              0.567             46.7                           0.329                7.15              0.995                  ok            True                  False
-  PAYX          100.00               13            1.48              1.25        120.76                33.26         0.579          pass              0.586             36.1                           0.374                2.73              0.371                  ok            True                  False
-  FAST          100.00               23            0.52              0.19         52.30                25.01         0.565          pass              0.732             63.0                           0.368               11.68              1.209                  ok            True                  False
-   ADP           96.15               26            1.10              2.08        270.20                32.74         0.534          pass              0.688             42.7                           0.511                1.61              0.141                  ok            True                  False
+  TEAM           83.78               37            0.59              0.64        153.81               126.50         0.804          pass              0.598             78.9                           0.697               46.88              5.200                  ok            True                  False
+  PYPL           93.75               32            0.76              0.32         58.86                59.96         0.650          pass              0.778             66.7                           0.629                0.34              0.226                  ok            True                   True
+  SHOP           95.65               23            2.23              2.38        151.59                81.89         0.650          pass              0.591             13.0                           0.371               15.51              2.864                  ok            True                  False
+  ABNB          100.00               10            2.47              3.20        183.61                64.05         0.638          pass              0.514             16.6                           0.225               17.91              2.259                  ok            True                  False
+  TMUS           91.67               24            1.30              1.62        177.90                55.82         0.624          pass              0.525             19.3                           0.262                1.69              0.240                  ok            True                  False
+ CMCSA           91.67               12            1.69              0.30         25.52                42.38         0.623          pass              0.463             25.5                           0.442                6.54              0.663                  ok            True                  False
+   ROP          100.00               18            1.87              5.24        397.25                44.32         0.593          pass              0.584             23.7                           0.311                0.71              0.169                  ok            True                  False
+  GEHC           94.59               37            0.52              0.26         72.64                54.33         0.585          pass              0.863             78.4                           0.545                0.66              0.360                  ok            True                  False
+  PAYX          100.00               14            1.41              1.20        120.79                33.26         0.577          pass              0.601             38.9                           0.409                2.80              0.374                  ok            True                  False
+  MCHP           87.18               39            0.75              0.43         80.84                74.47         0.577          pass              0.591             49.6                           0.349                7.20              0.997                  ok            True                  False
+   ADP           96.00               25            1.11              2.11        270.18                32.74         0.539          pass              0.679             41.7                           0.532                1.59              0.140                  ok            True                  False
+  PCAR           96.77               31            0.66              0.61        131.92                29.70         0.509          pass              0.786             64.9                           0.659               -1.83             -0.140                  ok            True                   True
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260812141505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260812142001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260812141505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260812142001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260812141505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260812142001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260812141505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260812142001)
 
 </details>
