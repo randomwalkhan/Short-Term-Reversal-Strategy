@@ -4928,3 +4928,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-12T07:20:01.776322-04:00,2026-08-12,data_refresh,data_refresh,{'saved': 93}
 2026-08-12T07:25:04.771402-04:00,2026-08-12,data_refresh,data_refresh,{'saved': 93}
 2026-08-12T07:30:02.850308-04:00,2026-08-12,data_refresh,data_refresh,{'saved': 93}
+2026-08-12T07:35:05.959267-04:00,2026-08-12,data_refresh,data_refresh,{'saved': 93}
