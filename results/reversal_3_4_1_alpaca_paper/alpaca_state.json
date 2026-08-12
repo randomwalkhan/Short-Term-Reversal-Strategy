@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4760.0,
+      "alpaca_entry_client_order_id": "rev-20260812144845-pypl-regular",
+      "alpaca_entry_order_id": "6f213c86-8e94-49fb-8fb0-54b791592907",
+      "asset_type": "option",
+      "contract_symbol": "PYPL260918C00057500",
+      "contracts": 17,
+      "current_drop_pct": 0.63,
+      "early_entry_score": 0.808,
+      "entry_mode": "regular",
+      "entry_option_price": 2.8,
+      "entry_slot": "entry_1500",
+      "entry_spot": 58.63100051879883,
+      "entry_timestamp": "2026-08-12T14:48:45.899980-04:00",
+      "entry_trade_date": "2026-08-12",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-09-18",
+      "matched_signals": 33,
+      "planned_stop": 2.52,
+      "planned_tp_day1": 3.2199999999999998,
+      "planned_tp_day2": 3.2199999999999998,
+      "position_id": "PYPL_20260812T144845",
+      "status": "entry_submitted",
+      "strike": 57.5,
+      "success_rate": 93.94,
+      "ticker": "PYPL",
+      "timing_score": 0.652
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
