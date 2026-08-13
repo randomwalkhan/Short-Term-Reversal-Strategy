@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-13 10:40:10 EDT`
-Last processed slot: `manage_1030`
+Latest checkpoint (ET): `2026-08-13 10:45:05 EDT`
+Last processed slot: `early_entry_1045`
 
 ## Active Configuration
 
@@ -45,34 +45,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-   BKR           81.25               16            1.37              0.62         64.02                33.24         0.554          pass              0.280             50.6                           0.726                6.23              0.775                       ok            True                  False
-  MPWR           84.21               38            0.76              7.58       1421.76                55.33         0.543          pass              0.463             36.6                           0.246                7.45              0.600                       ok            True                  False
-  PCAR           96.30               27            0.81              0.74        130.74                29.70         0.539          pass              0.714             49.0                           0.288               -2.81             -0.186                       ok            True                  False
-  ADSK           80.65               31            0.89              1.55        248.85                45.76         0.527          pass              0.422             70.6                           0.428                5.25              0.835                       ok            True                  False
-  INSM           69.23               13            2.99              2.77        131.09               107.72         0.740          pass              0.102              2.8                           0.240               26.44              3.760                       ok           False                  False
-  ISRG           87.18               39            0.26              0.72        400.96                69.94         0.668          pass              0.657             68.3                           0.574               13.39              1.341                       ok           False                  False
-  MCHP           85.00               40            0.08              0.04         79.42                74.47         0.666          pass              0.667             89.1                           0.430                5.83              0.938                       ok           False                  False
-   ROP           96.97               33            0.47              1.31        394.67                44.32         0.598          pass              0.771             52.7                           0.353                1.06              0.184                       ok           False                  False
-  FAST          100.00               26            0.34              0.13         52.17                25.01         0.566          pass              0.770             69.0                           0.529               11.53              1.203                       ok           False                  False
-  BKNG           97.50               40            0.19              0.28        212.14                44.60         0.556          pass              0.923             89.3                           0.604                9.64              1.218                       ok           False                  False
-  ROST           88.89               18            1.20              2.09        247.36                22.10         0.520          pass              0.487             48.2                           0.304               -2.89             -0.116 downtrend_blocked_streak           False                  False
-   HON           91.67               36            0.51              0.85        234.98                35.57         0.512          pass              0.706             56.8                           0.604               -3.22             -0.596  downtrend_blocked_slope           False                  False
+   ROP          100.00               29            0.66              1.84        394.44                44.32         0.616          pass              0.688             33.4                           0.247                0.86              0.176                       ok            True                  False
+   BKR           82.35               17            1.31              0.59         64.03                33.24         0.553          pass              0.323             52.8                           0.756                6.30              0.778                       ok            True                  False
+  MPWR           84.21               38            0.71              7.12       1421.96                55.33         0.546          pass              0.475             40.5                           0.313                7.50              0.603                       ok            True                  False
+  PCAR           96.30               27            0.92              0.85        130.70                29.70         0.532          pass              0.692             41.8                           0.225               -2.92             -0.191                       ok            True                  False
+  ADSK           80.65               31            0.86              1.50        248.87                45.76         0.529          pass              0.424             71.4                           0.404                5.27              0.836                       ok            True                  False
+  INSM           66.67               12            3.20              2.96        131.01               107.72         0.729          pass              0.096              3.4                           0.229               26.17              3.751                       ok           False                  False
+  ISRG           86.49               37            0.39              1.09        400.80                69.94         0.671          pass              0.577             52.3                           0.370               13.24              1.335                       ok           False                  False
+  MCHP           85.00               40            0.09              0.05         79.42                74.47         0.665          pass              0.659             86.4                           0.393                5.81              0.937                       ok           False                  False
+  FAST          100.00               26            0.34              0.13         52.17                25.01         0.566          pass              0.770             69.0                           0.528               11.53              1.203                       ok           False                  False
+  BKNG           97.44               39            0.40              0.59        212.01                44.60         0.549          pass              0.881             77.5                           0.422                9.41              1.209                       ok           False                  False
+  ROST           88.89               18            1.18              2.05        247.37                22.10         0.522          pass              0.489             49.0                           0.301               -2.87             -0.115 downtrend_blocked_streak           False                  False
+   HON           91.18               34            0.63              1.04        234.89                35.57         0.516          pass              0.651             47.0                           0.493               -3.33             -0.601  downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                                                                                                                                  detail
-2026-08-13T10:40:10.431028-04:00 early_entry_1040 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:35:08.719100-04:00 early_entry_1035 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:30:06.616446-04:00 early_entry_1030 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:25:07.519899-04:00 early_entry_1025 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:20:10.643979-04:00 early_entry_1020 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:15:10.251023-04:00 early_entry_1015 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:10:10.565177-04:00 early_entry_1010 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:05:05.347522-04:00 early_entry_1005 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:00:40.571954-04:00 early_entry_1000 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-12T16:10:05.737758-04:00      manage_1600               exit {"asset_type": "option", "contract_symbol": "PYPL260918C00057500", "fill_price": 3.275, "pnl": 2945.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 16.96, "ticker": "PYPL"}
+                    timestamp_et             slot         event_type                                                                detail
+2026-08-13T10:45:05.716693-04:00 early_entry_1045 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:40:10.431028-04:00 early_entry_1040 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:35:08.719100-04:00 early_entry_1035 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:30:06.616446-04:00 early_entry_1030 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:25:07.519899-04:00 early_entry_1025 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:20:10.643979-04:00 early_entry_1020 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:15:10.251023-04:00 early_entry_1015 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:10:10.565177-04:00 early_entry_1010 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:05:05.347522-04:00 early_entry_1005 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:00:40.571954-04:00 early_entry_1000 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260813104010)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260813104505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260813104010)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260813104505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260813104010)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260813104505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260813104010)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260813104505)
 
 </details>
