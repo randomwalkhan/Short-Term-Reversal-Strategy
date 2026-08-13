@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-13 11:32:10 EDT`
+Latest checkpoint (ET): `2026-08-13 11:38:33 EDT`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-08-13T11:38:33.587244-04:00 early_entry_1135    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T11:32:10.958561-04:00 early_entry_1130    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T11:25:43.067492-04:00 early_entry_1125    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T11:19:19.644678-04:00 early_entry_1115    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-13T10:02:19.968623-04:00 early_entry_1000    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-12T14:55:01.249028-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "PYPL260918C00057500", "contracts": 17, "filled_price": 2.86, "ticker": "PYPL"}
 2026-08-12T14:48:45.899980-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "6f213c86-8e94-49fb-8fb0-54b791592907", "contract_symbol": "PYPL260918C00057500", "contracts": 17, "entry_mode": "regular", "limit_price": "2.88", "ticker": "PYPL"}
-2026-08-12T12:00:59.914199-04:00 early_entry_1200    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
