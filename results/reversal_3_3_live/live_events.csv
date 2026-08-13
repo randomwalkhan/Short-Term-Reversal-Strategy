@@ -5016,3 +5016,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-13T14:55:04.897309-04:00,2026-08-13,entry_1500,entry,"{""allocated_cash"": 18865.0, ""asset_type"": ""option"", ""contract_symbol"": ""BKR260918C00065000"", ""contracts"": 98, ""early_entry_score"": 0.39, ""entry_mode"": ""regular"", ""entry_option_price"": 1.925, ""execution_mode"": ""option"", ""matched_signals"": 19, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2279.0, ""option_spread_pct"": 12.99, ""option_volume"": 49.0, ""success_rate"": 84.21, ""ticker"": ""BKR"", ""timing_score"": 0.546}"
 2026-08-13T15:00:02.921317-04:00,2026-08-13,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-08-13T15:05:06.030850-04:00,2026-08-13,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-08-13T15:10:04.909039-04:00,2026-08-13,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
