@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-13 11:38:33 EDT`
-Last slot: `manage_1130`
+Latest checkpoint (ET): `2026-08-13 11:44:57 EDT`
+Last slot: `early_entry_1140`
 
 ## Alpaca Paper Account
 
@@ -44,25 +44,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot            event_type                                                                                                                                                                                   detail
-2026-08-13T11:38:33.587244-04:00 early_entry_1135    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T11:32:10.958561-04:00 early_entry_1130    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T11:25:43.067492-04:00 early_entry_1125    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T11:19:19.644678-04:00 early_entry_1115    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T11:12:54.507675-04:00 early_entry_1110    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T11:06:29.262516-04:00 early_entry_1105    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:59:59.982057-04:00 early_entry_1055    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:53:35.245209-04:00 early_entry_1050    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:47:06.183623-04:00 early_entry_1045    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:40:42.022315-04:00 early_entry_1040    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:34:17.193789-04:00 early_entry_1030    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:27:51.744079-04:00 early_entry_1025    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:27:51.744079-04:00             exit           exit_filled                                                {"contract_symbol": "PYPL260918C00057500", "exit_price": 3.65, "pnl": 1343.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "PYPL"}
-2026-08-13T10:21:28.798133-04:00 early_entry_1020    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:21:28.798133-04:00      manage_1030  exit_order_submitted {"alpaca_order_id": "9243aa47-2f84-47b8-b388-4af2dd0a22f1", "contract_symbol": "PYPL260918C00057500", "limit_price": "3.40", "reason": "take_profit_day1_hit_at_scan", "ticker": "PYPL"}
-2026-08-13T10:15:05.052980-04:00 early_entry_1015    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:08:38.634281-04:00 early_entry_1005    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:02:19.968623-04:00 early_entry_1000    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-12T14:55:01.249028-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "PYPL260918C00057500", "contracts": 17, "filled_price": 2.86, "ticker": "PYPL"}
-2026-08-12T14:48:45.899980-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "6f213c86-8e94-49fb-8fb0-54b791592907", "contract_symbol": "PYPL260918C00057500", "contracts": 17, "entry_mode": "regular", "limit_price": "2.88", "ticker": "PYPL"}
+                    timestamp_et             slot           event_type                                                                                                                                                                                   detail
+2026-08-13T11:44:57.032437-04:00 early_entry_1140   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T11:38:33.587244-04:00 early_entry_1135   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T11:32:10.958561-04:00 early_entry_1130   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T11:25:43.067492-04:00 early_entry_1125   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T11:19:19.644678-04:00 early_entry_1115   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T11:12:54.507675-04:00 early_entry_1110   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T11:06:29.262516-04:00 early_entry_1105   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:59:59.982057-04:00 early_entry_1055   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:53:35.245209-04:00 early_entry_1050   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:47:06.183623-04:00 early_entry_1045   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:40:42.022315-04:00 early_entry_1040   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:34:17.193789-04:00 early_entry_1030   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:27:51.744079-04:00 early_entry_1025   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:27:51.744079-04:00             exit          exit_filled                                                {"contract_symbol": "PYPL260918C00057500", "exit_price": 3.65, "pnl": 1343.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "PYPL"}
+2026-08-13T10:21:28.798133-04:00 early_entry_1020   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:21:28.798133-04:00      manage_1030 exit_order_submitted {"alpaca_order_id": "9243aa47-2f84-47b8-b388-4af2dd0a22f1", "contract_symbol": "PYPL260918C00057500", "limit_price": "3.40", "reason": "take_profit_day1_hit_at_scan", "ticker": "PYPL"}
+2026-08-13T10:15:05.052980-04:00 early_entry_1015   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:08:38.634281-04:00 early_entry_1005   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-13T10:02:19.968623-04:00 early_entry_1000   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-12T14:55:01.249028-04:00       entry_1500         entry_filled                                                                                      {"contract_symbol": "PYPL260918C00057500", "contracts": 17, "filled_price": 2.86, "ticker": "PYPL"}
 ```
