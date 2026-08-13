@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-13 12:55:02 EDT`
-Last processed slot: `manage_1300`
+Latest checkpoint (ET): `2026-08-13 13:30:03 EDT`
+Last processed slot: `manage_1330`
 
 ## Active Configuration
 
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  AMZN           81.58               38            0.54              1.00        266.85                61.57         0.624          pass              0.417             41.9                           0.505               12.89              0.447                  ok            True                  False
-   ROP          100.00               21            1.36              3.75        393.62                44.32         0.614          pass              0.618             27.7                           0.493                0.16              0.144                  ok            True                  False
-  FAST          100.00               10            1.64              0.60         51.96                25.01         0.584          pass              0.494             11.9                           0.258               10.08              1.144                  ok            True                  False
-  PCAR           96.00               25            1.02              0.93        130.66                29.70         0.539          pass              0.664             36.7                           0.377               -3.02             -0.195                  ok            True                  False
-   BKR           85.71               21            1.23              0.55         64.04                33.24         0.537          pass              0.446             55.6                           0.421                6.38              0.782                  ok            True                  False
-  MPWR           83.78               37            0.96              9.57       1420.91                55.33         0.532          pass              0.454             39.9                           0.364                7.23              0.591                  ok            True                  False
-  IDXX           92.31               13            1.96              7.84        567.22                27.90         0.501          pass              0.438             13.2                           0.245                0.10              0.238                  ok            True                  False
-  INSM           66.67                9            3.99              3.70        130.70               107.72         0.692          pass              0.098              9.6                           0.323               25.14              3.713                  ok           False                  False
-  ISRG           86.49               37            0.37              1.03        400.83                69.94         0.672          pass              0.585             55.0                           0.463               13.27              1.336                  ok           False                  False
-  DXCM           90.00               40            0.19              0.12         90.75                59.17         0.604          pass              0.749             73.8                           0.565               21.59              1.233                  ok           False                  False
-  NXPI           74.36               39            0.12              0.19        233.33                51.39         0.562          pass              0.503             84.6                           0.553               -4.90              0.086                  ok           False                  False
-  BKNG           97.56               41            0.15              0.22        212.17                44.60         0.552          pass              0.930             91.6                           0.716                9.68              1.220                  ok           False                  False
+  AMZN           80.56               36            0.62              1.15        266.79                61.57         0.630          pass              0.350             32.9                           0.388               12.79              0.443                  ok            True                  False
+   ROP          100.00               19            1.52              4.21        393.43                44.32         0.616          pass              0.578             18.9                           0.275               -0.01              0.136                  ok            True                  False
+  FAST          100.00               10            1.65              0.60         51.96                25.01         0.584          pass              0.492             11.3                           0.375               10.07              1.143                  ok            True                  False
+  MPWR           84.21               38            0.79              7.85       1421.65                55.33         0.537          pass              0.505             50.7                           0.542                7.42              0.599                  ok            True                  False
+  PCAR           96.88               32            0.59              0.54        130.83                29.70         0.520          pass              0.789             63.5                           0.759               -2.59             -0.176                  ok            True                   True
+   BKR           82.14               28            0.94              0.42         64.10                33.24         0.503          pass              0.426             66.0                           0.696                6.69              0.795                  ok            True                  False
+  INSM           66.67                9            4.13              3.83        130.64               107.72         0.685          pass              0.088              6.4                           0.212               24.95              3.707                  ok           False                  False
+  ISRG           86.49               37            0.40              1.12        400.79                69.94         0.670          pass              0.573             50.9                           0.423               13.23              1.335                  ok           False                  False
+   TRI           87.80               41            0.13              0.09        102.57                74.92         0.616          pass              0.760             96.9                           0.614                3.69              0.399                  ok           False                  False
+  DXCM           89.74               39            0.44              0.28         90.68                59.17         0.593          pass              0.628             38.5                           0.313               21.28              1.221                  ok           False                  False
+  BKNG           97.56               41            0.12              0.17        212.19                44.60         0.554          pass              0.936             93.4                           0.721                9.72              1.221                  ok           False                  False
+  ADBE           72.22               36            0.61              1.11        258.27                55.53         0.544          pass              0.364             45.3                           0.495                3.74              0.597                  ok           False                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260813125502)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260813133003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260813125502)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260813133003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260813125502)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260813133003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260813125502)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260813133003)
 
 </details>
