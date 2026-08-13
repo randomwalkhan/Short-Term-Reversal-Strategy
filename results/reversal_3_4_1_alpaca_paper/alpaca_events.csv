@@ -4890,3 +4890,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-13T10:02:19.968623-04:00,2026-08-13,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-13T10:08:38.634281-04:00,2026-08-13,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-13T10:15:05.052980-04:00,2026-08-13,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-13T10:21:28.798133-04:00,2026-08-13,manage_1030,exit_order_submitted,"{""alpaca_order_id"": ""9243aa47-2f84-47b8-b388-4af2dd0a22f1"", ""contract_symbol"": ""PYPL260918C00057500"", ""limit_price"": ""3.40"", ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""PYPL""}"
+2026-08-13T10:21:28.798133-04:00,2026-08-13,early_entry_1020,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
