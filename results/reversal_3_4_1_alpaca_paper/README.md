@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-13 14:54:20 EDT`
+Latest checkpoint (ET): `2026-08-13 15:00:34 EDT`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                                   detail
+2026-08-13T15:00:34.294004-04:00       entry_1500        entry_skipped                                              {"entry_mode": "regular", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FAST"}
 2026-08-13T14:54:20.612956-04:00       entry_1500        entry_skipped                                              {"entry_mode": "regular", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FAST"}
 2026-08-13T11:55:24.708285-04:00 early_entry_1155   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T11:44:57.032437-04:00 early_entry_1140   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -61,8 +62,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-13T10:34:17.193789-04:00 early_entry_1030   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:27:51.744079-04:00 early_entry_1025   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:27:51.744079-04:00             exit          exit_filled                                                {"contract_symbol": "PYPL260918C00057500", "exit_price": 3.65, "pnl": 1343.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "PYPL"}
-2026-08-13T10:21:28.798133-04:00 early_entry_1020   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:21:28.798133-04:00      manage_1030 exit_order_submitted {"alpaca_order_id": "9243aa47-2f84-47b8-b388-4af2dd0a22f1", "contract_symbol": "PYPL260918C00057500", "limit_price": "3.40", "reason": "take_profit_day1_hit_at_scan", "ticker": "PYPL"}
+2026-08-13T10:21:28.798133-04:00 early_entry_1020   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:15:05.052980-04:00 early_entry_1015   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:08:38.634281-04:00 early_entry_1005   early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
