@@ -4895,3 +4895,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-13T10:27:51.744079-04:00,2026-08-13,exit,exit_filled,"{""contract_symbol"": ""PYPL260918C00057500"", ""exit_price"": 3.65, ""pnl"": 1343.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""PYPL""}"
 2026-08-13T10:27:51.744079-04:00,2026-08-13,early_entry_1025,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-13T10:34:17.193789-04:00,2026-08-13,early_entry_1030,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-13T10:40:42.022315-04:00,2026-08-13,early_entry_1040,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
