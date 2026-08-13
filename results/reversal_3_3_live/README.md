@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-13 11:00:08 EDT`
+Latest checkpoint (ET): `2026-08-13 11:05:09 EDT`
 Last processed slot: `manage_1100`
 
 ## Active Configuration
@@ -45,24 +45,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-   ROP           96.88               32            0.55              1.53        394.58                44.32         0.599            pass              0.741             44.7                           0.259                0.98              0.181                       ok            True                  False
-  FAST          100.00               23            0.51              0.19         52.14                25.01         0.575            pass              0.707             54.3                           0.313               11.35              1.195                       ok            True                  False
-  PCAR           95.45               22            1.34              1.23        130.53                29.70         0.539            pass              0.581             15.9                           0.114               -3.33             -0.210                       ok            True                  False
-  ADSK           80.65               31            0.92              1.60        248.82                45.76         0.525            pass              0.418             69.5                           0.366                5.21              0.833                       ok            True                  False
-  INSM           66.67               12            3.41              3.16        130.93               107.72         0.716            pass              0.087              0.6                           0.038               25.89              3.741                       ok           False                  False
-  ISRG           87.50               40            0.16              0.45        401.08                69.94         0.668            pass              0.708             80.4                           0.614               13.50              1.346                       ok           False                  False
-  MPWR           84.21               38            0.46              4.57       1423.05                55.33         0.562            pass              0.540             61.8                           0.544                7.77              0.614                       ok           False                  False
-  BKNG           97.56               41            0.08              0.12        212.21                44.60         0.556            pass              0.942             95.4                           0.579                9.75              1.223                       ok           False                  False
-   BKR           78.57               14            1.47              0.66         64.00                33.24         0.556            pass              0.223             46.8                           0.651                6.12              0.770                       ok           False                  False
-  ROST           83.33               12            1.78              3.09        246.93                22.10         0.517            pass              0.224             23.3                           0.160               -3.46             -0.142 downtrend_blocked_streak           False                  False
-   HON           91.43               35            0.57              0.94        234.94                35.57         0.514            pass              0.679             52.1                           0.624               -3.27             -0.598  downtrend_blocked_slope           False                  False
-  CTAS           89.19               37            0.55              0.78        203.18                34.24         0.454 below_threshold              0.571             33.5                           0.175               -2.12             -0.092 downtrend_blocked_streak           False                  False
+  PCAR           94.12               17            1.56              1.44        130.44                29.70         0.556            pass              0.483              1.4                           0.056               -3.55             -0.221                       ok            True                  False
+   BKR           84.21               19            1.26              0.57         64.04                33.24         0.546            pass              0.390             54.5                           0.683                6.35              0.780                       ok            True                  False
+  ADSK           80.00               30            1.10              1.92        248.69                45.76         0.519            pass              0.376             63.5                           0.347                5.02              0.825                       ok            True                  False
+  INSM           66.67               12            3.21              2.97        131.01               107.72         0.727            pass              0.110              7.9                           0.184               26.16              3.750                       ok           False                  False
+  ISRG           87.50               40            0.24              0.68        400.98                69.94         0.663            pass              0.677             70.2                           0.605               13.41              1.342                       ok           False                  False
+   ROP           96.97               33            0.49              1.35        394.65                44.32         0.597            pass              0.766             50.9                           0.324                1.04              0.184                       ok           False                  False
+  FAST          100.00               23            0.49              0.18         52.14                25.01         0.576            pass              0.712             56.0                           0.362               11.37              1.196                       ok           False                  False
+  MPWR           84.21               38            0.42              4.20       1423.21                55.33         0.564            pass              0.550             64.9                           0.570                7.81              0.616                       ok           False                  False
+  BKNG           97.50               40            0.30              0.45        212.07                44.60         0.548            pass              0.903             82.8                           0.445                9.51              1.213                       ok           False                  False
+  ROST           81.82               11            1.80              3.13        246.91                22.10         0.520            pass              0.174             22.3                           0.155               -3.48             -0.144 downtrend_blocked_streak           False                  False
+   HON           91.18               34            0.61              1.01        234.91                35.57         0.517            pass              0.655             48.6                           0.509               -3.31             -0.600  downtrend_blocked_slope           False                  False
+  VRTX           97.67               43            0.13              0.46        525.53                27.73         0.453 below_threshold              0.916             90.4                           0.564                9.00              1.243                       ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                detail
+2026-08-13T11:05:09.901418-04:00 early_entry_1105 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T11:00:08.468855-04:00 early_entry_1100 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:55:08.693001-04:00 early_entry_1055 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:50:06.656727-04:00 early_entry_1050 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-08-13T10:30:06.616446-04:00 early_entry_1030 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:25:07.519899-04:00 early_entry_1025 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:20:10.643979-04:00 early_entry_1020 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:15:10.251023-04:00 early_entry_1015 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260813110008)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260813110509)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260813110008)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260813110509)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260813110008)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260813110509)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260813110008)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260813110509)
 
 </details>
