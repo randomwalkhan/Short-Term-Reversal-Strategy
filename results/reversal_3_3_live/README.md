@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-13 15:55:05 EDT`
+Latest checkpoint (ET): `2026-08-13 16:00:06 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$19,178.00`
-- Equity: `$37,063.00`
+- Equity: `$37,308.00`
 - Realized PnL: `$28,043.00`
-- Unrealized PnL: `$-980.00`
+- Unrealized PnL: `$-735.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   BKR     option         option BKR260918C00065000       2026-08-13                   0     98     18865.0                 17885.0         1.92           1.82       63.47          63.5          bid_ask_mid                       1.82                bid_ask_mid                    True          -980.0                  -5.19         84.21               19              1.26         33.72           31.64                  33.24                2279.0           49.0               0.13                      ok
+   BKR     option         option BKR260918C00065000       2026-08-13                   0     98     18865.0                 18130.0         1.92           1.85       63.47         63.44          bid_ask_mid                       1.85                bid_ask_mid                    True          -735.0                   -3.9         84.21               19              1.26         33.72           32.59                  33.24                2279.0           49.0               0.13                      ok
 ```
 
 ## Today's Closed Trades (2026-08-13)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  AMAT           87.50               24            2.69             10.33        543.72                85.10         0.619            pass              0.385              9.8                           0.095                6.30              0.511                       ok            True                  False
-  MCHP           86.67               30            2.09              1.16         78.94                74.47         0.593            pass              0.370              0.0                           0.150                3.69              0.846                       ok            True                  False
-  FAST          100.00               10            1.85              0.68         51.93                25.01         0.572            pass              0.469              4.0                           0.221                9.85              1.134                       ok            True                  False
-   BKR           85.71               21            1.22              0.55         64.04                33.24         0.538            pass              0.447             55.9                           0.541                6.39              0.782                       ok            True                  False
-  VRTX           93.75               16            1.63              6.00        523.16                27.73         0.521            pass              0.478              6.3                           0.150                7.36              1.174                       ok            True                  False
-  INSM           62.50                8            4.29              3.98        130.58               107.72         0.675            pass              0.076              2.7                           0.151               24.74              3.699                       ok           False                  False
-  AMZN           79.41               34            0.82              1.53        266.62                61.57         0.628            pass              0.266             14.5                           0.198               12.56              0.434                       ok           False                  False
-   MAR           90.91               33            0.64              1.59        353.90                36.15         0.543            pass              0.610             37.0                           0.505               -6.17             -0.473  downtrend_blocked_slope           False                  False
-  ROST           85.71               14            1.38              2.40        247.22                22.10         0.529            pass              0.363             43.8                           0.657               -3.07             -0.124 downtrend_blocked_streak           False                  False
-  NXPI           74.36               39            0.61              0.99        232.98                51.39         0.529            pass              0.354             36.0                           0.297               -5.37              0.063                       ok           False                  False
-   HON           91.89               37            0.47              0.77        235.01                35.57         0.509            pass              0.731             60.9                           0.612               -3.17             -0.593  downtrend_blocked_slope           False                  False
-  CTAS           86.36               22            1.23              1.75        202.76                34.24         0.499 below_threshold              0.334             11.5                           0.270               -2.80             -0.124 downtrend_blocked_streak           False                  False
+  AMAT           88.46               26            2.48              9.51        544.07                85.10         0.622            pass              0.445             16.9                           0.157                6.53              0.521                       ok            True                  False
+  MCHP           86.21               29            2.22              1.23         78.91                74.47         0.588            pass              0.364              4.3                           0.166                3.56              0.840                       ok            True                  False
+  FAST          100.00               10            1.67              0.61         51.96                25.01         0.582            pass              0.498             13.4                           0.311               10.05              1.142                       ok            True                  False
+   BKR           83.33               18            1.27              0.57         64.04                33.24         0.551            pass              0.360             54.2                           0.556                6.34              0.780                       ok            True                  False
+  VRTX           93.33               15            1.83              6.72        522.85                27.73         0.513            pass              0.444              1.3                           0.196                7.15              1.165                       ok            True                  False
+  INSM           50.00                6            4.50              4.16        130.50               107.72         0.653            pass              0.075              3.3                           0.213               24.48              3.689                       ok           False                  False
+  AMZN           78.79               33            0.85              1.59        266.60                61.57         0.631            pass              0.252             11.8                           0.219               12.53              0.432                       ok           False                  False
+   MAR           90.91               33            0.56              1.40        353.98                36.15         0.548            pass              0.632             44.5                           0.547               -6.10             -0.469  downtrend_blocked_slope           False                  False
+  NXPI           74.36               39            0.68              1.11        232.93                51.39         0.524            pass              0.331             28.4                           0.275               -5.44              0.060                       ok           False                  False
+  ROST           88.24               17            1.31              2.28        247.27                22.10         0.517            pass              0.458             46.6                           0.623               -3.00             -0.121 downtrend_blocked_streak           False                  False
+   HON           91.43               35            0.57              0.94        234.94                35.57         0.514            pass              0.679             52.1                           0.448               -3.27             -0.598  downtrend_blocked_slope           False                  False
+  CTAS           85.71               21            1.36              1.94        202.68                34.24         0.496 below_threshold              0.292              5.5                           0.270               -2.93             -0.130 downtrend_blocked_streak           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260813155505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260813160006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260813155505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260813160006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260813155505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260813160006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260813155505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260813160006)
 
 </details>
