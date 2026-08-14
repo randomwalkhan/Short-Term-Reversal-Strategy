@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 19178.000356674198,
-  "positions": [
-    {
-      "position_id": "BKR_20260813T145504",
-      "ticker": "BKR",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "BKR260918C00065000",
-      "expiry": "2026-09-18",
-      "strike": 65.0,
-      "entry_timestamp": "2026-08-13T14:55:04.897309-04:00",
-      "entry_trade_date": "2026-08-13",
-      "entry_slot": "entry_1500",
-      "entry_spot": 63.470001220703125,
-      "entry_option_price": 1.9249999999999998,
-      "entry_bid": 1.8,
-      "entry_ask": 2.05,
-      "entry_iv_pct": 33.71648315429688,
-      "contracts": 98,
-      "allocated_cash": 18864.999999999996,
-      "success_rate": 84.21,
-      "matched_signals": 19,
-      "current_drop_pct": 1.26,
-      "rolling_sigma_20d_pct": 33.24,
-      "planned_tp_day1": 2.2137499999999997,
-      "planned_tp_day2": 2.2137499999999997,
-      "planned_stop": 1.7325,
-      "option_open_interest": 2279.0,
-      "option_volume": 49.0,
-      "option_spread_pct": 0.12987012987012977,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 41228.000356674194,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
