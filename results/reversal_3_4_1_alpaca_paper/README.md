@@ -1,21 +1,21 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-14 09:35:55 EDT`
-Last slot: `manage_0930`
+Latest checkpoint (ET): `2026-08-14 10:55:22 EDT`
+Last slot: `manage_1100`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$89,086.48`
-- Portfolio value: `$93,086.48`
+- Portfolio value: `$92,606.48`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN   open    regular AMZN260918C00265000          4               10.75                 10.05     last_price_stale                        NaN                   False          4020.0          -280.0              -6.511628                   1
+ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  AMZN exit_submitted    regular AMZN260918C00265000          4               10.75                   8.9          bid_ask_mid                        8.9                    True          3560.0          -740.0             -17.209302                   1
 ```
 
 ## Closed Trades
@@ -48,6 +48,8 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-08-14T10:55:22.926552-04:00 early_entry_1055    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-14T10:55:22.926552-04:00      manage_1100  exit_order_submitted        {"alpaca_order_id": "1b730bfa-9598-47bf-ada1-2c089921a5b7", "contract_symbol": "AMZN260918C00265000", "limit_price": "9.10", "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
 2026-08-13T15:13:06.117392-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "AMZN260918C00265000", "contracts": 4, "filled_price": 10.75, "ticker": "AMZN"}
 2026-08-13T15:06:50.523162-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "9271ee2b-769e-46dd-b700-1a58d02ca52e", "contract_symbol": "AMZN260918C00265000", "contracts": 4, "entry_mode": "regular", "limit_price": "10.80", "ticker": "AMZN"}
 2026-08-13T15:00:34.294004-04:00       entry_1500         entry_skipped                                              {"entry_mode": "regular", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FAST"}
@@ -65,7 +67,5 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-13T10:47:06.183623-04:00 early_entry_1045    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:40:42.022315-04:00 early_entry_1040    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:34:17.193789-04:00 early_entry_1030    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:27:51.744079-04:00             exit           exit_filled                                                {"contract_symbol": "PYPL260918C00057500", "exit_price": 3.65, "pnl": 1343.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "PYPL"}
 2026-08-13T10:27:51.744079-04:00 early_entry_1025    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:21:28.798133-04:00 early_entry_1020    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
