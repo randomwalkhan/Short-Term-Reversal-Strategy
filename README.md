@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-08-14 15:54:27 EDT`
-- Equity: `$42,128.00` | Realized: `$31,228.00` | Unrealized: `$900.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-08-14 16:00:09 EDT`
+- Equity: `$42,870.50` | Realized: `$31,228.00` | Unrealized: `$1,642.50` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  SOXL     option         option SOXL260918C00140000      9     19620.0                 20520.0           22.8           900.0                   4.59                   0
+  SOXL     option         option SOXL260918C00140000      9     19620.0                 21262.5          23.62          1642.5                   8.37                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260814155427)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260814160009)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260814155427)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260814160009)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260814155427)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260814160009)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260814155427)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260814160009)
 
 </details>
 
