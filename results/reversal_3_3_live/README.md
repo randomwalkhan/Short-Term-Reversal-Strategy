@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-14 16:00:09 EDT`
-Last processed slot: `manage_1600`
+Latest checkpoint (ET): `2026-08-14 16:31:53 EDT`
+Last processed slot: `share_ext_1630`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$21,608.00`
-- Equity: `$42,870.50`
+- Equity: `$42,893.00`
 - Realized PnL: `$31,228.00`
-- Unrealized PnL: `$1,642.50`
+- Unrealized PnL: `$1,665.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SOXL     option         option SOXL260918C00140000       2026-08-14                   0      9     19620.0                 21262.5         21.8          23.62      141.95        145.06          bid_ask_mid                      23.62                bid_ask_mid                    True          1642.5                   8.37         82.86               35              2.35        114.04          118.65                 164.53                 831.0          148.0               0.04                      ok
+  SOXL     option         option SOXL260918C00140000       2026-08-14                   0      9     19620.0                 21285.0         21.8          23.65      141.95        144.75          bid_ask_mid                      23.65                bid_ask_mid                    True          1665.0                   8.49         82.86               35              2.35        114.04           118.8                 164.53                 831.0          148.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-08-14)
@@ -49,21 +49,7 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  INSM           80.00               20            2.06              1.82        125.55               108.96         0.759          pass              0.253             36.9                           0.502               25.49              3.281                  ok            True                  False
-  TEAM           81.25               32            2.28              2.65        164.85               127.34         0.758          pass              0.282              8.7                           0.305               60.57              5.645                  ok            True                  False
-  SHOP           94.74               19            2.90              3.22        157.15                83.25         0.654          pass              0.569             16.7                           0.185               31.39              3.036                  ok            True                  False
-  LRCX           87.50               32            1.41              3.33        335.58                86.66         0.651          pass              0.574             54.2                           0.556               13.39              1.156                  ok            True                  False
-  ABNB           94.44               36            0.56              0.72        184.82                65.02         0.626          pass              0.791             56.7                           0.354               21.50              2.666                  ok            True                  False
-   TRI           85.19               27            2.32              1.72        105.33                75.25         0.566          pass              0.416             35.9                           0.449                5.58              0.384                  ok            True                  False
-  UPRO           80.00               30            0.75              0.83        157.33                41.59         0.554          pass              0.260             23.9                           0.356               11.56              0.793                  ok            True                  False
-  BKNG           97.22               36            0.56              0.84        212.98                44.41         0.553          pass              0.743             38.1                           0.223                9.97              1.118                  ok            True                  False
-  INTC           86.11               36            1.93              1.41        103.95                80.36         0.548          pass              0.450             19.5                           0.249               13.68              1.008                  ok            True                  False
-  META           83.33               30            0.85              3.54        593.45                45.98         0.545          pass              0.309             10.9                           0.242                5.96              0.289                  ok            True                  False
-  FAST          100.00               23            0.58              0.21         51.25                25.38         0.532          pass              0.699             53.1                           0.587                6.98              0.786                  ok            True                  False
-  ORLY           82.35               17            1.65              1.07         92.12                29.41         0.528          pass              0.197             11.6                           0.199                1.90              0.177                  ok            True                  False
-```
+_None_
 
 ## Recent Events
 
@@ -88,27 +74,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260814160009)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260814163153)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260814160009)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260814163153)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260814160009)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260814163153)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260814160009)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260814163153)
 
 </details>
