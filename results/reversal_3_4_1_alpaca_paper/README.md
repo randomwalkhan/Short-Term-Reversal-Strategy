@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-14 12:30:11 EDT`
-Last slot: `manage_1230`
+Latest checkpoint (ET): `2026-08-14 13:28:45 EDT`
+Last slot: `manage_1330`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$89,086.48`
-- Portfolio value: `$92,666.48`
+- Portfolio value: `$92,526.48`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1230`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN exit_submitted    regular AMZN260918C00265000          4               10.75                 9.025          bid_ask_mid                      9.025                    True          3610.0          -690.0             -16.046512                   1
+  AMZN exit_submitted    regular AMZN260918C00265000          4               10.75                 8.575          bid_ask_mid                      8.575                    True          3430.0          -870.0             -20.232558                   1
 ```
 
 ## Closed Trades
