@@ -1,21 +1,22 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-14 14:04:33 EDT`
-Last slot: `manage_1400`
+Latest checkpoint (ET): `2026-08-14 14:53:45 EDT`
+Last slot: `entry_1500`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$89,086.48`
-- Portfolio value: `$92,506.48`
+- Portfolio value: `$92,446.48`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN exit_submitted    regular AMZN260918C00265000          4               10.75                  8.45          bid_ask_mid                       8.45                    True          3380.0          -920.0             -21.395349                   1
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  AMZN  exit_submitted    regular AMZN260918C00265000          4               10.75                 8.325          bid_ask_mid                      8.325                   True          3330.0          -970.0              -22.55814                 1.0
+  SOXL entry_submitted    regular SOXL260918C00140000          2               21.80                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
 ```
 
 ## Closed Trades
@@ -48,6 +49,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-08-14T14:53:45.206223-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "14d97774-24ca-4c83-b644-9a267d900f25", "contract_symbol": "SOXL260918C00140000", "contracts": 2, "entry_mode": "regular", "limit_price": "22.25", "ticker": "SOXL"}
 2026-08-14T10:55:22.926552-04:00 early_entry_1055    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-14T10:55:22.926552-04:00      manage_1100  exit_order_submitted        {"alpaca_order_id": "1b730bfa-9598-47bf-ada1-2c089921a5b7", "contract_symbol": "AMZN260918C00265000", "limit_price": "9.10", "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
 2026-08-13T15:13:06.117392-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "AMZN260918C00265000", "contracts": 4, "filled_price": 10.75, "ticker": "AMZN"}
@@ -67,5 +69,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-13T10:47:06.183623-04:00 early_entry_1045    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:40:42.022315-04:00 early_entry_1040    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-13T10:34:17.193789-04:00 early_entry_1030    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-13T10:27:51.744079-04:00 early_entry_1025    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```

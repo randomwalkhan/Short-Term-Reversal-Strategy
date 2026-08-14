@@ -4913,3 +4913,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-13T15:13:06.117392-04:00,2026-08-13,entry_1500,entry_filled,"{""contract_symbol"": ""AMZN260918C00265000"", ""contracts"": 4, ""filled_price"": 10.75, ""ticker"": ""AMZN""}"
 2026-08-14T10:55:22.926552-04:00,2026-08-14,manage_1100,exit_order_submitted,"{""alpaca_order_id"": ""1b730bfa-9598-47bf-ada1-2c089921a5b7"", ""contract_symbol"": ""AMZN260918C00265000"", ""limit_price"": ""9.10"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""AMZN""}"
 2026-08-14T10:55:22.926552-04:00,2026-08-14,early_entry_1055,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-14T14:53:45.206223-04:00,2026-08-14,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""14d97774-24ca-4c83-b644-9a267d900f25"", ""contract_symbol"": ""SOXL260918C00140000"", ""contracts"": 2, ""entry_mode"": ""regular"", ""limit_price"": ""22.25"", ""ticker"": ""SOXL""}"
