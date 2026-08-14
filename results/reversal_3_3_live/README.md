@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-14 15:08:52 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-08-14 15:30:58 EDT`
+Last processed slot: `manage_1530`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$21,608.00`
-- Equity: `$41,228.00`
+- Equity: `$41,318.00`
 - Realized PnL: `$31,228.00`
-- Unrealized PnL: `$0.00`
+- Unrealized PnL: `$90.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SOXL     option         option SOXL260918C00140000       2026-08-14                   0      9     19620.0                 19620.0         21.8           21.8      141.95        141.95          bid_ask_mid                       21.8                bid_ask_mid                    True             0.0                    0.0         82.86               35              2.35        114.04          114.04                 164.53                 831.0          148.0               0.04                      ok
+  SOXL     option         option SOXL260918C00140000       2026-08-14                   0      9     19620.0                 19710.0         21.8           21.9      141.95        143.34          bid_ask_mid                       21.9                bid_ask_mid                    True            90.0                   0.46         82.86               35              2.35        114.04          115.37                 164.53                 831.0          148.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-08-14)
@@ -51,18 +51,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  SOXL           82.86               35            2.35              2.39        144.34               164.53         0.813          pass              0.466             47.2                           0.529               23.74              1.807                  ok            True                  False
-  TEAM           81.25               32            2.14              2.49        164.91               127.34         0.765          pass              0.288             10.6                           0.369               60.79              5.651                  ok            True                  False
-  SHOP           95.65               23            2.42              2.68        157.38                83.25         0.659          pass              0.645             30.7                           0.319               32.05              3.059                  ok            True                  False
-  LRCX           86.67               30            2.02              4.77        334.96                86.66         0.625          pass              0.477             34.4                           0.573               12.69              1.128                  ok            True                  False
-  MRVL           80.00               35            1.26              1.95        221.34                86.88         0.603          pass              0.362             45.1                           0.393               16.97              1.193                  ok            True                  False
-  TMUS           88.57               35            0.58              0.75        183.06                56.42         0.598          pass              0.654             66.2                           0.541                5.56              0.415                  ok            True                  False
-  DXCM           80.00               20            1.77              1.13         90.99                54.70         0.596          pass              0.171             15.0                           0.421                7.68              0.819                  ok            True                  False
-   TRI           82.61               23            2.62              1.95        105.24                75.25         0.569          pass              0.296             27.6                           0.340                5.26              0.369                  ok            True                  False
-  INTC           86.11               36            1.83              1.34        103.99                80.36         0.558          pass              0.430             12.6                           0.301               13.80              1.013                  ok            True                  False
-  UPRO           80.00               30            0.73              0.81        157.33                41.59         0.555          pass              0.266             25.8                           0.382               11.58              0.794                  ok            True                  False
-  ISRG           82.76               29            0.92              2.59        400.16                68.90         0.546          pass              0.286             10.4                           0.250               12.52              1.181                  ok            True                  False
-  FAST          100.00               20            0.71              0.26         51.23                25.38         0.543          pass              0.650             43.0                           0.506                6.84              0.780                  ok            True                  False
+  SOXL           83.78               37            1.39              1.42        144.75               164.53         0.842          pass              0.571             68.7                           0.834               24.94              1.851                  ok            True                  False
+  TEAM           81.25               32            2.20              2.55        164.89               127.34         0.762          pass              0.292             11.8                           0.278               60.70              5.649                  ok            True                  False
+  SHOP           95.65               23            2.24              2.48        157.47                83.25         0.669          pass              0.661             35.8                           0.366               32.29              3.068                  ok            True                  False
+  LRCX           86.67               30            1.61              3.81        335.38                86.66         0.649          pass              0.519             47.7                           0.626               13.16              1.147                  ok            True                  False
+  MRVL           80.00               35            0.95              1.47        221.55                86.88         0.622          pass              0.405             58.6                           0.591               17.34              1.208                  ok            True                  False
+  TMUS           88.24               34            0.60              0.77        183.05                56.42         0.602          pass              0.635             65.1                           0.509                5.54              0.415                  ok            True                  False
+  DXCM           81.82               22            1.70              1.09         91.01                54.70         0.591          pass              0.243             18.4                           0.377                7.76              0.822                  ok            True                  False
+   TRI           84.21               19            2.84              2.11        105.17                75.25         0.583          pass              0.295             21.5                           0.212                5.02              0.359                  ok            True                  False
+  INTC           86.11               36            1.54              1.13        104.08                80.36         0.576          pass              0.473             26.5                           0.490               14.14              1.026                  ok            True                  False
+  UPRO           80.65               31            0.71              0.78        157.34                41.59         0.551          pass              0.296             27.8                           0.341               11.61              0.795                  ok            True                  False
+  ASML           87.10               31            1.09             14.08       1841.87                47.59         0.544          pass              0.464             26.8                           0.497               12.20              1.246                  ok            True                  False
+  FAST          100.00               19            0.84              0.30         51.21                25.38         0.542          pass              0.613             32.8                           0.241                6.71              0.774                  ok            True                  False
 ```
 
 ## Recent Events
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260814150852)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260814153058)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260814150852)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260814153058)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260814150852)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260814153058)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260814150852)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260814153058)
 
 </details>
