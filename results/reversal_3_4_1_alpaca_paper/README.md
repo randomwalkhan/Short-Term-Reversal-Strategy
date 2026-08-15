@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-15 03:27:27 EDT`
-Last slot: `share_ext_0325`
+Latest checkpoint (ET): `2026-08-15 03:32:31 EDT`
+Last slot: `share_ext_0330`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-08-15T03:32:31.371456-04:00   share_ext_0330         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-08-15T03:27:27.318895-04:00   share_ext_0325         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-08-15T03:22:23.447848-04:00   share_ext_0320         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-08-15T03:17:19.384933-04:00   share_ext_0315         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-14T16:16:08.262988-04:00             exit       exit_not_filled                                                                                                        {"contract_symbol": "AMZN260918C00265000", "status": "expired", "ticker": "AMZN"}
 2026-08-14T14:53:45.206223-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "14d97774-24ca-4c83-b644-9a267d900f25", "contract_symbol": "SOXL260918C00140000", "contracts": 2, "entry_mode": "regular", "limit_price": "22.25", "ticker": "SOXL"}
 2026-08-14T10:55:22.926552-04:00 early_entry_1055    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-14T10:55:22.926552-04:00      manage_1100  exit_order_submitted        {"alpaca_order_id": "1b730bfa-9598-47bf-ada1-2c089921a5b7", "contract_symbol": "AMZN260918C00265000", "limit_price": "9.10", "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
 ```
