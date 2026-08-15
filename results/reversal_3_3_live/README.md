@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-15 00:48:30 EDT`
-Last processed slot: `share_ext_0045`
+Latest checkpoint (ET): `2026-08-15 00:53:00 EDT`
+Last processed slot: `share_ext_0050`
 
 ## Active Configuration
 
@@ -52,16 +52,16 @@ _None_
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                               detail
+2026-08-15T00:53:00.498435-04:00   share_ext_0050      market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
 2026-08-15T00:48:30.091838-04:00   share_ext_0045      market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
 2026-08-15T00:30:06.705594-04:00   share_ext_0030      market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
 2026-08-15T00:29:24.745815-04:00   share_ext_0025      market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
 2026-08-15T00:13:09.777940-04:00   share_ext_0010      market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
 2026-08-15T00:05:16.252961-04:00   share_ext_0005      market_closed                                                                                                                                                                                                                                                                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
-2026-08-14T15:08:52.029676-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                         {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-08-14", "training_samples": 5684, "window": 5}
 2026-08-14T15:08:52.029676-04:00       entry_1500              entry {"allocated_cash": 19620.0, "asset_type": "option", "contract_symbol": "SOXL260918C00140000", "contracts": 9, "early_entry_score": 0.466, "entry_mode": "regular", "entry_option_price": 21.8, "execution_mode": "option", "matched_signals": 35, "option_liquidity_status": "ok", "option_open_interest": 831.0, "option_spread_pct": 4.13, "option_volume": 148.0, "success_rate": 82.86, "ticker": "SOXL", "timing_score": 0.813}
+2026-08-14T15:08:52.029676-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                         {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-08-14", "training_samples": 5684, "window": 5}
 2026-08-14T11:37:55.972745-04:00 early_entry_1135 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-14T10:55:04.531949-04:00 early_entry_1055 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-14T10:55:04.531949-04:00      manage_1100               exit                                                                                                                                                                                                                                                 {"asset_type": "option", "contract_symbol": "BKR260918C00065000", "fill_price": 2.25, "pnl": 3185.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 16.88, "ticker": "BKR"}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260815004830)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260815005300)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260815004830)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260815005300)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260815004830)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260815005300)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260815004830)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260815005300)
 
 </details>
