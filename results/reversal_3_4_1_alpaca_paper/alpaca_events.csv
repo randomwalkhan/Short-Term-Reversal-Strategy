@@ -4918,3 +4918,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-14T16:16:08.262988-04:00,2026-08-14,entry_1500,entry_not_filled,"{""contract_symbol"": ""SOXL260918C00140000"", ""status"": ""expired"", ""ticker"": ""SOXL""}"
 2026-08-15T00:30:06.982733-04:00,2026-08-15,share_ext_0030,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-08-15T01:15:46.779833-04:00,2026-08-15,share_ext_0115,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-08-15T02:26:38.724467-04:00,2026-08-15,share_ext_0225,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
