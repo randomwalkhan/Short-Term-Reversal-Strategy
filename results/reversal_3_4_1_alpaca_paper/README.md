@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-15 03:07:11 EDT`
-Last slot: `share_ext_0305`
+Latest checkpoint (ET): `2026-08-15 03:12:15 EDT`
+Last slot: `share_ext_0310`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-08-15T03:12:15.224794-04:00   share_ext_0310         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-08-15T03:07:11.053929-04:00   share_ext_0305         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-08-15T03:02:07.374489-04:00   share_ext_0300         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-08-15T02:57:03.584629-04:00   share_ext_0255         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-13T15:13:06.117392-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "AMZN260918C00265000", "contracts": 4, "filled_price": 10.75, "ticker": "AMZN"}
 2026-08-13T15:06:50.523162-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "9271ee2b-769e-46dd-b700-1a58d02ca52e", "contract_symbol": "AMZN260918C00265000", "contracts": 4, "entry_mode": "regular", "limit_price": "10.80", "ticker": "AMZN"}
 2026-08-13T15:00:34.294004-04:00       entry_1500         entry_skipped                                              {"entry_mode": "regular", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FAST"}
-2026-08-13T14:54:20.612956-04:00       entry_1500         entry_skipped                                              {"entry_mode": "regular", "option_liquidity_status": "low_volume,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "FAST"}
 ```
