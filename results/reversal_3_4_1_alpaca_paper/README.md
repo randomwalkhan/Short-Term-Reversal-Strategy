@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-15 21:49:55 EDT`
-Last slot: `share_ext_2145`
+Latest checkpoint (ET): `2026-08-15 21:54:59 EDT`
+Last slot: `share_ext_2150`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot    event_type                                      detail
+2026-08-15T21:54:59.002108-04:00 share_ext_2150 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-08-15T21:49:55.189924-04:00 share_ext_2145 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-08-15T21:44:51.358490-04:00 share_ext_2140 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-08-15T21:39:47.594264-04:00 share_ext_2135 market_closed {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-15T20:28:55.179243-04:00 share_ext_2025 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-08-15T20:23:51.531305-04:00 share_ext_2020 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-08-15T20:18:47.984284-04:00 share_ext_2015 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-08-15T20:13:42.353034-04:00 share_ext_2010 market_closed {"holiday_name": null, "reason": "weekend"}
 ```
