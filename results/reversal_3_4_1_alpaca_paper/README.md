@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-17 09:31:41 EDT`
+Latest checkpoint (ET): `2026-08-17 09:36:45 EDT`
 Last slot: `manage_0930`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$89,086.48`
-- Portfolio value: `$92,746.48`
+- Portfolio value: `$92,146.48`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot    event_type                                                                                                                                                                                                             detail
+2026-08-17T09:36:45.616189-04:00    manage_0930  exit_skipped {"contract_symbol": "AMZN260918C00265000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 8.2, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "AMZN"}
 2026-08-17T09:31:41.647429-04:00    manage_0930  exit_skipped {"contract_symbol": "AMZN260918C00265000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 8.2, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "AMZN"}
 2026-08-17T09:26:37.639537-04:00    manage_0930  exit_skipped {"contract_symbol": "AMZN260918C00265000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 8.2, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "AMZN"}
 2026-08-17T09:21:33.400932-04:00    manage_0930  exit_skipped {"contract_symbol": "AMZN260918C00265000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 8.2, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "AMZN"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-16T22:53:46.237551-04:00 share_ext_2250 market_closed                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
 2026-08-16T22:48:42.361103-04:00 share_ext_2245 market_closed                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
 2026-08-16T22:43:38.610445-04:00 share_ext_2240 market_closed                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
-2026-08-16T22:38:35.037856-04:00 share_ext_2235 market_closed                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
 ```
