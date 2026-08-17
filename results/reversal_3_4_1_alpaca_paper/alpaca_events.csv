@@ -5381,3 +5381,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-17T09:51:57.559721-04:00,2026-08-17,manage_1000,exit_order_submitted,"{""alpaca_order_id"": ""1ae4e6fe-4c8e-407a-8335-2d5d17e1d0d3"", ""contract_symbol"": ""AMZN260918C00265000"", ""limit_price"": ""7.60"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""AMZN""}"
 2026-08-17T09:57:01.956791-04:00,2026-08-17,exit,exit_filled,"{""contract_symbol"": ""AMZN260918C00265000"", ""exit_price"": 8.0, ""pnl"": -1100.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""AMZN""}"
 2026-08-17T10:02:05.517391-04:00,2026-08-17,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-17T10:08:27.391772-04:00,2026-08-17,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
