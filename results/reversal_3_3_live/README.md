@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-17 09:45:02 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-08-17 09:50:05 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -27,55 +27,55 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$21,608.00`
-- Equity: `$42,731.00`
-- Realized PnL: `$31,228.00`
-- Unrealized PnL: `$1,503.00`
-- Open positions: `1`
+- Cash: `$46,898.00`
+- Equity: `$46,898.00`
+- Realized PnL: `$36,898.00`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SOXL     option         option SOXL260918C00140000       2026-08-14                   1      9     19620.0                 21123.0         21.8          23.47      141.95        151.66     last_price_stale                        NaN                unavailable                   False          1503.0                   7.66         82.86               35              2.35        114.04             0.0                 164.53                 831.0          148.0               0.04                      ok
-```
+_None_
 
 ## Today's Closed Trades (2026-08-17)
 
-_None_
+```text
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price    pnl  return_pct                  exit_reason
+  SOXL     option         option SOXL260918C00140000      9          2026-08-14         2026-08-17         21.8        28.1 5670.0   28.899083 take_profit_day1_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  ALNY           80.00               20            2.04              3.27        227.25               127.87         0.833          pass              0.235             28.5                           0.269                1.66              0.285                  ok            True                  False
-  SHOP           94.74               19            2.82              3.04        153.02                83.98         0.672          pass              0.520              0.0                           0.269               28.17              2.244                  ok            True                  False
-  ABNB           93.94               33            0.84              1.09        183.59                64.74         0.637          pass              0.696             35.7                           0.324               21.16              2.495                  ok            True                  False
-  GEHC           95.00               20            1.48              0.76         73.36                52.52         0.631          pass              0.540              3.5                           0.074                6.73              0.716                  ok            True                  False
- CMCSA           90.48               21            0.90              0.16         26.11                41.99         0.622          pass              0.487             24.2                           0.222                5.64              0.612                  ok            True                  False
-  PAYX          100.00               11            1.86              1.59        121.34                35.05         0.582          pass              0.515             16.6                           0.153                1.77              0.354                  ok            True                  False
-  DXCM           88.89               36            0.77              0.48         89.54                54.82         0.549          pass              0.698             77.5                           0.530                2.00              0.695                  ok            True                  False
-  ISRG           81.48               27            0.98              2.71        393.35                39.79         0.548          pass              0.246             13.0                           0.223                4.06              0.796                  ok            True                  False
-  MDLZ           92.31               26            0.64              0.29         63.49                26.02         0.544          pass              0.634             48.1                           0.481                2.38              0.207                  ok            True                  False
-   ROP          100.00               20            1.49              4.16        397.56                41.77         0.537          pass              0.592             24.0                           0.155                0.21              0.076                  ok            True                  False
-   TRI           86.36               22            2.70              1.96        102.77                75.08         0.530          pass              0.349             15.5                           0.138               -0.78              0.044                  ok            True                  False
-  WDAY           92.00               25            2.98              4.15        196.90                90.03         0.519          pass              0.505             11.1                           0.299               16.78              1.826                  ok            True                  False
+  SHOP           94.74               19            2.73              2.95        153.05                83.98         0.674          pass              0.547              8.7                           0.252               28.28              2.248                  ok            True                  False
+  ABNB           96.77               31            0.98              1.27        183.52                64.74         0.645          pass              0.679             24.9                           0.248               20.98              2.488                  ok            True                  False
+ CMCSA           88.24               17            1.18              0.22         26.09                41.99         0.623          pass              0.374             15.1                           0.187                5.33              0.599                  ok            True                  False
+  GEHC           91.67               24            1.13              0.58         73.44                52.52         0.622          pass              0.548             27.2                           0.248                7.12              0.732                  ok            True                  False
+  BKNG           97.22               36            0.51              0.75        211.74                43.86         0.564          pass              0.773             47.8                           0.380                9.48              0.848                  ok            True                  False
+  DXCM           88.57               35            0.91              0.57         89.50                54.82         0.546          pass              0.670             73.3                           0.428                1.86              0.688                  ok            True                  False
+  MDLZ           91.30               23            0.90              0.40         63.44                26.02         0.545          pass              0.526             27.8                           0.274                2.12              0.195                  ok            True                  False
+   ROP          100.00               19            1.56              4.36        397.47                41.77         0.539          pass              0.575             20.4                           0.144                0.14              0.072                  ok            True                  False
+   TRI           86.36               22            2.73              1.98        102.76                75.08         0.528          pass              0.348             15.3                           0.228               -0.82              0.043                  ok            True                  False
+  CHTR           88.89               18            2.87              3.10        152.94                52.98         0.518          pass              0.363              7.0                           0.199                3.99              0.210                  ok            True                  False
+  ISRG           86.49               37            0.65              1.80        393.74                39.79         0.516          pass              0.533             42.7                           0.382                4.40              0.811                  ok            True                  False
+   XEL          100.00               28            0.53              0.29         79.04                16.04         0.513          pass              0.714             47.5                           0.484                1.36              0.223                  ok            True                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                      detail
-2026-08-17T03:00:01.859006-04:00   data_refresh  data_refresh                               {'saved': 93}
-2026-08-15T02:55:03.720107-04:00 share_ext_0255 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-08-15T02:50:05.933577-04:00 share_ext_0250 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-08-15T02:45:06.097367-04:00 share_ext_0245 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-08-15T02:40:01.513034-04:00 share_ext_0240 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-08-15T02:35:02.859847-04:00 share_ext_0235 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-08-15T02:30:02.424773-04:00 share_ext_0230 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-08-15T02:25:41.575248-04:00 share_ext_0225 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-08-15T02:15:46.829792-04:00 share_ext_0215 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-08-15T02:05:48.567191-04:00 share_ext_0205 market_closed {"holiday_name": null, "reason": "weekend"}
+                    timestamp_et           slot    event_type                                                                                                                                                                                detail
+2026-08-17T09:50:05.672730-04:00    manage_1000          exit {"asset_type": "option", "contract_symbol": "SOXL260918C00140000", "fill_price": 28.1, "pnl": 5670.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 28.9, "ticker": "SOXL"}
+2026-08-17T03:00:01.859006-04:00   data_refresh  data_refresh                                                                                                                                                                         {'saved': 93}
+2026-08-15T02:55:03.720107-04:00 share_ext_0255 market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-08-15T02:50:05.933577-04:00 share_ext_0250 market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-08-15T02:45:06.097367-04:00 share_ext_0245 market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-08-15T02:40:01.513034-04:00 share_ext_0240 market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-08-15T02:35:02.859847-04:00 share_ext_0235 market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-08-15T02:30:02.424773-04:00 share_ext_0230 market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-08-15T02:25:41.575248-04:00 share_ext_0225 market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-08-15T02:15:46.829792-04:00 share_ext_0215 market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260817094502)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260817095005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260817094502)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260817095005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260817094502)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260817095005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260817094502)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260817095005)
 
 </details>
