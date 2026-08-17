@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-17 15:50:29 EDT`
+Latest checkpoint (ET): `2026-08-17 15:55:33 EDT`
 Last slot: `manage_1600`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$88,026.30`
-- Portfolio value: `$92,076.30`
+- Portfolio value: `$91,596.30`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1600`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  ALNY   open    regular ALNY260918C00220000          3                14.2                  14.1          bid_ask_mid                       14.1                    True          4230.0           -30.0              -0.704225                   0
+  ALNY   open    regular ALNY260918C00220000          3                14.2                 13.95          bid_ask_mid                      13.95                    True          4185.0           -75.0              -1.760563                   0
 ```
 
 ## Closed Trades
