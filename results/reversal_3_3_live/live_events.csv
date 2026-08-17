@@ -5047,3 +5047,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-17T09:50:05.672730-04:00,2026-08-17,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""SOXL260918C00140000"", ""fill_price"": 28.1, ""pnl"": 5670.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 28.9, ""ticker"": ""SOXL""}"
 2026-08-17T10:00:05.950089-04:00,2026-08-17,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-17T10:05:02.645350-04:00,2026-08-17,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-17T10:10:05.798210-04:00,2026-08-17,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
