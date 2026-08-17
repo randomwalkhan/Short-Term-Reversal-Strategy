@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-17 09:51:57 EDT`
+Latest checkpoint (ET): `2026-08-17 09:57:01 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
@@ -13,16 +13,12 @@ Last slot: `manage_1000`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  AMZN exit_submitted    regular AMZN260918C00265000          4               10.75                  7.75          bid_ask_mid                       7.75                    True          3100.0         -1200.0             -27.906977                   2
-```
+_None_
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-   WMT  WMT260724C00120000          2026-06-18         2026-06-23                2.65               3.55         18  1620.0   33.962264 take_profit_day2_hit_at_scan
   MRVL MRVL260724C00310000          2026-06-22         2026-06-23               35.45              22.45          1 -1300.0  -36.671368        stop_loss_hit_at_scan
   AVGO AVGO260821C00380000          2026-06-25         2026-06-26               30.20              23.85          1  -635.0  -21.026490        stop_loss_hit_at_scan
   DRAM DRAM260731C00073000          2026-06-26         2026-06-29                8.90               6.50          5 -1200.0  -26.966292        stop_loss_hit_at_scan
@@ -42,12 +38,14 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   PYPL PYPL260918C00060000          2026-08-07         2026-08-10                1.71               1.51         28  -560.0  -11.695906        stop_loss_hit_at_scan
   LRCX LRCX260918C00310000          2026-08-10         2026-08-12               27.25              34.05          1   680.0   24.954128 take_profit_day2_hit_at_scan
   PYPL PYPL260918C00057500          2026-08-12         2026-08-13                2.86               3.65         17  1343.0   27.622378 take_profit_day1_hit_at_scan
+  AMZN AMZN260918C00265000          2026-08-13         2026-08-17               10.75               8.00          4 -1100.0  -25.581395        stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et           slot           event_type                                                                                                                                                                                                             detail
+2026-08-17T09:57:01.956791-04:00           exit          exit_filled                                                                                 {"contract_symbol": "AMZN260918C00265000", "exit_price": 8.0, "pnl": -1100.0, "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
 2026-08-17T09:51:57.559721-04:00    manage_1000 exit_order_submitted                                  {"alpaca_order_id": "1ae4e6fe-4c8e-407a-8335-2d5d17e1d0d3", "contract_symbol": "AMZN260918C00265000", "limit_price": "7.60", "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
 2026-08-17T09:41:49.556726-04:00    manage_0930         exit_skipped {"contract_symbol": "AMZN260918C00265000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 8.2, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "AMZN"}
 2026-08-17T09:36:45.616189-04:00    manage_0930         exit_skipped {"contract_symbol": "AMZN260918C00265000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 8.2, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "AMZN"}
@@ -67,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-16T23:08:57.811760-04:00 share_ext_2305        market_closed                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
 2026-08-16T23:03:53.967497-04:00 share_ext_2300        market_closed                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
 2026-08-16T22:58:50.079628-04:00 share_ext_2255        market_closed                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
-2026-08-16T22:53:46.237551-04:00 share_ext_2250        market_closed                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
 ```
