@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-17 15:30:11 EDT`
+Latest checkpoint (ET): `2026-08-17 15:35:15 EDT`
 Last slot: `manage_1530`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1530`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  ALNY   open    regular ALNY260918C00220000          3                14.2                  14.0          bid_ask_mid                       14.0                    True          4200.0           -60.0              -1.408451                   0
+  ALNY   open    regular ALNY260918C00220000          3                14.2                 14.05          bid_ask_mid                      14.05                    True          4215.0           -45.0              -1.056338                   0
 ```
 
 ## Closed Trades
