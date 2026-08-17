@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-17 11:30:03 EDT`
+Latest checkpoint (ET): `2026-08-17 11:36:25 EDT`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                                                             detail
+2026-08-17T11:36:25.051734-04:00 early_entry_1135   early_entry_shadow                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-17T11:30:03.422895-04:00 early_entry_1130   early_entry_shadow                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-17T11:23:47.494369-04:00 early_entry_1120   early_entry_shadow                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-17T11:17:28.077612-04:00 early_entry_1115   early_entry_shadow                                                                                                                                              {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-17T09:51:57.559721-04:00      manage_1000 exit_order_submitted                                  {"alpaca_order_id": "1ae4e6fe-4c8e-407a-8335-2d5d17e1d0d3", "contract_symbol": "AMZN260918C00265000", "limit_price": "7.60", "reason": "stop_loss_hit_at_scan", "ticker": "AMZN"}
 2026-08-17T09:41:49.556726-04:00      manage_0930         exit_skipped {"contract_symbol": "AMZN260918C00265000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 8.2, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "AMZN"}
 2026-08-17T09:36:45.616189-04:00      manage_0930         exit_skipped {"contract_symbol": "AMZN260918C00265000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 8.2, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "AMZN"}
-2026-08-17T09:31:41.647429-04:00      manage_0930         exit_skipped {"contract_symbol": "AMZN260918C00265000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 8.2, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "AMZN"}
 ```
