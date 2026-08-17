@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-17 09:40:01 EDT`
-Last processed slot: `manage_0930`
+Latest checkpoint (ET): `2026-08-17 09:45:02 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -37,7 +37,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SOXL     option         option SOXL260918C00140000       2026-08-14                   1      9     19620.0                 21123.0         21.8          23.47      141.95        150.86     last_price_stale                        NaN                unavailable                   False          1503.0                   7.66         82.86               35              2.35        114.04             0.0                 164.53                 831.0          148.0               0.04                      ok
+  SOXL     option         option SOXL260918C00140000       2026-08-14                   1      9     19620.0                 21123.0         21.8          23.47      141.95        151.66     last_price_stale                        NaN                unavailable                   False          1503.0                   7.66         82.86               35              2.35        114.04             0.0                 164.53                 831.0          148.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-08-17)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  ALNY           84.38               32            1.12              1.79        227.88               127.87         0.834          pass              0.462             38.3                           0.384                2.61              0.328                  ok            True                  False
-  TEAM           80.65               31            2.31              2.62        161.10               128.53         0.775          pass              0.265             10.2                           0.205               52.81              5.024                  ok            True                  False
-  SHOP           95.65               23            2.19              2.37        153.31                83.98         0.684          pass              0.620             21.6                           0.382               29.00              2.274                  ok            True                  False
-  ABNB           96.88               32            0.90              1.16        183.56                64.74         0.646          pass              0.668             19.0                           0.224               21.08              2.492                  ok            True                  False
- CMCSA           90.91               22            0.65              0.12         26.13                41.99         0.630          pass              0.569             45.2                           0.415                5.90              0.624                  ok            True                  False
-  GEHC           93.10               29            0.94              0.48         73.48                52.52         0.606          pass              0.654             38.9                           0.383                7.32              0.741                  ok            True                  False
-  PAYX          100.00               15            1.34              1.15        121.53                35.05         0.587          pass              0.611             39.7                           0.288                2.30              0.378                  ok            True                  False
-   KHC           85.71               21            0.85              0.15         25.45                36.29         0.582          pass              0.409             41.6                           0.417               -4.26             -0.449                  ok            True                  False
-   TRI           91.18               34            1.38              1.00        103.18                75.08         0.545          pass              0.683             56.8                           0.292                0.56              0.106                  ok            True                  False
-  MDLZ           92.31               26            0.69              0.31         63.48                26.02         0.541          pass              0.622             44.3                           0.417                2.33              0.205                  ok            True                  False
-  WDAY           85.19               27            2.40              3.34        197.25                90.03         0.530          pass              0.390             28.6                           0.484               17.49              1.853                  ok            True                  False
-  AMGN          100.00               33            0.58              1.69        414.49                27.10         0.516          pass              0.787             60.6                           0.486                8.96              0.741                  ok            True                  False
+  ALNY           80.00               20            2.04              3.27        227.25               127.87         0.833          pass              0.235             28.5                           0.269                1.66              0.285                  ok            True                  False
+  SHOP           94.74               19            2.82              3.04        153.02                83.98         0.672          pass              0.520              0.0                           0.269               28.17              2.244                  ok            True                  False
+  ABNB           93.94               33            0.84              1.09        183.59                64.74         0.637          pass              0.696             35.7                           0.324               21.16              2.495                  ok            True                  False
+  GEHC           95.00               20            1.48              0.76         73.36                52.52         0.631          pass              0.540              3.5                           0.074                6.73              0.716                  ok            True                  False
+ CMCSA           90.48               21            0.90              0.16         26.11                41.99         0.622          pass              0.487             24.2                           0.222                5.64              0.612                  ok            True                  False
+  PAYX          100.00               11            1.86              1.59        121.34                35.05         0.582          pass              0.515             16.6                           0.153                1.77              0.354                  ok            True                  False
+  DXCM           88.89               36            0.77              0.48         89.54                54.82         0.549          pass              0.698             77.5                           0.530                2.00              0.695                  ok            True                  False
+  ISRG           81.48               27            0.98              2.71        393.35                39.79         0.548          pass              0.246             13.0                           0.223                4.06              0.796                  ok            True                  False
+  MDLZ           92.31               26            0.64              0.29         63.49                26.02         0.544          pass              0.634             48.1                           0.481                2.38              0.207                  ok            True                  False
+   ROP          100.00               20            1.49              4.16        397.56                41.77         0.537          pass              0.592             24.0                           0.155                0.21              0.076                  ok            True                  False
+   TRI           86.36               22            2.70              1.96        102.77                75.08         0.530          pass              0.349             15.5                           0.138               -0.78              0.044                  ok            True                  False
+  WDAY           92.00               25            2.98              4.15        196.90                90.03         0.519          pass              0.505             11.1                           0.299               16.78              1.826                  ok            True                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260817094001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260817094502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260817094001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260817094502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260817094001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260817094502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260817094001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260817094502)
 
 </details>
