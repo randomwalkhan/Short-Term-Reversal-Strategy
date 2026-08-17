@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-17 14:45:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-08-17 14:50:04 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -27,15 +27,18 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$46,898.00`
+- Cash: `$24,658.00`
 - Equity: `$46,898.00`
 - Realized PnL: `$36,898.00`
 - Unrealized PnL: `$0.00`
-- Open positions: `0`
+- Open positions: `1`
 
 ## Open Positions
 
-_None_
+```text
+ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
+  ALNY     option         option ALNY260918C00220000       2026-08-17                   0     16     22240.0                 22240.0         13.9           13.9      224.68         224.9          bid_ask_mid                       13.9                bid_ask_mid                    True             0.0                    0.0         84.62               26              1.73         43.62           43.62                 127.87                 332.0           21.0               0.06                      ok
+```
 
 ## Today's Closed Trades (2026-08-17)
 
@@ -47,35 +50,35 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  ALNY           84.62               26            1.60              2.56        227.56               127.87         0.832          pass              0.445             44.1                           0.644                2.12              0.306                  ok            True                  False
-  TEAM           80.00               30            2.55              2.89        160.98               128.53         0.762          pass              0.291             27.2                           0.351               52.43              5.013                  ok            True                  False
-  SHOP           92.86               14            3.27              3.53        152.81                83.98         0.661          pass              0.490             18.2                           0.412               27.58              2.223                  ok            True                  False
-  TMUS           88.89               18            1.79              2.29        181.63                56.43         0.631          pass              0.373              6.6                           0.285                1.27              0.296                  ok            True                  False
-  GEHC           92.86               14            2.00              1.03         73.25                52.52         0.628          pass              0.438              1.9                           0.139                6.17              0.692                  ok            True                  False
- CMCSA           90.00               10            2.12              0.39         26.01                41.99         0.603          pass              0.381             18.1                           0.336                4.34              0.556                  ok            True                  False
-  UPRO           84.00               25            1.05              1.16        156.13                39.51         0.567          pass              0.307             14.5                           0.362                5.92              0.413                  ok            True                  False
-  DXCM           85.19               27            1.49              0.93         89.35                54.82         0.554          pass              0.477             56.5                           0.375                1.27              0.662                  ok            True                  False
-  ISRG           81.48               27            0.99              2.73        393.34                39.79         0.546          pass              0.266             19.4                           0.258                4.05              0.796                  ok            True                  False
-   ROP          100.00               10            2.29              6.41        396.59                41.77         0.545          pass              0.479              8.1                           0.206               -0.61              0.038                  ok            True                  False
-   LIN           80.00               15            1.51              5.12        480.55                26.03         0.529          pass              0.160             24.6                           0.419               -1.05             -0.173                  ok            True                  False
-  DASH          100.00               33            1.11              1.69        216.30                46.91         0.525          pass              0.713             35.6                           0.480                7.04              0.654                  ok            True                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  ALNY           84.62               26            1.73              2.78        227.46               127.87         0.827          pass              0.430             39.3                           0.487                1.98              0.300                      ok            True                  False
+  TEAM           80.00               30            2.70              3.06        160.91               128.53         0.756          pass              0.277             22.8                           0.353               52.20              5.006                      ok            True                  False
+  SHOP           93.33               15            3.21              3.47        152.83                83.98         0.660          pass              0.514             19.6                           0.443               27.66              2.226                      ok            True                  False
+  GEHC           92.31               13            2.01              1.04         73.25                52.52         0.632          pass              0.417              2.0                           0.196                6.16              0.692                      ok            True                  False
+  TMUS           88.89               18            1.85              2.36        181.60                56.43         0.628          pass              0.364              3.7                           0.217                1.21              0.294                      ok            True                  False
+ CMCSA           90.00               10            2.16              0.40         26.01                41.99         0.601          pass              0.377             16.6                           0.285                4.30              0.554                      ok            True                  False
+  UPRO           84.00               25            1.00              1.09        156.16                39.51         0.570          pass              0.321             19.2                           0.416                5.98              0.415                      ok            True                  False
+  DXCM           85.19               27            1.44              0.90         89.36                54.82         0.557          pass              0.481             58.0                           0.417                1.32              0.664                      ok            True                  False
+  ISRG           81.48               27            1.00              2.76        393.33                39.79         0.545          pass              0.263             18.6                           0.280                4.04              0.795                      ok            True                  False
+   ROP          100.00               12            2.12              5.92        396.80                41.77         0.543          pass              0.513             15.1                           0.215               -0.43              0.047                      ok            True                  False
+  DASH          100.00               31            1.42              2.16        216.10                46.91         0.519          pass              0.645             17.6                           0.366                6.70              0.640                      ok            True                  False
+  MNST            0.00                2            2.81              0.92         46.43               243.52         0.972          pass              0.105              2.5                           0.090              -52.79             -9.812 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                detail
-2026-08-17T12:00:04.607418-04:00 early_entry_1200 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:55:01.576813-04:00 early_entry_1155 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:50:04.389347-04:00 early_entry_1150 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:45:01.690104-04:00 early_entry_1145 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:40:05.536828-04:00 early_entry_1140 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:35:03.481570-04:00 early_entry_1135 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:30:06.396920-04:00 early_entry_1130 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:25:02.640154-04:00 early_entry_1125 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:20:04.561969-04:00 early_entry_1120 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:15:01.577044-04:00 early_entry_1115 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+                    timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                              detail
+2026-08-17T14:50:04.353625-04:00       entry_1500              entry {"allocated_cash": 22240.0, "asset_type": "option", "contract_symbol": "ALNY260918C00220000", "contracts": 16, "early_entry_score": 0.43, "entry_mode": "regular", "entry_option_price": 13.9, "execution_mode": "option", "matched_signals": 26, "option_liquidity_status": "ok", "option_open_interest": 332.0, "option_spread_pct": 5.76, "option_volume": 21.0, "success_rate": 84.62, "ticker": "ALNY", "timing_score": 0.827}
+2026-08-17T14:50:04.353625-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                        {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-08-17", "training_samples": 5665, "window": 5}
+2026-08-17T12:00:04.607418-04:00 early_entry_1200 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-17T11:55:01.576813-04:00 early_entry_1155 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-17T11:50:04.389347-04:00 early_entry_1150 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-17T11:45:01.690104-04:00 early_entry_1145 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-17T11:40:05.536828-04:00 early_entry_1140 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-17T11:35:03.481570-04:00 early_entry_1135 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-17T11:30:06.396920-04:00 early_entry_1130 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-17T11:25:02.640154-04:00 early_entry_1125 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -85,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260817144501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260817145004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260817144501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260817145004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260817144501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260817145004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260817144501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260817145004)
 
 </details>
