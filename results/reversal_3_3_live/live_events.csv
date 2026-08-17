@@ -5074,3 +5074,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-17T14:50:04.353625-04:00,2026-08-17,entry_1500,entry,"{""allocated_cash"": 22240.0, ""asset_type"": ""option"", ""contract_symbol"": ""ALNY260918C00220000"", ""contracts"": 16, ""early_entry_score"": 0.43, ""entry_mode"": ""regular"", ""entry_option_price"": 13.9, ""execution_mode"": ""option"", ""matched_signals"": 26, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 332.0, ""option_spread_pct"": 5.76, ""option_volume"": 21.0, ""success_rate"": 84.62, ""ticker"": ""ALNY"", ""timing_score"": 0.827}"
 2026-08-17T14:55:02.466127-04:00,2026-08-17,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-08-17T15:00:04.559198-04:00,2026-08-17,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-08-17T15:05:03.524564-04:00,2026-08-17,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"

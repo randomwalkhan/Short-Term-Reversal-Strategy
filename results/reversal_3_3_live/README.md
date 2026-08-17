@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-17 15:00:04 EDT`
+Latest checkpoint (ET): `2026-08-17 15:05:03 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$24,658.00`
-- Equity: `$46,578.00`
+- Equity: `$46,498.00`
 - Realized PnL: `$36,898.00`
-- Unrealized PnL: `$-320.00`
+- Unrealized PnL: `$-400.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ALNY     option         option ALNY260918C00220000       2026-08-17                   0     16     22240.0                 21920.0         13.9           13.7      224.68        225.01          bid_ask_mid                       13.7                bid_ask_mid                    True          -320.0                  -1.44         84.62               26              1.73         43.62           43.55                 127.87                 332.0           21.0               0.06                      ok
+  ALNY     option         option ALNY260918C00220000       2026-08-17                   0     16     22240.0                 21840.0         13.9          13.65      224.68        225.52          bid_ask_mid                      13.65                bid_ask_mid                    True          -400.0                   -1.8         84.62               26              1.73         43.62           42.62                 127.87                 332.0           21.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-08-17)
@@ -51,24 +51,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  ALNY           84.62               26            1.53              2.44        227.60               127.87         0.834          pass              0.453             46.6                           0.606                2.19              0.309                  ok            True                  False
-  TEAM           80.00               30            2.77              3.15        160.87               128.53         0.752          pass              0.270             20.6                           0.378               52.08              5.002                  ok            True                  False
-  ABNB          100.00               10            2.36              3.03        182.76                64.74         0.680          pass              0.489              7.0                           0.354               19.31              2.425                  ok            True                  False
-  SHOP           94.74               19            3.13              3.38        152.87                83.98         0.644          pass              0.582             21.6                           0.466               27.76              2.230                  ok            True                  False
-  GEHC           92.31               13            2.04              1.05         73.24                52.52         0.630          pass              0.423              3.8                           0.151                6.13              0.690                  ok            True                  False
-  TMUS           88.89               18            1.84              2.35        181.60                56.43         0.628          pass              0.365              4.0                           0.240                1.22              0.294                  ok            True                  False
- CMCSA           90.00               10            1.93              0.35         26.03                41.99         0.613          pass              0.404             25.5                           0.359                4.54              0.565                  ok            True                  False
-  UPRO           84.00               25            1.10              1.20        156.11                39.51         0.565          pass              0.296             10.9                           0.304                5.87              0.411                  ok            True                  False
-  DXCM           84.00               25            1.67              1.05         89.30                54.82         0.553          pass              0.415             51.1                           0.381                1.08              0.654                  ok            True                  False
-  ISRG           81.48               27            1.14              3.16        393.16                39.79         0.537          pass              0.227              6.8                           0.195                3.89              0.788                  ok            True                  False
-  DASH          100.00               26            1.68              2.55        215.93                46.91         0.534          pass              0.568              2.5                           0.166                6.42              0.628                  ok            True                  False
-   ROP          100.00               16            1.92              5.37        397.04                41.77         0.531          pass              0.562             23.0                           0.261               -0.23              0.056                  ok            True                  False
+  ALNY           83.33               30            1.36              2.17        227.72               127.87         0.825          pass              0.462             52.5                           0.649                2.37              0.317                  ok            True                  False
+  TEAM           80.00               30            2.63              2.98        160.94               128.53         0.759          pass              0.284             24.9                           0.377               52.31              5.009                  ok            True                  False
+  ABNB          100.00               13            2.24              2.88        182.83                64.74         0.670          pass              0.522             11.7                           0.410               19.45              2.430                  ok            True                  False
+  SHOP           94.74               19            3.06              3.30        152.91                83.98         0.648          pass              0.588             23.5                           0.500               27.86              2.233                  ok            True                  False
+  TMUS           87.50               16            1.88              2.41        181.58                56.43         0.635          pass              0.309              1.7                           0.190                1.17              0.292                  ok            True                  False
+  GEHC           94.44               18            1.83              0.95         73.28                52.52         0.616          pass              0.541             13.5                           0.269                6.35              0.700                  ok            True                  False
+ CMCSA           90.00               10            2.16              0.40         26.01                41.99         0.601          pass              0.377             16.6                           0.285                4.30              0.554                  ok            True                  False
+  UPRO           84.00               25            1.16              1.27        156.08                39.51         0.561          pass              0.280              5.7                           0.253                5.80              0.408                  ok            True                  False
+  DXCM           84.00               25            1.63              1.02         89.31                54.82         0.556          pass              0.420             52.4                           0.361                1.12              0.656                  ok            True                  False
+  ISRG           81.48               27            1.00              2.76        393.33                39.79         0.545          pass              0.263             18.5                           0.291                4.04              0.795                  ok            True                  False
+   ROP          100.00               13            2.07              5.78        396.86                41.77         0.540          pass              0.525             17.1                           0.252               -0.38              0.049                  ok            True                  False
+  DASH          100.00               28            1.52              2.30        216.03                46.91         0.531          pass              0.609             12.0                           0.191                6.60              0.636                  ok            True                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                              detail
+2026-08-17T15:05:03.524564-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 2026-08-17T15:00:04.559198-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 2026-08-17T14:55:02.466127-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 2026-08-17T14:50:04.353625-04:00       entry_1500              entry {"allocated_cash": 22240.0, "asset_type": "option", "contract_symbol": "ALNY260918C00220000", "contracts": 16, "early_entry_score": 0.43, "entry_mode": "regular", "entry_option_price": 13.9, "execution_mode": "option", "matched_signals": 26, "option_liquidity_status": "ok", "option_open_interest": 332.0, "option_spread_pct": 5.76, "option_volume": 21.0, "success_rate": 84.62, "ticker": "ALNY", "timing_score": 0.827}
@@ -78,7 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-08-17T11:50:04.389347-04:00 early_entry_1150 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-17T11:45:01.690104-04:00 early_entry_1145 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-17T11:40:05.536828-04:00 early_entry_1140 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T11:35:03.481570-04:00 early_entry_1135 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260817150004)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260817150503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260817150004)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260817150503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260817150004)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260817150503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260817150004)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260817150503)
 
 </details>
