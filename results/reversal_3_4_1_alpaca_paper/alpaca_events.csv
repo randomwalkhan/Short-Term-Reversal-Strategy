@@ -5399,3 +5399,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-17T11:42:45.146081-04:00,2026-08-17,early_entry_1140,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-17T11:49:01.044926-04:00,2026-08-17,early_entry_1145,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-17T11:55:21.589049-04:00,2026-08-17,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-17T14:48:20.935662-04:00,2026-08-17,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""4fd07ca1-6b58-4b6b-b271-d5003cd265b9"", ""contract_symbol"": ""ALNY260918C00220000"", ""contracts"": 3, ""entry_mode"": ""regular"", ""limit_price"": ""14.30"", ""ticker"": ""ALNY""}"
