@@ -5081,3 +5081,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-18T00:10:02.690904-04:00,2026-08-18,data_refresh,data_refresh,{'saved': 93}
 2026-08-18T00:15:04.604135-04:00,2026-08-18,data_refresh,data_refresh,{'saved': 93}
 2026-08-18T00:20:06.357327-04:00,2026-08-18,data_refresh,data_refresh,{'saved': 93}
+2026-08-18T00:25:04.272374-04:00,2026-08-18,data_refresh,data_refresh,{'saved': 93}
