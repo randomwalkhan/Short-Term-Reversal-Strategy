@@ -3,45 +3,42 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-08-18 11:46:30 EDT`
-- Equity: `$51,538.00` | Realized: `$36,898.00` | Unrealized: `$4,640.00` | Open positions: `1`
-- Today closed trades: `0`
-- Current slot: `early_entry_1145`
+- Latest checkpoint (ET): `2026-08-18 12:30:08 EDT`
+- Equity: `$53,138.00` | Realized: `$43,138.00` | Unrealized: `$0.00` | Open positions: `0`
+- Today closed trades: `1`
+- Current slot: `manage_1230`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
-```text
-ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  ALNY     option         option ALNY260918C00220000     16     22240.0                 26880.0           16.8          4640.0                  20.86                   1
-```
+_None_
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260818114630)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260818123008)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260818114630)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260818123008)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260818114630)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260818123008)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260818114630)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260818123008)
 
 </details>
 

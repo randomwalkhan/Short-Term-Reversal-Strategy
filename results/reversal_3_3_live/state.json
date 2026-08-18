@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 24658.000356674194,
-  "positions": [
-    {
-      "position_id": "ALNY_20260817T145004",
-      "ticker": "ALNY",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "ALNY260918C00220000",
-      "expiry": "2026-09-18",
-      "strike": 220.0,
-      "entry_timestamp": "2026-08-17T14:50:04.353625-04:00",
-      "entry_trade_date": "2026-08-17",
-      "entry_slot": "entry_1500",
-      "entry_spot": 224.68499755859375,
-      "entry_option_price": 13.9,
-      "entry_bid": 13.5,
-      "entry_ask": 14.3,
-      "entry_iv_pct": 43.622389953613286,
-      "contracts": 16,
-      "allocated_cash": 22240.0,
-      "success_rate": 84.62,
-      "matched_signals": 26,
-      "current_drop_pct": 1.73,
-      "rolling_sigma_20d_pct": 127.87,
-      "planned_tp_day1": 15.985,
-      "planned_tp_day2": 15.985,
-      "planned_stop": 12.51,
-      "option_open_interest": 332.0,
-      "option_volume": 21.0,
-      "option_spread_pct": 0.057553956834532426,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 53138.000356674194,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
