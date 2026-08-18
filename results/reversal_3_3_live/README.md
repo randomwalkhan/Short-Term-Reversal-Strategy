@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-18 00:10:02 EDT`
-Last processed slot: `share_ext_0010`
+Latest checkpoint (ET): `2026-08-18 00:15:04 EDT`
+Last processed slot: `share_ext_0015`
 
 ## Active Configuration
 
@@ -51,17 +51,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                              detail
-2026-08-18T00:10:02.690904-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                       {'saved': 93}
-2026-08-18T00:05:02.543334-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                       {'saved': 93}
-2026-08-18T00:00:06.364747-04:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                       {'saved': 93}
-2026-08-17T15:10:04.417812-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-08-17T15:05:03.524564-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-08-17T15:00:04.559198-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-08-17T14:55:02.466127-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-08-17T14:50:04.353625-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                        {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-08-17", "training_samples": 5665, "window": 5}
-2026-08-17T14:50:04.353625-04:00       entry_1500              entry {"allocated_cash": 22240.0, "asset_type": "option", "contract_symbol": "ALNY260918C00220000", "contracts": 16, "early_entry_score": 0.43, "entry_mode": "regular", "entry_option_price": 13.9, "execution_mode": "option", "matched_signals": 26, "option_liquidity_status": "ok", "option_open_interest": 332.0, "option_spread_pct": 5.76, "option_volume": 21.0, "success_rate": 84.62, "ticker": "ALNY", "timing_score": 0.827}
-2026-08-17T12:00:04.607418-04:00 early_entry_1200 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+                    timestamp_et         slot     event_type                                                                                                                                                                                                                                                                                                                                                                                                                              detail
+2026-08-18T00:15:04.604135-04:00 data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                       {'saved': 93}
+2026-08-18T00:10:02.690904-04:00 data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                       {'saved': 93}
+2026-08-18T00:05:02.543334-04:00 data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                       {'saved': 93}
+2026-08-18T00:00:06.364747-04:00 data_refresh   data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                       {'saved': 93}
+2026-08-17T15:10:04.417812-04:00   entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-08-17T15:05:03.524564-04:00   entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-08-17T15:00:04.559198-04:00   entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-08-17T14:55:02.466127-04:00   entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
+2026-08-17T14:50:04.353625-04:00   entry_1500          entry {"allocated_cash": 22240.0, "asset_type": "option", "contract_symbol": "ALNY260918C00220000", "contracts": 16, "early_entry_score": 0.43, "entry_mode": "regular", "entry_option_price": 13.9, "execution_mode": "option", "matched_signals": 26, "option_liquidity_status": "ok", "option_open_interest": 332.0, "option_spread_pct": 5.76, "option_volume": 21.0, "success_rate": 84.62, "ticker": "ALNY", "timing_score": 0.827}
+2026-08-17T14:50:04.353625-04:00   entry_1500 timing_overlay                                                                                                                                                                                                                                                                                                                        {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-08-17", "training_samples": 5665, "window": 5}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260818001002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260818001504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260818001002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260818001504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260818001002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260818001504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260818001002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260818001504)
 
 </details>
