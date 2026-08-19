@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-19 00:24:38 EDT`
-Last slot: `share_ext_0020`
+Latest checkpoint (ET): `2026-08-19 00:29:42 EDT`
+Last slot: `share_ext_0025`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_0020`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  ALNY exit_submitted    regular ALNY260918C00220000          3                14.2                  16.1          bid_ask_mid                       16.1                    True          4830.0           570.0              13.380282                   2
+  ALNY exit_submitted    regular ALNY260918C00220000          3                14.2                  17.5     last_price_stale                        NaN                   False          5250.0           990.0              23.239437                   2
 ```
 
 ## Closed Trades
