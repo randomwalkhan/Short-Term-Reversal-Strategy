@@ -1,28 +1,24 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-19 09:19:01 EDT`
-Last slot: `manage_0930`
+Latest checkpoint (ET): `2026-08-19 10:25:37 EDT`
+Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$88,026.09`
-- Portfolio value: `$92,256.09`
+- Cash: `$93,306.02`
+- Portfolio value: `$93,306.02`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  ALNY exit_submitted    regular ALNY260918C00220000          3                14.2                  17.5     last_price_stale                        NaN                   False          5250.0           990.0              23.239437                   2
-```
+_None_
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-  MRVL MRVL260724C00310000          2026-06-22         2026-06-23               35.45              22.45          1 -1300.0  -36.671368        stop_loss_hit_at_scan
   AVGO AVGO260821C00380000          2026-06-25         2026-06-26               30.20              23.85          1  -635.0  -21.026490        stop_loss_hit_at_scan
   DRAM DRAM260731C00073000          2026-06-26         2026-06-29                8.90               6.50          5 -1200.0  -26.966292        stop_loss_hit_at_scan
   GILD GILD260821C00135000          2026-07-09         2026-07-13                5.95               3.70          8 -1800.0  -37.815126        stop_loss_hit_at_scan
@@ -42,12 +38,15 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   LRCX LRCX260918C00310000          2026-08-10         2026-08-12               27.25              34.05          1   680.0   24.954128 take_profit_day2_hit_at_scan
   PYPL PYPL260918C00057500          2026-08-12         2026-08-13                2.86               3.65         17  1343.0   27.622378 take_profit_day1_hit_at_scan
   AMZN AMZN260918C00265000          2026-08-13         2026-08-17               10.75               8.00          4 -1100.0  -25.581395        stop_loss_hit_at_scan
+  ALNY ALNY260918C00220000          2026-08-17         2026-08-19               14.20              17.60          3  1020.0   23.943662 take_profit_day1_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                    detail
+2026-08-19T10:25:37.438775-04:00 early_entry_1025    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-19T10:25:37.438775-04:00             exit           exit_filled                                                 {"contract_symbol": "ALNY260918C00220000", "exit_price": 17.6, "pnl": 1020.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "ALNY"}
 2026-08-18T16:02:33.448939-04:00      manage_1600  exit_order_submitted {"alpaca_order_id": "e06d7825-d7d0-497e-b432-ebfd8ee6918f", "contract_symbol": "ALNY260918C00220000", "limit_price": "15.30", "reason": "take_profit_day1_hit_at_scan", "ticker": "ALNY"}
 2026-08-18T10:34:30.591828-04:00 early_entry_1030    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-17T14:54:42.398505-04:00       entry_1500          entry_filled                                                                                        {"contract_symbol": "ALNY260918C00220000", "contracts": 3, "filled_price": 14.2, "ticker": "ALNY"}
@@ -66,6 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-17T10:45:59.834111-04:00 early_entry_1045    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-17T10:39:45.503795-04:00 early_entry_1035    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-17T10:33:30.021079-04:00 early_entry_1030    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T10:27:15.865032-04:00 early_entry_1025    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-17T10:21:01.510073-04:00 early_entry_1020    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```

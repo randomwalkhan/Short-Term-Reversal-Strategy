@@ -5403,3 +5403,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-17T14:54:42.398505-04:00,2026-08-17,entry_1500,entry_filled,"{""contract_symbol"": ""ALNY260918C00220000"", ""contracts"": 3, ""filled_price"": 14.2, ""ticker"": ""ALNY""}"
 2026-08-18T10:34:30.591828-04:00,2026-08-18,early_entry_1030,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-18T16:02:33.448939-04:00,2026-08-18,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""e06d7825-d7d0-497e-b432-ebfd8ee6918f"", ""contract_symbol"": ""ALNY260918C00220000"", ""limit_price"": ""15.30"", ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""ALNY""}"
+2026-08-19T10:25:37.438775-04:00,2026-08-19,exit,exit_filled,"{""contract_symbol"": ""ALNY260918C00220000"", ""exit_price"": 17.6, ""pnl"": 1020.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""ALNY""}"
+2026-08-19T10:25:37.438775-04:00,2026-08-19,early_entry_1025,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
