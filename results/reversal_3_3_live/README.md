@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-20 15:28:22 EDT`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-08-20 16:09:08 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$26,628.00`
-- Equity: `$53,523.00`
+- Equity: `$53,853.00`
 - Realized PnL: `$43,138.00`
-- Unrealized PnL: `$385.00`
+- Unrealized PnL: `$715.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ABNB     option         option ABNB261016C00180000       2026-08-20                   0     22     26510.0                 26895.0        12.05          12.22      185.18        185.01          bid_ask_mid                      12.22                bid_ask_mid                    True           385.0                   1.45         93.94               33              0.65         33.73           32.59                  63.87                 783.0           31.0               0.06                      ok
+  ABNB     option         option ABNB261016C00180000       2026-08-20                   0     22     26510.0                 27225.0        12.05          12.38      185.18        184.47          bid_ask_mid                      12.38                bid_ask_mid                    True           715.0                    2.7         93.94               33              0.65         33.73           34.66                  63.87                 783.0           31.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-08-20)
@@ -46,21 +46,7 @@ _None_
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  ABNB           93.94               33            0.67              0.87        186.02                63.87         0.624          pass              0.824             78.9                           0.468               22.10              1.015                  ok            True                  False
-  MCHP           86.84               38            0.95              0.51         76.86                71.63         0.574          pass              0.572             48.6                           0.450                2.68             -0.352                  ok            True                  False
-   KHC           86.21               29            0.51              0.09         25.64                39.84         0.556          pass              0.542             64.9                           0.631                2.36              0.188                  ok            True                  False
-  REGN          100.00               17            1.37              8.06        837.39                29.05         0.555          pass              0.507              1.5                           0.183                7.54              0.624                  ok            True                  False
-  FAST          100.00               11            1.43              0.51         51.22                21.74         0.552          pass              0.553             30.3                           0.497               -0.19             -0.145                  ok            True                  False
-  UPRO           85.71               14            2.20              2.34        151.16                40.33         0.551          pass              0.254              6.6                           0.292               -2.37             -0.221                  ok            True                  False
-   WBD           88.24               17            0.98              0.20         28.45                19.61         0.541          pass              0.380             20.0                           0.377                7.01              0.765                  ok            True                  False
-   MAR           92.59               27            0.93              2.35        358.94                36.48         0.537          pass              0.615             37.5                           0.320               -0.86              0.133                  ok            True                  False
-  BKNG           96.67               30            1.20              1.79        212.23                45.88         0.537          pass              0.614              8.9                           0.301                1.47             -0.089                  ok            True                  False
-  AAPL           84.00               25            1.06              2.36        315.82                35.68         0.535          pass              0.260              0.0                           0.150                0.42              0.093                  ok            True                  False
-  GILD           92.86               14            1.90              1.97        146.76                26.30         0.509          pass              0.500             26.4                           0.314               10.64              1.096                  ok            True                  False
-  VRTX           90.00               10            2.41              9.32        548.07                32.17         0.508          pass              0.390             24.3                           0.309               11.31              0.814                  ok            True                  False
-```
+_None_
 
 ## Recent Events
 
@@ -85,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260820152822)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260820160908)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260820152822)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260820160908)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260820152822)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260820160908)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260820152822)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260820160908)
 
 </details>
