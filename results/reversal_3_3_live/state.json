@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 26628.000356674194,
-  "positions": [
-    {
-      "position_id": "ABNB_20260820T145507",
-      "ticker": "ABNB",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "ABNB261016C00180000",
-      "expiry": "2026-10-16",
-      "strike": 180.0,
-      "entry_timestamp": "2026-08-20T14:55:07.817083-04:00",
-      "entry_trade_date": "2026-08-20",
-      "entry_slot": "entry_1500",
-      "entry_spot": 185.17999267578125,
-      "entry_option_price": 12.05,
-      "entry_bid": 11.7,
-      "entry_ask": 12.4,
-      "entry_iv_pct": 33.72869006347656,
-      "contracts": 22,
-      "allocated_cash": 26510.0,
-      "success_rate": 93.94,
-      "matched_signals": 33,
-      "current_drop_pct": 0.65,
-      "rolling_sigma_20d_pct": 63.87,
-      "planned_tp_day1": 13.8575,
-      "planned_tp_day2": 13.8575,
-      "planned_stop": 10.845,
-      "option_open_interest": 783.0,
-      "option_volume": 31.0,
-      "option_spread_pct": 0.05809128630705403,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 57703.000356674194,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",

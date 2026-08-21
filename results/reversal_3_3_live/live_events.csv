@@ -5195,3 +5195,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-21T10:18:45.233650-04:00,2026-08-21,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-21T10:36:48.615754-04:00,2026-08-21,early_entry_1035,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-21T11:15:05.200635-04:00,2026-08-21,early_entry_1115,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-21T11:50:07.256034-04:00,2026-08-21,manage_1200,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""ABNB261016C00180000"", ""fill_price"": 14.125, ""pnl"": 4565.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 17.22, ""ticker"": ""ABNB""}"
+2026-08-21T11:50:07.256034-04:00,2026-08-21,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
