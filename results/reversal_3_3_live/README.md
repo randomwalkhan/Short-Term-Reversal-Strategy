@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-21 15:20:08 EDT`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-08-21 16:04:06 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -46,21 +46,7 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  TEAM           80.65               31            1.73              2.12        174.00               116.76         0.737          pass              0.399             56.2                           0.685               15.30              1.542                                 ok            True                  False
-    MU           83.33               36            0.69              4.69        972.32               100.72         0.710          pass              0.508             58.3                           0.491               10.26              1.216                                 ok            True                  False
-   WDC           83.87               31            0.62              2.04        468.17               103.26         0.707          pass              0.554             80.2                           0.644                7.33              0.962                                 ok            True                  False
-   TRI           91.43               35            0.54              0.40        105.71                73.29         0.636          pass              0.637             34.1                           0.319                4.09              0.186                                 ok            True                  False
-   MAR           96.77               31            0.60              1.50        355.96                36.23         0.547          pass              0.715             40.2                           0.248                0.36              0.213                                 ok            True                  False
-  AAPL           84.85               33            0.51              1.11        310.83                35.92         0.521          pass              0.335              0.0                             NaN               -1.07              0.139                                 ok            True                  False
-  SOXL           83.33               36            1.02              0.88        121.83               166.13         0.806          pass              0.575             77.3                           0.661              -13.75             -1.298            downtrend_blocked_slope           False                  False
-  AMAT           91.43               35            0.67              2.32        495.21                84.07         0.666          pass              0.762             74.6                           0.675               -8.48             -0.856            downtrend_blocked_slope           False                  False
-   APP           68.42               38            1.51              3.26        307.37                90.16         0.611          pass              0.405             52.3                           0.576              -12.31             -0.986            downtrend_blocked_slope           False                  False
-  KLAC           81.82               33            0.81              1.05        185.41                69.68         0.597          pass              0.441             60.0                           0.491               -6.84             -0.767 downtrend_blocked_slope_and_streak           False                  False
-  AMZN           76.19               42            0.32              0.58        259.86                59.61         0.583          pass              0.477             72.8                           0.653               -5.54             -0.635 downtrend_blocked_slope_and_streak           False                  False
-   KHC           85.29               34            0.06              0.01         25.57                38.96         0.562          pass              0.620             87.5                           0.472                0.93              0.244                                 ok           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -85,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260821152008)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260821160406)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260821152008)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260821160406)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260821152008)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260821160406)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260821152008)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260821160406)
 
 </details>
