@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-21 11:55:10 EDT`
+Latest checkpoint (ET): `2026-08-21 12:00:13 EDT`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -48,34 +48,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  TEAM           80.65               31            1.86              2.27        173.94               116.76         0.731          pass              0.389             52.9                           0.504               15.15              1.536                                 ok            True                  False
-    MU           83.78               37            0.59              4.05        972.59               100.72         0.710          pass              0.544             64.0                           0.630               10.37              1.221                                 ok            True                  False
-   WDC           85.29               34            0.52              1.72        468.31               103.26         0.699          pass              0.621             83.3                           0.768                7.44              0.966                                 ok            True                  False
-  SOXL           82.86               35            1.67              1.43        121.60               166.13         0.782          pass              0.510             62.9                           0.689              -14.32             -1.328            downtrend_blocked_slope           False                  False
-  AMAT           89.66               29            1.48              5.12        494.01                84.07         0.651          pass              0.581             44.0                           0.562               -9.22             -0.893            downtrend_blocked_slope           False                  False
-  MCHP           85.71               42            0.21              0.11         75.76                70.29         0.609          pass              0.607             64.6                           0.486              -10.67             -0.907 downtrend_blocked_slope_and_streak           False                  False
-   APP           67.57               37            1.64              3.54        307.25                90.16         0.608          pass              0.386             48.3                           0.609              -12.42             -0.992            downtrend_blocked_slope           False                  False
-  KLAC           81.25               32            0.98              1.28        185.31                69.68         0.591          pass              0.393             51.2                           0.518               -7.00             -0.775 downtrend_blocked_slope_and_streak           False                  False
-  MPWR           84.62               39            0.14              1.26       1310.06                59.09         0.565          pass              0.613             80.0                           0.572               -6.62             -0.794            downtrend_blocked_slope           False                  False
-  INTC           86.11               36            1.57              1.01         91.70                78.49         0.546          pass              0.508             39.1                           0.527              -10.79             -0.954 downtrend_blocked_slope_and_streak           False                  False
-   MAR           94.59               37            0.24              0.59        356.35                36.23         0.531          pass              0.852             76.5                           0.537                0.73              0.229                                 ok           False                  False
-   EXC           87.50                8            1.72              0.54         44.83                16.87         0.515          pass              0.289             12.4                           0.309               -2.91             -0.060           downtrend_blocked_streak           False                  False
+  TEAM           80.65               31            1.90              2.32        173.91               116.76         0.729          pass              0.386             51.9                           0.465               15.11              1.534                                 ok            True                  False
+    MU           83.33               36            0.75              5.09        972.15               100.72         0.707          pass              0.497             54.8                           0.508               10.20              1.214                                 ok            True                  False
+   WDC           83.87               31            0.80              2.64        467.92               103.26         0.698          pass              0.536             74.4                           0.560                7.13              0.954                                 ok            True                  False
+  SOXL           82.35               34            2.24              1.92        121.39               166.13         0.760          pass              0.449             50.2                           0.522              -14.82             -1.355            downtrend_blocked_slope           False                  False
+   STX           89.19               37            0.18              1.09        849.77                87.74         0.642          pass              0.760             90.1                           0.650                4.42              0.575                                 ok           False                  False
+  AMAT           89.66               29            1.66              5.75        493.74                84.07         0.641          pass              0.560             37.2                           0.477               -9.39             -0.901            downtrend_blocked_slope           False                  False
+  MCHP           85.71               42            0.37              0.20         75.73                70.29         0.600          pass              0.527             38.1                           0.318              -10.82             -0.914 downtrend_blocked_slope_and_streak           False                  False
+   APP           67.57               37            1.78              3.86        307.12                90.16         0.599          pass              0.371             43.6                           0.591              -12.55             -0.999            downtrend_blocked_slope           False                  False
+  KLAC           80.00               30            1.24              1.62        185.17                69.68         0.586          pass              0.307             38.4                           0.392               -7.24             -0.787 downtrend_blocked_slope_and_streak           False                  False
+  AMZN           77.78               45            0.20              0.36        259.95                59.61         0.575          pass              0.507             83.1                           0.732               -5.42             -0.629 downtrend_blocked_slope_and_streak           False                  False
+  MPWR           84.21               38            0.37              3.42       1309.13                59.09         0.555          pass              0.491             45.7                           0.385               -6.84             -0.805            downtrend_blocked_slope           False                  False
+   MAR           94.12               34            0.35              0.89        356.22                36.23         0.541          pass              0.785             64.7                           0.442                0.61              0.224                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                                detail
-2026-08-21T11:55:10.146119-04:00 early_entry_1155      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-21T11:50:07.256034-04:00 early_entry_1150      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-21T11:50:07.256034-04:00      manage_1200                    exit                                                                                                                                                                                                                                              {"asset_type": "option", "contract_symbol": "ABNB261016C00180000", "fill_price": 14.125, "pnl": 4565.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 17.22, "ticker": "ABNB"}
-2026-08-21T11:15:05.200635-04:00 early_entry_1115      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-21T10:36:48.615754-04:00 early_entry_1035      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-21T10:18:45.233650-04:00 early_entry_1015      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-21T00:00:05.323227-04:00     data_refresh            data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                         {'saved': 93}
-2026-08-20T14:55:07.817083-04:00       entry_1500          timing_overlay                                                                                                                                                                                                                                                                                                                          {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-08-20", "training_samples": 5707, "window": 5}
-2026-08-20T14:55:07.817083-04:00       entry_1500 entry_candidate_skipped                                                                                                                                                                {"early_entry_score": 0.536, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 8.0, "option_spread_pct": 24.91, "option_volume": 3.0, "reason": "no_trade_low_option_liquidity", "ticker": "WDAY", "timing_score": 0.643}
-2026-08-20T14:55:07.817083-04:00       entry_1500                   entry {"allocated_cash": 26510.0, "asset_type": "option", "contract_symbol": "ABNB261016C00180000", "contracts": 22, "early_entry_score": 0.826, "entry_mode": "regular", "entry_option_price": 12.05, "execution_mode": "option", "matched_signals": 33, "option_liquidity_status": "ok", "option_open_interest": 783.0, "option_spread_pct": 5.81, "option_volume": 31.0, "success_rate": 93.94, "ticker": "ABNB", "timing_score": 0.625}
+                    timestamp_et             slot              event_type                                                                                                                                                                                                                                                                 detail
+2026-08-21T12:00:13.505037-04:00 early_entry_1200      early_entry_shadow                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-21T11:55:10.146119-04:00 early_entry_1155      early_entry_shadow                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-21T11:50:07.256034-04:00 early_entry_1150      early_entry_shadow                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-21T11:50:07.256034-04:00      manage_1200                    exit                                                                               {"asset_type": "option", "contract_symbol": "ABNB261016C00180000", "fill_price": 14.125, "pnl": 4565.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 17.22, "ticker": "ABNB"}
+2026-08-21T11:15:05.200635-04:00 early_entry_1115      early_entry_shadow                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-21T10:36:48.615754-04:00 early_entry_1035      early_entry_shadow                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-21T10:18:45.233650-04:00 early_entry_1015      early_entry_shadow                                                                                                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-08-21T00:00:05.323227-04:00     data_refresh            data_refresh                                                                                                                                                                                                                                                          {'saved': 93}
+2026-08-20T14:55:07.817083-04:00       entry_1500 entry_candidate_skipped {"early_entry_score": 0.536, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 8.0, "option_spread_pct": 24.91, "option_volume": 3.0, "reason": "no_trade_low_option_liquidity", "ticker": "WDAY", "timing_score": 0.643}
+2026-08-20T14:55:07.817083-04:00       entry_1500          timing_overlay                                                                                                                                                           {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-08-20", "training_samples": 5707, "window": 5}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260821115510)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260821120013)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260821115510)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260821120013)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260821115510)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260821120013)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260821115510)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260821120013)
 
 </details>
