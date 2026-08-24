@@ -1,21 +1,21 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-24 14:55:05 EDT`
+Latest checkpoint (ET): `2026-08-24 15:00:10 EDT`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$93,305.83`
-- Portfolio value: `$93,305.83`
+- Cash: `$90,190.80`
+- Portfolio value: `$93,120.80`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
-  LRCX entry_submitted    regular LRCX261016C00310000          1               30.35                   NaN             NaN                    NaN
+ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  LRCX   open    regular LRCX261016C00310000          1               31.15                30.725          bid_ask_mid                     30.725                    True          3072.5           -42.5              -1.364366                   0
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-08-24T15:00:10.175297-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "LRCX261016C00310000", "contracts": 1, "filled_price": 31.15, "ticker": "LRCX"}
 2026-08-24T14:48:44.540954-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "ef7cdf3e-4c82-4298-9375-661b666ec551", "contract_symbol": "LRCX261016C00310000", "contracts": 1, "entry_mode": "regular", "limit_price": "31.15", "ticker": "LRCX"}
 2026-08-24T12:00:43.006988-04:00 early_entry_1200    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-24T11:54:26.810132-04:00 early_entry_1150    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-08-24T10:25:07.085760-04:00 early_entry_1025    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-24T10:18:55.308217-04:00 early_entry_1015    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-24T10:12:40.122051-04:00 early_entry_1010    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-24T10:06:21.838821-04:00 early_entry_1005    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
