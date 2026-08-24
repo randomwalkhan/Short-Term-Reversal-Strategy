@@ -5412,3 +5412,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-21T11:31:42.265705-04:00,2026-08-21,early_entry_1130,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-21T11:54:33.867536-04:00,2026-08-21,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-21T15:02:34.500326-04:00,2026-08-21,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""TEAM""}"
+2026-08-24T10:00:04.652202-04:00,2026-08-24,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
