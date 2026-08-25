@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-25 14:20:06 EDT`
+Latest checkpoint (ET): `2026-08-25 14:25:02 EDT`
 Last processed slot: `manage_1430`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1430`
 ## Portfolio Snapshot
 
 - Cash: `$30,388.00`
-- Equity: `$58,130.50`
+- Equity: `$58,153.00`
 - Realized PnL: `$47,703.00`
-- Unrealized PnL: `$427.50`
+- Unrealized PnL: `$450.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  LRCX     option         option LRCX261016C00310000       2026-08-24                   1      9     27315.0                 27742.5        30.35          30.82      310.66        313.15          bid_ask_mid                      30.82                bid_ask_mid                    True           427.5                   1.57          87.5               32              1.06         63.04           61.69                   88.6                 214.0           30.0               0.05                      ok
+  LRCX     option         option LRCX261016C00310000       2026-08-24                   1      9     27315.0                 27765.0        30.35          30.85      310.66        313.19          bid_ask_mid                      30.85                bid_ask_mid                    True           450.0                   1.65          87.5               32              1.06         63.04           61.92                   88.6                 214.0           30.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-08-25)
@@ -47,19 +47,19 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  MNST           93.33               30            0.60              0.21         48.83               552.55         1.000            pass              0.678             29.8                           0.407                6.80              0.652                      ok            True                  False
-  WDAY           82.14               28            2.23              3.11        197.82                78.88         0.573            pass              0.318             27.7                           0.263                7.41              0.724                      ok            True                  False
-  FAST          100.00               12            1.33              0.48         51.08                22.00         0.570            pass              0.505             11.7                           0.223               -3.40             -0.237                      ok            True                  False
-  PAYX          100.00               19            0.93              0.82        125.66                34.31         0.562            pass              0.637             40.4                           0.409                2.91              0.320                      ok            True                  False
-   KHC           86.36               22            1.23              0.22         25.58                37.91         0.552            pass              0.390             28.4                           0.546                2.86              0.353                      ok            True                  False
-  SBUX           81.82               11            1.27              0.96        107.08                20.57         0.525            pass              0.211             34.4                           0.387                0.07             -0.120                      ok            True                  False
-   KDP           85.00               20            1.55              0.35         32.36                31.66         0.509            pass              0.321             23.5                           0.347                9.68              0.881                      ok            True                  False
-  COST           95.83               24            0.85              5.77        968.93                19.15         0.500 below_threshold              0.628             28.3                           0.389                1.99              0.082                      ok            True                  False
-  INSM           86.96               46            0.36              0.31        123.85               110.65         0.768            pass              0.642             59.9                           0.300               -6.82             -0.533 downtrend_blocked_slope           False                  False
-  TEAM           79.31               29            2.65              3.18        169.97               115.46         0.727            pass              0.226              8.8                           0.112                8.25              1.037                      ok           False                  False
-  AMAT           90.00               30            1.36              4.61        482.21                81.86         0.640            pass              0.526             20.8                           0.330               -9.04             -1.206 downtrend_blocked_slope           False                  False
-  ABNB           94.44               36            0.38              0.50        190.00                62.43         0.639            pass              0.741             39.4                           0.299                2.44              0.385                      ok           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  MNST           90.91               22            0.81              0.28         48.80               552.55         1.000          pass              0.489              6.0                           0.259                6.58              0.642                      ok            True                  False
+  DXCM           87.88               33            0.89              0.57         90.82                50.36         0.575          pass              0.518             32.4                           0.391                0.80              0.093                      ok            True                  False
+  FAST          100.00               12            1.28              0.46         51.08                22.00         0.573          pass              0.515             14.9                           0.250               -3.35             -0.234                      ok            True                  False
+  PAYX          100.00               19            0.95              0.84        125.65                34.31         0.562          pass              0.634             39.3                           0.370                2.90              0.319                      ok            True                  False
+  WDAY           82.14               28            2.46              3.43        197.68                78.88         0.560          pass              0.294             20.3                           0.212                7.16              0.713                      ok            True                  False
+   KHC           85.71               21            1.34              0.24         25.57                37.91         0.551          pass              0.346             21.6                           0.363                2.74              0.347                      ok            True                  False
+   KDP           84.21               19            1.63              0.37         32.35                31.66         0.510          pass              0.282             19.7                           0.274                9.60              0.878                      ok            True                  False
+  INSM           86.96               46            0.44              0.38        123.82               110.65         0.765          pass              0.616             51.3                           0.251               -6.89             -0.536 downtrend_blocked_slope           False                  False
+  TEAM           76.00               25            3.10              3.72        169.74               115.46         0.719          pass              0.182              3.3                           0.178                7.75              1.016                      ok           False                  False
+  AMAT           90.00               30            1.38              4.67        482.19                81.86         0.639          pass              0.523             19.7                           0.370               -9.05             -1.207 downtrend_blocked_slope           False                  False
+  ABNB           94.44               36            0.39              0.52        189.99                62.43         0.638          pass              0.734             37.3                           0.282                2.43              0.384                      ok           False                  False
+  MCHP           87.88               33            0.76              0.40         74.04                69.73         0.637          pass              0.570             47.7                           0.464               -8.56             -0.805 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260825142006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260825142502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260825142006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260825142502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260825142006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260825142502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260825142006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260825142502)
 
 </details>
