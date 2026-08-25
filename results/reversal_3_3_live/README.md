@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-25 15:25:04 EDT`
+Latest checkpoint (ET): `2026-08-25 15:30:06 EDT`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$1,114.00`
-- Equity: `$57,635.00`
+- Equity: `$57,778.50`
 - Realized PnL: `$47,703.00`
-- Unrealized PnL: `$-68.00`
+- Unrealized PnL: `$75.50`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  LRCX     option         option LRCX261016C00310000       2026-08-24                   1      9     27315.0                 28395.0        30.35          31.55      310.66        313.04          bid_ask_mid                      31.55                bid_ask_mid                    True          1080.0                   3.95         87.50               32              1.06         63.04           63.28                  88.60                 214.0           30.0               0.05                      ok
-   KHC     option         option  KHC261016C00025000       2026-08-25                   0    287     29274.0                 28126.0         1.02           0.98       25.19         25.24          bid_ask_mid                       0.98                bid_ask_mid                    True         -1148.0                  -3.92         86.67               15              1.85         24.46           23.00                  37.91                4031.0          107.0               0.04                      ok
+  LRCX     option         option LRCX261016C00310000       2026-08-24                   1      9     27315.0                 28395.0        30.35          31.55      310.66        313.03          bid_ask_mid                      31.55                bid_ask_mid                    True          1080.0                   3.95         87.50               32              1.06         63.04           63.38                  88.60                 214.0           30.0               0.05                      ok
+   KHC     option         option  KHC261016C00025000       2026-08-25                   0    287     29274.0                 28269.5         1.02           0.98       25.19         25.24          bid_ask_mid                       0.98                bid_ask_mid                    True         -1004.5                  -3.43         86.67               15              1.85         24.46           22.85                  37.91                4031.0          107.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-08-25)
@@ -49,18 +49,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MNST           93.33               30            0.57              0.20         48.84               552.55         1.000          pass              0.744             51.7                           0.611                6.83              0.653                                 ok            True                  False
-  WDAY           82.14               28            2.41              3.35        197.71                78.88         0.563          pass              0.300             22.1                           0.290                7.22              0.716                                 ok            True                  False
-   MAR           96.55               29            0.67              1.68        359.48                33.78         0.547          pass              0.777             65.2                           0.326                2.59              0.228                                 ok            True                  False
-   KHC           83.33               18            1.71              0.31         25.54                37.91         0.543          pass              0.227             10.2                           0.350                2.35              0.330                                 ok            True                  False
-  COST           94.74               19            0.99              6.73        968.52                19.15         0.521          pass              0.555             16.5                           0.195                1.85              0.076                                 ok            True                  False
-   KDP           83.33               12            2.14              0.49         32.30                31.66         0.521          pass              0.167              4.1                           0.214                9.03              0.854                                 ok            True                  False
-  INSM           87.23               47            0.15              0.13        123.92               110.65         0.773          pass              0.719             82.9                           0.385               -6.62             -0.523            downtrend_blocked_slope           False                  False
-  TEAM           73.91               23            3.37              4.05        169.60               115.46         0.712          pass              0.164              2.0                           0.195                7.44              1.003                                 ok           False                  False
-  AMAT           90.00               30            1.17              3.98        482.49                81.86         0.650          pass              0.560             31.6                           0.368               -8.86             -1.197            downtrend_blocked_slope           False                  False
-  MCHP           87.88               33            1.06              0.55         73.97                69.73         0.619          pass              0.506             26.9                           0.213               -8.84             -0.819            downtrend_blocked_slope           False                  False
-  AMZN           70.59               34            0.84              1.53        261.41                59.56         0.606          pass              0.227              2.2                           0.130               -4.55             -0.353 downtrend_blocked_slope_and_streak           False                  False
-  DXCM           78.95               19            1.79              1.14         90.57                50.36         0.584          pass              0.203             28.2                           0.371               -0.11              0.052                                 ok           False                  False
+  WDAY           82.14               28            2.32              3.23        197.76                78.88         0.568          pass              0.309             24.9                           0.300                7.32              0.720                                 ok            True                  False
+   KHC           83.33               18            1.68              0.30         25.54                37.91         0.545          pass              0.233             12.2                           0.412                2.39              0.332                                 ok            True                  False
+   MAR           96.55               29            0.72              1.82        359.42                33.78         0.544          pass              0.768             62.3                           0.319                2.53              0.225                                 ok            True                  False
+   KDP           84.62               13            2.08              0.47         32.31                31.66         0.520          pass              0.216              6.9                           0.281                9.10              0.857                                 ok            True                  False
+  COST           94.74               19            1.04              7.08        968.37                19.15         0.518          pass              0.541             12.2                           0.156                1.80              0.074                                 ok            True                  False
+  MNST           93.55               31            0.47              0.16         48.85               552.55         1.000          pass              0.782             60.3                           0.654                6.94              0.658                                 ok           False                  False
+  INSM           87.76               49            0.07              0.06        123.95               110.65         0.768          pass              0.761             92.3                           0.412               -6.54             -0.519            downtrend_blocked_slope           False                  False
+  TEAM           73.91               23            3.39              4.07        169.59               115.46         0.710          pass              0.170              4.1                           0.203                7.42              1.002                                 ok           False                  False
+  AMAT           90.62               32            1.04              3.51        482.69                81.86         0.648          pass              0.614             39.7                           0.454               -8.74             -1.191            downtrend_blocked_slope           False                  False
+  MCHP           87.88               33            1.13              0.59         73.96                69.73         0.615          pass              0.492             22.2                           0.183               -8.90             -0.822            downtrend_blocked_slope           False                  False
+  ABNB           95.45               44            0.04              0.05        190.19                62.43         0.612          pass              0.943             94.1                           0.712                2.79              0.400                                 ok           False                  False
+  AMZN           71.43               35            0.70              1.28        261.52                59.56         0.609          pass              0.282             18.3                           0.235               -4.42             -0.347 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260825152504)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260825153006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260825152504)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260825153006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260825152504)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260825153006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260825152504)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260825153006)
 
 </details>
