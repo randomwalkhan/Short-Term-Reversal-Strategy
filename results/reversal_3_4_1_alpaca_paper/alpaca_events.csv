@@ -5435,3 +5435,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-24T14:48:44.540954-04:00,2026-08-24,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""ef7cdf3e-4c82-4298-9375-661b666ec551"", ""contract_symbol"": ""LRCX261016C00310000"", ""contracts"": 1, ""entry_mode"": ""regular"", ""limit_price"": ""31.15"", ""ticker"": ""LRCX""}"
 2026-08-24T15:00:10.175297-04:00,2026-08-24,entry_1500,entry_filled,"{""contract_symbol"": ""LRCX261016C00310000"", ""contracts"": 1, ""filled_price"": 31.15, ""ticker"": ""LRCX""}"
 2026-08-25T10:03:57.337923-04:00,2026-08-25,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-25T10:10:36.523680-04:00,2026-08-25,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
