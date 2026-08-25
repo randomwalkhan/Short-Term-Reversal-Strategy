@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-25 10:30:01 EDT`
+Latest checkpoint (ET): `2026-08-25 10:35:02 EDT`
 Last processed slot: `manage_1030`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1030`
 ## Portfolio Snapshot
 
 - Cash: `$30,388.00`
-- Equity: `$57,410.50`
+- Equity: `$57,635.50`
 - Realized PnL: `$47,703.00`
-- Unrealized PnL: `$-292.50`
+- Unrealized PnL: `$-67.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  LRCX     option         option LRCX261016C00310000       2026-08-24                   1      9     27315.0                 27022.5        30.35          30.02      310.66         309.3          bid_ask_mid                      30.02                bid_ask_mid                    True          -292.5                  -1.07          87.5               32              1.06         63.04           64.47                   88.6                 214.0           30.0               0.05                      ok
+  LRCX     option         option LRCX261016C00310000       2026-08-24                   1      9     27315.0                 27247.5        30.35          30.28      310.66        310.33          bid_ask_mid                      30.28                bid_ask_mid                    True           -67.5                  -0.25          87.5               32              1.06         63.04           63.78                   88.6                 214.0           30.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-08-25)
@@ -48,24 +48,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  TEAM           81.82               33            1.58              1.89        170.52               115.46         0.761          pass              0.415             45.8                           0.312                9.44              1.087                  ok            True                  False
-   WDC           83.87               31            0.74              2.27        434.41               101.30         0.704          pass              0.421             35.7                           0.257               -1.32             -0.657                  ok            True                  False
-  GEHC           96.77               31            0.80              0.41         74.01                49.18         0.599          pass              0.728             42.7                           0.665                1.17              0.222                  ok            True                  False
-   TRI           84.62               13            2.60              1.98        107.77                67.11         0.594          pass              0.268             22.0                           0.243                1.57              0.415                  ok            True                  False
-  DXCM           88.57               35            0.65              0.41         90.88                50.36         0.577          pass              0.605             50.8                           0.396                1.05              0.104                  ok            True                  False
-  FAST          100.00               12            1.27              0.45         51.09                22.00         0.576          pass              0.471              0.0                           0.273               -3.34             -0.234                  ok            True                  False
-  WDAY           82.14               28            2.20              3.07        197.83                78.88         0.575          pass              0.320             28.6                           0.265                7.44              0.725                  ok            True                  False
-   KHC           86.96               23            1.03              0.19         25.59                37.91         0.558          pass              0.447             39.8                           0.629                3.06              0.362                  ok            True                  False
-  PAYX          100.00               27            0.61              0.54        125.78                34.31         0.533          pass              0.749             60.9                           0.621                3.25              0.335                  ok            True                  False
-   KDP           84.00               25            1.05              0.24         32.41                31.66         0.513          pass              0.321             20.9                           0.306               10.25              0.905                  ok            True                  False
-  SBUX           90.91               22            0.55              0.41        107.31                20.57         0.511          pass              0.637             71.8                           0.696                0.80             -0.087                  ok            True                  False
-  MDLZ           90.91               22            1.25              0.57         64.46                26.88         0.511          pass              0.520             32.5                           0.556                3.42              0.380                  ok            True                  False
+  TEAM           82.35               34            1.52              1.83        170.55               115.46         0.759          pass              0.441             47.6                           0.337                9.50              1.089                  ok            True                  False
+  GEHC           96.67               30            0.85              0.44         74.00                49.18         0.602          pass              0.710             38.8                           0.628                1.11              0.220                  ok            True                  False
+   TRI           84.62               13            2.56              1.95        107.78                67.11         0.596          pass              0.272             23.1                           0.228                1.61              0.417                  ok            True                  False
+  DXCM           88.57               35            0.65              0.41         90.88                50.36         0.577          pass              0.605             50.8                           0.420                1.05              0.104                  ok            True                  False
+  WDAY           82.14               28            2.31              3.22        197.77                78.88         0.568          pass              0.309             25.1                           0.243                7.32              0.720                  ok            True                  False
+  FAST          100.00               16            1.11              0.40         51.11                22.00         0.558          pass              0.555             19.7                           0.307               -3.19             -0.227                  ok            True                  False
+   KHC           86.36               22            1.17              0.21         25.58                37.91         0.556          pass              0.401             31.7                           0.449                2.92              0.355                  ok            True                  False
+  MDLZ           94.74               19            1.30              0.59         64.45                26.88         0.532          pass              0.596             30.0                           0.570                3.37              0.378                  ok            True                  False
+  SBUX           87.50               16            0.87              0.65        107.21                20.57         0.525          pass              0.459             55.5                           0.612                0.48             -0.101                  ok            True                  False
+   KDP           82.61               23            1.29              0.29         32.38                31.66         0.509          pass              0.214              2.3                           0.157                9.97              0.893                  ok            True                  False
+  INTU           82.61               23            2.38              6.16        367.28                48.36         0.505          pass              0.261             18.1                           0.266                7.34              0.904                  ok            True                  False
+  MNST           92.31               39            0.08              0.03         48.91               552.55         1.000          pass              0.883             87.1                           0.518                7.36              0.675                  ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                detail
+2026-08-25T10:35:02.544392-04:00 early_entry_1035 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-25T10:30:01.796364-04:00 early_entry_1030 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-25T10:25:02.779045-04:00 early_entry_1025 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-25T10:20:01.784831-04:00 early_entry_1020 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-08-25T10:00:02.656689-04:00 early_entry_1000 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-25T00:00:04.661538-04:00     data_refresh       data_refresh                                                         {'saved': 93}
 2026-08-24T15:10:01.417381-04:00       entry_1500       slot_skipped                                       {"reason": "already_processed"}
-2026-08-24T15:05:03.439109-04:00       entry_1500       slot_skipped                                       {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260825103001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260825103502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260825103001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260825103502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260825103001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260825103502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260825103001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260825103502)
 
 </details>
