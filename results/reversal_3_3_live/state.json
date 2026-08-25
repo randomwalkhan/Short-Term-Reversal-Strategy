@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 30388.000356674194,
+  "cash": 1114.0003566741943,
   "positions": [
     {
       "position_id": "LRCX_20260824T145001",
@@ -31,6 +31,36 @@
       "option_open_interest": 214.0,
       "option_volume": 30.0,
       "option_spread_pct": 0.052718286655683615,
+      "option_liquidity_status": "ok"
+    },
+    {
+      "position_id": "KHC_20260825T145001",
+      "ticker": "KHC",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "KHC261016C00025000",
+      "expiry": "2026-10-16",
+      "strike": 25.0,
+      "entry_timestamp": "2026-08-25T14:50:01.861538-04:00",
+      "entry_trade_date": "2026-08-25",
+      "entry_slot": "entry_1500",
+      "entry_spot": 25.19499969482422,
+      "entry_option_price": 1.02,
+      "entry_bid": 1.0,
+      "entry_ask": 1.04,
+      "entry_iv_pct": 24.463645996093753,
+      "contracts": 287,
+      "allocated_cash": 29274.0,
+      "success_rate": 86.67,
+      "matched_signals": 15,
+      "current_drop_pct": 1.85,
+      "rolling_sigma_20d_pct": 37.91,
+      "planned_tp_day1": 1.1729999999999998,
+      "planned_tp_day2": 1.1729999999999998,
+      "planned_stop": 0.918,
+      "option_open_interest": 4031.0,
+      "option_volume": 107.0,
+      "option_spread_pct": 0.03921568627450984,
       "option_liquidity_status": "ok"
     }
   ],
@@ -4916,7 +4946,9 @@
     "2026-08-24": [
       "entry_1500"
     ],
-    "2026-08-25": []
+    "2026-08-25": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
