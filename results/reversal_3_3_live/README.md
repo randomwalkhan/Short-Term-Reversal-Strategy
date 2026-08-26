@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-26 14:45:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-08-26 14:50:02 EDT`
+Last processed slot: `entry_1500`
 
 ## Active Configuration
 
@@ -27,17 +27,18 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$27,460.60`
-- Equity: `$55,653.10`
+- Cash: `$160.60`
+- Equity: `$55,495.60`
 - Realized PnL: `$44,775.60`
-- Unrealized PnL: `$877.50`
-- Open positions: `1`
+- Unrealized PnL: `$720.00`
+- Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  LRCX     option         option LRCX261016C00310000       2026-08-24                   2      9     27315.0                 28192.5        30.35          31.32      310.66        314.39          bid_ask_mid                      31.32                bid_ask_mid                    True           877.5                   3.21          87.5               32              1.06         63.04           62.02                   88.6                 214.0           30.0               0.05                      ok
+  LRCX     option         option LRCX261016C00310000       2026-08-24                   2      9     27315.0                 28035.0        30.35          31.15      310.66        314.20          bid_ask_mid                      31.15                bid_ask_mid                    True           720.0                   2.64         87.50               32              1.06         63.04           62.13                  88.60                 214.0           30.0               0.05                      ok
+  MNST     option         option MNST261016C00048000       2026-08-26                   0    140     27300.0                 27300.0         1.95           1.95       48.03         48.03          bid_ask_mid                       1.95                bid_ask_mid                    True             0.0                   0.00         85.71               14              1.44         27.42           27.42                 552.32                 249.0           74.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-08-26)
@@ -51,24 +52,26 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MNST           84.62               13            1.52              0.52         48.51               552.32         1.000          pass              0.243              0.0                           0.248                4.37              0.561                                 ok            True                  False
-  ABNB           96.67               30            0.85              1.13        190.01                61.60         0.657          pass              0.712             37.7                           0.421                4.88              0.498                                 ok            True                  False
-  SHOP           91.43               35            1.20              1.30        153.32                72.08         0.620          pass              0.666             44.1                           0.511                1.08             -0.130                                 ok            True                  False
-   TRI           89.66               29            1.30              0.95        103.97                66.28         0.612          pass              0.625             59.9                           0.560                1.06              0.336                                 ok            True                  False
-  REGN          100.00               10            1.58              9.24        829.60                29.20         0.600          pass              0.531             23.6                           0.244                2.92              0.427                                 ok            True                  False
-  WDAY           80.65               31            1.86              2.53        193.34                76.21         0.599          pass              0.371             51.3                           0.556                8.85              0.287                                 ok            True                  False
-  MELI           93.75               16            2.05             28.71       1984.69                47.50         0.562          pass              0.510             15.6                           0.357                6.98              0.979                                 ok            True                  False
-  BKNG           95.83               24            1.54              2.30        212.79                35.36         0.513          pass              0.672             42.5                           0.615               -0.83              0.036                                 ok            True                  False
-  CPRT           81.48               27            1.37              0.32         33.19                43.23         0.507          pass              0.283             26.6                           0.480               13.40              1.362                                 ok            True                  False
-  VRTX           97.22               36            0.58              2.25        551.89                33.40         0.505          pass              0.759             44.9                           0.433                4.55              0.798                                 ok            True                  False
-  TMUS           93.94               33            0.84              1.06        181.15                29.92         0.500          pass              0.642             22.4                           0.345                1.67              0.062                                 ok            True                  False
-  AMAT           88.24               34            0.45              1.53        479.39                76.53         0.661          pass              0.660             71.3                           0.592              -12.73             -1.312 downtrend_blocked_slope_and_streak           False                  False
+  MNST           85.71               14            1.44              0.49         48.52               552.32         1.000          pass              0.298              6.3                           0.262                4.45              0.565                                 ok            True                  False
+  ABNB           93.55               31            0.82              1.10        190.03                61.60         0.649          pass              0.685             39.7                           0.438                4.91              0.499                                 ok            True                  False
+  SHOP           91.18               34            1.33              1.43        153.27                72.08         0.618          pass              0.634             38.0                           0.439                0.94             -0.136                                 ok            True                  False
+   TRI           89.66               29            1.30              0.95        103.97                66.28         0.612          pass              0.625             59.8                           0.572                1.06              0.336                                 ok            True                  False
+  REGN          100.00               10            1.57              9.16        829.64                29.20         0.601          pass              0.533             24.3                           0.245                2.94              0.428                                 ok            True                  False
+  WDAY           80.00               30            1.94              2.64        193.29                76.21         0.600          pass              0.341             49.2                           0.511                8.76              0.283                                 ok            True                  False
+  MELI           93.75               16            1.99             27.78       1985.09                47.50         0.566          pass              0.518             18.3                           0.377                7.06              0.982                                 ok            True                  False
+  BKNG           95.83               24            1.56              2.33        212.78                35.36         0.512          pass              0.670             41.8                           0.607               -0.85              0.035                                 ok            True                  False
+  VRTX           97.22               36            0.57              2.20        551.91                33.40         0.506          pass              0.762             46.0                           0.449                4.56              0.799                                 ok            True                  False
+  AMAT           88.57               35            0.32              1.09        479.57                76.53         0.663          pass              0.700             79.6                           0.670              -12.62             -1.306 downtrend_blocked_slope_and_streak           False                  False
+  LRCX           86.84               38            0.15              0.32        314.52                81.56         0.656          pass              0.714             93.0                           0.754               -3.65             -0.822            downtrend_blocked_slope           False                  False
+   APP           71.11               45            0.41              0.88        310.16                88.60         0.646          pass              0.481             72.2                           0.365                1.82             -0.125                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                detail
+2026-08-26T14:50:02.229559-04:00       entry_1500              entry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {"allocated_cash": 27300.0, "asset_type": "option", "contract_symbol": "MNST261016C00048000", "contracts": 140, "early_entry_score": 0.298, "entry_mode": "regular", "entry_option_price": 1.95, "execution_mode": "option", "matched_signals": 14, "option_liquidity_status": "ok", "option_open_interest": 249.0, "option_spread_pct": 5.13, "option_volume": 74.0, "success_rate": 85.71, "ticker": "MNST", "timing_score": 1.0}
+2026-08-26T14:50:02.229559-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-08-26", "training_samples": 5704, "window": 5}
 2026-08-26T12:00:04.193922-04:00 early_entry_1200 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-26T11:55:03.284797-04:00 early_entry_1155 early_entry_shadow {"contract_symbol": "PYPL261002C00062000", "current_drop_pct": 0.63, "early_entry_score": 0.776, "early_reclaim_pct": 60.9, "entry_ask": 2.68, "entry_bid": 2.25, "entry_mode": "early", "entry_option_price": 2.465, "hypothetical_budget": 13730.3, "hypothetical_contracts": 55, "matched_signals": 35, "option_liquidity_status": "low_volume,wide_spread", "option_open_interest": 610.0, "option_spread_pct": 17.44, "option_volume": 4.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.702, "shadow_only": true, "success_rate": 94.29, "ticker": "PYPL", "timing_score": 0.457, "top_candidates": [{"current_drop_pct": 0.63, "early_entry_score": 0.776, "early_reclaim_pct": 60.9, "matched_signals": 35, "recovery_stability_score": 0.702, "success_rate": 94.29, "ticker": "PYPL", "timing_score": 0.457, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
 2026-08-26T11:50:01.099073-04:00 early_entry_1150 early_entry_shadow                                   {"contract_symbol": "PYPL261016C00065000", "current_drop_pct": 0.57, "early_entry_score": 0.788, "early_reclaim_pct": 64.9, "entry_ask": 1.6, "entry_bid": 1.5, "entry_mode": "early", "entry_option_price": 1.55, "hypothetical_budget": 13730.3, "hypothetical_contracts": 88, "matched_signals": 35, "option_liquidity_status": "ok", "option_open_interest": 6048.0, "option_spread_pct": 6.45, "option_volume": 584.0, "reason": "shadow_mode_no_order", "recovery_stability_score": 0.734, "shadow_only": true, "success_rate": 94.29, "ticker": "PYPL", "timing_score": 0.46, "top_candidates": [{"current_drop_pct": 0.57, "early_entry_score": 0.788, "early_reclaim_pct": 64.9, "matched_signals": 35, "recovery_stability_score": 0.734, "success_rate": 94.29, "ticker": "PYPL", "timing_score": 0.46, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": true}
@@ -77,8 +80,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-08-26T11:35:01.234662-04:00 early_entry_1135 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-26T11:30:01.097446-04:00 early_entry_1130 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-08-26T11:25:05.264548-04:00 early_entry_1125 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-26T11:20:05.287776-04:00 early_entry_1120 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-08-26T11:15:01.102404-04:00 early_entry_1115 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -88,27 +89,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260826144501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260826145002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260826144501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260826145002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260826144501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260826145002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260826144501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260826145002)
 
 </details>
