@@ -5476,3 +5476,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-26T12:00:13.956904-04:00,2026-08-26,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-26T14:51:17.801016-04:00,2026-08-26,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""dae92121-b100-45d7-98fb-ee44c415f250"", ""contract_symbol"": ""MNST261016C00048000"", ""contracts"": 25, ""entry_mode"": ""regular"", ""limit_price"": ""2.00"", ""ticker"": ""MNST""}"
 2026-08-26T14:58:08.565699-04:00,2026-08-26,entry_1500,entry_filled,"{""contract_symbol"": ""MNST261016C00048000"", ""contracts"": 25, ""filled_price"": 1.95, ""ticker"": ""MNST""}"
+2026-08-26T15:48:56.877019-04:00,2026-08-26,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""ed7b74bf-eeb9-48fb-a817-6eab1e9c7287"", ""contract_symbol"": ""LRCX261016C00310000"", ""limit_price"": ""30.15"", ""reason"": ""time_exit_at_4pm_scan"", ""ticker"": ""LRCX""}"
