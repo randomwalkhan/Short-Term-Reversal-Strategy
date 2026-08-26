@@ -5300,3 +5300,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-26T15:00:04.399840-04:00,2026-08-26,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-08-26T15:05:01.392780-04:00,2026-08-26,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-08-26T15:10:04.393572-04:00,2026-08-26,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-08-26T15:50:01.441295-04:00,2026-08-26,manage_1600,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""LRCX261016C00310000"", ""fill_price"": 31.175, ""pnl"": 742.5, ""reason"": ""time_exit_at_4pm_scan"", ""return_pct"": 2.72, ""ticker"": ""LRCX""}"
