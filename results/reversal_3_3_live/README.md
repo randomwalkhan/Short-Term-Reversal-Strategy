@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-26 09:35:01 EDT`
+Latest checkpoint (ET): `2026-08-26 09:40:05 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -37,8 +37,8 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  LRCX     option         option LRCX261016C00310000       2026-08-24                   2      9     27315.0                 29250.0        30.35          32.50      310.66        310.83     last_price_stale                        NaN                unavailable                   False          1935.0                   7.08         87.50               32              1.06         63.04            0.00                  88.60                 214.0           30.0               0.05                      ok
-   KHC     option         option  KHC261016C00025000       2026-08-25                   1    287     29274.0                 28126.0         1.02           0.98       25.19         24.87     last_price_stale                        NaN                unavailable                   False         -1148.0                  -3.92         86.67               15              1.85         24.46            0.78                  37.91                4031.0          107.0               0.04                      ok
+  LRCX     option         option LRCX261016C00310000       2026-08-24                   2      9     27315.0                 29250.0        30.35          32.50      310.66        314.84     last_price_stale                        NaN                unavailable                   False          1935.0                   7.08         87.50               32              1.06         63.04            0.00                  88.60                 214.0           30.0               0.05                      ok
+   KHC     option         option  KHC261016C00025000       2026-08-25                   1    287     29274.0                 28126.0         1.02           0.98       25.19         24.86     last_price_stale                        NaN                unavailable                   False         -1148.0                  -3.92         86.67               15              1.85         24.46            0.39                  37.91                4031.0          107.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-08-26)
@@ -48,19 +48,19 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  MNST           93.10               29            0.53              0.18         48.65               552.32         1.000          pass              0.665             29.7                           0.276                5.42              0.606                      ok            True                  False
-  SHOP           91.43               35            0.94              1.02        153.44                72.08         0.634          pass              0.703             56.2                           0.365                1.34             -0.118                      ok            True                  False
-  MRVL           80.00               35            1.43              2.40        239.35                91.37         0.619          pass              0.240              3.9                           0.288                9.15              0.930                      ok            True                  False
-  WDAY           80.00               35            1.31              1.78        193.66                76.21         0.606          pass              0.425             65.8                           0.571                9.46              0.313                      ok            True                  False
-  DXCM           87.88               33            0.77              0.48         88.95                51.46         0.570          pass              0.595             58.2                           0.489               -2.57             -0.094                      ok            True                  False
-   MAR           93.94               33            0.51              1.27        357.23                33.77         0.552          pass              0.628             15.8                           0.292                0.59              0.123                      ok            True                  False
-   KHC           87.50               16            1.78              0.31         25.19                34.81         0.534          pass              0.467             57.9                           0.600                1.39              0.158                      ok            True                  False
-  REGN          100.00               32            0.59              3.43        832.09                29.20         0.526          pass              0.785             62.0                           0.492                3.96              0.473                      ok            True                  False
-  ALNY           88.10               42            0.14              0.23        239.98               130.65         0.844          pass              0.772             90.5                           0.466                7.05              0.692                      ok           False                  False
-  SOXL           80.56               36            0.57              0.46        115.66               150.52         0.802          pass              0.508             79.8                           0.722              -18.96             -2.975 downtrend_blocked_slope           False                  False
-  DRAM           75.68               37            0.18              0.07         56.15                90.57         0.712          pass              0.515             87.8                           0.803                2.34             -0.131                      ok           False                  False
-  INSM           89.13               46            0.44              0.39        123.72               110.58         0.683          pass              0.780             89.4                           0.405               -6.76             -0.444 downtrend_blocked_slope           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  MNST           90.48               21            0.82              0.28         48.61               552.32         1.000          pass              0.453              0.0                           0.223                5.11              0.593                                 ok            True                  False
+  ALNY           86.49               37            0.85              1.43        239.47               130.65         0.836          pass              0.562             41.9                           0.256                6.29              0.660                                 ok            True                  False
+  SHOP           90.62               32            1.49              1.61        153.19                72.08         0.620          pass              0.584             30.6                           0.258                0.78             -0.143                                 ok            True                  False
+  DXCM           86.21               29            1.13              0.71         88.86                51.46         0.572          pass              0.466             38.8                           0.276               -2.92             -0.110                                 ok            True                  False
+  MELI           97.06               34            0.74             10.39       1992.55                47.50         0.548          pass              0.635              6.6                           0.210                8.42              1.040                                 ok            True                  False
+   KHC           86.67               15            1.90              0.34         25.18                34.81         0.532          pass              0.430             55.1                           0.677                1.26              0.153                                 ok            True                  False
+  META           80.00               35            0.55              2.20        569.11                48.37         0.523          pass              0.385             55.5                           0.383               -2.06             -0.455                                 ok            True                  False
+  BKNG           97.37               38            0.51              0.77        213.45                35.36         0.506          pass              0.747             36.6                           0.321                0.20              0.083                                 ok            True                  False
+  INSM           87.50               40            0.71              0.61        123.63               110.58         0.699          pass              0.719             83.2                           0.375               -7.00             -0.456            downtrend_blocked_slope           False                  False
+  MRVL           81.08               37            0.47              0.80        240.04                91.37         0.663          pass              0.480             68.2                           0.648               10.21              0.973                                 ok           False                  False
+   APP           71.11               45            0.24              0.53        310.31                88.60         0.655          pass              0.515             83.2                           0.631                1.98             -0.117                                 ok           False                  False
+  AMAT           87.88               33            0.79              2.67        478.90                76.53         0.648          pass              0.578             49.9                           0.457              -13.03             -1.327 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260826093501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260826094005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260826093501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260826094005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260826093501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260826094005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260826093501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260826094005)
 
 </details>
