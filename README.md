@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-08-26 12:20:01 EDT`
-- Equity: `$54,730.60` | Realized: `$44,775.60` | Unrealized: `$-45.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-08-26 12:25:01 EDT`
+- Equity: `$54,663.10` | Realized: `$44,775.60` | Unrealized: `$-112.50` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1230`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  LRCX     option         option LRCX261016C00310000      9     27315.0                 27270.0           30.3           -45.0                  -0.16                   2
+  LRCX     option         option LRCX261016C00310000      9     27315.0                 27202.5          30.22          -112.5                  -0.41                   2
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260826122001)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260826122501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260826122001)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260826122501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260826122001)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260826122501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260826122001)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260826122501)
 
 </details>
 
