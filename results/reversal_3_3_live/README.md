@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-26 12:15:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-08-26 12:20:01 EDT`
+Last processed slot: `manage_1230`
 
 ## Active Configuration
 
@@ -37,7 +37,7 @@ Last processed slot: `manual`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  LRCX     option         option LRCX261016C00310000       2026-08-24                   2      9     27315.0                 27270.0        30.35           30.3      310.66        311.14          bid_ask_mid                       30.3                bid_ask_mid                    True           -45.0                  -0.16          87.5               32              1.06         63.04           63.82                   88.6                 214.0           30.0               0.05                      ok
+  LRCX     option         option LRCX261016C00310000       2026-08-24                   2      9     27315.0                 27270.0        30.35           30.3      310.66        311.22          bid_ask_mid                       30.3                bid_ask_mid                    True           -45.0                  -0.16          87.5               32              1.06         63.04           63.65                   88.6                 214.0           30.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-08-26)
@@ -51,18 +51,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  MNST           89.47               19            1.00              0.34         48.58               552.32         1.000          pass              0.443             10.0                           0.106                4.93              0.585                      ok            True                  False
-  ABNB           96.55               29            0.94              1.25        189.96                61.60         0.660          pass              0.631             12.9                           0.332                4.79              0.494                      ok            True                  False
-  SHOP           90.00               30            1.71              1.84        153.09                72.08         0.618          pass              0.523             20.4                           0.223                0.56             -0.153                      ok            True                  False
-   TRI           88.46               26            1.69              1.24        103.85                66.28         0.605          pass              0.536             47.8                           0.370                0.66              0.318                      ok            True                  False
-  WDAY           82.14               28            2.34              3.18        193.06                76.21         0.592          pass              0.353             38.7                           0.372                8.32              0.265                      ok            True                  False
-  MELI           93.75               16            1.97             27.60       1985.17                47.50         0.570          pass              0.474              3.6                           0.121                7.07              0.983                      ok            True                  False
-  REGN          100.00               20            1.22              7.10        830.52                29.20         0.558          pass              0.646             41.3                           0.689                3.31              0.444                      ok            True                  False
-  BKNG           94.12               17            2.18              3.27        212.38                35.36         0.521          pass              0.498              7.4                           0.192               -1.48              0.006                      ok            True                  False
-  CPRT           81.48               27            1.47              0.34         33.18                43.23         0.504          pass              0.221              5.8                           0.154               13.28              1.358                      ok            True                  False
-  SOXL           80.00               35            1.02              0.83        115.32               150.52         0.786          pass              0.433             62.4                           0.341              -19.46             -3.004 downtrend_blocked_slope           False                  False
-  INSM           89.13               46            0.35              0.30        123.76               110.58         0.689          pass              0.788             91.7                           0.752               -6.67             -0.440 downtrend_blocked_slope           False                  False
-  MRVL           81.08               37            0.30              0.51        240.16                91.37         0.671          pass              0.515             79.7                           0.387               10.40              0.981                      ok           False                  False
+  MNST           87.50               16            1.25              0.43         48.55               552.32         1.000          pass              0.340              0.0                           0.153                4.65              0.573                      ok            True                  False
+  ABNB           96.30               27            1.09              1.46        189.88                61.60         0.663          pass              0.580              0.0                           0.293                4.62              0.487                      ok            True                  False
+  SHOP           90.00               30            1.68              1.81        153.11                72.08         0.620          pass              0.528             22.0                           0.269                0.59             -0.151                      ok            True                  False
+   TRI           88.46               26            1.78              1.30        103.82                66.28         0.600          pass              0.527             45.0                           0.406                0.57              0.314                      ok            True                  False
+  WDAY           82.14               28            2.37              3.23        193.04                76.21         0.590          pass              0.350             37.8                           0.344                8.28              0.263                      ok            True                  False
+  REGN          100.00               17            1.32              7.70        830.26                29.20         0.571          pass              0.613             36.3                           0.563                3.20              0.439                      ok            True                  False
+  DXCM           88.57               35            0.67              0.42         88.98                51.46         0.565          pass              0.643             63.6                           0.694               -2.47             -0.089                      ok            True                  False
+  MELI           93.75               16            2.22             31.06       1983.69                47.50         0.554          pass              0.462              0.0                           0.020                6.80              0.971                      ok            True                  False
+  BKNG           94.74               19            2.14              3.21        212.41                35.36         0.512          pass              0.532              9.1                           0.158               -1.44              0.008                      ok            True                  False
+  VRTX           97.22               36            0.58              2.25        551.88                33.40         0.505          pass              0.758             44.8                           0.372                4.55              0.798                      ok            True                  False
+  CPRT           80.77               26            1.53              0.36         33.18                43.23         0.505          pass              0.183              1.9                           0.087               13.21              1.355                      ok            True                  False
+  SOXL           80.00               35            0.77              0.62        115.40               150.52         0.796          pass              0.461             71.7                           0.361              -19.26             -2.992 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260826121501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260826122001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260826121501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260826122001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260826121501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260826122001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260826121501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260826122001)
 
 </details>
