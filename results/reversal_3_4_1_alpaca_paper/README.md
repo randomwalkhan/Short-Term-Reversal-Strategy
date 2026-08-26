@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-08-26 13:12:44 EDT`
+Latest checkpoint (ET): `2026-08-26 13:17:47 EDT`
 Last slot: `manual`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$90,190.77`
-- Portfolio value: `$93,150.77`
+- Portfolio value: `$93,160.77`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manual`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  LRCX   open    regular LRCX261016C00310000          1               31.15                  29.5          bid_ask_mid                       29.5                    True          2950.0          -165.0               -5.29695                   2
+  LRCX   open    regular LRCX261016C00310000          1               31.15                30.225          bid_ask_mid                     30.225                    True          3022.5           -92.5              -2.969502                   2
 ```
 
 ## Closed Trades
