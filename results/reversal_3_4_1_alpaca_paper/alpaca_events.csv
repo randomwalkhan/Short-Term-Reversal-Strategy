@@ -5455,3 +5455,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-25T14:52:04.549736-04:00,2026-08-25,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MNST""}"
 2026-08-25T14:58:53.909077-04:00,2026-08-25,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MNST""}"
 2026-08-25T15:05:40.311660-04:00,2026-08-25,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MNST""}"
+2026-08-26T10:00:55.287155-04:00,2026-08-26,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
