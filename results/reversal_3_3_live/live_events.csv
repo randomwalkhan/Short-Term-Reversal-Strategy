@@ -5268,3 +5268,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-25T15:05:01.097664-04:00,2026-08-25,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-08-25T15:10:01.918364-04:00,2026-08-25,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-08-26T00:00:04.646772-04:00,2026-08-26,data_refresh,data_refresh,{'saved': 93}
+2026-08-26T09:50:01.107222-04:00,2026-08-26,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""KHC261016C00025000"", ""fill_price"": 0.918, ""pnl"": -2927.4, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""KHC""}"
