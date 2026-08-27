@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-27 12:45:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-08-27 12:50:01 EDT`
+Last processed slot: `manage_1300`
 
 ## Active Configuration
 
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  ABNB           96.30               27            1.09              1.43        187.46                62.05         0.674          pass              0.621             13.5                           0.216                0.48              0.338                      ok            True                  False
-   MAR           95.45               22            0.87              2.18        357.74                33.81         0.581          pass              0.669             43.7                           0.303                1.06              0.101                      ok            True                  False
-  MELI           96.67               30            1.20             16.35       1943.43                48.46         0.557          pass              0.604              5.0                           0.189                5.41              0.916                      ok            True                  False
-  SBUX           94.12               17            0.84              0.64        108.22                22.90         0.542          pass              0.626             49.7                           0.346               -0.32              0.000                      ok            True                  False
-   KDP           84.62               26            0.92              0.21         32.12                31.04         0.532          pass              0.400             38.9                           0.270                2.54              0.466                      ok            True                  False
-  ALNY           82.35               17            2.58              4.32        237.15               130.65         0.528          pass              0.253             30.1                           0.346                2.51              0.489                      ok            True                  False
- CMCSA           92.31               13            1.86              0.35         27.05                26.47         0.520          pass              0.452             17.2                           0.197                1.97              0.451                      ok            True                  False
-  BKNG           92.86               14            2.36              3.44        207.41                36.49         0.514          pass              0.478             19.1                           0.226               -4.39             -0.112                      ok            True                  False
-  IDXX           86.96               23            1.48              5.73        550.99                28.64         0.506          pass              0.348              8.4                           0.179               -3.82             -0.130                      ok            True                  False
-  MNST           71.43                7            2.32              0.78         47.48               551.93         1.000          pass              0.157             19.0                           0.297                0.04              0.329                      ok           False                  False
-  INSM           91.18               34            1.27              1.11        123.92               110.38         0.780          pass              0.662             41.9                           0.648               -2.79             -0.304 downtrend_blocked_slope           False                  False
-   WMT          100.00                9            1.61              1.17        103.84                39.06         0.644          pass              0.522             19.1                           0.240              -11.07             -1.327 downtrend_blocked_slope           False                  False
+  ABNB           96.55               29            0.98              1.29        187.52                62.05         0.669          pass              0.660             22.2                           0.275                0.59              0.343                      ok            True                  False
+   MAR           95.83               24            0.82              2.06        357.79                33.81         0.572          pass              0.690             46.6                           0.371                1.11              0.103                      ok            True                  False
+  MELI           96.88               32            1.05             14.36       1944.28                48.46         0.553          pass              0.652             16.5                           0.245                5.56              0.923                      ok            True                  False
+  SBUX           93.75               16            0.88              0.66        108.21                22.90         0.545          pass              0.604             47.5                           0.374               -0.36             -0.001                      ok            True                  False
+   KDP           85.71               28            0.79              0.18         32.13                31.04         0.528          pass              0.467             47.2                           0.343                2.67              0.472                      ok            True                  False
+ CMCSA           92.86               14            1.78              0.34         27.05                26.47         0.519          pass              0.483             20.5                           0.250                2.04              0.454                      ok            True                  False
+  BKNG           93.75               16            2.26              3.30        207.47                36.49         0.508          pass              0.525             22.4                           0.254               -4.30             -0.107                      ok            True                  False
+  NFLX           81.25               16            2.11              1.20         80.95                32.24         0.508          pass              0.187             21.0                           0.285                1.92              0.496                      ok            True                  False
+  IDXX           86.36               22            1.54              5.98        550.88                28.64         0.507          pass              0.313              4.3                           0.105               -3.89             -0.133                      ok            True                  False
+  MNST           71.43                7            2.20              0.74         47.49               551.93         1.000          pass              0.170             23.4                           0.480                0.17              0.335                      ok           False                  False
+  INSM           91.18               34            1.32              1.15        123.90               110.38         0.778          pass              0.655             39.7                           0.637               -2.83             -0.307 downtrend_blocked_slope           False                  False
+   WMT           90.91               11            1.53              1.12        103.86                39.06         0.624          pass              0.428             22.7                           0.272              -11.00             -1.324 downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260827124501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260827125001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260827124501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260827125001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260827124501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260827125001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260827124501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260827125001)
 
 </details>
