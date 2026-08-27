@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-27 14:35:03 EDT`
-Last processed slot: `manage_1430`
+Latest checkpoint (ET): `2026-08-27 16:05:01 EDT`
+Last processed slot: `manage_1600`
 
 ## Active Configuration
 
@@ -46,21 +46,7 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
-  PCAR          100.00               11            1.83              1.66        128.52                19.19         0.535            pass              0.484              8.0                           0.255               -2.95             -0.162                       ok            True                  False
-  NFLX           83.33               18            1.96              1.12         80.98                32.24         0.507            pass              0.272             26.5                           0.469                2.08              0.502                       ok            True                  False
-   WMT           90.91               11            1.47              1.07        103.88                39.06         0.628            pass              0.439             26.1                           0.326              -10.94             -1.321  downtrend_blocked_slope           False                  False
-  SBUX           85.71                7            1.46              1.11        108.02                22.90         0.556            pass              0.246             12.7                           0.183               -0.95             -0.028                       ok           False                  False
-   STX           81.48               27            2.03             12.02        841.22                80.80         0.519            pass              0.351             48.7                           0.486              -10.00             -1.724  downtrend_blocked_slope           False                  False
-  ROST           71.43                7            2.13              3.52        234.76                26.74         0.506            pass              0.099             16.0                           0.136               -5.60             -0.276  downtrend_blocked_slope           False                  False
-   PEP           80.00               20            1.13              1.12        141.71                17.02         0.486 below_threshold              0.219             34.6                           0.551               -0.02              0.177                       ok           False                  False
-   XEL          100.00               25            0.74              0.40         77.51                16.83         0.484 below_threshold              0.678             43.1                           0.576               -2.37             -0.328  downtrend_blocked_slope           False                  False
-  REGN          100.00               31            0.57              3.23        813.40                31.20         0.482 below_threshold              0.847             86.3                           0.475                0.64              0.212                       ok           False                  False
-  ORLY           90.91               22            1.49              0.93         89.15                23.98         0.478 below_threshold              0.498             26.5                           0.551               -4.71             -0.300  downtrend_blocked_slope           False                  False
-  TMUS           93.10               29            1.05              1.32        179.04                30.13         0.477 below_threshold              0.641             39.0                           0.319               -3.08             -0.178 downtrend_blocked_streak           False                  False
-  PYPL           94.12               34            0.64              0.28         61.69                21.69         0.471 below_threshold              0.651             22.5                           0.271                1.36              0.192                       ok           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -85,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260827143503)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260827160501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260827143503)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260827160501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260827143503)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260827160501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260827143503)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260827160501)
 
 </details>
