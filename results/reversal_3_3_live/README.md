@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-28 13:35:04 EDT`
+Latest checkpoint (ET): `2026-08-28 13:40:05 EDT`
 Last processed slot: `manage_1330`
 
 ## Active Configuration
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  AMGN          100.00               13            1.13              3.46        435.51                27.65         0.599          pass              0.523             14.4                           0.242                4.66              0.525                                 ok            True                  False
-   MAR           96.30               27            0.71              1.76        353.12                33.75         0.566          pass              0.624             18.0                           0.332               -1.30             -0.062                                 ok            True                  False
-  GILD          100.00               10            2.35              2.45        147.81                26.47         0.523          pass              0.467              5.0                           0.230                5.06              0.598                                 ok            True                  False
-  VRTX           96.88               32            0.78              2.99        546.27                32.96         0.519          pass              0.760             53.7                           0.511                7.42              0.656                                 ok            True                  False
-  INSM           73.33               15            2.55              2.17        120.46               110.68         0.777          pass              0.192             26.9                           0.278               -4.40             -0.599            downtrend_blocked_slope           False                  False
-  SHOP           95.35               43            0.36              0.39        154.16                69.26         0.613          pass              0.837             58.6                           0.362               -0.35              0.293                                 ok           False                  False
-   STX           84.85               33            0.85              5.04        845.04                71.05         0.595          pass              0.540             66.0                           0.540              -13.71             -1.518            downtrend_blocked_slope           False                  False
-   XEL          100.00               12            1.35              0.73         76.85                16.83         0.556          pass              0.505             12.2                           0.270               -3.86             -0.394            downtrend_blocked_slope           False                  False
-  DRAM           78.12               32            1.65              0.65         56.55                68.22         0.555          pass              0.367             54.8                           0.479               -2.49             -0.290            downtrend_blocked_slope           False                  False
-   AEP           95.24               21            0.44              0.38        122.55                17.88         0.550          pass              0.631             34.3                           0.439               -2.73             -0.381 downtrend_blocked_slope_and_streak           False                  False
-  MCHP           86.36               22            2.90              1.53         74.83                63.59         0.545          pass              0.371             22.3                           0.469               -6.86             -0.745            downtrend_blocked_slope           False                  False
-  CSCO           75.00               20            1.83              1.44        111.53                41.41         0.544          pass              0.146              8.3                           0.248               -1.41             -0.056                                 ok           False                  False
+  SHOP           95.24               42            0.54              0.59        154.08                69.26         0.608          pass              0.771             36.8                           0.288               -0.54              0.284                                 ok            True                  False
+  AMGN          100.00               13            1.11              3.39        435.54                27.65         0.600          pass              0.528             16.0                           0.257                4.69              0.526                                 ok            True                  False
+   MAR           96.67               30            0.58              1.44        353.25                33.75         0.555          pass              0.687             32.7                           0.431               -1.18             -0.057                                 ok            True                  False
+  GILD          100.00               10            2.33              2.43        147.82                26.47         0.525          pass              0.470              6.0                           0.263                5.08              0.599                                 ok            True                  False
+  VRTX           96.88               32            0.80              3.07        546.23                32.96         0.518          pass              0.756             52.4                           0.499                7.40              0.655                                 ok            True                  False
+  INSM           73.33               15            2.42              2.06        120.51               110.68         0.783          pass              0.204             30.7                           0.340               -4.28             -0.593            downtrend_blocked_slope           False                  False
+   STX           83.33               30            1.18              7.01        844.20                71.05         0.590          pass              0.440             52.8                           0.485              -14.00             -1.533            downtrend_blocked_slope           False                  False
+   AEP           94.44               18            0.56              0.48        122.50                17.88         0.560          pass              0.545             16.9                           0.301               -2.85             -0.387 downtrend_blocked_slope_and_streak           False                  False
+   XEL          100.00               11            1.41              0.76         76.83                16.83         0.559          pass              0.488              8.4                           0.246               -3.92             -0.396            downtrend_blocked_slope           False                  False
+  DRAM           78.12               32            1.79              0.71         56.52                68.22         0.546          pass              0.353             50.7                           0.482               -2.63             -0.297            downtrend_blocked_slope           False                  False
+  CSCO           75.00               20            1.79              1.41        111.55                41.41         0.546          pass              0.151             10.1                           0.297               -1.38             -0.055                                 ok           False                  False
+  REGN          100.00                6            1.96             11.11        802.95                24.94         0.543          pass              0.576             40.4                           0.373               -1.33             -0.047                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260828133504)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260828134005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260828133504)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260828134005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260828133504)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260828134005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260828133504)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260828134005)
 
 </details>
