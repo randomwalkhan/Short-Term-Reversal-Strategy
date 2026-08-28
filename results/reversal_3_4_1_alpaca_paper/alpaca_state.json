@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4500.0,
+      "alpaca_entry_client_order_id": "rev-20260828145216-shop-regular",
+      "alpaca_entry_order_id": "858ab3d0-00f3-480a-890e-009347242e01",
+      "asset_type": "option",
+      "contract_symbol": "SHOP261016C00155000",
+      "contracts": 5,
+      "current_drop_pct": 0.75,
+      "early_entry_score": 0.727,
+      "entry_mode": "regular",
+      "entry_option_price": 9.0,
+      "entry_slot": "entry_1500",
+      "entry_spot": 153.1699981689453,
+      "entry_timestamp": "2026-08-28T14:52:16.147806-04:00",
+      "entry_trade_date": "2026-08-28",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-10-16",
+      "matched_signals": 38,
+      "planned_stop": 8.1,
+      "planned_tp_day1": 10.35,
+      "planned_tp_day2": 10.35,
+      "position_id": "SHOP_20260828T145216",
+      "status": "entry_submitted",
+      "strike": 155.0,
+      "success_rate": 94.74,
+      "ticker": "SHOP",
+      "timing_score": 0.617
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
