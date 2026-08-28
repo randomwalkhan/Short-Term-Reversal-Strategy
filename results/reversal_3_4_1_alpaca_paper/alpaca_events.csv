@@ -5508,3 +5508,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-28T09:53:14.259798-04:00,2026-08-28,exit,exit_filled,"{""contract_symbol"": ""MRVL261016C00240000"", ""exit_price"": 15.45, ""pnl"": -480.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""MRVL""}"
 2026-08-28T10:03:21.900880-04:00,2026-08-28,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-28T10:09:47.162095-04:00,2026-08-28,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-08-28T10:16:09.197749-04:00,2026-08-28,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
