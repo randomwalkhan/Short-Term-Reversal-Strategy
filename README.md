@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-08-28 15:30:05 EDT`
-- Equity: `$53,295.60` | Realized: `$42,788.10` | Unrealized: `$507.50` | Open positions: `1`
+- Latest checkpoint (ET): `2026-08-28 15:35:06 EDT`
+- Equity: `$53,440.60` | Realized: `$42,788.10` | Unrealized: `$652.50` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  SHOP     option         option SHOP261016C00155000     29     26100.0                 26607.5           9.18           507.5                   1.94                   0
+  SHOP     option         option SHOP261016C00155000     29     26100.0                 26752.5           9.23           652.5                    2.5                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260828153005)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260828153506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260828153005)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260828153506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260828153005)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260828153506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260828153005)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260828153506)
 
 </details>
 
