@@ -5527,3 +5527,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-08-28T11:59:07.904305-04:00,2026-08-28,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-08-28T14:52:16.147806-04:00,2026-08-28,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""858ab3d0-00f3-480a-890e-009347242e01"", ""contract_symbol"": ""SHOP261016C00155000"", ""contracts"": 5, ""entry_mode"": ""regular"", ""limit_price"": ""9.30"", ""ticker"": ""SHOP""}"
 2026-08-28T15:34:13.055843-04:00,2026-08-28,entry_1500,entry_filled,"{""contract_symbol"": ""SHOP261016C00155000"", ""contracts"": 5, ""filled_price"": 9.3, ""ticker"": ""SHOP""}"
+2026-08-29T00:00:41.920777-04:00,2026-08-29,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
