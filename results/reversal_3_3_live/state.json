@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 50178.10035667419,
-  "positions": [],
+  "cash": 25578.100356674197,
+  "positions": [
+    {
+      "position_id": "SHOP_20260831T145001",
+      "ticker": "SHOP",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "SHOP261016C00150000",
+      "expiry": "2026-10-16",
+      "strike": 150.0,
+      "entry_timestamp": "2026-08-31T14:50:01.533389-04:00",
+      "entry_trade_date": "2026-08-31",
+      "entry_slot": "entry_1500",
+      "entry_spot": 147.71499633789062,
+      "entry_option_price": 8.2,
+      "entry_bid": 8.05,
+      "entry_ask": 8.35,
+      "entry_iv_pct": 44.37311486816406,
+      "contracts": 30,
+      "allocated_cash": 24599.999999999996,
+      "success_rate": 92.31,
+      "matched_signals": 13,
+      "current_drop_pct": 3.39,
+      "rolling_sigma_20d_pct": 66.63,
+      "planned_tp_day1": 9.429999999999998,
+      "planned_tp_day2": 9.429999999999998,
+      "planned_stop": 7.38,
+      "option_open_interest": 1113.0,
+      "option_volume": 42.0,
+      "option_spread_pct": 0.03658536585365841,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4933,7 +4964,9 @@
       "share_ext_0250",
       "share_ext_0255"
     ],
-    "2026-08-31": []
+    "2026-08-31": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
