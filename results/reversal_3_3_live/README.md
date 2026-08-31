@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-08-31 15:55:04 EDT`
+Latest checkpoint (ET): `2026-08-31 16:00:05 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$25,578.10`
-- Equity: `$49,578.10`
+- Equity: `$49,653.10`
 - Realized PnL: `$40,178.10`
-- Unrealized PnL: `$-600.00`
+- Unrealized PnL: `$-525.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SHOP     option         option SHOP261016C00150000       2026-08-31                   0     30     24600.0                 24000.0          8.2            8.0      147.71        147.24          bid_ask_mid                        8.0                bid_ask_mid                    True          -600.0                  -2.44         92.31               13              3.39         44.37           44.58                  66.63                1113.0           42.0               0.04                      ok
+  SHOP     option         option SHOP261016C00150000       2026-08-31                   0     30     24600.0                 24075.0          8.2           8.02      147.71        147.37          bid_ask_mid                       8.02                bid_ask_mid                    True          -525.0                  -2.13         92.31               13              3.39         44.37           44.71                  66.63                1113.0           42.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-08-31)
@@ -51,18 +51,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  MELI          100.00               19            1.64             22.59       1956.57                48.83         0.610          pass              0.600             26.4                           0.251                8.19              0.814                  ok            True                  False
-  AMGN          100.00               25            0.52              1.57        431.75                27.94         0.562          pass              0.751             65.0                           0.634                3.17              0.250                  ok            True                  False
-  SHOP           91.67               12            3.70              3.96        151.20                66.63         0.562          pass              0.469             29.4                           0.533               -0.95              0.316                  ok            True                  False
- CMCSA           93.75               16            1.52              0.29         26.94                25.33         0.530          pass              0.495             11.8                           0.165                4.22              0.348                  ok            True                  False
-  TMUS           95.83               24            0.78              0.99        180.95                26.61         0.528          pass              0.716             56.7                           0.314                0.49             -0.078                  ok            True                  False
-   KDP           82.61               23            1.10              0.25         32.07                30.92         0.526          pass              0.327             39.3                           0.489                5.10              0.483                  ok            True                  False
-  CTAS           83.33               18            1.08              1.55        203.52                14.76         0.507          pass              0.304             37.0                           0.538                2.10              0.218                  ok            True                  False
-  CHTR           90.70               43            0.63              0.68        153.33                53.40         0.503          pass              0.762             75.6                           0.817                5.94              0.417                  ok            True                   True
-  NFLX           87.10               31            0.85              0.49         81.51                32.56         0.502          pass              0.485             35.0                           0.291                6.58              0.516                  ok            True                  False
-   CSX           87.50               16            1.10              0.39         50.97                13.15         0.500          pass              0.376             28.7                           0.391                0.00              0.147                  ok            True                  False
-  MNST           71.43                7            2.09              0.69         46.57               551.82         1.000          pass              0.117              5.8                           0.300                0.79             -0.017                  ok           False                  False
-  ABNB          100.00                1            3.43              4.55        187.48                62.79         0.660          pass              0.509             14.4                           0.403                2.03              0.228                  ok           False                  False
+  MELI          100.00               22            1.56             21.54       1957.02                48.83         0.596          pass              0.629             29.9                           0.234                8.27              0.818                  ok            True                  False
+  AMGN          100.00               24            0.57              1.72        431.68                27.94         0.565          pass              0.735             61.7                           0.505                3.12              0.248                  ok            True                  False
+  SHOP           92.31               13            3.62              3.88        151.24                66.63         0.561          pass              0.497             30.9                           0.556               -0.87              0.320                  ok            True                  False
+   WBD           88.89               18            0.94              0.19         28.69                14.95         0.536          pass              0.355              3.5                           0.150                2.04              0.206                  ok            True                  False
+   KDP           84.00               25            0.96              0.22         32.09                30.92         0.524          pass              0.400             47.0                           0.631                5.25              0.490                  ok            True                  False
+ CMCSA           93.75               16            1.64              0.31         26.93                25.33         0.523          pass              0.472              4.5                           0.111                4.09              0.342                  ok            True                  False
+  TMUS           96.43               28            0.51              0.65        181.09                26.61         0.519          pass              0.786             71.5                           0.361                0.76             -0.066                  ok            True                  False
+  NFLX           87.10               31            0.83              0.48         81.52                32.56         0.503          pass              0.489             36.4                           0.280                6.60              0.517                  ok            True                  False
+   CSX           85.71               14            1.25              0.45         50.95                13.15         0.502          pass              0.285             18.5                           0.345               -0.16              0.140                  ok            True                  False
+  CTAS           83.33               18            1.18              1.68        203.46                14.76         0.501          pass              0.287             31.6                           0.536                2.00              0.214                  ok            True                  False
+  MNST           71.43                7            1.98              0.65         46.58               551.82         1.000          pass              0.132             10.6                           0.301                0.90             -0.012                  ok           False                  False
+  ABNB          100.00                2            3.28              4.35        187.56                62.79         0.662          pass              0.520             18.1                           0.457                2.19              0.235                  ok           False                  False
 ```
 
 ## Recent Events
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260831155504)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260831160005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260831155504)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260831160005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260831155504)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260831160005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260831155504)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260831160005)
 
 </details>
