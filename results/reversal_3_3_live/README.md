@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-01 13:30:06 EDT`
+Latest checkpoint (ET): `2026-09-01 13:35:03 EDT`
 Last processed slot: `manage_1330`
 
 ## Active Configuration
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-   TRI           93.94               33            0.68              0.51        107.10                60.77         0.599          pass              0.756             56.9                           0.599                8.30              0.537                      ok            True                  False
-  PAYX          100.00               15            1.35              1.21        126.82                24.69         0.556          pass              0.551             20.7                           0.461                5.97              0.601                      ok            True                  False
-  CPRT           88.89               18            1.86              0.43         32.81                40.13         0.551          pass              0.378             10.9                           0.298                2.13              0.071                      ok            True                  False
-  SBUX           95.24               21            0.66              0.49        106.04                22.95         0.547          pass              0.584             18.6                           0.305               -2.20              0.032                      ok            True                  False
-  CSCO           83.87               31            1.01              0.78        110.15                40.87         0.543          pass              0.382             28.2                           0.385               -3.13             -0.096                      ok            True                  False
- CMCSA           92.31               26            0.51              0.09         26.58                24.41         0.538          pass              0.564             25.0                           0.323                3.58              0.260                      ok            True                  False
-  NVDA           87.50               32            0.95              1.47        219.87                45.52         0.523          pass              0.582             61.1                           0.445               -0.61              0.148                      ok            True                  False
-  UPRO           87.50               16            1.98              2.09        149.38                31.61         0.515          pass              0.341             16.5                           0.283               -4.60             -0.202                      ok            True                  False
-  DRAM           83.87               31            2.52              1.00         56.47                66.99         0.509          pass              0.336             14.1                           0.214                0.66              0.068                      ok            True                  False
-  MNST           75.00                8            1.80              0.58         45.67               551.67         1.000          pass              0.109              2.9                           0.242               -0.93             -0.169                      ok           False                  False
-  INSM           85.71               35            1.04              0.89        121.44               109.80         0.780          pass              0.531             44.8                           0.503               -6.06             -0.701 downtrend_blocked_slope           False                  False
-  TEAM           76.47               17            3.97              5.40        191.86               115.35         0.688          pass              0.150             11.5                           0.368               14.39              1.362                      ok           False                  False
+  PAYX          100.00               15            1.14              1.02        126.90                24.69         0.569          pass              0.590             33.1                           0.533                6.20              0.611                      ok            True                  False
+  CPRT           90.00               20            1.65              0.38         32.83                40.13         0.552          pass              0.452             21.0                           0.391                2.35              0.080                      ok            True                  False
+  SBUX           95.00               20            0.69              0.51        106.03                22.95         0.551          pass              0.567             15.1                           0.267               -2.22              0.030                      ok            True                  False
+  CSCO           83.87               31            1.00              0.77        110.16                40.87         0.544          pass              0.386             29.5                           0.397               -3.11             -0.095                      ok            True                  False
+ CMCSA           92.31               26            0.51              0.09         26.58                24.41         0.538          pass              0.564             25.0                           0.328                3.58              0.260                      ok            True                  False
+  NVDA           87.88               33            0.90              1.39        219.91                45.52         0.521          pass              0.606             63.3                           0.508               -0.56              0.151                      ok            True                  False
+  UPRO           87.50               16            1.89              1.99        149.42                31.61         0.521          pass              0.353             20.3                           0.342               -4.52             -0.198                      ok            True                  False
+  DRAM           83.87               31            2.51              1.00         56.47                66.99         0.510          pass              0.337             14.4                           0.231                0.67              0.068                      ok            True                  False
+  MNST           75.00                8            1.77              0.57         45.68               551.67         1.000          pass              0.112              4.1                           0.262               -0.91             -0.168                      ok           False                  False
+  INSM           85.71               35            1.05              0.90        121.44               109.80         0.780          pass              0.530             44.3                           0.519               -6.06             -0.702 downtrend_blocked_slope           False                  False
+  TEAM           77.78               18            3.71              5.05        192.01               115.35         0.698          pass              0.175             17.3                           0.431               14.70              1.374                      ok           False                  False
+  ABNB           95.00               40            0.14              0.18        183.14                62.80         0.634          pass              0.939             91.9                           0.794                2.05              0.108                      ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260901133006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260901133503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260901133006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260901133503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260901133006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260901133503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260901133006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260901133503)
 
 </details>
