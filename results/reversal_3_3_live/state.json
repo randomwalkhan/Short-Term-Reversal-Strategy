@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 47718.1003566742,
-  "positions": [],
+  "cash": 23958.1003566742,
+  "positions": [
+    {
+      "position_id": "CPRT_20260901T145005",
+      "ticker": "CPRT",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "CPRT261016C00032500",
+      "expiry": "2026-10-16",
+      "strike": 32.5,
+      "entry_timestamp": "2026-09-01T14:50:05.175915-04:00",
+      "entry_trade_date": "2026-09-01",
+      "entry_slot": "entry_1500",
+      "entry_spot": 32.334999084472656,
+      "entry_option_price": 1.65,
+      "entry_bid": 1.6,
+      "entry_ask": 1.7,
+      "entry_iv_pct": 38.721315917968745,
+      "contracts": 144,
+      "allocated_cash": 23760.0,
+      "success_rate": 87.5,
+      "matched_signals": 16,
+      "current_drop_pct": 1.99,
+      "rolling_sigma_20d_pct": 40.13,
+      "planned_tp_day1": 1.8974999999999997,
+      "planned_tp_day2": 1.8974999999999997,
+      "planned_stop": 1.4849999999999999,
+      "option_open_interest": 398.0,
+      "option_volume": 105.0,
+      "option_spread_pct": 0.06060606060606053,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -4936,7 +4967,9 @@
     "2026-08-31": [
       "entry_1500"
     ],
-    "2026-09-01": []
+    "2026-09-01": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
