@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-09-01 15:00:06 EDT`
-- Equity: `$48,078.10` | Realized: `$37,718.10` | Unrealized: `$360.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-09-01 15:05:02 EDT`
+- Equity: `$46,998.10` | Realized: `$37,718.10` | Unrealized: `$-720.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `entry_1500`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  CPRT     option         option CPRT261016C00032500    144     23760.0                 24120.0           1.68           360.0                   1.52                   0
+  CPRT     option         option CPRT261016C00032500    144     23760.0                 23040.0            1.6          -720.0                  -3.03                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260901150006)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260901150502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260901150006)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260901150502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260901150006)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260901150502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260901150006)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260901150502)
 
 </details>
 
