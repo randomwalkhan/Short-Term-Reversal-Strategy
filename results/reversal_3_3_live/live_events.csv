@@ -5463,3 +5463,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-01T15:05:02.102329-04:00,2026-09-01,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-01T15:10:01.952718-04:00,2026-09-01,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-02T00:00:06.180126-04:00,2026-09-02,data_refresh,data_refresh,{'saved': 93}
+2026-09-02T09:20:01.375849-04:00,2026-09-02,manage_0930,exit_skipped,"{""contract_symbol"": ""CPRT261016C00032500"", ""current_ask"": 0.0, ""current_bid"": 0.0, ""current_option_price"": 2.25, ""current_price_source"": ""last_price_stale"", ""reason"": ""unreliable_option_quote"", ""ticker"": ""CPRT""}"
