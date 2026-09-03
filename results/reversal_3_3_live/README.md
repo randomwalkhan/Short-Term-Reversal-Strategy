@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-03 10:00:03 EDT`
+Latest checkpoint (ET): `2026-09-03 10:05:01 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -48,25 +48,26 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  DRAM           83.33               30            1.71              0.67         55.92                63.42         0.558            pass              0.428             50.1                           0.678               -4.05             -0.231                                 ok            True                  False
-  SBUX           95.24               21            0.67              0.50        106.50                21.58         0.534            pass              0.619             30.8                           0.208                1.93              0.044                                 ok            True                  False
-  CSCO           86.21               29            1.12              0.86        109.09                36.36         0.524            pass              0.418             24.4                           0.209               -1.24             -0.151                                 ok            True                  False
-  REGN          100.00               28            0.77              4.59        850.06                27.66         0.509            pass              0.653             27.4                           0.257                2.28              0.064                                 ok            True                  False
-  CHTR           87.50               16            3.12              3.47        157.48                59.56         0.506            pass              0.326             11.9                           0.217                4.23              0.286                                 ok            True                  False
-  MNST           89.47               38            0.14              0.04         44.40               424.20         0.999            pass              0.765             75.1                           0.398               -6.59             -0.930 downtrend_blocked_slope_and_streak           False                  False
-  MRVL           81.58               38            0.21              0.30        206.35                78.54         0.650            pass              0.570             92.0                           0.876              -17.91             -1.977 downtrend_blocked_slope_and_streak           False                  False
-  PYPL          100.00               39            0.38              0.15         54.61                55.99         0.584            pass              0.696             14.8                           0.163              -12.58             -1.920 downtrend_blocked_slope_and_streak           False                  False
-  MCHP           86.96               23            2.38              1.21         72.24                58.99         0.540            pass              0.401             25.1                           0.156               -5.74             -0.529            downtrend_blocked_slope           False                  False
- CMCSA           93.33               30            0.21              0.04         26.79                26.14         0.524            pass              0.694             51.0                           0.271                1.27             -0.059                                 ok           False                  False
-  AMGN           96.30               27            0.44              1.38        442.25                21.97         0.513            pass              0.740             58.6                           0.360                2.24              0.026                                 ok           False                  False
-    MU           85.29               34            1.12              7.48        952.88                51.19         0.497 below_threshold              0.565             71.3                           0.796               -2.97             -0.065                                 ok           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  SBUX           93.33               15            1.10              0.82        106.37                21.58         0.541          pass              0.460              5.6                           0.175                1.50              0.024                                 ok            True                  False
+  CSCO           81.82               22            1.43              1.10        108.98                36.36         0.541          pass              0.229             15.4                           0.193               -1.56             -0.166                                 ok            True                  False
+ CMCSA           92.59               27            0.52              0.10         26.77                26.14         0.521          pass              0.521              6.7                           0.185                0.95             -0.073                                 ok            True                  False
+  CHTR           87.50               16            3.08              3.43        157.50                59.56         0.508          pass              0.330             13.0                           0.176                4.27              0.288                                 ok            True                  False
+  REGN          100.00               29            0.69              4.11        850.27                27.66         0.507          pass              0.682             34.9                           0.289                2.36              0.068                                 ok            True                  False
+  MRVL           81.58               38            0.72              1.04        206.04                78.54         0.621          pass              0.508             72.5                           0.683              -18.33             -2.001 downtrend_blocked_slope_and_streak           False                  False
+  PYPL          100.00               33            0.62              0.24         54.57                55.99         0.604          pass              0.614              0.0                           0.170              -12.79             -1.931 downtrend_blocked_slope_and_streak           False                  False
+  MCHP           86.96               23            2.39              1.22         72.24                58.99         0.539          pass              0.400             24.7                           0.154               -5.75             -0.530            downtrend_blocked_slope           False                  False
+  SNPS           91.84               49            0.11              0.33        415.83                57.94         0.530          pass              0.818             83.0                           0.483                4.42              0.697                                 ok           False                  False
+  DRAM           83.33               30            2.26              0.89         55.83                63.42         0.526          pass              0.377             34.0                           0.431               -4.58             -0.256            downtrend_blocked_slope           False                  False
+  FAST          100.00               27            0.11              0.04         47.91                20.75         0.525          pass              0.816             83.4                           0.448               -5.50             -0.700 downtrend_blocked_slope_and_streak           False                  False
+  AMGN           96.55               29            0.40              1.23        442.31                21.97         0.504          pass              0.766             63.0                           0.394                2.29              0.028                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                detail
+2026-09-03T10:05:01.913040-04:00 early_entry_1005 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-03T10:00:03.820107-04:00 early_entry_1000 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-03T09:50:05.699524-04:00      manage_1000               exit                                                                                                                                                                                                                                             {"asset_type": "option", "contract_symbol": "MSTR261009C00122000", "fill_price": 16.575, "pnl": 10200.0, "reason": "take_profit_day1_hit_at_scan", "return_pct": 44.44, "ticker": "MSTR"}
 2026-09-03T09:50:05.699524-04:00      manage_1000               exit                                                                                                                                                                                                                                                 {"asset_type": "option", "contract_symbol": "CPRT261016C00032500", "fill_price": 2.8, "pnl": 16560.0, "reason": "take_profit_day2_hit_at_scan", "return_pct": 69.7, "ticker": "CPRT"}
@@ -74,9 +75,8 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-09-02T15:10:01.537083-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
 2026-09-02T15:05:01.526637-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
 2026-09-02T15:00:06.384646-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                       {"reason": "already_processed"}
-2026-09-02T14:58:03.772540-04:00       entry_1500              entry {"allocated_cash": 22950.0, "asset_type": "option", "contract_symbol": "MSTR261009C00122000", "contracts": 20, "early_entry_score": 0.304, "entry_mode": "regular", "entry_option_price": 11.475, "execution_mode": "option", "matched_signals": 30, "option_liquidity_status": "ok", "option_open_interest": 141.0, "option_spread_pct": 6.54, "option_volume": 20.0, "success_rate": 80.0, "ticker": "MSTR", "timing_score": 0.589}
 2026-09-02T14:58:03.772540-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                          {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-09-02", "training_samples": 5758, "window": 5}
-2026-09-02T12:00:02.480923-04:00 early_entry_1200 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-02T14:58:03.772540-04:00       entry_1500              entry {"allocated_cash": 22950.0, "asset_type": "option", "contract_symbol": "MSTR261009C00122000", "contracts": 20, "early_entry_score": 0.304, "entry_mode": "regular", "entry_option_price": 11.475, "execution_mode": "option", "matched_signals": 30, "option_liquidity_status": "ok", "option_open_interest": 141.0, "option_spread_pct": 6.54, "option_volume": 20.0, "success_rate": 80.0, "ticker": "MSTR", "timing_score": 0.589}
 ```
 
 ## Equity Curves
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260903100003)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260903100501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260903100003)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260903100501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260903100003)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260903100501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260903100003)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260903100501)
 
 </details>
