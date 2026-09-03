@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-03 06:10:01 EDT`
-Last processed slot: `share_ext_0610`
+Latest checkpoint (ET): `2026-09-03 06:25:03 EDT`
+Last processed slot: `share_ext_0625`
 
 ## Active Configuration
 
@@ -37,8 +37,8 @@ Last processed slot: `share_ext_0610`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CPRT     option         option CPRT261016C00032500       2026-09-01                   2    144     23760.0                 24192.0         1.65           1.68       32.33         32.85     last_price_stale                        NaN                unavailable                   False           432.0                   1.82          87.5               16              1.99         38.72            0.78                  40.13                 398.0          105.0               0.06                      ok
-  MSTR     option         option MSTR261009C00122000       2026-09-02                   1     20     22950.0                 22840.0        11.48          11.42      122.50        124.30     last_price_stale                        NaN                unavailable                   False          -110.0                  -0.48          80.0               30              1.91         71.34            0.00                  86.77                 141.0           20.0               0.07                      ok
+  CPRT     option         option CPRT261016C00032500       2026-09-01                   2    144     23760.0                 24192.0         1.65           1.68       32.33         32.76     last_price_stale                        NaN                unavailable                   False           432.0                   1.82          87.5               16              1.99         38.72            0.78                  40.13                 398.0          105.0               0.06                      ok
+  MSTR     option         option MSTR261009C00122000       2026-09-02                   1     20     22950.0                 22840.0        11.48          11.42      122.50        124.35     last_price_stale                        NaN                unavailable                   False          -110.0                  -0.48          80.0               30              1.91         71.34            0.00                  86.77                 141.0           20.0               0.07                      ok
 ```
 
 ## Today's Closed Trades (2026-09-03)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260903061001)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260903062503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260903061001)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260903062503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260903061001)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260903062503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260903061001)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260903062503)
 
 </details>
