@@ -5500,3 +5500,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-03T09:50:05.699524-04:00,2026-09-03,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MSTR261009C00122000"", ""fill_price"": 16.575, ""pnl"": 10200.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 44.44, ""ticker"": ""MSTR""}"
 2026-09-03T10:00:03.820107-04:00,2026-09-03,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-03T10:05:01.913040-04:00,2026-09-03,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-03T10:10:01.856721-04:00,2026-09-03,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
