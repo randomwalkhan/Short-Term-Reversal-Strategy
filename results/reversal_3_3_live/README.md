@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-04 15:50:02 EDT`
+Latest checkpoint (ET): `2026-09-04 15:55:03 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$41,035.60`
-- Equity: `$83,260.60`
+- Equity: `$82,435.60`
 - Realized PnL: `$71,160.60`
-- Unrealized PnL: `$2,100.00`
+- Unrealized PnL: `$1,275.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  MSTR     option         option MSTR261016C00145000       2026-09-04                   0     30     40125.0                 42225.0        13.38          14.08      142.86        142.88          bid_ask_mid                      14.08                bid_ask_mid                    True          2100.0                   5.23         82.86               35              1.36         73.28           76.83                 101.55                5516.0          964.0               0.01                      ok
+  MSTR     option         option MSTR261016C00145000       2026-09-04                   0     30     40125.0                 41400.0        13.38           13.8      142.86        143.16          bid_ask_mid                       13.8                bid_ask_mid                    True          1275.0                   3.18         82.86               35              1.36         73.28           75.18                 101.55                5516.0          964.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-09-04)
@@ -51,18 +51,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MSTR           82.86               35            1.34              1.36        144.24               101.55         0.636          pass              0.545             79.5                           0.574               19.81              1.342                                 ok            True                  False
-  CRWD           90.00               40            1.02              1.53        214.31                92.33         0.629          pass              0.650             40.0                           0.380               10.85              1.403                                 ok            True                  False
-   WMT           87.50               16            1.24              0.94        108.02                40.07         0.605          pass              0.301              0.0                           0.101                3.26              0.276                                 ok            True                  False
-  MELI          100.00               34            0.57              7.95       1987.65                45.76         0.543          pass              0.778             54.7                           0.391                2.96              0.240                                 ok            True                  False
-  SBUX           93.75               16            1.06              0.78        105.48                21.61         0.542          pass              0.466              1.8                           0.183               -2.22             -0.183                                 ok            True                  False
-  VRTX           90.00               10            2.25              8.80        554.19                32.02         0.539          pass              0.425             34.9                           0.239               -0.49              0.061                                 ok            True                  False
- CMCSA           92.86               28            0.53              0.10         26.61                25.91         0.519          pass              0.659             48.1                           0.415               -1.27             -0.191                                 ok            True                  False
-   KDP           84.62               26            1.02              0.23         32.78                30.98         0.514          pass              0.281              0.0                           0.289                1.58              0.157                                 ok            True                  False
-  MNST           85.19               27            0.68              0.21         43.99               424.09         0.998          pass              0.442             30.2                           0.440               -8.39             -1.156 downtrend_blocked_slope_and_streak           False                  False
-  PYPL          100.00                4            3.46              1.38         56.23                56.63         0.583          pass              0.503             14.9                           0.451              -10.88             -1.618 downtrend_blocked_slope_and_streak           False                  False
-  AMGN          100.00                8            1.59              4.93        442.01                21.54         0.563          pass              0.525             22.7                           0.314               -0.51             -0.041                                 ok           False                  False
-  PANW           87.23               47            0.06              0.14        331.88                71.12         0.558          pass              0.739             96.7                           0.424               -7.30             -0.523            downtrend_blocked_slope           False                  False
+  MSTR           83.33               36            1.24              1.25        144.28               101.55         0.636          pass              0.569             81.2                           0.555               19.94              1.347                                 ok            True                  False
+  CRWD           89.74               39            1.06              1.60        214.28                92.33         0.631          pass              0.629             37.4                           0.398               10.80              1.401                                 ok            True                  False
+   WMT           88.24               17            1.23              0.93        108.02                40.07         0.599          pass              0.357             10.1                           0.237                3.26              0.277                                 ok            True                  False
+  AMGN          100.00               11            1.40              4.36        442.25                21.54         0.555          pass              0.557             31.6                           0.483               -0.33             -0.033                                 ok            True                  False
+  SBUX           90.00               10            1.35              1.00        105.39                21.61         0.554          pass              0.322              0.0                           0.225               -2.51             -0.196                                 ok            True                  False
+  MELI          100.00               32            0.73             10.22       1986.67                45.76         0.546          pass              0.726             41.7                           0.322                2.79              0.233                                 ok            True                  False
+  VRTX           91.67               12            2.08              8.12        554.48                32.02         0.538          pass              0.498             39.9                           0.298               -0.31              0.070                                 ok            True                  False
+ CMCSA           92.86               28            0.62              0.12         26.60                25.91         0.514          pass              0.631             38.9                           0.354               -1.36             -0.196                                 ok            True                  False
+   XEL           95.00               20            0.98              0.52         76.12                17.75         0.505          pass              0.616             32.9                           0.298               -0.92             -0.209                                 ok            True                  False
+   KDP           86.67               30            0.78              0.18         32.80                30.98         0.505          pass              0.455             31.1                           0.371                1.83              0.168                                 ok            True                  False
+  MNST           85.19               27            0.66              0.20         43.99               424.09         0.998          pass              0.449             32.6                           0.385               -8.37             -1.155 downtrend_blocked_slope_and_streak           False                  False
+  PYPL          100.00                4            3.28              1.31         56.26                56.63         0.593          pass              0.517             19.3                           0.560              -10.71             -1.609 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260904155002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260904155503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260904155002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260904155503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260904155002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260904155503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260904155002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260904155503)
 
 </details>
