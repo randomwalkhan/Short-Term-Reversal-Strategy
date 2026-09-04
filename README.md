@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-09-04 09:55:03 EDT`
-- Equity: `$76,210.60` | Realized: `$64,478.10` | Unrealized: `$1,732.50` | Open positions: `1`
+- Latest checkpoint (ET): `2026-09-04 10:00:02 EDT`
+- Equity: `$78,685.60` | Realized: `$64,478.10` | Unrealized: `$4,207.50` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1000`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  CSCO     option         option CSCO261016C00110000     99     36877.5                 38610.0            3.9          1732.5                    4.7                   1
+  CSCO     option         option CSCO261016C00110000     99     36877.5                 41085.0           4.15          4207.5                  11.41                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260904095503)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260904100002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260904095503)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260904100002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260904095503)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260904100002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260904095503)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260904100002)
 
 </details>
 
