@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-04 18:20:06 EDT`
-Last processed slot: `share_ext_1820`
+Latest checkpoint (ET): `2026-09-04 18:25:01 EDT`
+Last processed slot: `share_ext_1825`
 
 ## Active Configuration
 
@@ -37,7 +37,7 @@ Last processed slot: `share_ext_1820`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  MSTR     option         option MSTR261016C00145000       2026-09-04                   0     30     40125.0                 40875.0        13.38          13.62      142.86         142.7          bid_ask_mid                      13.62                bid_ask_mid                    True           750.0                   1.87         82.86               35              1.36         73.28            74.8                 101.55                5516.0          964.0               0.01                      ok
+  MSTR     option         option MSTR261016C00145000       2026-09-04                   0     30     40125.0                 40875.0        13.38          13.62      142.86        142.65          bid_ask_mid                      13.62                bid_ask_mid                    True           750.0                   1.87         82.86               35              1.36         73.28            74.8                 101.55                5516.0          964.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-09-04)
@@ -74,27 +74,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260904182006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260904182501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260904182006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260904182501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260904182006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260904182501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260904182006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260904182501)
 
 </details>
