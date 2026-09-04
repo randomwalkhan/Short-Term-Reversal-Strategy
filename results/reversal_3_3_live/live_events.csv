@@ -5530,3 +5530,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-04T00:00:05.130277-04:00,2026-09-04,data_refresh,data_refresh,{'saved': 93}
 2026-09-04T10:00:02.334638-04:00,2026-09-04,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-04T10:05:05.442075-04:00,2026-09-04,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-04T10:10:01.256246-04:00,2026-09-04,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CSCO261016C00110000"", ""fill_price"": 4.4, ""pnl"": 6682.5, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 18.12, ""ticker"": ""CSCO""}"
+2026-09-04T10:10:01.256246-04:00,2026-09-04,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
