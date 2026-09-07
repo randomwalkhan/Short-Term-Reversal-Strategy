@@ -5951,3 +5951,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-07T15:49:34.104324-04:00,2026-09-07,manage_1600,market_closed,"{""holiday_name"": ""Labor Day"", ""reason"": ""nyse_holiday""}"
 2026-09-07T15:55:51.919284-04:00,2026-09-07,manage_1600,market_closed,"{""holiday_name"": ""Labor Day"", ""reason"": ""nyse_holiday""}"
 2026-09-07T16:45:51.908107-04:00,2026-09-07,share_ext_1645,market_closed,"{""holiday_name"": ""Labor Day"", ""reason"": ""nyse_holiday""}"
+2026-09-07T18:23:13.955386-04:00,2026-09-07,share_ext_1820,market_closed,"{""holiday_name"": ""Labor Day"", ""reason"": ""nyse_holiday""}"
