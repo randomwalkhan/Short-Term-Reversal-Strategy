@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-07 15:49:34 EDT`
+Latest checkpoint (ET): `2026-09-07 15:55:51 EDT`
 Last slot: `manage_1600`
 
 ## Alpaca Paper Account
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et        slot    event_type                                                  detail
+2026-09-07T15:55:51.919284-04:00 manage_1600 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 2026-09-07T15:49:34.104324-04:00 manage_1600 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 2026-09-07T15:44:30.504991-04:00      manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 2026-09-07T15:39:26.768748-04:00 manage_1530 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-09-07T14:13:36.283687-04:00      manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 2026-09-07T14:08:32.614720-04:00 manage_1400 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 2026-09-07T13:59:13.787699-04:00 manage_1400 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T13:07:26.408321-04:00 manage_1300 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 ```
