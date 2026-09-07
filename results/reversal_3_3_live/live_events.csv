@@ -5700,3 +5700,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-07T12:55:04.338947-04:00,2026-09-07,manage_1300,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-07T13:00:02.406024-04:00,2026-09-07,manage_1300,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-07T13:05:06.095162-04:00,2026-09-07,manage_1300,slot_skipped,"{""reason"": ""already_processed""}"
+2026-09-07T13:25:25.275729-04:00,2026-09-07,manage_1330,market_closed,"{""holiday_name"": ""Labor Day"", ""reason"": ""nyse_holiday""}"
