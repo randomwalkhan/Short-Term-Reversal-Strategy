@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-07 12:42:06 EDT`
+Latest checkpoint (ET): `2026-09-07 12:47:10 EDT`
 Last slot: `manual`
 
 ## Alpaca Paper Account
@@ -47,25 +47,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                                  detail
-2026-09-07T12:42:06.948458-04:00         manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T12:37:02.772745-04:00    manage_1230 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T12:31:59.051523-04:00    manage_1230 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T12:26:55.347167-04:00    manage_1230 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T12:21:51.727480-04:00    manage_1230 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T12:16:48.225033-04:00         manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T12:11:44.656345-04:00    manage_1200 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T12:06:41.029462-04:00    manage_1200 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T11:50:23.530189-04:00    manage_1200 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T10:36:42.918384-04:00    manage_1030 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:59:07.872055-04:00    manage_1000 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:54:04.252965-04:00    manage_1000 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:49:00.621828-04:00    manage_1000 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:43:57.080331-04:00         manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:38:53.560080-04:00    manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:33:49.957400-04:00    manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:28:46.320763-04:00    manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:23:42.684488-04:00    manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:18:39.075828-04:00    manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:13:35.338325-04:00 share_ext_0910 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+                    timestamp_et        slot    event_type                                                  detail
+2026-09-07T12:47:10.817830-04:00      manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T12:42:06.948458-04:00      manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T12:37:02.772745-04:00 manage_1230 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T12:31:59.051523-04:00 manage_1230 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T12:26:55.347167-04:00 manage_1230 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T12:21:51.727480-04:00 manage_1230 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T12:16:48.225033-04:00      manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T12:11:44.656345-04:00 manage_1200 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T12:06:41.029462-04:00 manage_1200 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T11:50:23.530189-04:00 manage_1200 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T10:36:42.918384-04:00 manage_1030 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:59:07.872055-04:00 manage_1000 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:54:04.252965-04:00 manage_1000 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:49:00.621828-04:00 manage_1000 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:43:57.080331-04:00      manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:38:53.560080-04:00 manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:33:49.957400-04:00 manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:28:46.320763-04:00 manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:23:42.684488-04:00 manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:18:39.075828-04:00 manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 ```
