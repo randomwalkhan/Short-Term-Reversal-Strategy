@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-07 10:00:05 EDT`
-Last processed slot: `manage_1000`
+Latest checkpoint (ET): `2026-09-07 10:18:54 EDT`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -51,17 +51,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                                  detail
-2026-09-07T10:00:05.094949-04:00    manage_1000  slot_skipped                         {"reason": "already_processed"}
-2026-09-07T09:55:02.105167-04:00    manage_1000  slot_skipped                         {"reason": "already_processed"}
-2026-09-07T09:50:06.109394-04:00    manage_1000 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:45:06.060352-04:00         manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:40:06.791300-04:00    manage_0930  slot_skipped                         {"reason": "already_processed"}
-2026-09-07T09:35:06.058071-04:00    manage_0930  slot_skipped                         {"reason": "already_processed"}
-2026-09-07T09:30:02.075754-04:00    manage_0930  slot_skipped                         {"reason": "already_processed"}
-2026-09-07T09:25:02.004574-04:00    manage_0930  slot_skipped                         {"reason": "already_processed"}
-2026-09-07T09:20:06.870396-04:00    manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T09:15:05.063841-04:00 share_ext_0915 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+                    timestamp_et        slot    event_type                                                  detail
+2026-09-07T10:18:54.073066-04:00 manage_1030 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T10:00:05.094949-04:00 manage_1000  slot_skipped                         {"reason": "already_processed"}
+2026-09-07T09:55:02.105167-04:00 manage_1000  slot_skipped                         {"reason": "already_processed"}
+2026-09-07T09:50:06.109394-04:00 manage_1000 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:45:06.060352-04:00      manual market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T09:40:06.791300-04:00 manage_0930  slot_skipped                         {"reason": "already_processed"}
+2026-09-07T09:35:06.058071-04:00 manage_0930  slot_skipped                         {"reason": "already_processed"}
+2026-09-07T09:30:02.075754-04:00 manage_0930  slot_skipped                         {"reason": "already_processed"}
+2026-09-07T09:25:02.004574-04:00 manage_0930  slot_skipped                         {"reason": "already_processed"}
+2026-09-07T09:20:06.870396-04:00 manage_0930 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260907100005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260907101854)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260907100005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260907101854)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260907100005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260907101854)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260907100005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260907101854)
 
 </details>
