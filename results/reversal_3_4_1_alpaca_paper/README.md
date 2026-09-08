@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-08 09:15:37 EDT`
-Last slot: `share_ext_0915`
+Latest checkpoint (ET): `2026-09-08 09:20:40 EDT`
+Last slot: `manage_0930`
 
 ## Alpaca Paper Account
 
@@ -47,25 +47,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                                  detail
-2026-09-07T23:59:09.426657-04:00 share_ext_2355 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:54:06.051725-04:00 share_ext_2350 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:49:02.665855-04:00 share_ext_2345 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:43:59.194545-04:00 share_ext_2340 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:38:55.580722-04:00 share_ext_2335 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:33:52.085448-04:00 share_ext_2330 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:28:48.643299-04:00 share_ext_2325 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:23:45.229825-04:00 share_ext_2320 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:18:41.636012-04:00 share_ext_2315 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:13:37.925374-04:00 share_ext_2310 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:08:34.482037-04:00 share_ext_2305 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:03:30.993250-04:00 share_ext_2300 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T22:58:27.605882-04:00 share_ext_2255 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T22:53:23.968473-04:00 share_ext_2250 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T22:48:20.500825-04:00 share_ext_2245 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T22:12:02.937749-04:00 share_ext_2210 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T21:38:06.045742-04:00 share_ext_2135 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T20:14:36.392849-04:00 share_ext_2010 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T20:09:32.881028-04:00 share_ext_2005 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T20:04:29.318686-04:00 share_ext_2000 market_closed {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+                    timestamp_et           slot    event_type                                                                                                                                                                                                              detail
+2026-09-08T09:20:40.711138-04:00    manage_0930  exit_skipped {"contract_symbol": "SHOP261016C00155000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 5.68, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "SHOP"}
+2026-09-07T23:59:09.426657-04:00 share_ext_2355 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:54:06.051725-04:00 share_ext_2350 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:49:02.665855-04:00 share_ext_2345 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:43:59.194545-04:00 share_ext_2340 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:38:55.580722-04:00 share_ext_2335 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:33:52.085448-04:00 share_ext_2330 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:28:48.643299-04:00 share_ext_2325 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:23:45.229825-04:00 share_ext_2320 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:18:41.636012-04:00 share_ext_2315 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:13:37.925374-04:00 share_ext_2310 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:08:34.482037-04:00 share_ext_2305 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:03:30.993250-04:00 share_ext_2300 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T22:58:27.605882-04:00 share_ext_2255 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T22:53:23.968473-04:00 share_ext_2250 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T22:48:20.500825-04:00 share_ext_2245 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T22:12:02.937749-04:00 share_ext_2210 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T21:38:06.045742-04:00 share_ext_2135 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T20:14:36.392849-04:00 share_ext_2010 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T20:09:32.881028-04:00 share_ext_2005 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 ```

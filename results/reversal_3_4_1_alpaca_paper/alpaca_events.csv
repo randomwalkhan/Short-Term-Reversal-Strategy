@@ -5988,3 +5988,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-07T23:49:02.665855-04:00,2026-09-07,share_ext_2345,market_closed,"{""holiday_name"": ""Labor Day"", ""reason"": ""nyse_holiday""}"
 2026-09-07T23:54:06.051725-04:00,2026-09-07,share_ext_2350,market_closed,"{""holiday_name"": ""Labor Day"", ""reason"": ""nyse_holiday""}"
 2026-09-07T23:59:09.426657-04:00,2026-09-07,share_ext_2355,market_closed,"{""holiday_name"": ""Labor Day"", ""reason"": ""nyse_holiday""}"
+2026-09-08T09:20:40.711138-04:00,2026-09-08,manage_0930,exit_skipped,"{""contract_symbol"": ""SHOP261016C00155000"", ""current_ask"": 0.0, ""current_bid"": 0.0, ""current_option_price"": 5.68, ""current_price_source"": ""last_price_stale"", ""reason"": ""unreliable_option_quote"", ""ticker"": ""SHOP""}"
