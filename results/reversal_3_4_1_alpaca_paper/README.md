@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-08 09:25:44 EDT`
+Latest checkpoint (ET): `2026-09-08 09:30:48 EDT`
 Last slot: `manage_0930`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$85,898.13`
-- Portfolio value: `$88,398.13`
+- Portfolio value: `$87,598.13`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot    event_type                                                                                                                                                                                                              detail
+2026-09-08T09:30:48.042297-04:00    manage_0930  exit_skipped {"contract_symbol": "SHOP261016C00155000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 5.68, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "SHOP"}
 2026-09-08T09:25:44.203415-04:00    manage_0930  exit_skipped {"contract_symbol": "SHOP261016C00155000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 5.68, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "SHOP"}
 2026-09-08T09:20:40.711138-04:00    manage_0930  exit_skipped {"contract_symbol": "SHOP261016C00155000", "current_ask": 0.0, "current_bid": 0.0, "current_option_price": 5.68, "current_price_source": "last_price_stale", "reason": "unreliable_option_quote", "ticker": "SHOP"}
 2026-09-07T23:59:09.426657-04:00 share_ext_2355 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-09-07T22:48:20.500825-04:00 share_ext_2245 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 2026-09-07T22:12:02.937749-04:00 share_ext_2210 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 2026-09-07T21:38:06.045742-04:00 share_ext_2135 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T20:14:36.392849-04:00 share_ext_2010 market_closed                                                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 ```
