@@ -5815,3 +5815,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-08T14:50:01.652709-04:00,2026-09-08,entry_1500,entry,"{""allocated_cash"": 37180.0, ""asset_type"": ""option"", ""contract_symbol"": ""CRWD261016C00210000"", ""contracts"": 26, ""early_entry_score"": 0.637, ""entry_mode"": ""regular"", ""entry_option_price"": 14.3, ""execution_mode"": ""option"", ""matched_signals"": 36, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 699.0, ""option_spread_pct"": 4.2, ""option_volume"": 116.0, ""success_rate"": 88.89, ""ticker"": ""CRWD"", ""timing_score"": 0.617}"
 2026-09-08T14:55:03.619621-04:00,2026-09-08,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-08T15:00:03.621763-04:00,2026-09-08,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-09-08T15:05:04.629730-04:00,2026-09-08,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
