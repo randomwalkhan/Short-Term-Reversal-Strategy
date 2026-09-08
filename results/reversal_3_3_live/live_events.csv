@@ -5786,3 +5786,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-07T23:55:04.287626-04:00,2026-09-07,share_ext_2355,market_closed,"{""holiday_name"": ""Labor Day"", ""reason"": ""nyse_holiday""}"
 2026-09-08T00:00:05.865092-04:00,2026-09-08,data_refresh,data_refresh,{'saved': 93}
 2026-09-08T09:50:04.503186-04:00,2026-09-08,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MSTR261016C00145000"", ""fill_price"": 12.0375, ""pnl"": -4012.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""MSTR""}"
+2026-09-08T10:00:06.216987-04:00,2026-09-08,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"

@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-08 09:55:01 EDT`
+Latest checkpoint (ET): `2026-09-08 10:00:06 EDT`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -48,34 +48,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  CRWD           81.82               22            2.40              3.58        211.57                91.63         0.644          pass              0.293             33.5                           0.245                9.08              1.029                                 ok            True                  False
-   WMT           83.33               24            0.90              0.67        106.85                40.24         0.581          pass              0.306             22.0                           0.222               -0.29              0.236                                 ok            True                  False
-  MELI          100.00               26            1.34             18.56       1970.41                45.80         0.567          pass              0.699             45.2                           0.563                0.20              0.100                                 ok            True                  False
-  CPRT           86.67               15            2.34              0.55         33.48                42.28         0.535          pass              0.301             12.2                           0.165               -0.99              0.024                                 ok            True                  False
-  CSCO           86.49               37            0.56              0.43        109.02                36.41         0.516          pass              0.452             15.9                           0.177               -1.49             -0.269                                 ok            True                  False
-  CHTR           89.29               28            2.02              2.15        151.07                60.37         0.515          pass              0.465             15.2                           0.152               -0.92             -0.080                                 ok            True                  False
-  PYPL           87.50                8            2.23              0.86         54.59                57.43         0.638          pass              0.327             20.9                           0.229              -12.67             -1.525 downtrend_blocked_slope_and_streak           False                  False
-   KHC          100.00                6            1.97              0.34         24.70                29.15         0.579          pass              0.481              7.5                           0.116               -3.59             -0.022                                 ok           False                  False
-  MSTR           76.00               25            3.60              3.59        141.26               102.15         0.575          pass              0.250             30.8                           0.429               12.26              1.182                                 ok           False                  False
-  PANW           82.86               35            1.41              3.30        331.85                70.93         0.547          pass              0.420             40.7                           0.343               -6.37             -0.733            downtrend_blocked_slope           False                  False
-  PAYX          100.00                4            2.45              2.09        120.82                27.58         0.545          pass              0.538             27.8                           0.383               -5.78             -0.409            downtrend_blocked_slope           False                  False
-   ADP          100.00                5            2.44              4.74        275.59                22.14         0.535          pass              0.502             16.1                           0.213               -4.30             -0.281            downtrend_blocked_slope           False                  False
+  CRWD           83.33               24            2.16              3.23        211.72                91.63         0.648          pass              0.367             40.1                           0.295                9.34              1.040                                 ok            True                  False
+   WMT           83.33               24            0.90              0.68        106.85                40.24         0.581          pass              0.305             21.5                           0.231               -0.30              0.236                                 ok            True                  False
+  MELI          100.00               26            1.24             17.13       1971.02                45.80         0.573          pass              0.712             49.4                           0.646                0.31              0.105                                 ok            True                  False
+  CPRT           86.67               15            2.37              0.56         33.48                42.28         0.533          pass              0.298             11.1                           0.160               -1.02              0.022                                 ok            True                  False
+  GILD          100.00               11            2.05              2.17        150.07                24.06         0.520          pass              0.591             44.2                           0.618                0.79              0.182                                 ok            True                  False
+  CHTR           90.00               30            1.80              1.92        151.17                60.37         0.517          pass              0.525             24.3                           0.229               -0.70             -0.070                                 ok            True                  False
+  MSFT           88.89               18            1.39              4.87        497.61                23.39         0.508          pass              0.396             18.2                           0.231                1.12              0.131                                 ok            True                  False
+  PYPL           90.00               10            1.95              0.75         54.64                57.43         0.645          pass              0.424             31.0                           0.281              -12.41             -1.512 downtrend_blocked_slope_and_streak           False                  False
+   KHC          100.00                9            1.29              0.22         24.75                29.15         0.600          pass              0.579             39.6                           0.421               -2.91              0.010                                 ok           False                  False
+  MSTR           76.00               25            3.50              3.50        141.30               102.15         0.580          pass              0.256             32.6                           0.584               12.37              1.187                                 ok           False                  False
+  SBUX           92.86               14            1.25              0.91        104.08                22.08         0.546          pass              0.424              0.0                           0.183               -4.02             -0.323            downtrend_blocked_slope           False                  False
+  PANW           83.33               36            1.39              3.24        331.87                70.93         0.543          pass              0.442             41.7                           0.307               -6.35             -0.732            downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                                                                                                                                                              detail
-2026-09-08T09:50:04.503186-04:00    manage_1000          exit {"asset_type": "option", "contract_symbol": "MSTR261016C00145000", "fill_price": 12.0375, "pnl": -4012.5, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "MSTR"}
-2026-09-08T00:00:05.865092-04:00   data_refresh  data_refresh                                                                                                                                                                       {'saved': 93}
-2026-09-07T23:55:04.287626-04:00 share_ext_2355 market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:50:01.089933-04:00 share_ext_2350 market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:45:01.091566-04:00 share_ext_2345 market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:40:05.520694-04:00 share_ext_2340 market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:35:01.092604-04:00 share_ext_2335 market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:30:01.100040-04:00 share_ext_2330 market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:25:04.214118-04:00 share_ext_2325 market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
-2026-09-07T23:20:01.098530-04:00 share_ext_2320 market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+                    timestamp_et             slot         event_type                                                                                                                                                                              detail
+2026-09-08T10:00:06.216987-04:00 early_entry_1000 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-08T09:50:04.503186-04:00      manage_1000               exit {"asset_type": "option", "contract_symbol": "MSTR261016C00145000", "fill_price": 12.0375, "pnl": -4012.5, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "MSTR"}
+2026-09-08T00:00:05.865092-04:00     data_refresh       data_refresh                                                                                                                                                                       {'saved': 93}
+2026-09-07T23:55:04.287626-04:00   share_ext_2355      market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:50:01.089933-04:00   share_ext_2350      market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:45:01.091566-04:00   share_ext_2345      market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:40:05.520694-04:00   share_ext_2340      market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:35:01.092604-04:00   share_ext_2335      market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:30:01.100040-04:00   share_ext_2330      market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
+2026-09-07T23:25:04.214118-04:00   share_ext_2325      market_closed                                                                                                                             {"holiday_name": "Labor Day", "reason": "nyse_holiday"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260908095501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260908100006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260908095501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260908100006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260908095501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260908100006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260908095501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260908100006)
 
 </details>
