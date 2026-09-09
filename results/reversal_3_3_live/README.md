@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-09 15:40:05 EDT`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-09-09 15:45:02 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -28,17 +28,17 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$3,078.10`
-- Equity: `$74,718.10`
+- Equity: `$74,758.10`
 - Realized PnL: `$67,148.10`
-- Unrealized PnL: `$-2,430.00`
+- Unrealized PnL: `$-2,390.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  MSTR     option         option MSTR261009C00135000       2026-09-09                   0     34     36890.0                 38165.0        10.85          11.23      133.57        133.99          bid_ask_mid                      11.23                bid_ask_mid                    True          1275.0                   3.46         80.65               31              2.16         74.55           75.54                 103.38                 254.0           23.0               0.03                      ok
-  CRWD     option         option CRWD261016C00210000       2026-09-08                   1     26     37180.0                 33475.0        14.30          12.88      209.63        208.09          bid_ask_mid                      12.88                bid_ask_mid                    True         -3705.0                  -9.97         88.89               36              1.63         52.75           51.77                  91.63                 699.0          116.0               0.04                      ok
+  MSTR     option         option MSTR261009C00135000       2026-09-09                   0     34     36890.0                 38335.0        10.85          11.28      133.57        133.52          bid_ask_mid                      11.28                bid_ask_mid                    True          1445.0                   3.92         80.65               31              2.16         74.55           76.21                 103.38                 254.0           23.0               0.03                      ok
+  CRWD     option         option CRWD261016C00210000       2026-09-08                   1     26     37180.0                 33345.0        14.30          12.82      209.63        207.59          bid_ask_mid                      12.82                bid_ask_mid                    True         -3835.0                 -10.31         88.89               36              1.63         52.75           52.36                  91.63                 699.0          116.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-09-09)
@@ -49,18 +49,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  CRWD           89.74               39            0.92              1.35        209.44                89.86         0.658          pass              0.627             36.1                           0.473               12.25              0.577                                 ok            True                  False
-  MSTR           80.65               31            1.85              1.77        135.76               103.38         0.655          pass              0.317             31.4                           0.470                5.65              0.893                                 ok            True                  False
-  WDAY           91.89               37            0.50              0.66        186.00                77.37         0.634          pass              0.757             65.6                           0.605               -4.67             -0.237                                 ok            True                   True
-   STX           87.10               31            1.27              8.02        900.94                74.46         0.596          pass              0.490             33.7                           0.223                8.67              0.534                                 ok            True                  False
-   PEP          100.00               10            0.96              0.93        138.05                16.46         0.568          pass              0.569             37.3                           0.432               -2.59             -0.202                                 ok            True                  False
-  NVDA           90.91               33            0.82              1.30        225.17                44.12         0.533          pass              0.552             18.0                           0.340                5.08              0.626                                 ok            True                  False
-   AEP           90.91               22            0.58              0.51        125.20                16.51         0.512          pass              0.577             51.7                           0.443                1.57              0.214                                 ok            True                  False
-  CPRT           81.48               27            1.30              0.30         32.47                44.55         0.511          pass              0.356             50.6                           0.573               -3.47             -0.080                                 ok            True                  False
-   CEG           86.67               15            1.49              3.13        297.71                32.90         0.510          pass              0.404             47.3                           0.448                5.80              0.760                                 ok            True                  False
-  PYPL           93.33               15            1.48              0.55         52.94                58.35         0.643          pass              0.606             50.9                           0.318              -15.65             -1.472 downtrend_blocked_slope_and_streak           False                  False
-   KHC          100.00                9            1.00              0.18         24.82                28.58         0.612          pass              0.527             21.9                           0.142               -1.09              0.037                                 ok           False                  False
-  AMGN           96.88               32            0.32              0.88        392.79                44.47         0.578          pass              0.808             67.7                           0.544              -11.38             -0.884 downtrend_blocked_slope_and_streak           False                  False
+  CRWD           89.74               39            1.06              1.56        209.35                89.86         0.650          pass              0.597             26.2                           0.384               12.09              0.571                                 ok            True                  False
+  MSTR           80.65               31            2.20              2.10        135.62               103.38         0.636          pass              0.277             18.7                           0.311                5.27              0.877                                 ok            True                  False
+   STX           87.10               31            1.61             10.22        900.00                74.46         0.575          pass              0.433             15.5                           0.151                8.29              0.518                                 ok            True                  False
+   PEP          100.00               10            0.98              0.95        138.04                16.46         0.567          pass              0.565             36.1                           0.421               -2.61             -0.203                                 ok            True                  False
+  NVDA           90.62               32            0.88              1.39        225.13                44.12         0.535          pass              0.521             12.6                           0.267                5.02              0.623                                 ok            True                  False
+   AEP           90.91               22            0.56              0.49        125.21                16.51         0.513          pass              0.582             53.3                           0.460                1.59              0.215                                 ok            True                  False
+  CPRT           80.00               25            1.46              0.33         32.46                44.55         0.513          pass              0.286             44.8                           0.569               -3.62             -0.087                                 ok            True                  False
+   CEG           86.67               15            1.48              3.10        297.72                32.90         0.511          pass              0.406             47.8                           0.447                5.82              0.761                                 ok            True                  False
+  FTNT           93.02               43            0.64              0.71        157.17                53.64         0.503          pass              0.716             39.5                           0.330                1.82             -0.394                                 ok            True                  False
+  PYPL           91.67               12            1.76              0.65         52.90                58.35         0.642          pass              0.513             41.6                           0.237              -15.89             -1.485 downtrend_blocked_slope_and_streak           False                  False
+  WDAY           92.50               40            0.40              0.52        186.06                77.37         0.624          pass              0.814             72.7                           0.692               -4.57             -0.233                                 ok           False                  False
+   KHC          100.00                9            1.10              0.19         24.82                28.58         0.606          pass              0.503             14.1                           0.116               -1.19              0.033                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260909154005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260909154502)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260909154005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260909154502)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260909154005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260909154502)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260909154005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260909154502)
 
 </details>
