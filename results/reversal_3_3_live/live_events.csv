@@ -5817,3 +5817,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-08T15:00:03.621763-04:00,2026-09-08,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-08T15:05:04.629730-04:00,2026-09-08,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-08T15:10:02.485838-04:00,2026-09-08,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-09-09T00:00:04.345374-04:00,2026-09-09,data_refresh,data_refresh,{'saved': 93}
