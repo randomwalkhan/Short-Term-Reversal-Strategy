@@ -6019,3 +6019,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-08T16:04:55.127573-04:00,2026-09-08,exit,exit_not_filled,"{""contract_symbol"": ""SHOP261016C00155000"", ""status"": ""expired"", ""ticker"": ""SHOP""}"
 2026-09-08T16:04:55.127573-04:00,2026-09-08,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""2e351eef-f1ce-409b-b619-77bf52a261f8"", ""contract_symbol"": ""SHOP261016C00155000"", ""limit_price"": ""2.10"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""SHOP""}"
 2026-09-09T09:34:23.915258-04:00,2026-09-09,exit,exit_filled,"{""contract_symbol"": ""SHOP261016C00155000"", ""exit_price"": 2.62, ""pnl"": -3340.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""SHOP""}"
+2026-09-09T10:04:48.002542-04:00,2026-09-09,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
