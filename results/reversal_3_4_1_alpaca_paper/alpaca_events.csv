@@ -6021,3 +6021,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-09T09:34:23.915258-04:00,2026-09-09,exit,exit_filled,"{""contract_symbol"": ""SHOP261016C00155000"", ""exit_price"": 2.62, ""pnl"": -3340.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""SHOP""}"
 2026-09-09T10:04:48.002542-04:00,2026-09-09,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-09T10:11:00.531320-04:00,2026-09-09,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-09T10:17:14.914066-04:00,2026-09-09,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
