@@ -6038,3 +6038,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-09T11:44:42.160561-04:00,2026-09-09,early_entry_1140,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-09T11:50:57.105610-04:00,2026-09-09,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-09T11:57:11.552751-04:00,2026-09-09,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-09T14:48:25.249041-04:00,2026-09-09,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""b236ce2e-f3b2-4e53-b999-58bd6a724513"", ""contract_symbol"": ""CRWD261016C00210000"", ""contracts"": 3, ""entry_mode"": ""regular"", ""limit_price"": ""13.30"", ""ticker"": ""CRWD""}"
