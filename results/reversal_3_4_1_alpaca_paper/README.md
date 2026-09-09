@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-09 13:52:34 EDT`
+Latest checkpoint (ET): `2026-09-09 13:57:38 EDT`
 Last slot: `manage_1400`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1400`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  CRWD   open    regular CRWD261016C00210000          3               14.45                  13.3          bid_ask_mid                       13.3                    True          3990.0          -345.0              -7.958478                   1
+  CRWD   open    regular CRWD261016C00210000          3               14.45                13.275          bid_ask_mid                     13.275                    True          3982.5          -352.5              -8.131488                   1
 ```
 
 ## Closed Trades
