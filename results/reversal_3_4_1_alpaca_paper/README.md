@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-10 15:55:13 EDT`
+Latest checkpoint (ET): `2026-09-10 16:00:17 EDT`
 Last slot: `manage_1600`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1600`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  MSTR   open    regular MSTR261016C00130000          4                11.7                  11.5          bid_ask_mid                       11.5                    True          4600.0           -80.0              -1.709402                   0
+  MSTR   open    regular MSTR261016C00130000          4                11.7                11.475          bid_ask_mid                     11.475                    True          4590.0           -90.0              -1.923077                   0
 ```
 
 ## Closed Trades
