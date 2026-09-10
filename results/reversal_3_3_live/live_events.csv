@@ -5881,3 +5881,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-10T14:50:04.321187-04:00,2026-09-10,entry_1500,entry,"{""allocated_cash"": 34575.0, ""asset_type"": ""option"", ""contract_symbol"": ""MSTR261016C00130000"", ""contracts"": 30, ""early_entry_score"": 0.329, ""entry_mode"": ""regular"", ""entry_option_price"": 11.525, ""execution_mode"": ""option"", ""matched_signals"": 30, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 13089.0, ""option_spread_pct"": 3.04, ""option_volume"": 181.0, ""success_rate"": 80.0, ""ticker"": ""MSTR"", ""timing_score"": 0.627}"
 2026-09-10T14:55:01.338809-04:00,2026-09-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-10T15:00:04.389376-04:00,2026-09-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-09-10T15:05:01.362764-04:00,2026-09-10,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
