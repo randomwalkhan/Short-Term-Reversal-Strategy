@@ -5852,3 +5852,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-09T16:05:01.918481-04:00,2026-09-09,manage_1600,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CRWD261016C00210000"", ""fill_price"": 12.87, ""pnl"": -3718.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""CRWD""}"
 2026-09-10T00:00:06.085098-04:00,2026-09-10,data_refresh,data_refresh,{'saved': 93}
 2026-09-10T09:50:01.115358-04:00,2026-09-10,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MSTR261009C00135000"", ""fill_price"": 9.765, ""pnl"": -3689.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""MSTR""}"
+2026-09-10T10:00:02.289278-04:00,2026-09-10,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
