@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4609.999999999999,
+      "alpaca_entry_client_order_id": "rev-20260910145242-mstr-regular",
+      "alpaca_entry_order_id": "aa961617-223c-437c-a24d-3ffe9abca556",
+      "asset_type": "option",
+      "contract_symbol": "MSTR261016C00130000",
+      "contracts": 4,
+      "current_drop_pct": 2.21,
+      "early_entry_score": 0.369,
+      "entry_mode": "regular",
+      "entry_option_price": 11.524999999999999,
+      "entry_slot": "entry_1500",
+      "entry_spot": 129.77000427246094,
+      "entry_timestamp": "2026-09-10T14:52:42.696437-04:00",
+      "entry_trade_date": "2026-09-10",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-10-16",
+      "matched_signals": 31,
+      "planned_stop": 10.372499999999999,
+      "planned_tp_day1": 13.253749999999997,
+      "planned_tp_day2": 13.253749999999997,
+      "position_id": "MSTR_20260910T145242",
+      "status": "entry_submitted",
+      "strike": 130.0,
+      "success_rate": 80.65,
+      "ticker": "MSTR",
+      "timing_score": 0.635
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
