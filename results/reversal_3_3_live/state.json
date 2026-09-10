@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 36540.100356674215,
-  "positions": [
-    {
-      "position_id": "MSTR_20260909T145005",
-      "ticker": "MSTR",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "MSTR261009C00135000",
-      "expiry": "2026-10-09",
-      "strike": 135.0,
-      "entry_timestamp": "2026-09-09T14:50:05.027114-04:00",
-      "entry_trade_date": "2026-09-09",
-      "entry_slot": "entry_1500",
-      "entry_spot": 133.57000732421875,
-      "entry_option_price": 10.85,
-      "entry_bid": 10.7,
-      "entry_ask": 11.0,
-      "entry_iv_pct": 74.54859436035157,
-      "contracts": 34,
-      "allocated_cash": 36890.0,
-      "success_rate": 80.65,
-      "matched_signals": 31,
-      "current_drop_pct": 2.16,
-      "rolling_sigma_20d_pct": 103.38,
-      "planned_tp_day1": 12.4775,
-      "planned_tp_day2": 12.4775,
-      "planned_stop": 9.765,
-      "option_open_interest": 254.0,
-      "option_volume": 23.0,
-      "option_spread_pct": 0.027649769585253524,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 69741.10035667421,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
