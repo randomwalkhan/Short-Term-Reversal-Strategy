@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-09-10 15:25:05 EDT`
-- Equity: `$70,716.10` | Realized: `$59,741.10` | Unrealized: `$975.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-09-10 15:30:05 EDT`
+- Equity: `$70,641.10` | Realized: `$59,741.10` | Unrealized: `$900.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  MSTR     option         option MSTR261016C00130000     30     34575.0                 35550.0          11.85           975.0                   2.82                   0
+  MSTR     option         option MSTR261016C00130000     30     34575.0                 35475.0          11.82           900.0                    2.6                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260910152505)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260910153005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260910152505)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260910153005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260910152505)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260910153005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260910152505)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260910153005)
 
 </details>
 
