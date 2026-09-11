@@ -5910,3 +5910,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-11T11:50:02.882708-04:00,2026-09-11,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-11T11:55:01.842224-04:00,2026-09-11,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-11T12:00:03.003315-04:00,2026-09-11,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-11T14:50:04.839039-04:00,2026-09-11,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-09-11"", ""training_samples"": 5769, ""window"": 5}"
+2026-09-11T14:50:04.839039-04:00,2026-09-11,entry_1500,entry_skipped,"{""reason"": ""no_candidate""}"
