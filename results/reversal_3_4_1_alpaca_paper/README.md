@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-11 11:36:07 EDT`
-Last slot: `manage_1130`
+Latest checkpoint (ET): `2026-09-11 11:42:23 EDT`
+Last slot: `early_entry_1140`
 
 ## Alpaca Paper Account
 
@@ -44,25 +44,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot            event_type                                                                                                                                                                                    detail
-2026-09-11T11:36:07.248108-04:00 early_entry_1135    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T11:29:52.208670-04:00 early_entry_1125    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T11:23:39.980352-04:00 early_entry_1120    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T11:17:27.988626-04:00 early_entry_1115    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T11:11:15.449513-04:00 early_entry_1110    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T11:05:05.925833-04:00 early_entry_1105    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:58:53.387061-04:00 early_entry_1055    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:52:38.238991-04:00 early_entry_1050    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:46:25.889641-04:00 early_entry_1045    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:40:16.332664-04:00 early_entry_1040    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:34:06.509554-04:00 early_entry_1030    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:27:57.463908-04:00 early_entry_1025    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:21:46.398970-04:00 early_entry_1020    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:15:35.225802-04:00 early_entry_1015    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:15:35.225802-04:00             exit           exit_filled                                                 {"contract_symbol": "MSTR261016C00130000", "exit_price": 15.4, "pnl": 1480.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MSTR"}
-2026-09-11T10:09:25.345724-04:00 early_entry_1005    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-11T10:09:25.345724-04:00      manage_1000  exit_order_submitted {"alpaca_order_id": "74fb81d5-a832-46f9-8ae0-61fbb759a474", "contract_symbol": "MSTR261016C00130000", "limit_price": "14.30", "reason": "take_profit_day1_hit_at_scan", "ticker": "MSTR"}
-2026-09-11T10:03:14.598488-04:00 early_entry_1000    early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-10T15:40:00.220992-04:00       entry_1500          entry_filled                                                                                        {"contract_symbol": "MSTR261016C00130000", "contracts": 4, "filled_price": 11.7, "ticker": "MSTR"}
-2026-09-10T14:52:42.696437-04:00       entry_1500 entry_order_submitted  {"alpaca_order_id": "aa961617-223c-437c-a24d-3ffe9abca556", "contract_symbol": "MSTR261016C00130000", "contracts": 4, "entry_mode": "regular", "limit_price": "11.70", "ticker": "MSTR"}
+                    timestamp_et             slot           event_type                                                                                                                                                                                    detail
+2026-09-11T11:42:23.123214-04:00 early_entry_1140   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T11:36:07.248108-04:00 early_entry_1135   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T11:29:52.208670-04:00 early_entry_1125   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T11:23:39.980352-04:00 early_entry_1120   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T11:17:27.988626-04:00 early_entry_1115   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T11:11:15.449513-04:00 early_entry_1110   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T11:05:05.925833-04:00 early_entry_1105   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:58:53.387061-04:00 early_entry_1055   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:52:38.238991-04:00 early_entry_1050   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:46:25.889641-04:00 early_entry_1045   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:40:16.332664-04:00 early_entry_1040   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:34:06.509554-04:00 early_entry_1030   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:27:57.463908-04:00 early_entry_1025   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:21:46.398970-04:00 early_entry_1020   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:15:35.225802-04:00 early_entry_1015   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:15:35.225802-04:00             exit          exit_filled                                                 {"contract_symbol": "MSTR261016C00130000", "exit_price": 15.4, "pnl": 1480.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MSTR"}
+2026-09-11T10:09:25.345724-04:00 early_entry_1005   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-11T10:09:25.345724-04:00      manage_1000 exit_order_submitted {"alpaca_order_id": "74fb81d5-a832-46f9-8ae0-61fbb759a474", "contract_symbol": "MSTR261016C00130000", "limit_price": "14.30", "reason": "take_profit_day1_hit_at_scan", "ticker": "MSTR"}
+2026-09-11T10:03:14.598488-04:00 early_entry_1000   early_entry_shadow                                                                                                                     {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-09-10T15:40:00.220992-04:00       entry_1500         entry_filled                                                                                        {"contract_symbol": "MSTR261016C00130000", "contracts": 4, "filled_price": 11.7, "ticker": "MSTR"}
 ```
