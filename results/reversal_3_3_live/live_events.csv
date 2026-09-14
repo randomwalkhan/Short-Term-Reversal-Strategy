@@ -5946,3 +5946,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-14T14:50:04.030674-04:00,2026-09-14,entry_1500,entry,"{""allocated_cash"": 38000.0, ""asset_type"": ""option"", ""contract_symbol"": ""EXC261016C00043000"", ""contracts"": 400, ""early_entry_score"": 0.606, ""entry_mode"": ""regular"", ""entry_option_price"": 0.95, ""execution_mode"": ""option"", ""matched_signals"": 11, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 123.0, ""option_spread_pct"": 10.53, ""option_volume"": 93.0, ""success_rate"": 100.0, ""ticker"": ""EXC"", ""timing_score"": 0.551}"
 2026-09-14T14:55:02.132179-04:00,2026-09-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-14T15:00:05.039225-04:00,2026-09-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-09-14T15:05:01.081991-04:00,2026-09-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
