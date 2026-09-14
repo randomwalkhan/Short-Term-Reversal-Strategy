@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 76116.10035667423,
-  "positions": [],
+  "cash": 38116.10035667423,
+  "positions": [
+    {
+      "position_id": "EXC_20260914T145004",
+      "ticker": "EXC",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "EXC261016C00043000",
+      "expiry": "2026-10-16",
+      "strike": 43.0,
+      "entry_timestamp": "2026-09-14T14:50:04.030674-04:00",
+      "entry_trade_date": "2026-09-14",
+      "entry_slot": "entry_1500",
+      "entry_spot": 42.869998931884766,
+      "entry_option_price": 0.95,
+      "entry_bid": 0.9,
+      "entry_ask": 1.0,
+      "entry_iv_pct": 20.459779785156247,
+      "contracts": 400,
+      "allocated_cash": 38000.0,
+      "success_rate": 100.0,
+      "matched_signals": 11,
+      "current_drop_pct": 0.67,
+      "rolling_sigma_20d_pct": 14.68,
+      "planned_tp_day1": 1.0924999999999998,
+      "planned_tp_day2": 1.0924999999999998,
+      "planned_stop": 0.855,
+      "option_open_interest": 123.0,
+      "option_volume": 93.0,
+      "option_spread_pct": 0.10526315789473682,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -5143,7 +5174,9 @@
     "2026-09-11": [
       "entry_1500"
     ],
-    "2026-09-14": []
+    "2026-09-14": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
