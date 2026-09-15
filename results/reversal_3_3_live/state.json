@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 72316.10035667423,
-  "positions": [],
+  "cash": 36616.10035667424,
+  "positions": [
+    {
+      "position_id": "TMUS_20260915T145004",
+      "ticker": "TMUS",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "TMUS261016C00185000",
+      "expiry": "2026-10-16",
+      "strike": 185.0,
+      "entry_timestamp": "2026-09-15T14:50:04.834862-04:00",
+      "entry_trade_date": "2026-09-15",
+      "entry_slot": "entry_1500",
+      "entry_spot": 181.67999267578125,
+      "entry_option_price": 5.1,
+      "entry_bid": 4.9,
+      "entry_ask": 5.3,
+      "entry_iv_pct": 31.580274047851553,
+      "contracts": 70,
+      "allocated_cash": 35699.99999999999,
+      "success_rate": 96.0,
+      "matched_signals": 25,
+      "current_drop_pct": 0.67,
+      "rolling_sigma_20d_pct": 25.87,
+      "planned_tp_day1": 5.864999999999999,
+      "planned_tp_day2": 5.864999999999999,
+      "planned_stop": 4.59,
+      "option_open_interest": 294.0,
+      "option_volume": 103.0,
+      "option_spread_pct": 0.07843137254901951,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -5146,7 +5177,9 @@
     "2026-09-14": [
       "entry_1500"
     ],
-    "2026-09-15": []
+    "2026-09-15": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
