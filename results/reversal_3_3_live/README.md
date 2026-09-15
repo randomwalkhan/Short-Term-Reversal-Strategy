@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-15 16:00:04 EDT`
+Latest checkpoint (ET): `2026-09-15 16:05:01 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_1600`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  TMUS     option         option TMUS261016C00185000       2026-09-15                   0     70     35700.0                 34300.0          5.1            4.9      181.68        180.49          bid_ask_mid                        4.9                bid_ask_mid                    True         -1400.0                  -3.92          96.0               25              0.67         31.58           33.08                  25.87                 294.0          103.0               0.08                      ok
+  TMUS     option         option TMUS261016C00185000       2026-09-15                   0     70     35700.0                 34300.0          5.1            4.9      181.68        180.47          bid_ask_mid                        4.9                bid_ask_mid                    True         -1400.0                  -3.92          96.0               25              0.67         31.58           33.08                  25.87                 294.0          103.0               0.08                      ok
 ```
 
 ## Today's Closed Trades (2026-09-15)
@@ -49,21 +49,7 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   WMT           81.82               22            0.93              0.71        108.78                40.03         0.595          pass              0.240             17.2                           0.231                3.05              0.214                                 ok            True                  False
-  TEAM          100.00               30            1.54              2.07        191.88                63.46         0.563          pass              0.735             48.6                           0.324               -2.25             -0.299                                 ok            True                  False
-  TMUS           93.33               15            1.32              1.69        182.18                25.87         0.533          pass              0.466              8.0                           0.186                0.03             -0.187                                 ok            True                  False
-   PEP           87.50               16            0.62              0.59        136.09                16.22         0.529          pass              0.434             47.2                           0.429               -2.42             -0.248                                 ok            True                  False
-  CTSH           96.55               29            1.26              0.57         63.86                45.53         0.511          pass              0.767             63.0                           0.316               -2.00             -0.451                                 ok            True                  False
-  MSFT          100.00               15            1.64              5.80        502.92                22.76         0.506          pass              0.532             16.0                           0.332               -2.00             -0.146                                 ok            True                  False
-   CSX           80.95               21            0.50              0.17         48.84                18.06         0.500          pass              0.341             64.0                           0.517               -3.65             -0.154                                 ok            True                  False
-  AMGN           90.00               10            1.53              4.10        379.74                45.29         0.625          pass              0.353              7.9                           0.244              -12.62             -1.925 downtrend_blocked_slope_and_streak           False                  False
-  PYPL           91.43               35            0.41              0.15         53.96                58.07         0.616          pass              0.731             66.2                           0.408                2.43              0.029                                 ok           False                  False
-  REGN          100.00                1            2.53             14.07        787.71                29.50         0.557          pass              0.506             16.9                           0.265               -3.18             -0.652 downtrend_blocked_slope_and_streak           False                  False
-   EXC          100.00                6            1.23              0.37         42.56                14.63         0.548          pass              0.486             10.3                           0.214               -2.57             -0.231           downtrend_blocked_streak           False                  False
-  ADSK           84.38               32            0.98              1.57        228.26                57.97         0.540          pass              0.531             71.1                           0.337              -12.32             -1.495           downtrend_blocked_streak           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -88,27 +74,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260915160004)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260915160501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260915160004)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260915160501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260915160004)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260915160501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260915160004)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260915160501)
 
 </details>
