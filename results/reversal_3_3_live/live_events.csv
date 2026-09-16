@@ -6010,3 +6010,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-16T15:00:06.128176-04:00,2026-09-16,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-16T15:05:01.537613-04:00,2026-09-16,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-16T15:10:01.578825-04:00,2026-09-16,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-09-16T15:35:01.538068-04:00,2026-09-16,manage_1530,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""PYPL261016C00055000"", ""fill_price"": 1.116, ""pnl"": -3434.8, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""PYPL""}"
