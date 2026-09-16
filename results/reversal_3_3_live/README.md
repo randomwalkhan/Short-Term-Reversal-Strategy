@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-16 15:05:01 EDT`
+Latest checkpoint (ET): `2026-09-16 15:10:01 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$34,398.10`
-- Equity: `$69,715.60`
+- Equity: `$66,668.60`
 - Realized PnL: `$58,746.10`
-- Unrealized PnL: `$969.50`
+- Unrealized PnL: `$-2,077.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  PYPL     option         option PYPL261016C00055000       2026-09-16                   0    277     34348.0                 35317.5         1.24           1.27       52.95         52.71          bid_ask_mid                       1.27                bid_ask_mid                    True           969.5                   2.82         86.67               15               1.6         34.82           36.96                  57.87                7856.0         1919.0               0.11                      ok
+  PYPL     option         option PYPL261016C00055000       2026-09-16                   0    277     34348.0                 32270.5         1.24           1.16       52.95         52.62          bid_ask_mid                       1.16                bid_ask_mid                    True         -2077.5                  -6.05         86.67               15               1.6         34.82           36.08                  57.87                7856.0         1919.0               0.11                      ok
 ```
 
 ## Today's Closed Trades (2026-09-16)
@@ -51,24 +51,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  CRWD           88.64               44            0.50              0.85        242.12               100.47         0.676          pass              0.749             83.7                           0.524               12.18              1.349                                 ok            True                  False
-  PYPL           81.82               11            2.08              0.78         53.47                57.87         0.642          pass              0.148              9.7                           0.206                0.80             -0.182                                 ok            True                  False
-  MSTR           80.00               25            3.75              3.40        128.14               105.80         0.565          pass              0.224             22.5                           0.259               -0.11             -0.185                                 ok            True                  False
-   ADP           95.65               23            0.63              1.22        276.01                24.27         0.539          pass              0.726             61.8                           0.437               -2.45             -0.253                                 ok            True                  False
-  CTSH          100.00               28            1.41              0.62         63.01                43.25         0.528          pass              0.679             35.5                           0.315               -1.58             -0.195                                 ok            True                  False
-    ZS           97.73               44            0.03              0.04        193.87                82.15         0.628          pass              0.960             99.2                           0.639                8.67              0.955                                 ok           False                  False
-   TRI           93.94               33            0.73              0.52        102.39                58.06         0.594          pass              0.747             54.3                           0.374               -4.22             -0.637 downtrend_blocked_slope_and_streak           False                  False
-  TEAM          100.00               38            0.36              0.48        189.60                62.94         0.591          pass              0.903             85.7                           0.470                1.12              0.008                                 ok           False                  False
-   PEP           87.50               16            0.53              0.50        135.28                15.04         0.531          pass              0.375             27.4                           0.275               -2.55             -0.284            downtrend_blocked_slope           False                  False
-  WDAY           93.75               32            0.96              1.28        190.12                46.67         0.530          pass              0.740             58.0                           0.505               -4.81             -0.688 downtrend_blocked_slope_and_streak           False                  False
- CMCSA          100.00               11            2.27              0.39         24.25                34.84         0.529          pass              0.482              7.5                           0.182               -9.26             -1.100 downtrend_blocked_slope_and_streak           False                  False
-  CHTR           84.21               19            2.75              2.72        140.04                64.00         0.521          pass              0.272             16.0                           0.261               -6.07             -0.973            downtrend_blocked_slope           False                  False
+  PYPL           80.00               10            2.21              0.83         53.45                57.87         0.638          pass              0.076              4.0                           0.115                0.67             -0.188                                 ok            True                  False
+  TEAM          100.00               37            0.76              1.01        189.38                62.94         0.573          pass              0.847             69.9                           0.397                0.71             -0.011                                 ok            True                  False
+  MSTR           80.00               25            3.70              3.36        128.16               105.80         0.567          pass              0.227             23.5                           0.308               -0.06             -0.183                                 ok            True                  False
+   ADP           95.45               22            0.65              1.26        275.99                24.27         0.543          pass              0.716             60.6                           0.457               -2.47             -0.254                                 ok            True                  False
+  CTSH          100.00               26            1.60              0.71         62.98                43.25         0.529          pass              0.640             26.8                           0.259               -1.77             -0.204                                 ok            True                  False
+  CRWD           88.64               44            0.49              0.84        242.13               100.47         0.677          pass              0.750             83.9                           0.489               12.19              1.349                                 ok           False                  False
+  SOXL           81.08               37            0.62              0.44        102.13               117.61         0.667          pass              0.320             14.9                           0.099               -3.98             -0.461            downtrend_blocked_slope           False                  False
+    ZS           97.62               42            0.40              0.54        193.66                82.15         0.618          pass              0.926             88.0                           0.479                8.27              0.938                                 ok           False                  False
+   TRI           93.75               32            0.84              0.60        102.35                58.06         0.594          pass              0.715             47.6                           0.365               -4.33             -0.642 downtrend_blocked_slope_and_streak           False                  False
+  DRAM           81.08               37            0.04              0.01         55.00                63.18         0.565          pass              0.415             50.0                           0.228               -0.13             -0.200                                 ok           False                  False
+  NFLX           85.00               20            1.42              0.78         77.57                36.51         0.530          pass              0.267              4.7                           0.107               -4.97             -0.558 downtrend_blocked_slope_and_streak           False                  False
+ CMCSA          100.00               11            2.27              0.39         24.25                34.84         0.529          pass              0.482              7.5                           0.157               -9.26             -1.100 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     detail
+2026-09-16T15:10:01.578825-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {"reason": "already_processed"}
 2026-09-16T15:05:01.537613-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {"reason": "already_processed"}
 2026-09-16T15:00:06.128176-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {"reason": "already_processed"}
 2026-09-16T14:55:02.603343-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {"reason": "already_processed"}
@@ -78,7 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-09-16T11:45:04.644986-04:00 early_entry_1145 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-16T11:40:01.643996-04:00 early_entry_1140 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-16T11:35:01.673280-04:00 early_entry_1135 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-16T11:30:01.814450-04:00 early_entry_1130 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260916150501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260916151001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260916150501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260916151001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260916150501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260916151001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260916150501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260916151001)
 
 </details>
