@@ -3,45 +3,42 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-09-16 09:45:02 EDT`
-- Equity: `$70,216.10` | Realized: `$62,316.10` | Unrealized: `$-2,100.00` | Open positions: `1`
-- Today closed trades: `0`
-- Current slot: `manual`
+- Latest checkpoint (ET): `2026-09-16 09:50:01 EDT`
+- Equity: `$68,746.10` | Realized: `$58,746.10` | Unrealized: `$0.00` | Open positions: `0`
+- Today closed trades: `1`
+- Current slot: `manage_1000`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
-```text
-ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  TMUS     option         option TMUS261016C00185000     70     35700.0                 33600.0            4.8         -2100.0                  -5.88                   1
-```
+_None_
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260916094502)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260916095001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260916094502)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260916095001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260916094502)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260916095001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260916094502)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260916095001)
 
 </details>
 
