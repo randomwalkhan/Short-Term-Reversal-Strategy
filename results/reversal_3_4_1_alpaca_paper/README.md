@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-17 14:52:08 EDT`
+Latest checkpoint (ET): `2026-09-17 14:58:35 EDT`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
@@ -14,8 +14,8 @@ Last slot: `entry_1500`
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
-   WMT entry_submitted    regular WMT261023C00108000         18               2.565                   NaN             NaN                    NaN
+ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+   WMT   open    regular WMT261023C00108000         18                2.72                 2.565          bid_ask_mid                      2.565                    True          4617.0          -279.0              -5.698529                   0
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-09-17T14:58:35.942814-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "WMT261023C00108000", "contracts": 18, "filled_price": 2.72, "ticker": "WMT"}
 2026-09-17T14:52:08.535177-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "a1c09032-c0cc-4507-90a3-6c0eb0f0a7ab", "contract_symbol": "WMT261023C00108000", "contracts": 18, "entry_mode": "regular", "limit_price": "2.72", "ticker": "WMT"}
 2026-09-17T11:58:21.123521-04:00 early_entry_1155    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-17T11:51:59.496586-04:00 early_entry_1150    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-09-17T10:23:16.256373-04:00 early_entry_1020    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-17T10:16:58.006875-04:00 early_entry_1015    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-17T10:10:38.520319-04:00 early_entry_1010    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-16T15:29:07.536299-04:00             exit           exit_filled                                                     {"contract_symbol": "PYPL261016C00055000", "exit_price": 1.03, "pnl": -936.0, "reason": "stop_loss_hit_at_scan", "ticker": "PYPL"}
 ```
