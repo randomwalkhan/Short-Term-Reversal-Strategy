@@ -6196,3 +6196,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-18T14:57:41.420645-04:00,2026-09-18,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KHC""}"
 2026-09-18T15:03:53.584333-04:00,2026-09-18,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KHC""}"
 2026-09-18T15:10:06.260913-04:00,2026-09-18,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""64b254b3-45c0-46ee-a325-7815d35f2e83"", ""contract_symbol"": ""CRWD261023C00240000"", ""contracts"": 3, ""entry_mode"": ""regular"", ""limit_price"": ""16.05"", ""ticker"": ""CRWD""}"
+2026-09-18T15:51:47.322343-04:00,2026-09-18,entry_1500,entry_filled,"{""contract_symbol"": ""CRWD261023C00240000"", ""contracts"": 3, ""filled_price"": 16.05, ""ticker"": ""CRWD""}"
