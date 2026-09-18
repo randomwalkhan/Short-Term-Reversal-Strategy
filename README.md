@@ -3,45 +3,42 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-09-18 10:05:06 EDT`
-- Equity: `$69,184.80` | Realized: `$55,311.30` | Unrealized: `$3,873.50` | Open positions: `1`
-- Today closed trades: `0`
+- Latest checkpoint (ET): `2026-09-18 10:10:02 EDT`
+- Equity: `$71,470.80` | Realized: `$61,470.80` | Unrealized: `$0.00` | Open positions: `0`
+- Today closed trades: `1`
 - Current slot: `manage_1000`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
 ### Current Open Positions
 
-```text
-ticker asset_type execution_mode         instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   WMT     option         option WMT261023C00108000    127     32575.5                 36449.0           2.87          3873.5                  11.89                   1
-```
+_None_
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260918100506)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260918101002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260918100506)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260918101002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260918100506)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260918101002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260918100506)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260918101002)
 
 </details>
 

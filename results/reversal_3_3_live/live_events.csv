@@ -6044,3 +6044,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-18T00:00:09.864377-04:00,2026-09-18,data_refresh,data_refresh,"{'saved': 92, 'empty': 1}"
 2026-09-18T10:00:06.717363-04:00,2026-09-18,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-18T10:05:06.381889-04:00,2026-09-18,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-18T10:10:02.340504-04:00,2026-09-18,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""WMT261023C00108000"", ""fill_price"": 3.05, ""pnl"": 6159.5, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 18.91, ""ticker"": ""WMT""}"
+2026-09-18T10:10:02.340504-04:00,2026-09-18,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
