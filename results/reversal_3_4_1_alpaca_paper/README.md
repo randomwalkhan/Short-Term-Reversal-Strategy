@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-18 15:10:06 EDT`
-Last slot: `entry_1500`
+Latest checkpoint (ET): `2026-09-18 15:16:20 EDT`
+Last slot: `manual`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `entry_1500`
 
 ```text
 ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   WMT            open    regular  WMT261023C00108000         18               2.720                 2.925          bid_ask_mid                      2.925                   True          5265.0           369.0               7.536765                 1.0
+   WMT            open    regular  WMT261023C00108000         18               2.720                  2.95          bid_ask_mid                       2.95                   True          5310.0           414.0               8.455882                 1.0
   CRWD entry_submitted    regular CRWD261023C00240000          3              15.575                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
 ```
 
