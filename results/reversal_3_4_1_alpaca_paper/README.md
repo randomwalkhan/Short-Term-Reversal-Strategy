@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-18 10:00:51 EDT`
+Latest checkpoint (ET): `2026-09-18 10:06:59 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1000`
 
 ```text
 ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   WMT   open    regular WMT261023C00108000         18                2.72                 2.835          bid_ask_mid                      2.835                    True          5103.0           207.0               4.227941                   1
+   WMT   open    regular WMT261023C00108000         18                2.72                 2.955          bid_ask_mid                      2.955                    True          5319.0           423.0               8.639706                   1
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-09-18T10:06:59.087065-04:00 early_entry_1005    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-18T10:00:51.415846-04:00 early_entry_1000    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-17T14:58:35.942814-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "WMT261023C00108000", "contracts": 18, "filled_price": 2.72, "ticker": "WMT"}
 2026-09-17T14:52:08.535177-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "a1c09032-c0cc-4507-90a3-6c0eb0f0a7ab", "contract_symbol": "WMT261023C00108000", "contracts": 18, "entry_mode": "regular", "limit_price": "2.72", "ticker": "WMT"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-09-17T10:35:54.490514-04:00 early_entry_1035    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-17T10:29:35.980173-04:00 early_entry_1025    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-09-17T10:23:16.256373-04:00 early_entry_1020    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-09-17T10:16:58.006875-04:00 early_entry_1015    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```

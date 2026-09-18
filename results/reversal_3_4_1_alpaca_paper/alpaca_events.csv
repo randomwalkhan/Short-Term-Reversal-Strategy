@@ -6173,3 +6173,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-17T14:52:08.535177-04:00,2026-09-17,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""a1c09032-c0cc-4507-90a3-6c0eb0f0a7ab"", ""contract_symbol"": ""WMT261023C00108000"", ""contracts"": 18, ""entry_mode"": ""regular"", ""limit_price"": ""2.72"", ""ticker"": ""WMT""}"
 2026-09-17T14:58:35.942814-04:00,2026-09-17,entry_1500,entry_filled,"{""contract_symbol"": ""WMT261023C00108000"", ""contracts"": 18, ""filled_price"": 2.72, ""ticker"": ""WMT""}"
 2026-09-18T10:00:51.415846-04:00,2026-09-18,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-18T10:06:59.087065-04:00,2026-09-18,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
