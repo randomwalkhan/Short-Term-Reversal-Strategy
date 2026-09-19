@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-19 01:13:43 EDT`
-Last slot: `share_ext_0110`
+Latest checkpoint (ET): `2026-09-19 01:18:47 EDT`
+Last slot: `share_ext_0115`
 
 ## Alpaca Paper Account
 
@@ -49,6 +49,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot            event_type                                                                                                                                                                                   detail
+2026-09-19T01:18:47.238463-04:00 share_ext_0115         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-09-19T01:13:43.168778-04:00 share_ext_0110         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-09-19T01:08:39.039423-04:00 share_ext_0105         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-09-19T01:03:35.259131-04:00 share_ext_0100         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
@@ -68,5 +69,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-09-18T15:10:06.260913-04:00     entry_1500 entry_order_submitted {"alpaca_order_id": "64b254b3-45c0-46ee-a325-7815d35f2e83", "contract_symbol": "CRWD261023C00240000", "contracts": 3, "entry_mode": "regular", "limit_price": "16.05", "ticker": "CRWD"}
 2026-09-18T15:03:53.584333-04:00     entry_1500         entry_skipped                                                    {"entry_mode": "regular", "option_liquidity_status": "low_open_interest", "reason": "no_trade_low_option_liquidity", "ticker": "KHC"}
 2026-09-18T14:57:41.420645-04:00     entry_1500         entry_skipped                                        {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "KHC"}
-2026-09-18T14:51:29.734683-04:00     entry_1500         entry_skipped                                        {"entry_mode": "regular", "option_liquidity_status": "low_open_interest,wide_spread", "reason": "no_trade_low_option_liquidity", "ticker": "KHC"}
 ```
