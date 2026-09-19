@@ -6198,3 +6198,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-18T15:10:06.260913-04:00,2026-09-18,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""64b254b3-45c0-46ee-a325-7815d35f2e83"", ""contract_symbol"": ""CRWD261023C00240000"", ""contracts"": 3, ""entry_mode"": ""regular"", ""limit_price"": ""16.05"", ""ticker"": ""CRWD""}"
 2026-09-18T15:51:47.322343-04:00,2026-09-18,entry_1500,entry_filled,"{""contract_symbol"": ""CRWD261023C00240000"", ""contracts"": 3, ""filled_price"": 16.05, ""ticker"": ""CRWD""}"
 2026-09-19T00:02:49.799750-04:00,2026-09-19,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-09-19T00:07:53.723935-04:00,2026-09-19,share_ext_0005,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
