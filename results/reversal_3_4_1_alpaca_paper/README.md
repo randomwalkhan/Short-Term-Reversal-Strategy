@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-20 14:31:25 EDT`
+Latest checkpoint (ET): `2026-09-20 14:36:29 EDT`
 Last slot: `manage_1430`
 
 ## Alpaca Paper Account
@@ -49,6 +49,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et        slot    event_type                                      detail
+2026-09-20T14:36:29.156362-04:00 manage_1430 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-09-20T14:31:25.489161-04:00 manage_1430 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-09-20T14:26:21.710537-04:00 manage_1430 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-09-20T14:21:17.961195-04:00 manage_1430 market_closed {"holiday_name": null, "reason": "weekend"}
@@ -68,5 +69,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-09-20T13:10:24.675996-04:00 manage_1300 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-09-20T13:05:20.711046-04:00 manage_1300 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-09-20T13:00:16.585386-04:00 manage_1300 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-09-20T12:55:12.914299-04:00 manage_1300 market_closed {"holiday_name": null, "reason": "weekend"}
 ```
