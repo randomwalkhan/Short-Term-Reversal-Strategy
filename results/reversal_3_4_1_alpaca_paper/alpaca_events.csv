@@ -6766,3 +6766,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-20T23:48:17.392950-04:00,2026-09-20,share_ext_2345,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-09-20T23:53:21.172737-04:00,2026-09-20,share_ext_2350,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-09-20T23:58:24.765158-04:00,2026-09-20,share_ext_2355,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-09-21T09:50:50.062614-04:00,2026-09-21,manage_1000,exit_order_submitted,"{""alpaca_order_id"": ""f50333c7-1418-46bc-be04-9cbbdd2d981e"", ""contract_symbol"": ""WMT261023C00108000"", ""limit_price"": ""2.23"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""WMT""}"
+2026-09-21T09:50:50.062614-04:00,2026-09-21,manage_1000,exit_order_submitted,"{""alpaca_order_id"": ""f04068b1-12c0-4a13-bf4f-ad1cf6b944a7"", ""contract_symbol"": ""CRWD261023C00240000"", ""limit_price"": ""13.00"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""CRWD""}"
