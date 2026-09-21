@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-09-21 09:50:50 EDT`
+Latest checkpoint (ET): `2026-09-21 09:55:54 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
@@ -13,18 +13,12 @@ Last slot: `manage_1000`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   WMT exit_submitted    regular  WMT261023C00108000         18                2.72                 2.445          bid_ask_mid                      2.445                    True          4401.0          -495.0             -10.110294                   2
-  CRWD exit_submitted    regular CRWD261023C00240000          3               16.05                13.775          bid_ask_mid                     13.775                    True          4132.5          -682.5             -14.174455                   1
-```
+_None_
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-  PYPL PYPL260821C00055000          2026-07-22         2026-07-23                3.25               2.98         15  -405.0   -8.307692        stop_loss_hit_at_scan
-  GILD GILD260918C00130000          2026-07-24         2026-07-27                6.70               8.05          7   945.0   20.149254 take_profit_day1_hit_at_scan
    CSX  CSX260918C00052500          2026-07-28         2026-07-29                1.45               1.25         34  -680.0  -13.793103        stop_loss_hit_at_scan
   FAST FAST260918C00045000          2026-07-29         2026-07-29                4.00               3.50         12  -600.0  -12.500000        stop_loss_hit_at_scan
   PYPL PYPL260918C00057500          2026-07-30         2026-07-31                2.92               2.32         16  -960.0  -20.547945        stop_loss_hit_at_scan
@@ -43,12 +37,16 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   CRWD CRWD261016C00210000          2026-09-09         2026-09-10               13.00              15.20          3   660.0   16.923077        stop_loss_hit_at_scan
   MSTR MSTR261016C00130000          2026-09-10         2026-09-11               11.70              15.40          4  1480.0   31.623932 take_profit_day1_hit_at_scan
   PYPL PYPL261016C00055000          2026-09-16         2026-09-16                1.27               1.03         39  -936.0  -18.897638        stop_loss_hit_at_scan
+   WMT  WMT261023C00108000          2026-09-17         2026-09-21                2.72               2.25         18  -846.0  -17.279412        stop_loss_hit_at_scan
+  CRWD CRWD261023C00240000          2026-09-18         2026-09-21               16.05              16.95          3   270.0    5.607477        stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et           slot           event_type                                                                                                                                                                             detail
+2026-09-21T09:55:54.956965-04:00           exit          exit_filled                                                 {"contract_symbol": "CRWD261023C00240000", "exit_price": 16.95, "pnl": 270.0, "reason": "stop_loss_hit_at_scan", "ticker": "CRWD"}
+2026-09-21T09:55:54.956965-04:00           exit          exit_filled                                                   {"contract_symbol": "WMT261023C00108000", "exit_price": 2.25, "pnl": -846.0, "reason": "stop_loss_hit_at_scan", "ticker": "WMT"}
 2026-09-21T09:50:50.062614-04:00    manage_1000 exit_order_submitted {"alpaca_order_id": "f04068b1-12c0-4a13-bf4f-ad1cf6b944a7", "contract_symbol": "CRWD261023C00240000", "limit_price": "13.00", "reason": "stop_loss_hit_at_scan", "ticker": "CRWD"}
 2026-09-21T09:50:50.062614-04:00    manage_1000 exit_order_submitted    {"alpaca_order_id": "f50333c7-1418-46bc-be04-9cbbdd2d981e", "contract_symbol": "WMT261023C00108000", "limit_price": "2.23", "reason": "stop_loss_hit_at_scan", "ticker": "WMT"}
 2026-09-20T23:58:24.765158-04:00 share_ext_2355        market_closed                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
@@ -67,6 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-09-20T22:52:35.558598-04:00 share_ext_2250        market_closed                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
 2026-09-20T22:47:31.584092-04:00 share_ext_2245        market_closed                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
 2026-09-20T22:42:27.793664-04:00 share_ext_2240        market_closed                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
-2026-09-20T22:37:23.955622-04:00 share_ext_2235        market_closed                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
-2026-09-20T22:32:20.105226-04:00 share_ext_2230        market_closed                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
 ```
