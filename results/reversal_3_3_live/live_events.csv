@@ -6107,3 +6107,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-21T14:50:06.827514-04:00,2026-09-21,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.641, ""error"": ""CTSH: no call expiries found in the 21-40 trading-day window."", ""reason"": ""no_trade_option_unavailable"", ""ticker"": ""CTSH"", ""timing_score"": 0.503}"
 2026-09-21T14:50:06.827514-04:00,2026-09-21,entry_1500,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
 2026-09-21T14:55:04.962001-04:00,2026-09-21,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-09-21T15:00:04.975214-04:00,2026-09-21,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
