@@ -6102,3 +6102,7 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-21T11:50:05.829625-04:00,2026-09-21,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-21T11:55:03.827589-04:00,2026-09-21,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-21T12:00:03.740450-04:00,2026-09-21,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-21T14:50:06.827514-04:00,2026-09-21,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-09-21"", ""training_samples"": 5798, ""window"": 5}"
+2026-09-21T14:50:06.827514-04:00,2026-09-21,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.649, ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""option_open_interest"": 6.0, ""option_spread_pct"": 17.62, ""option_volume"": 12.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""WDAY"", ""timing_score"": 0.544}"
+2026-09-21T14:50:06.827514-04:00,2026-09-21,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.641, ""error"": ""CTSH: no call expiries found in the 21-40 trading-day window."", ""reason"": ""no_trade_option_unavailable"", ""ticker"": ""CTSH"", ""timing_score"": 0.503}"
+2026-09-21T14:50:06.827514-04:00,2026-09-21,entry_1500,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
