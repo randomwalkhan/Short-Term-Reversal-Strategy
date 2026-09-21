@@ -6772,3 +6772,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-21T09:55:54.956965-04:00,2026-09-21,exit,exit_filled,"{""contract_symbol"": ""CRWD261023C00240000"", ""exit_price"": 16.95, ""pnl"": 270.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""CRWD""}"
 2026-09-21T10:00:58.816515-04:00,2026-09-21,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-21T10:07:05.437132-04:00,2026-09-21,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-21T10:13:13.960867-04:00,2026-09-21,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
