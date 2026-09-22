@@ -6138,3 +6138,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-22T14:50:01.294026-04:00,2026-09-22,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.621, ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""option_open_interest"": 9.0, ""option_spread_pct"": 21.01, ""option_volume"": 6.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""TEAM"", ""timing_score"": 0.504}"
 2026-09-22T14:50:01.294026-04:00,2026-09-22,entry_1500,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
 2026-09-22T14:55:05.306648-04:00,2026-09-22,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-09-22T15:00:05.737900-04:00,2026-09-22,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
