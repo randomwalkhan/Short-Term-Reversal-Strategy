@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-22 09:25:08 EDT`
+Latest checkpoint (ET): `2026-09-22 09:30:06 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -43,7 +43,21 @@ _None_
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day      trend_health_status  call_candidate  early_entry_candidate
+  SOXL           82.86               35            1.86              1.85        141.15               123.39         0.697            pass              0.493             60.2                           0.587               13.01              1.090                       ok            True                  False
+  INTC           82.05               39            0.62              0.53        121.55                69.88         0.566            pass              0.517             70.7                           0.447               15.85              1.517                       ok            True                  False
+  MSTR           94.74               38            0.47              0.56        168.26               109.37         0.759            pass              0.922             88.9                           0.581               22.84              2.238                       ok           False                  False
+  CRWD           88.64               44            0.36              0.62        249.08                96.94         0.680            pass              0.653             51.6                           0.300               18.30              2.116                       ok           False                  False
+  DRAM           78.79               33            0.94              0.41         61.42                56.39         0.547            pass              0.399             63.7                           0.467               -0.15              0.009                       ok           False                  False
+    MU           85.71               42            0.04              0.28       1043.84                52.84         0.531            pass              0.700             98.1                           0.654                4.33              0.361                       ok           False                  False
+  FTNT           91.67               48            0.13              0.16        175.16                58.27         0.515            pass              0.825             87.3                           0.501               11.13              1.248                       ok           False                  False
+  ASML           79.41               34            0.83              9.91       1707.07                40.77         0.507            pass              0.376             55.1                           0.419               -3.84             -0.288                       ok           False                  False
+   ADP           96.15               26            0.47              0.90        270.84                21.89         0.502            pass              0.761             68.0                           0.341                1.38              0.222                       ok           False                  False
+  KLAC           71.43               35            1.42              1.83        183.18                50.30         0.470 below_threshold              0.321             35.8                           0.362               -4.04             -0.300                       ok           False                  False
+  LRCX           73.53               34            1.45              3.06        300.97                60.37         0.432 below_threshold              0.459             85.4                           0.544               -7.03             -0.782                       ok           False                  False
+   STX           83.33               36            1.36              8.33        873.76                58.99         0.421 below_threshold              0.545             80.2                           0.608               -4.31             -0.333 downtrend_blocked_streak           False                  False
+```
 
 ## Recent Events
 
@@ -68,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260922092508)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260922093006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260922092508)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260922093006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260922092508)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260922093006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260922092508)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260922093006)
 
 </details>
