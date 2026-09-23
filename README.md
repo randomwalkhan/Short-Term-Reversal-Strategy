@@ -3,10 +3,10 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-09-23 15:45:05 EDT`
-- Equity: `$74,470.80` | Realized: `$61,470.80` | Unrealized: `$3,000.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-09-23 15:50:07 EDT`
+- Equity: `$73,945.80` | Realized: `$61,470.80` | Unrealized: `$2,475.00` | Open positions: `1`
 - Today closed trades: `0`
-- Current slot: `manual`
+- Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  MSTR     option         option MSTR261023C00165000     30     35175.0                 38175.0          12.72          3000.0                   8.53                   0
+  MSTR     option         option MSTR261023C00165000     30     35175.0                 37650.0          12.55          2475.0                   7.04                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260923154505)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20260923155007)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260923154505)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20260923155007)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260923154505)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20260923155007)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260923154505)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20260923155007)
 
 </details>
 
