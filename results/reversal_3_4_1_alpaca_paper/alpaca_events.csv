@@ -6815,3 +6815,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-22T14:55:49.142761-04:00,2026-09-22,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KHC""}"
 2026-09-22T15:02:12.885281-04:00,2026-09-22,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KHC""}"
 2026-09-22T15:08:32.052954-04:00,2026-09-22,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KHC""}"
+2026-09-23T10:03:22.555790-04:00,2026-09-23,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
