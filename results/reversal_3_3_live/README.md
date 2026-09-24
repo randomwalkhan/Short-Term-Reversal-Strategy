@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-24 13:30:03 EDT`
+Latest checkpoint (ET): `2026-09-24 13:35:03 EDT`
 Last processed slot: `manage_1330`
 
 ## Active Configuration
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  SOXL           82.86               35            0.87              0.89        145.87               119.42         0.755          pass              0.584             88.6                           0.609               15.26              2.450                  ok            True                  False
-  PYPL           89.29               28            0.87              0.32         52.37                57.12         0.629          pass              0.527             32.1                           0.381               -0.22             -0.188                  ok            True                  False
-  PANW           80.95               42            0.63              1.75        392.55                79.07         0.627          pass              0.498             69.9                           0.355               16.62              1.359                  ok            True                  False
-  NVDA           90.32               31            0.51              0.81        225.16                44.57         0.590          pass              0.695             73.8                           0.653                0.42              0.425                  ok            True                   True
-  TEAM          100.00               38            0.57              0.78        194.74                58.95         0.579          pass              0.878             77.6                           0.423                9.13              0.871                  ok            True                  False
-  MPWR           87.88               33            1.01              9.56       1351.37                51.84         0.557          pass              0.622             67.8                           0.543               11.47              1.248                  ok            True                  False
-  DRAM           82.14               28            1.62              0.70         61.60                51.34         0.554          pass              0.359             42.2                           0.426               -1.10              0.520                  ok            True                  False
-  WDAY           93.75               32            0.81              1.08        191.92                50.68         0.540          pass              0.792             74.8                           0.419                2.57              0.312                  ok            True                  False
-   ADP           95.65               23            0.60              1.10        263.21                21.61         0.518          pass              0.640             33.9                           0.377               -0.54             -0.012                  ok            True                  False
-  AMAT           82.50               40            0.82              2.73        473.21                51.05         0.516          pass              0.535             72.2                           0.535                0.35              0.275                  ok            True                  False
-  MSFT           95.65               23            0.89              3.14        499.25                22.42         0.514          pass              0.695             52.2                           0.541                0.91              0.102                  ok            True                  False
-   ADI           89.29               28            0.75              2.02        384.36                33.19         0.505          pass              0.642             74.6                           0.521                4.73              0.575                  ok            True                  False
+  SOXL           82.86               35            1.13              1.15        145.76               119.42         0.744          pass              0.573             85.3                           0.567               14.96              2.438                  ok            True                  False
+  PYPL           88.00               25            0.97              0.36         52.36                57.12         0.638          pass              0.449             23.9                           0.320               -0.33             -0.193                  ok            True                  False
+  PANW           80.95               42            0.69              1.89        392.49                79.07         0.623          pass              0.490             67.4                           0.336               16.56              1.356                  ok            True                  False
+  NVDA           90.32               31            0.72              1.14        225.02                44.57         0.577          pass              0.662             63.1                           0.577                0.21              0.416                  ok            True                  False
+  TEAM          100.00               38            0.76              1.04        194.63                58.95         0.567          pass              0.854             70.4                           0.381                8.92              0.862                  ok            True                  False
+  MPWR           87.10               31            1.07             10.15       1351.12                51.84         0.564          pass              0.583             65.8                           0.514               11.40              1.245                  ok            True                  False
+  DRAM           82.14               28            1.62              0.70         61.60                51.34         0.554          pass              0.358             41.9                           0.406               -1.11              0.520                  ok            True                  False
+  WDAY           93.75               32            0.95              1.28        191.83                50.68         0.531          pass              0.777             70.4                           0.390                2.42              0.305                  ok            True                  False
+  AMAT           82.50               40            0.83              2.77        473.19                51.05         0.516          pass              0.534             71.8                           0.527                0.34              0.275                  ok            True                  False
+   ADP           95.83               24            0.57              1.04        263.23                21.61         0.514          pass              0.657             37.3                           0.374               -0.51             -0.011                  ok            True                  False
+  MSFT           95.65               23            0.97              3.41        499.13                22.42         0.508          pass              0.682             48.0                           0.530                0.83              0.098                  ok            True                  False
+   ADI           89.29               28            0.82              2.21        384.28                33.19         0.501          pass              0.635             72.3                           0.506                4.66              0.572                  ok            True                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260924133003)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260924133503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260924133003)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260924133503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260924133003)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260924133503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260924133003)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260924133503)
 
 </details>
