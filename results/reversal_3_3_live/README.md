@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-24 16:15:04 EDT`
-Last processed slot: `share_ext_1615`
+Latest checkpoint (ET): `2026-09-24 16:20:06 EDT`
+Last processed slot: `share_ext_1620`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `share_ext_1615`
 ## Portfolio Snapshot
 
 - Cash: `$35,513.30`
-- Equity: `$69,433.30`
+- Equity: `$69,953.30`
 - Realized PnL: `$57,953.30`
-- Unrealized PnL: `$1,480.00`
+- Unrealized PnL: `$2,000.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  SOXL     option         option SOXL261030C00145000       2026-09-24                   0     16     32440.0                 33920.0        20.27           21.2      145.35        145.06          bid_ask_mid                       21.2                bid_ask_mid                    True          1480.0                   4.56         83.33               36              0.62         109.9          111.54                 119.42                 341.0           51.0               0.08                      ok
+  SOXL     option         option SOXL261030C00145000       2026-09-24                   0     16     32440.0                 34440.0        20.27          21.52      145.35        145.07          bid_ask_mid                      21.52                bid_ask_mid                    True          2000.0                   6.17         83.33               36              0.62         109.9          113.32                 119.42                 341.0           51.0               0.08                      ok
 ```
 
 ## Today's Closed Trades (2026-09-24)
@@ -74,27 +74,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260924161504)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260924162006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260924161504)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260924162006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260924161504)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260924162006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260924161504)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260924162006)
 
 </details>
