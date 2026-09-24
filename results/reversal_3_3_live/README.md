@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-24 09:25:06 EDT`
+Latest checkpoint (ET): `2026-09-24 09:30:04 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  MSTR     option         option MSTR261023C00165000       2026-09-23                   1     30     35175.0                 36510.0        11.72          12.17      162.68        160.64     last_price_stale                        NaN                unavailable                   False          1335.0                    3.8         92.59               27              2.78         67.27            1.56                 109.59                 984.0           82.0               0.02                      ok
+  MSTR     option         option MSTR261023C00165000       2026-09-23                   1     30     35175.0                 36510.0        11.72          12.17      162.68        162.17     last_price_stale                        NaN                unavailable                   False          1335.0                    3.8         92.59               27              2.78         67.27            0.78                 109.59                 984.0           82.0               0.02                      ok
 ```
 
 ## Today's Closed Trades (2026-09-24)
@@ -46,7 +46,21 @@ _None_
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
+  CRWD           88.37               43            0.59              1.08        262.03                96.70         0.706          pass              0.674             60.2                           0.546               25.57              2.241                  ok            True                  False
+    ZS           97.44               39            0.68              1.01        214.01                79.52         0.655          pass              0.859             66.7                           0.571               28.24              2.751                  ok            True                   True
+  PANW           80.49               41            0.87              2.39        392.27                79.07         0.625          pass              0.452             58.7                           0.528               16.35              1.348                  ok            True                  False
+  NVDA           91.67               24            1.25              1.98        224.66                44.57         0.590          pass              0.541             25.7                           0.402               -0.33              0.391                  ok            True                  False
+  SNPS           80.49               41            0.72              2.08        412.17                66.36         0.579          pass              0.411             46.6                           0.465                4.29              0.450                  ok            True                  False
+  ADSK           80.65               31            1.12              1.73        218.88                55.47         0.570          pass              0.303             29.6                           0.274                5.10              0.305                  ok            True                  False
+  SHOP           88.24               34            1.23              1.23        141.81                61.97         0.563          pass              0.638             67.4                           0.716               10.88              1.130                  ok            True                  False
+  DRAM           82.76               29            1.41              0.61         61.57                51.34         0.563          pass              0.393             45.6                           0.461               -1.01              0.525                  ok            True                  False
+  INTC           81.25               32            2.17              1.86        121.80                67.82         0.530          pass              0.367             44.6                           0.600               12.90              2.036                  ok            True                  False
+  MPWR           84.00               25            2.32             22.03       1346.03                51.84         0.527          pass              0.326             22.3                           0.292                9.99              1.187                  ok            True                  False
+    MU           87.50               32            1.76             13.22       1066.22                49.67         0.521          pass              0.521             40.6                           0.516                2.45              0.942                  ok            True                  False
+  UPRO           85.00               20            1.54              1.62        149.66                31.44         0.520          pass              0.365             37.6                           0.510                0.58              0.378                  ok            True                  False
+```
 
 ## Recent Events
 
@@ -71,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260924092506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260924093004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260924092506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260924093004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260924092506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260924093004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260924092506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260924093004)
 
 </details>
