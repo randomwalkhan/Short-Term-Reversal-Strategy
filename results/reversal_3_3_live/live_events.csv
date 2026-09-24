@@ -6177,3 +6177,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-23T15:05:06.124690-04:00,2026-09-23,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-23T15:10:05.441341-04:00,2026-09-23,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-24T10:00:05.543945-04:00,2026-09-24,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-24T10:05:06.327033-04:00,2026-09-24,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MSTR261023C00165000"", ""fill_price"": 10.5525, ""pnl"": -3517.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""MSTR""}"
+2026-09-24T10:05:06.327033-04:00,2026-09-24,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
