@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 67953.30035667421,
-  "positions": [],
+  "cash": 35513.30035667421,
+  "positions": [
+    {
+      "position_id": "SOXL_20260924T145006",
+      "ticker": "SOXL",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "SOXL261030C00145000",
+      "expiry": "2026-10-30",
+      "strike": 145.0,
+      "entry_timestamp": "2026-09-24T14:50:06.859646-04:00",
+      "entry_trade_date": "2026-09-24",
+      "entry_slot": "entry_1500",
+      "entry_spot": 145.35000610351562,
+      "entry_option_price": 20.275,
+      "entry_bid": 19.5,
+      "entry_ask": 21.05,
+      "entry_iv_pct": 109.90035284423831,
+      "contracts": 16,
+      "allocated_cash": 32439.999999999996,
+      "success_rate": 83.33,
+      "matched_signals": 36,
+      "current_drop_pct": 0.62,
+      "rolling_sigma_20d_pct": 119.42,
+      "planned_tp_day1": 23.316249999999997,
+      "planned_tp_day2": 23.316249999999997,
+      "planned_stop": 18.2475,
+      "option_open_interest": 341.0,
+      "option_volume": 51.0,
+      "option_spread_pct": 0.07644882860665848,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -5167,7 +5198,9 @@
     "2026-09-23": [
       "entry_1500"
     ],
-    "2026-09-24": []
+    "2026-09-24": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
