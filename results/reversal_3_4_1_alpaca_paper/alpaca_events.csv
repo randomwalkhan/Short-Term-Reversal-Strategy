@@ -6857,3 +6857,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-24T14:49:35.179575-04:00,2026-09-24,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""7bcf4354-9f51-4193-89c5-f523413aa486"", ""contract_symbol"": ""SOXL261030C00145000"", ""contracts"": 2, ""entry_mode"": ""regular"", ""limit_price"": ""21.05"", ""ticker"": ""SOXL""}"
 2026-09-24T16:01:35.636263-04:00,2026-09-24,entry_1500,entry_not_filled,"{""contract_symbol"": ""SOXL261030C00145000"", ""status"": ""expired"", ""ticker"": ""SOXL""}"
 2026-09-25T10:02:10.320929-04:00,2026-09-25,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-09-25T10:08:16.679523-04:00,2026-09-25,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
