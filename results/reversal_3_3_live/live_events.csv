@@ -6210,3 +6210,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-24T15:10:03.736877-04:00,2026-09-24,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-25T00:00:05.872425-04:00,2026-09-25,data_refresh,data_refresh,"{'saved': 92, 'empty': 1}"
 2026-09-25T09:55:06.037252-04:00,2026-09-25,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""SOXL261030C00145000"", ""fill_price"": 23.775, ""pnl"": 5600.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 17.26, ""ticker"": ""SOXL""}"
+2026-09-25T10:00:06.218962-04:00,2026-09-25,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
