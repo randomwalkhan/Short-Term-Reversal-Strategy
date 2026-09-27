@@ -7340,3 +7340,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-27T15:05:02.626014-04:00,2026-09-27,entry_1500,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-09-27T15:10:06.208975-04:00,2026-09-27,entry_1500,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-09-27T15:15:09.899043-04:00,2026-09-27,manual,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-09-27T15:20:13.463064-04:00,2026-09-27,manage_1530,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
