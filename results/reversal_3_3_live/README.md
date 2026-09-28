@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-28 09:45:06 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-09-28 09:50:05 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -27,55 +27,55 @@ Last processed slot: `manual`
 
 ## Portfolio Snapshot
 
-- Cash: `$38,003.30`
-- Equity: `$71,453.30`
-- Realized PnL: `$63,553.30`
-- Unrealized PnL: `$-2,100.00`
-- Open positions: `1`
+- Cash: `$69,998.30`
+- Equity: `$69,998.30`
+- Realized PnL: `$59,998.30`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  MSTR     option         option MSTR261120C00160000       2026-09-25                   1     20     35550.0                 33450.0        17.77          16.73      158.68        159.29          bid_ask_mid                      16.73                bid_ask_mid                    True         -2100.0                  -5.91          93.1               29              1.81         73.26           70.51                 109.71                2435.0         2824.0               0.01                      ok
-```
+_None_
 
 ## Today's Closed Trades (2026-09-28)
 
-_None_
+```text
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct           exit_reason
+  MSTR     option         option MSTR261120C00160000     20          2026-09-25         2026-09-28       17.775     15.9975 -3555.0       -10.0 stop_loss_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   CEG           85.71               21            1.20              2.21        262.32                41.90         0.556          pass              0.408             42.1                           0.433               -1.68              0.030                                 ok            True                  False
-  MPWR           85.71               28            1.17             11.18       1362.64                54.48         0.545          pass              0.536             69.5                           0.616               18.21              2.210                                 ok            True                  False
-  SOXL           80.00               25            5.24              5.56        149.09               120.87         0.533          pass              0.259             35.3                           0.291               42.02              4.586                                 ok            True                  False
-  PYPL           86.67               15            1.65              0.64         54.77                60.08         0.516          pass              0.433             56.7                           0.488                0.19              0.078                                 ok            True                  False
-  UPRO           85.00               20            1.48              1.58        151.55                32.02         0.512          pass              0.304             17.6                           0.161                2.91              0.577                                 ok            True                  False
-    MU           92.59               27            2.05             15.57       1075.61                50.18         0.502          pass              0.571             24.0                           0.223               14.72              1.841                                 ok            True                  False
-  NXPI           87.10               31            0.91              1.52        237.43                39.27         0.500          pass              0.594             71.5                           0.526                5.68              0.683                                 ok            True                  False
-   TRI           84.21               19            2.30              1.60         98.31                56.74         0.573          pass              0.245              5.0                           0.177               -8.61             -0.573 downtrend_blocked_slope_and_streak           False                  False
-  LRCX           79.55               44            0.24              0.53        314.98                61.39         0.547          pass              0.537             94.0                           0.879               15.10              1.868                                 ok           False                  False
-  AMAT           85.00               40            0.46              1.57        484.33                51.73         0.532          pass              0.646             86.6                           0.823               13.80              1.750                                 ok           False                  False
-  MSFT          100.00                7            2.24              8.08        512.71                25.07         0.507          pass              0.503             17.3                           0.279               -0.15              0.190                                 ok           False                  False
-  KLAC           76.32               38            0.69              0.91        187.53                50.67         0.506          pass              0.476             79.4                           0.690               10.37              1.409                                 ok           False                  False
+   CEG           88.00               25            0.95              1.74        262.52                41.90         0.553          pass              0.532             54.3                           0.498               -1.43              0.041                                 ok            True                  False
+  MPWR           85.19               27            1.55             14.84       1361.07                54.48         0.526          pass              0.483             59.6                           0.443               17.76              2.192                                 ok            True                  False
+  SOXL           80.00               25            5.38              5.70        149.01               120.87         0.525          pass              0.253             33.5                           0.256               41.79              4.578                                 ok            True                  False
+  UPRO           85.00               20            1.39              1.48        151.60                32.02         0.518          pass              0.319             22.5                           0.230                3.01              0.582                                 ok            True                  False
+  PYPL           86.67               15            1.78              0.69         54.75                60.08         0.508          pass              0.422             53.3                           0.474                0.06              0.072                                 ok            True                  False
+  NXPI           85.19               27            1.20              2.00        237.22                39.27         0.502          pass              0.489             62.5                           0.419                5.37              0.670                                 ok            True                  False
+   STX           89.29               28            2.13             13.64        910.98                54.25         0.500          pass              0.504             28.9                           0.256               11.48              1.840                                 ok            True                  False
+  MSTR           94.59               37            0.44              0.49        158.40               104.19         0.736          pass              0.900             85.7                           0.707               15.31              2.504                                 ok           False                  False
+   TRI           83.33               18            2.33              1.61         98.30                56.74         0.575          pass              0.222              7.4                           0.082               -8.63             -0.575 downtrend_blocked_slope_and_streak           False                  False
+  AMAT           83.33               42            0.19              0.64        484.73                51.73         0.537          pass              0.626             94.6                           0.867               14.12              1.763                                 ok           False                  False
+  CHTR           79.55               44            0.21              0.16        112.84                64.54         0.516          pass              0.524             90.8                           0.602              -21.40             -2.610 downtrend_blocked_slope_and_streak           False                  False
+  KLAC           75.61               41            0.34              0.45        187.73                50.67         0.512          pass              0.521             89.8                           0.771               10.75              1.425                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et           slot    event_type                                      detail
-2026-09-28T03:00:06.642645-04:00   data_refresh  data_refresh                   {'saved': 92, 'empty': 1}
-2026-09-26T02:55:04.179839-04:00 share_ext_0255 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-09-26T02:50:05.866610-04:00 share_ext_0250 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-09-26T02:45:06.222669-04:00 share_ext_0245 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-09-26T02:40:05.820539-04:00 share_ext_0240 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-09-26T02:35:05.219756-04:00 share_ext_0235 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-09-26T02:30:04.108962-04:00 share_ext_0230 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-09-26T02:25:06.088084-04:00 share_ext_0225 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-09-26T02:20:05.261496-04:00 share_ext_0220 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-09-26T02:15:05.559549-04:00 share_ext_0215 market_closed {"holiday_name": null, "reason": "weekend"}
+                    timestamp_et           slot    event_type                                                                                                                                                                              detail
+2026-09-28T09:50:05.886543-04:00    manage_1000          exit {"asset_type": "option", "contract_symbol": "MSTR261120C00160000", "fill_price": 15.9975, "pnl": -3555.0, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "MSTR"}
+2026-09-28T03:00:06.642645-04:00   data_refresh  data_refresh                                                                                                                                                           {'saved': 92, 'empty': 1}
+2026-09-26T02:55:04.179839-04:00 share_ext_0255 market_closed                                                                                                                                         {"holiday_name": null, "reason": "weekend"}
+2026-09-26T02:50:05.866610-04:00 share_ext_0250 market_closed                                                                                                                                         {"holiday_name": null, "reason": "weekend"}
+2026-09-26T02:45:06.222669-04:00 share_ext_0245 market_closed                                                                                                                                         {"holiday_name": null, "reason": "weekend"}
+2026-09-26T02:40:05.820539-04:00 share_ext_0240 market_closed                                                                                                                                         {"holiday_name": null, "reason": "weekend"}
+2026-09-26T02:35:05.219756-04:00 share_ext_0235 market_closed                                                                                                                                         {"holiday_name": null, "reason": "weekend"}
+2026-09-26T02:30:04.108962-04:00 share_ext_0230 market_closed                                                                                                                                         {"holiday_name": null, "reason": "weekend"}
+2026-09-26T02:25:06.088084-04:00 share_ext_0225 market_closed                                                                                                                                         {"holiday_name": null, "reason": "weekend"}
+2026-09-26T02:20:05.261496-04:00 share_ext_0220 market_closed                                                                                                                                         {"holiday_name": null, "reason": "weekend"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260928094506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260928095005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260928094506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260928095005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260928094506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260928095005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260928094506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260928095005)
 
 </details>

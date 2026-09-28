@@ -6278,3 +6278,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-26T02:50:05.866610-04:00,2026-09-26,share_ext_0250,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-09-26T02:55:04.179839-04:00,2026-09-26,share_ext_0255,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-09-28T03:00:06.642645-04:00,2026-09-28,data_refresh,data_refresh,"{'saved': 92, 'empty': 1}"
+2026-09-28T09:50:05.886543-04:00,2026-09-28,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MSTR261120C00160000"", ""fill_price"": 15.9975, ""pnl"": -3555.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""MSTR""}"
