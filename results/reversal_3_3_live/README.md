@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-28 15:55:06 EDT`
+Latest checkpoint (ET): `2026-09-28 16:00:03 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$35,438.30`
-- Equity: `$69,998.30`
+- Equity: `$70,238.30`
 - Realized PnL: `$59,998.30`
-- Unrealized PnL: `$0.00`
+- Unrealized PnL: `$240.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CEG     option         option CEG261120C00270000       2026-09-28                   0     24     34560.0                 34560.0         14.4           14.4      261.15        259.98          bid_ask_mid                       14.4                bid_ask_mid                    True             0.0                    0.0         89.66               29              0.81          46.4           47.78                   41.9                 366.0           20.0               0.04                      ok
+   CEG     option         option CEG261120C00270000       2026-09-28                   0     24     34560.0                 34800.0         14.4           14.5      261.15        260.46          bid_ask_mid                       14.5                bid_ask_mid                    True           240.0                   0.69         89.66               29              0.81          46.4           47.26                   41.9                 366.0           20.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-09-28)
@@ -50,19 +50,19 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MSTR           94.29               35            0.86              0.95        158.20               104.19         0.715          pass              0.836             72.3                           0.356               14.83              2.485                                 ok            True                  False
-   CEG           84.21               19            1.26              2.32        262.28                41.90         0.562          pass              0.360             43.8                           0.539               -1.74              0.027                                 ok            True                  False
-  MPWR           85.71               28            1.46             13.93       1361.46                54.48         0.527          pass              0.511             62.0                           0.509               17.87              2.197                                 ok            True                  False
-  PYPL           88.89               18            1.50              0.58         54.79                60.08         0.511          pass              0.524             60.7                           0.619                0.34              0.085                                 ok            True                  False
-   BKR           90.48               21            1.24              0.50         57.62                32.19         0.508          pass              0.404              0.0                           0.180                0.59              0.190                                 ok            True                  False
-  NXPI           87.10               31            0.82              1.37        237.49                39.27         0.506          pass              0.603             74.3                           0.560                5.78              0.687                                 ok            True                  False
-  MSFT          100.00               18            1.31              4.72        514.15                25.07         0.503          pass              0.659             51.7                           0.491                0.80              0.233                                 ok            True                  False
-  WDAY           91.67               36            0.56              0.74        189.13                50.22         0.502          pass              0.795             86.7                           0.694               -3.00             -0.206                                 ok            True                   True
-   TRI           84.62               26            1.76              1.22         98.47                56.74         0.568          pass              0.377             30.1                           0.415               -8.10             -0.548 downtrend_blocked_slope_and_streak           False                  False
-  LRCX           79.55               44            0.39              0.87        314.84                61.39         0.537          pass              0.524             90.2                           0.611               14.92              1.861                                 ok           False                  False
-  PAYX           80.00               10            2.01              1.43        100.76                37.87         0.508          pass              0.102             17.1                           0.157              -16.18             -1.953 downtrend_blocked_slope_and_streak           False                  False
-   KHC           95.00               20            0.49              0.08         23.60                20.56         0.503          pass              0.623             35.5                           0.295               -3.11             -0.493 downtrend_blocked_slope_and_streak           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  MSTR           94.29               35            0.93              1.04        158.17               104.19         0.711            pass              0.828             69.9                           0.359               14.74              2.482                                 ok            True                  False
+   CEG           86.96               23            1.11              2.04        262.40                41.90         0.552            pass              0.479             50.5                           0.556               -1.59              0.034                                 ok            True                  False
+  MPWR           86.21               29            1.15             10.99       1362.72                54.48         0.541            pass              0.556             70.1                           0.584               18.24              2.211                                 ok            True                  False
+  NXPI           87.10               31            0.72              1.20        237.56                39.27         0.513            pass              0.613             77.4                           0.597                5.88              0.692                                 ok            True                  False
+   BKR           90.48               21            1.22              0.49         57.62                32.19         0.509            pass              0.418              4.7                           0.190                0.61              0.191                                 ok            True                  False
+  UPRO           90.91               11            2.26              2.41        151.17                32.02         0.507            pass              0.419             23.7                           0.228                2.08              0.540                                 ok            True                  False
+  PYPL           90.48               21            1.34              0.52         54.82                60.08         0.505            pass              0.597             64.8                           0.647                0.50              0.093                                 ok            True                  False
+   TRI           84.62               26            1.74              1.20         98.47                56.74         0.569            pass              0.379             30.9                           0.404               -8.08             -0.547 downtrend_blocked_slope_and_streak           False                  False
+  LRCX           79.55               44            0.22              0.49        315.00                61.39         0.548            pass              0.538             94.5                           0.636               15.12              1.869                                 ok           False                  False
+  PAYX           80.00               10            2.04              1.45        100.75                37.87         0.506            pass              0.098             15.9                           0.170              -16.21             -1.955 downtrend_blocked_slope_and_streak           False                  False
+   KHC           95.65               23            0.30              0.05         23.61                20.56         0.499 below_threshold              0.719             60.7                           0.383               -2.93             -0.485 downtrend_blocked_slope_and_streak           False                  False
+  MSFT          100.00               19            1.30              4.69        514.16                25.07         0.498 below_threshold              0.666             52.0                           0.488                0.80              0.233                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260928155506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260928160003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260928155506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260928160003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260928155506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260928160003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260928155506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260928160003)
 
 </details>
