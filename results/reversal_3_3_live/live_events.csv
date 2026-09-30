@@ -6344,3 +6344,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-29T15:05:05.953732-04:00,2026-09-29,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-29T15:10:01.396429-04:00,2026-09-29,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-30T00:00:05.973499-04:00,2026-09-30,data_refresh,data_refresh,"{'saved': 92, 'empty': 1}"
+2026-09-30T09:50:05.025462-04:00,2026-09-30,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MSTR261120C00155000"", ""fill_price"": 18.6, ""pnl"": 6480.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 16.98, ""ticker"": ""MSTR""}"
