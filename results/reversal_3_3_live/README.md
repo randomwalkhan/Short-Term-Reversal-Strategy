@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-30 16:00:04 EDT`
+Latest checkpoint (ET): `2026-09-30 16:05:06 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$46,498.30`
-- Equity: `$85,158.30`
+- Equity: `$84,758.30`
 - Realized PnL: `$75,238.30`
-- Unrealized PnL: `$-80.00`
+- Unrealized PnL: `$-480.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  META     option         option META261120C00735000       2026-09-30                   0      8     38740.0                 38660.0        48.42          48.32      733.79        725.18          bid_ask_mid                      48.32                bid_ask_mid                    True           -80.0                  -0.21         84.38               32              0.68         44.85           48.74                   54.8                 798.0          103.0               0.02                      ok
+  META     option         option META261120C00735000       2026-09-30                   0      8     38740.0                 38260.0        48.42          47.82      733.79         725.5          bid_ask_mid                      47.82                bid_ask_mid                    True          -480.0                  -1.24         84.38               32              0.68         44.85           48.29                   54.8                 798.0          103.0               0.02                      ok
 ```
 
 ## Today's Closed Trades (2026-09-30)
@@ -49,21 +49,7 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  MSTR           94.12               34            1.00              1.09        154.20                99.32         0.666          pass              0.728             41.5                           0.280               21.35              1.364                  ok            True                  False
-  DRAM           84.00               25            1.54              0.66         61.01                54.99         0.579          pass              0.334             23.2                           0.344                9.06              0.580                  ok            True                  False
-  MPWR           88.24               34            0.70              6.61       1351.16                52.13         0.540          pass              0.636             67.4                           0.675               17.16              1.634                  ok            True                  False
-   BKR           83.33               12            1.73              0.68         55.63                31.55         0.521          pass              0.198             14.6                           0.212               -2.42             -0.159                  ok            True                  False
-  GILD           90.00               10            1.47              1.55        150.61                20.43         0.507          pass              0.328              3.5                           0.096                0.93              0.076                  ok            True                  False
-  AMGN           84.85               33            0.37              1.09        423.17                46.59         0.592          pass              0.486             48.2                           0.392               12.15              1.226                  ok           False                  False
-  META           73.33               15            1.83              9.45        734.74                54.80         0.581          pass              0.160             22.8                           0.168                7.81              0.907                  ok           False                  False
-  ASML           76.00               25            1.13             14.57       1828.14                42.72         0.558          pass              0.210             18.1                           0.311               13.19              1.159                  ok           False                  False
-  KLAC           77.78               36            0.76              1.05        196.08                49.05         0.534          pass              0.352             41.9                           0.322               16.53              1.459                  ok           False                  False
-   KDP          100.00                4            2.19              0.48         30.83                25.56         0.515          pass              0.540             29.5                           0.516               -3.87             -0.077                  ok           False                  False
-  COST           77.78                9            1.46              9.44        920.54                16.45         0.514          pass              0.063              3.9                           0.145                1.94              0.338                  ok           False                  False
-  QCOM           92.68               41            0.30              0.39        183.93                57.15         0.509          pass              0.796             68.9                           0.445               -0.70              0.076                  ok           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -88,27 +74,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260930160004)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260930160506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260930160004)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260930160506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260930160004)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260930160506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260930160004)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260930160506)
 
 </details>
