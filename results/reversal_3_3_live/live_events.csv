@@ -6374,3 +6374,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-30T14:50:06.616315-04:00,2026-09-30,entry_1500,entry,"{""allocated_cash"": 38740.0, ""asset_type"": ""option"", ""contract_symbol"": ""META261120C00735000"", ""contracts"": 8, ""early_entry_score"": 0.534, ""entry_mode"": ""regular"", ""entry_option_price"": 48.425, ""execution_mode"": ""option"", ""matched_signals"": 32, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 798.0, ""option_spread_pct"": 1.55, ""option_volume"": 103.0, ""success_rate"": 84.38, ""ticker"": ""META"", ""timing_score"": 0.562}"
 2026-09-30T14:55:06.123157-04:00,2026-09-30,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-09-30T15:00:05.217258-04:00,2026-09-30,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-09-30T15:05:04.200259-04:00,2026-09-30,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
