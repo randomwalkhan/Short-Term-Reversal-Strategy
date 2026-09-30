@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-09-30 14:05:05 EDT`
+Latest checkpoint (ET): `2026-09-30 14:10:04 EDT`
 Last processed slot: `manage_1400`
 
 ## Active Configuration
@@ -47,19 +47,19 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  DRAM           84.00               25            1.61              0.69         60.99                54.99         0.577          pass              0.300             12.1                           0.352                8.99              0.577                  ok            True                  False
-  META           84.38               32            0.75              3.86        737.14                54.80         0.558          pass              0.525             68.5                           0.590                8.99              0.957                  ok            True                  False
-  MPWR           84.00               25            1.60             15.18       1347.48                52.13         0.530          pass              0.335             25.2                           0.390               16.09              1.593                  ok            True                  False
-   BKR           90.48               21            1.22              0.48         55.72                31.55         0.508          pass              0.510             35.5                           0.364               -1.92             -0.136                  ok            True                  False
-   WMT           81.82               11            1.38              1.03        106.36                20.71         0.503          pass              0.132              8.9                           0.277               -2.02             -0.054                  ok            True                  False
-  MSTR           94.59               37            0.22              0.24        154.57                99.32         0.695          pass              0.900             87.2                           0.551               22.31              1.400                  ok           False                  False
-  AMGN           87.80               41            0.05              0.15        423.58                46.59         0.570          pass              0.739             91.2                           0.584               12.51              1.241                  ok           False                  False
-   WBD           94.87               39            0.15              0.03         30.84                37.86         0.565          pass              0.676             10.0                           0.259                9.74              1.036                  ok           False                  False
-  MRVL           83.78               37            0.40              0.74        262.95                56.16         0.563          pass              0.592             84.9                           0.845               14.15              1.031                  ok           False                  False
-  AMAT           82.93               41            0.20              0.72        511.70                51.71         0.555          pass              0.587             84.5                           0.730               23.02              2.015                  ok           False                  False
-  ASML           78.57               28            0.98             12.54       1829.02                42.72         0.553          pass              0.264             29.6                           0.484               13.37              1.166                  ok           False                  False
-   KDP          100.00                4            1.89              0.41         30.85                25.56         0.538          pass              0.454              0.0                           0.181               -3.57             -0.063                  ok           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  DRAM           84.00               25            1.61              0.69         60.99                54.99         0.577          pass              0.300             12.1                           0.360                8.99              0.577                                 ok            True                  False
+  META           84.38               32            0.66              3.39        737.34                54.80         0.563          pass              0.537             72.3                           0.621                9.09              0.961                                 ok            True                  False
+  MPWR           84.00               25            1.67             15.80       1347.22                52.13         0.525          pass              0.326             22.1                           0.322               16.02              1.590                                 ok            True                  False
+   BKR           89.47               19            1.30              0.51         55.70                31.55         0.513          pass              0.457             30.9                           0.361               -2.00             -0.140                                 ok            True                  False
+  MSTR           94.59               37            0.37              0.40        154.50                99.32         0.687          pass              0.873             78.5                           0.494               22.13              1.393                                 ok           False                  False
+  MRVL           83.78               37            0.32              0.59        263.02                56.16         0.568          pass              0.602             88.1                           0.866               14.25              1.035                                 ok           False                  False
+   WBD           94.87               39            0.15              0.03         30.84                37.86         0.565          pass              0.676             10.0                           0.272                9.74              1.036                                 ok           False                  False
+  AMAT           82.93               41            0.10              0.36        511.86                51.71         0.561          pass              0.611             92.3                           0.752               23.14              2.019                                 ok           False                  False
+  ASML           79.31               29            0.95             12.26       1829.14                42.72         0.549          pass              0.275             31.1                           0.475               13.40              1.167                                 ok           False                  False
+  CHTR           75.00               44            0.02              0.01        110.66                61.94         0.535          pass              0.550             98.8                           0.639              -18.04             -2.124 downtrend_blocked_slope_and_streak           False                  False
+  KLAC           76.92               39            0.48              0.66        196.25                49.05         0.534          pass              0.437             63.6                           0.537               16.87              1.472                                 ok           False                  False
+  QCOM           92.68               41            0.03              0.03        184.09                57.15         0.527          pass              0.883             97.2                           0.593               -0.43              0.089                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260930140505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20260930141004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260930140505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20260930141004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260930140505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20260930141004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260930140505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20260930141004)
 
 </details>
