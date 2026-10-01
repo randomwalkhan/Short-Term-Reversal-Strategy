@@ -7515,3 +7515,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-01T10:12:40.266746-04:00,2026-10-01,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-01T10:18:45.690998-04:00,2026-10-01,manage_1030,exit_order_submitted,"{""alpaca_order_id"": ""fe7aad66-31de-4935-bd05-6fda445334b9"", ""contract_symbol"": ""META261120C00735000"", ""limit_price"": ""43.10"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""META""}"
 2026-10-01T10:18:45.690998-04:00,2026-10-01,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-01T10:24:52.788975-04:00,2026-10-01,exit,exit_filled,"{""contract_symbol"": ""META261120C00735000"", ""exit_price"": 43.15, ""pnl"": -565.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""META""}"
+2026-10-01T10:24:52.788975-04:00,2026-10-01,early_entry_1020,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
