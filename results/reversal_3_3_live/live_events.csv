@@ -6383,3 +6383,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-01T10:15:02.462190-04:00,2026-10-01,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-01T10:20:05.454377-04:00,2026-10-01,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""META261120C00735000"", ""fill_price"": 43.5825, ""pnl"": -3874.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""META""}"
 2026-10-01T10:20:05.454377-04:00,2026-10-01,early_entry_1020,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-01T10:25:05.417104-04:00,2026-10-01,early_entry_1025,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
