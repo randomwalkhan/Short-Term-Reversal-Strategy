@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-01 09:45:04 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-10-01 09:50:01 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$46,498.30`
-- Equity: `$82,858.30`
+- Equity: `$83,578.30`
 - Realized PnL: `$75,238.30`
-- Unrealized PnL: `$-2,380.00`
+- Unrealized PnL: `$-1,660.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  META     option         option META261120C00735000       2026-09-30                   1      8     38740.0                 36360.0        48.42          45.45      733.79        731.65     last_price_stale                        NaN                unavailable                   False         -2380.0                  -6.14         84.38               32              0.68         44.85            0.39                   54.8                 798.0          103.0               0.02                      ok
+  META     option         option META261120C00735000       2026-09-30                   1      8     38740.0                 37080.0        48.42          46.35      733.79        728.99          bid_ask_mid                      46.35                bid_ask_mid                    True         -1660.0                  -4.28         84.38               32              0.68         44.85           45.51                   54.8                 798.0          103.0               0.02                      ok
 ```
 
 ## Today's Closed Trades (2026-10-01)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  INTC           88.89               36            0.70              0.59        119.98                73.63         0.602            pass              0.683             70.7                           0.607                9.73              0.542                                 ok            True                   True
-  AMGN           84.62               26            0.83              2.45        420.46                46.02         0.585            pass              0.476             62.7                           0.393               10.07              1.016                                 ok            True                  False
-  MPWR           91.18               34            0.54              5.05       1345.05                50.40         0.540            pass              0.672             53.4                           0.360               14.74              1.129                                 ok            True                  False
-  MRVL           82.35               34            1.10              2.04        263.34                55.88         0.508            pass              0.442             56.0                           0.370                8.53              0.649                                 ok            True                  False
-    MU           89.66               29            1.44             10.75       1060.50                49.56         0.506            pass              0.577             47.3                           0.410                7.39              0.489                                 ok            True                  False
-  CRWD           89.13               46            0.11              0.20        264.66                63.45         0.550            pass              0.783             94.7                           0.779                7.64              0.899                                 ok           False                  False
-   XEL           62.50                8            1.09              0.54         70.25                18.32         0.528            pass              0.117             21.4                           0.193               -5.32             -0.466            downtrend_blocked_slope           False                  False
-  QCOM           92.68               41            0.18              0.23        183.94                56.29         0.524            pass              0.762             57.1                           0.314               -2.65             -0.221           downtrend_blocked_streak           False                  False
-  MDLZ           93.75               16            0.61              0.24         57.72                16.32         0.515            pass              0.568             36.5                           0.254               -6.55             -0.545 downtrend_blocked_slope_and_streak           False                  False
-  NXPI           86.49               37            0.22              0.37        237.37                38.88         0.505            pass              0.528             41.4                           0.223                3.97              0.374                                 ok           False                  False
-   EXC           71.43                7            1.39              0.39         40.23                14.97         0.502            pass              0.050              0.0                           0.188               -6.57             -0.617 downtrend_blocked_slope_and_streak           False                  False
-  TMUS           89.19               37            0.17              0.20        163.00                33.48         0.485 below_threshold              0.745             90.4                           0.465               -2.19             -0.207                                 ok           False                  False
+  AMGN           85.71               21            1.05              3.09        420.19                46.02         0.601            pass              0.445             53.0                           0.320                9.83              1.007                                 ok            True                  False
+  INTC           88.89               36            0.79              0.66        119.95                73.63         0.597            pass              0.671             67.1                           0.626                9.64              0.538                                 ok            True                   True
+  MRVL           82.35               34            1.14              2.10        263.31                55.88         0.506            pass              0.437             54.7                           0.365                8.49              0.647                                 ok            True                  False
+   WBD           95.56               45            0.02              0.00         30.95                37.62         0.557            pass              0.881             75.0                           0.496                9.58              0.818                                 ok           False                  False
+   XEL           66.67                6            1.19              0.59         70.23                18.32         0.538            pass              0.097             14.3                           0.151               -5.42             -0.470            downtrend_blocked_slope           False                  False
+  CRWD           89.13               46            0.34              0.62        264.48                63.45         0.536            pass              0.748             83.6                           0.764                7.39              0.888                                 ok           False                  False
+  MPWR           92.11               38            0.34              3.25       1345.83                50.40         0.530            pass              0.773             70.0                           0.394               14.96              1.137                                 ok           False                  False
+   EXC           75.00               12            1.05              0.30         40.27                14.97         0.499 below_threshold              0.138             24.8                           0.212               -6.25             -0.602 downtrend_blocked_slope_and_streak           False                  False
+    MU           92.86               28            1.75             13.05       1059.52                49.56         0.496 below_threshold              0.620             36.0                           0.281                7.06              0.474                                 ok           False                  False
+  NFLX           69.57               23            1.37              0.67         69.29                37.25         0.490 below_threshold              0.167             10.4                           0.183               -8.87             -0.730            downtrend_blocked_slope           False                  False
+  ABNB           87.80               41            0.31              0.35        160.50                40.44         0.483 below_threshold              0.698             80.6                           0.419               -3.48             -0.470                                 ok           False                  False
+  MDLZ           96.15               26            0.23              0.09         57.78                16.32         0.482 below_threshold              0.781             75.5                           0.530               -6.20             -0.528 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261001094504)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261001095001)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261001094504)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261001095001)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261001094504)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261001095001)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261001094504)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261001095001)
 
 </details>
