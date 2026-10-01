@@ -7510,3 +7510,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-09-30T12:00:46.697074-04:00,2026-09-30,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-09-30T14:49:15.074895-04:00,2026-09-30,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""a4c18ce1-ff31-4004-be2a-24c61bf85dbe"", ""contract_symbol"": ""META261120C00735000"", ""contracts"": 1, ""entry_mode"": ""regular"", ""limit_price"": ""48.80"", ""ticker"": ""META""}"
 2026-09-30T15:16:02.631950-04:00,2026-09-30,entry_1500,entry_filled,"{""contract_symbol"": ""META261120C00735000"", ""contracts"": 1, ""filled_price"": 48.8, ""ticker"": ""META""}"
+2026-10-01T10:00:24.532607-04:00,2026-10-01,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
