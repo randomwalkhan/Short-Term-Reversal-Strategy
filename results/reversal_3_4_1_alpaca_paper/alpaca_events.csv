@@ -7537,3 +7537,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-01T14:50:27.879839-04:00,2026-10-01,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
 2026-10-01T14:56:55.175263-04:00,2026-10-01,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
 2026-10-01T15:03:08.818436-04:00,2026-10-01,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
+2026-10-01T15:09:29.172945-04:00,2026-10-01,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
