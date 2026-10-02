@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4455.000000000001,
+      "alpaca_entry_client_order_id": "rev-20261002145037-zs-regular",
+      "alpaca_entry_order_id": "9dcc1b13-664e-4537-ab88-6521e1bea52f",
+      "asset_type": "option",
+      "contract_symbol": "ZS261120C00200000",
+      "contracts": 3,
+      "current_drop_pct": 0.97,
+      "early_entry_score": 0.679,
+      "entry_mode": "regular",
+      "entry_option_price": 14.850000000000001,
+      "entry_slot": "entry_1500",
+      "entry_spot": 196.86000061035156,
+      "entry_timestamp": "2026-10-02T14:50:37.078923-04:00",
+      "entry_trade_date": "2026-10-02",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-11-20",
+      "matched_signals": 37,
+      "planned_stop": 13.365000000000002,
+      "planned_tp_day1": 17.0775,
+      "planned_tp_day2": 17.0775,
+      "position_id": "ZS_20261002T145037",
+      "status": "entry_submitted",
+      "strike": 200.0,
+      "success_rate": 94.59,
+      "ticker": "ZS",
+      "timing_score": 0.642
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
