@@ -7559,3 +7559,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-02T11:51:47.261545-04:00,2026-10-02,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-02T11:57:54.227702-04:00,2026-10-02,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-02T14:50:37.078923-04:00,2026-10-02,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""9dcc1b13-664e-4537-ab88-6521e1bea52f"", ""contract_symbol"": ""ZS261120C00200000"", ""contracts"": 3, ""entry_mode"": ""regular"", ""limit_price"": ""15.15"", ""ticker"": ""ZS""}"
+2026-10-02T14:56:52.720425-04:00,2026-10-02,entry_1500,entry_filled,"{""contract_symbol"": ""ZS261120C00200000"", ""contracts"": 3, ""filled_price"": 14.95, ""ticker"": ""ZS""}"
