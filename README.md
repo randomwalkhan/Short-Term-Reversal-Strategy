@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-10-02 16:05:03 EDT`
-- Equity: `$81,364.30` | Realized: `$71,364.30` | Unrealized: `$0.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-10-02 16:10:06 EDT`
+- Equity: `$79,744.30` | Realized: `$71,364.30` | Unrealized: `$-1,620.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode        instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-    ZS     option         option ZS261120C00200000     27     40095.0                 40095.0          14.85             0.0                    0.0                   0
+    ZS     option         option ZS261120C00200000     27     40095.0                 38475.0          14.25         -1620.0                  -4.04                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261002160503)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261002161006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261002160503)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261002161006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261002160503)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261002161006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261002160503)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261002161006)
 
 </details>
 
