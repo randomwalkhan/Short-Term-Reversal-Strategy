@@ -6410,3 +6410,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-01T15:05:04.536150-04:00,2026-10-01,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-01T15:10:06.086305-04:00,2026-10-01,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-02T09:20:04.739617-04:00,2026-10-02,data_refresh,data_refresh,"{'saved': 92, 'empty': 1}"
+2026-10-02T10:00:06.267323-04:00,2026-10-02,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
