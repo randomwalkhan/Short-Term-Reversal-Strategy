@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-03 00:15:05 EDT`
-Last processed slot: `share_ext_0015`
+Latest checkpoint (ET): `2026-10-03 00:20:06 EDT`
+Last processed slot: `share_ext_0020`
 
 ## Active Configuration
 
@@ -51,17 +51,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot     event_type                                                                                                                                                                                                                                                                                                                                                                                                                             detail
-2026-10-03T00:15:05.035533-04:00 share_ext_0015  market_closed                                                                                                                                                                                                                                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
-2026-10-03T00:10:05.034683-04:00 share_ext_0010  market_closed                                                                                                                                                                                                                                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
-2026-10-03T00:05:05.937196-04:00 share_ext_0005  market_closed                                                                                                                                                                                                                                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
-2026-10-03T00:00:04.987854-04:00 share_ext_0000  market_closed                                                                                                                                                                                                                                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
-2026-10-02T15:10:06.510423-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
-2026-10-02T15:05:02.993202-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
-2026-10-02T15:00:05.745060-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
-2026-10-02T14:55:02.797853-04:00     entry_1500   slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
-2026-10-02T14:50:06.331180-04:00     entry_1500 timing_overlay                                                                                                                                                                                                                                                                                                                       {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-10-02", "training_samples": 5912, "window": 5}
-2026-10-02T14:50:06.331180-04:00     entry_1500          entry {"allocated_cash": 40095.0, "asset_type": "option", "contract_symbol": "ZS261120C00200000", "contracts": 27, "early_entry_score": 0.679, "entry_mode": "regular", "entry_option_price": 14.85, "execution_mode": "option", "matched_signals": 37, "option_liquidity_status": "ok", "option_open_interest": 818.0, "option_spread_pct": 4.04, "option_volume": 103.0, "success_rate": 94.59, "ticker": "ZS", "timing_score": 0.642}
+                    timestamp_et           slot    event_type                                                                                                                                                                                                                                                                                                                                                                                                                             detail
+2026-10-03T00:20:06.429079-04:00 share_ext_0020 market_closed                                                                                                                                                                                                                                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
+2026-10-03T00:15:05.035533-04:00 share_ext_0015 market_closed                                                                                                                                                                                                                                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
+2026-10-03T00:10:05.034683-04:00 share_ext_0010 market_closed                                                                                                                                                                                                                                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
+2026-10-03T00:05:05.937196-04:00 share_ext_0005 market_closed                                                                                                                                                                                                                                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
+2026-10-03T00:00:04.987854-04:00 share_ext_0000 market_closed                                                                                                                                                                                                                                                                                                                                                                                        {"holiday_name": null, "reason": "weekend"}
+2026-10-02T15:10:06.510423-04:00     entry_1500  slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
+2026-10-02T15:05:02.993202-04:00     entry_1500  slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
+2026-10-02T15:00:05.745060-04:00     entry_1500  slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
+2026-10-02T14:55:02.797853-04:00     entry_1500  slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                    {"reason": "already_processed"}
+2026-10-02T14:50:06.331180-04:00     entry_1500         entry {"allocated_cash": 40095.0, "asset_type": "option", "contract_symbol": "ZS261120C00200000", "contracts": 27, "early_entry_score": 0.679, "entry_mode": "regular", "entry_option_price": 14.85, "execution_mode": "option", "matched_signals": 37, "option_liquidity_status": "ok", "option_open_interest": 818.0, "option_spread_pct": 4.04, "option_volume": 103.0, "success_rate": 94.59, "ticker": "ZS", "timing_score": 0.642}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261003001505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261003002006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261003001505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261003002006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261003001505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261003002006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261003001505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261003002006)
 
 </details>
