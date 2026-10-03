@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-03 01:18:58 EDT`
-Last slot: `share_ext_0115`
+Latest checkpoint (ET): `2026-10-03 01:24:02 EDT`
+Last slot: `share_ext_0120`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                               detail
+2026-10-03T01:24:02.283520-04:00   share_ext_0120         market_closed                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
 2026-10-03T01:18:58.867687-04:00   share_ext_0115         market_closed                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
 2026-10-03T01:13:55.508096-04:00   share_ext_0110         market_closed                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
 2026-10-03T01:08:51.988309-04:00   share_ext_0105         market_closed                                                                                                                                          {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-02T14:56:52.720425-04:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "ZS261120C00200000", "contracts": 3, "filled_price": 14.95, "ticker": "ZS"}
 2026-10-02T14:50:37.078923-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "9dcc1b13-664e-4537-ab88-6521e1bea52f", "contract_symbol": "ZS261120C00200000", "contracts": 3, "entry_mode": "regular", "limit_price": "15.15", "ticker": "ZS"}
 2026-10-02T11:57:54.227702-04:00 early_entry_1155    early_entry_shadow                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-02T11:51:47.261545-04:00 early_entry_1150    early_entry_shadow                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
