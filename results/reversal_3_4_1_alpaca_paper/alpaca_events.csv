@@ -7562,3 +7562,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-02T14:56:52.720425-04:00,2026-10-02,entry_1500,entry_filled,"{""contract_symbol"": ""ZS261120C00200000"", ""contracts"": 3, ""filled_price"": 14.95, ""ticker"": ""ZS""}"
 2026-10-03T00:03:06.991227-04:00,2026-10-03,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-10-03T00:08:10.635225-04:00,2026-10-03,share_ext_0005,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-10-03T00:13:14.123075-04:00,2026-10-03,share_ext_0010,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
