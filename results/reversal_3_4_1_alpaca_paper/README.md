@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-05 00:27:38 EDT`
-Last slot: `share_ext_0025`
+Latest checkpoint (ET): `2026-10-05 00:32:42 EDT`
+Last slot: `share_ext_0030`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_0025`
 
 ```text
 ticker status entry_mode   contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-    ZS   open    regular ZS261120C00200000          3               14.95                  14.9          bid_ask_mid                       14.9                    True          4470.0           -15.0              -0.334448                   1
+    ZS   open    regular ZS261120C00200000          3               14.95                  14.2     last_price_stale                        NaN                   False          4260.0          -225.0              -5.016722                   1
 ```
 
 ## Closed Trades
