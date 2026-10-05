@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 41269.300356674205,
-  "positions": [
-    {
-      "position_id": "ZS_20261002T145006",
-      "ticker": "ZS",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "ZS261120C00200000",
-      "expiry": "2026-11-20",
-      "strike": 200.0,
-      "entry_timestamp": "2026-10-02T14:50:06.331180-04:00",
-      "entry_trade_date": "2026-10-02",
-      "entry_slot": "entry_1500",
-      "entry_spot": 196.86000061035156,
-      "entry_option_price": 14.850000000000001,
-      "entry_bid": 14.55,
-      "entry_ask": 15.15,
-      "entry_iv_pct": 55.98188549804688,
-      "contracts": 27,
-      "allocated_cash": 40095.00000000001,
-      "success_rate": 94.59,
-      "matched_signals": 37,
-      "current_drop_pct": 0.97,
-      "rolling_sigma_20d_pct": 77.3,
-      "planned_tp_day1": 17.0775,
-      "planned_tp_day2": 17.0775,
-      "planned_stop": 13.365000000000002,
-      "option_open_interest": 818.0,
-      "option_volume": 103.0,
-      "option_spread_pct": 0.04040404040404038,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 88586.8003566742,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
