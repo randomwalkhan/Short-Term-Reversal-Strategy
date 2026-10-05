@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 2520.0,
+      "alpaca_entry_client_order_id": "rev-20261005145430-soxl-regular",
+      "alpaca_entry_order_id": "d2dc7250-d9d6-47c8-a43c-6a6f4825ac89",
+      "asset_type": "option",
+      "contract_symbol": "SOXL261120C00165000",
+      "contracts": 1,
+      "current_drop_pct": 0.68,
+      "early_entry_score": 0.635,
+      "entry_mode": "regular",
+      "entry_option_price": 25.2,
+      "entry_slot": "entry_1500",
+      "entry_spot": 162.58999633789062,
+      "entry_timestamp": "2026-10-05T14:54:30.110514-04:00",
+      "entry_trade_date": "2026-10-05",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-11-20",
+      "matched_signals": 35,
+      "planned_stop": 22.68,
+      "planned_tp_day1": 28.979999999999997,
+      "planned_tp_day2": 28.979999999999997,
+      "position_id": "SOXL_20261005T145430",
+      "status": "entry_submitted",
+      "strike": 165.0,
+      "success_rate": 85.71,
+      "ticker": "SOXL",
+      "timing_score": 0.758
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
