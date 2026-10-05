@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-05 09:45:05 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-10-05 09:50:04 EDT`
+Last processed slot: `manage_1000`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$41,269.30`
-- Equity: `$79,609.30`
+- Equity: `$84,266.80`
 - Realized PnL: `$71,364.30`
-- Unrealized PnL: `$-1,755.00`
+- Unrealized PnL: `$2,902.50`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode        instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-    ZS     option         option ZS261120C00200000       2026-10-02                   1     27     40095.0                 38340.0        14.85           14.2      196.86        202.04     last_price_stale                        NaN                unavailable                   False         -1755.0                  -4.38         94.59               37              0.97         55.98             0.0                   77.3                 818.0          103.0               0.04                      ok
+    ZS     option         option ZS261120C00200000       2026-10-02                   1     27     40095.0                 42997.5        14.85          15.92      196.86        202.02          bid_ask_mid                      15.92                bid_ask_mid                    True          2902.5                   7.24         94.59               37              0.97         55.98           51.51                   77.3                 818.0          103.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-10-05)
@@ -48,18 +48,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-  SOXL           83.87               31            2.34              2.68        162.52               114.85         0.703          pass              0.355             13.9                           0.377               12.69              0.941                      ok            True                  False
-  AMGN           85.19               27            0.70              1.97        402.20                47.11         0.576          pass              0.469             53.2                           0.346                1.80              0.112                      ok            True                  False
-  ASML           80.65               31            0.69              8.97       1863.46                42.39         0.551          pass              0.389             59.0                           0.650                8.37              0.841                      ok            True                  False
-  AMAT           84.62               39            0.62              2.34        539.04                49.71         0.537          pass              0.471             33.7                           0.422               15.61              1.630                      ok            True                  False
-  CSCO           86.67               30            0.51              0.40        112.03                31.23         0.533          pass              0.475             36.8                           0.401                0.54              0.302                      ok            True                  False
-   ADI           88.00               25            1.07              3.11        415.82                32.86         0.524          pass              0.378              4.1                           0.200                7.75              0.791                      ok            True                  False
-   XEL           85.00               20            0.64              0.32         71.26                18.48         0.512          pass              0.336             28.1                           0.229               -1.27             -0.060                      ok            True                  False
-  MRVL           82.35               34            1.04              1.97        271.44                54.74         0.510          pass              0.346             24.1                           0.324                4.70              0.459                      ok            True                  False
-    MU           89.66               29            1.37             10.33       1070.46                50.82         0.509          pass              0.456              7.1                           0.233                1.55              0.022                      ok            True                  False
-  DRAM           80.56               36            0.19              0.08         61.70                54.09         0.581          pass              0.443             65.7                           0.541                0.06             -0.118                      ok           False                  False
-  MPWR           92.50               40            0.13              1.32       1439.16                53.21         0.566          pass              0.861             90.4                           0.723               12.70              0.727                      ok           False                  False
-  INTC           85.71               35            1.46              1.22        118.81                74.20         0.559          pass              0.583             69.5                           0.858               -3.44             -0.512 downtrend_blocked_slope           False                  False
+  SOXL           83.87               31            2.39              2.74        162.54               114.85         0.695          pass              0.402             29.6                           0.384               12.66              0.940                      ok            True                  False
+  ASML           80.65               31            0.89             11.64       1862.32                42.39         0.538          pass              0.351             46.8                           0.437                8.14              0.832                      ok            True                  False
+   TRI           86.67               30            1.33              0.91         97.23                53.36         0.536          pass              0.365              0.0                           0.325                0.93              0.060                      ok            True                  False
+   ADI           86.36               22            1.39              4.05        415.42                32.86         0.517          pass              0.346             15.0                           0.250                7.41              0.776                      ok            True                  False
+    MU           89.66               29            1.36             10.21       1070.52                50.82         0.508          pass              0.509             24.6                           0.257                1.57              0.023                      ok            True                  False
+  DRAM           80.56               36            0.29              0.13         61.73                54.09         0.575          pass              0.411             55.0                           0.477                0.03             -0.119                      ok           False                  False
+  MPWR           92.31               39            0.27              2.74       1438.55                53.21         0.563          pass              0.818             80.1                           0.565               12.54              0.721                      ok           False                  False
+  AMGN           85.29               34            0.42              1.18        402.54                47.11         0.551          pass              0.572             72.0                           0.556                2.09              0.125                      ok           False                  False
+  INTC           84.38               32            1.94              1.62        118.64                74.20         0.548          pass              0.497             59.6                           0.808               -3.91             -0.534 downtrend_blocked_slope           False                  False
+  AMAT           84.62               39            0.45              1.71        539.31                49.71         0.545          pass              0.555             61.4                           0.454               15.80              1.638                      ok           False                  False
+  CSCO           87.10               31            0.38              0.30        112.07                31.23         0.535          pass              0.541             52.7                           0.434                0.67              0.308                      ok           False                  False
+  LRCX           79.49               39            0.75              1.83        346.70                57.64         0.528          pass              0.385             46.3                           0.407               14.21              1.435                      ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261005094505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261005095004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261005094505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261005095004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261005094505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261005095004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261005094505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261005095004)
 
 </details>
