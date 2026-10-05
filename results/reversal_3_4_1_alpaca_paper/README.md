@@ -1,28 +1,24 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-05 09:59:22 EDT`
+Latest checkpoint (ET): `2026-10-05 10:04:26 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$82,718.38`
-- Portfolio value: `$87,713.38`
+- Cash: `$87,833.31`
+- Portfolio value: `$87,833.31`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode   contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-    ZS exit_submitted    regular ZS261120C00200000          3               14.95                17.525          bid_ask_mid                     17.525                    True          5257.5           772.5               17.22408                   1
-```
+_None_
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-   CSX  CSX260918C00050000          2026-08-03         2026-08-04                1.70               1.65         29  -145.0   -2.941176        stop_loss_hit_at_scan
   INTC INTC260918C00100000          2026-08-06         2026-08-07               11.35              10.55          4  -320.0   -7.048458        stop_loss_hit_at_scan
   PYPL PYPL260918C00060000          2026-08-07         2026-08-10                1.71               1.51         28  -560.0  -11.695906        stop_loss_hit_at_scan
   LRCX LRCX260918C00310000          2026-08-10         2026-08-12               27.25              34.05          1   680.0   24.954128 take_profit_day2_hit_at_scan
@@ -42,30 +38,31 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   MSTR MSTR261120C00160000          2026-09-25         2026-09-28               17.35              15.40          2  -390.0  -11.239193        stop_loss_hit_at_scan
   META META261120C00735000          2026-09-30         2026-10-01               48.80              43.15          1  -565.0  -11.577869        stop_loss_hit_at_scan
   MSTR MSTR261120C00155000          2026-09-29         2026-10-01               16.05              18.80          3   825.0   17.133956 take_profit_day2_hit_at_scan
+    ZS   ZS261120C00200000          2026-10-02         2026-10-05               14.95              17.05          3   630.0   14.046823 take_profit_day1_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et           slot           event_type                                                                                                                                                                                detail
-2026-10-05T09:59:22.113334-04:00    manage_1000 exit_order_submitted {"alpaca_order_id": "3681fb8e-0f90-46b2-b9eb-6564d48abfcd", "contract_symbol": "ZS261120C00200000", "limit_price": "17.05", "reason": "take_profit_day1_hit_at_scan", "ticker": "ZS"}
-2026-10-04T23:57:17.580527-04:00 share_ext_2355        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:52:14.090010-04:00 share_ext_2350        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:47:10.396038-04:00 share_ext_2345        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:42:06.786660-04:00 share_ext_2340        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:37:02.983050-04:00 share_ext_2335        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:31:59.300628-04:00 share_ext_2330        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:26:55.774680-04:00 share_ext_2325        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:21:52.146810-04:00 share_ext_2320        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:16:48.480809-04:00 share_ext_2315        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:11:44.903993-04:00 share_ext_2310        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:06:41.281782-04:00 share_ext_2305        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T23:01:37.794841-04:00 share_ext_2300        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T22:56:34.423547-04:00 share_ext_2255        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T22:51:31.040465-04:00 share_ext_2250        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T22:46:27.676979-04:00 share_ext_2245        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T22:41:24.341175-04:00 share_ext_2240        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T22:36:20.807009-04:00 share_ext_2235        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T22:31:17.379565-04:00 share_ext_2230        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
-2026-10-04T22:26:13.829524-04:00 share_ext_2225        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+                    timestamp_et             slot           event_type                                                                                                                                                                                detail
+2026-10-05T10:04:26.269862-04:00 early_entry_1000   early_entry_shadow                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-05T10:04:26.269862-04:00             exit          exit_filled                                                 {"contract_symbol": "ZS261120C00200000", "exit_price": 17.05, "pnl": 630.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "ZS"}
+2026-10-05T09:59:22.113334-04:00      manage_1000 exit_order_submitted {"alpaca_order_id": "3681fb8e-0f90-46b2-b9eb-6564d48abfcd", "contract_symbol": "ZS261120C00200000", "limit_price": "17.05", "reason": "take_profit_day1_hit_at_scan", "ticker": "ZS"}
+2026-10-04T23:57:17.580527-04:00   share_ext_2355        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:52:14.090010-04:00   share_ext_2350        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:47:10.396038-04:00   share_ext_2345        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:42:06.786660-04:00   share_ext_2340        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:37:02.983050-04:00   share_ext_2335        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:31:59.300628-04:00   share_ext_2330        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:26:55.774680-04:00   share_ext_2325        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:21:52.146810-04:00   share_ext_2320        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:16:48.480809-04:00   share_ext_2315        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:11:44.903993-04:00   share_ext_2310        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:06:41.281782-04:00   share_ext_2305        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T23:01:37.794841-04:00   share_ext_2300        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T22:56:34.423547-04:00   share_ext_2255        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T22:51:31.040465-04:00   share_ext_2250        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T22:46:27.676979-04:00   share_ext_2245        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T22:41:24.341175-04:00   share_ext_2240        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
+2026-10-04T22:36:20.807009-04:00   share_ext_2235        market_closed                                                                                                                                           {"holiday_name": null, "reason": "weekend"}
 ```
