@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 88586.8003566742,
-  "positions": [],
+  "cash": 44576.8003566742,
+  "positions": [
+    {
+      "position_id": "MRVL_20261005T145007",
+      "ticker": "MRVL",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "MRVL261120C00270000",
+      "expiry": "2026-11-20",
+      "strike": 270.0,
+      "entry_timestamp": "2026-10-05T14:50:07.104378-04:00",
+      "entry_trade_date": "2026-10-05",
+      "entry_slot": "entry_1500",
+      "entry_spot": 269.7900085449219,
+      "entry_option_price": 24.45,
+      "entry_bid": 24.2,
+      "entry_ask": 24.7,
+      "entry_iv_pct": 63.77599700927734,
+      "contracts": 18,
+      "allocated_cash": 44010.0,
+      "success_rate": 82.86,
+      "matched_signals": 35,
+      "current_drop_pct": 0.92,
+      "rolling_sigma_20d_pct": 54.74,
+      "planned_tp_day1": 28.117499999999996,
+      "planned_tp_day2": 28.117499999999996,
+      "planned_stop": 22.005,
+      "option_open_interest": 2381.0,
+      "option_volume": 509.0,
+      "option_spread_pct": 0.02044989775051125,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -5264,7 +5295,9 @@
       "share_ext_0250",
       "share_ext_0255"
     ],
-    "2026-10-05": []
+    "2026-10-05": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
