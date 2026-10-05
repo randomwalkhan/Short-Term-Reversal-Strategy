@@ -8152,3 +8152,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-05T11:55:33.246187-04:00,2026-10-05,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-05T14:48:17.045732-04:00,2026-10-05,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""TRI""}"
 2026-10-05T14:54:30.110514-04:00,2026-10-05,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""d2dc7250-d9d6-47c8-a43c-6a6f4825ac89"", ""contract_symbol"": ""SOXL261120C00165000"", ""contracts"": 1, ""entry_mode"": ""regular"", ""limit_price"": ""25.75"", ""ticker"": ""SOXL""}"
+2026-10-05T15:00:47.287651-04:00,2026-10-05,entry_1500,entry_filled,"{""contract_symbol"": ""SOXL261120C00165000"", ""contracts"": 1, ""filled_price"": 25.75, ""ticker"": ""SOXL""}"
