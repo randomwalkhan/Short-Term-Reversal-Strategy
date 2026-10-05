@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-05 09:44:11 EDT`
-Last slot: `manual`
+Latest checkpoint (ET): `2026-10-05 09:49:14 EDT`
+Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$82,718.38`
-- Portfolio value: `$87,773.38`
+- Portfolio value: `$87,713.38`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manual`
 
 ```text
 ticker status entry_mode   contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-    ZS   open    regular ZS261120C00200000          3               14.95                  14.2     last_price_stale                        NaN                   False          4260.0          -225.0              -5.016722                   1
+    ZS   open    regular ZS261120C00200000          3               14.95                  15.4          bid_ask_mid                       15.4                    True          4620.0           135.0               3.010033                   1
 ```
 
 ## Closed Trades
