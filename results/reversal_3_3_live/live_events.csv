@@ -6480,3 +6480,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-05T03:00:05.114767-04:00,2026-10-05,data_refresh,data_refresh,"{'saved': 92, 'empty': 1}"
 2026-10-05T09:55:04.847980-04:00,2026-10-05,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""ZS261120C00200000"", ""fill_price"": 17.525, ""pnl"": 7222.5, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 18.01, ""ticker"": ""ZS""}"
 2026-10-05T10:00:05.004899-04:00,2026-10-05,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-05T10:05:01.984758-04:00,2026-10-05,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
