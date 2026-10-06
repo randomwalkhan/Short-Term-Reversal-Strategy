@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-06 14:50:04 EDT`
+Latest checkpoint (ET): `2026-10-06 14:55:01 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$53,034.30`
-- Equity: `$105,146.80`
+- Equity: `$104,871.80`
 - Realized PnL: `$95,146.80`
-- Unrealized PnL: `$0.00`
+- Unrealized PnL: `$-275.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ABNB     option         option ABNB261120C00160000       2026-10-06                   0     55     52112.5                 52112.5         9.48           9.48      160.14        160.29          bid_ask_mid                       9.48                bid_ask_mid                    True             0.0                    0.0         83.33               12               2.4         42.26           42.26                  40.56                 310.0           20.0               0.06                      ok
+  ABNB     option         option ABNB261120C00160000       2026-10-06                   0     55     52112.5                 51837.5         9.48           9.43      160.14        160.27          bid_ask_mid                       9.43                bid_ask_mid                    True          -275.0                  -0.53         83.33               12               2.4         42.26            41.9                  40.56                 310.0           20.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-10-06)
@@ -51,24 +51,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  ABNB           83.33               12            2.40              2.75        162.89                40.56         0.529            pass              0.219             21.4                           0.493               -1.03              0.542                                 ok            True                  False
-  MSTR           91.89               37            0.48              0.55        164.19                79.08         0.628            pass              0.674             38.2                           0.184               -2.20             -0.081           downtrend_blocked_streak           False                  False
-  MPWR           91.89               37            0.38              3.96       1478.19                53.63         0.568            pass              0.797             81.1                           0.621                6.94              0.831                                 ok           False                  False
-  INTC           88.57               35            1.44              1.17        115.69                74.54         0.555            pass              0.594             47.7                           0.325               -7.54             -0.743 downtrend_blocked_slope_and_streak           False                  False
-  ASML           72.73               22            1.71             22.20       1850.35                40.48         0.519            pass              0.198             22.2                           0.345                4.59              0.743                                 ok           False                  False
-    MU           92.31               39            0.44              3.30       1062.55                46.96         0.517            pass              0.793             73.2                           0.386               -3.37             -0.162                                 ok           False                  False
-   TRI           90.24               41            0.01              0.01         97.08                50.10         0.507            pass              0.821             99.2                           0.507                1.47             -0.052                                 ok           False                  False
-  DRAM           84.00               25            2.65              1.14         61.18                49.40         0.498 below_threshold              0.273              5.5                           0.164               -5.64             -0.216                                 ok           False                  False
-  AMAT           82.76               29            2.08              7.89        538.90                48.32         0.492 below_threshold              0.294             14.9                           0.255               12.39              1.576                                 ok           False                  False
-  CTSH           89.47               19            1.99              0.81         57.82                45.68         0.489 below_threshold              0.501             46.5                           0.276               -2.85             -0.008                                 ok           False                  False
-  TEAM          100.00               19            2.81              3.86        194.99                55.00         0.485 below_threshold              0.512              1.1                           0.088                1.31              0.046                                 ok           False                  False
-  MELI           77.78               36            0.82             10.65       1856.05                43.88         0.481 below_threshold              0.372             50.1                           0.471                1.03              0.015                                 ok           False                  False
+  ABNB           84.62               13            2.32              2.67        162.93                40.56         0.528            pass              0.267             23.8                           0.507               -0.96              0.545                                 ok            True                  False
+    MU           92.31               39            0.52              3.90       1062.29                46.96         0.512            pass              0.778             68.3                           0.369               -3.45             -0.166                                 ok            True                  False
+  MSTR           91.89               37            0.32              0.36        164.27                79.08         0.637            pass              0.738             59.1                           0.278               -2.04             -0.074           downtrend_blocked_streak           False                  False
+  MPWR           92.31               39            0.30              3.08       1478.57                53.63         0.562            pass              0.834             85.3                           0.694                7.03              0.835                                 ok           False                  False
+  INTC           88.57               35            1.40              1.14        115.70                74.54         0.557            pass              0.599             49.2                           0.389               -7.50             -0.741 downtrend_blocked_slope_and_streak           False                  False
+  ASML           72.73               22            1.69             21.95       1850.45                40.48         0.520            pass              0.201             23.1                           0.389                4.61              0.744                                 ok           False                  False
+  DRAM           84.00               25            2.63              1.14         61.18                49.40         0.498 below_threshold              0.275              6.1                           0.187               -5.62             -0.216                                 ok           False                  False
+  CTSH           89.47               19            1.98              0.80         57.83                45.68         0.489 below_threshold              0.503             47.0                           0.251               -2.83             -0.007                                 ok           False                  False
+  MCHP           93.02               43            0.02              0.01         81.49                36.65         0.488 below_threshold              0.881             94.8                           0.568                7.46              0.828                                 ok           False                  False
+  AMAT           82.76               29            2.21              8.38        538.69                48.32         0.485 below_threshold              0.277              9.5                           0.233               12.24              1.570                                 ok           False                  False
+  TEAM          100.00               21            2.64              3.64        195.09                55.00         0.481 below_threshold              0.547              8.6                           0.163                1.48              0.053                                 ok           False                  False
+  MELI           80.00               40            0.70              9.11       1856.70                43.88         0.466 below_threshold              0.419             57.3                           0.484                1.15              0.020                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                               detail
+2026-10-06T14:55:01.305987-04:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
 2026-10-06T14:50:04.366747-04:00       entry_1500              entry {"allocated_cash": 52112.5, "asset_type": "option", "contract_symbol": "ABNB261120C00160000", "contracts": 55, "early_entry_score": 0.219, "entry_mode": "regular", "entry_option_price": 9.475, "execution_mode": "option", "matched_signals": 12, "option_liquidity_status": "ok", "option_open_interest": 310.0, "option_spread_pct": 5.8, "option_volume": 20.0, "success_rate": 83.33, "ticker": "ABNB", "timing_score": 0.529}
 2026-10-06T14:50:04.366747-04:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                         {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-10-06", "training_samples": 5941, "window": 5}
 2026-10-06T12:00:05.410645-04:00 early_entry_1200 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -78,7 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-10-06T11:40:04.013409-04:00 early_entry_1140 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-06T11:35:06.292757-04:00 early_entry_1135 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-06T11:30:02.309961-04:00 early_entry_1130 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-06T11:25:01.397676-04:00 early_entry_1125 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261006145004)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261006145501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261006145004)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261006145501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261006145004)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261006145501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261006145004)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261006145501)
 
 </details>
