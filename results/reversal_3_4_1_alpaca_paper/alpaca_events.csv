@@ -8173,3 +8173,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-06T11:47:57.272118-04:00,2026-10-06,early_entry_1145,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-06T11:54:22.492889-04:00,2026-10-06,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-06T12:00:44.232676-04:00,2026-10-06,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-06T14:49:14.283865-04:00,2026-10-06,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""6a971e9f-ec13-4c0b-93c1-08a7b1ce6b13"", ""contract_symbol"": ""ABNB261120C00160000"", ""contracts"": 5, ""entry_mode"": ""regular"", ""limit_price"": ""9.60"", ""ticker"": ""ABNB""}"
