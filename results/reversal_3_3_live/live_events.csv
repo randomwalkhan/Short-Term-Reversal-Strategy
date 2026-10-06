@@ -6512,3 +6512,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-05T15:05:06.249640-04:00,2026-10-05,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-05T15:10:05.053706-04:00,2026-10-05,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-06T00:00:06.226199-04:00,2026-10-06,data_refresh,data_refresh,"{'saved': 92, 'empty': 1}"
+2026-10-06T09:50:05.348208-04:00,2026-10-06,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MRVL261120C00270000"", ""fill_price"": 33.65, ""pnl"": 16560.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 37.63, ""ticker"": ""MRVL""}"
