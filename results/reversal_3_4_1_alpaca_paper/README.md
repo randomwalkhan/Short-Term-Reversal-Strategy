@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-06 15:26:17 EDT`
+Latest checkpoint (ET): `2026-10-06 15:31:22 EDT`
 Last slot: `manage_1530`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$85,258.08`
-- Portfolio value: `$87,728.08`
+- Portfolio value: `$87,653.08`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1530`
 
 ```text
 ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SOXL            open    regular SOXL261120C00165000          1               25.75                 25.25          bid_ask_mid                      25.25                   True          2525.0           -50.0              -1.941748                 1.0
+  SOXL            open    regular SOXL261120C00165000          1               25.75                25.375          bid_ask_mid                     25.375                   True          2537.5           -37.5              -1.456311                 1.0
   ABNB entry_submitted    regular ABNB261120C00160000          5                9.35                   NaN                  NaN                        NaN                    NaN             NaN             NaN                    NaN                 NaN
 ```
 
