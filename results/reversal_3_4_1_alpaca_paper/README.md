@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-06 13:38:19 EDT`
-Last slot: `manage_1330`
+Latest checkpoint (ET): `2026-10-06 13:43:23 EDT`
+Last slot: `manual`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `manage_1330`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SOXL   open    regular SOXL261120C00165000          1               25.75                25.675          bid_ask_mid                     25.675                    True          2567.5            -7.5              -0.291262                   1
+  SOXL   open    regular SOXL261120C00165000          1               25.75                25.775          bid_ask_mid                     25.775                    True          2577.5             2.5               0.097087                   1
 ```
 
 ## Closed Trades
