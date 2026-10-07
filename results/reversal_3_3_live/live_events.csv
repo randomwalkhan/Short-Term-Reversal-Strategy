@@ -6576,3 +6576,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-07T14:50:06.730595-04:00,2026-10-07,entry_1500,entry,"{""allocated_cash"": 52300.0, ""asset_type"": ""option"", ""contract_symbol"": ""NVDA261120C00235000"", ""contracts"": 40, ""early_entry_score"": 0.461, ""entry_mode"": ""regular"", ""entry_option_price"": 13.075, ""execution_mode"": ""option"", ""matched_signals"": 22, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 17037.0, ""option_spread_pct"": 1.15, ""option_volume"": 1205.0, ""success_rate"": 90.91, ""ticker"": ""NVDA"", ""timing_score"": 0.512}"
 2026-10-07T14:55:05.726912-04:00,2026-10-07,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-07T15:00:04.880221-04:00,2026-10-07,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-10-07T15:05:05.765684-04:00,2026-10-07,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
