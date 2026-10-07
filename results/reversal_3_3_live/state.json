@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 53034.3003566742,
+  "cash": 734.3003566741972,
   "positions": [
     {
       "position_id": "ABNB_20261006T145004",
@@ -31,6 +31,36 @@
       "option_open_interest": 310.0,
       "option_volume": 20.0,
       "option_spread_pct": 0.05804749340369401,
+      "option_liquidity_status": "ok"
+    },
+    {
+      "position_id": "NVDA_20261007T145006",
+      "ticker": "NVDA",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "NVDA261120C00235000",
+      "expiry": "2026-11-20",
+      "strike": 235.0,
+      "entry_timestamp": "2026-10-07T14:50:06.730595-04:00",
+      "entry_trade_date": "2026-10-07",
+      "entry_slot": "entry_1500",
+      "entry_spot": 236.82850646972656,
+      "entry_option_price": 13.075,
+      "entry_bid": 13.0,
+      "entry_ask": 13.15,
+      "entry_iv_pct": 37.07338317871094,
+      "contracts": 40,
+      "allocated_cash": 52300.0,
+      "success_rate": 90.91,
+      "matched_signals": 22,
+      "current_drop_pct": 1.01,
+      "rolling_sigma_20d_pct": 24.15,
+      "planned_tp_day1": 15.036249999999997,
+      "planned_tp_day2": 15.036249999999997,
+      "planned_stop": 11.7675,
+      "option_open_interest": 17037.0,
+      "option_volume": 1205.0,
+      "option_spread_pct": 0.011472275334608059,
       "option_liquidity_status": "ok"
     }
   ],
@@ -5301,7 +5331,9 @@
     "2026-10-06": [
       "entry_1500"
     ],
-    "2026-10-07": []
+    "2026-10-07": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
