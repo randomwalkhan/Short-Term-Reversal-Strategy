@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-07 16:00:04 EDT`
+Latest checkpoint (ET): `2026-10-07 16:05:06 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$734.30`
-- Equity: `$106,659.30`
+- Equity: `$106,284.30`
 - Realized PnL: `$95,146.80`
-- Unrealized PnL: `$1,512.50`
+- Unrealized PnL: `$1,137.50`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ABNB     option         option ABNB261120C00160000       2026-10-06                   1     55     52112.5                 53625.0         9.48           9.75      160.14        160.63          bid_ask_mid                       9.75                bid_ask_mid                    True          1512.5                    2.9         83.33               12              2.40         42.26           43.15                  40.56                 310.0           20.0               0.06                      ok
-  NVDA     option         option NVDA261120C00235000       2026-10-07                   0     40     52300.0                 52300.0        13.08          13.08      236.83        237.48          bid_ask_mid                      13.08                bid_ask_mid                    True             0.0                    0.0         90.91               22              1.01         37.07           35.90                  24.15               17037.0         1205.0               0.01                      ok
+  ABNB     option         option ABNB261120C00160000       2026-10-06                   1     55     52112.5                 53350.0         9.48           9.70      160.14        160.63          bid_ask_mid                       9.70                bid_ask_mid                    True          1237.5                   2.37         83.33               12              2.40         42.26           42.70                  40.56                 310.0           20.0               0.06                      ok
+  NVDA     option         option NVDA261120C00235000       2026-10-07                   0     40     52300.0                 52200.0        13.08          13.05      236.83        237.49          bid_ask_mid                      13.05                bid_ask_mid                    True          -100.0                  -0.19         90.91               22              1.01         37.07           35.75                  24.15               17037.0         1205.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-10-07)
@@ -47,21 +47,7 @@ _None_
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  SOXL           81.48               27            3.34              3.84        162.61               111.15         0.663          pass              0.391             57.3                           0.677                8.56              1.311                                 ok            True                  False
-  SNPS           82.50               40            0.53              1.86        504.37                54.22         0.528          pass              0.490             56.9                           0.396               21.66              2.337                                 ok            True                  False
-  MPWR           81.25               16            3.23             33.33       1459.41                53.62         0.526          pass              0.192             22.0                           0.318                5.36              0.943                                 ok            True                  False
-   ADI           84.62               13            2.45              7.21        417.46                32.72         0.511          pass              0.300             35.4                           0.654                6.49              0.913                                 ok            True                  False
-  UPRO           82.14               28            0.80              0.88        156.03                30.90         0.507          pass              0.415             62.5                           0.592                3.23              0.352                                 ok            True                  False
-  META           58.33               12            2.40             12.41        733.56                55.45         0.569          pass              0.086              5.3                           0.186               -3.08             -0.348            downtrend_blocked_slope           False                  False
-  CSCO           85.71               28            0.41              0.34        117.80                34.67         0.554          pass              0.522             64.7                           0.331               10.79              1.111                                 ok           False                  False
-  QCOM           83.33               24            2.16              2.74        179.86                56.22         0.546          pass              0.330             31.2                           0.345              -10.20             -1.083 downtrend_blocked_slope_and_streak           False                  False
-   CEG           87.18               39            0.33              0.69        300.11                58.89         0.535          pass              0.717             93.0                           0.723               13.47              1.081                                 ok           False                  False
-   KDP           85.71                7            1.90              0.41         30.95                26.61         0.534          pass              0.223              5.6                           0.186               -3.14             -0.236                                 ok           False                  False
-   WDC           81.82               33            1.42              4.09        409.29                66.20         0.524          pass              0.429             58.3                           0.697              -14.46             -1.275            downtrend_blocked_slope           False                  False
-  MDLZ           95.24               21            0.40              0.17         59.55                16.66         0.521          pass              0.585             20.0                           0.229               -2.50             -0.276           downtrend_blocked_streak           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -86,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261007160004)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261007160506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261007160004)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261007160506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261007160004)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261007160506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261007160004)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261007160506)
 
 </details>
