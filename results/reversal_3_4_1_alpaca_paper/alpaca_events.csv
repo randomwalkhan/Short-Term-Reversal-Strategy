@@ -8179,3 +8179,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-07T10:00:12.728106-04:00,2026-10-07,exit,exit_filled,"{""contract_symbol"": ""SOXL261120C00165000"", ""exit_price"": 17.45, ""pnl"": -830.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""SOXL""}"
 2026-10-07T10:00:12.728106-04:00,2026-10-07,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-07T10:06:35.838038-04:00,2026-10-07,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-07T10:12:53.095250-04:00,2026-10-07,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
