@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-10-07 13:35:06 EDT`
-- Equity: `$106,109.30` | Realized: `$95,146.80` | Unrealized: `$962.50` | Open positions: `1`
+- Latest checkpoint (ET): `2026-10-07 13:40:05 EDT`
+- Equity: `$106,384.30` | Realized: `$95,146.80` | Unrealized: `$1,237.50` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1330`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  ABNB     option         option ABNB261120C00160000     55     52112.5                 53075.0           9.65           962.5                   1.85                   1
+  ABNB     option         option ABNB261120C00160000     55     52112.5                 53350.0            9.7          1237.5                   2.37                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261007133506)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261007134005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261007133506)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261007134005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261007133506)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261007134005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261007133506)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261007134005)
 
 </details>
 
