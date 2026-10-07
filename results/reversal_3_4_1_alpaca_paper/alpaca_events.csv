@@ -8198,3 +8198,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-07T11:54:10.341491-04:00,2026-10-07,early_entry_1150,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-07T12:00:28.013741-04:00,2026-10-07,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-07T14:48:25.236172-04:00,2026-10-07,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KDP""}"
+2026-10-07T14:55:03.442463-04:00,2026-10-07,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KDP""}"
