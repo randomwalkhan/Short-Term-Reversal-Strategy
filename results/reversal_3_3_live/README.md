@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-07 09:25:05 EDT`
+Latest checkpoint (ET): `2026-10-07 09:30:06 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ABNB     option         option ABNB261120C00160000       2026-10-06                   1     55     52112.5                 51975.0         9.48           9.45      160.14        159.45     last_price_stale                        NaN                unavailable                   False          -137.5                  -0.26         83.33               12               2.4         42.26             0.0                  40.56                 310.0           20.0               0.06                      ok
+  ABNB     option         option ABNB261120C00160000       2026-10-06                   1     55     52112.5                 51975.0         9.48           9.45      160.14        159.83     last_price_stale                        NaN                unavailable                   False          -137.5                  -0.26         83.33               12               2.4         42.26            0.01                  40.56                 310.0           20.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-10-07)
@@ -46,7 +46,21 @@ _None_
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  META           82.35               34            0.56              2.91        737.63                55.45         0.589            pass              0.370             29.5                           0.357               -1.26             -0.264                                 ok            True                  False
+  MPWR           85.71               21            2.29             23.58       1463.58                53.62         0.563            pass              0.351             22.9                           0.192                6.39              0.987                                 ok            True                  False
+  CSCO           84.62               26            0.80              0.66        117.66                34.67         0.547            pass              0.347             21.0                           0.225               10.36              1.093                                 ok            True                  False
+  CRWD           87.50               40            1.01              1.97        278.01                55.11         0.534            pass              0.472              6.3                           0.135                5.16              0.787                                 ok            True                  False
+   KDP           95.65               23            0.72              0.16         31.06                26.61         0.530            pass              0.580             13.5                           0.295               -1.99             -0.182                                 ok            True                  False
+  SHOP           85.19               27            1.61              1.85        163.65                52.70         0.530            pass              0.322              5.7                           0.214               13.67              1.454                                 ok            True                  False
+  UPRO           80.95               21            1.29              1.41        155.81                30.90         0.526            pass              0.199             15.8                           0.395                2.73              0.329                                 ok            True                  False
+  ABNB           83.33               12            2.24              2.58        162.97                38.83         0.522            pass              0.237             27.4                           0.321                7.23              0.732                                 ok            True                  False
+  AVGO           89.66               29            1.03              2.71        374.65                34.86         0.501            pass              0.534             33.4                           0.440                4.77              0.540                                 ok            True                  False
+  NVDA           88.89               27            0.65              1.10        238.77                24.15         0.500 below_threshold              0.531             43.5                           0.534                5.39              0.686                                 ok            True                  False
+  QCOM           86.21               29            1.07              1.36        180.45                56.22         0.591            pass              0.453             33.8                           0.367               -9.20             -1.033 downtrend_blocked_slope_and_streak           False                  False
+   CEG           80.00                5            3.32              6.97        297.41                58.89         0.571            pass              0.106             16.3                           0.312               10.07              0.943                                 ok           False                  False
+```
 
 ## Recent Events
 
@@ -71,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261007092505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261007093006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261007092505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261007093006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261007092505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261007093006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261007092505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261007093006)
 
 </details>
