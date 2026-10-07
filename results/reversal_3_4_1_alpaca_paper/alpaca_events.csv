@@ -8200,3 +8200,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-07T14:48:25.236172-04:00,2026-10-07,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KDP""}"
 2026-10-07T14:55:03.442463-04:00,2026-10-07,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KDP""}"
 2026-10-07T15:01:44.360661-04:00,2026-10-07,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""e2b43f2c-592f-47c4-b5ec-7b7a70d079e7"", ""contract_symbol"": ""CEG261120C00300000"", ""contracts"": 2, ""entry_mode"": ""regular"", ""limit_price"": ""20.90"", ""ticker"": ""CEG""}"
+2026-10-07T15:08:23.239767-04:00,2026-10-07,entry_1500,entry_filled,"{""contract_symbol"": ""CEG261120C00300000"", ""contracts"": 2, ""filled_price"": 20.6, ""ticker"": ""CEG""}"
