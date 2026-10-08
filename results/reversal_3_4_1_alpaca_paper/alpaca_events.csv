@@ -8205,3 +8205,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-08T09:57:48.080856-04:00,2026-10-08,exit,exit_filled,"{""contract_symbol"": ""CEG261120C00300000"", ""exit_price"": 21.4, ""pnl"": 160.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""CEG""}"
 2026-10-08T10:02:51.896261-04:00,2026-10-08,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-08T10:09:05.928631-04:00,2026-10-08,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-08T10:15:21.348211-04:00,2026-10-08,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
