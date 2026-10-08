@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-08 10:30:06 EDT`
+Latest checkpoint (ET): `2026-10-08 10:35:07 EDT`
 Last processed slot: `manage_1030`
 
 ## Active Configuration
@@ -27,58 +27,56 @@ Last processed slot: `manage_1030`
 
 ## Portfolio Snapshot
 
-- Cash: `$47,804.30`
-- Equity: `$107,204.30`
-- Realized PnL: `$89,916.80`
-- Unrealized PnL: `$7,287.50`
-- Open positions: `1`
+- Cash: `$108,579.30`
+- Equity: `$108,579.30`
+- Realized PnL: `$98,579.30`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ABNB     option         option ABNB261120C00160000       2026-10-06                   2     55     52112.5                 59400.0         9.48           10.8      160.14        162.65          bid_ask_mid                       10.8                bid_ask_mid                    True          7287.5                  13.98         83.33               12               2.4         42.26           44.28                  40.56                 310.0           20.0               0.06                      ok
-```
+_None_
 
 ## Today's Closed Trades (2026-10-08)
 
 ```text
-ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct           exit_reason
-  NVDA     option         option NVDA261120C00235000     40          2026-10-07         2026-10-08       13.075     11.7675 -5230.0       -10.0 stop_loss_hit_at_scan
+ticker asset_type execution_mode          instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct                  exit_reason
+  NVDA     option         option NVDA261120C00235000     40          2026-10-07         2026-10-08       13.075     11.7675 -5230.0  -10.000000        stop_loss_hit_at_scan
+  ABNB     option         option ABNB261120C00160000     55          2026-10-06         2026-10-08        9.475     11.0500  8662.5   16.622691 take_profit_day2_hit_at_scan
 ```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  SOXL           82.14               28            2.76              3.07        157.59               112.38         0.656            pass              0.438             64.9                           0.875                5.60              1.109                                 ok            True                  False
-  MPWR           89.29               28            1.32             13.14       1420.35                55.22         0.571            pass              0.601             58.7                           0.786                5.52              0.865                                 ok            True                  False
-  MSTR           91.67               36            1.07              1.15        152.88                80.80         0.616            pass              0.758             70.7                           0.819               -6.11             -0.132           downtrend_blocked_streak           False                  False
-  QCOM           87.50               24            1.65              2.05        176.24                56.66         0.586            pass              0.461             36.3                           0.615              -10.33             -1.097 downtrend_blocked_slope_and_streak           False                  False
-  CSCO           88.89               27            0.44              0.36        117.23                34.80         0.567            pass              0.594             62.3                           0.521                9.68              1.210                                 ok           False                  False
-   STX           87.88               33            1.39              7.84        804.21                69.74         0.558            pass              0.582             54.1                           0.658              -12.09             -1.542            downtrend_blocked_slope           False                  False
-  INTC           88.57               35            1.53              1.21        112.60                69.90         0.531            pass              0.635             62.1                           0.869              -12.56             -1.002 downtrend_blocked_slope_and_streak           False                  False
- CMCSA           90.48               21            0.19              0.03         20.93                21.76         0.523            pass              0.643             79.5                           0.571               -4.09             -0.338            downtrend_blocked_slope           False                  False
-  AMAT           82.93               41            0.05              0.20        520.57                48.66         0.521            pass              0.625             98.3                           0.988                9.72              1.067                                 ok           False                  False
-  REGN           75.00                4            2.37             12.32        736.84                27.38         0.512            pass              0.051              0.0                           0.150               -8.98             -0.783            downtrend_blocked_slope           False                  False
-  GILD           84.62               13            1.36              1.39        146.25                18.65         0.505            pass              0.205              3.9                           0.049               -3.23             -0.504 downtrend_blocked_slope_and_streak           False                  False
-   TRI           85.19               27            1.60              1.11         98.80                44.07         0.499 below_threshold              0.371             23.0                           0.237               -2.62             -0.070                                 ok           False                  False
+  SOXL           81.48               27            3.55              3.94        157.22               112.38         0.620            pass              0.380             55.0                           0.831                4.75              1.072                                 ok            True                  False
+  MPWR           88.00               25            1.72             17.21       1418.61                55.22         0.564            pass              0.507             45.9                           0.674                5.09              0.846                                 ok            True                  False
+  MSTR           91.67               36            1.04              1.11        152.89                80.80         0.618            pass              0.761             71.6                           0.806               -6.08             -0.130           downtrend_blocked_streak           False                  False
+  QCOM           87.50               24            1.73              2.14        176.20                56.66         0.582            pass              0.452             33.3                           0.544              -10.40             -1.101 downtrend_blocked_slope_and_streak           False                  False
+  CSCO           88.89               27            0.46              0.38        117.23                34.80         0.566            pass              0.590             61.0                           0.531                9.66              1.209                                 ok           False                  False
+   STX           87.88               33            1.40              7.89        804.19                69.74         0.558            pass              0.581             53.8                           0.592              -12.10             -1.543            downtrend_blocked_slope           False                  False
+ CMCSA           90.00               20            0.21              0.03         20.93                21.76         0.527            pass              0.617             76.9                           0.530               -4.11             -0.339            downtrend_blocked_slope           False                  False
+  INTC           87.10               31            2.06              1.63        112.42                69.90         0.524            pass              0.529             49.0                           0.770              -13.03             -1.026 downtrend_blocked_slope_and_streak           False                  False
+  REGN           75.00                4            2.36             12.27        736.86                27.38         0.511            pass              0.066              5.1                           0.098               -8.97             -0.782            downtrend_blocked_slope           False                  False
+  GILD           87.50               16            1.25              1.28        146.30                18.65         0.495 below_threshold              0.340             16.8                           0.159               -3.12             -0.499 downtrend_blocked_slope_and_streak           False                  False
+   TRI           84.62               26            1.76              1.23         98.75                44.07         0.495 below_threshold              0.325             15.3                           0.164               -2.78             -0.078                                 ok           False                  False
+  DASH           87.18               39            0.79              1.06        190.79                42.67         0.494 below_threshold              0.525             30.4                           0.354                1.17              0.309                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                                                                                                                              detail
-2026-10-08T10:30:06.096812-04:00 early_entry_1030 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T10:25:06.880454-04:00 early_entry_1025 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T10:20:05.114713-04:00 early_entry_1020 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T10:15:04.991008-04:00 early_entry_1015 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T10:10:05.110275-04:00 early_entry_1010 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T10:05:06.592020-04:00 early_entry_1005 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T10:00:03.810887-04:00 early_entry_1000 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T09:50:06.393850-04:00      manage_1000               exit {"asset_type": "option", "contract_symbol": "NVDA261120C00235000", "fill_price": 11.7675, "pnl": -5230.0, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "NVDA"}
-2026-10-08T00:00:04.872922-04:00     data_refresh       data_refresh                                                                                                                                                           {'saved': 91, 'empty': 2}
-2026-10-07T15:10:05.672351-04:00       entry_1500       slot_skipped                                                                                                                                                     {"reason": "already_processed"}
+                    timestamp_et             slot         event_type                                                                                                                                                                                  detail
+2026-10-08T10:35:07.119041-04:00 early_entry_1035 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:35:07.119041-04:00      manage_1030               exit {"asset_type": "option", "contract_symbol": "ABNB261120C00160000", "fill_price": 11.05, "pnl": 8662.5, "reason": "take_profit_day2_hit_at_scan", "return_pct": 16.62, "ticker": "ABNB"}
+2026-10-08T10:30:06.096812-04:00 early_entry_1030 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:25:06.880454-04:00 early_entry_1025 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:20:05.114713-04:00 early_entry_1020 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:15:04.991008-04:00 early_entry_1015 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:10:05.110275-04:00 early_entry_1010 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:05:06.592020-04:00 early_entry_1005 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:00:03.810887-04:00 early_entry_1000 early_entry_shadow                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T09:50:06.393850-04:00      manage_1000               exit     {"asset_type": "option", "contract_symbol": "NVDA261120C00235000", "fill_price": 11.7675, "pnl": -5230.0, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "NVDA"}
 ```
 
 ## Equity Curves
@@ -88,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261008103006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261008103507)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261008103006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261008103507)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261008103006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261008103507)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261008103006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261008103507)
 
 </details>
