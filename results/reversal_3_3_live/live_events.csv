@@ -6582,3 +6582,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-08T09:50:06.393850-04:00,2026-10-08,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""NVDA261120C00235000"", ""fill_price"": 11.7675, ""pnl"": -5230.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""NVDA""}"
 2026-10-08T10:00:03.810887-04:00,2026-10-08,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-08T10:05:06.592020-04:00,2026-10-08,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-08T10:10:05.110275-04:00,2026-10-08,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
