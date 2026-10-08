@@ -6590,3 +6590,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-08T10:35:07.119041-04:00,2026-10-08,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""ABNB261120C00160000"", ""fill_price"": 11.05, ""pnl"": 8662.5, ""reason"": ""take_profit_day2_hit_at_scan"", ""return_pct"": 16.62, ""ticker"": ""ABNB""}"
 2026-10-08T10:35:07.119041-04:00,2026-10-08,early_entry_1035,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-08T10:40:05.011138-04:00,2026-10-08,early_entry_1040,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-08T10:45:06.914386-04:00,2026-10-08,early_entry_1045,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
