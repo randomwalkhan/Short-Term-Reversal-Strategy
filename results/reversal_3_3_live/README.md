@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-08 05:05:06 EDT`
-Last processed slot: `share_ext_0505`
+Latest checkpoint (ET): `2026-10-08 05:10:06 EDT`
+Last processed slot: `share_ext_0510`
 
 ## Active Configuration
 
@@ -38,7 +38,7 @@ Last processed slot: `share_ext_0505`
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
   ABNB     option         option ABNB261120C00160000       2026-10-06                   2     55     52112.5                 54175.0         9.48           9.85      160.14        160.86     last_price_stale                        NaN                unavailable                   False          2062.5                   3.96         83.33               12              2.40         42.26             0.0                  40.56                 310.0           20.0               0.06                      ok
-  NVDA     option         option NVDA261120C00235000       2026-10-07                   1     40     52300.0                 53200.0        13.08          13.30      236.83        236.05     last_price_stale                        NaN                unavailable                   False           900.0                   1.72         90.91               22              1.01         37.07             0.0                  24.15               17037.0         1205.0               0.01                      ok
+  NVDA     option         option NVDA261120C00235000       2026-10-07                   1     40     52300.0                 53200.0        13.08          13.30      236.83        236.16     last_price_stale                        NaN                unavailable                   False           900.0                   1.72         90.91               22              1.01         37.07             0.0                  24.15               17037.0         1205.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-10-08)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261008050506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261008051006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261008050506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261008051006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261008050506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261008051006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261008050506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261008051006)
 
 </details>
