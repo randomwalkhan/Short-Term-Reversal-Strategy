@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-08 10:10:05 EDT`
-Last processed slot: `manage_1000`
+Latest checkpoint (ET): `2026-10-08 10:15:04 EDT`
+Last processed slot: `early_entry_1015`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$47,804.30`
-- Equity: `$104,866.80`
+- Equity: `$108,716.80`
 - Realized PnL: `$89,916.80`
-- Unrealized PnL: `$4,950.00`
+- Unrealized PnL: `$8,800.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ABNB     option         option ABNB261120C00160000       2026-10-06                   2     55     52112.5                 57062.5         9.48          10.38      160.14        162.34          bid_ask_mid                      10.38                bid_ask_mid                    True          4950.0                    9.5         83.33               12               2.4         42.26           45.37                  40.56                 310.0           20.0               0.06                      ok
+  ABNB     option         option ABNB261120C00160000       2026-10-06                   2     55     52112.5                 60912.5         9.48          11.08      160.14        162.72          bid_ask_mid                      11.08                bid_ask_mid                    True          8800.0                  16.89         83.33               12               2.4         42.26           45.15                  40.56                 310.0           20.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-10-08)
@@ -51,34 +51,34 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MPWR           85.00               20            2.43             24.29       1415.57                55.22         0.551          pass              0.326             23.6                           0.240                4.33              0.813                                 ok            True                  False
-   ADI           87.50               24            1.20              3.43        408.61                34.70         0.523          pass              0.470             41.5                           0.547                5.90              0.716                                 ok            True                  False
-  AVGO           81.25               16            2.23              5.87        374.00                34.55         0.502          pass              0.176             17.4                           0.284                5.07              0.706                                 ok            True                  False
-  MSTR           90.00               30            1.88              2.02        152.51                80.80         0.605          pass              0.606             48.5                           0.744               -6.88             -0.169           downtrend_blocked_streak           False                  False
-  QCOM           87.50               24            1.66              2.06        176.24                56.66         0.586          pass              0.460             35.9                           0.482              -10.34             -1.098 downtrend_blocked_slope_and_streak           False                  False
-   STX           87.88               33            1.30              7.33        804.43                69.74         0.563          pass              0.591             57.1                           0.643              -12.01             -1.538            downtrend_blocked_slope           False                  False
-  CSCO           90.00               30            0.34              0.28        117.27                34.80         0.556          pass              0.669             71.0                           0.736                9.79              1.214                                 ok           False                  False
-   WDC           82.22               45            0.04              0.10        405.38                65.89         0.549          pass              0.609             98.3                           0.912              -10.00             -1.309            downtrend_blocked_slope           False                  False
-  SOXL           79.17               24            5.30              5.89        156.38               112.38         0.539          pass              0.245             32.7                           0.487                2.84              0.988                                 ok           False                  False
- CMCSA           89.47               19            0.26              0.04         20.92                21.76         0.530          pass              0.581             71.8                           0.536               -4.16             -0.341            downtrend_blocked_slope           False                  False
-  INTC           83.33               24            2.73              2.16        112.19                69.90         0.524          pass              0.332             32.4                           0.464              -13.63             -1.057 downtrend_blocked_slope_and_streak           False                  False
-   TRI           89.74               39            0.35              0.24         99.18                44.07         0.517          pass              0.691             62.0                           0.376               -1.39             -0.013                                 ok           False                  False
+  CSCO           88.89               27            0.53              0.43        117.20                34.80         0.562          pass              0.572             55.1                           0.607                9.58              1.206                                 ok            True                  False
+  MPWR           85.00               20            2.40             23.92       1415.73                55.22         0.553          pass              0.330             24.8                           0.315                4.37              0.815                                 ok            True                  False
+   ADI           88.46               26            0.94              2.70        408.92                34.70         0.527          pass              0.547             54.0                           0.673                6.17              0.728                                 ok            True                  False
+   TRI           89.47               38            0.57              0.40         99.11                44.07         0.509          pass              0.604             38.0                           0.235               -1.60             -0.023                                 ok            True                  False
+  AVGO           81.25               16            2.09              5.51        374.15                34.55         0.509          pass              0.191             22.4                           0.384                5.22              0.713                                 ok            True                  False
+  MSTR           91.18               34            1.41              1.52        152.72                80.80         0.608          pass              0.702             61.2                           0.848               -6.44             -0.148           downtrend_blocked_streak           False                  False
+  QCOM           87.50               24            1.62              2.01        176.26                56.66         0.588          pass              0.465             37.5                           0.561              -10.30             -1.096 downtrend_blocked_slope_and_streak           False                  False
+   STX           88.24               34            0.90              5.08        805.39                69.74         0.581          pass              0.649             70.3                           0.779              -11.66             -1.520            downtrend_blocked_slope           False                  False
+  SOXL           79.17               24            5.41              6.02        156.33               112.38         0.532          pass              0.240             31.3                           0.612                2.72              0.983                                 ok           False                  False
+  INTC           82.61               23            3.04              2.40        112.09                69.90         0.513          pass              0.282             24.9                           0.493              -13.90             -1.072 downtrend_blocked_slope_and_streak           False                  False
+  LRCX           78.95               38            0.74              1.71        328.78                55.85         0.504          pass              0.472             78.4                           0.838                6.48              0.780                                 ok           False                  False
+  MELI           78.95               38            0.73              9.56       1868.68                42.10         0.500          pass              0.342             35.2                           0.313                5.99              0.849                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot              event_type                                                                                                                                                                                                                                   detail
-2026-10-08T10:10:05.110275-04:00 early_entry_1010      early_entry_shadow                                                                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T10:05:06.592020-04:00 early_entry_1005      early_entry_shadow                                                                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T10:00:03.810887-04:00 early_entry_1000      early_entry_shadow                                                                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-08T09:50:06.393850-04:00      manage_1000                    exit                                                      {"asset_type": "option", "contract_symbol": "NVDA261120C00235000", "fill_price": 11.7675, "pnl": -5230.0, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "NVDA"}
-2026-10-08T00:00:04.872922-04:00     data_refresh            data_refresh                                                                                                                                                                                                                {'saved': 91, 'empty': 2}
-2026-10-07T15:10:05.672351-04:00       entry_1500            slot_skipped                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-10-07T15:05:05.765684-04:00       entry_1500            slot_skipped                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-10-07T15:00:04.880221-04:00       entry_1500            slot_skipped                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-10-07T14:55:05.726912-04:00       entry_1500            slot_skipped                                                                                                                                                                                                          {"reason": "already_processed"}
-2026-10-07T14:50:06.730595-04:00       entry_1500 entry_candidate_skipped {"early_entry_score": 0.49, "option_liquidity_status": "low_volume", "option_open_interest": 993.0, "option_spread_pct": 12.24, "option_volume": 2.0, "reason": "no_trade_low_option_liquidity", "ticker": "KDP", "timing_score": 0.545}
+                    timestamp_et             slot         event_type                                                                                                                                                                              detail
+2026-10-08T10:15:04.991008-04:00 early_entry_1015 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:10:05.110275-04:00 early_entry_1010 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:05:06.592020-04:00 early_entry_1005 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T10:00:03.810887-04:00 early_entry_1000 early_entry_shadow                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-08T09:50:06.393850-04:00      manage_1000               exit {"asset_type": "option", "contract_symbol": "NVDA261120C00235000", "fill_price": 11.7675, "pnl": -5230.0, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "NVDA"}
+2026-10-08T00:00:04.872922-04:00     data_refresh       data_refresh                                                                                                                                                           {'saved': 91, 'empty': 2}
+2026-10-07T15:10:05.672351-04:00       entry_1500       slot_skipped                                                                                                                                                     {"reason": "already_processed"}
+2026-10-07T15:05:05.765684-04:00       entry_1500       slot_skipped                                                                                                                                                     {"reason": "already_processed"}
+2026-10-07T15:00:04.880221-04:00       entry_1500       slot_skipped                                                                                                                                                     {"reason": "already_processed"}
+2026-10-07T14:55:05.726912-04:00       entry_1500       slot_skipped                                                                                                                                                     {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261008101005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261008101504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261008101005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261008101504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261008101005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261008101504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261008101005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261008101504)
 
 </details>
