@@ -8226,3 +8226,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-08T14:55:54.263191-04:00,2026-10-08,entry_1500,entry_filled,"{""contract_symbol"": ""CSCO261120C00115000"", ""contracts"": 6, ""filled_price"": 7.25, ""ticker"": ""CSCO""}"
 2026-10-09T11:45:40.525446-04:00,2026-10-09,early_entry_1145,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-09T14:51:30.440192-04:00,2026-10-09,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""4aea10e1-c3ab-4870-ab81-eccde092a855"", ""contract_symbol"": ""CTSH261120C00060000"", ""contracts"": 13, ""entry_mode"": ""regular"", ""limit_price"": ""3.80"", ""ticker"": ""CTSH""}"
+2026-10-09T14:57:53.159386-04:00,2026-10-09,entry_1500,entry_filled,"{""contract_symbol"": ""CTSH261120C00060000"", ""contracts"": 13, ""filled_price"": 3.7, ""ticker"": ""CTSH""}"
