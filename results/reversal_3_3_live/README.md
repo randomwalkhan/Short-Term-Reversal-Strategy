@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-09 09:18:19 EDT`
+Latest checkpoint (ET): `2026-10-09 09:35:09 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_0930`
 ## Portfolio Snapshot
 
 - Cash: `$54,929.30`
-- Equity: `$104,583.30`
+- Equity: `$112,464.30`
 - Realized PnL: `$98,579.30`
-- Unrealized PnL: `$-3,996.00`
+- Unrealized PnL: `$3,885.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CSCO     option         option CSCO261120C00115000       2026-10-08                   1     74     53650.0                 49654.0         7.25           6.71      115.77         116.1     last_price_stale                        NaN                unavailable                   False         -3996.0                  -7.45         81.25               16              1.38         44.12             0.1                   34.8                4349.0          201.0               0.04                      ok
+  CSCO     option         option CSCO261120C00115000       2026-10-08                   1     74     53650.0                 57535.0         7.25           7.78      115.77        116.43          bid_ask_mid                       7.78                bid_ask_mid                    True          3885.0                   7.24         81.25               16              1.38         44.12           43.26                   34.8                4349.0          201.0               0.04                      ok
 ```
 
 ## Today's Closed Trades (2026-10-09)
@@ -46,7 +46,21 @@ _None_
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  CTSH           94.29               35            0.78              0.33         59.87                46.57         0.507            pass              0.712             37.7                           0.246                3.85              0.338                                 ok            True                  False
+   STX           84.62               39            0.16              0.86        774.46                70.54         0.597            pass              0.376              0.0                           0.279              -15.62             -2.043            downtrend_blocked_slope           False                  False
+  QCOM           87.50               24            1.51              1.85        175.22                56.70         0.581            pass              0.382             10.0                           0.253              -14.17             -1.066 downtrend_blocked_slope_and_streak           False                  False
+   KDP           96.55               29            0.08              0.02         31.25                27.56         0.558            pass              0.803             73.7                           0.401               -1.53             -0.084                                 ok           False                  False
+   WDC           78.95               38            0.75              2.06        392.43                65.00         0.557            pass              0.242              0.0                             NaN              -14.55             -1.760 downtrend_blocked_slope_and_streak           False                  False
+  MDLZ           95.45               22            0.36              0.15         60.60                17.90         0.545            pass              0.681             48.8                           0.541                1.22              0.211                                 ok           False                  False
+ CMCSA           87.50                8            1.16              0.17         21.14                20.06         0.539            pass              0.381             42.4                           0.430               -2.83             -0.237                                 ok           False                  False
+   PEP           50.00                2            1.78              1.60        127.66                20.67         0.515            pass              0.083             10.6                           0.241               -2.00             -0.218                                 ok           False                  False
+  DASH           88.10               42            0.41              0.55        191.47                42.01         0.500 below_threshold              0.652             61.9                           0.467               -1.26              0.408                                 ok           False                  False
+   KHC           85.00               20            1.00              0.16         22.41                19.92         0.490 below_threshold              0.338             29.7                           0.252               -5.82             -0.701 downtrend_blocked_slope_and_streak           False                  False
+  NXPI           89.47               38            0.30              0.49        230.86                40.36         0.486 below_threshold              0.602             38.1                           0.332               -3.24             -0.184                                 ok           False                  False
+   APP           80.00               45            0.49              0.95        279.71                50.21         0.471 below_threshold              0.327             26.6                           0.336              -10.29             -1.141 downtrend_blocked_slope_and_streak           False                  False
+```
 
 ## Recent Events
 
@@ -71,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261009091819)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261009093509)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261009091819)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261009093509)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261009091819)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261009093509)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261009091819)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261009093509)
 
 </details>
