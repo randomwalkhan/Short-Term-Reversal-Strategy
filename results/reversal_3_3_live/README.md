@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-09 15:15:01 EDT`
-Last processed slot: `manual`
+Latest checkpoint (ET): `2026-10-09 15:20:05 EDT`
+Last processed slot: `manage_1530`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `manual`
 ## Portfolio Snapshot
 
 - Cash: `$58,874.30`
-- Equity: `$116,474.30`
+- Equity: `$118,074.30`
 - Realized PnL: `$107,274.30`
-- Unrealized PnL: `$-800.00`
+- Unrealized PnL: `$800.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CTSH     option         option CTSH261120C00060000       2026-10-09                   0    160     58400.0                 57600.0         3.65            3.6       59.31         59.21          bid_ask_mid                        3.6                bid_ask_mid                    True          -800.0                  -1.37          93.1               29              1.17         50.42           50.02                  46.57                 209.0           38.0               0.08                      ok
+  CTSH     option         option CTSH261120C00060000       2026-10-09                   0    160     58400.0                 59200.0         3.65            3.7       59.31         59.23          bid_ask_mid                        3.7                bid_ask_mid                    True           800.0                   1.37          93.1               29              1.17         50.42           51.12                  46.57                 209.0           38.0               0.08                      ok
 ```
 
 ## Today's Closed Trades (2026-10-09)
@@ -51,18 +51,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  CTSH           92.86               28            1.22              0.51         59.79                46.57         0.520            pass              0.567             17.4                           0.270                3.39              0.317                                 ok            True                  False
-  SOXL           87.50               32            1.71              1.70        141.79               115.52         0.649            pass              0.560             49.4                           0.459               -7.50              0.116           downtrend_blocked_streak           False                  False
-  META           84.21               38            0.19              0.95        720.48                52.31         0.580            pass              0.570             70.9                           0.642               -4.27             -0.183           downtrend_blocked_streak           False                  False
-  QCOM           91.43               35            0.50              0.62        175.75                56.70         0.572            pass              0.766             79.1                           0.781              -13.29             -1.020 downtrend_blocked_slope_and_streak           False                  False
-  NFLX           68.75               16            1.66              0.83         71.21                35.32         0.537            pass              0.114              6.7                           0.128               -1.08              0.020                                 ok           False                  False
-  PAYX           79.49               39            0.24              0.18        104.38                40.01         0.524            pass              0.375             43.0                           0.394                2.80              0.407                                 ok           False                  False
-  INTC           88.24               34            1.68              1.26        106.54                69.62         0.523            pass              0.484             17.4                           0.283              -14.41             -1.216 downtrend_blocked_slope_and_streak           False                  False
-   PEP           50.00                2            1.77              1.59        127.66                20.67         0.512            pass              0.128             25.6                           0.509               -1.99             -0.217                                 ok           False                  False
-  INTU           88.89               36            0.48              1.02        303.44                43.01         0.511            pass              0.646             61.6                           0.462               10.17              1.274                                 ok           False                  False
-  LRCX           83.33               42            0.07              0.15        320.53                52.42         0.503            pass              0.625             95.4                           0.593                1.64              0.236                                 ok           False                  False
-  AMAT           82.50               40            0.27              0.96        509.16                47.71         0.501            pass              0.531             71.3                           0.441                4.78              0.513                                 ok           False                  False
-    MU           90.62               32            0.91              6.61       1033.01                47.96         0.483 below_threshold              0.628             49.9                           0.278               -5.16             -0.308            downtrend_blocked_slope           False                  False
+  CTSH           92.31               26            1.36              0.57         59.77                46.57         0.524            pass              0.513              8.4                           0.190                3.25              0.311                                 ok            True                  False
+  SOXL           87.50               32            1.63              1.63        141.82               115.52         0.653            pass              0.567             51.6                           0.514               -7.43              0.119           downtrend_blocked_streak           False                  False
+  META           85.71               42            0.04              0.20        720.81                52.31         0.567            pass              0.691             94.0                           0.726               -4.13             -0.177           downtrend_blocked_streak           False                  False
+  QCOM           92.68               41            0.17              0.21        175.92                56.70         0.556            pass              0.873             92.9                           0.859              -13.00             -1.005 downtrend_blocked_slope_and_streak           False                  False
+  NFLX           68.75               16            1.68              0.84         71.21                35.32         0.535            pass              0.109              5.1                           0.117               -1.10              0.019                                 ok           False                  False
+  INTC           87.88               33            1.72              1.29        106.53                69.62         0.526            pass              0.462             15.4                           0.270              -14.44             -1.218 downtrend_blocked_slope_and_streak           False                  False
+  PAYX           80.00               40            0.21              0.15        104.39                40.01         0.521            pass              0.402             49.9                           0.469                2.83              0.408                                 ok           False                  False
+  INTU           88.89               36            0.45              0.97        303.47                43.01         0.512            pass              0.652             63.5                           0.477               10.20              1.275                                 ok           False                  False
+   PEP           50.00                2            1.80              1.62        127.65                20.67         0.510            pass              0.124             24.3                           0.492               -2.02             -0.219                                 ok           False                  False
+  MDLZ           93.55               31            0.05              0.02         60.66                17.90         0.504            pass              0.837             95.1                           0.714                1.54              0.225                                 ok           False                  False
+  AMAT           82.50               40            0.22              0.79        509.23                47.71         0.504            pass              0.546             76.3                           0.476                4.83              0.515                                 ok           False                  False
+  LRCX           83.33               42            0.23              0.51        320.37                52.42         0.493 below_threshold              0.590             84.0                           0.549                1.48              0.228                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261009151501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261009152005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261009151501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261009152005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261009151501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261009152005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261009151501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261009152005)
 
 </details>
