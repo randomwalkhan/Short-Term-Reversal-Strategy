@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 117274.30035667421,
-  "positions": [],
+  "cash": 58874.30035667421,
+  "positions": [
+    {
+      "position_id": "CTSH_20261009T145006",
+      "ticker": "CTSH",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "CTSH261120C00060000",
+      "expiry": "2026-11-20",
+      "strike": 60.0,
+      "entry_timestamp": "2026-10-09T14:50:06.079199-04:00",
+      "entry_trade_date": "2026-10-09",
+      "entry_slot": "entry_1500",
+      "entry_spot": 59.310001373291016,
+      "entry_option_price": 3.65,
+      "entry_bid": 3.5,
+      "entry_ask": 3.8,
+      "entry_iv_pct": 50.41553491210937,
+      "contracts": 160,
+      "allocated_cash": 58400.0,
+      "success_rate": 93.1,
+      "matched_signals": 29,
+      "current_drop_pct": 1.17,
+      "rolling_sigma_20d_pct": 46.57,
+      "planned_tp_day1": 4.1975,
+      "planned_tp_day2": 4.1975,
+      "planned_stop": 3.285,
+      "option_open_interest": 209.0,
+      "option_volume": 38.0,
+      "option_spread_pct": 0.08219178082191776,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -5276,7 +5307,9 @@
     "2026-10-08": [
       "entry_1500"
     ],
-    "2026-10-09": []
+    "2026-10-09": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
