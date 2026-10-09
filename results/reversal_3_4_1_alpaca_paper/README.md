@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-09 15:58:43 EDT`
+Latest checkpoint (ET): `2026-10-09 16:03:47 EDT`
 Last slot: `manage_1600`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1600`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  CTSH   open    regular CTSH261120C00060000         13                 3.7                   3.5          bid_ask_mid                        3.5                    True          4550.0          -260.0              -5.405405                   0
+  CTSH   open    regular CTSH261120C00060000         13                 3.7                  3.45          bid_ask_mid                       3.45                    True          4485.0          -325.0              -6.756757                   0
 ```
 
 ## Closed Trades
