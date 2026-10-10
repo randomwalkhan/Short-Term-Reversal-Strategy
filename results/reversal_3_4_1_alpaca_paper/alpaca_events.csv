@@ -8230,3 +8230,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-09T15:18:09.115677-04:00,2026-10-09,manage_1530,exit_order_submitted,"{""alpaca_order_id"": ""1df5f1e7-4d44-4c6a-994c-2cba407c9dc4"", ""contract_symbol"": ""CSCO261120C00115000"", ""limit_price"": ""8.40"", ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""CSCO""}"
 2026-10-09T15:23:13.709914-04:00,2026-10-09,exit,exit_filled,"{""contract_symbol"": ""CSCO261120C00115000"", ""exit_price"": 8.4, ""pnl"": 690.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""CSCO""}"
 2026-10-09T16:08:50.552610-04:00,2026-10-09,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""a8a6a3f0-5935-49c3-85c2-15fdaca9bc3f"", ""contract_symbol"": ""CTSH261120C00060000"", ""limit_price"": ""3.20"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""CTSH""}"
+2026-10-10T00:04:55.412541-04:00,2026-10-10,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
