@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-10 01:00:36 EDT`
-Last slot: `share_ext_0100`
+Latest checkpoint (ET): `2026-10-10 01:05:40 EDT`
+Last slot: `share_ext_0105`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-10-10T01:05:40.201987-04:00   share_ext_0105         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-10-10T01:00:36.528601-04:00   share_ext_0100         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-10-10T00:55:32.717779-04:00   share_ext_0055         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
 2026-10-10T00:50:29.253128-04:00   share_ext_0050         market_closed                                                                                                                                              {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-09T14:51:30.440192-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "4aea10e1-c3ab-4870-ab81-eccde092a855", "contract_symbol": "CTSH261120C00060000", "contracts": 13, "entry_mode": "regular", "limit_price": "3.80", "ticker": "CTSH"}
 2026-10-09T11:45:40.525446-04:00 early_entry_1145    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-08T14:55:54.263191-04:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "CSCO261120C00115000", "contracts": 6, "filled_price": 7.25, "ticker": "CSCO"}
-2026-10-08T14:49:22.079697-04:00       entry_1500 entry_order_submitted  {"alpaca_order_id": "2cd6b877-457a-4503-9294-1326aaa01194", "contract_symbol": "CSCO261120C00115000", "contracts": 6, "entry_mode": "regular", "limit_price": "7.40", "ticker": "CSCO"}
 ```
