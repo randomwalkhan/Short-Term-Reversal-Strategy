@@ -8693,3 +8693,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-11T23:54:05.971963-04:00,2026-10-11,share_ext_2350,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-10-11T23:59:10.193669-04:00,2026-10-11,share_ext_2355,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-10-12T09:30:53.664983-04:00,2026-10-12,exit,exit_filled,"{""contract_symbol"": ""CTSH261120C00060000"", ""exit_price"": 3.3, ""pnl"": -520.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""CTSH""}"
+2026-10-12T10:02:37.812172-04:00,2026-10-12,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
