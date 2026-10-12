@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-10-12 15:25:04 EDT`
-- Equity: `$119,494.30` | Realized: `$107,274.30` | Unrealized: `$2,220.00` | Open positions: `2`
+- Latest checkpoint (ET): `2026-10-12 15:30:05 EDT`
+- Equity: `$120,449.30` | Realized: `$107,274.30` | Unrealized: `$3,175.00` | Open positions: `2`
 - Today closed trades: `0`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,35 +14,35 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  CTSH     option         option CTSH261120C00060000    160     58400.0                 60000.0           3.75          1600.0                   2.74                   1
-   CEG     option         option  CEG261120C00290000     31     57815.0                 58435.0          18.85           620.0                   1.07                   0
+  CTSH     option         option CTSH261120C00060000    160     58400.0                 60800.0            3.8          2400.0                   4.11                   1
+   CEG     option         option  CEG261120C00290000     31     57815.0                 58590.0           18.9           775.0                   1.34                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261012152504)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261012153005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261012152504)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261012153005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261012152504)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261012153005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261012152504)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261012153005)
 
 </details>
 
