@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-12 16:05:05 EDT`
+Latest checkpoint (ET): `2026-10-12 16:10:06 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$1,059.30`
-- Equity: `$124,609.30`
+- Equity: `$125,229.30`
 - Realized PnL: `$107,274.30`
-- Unrealized PnL: `$7,335.00`
+- Unrealized PnL: `$7,955.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CEG     option         option  CEG261120C00290000       2026-10-12                   0     31     57815.0                 63550.0        18.65          20.50      291.07        293.84          bid_ask_mid                      20.50                bid_ask_mid                    True          5735.0                   9.92         83.33               12              2.35         48.77           50.35                  62.49                 920.0          121.0               0.05                      ok
-  CTSH     option         option CTSH261120C00060000       2026-10-09                   1    160     58400.0                 60000.0         3.65           3.75       59.31         59.68          bid_ask_mid                       3.75                bid_ask_mid                    True          1600.0                   2.74         93.10               29              1.17         50.42           51.42                  46.57                 209.0           38.0               0.08                      ok
+   CEG     option         option  CEG261120C00290000       2026-10-12                   0     31     57815.0                 64170.0        18.65          20.70      291.07        293.01          bid_ask_mid                      20.70                bid_ask_mid                    True          6355.0                  10.99         83.33               12              2.35         48.77           50.35                  62.49                 920.0          121.0               0.05                      ok
+  CTSH     option         option CTSH261120C00060000       2026-10-09                   1    160     58400.0                 60000.0         3.65           3.75       59.31         59.62          bid_ask_mid                       3.75                bid_ask_mid                    True          1600.0                   2.74         93.10               29              1.17         50.42           51.42                  46.57                 209.0           38.0               0.08                      ok
 ```
 
 ## Today's Closed Trades (2026-10-12)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261012160505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261012161006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261012160505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261012161006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261012160505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261012161006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261012160505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261012161006)
 
 </details>
