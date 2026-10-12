@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-10 02:55:05 EDT`
-Last processed slot: `share_ext_0255`
+Latest checkpoint (ET): `2026-10-12 03:00:05 EDT`
+Last processed slot: `share_ext_0300`
 
 ## Active Configuration
 
@@ -28,19 +28,19 @@ Last processed slot: `share_ext_0255`
 ## Portfolio Snapshot
 
 - Cash: `$58,874.30`
-- Equity: `$112,474.30`
+- Equity: `$113,274.30`
 - Realized PnL: `$107,274.30`
-- Unrealized PnL: `$-4,800.00`
+- Unrealized PnL: `$-4,000.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CTSH     option         option CTSH261120C00060000       2026-10-09                   0    160     58400.0                 53600.0         3.65           3.35       59.31          59.2          bid_ask_mid                       3.35                bid_ask_mid                    True         -4800.0                  -8.22          93.1               29              1.17         50.42           48.24                  46.57                 209.0           38.0               0.08                      ok
+  CTSH     option         option CTSH261120C00060000       2026-10-09                   1    160     58400.0                 54400.0         3.65            3.4       59.31          59.2     last_price_stale                        NaN                unavailable                   False         -4000.0                  -6.85          93.1               29              1.17         50.42            1.56                  46.57                 209.0           38.0               0.08                      ok
 ```
 
-## Today's Closed Trades (2026-10-10)
+## Today's Closed Trades (2026-10-12)
 
 _None_
 
@@ -52,6 +52,7 @@ _None_
 
 ```text
                     timestamp_et           slot    event_type                                      detail
+2026-10-12T03:00:05.508504-04:00   data_refresh  data_refresh                   {'saved': 90, 'empty': 3}
 2026-10-10T02:55:05.468213-04:00 share_ext_0255 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-10-10T02:50:06.073538-04:00 share_ext_0250 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-10-10T02:45:04.438965-04:00 share_ext_0245 market_closed {"holiday_name": null, "reason": "weekend"}
@@ -61,7 +62,6 @@ _None_
 2026-10-10T02:25:06.103095-04:00 share_ext_0225 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-10-10T02:20:06.276038-04:00 share_ext_0220 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-10-10T02:15:05.578825-04:00 share_ext_0215 market_closed {"holiday_name": null, "reason": "weekend"}
-2026-10-10T02:10:06.393307-04:00 share_ext_0210 market_closed {"holiday_name": null, "reason": "weekend"}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261010025505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261012030005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261010025505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261012030005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261010025505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261012030005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261010025505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261012030005)
 
 </details>
