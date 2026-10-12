@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-12 10:15:11 EDT`
-Last slot: `early_entry_1015`
+Latest checkpoint (ET): `2026-10-12 10:21:31 EDT`
+Last slot: `manage_1030`
 
 ## Alpaca Paper Account
 
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                            detail
+2026-10-12T10:21:31.325071-04:00 early_entry_1020 early_entry_shadow                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-12T10:15:11.751489-04:00 early_entry_1015 early_entry_shadow                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-12T10:08:52.231260-04:00 early_entry_1005 early_entry_shadow                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-12T10:02:37.812172-04:00 early_entry_1000 early_entry_shadow                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-11T22:58:20.610631-04:00   share_ext_2255      market_closed                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-10-11T22:53:16.552287-04:00   share_ext_2250      market_closed                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-10-11T22:48:12.568756-04:00   share_ext_2245      market_closed                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-11T22:43:08.650926-04:00   share_ext_2240      market_closed                                                                                       {"holiday_name": null, "reason": "weekend"}
 ```
