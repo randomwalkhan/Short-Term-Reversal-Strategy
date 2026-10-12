@@ -2,39 +2,7 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [
-    {
-      "allocated_cash": 4810.0,
-      "alpaca_entry_client_order_id": "rev-20261009145130-ctsh-regular",
-      "alpaca_entry_order_id": "4aea10e1-c3ab-4870-ab81-eccde092a855",
-      "alpaca_exit_order_id": "a8a6a3f0-5935-49c3-85c2-15fdaca9bc3f",
-      "asset_type": "option",
-      "contract_symbol": "CTSH261120C00060000",
-      "contracts": 13,
-      "current_drop_pct": 1.12,
-      "early_entry_score": 0.602,
-      "entry_mode": "regular",
-      "entry_option_price": 3.7,
-      "entry_slot": "entry_1500",
-      "entry_spot": 59.34000015258789,
-      "entry_timestamp": "2026-10-09T14:51:30.440192-04:00",
-      "entry_trade_date": "2026-10-09",
-      "execution_mode": "alpaca_paper_option",
-      "exit_reason": "stop_loss_hit_at_scan",
-      "exit_reference_price": 3.2,
-      "expiry": "2026-11-20",
-      "matched_signals": 29,
-      "planned_stop": 3.33,
-      "planned_tp_day1": 4.255,
-      "planned_tp_day2": 4.255,
-      "position_id": "CTSH_20261009T145130",
-      "status": "exit_submitted",
-      "strike": 60.0,
-      "success_rate": 93.1,
-      "ticker": "CTSH",
-      "timing_score": 0.521
-    }
-  ],
+  "positions": [],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
