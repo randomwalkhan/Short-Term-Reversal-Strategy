@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-13 09:52:56 EDT`
+Latest checkpoint (ET): `2026-10-13 09:57:59 EDT`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$83,590.79`
-- Portfolio value: `$87,330.79`
+- Portfolio value: `$87,230.79`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1000`
 
 ```text
 ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   CEG   open    regular CEG261120C00290000          2                18.7                 18.65          bid_ask_mid                      18.65                    True          3730.0           -10.0               -0.26738                   1
+   CEG   open    regular CEG261120C00290000          2                18.7                 19.35          bid_ask_mid                      19.35                    True          3870.0           130.0               3.475936                   1
 ```
 
 ## Closed Trades
