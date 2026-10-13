@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-13 00:20:05 EDT`
-Last processed slot: `share_ext_0020`
+Latest checkpoint (ET): `2026-10-13 00:25:05 EDT`
+Last processed slot: `share_ext_0025`
 
 ## Active Configuration
 
@@ -28,9 +28,9 @@ Last processed slot: `share_ext_0020`
 ## Portfolio Snapshot
 
 - Cash: `$1,059.30`
-- Equity: `$131,009.30`
+- Equity: `$124,964.30`
 - Realized PnL: `$107,274.30`
-- Unrealized PnL: `$13,735.00`
+- Unrealized PnL: `$7,690.00`
 - Open positions: `2`
 
 ## Open Positions
@@ -38,7 +38,7 @@ Last processed slot: `share_ext_0020`
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
   CTSH     option         option CTSH261120C00060000       2026-10-09                   2    160     58400.0                 66400.0         3.65           4.15       59.31         59.62          bid_ask_mid                       4.15                bid_ask_mid                    True          8000.0                  13.70         93.10               29              1.17         50.42           55.27                  46.57                 209.0           38.0               0.08                      ok
-   CEG     option         option  CEG261120C00290000       2026-10-12                   1     31     57815.0                 63550.0        18.65          20.50      291.07        293.06          bid_ask_mid                      20.50                bid_ask_mid                    True          5735.0                   9.92         83.33               12              2.35         48.77           53.64                  62.49                 920.0          121.0               0.05                      ok
+   CEG     option         option  CEG261120C00290000       2026-10-12                   1     31     57815.0                 57505.0        18.65          18.55      291.07        293.06     last_price_stale                        NaN                unavailable                   False          -310.0                  -0.54         83.33               12              2.35         48.77            0.00                  62.49                 920.0          121.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-10-13)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261013002005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261013002505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261013002005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261013002505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261013002005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261013002505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261013002005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261013002505)
 
 </details>
