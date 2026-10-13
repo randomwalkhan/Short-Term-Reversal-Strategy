@@ -2,39 +2,7 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [
-    {
-      "allocated_cash": 3740.0,
-      "alpaca_entry_client_order_id": "rev-20261012145235-ceg-regular",
-      "alpaca_entry_order_id": "25b916cc-638c-45a7-a025-acda97e748ee",
-      "alpaca_exit_order_id": "803d1c3c-12d2-4dd6-9aa5-7178c85d75e7",
-      "asset_type": "option",
-      "contract_symbol": "CEG261120C00290000",
-      "contracts": 2,
-      "current_drop_pct": 2.51,
-      "early_entry_score": 0.114,
-      "entry_mode": "regular",
-      "entry_option_price": 18.7,
-      "entry_slot": "entry_1500",
-      "entry_spot": 290.6000061035156,
-      "entry_timestamp": "2026-10-12T14:52:35.762913-04:00",
-      "entry_trade_date": "2026-10-12",
-      "execution_mode": "alpaca_paper_option",
-      "exit_reason": "take_profit_day1_hit_at_scan",
-      "exit_reference_price": 21.3,
-      "expiry": "2026-11-20",
-      "matched_signals": 11,
-      "planned_stop": 16.83,
-      "planned_tp_day1": 21.505,
-      "planned_tp_day2": 21.505,
-      "position_id": "CEG_20261012T145235",
-      "status": "exit_submitted",
-      "strike": 290.0,
-      "success_rate": 81.82,
-      "ticker": "CEG",
-      "timing_score": 0.541
-    }
-  ],
+  "positions": [],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
