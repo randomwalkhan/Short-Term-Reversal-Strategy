@@ -6690,3 +6690,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-12T15:10:05.555878-04:00,2026-10-12,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-13T00:00:05.318337-04:00,2026-10-13,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
 2026-10-13T09:50:04.590337-04:00,2026-10-13,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CTSH261120C00060000"", ""fill_price"": 4.65, ""pnl"": 16000.0, ""reason"": ""take_profit_day2_hit_at_scan"", ""return_pct"": 27.4, ""ticker"": ""CTSH""}"
+2026-10-13T10:00:05.694425-04:00,2026-10-13,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
