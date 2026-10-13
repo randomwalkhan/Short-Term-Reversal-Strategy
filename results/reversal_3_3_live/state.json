@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 142574.30035667424,
-  "positions": [],
+  "cash": 71454.30035667424,
+  "positions": [
+    {
+      "position_id": "SNPS_20261013T145004",
+      "ticker": "SNPS",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "SNPS261120C00500000",
+      "expiry": "2026-11-20",
+      "strike": 500.0,
+      "entry_timestamp": "2026-10-13T14:50:04.759460-04:00",
+      "entry_trade_date": "2026-10-13",
+      "entry_slot": "entry_1500",
+      "entry_spot": 497.4200134277344,
+      "entry_option_price": 25.4,
+      "entry_bid": 24.7,
+      "entry_ask": 26.1,
+      "entry_iv_pct": 41.83407775878906,
+      "contracts": 28,
+      "allocated_cash": 71120.0,
+      "success_rate": 85.71,
+      "matched_signals": 28,
+      "current_drop_pct": 1.01,
+      "rolling_sigma_20d_pct": 52.43,
+      "planned_tp_day1": 29.209999999999997,
+      "planned_tp_day2": 29.209999999999997,
+      "planned_stop": 22.86,
+      "option_open_interest": 422.0,
+      "option_volume": 34.0,
+      "option_spread_pct": 0.05511811023622056,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -5320,7 +5351,9 @@
     "2026-10-12": [
       "entry_1500"
     ],
-    "2026-10-13": []
+    "2026-10-13": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
