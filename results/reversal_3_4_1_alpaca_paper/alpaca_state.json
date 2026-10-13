@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 2540.0,
+      "alpaca_entry_client_order_id": "rev-20261013144957-snps-regular",
+      "alpaca_entry_order_id": "c0719dd8-c12b-4096-89aa-ad00f9492b5e",
+      "asset_type": "option",
+      "contract_symbol": "SNPS261120C00500000",
+      "contracts": 1,
+      "current_drop_pct": 1.0,
+      "early_entry_score": 0.516,
+      "entry_mode": "regular",
+      "entry_option_price": 25.4,
+      "entry_slot": "entry_1500",
+      "entry_spot": 497.4599914550781,
+      "entry_timestamp": "2026-10-13T14:49:57.956963-04:00",
+      "entry_trade_date": "2026-10-13",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-11-20",
+      "matched_signals": 28,
+      "planned_stop": 22.86,
+      "planned_tp_day1": 29.209999999999997,
+      "planned_tp_day2": 29.209999999999997,
+      "position_id": "SNPS_20261013T144957",
+      "status": "entry_submitted",
+      "strike": 500.0,
+      "success_rate": 85.71,
+      "ticker": "SNPS",
+      "timing_score": 0.569
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
