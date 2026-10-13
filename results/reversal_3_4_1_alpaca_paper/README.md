@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-13 15:52:38 EDT`
+Latest checkpoint (ET): `2026-10-13 15:57:41 EDT`
 Last slot: `manage_1600`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1600`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS   open    regular SNPS261120C00500000          1                25.5                  24.8          bid_ask_mid                       24.8                    True          2480.0           -70.0              -2.745098                   0
+  SNPS   open    regular SNPS261120C00500000          1                25.5                  24.3          bid_ask_mid                       24.3                    True          2430.0          -120.0              -4.705882                   0
 ```
 
 ## Closed Trades
