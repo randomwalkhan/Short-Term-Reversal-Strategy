@@ -3,10 +3,10 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-10-13 23:55:04 EDT`
+- Latest checkpoint (ET): `2026-10-14 00:00:06 EDT`
 - Equity: `$140,614.30` | Realized: `$132,574.30` | Unrealized: `$-1,960.00` | Open positions: `1`
-- Today closed trades: `2`
-- Current slot: `share_ext_2355`
+- Today closed trades: `0`
+- Current slot: `share_ext_0000`
 - Universe: `qqq_plus_leverage_etfs`
 - Chart windows: `Overall / 1D / 1W / 1M` (default open panel: `Overall`)
 
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  SNPS     option         option SNPS261120C00500000     28     71120.0                 69160.0           24.7         -1960.0                  -2.76                   0
+  SNPS     option         option SNPS261120C00500000     28     71120.0                 69160.0           24.7         -1960.0                  -2.76                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261013235504)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261014000006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261013235504)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261014000006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261013235504)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261014000006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261013235504)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261014000006)
 
 </details>
 
