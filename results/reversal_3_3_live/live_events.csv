@@ -6723,3 +6723,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-13T15:05:06.894886-04:00,2026-10-13,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-13T15:10:06.535380-04:00,2026-10-13,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-14T00:00:06.708726-04:00,2026-10-14,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
+2026-10-14T09:50:06.904742-04:00,2026-10-14,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""SNPS261120C00500000"", ""fill_price"": 22.86, ""pnl"": -7112.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""SNPS""}"
