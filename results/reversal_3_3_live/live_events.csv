@@ -6756,3 +6756,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-14T15:05:05.885010-04:00,2026-10-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-14T15:10:06.171047-04:00,2026-10-14,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-15T00:00:06.592550-04:00,2026-10-15,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
+2026-10-15T09:50:06.230467-04:00,2026-10-15,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CSCO261120C00115000"", ""fill_price"": 5.265, ""pnl"": -6727.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""CSCO""}"

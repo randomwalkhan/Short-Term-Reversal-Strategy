@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 68187.30035667424,
-  "positions": [
-    {
-      "position_id": "CSCO_20261014T145004",
-      "ticker": "CSCO",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "CSCO261120C00115000",
-      "expiry": "2026-11-20",
-      "strike": 115.0,
-      "entry_timestamp": "2026-10-14T14:50:04.996677-04:00",
-      "entry_trade_date": "2026-10-14",
-      "entry_slot": "entry_1500",
-      "entry_spot": 113.60009765625,
-      "entry_option_price": 5.85,
-      "entry_bid": 5.8,
-      "entry_ask": 5.9,
-      "entry_iv_pct": 44.93463269042969,
-      "contracts": 115,
-      "allocated_cash": 67275.0,
-      "success_rate": 86.67,
-      "matched_signals": 15,
-      "current_drop_pct": 1.28,
-      "rolling_sigma_20d_pct": 34.22,
-      "planned_tp_day1": 6.727499999999999,
-      "planned_tp_day2": 6.727499999999999,
-      "planned_stop": 5.265,
-      "option_open_interest": 4547.0,
-      "option_volume": 159.0,
-      "option_spread_pct": 0.017094017094017186,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 128734.80035667424,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
