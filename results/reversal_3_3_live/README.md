@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-15 13:25:06 EDT`
+Latest checkpoint (ET): `2026-10-15 13:30:02 EDT`
 Last processed slot: `manage_1330`
 
 ## Active Configuration
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   CEG           84.21               19            1.88              3.67        277.97                59.82         0.551            pass              0.395             56.0                           0.663                5.94              0.789                                 ok            True                  False
-    ZS           92.31               26            1.98              3.07        219.48                59.94         0.525            pass              0.636             49.4                           0.363                8.87              1.343                                 ok            True                  False
-  TMUS           90.24               41            0.11              0.13        157.74                59.52         0.574            pass              0.737             69.0                           0.429               -2.55             -0.707            downtrend_blocked_slope           False                  False
-  SNPS           71.43                7            2.97              9.96        475.66                52.37         0.554            pass              0.188             44.1                           0.614               -5.06             -0.274 downtrend_blocked_slope_and_streak           False                  False
-  MPWR           85.71               35            0.47              4.11       1241.35                56.61         0.544            pass              0.637             87.8                           0.793               -9.09             -1.507            downtrend_blocked_slope           False                  False
-  AVGO           84.21               19            1.84              4.45        344.34                35.83         0.486 below_threshold              0.357             45.4                           0.652               -1.09             -0.323                                 ok           False                  False
-  CDNS           77.78               18            2.04              4.71        327.44                37.41         0.485 below_threshold              0.253             50.3                           0.605               -7.98             -0.831 downtrend_blocked_slope_and_streak           False                  False
-   AEP           55.56                9            1.21              1.07        125.67                12.92         0.480 below_threshold              0.126             26.1                           0.332                4.05              0.550                                 ok           False                  False
-  CRWD           82.35               17            2.89              5.04        247.13                48.36         0.472 below_threshold              0.228             23.9                           0.277               -9.02             -0.912 downtrend_blocked_slope_and_streak           False                  False
-   ADI           88.46               26            0.84              2.36        402.56                27.65         0.471 below_threshold              0.572             64.1                           0.499               -1.09             -0.270                                 ok           False                  False
-  NVDA           87.50               16            1.77              2.74        220.12                25.52         0.463 below_threshold              0.447             53.6                           0.646               -5.84             -0.730 downtrend_blocked_slope_and_streak           False                  False
-  INTC           85.71               14            4.02              2.76         96.94                68.27         0.461 below_threshold              0.379             51.4                           0.640              -21.52             -2.407            downtrend_blocked_slope           False                  False
+   CEG           83.33               18            2.00              3.91        277.87                59.82         0.550            pass              0.357             53.2                           0.610                5.81              0.784                                 ok            True                  False
+    ZS           92.31               26            1.90              2.93        219.53                59.94         0.530            pass              0.643             51.6                           0.346                8.96              1.347                                 ok            True                  False
+  TMUS           89.74               39            0.21              0.24        157.69                59.52         0.579            pass              0.637             41.8                           0.336               -2.64             -0.712            downtrend_blocked_slope           False                  False
+  SNPS           71.43                7            2.98             10.02        475.63                52.37         0.553            pass              0.186             43.7                           0.648               -5.08             -0.275 downtrend_blocked_slope_and_streak           False                  False
+  MPWR           86.49               37            0.42              3.65       1241.54                56.61         0.536            pass              0.674             89.1                           0.824               -9.04             -1.505            downtrend_blocked_slope           False                  False
+  AVGO           84.21               19            1.90              4.60        344.28                35.83         0.483 below_threshold              0.351             43.6                           0.645               -1.15             -0.326                                 ok           False                  False
+  CDNS           77.78               18            2.13              4.92        327.35                37.41         0.481 below_threshold              0.246             48.2                           0.608               -8.07             -0.835 downtrend_blocked_slope_and_streak           False                  False
+   AEP           60.00               10            1.19              1.05        125.68                12.92         0.480 below_threshold              0.130             27.3                           0.341                4.07              0.550                                 ok           False                  False
+  CRWD           81.25               16            3.05              5.33        247.01                48.36         0.468 below_threshold              0.179             19.6                           0.220               -9.18             -0.919 downtrend_blocked_slope_and_streak           False                  False
+  NVDA           87.50               16            1.77              2.75        220.12                25.52         0.463 below_threshold              0.447             53.6                           0.632               -5.84             -0.730 downtrend_blocked_slope_and_streak           False                  False
+   ADI           89.66               29            0.72              2.04        402.70                27.65         0.461 below_threshold              0.637             69.0                           0.531               -0.97             -0.265                                 ok           False                  False
+   XEL           88.57               35            0.05              0.03         75.35                17.56         0.458 below_threshold              0.701             86.7                           0.558                6.76              0.664                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261015132506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261015133002)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261015132506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261015133002)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261015132506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261015133002)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261015132506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261015133002)
 
 </details>
