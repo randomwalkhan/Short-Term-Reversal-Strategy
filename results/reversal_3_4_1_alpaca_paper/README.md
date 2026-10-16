@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-16 11:37:10 EDT`
-Last slot: `manage_1130`
+Latest checkpoint (ET): `2026-10-16 11:43:19 EDT`
+Last slot: `early_entry_1140`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `manage_1130`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  CSCO exit_submitted    regular CSCO261120C00115000          8                5.85                  3.15          bid_ask_mid                       3.15                    True          2520.0         -2160.0             -46.153846                   2
+  CSCO exit_submitted    regular CSCO261120C00115000          8                5.85                   3.2          bid_ask_mid                        3.2                    True          2560.0         -2120.0             -45.299145                   2
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                            detail
+2026-10-16T11:43:19.028629-04:00 early_entry_1140   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T11:37:10.612622-04:00 early_entry_1135   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T11:37:10.612622-04:00             exit          exit_filled                                                  {"contract_symbol": "CEG261120C00270000", "exit_price": 17.1, "pnl": -480.0, "reason": "stop_loss_hit_at_scan", "ticker": "CEG"}
 2026-10-16T11:30:57.769735-04:00 early_entry_1130   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-16T10:11:10.912243-04:00 early_entry_1010   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T10:05:02.531217-04:00 early_entry_1005   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-15T16:00:34.237546-04:00      manage_1600 exit_order_submitted {"alpaca_order_id": "3f738b22-4f3a-4bee-84e4-323f4acda53a", "contract_symbol": "CSCO261120C00115000", "limit_price": "3.80", "reason": "stop_loss_hit_at_scan", "ticker": "CSCO"}
-2026-10-15T16:00:34.237546-04:00             exit      exit_not_filled                                                                                                 {"contract_symbol": "CSCO261120C00115000", "status": "expired", "ticker": "CSCO"}
 ```
