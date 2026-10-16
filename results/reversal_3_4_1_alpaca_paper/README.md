@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-16 11:30:57 EDT`
+Latest checkpoint (ET): `2026-10-16 11:37:10 EDT`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$78,720.02`
-- Portfolio value: `$84,580.02`
+- Cash: `$82,139.98`
+- Portfolio value: `$84,619.98`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,15 +15,13 @@ Last slot: `manage_1130`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  CSCO exit_submitted    regular CSCO261120C00115000          8                5.85                 3.175          bid_ask_mid                      3.175                    True          2540.0         -2140.0             -45.726496                   2
-   CEG exit_submitted    regular  CEG261120C00270000          2               19.50                17.500          bid_ask_mid                     17.500                    True          3500.0          -400.0             -10.256410                   1
+  CSCO exit_submitted    regular CSCO261120C00115000          8                5.85                  3.15          bid_ask_mid                       3.15                    True          2520.0         -2160.0             -46.153846                   2
 ```
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-  LRCX LRCX261016C00310000          2026-08-24         2026-08-27               31.15              30.90          1   -25.0   -0.802568        time_exit_at_4pm_scan
   MNST MNST261016C00048000          2026-08-26         2026-08-27                1.95               1.05         25 -2250.0  -46.153846        stop_loss_hit_at_scan
   MRVL MRVL261016C00240000          2026-08-27         2026-08-28               20.25              15.45          1  -480.0  -23.703704        stop_loss_hit_at_scan
   SHOP SHOP261016C00155000          2026-08-28         2026-09-09                9.30               2.62          5 -3340.0  -71.827957        stop_loss_hit_at_scan
@@ -43,30 +41,31 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   CTSH CTSH261120C00060000          2026-10-09         2026-10-12                3.70               3.30         13  -520.0  -10.810811        stop_loss_hit_at_scan
    CEG  CEG261120C00290000          2026-10-12         2026-10-13               18.70              21.30          2   520.0   13.903743 take_profit_day1_hit_at_scan
   SNPS SNPS261120C00500000          2026-10-13         2026-10-14               25.50              20.00          1  -550.0  -21.568627        stop_loss_hit_at_scan
+   CEG  CEG261120C00270000          2026-10-15         2026-10-16               19.50              17.10          2  -480.0  -12.307692        stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot            event_type                                                                                                                                                                                 detail
-2026-10-16T11:30:57.769735-04:00 early_entry_1130    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T11:30:57.769735-04:00      manage_1130  exit_order_submitted       {"alpaca_order_id": "98ea536a-bd09-4c24-9f6c-901b6d3948a1", "contract_symbol": "CEG261120C00270000", "limit_price": "16.90", "reason": "stop_loss_hit_at_scan", "ticker": "CEG"}
-2026-10-16T11:24:48.968131-04:00 early_entry_1120    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T11:18:40.395637-04:00 early_entry_1115    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T11:12:32.457525-04:00 early_entry_1110    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T11:06:24.480958-04:00 early_entry_1105    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T11:00:14.913277-04:00 early_entry_1100    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:54:07.275588-04:00 early_entry_1050    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:47:58.353766-04:00 early_entry_1045    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:41:49.985590-04:00 early_entry_1040    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:35:43.743663-04:00 early_entry_1035    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:29:35.947561-04:00 early_entry_1025    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:23:26.404144-04:00 early_entry_1020    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:17:19.773359-04:00 early_entry_1015    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:11:10.912243-04:00 early_entry_1010    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:05:02.531217-04:00 early_entry_1005    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-15T16:00:34.237546-04:00      manage_1600  exit_order_submitted      {"alpaca_order_id": "3f738b22-4f3a-4bee-84e4-323f4acda53a", "contract_symbol": "CSCO261120C00115000", "limit_price": "3.80", "reason": "stop_loss_hit_at_scan", "ticker": "CSCO"}
-2026-10-15T16:00:34.237546-04:00             exit       exit_not_filled                                                                                                      {"contract_symbol": "CSCO261120C00115000", "status": "expired", "ticker": "CSCO"}
-2026-10-15T14:54:36.972166-04:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "CEG261120C00270000", "contracts": 2, "filled_price": 19.5, "ticker": "CEG"}
-2026-10-15T14:48:18.620416-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "791a03dd-8534-4f3e-8d35-d2bbc56a10d4", "contract_symbol": "CEG261120C00270000", "contracts": 2, "entry_mode": "regular", "limit_price": "19.60", "ticker": "CEG"}
+                    timestamp_et             slot           event_type                                                                                                                                                                            detail
+2026-10-16T11:37:10.612622-04:00 early_entry_1135   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T11:37:10.612622-04:00             exit          exit_filled                                                  {"contract_symbol": "CEG261120C00270000", "exit_price": 17.1, "pnl": -480.0, "reason": "stop_loss_hit_at_scan", "ticker": "CEG"}
+2026-10-16T11:30:57.769735-04:00 early_entry_1130   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T11:30:57.769735-04:00      manage_1130 exit_order_submitted  {"alpaca_order_id": "98ea536a-bd09-4c24-9f6c-901b6d3948a1", "contract_symbol": "CEG261120C00270000", "limit_price": "16.90", "reason": "stop_loss_hit_at_scan", "ticker": "CEG"}
+2026-10-16T11:24:48.968131-04:00 early_entry_1120   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T11:18:40.395637-04:00 early_entry_1115   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T11:12:32.457525-04:00 early_entry_1110   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T11:06:24.480958-04:00 early_entry_1105   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T11:00:14.913277-04:00 early_entry_1100   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T10:54:07.275588-04:00 early_entry_1050   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T10:47:58.353766-04:00 early_entry_1045   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T10:41:49.985590-04:00 early_entry_1040   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T10:35:43.743663-04:00 early_entry_1035   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T10:29:35.947561-04:00 early_entry_1025   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T10:23:26.404144-04:00 early_entry_1020   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T10:17:19.773359-04:00 early_entry_1015   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T10:11:10.912243-04:00 early_entry_1010   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T10:05:02.531217-04:00 early_entry_1005   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-15T16:00:34.237546-04:00      manage_1600 exit_order_submitted {"alpaca_order_id": "3f738b22-4f3a-4bee-84e4-323f4acda53a", "contract_symbol": "CSCO261120C00115000", "limit_price": "3.80", "reason": "stop_loss_hit_at_scan", "ticker": "CSCO"}
+2026-10-15T16:00:34.237546-04:00             exit      exit_not_filled                                                                                                 {"contract_symbol": "CSCO261120C00115000", "status": "expired", "ticker": "CSCO"}
 ```
