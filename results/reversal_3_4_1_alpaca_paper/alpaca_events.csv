@@ -8807,3 +8807,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-16T11:55:36.492421-04:00,2026-10-16,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-16T14:48:58.430801-04:00,2026-10-16,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""dab7bd82-d416-4df2-a1ef-b9ac0b8fc68c"", ""contract_symbol"": ""CEG261120C00270000"", ""contracts"": 2, ""entry_mode"": ""regular"", ""limit_price"": ""17.50"", ""ticker"": ""CEG""}"
 2026-10-16T14:55:11.307347-04:00,2026-10-16,entry_1500,entry_filled,"{""contract_symbol"": ""CEG261120C00270000"", ""contracts"": 2, ""filled_price"": 17.1, ""ticker"": ""CEG""}"
+2026-10-16T16:01:05.806617-04:00,2026-10-16,exit,exit_not_filled,"{""contract_symbol"": ""CSCO261120C00115000"", ""status"": ""expired"", ""ticker"": ""CSCO""}"
+2026-10-16T16:01:05.806617-04:00,2026-10-16,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""492f0ed8-6e32-46c5-96bb-669f4b6d5789"", ""contract_symbol"": ""CSCO261120C00115000"", ""limit_price"": ""2.93"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""CSCO""}"
