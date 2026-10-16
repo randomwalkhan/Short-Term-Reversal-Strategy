@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-16 11:00:14 EDT`
+Latest checkpoint (ET): `2026-10-16 11:06:24 EDT`
 Last slot: `manage_1100`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$78,720.02`
-- Portfolio value: `$84,900.02`
+- Portfolio value: `$84,780.02`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,8 +15,8 @@ Last slot: `manage_1100`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  CSCO exit_submitted    regular CSCO261120C00115000          8                5.85                   3.5          bid_ask_mid                        3.5                    True          2800.0         -1880.0             -40.170940                   2
-   CEG           open    regular  CEG261120C00270000          2               19.50                  18.8          bid_ask_mid                       18.8                    True          3760.0          -140.0              -3.589744                   1
+  CSCO exit_submitted    regular CSCO261120C00115000          8                5.85                 3.525          bid_ask_mid                      3.525                    True          2820.0         -1860.0             -39.743590                   2
+   CEG           open    regular  CEG261120C00270000          2               19.50                18.700          bid_ask_mid                     18.700                    True          3740.0          -160.0              -4.102564                   1
 ```
 
 ## Closed Trades
@@ -49,6 +49,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-10-16T11:06:24.480958-04:00 early_entry_1105    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T11:00:14.913277-04:00 early_entry_1100    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T10:54:07.275588-04:00 early_entry_1050    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T10:47:58.353766-04:00 early_entry_1045    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -68,5 +69,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-15T11:42:35.849990-04:00 early_entry_1140    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-15T11:36:28.024318-04:00 early_entry_1135    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-15T11:30:15.010823-04:00 early_entry_1130    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-15T11:24:07.889794-04:00 early_entry_1120    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
