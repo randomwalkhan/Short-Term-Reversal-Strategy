@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-10-16 11:00:06 EDT`
-- Equity: `$127,744.80` | Realized: `$118,734.80` | Unrealized: `$-990.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-10-16 11:05:05 EDT`
+- Equity: `$128,899.80` | Realized: `$118,734.80` | Unrealized: `$165.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1100`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode         instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   CEG     option         option CEG261120C00270000     33     63030.0                 62040.0           18.8          -990.0                  -1.57                   1
+   CEG     option         option CEG261120C00270000     33     63030.0                 63195.0          19.15           165.0                   0.26                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261016110006)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261016110505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261016110006)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261016110505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261016110006)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261016110505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261016110006)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261016110505)
 
 </details>
 
