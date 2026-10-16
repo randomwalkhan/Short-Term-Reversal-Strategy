@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-16 16:00:05 EDT`
+Latest checkpoint (ET): `2026-10-16 16:05:01 EDT`
 Last processed slot: `manage_1600`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1600`
 ## Portfolio Snapshot
 
 - Cash: `$62,756.80`
-- Equity: `$121,906.80`
+- Equity: `$123,481.80`
 - Realized PnL: `$112,431.80`
-- Unrealized PnL: `$-525.00`
+- Unrealized PnL: `$1,050.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   CEG     option         option CEG261120C00270000       2026-10-16                   0     35     59675.0                 59150.0        17.05           16.9      270.43        271.37          bid_ask_mid                       16.9                bid_ask_mid                    True          -525.0                  -0.88         85.71               21              1.66         51.07            49.3                  60.14                 462.0           59.0               0.05                      ok
+   CEG     option         option CEG261120C00270000       2026-10-16                   0     35     59675.0                 60725.0        17.05          17.35      270.43        271.47          bid_ask_mid                      17.35                bid_ask_mid                    True          1050.0                   1.76         85.71               21              1.66         51.07           50.79                  60.14                 462.0           59.0               0.05                      ok
 ```
 
 ## Today's Closed Trades (2026-10-16)
@@ -49,21 +49,7 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ## Current Screener Snapshot
 
-```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   CEG           87.50               24            1.32              2.54        273.91                60.14         0.566            pass              0.458             36.1                           0.513                5.39              0.146                                 ok            True                  False
-  DXCM           81.82               11            1.90              1.17         87.21                29.21         0.506            pass              0.143             12.6                           0.303                0.80              0.105                                 ok            True                  False
-  SNPS           66.67                6            2.85              9.32        464.11                53.97         0.563            pass              0.156             33.1                           0.643               -7.17             -0.654 downtrend_blocked_slope_and_streak           False                  False
-  CSCO           66.67                6            2.26              1.74        109.11                35.07         0.522            pass              0.078              8.5                           0.237               -4.30             -0.431 downtrend_blocked_slope_and_streak           False                  False
-  ABNB           92.31               39            0.33              0.40        174.11                41.32         0.513            pass              0.810             79.1                           0.679                6.94              0.693                                 ok           False                  False
-  CDNS           80.00               20            1.49              3.37        322.93                38.31         0.507            pass              0.231             38.0                           0.507               -9.05             -1.098 downtrend_blocked_slope_and_streak           False                  False
-  MSFT          100.00                9            1.94              7.34        536.29                21.00         0.503            pass              0.541             30.1                           0.499                2.21              0.297                                 ok           False                  False
-  QCOM           62.50                8            3.57              4.45        176.49                54.84         0.496 below_threshold              0.056              2.2                           0.092               -6.94             -0.516 downtrend_blocked_slope_and_streak           False                  False
-  VRTX           72.73               11            1.77              6.31        506.05                25.61         0.495 below_threshold              0.116             20.0                           0.349               -0.99             -0.096                                 ok           False                  False
-  META           50.00                6            3.72             19.17        728.51                55.08         0.488 below_threshold              0.107             19.5                           0.394               -2.57             -0.021           downtrend_blocked_streak           False                  False
-  INTU           86.96               23            1.49              3.45        328.69                41.38         0.486 below_threshold              0.462             47.0                           0.729               16.25              1.481                                 ok           False                  False
-  DASH           76.19               21            2.04              2.76        191.87                48.67         0.485 below_threshold              0.252             43.3                           0.623               -0.02             -0.086                                 ok           False                  False
-```
+_None_
 
 ## Recent Events
 
@@ -88,27 +74,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261016160005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261016160501)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261016160005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261016160501)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261016160005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261016160501)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261016160005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261016160501)
 
 </details>
