@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-17 00:58:19 EDT`
-Last slot: `share_ext_0055`
+Latest checkpoint (ET): `2026-10-17 01:03:23 EDT`
+Last slot: `share_ext_0100`
 
 ## Alpaca Paper Account
 
@@ -49,6 +49,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-10-17T01:03:23.590857-04:00   share_ext_0100         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-10-17T00:58:19.297923-04:00   share_ext_0055         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-10-17T00:53:14.977858-04:00   share_ext_0050         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-10-17T00:48:10.529734-04:00   share_ext_0045         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
@@ -68,5 +69,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-16T11:55:36.492421-04:00 early_entry_1155    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T11:49:27.535893-04:00 early_entry_1145    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T11:43:19.028629-04:00 early_entry_1140    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T11:37:10.612622-04:00 early_entry_1135    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
