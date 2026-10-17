@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-17 01:08:27 EDT`
-Last slot: `share_ext_0105`
+Latest checkpoint (ET): `2026-10-17 01:13:32 EDT`
+Last slot: `share_ext_0110`
 
 ## Alpaca Paper Account
 
@@ -49,6 +49,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-10-17T01:13:32.295914-04:00   share_ext_0110         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-10-17T01:08:27.962253-04:00   share_ext_0105         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-10-17T01:03:23.590857-04:00   share_ext_0100         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-10-17T00:58:19.297923-04:00   share_ext_0055         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
@@ -68,5 +69,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-16T14:55:11.307347-04:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "CEG261120C00270000", "contracts": 2, "filled_price": 17.1, "ticker": "CEG"}
 2026-10-16T14:48:58.430801-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "dab7bd82-d416-4df2-a1ef-b9ac0b8fc68c", "contract_symbol": "CEG261120C00270000", "contracts": 2, "entry_mode": "regular", "limit_price": "17.50", "ticker": "CEG"}
 2026-10-16T11:55:36.492421-04:00 early_entry_1155    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T11:49:27.535893-04:00 early_entry_1145    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
