@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-17 01:23:40 EDT`
-Last slot: `share_ext_0120`
+Latest checkpoint (ET): `2026-10-17 01:28:44 EDT`
+Last slot: `share_ext_0125`
 
 ## Alpaca Paper Account
 
@@ -49,6 +49,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot           event_type                                                                                                                                                                            detail
+2026-10-17T01:28:44.973840-04:00 share_ext_0125        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-10-17T01:23:40.740850-04:00 share_ext_0120        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-10-17T01:18:36.563944-04:00 share_ext_0115        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-10-17T01:13:32.295914-04:00 share_ext_0110        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
@@ -66,7 +67,6 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-17T00:12:40.813604-04:00 share_ext_0010        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-10-17T00:07:36.552349-04:00 share_ext_0005        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-10-17T00:02:32.521432-04:00 share_ext_0000        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-16T16:01:05.806617-04:00           exit      exit_not_filled                                                                                                 {"contract_symbol": "CSCO261120C00115000", "status": "expired", "ticker": "CSCO"}
 2026-10-16T16:01:05.806617-04:00    manage_1600 exit_order_submitted {"alpaca_order_id": "492f0ed8-6e32-46c5-96bb-669f4b6d5789", "contract_symbol": "CSCO261120C00115000", "limit_price": "2.93", "reason": "stop_loss_hit_at_scan", "ticker": "CSCO"}
-2026-10-16T14:55:11.307347-04:00     entry_1500         entry_filled                                                                                  {"contract_symbol": "CEG261120C00270000", "contracts": 2, "filled_price": 17.1, "ticker": "CEG"}
+2026-10-16T16:01:05.806617-04:00           exit      exit_not_filled                                                                                                 {"contract_symbol": "CSCO261120C00115000", "status": "expired", "ticker": "CSCO"}
 ```
