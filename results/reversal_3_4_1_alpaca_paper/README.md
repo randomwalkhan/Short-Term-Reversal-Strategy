@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-17 01:33:49 EDT`
-Last slot: `share_ext_0130`
+Latest checkpoint (ET): `2026-10-17 01:38:53 EDT`
+Last slot: `share_ext_0135`
 
 ## Alpaca Paper Account
 
@@ -48,25 +48,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et           slot           event_type                                                                                                                                                                            detail
-2026-10-17T01:33:49.148664-04:00 share_ext_0130        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T01:28:44.973840-04:00 share_ext_0125        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T01:23:40.740850-04:00 share_ext_0120        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T01:18:36.563944-04:00 share_ext_0115        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T01:13:32.295914-04:00 share_ext_0110        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T01:08:27.962253-04:00 share_ext_0105        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T01:03:23.590857-04:00 share_ext_0100        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:58:19.297923-04:00 share_ext_0055        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:53:14.977858-04:00 share_ext_0050        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:48:10.529734-04:00 share_ext_0045        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:43:06.299238-04:00 share_ext_0040        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:38:02.080419-04:00 share_ext_0035        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:32:57.739654-04:00 share_ext_0030        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:27:53.670323-04:00 share_ext_0025        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:22:49.446599-04:00 share_ext_0020        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:17:45.130805-04:00 share_ext_0015        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:12:40.813604-04:00 share_ext_0010        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:07:36.552349-04:00 share_ext_0005        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-17T00:02:32.521432-04:00 share_ext_0000        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
-2026-10-16T16:01:05.806617-04:00    manage_1600 exit_order_submitted {"alpaca_order_id": "492f0ed8-6e32-46c5-96bb-669f4b6d5789", "contract_symbol": "CSCO261120C00115000", "limit_price": "2.93", "reason": "stop_loss_hit_at_scan", "ticker": "CSCO"}
+                    timestamp_et           slot    event_type                                      detail
+2026-10-17T01:38:53.244434-04:00 share_ext_0135 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T01:33:49.148664-04:00 share_ext_0130 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T01:28:44.973840-04:00 share_ext_0125 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T01:23:40.740850-04:00 share_ext_0120 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T01:18:36.563944-04:00 share_ext_0115 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T01:13:32.295914-04:00 share_ext_0110 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T01:08:27.962253-04:00 share_ext_0105 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T01:03:23.590857-04:00 share_ext_0100 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:58:19.297923-04:00 share_ext_0055 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:53:14.977858-04:00 share_ext_0050 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:48:10.529734-04:00 share_ext_0045 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:43:06.299238-04:00 share_ext_0040 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:38:02.080419-04:00 share_ext_0035 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:32:57.739654-04:00 share_ext_0030 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:27:53.670323-04:00 share_ext_0025 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:22:49.446599-04:00 share_ext_0020 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:17:45.130805-04:00 share_ext_0015 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:12:40.813604-04:00 share_ext_0010 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:07:36.552349-04:00 share_ext_0005 market_closed {"holiday_name": null, "reason": "weekend"}
+2026-10-17T00:02:32.521432-04:00 share_ext_0000 market_closed {"holiday_name": null, "reason": "weekend"}
 ```
