@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-16 23:57:28 EDT`
-Last slot: `share_ext_2355`
+Latest checkpoint (ET): `2026-10-17 00:02:32 EDT`
+Last slot: `share_ext_0000`
 
 ## Alpaca Paper Account
 
@@ -49,6 +49,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-10-17T00:02:32.521432-04:00   share_ext_0000         market_closed                                                                                                                                            {"holiday_name": null, "reason": "weekend"}
 2026-10-16T16:01:05.806617-04:00      manage_1600  exit_order_submitted      {"alpaca_order_id": "492f0ed8-6e32-46c5-96bb-669f4b6d5789", "contract_symbol": "CSCO261120C00115000", "limit_price": "2.93", "reason": "stop_loss_hit_at_scan", "ticker": "CSCO"}
 2026-10-16T16:01:05.806617-04:00             exit       exit_not_filled                                                                                                      {"contract_symbol": "CSCO261120C00115000", "status": "expired", "ticker": "CSCO"}
 2026-10-16T14:55:11.307347-04:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "CEG261120C00270000", "contracts": 2, "filled_price": 17.1, "ticker": "CEG"}
@@ -56,8 +57,8 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-16T11:55:36.492421-04:00 early_entry_1155    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T11:49:27.535893-04:00 early_entry_1145    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T11:43:19.028629-04:00 early_entry_1140    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T11:37:10.612622-04:00             exit           exit_filled                                                       {"contract_symbol": "CEG261120C00270000", "exit_price": 17.1, "pnl": -480.0, "reason": "stop_loss_hit_at_scan", "ticker": "CEG"}
 2026-10-16T11:37:10.612622-04:00 early_entry_1135    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-10-16T11:37:10.612622-04:00             exit           exit_filled                                                       {"contract_symbol": "CEG261120C00270000", "exit_price": 17.1, "pnl": -480.0, "reason": "stop_loss_hit_at_scan", "ticker": "CEG"}
 2026-10-16T11:30:57.769735-04:00 early_entry_1130    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T11:30:57.769735-04:00      manage_1130  exit_order_submitted       {"alpaca_order_id": "98ea536a-bd09-4c24-9f6c-901b6d3948a1", "contract_symbol": "CEG261120C00270000", "limit_price": "16.90", "reason": "stop_loss_hit_at_scan", "ticker": "CEG"}
 2026-10-16T11:24:48.968131-04:00 early_entry_1120    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -68,5 +69,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-16T10:54:07.275588-04:00 early_entry_1050    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T10:47:58.353766-04:00 early_entry_1045    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-16T10:41:49.985590-04:00 early_entry_1040    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-16T10:35:43.743663-04:00 early_entry_1035    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
