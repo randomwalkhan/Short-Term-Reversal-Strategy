@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-10-19 16:05:06 EDT`
-- Equity: `$129,431.80` | Realized: `$121,531.80` | Unrealized: `$-2,100.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-10-19 16:10:06 EDT`
+- Equity: `$126,281.80` | Realized: `$121,531.80` | Unrealized: `$-5,250.00` | Open positions: `1`
 - Today closed trades: `1`
 - Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode         instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   ADP     option         option ADP261120C00290000     70     65100.0                 63000.0            9.0         -2100.0                  -3.23                   0
+   ADP     option         option ADP261120C00290000     70     65100.0                 59850.0           8.55         -5250.0                  -8.06                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261019160506)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261019161006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261019160506)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261019161006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261019160506)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261019161006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261019160506)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261019161006)
 
 </details>
 
