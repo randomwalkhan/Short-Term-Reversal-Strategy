@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-19 15:16:27 EDT`
-Last slot: `manual`
+Latest checkpoint (ET): `2026-10-19 15:21:35 EDT`
+Last slot: `manage_1530`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `manual`
 
 ```text
 ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   ADP   open    regular ADP261120C00290000          5                 9.7                  9.25          bid_ask_mid                       9.25                    True          4625.0          -225.0              -4.639175                   0
+   ADP   open    regular ADP261120C00290000          5                 9.7                   9.2          bid_ask_mid                        9.2                    True          4600.0          -250.0              -5.154639                   0
 ```
 
 ## Closed Trades
