@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 131531.80035667424,
-  "positions": [],
+  "cash": 66431.80035667424,
+  "positions": [
+    {
+      "position_id": "ADP_20261019T145005",
+      "ticker": "ADP",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "ADP261120C00290000",
+      "expiry": "2026-11-20",
+      "strike": 290.0,
+      "entry_timestamp": "2026-10-19T14:50:05.293487-04:00",
+      "entry_trade_date": "2026-10-19",
+      "entry_slot": "entry_1500",
+      "entry_spot": 287.1400146484375,
+      "entry_option_price": 9.3,
+      "entry_bid": 8.8,
+      "entry_ask": 9.8,
+      "entry_iv_pct": 32.257757507324214,
+      "contracts": 70,
+      "allocated_cash": 65100.00000000001,
+      "success_rate": 92.31,
+      "matched_signals": 26,
+      "current_drop_pct": 0.61,
+      "rolling_sigma_20d_pct": 21.32,
+      "planned_tp_day1": 10.695,
+      "planned_tp_day2": 10.695,
+      "planned_stop": 8.370000000000001,
+      "option_open_interest": 958.0,
+      "option_volume": 21.0,
+      "option_spread_pct": 0.1075268817204301,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -5370,7 +5401,9 @@
       "share_ext_0250",
       "share_ext_0255"
     ],
-    "2026-10-19": []
+    "2026-10-19": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
