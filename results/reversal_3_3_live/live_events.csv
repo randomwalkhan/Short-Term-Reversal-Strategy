@@ -6860,3 +6860,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-19T03:00:04.169170-04:00,2026-10-19,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
 2026-10-19T09:50:04.852472-04:00,2026-10-19,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""CEG261120C00270000"", ""fill_price"": 19.65, ""pnl"": 9100.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 15.25, ""ticker"": ""CEG""}"
 2026-10-19T10:00:05.134811-04:00,2026-10-19,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-19T10:05:07.192059-04:00,2026-10-19,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
