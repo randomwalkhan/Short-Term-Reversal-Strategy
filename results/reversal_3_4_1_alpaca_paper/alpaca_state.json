@@ -2,7 +2,36 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [],
+  "positions": [
+    {
+      "allocated_cash": 4650.000000000001,
+      "alpaca_entry_client_order_id": "rev-20261019145008-adp-regular",
+      "alpaca_entry_order_id": "f4a41a83-95d7-43b6-ae02-9a584c5d1682",
+      "asset_type": "option",
+      "contract_symbol": "ADP261120C00290000",
+      "contracts": 5,
+      "current_drop_pct": 0.61,
+      "early_entry_score": 0.679,
+      "entry_mode": "regular",
+      "entry_option_price": 9.3,
+      "entry_slot": "entry_1500",
+      "entry_spot": 287.1400146484375,
+      "entry_timestamp": "2026-10-19T14:50:08.754522-04:00",
+      "entry_trade_date": "2026-10-19",
+      "execution_mode": "alpaca_paper_option",
+      "expiry": "2026-11-20",
+      "matched_signals": 26,
+      "planned_stop": 8.370000000000001,
+      "planned_tp_day1": 10.695,
+      "planned_tp_day2": 10.695,
+      "position_id": "ADP_20261019T145008",
+      "status": "entry_submitted",
+      "strike": 290.0,
+      "success_rate": 92.31,
+      "ticker": "ADP",
+      "timing_score": 0.52
+    }
+  ],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
