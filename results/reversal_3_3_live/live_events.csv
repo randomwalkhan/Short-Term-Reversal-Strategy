@@ -6886,3 +6886,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-19T15:07:09.479134-04:00,2026-10-19,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-19T15:10:06.181493-04:00,2026-10-19,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-20T00:00:06.202426-04:00,2026-10-20,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
+2026-10-20T09:50:06.258363-04:00,2026-10-20,manage_1000,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""ADP261120C00290000"", ""fill_price"": 11.2, ""pnl"": 13300.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 20.43, ""ticker"": ""ADP""}"
