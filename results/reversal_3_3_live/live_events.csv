@@ -6910,3 +6910,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-20T12:00:03.885046-04:00,2026-10-20,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-20T14:50:06.260078-04:00,2026-10-20,entry_1500,timing_overlay,"{""status"": ""cached"", ""threshold"": 0.5, ""trade_date_et"": ""2026-10-20"", ""training_samples"": 6130, ""window"": 5}"
 2026-10-20T14:50:06.260078-04:00,2026-10-20,entry_1500,entry_skipped,"{""reason"": ""no_candidate""}"
+2026-10-20T14:55:05.300060-04:00,2026-10-20,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
