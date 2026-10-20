@@ -9403,3 +9403,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-20T09:54:11.722627-04:00,2026-10-20,exit,exit_filled,"{""contract_symbol"": ""ADP261120C00290000"", ""exit_price"": 10.8, ""pnl"": 550.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""ADP""}"
 2026-10-20T10:04:19.685605-04:00,2026-10-20,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-20T10:10:28.467973-04:00,2026-10-20,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-20T10:16:31.263250-04:00,2026-10-20,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
