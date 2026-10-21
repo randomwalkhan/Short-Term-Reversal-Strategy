@@ -9444,3 +9444,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-21T14:51:45.982656-04:00,2026-10-21,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KDP""}"
 2026-10-21T14:57:57.060316-04:00,2026-10-21,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KDP""}"
 2026-10-21T15:04:09.518976-04:00,2026-10-21,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KDP""}"
+2026-10-21T15:10:23.309148-04:00,2026-10-21,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KDP""}"
