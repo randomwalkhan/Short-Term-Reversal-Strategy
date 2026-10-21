@@ -6945,3 +6945,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-21T14:50:04.709155-04:00,2026-10-21,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.216, ""option_liquidity_status"": ""no_two_sided_quote,wide_spread"", ""option_open_interest"": 112.0, ""option_spread_pct"": null, ""option_volume"": 63.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KHC"", ""timing_score"": 0.504}"
 2026-10-21T14:50:04.709155-04:00,2026-10-21,entry_1500,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
 2026-10-21T14:55:05.525520-04:00,2026-10-21,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-10-21T15:00:05.576532-04:00,2026-10-21,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
