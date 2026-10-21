@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-21 15:10:06 EDT`
-Last processed slot: `entry_1500`
+Latest checkpoint (ET): `2026-10-21 15:15:05 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
-   KDP           95.65               23            0.68              0.16         34.56                29.04         0.556            pass              0.746             67.8                           0.348               12.62              1.277                      ok            True                  False
-  ORLY          100.00               14            1.54              0.97         89.60                13.90         0.501            pass              0.481              1.4                           0.050                4.75              0.538                      ok            True                  False
-  TMUS           55.56                9            2.64              2.91        156.50                56.37         0.573            pass              0.157             33.2                           0.551               -8.39             -0.460 downtrend_blocked_slope           False                  False
-  MDLZ          100.00                1            2.43              1.09         63.52                19.17         0.547            pass              0.466              3.7                           0.191                5.14              0.635                      ok           False                  False
-  GILD           88.89                9            1.72              1.88        155.70                26.70         0.537            pass              0.423             44.0                           0.663                4.75              0.595                      ok           False                  False
-  MELI           76.19               21            1.84             24.24       1869.11                40.36         0.511            pass              0.149              8.3                           0.197               -1.49             -0.163                      ok           False                  False
-   KHC           78.57               14            1.72              0.29         23.71                25.26         0.506            pass              0.077              0.0                           0.025                6.55              0.739                      ok           False                  False
-  INTU           88.24               34            0.61              1.42        334.68                37.42         0.499 below_threshold              0.583             51.1                           0.297               12.64              1.290                      ok           False                  False
- CMCSA           75.00                4            2.17              0.34         22.21                21.50         0.495 below_threshold              0.164             38.2                           0.340                4.47              0.692                      ok           False                  False
-  GEHC           70.00               10            2.01              0.99         69.81                23.16         0.488 below_threshold              0.072              7.8                           0.118                6.42              0.839                      ok           False                  False
-   ROP           87.50               32            0.77              2.15        397.29                26.56         0.478 below_threshold              0.517             41.0                           0.288               10.20              1.016                      ok           False                  False
-  DASH           66.67                6            3.74              5.02        189.52                49.85         0.478 below_threshold              0.055              2.2                           0.097               -3.52             -0.254 downtrend_blocked_slope           False                  False
+   KDP           95.65               23            0.74              0.18         34.55                29.04         0.553            pass              0.737             65.1                           0.350               12.56              1.275                      ok            True                  False
+  GILD           90.00               10            1.69              1.85        155.72                26.70         0.534            pass              0.454             44.8                           0.686                4.77              0.596                      ok            True                  False
+   KHC           80.00               15            1.68              0.28         23.71                25.26         0.504            pass              0.098              4.8                           0.188                6.60              0.741                      ok            True                  False
+  INTU           88.24               34            0.58              1.37        334.70                37.42         0.501            pass              0.588             52.9                           0.306               12.66              1.291                      ok            True                  False
+  TMUS           60.00               10            2.40              2.65        156.61                56.37         0.586            pass              0.176             39.2                           0.601               -8.17             -0.449 downtrend_blocked_slope           False                  False
+  MDLZ          100.00                1            2.44              1.09         63.52                19.17         0.547            pass              0.465              3.3                           0.192                5.14              0.634                      ok           False                  False
+ CMCSA           75.00                4            1.95              0.30         22.23                21.50         0.508            pass              0.185             44.6                           0.492                4.70              0.702                      ok           False                  False
+  MELI           79.17               24            1.67             21.94       1870.10                40.36         0.506            pass              0.200             18.7                           0.220               -1.31             -0.155                      ok           False                  False
+  ORLY          100.00               16            1.44              0.91         89.63                13.90         0.495 below_threshold              0.514              8.2                           0.215                4.86              0.543                      ok           False                  False
+  GEHC           70.00               10            2.02              0.99         69.80                23.16         0.487 below_threshold              0.070              7.2                           0.114                6.40              0.838                      ok           False                  False
+  ABNB           82.35               17            1.91              2.37        175.92                39.60         0.477 below_threshold              0.186              9.6                           0.186                8.05              0.955                      ok           False                  False
+   ROP           88.24               34            0.61              1.70        397.48                26.56         0.476 below_threshold              0.587             53.3                           0.352               10.38              1.023                      ok           False                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261021151006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261021151505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261021151006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261021151505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261021151006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261021151505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261021151006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261021151505)
 
 </details>
