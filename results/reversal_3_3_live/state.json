@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 144831.80035667424,
-  "positions": [],
+  "cash": 73431.80035667423,
+  "positions": [
+    {
+      "position_id": "TEAM_20261022T145005",
+      "ticker": "TEAM",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "TEAM261120C00230000",
+      "expiry": "2026-11-20",
+      "strike": 230.0,
+      "entry_timestamp": "2026-10-22T14:50:05.810841-04:00",
+      "entry_trade_date": "2026-10-22",
+      "entry_slot": "entry_1500",
+      "entry_spot": 223.97000122070312,
+      "entry_option_price": 17.85,
+      "entry_bid": 16.9,
+      "entry_ask": 18.8,
+      "entry_iv_pct": 80.1637725830078,
+      "contracts": 40,
+      "allocated_cash": 71400.00000000001,
+      "success_rate": 100.0,
+      "matched_signals": 38,
+      "current_drop_pct": 0.68,
+      "rolling_sigma_20d_pct": 49.42,
+      "planned_tp_day1": 20.5275,
+      "planned_tp_day2": 20.5275,
+      "planned_stop": 16.065,
+      "option_open_interest": 7633.0,
+      "option_volume": 62.0,
+      "option_spread_pct": 0.10644257703081243,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -5379,7 +5410,9 @@
     "2026-10-21": [
       "entry_1500"
     ],
-    "2026-10-22": []
+    "2026-10-22": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
