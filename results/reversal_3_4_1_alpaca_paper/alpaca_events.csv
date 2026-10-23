@@ -9474,3 +9474,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-23T10:29:15.424720-04:00,2026-10-23,manage_1030,exit_order_submitted,"{""alpaca_order_id"": ""cf68c347-91e8-4771-83be-0ee78b6ef8fb"", ""contract_symbol"": ""TEAM261120C00230000"", ""limit_price"": ""16.20"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""TEAM""}"
 2026-10-23T10:29:15.424720-04:00,2026-10-23,early_entry_1025,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-23T10:35:23.947467-04:00,2026-10-23,early_entry_1035,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-10-23T10:41:33.550092-04:00,2026-10-23,early_entry_1040,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
