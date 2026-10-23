@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-23 14:50:05 EDT`
+Latest checkpoint (ET): `2026-10-23 14:55:04 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$1,161.80`
-- Equity: `$144,631.80`
+- Equity: `$143,831.80`
 - Realized PnL: `$134,831.80`
-- Unrealized PnL: `$-200.00`
+- Unrealized PnL: `$-1,000.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   EXC     option         option  EXC261218C00045000       2026-10-23                   0    657     72270.0                 72270.0         1.10            1.1       44.42         44.43          bid_ask_mid                        1.1                bid_ask_mid                    True             0.0                   0.00          80.0               15              0.97         20.09           20.09                  20.91                 278.0           48.0               0.09                      ok
-  TEAM     option         option TEAM261120C00230000       2026-10-22                   1     40     71400.0                 71200.0        17.85           17.8      223.97        225.17          bid_ask_mid                       17.8                bid_ask_mid                    True          -200.0                  -0.28         100.0               38              0.68         80.16           78.49                  49.42                7633.0           62.0               0.11                      ok
+   EXC     option         option  EXC261218C00045000       2026-10-23                   0    657     72270.0                 72270.0         1.10            1.1       44.42         44.44          bid_ask_mid                        1.1                bid_ask_mid                    True             0.0                    0.0          80.0               15              0.97         20.09           20.09                  20.91                 278.0           48.0               0.09                      ok
+  TEAM     option         option TEAM261120C00230000       2026-10-22                   1     40     71400.0                 70400.0        17.85           17.6      223.97        225.16          bid_ask_mid                       17.6                bid_ask_mid                    True         -1000.0                   -1.4         100.0               38              0.68         80.16           78.30                  49.42                7633.0           62.0               0.11                      ok
 ```
 
 ## Today's Closed Trades (2026-10-23)
@@ -49,24 +49,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   KDP           93.33               15            1.15              0.28         35.07                27.06         0.556          pass              0.573             43.0                           0.514                9.52              0.910                                 ok            True                  False
-   EXC           80.00               15            0.97              0.30         44.72                20.91         0.532          pass              0.187             33.6                           0.490                6.36              0.571                                 ok            True                  False
-   MAR           81.82               11            1.51              4.19        395.00                21.06         0.532          pass              0.123              4.9                           0.252                6.81              0.922                                 ok            True                  False
-   KHC           83.33               18            1.41              0.25         24.98                34.71         0.529          pass              0.296             33.6                           0.450               11.07              1.093                                 ok            True                  False
-  COST           80.00               10            1.42             10.15       1013.86                17.03         0.521          pass              0.072              6.6                           0.194                6.00              0.642                                 ok            True                  False
-  ORLY          100.00               11            1.79              1.15         91.51                17.78         0.513          pass              0.496             12.5                           0.282                4.52              0.592                                 ok            True                  False
-   ADP           90.91               22            0.85              1.84        307.15                23.94         0.510          pass              0.610             62.8                           0.532               12.71              1.232                                 ok            True                  False
-  SBUX           85.00               20            1.36              0.97        101.49                25.63         0.505          pass              0.270              6.5                           0.267               10.77              1.153                                 ok            True                  False
-   CEG           86.67               30            0.90              1.61        254.52                65.49         0.606          pass              0.585             71.1                           0.465              -15.15             -1.681 downtrend_blocked_slope_and_streak           False                  False
-  MDLZ          100.00                1            2.50              1.14         64.70                24.03         0.557          pass              0.483              9.2                           0.352                5.21              0.526                                 ok           False                  False
-   STX           74.36               39            0.65              2.91        640.89                72.64         0.549          pass              0.489             80.3                           0.366              -18.52             -1.842 downtrend_blocked_slope_and_streak           False                  False
-  DASH           80.00               15            2.44              3.17        184.58                51.43         0.546          pass              0.091              1.0                           0.156               -7.68             -0.571            downtrend_blocked_slope           False                  False
+   KDP           94.74               19            0.97              0.24         35.09                27.06         0.544          pass              0.664             52.1                           0.682                9.73              0.919                                 ok            True                  False
+   MAR           83.33               12            1.46              4.06        395.06                21.06         0.530          pass              0.179              7.9                           0.282                6.87              0.924                                 ok            True                  False
+   KHC           84.21               19            1.36              0.24         24.99                34.71         0.527          pass              0.334             36.4                           0.458               11.14              1.095                                 ok            True                  False
+   EXC           82.35               17            0.93              0.29         44.73                20.91         0.525          pass              0.272             36.6                           0.516                6.41              0.573                                 ok            True                  False
+  COST           81.82               11            1.39              9.94       1013.95                17.03         0.518          pass              0.133              8.6                           0.231                6.03              0.644                                 ok            True                  False
+   ADP           90.91               22            0.87              1.88        307.13                23.94         0.509          pass              0.607             61.9                           0.485               12.69              1.231                                 ok            True                  False
+  ORLY          100.00               13            1.71              1.10         91.53                17.78         0.506          pass              0.519             16.2                           0.317                4.60              0.595                                 ok            True                  False
+   CEG           85.71               28            1.03              1.83        254.42                65.49         0.609          pass              0.535             67.1                           0.417              -15.26             -1.687 downtrend_blocked_slope_and_streak           False                  False
+  MDLZ          100.00                1            2.42              1.11         64.72                24.03         0.561          pass              0.492             12.0                           0.386                5.30              0.529                                 ok           False                  False
+  DASH           81.25               16            2.36              3.07        184.63                51.43         0.546          pass              0.141              4.4                           0.113               -7.60             -0.567            downtrend_blocked_slope           False                  False
+   STX           72.97               37            0.90              4.04        640.41                72.64         0.543          pass              0.453             72.7                           0.336              -18.73             -1.854 downtrend_blocked_slope_and_streak           False                  False
+   CSX           76.92               13            1.09              0.40         51.50                26.41         0.536          pass              0.257             61.2                           0.681                8.14              0.656                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              detail
+2026-10-23T14:55:04.189334-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
 2026-10-23T14:50:05.144728-04:00       entry_1500                   entry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {"allocated_cash": 72270.0, "asset_type": "option", "contract_symbol": "EXC261218C00045000", "contracts": 657, "early_entry_score": 0.187, "entry_mode": "regular", "entry_option_price": 1.1, "execution_mode": "option", "matched_signals": 15, "option_liquidity_status": "ok", "option_open_interest": 278.0, "option_spread_pct": 9.09, "option_volume": 48.0, "success_rate": 80.0, "ticker": "EXC", "timing_score": 0.532}
 2026-10-23T14:50:05.144728-04:00       entry_1500 entry_candidate_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"early_entry_score": 0.573, "option_liquidity_status": "low_volume,wide_spread", "option_open_interest": 3202.0, "option_spread_pct": 23.73, "option_volume": 1.0, "reason": "no_trade_low_option_liquidity", "ticker": "KDP", "timing_score": 0.556}
 2026-10-23T14:50:05.144728-04:00       entry_1500          timing_overlay                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-10-23", "training_samples": 6184, "window": 5}
@@ -76,7 +77,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-10-23T11:45:05.133222-04:00 early_entry_1145      early_entry_shadow {"contract_symbol": "TRI261218C00125000", "current_drop_pct": 0.54, "early_entry_score": 0.773, "early_reclaim_pct": 72.9, "entry_ask": 8.6, "entry_bid": 7.7, "entry_mode": "early", "entry_option_price": 8.15, "hypothetical_budget": 36715.9, "hypothetical_contracts": 45, "matched_signals": 38, "option_liquidity_status": "low_volume", "option_open_interest": 133.0, "option_spread_pct": 11.04, "option_volume": 3.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.645, "shadow_only": true, "success_rate": 92.11, "ticker": "TRI", "timing_score": 0.448, "top_candidates": [{"current_drop_pct": 0.54, "early_entry_score": 0.773, "early_reclaim_pct": 72.9, "matched_signals": 38, "recovery_stability_score": 0.645, "success_rate": 92.11, "ticker": "TRI", "timing_score": 0.448, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
 2026-10-23T11:40:06.240161-04:00 early_entry_1140      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-23T11:35:04.567844-04:00 early_entry_1135      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-23T11:30:06.325430-04:00 early_entry_1130      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261023145005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261023145504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261023145005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261023145504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261023145005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261023145504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261023145005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261023145504)
 
 </details>
