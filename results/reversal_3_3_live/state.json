@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 73431.80035667423,
+  "cash": 1161.8003566742118,
   "positions": [
     {
       "position_id": "TEAM_20261022T145005",
@@ -31,6 +31,36 @@
       "option_open_interest": 7633.0,
       "option_volume": 62.0,
       "option_spread_pct": 0.10644257703081243,
+      "option_liquidity_status": "ok"
+    },
+    {
+      "position_id": "EXC_20261023T145005",
+      "ticker": "EXC",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "EXC261218C00045000",
+      "expiry": "2026-12-18",
+      "strike": 45.0,
+      "entry_timestamp": "2026-10-23T14:50:05.144728-04:00",
+      "entry_trade_date": "2026-10-23",
+      "entry_slot": "entry_1500",
+      "entry_spot": 44.415000915527344,
+      "entry_option_price": 1.1,
+      "entry_bid": 1.05,
+      "entry_ask": 1.15,
+      "entry_iv_pct": 20.09357250976562,
+      "contracts": 657,
+      "allocated_cash": 72270.00000000001,
+      "success_rate": 80.0,
+      "matched_signals": 15,
+      "current_drop_pct": 0.97,
+      "rolling_sigma_20d_pct": 20.91,
+      "planned_tp_day1": 1.265,
+      "planned_tp_day2": 1.265,
+      "planned_stop": 0.9900000000000001,
+      "option_open_interest": 278.0,
+      "option_volume": 48.0,
+      "option_spread_pct": 0.09090909090909079,
       "option_liquidity_status": "ok"
     }
   ],
@@ -5413,7 +5443,9 @@
     "2026-10-22": [
       "entry_1500"
     ],
-    "2026-10-23": []
+    "2026-10-23": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
