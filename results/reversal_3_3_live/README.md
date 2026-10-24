@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-24 00:35:06 EDT`
-Last processed slot: `share_ext_0035`
+Latest checkpoint (ET): `2026-10-24 00:40:04 EDT`
+Last processed slot: `share_ext_0040`
 
 ## Active Configuration
 
@@ -53,6 +53,7 @@ _None_
 
 ```text
                     timestamp_et           slot    event_type                                      detail
+2026-10-24T00:40:04.380913-04:00 share_ext_0040 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-10-24T00:35:06.339794-04:00 share_ext_0035 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-10-24T00:30:07.116449-04:00 share_ext_0030 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-10-24T00:25:05.997569-04:00 share_ext_0025 market_closed {"holiday_name": null, "reason": "weekend"}
@@ -62,7 +63,6 @@ _None_
 2026-10-24T00:05:04.014146-04:00 share_ext_0005 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-10-24T00:00:05.608824-04:00 share_ext_0000 market_closed {"holiday_name": null, "reason": "weekend"}
 2026-10-23T15:10:05.007293-04:00     entry_1500  slot_skipped             {"reason": "already_processed"}
-2026-10-23T15:05:06.359707-04:00     entry_1500  slot_skipped             {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261024003506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261024004004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261024003506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261024004004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261024003506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261024004004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261024003506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261024004004)
 
 </details>
