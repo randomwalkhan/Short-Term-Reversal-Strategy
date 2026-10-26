@@ -7050,3 +7050,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-24T02:50:04.428173-04:00,2026-10-24,share_ext_0250,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-10-24T02:55:06.111058-04:00,2026-10-24,share_ext_0255,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-10-26T03:00:06.095406-04:00,2026-10-26,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
+2026-10-26T10:00:02.755892-04:00,2026-10-26,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
