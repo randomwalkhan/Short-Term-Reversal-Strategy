@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-27 00:25:04 EDT`
-Last processed slot: `share_ext_0025`
+Latest checkpoint (ET): `2026-10-27 00:30:03 EDT`
+Last processed slot: `share_ext_0030`
 
 ## Active Configuration
 
@@ -28,17 +28,17 @@ Last processed slot: `share_ext_0025`
 ## Portfolio Snapshot
 
 - Cash: `$1,421.80`
-- Equity: `$144,485.80`
+- Equity: `$134,630.80`
 - Realized PnL: `$127,691.80`
-- Unrealized PnL: `$6,794.00`
+- Unrealized PnL: `$-3,061.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   EXC     option         option  EXC261218C00045000       2026-10-23                   2    657     72270.0                 78840.0          1.1           1.20       44.42         44.54          bid_ask_mid                        1.2                bid_ask_mid                    True          6570.0                   9.09          80.0               15              0.97         20.09           24.54                  20.91                 278.0           48.0               0.09                      ok
   TEAM     option         option TEAM261218C00230000       2026-10-26                   1     32     64000.0                 64224.0         20.0          20.07      220.60        223.42     last_price_stale                        NaN                unavailable                   False           224.0                   0.35         100.0               12              3.08         70.90            1.56                  47.89                 302.0           39.0               0.10                      ok
+   EXC     option         option  EXC261218C00045000       2026-10-23                   2    657     72270.0                 68985.0          1.1           1.05       44.42         44.54     last_price_stale                        NaN                unavailable                   False         -3285.0                  -4.55          80.0               15              0.97         20.09            0.78                  20.91                 278.0           48.0               0.09                      ok
 ```
 
 ## Today's Closed Trades (2026-10-27)
@@ -72,27 +72,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261027002504)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261027003003)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261027002504)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261027003003)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261027002504)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261027003003)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261027002504)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261027003003)
 
 </details>
