@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-27 13:35:04 EDT`
+Latest checkpoint (ET): `2026-10-27 13:40:04 EDT`
 Last processed slot: `manage_1330`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `manage_1330`
 ## Portfolio Snapshot
 
 - Cash: `$1,421.80`
-- Equity: `$133,009.30`
+- Equity: `$133,489.30`
 - Realized PnL: `$127,691.80`
-- Unrealized PnL: `$-4,682.50`
+- Unrealized PnL: `$-4,202.50`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   EXC     option         option  EXC261218C00045000       2026-10-23                   2    657     72270.0                 70627.5          1.1           1.08       44.42         44.28          bid_ask_mid                       1.08                bid_ask_mid                    True         -1642.5                  -2.27          80.0               15              0.97         20.09           24.12                  20.91                 278.0           48.0               0.09                      ok
-  TEAM     option         option TEAM261218C00230000       2026-10-26                   1     32     64000.0                 60960.0         20.0          19.05      220.60        219.80          bid_ask_mid                      19.05                bid_ask_mid                    True         -3040.0                  -4.75         100.0               12              3.08         70.90           69.66                  47.89                 302.0           39.0               0.10                      ok
+   EXC     option         option  EXC261218C00045000       2026-10-23                   2    657     72270.0                 70627.5          1.1           1.08       44.42         44.26          bid_ask_mid                       1.08                bid_ask_mid                    True         -1642.5                  -2.27          80.0               15              0.97         20.09           24.27                  20.91                 278.0           48.0               0.09                      ok
+  TEAM     option         option TEAM261218C00230000       2026-10-26                   1     32     64000.0                 61440.0         20.0          19.20      220.60        219.78          bid_ask_mid                      19.20                bid_ask_mid                    True         -2560.0                  -4.00         100.0               12              3.08         70.90           70.31                  47.89                 302.0           39.0               0.10                      ok
 ```
 
 ## Today's Closed Trades (2026-10-27)
@@ -48,19 +48,19 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
- CMCSA           90.91               11            0.96              0.15         21.99                26.02         0.579          pass              0.412             18.8                           0.332                4.59              0.570                  ok            True                  False
-   ROP           85.71               21            1.18              3.66        440.08                39.00         0.546          pass              0.443             54.1                           0.622               18.46              2.029                  ok            True                  False
-  COST           80.00               10            1.33              9.33       1001.16                16.36         0.541          pass              0.078              8.0                           0.227                3.90              0.383                  ok            True                  False
-  TEAM          100.00               27            1.62              2.53        222.33                43.78         0.524          pass              0.648             27.5                           0.268                5.65              0.871                  ok            True                  False
-  ORLY          100.00               13            1.48              0.95         90.64                20.34         0.524          pass              0.521             16.1                           0.336                4.27              0.468                  ok            True                  False
-   EXC           84.62               26            0.58              0.18         44.46                21.50         0.512          pass              0.383             34.2                           0.418                4.58              0.557                  ok            True                  False
-  MDLZ           87.50                8            1.32              0.58         62.72                25.86         0.593          pass              0.271              4.0                           0.245                1.04              0.131                  ok           False                  False
-   KHC           87.50                8            2.20              0.38         24.57                34.80         0.571          pass              0.270              4.4                           0.224                7.82              0.944                  ok           False                  False
-   PEP           50.00                2            1.89              1.79        134.69                25.06         0.548          pass              0.063              2.9                           0.150                4.40              0.625                  ok           False                  False
-   WMT           76.92               13            1.16              0.98        119.87                23.89         0.547          pass              0.101              8.7                           0.277                5.89              0.462                  ok           False                  False
-   ADP          100.00                1            2.85              6.01        298.54                25.17         0.543          pass              0.470              5.2                           0.329                6.03              0.837                  ok           False                  False
-   KDP           96.15               26            0.47              0.12         34.94                25.67         0.534          pass              0.790             76.8                           0.730                6.63              0.561                  ok           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+ CMCSA           91.67               12            0.88              0.14         21.99                26.02         0.578          pass              0.457             25.0                           0.410                4.67              0.573                      ok            True                  False
+   ROP           86.96               23            1.17              3.62        440.10                39.00         0.536          pass              0.490             54.6                           0.638               18.48              2.029                      ok            True                  False
+  TEAM          100.00               27            1.63              2.54        222.32                43.78         0.523          pass              0.647             27.1                           0.283                5.64              0.871                      ok            True                  False
+   EXC           88.00               25            0.64              0.20         44.45                21.50         0.519          pass              0.449             27.8                           0.336                4.52              0.555                      ok            True                  False
+  ORLY           93.33               15            1.38              0.88         90.67                20.34         0.510          pass              0.505             21.7                           0.355                4.37              0.472                      ok            True                  False
+  TMUS           87.80               41            0.10              0.11        146.88                64.06         0.632          pass              0.742             90.3                           0.566               -4.52             -0.675 downtrend_blocked_slope           False                  False
+  MDLZ           87.50                8            1.25              0.55         62.73                25.86         0.596          pass              0.286              8.7                           0.280                1.11              0.134                      ok           False                  False
+   KHC           87.50                8            2.24              0.39         24.56                34.80         0.568          pass              0.265              2.6                           0.183                7.78              0.943                      ok           False                  False
+   PEP           50.00                2            1.85              1.76        134.71                25.06         0.550          pass              0.069              4.6                           0.195                4.44              0.627                      ok           False                  False
+   WMT           76.92               13            1.12              0.94        119.89                23.89         0.549          pass              0.110             11.8                           0.332                5.93              0.463                      ok           False                  False
+  COST           77.78                9            1.34              9.43       1001.12                16.36         0.544          pass              0.075              7.0                           0.217                3.88              0.383                      ok           False                  False
+   ADP          100.00                1            2.85              6.01        298.55                25.17         0.543          pass              0.470              5.3                           0.332                6.03              0.837                      ok           False                  False
 ```
 
 ## Recent Events
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261027133504)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261027134004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261027133504)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261027134004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261027133504)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261027134004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261027133504)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261027134004)
 
 </details>
