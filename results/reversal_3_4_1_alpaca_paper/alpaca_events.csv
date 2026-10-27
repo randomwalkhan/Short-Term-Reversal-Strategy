@@ -9516,3 +9516,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-26T14:56:51.511795-04:00,2026-10-26,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KHC""}"
 2026-10-26T15:03:09.000229-04:00,2026-10-26,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""CTSH""}"
 2026-10-26T15:09:27.202158-04:00,2026-10-26,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""CTSH""}"
+2026-10-27T10:02:04.301300-04:00,2026-10-27,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
