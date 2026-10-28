@@ -1,7 +1,7 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 68764.30035667421,
+  "cash": 3289.300356674212,
   "positions": [
     {
       "position_id": "TEAM_20261026T145006",
@@ -31,6 +31,36 @@
       "option_open_interest": 302.0,
       "option_volume": 39.0,
       "option_spread_pct": 0.1,
+      "option_liquidity_status": "ok"
+    },
+    {
+      "position_id": "CSCO_20261028T145001",
+      "ticker": "CSCO",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "CSCO261218C00110000",
+      "expiry": "2026-12-18",
+      "strike": 110.0,
+      "entry_timestamp": "2026-10-28T14:50:01.756543-04:00",
+      "entry_trade_date": "2026-10-28",
+      "entry_slot": "entry_1500",
+      "entry_spot": 110.47000122070312,
+      "entry_option_price": 7.275,
+      "entry_bid": 7.2,
+      "entry_ask": 7.35,
+      "entry_iv_pct": 42.920492675781254,
+      "contracts": 90,
+      "allocated_cash": 65475.0,
+      "success_rate": 80.77,
+      "matched_signals": 26,
+      "current_drop_pct": 0.82,
+      "rolling_sigma_20d_pct": 35.12,
+      "planned_tp_day1": 8.366249999999999,
+      "planned_tp_day2": 8.366249999999999,
+      "planned_stop": 6.5475,
+      "option_open_interest": 4095.0,
+      "option_volume": 1198.0,
+      "option_spread_pct": 0.020618556701030855,
       "option_liquidity_status": "ok"
     }
   ],
@@ -5460,7 +5490,9 @@
     "2026-10-27": [
       "entry_1500"
     ],
-    "2026-10-28": []
+    "2026-10-28": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
