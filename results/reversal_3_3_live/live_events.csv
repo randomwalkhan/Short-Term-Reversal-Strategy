@@ -7118,3 +7118,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-27T15:10:03.998420-04:00,2026-10-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-27T15:50:06.147210-04:00,2026-10-27,manage_1600,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""EXC261218C00045000"", ""fill_price"": 1.025, ""pnl"": -4927.5, ""reason"": ""time_exit_at_4pm_scan"", ""return_pct"": -6.82, ""ticker"": ""EXC""}"
 2026-10-28T00:00:04.218641-04:00,2026-10-28,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
+2026-10-28T10:00:04.548513-04:00,2026-10-28,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
