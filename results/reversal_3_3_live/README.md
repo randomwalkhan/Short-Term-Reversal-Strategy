@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-28 15:00:05 EDT`
+Latest checkpoint (ET): `2026-10-28 15:05:05 EDT`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -28,17 +28,17 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$3,289.30`
-- Equity: `$133,664.30`
+- Equity: `$132,834.30`
 - Realized PnL: `$122,764.30`
-- Unrealized PnL: `$900.00`
+- Unrealized PnL: `$70.00`
 - Open positions: `2`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  CSCO     option         option CSCO261218C00110000       2026-10-28                   0     90     65475.0                 66375.0         7.28           7.38      110.47        110.36          bid_ask_mid                       7.38                bid_ask_mid                    True           900.0                   1.37         80.77               26              0.82         42.92           44.19                  35.12                4095.0         1198.0               0.02                      ok
-  TEAM     option         option TEAM261218C00230000       2026-10-26                   2     32     64000.0                 64000.0        20.00          20.00      220.60        221.39          bid_ask_mid                      20.00                bid_ask_mid                    True             0.0                   0.00        100.00               12              3.08         70.90           70.97                  47.89                 302.0           39.0               0.10                      ok
+  CSCO     option         option CSCO261218C00110000       2026-10-28                   0     90     65475.0                 66825.0         7.28           7.42      110.47        110.36          bid_ask_mid                       7.42                bid_ask_mid                    True          1350.0                   2.06         80.77               26              0.82         42.92           44.37                  35.12                4095.0         1198.0               0.02                      ok
+  TEAM     option         option TEAM261218C00230000       2026-10-26                   2     32     64000.0                 62720.0        20.00          19.60      220.60        220.90          bid_ask_mid                      19.60                bid_ask_mid                    True         -1280.0                  -2.00        100.00               12              3.08         70.90           70.56                  47.89                 302.0           39.0               0.10                      ok
 ```
 
 ## Today's Closed Trades (2026-10-28)
@@ -49,24 +49,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MSTR           89.74               39            0.63              0.62        141.13                70.33         0.593          pass              0.715             67.5                           0.544               -1.91             -0.126                                 ok            True                  False
-   KHC           81.25               16            1.64              0.28         23.94                36.33         0.555          pass              0.133              1.3                           0.077                4.25              0.598                                 ok            True                  False
-  CTSH           94.59               37            0.63              0.29         66.09                50.77         0.528          pass              0.788             55.3                           0.285                5.33              0.565                                 ok            True                  False
-  ORLY           94.44               18            1.24              0.78         89.49                20.98         0.524          pass              0.511              6.7                           0.217                2.33              0.249                                 ok            True                  False
-    ZS           91.18               34            1.27              2.32        259.16                56.99         0.519          pass              0.569             19.7                           0.255               16.33              2.337                                 ok            True                  False
-  MCHP           93.33               30            1.26              0.71         79.87                42.57         0.504          pass              0.697             52.7                           0.506               11.10              0.806                                 ok            True                  False
-  CRWD           85.00               40            1.02              1.91        267.20                57.68         0.501          pass              0.492             36.2                           0.422                6.42              1.262                                 ok            True                  False
-  TMUS           81.48               27            0.75              0.77        146.50                63.84         0.656          pass              0.435             72.1                           0.438               -7.64             -0.931            downtrend_blocked_slope           False                  False
-  MDLZ           87.50                8            1.32              0.57         62.10                25.51         0.595          pass              0.267              2.4                           0.157               -1.66             -0.126           downtrend_blocked_streak           False                  False
-   CEG           85.71               42            0.24              0.44        258.79                65.80         0.588          pass              0.670             86.2                           0.651               -7.58             -0.855 downtrend_blocked_slope_and_streak           False                  False
- CMCSA           87.50                8            1.42              0.22         21.75                26.07         0.569          pass              0.306             16.2                           0.252                2.28              0.217                                 ok           False                  False
-  MPWR           76.32               38            0.42              3.60       1210.35                59.51         0.562          pass              0.476             77.6                           0.612               -2.93             -0.579            downtrend_blocked_slope           False                  False
+   KHC           83.33               18            1.50              0.25         23.95                36.33         0.553          pass              0.228             10.0                           0.135                4.41              0.605                                 ok            True                  False
+  CSCO           80.77               26            0.83              0.64        111.10                35.12         0.533          pass              0.338             52.6                           0.642               -2.80             -0.023                                 ok            True                  False
+    ZS           91.18               34            1.24              2.26        259.18                56.99         0.520          pass              0.574             21.5                           0.245               16.36              2.339                                 ok            True                  False
+  CRWD           85.00               40            0.94              1.76        267.27                57.68         0.506          pass              0.508             41.5                           0.453                6.51              1.266                                 ok            True                  False
+  MCHP           93.33               30            1.26              0.71         79.87                42.57         0.504          pass              0.697             52.7                           0.473               11.10              0.806                                 ok            True                  False
+   CSX           82.76               29            0.67              0.25         52.16                27.86         0.504          pass              0.315             21.3                           0.287                7.54              0.905                                 ok            True                  False
+  TMUS           81.48               27            0.76              0.78        146.49                63.84         0.655          pass              0.433             71.6                           0.466               -7.66             -0.932            downtrend_blocked_slope           False                  False
+  MSTR           90.00               40            0.36              0.36        141.25                70.33         0.603          pass              0.771             81.4                           0.595               -1.64             -0.114                                 ok           False                  False
+  MDLZ           87.50                8            1.18              0.51         62.13                25.51         0.603          pass              0.298             12.5                           0.182               -1.53             -0.120           downtrend_blocked_streak           False                  False
+   CEG           85.71               42            0.19              0.34        258.83                65.80         0.591          pass              0.679             89.2                           0.632               -7.53             -0.852 downtrend_blocked_slope_and_streak           False                  False
+ CMCSA           88.89                9            1.28              0.20         21.76                26.07         0.572          pass              0.367             24.3                           0.283                2.42              0.223                                 ok           False                  False
+  MPWR           76.92               39            0.38              3.24       1210.50                59.51         0.559          pass              0.489             79.8                           0.572               -2.88             -0.577            downtrend_blocked_slope           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  detail
+2026-10-28T15:05:05.708724-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-10-28T15:00:05.530535-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-10-28T14:55:06.400966-04:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-10-28T14:50:01.756543-04:00       entry_1500                   entry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 {"allocated_cash": 65475.0, "asset_type": "option", "contract_symbol": "CSCO261218C00110000", "contracts": 90, "early_entry_score": 0.34, "entry_mode": "regular", "entry_option_price": 7.275, "execution_mode": "option", "matched_signals": 26, "option_liquidity_status": "ok", "option_open_interest": 4095.0, "option_spread_pct": 2.06, "option_volume": 1198.0, "success_rate": 80.77, "ticker": "CSCO", "timing_score": 0.533}
@@ -76,7 +77,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-10-28T11:55:06.476667-04:00 early_entry_1155      early_entry_shadow {"contract_symbol": "ALNY261218C00230000", "current_drop_pct": 0.51, "early_entry_score": 0.726, "early_reclaim_pct": 83.1, "entry_ask": 19.0, "entry_bid": 15.7, "entry_mode": "early", "entry_option_price": 17.35, "hypothetical_budget": 34382.15, "hypothetical_contracts": 19, "matched_signals": 44, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 69.0, "option_spread_pct": 19.02, "option_volume": 3.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.776, "shadow_only": true, "success_rate": 88.64, "ticker": "ALNY", "timing_score": 0.461, "top_candidates": [{"current_drop_pct": 0.51, "early_entry_score": 0.726, "early_reclaim_pct": 83.1, "matched_signals": 44, "recovery_stability_score": 0.776, "success_rate": 88.64, "ticker": "ALNY", "timing_score": 0.461, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
 2026-10-28T11:50:06.101583-04:00 early_entry_1150      early_entry_shadow   {"contract_symbol": "ALNY261218C00230000", "current_drop_pct": 0.65, "early_entry_score": 0.697, "early_reclaim_pct": 78.4, "entry_ask": 19.0, "entry_bid": 15.7, "entry_mode": "early", "entry_option_price": 17.35, "hypothetical_budget": 34382.15, "hypothetical_contracts": 19, "matched_signals": 42, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 69.0, "option_spread_pct": 19.02, "option_volume": 3.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.755, "shadow_only": true, "success_rate": 88.1, "ticker": "ALNY", "timing_score": 0.465, "top_candidates": [{"current_drop_pct": 0.65, "early_entry_score": 0.697, "early_reclaim_pct": 78.4, "matched_signals": 42, "recovery_stability_score": 0.755, "success_rate": 88.1, "ticker": "ALNY", "timing_score": 0.465, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
 2026-10-28T11:45:03.424860-04:00 early_entry_1145      early_entry_shadow  {"contract_symbol": "ALNY261218C00230000", "current_drop_pct": 0.57, "early_entry_score": 0.713, "early_reclaim_pct": 81.0, "entry_ask": 18.3, "entry_bid": 15.7, "entry_mode": "early", "entry_option_price": 17.0, "hypothetical_budget": 34382.15, "hypothetical_contracts": 20, "matched_signals": 43, "option_liquidity_status": "low_open_interest,low_volume,wide_spread", "option_open_interest": 69.0, "option_spread_pct": 15.29, "option_volume": 3.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.769, "shadow_only": true, "success_rate": 88.37, "ticker": "ALNY", "timing_score": 0.463, "top_candidates": [{"current_drop_pct": 0.57, "early_entry_score": 0.713, "early_reclaim_pct": 81.0, "matched_signals": 43, "recovery_stability_score": 0.769, "success_rate": 88.37, "ticker": "ALNY", "timing_score": 0.463, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
-2026-10-28T11:40:06.443481-04:00 early_entry_1140      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -86,27 +86,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261028150005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261028150505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261028150005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261028150505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261028150005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261028150505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261028150005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261028150505)
 
 </details>
