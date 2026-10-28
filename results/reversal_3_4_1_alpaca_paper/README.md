@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-28 15:36:58 EDT`
-Last slot: `manage_1530`
+Latest checkpoint (ET): `2026-10-28 15:42:02 EDT`
+Last slot: `manual`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$78,415.62`
-- Portfolio value: `$83,125.62`
+- Portfolio value: `$83,080.62`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1530`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  MSTR   open    regular MSTR261218C00140000          3                15.5                15.675          bid_ask_mid                     15.675                    True          4702.5            52.5               1.129032                   0
+  MSTR   open    regular MSTR261218C00140000          3                15.5                 15.55          bid_ask_mid                      15.55                    True          4665.0            15.0               0.322581                   0
 ```
 
 ## Closed Trades
