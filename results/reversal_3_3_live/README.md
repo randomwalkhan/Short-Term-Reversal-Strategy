@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-29 12:10:05 EDT`
-Last processed slot: `manage_1200`
+Latest checkpoint (ET): `2026-10-29 12:15:05 EDT`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -48,18 +48,18 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MSTR           89.19               37            0.66              0.68        144.87                71.12         0.594          pass              0.738             84.6                           0.760               -4.69              0.020                                 ok            True                   True
-  UPRO           82.61               23            1.24              1.31        150.58                30.20         0.517          pass              0.322             38.1                           0.479               -1.48             -0.009                                 ok            True                  False
-  ADBE           86.21               29            1.28              2.24        248.80                41.65         0.509          pass              0.533             63.4                           0.706               -2.03              0.032                                 ok            True                  False
-  SOXL           72.00               25            3.68              2.76        106.17               137.18         0.676          pass              0.351             61.1                           0.574               -3.68              0.063                                 ok           False                  False
-  MPWR           72.73               33            0.73              6.17       1208.58                59.53         0.569          pass              0.454             81.4                           0.747               -3.75             -0.495            downtrend_blocked_slope           False                  False
-   CSX           70.00               10            1.33              0.48         51.77                27.65         0.561          pass              0.149             31.0                           0.282                5.34              0.876                                 ok           False                  False
-  CSCO           77.27               22            1.02              0.79        109.95                35.33         0.544          pass              0.228             31.3                           0.474               -0.63              0.243                                 ok           False                  False
-  MELI           79.31               29            1.34             15.71       1666.36                48.85         0.538          pass              0.334             51.3                           0.498              -11.11             -1.355 downtrend_blocked_slope_and_streak           False                  False
-  NVDA           75.00               24            0.77              1.16        214.88                30.56         0.537          pass              0.296             49.7                           0.410               -1.62             -0.092                                 ok           False                  False
-  AVGO           62.50               16            2.00              4.93        349.70                43.15         0.532          pass              0.231             45.9                           0.565                0.13              0.242                                 ok           False                  False
-   ADP           93.33               30            0.33              0.66        285.09                29.33         0.518          pass              0.683             47.5                           0.509               -0.43              0.074                                 ok           False                  False
-   ROP           89.74               39            0.28              0.87        440.29                39.09         0.512          pass              0.718             71.3                           0.581               14.90              1.761                                 ok           False                  False
+  MSTR           91.18               34            1.00              1.01        144.73                71.12         0.595          pass              0.749             77.0                           0.694               -5.01              0.005                                 ok            True                   True
+  UPRO           85.00               20            1.32              1.39        150.54                30.20         0.533          pass              0.356             34.2                           0.431               -1.56             -0.013                                 ok            True                  False
+  ADBE           86.21               29            1.37              2.39        248.74                41.65         0.504          pass              0.526             61.0                           0.707               -2.11              0.028                                 ok            True                  False
+  SOXL           70.83               24            4.32              3.25        105.96               137.18         0.645          pass              0.321             54.3                           0.488               -4.32              0.033                                 ok           False                  False
+   CSX           72.73               11            1.15              0.42         51.80                27.65         0.567          pass              0.183             40.0                           0.379                5.52              0.884                                 ok           False                  False
+  MPWR           68.97               29            1.14              9.65       1207.09                59.53         0.566          pass              0.396             70.9                           0.640               -4.14             -0.514            downtrend_blocked_slope           False                  False
+  CSCO           76.19               21            1.12              0.86        109.92                35.33         0.544          pass              0.203             25.2                           0.416               -0.72              0.239                                 ok           False                  False
+  NVDA           73.91               23            0.84              1.27        214.84                30.56         0.538          pass              0.276             45.2                           0.360               -1.68             -0.096                                 ok           False                  False
+  AVGO           64.29               14            2.15              5.30        349.54                43.15         0.538          pass              0.206             41.8                           0.393               -0.03              0.235                                 ok           False                  False
+  MELI           78.57               28            1.58             18.50       1665.16                48.85         0.530          pass              0.301             42.6                           0.318              -11.33             -1.366 downtrend_blocked_slope_and_streak           False                  False
+   ADP           93.33               30            0.35              0.70        285.07                29.33         0.517          pass              0.672             43.8                           0.461               -0.45              0.073                                 ok           False                  False
+  DRAM           64.29               14            3.71              1.41         53.52                63.50         0.512          pass              0.150             24.2                           0.288                5.64              0.909                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261029121005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261029121505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261029121005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261029121505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261029121005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261029121505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261029121005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261029121505)
 
 </details>
