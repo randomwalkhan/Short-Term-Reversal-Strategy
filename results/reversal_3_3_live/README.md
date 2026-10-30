@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-30 09:25:05 EDT`
+Latest checkpoint (ET): `2026-10-30 09:30:04 EDT`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -37,7 +37,7 @@ Last processed slot: `manage_0930`
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  MSTR     option         option MSTR261218C00140000       2026-10-29                   1     41     61602.5                 63755.0        15.02          15.55      141.06        131.71     last_price_stale                        NaN                unavailable                   False          2152.5                   3.49         86.96               23              2.82         69.46             0.0                  71.12                1665.0           96.0               0.02                      ok
+  MSTR     option         option MSTR261218C00140000       2026-10-29                   1     41     61602.5                 63755.0        15.02          15.55      141.06        129.19     last_price_stale                        NaN                unavailable                   False          2152.5                   3.49         86.96               23              2.82         69.46            6.25                  71.12                1665.0           96.0               0.02                      ok
 ```
 
 ## Today's Closed Trades (2026-10-30)
@@ -46,7 +46,21 @@ _None_
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+   ADI           80.00               15            2.02              6.13        430.65                36.67         0.529          pass              0.086              0.0                           0.166                7.35              1.007                                 ok            True                  False
+  MSFT          100.00               19            1.32              4.89        528.04                19.58         0.507          pass              0.511              0.0                           0.210               -1.12             -0.064                                 ok            True                  False
+  NXPI           93.75               16            2.02              3.75        264.39                41.25         0.504          pass              0.527             23.4                           0.607               13.65              1.377                                 ok            True                  False
+  ALNY           86.49               37            0.86              1.05        173.55               108.34         0.700          pass              0.423              0.0                           0.223              -25.59             -2.375            downtrend_blocked_slope           False                  False
+  FTNT           90.00               30            1.65              1.61        138.41                91.61         0.661          pass              0.525             19.5                           0.246              -19.11             -1.512            downtrend_blocked_slope           False                  False
+ GOOGL           80.00               30            0.86              1.70        283.09                51.94         0.610          pass              0.298             34.7                           0.448              -17.38             -1.795 downtrend_blocked_slope_and_streak           False                  False
+  GOOG           80.00               30            0.84              1.66        281.61                50.42         0.604          pass              0.305             37.1                           0.493              -16.91             -1.738 downtrend_blocked_slope_and_streak           False                  False
+  META           78.26               23            1.11              4.86        622.44                38.13         0.545          pass              0.306             54.8                           0.449              -12.94             -1.654 downtrend_blocked_slope_and_streak           False                  False
+  TEAM          100.00               30            1.50              2.15        203.18                50.04         0.544          pass              0.658             23.2                           0.314               -3.27             -0.397            downtrend_blocked_slope           False                  False
+    ZS           93.33               45            0.00              0.01        247.82                59.82         0.532          pass              0.908             99.8                           0.734               19.50              2.145                                 ok           False                  False
+  MELI           75.76               33            1.21             14.09       1654.09                48.11         0.532          pass              0.266             19.9                           0.284              -10.58             -1.460 downtrend_blocked_slope_and_streak           False                  False
+  MPWR           60.87               23            1.84             15.46       1192.19                59.27         0.531          pass              0.246             35.3                           0.297               -2.82             -0.480            downtrend_blocked_slope           False                  False
+```
 
 ## Recent Events
 
@@ -71,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261030092505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261030093004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261030092505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261030093004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261030092505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261030093004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261030092505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261030093004)
 
 </details>
