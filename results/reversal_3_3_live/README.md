@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-10-30 11:30:05 EDT`
+Latest checkpoint (ET): `2026-10-30 11:35:04 EDT`
 Last processed slot: `manage_1130`
 
 ## Active Configuration
@@ -47,25 +47,26 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  FAST           93.33               15            0.92              0.34         52.40                21.92         0.547          pass              0.469              8.5                           0.173                2.57              0.207                                 ok            True                  False
-  NXPI           92.31               13            2.11              3.92        264.32                41.25         0.509          pass              0.507             36.0                           0.409               13.55              1.372                                 ok            True                  False
-  MSFT          100.00               14            1.58              5.88        527.62                19.58         0.505          pass              0.618             46.8                           0.373               -1.38             -0.076                                 ok            True                  False
-  FTNT           82.35               17            2.57              2.50        138.03                91.61         0.665          pass              0.241             21.5                           0.396              -19.87             -1.555            downtrend_blocked_slope           False                  False
-  ALNY           76.47               17            2.63              3.20        172.63               108.34         0.656          pass              0.212             33.1                           0.289              -26.92             -2.457            downtrend_blocked_slope           False                  False
- GOOGL           83.78               37            0.47              0.94        283.42                51.94         0.590          pass              0.556             72.2                           0.747              -17.06             -1.777 downtrend_blocked_slope_and_streak           False                  False
-   CEG           85.71               42            0.14              0.25        264.47                64.38         0.589          pass              0.698             95.5                           0.569               -2.63             -0.201                                 ok           False                  False
-  GOOG           84.62               39            0.40              0.78        281.98                50.42         0.576          pass              0.603             76.2                           0.766              -16.54             -1.718 downtrend_blocked_slope_and_streak           False                  False
-   CSX           72.73               11            1.18              0.43         52.06                27.59         0.553          pass              0.162             33.2                           0.432                6.05              0.930                                 ok           False                  False
-  ISRG           87.50                8            1.98              6.22        446.09                27.40         0.537          pass              0.301             15.7                           0.242                3.09              0.395                                 ok           False                  False
-  MELI           76.67               30            1.38             16.02       1653.26                48.11         0.527          pass              0.349             54.3                           0.661              -10.73             -1.468 downtrend_blocked_slope_and_streak           False                  False
-  META           78.79               33            0.61              2.67        623.38                38.13         0.509          pass              0.430             75.2                           0.452              -12.49             -1.631 downtrend_blocked_slope_and_streak           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score   timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
+  MSFT          100.00               14            1.46              5.41        527.82                19.58         0.512            pass              0.631             51.0                           0.542               -1.26             -0.071                                 ok            True                  False
+  NXPI           92.31               13            2.27              4.23        264.19                41.25         0.500 below_threshold              0.491             30.9                           0.365               13.35              1.365                                 ok            True                  False
+  FTNT           82.35               17            2.70              2.63        137.97                91.61         0.658            pass              0.227             17.4                           0.342              -19.98             -1.561            downtrend_blocked_slope           False                  False
+  ALNY           73.33               15            2.84              3.46        172.52               108.34         0.652            pass              0.182             27.8                           0.317              -27.08             -2.466            downtrend_blocked_slope           False                  False
+ GOOGL           84.62               39            0.35              0.69        283.52                51.94         0.586            pass              0.613             79.5                           0.770              -16.96             -1.772 downtrend_blocked_slope_and_streak           False                  False
+   CEG           86.05               43            0.11              0.20        264.49                64.38         0.585            pass              0.709             96.3                           0.559               -2.61             -0.200                                 ok           False                  False
+  GOOG           85.37               41            0.28              0.55        282.09                50.42         0.571            pass              0.650             83.4                           0.794              -16.43             -1.712 downtrend_blocked_slope_and_streak           False                  False
+  FAST           88.89                9            1.12              0.41         52.37                21.92         0.567            pass              0.300              2.0                           0.084                2.36              0.198                                 ok           False                  False
+   CSX           70.00               10            1.36              0.50         52.03                27.59         0.547            pass              0.124             23.1                           0.370                5.86              0.922                                 ok           False                  False
+  ISRG           87.50                8            2.14              6.72        445.88                27.40         0.529            pass              0.280              9.0                           0.201                2.92              0.387                                 ok           False                  False
+  MELI           75.76               33            1.20             13.95       1654.15                48.11         0.517            pass              0.386             60.2                           0.630              -10.57             -1.459 downtrend_blocked_slope_and_streak           False                  False
+  META           81.08               37            0.26              1.13        624.04                38.13         0.507            pass              0.528             89.5                           0.595              -12.18             -1.615 downtrend_blocked_slope_and_streak           False                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                detail
+2026-10-30T11:35:04.895794-04:00 early_entry_1135 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T11:30:05.799923-04:00 early_entry_1130 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T11:25:03.898317-04:00 early_entry_1125 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T11:20:07.033470-04:00 early_entry_1120 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-10-30T11:00:06.842901-04:00 early_entry_1100 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T10:55:02.033173-04:00 early_entry_1055 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T10:50:05.964469-04:00 early_entry_1050 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-30T10:45:04.211437-04:00 early_entry_1045 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261030113005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261030113504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261030113005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261030113504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261030113005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261030113504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261030113005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261030113504)
 
 </details>
