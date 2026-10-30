@@ -1,21 +1,21 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-30 14:52:12 EDT`
+Latest checkpoint (ET): `2026-10-30 14:58:24 EDT`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$77,115.18`
-- Portfolio value: `$80,855.18`
+- Portfolio value: `$80,955.18`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
-   CEG entry_submitted    regular CEG261218C00260000          2               19.75                   NaN             NaN                    NaN
+ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+   CEG   open    regular CEG261218C00260000          2                19.7                 19.65          bid_ask_mid                      19.65                    True          3930.0           -10.0              -0.253807                   0
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-10-30T14:58:24.426355-04:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "CEG261218C00260000", "contracts": 2, "filled_price": 19.7, "ticker": "CEG"}
 2026-10-30T14:52:12.691492-04:00       entry_1500 entry_order_submitted {"alpaca_order_id": "a6f747c1-2804-48a6-99dc-e2a8fbce4aa9", "contract_symbol": "CEG261218C00260000", "contracts": 2, "entry_mode": "regular", "limit_price": "20.20", "ticker": "CEG"}
 2026-10-30T11:59:23.959526-04:00 early_entry_1155    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T11:53:14.421258-04:00 early_entry_1150    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-30T10:26:11.990274-04:00 early_entry_1025    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T10:19:44.872781-04:00 early_entry_1015    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T10:13:37.964405-04:00 early_entry_1010    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-10-30T10:07:30.518608-04:00 early_entry_1005    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
