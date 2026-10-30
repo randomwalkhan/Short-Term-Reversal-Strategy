@@ -9584,3 +9584,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-29T11:57:58.772878-04:00,2026-10-29,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-29T14:51:20.687642-04:00,2026-10-29,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""4edc8acd-9780-47d6-8286-603673591db1"", ""contract_symbol"": ""MSTR261218C00140000"", ""contracts"": 3, ""entry_mode"": ""regular"", ""limit_price"": ""15.20"", ""ticker"": ""MSTR""}"
 2026-10-29T16:03:25.781402-04:00,2026-10-29,entry_1500,entry_not_filled,"{""contract_symbol"": ""MSTR261218C00140000"", ""status"": ""expired"", ""ticker"": ""MSTR""}"
+2026-10-30T09:51:17.073464-04:00,2026-10-30,manage_1000,exit_order_submitted,"{""alpaca_order_id"": ""d13e023e-a7fc-4f28-b459-0d8e4a8556c2"", ""contract_symbol"": ""MSTR261218C00140000"", ""limit_price"": ""7.80"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""MSTR""}"
