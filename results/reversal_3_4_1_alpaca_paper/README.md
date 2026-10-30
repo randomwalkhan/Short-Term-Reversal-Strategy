@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-10-30 11:40:52 EDT`
-Last slot: `manage_1130`
+Latest checkpoint (ET): `2026-10-30 11:47:04 EDT`
+Last slot: `early_entry_1145`
 
 ## Alpaca Paper Account
 
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                            detail
+2026-10-30T11:47:04.657676-04:00 early_entry_1145   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T11:40:52.776981-04:00 early_entry_1140   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T11:34:32.922126-04:00 early_entry_1130   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T11:28:15.841704-04:00 early_entry_1125   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-10-30T10:01:24.574374-04:00 early_entry_1000   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-10-30T09:56:21.081873-04:00             exit          exit_filled                                                {"contract_symbol": "MSTR261218C00140000", "exit_price": 8.8, "pnl": -2010.0, "reason": "stop_loss_hit_at_scan", "ticker": "MSTR"}
 2026-10-30T09:51:17.073464-04:00      manage_1000 exit_order_submitted {"alpaca_order_id": "d13e023e-a7fc-4f28-b459-0d8e4a8556c2", "contract_symbol": "MSTR261218C00140000", "limit_price": "7.80", "reason": "stop_loss_hit_at_scan", "ticker": "MSTR"}
-2026-10-29T16:03:25.781402-04:00       entry_1500     entry_not_filled                                                                                                 {"contract_symbol": "MSTR261218C00140000", "status": "expired", "ticker": "MSTR"}
 ```
