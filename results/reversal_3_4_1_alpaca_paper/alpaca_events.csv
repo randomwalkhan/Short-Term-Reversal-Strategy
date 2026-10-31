@@ -9610,3 +9610,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-30T14:58:24.426355-04:00,2026-10-30,entry_1500,entry_filled,"{""contract_symbol"": ""CEG261218C00260000"", ""contracts"": 2, ""filled_price"": 19.7, ""ticker"": ""CEG""}"
 2026-10-31T00:04:55.195031-04:00,2026-10-31,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-10-31T00:09:58.645971-04:00,2026-10-31,share_ext_0005,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-10-31T00:15:02.332405-04:00,2026-10-31,share_ext_0015,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
