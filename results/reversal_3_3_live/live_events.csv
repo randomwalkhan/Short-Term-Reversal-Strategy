@@ -7217,3 +7217,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-30T15:00:07.087528-04:00,2026-10-30,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-30T15:05:04.984730-04:00,2026-10-30,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-10-30T15:10:04.962037-04:00,2026-10-30,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-10-31T00:00:04.978228-04:00,2026-10-31,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
