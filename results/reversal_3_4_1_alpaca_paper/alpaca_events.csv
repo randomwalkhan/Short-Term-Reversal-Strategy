@@ -9608,3 +9608,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-10-30T11:59:23.959526-04:00,2026-10-30,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-10-30T14:52:12.691492-04:00,2026-10-30,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""a6f747c1-2804-48a6-99dc-e2a8fbce4aa9"", ""contract_symbol"": ""CEG261218C00260000"", ""contracts"": 2, ""entry_mode"": ""regular"", ""limit_price"": ""20.20"", ""ticker"": ""CEG""}"
 2026-10-30T14:58:24.426355-04:00,2026-10-30,entry_1500,entry_filled,"{""contract_symbol"": ""CEG261218C00260000"", ""contracts"": 2, ""filled_price"": 19.7, ""ticker"": ""CEG""}"
+2026-10-31T00:04:55.195031-04:00,2026-10-31,share_ext_0000,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
