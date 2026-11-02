@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-02 10:02:48 EST`
+Latest checkpoint (ET): `2026-11-02 10:08:56 EST`
 Last slot: `manage_1000`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$77,115.01`
-- Portfolio value: `$81,455.01`
+- Portfolio value: `$81,515.01`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1000`
 
 ```text
 ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   CEG   open    regular CEG261218C00260000          2                19.7                  21.4          bid_ask_mid                       21.4                    True          4280.0           340.0               8.629442                   1
+   CEG   open    regular CEG261218C00260000          2                19.7                 21.95          bid_ask_mid                      21.95                    True          4390.0           450.0               11.42132                   1
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot         event_type                                                                detail
+2026-11-02T10:08:56.788383-05:00 early_entry_1005 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-02T10:02:48.351988-05:00 early_entry_1000 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-01T23:55:20.243602-05:00   share_ext_2355      market_closed                           {"holiday_name": null, "reason": "weekend"}
 2026-11-01T23:50:16.184834-05:00   share_ext_2350      market_closed                           {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-01T22:39:22.018922-05:00   share_ext_2235      market_closed                           {"holiday_name": null, "reason": "weekend"}
 2026-11-01T22:34:18.111261-05:00   share_ext_2230      market_closed                           {"holiday_name": null, "reason": "weekend"}
 2026-11-01T22:29:14.222361-05:00   share_ext_2225      market_closed                           {"holiday_name": null, "reason": "weekend"}
-2026-11-01T22:24:10.480052-05:00   share_ext_2220      market_closed                           {"holiday_name": null, "reason": "weekend"}
 ```
