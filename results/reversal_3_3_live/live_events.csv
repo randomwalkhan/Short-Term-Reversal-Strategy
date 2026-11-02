@@ -7256,3 +7256,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-02T03:00:04.577568-05:00,2026-11-02,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
 2026-11-02T10:00:05.841210-05:00,2026-11-02,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-02T10:05:01.515738-05:00,2026-11-02,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-11-02T10:10:04.210177-05:00,2026-11-02,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
