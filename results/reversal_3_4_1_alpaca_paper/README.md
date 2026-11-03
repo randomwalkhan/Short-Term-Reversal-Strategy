@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-03 16:06:30 EST`
+Latest checkpoint (ET): `2026-11-03 16:11:36 EST`
 Last slot: `manage_1600`
 
 ## Alpaca Paper Account
@@ -15,7 +15,7 @@ Last slot: `manage_1600`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  MDLZ   open    regular MDLZ261218C00067500         35                 1.4                 1.325          bid_ask_mid                      1.325                    True          4637.5          -262.5              -5.357143                   0
+  MDLZ   open    regular MDLZ261218C00067500         35                 1.4                 1.475          bid_ask_mid                      1.475                    True          5162.5           262.5               5.357143                   0
 ```
 
 ## Closed Trades
