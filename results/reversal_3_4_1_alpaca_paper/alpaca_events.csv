@@ -10173,3 +10173,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-03T10:03:15.286061-05:00,2026-11-03,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-03T10:09:23.997821-05:00,2026-11-03,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-03T10:15:42.705843-05:00,2026-11-03,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-11-03T10:21:53.608322-05:00,2026-11-03,manage_1030,exit_order_submitted,"{""alpaca_order_id"": ""6203e6b7-d9d2-4bcc-bafd-8bb99ca0f507"", ""contract_symbol"": ""CEG261218C00260000"", ""limit_price"": ""19.80"", ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""CEG""}"
+2026-11-03T10:21:53.608322-05:00,2026-11-03,early_entry_1020,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
