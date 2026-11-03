@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-03 00:20:57 EST`
-Last slot: `share_ext_0020`
+Latest checkpoint (ET): `2026-11-03 00:26:00 EST`
+Last slot: `share_ext_0025`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_0020`
 
 ```text
 ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   CEG   open    regular CEG261218C00260000          2                18.2                 17.75          bid_ask_mid                      17.75                    True          3550.0           -90.0              -2.472527                   1
+   CEG   open    regular CEG261218C00260000          2                18.2                 18.15     last_price_stale                        NaN                   False          3630.0           -10.0              -0.274725                   1
 ```
 
 ## Closed Trades
