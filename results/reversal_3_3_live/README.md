@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-03 12:05:06 EST`
+Latest checkpoint (ET): `2026-11-03 12:10:04 EST`
 Last processed slot: `manage_1200`
 
 ## Active Configuration
@@ -48,18 +48,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
- CMCSA           91.67               12            1.20              0.20         23.78                32.70         0.593          pass              0.478             31.3                           0.198                5.47              0.517                                 ok            True                  False
-  MDLZ           90.91               11            1.31              0.61         66.12                28.20         0.588          pass              0.466             36.5                           0.251                2.38              0.249                                 ok            True                  False
-   KHC           81.82               11            1.91              0.33         24.79                33.68         0.562          pass              0.185             24.6                           0.270                2.62              0.150                                 ok            True                  False
-   EXC           83.33               18            0.93              0.30         46.32                22.18         0.527          pass              0.293             32.8                           0.231                6.95              0.725                                 ok            True                  False
-   ADP           88.89               27            0.59              1.23        298.25                27.85         0.520          pass              0.622             73.1                           0.564                1.46             -0.170                                 ok            True                  False
-  FAST           96.30               27            0.51              0.19         52.47                22.62         0.514          pass              0.715             50.0                           0.405                1.73              0.090                                 ok            True                  False
-   XEL           86.96               23            0.63              0.35         79.18                19.18         0.503          pass              0.482             53.3                           0.538                2.80              0.291                                 ok            True                  False
-  TMUS           63.64               11            2.02              2.26        159.18                68.40         0.659          pass              0.151             26.3                           0.296               -0.53              0.100                                 ok           False                  False
-   PEP           77.78                9            1.52              1.49        139.78                26.86         0.572          pass              0.124             22.3                           0.310                3.19              0.218                                 ok           False                  False
-   ROP           70.00               10            1.82              6.10        476.92                37.35         0.565          pass              0.132             25.3                           0.246               18.23              1.672                                 ok           False                  False
-  MRVL           89.19               37            0.99              1.19        170.90                97.23         0.559          pass              0.654             57.7                           0.541              -29.41             -3.246 downtrend_blocked_slope_and_streak           False                  False
-  PAYX           76.00               25            0.26              0.21        115.40                35.36         0.559          pass              0.431             91.7                           0.810                3.33             -0.031                                 ok           False                  False
+ CMCSA           92.31               13            1.07              0.18         23.79                32.70         0.595          pass              0.524             38.7                           0.231                5.61              0.523                                 ok            True                  False
+  MDLZ           90.00               10            1.46              0.68         66.09                28.20         0.584          pass              0.413             29.2                           0.206                2.22              0.242                                 ok            True                  False
+   KHC           81.82               11            1.95              0.34         24.78                33.68         0.560          pass              0.180             23.0                           0.256                2.58              0.148                                 ok            True                  False
+   ROP           85.00               20            1.29              4.33        477.68                37.35         0.550          pass              0.396             47.0                           0.515               18.87              1.696                                 ok            True                  False
+   EXC           81.25               16            0.96              0.31         46.32                22.18         0.535          pass              0.218             30.5                           0.207                6.91              0.723                                 ok            True                  False
+   ADP           88.46               26            0.62              1.30        298.22                27.85         0.523          pass              0.599             71.4                           0.547                1.43             -0.171                                 ok            True                  False
+   XEL           86.96               23            0.61              0.34         79.18                19.18         0.504          pass              0.487             54.7                           0.539                2.82              0.292                                 ok            True                  False
+  TMUS           60.00               10            2.15              2.41        159.12                68.40         0.654          pass              0.130             21.6                           0.252               -0.66              0.094                                 ok           False                  False
+   PEP           75.00                4            1.64              1.61        139.73                26.86         0.592          pass              0.107             15.9                           0.257                3.06              0.213                                 ok           False                  False
+  MRVL           90.24               41            0.40              0.48        171.20                97.23         0.574          pass              0.779             82.9                           0.824              -28.99             -3.219 downtrend_blocked_slope_and_streak           False                  False
+  PAYX           76.92               26            0.18              0.15        115.43                35.36         0.558          pass              0.445             94.1                           0.814                3.40             -0.027                                 ok           False                  False
+   CSX           72.73               11            1.38              0.50         51.41                27.65         0.550          pass              0.113             17.0                           0.251                5.89              0.574                                 ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261103120506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261103121004)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261103120506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261103121004)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261103120506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261103121004)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261103120506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261103121004)
 
 </details>
