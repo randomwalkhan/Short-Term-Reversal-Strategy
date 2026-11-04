@@ -10201,3 +10201,5 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-04T10:21:55.123444-05:00,2026-11-04,early_entry_1020,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-04T10:28:07.692660-05:00,2026-11-04,early_entry_1025,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-04T10:34:21.526391-05:00,2026-11-04,early_entry_1030,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-11-04T10:40:36.232601-05:00,2026-11-04,exit,exit_filled,"{""contract_symbol"": ""MDLZ261218C00067500"", ""exit_price"": 1.65, ""pnl"": 875.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""MDLZ""}"
+2026-11-04T10:40:36.232601-05:00,2026-11-04,early_entry_1040,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
