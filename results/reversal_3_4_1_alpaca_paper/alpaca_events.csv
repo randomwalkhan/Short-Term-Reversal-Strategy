@@ -10218,3 +10218,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-04T14:48:16.202083-05:00,2026-11-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
 2026-11-04T14:54:31.592678-05:00,2026-11-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
 2026-11-04T15:00:44.956318-05:00,2026-11-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
+2026-11-04T15:06:59.121878-05:00,2026-11-04,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
