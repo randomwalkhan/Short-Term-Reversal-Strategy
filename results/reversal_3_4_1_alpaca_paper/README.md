@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-04 11:17:59 EST`
-Last slot: `early_entry_1115`
+Latest checkpoint (ET): `2026-11-04 11:24:11 EST`
+Last slot: `manage_1130`
 
 ## Alpaca Paper Account
 
@@ -45,14 +45,15 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-11-04T11:24:11.465474-05:00 early_entry_1120    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T11:17:59.574084-05:00 early_entry_1115    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T11:11:44.916494-05:00 early_entry_1110    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T11:05:30.978996-05:00 early_entry_1105    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T10:59:16.235894-05:00 early_entry_1055    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T10:53:02.217246-05:00 early_entry_1050    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T10:46:49.042610-05:00 early_entry_1045    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-04T10:40:36.232601-05:00 early_entry_1040    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T10:40:36.232601-05:00             exit           exit_filled                                                 {"contract_symbol": "MDLZ261218C00067500", "exit_price": 1.65, "pnl": 875.0, "reason": "take_profit_day1_hit_at_scan", "ticker": "MDLZ"}
+2026-11-04T10:40:36.232601-05:00 early_entry_1040    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T10:34:21.526391-05:00 early_entry_1030    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T10:28:07.692660-05:00 early_entry_1025    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-04T10:21:55.123444-05:00 early_entry_1020    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-03T14:49:11.630760-05:00       entry_1500 entry_order_submitted {"alpaca_order_id": "31c78866-1452-43d6-bf1c-6f5449305b8d", "contract_symbol": "MDLZ261218C00067500", "contracts": 35, "entry_mode": "regular", "limit_price": "1.40", "ticker": "MDLZ"}
 2026-11-03T12:00:59.557674-05:00 early_entry_1200    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-03T11:54:46.586525-05:00 early_entry_1150    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-03T11:48:35.777833-05:00 early_entry_1145    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
