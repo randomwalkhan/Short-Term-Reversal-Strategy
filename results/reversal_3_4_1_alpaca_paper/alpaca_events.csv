@@ -10197,3 +10197,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-04T09:53:05.499780-05:00,2026-11-04,manage_1000,exit_order_submitted,"{""alpaca_order_id"": ""7db01927-46f4-4246-9596-afcc8423ca29"", ""contract_symbol"": ""MDLZ261218C00067500"", ""limit_price"": ""1.65"", ""reason"": ""take_profit_day1_hit_at_scan"", ""ticker"": ""MDLZ""}"
 2026-11-04T10:03:13.825406-05:00,2026-11-04,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-04T10:09:27.734782-05:00,2026-11-04,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-11-04T10:15:43.316808-05:00,2026-11-04,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
