@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-05 15:01:34 EST`
+Latest checkpoint (ET): `2026-11-05 15:06:38 EST`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$78,065.84`
-- Portfolio value: `$82,440.84`
+- Portfolio value: `$81,940.84`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `entry_1500`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  ORLY   open    regular ORLY261218C00095000         25                 2.0                 1.875          bid_ask_mid                      1.875                    True          4687.5          -312.5                  -6.25                   0
+  ORLY   open    regular ORLY261218C00095000         25                 2.0                   1.9          bid_ask_mid                        1.9                    True          4750.0          -250.0                   -5.0                   0
 ```
 
 ## Closed Trades
