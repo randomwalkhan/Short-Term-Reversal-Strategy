@@ -7382,3 +7382,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-05T14:50:06.583825-05:00,2026-11-05,entry_1500,entry,"{""allocated_cash"": 64687.5, ""asset_type"": ""option"", ""contract_symbol"": ""ORLY261218C00095000"", ""contracts"": 345, ""early_entry_score"": 0.515, ""entry_mode"": ""regular"", ""entry_option_price"": 1.875, ""execution_mode"": ""option"", ""matched_signals"": 14, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 2285.0, ""option_spread_pct"": 13.33, ""option_volume"": 162.0, ""success_rate"": 100.0, ""ticker"": ""ORLY"", ""timing_score"": 0.528}"
 2026-11-05T14:55:05.870253-05:00,2026-11-05,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-11-05T15:00:06.437749-05:00,2026-11-05,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-11-05T15:05:05.534747-05:00,2026-11-05,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
