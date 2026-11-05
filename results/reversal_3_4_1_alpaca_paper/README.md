@@ -1,21 +1,21 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-05 15:16:46 EST`
-Last slot: `manual`
+Latest checkpoint (ET): `2026-11-05 15:21:50 EST`
+Last slot: `manage_1530`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$78,065.84`
-- Portfolio value: `$81,940.84`
+- Cash: `$81,940.22`
+- Portfolio value: `$81,940.22`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  ORLY   open    regular ORLY261218C00095000         25                 2.0                 1.875          bid_ask_mid                      1.875                    True          4687.5          -312.5                  -6.25                   0
+ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+  ORLY exit_submitted    regular ORLY261218C00095000         25                 2.0                  1.75          bid_ask_mid                       1.75                    True          4375.0          -625.0                  -12.5                   0
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-11-05T15:21:50.484998-05:00      manage_1530  exit_order_submitted        {"alpaca_order_id": "7c2382e7-a533-41d2-a4ce-536bf52eb2e2", "contract_symbol": "ORLY261218C00095000", "limit_price": "1.55", "reason": "stop_loss_hit_at_scan", "ticker": "ORLY"}
 2026-11-05T14:56:28.962031-05:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "ORLY261218C00095000", "contracts": 25, "filled_price": 2.0, "ticker": "ORLY"}
 2026-11-05T14:50:09.870824-05:00       entry_1500 entry_order_submitted {"alpaca_order_id": "eca620c0-6006-4e07-93e9-fbf11dd34964", "contract_symbol": "ORLY261218C00095000", "contracts": 25, "entry_mode": "regular", "limit_price": "2.00", "ticker": "ORLY"}
 2026-11-05T11:57:05.956719-05:00 early_entry_1155    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-05T10:28:45.150535-05:00 early_entry_1025    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-05T10:21:45.466275-05:00 early_entry_1020    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-05T10:14:33.294912-05:00 early_entry_1010    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:07:20.760339-05:00 early_entry_1005    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
