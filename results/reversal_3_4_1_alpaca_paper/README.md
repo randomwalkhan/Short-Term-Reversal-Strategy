@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-05 15:21:50 EST`
+Latest checkpoint (ET): `2026-11-05 15:26:55 EST`
 Last slot: `manage_1530`
 
 ## Alpaca Paper Account
@@ -13,16 +13,12 @@ Last slot: `manage_1530`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  ORLY exit_submitted    regular ORLY261218C00095000         25                 2.0                  1.75          bid_ask_mid                       1.75                    True          4375.0          -625.0                  -12.5                   0
-```
+_None_
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-  MSTR MSTR261120C00160000          2026-09-25         2026-09-28               17.35              15.40          2  -390.0  -11.239193        stop_loss_hit_at_scan
   META META261120C00735000          2026-09-30         2026-10-01               48.80              43.15          1  -565.0  -11.577869        stop_loss_hit_at_scan
   MSTR MSTR261120C00155000          2026-09-29         2026-10-01               16.05              18.80          3   825.0   17.133956 take_profit_day2_hit_at_scan
     ZS   ZS261120C00200000          2026-10-02         2026-10-05               14.95              17.05          3   630.0   14.046823 take_profit_day1_hit_at_scan
@@ -42,12 +38,14 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
    CEG  CEG261218C00260000          2026-10-30         2026-11-02               19.70              22.60          2   580.0   14.720812 take_profit_day1_hit_at_scan
    CEG  CEG261218C00260000          2026-11-02         2026-11-03               18.20              21.00          2   560.0   15.384615 take_profit_day1_hit_at_scan
   MDLZ MDLZ261218C00067500          2026-11-03         2026-11-04                1.40               1.65         35   875.0   17.857143 take_profit_day1_hit_at_scan
+  ORLY ORLY261218C00095000          2026-11-05         2026-11-05                2.00               1.55         25 -1125.0  -22.500000        stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-11-05T15:26:55.120894-05:00             exit           exit_filled                                                      {"contract_symbol": "ORLY261218C00095000", "exit_price": 1.55, "pnl": -1125.0, "reason": "stop_loss_hit_at_scan", "ticker": "ORLY"}
 2026-11-05T15:21:50.484998-05:00      manage_1530  exit_order_submitted        {"alpaca_order_id": "7c2382e7-a533-41d2-a4ce-536bf52eb2e2", "contract_symbol": "ORLY261218C00095000", "limit_price": "1.55", "reason": "stop_loss_hit_at_scan", "ticker": "ORLY"}
 2026-11-05T14:56:28.962031-05:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "ORLY261218C00095000", "contracts": 25, "filled_price": 2.0, "ticker": "ORLY"}
 2026-11-05T14:50:09.870824-05:00       entry_1500 entry_order_submitted {"alpaca_order_id": "eca620c0-6006-4e07-93e9-fbf11dd34964", "contract_symbol": "ORLY261218C00095000", "contracts": 25, "entry_mode": "regular", "limit_price": "2.00", "ticker": "ORLY"}
@@ -67,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-05T10:35:09.696721-05:00 early_entry_1035    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-05T10:28:45.150535-05:00 early_entry_1025    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-05T10:21:45.466275-05:00 early_entry_1020    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:14:33.294912-05:00 early_entry_1010    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```

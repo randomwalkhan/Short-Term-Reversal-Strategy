@@ -2,39 +2,7 @@
   "blocked_trade_dates": [
     "2026-05-11"
   ],
-  "positions": [
-    {
-      "allocated_cash": 5000.0,
-      "alpaca_entry_client_order_id": "rev-20261105145009-orly-regular",
-      "alpaca_entry_order_id": "eca620c0-6006-4e07-93e9-fbf11dd34964",
-      "alpaca_exit_order_id": "7c2382e7-a533-41d2-a4ce-536bf52eb2e2",
-      "asset_type": "option",
-      "contract_symbol": "ORLY261218C00095000",
-      "contracts": 25,
-      "current_drop_pct": 1.54,
-      "early_entry_score": 0.515,
-      "entry_mode": "regular",
-      "entry_option_price": 2.0,
-      "entry_slot": "entry_1500",
-      "entry_spot": 90.91999816894531,
-      "entry_timestamp": "2026-11-05T14:50:09.870824-05:00",
-      "entry_trade_date": "2026-11-05",
-      "execution_mode": "alpaca_paper_option",
-      "exit_reason": "stop_loss_hit_at_scan",
-      "exit_reference_price": 1.55,
-      "expiry": "2026-12-18",
-      "matched_signals": 14,
-      "planned_stop": 1.8,
-      "planned_tp_day1": 2.3,
-      "planned_tp_day2": 2.3,
-      "position_id": "ORLY_20261105T145009",
-      "status": "exit_submitted",
-      "strike": 95.0,
-      "success_rate": 100.0,
-      "ticker": "ORLY",
-      "timing_score": 0.528
-    }
-  ],
+  "positions": [],
   "start_date": "2026-03-24",
   "version": "3.5-alpaca-paper.1"
 }
