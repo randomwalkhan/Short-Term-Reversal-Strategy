@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-05 15:25:06 EST`
+Latest checkpoint (ET): `2026-11-05 15:30:06 EST`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1530`
 ## Portfolio Snapshot
 
 - Cash: `$64,944.05`
-- Equity: `$125,319.05`
+- Equity: `$124,456.55`
 - Realized PnL: `$119,631.55`
-- Unrealized PnL: `$-4,312.50`
+- Unrealized PnL: `$-5,175.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  ORLY     option         option ORLY261218C00095000       2026-11-05                   0    345     64687.5                 60375.0         1.88           1.75       90.92         90.88          bid_ask_mid                       1.75                bid_ask_mid                    True         -4312.5                  -6.67         100.0               14              1.54         28.75           28.19                   25.4                2285.0          162.0               0.13                      ok
+  ORLY     option         option ORLY261218C00095000       2026-11-05                   0    345     64687.5                 59512.5         1.88           1.72       90.92         90.86          bid_ask_mid                       1.72                bid_ask_mid                    True         -5175.0                   -8.0         100.0               14              1.54         28.75           28.16                   25.4                2285.0          162.0               0.13                      ok
 ```
 
 ## Today's Closed Trades (2026-11-05)
@@ -47,19 +47,19 @@ _None_
 ## Current Screener Snapshot
 
 ```text
-ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-  MDLZ           93.75               16            0.68              0.32         67.24                30.79         0.592          pass              0.490              8.0                           0.156                2.65              0.567                                 ok            True                  False
-  ORLY          100.00               13            1.58              1.02         91.90                25.40         0.528          pass              0.544             23.6                           0.361               -1.22              0.003                                 ok            True                  False
-  AAPL          100.00               16            1.22              2.98        348.23                25.40         0.519          pass              0.620             42.8                           0.375               -0.85             -0.162                                 ok            True                  False
-   KHC           88.46               26            1.04              0.19         25.36                36.26         0.511          pass              0.492             36.1                           0.252                0.34              0.167                                 ok            True                  False
-   WMT           84.00               25            0.66              0.59        128.92                26.34         0.502          pass              0.310             17.8                           0.157                5.94              0.794                                 ok            True                  False
-  ALNY           83.78               37            0.85              0.96        160.67               108.65         0.702          pass              0.468             38.9                           0.366              -29.73             -4.736            downtrend_blocked_slope           False                  False
- GOOGL           78.57               14            1.66              3.36        287.49                52.55         0.589          pass              0.264             59.5                           0.414              -12.37             -1.699            downtrend_blocked_slope           False                  False
-  GOOG           76.47               17            1.40              2.81        286.10                51.02         0.578          pass              0.296             63.8                           0.434              -11.68             -1.627            downtrend_blocked_slope           False                  False
-  REGN           75.00                4            2.74             17.88        923.01                52.52         0.566          pass              0.058              0.5                           0.115               10.50              1.908                                 ok           False                  False
- CMCSA           92.86               28            0.10              0.02         24.84                35.54         0.564          pass              0.796             92.4                           0.665                8.69              1.131                                 ok           False                  False
-  CTAS           83.33                6            1.86              2.98        227.75                27.17         0.547          pass              0.144              0.0                           0.157                0.33              0.180                                 ok           False                  False
-  FTNT           60.00                5            5.53              5.01        127.24                91.87         0.542          pass              0.060              1.8                           0.098              -29.34             -4.675 downtrend_blocked_slope_and_streak           False                  False
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  MDLZ           93.75               16            0.62              0.29         67.25                30.79         0.595          pass              0.528             20.8                           0.250                2.72              0.570                      ok            True                  False
+  AAPL          100.00               14            1.25              3.07        348.20                25.40         0.529          pass              0.603             41.2                           0.352               -0.89             -0.163                      ok            True                  False
+  ORLY          100.00               13            1.60              1.04         91.90                25.40         0.527          pass              0.540             22.5                           0.382               -1.24              0.002                      ok            True                  False
+   WMT           84.21               19            0.86              0.78        128.84                26.34         0.526          pass              0.251              8.6                           0.176                5.73              0.785                      ok            True                  False
+  FAST           92.86               14            1.03              0.39         53.04                21.86         0.515          pass              0.446              8.3                           0.213                0.37              0.184                      ok            True                  False
+   KHC           90.00               30            0.75              0.13         25.38                36.26         0.506          pass              0.613             54.2                           0.334                0.64              0.181                      ok            True                  False
+   XEL           81.25               16            0.96              0.54         80.27                19.85         0.500          pass              0.291             56.0                           0.362                1.05              0.249                      ok            True                  False
+  ALNY           84.21               38            0.82              0.92        160.68               108.65         0.699          pass              0.493             41.3                           0.396              -29.71             -4.734 downtrend_blocked_slope           False                  False
+ GOOGL           77.78                9            2.00              4.04        287.20                52.55         0.597          pass              0.214             51.3                           0.355              -12.66             -1.714 downtrend_blocked_slope           False                  False
+  GOOG           83.33               12            1.75              3.52        285.79                51.02         0.591          pass              0.325             54.7                           0.369              -12.00             -1.643 downtrend_blocked_slope           False                  False
+  REGN           75.00                4            2.79             18.19        922.87                52.52         0.562          pass              0.063              2.4                           0.119               10.45              1.906                      ok           False                  False
+ CMCSA           92.86               28            0.14              0.02         24.84                35.54         0.561          pass              0.787             89.4                           0.666                8.65              1.130                      ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261105152506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261105153006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261105152506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261105153006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261105152506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261105153006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261105152506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261105153006)
 
 </details>
