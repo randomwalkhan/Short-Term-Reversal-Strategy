@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-05 11:25:45 EST`
+Latest checkpoint (ET): `2026-11-05 11:32:05 EST`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot         event_type                                                                detail
+2026-11-05T11:32:05.227971-05:00 early_entry_1130 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-05T11:25:45.897343-05:00 early_entry_1125 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-05T11:19:31.631871-05:00 early_entry_1115 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-05T11:13:15.155015-05:00 early_entry_1110 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-04T14:54:31.592678-05:00       entry_1500      entry_skipped                   {"entry_mode": "regular", "reason": "no_candidate"}
 2026-11-04T14:48:16.202083-05:00       entry_1500      entry_skipped                   {"entry_mode": "regular", "reason": "no_candidate"}
 2026-11-04T11:55:25.563060-05:00 early_entry_1155 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-04T11:49:12.681714-05:00 early_entry_1145 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
