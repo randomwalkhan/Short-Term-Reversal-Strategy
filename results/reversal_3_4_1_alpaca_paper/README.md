@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-05 14:40:04 EST`
-Last slot: `manage_1430`
+Latest checkpoint (ET): `2026-11-05 14:50:09 EST`
+Last slot: `entry_1500`
 
 ## Alpaca Paper Account
 
@@ -13,7 +13,10 @@ Last slot: `manage_1430`
 
 ## Open / Pending Positions
 
-_None_
+```text
+ticker          status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
+  ORLY entry_submitted    regular ORLY261218C00095000         25               1.875                   NaN             NaN                    NaN
+```
 
 ## Closed Trades
 
@@ -44,25 +47,25 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                detail
-2026-11-05T11:57:05.956719-05:00 early_entry_1155 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T11:50:49.817543-05:00 early_entry_1150 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T11:44:33.603739-05:00 early_entry_1140 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T11:38:20.489837-05:00 early_entry_1135 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T11:32:05.227971-05:00 early_entry_1130 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T11:25:45.897343-05:00 early_entry_1125 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T11:19:31.631871-05:00 early_entry_1115 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T11:13:15.155015-05:00 early_entry_1110 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T11:07:00.913817-05:00 early_entry_1105 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T11:00:06.520077-05:00 early_entry_1100 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:53:51.210600-05:00 early_entry_1050 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:47:37.468443-05:00 early_entry_1045 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:41:22.777634-05:00 early_entry_1040 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:35:09.696721-05:00 early_entry_1035 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:28:45.150535-05:00 early_entry_1025 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:21:45.466275-05:00 early_entry_1020 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:14:33.294912-05:00 early_entry_1010 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:07:20.760339-05:00 early_entry_1005 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-05T10:00:06.227099-05:00 early_entry_1000 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-04T15:06:59.121878-05:00       entry_1500      entry_skipped                   {"entry_mode": "regular", "reason": "no_candidate"}
+                    timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-11-05T14:50:09.870824-05:00       entry_1500 entry_order_submitted {"alpaca_order_id": "eca620c0-6006-4e07-93e9-fbf11dd34964", "contract_symbol": "ORLY261218C00095000", "contracts": 25, "entry_mode": "regular", "limit_price": "2.00", "ticker": "ORLY"}
+2026-11-05T11:57:05.956719-05:00 early_entry_1155    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T11:50:49.817543-05:00 early_entry_1150    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T11:44:33.603739-05:00 early_entry_1140    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T11:38:20.489837-05:00 early_entry_1135    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T11:32:05.227971-05:00 early_entry_1130    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T11:25:45.897343-05:00 early_entry_1125    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T11:19:31.631871-05:00 early_entry_1115    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T11:13:15.155015-05:00 early_entry_1110    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T11:07:00.913817-05:00 early_entry_1105    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T11:00:06.520077-05:00 early_entry_1100    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T10:53:51.210600-05:00 early_entry_1050    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T10:47:37.468443-05:00 early_entry_1045    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T10:41:22.777634-05:00 early_entry_1040    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T10:35:09.696721-05:00 early_entry_1035    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T10:28:45.150535-05:00 early_entry_1025    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T10:21:45.466275-05:00 early_entry_1020    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T10:14:33.294912-05:00 early_entry_1010    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T10:07:20.760339-05:00 early_entry_1005    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-05T10:00:06.227099-05:00 early_entry_1000    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
