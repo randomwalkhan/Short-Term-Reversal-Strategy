@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-11-05 15:50:06 EST`
-- Equity: `$127,044.05` | Realized: `$119,631.55` | Unrealized: `$-2,587.50` | Open positions: `1`
+- Latest checkpoint (ET): `2026-11-05 15:55:06 EST`
+- Equity: `$128,769.05` | Realized: `$119,631.55` | Unrealized: `$-862.50` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1600`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  ORLY     option         option ORLY261218C00095000    345     64687.5                 62100.0            1.8         -2587.5                   -4.0                   0
+  ORLY     option         option ORLY261218C00095000    345     64687.5                 63825.0           1.85          -862.5                  -1.33                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261105155006)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261105155506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261105155006)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261105155506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261105155006)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261105155506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261105155006)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261105155506)
 
 </details>
 
