@@ -7417,3 +7417,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-06T15:00:05.889317-05:00,2026-11-06,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-11-06T15:05:05.959531-05:00,2026-11-06,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-11-06T15:10:05.130683-05:00,2026-11-06,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-11-06T16:10:06.061391-05:00,2026-11-06,manage_1600,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""MDLZ261218C00065000"", ""fill_price"": 2.79, ""pnl"": -6138.0, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""MDLZ""}"
