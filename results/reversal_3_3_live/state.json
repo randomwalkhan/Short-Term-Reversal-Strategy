@@ -1,8 +1,39 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 123162.80035667421,
-  "positions": [],
+  "cash": 61782.80035667421,
+  "positions": [
+    {
+      "position_id": "MDLZ_20261106T145004",
+      "ticker": "MDLZ",
+      "asset_type": "option",
+      "execution_mode": "option",
+      "contract_symbol": "MDLZ261218C00065000",
+      "expiry": "2026-12-18",
+      "strike": 65.0,
+      "entry_timestamp": "2026-11-06T14:50:04.935495-05:00",
+      "entry_trade_date": "2026-11-06",
+      "entry_slot": "entry_1500",
+      "entry_spot": 66.26499938964844,
+      "entry_option_price": 3.1,
+      "entry_bid": 3.0,
+      "entry_ask": 3.2,
+      "entry_iv_pct": 28.076891113281242,
+      "contracts": 198,
+      "allocated_cash": 61380.0,
+      "success_rate": 93.33,
+      "matched_signals": 15,
+      "current_drop_pct": 0.83,
+      "rolling_sigma_20d_pct": 30.66,
+      "planned_tp_day1": 3.565,
+      "planned_tp_day2": 3.565,
+      "planned_stop": 2.79,
+      "option_open_interest": 3966.0,
+      "option_volume": 43.0,
+      "option_spread_pct": 0.06451612903225812,
+      "option_liquidity_status": "ok"
+    }
+  ],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
@@ -5488,7 +5519,9 @@
     "2026-11-05": [
       "entry_1500"
     ],
-    "2026-11-06": []
+    "2026-11-06": [
+      "entry_1500"
+    ]
   },
   "start_date": "2026-03-24"
 }
