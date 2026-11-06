@@ -10265,3 +10265,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-06T14:54:58.890448-05:00,2026-11-06,entry_1500,entry_filled,"{""contract_symbol"": ""MDLZ261218C00065000"", ""contracts"": 15, ""filled_price"": 3.2, ""ticker"": ""MDLZ""}"
 2026-11-06T15:50:46.789750-05:00,2026-11-06,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""117c6e83-4f99-4e39-9d60-5b0d3b5fa63d"", ""contract_symbol"": ""MDLZ261218C00065000"", ""limit_price"": ""2.65"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""MDLZ""}"
 2026-11-06T16:00:55.743847-05:00,2026-11-06,exit,exit_not_filled,"{""contract_symbol"": ""MDLZ261218C00065000"", ""status"": ""expired"", ""ticker"": ""MDLZ""}"
+2026-11-06T16:11:05.083733-05:00,2026-11-06,manage_1600,exit_order_submitted,"{""alpaca_order_id"": ""e759b2d3-a029-4be0-8cdf-30540425041a"", ""contract_symbol"": ""MDLZ261218C00065000"", ""limit_price"": ""1.70"", ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""MDLZ""}"
