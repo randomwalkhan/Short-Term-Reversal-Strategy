@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 64944.05035667421,
-  "positions": [
-    {
-      "position_id": "ORLY_20261105T145006",
-      "ticker": "ORLY",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "ORLY261218C00095000",
-      "expiry": "2026-12-18",
-      "strike": 95.0,
-      "entry_timestamp": "2026-11-05T14:50:06.583825-05:00",
-      "entry_trade_date": "2026-11-05",
-      "entry_slot": "entry_1500",
-      "entry_spot": 90.91999816894531,
-      "entry_option_price": 1.875,
-      "entry_bid": 1.75,
-      "entry_ask": 2.0,
-      "entry_iv_pct": 28.748271118164055,
-      "contracts": 345,
-      "allocated_cash": 64687.5,
-      "success_rate": 100.0,
-      "matched_signals": 14,
-      "current_drop_pct": 1.54,
-      "rolling_sigma_20d_pct": 25.4,
-      "planned_tp_day1": 2.15625,
-      "planned_tp_day2": 2.15625,
-      "planned_stop": 1.6875,
-      "option_open_interest": 2285.0,
-      "option_volume": 162.0,
-      "option_spread_pct": 0.13333333333333333,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 123162.80035667421,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",
