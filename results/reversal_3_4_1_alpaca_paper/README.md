@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-07 01:28:33 EST`
-Last slot: `share_ext_0125`
+Latest checkpoint (ET): `2026-11-07 01:33:36 EST`
+Last slot: `share_ext_0130`
 
 ## Alpaca Paper Account
 
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et           slot           event_type                                                                                                                                                                            detail
+2026-11-07T01:33:36.876748-05:00 share_ext_0130        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-11-07T01:28:33.213998-05:00 share_ext_0125        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-11-07T01:23:29.241546-05:00 share_ext_0120        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-11-07T01:18:25.530623-05:00 share_ext_0115        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-07T00:07:27.550627-05:00 share_ext_0005        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-11-07T00:02:23.586481-05:00 share_ext_0000        market_closed                                                                                                                                       {"holiday_name": null, "reason": "weekend"}
 2026-11-06T16:11:05.083733-05:00    manage_1600 exit_order_submitted {"alpaca_order_id": "e759b2d3-a029-4be0-8cdf-30540425041a", "contract_symbol": "MDLZ261218C00065000", "limit_price": "1.70", "reason": "stop_loss_hit_at_scan", "ticker": "MDLZ"}
-2026-11-06T16:00:55.743847-05:00           exit      exit_not_filled                                                                                                 {"contract_symbol": "MDLZ261218C00065000", "status": "expired", "ticker": "MDLZ"}
 ```
