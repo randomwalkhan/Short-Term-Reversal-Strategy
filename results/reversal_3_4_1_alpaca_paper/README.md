@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-09 00:25:49 EST`
-Last slot: `share_ext_0025`
+Latest checkpoint (ET): `2026-11-09 00:30:53 EST`
+Last slot: `share_ext_0030`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `share_ext_0025`
 
 ```text
 ticker         status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  MDLZ exit_submitted    regular MDLZ261218C00065000         15                 3.2                   2.5          bid_ask_mid                        2.5                    True          3750.0         -1050.0                -21.875                   1
+  MDLZ exit_submitted    regular MDLZ261218C00065000         15                 3.2                  3.13     last_price_stale                        NaN                   False          4695.0          -105.0                -2.1875                   1
 ```
 
 ## Closed Trades
