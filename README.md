@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-11-16 15:20:04 EST`
-- Equity: `$118,064.80` | Realized: `$107,024.80` | Unrealized: `$1,040.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-11-16 15:25:05 EST`
+- Equity: `$117,414.80` | Realized: `$107,024.80` | Unrealized: `$390.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1530`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode          instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-  QCOM     option         option QCOM261218C00170000     52     57850.0                 58890.0          11.32          1040.0                    1.8                   0
+  QCOM     option         option QCOM261218C00170000     52     57850.0                 58240.0           11.2           390.0                   0.67                   0
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261116152004)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261116152505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261116152004)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261116152505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261116152004)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261116152505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261116152004)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261116152505)
 
 </details>
 
