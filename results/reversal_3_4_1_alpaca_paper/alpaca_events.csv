@@ -10851,3 +10851,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-16T11:49:03.339387-05:00,2026-11-16,early_entry_1145,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-16T11:55:10.879938-05:00,2026-11-16,early_entry_1155,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-16T14:52:48.884310-05:00,2026-11-16,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""2fa57b3d-9659-486b-9ed9-066cbf6a96b4"", ""contract_symbol"": ""QCOM261218C00170000"", ""contracts"": 4, ""entry_mode"": ""regular"", ""limit_price"": ""11.15"", ""ticker"": ""QCOM""}"
+2026-11-16T15:14:08.439739-05:00,2026-11-16,entry_1500,entry_filled,"{""contract_symbol"": ""QCOM261218C00170000"", ""contracts"": 4, ""filled_price"": 11.15, ""ticker"": ""QCOM""}"
