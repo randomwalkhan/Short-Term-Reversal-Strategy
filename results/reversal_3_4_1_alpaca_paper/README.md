@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-16 16:09:48 EST`
-Last slot: `manage_1600`
+Latest checkpoint (ET): `2026-11-16 16:14:52 EST`
+Last slot: `share_ext_1610`
 
 ## Alpaca Paper Account
 
@@ -15,7 +15,7 @@ Last slot: `manage_1600`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  QCOM   open    regular QCOM261218C00170000          4               11.15                10.775          bid_ask_mid                     10.775                    True          4310.0          -150.0              -3.363229                   0
+  QCOM   open    regular QCOM261218C00170000          4               11.15                  10.0          bid_ask_mid                       10.0                    True          4000.0          -460.0             -10.313901                   0
 ```
 
 ## Closed Trades
