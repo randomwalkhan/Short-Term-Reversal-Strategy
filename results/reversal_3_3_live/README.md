@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-16 12:20:02 EST`
+Latest checkpoint (ET): `2026-11-16 12:25:04 EST`
 Last processed slot: `manage_1230`
 
 ## Active Configuration
@@ -45,18 +45,18 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  QCOM           88.24               34            0.88              1.06        172.02                68.34         0.585          pass              0.637             66.2                           0.424                5.48              0.738                  ok            True                  False
-   TXN           80.00               10            2.36              5.02        301.45                58.41         0.582          pass              0.205             48.8                           0.580               -1.85              0.088                  ok            True                  False
-  CTAS           96.00               25            0.55              0.87        225.87                28.07         0.557          pass              0.646             30.2                           0.286                0.33              0.064                  ok            True                  False
-  AAPL           95.65               23            0.79              1.97        355.43                27.52         0.554          pass              0.582             13.4                           0.168                4.55              0.582                  ok            True                  False
-   CEG           87.50               32            1.59              3.12        278.44                61.55         0.542          pass              0.496             31.5                           0.219                7.02              1.224                  ok            True                  False
-  DXCM           82.35               34            1.03              0.60         83.07                50.11         0.528          pass              0.390             38.2                           0.521               -2.70             -0.421                  ok            True                  False
-   HON           82.76               29            0.67              1.04        222.01                32.11         0.527          pass              0.334             27.0                           0.415               -0.94              0.012                  ok            True                  False
-  NXPI           95.45               22            1.77              3.28        263.69                48.08         0.520          pass              0.702             56.7                           0.596                1.23              0.336                  ok            True                  False
-  ALNY           65.22               23            2.36              2.73        163.87               110.81         0.715          pass              0.226             22.6                           0.294                1.99              0.140                  ok           False                  False
-  FTNT           60.00               15            2.87              2.56        126.12                93.31         0.670          pass              0.131             10.2                           0.129               -2.10             -0.002                  ok           False                  False
-  INTC           42.86                7            6.84              2.86         58.44               143.21         0.624          pass              0.078              5.1                           0.177               -7.32              0.089                  ok           False                  False
-   ADI           70.00               10            2.59              7.21        394.88                66.18         0.598          pass              0.179             39.7                           0.537               -6.10             -0.161                  ok           False                  False
+  QCOM           87.50               32            0.93              1.12        171.99                68.34         0.593          pass              0.599             64.2                           0.393                5.42              0.735                  ok            True                  False
+   TXN           81.82               11            2.29              4.87        301.51                58.41         0.583          pass              0.265             50.4                           0.536               -1.78              0.091                  ok            True                  False
+  AAPL          100.00               22            0.84              2.09        355.37                27.52         0.563          pass              0.560              8.0                           0.144                4.50              0.580                  ok            True                  False
+  CTAS           95.65               23            0.66              1.05        225.79                28.07         0.562          pass              0.592             16.2                           0.228                0.22              0.059                  ok            True                  False
+   CEG           87.10               31            1.67              3.26        278.38                61.55         0.543          pass              0.469             28.5                           0.186                6.94              1.220                  ok            True                  False
+  DXCM           82.35               34            1.03              0.60         83.07                50.11         0.528          pass              0.390             38.2                           0.548               -2.70             -0.421                  ok            True                  False
+   HON           82.76               29            0.70              1.09        221.99                32.11         0.525          pass              0.323             23.5                           0.405               -0.97              0.011                  ok            True                  False
+  NXPI           95.65               23            1.73              3.21        263.71                48.08         0.516          pass              0.711             57.5                           0.572                1.27              0.337                  ok            True                  False
+  ALNY           65.22               23            2.33              2.69        163.89               110.81         0.716          pass              0.229             23.7                           0.301                2.02              0.141                  ok           False                  False
+  FTNT           57.14               14            2.95              2.62        126.10                93.31         0.669          pass              0.117              7.9                           0.104               -2.17             -0.005                  ok           False                  False
+  INTC           50.00                6            7.01              2.93         58.41               143.21         0.629          pass              0.071              2.8                           0.138               -7.49              0.081                  ok           False                  False
+   ADI           70.00               10            2.69              7.50        394.76                66.18         0.592          pass              0.171             37.3                           0.480               -6.20             -0.166                  ok           False                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261116122002)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261116122504)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261116122002)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261116122504)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261116122002)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261116122504)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261116122002)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261116122504)
 
 </details>
