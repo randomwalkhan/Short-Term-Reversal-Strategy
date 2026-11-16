@@ -1,13 +1,13 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-16 15:39:27 EST`
-Last slot: `manage_1530`
+Latest checkpoint (ET): `2026-11-16 15:44:30 EST`
+Last slot: `manual`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$76,352.82`
-- Portfolio value: `$80,392.82`
+- Portfolio value: `$80,432.82`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
@@ -15,7 +15,7 @@ Last slot: `manage_1530`
 
 ```text
 ticker status entry_mode     contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-  QCOM   open    regular QCOM261218C00170000          4               11.15                  10.5          bid_ask_mid                       10.5                    True          4200.0          -260.0              -5.829596                   0
+  QCOM   open    regular QCOM261218C00170000          4               11.15                 10.75          bid_ask_mid                      10.75                    True          4300.0          -160.0              -3.587444                   0
 ```
 
 ## Closed Trades
