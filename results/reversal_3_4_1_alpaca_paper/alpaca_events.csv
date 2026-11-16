@@ -10830,3 +10830,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-08T23:45:16.639173-05:00,2026-11-08,share_ext_2345,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-11-08T23:50:21.195567-05:00,2026-11-08,share_ext_2350,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-11-08T23:55:25.206841-05:00,2026-11-08,share_ext_2355,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
+2026-11-16T09:18:59.397420-05:00,2026-11-16,exit,exit_filled,"{""contract_symbol"": ""MDLZ261218C00065000"", ""exit_price"": 2.45, ""pnl"": -1125.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""MDLZ""}"
