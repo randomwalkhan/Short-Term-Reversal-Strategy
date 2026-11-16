@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-16 09:25:06 EST`
+Latest checkpoint (ET): `2026-11-16 09:30:06 EST`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -43,7 +43,21 @@ _None_
 
 ## Current Screener Snapshot
 
-_None_
+```text
+ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day     trend_health_status  call_candidate  early_entry_candidate
+  UPRO           90.00               10            2.44              2.37        137.54                68.17         0.662          pass              0.348              4.9                           0.281               -2.85             -0.077                      ok            True                  False
+ GOOGL           82.14               28            0.87              1.81        295.00                54.19         0.601          pass              0.360             40.8                           0.364                5.09              0.592                      ok            True                  False
+  GOOG           82.14               28            0.97              1.99        291.67                52.39         0.589          pass              0.333             32.2                           0.315                4.19              0.503                      ok            True                  False
+  QCOM           86.36               22            2.10              2.53        171.38                68.34         0.584          pass              0.365             19.0                           0.389                4.18              0.681                      ok            True                  False
+   CEG           87.88               33            1.04              2.04        278.90                61.55         0.572          pass              0.586             55.3                           0.566                7.62              1.249                      ok            True                  False
+  NXPI           92.86               14            2.19              4.07        263.35                48.08         0.560          pass              0.426              0.0                           0.250                0.79              0.316                      ok            True                  False
+  INTC           66.67               12            5.11              2.13         58.75               143.21         0.731          pass              0.116              9.8                           0.351               -5.60              0.173                      ok           False                  False
+  FTNT           84.44               45            0.30              0.27        127.11                93.31         0.693          pass              0.615             75.7                           0.507                0.50              0.117                      ok           False                  False
+  TEAM           83.72               43            0.33              0.34        149.84                76.26         0.612          pass              0.512             50.5                           0.383              -20.09             -2.866 downtrend_blocked_slope           False                  False
+  ABNB           77.78               18            1.78              2.33        185.78                54.57         0.604          pass              0.114              0.0                           0.183                7.21              0.896                      ok           False                  False
+   BKR           60.00               10            2.30              0.80         49.10                57.94         0.603          pass              0.071              3.6                           0.229               -8.52             -0.535 downtrend_blocked_slope           False                  False
+  MCHP           80.95               21            2.27              0.98         61.26                78.27         0.596          pass              0.265             35.4                           0.306              -20.80             -2.484 downtrend_blocked_slope           False                  False
+```
 
 ## Recent Events
 
@@ -68,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261116092506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261116093006)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261116092506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261116093006)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261116092506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261116093006)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261116092506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261116093006)
 
 </details>
