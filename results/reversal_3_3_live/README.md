@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-17 15:05:03 EST`
+Latest checkpoint (ET): `2026-11-17 15:10:05 EST`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `entry_1500`
 ## Portfolio Snapshot
 
 - Cash: `$58,029.80`
-- Equity: `$111,239.80`
+- Equity: `$110,389.80`
 - Realized PnL: `$101,239.80`
-- Unrealized PnL: `$0.00`
+- Unrealized PnL: `$-850.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   APP     option         option APP261218C00400000       2026-11-17                   0     17     53210.0                 53210.0         31.3           31.3      402.79        401.64          bid_ask_mid                       31.3                bid_ask_mid                    True             0.0                    0.0         94.12               17              2.99         63.29           64.14                  119.5                1252.0          197.0               0.01                      ok
+   APP     option         option APP261218C00400000       2026-11-17                   0     17     53210.0                 52360.0         31.3           30.8      402.79        401.63          bid_ask_mid                       30.8                bid_ask_mid                    True          -850.0                   -1.6         94.12               17              2.99         63.29           63.41                  119.5                1252.0          197.0               0.01                      ok
 ```
 
 ## Today's Closed Trades (2026-11-17)
@@ -51,24 +51,25 @@ ticker asset_type execution_mode          instrument  units entry_trade_date_et 
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-   APP           92.31               13            3.22              9.37        411.20               119.50         0.784          pass              0.575             49.4                           0.464               63.67              4.159                  ok            True                  False
-  IDXX           95.00               20            1.70              8.34        697.08                77.90         0.727          pass              0.563              7.9                           0.196                2.48              0.308                  ok            True                  False
-   TXN           91.30               23            1.11              2.30        293.23                59.80         0.614          pass              0.592             47.5                           0.243               -6.90             -0.035                  ok            True                  False
-   ADI           90.62               32            0.94              2.53        382.09                67.56         0.604          pass              0.584             31.3                           0.167               -9.58             -0.157                  ok            True                  False
-  MDLZ           94.74               19            0.67              0.32         67.40                29.55         0.596          pass              0.606             31.1                           0.228                3.02              0.191                  ok            True                  False
-   CSX           82.35               17            1.28              0.47         51.83                34.26         0.579          pass              0.259             30.7                           0.246                1.27              0.263                  ok            True                  False
-  QCOM           85.00               20            2.22              2.62        167.40                68.75         0.577          pass              0.372             38.3                           0.240                0.21              0.322                  ok            True                  False
-   CEG           84.62               13            2.84              5.53        275.45                60.48         0.571          pass              0.251             17.0                           0.277                2.63              1.214                  ok            True                  False
-  SBUX           88.24               17            1.00              0.76        108.39                31.47         0.566          pass              0.429             35.5                           0.285                3.34              0.197                  ok            True                  False
-  AAPL           95.65               23            0.64              1.59        352.10                27.81         0.558          pass              0.624             27.0                           0.345                5.69              0.464                  ok            True                  False
-  FAST           90.00               10            1.22              0.47         54.91                19.71         0.553          pass              0.374             17.2                           0.282                4.02              0.523                  ok            True                  False
-  CTAS           95.65               23            0.83              1.30        223.60                28.21         0.544          pass              0.583             14.0                           0.229               -0.41             -0.026                  ok            True                  False
+   APP           92.31               13            3.19              9.27        411.25               119.50         0.785          pass              0.577             50.0                           0.455               63.73              4.161                  ok            True                  False
+  IDXX           95.00               20            1.51              7.43        697.47                77.90         0.736          pass              0.594             18.0                           0.263                2.68              0.317                  ok            True                  False
+   TXN           92.00               25            1.03              2.12        293.30                59.80         0.608          pass              0.636             51.6                           0.289               -6.82             -0.031                  ok            True                  False
+   ADI           90.62               32            0.95              2.56        382.07                67.56         0.604          pass              0.582             30.6                           0.185               -9.59             -0.157                  ok            True                  False
+  MDLZ           94.44               18            0.87              0.41         67.36                29.55         0.590          pass              0.532             11.4                           0.113                2.82              0.183                  ok            True                  False
+  SBUX           84.62               13            1.14              0.86        108.35                31.47         0.579          pass              0.282             26.9                           0.235                3.20              0.190                  ok            True                  False
+   CSX           82.35               17            1.28              0.47         51.83                34.26         0.579          pass              0.259             30.7                           0.285                1.27              0.263                  ok            True                  False
+  QCOM           85.00               20            2.23              2.63        167.39                68.75         0.577          pass              0.372             38.1                           0.263                0.20              0.322                  ok            True                  False
+  TMUS           83.87               31            0.58              0.69        169.71                46.99         0.571          pass              0.300              0.0                           0.178                9.46              0.922                  ok            True                  False
+   CEG           84.62               13            2.92              5.67        275.39                60.48         0.566          pass              0.244             14.9                           0.267                2.56              1.211                  ok            True                  False
+  CTAS           95.65               23            0.73              1.15        223.67                28.21         0.550          pass              0.613             23.7                           0.229               -0.32             -0.022                  ok            True                  False
+  FAST           90.00               10            1.31              0.50         54.89                19.71         0.548          pass              0.356             11.7                           0.229                3.94              0.520                  ok            True                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            detail
+2026-11-17T15:10:05.988632-05:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-11-17T15:05:03.951251-05:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-11-17T15:00:05.898014-05:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
 2026-11-17T14:55:04.972939-05:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {"reason": "already_processed"}
@@ -78,7 +79,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-11-17T11:55:01.833366-05:00 early_entry_1155 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T11:50:06.047053-05:00 early_entry_1150 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T11:45:03.924491-05:00 early_entry_1145 early_entry_shadow {"contract_symbol": "TXN270115C00295000", "current_drop_pct": 0.52, "early_entry_score": 0.8, "early_reclaim_pct": 75.7, "entry_ask": 23.75, "entry_bid": 21.55, "entry_mode": "early", "entry_option_price": 22.65, "hypothetical_budget": 55619.9, "hypothetical_contracts": 24, "matched_signals": 32, "option_liquidity_status": "ok", "option_open_interest": 584.0, "option_spread_pct": 9.71, "option_volume": 20.0, "reason": "shadow_mode_no_order", "recovery_stability_score": 0.589, "shadow_only": true, "success_rate": 93.75, "ticker": "TXN", "timing_score": 0.598, "top_candidates": [{"current_drop_pct": 0.52, "early_entry_score": 0.8, "early_reclaim_pct": 75.7, "matched_signals": 32, "recovery_stability_score": 0.589, "success_rate": 93.75, "ticker": "TXN", "timing_score": 0.598, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": true}
-2026-11-17T11:40:06.599969-05:00 early_entry_1140 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -88,27 +88,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261117150503)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261117151005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261117150503)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261117151005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261117150503)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261117151005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261117150503)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261117151005)
 
 </details>
