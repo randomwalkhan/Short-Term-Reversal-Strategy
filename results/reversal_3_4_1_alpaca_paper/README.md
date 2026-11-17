@@ -1,21 +1,21 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-17 14:51:28 EST`
+Latest checkpoint (ET): `2026-11-17 14:57:45 EST`
 Last slot: `entry_1500`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
 - Cash: `$76,842.63`
-- Portfolio value: `$79,922.63`
+- Portfolio value: `$79,912.63`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
 ```text
-ticker          status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price  unrealized_pnl  unrealized_return_pct
-   APP entry_submitted    regular APP261218C00400000          1                31.5                   NaN             NaN                    NaN
+ticker status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
+   APP   open    regular APP261218C00400000          1                31.3                 31.15          bid_ask_mid                      31.15                    True          3115.0           -15.0              -0.479233                   0
 ```
 
 ## Closed Trades
@@ -48,6 +48,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-11-17T14:57:45.304642-05:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "APP261218C00400000", "contracts": 1, "filled_price": 31.3, "ticker": "APP"}
 2026-11-17T14:51:28.810470-05:00       entry_1500 entry_order_submitted {"alpaca_order_id": "d8bbe0da-b7ed-4f21-a075-d606254f2297", "contract_symbol": "APP261218C00400000", "contracts": 1, "entry_mode": "regular", "limit_price": "31.80", "ticker": "APP"}
 2026-11-17T11:58:32.745337-05:00 early_entry_1155    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T11:52:14.987372-05:00 early_entry_1150    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -67,5 +68,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-17T10:26:20.282022-05:00 early_entry_1025    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T10:20:18.351672-05:00 early_entry_1020    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T10:14:10.635879-05:00 early_entry_1010    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-17T10:08:02.583355-05:00 early_entry_1005    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
