@@ -10856,3 +10856,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-17T09:56:57.954981-05:00,2026-11-17,exit,exit_filled,"{""contract_symbol"": ""QCOM261218C00170000"", ""exit_price"": 9.05, ""pnl"": -840.0, ""reason"": ""stop_loss_hit_at_scan"", ""ticker"": ""QCOM""}"
 2026-11-17T10:02:01.466545-05:00,2026-11-17,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-17T10:08:02.583355-05:00,2026-11-17,early_entry_1005,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-11-17T10:14:10.635879-05:00,2026-11-17,early_entry_1010,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
