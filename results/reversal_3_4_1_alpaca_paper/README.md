@@ -1,7 +1,7 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-17 11:39:51 EST`
-Last slot: `manage_1130`
+Latest checkpoint (ET): `2026-11-17 11:46:05 EST`
+Last slot: `early_entry_1145`
 
 ## Alpaca Paper Account
 
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot           event_type                                                                                                                                                                            detail
+2026-11-17T11:46:05.778029-05:00 early_entry_1145   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T11:39:51.295334-05:00 early_entry_1135   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T11:33:38.361264-05:00 early_entry_1130   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T11:27:35.488811-05:00 early_entry_1125   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-17T10:02:01.466545-05:00 early_entry_1000   early_entry_shadow                                                                                                             {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T09:56:57.954981-05:00             exit          exit_filled                                                {"contract_symbol": "QCOM261218C00170000", "exit_price": 9.05, "pnl": -840.0, "reason": "stop_loss_hit_at_scan", "ticker": "QCOM"}
 2026-11-17T09:51:53.737621-05:00      manage_1000 exit_order_submitted {"alpaca_order_id": "f1c64535-a783-46dd-8db3-6810a91100dc", "contract_symbol": "QCOM261218C00170000", "limit_price": "9.05", "reason": "stop_loss_hit_at_scan", "ticker": "QCOM"}
-2026-11-16T15:14:08.439739-05:00       entry_1500         entry_filled                                                                               {"contract_symbol": "QCOM261218C00170000", "contracts": 4, "filled_price": 11.15, "ticker": "QCOM"}
 ```
