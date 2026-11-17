@@ -1,6 +1,6 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-17 11:21:23 EST`
+Latest checkpoint (ET): `2026-11-17 11:27:35 EST`
 Last slot: `manage_1130`
 
 ## Alpaca Paper Account
@@ -45,6 +45,7 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                   detail
+2026-11-17T11:27:35.488811-05:00 early_entry_1125    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T11:21:23.136715-05:00 early_entry_1120    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T11:15:09.609751-05:00 early_entry_1115    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T11:09:02.268898-05:00 early_entry_1105    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
@@ -64,5 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-16T15:14:08.439739-05:00       entry_1500          entry_filled                                                                                      {"contract_symbol": "QCOM261218C00170000", "contracts": 4, "filled_price": 11.15, "ticker": "QCOM"}
 2026-11-16T14:52:48.884310-05:00       entry_1500 entry_order_submitted {"alpaca_order_id": "2fa57b3d-9659-486b-9ed9-066cbf6a96b4", "contract_symbol": "QCOM261218C00170000", "contracts": 4, "entry_mode": "regular", "limit_price": "11.15", "ticker": "QCOM"}
 2026-11-16T11:55:10.879938-05:00 early_entry_1155    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-16T11:49:03.339387-05:00 early_entry_1145    early_entry_shadow                                                                                                                    {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
