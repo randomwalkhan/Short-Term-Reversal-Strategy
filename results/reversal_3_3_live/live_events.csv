@@ -7481,3 +7481,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-17T14:50:06.628486-05:00,2026-11-17,entry_1500,entry,"{""allocated_cash"": 53210.0, ""asset_type"": ""option"", ""contract_symbol"": ""APP261218C00400000"", ""contracts"": 17, ""early_entry_score"": 0.66, ""entry_mode"": ""regular"", ""entry_option_price"": 31.3, ""execution_mode"": ""option"", ""matched_signals"": 17, ""option_liquidity_status"": ""ok"", ""option_open_interest"": 1252.0, ""option_spread_pct"": 1.28, ""option_volume"": 197.0, ""success_rate"": 94.12, ""ticker"": ""APP"", ""timing_score"": 0.778}"
 2026-11-17T14:55:04.972939-05:00,2026-11-17,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
 2026-11-17T15:00:05.898014-05:00,2026-11-17,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-11-17T15:05:03.951251-05:00,2026-11-17,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
