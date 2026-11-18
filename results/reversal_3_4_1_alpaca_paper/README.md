@@ -1,28 +1,24 @@
 # Reversal 3.5-alpaca-paper.1
 
-Latest checkpoint (ET): `2026-11-18 07:42:02 EST`
-Last slot: `share_ext_0740`
+Latest checkpoint (ET): `2026-11-18 10:43:45 EST`
+Last slot: `early_entry_1040`
 
 ## Alpaca Paper Account
 
 - Status: `ACTIVE`
-- Cash: `$76,842.42`
-- Portfolio value: `$79,762.42`
+- Cash: `$79,602.40`
+- Portfolio value: `$79,602.40`
 - Strategy capital cap: `$10,000.00`
 - Options level: `3`
 
 ## Open / Pending Positions
 
-```text
-ticker         status entry_mode    contract_symbol  contracts  entry_option_price  current_option_price current_price_source  current_exit_signal_price  current_quote_reliable  position_value  unrealized_pnl  unrealized_return_pct  business_days_held
-   APP exit_submitted    regular APP261218C00400000          1                31.3                  28.9     last_price_stale                        NaN                   False          2890.0          -240.0              -7.667732                   1
-```
+_None_
 
 ## Closed Trades
 
 ```text
 ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_price  exit_option_price  contracts     pnl  return_pct                  exit_reason
-    ZS   ZS261120C00200000          2026-10-02         2026-10-05               14.95              17.05          3   630.0   14.046823 take_profit_day1_hit_at_scan
   SOXL SOXL261120C00165000          2026-10-05         2026-10-07               25.75              17.45          1  -830.0  -32.233010        stop_loss_hit_at_scan
    CEG  CEG261120C00300000          2026-10-07         2026-10-08               20.60              21.40          2   160.0    3.883495        stop_loss_hit_at_scan
   CSCO CSCO261120C00115000          2026-10-08         2026-10-09                7.25               8.40          6   690.0   15.862069 take_profit_day1_hit_at_scan
@@ -42,12 +38,15 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
   ORLY ORLY261218C00095000          2026-11-05         2026-11-05                2.00               1.55         25 -1125.0  -22.500000        stop_loss_hit_at_scan
   MDLZ MDLZ261218C00065000          2026-11-06         2026-11-16                3.20               2.45         15 -1125.0  -23.437500        stop_loss_hit_at_scan
   QCOM QCOM261218C00170000          2026-11-16         2026-11-17               11.15               9.05          4  -840.0  -18.834081        stop_loss_hit_at_scan
+   APP  APP261218C00400000          2026-11-17         2026-11-18               31.30              27.60          1  -370.0  -11.821086        stop_loss_hit_at_scan
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot            event_type                                                                                                                                                                                 detail
+2026-11-18T10:43:45.880899-05:00 early_entry_1040    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-18T10:43:45.880899-05:00             exit           exit_filled                                                       {"contract_symbol": "APP261218C00400000", "exit_price": 27.6, "pnl": -370.0, "reason": "stop_loss_hit_at_scan", "ticker": "APP"}
 2026-11-17T16:08:35.504886-05:00      manage_1600  exit_order_submitted       {"alpaca_order_id": "941d62a8-7c99-4081-973f-a64beb20d0dc", "contract_symbol": "APP261218C00400000", "limit_price": "27.60", "reason": "stop_loss_hit_at_scan", "ticker": "APP"}
 2026-11-17T14:57:45.304642-05:00       entry_1500          entry_filled                                                                                       {"contract_symbol": "APP261218C00400000", "contracts": 1, "filled_price": 31.3, "ticker": "APP"}
 2026-11-17T14:51:28.810470-05:00       entry_1500 entry_order_submitted {"alpaca_order_id": "d8bbe0da-b7ed-4f21-a075-d606254f2297", "contract_symbol": "APP261218C00400000", "contracts": 1, "entry_mode": "regular", "limit_price": "31.80", "ticker": "APP"}
@@ -66,6 +65,4 @@ ticker     contract_symbol entry_trade_date_et exit_trade_date_et  entry_option_
 2026-11-17T10:44:30.356649-05:00 early_entry_1040    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T10:38:23.278986-05:00 early_entry_1035    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-17T10:32:22.510911-05:00 early_entry_1030    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-17T10:26:20.282022-05:00 early_entry_1025    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-17T10:20:18.351672-05:00 early_entry_1020    early_entry_shadow                                                                                                                  {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
