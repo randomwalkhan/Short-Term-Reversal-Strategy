@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-18 14:10:04 EST`
-Last processed slot: `manage_1400`
+Latest checkpoint (ET): `2026-11-18 14:15:05 EST`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -48,18 +48,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   APP           92.59               27            1.99              5.55        396.56               121.47         0.781          pass              0.580             17.4                           0.209               43.88              2.221                                 ok            True                  False
-   ADI           85.71               21            1.64              4.41        381.78                67.50         0.624          pass              0.327             13.0                           0.169               -7.11              0.081                                 ok            True                  False
-   TXN           83.33               12            2.06              4.27        294.03                59.80         0.614          pass              0.218             18.2                           0.197               -6.97              0.140                                 ok            True                  False
-   BKR           87.10               31            0.63              0.21         47.37                58.51         0.609          pass              0.556             55.2                           0.400               -4.98             -0.034                                 ok            True                  False
-  VRSK           83.33               30            0.97              1.40        204.71                46.89         0.549          pass              0.462             61.6                           0.692                2.76              0.198                                 ok            True                  False
-   CEG           90.91               33            1.11              2.08        267.18                61.66         0.547          pass              0.653             51.5                           0.389                8.05              1.133                                 ok            True                  False
-  INSM           81.08               37            1.28              1.09        121.39                62.27         0.538          pass              0.409             48.7                           0.341                9.37              1.082                                 ok            True                  False
-  META           82.35               34            0.54              2.33        617.87                41.87         0.526          pass              0.459             61.1                           0.383               -2.30              0.023                                 ok            True                  False
-  SOXL           64.29               28            2.58              0.89         48.69               265.73         0.929          pass              0.365             50.8                           0.324              -28.31             -0.478            downtrend_blocked_slope           False                  False
-  INTC           68.97               29            1.83              0.71         54.87               143.31         0.818          pass              0.333             41.6                           0.303               -7.05             -0.119           downtrend_blocked_streak           False                  False
-  DRAM           64.71               34            0.39              0.11         38.88               109.09         0.736          pass              0.460             75.3                           0.389              -14.03             -0.413 downtrend_blocked_slope_and_streak           False                  False
-  LRCX           66.67               33            1.16              1.71        209.96               104.84         0.688          pass              0.350             42.5                           0.258               -5.96              0.410           downtrend_blocked_streak           False                  False
+   APP           89.66               29            1.90              5.30        396.67               121.47         0.774          pass              0.525             21.2                           0.214               44.02              2.225                                 ok            True                  False
+   ADI           86.36               22            1.47              3.96        381.97                67.50         0.629          pass              0.378             22.0                           0.176               -6.95              0.089                                 ok            True                  False
+   TXN           84.62               13            1.95              4.05        294.13                59.80         0.616          pass              0.272             22.5                           0.185               -6.87              0.145                                 ok            True                  False
+   BKR           87.10               31            0.54              0.18         47.38                58.51         0.615          pass              0.577             61.9                           0.419               -4.89             -0.030                                 ok            True                  False
+  VRSK           80.00               25            1.37              1.97        204.46                46.89         0.552          pass              0.293             45.8                           0.593                2.35              0.179                                 ok            True                  False
+   CEG           90.91               33            1.04              1.96        267.23                61.66         0.551          pass              0.662             54.2                           0.368                8.12              1.136                                 ok            True                  False
+  INSM           81.08               37            1.25              1.06        121.40                62.27         0.540          pass              0.412             49.9                           0.331                9.40              1.083                                 ok            True                  False
+  META           82.35               34            0.55              2.39        617.85                41.87         0.525          pass              0.456             60.2                           0.355               -2.31              0.023                                 ok            True                  False
+  SOXL           65.52               29            1.96              0.67         48.78               265.73         0.939          pass              0.408             62.6                           0.338              -27.85             -0.449            downtrend_blocked_slope           False                  False
+  INTC           68.97               29            1.83              0.71         54.87               143.31         0.818          pass              0.333             41.6                           0.269               -7.05             -0.119           downtrend_blocked_streak           False                  False
+  DRAM           64.71               34            0.28              0.08         38.90               109.09         0.742          pass              0.480             81.9                           0.380              -13.94             -0.408 downtrend_blocked_slope_and_streak           False                  False
+  LRCX           66.67               33            1.09              1.60        210.00               104.84         0.692          pass              0.361             46.2                           0.240               -5.88              0.414           downtrend_blocked_streak           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261118141004)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261118141505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261118141004)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261118141505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261118141004)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261118141505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261118141004)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261118141505)
 
 </details>
