@@ -3,8 +3,8 @@
 <!-- reversal-3.3-live:start -->
 ## Reversal 3.5 Live Paper Test
 
-- Latest checkpoint (ET): `2026-11-19 09:50:05 EST`
-- Equity: `$111,318.80` | Realized: `$95,918.80` | Unrealized: `$5,400.00` | Open positions: `1`
+- Latest checkpoint (ET): `2026-11-19 09:55:05 EST`
+- Equity: `$109,293.80` | Realized: `$95,918.80` | Unrealized: `$3,375.00` | Open positions: `1`
 - Today closed trades: `0`
 - Current slot: `manage_1000`
 - Universe: `qqq_plus_leverage_etfs`
@@ -14,34 +14,34 @@
 
 ```text
 ticker asset_type execution_mode         instrument  units  cash_spent  current_position_value  current_price  unrealized_pnl  unrealized_return_pct  business_days_held
-   APP     option         option APP270115C00400000     15     49725.0                 55125.0          36.75          5400.0                  10.86                   1
+   APP     option         option APP270115C00400000     15     49725.0                 53100.0           35.4          3375.0                   6.79                   1
 ```
 
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261119095005)
+![Reversal 3.5 Live Equity Overall](assets/reversal_3_3_live_equity_overall.png?v=20261119095505)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261119095005)
+![Reversal 3.5 Live Equity 1D](assets/reversal_3_3_live_equity_1d.png?v=20261119095505)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261119095005)
+![Reversal 3.5 Live Equity 1W](assets/reversal_3_3_live_equity.png?v=20261119095505)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261119095005)
+![Reversal 3.5 Live Equity 1M](assets/reversal_3_3_live_equity_1m.png?v=20261119095505)
 
 </details>
 
