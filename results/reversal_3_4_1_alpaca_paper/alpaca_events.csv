@@ -10891,3 +10891,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-18T12:00:35.278968-05:00,2026-11-18,early_entry_1200,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-18T14:48:10.556503-05:00,2026-11-18,entry_1500,entry_order_submitted,"{""alpaca_order_id"": ""7171df9e-04fe-45b3-bc55-8a27d0223959"", ""contract_symbol"": ""APP270115C00400000"", ""contracts"": 1, ""entry_mode"": ""regular"", ""limit_price"": ""34.20"", ""ticker"": ""APP""}"
 2026-11-18T16:00:06.597500-05:00,2026-11-18,entry_1500,entry_not_filled,"{""contract_symbol"": ""APP270115C00400000"", ""status"": ""expired"", ""ticker"": ""APP""}"
+2026-11-19T10:00:44.043146-05:00,2026-11-19,early_entry_1000,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
