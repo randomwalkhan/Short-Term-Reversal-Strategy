@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 56193.800356674205,
-  "positions": [
-    {
-      "position_id": "APP_20261118T145005",
-      "ticker": "APP",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "APP270115C00400000",
-      "expiry": "2027-01-15",
-      "strike": 400.0,
-      "entry_timestamp": "2026-11-18T14:50:05.341851-05:00",
-      "entry_trade_date": "2026-11-18",
-      "entry_slot": "entry_1500",
-      "entry_spot": 389.80999755859375,
-      "entry_option_price": 33.150000000000006,
-      "entry_bid": 32.2,
-      "entry_ask": 34.1,
-      "entry_iv_pct": 60.574735076904304,
-      "contracts": 15,
-      "allocated_cash": 49725.00000000001,
-      "success_rate": 90.91,
-      "matched_signals": 22,
-      "current_drop_pct": 2.29,
-      "rolling_sigma_20d_pct": 121.47,
-      "planned_tp_day1": 38.1225,
-      "planned_tp_day2": 38.1225,
-      "planned_stop": 29.835000000000004,
-      "option_open_interest": 4183.0,
-      "option_volume": 24.0,
-      "option_spread_pct": 0.05731523378582197,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 100946.30035667421,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",

@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-19 10:15:01 EST`
-Last processed slot: `early_entry_1015`
+Latest checkpoint (ET): `2026-11-19 10:20:05 EST`
+Last processed slot: `manage_1030`
 
 ## Active Configuration
 
@@ -27,55 +27,55 @@ Last processed slot: `early_entry_1015`
 
 ## Portfolio Snapshot
 
-- Cash: `$56,193.80`
-- Equity: `$100,818.80`
-- Realized PnL: `$95,918.80`
-- Unrealized PnL: `$-5,100.00`
-- Open positions: `1`
+- Cash: `$100,946.30`
+- Equity: `$100,946.30`
+- Realized PnL: `$90,946.30`
+- Unrealized PnL: `$0.00`
+- Open positions: `0`
 
 ## Open Positions
 
-```text
-ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   APP     option         option APP270115C00400000       2026-11-18                   1     15     49725.0                 44625.0        33.15          29.75      389.81         384.2          bid_ask_mid                      29.75                bid_ask_mid                    True         -5100.0                 -10.26         90.91               22              2.29         60.57           59.33                 121.47                4183.0           24.0               0.06                      ok
-```
+_None_
 
 ## Today's Closed Trades (2026-11-19)
 
-_None_
+```text
+ticker asset_type execution_mode         instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct           exit_reason
+   APP     option         option APP270115C00400000     15          2026-11-18         2026-11-19        33.15      29.835 -4972.5       -10.0 stop_loss_hit_at_scan
+```
 
 ## Current Screener Snapshot
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-   APP           90.91               33            1.58              4.31        389.06               121.61         0.763          pass              0.651             43.4                           0.293                8.05              0.372                  ok            True                  False
-  IDXX           95.65               23            1.41              6.91        695.51                78.12         0.727          pass              0.593             11.3                           0.116                2.67              0.187                  ok            True                  False
-  ABNB           86.21               29            1.13              1.43        179.60                55.20         0.570          pass              0.408             19.5                           0.209                4.73             -0.099                  ok            True                  False
-  REGN           80.00               30            1.11              7.37        942.37                54.27         0.567          pass              0.343             51.0                           0.384                3.56              0.498                  ok            True                  False
- CMCSA           92.31               13            1.70              0.30         25.11                34.19         0.563          pass              0.434              9.9                           0.192               -0.55              0.253                  ok            True                  False
-  AAPL          100.00               20            0.91              2.24        351.49                27.20         0.557          pass              0.582             19.8                           0.248                1.55              0.216                  ok            True                  False
-  FAST           90.00               10            1.19              0.45         53.77                20.11         0.556          pass              0.340              5.9                           0.230                0.79              0.095                  ok            True                  False
-  COST           88.89               18            0.87              6.71       1093.74                23.52         0.551          pass              0.417             24.0                           0.268                2.01              0.441                  ok            True                  False
-  ODFL           85.71               28            1.07              1.31        174.55                43.99         0.548          pass              0.327              0.0                           0.150                1.57              0.392                  ok            True                  False
-   CEG           92.11               38            0.62              1.15        262.25                59.92         0.532          pass              0.563              0.0                           0.150                9.12              0.595                  ok            True                  False
-   HON           80.00               25            0.84              1.31        222.14                33.05         0.526          pass              0.153              0.0                           0.189                2.66             -0.035                  ok            True                  False
-   CSX           82.35               17            1.29              0.46         51.13                35.07         0.524          pass              0.187              8.3                           0.165               -0.31              0.217                  ok            True                  False
+   APP           92.59               27            2.03              5.57        388.52               121.61         0.771          pass              0.607             27.0                           0.218                7.54              0.351                  ok            True                  False
+  IDXX           97.14               35            0.82              3.99        696.76                78.12         0.697          pass              0.783             48.7                           0.471                3.29              0.214                  ok            True                  False
+  ABNB           86.21               29            1.19              1.51        179.56                55.20         0.566          pass              0.411             20.7                           0.214                4.66             -0.102                  ok            True                  False
+ CMCSA           92.86               14            1.60              0.28         25.12                34.19         0.563          pass              0.473             15.6                           0.229               -0.46              0.258                  ok            True                  False
+  FAST           90.00               10            1.17              0.44         53.77                20.11         0.557          pass              0.356             11.3                           0.194                0.81              0.096                  ok            True                  False
+  AAPL          100.00               21            0.85              2.09        351.56                27.20         0.555          pass              0.605             25.3                           0.324                1.62              0.219                  ok            True                  False
+  REGN           83.78               37            0.73              4.83        943.46                54.27         0.551          pass              0.540             67.8                           0.643                3.96              0.515                  ok            True                  False
+   MAR           80.00               10            1.61              4.78        423.12                24.12         0.539          pass              0.136             27.3                           0.305                0.25              0.105                  ok            True                  False
+   ROP           85.00               20            1.20              3.96        469.17                42.60         0.531          pass              0.318             21.7                           0.294               -5.24             -0.248                  ok            True                  False
+   CEG           90.91               33            1.08              1.99        261.89                59.92         0.530          pass              0.497              0.0                           0.150                8.62              0.574                  ok            True                  False
+  ODFL           88.24               34            0.89              1.09        174.64                43.99         0.524          pass              0.494             20.8                           0.159                1.75              0.400                  ok            True                  False
+   CSX           82.35               17            1.31              0.47         51.13                35.07         0.523          pass              0.183              6.9                           0.111               -0.33              0.216                  ok            True                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                               detail
-2026-11-19T10:15:01.694448-05:00 early_entry_1015 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-19T10:10:05.743746-05:00 early_entry_1010 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-19T10:05:05.527736-05:00 early_entry_1005 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-19T10:00:06.381004-05:00 early_entry_1000 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-19T00:00:05.435730-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                            {'saved': 91, 'empty': 2}
-2026-11-18T15:10:05.947802-05:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
-2026-11-18T15:05:06.246695-05:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
-2026-11-18T15:00:06.306059-05:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
-2026-11-18T14:55:05.603926-05:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
-2026-11-18T14:50:05.341851-05:00       entry_1500              entry {"allocated_cash": 49725.0, "asset_type": "option", "contract_symbol": "APP270115C00400000", "contracts": 15, "early_entry_score": 0.497, "entry_mode": "regular", "entry_option_price": 33.15, "execution_mode": "option", "matched_signals": 22, "option_liquidity_status": "ok", "option_open_interest": 4183.0, "option_spread_pct": 5.73, "option_volume": 24.0, "success_rate": 90.91, "ticker": "APP", "timing_score": 0.787}
+                    timestamp_et             slot         event_type                                                                                                                                                                           detail
+2026-11-19T10:20:05.689332-05:00 early_entry_1020 early_entry_shadow                                                                                                            {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-19T10:20:05.689332-05:00      manage_1030               exit {"asset_type": "option", "contract_symbol": "APP270115C00400000", "fill_price": 29.835, "pnl": -4972.5, "reason": "stop_loss_hit_at_scan", "return_pct": -10.0, "ticker": "APP"}
+2026-11-19T10:15:01.694448-05:00 early_entry_1015 early_entry_shadow                                                                                                            {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-19T10:10:05.743746-05:00 early_entry_1010 early_entry_shadow                                                                                                            {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-19T10:05:05.527736-05:00 early_entry_1005 early_entry_shadow                                                                                                            {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-19T10:00:06.381004-05:00 early_entry_1000 early_entry_shadow                                                                                                            {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-19T00:00:05.435730-05:00     data_refresh       data_refresh                                                                                                                                                        {'saved': 91, 'empty': 2}
+2026-11-18T15:10:05.947802-05:00       entry_1500       slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-11-18T15:05:06.246695-05:00       entry_1500       slot_skipped                                                                                                                                                  {"reason": "already_processed"}
+2026-11-18T15:00:06.306059-05:00       entry_1500       slot_skipped                                                                                                                                                  {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261119101501)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261119102005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261119101501)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261119102005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261119101501)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261119102005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261119101501)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261119102005)
 
 </details>
