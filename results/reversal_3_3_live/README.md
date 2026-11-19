@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-19 12:25:06 EST`
+Latest checkpoint (ET): `2026-11-19 12:30:05 EST`
 Last processed slot: `manage_1230`
 
 ## Active Configuration
@@ -48,18 +48,18 @@ ticker asset_type execution_mode         instrument  units entry_trade_date_et e
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  IDXX           97.06               34            0.89              4.35        696.61                78.12         0.698          pass              0.767             45.8                           0.516                3.21              0.211                  ok            True                  False
-   BKR           87.10               31            0.55              0.18         47.22                58.30         0.600          pass              0.602             70.8                           0.458                2.30              0.041                  ok            True                  False
-   TXN           92.86               28            0.87              1.78        291.67                59.49         0.572          pass              0.739             73.0                           0.485                4.22              0.324                  ok            True                  False
-   ADI           92.11               38            0.51              1.37        381.39                66.90         0.566          pass              0.797             76.9                           0.449                5.27              0.263                  ok            True                  False
-  ABNB           84.00               25            1.44              1.82        179.43                55.20         0.565          pass              0.394             43.8                           0.386                4.40             -0.113                  ok            True                  False
- CMCSA           94.12               17            1.41              0.25         25.13                34.19         0.557          pass              0.578             33.0                           0.508               -0.26              0.267                  ok            True                  False
-  REGN           84.21               38            0.69              4.59        943.56                54.27         0.545          pass              0.576             74.1                           0.572                4.00              0.517                  ok            True                  False
-  COST           90.48               21            0.74              5.68       1094.19                23.52         0.542          pass              0.526             39.8                           0.622                2.15              0.447                  ok            True                  False
-  AAPL           95.83               24            0.69              1.71        351.72                27.20         0.538          pass              0.725             59.2                           0.578                1.77              0.226                  ok            True                  False
-  ODFL           85.71               28            1.05              1.28        174.56                43.99         0.536          pass              0.499             57.8                           0.580                1.59              0.393                  ok            True                  False
-  VRSK           82.76               29            1.12              1.59        201.63                47.31         0.524          pass              0.410             52.4                           0.688               -5.41             -0.146                  ok            True                  False
-   CEG           88.89               18            2.40              4.42        260.85                59.92         0.520          pass              0.440             32.7                           0.336                7.16              0.513                  ok            True                  False
+  IDXX           97.06               34            0.93              4.56        696.52                78.12         0.696          pass              0.759             43.2                           0.526                3.17              0.209                  ok            True                  False
+   TXN           92.86               28            0.89              1.81        291.65                59.49         0.571          pass              0.738             72.6                           0.671                4.20              0.324                  ok            True                  False
+  ABNB           84.62               26            1.40              1.76        179.45                55.20         0.562          pass              0.422             45.5                           0.514                4.44             -0.111                  ok            True                  False
+ CMCSA           94.44               18            1.31              0.23         25.14                34.19         0.557          pass              0.607             37.7                           0.597               -0.16              0.271                  ok            True                  False
+  REGN           83.78               37            0.76              5.00        943.39                54.27         0.547          pass              0.551             71.7                           0.605                3.93              0.514                  ok            True                  False
+  COST           86.36               22            0.60              4.63       1094.64                23.52         0.540          pass              0.456             50.9                           0.692                2.29              0.454                  ok            True                  False
+  AAPL           95.83               24            0.71              1.76        351.69                27.20         0.536          pass              0.721             57.9                           0.664                1.75              0.225                  ok            True                  False
+  VRSK           80.77               26            1.35              1.91        201.49                47.31         0.526          pass              0.308             42.8                           0.630               -5.62             -0.156                  ok            True                  False
+   CEG           90.48               21            2.12              3.89        261.07                59.92         0.520          pass              0.527             40.7                           0.497                7.48              0.526                  ok            True                  False
+   ADP           83.33               18            1.24              2.66        304.43                28.97         0.519          pass              0.290             31.9                           0.424               -1.75              0.060                  ok            True                  False
+  ODFL           89.19               37            0.74              0.91        174.72                43.99         0.502          pass              0.685             70.0                           0.729                1.91              0.407                  ok            True                   True
+  SOXL           68.75               32            1.26              0.43         49.07               263.99         0.920          pass              0.496             85.6                           0.718               19.01              0.306                  ok           False                  False
 ```
 
 ## Recent Events
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261119122506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261119123005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261119122506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261119123005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261119122506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261119123005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261119122506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261119123005)
 
 </details>
