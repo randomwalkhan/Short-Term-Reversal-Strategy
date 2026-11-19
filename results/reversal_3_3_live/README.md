@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-19 10:05:05 EST`
+Latest checkpoint (ET): `2026-11-19 10:10:05 EST`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$56,193.80`
-- Equity: `$106,293.80`
+- Equity: `$101,943.80`
 - Realized PnL: `$95,918.80`
-- Unrealized PnL: `$375.00`
+- Unrealized PnL: `$-3,975.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   APP     option         option APP270115C00400000       2026-11-18                   1     15     49725.0                 50100.0        33.15           33.4      389.81        383.56          bid_ask_mid                       33.4                bid_ask_mid                    True           375.0                   0.75         90.91               22              2.29         60.57           66.16                 121.47                4183.0           24.0               0.06                      ok
+   APP     option         option APP270115C00400000       2026-11-18                   1     15     49725.0                 45750.0        33.15           30.5      389.81        383.37          bid_ask_mid                       30.5                bid_ask_mid                    True         -3975.0                  -7.99         90.91               22              2.29         60.57           61.55                 121.47                4183.0           24.0               0.06                      ok
 ```
 
 ## Today's Closed Trades (2026-11-19)
@@ -48,24 +48,25 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-   APP           90.91               22            2.28              6.25        388.23               121.61         0.781          pass              0.503             18.0                           0.194                7.27              0.340                  ok            True                  False
-  IDXX           96.15               26            1.24              6.08        695.86                78.12         0.721          pass              0.644             21.9                           0.227                2.84              0.195                  ok            True                  False
-  REGN           82.35               17            1.75             11.56        940.57                54.27         0.611          pass              0.240             23.0                           0.222                2.89              0.468                  ok            True                  False
- CMCSA           92.86               14            1.56              0.28         25.12                34.19         0.566          pass              0.463             12.2                           0.201               -0.42              0.259                  ok            True                  False
-  COST           88.89               18            0.83              6.39       1093.88                23.52         0.555          pass              0.382             12.1                           0.174                2.06              0.443                  ok            True                  False
-  ABNB           89.74               39            0.57              0.71        179.90                55.20         0.548          pass              0.669             53.6                           0.337                5.33             -0.073                  ok            True                  False
-  AAPL           95.65               23            0.79              1.95        351.61                27.20         0.540          pass              0.631             30.1                           0.284                1.67              0.221                  ok            True                  False
-  VRSK           80.00               20            1.79              2.54        201.22                47.31         0.537          pass              0.177             18.8                           0.266               -6.05             -0.177                  ok            True                  False
-  GILD           85.00               20            1.33              1.58        168.30                31.08         0.520          pass              0.312             19.9                           0.226               -0.50             -0.007                  ok            True                  False
-   CSX           85.00               20            1.11              0.40         51.16                35.07         0.519          pass              0.311             19.7                           0.218               -0.14              0.225                  ok            True                  False
-  ODFL           89.47               38            0.63              0.78        174.78                43.99         0.518          pass              0.604             37.6                           0.257                2.02              0.412                  ok            True                  False
-   ROP           86.96               23            1.16              3.83        469.23                42.60         0.516          pass              0.397             24.3                           0.189               -5.21             -0.246                  ok            True                  False
+   APP           92.59               27            1.97              5.40        388.60               121.61         0.774          pass              0.614             29.2                           0.229                7.61              0.354                  ok            True                  False
+  IDXX           96.15               26            1.30              6.35        695.75                78.12         0.718          pass              0.634             18.4                           0.175                2.79              0.192                  ok            True                  False
+  REGN           81.25               16            1.78             11.75        940.49                54.27         0.615          pass              0.200             21.8                           0.203                2.86              0.467                  ok            True                  False
+  ABNB           86.21               29            1.09              1.38        179.62                55.20         0.574          pass              0.382             10.7                           0.151                4.77             -0.097                  ok            True                  False
+ CMCSA           92.31               13            1.72              0.30         25.11                34.19         0.562          pass              0.421              5.4                           0.196               -0.58              0.252                  ok            True                  False
+  COST           88.89               18            0.86              6.61       1093.79                23.52         0.552          pass              0.401             18.4                           0.264                2.03              0.442                  ok            True                  False
+  ODFL           85.71               28            1.03              1.27        174.57                43.99         0.551          pass              0.327              0.0                           0.153                1.61              0.394                  ok            True                  False
+  AAPL           95.65               23            0.76              1.88        351.64                27.20         0.542          pass              0.639             32.6                           0.339                1.70              0.222                  ok            True                  False
+  VRSK           80.95               21            1.69              2.39        201.28                47.31         0.538          pass              0.223             23.5                           0.435               -5.95             -0.172                  ok            True                  False
+  GEHC           80.00               30            0.92              0.54         83.43                39.18         0.523          pass              0.255             23.0                           0.177               -1.03             -0.073                  ok            True                  False
+   CSX           83.33               18            1.24              0.44         51.14                35.07         0.522          pass              0.226             10.6                           0.123               -0.27              0.219                  ok            True                  False
+   EXC           80.00               15            1.15              0.37         45.86                22.38         0.515          pass              0.157             24.1                           0.425               -2.23             -0.009                  ok            True                  False
 ```
 
 ## Recent Events
 
 ```text
                     timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                               detail
+2026-11-19T10:10:05.743746-05:00 early_entry_1010 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-19T10:05:05.527736-05:00 early_entry_1005 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-19T10:00:06.381004-05:00 early_entry_1000 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-19T00:00:05.435730-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                            {'saved': 91, 'empty': 2}
@@ -75,7 +76,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-11-18T14:55:05.603926-05:00       entry_1500       slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                      {"reason": "already_processed"}
 2026-11-18T14:50:05.341851-05:00       entry_1500              entry {"allocated_cash": 49725.0, "asset_type": "option", "contract_symbol": "APP270115C00400000", "contracts": 15, "early_entry_score": 0.497, "entry_mode": "regular", "entry_option_price": 33.15, "execution_mode": "option", "matched_signals": 22, "option_liquidity_status": "ok", "option_open_interest": 4183.0, "option_spread_pct": 5.73, "option_volume": 24.0, "success_rate": 90.91, "ticker": "APP", "timing_score": 0.787}
 2026-11-18T14:50:05.341851-05:00       entry_1500     timing_overlay                                                                                                                                                                                                                                                                                                                         {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-11-18", "training_samples": 6259, "window": 5}
-2026-11-18T12:00:06.155878-05:00 early_entry_1200 early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261119100505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261119101005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261119100505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261119101005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261119100505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261119101005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261119100505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261119101005)
 
 </details>
