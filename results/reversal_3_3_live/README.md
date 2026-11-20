@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-20 00:20:05 EST`
-Last processed slot: `share_ext_0020`
+Latest checkpoint (ET): `2026-11-20 00:25:06 EST`
+Last processed slot: `share_ext_0025`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `share_ext_0020`
 ## Portfolio Snapshot
 
 - Cash: `$52,781.30`
-- Equity: `$100,426.30`
+- Equity: `$105,756.30`
 - Realized PnL: `$90,946.30`
-- Unrealized PnL: `$-520.00`
+- Unrealized PnL: `$4,810.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   APP     option         option APP270115C00380000       2026-11-19                   1     13     48165.0                 47645.0        37.05          36.65      380.27        372.27          bid_ask_mid                      36.65                bid_ask_mid                    True          -520.0                  -1.08         94.74               19              2.72          61.7           62.22                 121.61                 578.0           37.0                0.1                      ok
+   APP     option         option APP270115C00380000       2026-11-19                   1     13     48165.0                 52975.0        37.05          40.75      380.27        372.27     last_price_stale                        NaN                unavailable                   False          4810.0                   9.99         94.74               19              2.72          61.7             0.2                 121.61                 578.0           37.0                0.1                      ok
 ```
 
 ## Today's Closed Trades (2026-11-20)
@@ -51,17 +51,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                                                                                                                                                                                                                                                                                                                                                                                                                              detail
-2026-11-20T00:20:05.750952-05:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                           {'saved': 91, 'empty': 2}
-2026-11-20T00:15:04.849558-05:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                           {'saved': 91, 'empty': 2}
-2026-11-20T00:10:06.070854-05:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                           {'saved': 91, 'empty': 2}
-2026-11-20T00:05:06.750346-05:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                           {'saved': 91, 'empty': 2}
-2026-11-20T00:00:05.958113-05:00 data_refresh data_refresh                                                                                                                                                                                                                                                                                                                                                                                                           {'saved': 91, 'empty': 2}
-2026-11-19T15:10:05.736223-05:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-11-19T15:05:05.590867-05:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-11-19T15:00:06.534419-05:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-11-19T14:55:05.564636-05:00   entry_1500 slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                     {"reason": "already_processed"}
-2026-11-19T14:50:05.597236-05:00   entry_1500        entry {"allocated_cash": 48165.0, "asset_type": "option", "contract_symbol": "APP270115C00380000", "contracts": 13, "early_entry_score": 0.591, "entry_mode": "regular", "entry_option_price": 37.05, "execution_mode": "option", "matched_signals": 19, "option_liquidity_status": "ok", "option_open_interest": 578.0, "option_spread_pct": 9.99, "option_volume": 37.0, "success_rate": 94.74, "ticker": "APP", "timing_score": 0.774}
+                    timestamp_et         slot   event_type                          detail
+2026-11-20T00:25:06.735711-05:00 data_refresh data_refresh       {'saved': 91, 'empty': 2}
+2026-11-20T00:20:05.750952-05:00 data_refresh data_refresh       {'saved': 91, 'empty': 2}
+2026-11-20T00:15:04.849558-05:00 data_refresh data_refresh       {'saved': 91, 'empty': 2}
+2026-11-20T00:10:06.070854-05:00 data_refresh data_refresh       {'saved': 91, 'empty': 2}
+2026-11-20T00:05:06.750346-05:00 data_refresh data_refresh       {'saved': 91, 'empty': 2}
+2026-11-20T00:00:05.958113-05:00 data_refresh data_refresh       {'saved': 91, 'empty': 2}
+2026-11-19T15:10:05.736223-05:00   entry_1500 slot_skipped {"reason": "already_processed"}
+2026-11-19T15:05:05.590867-05:00   entry_1500 slot_skipped {"reason": "already_processed"}
+2026-11-19T15:00:06.534419-05:00   entry_1500 slot_skipped {"reason": "already_processed"}
+2026-11-19T14:55:05.564636-05:00   entry_1500 slot_skipped {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261120002005)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261120002506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261120002005)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261120002506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261120002005)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261120002506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261120002005)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261120002506)
 
 </details>
