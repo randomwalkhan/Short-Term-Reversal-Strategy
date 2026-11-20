@@ -7561,3 +7561,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-20T10:15:05.923687-05:00,2026-11-20,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-20T10:20:06.105218-05:00,2026-11-20,manage_1030,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""APP270115C00380000"", ""fill_price"": 33.345, ""pnl"": -4816.5, ""reason"": ""stop_loss_hit_at_scan"", ""return_pct"": -10.0, ""ticker"": ""APP""}"
 2026-11-20T10:20:06.105218-05:00,2026-11-20,early_entry_1020,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-11-20T10:25:04.965468-05:00,2026-11-20,early_entry_1025,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
