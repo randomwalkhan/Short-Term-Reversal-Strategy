@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-20 09:55:05 EST`
+Latest checkpoint (ET): `2026-11-20 10:00:05 EST`
 Last processed slot: `manage_1000`
 
 ## Active Configuration
@@ -28,16 +28,16 @@ Last processed slot: `manage_1000`
 ## Portfolio Snapshot
 
 - Cash: `$52,781.30`
-- Equity: `$96,916.30`
+- Equity: `$96,461.30`
 - Realized PnL: `$90,946.30`
-- Unrealized PnL: `$-4,030.00`
+- Unrealized PnL: `$-4,485.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode         instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-   APP     option         option APP270115C00380000       2026-11-19                   1     13     48165.0                 44135.0        37.05          33.95      380.27        374.94          bid_ask_mid                      33.95                bid_ask_mid                    True         -4030.0                  -8.37         94.74               19              2.72          61.7           61.32                 121.61                 578.0           37.0                0.1                      ok
+   APP     option         option APP270115C00380000       2026-11-19                   1     13     48165.0                 43680.0        37.05           33.6      380.27        374.96          bid_ask_mid                       33.6                bid_ask_mid                    True         -4485.0                  -9.31         94.74               19              2.72          61.7           61.34                 121.61                 578.0           37.0                0.1                      ok
 ```
 
 ## Today's Closed Trades (2026-11-20)
@@ -48,34 +48,34 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day                trend_health_status  call_candidate  early_entry_candidate
-   TXN           87.50               16            1.66              3.33        284.32                59.73         0.612          pass              0.437             45.4                           0.478                1.31             -0.279                                 ok            True                  False
-   ADI           82.35               17            1.98              5.24        375.19                64.58         0.596          pass              0.321             50.6                           0.470                1.76             -0.339                                 ok            True                  False
-  MCHP           88.89               36            1.03              0.42         58.29                78.21         0.595          pass              0.662             64.1                           0.440               -0.82             -0.384                                 ok            True                  False
-  INTC           69.77               43            0.07              0.03         55.71               141.91         0.821          pass              0.578             98.8                           0.963               -1.07             -0.763                                 ok           False                  False
-   APP           90.70               43            0.99              2.64        377.89               122.37         0.748          pass              0.792             77.2                           0.700               -4.08             -0.485 downtrend_blocked_slope_and_streak           False                  False
-  FTNT           78.57               28            1.80              1.65        130.75                96.17         0.673          pass              0.309             40.4                           0.314                8.63              0.713                                 ok           False                  False
-  SOXL           62.50               16            8.99              2.85         44.08               254.86         0.670          pass              0.213             35.5                           0.438              -10.31             -2.440            downtrend_blocked_slope           False                  False
-   BKR           86.21               29            0.71              0.23         46.57                56.86         0.594          pass              0.573             73.7                           0.673               -2.73             -0.362 downtrend_blocked_slope_and_streak           False                  False
-  UPRO           84.21               38            0.03              0.03        117.86                72.20         0.592          pass              0.655             99.1                           0.924               -8.62             -1.478 downtrend_blocked_slope_and_streak           False                  False
-  AVGO           58.33               12            2.61              6.33        343.94                72.02         0.590          pass              0.178             35.3                           0.295               14.95              1.006                                 ok           False                  False
-  MPWR           55.56               18            3.01             27.28       1284.17                90.01         0.583          pass              0.251             46.5                           0.490                5.58             -0.396                                 ok           False                  False
-  QCOM           89.74               39            0.57              0.65        161.73                69.46         0.569          pass              0.750             79.9                           0.634               -2.62             -0.702 downtrend_blocked_slope_and_streak           False                  False
+  FTNT           80.56               36            1.14              1.05        131.01                96.17         0.667          pass              0.441             62.0                           0.416                9.35              0.743                                 ok            True                  False
+   TXN           88.24               17            1.62              3.24        284.36                59.73         0.609          pass              0.468             46.8                           0.610                1.36             -0.277                                 ok            True                  False
+   ADI           83.33               18            1.78              4.71        375.42                64.58         0.603          pass              0.369             55.5                           0.664                1.97             -0.330                                 ok            True                  False
+   CEG           91.18               34            1.11              1.96        251.19                57.98         0.511          pass              0.722             71.0                           0.696               -0.14             -0.435                                 ok            True                   True
+   APP           90.70               43            0.98              2.59        377.91               122.37         0.749          pass              0.793             77.6                           0.706               -4.06             -0.484 downtrend_blocked_slope_and_streak           False                  False
+  SOXL           55.00               20            7.60              2.41         44.27               254.86         0.720          pass              0.275             45.4                           0.693               -8.95             -2.371            downtrend_blocked_slope           False                  False
+  MRVL           66.67               21            3.43              3.32        137.05               121.47         0.624          pass              0.288             50.6                           0.719               -5.29             -1.151            downtrend_blocked_slope           False                  False
+  MCHP           88.10               42            0.26              0.11         58.42                78.21         0.606          pass              0.750             91.0                           0.699               -0.05             -0.349                                 ok           False                  False
+  DRAM           52.17               23            3.03              0.82         38.08               105.80         0.601          pass              0.304             52.4                           0.688               -5.15             -1.000 downtrend_blocked_slope_and_streak           False                  False
+  MPWR           57.14               21            2.48             22.52       1286.21                90.01         0.598          pass              0.301             55.8                           0.746                6.15             -0.372                                 ok           False                  False
+  ASML           72.73               22            1.50             14.20       1350.11                61.72         0.576          pass              0.320             60.7                           0.763               -6.24             -1.148 downtrend_blocked_slope_and_streak           False                  False
+   WDC           70.83               24            3.51              7.30        293.65               104.69         0.568          pass              0.309             52.9                           0.731                8.56              0.175                                 ok           False                  False
 ```
 
 ## Recent Events
 
 ```text
-                    timestamp_et         slot   event_type                    detail
-2026-11-20T01:25:03.363046-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
-2026-11-20T01:20:04.815073-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
-2026-11-20T01:15:06.809821-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
-2026-11-20T01:10:05.934124-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
-2026-11-20T01:05:05.898904-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
-2026-11-20T01:00:05.809710-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
-2026-11-20T00:55:04.836951-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
-2026-11-20T00:50:02.820195-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
-2026-11-20T00:45:05.761865-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
-2026-11-20T00:40:04.740309-05:00 data_refresh data_refresh {'saved': 91, 'empty': 2}
+                    timestamp_et             slot         event_type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 detail
+2026-11-20T10:00:05.975978-05:00 early_entry_1000 early_entry_shadow {"contract_symbol": "CEG270115C00250000", "current_drop_pct": 1.11, "early_entry_score": 0.722, "early_reclaim_pct": 71.0, "entry_ask": 18.0, "entry_bid": 16.0, "entry_mode": "early", "entry_option_price": 17.0, "hypothetical_budget": 26390.65, "hypothetical_contracts": 15, "matched_signals": 34, "option_liquidity_status": "low_volume", "option_open_interest": 753.0, "option_spread_pct": 11.76, "option_volume": 6.0, "reason": "shadow_option_failed_liquidity", "recovery_stability_score": 0.696, "shadow_only": true, "success_rate": 91.18, "ticker": "CEG", "timing_score": 0.511, "top_candidates": [{"current_drop_pct": 1.11, "early_entry_score": 0.722, "early_reclaim_pct": 71.0, "matched_signals": 34, "recovery_stability_score": 0.696, "success_rate": 91.18, "ticker": "CEG", "timing_score": 0.511, "trend_health_status": "ok"}], "trend_health_status": "ok", "would_enter": false}
+2026-11-20T01:25:03.363046-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {'saved': 91, 'empty': 2}
+2026-11-20T01:20:04.815073-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {'saved': 91, 'empty': 2}
+2026-11-20T01:15:06.809821-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {'saved': 91, 'empty': 2}
+2026-11-20T01:10:05.934124-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {'saved': 91, 'empty': 2}
+2026-11-20T01:05:05.898904-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {'saved': 91, 'empty': 2}
+2026-11-20T01:00:05.809710-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {'saved': 91, 'empty': 2}
+2026-11-20T00:55:04.836951-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {'saved': 91, 'empty': 2}
+2026-11-20T00:50:02.820195-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {'saved': 91, 'empty': 2}
+2026-11-20T00:45:05.761865-05:00     data_refresh       data_refresh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {'saved': 91, 'empty': 2}
 ```
 
 ## Equity Curves
@@ -85,27 +85,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261120095505)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261120100005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261120095505)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261120100005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261120095505)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261120100005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261120095505)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261120100005)
 
 </details>
