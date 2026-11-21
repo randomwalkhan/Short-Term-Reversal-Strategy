@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-20 23:55:06 EST`
-Last processed slot: `share_ext_2355`
+Latest checkpoint (ET): `2026-11-21 00:00:05 EST`
+Last processed slot: `share_ext_0000`
 
 ## Active Configuration
 
@@ -40,12 +40,9 @@ ticker asset_type execution_mode          instrument entry_trade_date  business_
   AAPL     option         option AAPL270115C00345000       2026-11-20                   0     32     47200.0                 49040.0        14.75          15.32       344.6        344.87          bid_ask_mid                      15.32                bid_ask_mid                    True          1840.0                    3.9         100.0               14              1.32         27.92           31.74                  27.12               12741.0          229.0               0.03                      ok
 ```
 
-## Today's Closed Trades (2026-11-20)
+## Today's Closed Trades (2026-11-21)
 
-```text
-ticker asset_type execution_mode         instrument  units entry_trade_date_et exit_trade_date_et  entry_price  exit_price     pnl  return_pct           exit_reason
-   APP     option         option APP270115C00380000     13          2026-11-19         2026-11-20        37.05      33.345 -4816.5       -10.0 stop_loss_hit_at_scan
-```
+_None_
 
 ## Current Screener Snapshot
 
@@ -55,6 +52,7 @@ _None_
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                                                                                                                                                                                  detail
+2026-11-21T00:00:05.770120-05:00   share_ext_0000           market_closed                                                                                                                                                                                                                                                                                                                                                                                             {"holiday_name": null, "reason": "weekend"}
 2026-11-20T15:10:05.376851-05:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-11-20T15:05:06.103074-05:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
 2026-11-20T15:00:05.079544-05:00       entry_1500            slot_skipped                                                                                                                                                                                                                                                                                                                                                                                                         {"reason": "already_processed"}
@@ -64,7 +62,6 @@ _None_
 2026-11-20T14:50:04.211371-05:00       entry_1500          timing_overlay                                                                                                                                                                                                                                                                                                                            {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-11-20", "training_samples": 6240, "window": 5}
 2026-11-20T12:00:03.900140-05:00 early_entry_1200      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-20T11:55:04.983316-05:00 early_entry_1155      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-20T11:50:06.003914-05:00 early_entry_1150      early_entry_shadow                                                                                                                                                                                                                                                                                                                                                                   {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -74,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261120235506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261121000005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261120235506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261121000005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261120235506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261121000005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261120235506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261121000005)
 
 </details>
