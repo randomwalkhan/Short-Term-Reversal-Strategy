@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-23 08:11:03 EST`
-Last processed slot: `share_ext_0810`
+Latest checkpoint (ET): `2026-11-23 08:16:02 EST`
+Last processed slot: `share_ext_0815`
 
 ## Active Configuration
 
@@ -28,16 +28,16 @@ Last processed slot: `share_ext_0810`
 ## Portfolio Snapshot
 
 - Cash: `$48,929.80`
-- Equity: `$101,009.80`
+- Equity: `$101,089.80`
 - Realized PnL: `$86,129.80`
-- Unrealized PnL: `$4,880.00`
+- Unrealized PnL: `$4,960.00`
 - Open positions: `1`
 
 ## Open Positions
 
 ```text
 ticker asset_type execution_mode          instrument entry_trade_date  business_days_held  units  cash_spent  current_position_value  entry_price  current_price  entry_spot  current_spot current_price_source  current_exit_signal_price current_exit_signal_source  current_quote_reliable  unrealized_pnl  unrealized_return_pct  success_rate  matched_signals  current_drop_pct  entry_iv_pct  current_iv_pct  rolling_sigma_20d_pct  option_open_interest  option_volume  option_spread_pct option_liquidity_status
-  AAPL     option         option AAPL270115C00345000       2026-11-20                   1     32     47200.0                 52080.0        14.75          16.27       344.6        347.63          bid_ask_mid                      16.27                bid_ask_mid                    True          4880.0                  10.34         100.0               14              1.32         27.92           36.41                  27.12               12741.0          229.0               0.03                      ok
+  AAPL     option         option AAPL270115C00345000       2026-11-20                   1     32     47200.0                 52160.0        14.75           16.3       344.6        347.71          bid_ask_mid                       16.3                bid_ask_mid                    True          4960.0                  10.51         100.0               14              1.32         27.92           36.41                  27.12               12741.0          229.0               0.03                      ok
 ```
 
 ## Today's Closed Trades (2026-11-23)
@@ -71,27 +71,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261123081103)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261123081602)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261123081103)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261123081602)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261123081103)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261123081602)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261123081103)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261123081602)
 
 </details>
