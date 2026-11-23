@@ -1,39 +1,8 @@
 {
   "version": "3.2",
   "initial_capital": 10000.0,
-  "cash": 48929.80035667421,
-  "positions": [
-    {
-      "position_id": "AAPL_20261120T145004",
-      "ticker": "AAPL",
-      "asset_type": "option",
-      "execution_mode": "option",
-      "contract_symbol": "AAPL270115C00345000",
-      "expiry": "2027-01-15",
-      "strike": 345.0,
-      "entry_timestamp": "2026-11-20T14:50:04.211371-05:00",
-      "entry_trade_date": "2026-11-20",
-      "entry_slot": "entry_1500",
-      "entry_spot": 344.6000061035156,
-      "entry_option_price": 14.75,
-      "entry_bid": 14.5,
-      "entry_ask": 15.0,
-      "entry_iv_pct": 27.924304748535157,
-      "contracts": 32,
-      "allocated_cash": 47200.0,
-      "success_rate": 100.0,
-      "matched_signals": 14,
-      "current_drop_pct": 1.32,
-      "rolling_sigma_20d_pct": 27.12,
-      "planned_tp_day1": 16.9625,
-      "planned_tp_day2": 16.9625,
-      "planned_stop": 13.275,
-      "option_open_interest": 12741.0,
-      "option_volume": 229.0,
-      "option_spread_pct": 0.03389830508474576,
-      "option_liquidity_status": "ok"
-    }
-  ],
+  "cash": 103969.80035667421,
+  "positions": [],
   "processed_slots": {
     "2026-03-24": [
       "manage_1330",

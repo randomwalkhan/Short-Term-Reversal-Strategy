@@ -7626,3 +7626,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-21T02:55:05.433853-05:00,2026-11-21,share_ext_0255,market_closed,"{""holiday_name"": null, ""reason"": ""weekend""}"
 2026-11-23T03:00:06.095274-05:00,2026-11-23,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
 2026-11-23T11:30:26.190239-05:00,2026-11-23,early_entry_1130,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
+2026-11-23T13:21:08.156830-05:00,2026-11-23,manage_1330,exit,"{""asset_type"": ""option"", ""contract_symbol"": ""AAPL270115C00345000"", ""fill_price"": 17.2, ""pnl"": 7840.0, ""reason"": ""take_profit_day1_hit_at_scan"", ""return_pct"": 16.61, ""ticker"": ""AAPL""}"
