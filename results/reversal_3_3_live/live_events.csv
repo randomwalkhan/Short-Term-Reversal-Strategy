@@ -7657,3 +7657,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-24T14:50:04.541007-05:00,2026-11-24,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.494, ""option_liquidity_status"": ""low_volume"", ""option_open_interest"": 122.0, ""option_spread_pct"": 8.89, ""option_volume"": 4.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ODFL"", ""timing_score"": 0.512}"
 2026-11-24T14:50:04.541007-05:00,2026-11-24,entry_1500,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
 2026-11-24T14:55:06.326922-05:00,2026-11-24,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-11-24T15:00:04.642854-05:00,2026-11-24,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
