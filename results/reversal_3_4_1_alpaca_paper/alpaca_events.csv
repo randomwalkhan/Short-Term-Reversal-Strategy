@@ -10964,3 +10964,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-24T14:54:12.378081-05:00,2026-11-24,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ODFL""}"
 2026-11-24T15:00:23.461315-05:00,2026-11-24,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ODFL""}"
 2026-11-24T15:06:34.605312-05:00,2026-11-24,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_volume"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""ODFL""}"
+2026-11-25T10:17:54.852190-05:00,2026-11-25,early_entry_1015,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
