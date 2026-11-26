@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-26 09:21:40 EST`
+Latest checkpoint (ET): `2026-11-26 09:39:32 EST`
 Last processed slot: `manage_0930`
 
 ## Active Configuration
@@ -48,17 +48,17 @@ _None_
 ## Recent Events
 
 ```text
-                    timestamp_et             slot         event_type                                                                                                       detail
-2026-11-26T09:21:40.723112-05:00      manage_0930      market_closed                                               {"holiday_name": "Thanksgiving Day", "reason": "nyse_holiday"}
-2026-11-25T11:56:08.535993-05:00 early_entry_1155 early_entry_shadow                                        {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-25T10:40:03.209992-05:00 early_entry_1040 early_entry_shadow                                        {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-25T10:06:20.719395-05:00 early_entry_1005 early_entry_shadow                                        {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-25T09:20:10.412914-05:00     data_refresh       data_refresh                                                                                    {'saved': 91, 'empty': 2}
-2026-11-24T15:10:06.406477-05:00       entry_1500       slot_skipped                                                                              {"reason": "already_processed"}
-2026-11-24T15:05:05.745009-05:00       entry_1500       slot_skipped                                                                              {"reason": "already_processed"}
-2026-11-24T15:00:04.642854-05:00       entry_1500       slot_skipped                                                                              {"reason": "already_processed"}
-2026-11-24T14:55:06.326922-05:00       entry_1500       slot_skipped                                                                              {"reason": "already_processed"}
-2026-11-24T14:50:04.541007-05:00       entry_1500     timing_overlay {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-11-24", "training_samples": 6215, "window": 5}
+                    timestamp_et             slot         event_type                                                                detail
+2026-11-26T09:39:32.432819-05:00      manage_0930       slot_skipped                                       {"reason": "already_processed"}
+2026-11-26T09:21:40.723112-05:00      manage_0930      market_closed        {"holiday_name": "Thanksgiving Day", "reason": "nyse_holiday"}
+2026-11-25T11:56:08.535993-05:00 early_entry_1155 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-25T10:40:03.209992-05:00 early_entry_1040 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-25T10:06:20.719395-05:00 early_entry_1005 early_entry_shadow {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
+2026-11-25T09:20:10.412914-05:00     data_refresh       data_refresh                                             {'saved': 91, 'empty': 2}
+2026-11-24T15:10:06.406477-05:00       entry_1500       slot_skipped                                       {"reason": "already_processed"}
+2026-11-24T15:05:05.745009-05:00       entry_1500       slot_skipped                                       {"reason": "already_processed"}
+2026-11-24T15:00:04.642854-05:00       entry_1500       slot_skipped                                       {"reason": "already_processed"}
+2026-11-24T14:55:06.326922-05:00       entry_1500       slot_skipped                                       {"reason": "already_processed"}
 ```
 
 ## Equity Curves
@@ -68,27 +68,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261126092140)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261126093932)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261126092140)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261126093932)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261126092140)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261126093932)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261126092140)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261126093932)
 
 </details>
