@@ -7698,3 +7698,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-26T15:38:19.314719-05:00,2026-11-26,manage_1530,slot_skipped,"{""reason"": ""already_processed""}"
 2026-11-26T15:54:23.516183-05:00,2026-11-26,manage_1600,market_closed,"{""holiday_name"": ""Thanksgiving Day"", ""reason"": ""nyse_holiday""}"
 2026-11-26T16:10:21.376436-05:00,2026-11-26,manage_1600,slot_skipped,"{""reason"": ""already_processed""}"
+2026-11-27T09:20:04.710561-05:00,2026-11-27,data_refresh,data_refresh,"{'saved': 91, 'empty': 2}"
