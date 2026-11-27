@@ -7720,3 +7720,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-27T14:50:03.601572-05:00,2026-11-27,entry_1500,entry_candidate_skipped,"{""early_entry_score"": 0.554, ""option_liquidity_status"": ""low_volume"", ""option_open_interest"": 1396.0, ""option_spread_pct"": 6.74, ""option_volume"": 2.0, ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""MDLZ"", ""timing_score"": 0.557}"
 2026-11-27T14:50:03.601572-05:00,2026-11-27,entry_1500,entry_skipped,"{""reason"": ""no_trade_after_option_and_timing_filters""}"
 2026-11-27T14:55:06.245500-05:00,2026-11-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
+2026-11-27T15:00:04.764303-05:00,2026-11-27,entry_1500,slot_skipped,"{""reason"": ""already_processed""}"
