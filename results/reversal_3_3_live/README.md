@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-27 15:30:06 EST`
+Latest checkpoint (ET): `2026-11-27 15:35:03 EST`
 Last processed slot: `manage_1530`
 
 ## Active Configuration
@@ -55,7 +55,7 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
    KHC           89.19               37            0.64              0.12         26.46                29.10         0.455   below_threshold              0.647             58.9                           0.485                7.60              0.582                  ok           False                  False
   ORLY          100.00               34            0.55              0.37         96.53                21.83         0.445   below_threshold              0.794             63.2                           0.639                5.02              0.486                  ok           False                   True
   VRTX             NaN                0            4.99             19.69        555.68                36.27           NaN no_signal_history                NaN              NaN                           0.692               -1.22              0.220                  ok           False                  False
-  AAPL             NaN                0            0.00              0.00        358.44                28.52           NaN no_signal_history                NaN              NaN                           0.372                1.00              0.008                  ok           False                  False
+  AAPL             NaN                0            0.00              0.00        358.61                28.52           NaN no_signal_history                NaN              NaN                           0.383                1.05              0.010                  ok           False                  False
   ABNB             NaN                0            0.00              0.00        178.44                56.84           NaN no_signal_history                NaN              NaN                           0.281               -1.49             -0.681                  ok           False                  False
 ```
 
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261127153006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261127153503)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261127153006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261127153503)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261127153006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261127153503)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261127153006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261127153503)
 
 </details>
