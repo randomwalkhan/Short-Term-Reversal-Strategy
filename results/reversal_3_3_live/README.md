@@ -1,7 +1,7 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-27 15:40:06 EST`
-Last processed slot: `manage_1530`
+Latest checkpoint (ET): `2026-11-27 15:45:06 EST`
+Last processed slot: `manual`
 
 ## Active Configuration
 
@@ -51,12 +51,12 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
   PAYX           72.41               29            0.30              0.25        118.38                28.65         0.510              pass              0.332             51.4                           0.390                2.56              0.106                  ok           False                  False
   VRSK           82.86               35            0.49              0.70        204.46                37.92         0.499   below_threshold              0.530             79.0                           0.472               -1.24             -0.275                  ok           False                  False
   ALNY           74.29               35            1.23              1.42        164.12               117.72         0.499   below_threshold              0.297             26.7                           0.267                3.86              0.207                  ok           False                  False
-   KHC           89.19               37            0.64              0.12         26.46                29.10         0.455   below_threshold              0.647             58.9                           0.485                7.60              0.582                  ok           False                  False
   ORLY          100.00               34            0.55              0.37         96.53                21.83         0.445   below_threshold              0.794             63.2                           0.639                5.02              0.486                  ok           False                   True
   CPRT           82.98               47            0.05              0.01         33.16                35.18         0.437   below_threshold              0.567             81.3                           0.389                3.59              0.332                  ok           False                  False
-  VRTX             NaN                0            4.99             19.69        555.68                36.27           NaN no_signal_history                NaN              NaN                           0.692               -1.22              0.220                  ok           False                  False
-  AAPL             NaN                0            0.00              0.00        359.00                28.52           NaN no_signal_history                NaN              NaN                           0.418                1.16              0.015                  ok           False                  False
-  ABNB             NaN                0            0.00              0.00        178.44                56.84           NaN no_signal_history                NaN              NaN                           0.281               -1.49             -0.681                  ok           False                  False
+   KHC           91.30               46            0.15              0.03         26.50                29.10         0.431   below_threshold              0.816             90.3                           0.712                8.13              0.604                  ok           False                  False
+  VRTX             NaN                0            5.21             20.56        555.31                36.27           NaN no_signal_history                NaN              NaN                           0.685               -1.45              0.209                  ok           False                  False
+  AAPL             NaN                0            0.00              0.00        358.60                28.52           NaN no_signal_history                NaN              NaN                           0.415                1.05              0.010                  ok           False                  False
+  ABNB             NaN                0            0.00              0.00        178.42                56.84           NaN no_signal_history                NaN              NaN                           0.282               -1.50             -0.682                  ok           False                  False
 ```
 
 ## Recent Events
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261127154006)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261127154506)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261127154006)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261127154506)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261127154006)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261127154506)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261127154006)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261127154506)
 
 </details>
