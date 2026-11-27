@@ -1,6 +1,6 @@
 # Reversal 3.5 Live Paper Test
 
-Latest checkpoint (ET): `2026-11-27 15:05:06 EST`
+Latest checkpoint (ET): `2026-11-27 15:10:05 EST`
 Last processed slot: `entry_1500`
 
 ## Active Configuration
@@ -45,7 +45,7 @@ _None_
 
 ```text
 ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  target_price  rolling_sigma_20d_%  timing_score     timing_status  early_entry_score  early_reclaim_%  early_recovery_stability_score  trend_return_10d_%  trend_slope_%/day trend_health_status  call_candidate  early_entry_candidate
-  INSM           85.71               49            0.06              0.07        170.28                97.01         0.693              pass              0.606             61.5                           0.344               44.16              4.305                  ok           False                  False
+  INSM           85.71               49            0.05              0.06        170.29                97.01         0.694              pass              0.629             69.2                           0.369               44.18              4.306                  ok           False                  False
    AEP           96.30               27            0.15              0.13        127.53                16.32         0.520              pass              0.711             48.6                           0.423               -1.17             -0.134                  ok           False                  False
   MDLZ           96.97               33            0.16              0.08         67.78                23.85         0.517              pass              0.839             78.0                           0.656                1.71              0.053                  ok           False                  False
  CMCSA           94.12               34            0.12              0.02         25.72                30.62         0.511              pass              0.788             66.7                           0.451                3.63              0.165                  ok           False                  False
@@ -55,7 +55,7 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
   ORLY          100.00               34            0.55              0.37         96.53                21.83         0.445   below_threshold              0.794             63.2                           0.639                5.02              0.486                  ok           False                   True
    KHC           91.30               46            0.11              0.02         26.50                29.10         0.433   below_threshold              0.823             92.7                           0.749                8.17              0.606                  ok           False                  False
   VRTX             NaN                0            4.76             18.78        556.07                36.27           NaN no_signal_history                NaN              NaN                           0.696               -0.98              0.231                  ok           False                  False
-  AAPL             NaN                0            0.00              0.00        358.40                28.52           NaN no_signal_history                NaN              NaN                           0.343                0.99              0.007                  ok           False                  False
+  AAPL             NaN                0            0.00              0.00        358.37                28.52           NaN no_signal_history                NaN              NaN                           0.342                0.98              0.007                  ok           False                  False
   ABNB             NaN                0            0.00              0.00        178.91                56.84           NaN no_signal_history                NaN              NaN                           0.390               -1.23             -0.670                  ok           False                  False
 ```
 
@@ -63,6 +63,7 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 
 ```text
                     timestamp_et             slot              event_type                                                                                                                                                                                                                                                                detail
+2026-11-27T15:10:05.760522-05:00       entry_1500            slot_skipped                                                                                                                                                                                                                                       {"reason": "already_processed"}
 2026-11-27T15:05:06.271487-05:00       entry_1500            slot_skipped                                                                                                                                                                                                                                       {"reason": "already_processed"}
 2026-11-27T15:00:04.764303-05:00       entry_1500            slot_skipped                                                                                                                                                                                                                                       {"reason": "already_processed"}
 2026-11-27T14:55:06.245500-05:00       entry_1500            slot_skipped                                                                                                                                                                                                                                       {"reason": "already_processed"}
@@ -72,7 +73,6 @@ ticker  success_rate_%  matched_signals  current_drop_%  target_rebound_$  targe
 2026-11-27T14:50:03.601572-05:00       entry_1500          timing_overlay                                                                                                                                                          {"status": "cached", "threshold": 0.5, "trade_date_et": "2026-11-27", "training_samples": 6212, "window": 5}
 2026-11-27T11:50:45.862448-05:00 early_entry_1150      early_entry_shadow                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 2026-11-27T11:16:30.878853-05:00 early_entry_1115      early_entry_shadow                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
-2026-11-27T11:05:06.537341-05:00 early_entry_1105      early_entry_shadow                                                                                                                                                                                                 {"reason": "no_candidate", "shadow_only": true, "would_enter": false}
 ```
 
 ## Equity Curves
@@ -82,27 +82,27 @@ The `Overall` chart compares Strategy, QQQ, and SPY from the live-paper start da
 <details open>
 <summary><strong>Overall</strong></summary>
 
-![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261127150506)
+![Reversal 3.5 Live Equity Overall](../../assets/reversal_3_3_live_equity_overall.png?v=20261127151005)
 
 </details>
 
 <details>
 <summary><strong>1D</strong></summary>
 
-![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261127150506)
+![Reversal 3.5 Live Equity 1D](../../assets/reversal_3_3_live_equity_1d.png?v=20261127151005)
 
 </details>
 
 <details>
 <summary><strong>1W</strong></summary>
 
-![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261127150506)
+![Reversal 3.5 Live Equity 1W](../../assets/reversal_3_3_live_equity.png?v=20261127151005)
 
 </details>
 
 <details>
 <summary><strong>1M</strong></summary>
 
-![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261127150506)
+![Reversal 3.5 Live Equity 1M](../../assets/reversal_3_3_live_equity_1m.png?v=20261127151005)
 
 </details>
