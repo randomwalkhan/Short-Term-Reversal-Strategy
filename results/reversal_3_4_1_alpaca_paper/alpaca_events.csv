@@ -10980,3 +10980,4 @@ timestamp_et,trade_date_et,slot,event_type,detail
 2026-11-27T11:07:26.256207-05:00,2026-11-27,early_entry_1105,early_entry_shadow,"{""reason"": ""no_candidate"", ""shadow_only"": true, ""would_enter"": false}"
 2026-11-27T14:48:47.885892-05:00,2026-11-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""option_liquidity_status"": ""low_open_interest,low_volume,wide_spread"", ""reason"": ""no_trade_low_option_liquidity"", ""ticker"": ""KDP""}"
 2026-11-27T14:54:55.406522-05:00,2026-11-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
+2026-11-27T15:00:55.814871-05:00,2026-11-27,entry_1500,entry_skipped,"{""entry_mode"": ""regular"", ""reason"": ""no_candidate""}"
